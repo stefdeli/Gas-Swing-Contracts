@@ -1,0 +1,64 @@
+\usetikzlibrary{decorations.pathmorphing}
+\begin{tikzpicture}
+
+%Stochastic dispatch - Electricity
+
+\draw (-21.7,7.9) node[minimum height=1cm,minimum width=3cm,draw, rounded corners] (A) {%
+  $\begin{aligned}
+    \underset{\Xi^{\text{D}}, \Xi^{\text{B}}_{\omega}  }{\text{Min.}}  & \; \mathcal{C}^{\text{D}}_{\text{e}} (\Xi^{\text{D}}, \hat{\lambda}^{\text{G}},\lambda^{\text{c}} ) + \mathbb{E}_{\omega}[\mathcal{C}^{\text{B}}_{\text{e}} (\Xi^{\text{B}}, \hat{\lambda}^{\text{G}}_{\omega }, \lambda^{\text{c}} )  ] \\
+     \text{s.t.} & \; \mathcal{Q}^{\text{D}}_{\text{e}} ( \Xi^{\text{D}}), \mathcal{Q}^{\text{B}}_{\text{e}} (   \Xi^{\text{B}}_{\omega} ), \; \forall \omega
+  \end{aligned}$}	;
+
+%\node (v5) at (-21.7,7.1) {};
+%\node (v6) at (-21.7,5.6) {};
+
+% Gas day-ahead
+\draw (-16.3,5.6) node[minimum height=1cm,minimum width=3cm,draw, rounded corners] (B) {{
+  $\begin{aligned}
+    \underset{\Phi^{\text{D}} }{\text{Min.}}  & \; \mathcal{C}^{\text{D}}_{\text{g}} (\Phi^{\text{D}} )  \\
+     \text{s.t.} & \; \mathcal{Q}^{\text{D}}_{\text{g}} ( \Phi^{\text{D}}, p^{\text{c*}} )
+  \end{aligned}$}	};
+ 
+
+% Electricity balancing
+\draw (-12.3,7.9) node[minimum height=1cm,minimum width=3cm,draw, rounded corners] (C) {{  
+  $\begin{aligned}
+    \underset{\Xi^{\text{B}}_{\omega'} }{\text{Min.}}  & \; \mathcal{C}^{\text{B}}_{\text{e}} (\Xi^{\text{B}}_{\omega'}, \hat{\lambda}^{\text{G}}_{\omega' }, \lambda^{\text{c} *}  )  \\
+     \text{s.t.} & \; \mathcal{Q}^{\text{B}}_{\text{e}} ( \Xi^{\text{B}}_{\omega'} )
+  \end{aligned}$}	};
+
+
+% Gas balancing  
+  \draw (-8.8,5.6) node[minimum height=1cm,minimum width=3cm,draw, rounded corners] (D) {{  
+  $\begin{aligned}
+    \underset{\Phi^{\text{B}} }{\text{Min.}}  & \; \mathcal{C}^{\text{B}}_{\text{g}} (\Phi^{\text{B}}_{\omega'} )  \\
+     \text{s.t.} & \; \mathcal{Q}^{\text{B}}_{\text{g}} ( \Phi^{\text{B}}_{\omega'} )
+  \end{aligned}$}	};
+
+
+   
+
+\node  (v1) at (-25.8,6.6) {};
+\node  [rotate=90]  at (-25.8,8) {\Large{Electricity}};
+\node  [rotate=90]  at (-25.8,5.6) {\Large{Gas}};
+\node (v2) at (-7.2,6.7) {};
+\draw (v1) edge (v2);
+
+\node (v3) at (-14.6,9.9) {};
+\node (v4) at (-14.6,4.2) {};
+\draw [dashed,line width=0.3mm,  gray]  (v3) edge (v4);
+
+
+\node [rotate=0] at (-16,9.8) {\Large{Day-ahead}};
+\node [rotate=0] at (-12.9,9.8) {\Large{Real-time}};
+
+
+\draw[-latex] (A.south) |- ([yshift=-0.2cm]B.west) node [near end, above] {$p^{*}, p^{\text{c} *}$};
+\draw[-latex] ([yshift=+0.2cm]A.east) -- ([yshift=+0.2cm]C.west) node [near start, above] {$p^{*}, p^{\text{c} *}, \lambda^{\text{c} *}$} node [near start, below] {$r^{+*}, r^{- *}$};
+%\draw[-latex] (B.north) |- ([yshift=-0.2cm]C.west);
+\draw[-latex] (C.south) |- ([yshift=+0.2cm]D.west) node [near end, above] {$p^{+*}_{\omega'}, p^{-*}_{\omega'}$};
+\draw[-latex] ([yshift=-0.2cm]B.east) -- ([yshift=-0.2cm]D.west) node [near start, above] {$q^{*}$};
+
+
+\draw [decorate][help lines, step=0.25cm] (-25,14.249) grid (-20,15.5);
+\end{tikzpicture}

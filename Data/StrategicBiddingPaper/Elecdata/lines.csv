@@ -1,0 +1,9 @@
+fromNode,toNode,Y,limit,type
+Bus1,Bus2,9.412,150,AC
+Bus1,Bus3,9.412,100,AC
+Bus2,Bus3,9.412,100,AC
+Bus2,Bus4,9.412,150,AC
+Bus3,Bus6,9.412,100,AC
+Bus4,Bus5,9.412,100,AC
+Bus4,Bus6,9.412,100,AC
+Bus5,Bus6,9.412,150,AC
