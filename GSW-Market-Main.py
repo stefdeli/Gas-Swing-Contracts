@@ -16,7 +16,7 @@ import gurobipy as gb
 
 
 
-# Class which can have attributes set.
+# Stochastic Day-ahead Electricity dispatch
 class expando(object):
     pass
 
