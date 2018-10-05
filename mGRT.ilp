@@ -1,0 +1,39 @@
+\ Model _copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ PresMax(ng101,s1,t3): pres_rt(ng101,s1,t3) <= 370
+ PresMin(ng101,s1,t4): pres_rt(ng101,s1,t4) >= 350
+ PresMax(ng102,s1,t3): pres_rt(ng102,s1,t3) <= 330
+ PresMin(ng102,s1,t4): pres_rt(ng102,s1,t4) >= 310
+ gprodDn_max(gw1s1t4): gprodUp(gw1,s1,t4) <= 19.60445511175203
+ lpack_def_rt(('ng102',_'ng101'),s1,t3): - 60.5 pres_rt(ng101,s1,t3)
+   - 60.5 pres_rt(ng102,s1,t3) + lpack_rt(('ng102',_'ng101'),s1,t3) = 0
+ lpack_def_rt(('ng102',_'ng101'),s1,t4): - 60.5 pres_rt(ng101,s1,t4)
+   - 60.5 pres_rt(ng102,s1,t4) + lpack_rt(('ng102',_'ng101'),s1,t4) = 0
+ line_store_rt(('ng102',_'ng101'),s1,t4):
+   - lpack_rt(('ng102',_'ng101'),s1,t3)
+   + lpack_rt(('ng102',_'ng101'),s1,t4)
+   - qin_sr_rt(('ng102',_'ng101'),s1,t4)
+   + qout_sr_rt(('ng102',_'ng101'),s1,t4) = 0
+ gas_shed_rt(ng102,s1,t4): gshed(ng102,s1,t4) <= 0
+ gas_balance(ng101,s1,t4): gshed(ng101,s1,t4)
+   - qout_sr_rt(('ng102',_'ng101'),s1,t4) = -2502.1444712685
+ gas_balance(ng102,s1,t4): gshed(ng102,s1,t4)
+   - qin_sr_rt(('ng102',_'ng101'),s1,t4) + gprodUp(gw1,s1,t4)
+   - gprodDn(gw1,s1,t4) - gsin_rt(gs1,s1,t4) + gsout_rt(gs1,s1,t4)
+   = -19.60445511175203
+Bounds
+ pres_rt(ng101,s1,t3) free
+ pres_rt(ng102,s1,t3) free
+ lpack_rt(('ng102',_'ng101'),s1,t3) free
+ pres_rt(ng101,s1,t4) free
+ pres_rt(ng102,s1,t4) free
+ gshed(ng102,s1,t4) free
+ lpack_rt(('ng102',_'ng101'),s1,t4) free
+ qin_sr_rt(('ng102',_'ng101'),s1,t4) free
+ qout_sr_rt(('ng102',_'ng101'),s1,t4) free
+ gprodUp(gw1,s1,t4) free
+ -infinity <= gsout_rt(gs1,s1,t4) <= 0
+End

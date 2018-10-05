@@ -281,6 +281,8 @@ print ('########################################################')
 
 
 mGRT.optimize()
+mGRT.model.computeIIS()
+mGRT.model.write("mGRT.ilp")
 mGRT.get_results(f2d)
 
 dispatchGasRT = expando()
