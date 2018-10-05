@@ -108,14 +108,9 @@ def _build_variables_gasRT(self,mtype,dispatchElecRT):
     gwells = self.gdata.wellsinfo.index.tolist()
     
     """
-    If stochastic dispatch: scenario set comprises i) gas price and ii) wind power scenarios
-    If real-time dispatch: scenario set comprises only wind power scenarios
+    Real time gas only required to handle the possible outcomes of the RT wind scenarios
     """
-    
-    if mtype == 'Stoch':
-        scenarios = self.edata.scenarios # Gas price & wind scenarios        
-    elif mtype == 'RealTime':
-        scenarios = dispatchElecRT.windscen_index # Only wind power scenarios
+    scenarios = self.gdata.scenarios
         
     
     

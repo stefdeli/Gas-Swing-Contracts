@@ -144,7 +144,7 @@ def _results_gasRT(self, f2d):
     iterables = [self.gdata.time, scenarios]
     index = pd.MultiIndex.from_product(iterables, names=['Time', 'Scenarios'])
     
-    r.lpack_rt = pd.DataFrame([[var.lpack_rt[pl,s,t].x for pl in self.gdata.pplineorder] for t in time for s in scenarios], index=index, columns=self.gdata.pplineorder)
+#    r.lpack_rt = pd.DataFrame([[var.lpack_rt[pl,s,t].x for pl in self.gdata.pplineorder] for t in time for s in scenarios], index=index, columns=self.gdata.pplineorder)
     r.gprodUp = pd.DataFrame([[var.gprodUp[gw,s,t].x for gw in self.gdata.wells] for t in time for s in scenarios], index=index, columns=self.gdata.wells)
     r.gprodDn = pd.DataFrame([[var.gprodDn[gw,s,t].x for gw in self.gdata.wells] for t in time for s in scenarios], index=index, columns=self.gdata.wells)
     

@@ -213,12 +213,14 @@ mERT.optimize()
 mERT.get_results()
 
 dispatchElecRT = expando()
-dispatchElecRT.RUp = mSEDA.results.RUp
-dispatchElecRT.RDn = mSEDA.results.RDn
-dispatchElecRT.RUpSC = mSEDA.results.RUpSC
-dispatchElecRT.RDnSC = mSEDA.results.RDnSC
-dispatchElecRT.windscen_index=mERT.edata.windscen_index   
-    
+dispatchElecRT.RUp = mERT.results.RUp
+dispatchElecRT.RDn = mERT.results.RDn
+dispatchElecRT.RUpSC = mERT.results.RUpSC
+dispatchElecRT.RDnSC = mERT.results.RDnSC
+dispatchElecRT.Lshed = mERT.results.Lshed
+dispatchElecRT.Wspill = mERT.results.Wspill
+
+
 
 class GasRT():
     '''
@@ -235,13 +237,16 @@ class GasRT():
         self.results = expando()
 
         self._load_data(f2d)
+        
+        self.gdata.scenarios=dispatchElecRT.RDn.index.get_level_values(1).unique().tolist()
+        
         self._build_model(dispatchGasDA,dispatchElecRT)
         
     def optimize(self):
         self.model.optimize()
         
     def get_results(self,f2d):
-        GetResults._results_gasDA(self,f2d)        
+        GetResults._results_gasRT(self,f2d)        
 
     def _load_data(self,f2d):
         GasData_Load._load_gas_network(self,f2d)              
@@ -249,7 +254,7 @@ class GasRT():
         GasData_Load._load_gasload(self)
         GasData_Load._load_gas_storage(self)
         
-#        GasData_Load._load_SCinfo(self)          
+        GasData_Load._load_SCinfo(self)          
 #        GasData_Load._ActiveSCinfo(self,dispatchElecDA)  
        
         
@@ -273,7 +278,7 @@ print ('########################################################')
 
 
 mGRT.optimize()
-mGRT.get_results()
+mGRT.get_results(f2d)
 
 dispatchGasRT = expando()
 dispatchGasRT.gprodUp = mGRT.results.gprodUp

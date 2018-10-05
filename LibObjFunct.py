@@ -104,8 +104,10 @@ def _build_objective_gasRT(self):
     
     time = self.gdata.time
     
-    scenarios = self.gdata.scenarios # To be defined...
-    scenarioprob={}   # To be defined...
+    scenarios = self.gdata.scenarios
+    
+    # To be PROPERLY defined, assume equi-likely for now
+    scenarioprob=dict(zip(scenarios,len(scenarios)*[1/len(scenarios)]))   # To be defined...
     
     wdata = self.gdata.wellsinfo
     wells = self.gdata.wells
@@ -114,7 +116,7 @@ def _build_objective_gasRT(self):
     k = 'k0' # Optimize for 'central case' k0
     
     m.setObjective(gb.quicksum(scenarioprob[s] * (
-                   gb.quicksum(wdata.Cost[gw]*(var.gprodUp[gw,s,t] - var.gprodDn[gw,k,t] ) for gw in wells for t in time) +
+                   gb.quicksum(wdata.Cost[gw]*(var.gprodUp[gw,s,t] - var.gprodDn[gw,s,t] ) for gw in wells for t in time) +
                    gb.quicksum(defaults.VOLL * var.gshed[gn,s,t] for gn in gnodes for t in time) ) for s in scenarios),
                    gb.GRB.MINIMIZE) 
     
