@@ -1,5 +1,5 @@
-filepath_gas = 'Data/GasData'
-filepath_elec = 'Data/ElecData'
+filepath_gas = 'Data/SimpleNetwork/GasData'
+filepath_elec = 'Data/SimpleNetwork/ElecData'
 
 
 bigM = 1e4

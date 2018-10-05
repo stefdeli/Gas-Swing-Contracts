@@ -1,3 +1,3 @@
 GasStorage,Node,MinStore,MaxStore,MaxInFlow,MaxOutFlow,IniStore,Cost
-gs1,ng107,0,2000,500,500,1000,2.1
-gs2,ng112,0,2000,500,500,1000,2.3
+gs1,ng102,0,0,0,0,0,2.1
+

@@ -142,11 +142,11 @@ mGDA.model.params.MIPGap = 0.0
 mGDA.model.params.IntFeasTol = 1e-9
 
 mGDA.optimize()
-#mGDA.get_results(f2d)
+mGDA.get_results(f2d)
 
 
 dispatchGasDA = expando()
-dispatchGasDA.gprog = mGDA.results.gprog
+dispatchGasDA.gprod = mGDA.results.gprod
 dispatchGasDA.qin_sr = mGDA.results.qin_sr
 dispatchGasDA.qout_sr = mGDA.results.qout_sr
 dispatchGasDA.gsin = mGDA.results.gsin
@@ -217,7 +217,7 @@ dispatchElecRT.RUp = mSEDA.results.RUp
 dispatchElecRT.RDn = mSEDA.results.RDn
 dispatchElecRT.RUpSC = mSEDA.results.RUpSC
 dispatchElecRT.RDnSC = mSEDA.results.RDnSC
-    
+dispatchElecRT.windscen_index=mERT.edata.windscen_index   
     
 
 class GasRT():
@@ -255,14 +255,17 @@ class GasRT():
         
     def _build_model(self,dispatchGasDA,dispatchElecRT):
         self.model = gb.Model()
-        LibVars._build_variables_gasRT(self)    
+        
+        mtype = 'RealTime' 
+        
+        LibVars._build_variables_gasRT(self,mtype,dispatchElecRT)    
         LibCns_Gas._build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT)
        
         LibObjFunct._build_objective_gasRT(self)
         
         self.model.update()
 
-mGRT = ElecRT(dispatchGasDA,dispatchElecRT)
+mGRT = GasRT(dispatchGasDA,dispatchElecRT,f2d)
 
 print ('########################################################')
 print ('Gas Real-time dispatch - Solved')

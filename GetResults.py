@@ -82,15 +82,15 @@ def _results_gasDA(self, f2d):
     
     r.lpack = pd.DataFrame([[var.lpack[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=index, columns=self.gdata.pplineorder)
     r.gprod = pd.DataFrame([[var.gprod[gw,k,t].x for gw in self.gdata.wells] for t in time for k in sclim], index=index, columns=self.gdata.wells)
-    r.gflow_sr = pd.DataFrame([[var.gflow_sr[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=time, columns=self.gdata.pplineorder)
+    r.gflow_sr = pd.DataFrame([[var.gflow_sr[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=index, columns=self.gdata.pplineorder)
     
     
-    r.qin_sr = pd.DataFrame([[var.qin_sr[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=time, columns=self.gdata.pplineorder)    
-    r.qout_sr = pd.DataFrame([[var.qout_sr[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=time, columns=self.gdata.pplineorder)    
+    r.qin_sr = pd.DataFrame([[var.qin_sr[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=index, columns=self.gdata.pplineorder)    
+    r.qout_sr = pd.DataFrame([[var.qout_sr[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=index, columns=self.gdata.pplineorder)    
     
-    r.gsin = pd.DataFrame([[var.gsin[gs,k,t].x for gs in self.gdata.gstorage] for t in time for k in sclim],  index=time, columns=self.gdata.gstorage)
-    r.gsout = pd.DataFrame([[var.gsout[gs,k,t].x for gs in self.gdata.gstorage] for t in time for k in sclim],  index=time, columns=self.gdata.gstorage)
-    r.gstore = pd.DataFrame([[var.gstore[gs,k,t].x for gs in self.gdata.gstorage] for t in time for k in sclim],  index=time, columns=self.gdata.gstorage)
+    r.gsin = pd.DataFrame([[var.gsin[gs,k,t].x for gs in self.gdata.gstorage] for t in time for k in sclim],  index=index, columns=self.gdata.gstorage)
+    r.gsout = pd.DataFrame([[var.gsout[gs,k,t].x for gs in self.gdata.gstorage] for t in time for k in sclim],  index=index, columns=self.gdata.gstorage)
+    r.gstore = pd.DataFrame([[var.gstore[gs,k,t].x for gs in self.gdata.gstorage] for t in time for k in sclim],  index=index, columns=self.gdata.gstorage)
     
     if f2d == True:
         r.gflow_rs = pd.DataFrame([[var.gflow_rs[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=index, columns=self.gdata.pplineorder)
