@@ -220,6 +220,10 @@ dispatchElecRT.RDnSC = mERT.results.RDnSC
 dispatchElecRT.Lshed = mERT.results.Lshed
 dispatchElecRT.Wspill = mERT.results.Wspill
 
+dispatchElecRT.windscenprob=mERT.edata.windscenprob
+dispatchElecRT.windscenarios=mERT.edata.windscen_index
+
+
 
 
 class GasRT():
@@ -236,9 +240,7 @@ class GasRT():
         self.constraints = expando()
         self.results = expando()
 
-        self._load_data(f2d)
-        
-        self.gdata.scenarios=dispatchElecRT.RDn.index.get_level_values(1).unique().tolist()
+        self._load_data(f2d,dispatchElecRT)
         
         self._build_model(dispatchGasDA,dispatchElecRT)
         
@@ -248,11 +250,12 @@ class GasRT():
     def get_results(self,f2d):
         GetResults._results_gasRT(self,f2d)        
 
-    def _load_data(self,f2d):
+    def _load_data(self,f2d,dispatchElecRT):
         GasData_Load._load_gas_network(self,f2d)              
         GasData_Load._load_wells_data(self)
         GasData_Load._load_gasload(self)
         GasData_Load._load_gas_storage(self)
+        GasData_Load._load_scenarios(self,dispatchElecRT)
         
         GasData_Load._load_SCinfo(self)          
 #        GasData_Load._ActiveSCinfo(self,dispatchElecDA)  

@@ -107,7 +107,7 @@ def _build_objective_gasRT(self):
     scenarios = self.gdata.scenarios
     
     # To be PROPERLY defined, assume equi-likely for now
-    scenarioprob=dict(zip(scenarios,len(scenarios)*[1/len(scenarios)]))   # To be defined...
+    scenarioprob=self.gdata.scenprob   # To be defined...
     
     wdata = self.gdata.wellsinfo
     wells = self.gdata.wells

@@ -60,7 +60,13 @@ def _load_gas_network(self,f2d):
     self.gdata.Nfxpp = defaults.Nfxpoints
     self.gdata.vpoints = ['v' + str(v) for v in range(defaults.Nfxpoints)]
     self.gdata.bigM = defaults.bigM
+
+
+def _load_scenarios(self,dispatchElecRT):
     
+    self.gdata.scenprob  = dispatchElecRT.windscenprob
+    self.gdata.scenarios = dispatchElecRT.windscenarios
+
 def _load_wells_data(self):
     self.gdata.wellsinfo = pd.read_csv(defaults.wellsfile).set_index('GasWell')
     self.gdata.wells = self.gdata.wellsinfo.index.tolist()
