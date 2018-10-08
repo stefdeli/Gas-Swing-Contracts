@@ -2,7 +2,7 @@ filepath_gas = 'Data/SimpleNetwork/GasData'
 filepath_elec = 'Data/SimpleNetwork/ElecData'
 
 # Comment
-bigM = 1e6
+bigM = 1e5
 
 ## Gas System Data
 gnodefile = filepath_gas + '/GasNodes.csv'
@@ -12,7 +12,7 @@ gload_file = filepath_gas + '/GasLoad.csv'
 gstoragefile = filepath_gas + '/GasStorage.csv'
 
 # Number of fixed pressure points used for Weymooth outer approximation
-Nfxpoints = 100
+Nfxpoints = 10
 
 ## Electricity System Data
 

@@ -58,6 +58,7 @@ def _build_constraints_gasDA(self):
     # --- Outer Approximation of Weymouth
     # Create Points for Outer Approximation 
     # Pressure discretization at every gas node
+
     prd = defaultdict(list)
     for gn in gnodes:            
         prd[gn] = np.linspace(gndata['PresMin'][gn], gndata['PresMax'][gn], self.gdata.Nfxpp).tolist()

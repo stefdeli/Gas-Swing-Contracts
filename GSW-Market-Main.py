@@ -10,7 +10,7 @@ Market clearing with Gas Swing contracts
 import GasData_Load, ElecData_Load
 import LibVars
 import LibCns_Elec, LibCns_Gas
-import LibObjFunct
+import LibObjFunct 
 import GetResults
 import gurobipy as gb
 import pandas as pd
@@ -172,52 +172,40 @@ class GasDA():
         
         self.model.update()
 
-mGDA = GasDA(dispatchElecDA,f2d)
-mGDA.model.params.MIPGap = 0.0
-mGDA.model.params.IntFeasTol = 1e-9
+Error_df=pd.DataFrame()
 
+for Nx in [10,20,30,40,50,60]:
+    
+    mGDA = GasDA(dispatchElecDA,f2d)
+    mGDA.gdata.Nfxpp=Nx
+    # Rebuild model with new parameter
+    mGDA._build_model()
+    
+#mGDA.model.params.MIPGap = 0.0
+#mGDA.model.params.IntFeasTol = 1e-9
 
 #mGDA.model.computeIIS()
 #mGDA.model.write("mGDA.ilp")
-mGDA.optimize()
-mGDA.get_results(f2d)
+    
+    mGDA.optimize()
+    mGDA.get_results(f2d)
+
+    # Extract Data for Comparison
+    Scen_Dict={}
+    for scen_ix in mGDA.gdata.sclim:
+        Prod       = mGDA.results.gprod['gw1'].xs(scen_ix,level=1).rename('Production')
+        qin_sr     = mGDA.results.qin_sr[('ng102', 'ng101')].xs(scen_ix,level=1).rename('qin_sr')
+        Flow       = mGDA.results.gflow_sr[('ng102', 'ng101')].xs(scen_ix,level=1).rename('Flow')
+        Sp         = mGDA.results.pr['ng102'].xs(scen_ix,level=1).rename('Send Pressure')
+        Rp         = mGDA.results.pr['ng101'].xs(scen_ix,level=1).rename('Receive Pressure')
+        ActualFlow = (mGDA.gdata.pplineK[('ng102', 'ng101')]*np.sqrt(Sp**2-Rp**2)).rename('Actual Flow')
+        Error      = (ActualFlow-Flow).rename('Error')
+        Temp=pd.concat([Prod,qin_sr,Flow,Sp,Rp,ActualFlow,Error
+                ],axis=1)   
+        Scen_Dict[scen_ix]=Temp
+    Error_df=Error_df.join((Scen_Dict['k0']['Error']).rename('Error_'+str(Nx)),how='right')
 
 
-# Extract Data for Comparison
-Scen_Dict={}
-for scen_ix in mGDA.gdata.sclim:
-    Prod       = mGDA.results.gprod['gw1'].xs(scen_ix,level=1).rename('Production')
-    qin_sr     = mGDA.results.qin_sr[('ng102', 'ng101')].xs(scen_ix,level=1).rename('qin_sr')
-    Flow       = mGDA.results.gflow_sr[('ng102', 'ng101')].xs(scen_ix,level=1).rename('Flow')
-    Sp         = mGDA.results.pr['ng102'].xs(scen_ix,level=1).rename('Send Pressure')
-    Rp         = mGDA.results.pr['ng101'].xs(scen_ix,level=1).rename('Receive Pressure')
-    ActualFlow = (mGDA.gdata.pplineK[('ng102', 'ng101')]*np.sqrt(Sp**2-Rp**2)).rename('Actual Flow')
-    Error      = ActualFlow-Flow
-    Temp=pd.concat([Prod,qin_sr,Flow,Sp,Rp,ActualFlow,Error
-            ],axis=1)   
-    Scen_Dict[scen_ix]=Temp
-
-#Scen_Dict={}
-#for scen_ix in range(6):
-#    scen_int='ss'+str(scen_ix)
-#    Temp=pd.concat([dispatchElecDA.Pgen['g1'].rename('Pgen'),
-#             mSEDA.results.RUp['g1'].xs(   scen_int,level=1).rename('Rup_ss0'),             
-#             mSEDA.results.RDn['g1'].xs(   scen_int,level=1).rename('RDn_ss0'),             
-#             mSEDA.results.Wspill['w1'].xs(scen_int,level=1).rename('Wspill'),  
-#             mSEDA.results.Lshed[           scen_int ].rename('LoadShed')   
-#             ],axis=1)
-#    WindCap=mSEDA.edata.windinfo.capacity.values
-#    NetChange_s1= WindCap*mSEDA.edata.windscen['w1']['s1']- mSEDA.results.WindDA['w1']
-#    NetChange_s2= WindCap*mSEDA.edata.windscen['w1']['s2']- mSEDA.results.WindDA['w1']
-#    
-#    NetChange_Pgen=Temp.Rup_ss0-Temp.RDn_ss0
-#    Temp=pd.concat([Temp,
-#                NetChange_s1.rename('Wind_s1'),
-#                   NetChange_s2.rename('Wind_s2'),
-#                   NetChange_Pgen.rename('redispacth')],
-#                   axis=1)
-#    
-#    Scen_Dict[scen_ix]=Temp
 
 
 dispatchGasDA = expando()
