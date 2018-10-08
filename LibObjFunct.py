@@ -16,7 +16,7 @@ def _build_objective_StochElecDA(self):
     gfpp = self.edata.gfpp
     nongfpp = self.edata.nongfpp
     gendata = self.edata.generatorinfo
-    
+    HR=self.edata.generatorinfo.HR
     gaspriceda = self.edata.GasPriceDA
     gaspriceRT = self.edata.GasPriceRT
     
@@ -35,15 +35,23 @@ def _build_objective_StochElecDA(self):
     
     # !NB Re-dispatch cost = Day-ahead energy cost (No premium)
     m.setObjective(    
-    # Day-ahead energy cost         
-    gb.quicksum(gendata.lincost[gen]*var.Pgen[gen,t] for gen in nongfpp for t in time) +      
-    gb.quicksum(gaspriceda[t][gen]*var.Pgen[gen,t] for gen in gfpp for t in time) +      
-    gb.quicksum(SCdata.lambdaC[sc,gen]*var.Pgen[gen,t] for gen in gfpp for sc in swingcontr for t in time) +      
-    # Real-time redispatch cost                 
+    # Day-ahead energy cost
+    # Non Gas Generators      
+    gb.quicksum(gendata.lincost[gen]*var.Pgen[gen,t] for gen in nongfpp for t in time) +   
+    # Gas Generators = Nodal Gas Price  * HR * Power Output
+    gb.quicksum(gaspriceda[t][gen]*HR[gen]*var.Pgen[gen,t] for gen in gfpp for t in time) +      
+    # Gas Generators with Contracts 
+    gb.quicksum(SCdata.lambdaC[sc,gen]*HR[gen]*var.Pgen[gen,t] for gen in gfpp for sc in swingcontr for t in time) +      
+    # Real-time redispatch cost
+    # Probability                
     gb.quicksum(scenarioprob[s] * (                                                                                                
+    # Non Gas Generators
     gb.quicksum(gendata.lincost[gen]*(var.RUp[gen,s,t]-var.RDn[gen,s,t]) for gen in nongfpp for t in time) +
-    gb.quicksum(gaspriceRT[t][gen][scengprt[s]]*(var.RUp[gen,s,t]-var.RDn[gen,s,t]) for gen in gfpp for t in time) +
+    # Gas Generators 
+    gb.quicksum(gaspriceRT[t][gen][scengprt[s]]*HR[gen]*(var.RUp[gen,s,t]-var.RDn[gen,s,t]) for gen in gfpp for t in time) +
+    # Gas Generators with Contracts
     gb.quicksum(SCdata.lambdaC[sc,gen]*(var.RUpSC[gen,s,t]-var.RDnSC[gen,s,t]) for gen in gfpp for sc in swingcontr for t in time) +
+    # Load Shedding Penalty
     gb.quicksum(defaults.VOLL * var.Lshed[s,t] for t in time)) for s in scenarios),
     gb.GRB.MINIMIZE)
     

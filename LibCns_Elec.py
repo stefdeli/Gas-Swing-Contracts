@@ -26,7 +26,7 @@ def _build_constraints_elecDA(self):
     PowerBalDA = {}
     var = self.variables
     time = self.edata.time
-    
+
     # Power balance
     for t in time:
         PowerBalDA[t] = m.addConstr(
@@ -45,13 +45,13 @@ def _build_constraints_elecDA(self):
         for t in time:                       
             PmaxDA[gen,t] = m.addConstr(var.Pgen[gen,t]+var.PgenSC[gen,t]+var.RCup[gen,t]+var.RCupSC[gen,t], 
             gb.GRB.LESS_EQUAL, 
-            gendata.capacity[gen], name = 'PRmax_DA({0},{1})'.format(gen,t)) 
+            gendata.capacity[gen], name = 'Pmax_DA_GFPP({0},{1})'.format(gen,t)) 
                    
     for gen in nongfpp:        
         for t in time:                       
             PmaxDA[gen,t] = m.addConstr(var.Pgen[gen,t]+var.RCup[gen,t], 
             gb.GRB.LESS_EQUAL, 
-            gendata.capacity[gen], name = 'PRmin_DA({0},{1})'.format(gen,t)) 
+            gendata.capacity[gen], name = 'Pmax_DA({0},{1})'.format(gen,t)) 
             
     # Minimum Capacity limits    
     PminDA = {}
@@ -59,14 +59,14 @@ def _build_constraints_elecDA(self):
     for gen in gfpp:        
         for t in time:                       
             PminDA[gen,t] = m.addConstr(var.Pgen[gen,t]+var.PgenSC[gen,t]-var.RCdn[gen,t]-var.RCdnSC[gen,t], 
-            gb.GRB.LESS_EQUAL, 
-            0.0, name = 'Pmax_DA({0},{1})'.format(gen,t)) 
+            gb.GRB.GREATER_EQUAL, 
+            0.0, name = 'Pmin_DA_GFPP({0},{1})'.format(gen,t)) 
                    
     for gen in nongfpp:        
         for t in time:                       
             PminDA[gen,t] = m.addConstr(var.Pgen[gen,t]-var.RCup[gen,t], 
             gb.GRB.GREATER_EQUAL, 
-            0.0, name = 'Pmax_DA({0},{1})'.format(gen,t)) 
+            0.0, name = 'Pmin_DA({0},{1})'.format(gen,t)) 
     
     
     # Wind power schedule            

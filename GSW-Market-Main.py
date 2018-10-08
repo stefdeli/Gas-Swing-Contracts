@@ -45,7 +45,7 @@ class StochElecDA():
         ElecData_Load._load_network(self)  
         ElecData_Load._load_generator_data(self)
         ElecData_Load._load_wind_data(self)         
-        ElecData_Load._load_intial_data(self)
+        ElecData_Load._load_initial_data(self)
         ElecData_Load._combine_wind_gprt_scenarios(self)
         ElecData_Load._load_SCinfo(self)
         
@@ -182,7 +182,7 @@ class ElecRT():
         ElecData_Load._load_network(self)  
         ElecData_Load._load_generator_data(self)
         ElecData_Load._load_wind_data(self)         
-        ElecData_Load._load_intial_data(self)
+        ElecData_Load._load_initial_data(self)
         
         ElecData_Load._combine_wind_gprt_scenarios(self)
         
