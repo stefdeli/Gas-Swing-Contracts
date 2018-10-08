@@ -84,6 +84,8 @@ def _results_gasDA(self, f2d):
     r.gprod = pd.DataFrame([[var.gprod[gw,k,t].x for gw in self.gdata.wells] for t in time for k in sclim], index=index, columns=self.gdata.wells)
     r.gflow_sr = pd.DataFrame([[var.gflow_sr[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=index, columns=self.gdata.pplineorder)
     
+    r.pr = pd.DataFrame([[var.pr[ng,k,t].x for ng in self.gdata.gnodeorder] for t in time for k in sclim], index=index, columns=self.gdata.gnodeorder)
+    
     
     r.qin_sr = pd.DataFrame([[var.qin_sr[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=index, columns=self.gdata.pplineorder)    
     r.qout_sr = pd.DataFrame([[var.qout_sr[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=index, columns=self.gdata.pplineorder)    

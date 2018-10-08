@@ -11,6 +11,7 @@ import itertools
 import gurobipy as gb
 import defaults
 
+
 #==============================================================================
 # Gas system constraints 
 # NB! Gas storage constraints included as limits in variable definitions
@@ -21,6 +22,8 @@ import defaults
 #==============================================================================
 
 def _build_constraints_gasDA(self):
+    #--- Get Parameters
+
         
     m = self.model
     
@@ -34,6 +37,8 @@ def _build_constraints_gasDA(self):
     bigM = self.gdata.bigM 
     
     sclim = self.gdata.sclim # Swing contract limits
+    
+    #--- Define Pressure Limits 
     
     # Gas pressure limits
     self.constraints.pr_min = {}
@@ -49,6 +54,8 @@ def _build_constraints_gasDA(self):
                 self.constraints.pr_min = m.addConstr(var.pr[gn,k,t],
                                                       gb.GRB.GREATER_EQUAL, self.gdata.gnodedf['PresMin'][gn],
                                                       name="PresMin({0},{1},{2})".format(gn,k,t))
+                
+    # --- Outer Approximation of Weymouth
     # Create Points for Outer Approximation 
     # Pressure discretization at every gas node
     prd = defaultdict(list)
@@ -143,7 +150,7 @@ def _build_constraints_gasDA(self):
         self.constraints.gflow_rs_log = gflow_rs_log
         self.constraints.gflow_rs_lim = gflow_rs_lim
      
-    # Gas well maximum production
+    #--- Gas well maximum production
     gprod_max = {}
     for gw in gwells:
         for k in sclim:
@@ -153,7 +160,7 @@ def _build_constraints_gasDA(self):
                         gb.GRB.LESS_EQUAL,self.gdata.wellsinfo['MaxProd'][gw],
                         name="gprod_max({0}{1}{2})".format(gw,k,t))
         
-    
+    #--- Compressors
     # Compressors - Limit the outlet pressure of compressor to be less than 
     #               full compression (max)  and above the inlet pressure (min)    
     # Compressors
@@ -179,7 +186,7 @@ def _build_constraints_gasDA(self):
     self.constraints.compr_min = compr_min
     
     
-        
+    #--- Line Pack Def  
     # Line-pack constraints
     gflow_sr_io = {} # Gas flow (S to R) 'decomposition' to IN/OUT
     lpack_def = {}   # Line-pack definition
@@ -246,6 +253,7 @@ def _build_constraints_gasDA(self):
                         name='line_store({0},{1},{2})'.format(pl,k,t))
             
         self.constraints.gflow_rs_io = gflow_rs_io
+        self.constraints.line_store = line_store
             
     elif self.gdata.flow2dir == False:
             
@@ -253,34 +261,54 @@ def _build_constraints_gasDA(self):
             ns, nr = pl
         
             k = 'k0' # Line-pack storage defined for 'central case' k0
-        
+            
+
             for tpr, t in zip(time, time[1:]):                
                 line_store[pl,k,t] = m.addConstr(
                         var.lpack[pl,k,t],
                         gb.GRB.EQUAL,
                         var.lpack[pl,k,tpr] + var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t],
                         name='line_store({0},{1},{2})'.format(pl,k,t))
-        
+                
             t = time[0]
             k = 'k0' # Line-pack storage defined for 'central case' k0
-            line_store[pl,k,t] = m.addConstr(
-                        var.lpack[pl,k,t],
-                        gb.GRB.EQUAL,
-                        self.gdata.pplinelsini[pl] + var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t],
-                        name='line_store({0},{1},{2})'.format(pl,k,t))
-    
+            # If no pipelines have storage dont set initial
+            if self.gdata.pplinels[pl] >0 :
+                
 
-        self.constraints.line_store = line_store
+                line_store[pl,k,t] = m.addConstr(
+                            var.lpack[pl,k,t],
+                            gb.GRB.EQUAL,
+                            self.gdata.pplinelsini[pl] + var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t],
+                            name='line_store({0},{1},{2})'.format(pl,k,t))
+            # Otherwise system is in steady state
+            else:
+                line_store[pl,k,t] = m.addConstr(
+                            var.lpack[pl,k,t],
+                            gb.GRB.EQUAL,
+                            var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t],
+                            name='line_store({0},{1},{2})'.format(pl,k,t))
+            
+
         
-    # Line-pack end of optimization (only for case k0) 
-    k = 'k0'
-    lpack_end  = m.addConstr(
-            gb.quicksum(var.lpack[pl, k, time[-1]] for pl in pplines),
-            gb.GRB.GREATER_EQUAL,
-            gb.quicksum(self.gdata.pplinelsini[pl] for pl in pplines),
-            name='lpack_end')
     
-    self.constraints.lpack_end = lpack_end
+        self.constraints.line_store = line_store
+                
+                
+    #--- Linepack End of Day
+    # At end of optimization the total linepack should be within Line-pack end of optimization (only for case k0) 
+    # Only need this constraint if linepack parameters are defined
+    if sum(self.gdata.pplinels.values()) >0:
+        
+        k = 'k0'
+        
+        lpack_end  = m.addConstr(
+                gb.quicksum(var.lpack[pl, k, time[-1]] for pl in pplines),
+                gb.GRB.GREATER_EQUAL,
+                gb.quicksum(self.gdata.pplinelsini[pl] for pl in pplines),
+                name='lpack_end')
+        
+        self.constraints.lpack_end = lpack_end
     
     # Gas Storage
     

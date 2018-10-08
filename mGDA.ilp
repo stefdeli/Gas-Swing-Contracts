@@ -1,0 +1,26 @@
+\ Model _copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ gflow_sr_log(('ng102',_'ng101')k0,t11):
+   gflow_sr(('ng102',_'ng101'),k0,t11) <= 10000
+ lpack_def(('ng102',_'ng101'),k0,t10): lpack(('ng102',_'ng101'),k0,t10)
+   = 0
+ gflow_sr_io(('ng102',_'ng101')k0t11): gflow_sr(('ng102',_'ng101'),k0,t11)
+   - 0.5 qin_sr(('ng102',_'ng101'),k0,t11)
+   - 0.5 qout_sr(('ng102',_'ng101'),k0,t11) = 0
+ lpack_def(('ng102',_'ng101'),k0,t11): lpack(('ng102',_'ng101'),k0,t11)
+   = 0
+ line_store(('ng102',_'ng101'),k0,t11): - lpack(('ng102',_'ng101'),k0,t10)
+   + lpack(('ng102',_'ng101'),k0,t11) - qin_sr(('ng102',_'ng101'),k0,t11)
+   + qout_sr(('ng102',_'ng101'),k0,t11) = 0
+ gas_balance(ng101,k0,t11): qout_sr(('ng102',_'ng101'),k0,t11)
+   = 11831.16143232
+Bounds
+ gflow_sr(('ng102',_'ng101'),k0,t11) free
+ lpack(('ng102',_'ng101'),k0,t10) free
+ lpack(('ng102',_'ng101'),k0,t11) free
+ qin_sr(('ng102',_'ng101'),k0,t11) free
+ qout_sr(('ng102',_'ng101'),k0,t11) free
+End

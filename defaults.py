@@ -2,7 +2,7 @@ filepath_gas = 'Data/SimpleNetwork/GasData'
 filepath_elec = 'Data/SimpleNetwork/ElecData'
 
 # Comment
-bigM = 1e4
+bigM = 1e6
 
 ## Gas System Data
 gnodefile = filepath_gas + '/GasNodes.csv'
@@ -12,7 +12,7 @@ gload_file = filepath_gas + '/GasLoad.csv'
 gstoragefile = filepath_gas + '/GasStorage.csv'
 
 # Number of fixed pressure points used for Weymooth outer approximation
-Nfxpoints = 4 
+Nfxpoints = 100
 
 ## Electricity System Data
 
@@ -36,3 +36,7 @@ VOLL = 10000 # Value of Lost Load
 
 # The final line pack deviatons that is allowed, i.e. +/- 10% of the initial
 FINAL_LP_DEV=0.1 # 0.1 = 10%
+
+# Premium for deployment of reserves 
+RESERVES_UP_PREMIUM = 1.1
+RESERVES_DN_PREMIUM = 0.95
