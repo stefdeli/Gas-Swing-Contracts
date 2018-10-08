@@ -32,7 +32,7 @@ GasPriceDA_file = filepath_elec + '/GasPriceDA.csv'
 GasPriceScenRT_file = filepath_elec + '/GasPriceScenRT.csv'
 GasPriceScenRTprob_file = filepath_elec + '/GasPriceScenRT_prob.csv'
 
-VOLL = 1000 # Value of Lost Load
+VOLL = 10000 # Value of Lost Load
 
 # The final line pack deviatons that is allowed, i.e. +/- 10% of the initial
 FINAL_LP_DEV=0.1 # 0.1 = 10%
