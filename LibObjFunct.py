@@ -46,11 +46,11 @@ def _build_objective_StochElecDA(self):
     # Probability                
     gb.quicksum(scenarioprob[s] * (                                                                                                
     # Non Gas Generators
-    gb.quicksum(gendata.lincost[gen]*(var.RUp[gen,s,t]-var.RDn[gen,s,t]) for gen in nongfpp for t in time) +
+    gb.quicksum(gendata.lincost[gen]*(defaults.RESERVES_UP_PREMIUM*var.RUp[gen,s,t]-defaults.RESERVES_DN_PREMIUM*var.RDn[gen,s,t]) for gen in nongfpp for t in time) +
     # Gas Generators 
     gb.quicksum(gaspriceRT[t][gen][scengprt[s]]*HR[gen]*(defaults.RESERVES_UP_PREMIUM*var.RUp[gen,s,t]-defaults.RESERVES_DN_PREMIUM*var.RDn[gen,s,t]) for gen in gfpp for t in time) +
     # Gas Generators with Contracts
-    gb.quicksum(SCdata.lambdaC[sc,gen]*(var.RUpSC[gen,s,t]-var.RDnSC[gen,s,t]) for gen in gfpp for sc in swingcontr for t in time) +
+    gb.quicksum(SCdata.lambdaC[sc,gen]*(defaults.RESERVES_UP_PREMIUM*var.RUpSC[gen,s,t]-defaults.RESERVES_DN_PREMIUM*var.RDnSC[gen,s,t]) for gen in gfpp for sc in swingcontr for t in time) +
     # Load Shedding Penalty
     gb.quicksum(defaults.VOLL * var.Lshed[s,t] for t in time)) for s in scenarios),
     gb.GRB.MINIMIZE)
