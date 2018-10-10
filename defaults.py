@@ -1,5 +1,10 @@
-filepath_gas = 'Data/SimpleNetwork/GasData'
-filepath_elec = 'Data/SimpleNetwork/ElecData'
+#folder='Data/IntegratedMarketStochastic'
+folder='Data/SimpleNetwork_Conor'
+
+
+
+filepath_gas = folder+'/GasData'
+filepath_elec = folder+'/ElecData'
 
 # Comment
 bigM = 1e5

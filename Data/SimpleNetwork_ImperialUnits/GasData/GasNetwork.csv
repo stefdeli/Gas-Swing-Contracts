@@ -1,0 +1,3 @@
+fromNode,toNode,K,capacity,type,cr,Klp,lsini,biflow
+ng102,ng101,0.375,278,1,1,0.026,900,2
+
