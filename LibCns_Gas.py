@@ -43,18 +43,27 @@ def _build_constraints_gasDA(self):
     # Gas pressure limits
     self.constraints.pr_min = {}
     self.constraints.pr_max = {}
+    self.constraints.slack_pressure = {}
+    
     
     for gn in gnodes:
         for t in time: 
             for k in sclim:
-                self.constraints.pr_max = m.addConstr(var.pr[gn,k,t],
+                if gn=='gn102':
+                    self.constraints.pr_max = m.addConstr(var.pr[gn,k,t],
+                                                      gb.GRB.EQUAL, self.gdata.gnodedf['PresMax'][gn],
+                                                      name="PresMax({0},{1},{2})".format(gn,k,t))   
+                else:
+                        
+                    self.constraints.pr_max = m.addConstr(var.pr[gn,k,t],
                                                       gb.GRB.LESS_EQUAL, self.gdata.gnodedf['PresMax'][gn],
                                                       name="PresMax({0},{1},{2})".format(gn,k,t))
                 
-                self.constraints.pr_min = m.addConstr(var.pr[gn,k,t],
+                    self.constraints.pr_min = m.addConstr(var.pr[gn,k,t],
                                                       gb.GRB.GREATER_EQUAL, self.gdata.gnodedf['PresMin'][gn],
                                                       name="PresMin({0},{1},{2})".format(gn,k,t))
-                
+
+          
     # --- Outer Approximation of Weymouth
     # Create Points for Outer Approximation 
     # Pressure discretization at every gas node
@@ -69,11 +78,14 @@ def _build_constraints_gasDA(self):
     Kpos = defaultdict(lambda: defaultdict(list) )    
     
     for pl in self.gdata.pplinepassive:
-        ns, nr = pl
+        ns, nr = pl # Pipeline between nodes ns and nr
                    
         for vs, vr in list(itertools.product(range(self.gdata.Nfxpp), repeat = 2)):                                  
-            if prd[ns][vs] > prd[nr][vr]:                    
-                Kpos[pl][vs, vr] = self.gdata.pplineK[pl]/np.sqrt(np.square(prd[ns][vs]) - np.square(prd[nr][vr])) 
+            if prd[ns][vs] > prd[nr][vr]:
+                pres_s = prd[ns][vs]
+                pres_r = prd[nr][vr]
+                K =     self.gdata.pplineK[pl]             
+                Kpos[pl][vs, vr] = K/np.sqrt(np.square(pres_s) - np.square(pres_r)) 
             
     self.gdata.Kpos = Kpos
    
@@ -116,9 +128,10 @@ def _build_constraints_gasDA(self):
                         var.gflow_sr[pl,k,t],
                         gb.GRB.LESS_EQUAL,
                         Kpos[pl][vs,vr] * prd[ns][vs] * var.pr[ns,k,t] - 
-                        Kpos[pl][vs,vr] * prd[nr][vr] * var.pr[nr,k,t] +
-                        bigM * (1.0 - u[pl,k,t]),
-                        name="gflow_sr_lim({0}{1}{2})".format(pl,k,t))
+                        Kpos[pl][vs,vr] * prd[nr][vr] * var.pr[nr,k,t] 
+                        +  bigM * (1.0 - u[pl,k,t])
+                        ,
+                        name="gflow_sr_lim({0}{1},{2})".format(pl,k,t))
     
     self.constraints.gflow_sr_log = gflow_sr_log                
     self.constraints.gflow_sr_lim = gflow_sr_lim    
@@ -204,8 +217,11 @@ def _build_constraints_gasDA(self):
                         gb.GRB.EQUAL,
                         (var.qin_sr[pl,k,t] + var.qout_sr[pl,k,t]) * 0.5,
                         name='gflow_sr_io({0}{1}{2})'.format(pl,k,t))        
-            
-            
+            # Separate for debugging purposes
+    for pl in pplines:
+        ns, nr = pl
+        for k in sclim: 
+            for t in time:           
                 lpack_def[pl,k,t] = m.addConstr(
                         var.lpack[pl,k,t],
                         gb.GRB.EQUAL,
@@ -257,39 +273,42 @@ def _build_constraints_gasDA(self):
         self.constraints.line_store = line_store
             
     elif self.gdata.flow2dir == False:
+        
+        kappa = 'k0' # Line-pack storage defined for 'central case' k0
             
         for pl in pplines:
             ns, nr = pl
-        
-            k = 'k0' # Line-pack storage defined for 'central case' k0
-            
-
-            for tpr, t in zip(time, time[1:]):                
-                line_store[pl,k,t] = m.addConstr(
-                        var.lpack[pl,k,t],
-                        gb.GRB.EQUAL,
-                        var.lpack[pl,k,tpr] + var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t],
-                        name='line_store({0},{1},{2})'.format(pl,k,t))
+            for k in sclim: # For every Scenario
                 
-            t = time[0]
-            k = 'k0' # Line-pack storage defined for 'central case' k0
-            # If no pipelines have storage dont set initial
-            if self.gdata.pplinels[pl] >0 :
+                # For all time steps (except for t=0) 
                 
-
-                line_store[pl,k,t] = m.addConstr(
+                for tpr, t in zip(time, time[1:]):                
+                    line_store[pl,k,t] = m.addConstr(
                             var.lpack[pl,k,t],
                             gb.GRB.EQUAL,
-                            self.gdata.pplinelsini[pl] + var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t],
+                            var.lpack[pl,kappa,tpr] + var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t],
                             name='line_store({0},{1},{2})'.format(pl,k,t))
-            # Otherwise system is in steady state
-            else:
-                line_store[pl,k,t] = m.addConstr(
-                            var.lpack[pl,k,t],
-                            gb.GRB.EQUAL,
-                            var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t],
-                            name='line_store({0},{1},{2})'.format(pl,k,t))
-            
+                
+                # Time =0   Either Steady State or Transient 
+                t = time[0]
+                # If pipelines have linepack storage then add initial value
+                if self.gdata.pplinels[pl] >0 :
+                    
+    
+                    line_store[pl,k,t] = m.addConstr(
+                                var.lpack[pl,k,t],
+                                gb.GRB.EQUAL,
+                                self.gdata.pplinelsini[pl] + var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t],
+                                name='line_store({0},{1},{2})'.format(pl,k,t))
+                
+                # Otherwise system is in steady state and there is no initial linepack
+                else:
+                    line_store[pl,k,t] = m.addConstr(
+                                var.lpack[pl,k,t],
+                                gb.GRB.EQUAL,
+                                var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t],
+                                name='line_store({0},{1},{2})'.format(pl,k,t))
+                
 
         
     
@@ -299,8 +318,10 @@ def _build_constraints_gasDA(self):
     #--- Linepack End of Day
     # At end of optimization the total linepack should be within Line-pack end of optimization (only for case k0) 
     # Only need this constraint if linepack parameters are defined
+    
+    
     if sum(self.gdata.pplinels.values()) >0:
-        
+       
         k = 'k0'
         
         lpack_end  = m.addConstr(
@@ -310,6 +331,7 @@ def _build_constraints_gasDA(self):
                 name='lpack_end')
         
         self.constraints.lpack_end = lpack_end
+    
     
     # Gas Storage
     
@@ -355,6 +377,7 @@ def _build_constraints_gasDA(self):
     Pgen = self.gdata.Pgen 
     PgenSC = self.gdata.PgenSC 
     RSC = self.gdata.RSC 
+    HR =  self.gdata.generatorinfo.HR
         
     # if bi-directional flow add in gas balance flow from Receiving to Sending end    
     if self.gdata.flow2dir == True:
@@ -376,9 +399,9 @@ def _build_constraints_gasDA(self):
         
     elif self.gdata.flow2dir == False:
         
-        for k in sclim:
+        for t in time:
             for gn in gnodes:
-                for t in time:                
+                for k in sclim:
                     gas_balance[gn,k,t] = m.addConstr(
                             gb.quicksum(var.gprod[gw,k,t] for gw in self.gdata.Map_Gn2Gp[gn]) +
                             gb.quicksum(var.qout_sr[pl,k,t] for pl in self.gdata.nodetoinpplines[gn]) -
@@ -386,7 +409,7 @@ def _build_constraints_gasDA(self):
                             gb.quicksum(var.gsout[gs,k,t] - var.gsin[gs,k,t] for gs in self.gdata.Map_Gn2Gs[gn]),
                             gb.GRB.EQUAL,
                             self.gdata.gasload[gn][t]+
-                            gb.quicksum((Pgen[gen][t]+PgenSC[gen][t]+RSC[gen,k,t])*self.gdata.generatorinfo.HR[gen] for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn] ),
+                            gb.quicksum((Pgen[gen][t]+PgenSC[gen][t]+RSC[gen,k,t])*HR[gen] for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn] ),
                             name='gas_balance({0},{1},{2})'.format(gn,k,t))
 
 

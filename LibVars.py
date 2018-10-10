@@ -88,9 +88,10 @@ def _build_variables_gasDA(self):
         for gs in self.gdata.gstorage:
             for t in time:
                 for k in sclim:
-                    self.variables.gsin[gs,k,t] = m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxInFlow'][gs])
-                    self.variables.gsout[gs,k,t] = m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxOutFlow'][gs])
-                    self.variables.gstore[gs,k,t] = m.addVar(lb=self.gdata.gstorageinfo['MinStore'][gs], ub=self.gdata.gstorageinfo['MaxStore'][gs])
+                    self.variables.gsin[gs,k,t] = m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxInFlow'][gs],name='gsin({0},{1},{2})'.format(gs,t,k))
+                    self.variables.gsout[gs,k,t] = m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxOutFlow'][gs],name='gsout({0},{1},{2})'.format(gs,t,k))
+                    self.variables.gstore[gs,k,t] = m.addVar(lb=self.gdata.gstorageinfo['MinStore'][gs], 
+                                                             ub=self.gdata.gstorageinfo['MaxStore'][gs],name='gstore({0},{1},{2})'.format(gs,t,k))
 
         m.update()
         

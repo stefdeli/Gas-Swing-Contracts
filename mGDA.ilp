@@ -3,21 +3,31 @@
 Minimize
  
 Subject To
- gflow_sr_log(('ng102',_'ng101')k0,t11):
-   gflow_sr(('ng102',_'ng101'),k0,t11) <= 10000
- lpack_def(('ng102',_'ng101'),k0,t10): lpack(('ng102',_'ng101'),k0,t10)
-   = 0
+ PresMax(ng101,k0,t10): pres(ng101,k0,t10) = 50000
+ PresMax(ng101,k0,t11): pres(ng101,k0,t11) = 50000
+ PresMax(ng102,k0,t10): pres(ng102,k0,t10) <= 50000
+ PresMax(ng102,k0,t11): pres(ng102,k0,t11) <= 50000
+ gflow_sr_lim(('ng102',_'ng101')k0,t11):
+   1.96212249303926 pres(ng101,k0,t11)
+   - 1.997636022325038 pres(ng102,k0,t11)
+   + gflow_sr(('ng102',_'ng101'),k0,t11) <= 0
  gflow_sr_io(('ng102',_'ng101')k0t11): gflow_sr(('ng102',_'ng101'),k0,t11)
    - 0.5 qin_sr(('ng102',_'ng101'),k0,t11)
    - 0.5 qout_sr(('ng102',_'ng101'),k0,t11) = 0
- lpack_def(('ng102',_'ng101'),k0,t11): lpack(('ng102',_'ng101'),k0,t11)
-   = 0
+ lpack_def(('ng102',_'ng101'),k0,t10): - 0.013 pres(ng101,k0,t10)
+   - 0.013 pres(ng102,k0,t10) + lpack(('ng102',_'ng101'),k0,t10) = 0
+ lpack_def(('ng102',_'ng101'),k0,t11): - 0.013 pres(ng101,k0,t11)
+   - 0.013 pres(ng102,k0,t11) + lpack(('ng102',_'ng101'),k0,t11) = 0
  line_store(('ng102',_'ng101'),k0,t11): - lpack(('ng102',_'ng101'),k0,t10)
    + lpack(('ng102',_'ng101'),k0,t11) - qin_sr(('ng102',_'ng101'),k0,t11)
    + qout_sr(('ng102',_'ng101'),k0,t11) = 0
  gas_balance(ng101,k0,t11): qout_sr(('ng102',_'ng101'),k0,t11)
    = 11831.16143232
 Bounds
+ pres(ng101,k0,t10) free
+ pres(ng101,k0,t11) free
+ pres(ng102,k0,t10) free
+ pres(ng102,k0,t11) free
  gflow_sr(('ng102',_'ng101'),k0,t11) free
  lpack(('ng102',_'ng101'),k0,t10) free
  lpack(('ng102',_'ng101'),k0,t11) free
