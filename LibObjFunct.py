@@ -85,6 +85,7 @@ def _build_objective_ElecRT(self):
     
     gaspriceRT = self.edata.GasPriceRT
     
+    HR=self.edata.generatorinfo.HR
     SCdata = self.edata.SCdata
     swingcontr = self.edata.swingcontracts
     time = self.edata.time
@@ -97,10 +98,14 @@ def _build_objective_ElecRT(self):
     # !NB Re-dispatch cost = Day-ahead energy cost (No premium)
     m.setObjective(              
     # Real-time redispatch cost                 
-    gb.quicksum(scenarioprob[s] * (                                                                                                
+    gb.quicksum(scenarioprob[s] * (  
+    # Non Gas Generators                                                                                              
     gb.quicksum(gendata.lincost[gen]*(var.RUp[gen,s,t]-var.RDn[gen,s,t]) for gen in nongfpp for t in time) +
-    gb.quicksum(gaspriceRT[t][gen]['spm']*(var.RUp[gen,s,t]-var.RDn[gen,s,t]) for gen in gfpp for t in time) +
-    gb.quicksum(SCdata.lambdaC[sc,gen]*(var.RUpSC[gen,s,t]-var.RDnSC[gen,s,t]) for gen in gfpp for sc in swingcontr for t in time) +
+    # Gas Generators (No Contract)
+    gb.quicksum(gaspriceRT[t][gen]['spm']*HR[gen]*(defaults.RESERVES_UP_PREMIUM*var.RUp[gen,s,t]-defaults.RESERVES_DN_PREMIUM*var.RDn[gen,s,t]) for gen in gfpp for t in time) +
+    # Gas Generators with Contracts
+    gb.quicksum(SCdata.lambdaC[sc,gen]*HR[gen]*(defaults.RESERVES_UP_PREMIUM*var.RUpSC[gen,s,t]-defaults.RESERVES_DN_PREMIUM*var.RDnSC[gen,s,t]) for gen in gfpp for sc in swingcontr for t in time) +
+    # Load Shedding Penalty
     gb.quicksum(defaults.VOLL * var.Lshed[s,t] for t in time)) for s in scenarios),
     gb.GRB.MINIMIZE)
     
@@ -124,7 +129,7 @@ def _build_objective_gasRT(self):
     k = 'k0' # Optimize for 'central case' k0
     
     m.setObjective(gb.quicksum(scenarioprob[s] * (
-                   gb.quicksum(wdata.Cost[gw]*(var.gprodUp[gw,s,t] - var.gprodDn[gw,s,t] ) for gw in wells for t in time) +
+                   gb.quicksum(wdata.Cost[gw]*(defaults.RESERVES_UP_PREMIUM*var.gprodUp[gw,s,t] - defaults.RESERVES_DN_PREMIUM*var.gprodDn[gw,s,t] ) for gw in wells for t in time) +
                    gb.quicksum(defaults.VOLL * var.gshed[gn,s,t] for gn in gnodes for t in time) ) for s in scenarios),
                    gb.GRB.MINIMIZE) 
     

@@ -115,7 +115,7 @@ def _build_variables_gasRT(self,mtype,dispatchElecRT):
         
     
     
-    self.variables.prrt = {}            # Nodal pressure : Real-time
+    self.variables.pr_rt = {}            # Nodal pressure : Real-time
     
     self.variables.gflow_sr_rt = {}     # Gas flow from sending to receiving end : Real-time   
     
@@ -136,7 +136,7 @@ def _build_variables_gasRT(self,mtype,dispatchElecRT):
         for t in time:
         
             for gn in gnodes:
-                self.variables.prrt[gn,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='pres_rt({0},{1},{2})'.format(gn,s,t))
+                self.variables.pr_rt[gn,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='pres_rt({0},{1},{2})'.format(gn,s,t))
                 self.variables.gshed[gn,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='gshed({0},{1},{2})'.format(gn,s,t))
                 
             for pl in pplines:
