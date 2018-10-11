@@ -582,12 +582,12 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
                 compr_rt_max[pl,s] = m.addConstr(
                         var.pr_rt[nr,s,t],
                         gb.GRB.LESS_EQUAL,
-                        self.gdata.pplinecr[pl] * var.pr[ns,s,t],
+                        self.gdata.pplinecr[pl] * var.pr_rt[ns,s,t],
                         name = 'compr_rt_max({0}{1}{2})'.format(pl,s,t) )
                 compr_rt_min[pl,s] = m.addConstr(
                         var.pr_rt[ns,s,t],
                         gb.GRB.LESS_EQUAL,
-                        var.pr[nr,s,t],
+                        var.pr_rt[nr,s,t],
                         name = 'compr_rt_min({0}{1}{2})'.format(pl,s,t) )
     
     self.constraints.compr_rt_max = compr_rt_max   

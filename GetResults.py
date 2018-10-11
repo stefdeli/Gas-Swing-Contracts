@@ -153,5 +153,7 @@ def _results_gasRT(self, f2d):
     
     r.pr_rt = pd.DataFrame([[var.pr_rt[ng,k,t].x for ng in self.gdata.gnodeorder] for t in time for k in scenarios], index=index, columns=self.gdata.gnodeorder)
     
-   
-    
+    r.gflow_sr_rt = pd.DataFrame([[var.gflow_sr_rt[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in scenarios], index=index, columns=self.gdata.pplineorder)
+    r.qin_sr_rt = pd.DataFrame([[var.qin_sr_rt[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in scenarios], index=index, columns=self.gdata.pplineorder)    
+    r.qout_sr_rt = pd.DataFrame([[var.qout_sr_rt[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in scenarios], index=index, columns=self.gdata.pplineorder)    
+      

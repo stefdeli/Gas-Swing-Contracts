@@ -173,51 +173,55 @@ class GasDA():
         self.model.update()
 
 
-
-Error_df=pd.DataFrame()
-for Nx in [20]:
-    print('Testing Nx= {0}'.format(Nx))
-    mGDA = GasDA(dispatchElecDA,f2d)
-    mGDA.gdata.Nfxpp=Nx
-    # Rebuild model with new parameter
-    mGDA._build_model()
-    
-#mGDA.model.params.MIPGap = 0.0
-#mGDA.model.params.IntFeasTol = 1e-9
-
-#mGDA.model.computeIIS()
-#mGDA.model.write("mGDA.ilp")
-    mGDA.model.write("mGDA.lp")  
-    mGDA.optimize()
-    mGDA.get_results(f2d)
-
-    # Extract Data for Comparison
-    Scen_Dict={}
-    pl = mGDA.gdata.pplineorder[0]
-    for scen_ix in mGDA.gdata.sclim:
-        Lpack      = mGDA.results.lpack[pl].xs(scen_ix,level=1).rename('Lpack')
-        Prod       = mGDA.results.gprod['gw1'].xs(scen_ix,level=1).rename('Production')
-        qin_sr     = mGDA.results.qin_sr[pl].xs(scen_ix,level=1).rename('qin_sr')
-        qout_sr    = mGDA.results.qout_sr[pl].xs(scen_ix,level=1).rename('qout_sr')
-        Flow       = mGDA.results.gflow_sr[pl].xs(scen_ix,level=1).rename('Flow')
-        Sp         = mGDA.results.pr[pl[0]].xs(scen_ix,level=1).rename('Send Pressure')
-        Rp         = mGDA.results.pr[pl[1]].xs(scen_ix,level=1).rename('Receive Pressure')
-        ActualFlow = (mGDA.gdata.pplineK[pl]*np.sqrt(Sp**2-Rp**2)).rename('Actual Flow')
-        Error      = np.abs(ActualFlow-Flow).rename('Error')
-        Temp=pd.concat([Lpack,Prod,qin_sr,qout_sr,Flow,Sp,Rp,ActualFlow,Error
-                ],axis=1)   
-        Scen_Dict[scen_ix]=Temp
-    Error_df=Error_df.join((Scen_Dict['k0']['Error']).rename('Error_'+str(Nx)),how='right')
-
-Scen_Dict['k0'].loc['t1']
-
-
+mGDA = GasDA(dispatchElecDA,f2d)
+mGDA.optimize()
+mGDA.get_results(f2d)
 dispatchGasDA = expando()
 dispatchGasDA.gprod   = mGDA.results.gprod
 dispatchGasDA.qin_sr  = mGDA.results.qin_sr
 dispatchGasDA.qout_sr = mGDA.results.qout_sr
 dispatchGasDA.gsin    = mGDA.results.gsin
 dispatchGasDA.gsout   = mGDA.results.gsout
+
+## Look at the effects of discretizatoin on the error
+#Error_df=pd.DataFrame()
+#for Nx in [20]:
+#    print('Testing Nx= {0}'.format(Nx))
+#    mGDA = GasDA(dispatchElecDA,f2d)
+#    mGDA.gdata.Nfxpp=Nx
+#    # Rebuild model with new parameter
+#    mGDA._build_model()
+#    
+##mGDA.model.params.MIPGap = 0.0
+##mGDA.model.params.IntFeasTol = 1e-9
+#
+##mGDA.model.computeIIS()
+##mGDA.model.write("mGDA.ilp")
+#    mGDA.model.write("mGDA.lp")  
+#    mGDA.optimize()
+#    mGDA.get_results(f2d)
+#
+#    # Extract Data for Comparison
+#    Scen_Dict={}
+#    pl = mGDA.gdata.pplineorder[0]
+#    for scen_ix in mGDA.gdata.sclim:
+#        Lpack      = mGDA.results.lpack[pl].xs(scen_ix,level=1).rename('Lpack')
+#        Prod       = mGDA.results.gprod['gw1'].xs(scen_ix,level=1).rename('Production')
+#        qin_sr     = mGDA.results.qin_sr[pl].xs(scen_ix,level=1).rename('qin_sr')
+#        qout_sr    = mGDA.results.qout_sr[pl].xs(scen_ix,level=1).rename('qout_sr')
+#        Flow       = mGDA.results.gflow_sr[pl].xs(scen_ix,level=1).rename('Flow')
+#        Sp         = mGDA.results.pr[pl[0]].xs(scen_ix,level=1).rename('Send Pressure')
+#        Rp         = mGDA.results.pr[pl[1]].xs(scen_ix,level=1).rename('Receive Pressure')
+#        ActualFlow = (mGDA.gdata.pplineK[pl]*np.sqrt(Sp**2-Rp**2)).rename('Actual Flow')
+#        Error      = np.abs(ActualFlow-Flow).rename('Error')
+#        Temp=pd.concat([Lpack,Prod,qin_sr,qout_sr,Flow,Sp,Rp,ActualFlow,Error
+#                ],axis=1)   
+#        Scen_Dict[scen_ix]=Temp
+#    Error_df=Error_df.join((Scen_Dict['k0']['Error']).rename('Error_'+str(Nx)),how='right')
+#Scen_Dict['k0'].loc['t1']
+
+
+
 
 print ('########################################################')
 print ('Gas dispatch day-ahead - Solved')
@@ -292,28 +296,28 @@ dispatchElecRT.windscenarios=mERT.edata.windscen_index
 
 
 
-# Extract Data for Comparison
-
-WindCap=mSEDA.edata.windinfo.capacity.values
-DA_Wind=mSEDA.results.WindDA['w1']
-S1_Wind = WindCap*mSEDA.edata.windscen['w1']['s1']
-S2_Wind = WindCap*mSEDA.edata.windscen['w1']['s2']
-S1_Err=DA_Wind-S1_Wind
-S2_Err=DA_Wind-S2_Wind
-
-RT_Gen1_S1=pd.concat([S1_Err.rename('WindErr'),                    
-             (mERT.results.RUp['g1'].xs('s1',level=1)-             
-             mERT.results.RDn['g1'].xs('s1',level=1)).rename('RTot'),
-             mERT.results.RUp['g1'].xs('s1',level=1).rename('Rup'),             
-             mERT.results.RDn['g1'].xs('s1',level=1).rename('RDn'),
-             ],axis=1)
-             
-RT_Gen1_S2=pd.concat([S2_Err.rename('WindErr'),                    
-             (mERT.results.RUp['g1'].xs('s2',level=1)-             
-             mERT.results.RDn['g1'].xs('s2',level=1)).rename('RTot'),
-             mERT.results.RUp['g1'].xs('s2',level=1).rename('Rup'),             
-             mERT.results.RDn['g1'].xs('s2',level=1).rename('RDn'),
-             ],axis=1)
+## Extract Data for Comparison
+#
+#WindCap=mSEDA.edata.windinfo.capacity.values
+#DA_Wind=mSEDA.results.WindDA['w1']
+#S1_Wind = WindCap*mSEDA.edata.windscen['w1']['s1']
+#S2_Wind = WindCap*mSEDA.edata.windscen['w1']['s2']
+#S1_Err=DA_Wind-S1_Wind
+#S2_Err=DA_Wind-S2_Wind
+#
+#RT_Gen1_S1=pd.concat([S1_Err.rename('WindErr'),                    
+#             (mERT.results.RUp['g1'].xs('s1',level=1)-             
+#             mERT.results.RDn['g1'].xs('s1',level=1)).rename('RTot'),
+#             mERT.results.RUp['g1'].xs('s1',level=1).rename('Rup'),             
+#             mERT.results.RDn['g1'].xs('s1',level=1).rename('RDn'),
+#             ],axis=1)
+#             
+#RT_Gen1_S2=pd.concat([S2_Err.rename('WindErr'),                    
+#             (mERT.results.RUp['g1'].xs('s2',level=1)-             
+#             mERT.results.RDn['g1'].xs('s2',level=1)).rename('RTot'),
+#             mERT.results.RUp['g1'].xs('s2',level=1).rename('Rup'),             
+#             mERT.results.RDn['g1'].xs('s2',level=1).rename('RDn'),
+#             ],axis=1)
 
 
 class GasRT():
@@ -385,30 +389,32 @@ else:
     mGRT.model.computeIIS()
     mGRT.model.write("mGRT.ilp")
 
-p=mGRT.gdata.pplineorder[0]
-S1_Redispatch=(mERT.results.RUp['g1'].xs('s1',level=1)-             
-             mERT.results.RDn['g1'].xs('s1',level=1)).rename('Redispatch_MW')
-
-RT_Gas_S1=pd.concat([ S1_Redispatch,
-                     (S1_Redispatch*mERT.edata.generatorinfo.loc['g1'].HR).rename('Redispatch'),
-             ( mGRT.results.gprodUp['gw1'].xs('s1',level=1)-             
-              mGRT.results.gprodDn['gw1'].xs('s1',level=1)).rename('GprodTot'),
-             mGRT.results.gprodUp['gw1'].xs('s1',level=1).rename('Rup'),             
-             mGRT.results.gprodDn['gw1'].xs('s1',level=1).rename('RDn'),
-            mGRT.results.lpack_rt[pl].xs('s1',level=1).rename('Lpack'),
-             ],axis=1)
-             
-S2_Redispatch=(mERT.results.RUp['g1'].xs('s2',level=1)-             
-             mERT.results.RDn['g1'].xs('s2',level=1)).rename('Redispatch_MW')
-             
-RT_Gas_S2=pd.concat([ S2_Redispatch,
-                     (S2_Redispatch*mERT.edata.generatorinfo.loc['g1'].HR).rename('Redispatch'),
-             ( mGRT.results.gprodUp['gw1'].xs('s2',level=1)-             
-              mGRT.results.gprodDn['gw1'].xs('s2',level=1)).rename('GprodTot'),
-             mGRT.results.gprodUp['gw1'].xs('s2',level=1).rename('Rup'),             
-             mGRT.results.gprodDn['gw1'].xs('s2',level=1).rename('RDn'),
-            mGRT.results.lpack_rt[pl].xs('s2',level=1).rename('Lpack'),
-             ],axis=1)
-             
-RT_Gas_S2[['GprodTot','Redispatch']].plot()
+#
+## Results for Comparison
+#p=mGRT.gdata.pplineorder[0]
+#S1_Redispatch=(mERT.results.RUp['g1'].xs('s1',level=1)-             
+#             mERT.results.RDn['g1'].xs('s1',level=1)).rename('Redispatch_MW')
+#
+#RT_Gas_S1=pd.concat([ S1_Redispatch,
+#                     (S1_Redispatch*mERT.edata.generatorinfo.loc['g1'].HR).rename('Redispatch'),
+#             ( mGRT.results.gprodUp['gw1'].xs('s1',level=1)-             
+#              mGRT.results.gprodDn['gw1'].xs('s1',level=1)).rename('GprodTot'),
+#             mGRT.results.gprodUp['gw1'].xs('s1',level=1).rename('Rup'),             
+#             mGRT.results.gprodDn['gw1'].xs('s1',level=1).rename('RDn'),
+#            mGRT.results.lpack_rt[pl].xs('s1',level=1).rename('Lpack'),
+#             ],axis=1)
+#             
+#S2_Redispatch=(mERT.results.RUp['g1'].xs('s2',level=1)-             
+#             mERT.results.RDn['g1'].xs('s2',level=1)).rename('Redispatch_MW')
+#             
+#RT_Gas_S2=pd.concat([ S2_Redispatch,
+#                     (S2_Redispatch*mERT.edata.generatorinfo.loc['g1'].HR).rename('Redispatch'),
+#             ( mGRT.results.gprodUp['gw1'].xs('s2',level=1)-             
+#              mGRT.results.gprodDn['gw1'].xs('s2',level=1)).rename('GprodTot'),
+#             mGRT.results.gprodUp['gw1'].xs('s2',level=1).rename('Rup'),             
+#             mGRT.results.gprodDn['gw1'].xs('s2',level=1).rename('RDn'),
+#            mGRT.results.lpack_rt[pl].xs('s2',level=1).rename('Lpack'),
+#             ],axis=1)
+#             
+#RT_Gas_S2[['GprodTot','Redispatch']].plot()
 
