@@ -191,7 +191,7 @@ def _build_variables_elecDA(self):
         var.PgenSC = {}
         for gen in gfpp:
             for t in time:
-                var.PgenSC[gen,t] = m.addVar(lb=0.0, name = 'Pgen({0},{1})'.format(gen,t))
+                var.PgenSC[gen,t] = m.addVar(lb=0.0, name = 'PgenSC({0},{1})'.format(gen,t))
                 
         # Upward reserve capacity (Non-contracted Gas & Non-Gas)
         var.RCup = {}

@@ -123,14 +123,16 @@ def _build_constraints_elecDA(self):
             SCRupMax[i,t] = self.model.addConstr( 
                     var.RCupSC[i,t],
                     gb.GRB.LESS_EQUAL,
-                    gb.quicksum(var.usc[sc] * self.edata.SCP[(sc,i),t] * (SCdata.PcMax[sc,i] - SCdata.PcMin[sc,i]) for sc in swingcontracts),
+                    gb.quicksum(var.usc[sc] * self.edata.SCP[(sc,i),t] * SCdata.PcMax[sc,i]  for sc in swingcontracts)
+                    -var.PgenSC[i,t],
                     name = 'RCupSCmax({0},{1})'.format(i,t) )
             
             SCRdnMax[i,t] = self.model.addConstr( 
                     var.RCdnSC[i,t],
                     gb.GRB.LESS_EQUAL,
-                    gb.quicksum(var.usc[sc] * self.edata.SCP[(sc,i),t] * (SCdata.PcMax[sc,i] - SCdata.PcMin[sc,i]) for sc in swingcontracts),
-                    name = 'RCupSCmax({0},{1})'.format(i,t) )
+                    var.PgenSC[i,t]
+                    -gb.quicksum(var.usc[sc] * self.edata.SCP[(sc,i),t] *  SCdata.PcMin[sc,i] for sc in swingcontracts),
+                    name = 'RCupSCmin({0},{1})'.format(i,t) )
             
             
             

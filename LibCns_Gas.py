@@ -43,26 +43,34 @@ def _build_constraints_gasDA(self):
     # Gas pressure limits
     self.constraints.pr_min = {}
     self.constraints.pr_max = {}
-    self.constraints.slack_pressure = {}
+
+    self.constraints.constant_slack={}
     
+    gn=self.gdata.gnodeorder[0]
+    for tpr, t in zip(time, time[1:]):
+        self.constraints.constant_slack[tpr,t]=m.addConstr(
+        var.pr[gn,'k0',t],
+        gb.GRB.EQUAL,
+        var.pr[gn,'k0',tpr],
+        name="Constant_Slack({},{},{})".format(gn,t,tpr))
     
     for gn in gnodes:
         for t in time: 
             for k in sclim:
-                if gn=='gn102':
+                if gn=='asfd':#self.gdata.gnodeorder[1]: # Create Slack Node
                     self.constraints.pr_max = m.addConstr(var.pr[gn,k,t],
-                                                      gb.GRB.EQUAL, self.gdata.gnodedf['PresMax'][gn],
+                                                      gb.GRB.EQUAL, self.gdata.gnodedf['PresMin'][gn],
                                                       name="PresMax({0},{1},{2})".format(gn,k,t))   
                 else:
                         
-                    self.constraints.pr_max = m.addConstr(var.pr[gn,k,t],
+                    self.constraints.pr_max[gn,k,t] = m.addConstr(var.pr[gn,k,t],
                                                       gb.GRB.LESS_EQUAL, self.gdata.gnodedf['PresMax'][gn],
                                                       name="PresMax({0},{1},{2})".format(gn,k,t))
                 
-                    self.constraints.pr_min = m.addConstr(var.pr[gn,k,t],
+                    self.constraints.pr_min[gn,k,t] = m.addConstr(var.pr[gn,k,t],
                                                       gb.GRB.GREATER_EQUAL, self.gdata.gnodedf['PresMin'][gn],
                                                       name="PresMin({0},{1},{2})".format(gn,k,t))
-
+                    
           
     # --- Outer Approximation of Weymouth
     # Create Points for Outer Approximation 

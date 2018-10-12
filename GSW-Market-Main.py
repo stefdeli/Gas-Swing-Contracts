@@ -183,6 +183,45 @@ dispatchGasDA.qout_sr = mGDA.results.qout_sr
 dispatchGasDA.gsin    = mGDA.results.gsin
 dispatchGasDA.gsout   = mGDA.results.gsout
 
+
+
+Pipelines={}
+Flow_Errors=pd.DataFrame()
+SP=pd.DataFrame()
+RP=pd.DataFrame()
+scen_ix='k0'
+
+for pl in mGDA.gdata.pplineorder:
+    Lpack      = mGDA.results.lpack[pl].xs(scen_ix,level=1).rename('Lpack')
+    L_ini=mGDA.gdata.pplinelsini[pl]
+    dLpack     = Lpack.diff().rename('dLpack')
+    dLpack['t1'] = Lpack['t1']-L_ini
+    qin_sr     = mGDA.results.qin_sr[pl].xs(scen_ix,level=1).rename('qin_sr')
+    qout_sr    = mGDA.results.qout_sr[pl].xs(scen_ix,level=1).rename('qout_sr')
+    Flow       = mGDA.results.gflow_sr[pl].xs(scen_ix,level=1).rename('Flow')
+    Sp         = mGDA.results.pr[pl[0]].xs(scen_ix,level=1).rename('Send Pressure')
+    Rp         = mGDA.results.pr[pl[1]].xs(scen_ix,level=1).rename('Receive Pressure')
+    ActualFlow = (mGDA.gdata.pplineK[pl]*np.sqrt(Sp**2-Rp**2)).rename('Actual Flow')
+    Error      = np.abs(ActualFlow-Flow).rename('Error')
+    dP         = Sp-Rp.rename('PressureLoss')
+    Lpack_inj  = (qin_sr-qout_sr).rename('Lpackinj')
+    Temp=pd.concat([Lpack_inj,dLpack,Lpack,qin_sr,qout_sr,Flow,Sp,Rp,dP,Flow,ActualFlow,Error
+                ],axis=1)   
+    Pipelines[pl]=Temp
+    
+    Flow_Errors.loc[:,'Temp']=Error.values
+    Flow_Errors=Flow_Errors.rename(index=str, columns={'Temp': pl})
+    
+    SP.loc[:,'Temp']=Sp.values
+    SP=SP.rename(index=str, columns={'Temp': pl})
+    
+    RP.loc[:,'Temp']=Rp.values
+    RP=RP.rename(index=str, columns={'Temp': pl})
+
+
+Flow_Errors.plot()
+print(Pipelines[mGDA.gdata.pplineorder[0]]['Send Pressure'])
+    
 ## Look at the effects of discretizatoin on the error
 #Error_df=pd.DataFrame()
 #for Nx in [20]:
@@ -418,3 +457,4 @@ else:
 #             
 #RT_Gas_S2[['GprodTot','Redispatch']].plot()
 
+print(Temp)
