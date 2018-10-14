@@ -38,36 +38,50 @@ def _build_constraints_gasDA(self):
     
     sclim = self.gdata.sclim # Swing contract limits
     
-    #--- Define Pressure Limits 
     
+    #--- Define Pressure Limits 
+    self.constraints.slack_pressure={}
+    
+    if self.gdata.GasSlack=='FixInput':
+        gn=self.gdata.gnodeorder[0]
+        for t in time:
+            for k in sclim:
+                self.constraints.slack_pressure[gn,k,t] = m.addConstr(var.pr[gn,k,t],
+                                                      gb.GRB.EQUAL, self.gdata.gnodedf['PresMax'][gn],
+                                                      name="PresMax({0},{1},{2})".format(gn,k,t))
+                     
+    elif self.gdata.GasSlack=='FixOutput':
+        gn=self.gdata.gnodeorder[-1] # Do it for last node
+        for t in time:
+            for k in sclim:
+                self.constraints.slack_pressure[gn,k,t] = m.addConstr(var.pr[gn,k,t],
+                                                      gb.GRB.EQUAL, self.gdata.gnodedf['PresMin'][gn],
+                                                      name="PresMax({0},{1},{2})".format(gn,k,t))
+                
+        
+    elif self.gdata.GasSlack == 'ConstantOutput':
+        gn=self.gdata.gnodeorder[0]
+        for tpr, t in zip(time, time[1:]):
+            self.constraints.slack_pressure[tpr,t]=m.addConstr(
+                    var.pr[gn,'k0',t],
+                    gb.GRB.EQUAL,
+                    var.pr[gn,'k0',tpr],
+                    name="Constant_Slack({},{},{})".format(gn,t,tpr))
+
+
     # Gas pressure limits
     self.constraints.pr_min = {}
     self.constraints.pr_max = {}
 
-    self.constraints.constant_slack={}
-    
-    gn=self.gdata.gnodeorder[0]
-    for tpr, t in zip(time, time[1:]):
-        self.constraints.constant_slack[tpr,t]=m.addConstr(
-        var.pr[gn,'k0',t],
-        gb.GRB.EQUAL,
-        var.pr[gn,'k0',tpr],
-        name="Constant_Slack({},{},{})".format(gn,t,tpr))
     
     for gn in gnodes:
         for t in time: 
             for k in sclim:
-                if gn=='asfd':#self.gdata.gnodeorder[1]: # Create Slack Node
-                    self.constraints.pr_max = m.addConstr(var.pr[gn,k,t],
-                                                      gb.GRB.EQUAL, self.gdata.gnodedf['PresMin'][gn],
-                                                      name="PresMax({0},{1},{2})".format(gn,k,t))   
-                else:
-                        
-                    self.constraints.pr_max[gn,k,t] = m.addConstr(var.pr[gn,k,t],
+                self.constraints.pr_max[gn,k,t] = m.addConstr(var.pr[gn,k,t],
                                                       gb.GRB.LESS_EQUAL, self.gdata.gnodedf['PresMax'][gn],
                                                       name="PresMax({0},{1},{2})".format(gn,k,t))
                 
-                    self.constraints.pr_min[gn,k,t] = m.addConstr(var.pr[gn,k,t],
+                self.constraints.pr_min[gn,k,t] = m.addConstr(var.pr[gn,k,t],
                                                       gb.GRB.GREATER_EQUAL, self.gdata.gnodedf['PresMin'][gn],
                                                       name="PresMin({0},{1},{2})".format(gn,k,t))
                     

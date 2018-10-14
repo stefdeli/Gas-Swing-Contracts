@@ -69,7 +69,7 @@ def _build_objective_gasDA(self):
     k = 'k0' # Optimize for 'central case' k0
     
     m.setObjective(gb.quicksum(wdata.Cost[gw]*var.gprod[gw,k,t] for gw in wells for t in time)+
-                   gb.quicksum( defaults.EPS*(var.pr[pl[0],k,t]-var.pr[pl[1],k,t]) for t in time for pl in pipes),                                      
+                   gb.quicksum( self.gdata.EPS*(var.pr[pl[0],k,t]-var.pr[pl[1],k,t]) for t in time for pl in pipes),                                      
                    gb.GRB.MINIMIZE) 
     
     # NB! Gas storage costs NOT included in the objective function

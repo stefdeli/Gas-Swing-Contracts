@@ -60,6 +60,8 @@ def _load_gas_network(self,f2d):
     self.gdata.Nfxpp = defaults.Nfxpoints
     self.gdata.vpoints = ['v' + str(v) for v in range(defaults.Nfxpoints)]
     self.gdata.bigM = defaults.bigM
+    self.gdata.EPS=defaults.EPS
+    self.gdata.GasSlack=defaults.GasSlack
     
    
 
