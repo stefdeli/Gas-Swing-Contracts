@@ -15,6 +15,7 @@ import GetResults
 import gurobipy as gb
 import pandas as pd
 import numpy as np
+import itertools
 #Test Test
 
 # Stochastic Day-ahead Electricity dispatch
@@ -466,7 +467,7 @@ list1=[1e-3,1e3,0]
 list2=['FixInput', 'FixOutput', 'ConstantOutput','None']
 Results=[]
 AllResults={}
-Combinations=list(itertools.product(list1,list2,list3)) # Find combinations
+Combinations=list(itertools.product(list1,list2)) # Find combinations
 
 for i,val in enumerate(Combinations):
     mGDA.gdata.EPS=Combinations[i][0]
