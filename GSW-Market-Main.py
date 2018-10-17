@@ -459,63 +459,63 @@ else:
 #RT_Gas_S2[['GprodTot','Redispatch']].plot()
 
 
-
-mGDA = GasDA(dispatchElecDA,f2d)
-
-
-list1=[1e-3,1e3,0]
-list2=['FixInput', 'FixOutput', 'ConstantOutput','None']
-Results=[]
-AllResults={}
-Combinations=list(itertools.product(list1,list2)) # Find combinations
-
-for i,val in enumerate(Combinations):
-    mGDA.gdata.EPS=Combinations[i][0]
-    mGDA.gdata.GasSlack=Combinations[i][1]
-    #   Rebuild model with new parameter
-    mGDA._build_model()
-        
-    mGDA.optimize()
-    mGDA.get_results(f2d)
-
-    Pipelines={}
-    Flow_Errors=pd.DataFrame()
-    SP=pd.DataFrame()
-    RP=pd.DataFrame()
-    scen_ix='k0'
-    
-    for pl in mGDA.gdata.pplineorder:
-        Lpack      = mGDA.results.lpack[pl].xs(scen_ix,level=1).rename('Lpack')
-        L_ini= mGDA.gdata.pplinelsini[pl]
-        Lpack_before =Lpack.shift(periods=1)
-        Lpack_before.loc['t1']=L_ini
-        dLpack     = Lpack.diff().rename('dLpack')
-        dLpack['t1'] = Lpack['t1']-L_ini
-        qin_sr     = mGDA.results.qin_sr[pl].xs(scen_ix,level=1).rename('qin_sr')
-        qout_sr    = mGDA.results.qout_sr[pl].xs(scen_ix,level=1).rename('qout_sr')
-        Flow       = mGDA.results.gflow_sr[pl].xs(scen_ix,level=1).rename('Flow')
-        Sp         = mGDA.results.pr[pl[0]].xs(scen_ix,level=1).rename('Send Pressure')
-        Rp         = mGDA.results.pr[pl[1]].xs(scen_ix,level=1).rename('Receive Pressure')
-        ActualFlow = (mGDA.gdata.pplineK[pl]*np.sqrt(Sp**2-Rp**2)).rename('Actual Flow')
-        Error      = np.abs(ActualFlow-Flow).rename('Error')
-        dP         = (Sp-Rp).rename('PressureLoss')
-        Lpack_inj  = (qin_sr-qout_sr).rename('Lpackinj')
-        Temp=pd.concat([Lpack_inj,dLpack,Lpack,Lpack_before,qin_sr,qout_sr,Flow,Sp,Rp,dP,Flow,ActualFlow,Error
-                    ],axis=1)   
-        Pipelines[pl]=Temp
-        
-        Flow_Errors.loc[:,'Temp']=Error.values
-        Flow_Errors=Flow_Errors.rename(index=str, columns={'Temp': pl})
-        
-        SP.loc[:,'Temp']=Sp.values
-        SP=SP.rename(index=str, columns={'Temp': pl})
-        
-        RP.loc[:,'Temp']=Rp.values
-        RP=RP.rename(index=str, columns={'Temp': pl})
-    Results.append([mGDA.gdata.EPS,mGDA.gdata.GasSlack,Flow_Errors.values.max()])
-    AllResults[Combinations[i]]=Temp
-
-
-
-
-
+#
+#mGDA = GasDA(dispatchElecDA,f2d)
+#
+#
+#list1=[1e-3,1e3,0]
+#list2=['FixInput', 'FixOutput', 'ConstantOutput','None']
+#Results=[]
+#AllResults={}
+#Combinations=list(itertools.product(list1,list2)) # Find combinations
+#
+#for i,val in enumerate(Combinations):
+#    mGDA.gdata.EPS=Combinations[i][0]
+#    mGDA.gdata.GasSlack=Combinations[i][1]
+#    #   Rebuild model with new parameter
+#    mGDA._build_model()
+#        
+#    mGDA.optimize()
+#    mGDA.get_results(f2d)
+#
+#    Pipelines={}
+#    Flow_Errors=pd.DataFrame()
+#    SP=pd.DataFrame()
+#    RP=pd.DataFrame()
+#    scen_ix='k0'
+#    
+#    for pl in mGDA.gdata.pplineorder:
+#        Lpack      = mGDA.results.lpack[pl].xs(scen_ix,level=1).rename('Lpack')
+#        L_ini= mGDA.gdata.pplinelsini[pl]
+#        Lpack_before =Lpack.shift(periods=1)
+#        Lpack_before.loc['t1']=L_ini
+#        dLpack     = Lpack.diff().rename('dLpack')
+#        dLpack['t1'] = Lpack['t1']-L_ini
+#        qin_sr     = mGDA.results.qin_sr[pl].xs(scen_ix,level=1).rename('qin_sr')
+#        qout_sr    = mGDA.results.qout_sr[pl].xs(scen_ix,level=1).rename('qout_sr')
+#        Flow       = mGDA.results.gflow_sr[pl].xs(scen_ix,level=1).rename('Flow')
+#        Sp         = mGDA.results.pr[pl[0]].xs(scen_ix,level=1).rename('Send Pressure')
+#        Rp         = mGDA.results.pr[pl[1]].xs(scen_ix,level=1).rename('Receive Pressure')
+#        ActualFlow = (mGDA.gdata.pplineK[pl]*np.sqrt(Sp**2-Rp**2)).rename('Actual Flow')
+#        Error      = np.abs(ActualFlow-Flow).rename('Error')
+#        dP         = (Sp-Rp).rename('PressureLoss')
+#        Lpack_inj  = (qin_sr-qout_sr).rename('Lpackinj')
+#        Temp=pd.concat([Lpack_inj,dLpack,Lpack,Lpack_before,qin_sr,qout_sr,Flow,Sp,Rp,dP,Flow,ActualFlow,Error
+#                    ],axis=1)   
+#        Pipelines[pl]=Temp
+#        
+#        Flow_Errors.loc[:,'Temp']=Error.values
+#        Flow_Errors=Flow_Errors.rename(index=str, columns={'Temp': pl})
+#        
+#        SP.loc[:,'Temp']=Sp.values
+#        SP=SP.rename(index=str, columns={'Temp': pl})
+#        
+#        RP.loc[:,'Temp']=Rp.values
+#        RP=RP.rename(index=str, columns={'Temp': pl})
+#    Results.append([mGDA.gdata.EPS,mGDA.gdata.GasSlack,Flow_Errors.values.max()])
+#    AllResults[Combinations[i]]=Temp
+#
+#
+#
+#
+#

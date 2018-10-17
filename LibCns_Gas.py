@@ -355,7 +355,7 @@ def _build_constraints_gasDA(self):
         self.constraints.lpack_end = lpack_end
     
     
-    # Gas Storage
+    #--- Gas Storage
     
     gstor_def = {}  # Gas storage level definition
     gstor_end = {}  # Gas storage level @ end of scheduling horizon
@@ -386,7 +386,7 @@ def _build_constraints_gasDA(self):
     self.constraints.gstor_end = gstor_end
                 
      
-    # Nodal Gas Balance 
+    #--- Nodal Gas Balance 
     gas_balance = {}
     
     

@@ -89,16 +89,22 @@ def _load_generator_data(self):
     for gen, n in origodict.iteritems():
         self.edata.Map_Eg2En[gen].append(n)
         self.edata.Map_En2Eg[n].append(gen)
-        
+    
     # Mapping - Gas node (Key) to Electricity generator (Value)      
-    self.edata.Map_Gn2Eg = defaultdict(list)
     # Mapping - Electricity generator (Key) to Gas nodes (Value)       
-    self.edata.Map_Eg2Gn = defaultdict(list) 
-        
     origodict = self.edata.generatorinfo['origin_gas']
-    for gen, gn in origodict.iteritems():                
-        self.edata.Map_Gn2Eg[gn].append(gen)
-        self.edata.Map_Eg2Gn[gen].append(gn)
+    # Mapping can only be one to one
+    self.edata.Map_Eg2Gn=origodict.to_dict()
+    # And the inverse
+    self.edata.Map_Gn2Eg={Gn:Eg for Eg,Gn in self.edata.Map_Eg2Gn.items()}
+    
+#    self.edata.Map_Gn2Eg = defaultdict(list)
+#    self.edata.Map_Eg2Gn = defaultdict(list) 
+#        
+#    origodict = self.edata.generatorinfo['origin_gas']
+#    for gen, gn in origodict.iteritems():                
+#        self.edata.Map_Gn2Eg[gn].append(gen)
+#        self.edata.Map_Eg2Gn[gen].append(gn)
    
          
 def _load_wind_data(self):
