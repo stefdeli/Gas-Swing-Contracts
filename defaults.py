@@ -1,6 +1,6 @@
-#folder='Data/IntegratedMarketStochastic'
+folder='Data/IntegratedMarketStochastic'
 
-folder='Data/SimpleNetwork_ImperialUnits'
+#folder='Data/SimpleNetwork_ImperialUnits'
 
 
 filepath_gas = folder+'/GasData'
@@ -17,7 +17,7 @@ gload_file = filepath_gas + '/GasLoad.csv'
 gstoragefile = filepath_gas + '/GasStorage.csv'
 
 # Number of fixed pressure points used for Weymooth outer approximation
-Nfxpoints = 50
+Nfxpoints = 10
 
 ## Electricity System Data
 
