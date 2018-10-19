@@ -71,7 +71,8 @@ def _load_generator_data(self):
     # Find Non-GFPPs
     self.edata.nongfpp = [x for x in self.edata.generatorinfo.index if self.edata.generatorinfo['primaryfuel'][x] != 'gas']
     
-    # Gas price forecast (expected) - Day-ahead stage
+    # Gas price forecast (expected) - Day-ahead stage 
+    # Just Nodal Gas Prices!
     self.edata.GasPriceDA = pd.read_csv(defaults.GasPriceDA_file, index_col=0)
     
     # Gas price forecast scenarios - Real-time stage
@@ -88,16 +89,22 @@ def _load_generator_data(self):
     for gen, n in origodict.iteritems():
         self.edata.Map_Eg2En[gen].append(n)
         self.edata.Map_En2Eg[n].append(gen)
-        
+    
     # Mapping - Gas node (Key) to Electricity generator (Value)      
-    self.edata.Map_Gn2Eg = defaultdict(list)
     # Mapping - Electricity generator (Key) to Gas nodes (Value)       
-    self.edata.Map_Eg2Gn = defaultdict(list) 
-        
     origodict = self.edata.generatorinfo['origin_gas']
-    for gen, gn in origodict.iteritems():                
-        self.edata.Map_Gn2Eg[gn].append(gen)
-        self.edata.Map_Eg2Gn[gen].append(gn)
+    # Mapping can only be one to one
+    self.edata.Map_Eg2Gn=origodict.to_dict()
+    # And the inverse
+    self.edata.Map_Gn2Eg={Gn:Eg for Eg,Gn in self.edata.Map_Eg2Gn.items()}
+    
+#    self.edata.Map_Gn2Eg = defaultdict(list)
+#    self.edata.Map_Eg2Gn = defaultdict(list) 
+#        
+#    origodict = self.edata.generatorinfo['origin_gas']
+#    for gen, gn in origodict.iteritems():                
+#        self.edata.Map_Gn2Eg[gn].append(gen)
+#        self.edata.Map_Eg2Gn[gen].append(gn)
    
          
 def _load_wind_data(self):
@@ -124,7 +131,7 @@ def _load_wind_data(self):
         for wf in windfarms:
             self.edata.Map_W2As[wf].append(area)
             
-def _load_intial_data(self):
+def _load_initial_data(self):
     # Demand edata - nodal values
     self.edata.load = pd.read_csv(defaults.eload_file).set_index('Node')
     
@@ -151,7 +158,7 @@ def _load_intial_data(self):
 def load_wind_scenarios(self):
     
     #Nscen = 1   # Number of scenarios to load
-    Nzones = 2  # Number of wind power locations
+    Nzones = len(self.edata.windfarms)  # Number of wind power locations
     #TimeID = Time # Time ID
     
     twindscen = {}

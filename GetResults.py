@@ -82,15 +82,17 @@ def _results_gasDA(self, f2d):
     
     r.lpack = pd.DataFrame([[var.lpack[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=index, columns=self.gdata.pplineorder)
     r.gprod = pd.DataFrame([[var.gprod[gw,k,t].x for gw in self.gdata.wells] for t in time for k in sclim], index=index, columns=self.gdata.wells)
-    r.gflow_sr = pd.DataFrame([[var.gflow_sr[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=time, columns=self.gdata.pplineorder)
+    r.gflow_sr = pd.DataFrame([[var.gflow_sr[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=index, columns=self.gdata.pplineorder)
+    
+    r.pr = pd.DataFrame([[var.pr[ng,k,t].x for ng in self.gdata.gnodeorder] for t in time for k in sclim], index=index, columns=self.gdata.gnodeorder)
     
     
-    r.qin_sr = pd.DataFrame([[var.qin_sr[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=time, columns=self.gdata.pplineorder)    
-    r.qout_sr = pd.DataFrame([[var.qout_sr[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=time, columns=self.gdata.pplineorder)    
+    r.qin_sr = pd.DataFrame([[var.qin_sr[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=index, columns=self.gdata.pplineorder)    
+    r.qout_sr = pd.DataFrame([[var.qout_sr[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=index, columns=self.gdata.pplineorder)    
     
-    r.gsin = pd.DataFrame([[var.gsin[gs,k,t].x for gs in self.gdata.gstorage] for t in time for k in sclim],  index=time, columns=self.gdata.gstorage)
-    r.gsout = pd.DataFrame([[var.gsout[gs,k,t].x for gs in self.gdata.gstorage] for t in time for k in sclim],  index=time, columns=self.gdata.gstorage)
-    r.gstore = pd.DataFrame([[var.gstore[gs,k,t].x for gs in self.gdata.gstorage] for t in time for k in sclim],  index=time, columns=self.gdata.gstorage)
+    r.gsin = pd.DataFrame([[var.gsin[gs,k,t].x for gs in self.gdata.gstorage] for t in time for k in sclim],  index=index, columns=self.gdata.gstorage)
+    r.gsout = pd.DataFrame([[var.gsout[gs,k,t].x for gs in self.gdata.gstorage] for t in time for k in sclim],  index=index, columns=self.gdata.gstorage)
+    r.gstore = pd.DataFrame([[var.gstore[gs,k,t].x for gs in self.gdata.gstorage] for t in time for k in sclim],  index=index, columns=self.gdata.gstorage)
     
     if f2d == True:
         r.gflow_rs = pd.DataFrame([[var.gflow_rs[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=index, columns=self.gdata.pplineorder)
@@ -146,6 +148,12 @@ def _results_gasRT(self, f2d):
     
     r.lpack_rt = pd.DataFrame([[var.lpack_rt[pl,s,t].x for pl in self.gdata.pplineorder] for t in time for s in scenarios], index=index, columns=self.gdata.pplineorder)
     r.gprodUp = pd.DataFrame([[var.gprodUp[gw,s,t].x for gw in self.gdata.wells] for t in time for s in scenarios], index=index, columns=self.gdata.wells)
-    r.gprodDn = pd.DataFrame([[var.gprodDn[gw,s,t].x for gw in self.gdata.wells] for t in time for s in scenarios], index=index, columns=self.gdata.wells)
-    
+    r.gprodDn = pd.DataFrame([[var.gprodDn[gw,s,t].x for gw in self.gdata.wells] for t in time for s in scenarios], index=index, columns=self.gdata.wells)    
     r.gshed = pd.DataFrame([[var.gshed[gn,s,t].x for gn in self.gdata.gnodes] for t in time for s in scenarios], index=index, columns=self.gdata.gnodes)
+    
+    r.pr_rt = pd.DataFrame([[var.pr_rt[ng,k,t].x for ng in self.gdata.gnodeorder] for t in time for k in scenarios], index=index, columns=self.gdata.gnodeorder)
+    
+    r.gflow_sr_rt = pd.DataFrame([[var.gflow_sr_rt[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in scenarios], index=index, columns=self.gdata.pplineorder)
+    r.qin_sr_rt = pd.DataFrame([[var.qin_sr_rt[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in scenarios], index=index, columns=self.gdata.pplineorder)    
+    r.qout_sr_rt = pd.DataFrame([[var.qout_sr_rt[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in scenarios], index=index, columns=self.gdata.pplineorder)    
+      

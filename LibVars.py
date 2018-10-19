@@ -88,15 +88,16 @@ def _build_variables_gasDA(self):
         for gs in self.gdata.gstorage:
             for t in time:
                 for k in sclim:
-                    self.variables.gsin[gs,k,t] = m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxInFlow'][gs])
-                    self.variables.gsout[gs,k,t] = m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxOutFlow'][gs])
-                    self.variables.gstore[gs,k,t] = m.addVar(lb=self.gdata.gstorageinfo['MinStore'][gs], ub=self.gdata.gstorageinfo['MaxStore'][gs])
+                    self.variables.gsin[gs,k,t] = m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxInFlow'][gs],name='gsin({0},{1},{2})'.format(gs,t,k))
+                    self.variables.gsout[gs,k,t] = m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxOutFlow'][gs],name='gsout({0},{1},{2})'.format(gs,t,k))
+                    self.variables.gstore[gs,k,t] = m.addVar(lb=self.gdata.gstorageinfo['MinStore'][gs], 
+                                                             ub=self.gdata.gstorageinfo['MaxStore'][gs],name='gstore({0},{1},{2})'.format(gs,t,k))
 
         m.update()
         
 
  
-def _build_variables_gasRT(self,mtype):  
+def _build_variables_gasRT(self,mtype,dispatchElecRT):  
     """
     NB! Variables for flow from receiving to sending are not modelled
     """
@@ -108,18 +109,13 @@ def _build_variables_gasRT(self,mtype):
     gwells = self.gdata.wellsinfo.index.tolist()
     
     """
-    If stochastic dispatch: scenario set comprises i) gas price and ii) wind power scenarios
-    If real-time dispatch: scenario set comprises only wind power scenarios
+    Real time gas only required to handle the possible outcomes of the RT wind scenarios
     """
-    
-    if mtype == 'Stoch':
-        scenarios = self.edata.scenarios # Gas price & wind scenarios        
-    elif mtype == 'RealTime':
-        scenarios = self.edata.windscen_index # Only wind power scenarios
+    scenarios = self.gdata.scenarios
         
     
     
-    self.variables.prrt = {}            # Nodal pressure : Real-time
+    self.variables.pr_rt = {}            # Nodal pressure : Real-time
     
     self.variables.gflow_sr_rt = {}     # Gas flow from sending to receiving end : Real-time   
     
@@ -140,8 +136,8 @@ def _build_variables_gasRT(self,mtype):
         for t in time:
         
             for gn in gnodes:
-                self.variables.prrt = [gn,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='pres_rt({0},{1},{2})'.format(gn,s,t))
-                self.variables.gshed = [gn,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='gshed({0},{1},{2})'.format(gn,s,t))
+                self.variables.pr_rt[gn,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='pres_rt({0},{1},{2})'.format(gn,s,t))
+                self.variables.gshed[gn,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='gshed({0},{1},{2})'.format(gn,s,t))
                 
             for pl in pplines:
                 self.variables.gflow_sr_rt[pl,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='gflow_sr_rt({0},{1},{2})'.format(pl,s,t))    
@@ -195,7 +191,7 @@ def _build_variables_elecDA(self):
         var.PgenSC = {}
         for gen in gfpp:
             for t in time:
-                var.PgenSC[gen,t] = m.addVar(lb=0.0, name = 'Pgen({0},{1})'.format(gen,t))
+                var.PgenSC[gen,t] = m.addVar(lb=0.0, name = 'PgenSC({0},{1})'.format(gen,t))
                 
         # Upward reserve capacity (Non-contracted Gas & Non-Gas)
         var.RCup = {}

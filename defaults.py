@@ -1,8 +1,13 @@
-filepath_gas = 'Data/GasData'
-filepath_elec = 'Data/ElecData'
+folder='Data/IntegratedMarketStochastic'
+
+#folder='Data/SimpleNetwork_ImperialUnits'
 
 
-bigM = 1e4
+filepath_gas = folder+'/GasData'
+filepath_elec = folder+'/ElecData'
+
+# Comment
+bigM = 1e5
 
 ## Gas System Data
 gnodefile = filepath_gas + '/GasNodes.csv'
@@ -12,7 +17,7 @@ gload_file = filepath_gas + '/GasLoad.csv'
 gstoragefile = filepath_gas + '/GasStorage.csv'
 
 # Number of fixed pressure points used for Weymooth outer approximation
-Nfxpoints = 4 
+Nfxpoints = 10
 
 ## Electricity System Data
 
@@ -32,7 +37,15 @@ GasPriceDA_file = filepath_elec + '/GasPriceDA.csv'
 GasPriceScenRT_file = filepath_elec + '/GasPriceScenRT.csv'
 GasPriceScenRTprob_file = filepath_elec + '/GasPriceScenRT_prob.csv'
 
-VOLL = 1000 # Value of Lost Load
+VOLL = 10000 # Value of Lost Load
+
+EPS = 0e-3 # Pressure difference weight in gas objective
+GasSlack = 'FixInput' #'FixInput', 'FixOutput', 'ConstantOutput'
+
 
 # The final line pack deviatons that is allowed, i.e. +/- 10% of the initial
 FINAL_LP_DEV=0.1 # 0.1 = 10%
+
+# Premium for deployment of reserves 
+RESERVES_UP_PREMIUM = 1.1
+RESERVES_DN_PREMIUM = 0.95
