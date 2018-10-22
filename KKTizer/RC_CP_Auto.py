@@ -25,9 +25,8 @@ class GurobiPY():
         self.constraints = {}
         self.results = expando()
         self._load_data()
-        
         self._build_model_RC(comp, BL)  
-        
+            
         self._build_CP()
         Lib_Variables.build_dummy_objective_var(self)
         Lib_ObjFnct.build_objective_dummy_complementarity(self)
@@ -127,11 +126,13 @@ class GurobiPY():
         
         self.A_Eq = complementarity_model(self)
 
-m = GurobiPY() 
-m.optimize()     
 
 #print 'Found objective value: {}'.format(m.ObjVal)
 #print 'At PA: {0:.03f}, RA={1:.03f}, PB={2:.03f}, RB={3:.03f}'.format(PA.x, RA.x, PB.x, RB.x) 
         
+m1=GurobiPy()
+m1.optimize()     
 
+m2=GurobiPy()
+m2.optimize()     
 

@@ -17,6 +17,7 @@ E"""
 import GasData_Load, ElecData_Load
 import LibVars
 import LibCns_Elec, LibCns_Gas
+import KKTizer
 import LibObjFunct 
 import GetResults
 import gurobipy as gb
@@ -41,11 +42,13 @@ class StochElecDA():
         '''        
         self.edata = expando()
         self.variables = expando()
+        self.variables.primal = {}
         self.constraints = expando()
         self.results = expando()
 
         self._load_ElecData()
-        self._build_model()
+        #self._build_model()
+        self._build_CP_model()
         
     def optimize(self):
         self.model.optimize()
@@ -65,19 +68,46 @@ class StochElecDA():
     def _build_model(self):
         self.model = gb.Model()        
         self.constraints={} # to store all constraints
+        self.comp = False # Is it a complimentarity model
+        
         mtype = 'Stoch'      # 'Market type' = {Stoch, RealTime}
         dispatchElecDA = None
         
         LibVars._build_variables_elecDA(self)        
-        LibVars._build_variables_elecRT(self,mtype)        
+        LibVars._build_variables_elecRT(self,mtype)    
+        LibVars._build_dummy_objective_var(self)
         
         LibCns_Elec._build_constraints_elecDA(self)
         LibCns_Elec._build_constraints_elecRT(self, mtype, dispatchElecDA)
        
         LibObjFunct._build_objective_StochElecDA(self)
         self.model.update()
+        
+    def _build_CP_model(self):
+        self.model = gb.Model()        
+        self.constraints={} # to store all constraints
+        self.comp = True # Is it a complimentarity model
+        mtype = 'Stoch'      # 'Market type' = {Stoch, RealTime}
+        dispatchElecDA = None
+        
+        LibVars._build_variables_elecDA(self)        
+        LibVars._build_variables_elecRT(self,mtype)        
+
+        
+        LibCns_Elec._build_constraints_elecDA(self)
+        LibCns_Elec._build_constraints_elecRT(self, mtype, dispatchElecDA)
+        
+        # Add the KKT Conditions (Stationarity and complementarity)
+        KKTizer._complementarity_model(self)
+        
+        LibVars._build_dummy_objective_var(self)
+        LibObjFunct._build_objective_dummy_complementarity(self)
+        
+
+        self.model.update()
 
 mSEDA = StochElecDA()
 
 mSEDA.optimize()
-mSEDA.get_results()
+#mSEDA.get_results()
+#

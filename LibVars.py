@@ -170,6 +170,7 @@ def _build_variables_gasRT(self,mtype,dispatchElecRT):
 def _build_variables_elecDA(self):  
         m = self.model
         var = self.variables
+        primal=self.variables.primal
         generators = self.edata.generators
         gfpp = self.edata.gfpp        
         swingcontracts = self.edata.swingcontracts
@@ -178,51 +179,76 @@ def _build_variables_elecDA(self):
                          
         # Swing Contract status
         var.usc = {}
+        
         for sc in swingcontracts:
-           var.usc[sc] = m.addVar(vtype=gb.GRB.BINARY, name='u({0})'.format(sc))
+            name='u({0})'.format(sc)
+            Temp = m.addVar(vtype=gb.GRB.BINARY, name=name)
+            var.usc[sc]  = Temp
+            primal[name] = Temp
         
         # Dispatchable generators (Non-contracted Gas & Non-Gas)
         var.Pgen = {}
         for gen in generators:
             for t in time:
-                var.Pgen[gen,t] = m.addVar(lb=0.0, name = 'Pgen({0},{1})'.format(gen,t))
+                name = 'Pgen({0},{1})'.format(gen,t)
+                Temp = m.addVar(lb=0.0, name = name)
+                var.Pgen[gen,t] = Temp
+                primal[name]    = Temp
                 
         # GFPPs with swing contract 
         var.PgenSC = {}
         for gen in gfpp:
             for t in time:
-                var.PgenSC[gen,t] = m.addVar(lb=0.0, name = 'PgenSC({0},{1})'.format(gen,t))
+                name = 'PgenSC({0},{1})'.format(gen,t)
+                Temp= m.addVar(lb=0.0, name = name)
+                var.PgenSC[gen,t] =Temp
+                primal[name] = Temp
                 
         # Upward reserve capacity (Non-contracted Gas & Non-Gas)
         var.RCup = {}
         for gen in generators:
             for t in time:
-                var.RCup[gen,t] = m.addVar(lb=0.0, name='RCup({0},{1})'.format(gen,t))
+                name='RCup({0},{1})'.format(gen,t)
+                Temp= m.addVar(lb=0.0, name=name)
+                var.RCup[gen,t] =Temp
+                primal[name]= Temp
             
         # Downward reserve capacity (Non-contracted Gas & Non-Gas)
         var.RCdn = {}
         for gen in generators:   
             for t in time:
-                var.RCdn[gen, t] = m.addVar(lb=0.0, name='RCdn({0},{1})'.format(gen,t))
+                name='RCdn({0},{1})'.format(gen,t)
+                Temp= m.addVar(lb=0.0, name=name)
+                var.RCdn[gen, t] = Temp
+                primal[name]= Temp
                 
         # Upward reserve capacity - GFPPs with swing contract 
         var.RCupSC = {}
         for gen in gfpp:
             for t in time:
-                var.RCupSC[gen,t] = m.addVar(lb=0.0, name='RCupSC({0},{1})'.format(gen,t))
-            
+                name='RCupSC({0},{1})'.format(gen,t)
+                Temp = m.addVar(lb=0.0,name=name)
+                var.RCupSC[gen,t]= Temp
+                primal[name]= Temp
         # Downward reserve capacity - GFPPs with swing contract 
         var.RCdnSC = {}
         for gen in gfpp:   
             for t in time:
-                var.RCdnSC[gen,t] = m.addVar(lb=0.0, name='RCdnSC({0},{1})'.format(gen,t))
-                  
+                name='RCdnSC({0},{1})'.format(gen,t)
+                Temp = m.addVar(lb=0.0, name=name)
+                var.RCdnSC[gen,t]= Temp
+                primal[name]= Temp
+                
        # Non-Dispatchable generators (Wind)
         var.WindDA = {}
         for wf in windfarms:
             for t in time:
-                var.WindDA[wf,t] = m.addVar(lb=0.0, name = 'WindDA({0},{1})'.format(wf,t))
-      
+                name = 'WindDA({0},{1})'.format(wf,t)
+                Temp = m.addVar(lb=0.0, name=name)
+                var.WindDA[wf,t]=Temp
+                primal[name]= Temp
+        
+        
         m.update()
         
 #==============================================================================
@@ -236,7 +262,11 @@ def _build_variables_elecRT(self,mtype):
     generators = self.edata.generators
     gfpp = self.edata.gfpp
     windfarms = self.edata.windfarms   
-    time = self.edata.time    
+    time = self.edata.time 
+    
+    primal=self.variables.primal
+    var=self.variables
+     
     
     """
     If stochastic dispatch: scenario set comprises i) gas price and ii) wind power scenarios
@@ -249,32 +279,55 @@ def _build_variables_elecRT(self,mtype):
         scenarios = self.edata.windscen_index # Only wind power scenarios
     
 
-    self.variables.RUp = {}         # Up Regulation
-    self.variables.RDn = {}         # Down Regulation
+    var.RUp = {}         # Up Regulation
+    var.RDn = {}         # Down Regulation
 
-    self.variables.RUpSC = {}       # Up Regulation - GFPPs with swing contract 
-    self.variables.RDnSC = {}       # Down Regulation - GFPPs with swing contract 
+    var.RUpSC = {}       # Up Regulation - GFPPs with swing contract 
+    var.RDnSC = {}       # Down Regulation - GFPPs with swing contract 
         
-    self.variables.Wspill = {}      # Wind spillage        
-    self.variables.Lshed = {}       # Load shedding    
+    var.Wspill = {}      # Wind spillage        
+    var.Lshed = {}       # Load shedding    
   
     
     for s in scenarios:
         for t in time:
-            for i in generators:                           
-                self.variables.RUp[i,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='RUp({0},{1},{2})'.format(i,s,t))
-                self.variables.RDn[i,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='RDn({0},{1},{2})'.format(i,s,t))                                
+            for i in generators:
+                name='RUp({0},{1},{2})'.format(i,s,t)                          
+                Temp = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)
+                var.RUp[i,s,t]= Temp
+                primal[name]=Temp
                 
-            for i in gfpp:                           
-                self.variables.RUpSC[i,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='RUpSC({0},{1},{2})'.format(i,s,t))
-                self.variables.RDnSC[i,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='RDnSC({0},{1},{2})'.format(i,s,t))                                
-    
+                name='RDn({0},{1},{2})'.format(i,s,t)
+                Temp=m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)  
+                var.RDn[i,s,t] = Temp
+                primal[name]=Temp
+                
+            for i in gfpp:
+                name='RUpSC({0},{1},{2})'.format(i,s,t)
+                Temp = m.addVar(lb=0.0, ub=gb.GRB.INFINITY,name=name )
+                var.RUpSC[i,s,t]= Temp
+                primal[name]=Temp
+                
+                name='RDnSC({0},{1},{2})'.format(i,s,t)
+                Temp = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)                                
+                var.RDnSC[i,s,t]=Temp
+                primal[name]=Temp
                 
             for j in windfarms:
-                self.variables.Wspill[j,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='Wspill({0},{1},{2})'.format(j,s,t))
+                name='Wspill({0},{1},{2})'.format(j,s,t)
+                Temp = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)
+                var.Wspill[j,s,t]=Temp
+                primal[name]=Temp
             
             
-            self.variables.Lshed[s,t] =  m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='Lshed({0},{1})'.format(s,t))
+            name='Lshed({0},{1})'.format(s,t)
+            Temp =  m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)
+            var.Lshed[s,t]=Temp
+            primal[name]=Temp
         
             
-    
+def _build_dummy_objective_var(self):    
+    m = self.model    
+    self.variables.z = {}
+    self.variables.z =  m.addVar(lb=0, name='z')
+        

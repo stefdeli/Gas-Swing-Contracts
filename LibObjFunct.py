@@ -141,3 +141,8 @@ def _build_objective_gasRT(self):
     
     # NB! Gas storage costs NOT included in the objective function
     
+# Dummy objective function if solving optimization problem as CP 
+def _build_objective_dummy_complementarity(self): 
+    m = self.model
+    
+    m.setObjective(self.variables.z, gb.GRB.MINIMIZE)
