@@ -56,7 +56,8 @@ class StochElecDA():
         GetResults._results_StochD(self)
         
     def _build_model(self):
-        self.model = gb.Model()        
+        self.model = gb.Model() 
+        self.constraints={} # to store all constraints
         mtype = 'Stoch'      # 'Market type' = {Stoch, RealTime}
         dispatchElecDA = None
         

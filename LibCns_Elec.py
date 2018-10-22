@@ -10,6 +10,10 @@ import numpy as np
 import itertools
 import gurobipy as gb
 
+
+class expando(object):
+    pass
+
 #==============================================================================
 # Electricity system constraints 
 #==============================================================================
@@ -22,119 +26,115 @@ def _build_constraints_elecDA(self):
     nongfpp = self.edata.nongfpp
     swingcontracts = self.edata.swingcontracts
     windfarms = self.edata.windfarms
-    
-    PowerBalDA = {}
+    gendata = self.edata.generatorinfo
     var = self.variables
     time = self.edata.time
-
-    # Power balance
-    for t in time:
-        PowerBalDA[t] = m.addConstr(
-        gb.quicksum(var.WindDA[wf,t] for wf in windfarms) +
-        gb.quicksum(var.Pgen[gen,t] for gen in generators)+
-        gb.quicksum(var.PgenSC[gen,t] for gen in gfpp), 
-        gb.GRB.EQUAL,
-        self.edata.sysload[t],
-        name = 'Power_Balance_DA({0})'.format(t))
-        
-    # Maximum Capacity limits    
-    PmaxDA = {}
-    gendata = self.edata.generatorinfo    
-    
-    for gen in gfpp:        
-        for t in time:                       
-            PmaxDA[gen,t] = m.addConstr(var.Pgen[gen,t]+var.PgenSC[gen,t]+var.RCup[gen,t]+var.RCupSC[gen,t], 
-            gb.GRB.LESS_EQUAL, 
-            gendata.capacity[gen], name = 'Pmax_DA_GFPP({0},{1})'.format(gen,t)) 
-                   
-    for gen in nongfpp:        
-        for t in time:                       
-            PmaxDA[gen,t] = m.addConstr(var.Pgen[gen,t]+var.RCup[gen,t], 
-            gb.GRB.LESS_EQUAL, 
-            gendata.capacity[gen], name = 'Pmax_DA({0},{1})'.format(gen,t)) 
-            
-    # Minimum Capacity limits    
-    PminDA = {}
-    
-    for gen in gfpp:        
-        for t in time:                       
-            PminDA[gen,t] = m.addConstr(var.Pgen[gen,t]+var.PgenSC[gen,t]-var.RCdn[gen,t]-var.RCdnSC[gen,t], 
-            gb.GRB.GREATER_EQUAL, 
-            0.0, name = 'Pmin_DA_GFPP({0},{1})'.format(gen,t)) 
-                   
-    for gen in nongfpp:        
-        for t in time:                       
-            PminDA[gen,t] = m.addConstr(var.Pgen[gen,t]-var.RCup[gen,t], 
-            gb.GRB.GREATER_EQUAL, 
-            0.0, name = 'Pmin_DA({0},{1})'.format(gen,t)) 
-    
-    
-    # Wind power schedule            
-    WindmaxDA = {}
     windfarms = self.edata.windfarms
+    SCdata = self.edata.SCdata
+
     
-    for wf in windfarms:
-        for t in time:
-            WindmaxDA[wf,t] = self.model.addConstr(
-            var.WindDA[wf,t],
-            gb.GRB.LESS_EQUAL,
-            self.edata.exp_wind[wf][t],
-            name = 'Wind_Max_DA({0},{1})'.format(wf,t))
+
+    #--- Power balance
+    for t in time:
+        name='PowerBalance({0})'.format(t)
+        self.constraints[name]= expando()
+        cc=self.constraints[name]
+        cc.lhs = gb.quicksum(var.WindDA[wf,t] for wf in windfarms) + gb.quicksum(var.Pgen[gen,t] for gen in generators)+  gb.quicksum(var.PgenSC[gen,t] for gen in gfpp)
+        cc.rhs = self.edata.sysload[t]
+        cc.expr = m.addConstr(cc.lhs == cc.rhs,name=name)
+
+    #--- Maximum Capacity limits
+    for t in time:
+        for gen in gfpp:        
+            name= 'Pmax_DA_GFPP({0},{1})'.format(gen,t)
+            self.constraints[name]= expando()
+            cc=self.constraints[name]
+            cc.lhs = var.Pgen[gen,t]+var.PgenSC[gen,t]+var.RCup[gen,t]+var.RCupSC[gen,t]
+            cc.rhs = gendata.capacity[gen]              
+            cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
+                   
+        for gen in nongfpp:        
+            name= 'Pmax_DA_GFPP({0},{1})'.format(gen,t)
+            self.constraints[name]= expando()
+            cc=self.constraints[name]       
+            cc.lhs = var.Pgen[gen,t]+var.RCup[gen,t]
+            cc.rhs = gendata.capacity[gen]       
+            cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
             
-            
-    ## Swing constract constraints
-    
-    # Single contract activation per generator & time-step
-    SCact = {}
+    #--- Minimum Capacity limits    
     for t in time:
         for gen in gfpp:
-            SCact[t] = self.model.addConstr(
-                gb.quicksum(var.usc[sc] * self.edata.SCP[(sc,gen),t] for sc in swingcontracts),
-                gb.GRB.LESS_EQUAL,
-                1.0,
-                name = 'SW_Active({0}{1})'.format(gen,t))
-    
+            name='Pmin_DA_GFPP({0},{1})'.format(gen,t)
+            self.constraints[name]= expando()
+            cc=self.constraints[name]   
+            cc.lhs=var.Pgen[gen,t]+var.PgenSC[gen,t]-var.RCdn[gen,t]-var.RCdnSC[gen,t]
+            cc.rhs=0.0
+            cc.expr = m.addConstr(cc.lhs >= cc.rhs,name=name)
 
-                
-        
-    # Swing contract capacity limits
-    SCPmin = {}
-    SCPmax = {}
+                   
+        for gen in nongfpp:
+            name='Pmin_DA({0},{1})'.format(gen,t)
+            self.constraints[name]= expando()
+            cc=self.constraints[name]   
+            cc.lhs=var.Pgen[gen,t]-var.RCup[gen,t]
+            cc.rhs=0.0
+            cc.expr = m.addConstr(cc.lhs >= cc.rhs,name=name)
+  
     
-    SCRupMax = {}
-    SCRdnMax = {}
+    #--- Wind power schedule            
+    for t in time:
+        for wf in windfarms:
+            name = 'Wind_Max_DA({0},{1})'.format(wf,t)
+            self.constraints[name]= expando()
+            cc=self.constraints[name]
+            cc.lhs = var.WindDA[wf,t]
+            cc.rhs= self.edata.exp_wind[wf][t]
+            cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
+            
+    #--- Swing constract constraints
     
-    SCdata = self.edata.SCdata
+    # Single contract activation per generator & time-step
+    for t in time:
+        for gen in gfpp:
+            name = 'SW_Active({0}{1})'.format(gen,t)
+            self.constraints[name]= expando()
+            cc=self.constraints[name]
+            cc.lhs  = gb.quicksum(var.usc[sc] * self.edata.SCP[(sc,gen),t] for sc in swingcontracts)
+            cc.rhs = 1.0
+            cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
+
     
     for t in time:
         for i in gfpp:
-            SCPmin[i,t] = self.model.addConstr( 
-                    gb.quicksum(var.usc[sc] * self.edata.SCP[(sc,i),t] * SCdata.PcMin[sc,i] for sc in swingcontracts),
-                    gb.GRB.LESS_EQUAL,
-                    var.PgenSC[i,t],
-                    name = 'PgenSCmin({0},{1})'.format(i,t) )
+            name = 'PgenSCmin({0},{1})'.format(i,t)
+            self.constraints[name]= expando()
+            cc=self.constraints[name]
+            cc.lhs=gb.quicksum(var.usc[sc] * self.edata.SCP[(sc,i),t] * SCdata.PcMin[sc,i] for sc in swingcontracts)
+            cc.rhs=var.PgenSC[i,t]
+            cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
             
-            SCPmax[i,t] = self.model.addConstr( 
-                    var.PgenSC[i,t],
-                    gb.GRB.LESS_EQUAL,
-                    gb.quicksum(var.usc[sc] * self.edata.SCP[(sc,i),t] * SCdata.PcMax[sc,i] for sc in swingcontracts),
-                    name = 'PgenSCmax({0},{1})'.format(i,t) )
+            name = 'PgenSCmax({0},{1})'.format(i,t)
+            self.constraints[name]= expando()
+            cc=self.constraints[name]
+            cc.lhs= var.PgenSC[i,t]
+            cc.rhs=gb.quicksum(var.usc[sc] * self.edata.SCP[(sc,i),t] * SCdata.PcMax[sc,i] for sc in swingcontracts)
+            cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
             
-            SCRupMax[i,t] = self.model.addConstr( 
-                    var.RCupSC[i,t],
-                    gb.GRB.LESS_EQUAL,
-                    gb.quicksum(var.usc[sc] * self.edata.SCP[(sc,i),t] * SCdata.PcMax[sc,i]  for sc in swingcontracts)
-                    -var.PgenSC[i,t],
-                    name = 'RCupSCmax({0},{1})'.format(i,t) )
+            name = 'RCupSCmax({0},{1})'.format(i,t)
+            self.constraints[name]= expando()
+            cc=self.constraints[name]
+            cc.lhs= var.RCupSC[i,t]
+            cc.rhs=gb.quicksum(var.usc[sc] * self.edata.SCP[(sc,i),t] * SCdata.PcMax[sc,i]  for sc in swingcontracts) -var.PgenSC[i,t]
+            cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
             
-            SCRdnMax[i,t] = self.model.addConstr( 
-                    var.RCdnSC[i,t],
-                    gb.GRB.LESS_EQUAL,
-                    var.PgenSC[i,t]
-                    -gb.quicksum(var.usc[sc] * self.edata.SCP[(sc,i),t] *  SCdata.PcMin[sc,i] for sc in swingcontracts),
-                    name = 'RCupSCmin({0},{1})'.format(i,t) )
+            name = 'RCupSCmin({0},{1})'.format(i,t)
+            self.constraints[name]= expando()
+            cc=self.constraints[name]
+            cc.lhs = var.RCdnSC[i,t]
+            cc.rhs = var.PgenSC[i,t]-gb.quicksum(var.usc[sc] * self.edata.SCP[(sc,i),t] *  SCdata.PcMin[sc,i] for sc in swingcontracts)
+            cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
             
-            
+
             
 #==============================================================================
 # Real-time market constraints
@@ -154,7 +154,7 @@ def _build_constraints_elecRT(self,mtype,dispatchElecDA):
     generators = self.edata.generators
     gfpp = self.edata.gfpp
     windfarms = self.edata.windfarms
-    
+    m=self.model
     
     """
     If stochastic dispatch: scenario set comprises i) gas price and ii) wind power scenarios
@@ -169,8 +169,7 @@ def _build_constraints_elecRT(self,mtype,dispatchElecDA):
         scenwind = {s: s for s in self.edata.windscen_index} # Dummy dictionary from windscen to windscen
         
     
-    # Real-time power balance
-    PowerBalRT = {}        
+    #--- Real-time Power balance     
     if mtype == 'Stoch':
         WindDA = var.WindDA
     elif mtype == 'RealTime':
@@ -178,107 +177,92 @@ def _build_constraints_elecRT(self,mtype,dispatchElecDA):
         
         
     for s in scenarios:                
-        for t in time:        
-            PowerBalRT[s,t] = self.model.addConstr(
-            gb.quicksum(var.RUp[g,s,t] - var.RDn[g,s,t] for g in generators) +
-            gb.quicksum(var.RUpSC[g,s,t] - var.RDnSC[g,s,t] for g in gfpp) +            
-            gb.quicksum(wscen[w][scenwind[s]][t]*wcap[w] - WindDA[w,t]- var.Wspill[w,s,t] for w in windfarms) +
-            var.Lshed[s,t],
-            gb.GRB.EQUAL,  
-            0.0,
-            name = 'Power_Balance_RT({0},{1})'.format(s,t))
+        for t in time:
+            name = 'Power_Balance_RT({0},{1})'.format(s,t)
+            self.constraints[name]= expando()
+            cc=self.constraints[name]
+            cc.lhs = gb.quicksum(var.RUp[g,s,t] - var.RDn[g,s,t] for g in generators) +            gb.quicksum(var.RUpSC[g,s,t] - var.RDnSC[g,s,t] for g in gfpp) +                        gb.quicksum(wscen[w][scenwind[s]][t]*wcap[w] - WindDA[w,t]- var.Wspill[w,s,t] for w in windfarms) +       var.Lshed[s,t]
+            cc.rhs = 0.0
+            cc.expr = m.addConstr(cc.lhs == cc.rhs,name=name)
   
     
-    # Up regulation no-SC
+    #--- Up and down regulation no-SC
     RUp_max = {}    
     if mtype == 'Stoch':
         RCup = var.RCup
+        RCdn = var.RCdn
     elif mtype == 'RealTime':
         RCup = read_fixed_vars(dispatchElecDA.RCup)
+        RCdn = read_fixed_vars(dispatchElecDA.RCdn)  
                  
     for s in scenarios:
         for t in time:
             for i in generators:
-                RUp_max[i,s,t] = self.model.addConstr(
-                var.RUp[i,s,t],
-                gb.GRB.LESS_EQUAL,             
-                RCup[i, t],
-                name = 'RegUp_max_RT({0},{1},{2})'.format(i,s,t))
+                name = 'RegUp_max_RT({0},{1},{2})'.format(i,s,t)
+                self.constraints[name]= expando()
+                cc=self.constraints[name]
+                cc.lhs=var.RUp[i,s,t]
+                cc.rhs=RCup[i, t]
+                cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
                 
-    # Down regulation no-SC
-    RDn_max = {}  
-    if mtype == 'Stoch':
-        RCdn = var.RCdn
-    elif mtype == 'RealTime':
-        RCdn = read_fixed_vars(dispatchElecDA.RCdn)       
-        
-        
-    for s in scenarios:
-        for t in time:
-            for i in generators:        
-                RDn_max[i,s,t] = self.model.addConstr(
-                var.RDn[i,s,t],
-                gb.GRB.LESS_EQUAL,                        
-                RCdn[i, t],
-                name = 'RegDown_max_RT({0},{1},{2})'.format(i,s,t))   
+                name = 'RegDown_max_RT({0},{1},{2})'.format(i,s,t)
+                self.constraints[name]= expando()
+                cc=self.constraints[name]
+                cc.lhs=var.RDn[i,s,t]
+                cc.rhs=RCdn[i, t]
+                cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
                 
-    # Up regulation with SC
-    RUpSC_max = {}    
+                
+    #--- Up and down regulation with SC
     if mtype == 'Stoch':
         RCupSC = var.RCupSC
-    elif mtype == 'RealTime':
-        RCupSC = read_fixed_vars(dispatchElecDA.RCupSC)
-        
-    for s in scenarios:
-        for t in time:
-            for i in gfpp:
-                RUpSC_max[i,s,t] = self.model.addConstr(
-                var.RUpSC[i,s,t],
-                gb.GRB.LESS_EQUAL,             
-                RCupSC[i, t],
-                name = 'RegUpSC_max_RT({0},{1},{2})'.format(i,s,t))
-                
-    # Dwon regulation with SC
-    RDnSC_max = {}
-    if mtype == 'Stoch':
         RCdnSC = var.RCdnSC
     elif mtype == 'RealTime':
+        RCupSC = read_fixed_vars(dispatchElecDA.RCupSC)
         RCdnSC = read_fixed_vars(dispatchElecDA.RCdnSC)
     
+        
     for s in scenarios:
         for t in time:
             for i in gfpp:
-                RDnSC_max[i,s,t] = self.model.addConstr(
-                var.RDnSC[i,s,t],
-                gb.GRB.LESS_EQUAL,             
-                RCdnSC[i, t],
-                name = 'RegUpSC_max_RT({0},{1},{2})'.format(i,s,t))
-    
+                
+                name = 'RegUpSC_max_RT({0},{1},{2})'.format(i,s,t)
+                self.constraints[name]= expando()
+                cc=self.constraints[name]
+                cc.lhs=var.RUpSC[i,s,t]
+                cc.rhs=RCupSC[i, t]
+                cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
+                
+                name = 'RegDnSC_max_RT({0},{1},{2})'.format(i,s,t)
+                self.constraints[name]= expando()
+                cc=self.constraints[name]
+                cc.lhs=var.RDnSC[i,s,t]
+                cc.rhs=RCdnSC[i, t]
+                cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
 
-    # Load sheading
-        
-    LshedMax = {}
-     
+
+    #--- Load sheading     
     for s in scenarios:
-        for t in time:        
-            LshedMax[s,t] = self.model.addConstr(
-            var.Lshed[s,t],
-            gb.GRB.LESS_EQUAL, self.edata.sysload[t],
-            name = 'Max_load_shed_RT({0},{1})'.format(s,t) )
-    
+        for t in time:
+            name = 'Max_load_shed_RT({0},{1})'.format(s,t)
+            self.constraints[name]= expando()
+            cc=self.constraints[name]
+            cc.lhs=var.Lshed[s,t]
+            cc.rhs=self.edata.sysload[t]
+            cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
+            
     
     # Wind spillage
-    
-    WspillMax = {} 
-      
     for s in scenarios:  
         for t in time:
             for j in windfarms:
-                WspillMax[j,s,t] = self.model.addConstr(
-                var.Wspill[j,s,t], 
-                gb.GRB.LESS_EQUAL,
-                wscen[j][scenwind[s]][t]*wcap[j],
-                name = 'Max_wind_spill_RT({0},{1})'.format(j,s,t) )
+                name = 'Max_wind_spill_RT({0},{1})'.format(j,s,t) 
+                self.constraints[name]= expando()
+                cc=self.constraints[name]
+                cc.lhs=var.Wspill[j,s,t]
+                cc.rhs=wscen[j][scenwind[s]][t]*wcap[j]
+                cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
+
             
     
     
