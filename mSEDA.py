@@ -47,8 +47,8 @@ class StochElecDA():
         self.results = expando()
 
         self._load_ElecData()
-        #self._build_model()
-        self._build_CP_model()
+        self._build_model()
+        #self._build_CP_model()
         
     def optimize(self):
         self.model.optimize()
@@ -111,5 +111,5 @@ class StochElecDA():
 mSEDA = StochElecDA()
 
 mSEDA.optimize()
-#mSEDA.get_results()
+mSEDA.get_results()
 #

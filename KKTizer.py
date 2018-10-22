@@ -64,11 +64,12 @@ def _complementarity_model(self):
     PrConstrNames = self.constraints.keys() #Primal Constraints Names
     
     # Dual variables & complementarity constraints - Explicit primal constraints
+    print('Starting Explicit Primal Constraints')
     for PrC in PrConstrNames:                
         PrimalConstr = self.constraints[PrC]
         pc_grb = self.constraints[PrC].expr
-        
-        if pc_grb.sense == '==':
+    
+        if pc_grb.sense == '=':
             self.duals.lambdas[PrC] = m.addVar(lb=-gb.GRB.INFINITY, ub=gb.GRB.INFINITY, 
                                                name = 'lambda_' + pc_grb.ConstrName)     
             self.duals.lambdas_idx.append(pc_grb.ConstrName)   
@@ -81,7 +82,9 @@ def _complementarity_model(self):
             # Build complementarity constraints
             self.comp.primal[PrC], self.comp.SOS1[PrC] =  build_complementarity_LB(self, PrimalConstr, self.duals.mus[PrC], self.duals.SOS1[PrC])
     
-    # Dual variables & complementarity constraints - Upper bounds (if not INF)
+    
+    #--- Dual variables & complementarity constraints - Upper bounds (if not INF)
+    print('Starting Upper Bounds')
     self.duals.musUB = defaultdict(list); self.duals.SOS1UB = defaultdict(list)
     self.comp.primalUB = defaultdict(); self.comp.SOS1UB = defaultdict()
     prVar = self.variables.primal
@@ -95,7 +98,8 @@ def _complementarity_model(self):
         self.comp.SOS1UB[PrV] = m.addSOS(gb.GRB.SOS_TYPE1,
                                        [self.duals.musUB[PrV],self.duals.SOS1UB[PrV]])
                                        
-    # Dual variables & complementarity constraints - Lower bounds (if not -INF) 
+    #--- Dual variables & complementarity constraints - Lower bounds (if not -INF) 
+    print('Starting Lower Bounds')
     self.duals.musLB = defaultdict(list); self.duals.SOS1LB = defaultdict(list)
     self.comp.primalLB = defaultdict(); self.comp.SOS1LB = defaultdict()
     for PrV in PrVarLB:        
@@ -110,7 +114,8 @@ def _complementarity_model(self):
 
        
 
-    # Stationarity constraints
+    #--- Stationarity constraints
+    print('Starting Stationarity Constraints')
     self.cStat = defaultdict()
     
     for var in PrVarNames:     
