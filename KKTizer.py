@@ -68,7 +68,7 @@ def _complementarity_model(self):
         PrimalConstr = self.constraints[PrC]
         pc_grb = self.constraints[PrC].expr
         
-        if pc_grb.sense == '=':
+        if pc_grb.sense == '==':
             self.duals.lambdas[PrC] = m.addVar(lb=-gb.GRB.INFINITY, ub=gb.GRB.INFINITY, 
                                                name = 'lambda_' + pc_grb.ConstrName)     
             self.duals.lambdas_idx.append(pc_grb.ConstrName)   

@@ -97,6 +97,8 @@ class StochElecDA():
         LibCns_Elec._build_constraints_elecDA(self)
         LibCns_Elec._build_constraints_elecRT(self, mtype, dispatchElecDA)
         
+        self.model.update()
+        
         # Add the KKT Conditions (Stationarity and complementarity)
         KKTizer._complementarity_model(self)
         
