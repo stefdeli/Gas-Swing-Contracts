@@ -180,11 +180,13 @@ def _build_variables_elecDA(self):
         # Swing Contract status
         var.usc = {}
         
-        for sc in swingcontracts:
-            name='u({0})'.format(sc)
-            Temp = m.addVar(vtype=gb.GRB.BINARY, name=name)
-            var.usc[sc]  = Temp
-            primal[name] = Temp
+        
+        if self.comp  == False:      
+            for sc in swingcontracts:
+                name='u({0})'.format(sc)
+                Temp = m.addVar(vtype=gb.GRB.BINARY, name=name)
+                var.usc[sc]  = Temp
+                primal[name] = Temp
         
         # Dispatchable generators (Non-contracted Gas & Non-Gas)
         var.Pgen = {}

@@ -68,17 +68,19 @@ def _complementarity_model(self):
     for PrC in PrConstrNames:                
         PrimalConstr = self.constraints[PrC]
         pc_grb = self.constraints[PrC].expr
+        #print(pc_grb)
+
     
         if pc_grb.sense == '=':
             self.duals.lambdas[PrC] = m.addVar(lb=-gb.GRB.INFINITY, ub=gb.GRB.INFINITY, 
                                                name = 'lambda_' + pc_grb.ConstrName)     
             self.duals.lambdas_idx.append(pc_grb.ConstrName)   
-            m.update()                                    
+           # m.update()                                    
         else:                
             self.duals.mus[PrC] = m.addVar(lb = 0, name = 'mu_' + pc_grb.ConstrName)
             self.duals.SOS1[PrC] = m.addVar(lb =0, name = 'SOS1_'+ pc_grb.ConstrName)
             self.duals.mus_idx.append(pc_grb.ConstrName)
-            m.update()
+            #m.update()
             # Build complementarity constraints
             self.comp.primal[PrC], self.comp.SOS1[PrC] =  build_complementarity_LB(self, PrimalConstr, self.duals.mus[PrC], self.duals.SOS1[PrC])
     
@@ -91,7 +93,7 @@ def _complementarity_model(self):
     for PrV in PrVarUB:        
         self.duals.musUB[PrV] = m.addVar(lb = 0, name = 'muUB_'+ PrV)
         self.duals.SOS1UB[PrV] = m.addVar(lb =0, name = 'SOS1_UB_'+ PrV)
-        m.update() 
+       # m.update() 
         self.comp.primalUB[PrV] = m.addConstr(
                                 self.duals.SOS1UB[PrV] == prVar[PrV].UB - prVar[PrV],
                                 name = 'SOS1_UB_'+PrV)
@@ -105,7 +107,7 @@ def _complementarity_model(self):
     for PrV in PrVarLB:        
         self.duals.musLB[PrV] = m.addVar(lb = 0, name = 'muLB_'+ PrV)
         self.duals.SOS1LB[PrV] = m.addVar(lb =0, name = 'SOS1_LB_'+ PrV)
-        m.update() 
+        #m.update() 
         self.comp.primalLB[PrV] = m.addConstr(
                                 self.duals.SOS1LB[PrV] == prVar[PrV] - prVar[PrV].LB,
                                 name = 'SOS1_LB_'+PrV)
@@ -113,7 +115,6 @@ def _complementarity_model(self):
                                        [self.duals.musLB[PrV],self.duals.SOS1LB[PrV]])
 
        
-
     #--- Stationarity constraints
     print('Starting Stationarity Constraints')
     self.cStat = defaultdict()
@@ -126,8 +127,10 @@ def _complementarity_model(self):
               gb.quicksum(coeff(A_ineqGE, constr, var)*self.duals.mus[constr] for constr in self.duals.mus_idx) +
               (self.duals.musUB[var] if var in PrVarUB else 0) - (self.duals.musLB[var] if var in PrVarLB else 0), 
               gb.GRB.EQUAL, 0,  name = 'dLag/' + var)
+    print('Finished Stationarity Constraints')   
     m.update()    
-     
+ 
+
 
 # Build complementarity constraints  0<=x .perp. g(x) >=0
 def build_complementarity_LB(self, PrimalConstr, mu, SOS1):
@@ -141,7 +144,7 @@ def build_complementarity_LB(self, PrimalConstr, mu, SOS1):
         cPrimal = m.addConstr(SOS1 == PrimalConstr.lhs - PrimalConstr.rhs,                       
                               name = 'SOS1_'+PrimalConstr.expr.ConstrName)
                                   
-    m.update()                   
+   # m.update()                   
     return (cSOS1, cPrimal)
 
 def coeff(A, row, col):

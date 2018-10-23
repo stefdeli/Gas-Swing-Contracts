@@ -24,8 +24,8 @@ def _results_StochD(self):
         
      self.results.WindDA = pd.DataFrame(
         [[self.variables.WindDA[j,t].x for j in windfarms] for t in time], index=time, columns=windfarms)
-     
-     self.results.usc = pd.DataFrame(
+     if self.comp==False:
+         self.results.usc = pd.DataFrame(
         [self.variables.usc[sc].x for sc in swingcontracts], index=swingcontracts)
      
      self.results.PgenSC = pd.DataFrame(

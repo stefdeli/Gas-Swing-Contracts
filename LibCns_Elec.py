@@ -67,18 +67,18 @@ def _build_constraints_elecDA(self):
             name='Pmin_DA_GFPP({0},{1})'.format(gen,t)
             self.constraints[name]= expando()
             cc=self.constraints[name]   
-            cc.lhs=var.Pgen[gen,t]+var.PgenSC[gen,t]-var.RCdn[gen,t]-var.RCdnSC[gen,t]
+            cc.lhs=-var.Pgen[gen,t]-var.PgenSC[gen,t]+var.RCdn[gen,t]+var.RCdnSC[gen,t]
             cc.rhs=np.float64(0.0)
-            cc.expr = m.addConstr(cc.lhs >= cc.rhs,name=name)
+            cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
 
                    
         for gen in nongfpp:
             name='Pmin_DA({0},{1})'.format(gen,t)
             self.constraints[name]= expando()
             cc=self.constraints[name]   
-            cc.lhs=var.Pgen[gen,t]-var.RCup[gen,t]
+            cc.lhs=-var.Pgen[gen,t]+var.RCup[gen,t]
             cc.rhs=np.float64(0.0)
-            cc.expr = m.addConstr(cc.lhs >= cc.rhs,name=name)
+            cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
   
     
     #--- Wind power schedule            
@@ -313,7 +313,7 @@ def _build_constraints_elecRT(self,mtype,dispatchElecDA):
     for s in scenarios:  
         for t in time:
             for j in windfarms:
-                name = 'Max_wind_spill_RT({0},{1})'.format(j,s,t) 
+                name = 'Max_wind_spill_RT({0},{1},{2})'.format(j,s,t) 
                 self.constraints[name]= expando()
                 cc=self.constraints[name]
                 cc.lhs=var.Wspill[j,s,t]

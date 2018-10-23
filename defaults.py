@@ -1,6 +1,7 @@
-folder='Data/IntegratedMarketStochastic'
+#folder='Data/IntegratedMarketStochastic'
+folder='Data/SimpleNetwork_ImperialUnits'
+#folder='Data/SimpleNetwork_ImperialUnits_snapshot'
 
-#folder='Data/SimpleNetwork_ImperialUnits'
 
 
 filepath_gas = folder+'/GasData'
