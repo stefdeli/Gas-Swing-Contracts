@@ -109,6 +109,7 @@ class StochElecDA():
         LibObjFunct._build_objective_dummy_complementarity(self)
         
         self.model.Params.MIPFocus=1
+        self.model.Params.timelimit = 20.0
         self.model.update()
 
 mSEDA = StochElecDA(comp=False)
