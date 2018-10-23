@@ -39,9 +39,11 @@ def _build_constraints_elecDA(self):
         name='PowerBalance({0})'.format(t)
         self.constraints[name]= expando()
         cc=self.constraints[name]
-        cc.lhs = gb.quicksum(var.WindDA[wf,t] for wf in windfarms) + gb.quicksum(var.Pgen[gen,t] for gen in generators)+  gb.quicksum(var.PgenSC[gen,t] for gen in gfpp)
+        cc.lhs =   gb.quicksum(var.WindDA[wf,t] for wf in windfarms) \
+                +  gb.quicksum(var.Pgen[gen,t] for gen in generators)\
+                +  gb.quicksum(var.PgenSC[gen,t] for gen in gfpp)
         cc.rhs = self.edata.sysload[t]
-        cc.expr = m.addConstr(cc.lhs >= cc.rhs,name=name)
+        cc.expr = m.addConstr(cc.lhs == cc.rhs,name=name)
 
     #--- Maximum Capacity limits
     for t in time:
@@ -215,12 +217,14 @@ def _build_constraints_elecRT(self,mtype,dispatchElecDA):
             name = 'Power_Balance_RT({0},{1})'.format(s,t)
             self.constraints[name]= expando()
             cc=self.constraints[name]
-            cc.lhs = gb.quicksum(var.RUp[g,s,t] - var.RDn[g,s,t] for g in generators) + \
-                     gb.quicksum(var.RUpSC[g,s,t] - var.RDnSC[g,s,t] for g in gfpp) +   \
-                     gb.quicksum(wscen[w][scenwind[s]][t]*wcap[w] - WindDA[w,t]- var.Wspill[w,s,t] for w in windfarms) + \
-                     var.Lshed[s,t]
-            cc.rhs = np.float64(0.0)
-            cc.expr = m.addConstr(cc.lhs >= cc.rhs,name=name)
+            
+            cc.lhs = gb.quicksum(var.RUp[g,s,t] - var.RDn[g,s,t] for g in generators)  \
+                      + gb.quicksum(var.RUpSC[g,s,t] - var.RDnSC[g,s,t] for g in gfpp)   \
+                      + gb.quicksum(WindDA[w,t] for w in windfarms) \
+                      - gb.quicksum(var.Wspill[w,s,t] for w in windfarms)  \
+                      + var.Lshed[s,t]
+            cc.rhs =  - sum(wscen[w][scenwind[s]][t]*wcap[w] for w in windfarms)
+            cc.expr = m.addConstr(cc.lhs == cc.rhs,name=name)
   
     
     #--- Up and down regulation no-SC

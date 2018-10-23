@@ -120,11 +120,11 @@ mCOMP = StochElecDA(comp=True)
 mCOMP.model.write('mCOMP.lp')
 mCOMP.optimize()
 mCOMP.get_results()
-
+#
 Temp=pd.concat([mCOMP.results.Pgen,mSEDA.results.Pgen],axis=1)
 print(Temp)
 
-
+#
 ## Build complementarity constraints  0<=x .perp. g(x) >=0
 #def build_complementarity_LB(self, PrimalConstr, mu, SOS1):
 #    m = self.model    
