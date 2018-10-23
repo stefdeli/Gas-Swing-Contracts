@@ -35,6 +35,9 @@ def _build_objective_StochElecDA(self):
     scengprt = {s: self.edata.scen_wgp[s][0] for s in self.edata.scen_wgp.keys()}
     #scenarioprob = self.data.scenprob['Probability'].to_dict()
     
+    P_up=defaults.RESERVES_UP_PREMIUM
+    P_dn=defaults.RESERVES_DN_PREMIUM
+    
     # !NB Re-dispatch cost = Day-ahead energy cost (No premium)
     m.setObjective(    
     # Day-ahead energy cost
@@ -43,16 +46,16 @@ def _build_objective_StochElecDA(self):
     # Gas Generators = Nodal Gas Price  * HR * Power Output
     gb.quicksum( gaspriceda[t][Map_Eg2Gn[gen]] *HR[gen]*var.Pgen[gen,t] for gen in gfpp for t in time) +      
     # Gas Generators with Contracts 
-    gb.quicksum(SCdata.lambdaC[sc,gen]*HR[gen]*var.Pgen[gen,t] for gen in gfpp for sc in swingcontr for t in time) +      
+    gb.quicksum(SCdata.lambdaC[sc,gen]*HR[gen]*var.PgenSC[gen,t] for gen in gfpp for sc in swingcontr for t in time) +      
     # Real-time redispatch cost
     # Probability                
     gb.quicksum(scenarioprob[s] * (                                                                                                
     # Non Gas Generators
-    gb.quicksum(gendata.lincost[gen]*(defaults.RESERVES_UP_PREMIUM*var.RUp[gen,s,t]-defaults.RESERVES_DN_PREMIUM*var.RDn[gen,s,t]) for gen in nongfpp for t in time) +
+    gb.quicksum(gendata.lincost[gen]*(P_up*var.RUp[gen,s,t]-P_dn*var.RDn[gen,s,t]) for gen in nongfpp for t in time) +
     # Gas Generators 
-    gb.quicksum(gaspriceRT[t][Map_Eg2Gn[gen]][scengprt[s]]*HR[gen]*(defaults.RESERVES_UP_PREMIUM*var.RUp[gen,s,t]-defaults.RESERVES_DN_PREMIUM*var.RDn[gen,s,t]) for gen in gfpp for t in time) +
+    gb.quicksum(gaspriceRT[t][Map_Eg2Gn[gen]][scengprt[s]]*HR[gen]*(P_up*var.RUp[gen,s,t]-P_dn*var.RDn[gen,s,t]) for gen in gfpp for t in time) +
     # Gas Generators with Contracts
-    gb.quicksum(SCdata.lambdaC[sc,gen]*(defaults.RESERVES_UP_PREMIUM*var.RUpSC[gen,s,t]-defaults.RESERVES_DN_PREMIUM*var.RDnSC[gen,s,t]) for gen in gfpp for sc in swingcontr for t in time) +
+    gb.quicksum(SCdata.lambdaC[sc,gen]*HR[gen]*(P_up*var.RUpSC[gen,s,t]-P_dn*var.RDnSC[gen,s,t]) for gen in gfpp for sc in swingcontr for t in time) +
     # Load Shedding Penalty
     gb.quicksum(defaults.VOLL * var.Lshed[s,t] for t in time)) for s in scenarios),
     gb.GRB.MINIMIZE)
