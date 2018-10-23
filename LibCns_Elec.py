@@ -106,10 +106,8 @@ def _build_constraints_elecDA(self):
         
     
     
-    # Single contract activation per generator & time-step
-    
-    
-    
+    # Single contract activation per generator & time-step  
+        
     for t in time:
         for gen in gfpp:
             if self.comp==False: # Not a comp model, so add binary requirement
@@ -217,7 +215,10 @@ def _build_constraints_elecRT(self,mtype,dispatchElecDA):
             name = 'Power_Balance_RT({0},{1})'.format(s,t)
             self.constraints[name]= expando()
             cc=self.constraints[name]
-            cc.lhs = gb.quicksum(var.RUp[g,s,t] - var.RDn[g,s,t] for g in generators) +            gb.quicksum(var.RUpSC[g,s,t] - var.RDnSC[g,s,t] for g in gfpp) +                        gb.quicksum(wscen[w][scenwind[s]][t]*wcap[w] - WindDA[w,t]- var.Wspill[w,s,t] for w in windfarms) +       var.Lshed[s,t]
+            cc.lhs = gb.quicksum(var.RUp[g,s,t] - var.RDn[g,s,t] for g in generators) +
+                     gb.quicksum(var.RUpSC[g,s,t] - var.RDnSC[g,s,t] for g in gfpp) +                        
+                     gb.quicksum(wscen[w][scenwind[s]][t]*wcap[w] - WindDA[w,t]- var.Wspill[w,s,t] for w in windfarms) +       
+                     var.Lshed[s,t]
             cc.rhs = np.float64(0.0)
             cc.expr = m.addConstr(cc.lhs == cc.rhs,name=name)
   
