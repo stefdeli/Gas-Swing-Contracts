@@ -145,4 +145,4 @@ def _build_objective_gasRT(self):
 def _build_objective_dummy_complementarity(self): 
     m = self.model
     
-    m.setObjective(self.variables.z, gb.GRB.MINIMIZE)
+    m.setObjective(self.variables.z+1.0, gb.GRB.MINIMIZE)

@@ -162,7 +162,7 @@ def _build_constraints_elecDA(self):
             cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
             
             
-            name = 'RCupSCmin({0},{1})'.format(i,t)
+            name = 'RCdnSCmin({0},{1})'.format(i,t)
             self.constraints[name]= expando()
             cc=self.constraints[name]
             if self.comp==True: # u is fixed and Move all parameters to rhs
@@ -173,8 +173,21 @@ def _build_constraints_elecDA(self):
                 cc.rhs = np.float64(0.0)
             cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
             
-
-            
+#            
+#            name = 'RCupSCminLimiter({0},{1})'.format(i,t)
+#            self.constraints[name]= expando()
+#            cc=self.constraints[name]
+#            cc.lhs =   var.RCupSC[i,t]
+#            cc.rhs = np.float64(0.0)
+#            cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
+#            
+#            name = 'RCdnSCminLimiter({0},{1})'.format(i,t)
+#            self.constraints[name]= expando()
+#            cc=self.constraints[name]
+#            cc.lhs =   var.RCdnSC[i,t]
+#            cc.rhs = np.float64(0.0)
+#            cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
+#            
 #==============================================================================
 # Real-time market constraints
 #==============================================================================
@@ -218,9 +231,9 @@ def _build_constraints_elecRT(self,mtype,dispatchElecDA):
             self.constraints[name]= expando()
             cc=self.constraints[name]
             
-            cc.lhs = gb.quicksum(var.RUp[g,s,t] - var.RDn[g,s,t] for g in generators)  \
+            cc.lhs =    gb.quicksum(var.RUp[g,s,t] - var.RDn[g,s,t] for g in generators)  \
                       + gb.quicksum(var.RUpSC[g,s,t] - var.RDnSC[g,s,t] for g in gfpp)   \
-                      + gb.quicksum(WindDA[w,t] for w in windfarms) \
+                      - gb.quicksum(WindDA[w,t] for w in windfarms) \
                       - gb.quicksum(var.Wspill[w,s,t] for w in windfarms)  \
                       + var.Lshed[s,t]
             cc.rhs =  - sum(wscen[w][scenwind[s]][t]*wcap[w] for w in windfarms)
