@@ -5035,125 +5035,140 @@ Subject To
    + SOS1_LB_Wspill(w1,ss5,t24) = 0
  SOS1_LB_Lshed(ss5,t24): - Lshed(ss5,t24) + SOS1_LB_Lshed(ss5,t24) = 0
  dLag/Pgen(g1,t1): lambda_PowerBalance(t1) + mu_Pmax_DA_GFPP(g1,t1)
-   - mu_Pmin_DA_GFPP(g1,t1) - muLB_Pgen(g1,t1) = -88
+   - mu_Pmin_DA_GFPP(g1,t1) - muLB_Pgen(g1,t1) = -80
  dLag/Pgen(g1,t2): lambda_PowerBalance(t2) + mu_Pmax_DA_GFPP(g1,t2)
-   - mu_Pmin_DA_GFPP(g1,t2) - muLB_Pgen(g1,t2) = -88
+   - mu_Pmin_DA_GFPP(g1,t2) - muLB_Pgen(g1,t2) = -80
  dLag/Pgen(g1,t3): lambda_PowerBalance(t3) + mu_Pmax_DA_GFPP(g1,t3)
-   - mu_Pmin_DA_GFPP(g1,t3) - muLB_Pgen(g1,t3) = -88
+   - mu_Pmin_DA_GFPP(g1,t3) - muLB_Pgen(g1,t3) = -80
  dLag/Pgen(g1,t4): lambda_PowerBalance(t4) + mu_Pmax_DA_GFPP(g1,t4)
-   - mu_Pmin_DA_GFPP(g1,t4) - muLB_Pgen(g1,t4) = -88
+   - mu_Pmin_DA_GFPP(g1,t4) - muLB_Pgen(g1,t4) = -80
  dLag/Pgen(g1,t5): lambda_PowerBalance(t5) + mu_Pmax_DA_GFPP(g1,t5)
-   - mu_Pmin_DA_GFPP(g1,t5) - muLB_Pgen(g1,t5) = -88
+   - mu_Pmin_DA_GFPP(g1,t5) - muLB_Pgen(g1,t5) = -80
  dLag/Pgen(g1,t6): lambda_PowerBalance(t6) + mu_Pmax_DA_GFPP(g1,t6)
-   - mu_Pmin_DA_GFPP(g1,t6) - muLB_Pgen(g1,t6) = -88
+   - mu_Pmin_DA_GFPP(g1,t6) - muLB_Pgen(g1,t6) = -80
  dLag/Pgen(g1,t7): lambda_PowerBalance(t7) + mu_Pmax_DA_GFPP(g1,t7)
-   - mu_Pmin_DA_GFPP(g1,t7) - muLB_Pgen(g1,t7) = -88
+   - mu_Pmin_DA_GFPP(g1,t7) - muLB_Pgen(g1,t7) = -80
  dLag/Pgen(g1,t8): lambda_PowerBalance(t8) + mu_Pmax_DA_GFPP(g1,t8)
-   - mu_Pmin_DA_GFPP(g1,t8) - muLB_Pgen(g1,t8) = -88
+   - mu_Pmin_DA_GFPP(g1,t8) - muLB_Pgen(g1,t8) = -80
  dLag/Pgen(g1,t9): lambda_PowerBalance(t9) + mu_Pmax_DA_GFPP(g1,t9)
-   - mu_Pmin_DA_GFPP(g1,t9) - muLB_Pgen(g1,t9) = -88
+   - mu_Pmin_DA_GFPP(g1,t9) - muLB_Pgen(g1,t9) = -80
  dLag/Pgen(g1,t10): lambda_PowerBalance(t10) + mu_Pmax_DA_GFPP(g1,t10)
-   - mu_Pmin_DA_GFPP(g1,t10) - muLB_Pgen(g1,t10) = -88
+   - mu_Pmin_DA_GFPP(g1,t10) - muLB_Pgen(g1,t10) = -80
  dLag/Pgen(g1,t11): lambda_PowerBalance(t11) + mu_Pmax_DA_GFPP(g1,t11)
-   - mu_Pmin_DA_GFPP(g1,t11) - muLB_Pgen(g1,t11) = -88
+   - mu_Pmin_DA_GFPP(g1,t11) - muLB_Pgen(g1,t11) = -80
  dLag/Pgen(g1,t12): lambda_PowerBalance(t12) + mu_Pmax_DA_GFPP(g1,t12)
-   - mu_Pmin_DA_GFPP(g1,t12) - muLB_Pgen(g1,t12) = -88
+   - mu_Pmin_DA_GFPP(g1,t12) - muLB_Pgen(g1,t12) = -80
  dLag/Pgen(g1,t13): lambda_PowerBalance(t13) + mu_Pmax_DA_GFPP(g1,t13)
-   - mu_Pmin_DA_GFPP(g1,t13) - muLB_Pgen(g1,t13) = -88
+   - mu_Pmin_DA_GFPP(g1,t13) - muLB_Pgen(g1,t13) = -80
  dLag/Pgen(g1,t14): lambda_PowerBalance(t14) + mu_Pmax_DA_GFPP(g1,t14)
-   - mu_Pmin_DA_GFPP(g1,t14) - muLB_Pgen(g1,t14) = -88
+   - mu_Pmin_DA_GFPP(g1,t14) - muLB_Pgen(g1,t14) = -80
  dLag/Pgen(g1,t15): lambda_PowerBalance(t15) + mu_Pmax_DA_GFPP(g1,t15)
-   - mu_Pmin_DA_GFPP(g1,t15) - muLB_Pgen(g1,t15) = -88
+   - mu_Pmin_DA_GFPP(g1,t15) - muLB_Pgen(g1,t15) = -80
  dLag/Pgen(g1,t16): lambda_PowerBalance(t16) + mu_Pmax_DA_GFPP(g1,t16)
-   - mu_Pmin_DA_GFPP(g1,t16) - muLB_Pgen(g1,t16) = -88
+   - mu_Pmin_DA_GFPP(g1,t16) - muLB_Pgen(g1,t16) = -80
  dLag/Pgen(g1,t17): lambda_PowerBalance(t17) + mu_Pmax_DA_GFPP(g1,t17)
-   - mu_Pmin_DA_GFPP(g1,t17) - muLB_Pgen(g1,t17) = -88
+   - mu_Pmin_DA_GFPP(g1,t17) - muLB_Pgen(g1,t17) = -80
  dLag/Pgen(g1,t18): lambda_PowerBalance(t18) + mu_Pmax_DA_GFPP(g1,t18)
-   - mu_Pmin_DA_GFPP(g1,t18) - muLB_Pgen(g1,t18) = -88
+   - mu_Pmin_DA_GFPP(g1,t18) - muLB_Pgen(g1,t18) = -80
  dLag/Pgen(g1,t19): lambda_PowerBalance(t19) + mu_Pmax_DA_GFPP(g1,t19)
-   - mu_Pmin_DA_GFPP(g1,t19) - muLB_Pgen(g1,t19) = -88
+   - mu_Pmin_DA_GFPP(g1,t19) - muLB_Pgen(g1,t19) = -80
  dLag/Pgen(g1,t20): lambda_PowerBalance(t20) + mu_Pmax_DA_GFPP(g1,t20)
-   - mu_Pmin_DA_GFPP(g1,t20) - muLB_Pgen(g1,t20) = -88
+   - mu_Pmin_DA_GFPP(g1,t20) - muLB_Pgen(g1,t20) = -80
  dLag/Pgen(g1,t21): lambda_PowerBalance(t21) + mu_Pmax_DA_GFPP(g1,t21)
-   - mu_Pmin_DA_GFPP(g1,t21) - muLB_Pgen(g1,t21) = -88
+   - mu_Pmin_DA_GFPP(g1,t21) - muLB_Pgen(g1,t21) = -80
  dLag/Pgen(g1,t22): lambda_PowerBalance(t22) + mu_Pmax_DA_GFPP(g1,t22)
-   - mu_Pmin_DA_GFPP(g1,t22) - muLB_Pgen(g1,t22) = -88
+   - mu_Pmin_DA_GFPP(g1,t22) - muLB_Pgen(g1,t22) = -80
  dLag/Pgen(g1,t23): lambda_PowerBalance(t23) + mu_Pmax_DA_GFPP(g1,t23)
-   - mu_Pmin_DA_GFPP(g1,t23) - muLB_Pgen(g1,t23) = -88
+   - mu_Pmin_DA_GFPP(g1,t23) - muLB_Pgen(g1,t23) = -80
  dLag/Pgen(g1,t24): lambda_PowerBalance(t24) + mu_Pmax_DA_GFPP(g1,t24)
-   - mu_Pmin_DA_GFPP(g1,t24) - muLB_Pgen(g1,t24) = -88
+   - mu_Pmin_DA_GFPP(g1,t24) - muLB_Pgen(g1,t24) = -80
  dLag/PgenSC(g1,t1): lambda_PowerBalance(t1) + mu_Pmax_DA_GFPP(g1,t1)
    - mu_Pmin_DA_GFPP(g1,t1) + mu_PgenSCmax(g1,t1) - mu_PgenSCmin(g1,t1)
-   + mu_RCupSCmax(g1,t1) - mu_RCdnSCmin(g1,t1) - muLB_PgenSC(g1,t1) = 0
+   + mu_RCupSCmax(g1,t1) - mu_RCdnSCmin(g1,t1) - muLB_PgenSC(g1,t1) = -8
  dLag/PgenSC(g1,t2): lambda_PowerBalance(t2) + mu_Pmax_DA_GFPP(g1,t2)
    - mu_Pmin_DA_GFPP(g1,t2) + mu_PgenSCmax(g1,t2) - mu_PgenSCmin(g1,t2)
-   + mu_RCupSCmax(g1,t2) - mu_RCdnSCmin(g1,t2) - muLB_PgenSC(g1,t2) = 0
+   + mu_RCupSCmax(g1,t2) - mu_RCdnSCmin(g1,t2) - muLB_PgenSC(g1,t2) = -8
  dLag/PgenSC(g1,t3): lambda_PowerBalance(t3) + mu_Pmax_DA_GFPP(g1,t3)
    - mu_Pmin_DA_GFPP(g1,t3) + mu_PgenSCmax(g1,t3) - mu_PgenSCmin(g1,t3)
-   + mu_RCupSCmax(g1,t3) - mu_RCdnSCmin(g1,t3) - muLB_PgenSC(g1,t3) = 0
+   + mu_RCupSCmax(g1,t3) - mu_RCdnSCmin(g1,t3) - muLB_PgenSC(g1,t3) = -8
  dLag/PgenSC(g1,t4): lambda_PowerBalance(t4) + mu_Pmax_DA_GFPP(g1,t4)
    - mu_Pmin_DA_GFPP(g1,t4) + mu_PgenSCmax(g1,t4) - mu_PgenSCmin(g1,t4)
-   + mu_RCupSCmax(g1,t4) - mu_RCdnSCmin(g1,t4) - muLB_PgenSC(g1,t4) = 0
+   + mu_RCupSCmax(g1,t4) - mu_RCdnSCmin(g1,t4) - muLB_PgenSC(g1,t4) = -8
  dLag/PgenSC(g1,t5): lambda_PowerBalance(t5) + mu_Pmax_DA_GFPP(g1,t5)
    - mu_Pmin_DA_GFPP(g1,t5) + mu_PgenSCmax(g1,t5) - mu_PgenSCmin(g1,t5)
-   + mu_RCupSCmax(g1,t5) - mu_RCdnSCmin(g1,t5) - muLB_PgenSC(g1,t5) = 0
+   + mu_RCupSCmax(g1,t5) - mu_RCdnSCmin(g1,t5) - muLB_PgenSC(g1,t5) = -8
  dLag/PgenSC(g1,t6): lambda_PowerBalance(t6) + mu_Pmax_DA_GFPP(g1,t6)
    - mu_Pmin_DA_GFPP(g1,t6) + mu_PgenSCmax(g1,t6) - mu_PgenSCmin(g1,t6)
-   + mu_RCupSCmax(g1,t6) - mu_RCdnSCmin(g1,t6) - muLB_PgenSC(g1,t6) = 0
+   + mu_RCupSCmax(g1,t6) - mu_RCdnSCmin(g1,t6) - muLB_PgenSC(g1,t6) = -8
  dLag/PgenSC(g1,t7): lambda_PowerBalance(t7) + mu_Pmax_DA_GFPP(g1,t7)
    - mu_Pmin_DA_GFPP(g1,t7) + mu_PgenSCmax(g1,t7) - mu_PgenSCmin(g1,t7)
-   + mu_RCupSCmax(g1,t7) - mu_RCdnSCmin(g1,t7) - muLB_PgenSC(g1,t7) = 0
+   + mu_RCupSCmax(g1,t7) - mu_RCdnSCmin(g1,t7) - muLB_PgenSC(g1,t7) = -8
  dLag/PgenSC(g1,t8): lambda_PowerBalance(t8) + mu_Pmax_DA_GFPP(g1,t8)
    - mu_Pmin_DA_GFPP(g1,t8) + mu_PgenSCmax(g1,t8) - mu_PgenSCmin(g1,t8)
-   + mu_RCupSCmax(g1,t8) - mu_RCdnSCmin(g1,t8) - muLB_PgenSC(g1,t8) = 0
+   + mu_RCupSCmax(g1,t8) - mu_RCdnSCmin(g1,t8) - muLB_PgenSC(g1,t8) = -8
  dLag/PgenSC(g1,t9): lambda_PowerBalance(t9) + mu_Pmax_DA_GFPP(g1,t9)
    - mu_Pmin_DA_GFPP(g1,t9) + mu_PgenSCmax(g1,t9) - mu_PgenSCmin(g1,t9)
-   + mu_RCupSCmax(g1,t9) - mu_RCdnSCmin(g1,t9) - muLB_PgenSC(g1,t9) = 0
+   + mu_RCupSCmax(g1,t9) - mu_RCdnSCmin(g1,t9) - muLB_PgenSC(g1,t9) = -8
  dLag/PgenSC(g1,t10): lambda_PowerBalance(t10) + mu_Pmax_DA_GFPP(g1,t10)
    - mu_Pmin_DA_GFPP(g1,t10) + mu_PgenSCmax(g1,t10) - mu_PgenSCmin(g1,t10)
-   + mu_RCupSCmax(g1,t10) - mu_RCdnSCmin(g1,t10) - muLB_PgenSC(g1,t10) = 0
+   + mu_RCupSCmax(g1,t10) - mu_RCdnSCmin(g1,t10) - muLB_PgenSC(g1,t10)
+   = -8
  dLag/PgenSC(g1,t11): lambda_PowerBalance(t11) + mu_Pmax_DA_GFPP(g1,t11)
    - mu_Pmin_DA_GFPP(g1,t11) + mu_PgenSCmax(g1,t11) - mu_PgenSCmin(g1,t11)
-   + mu_RCupSCmax(g1,t11) - mu_RCdnSCmin(g1,t11) - muLB_PgenSC(g1,t11) = 0
+   + mu_RCupSCmax(g1,t11) - mu_RCdnSCmin(g1,t11) - muLB_PgenSC(g1,t11)
+   = -8
  dLag/PgenSC(g1,t12): lambda_PowerBalance(t12) + mu_Pmax_DA_GFPP(g1,t12)
    - mu_Pmin_DA_GFPP(g1,t12) + mu_PgenSCmax(g1,t12) - mu_PgenSCmin(g1,t12)
-   + mu_RCupSCmax(g1,t12) - mu_RCdnSCmin(g1,t12) - muLB_PgenSC(g1,t12) = 0
+   + mu_RCupSCmax(g1,t12) - mu_RCdnSCmin(g1,t12) - muLB_PgenSC(g1,t12)
+   = -8
  dLag/PgenSC(g1,t13): lambda_PowerBalance(t13) + mu_Pmax_DA_GFPP(g1,t13)
    - mu_Pmin_DA_GFPP(g1,t13) + mu_PgenSCmax(g1,t13) - mu_PgenSCmin(g1,t13)
-   + mu_RCupSCmax(g1,t13) - mu_RCdnSCmin(g1,t13) - muLB_PgenSC(g1,t13) = 0
+   + mu_RCupSCmax(g1,t13) - mu_RCdnSCmin(g1,t13) - muLB_PgenSC(g1,t13)
+   = -8
  dLag/PgenSC(g1,t14): lambda_PowerBalance(t14) + mu_Pmax_DA_GFPP(g1,t14)
    - mu_Pmin_DA_GFPP(g1,t14) + mu_PgenSCmax(g1,t14) - mu_PgenSCmin(g1,t14)
-   + mu_RCupSCmax(g1,t14) - mu_RCdnSCmin(g1,t14) - muLB_PgenSC(g1,t14) = 0
+   + mu_RCupSCmax(g1,t14) - mu_RCdnSCmin(g1,t14) - muLB_PgenSC(g1,t14)
+   = -8
  dLag/PgenSC(g1,t15): lambda_PowerBalance(t15) + mu_Pmax_DA_GFPP(g1,t15)
    - mu_Pmin_DA_GFPP(g1,t15) + mu_PgenSCmax(g1,t15) - mu_PgenSCmin(g1,t15)
-   + mu_RCupSCmax(g1,t15) - mu_RCdnSCmin(g1,t15) - muLB_PgenSC(g1,t15) = 0
+   + mu_RCupSCmax(g1,t15) - mu_RCdnSCmin(g1,t15) - muLB_PgenSC(g1,t15)
+   = -8
  dLag/PgenSC(g1,t16): lambda_PowerBalance(t16) + mu_Pmax_DA_GFPP(g1,t16)
    - mu_Pmin_DA_GFPP(g1,t16) + mu_PgenSCmax(g1,t16) - mu_PgenSCmin(g1,t16)
-   + mu_RCupSCmax(g1,t16) - mu_RCdnSCmin(g1,t16) - muLB_PgenSC(g1,t16) = 0
+   + mu_RCupSCmax(g1,t16) - mu_RCdnSCmin(g1,t16) - muLB_PgenSC(g1,t16)
+   = -8
  dLag/PgenSC(g1,t17): lambda_PowerBalance(t17) + mu_Pmax_DA_GFPP(g1,t17)
    - mu_Pmin_DA_GFPP(g1,t17) + mu_PgenSCmax(g1,t17) - mu_PgenSCmin(g1,t17)
-   + mu_RCupSCmax(g1,t17) - mu_RCdnSCmin(g1,t17) - muLB_PgenSC(g1,t17) = 0
+   + mu_RCupSCmax(g1,t17) - mu_RCdnSCmin(g1,t17) - muLB_PgenSC(g1,t17)
+   = -8
  dLag/PgenSC(g1,t18): lambda_PowerBalance(t18) + mu_Pmax_DA_GFPP(g1,t18)
    - mu_Pmin_DA_GFPP(g1,t18) + mu_PgenSCmax(g1,t18) - mu_PgenSCmin(g1,t18)
-   + mu_RCupSCmax(g1,t18) - mu_RCdnSCmin(g1,t18) - muLB_PgenSC(g1,t18) = 0
+   + mu_RCupSCmax(g1,t18) - mu_RCdnSCmin(g1,t18) - muLB_PgenSC(g1,t18)
+   = -8
  dLag/PgenSC(g1,t19): lambda_PowerBalance(t19) + mu_Pmax_DA_GFPP(g1,t19)
    - mu_Pmin_DA_GFPP(g1,t19) + mu_PgenSCmax(g1,t19) - mu_PgenSCmin(g1,t19)
-   + mu_RCupSCmax(g1,t19) - mu_RCdnSCmin(g1,t19) - muLB_PgenSC(g1,t19) = 0
+   + mu_RCupSCmax(g1,t19) - mu_RCdnSCmin(g1,t19) - muLB_PgenSC(g1,t19)
+   = -8
  dLag/PgenSC(g1,t20): lambda_PowerBalance(t20) + mu_Pmax_DA_GFPP(g1,t20)
    - mu_Pmin_DA_GFPP(g1,t20) + mu_PgenSCmax(g1,t20) - mu_PgenSCmin(g1,t20)
-   + mu_RCupSCmax(g1,t20) - mu_RCdnSCmin(g1,t20) - muLB_PgenSC(g1,t20) = 0
+   + mu_RCupSCmax(g1,t20) - mu_RCdnSCmin(g1,t20) - muLB_PgenSC(g1,t20)
+   = -8
  dLag/PgenSC(g1,t21): lambda_PowerBalance(t21) + mu_Pmax_DA_GFPP(g1,t21)
    - mu_Pmin_DA_GFPP(g1,t21) + mu_PgenSCmax(g1,t21) - mu_PgenSCmin(g1,t21)
-   + mu_RCupSCmax(g1,t21) - mu_RCdnSCmin(g1,t21) - muLB_PgenSC(g1,t21) = 0
+   + mu_RCupSCmax(g1,t21) - mu_RCdnSCmin(g1,t21) - muLB_PgenSC(g1,t21)
+   = -8
  dLag/PgenSC(g1,t22): lambda_PowerBalance(t22) + mu_Pmax_DA_GFPP(g1,t22)
    - mu_Pmin_DA_GFPP(g1,t22) + mu_PgenSCmax(g1,t22) - mu_PgenSCmin(g1,t22)
-   + mu_RCupSCmax(g1,t22) - mu_RCdnSCmin(g1,t22) - muLB_PgenSC(g1,t22) = 0
+   + mu_RCupSCmax(g1,t22) - mu_RCdnSCmin(g1,t22) - muLB_PgenSC(g1,t22)
+   = -8
  dLag/PgenSC(g1,t23): lambda_PowerBalance(t23) + mu_Pmax_DA_GFPP(g1,t23)
    - mu_Pmin_DA_GFPP(g1,t23) + mu_PgenSCmax(g1,t23) - mu_PgenSCmin(g1,t23)
-   + mu_RCupSCmax(g1,t23) - mu_RCdnSCmin(g1,t23) - muLB_PgenSC(g1,t23) = 0
+   + mu_RCupSCmax(g1,t23) - mu_RCdnSCmin(g1,t23) - muLB_PgenSC(g1,t23)
+   = -8
  dLag/PgenSC(g1,t24): lambda_PowerBalance(t24) + mu_Pmax_DA_GFPP(g1,t24)
    - mu_Pmin_DA_GFPP(g1,t24) + mu_PgenSCmax(g1,t24) - mu_PgenSCmin(g1,t24)
-   + mu_RCupSCmax(g1,t24) - mu_RCdnSCmin(g1,t24) - muLB_PgenSC(g1,t24) = 0
+   + mu_RCupSCmax(g1,t24) - mu_RCdnSCmin(g1,t24) - muLB_PgenSC(g1,t24)
+   = -8
  dLag/RCup(g1,t1): mu_Pmax_DA_GFPP(g1,t1) - mu_RegUp_max_RT(g1,ss0,t1)
    - mu_RegUp_max_RT(g1,ss1,t1) - mu_RegUp_max_RT(g1,ss2,t1)
    - mu_RegUp_max_RT(g1,ss3,t1) - mu_RegUp_max_RT(g1,ss4,t1)
@@ -7435,174 +7450,174 @@ Subject To
  dLag/Lshed(ss5,t24): lambda_Power_Balance_RT(ss5,t24)
    + mu_Max_load_shed_RT(ss5,t24) - muLB_Lshed(ss5,t24) = -1250
 Bounds
- lambda_PowerBalance(t1) free
- lambda_PowerBalance(t2) free
- lambda_PowerBalance(t3) free
- lambda_PowerBalance(t4) free
- lambda_PowerBalance(t5) free
- lambda_PowerBalance(t6) free
- lambda_PowerBalance(t7) free
- lambda_PowerBalance(t8) free
- lambda_PowerBalance(t9) free
- lambda_PowerBalance(t10) free
- lambda_PowerBalance(t11) free
- lambda_PowerBalance(t12) free
- lambda_PowerBalance(t13) free
- lambda_PowerBalance(t14) free
- lambda_PowerBalance(t15) free
- lambda_PowerBalance(t16) free
- lambda_PowerBalance(t17) free
- lambda_PowerBalance(t18) free
- lambda_PowerBalance(t19) free
- lambda_PowerBalance(t20) free
- lambda_PowerBalance(t21) free
- lambda_PowerBalance(t22) free
- lambda_PowerBalance(t23) free
- lambda_PowerBalance(t24) free
- lambda_Power_Balance_RT(ss0,t1) free
- lambda_Power_Balance_RT(ss0,t2) free
- lambda_Power_Balance_RT(ss0,t3) free
- lambda_Power_Balance_RT(ss0,t4) free
- lambda_Power_Balance_RT(ss0,t5) free
- lambda_Power_Balance_RT(ss0,t6) free
- lambda_Power_Balance_RT(ss0,t7) free
- lambda_Power_Balance_RT(ss0,t8) free
- lambda_Power_Balance_RT(ss0,t9) free
- lambda_Power_Balance_RT(ss0,t10) free
- lambda_Power_Balance_RT(ss0,t11) free
- lambda_Power_Balance_RT(ss0,t12) free
- lambda_Power_Balance_RT(ss0,t13) free
- lambda_Power_Balance_RT(ss0,t14) free
- lambda_Power_Balance_RT(ss0,t15) free
- lambda_Power_Balance_RT(ss0,t16) free
- lambda_Power_Balance_RT(ss0,t17) free
- lambda_Power_Balance_RT(ss0,t18) free
- lambda_Power_Balance_RT(ss0,t19) free
- lambda_Power_Balance_RT(ss0,t20) free
- lambda_Power_Balance_RT(ss0,t21) free
- lambda_Power_Balance_RT(ss0,t22) free
- lambda_Power_Balance_RT(ss0,t23) free
- lambda_Power_Balance_RT(ss0,t24) free
- lambda_Power_Balance_RT(ss1,t1) free
- lambda_Power_Balance_RT(ss1,t2) free
- lambda_Power_Balance_RT(ss1,t3) free
- lambda_Power_Balance_RT(ss1,t4) free
- lambda_Power_Balance_RT(ss1,t5) free
- lambda_Power_Balance_RT(ss1,t6) free
- lambda_Power_Balance_RT(ss1,t7) free
- lambda_Power_Balance_RT(ss1,t8) free
- lambda_Power_Balance_RT(ss1,t9) free
- lambda_Power_Balance_RT(ss1,t10) free
- lambda_Power_Balance_RT(ss1,t11) free
- lambda_Power_Balance_RT(ss1,t12) free
- lambda_Power_Balance_RT(ss1,t13) free
- lambda_Power_Balance_RT(ss1,t14) free
- lambda_Power_Balance_RT(ss1,t15) free
- lambda_Power_Balance_RT(ss1,t16) free
- lambda_Power_Balance_RT(ss1,t17) free
- lambda_Power_Balance_RT(ss1,t18) free
- lambda_Power_Balance_RT(ss1,t19) free
- lambda_Power_Balance_RT(ss1,t20) free
- lambda_Power_Balance_RT(ss1,t21) free
- lambda_Power_Balance_RT(ss1,t22) free
- lambda_Power_Balance_RT(ss1,t23) free
- lambda_Power_Balance_RT(ss1,t24) free
- lambda_Power_Balance_RT(ss2,t1) free
- lambda_Power_Balance_RT(ss2,t2) free
- lambda_Power_Balance_RT(ss2,t3) free
- lambda_Power_Balance_RT(ss2,t4) free
- lambda_Power_Balance_RT(ss2,t5) free
- lambda_Power_Balance_RT(ss2,t6) free
- lambda_Power_Balance_RT(ss2,t7) free
- lambda_Power_Balance_RT(ss2,t8) free
- lambda_Power_Balance_RT(ss2,t9) free
- lambda_Power_Balance_RT(ss2,t10) free
- lambda_Power_Balance_RT(ss2,t11) free
- lambda_Power_Balance_RT(ss2,t12) free
- lambda_Power_Balance_RT(ss2,t13) free
- lambda_Power_Balance_RT(ss2,t14) free
- lambda_Power_Balance_RT(ss2,t15) free
- lambda_Power_Balance_RT(ss2,t16) free
- lambda_Power_Balance_RT(ss2,t17) free
- lambda_Power_Balance_RT(ss2,t18) free
- lambda_Power_Balance_RT(ss2,t19) free
- lambda_Power_Balance_RT(ss2,t20) free
- lambda_Power_Balance_RT(ss2,t21) free
- lambda_Power_Balance_RT(ss2,t22) free
- lambda_Power_Balance_RT(ss2,t23) free
- lambda_Power_Balance_RT(ss2,t24) free
- lambda_Power_Balance_RT(ss3,t1) free
- lambda_Power_Balance_RT(ss3,t2) free
- lambda_Power_Balance_RT(ss3,t3) free
- lambda_Power_Balance_RT(ss3,t4) free
- lambda_Power_Balance_RT(ss3,t5) free
- lambda_Power_Balance_RT(ss3,t6) free
- lambda_Power_Balance_RT(ss3,t7) free
- lambda_Power_Balance_RT(ss3,t8) free
- lambda_Power_Balance_RT(ss3,t9) free
- lambda_Power_Balance_RT(ss3,t10) free
- lambda_Power_Balance_RT(ss3,t11) free
- lambda_Power_Balance_RT(ss3,t12) free
- lambda_Power_Balance_RT(ss3,t13) free
- lambda_Power_Balance_RT(ss3,t14) free
- lambda_Power_Balance_RT(ss3,t15) free
- lambda_Power_Balance_RT(ss3,t16) free
- lambda_Power_Balance_RT(ss3,t17) free
- lambda_Power_Balance_RT(ss3,t18) free
- lambda_Power_Balance_RT(ss3,t19) free
- lambda_Power_Balance_RT(ss3,t20) free
- lambda_Power_Balance_RT(ss3,t21) free
- lambda_Power_Balance_RT(ss3,t22) free
- lambda_Power_Balance_RT(ss3,t23) free
- lambda_Power_Balance_RT(ss3,t24) free
- lambda_Power_Balance_RT(ss4,t1) free
- lambda_Power_Balance_RT(ss4,t2) free
- lambda_Power_Balance_RT(ss4,t3) free
- lambda_Power_Balance_RT(ss4,t4) free
- lambda_Power_Balance_RT(ss4,t5) free
- lambda_Power_Balance_RT(ss4,t6) free
- lambda_Power_Balance_RT(ss4,t7) free
- lambda_Power_Balance_RT(ss4,t8) free
- lambda_Power_Balance_RT(ss4,t9) free
- lambda_Power_Balance_RT(ss4,t10) free
- lambda_Power_Balance_RT(ss4,t11) free
- lambda_Power_Balance_RT(ss4,t12) free
- lambda_Power_Balance_RT(ss4,t13) free
- lambda_Power_Balance_RT(ss4,t14) free
- lambda_Power_Balance_RT(ss4,t15) free
- lambda_Power_Balance_RT(ss4,t16) free
- lambda_Power_Balance_RT(ss4,t17) free
- lambda_Power_Balance_RT(ss4,t18) free
- lambda_Power_Balance_RT(ss4,t19) free
- lambda_Power_Balance_RT(ss4,t20) free
- lambda_Power_Balance_RT(ss4,t21) free
- lambda_Power_Balance_RT(ss4,t22) free
- lambda_Power_Balance_RT(ss4,t23) free
- lambda_Power_Balance_RT(ss4,t24) free
- lambda_Power_Balance_RT(ss5,t1) free
- lambda_Power_Balance_RT(ss5,t2) free
- lambda_Power_Balance_RT(ss5,t3) free
- lambda_Power_Balance_RT(ss5,t4) free
- lambda_Power_Balance_RT(ss5,t5) free
- lambda_Power_Balance_RT(ss5,t6) free
- lambda_Power_Balance_RT(ss5,t7) free
- lambda_Power_Balance_RT(ss5,t8) free
- lambda_Power_Balance_RT(ss5,t9) free
- lambda_Power_Balance_RT(ss5,t10) free
- lambda_Power_Balance_RT(ss5,t11) free
- lambda_Power_Balance_RT(ss5,t12) free
- lambda_Power_Balance_RT(ss5,t13) free
- lambda_Power_Balance_RT(ss5,t14) free
- lambda_Power_Balance_RT(ss5,t15) free
- lambda_Power_Balance_RT(ss5,t16) free
- lambda_Power_Balance_RT(ss5,t17) free
- lambda_Power_Balance_RT(ss5,t18) free
- lambda_Power_Balance_RT(ss5,t19) free
- lambda_Power_Balance_RT(ss5,t20) free
- lambda_Power_Balance_RT(ss5,t21) free
- lambda_Power_Balance_RT(ss5,t22) free
- lambda_Power_Balance_RT(ss5,t23) free
- lambda_Power_Balance_RT(ss5,t24) free
+ -1e+10 <= lambda_PowerBalance(t1) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t2) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t3) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t4) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t5) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t6) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t7) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t8) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t9) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t10) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t11) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t12) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t13) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t14) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t15) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t16) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t17) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t18) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t19) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t20) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t21) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t22) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t23) <= 1e+10
+ -1e+10 <= lambda_PowerBalance(t24) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t1) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t2) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t3) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t4) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t5) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t6) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t7) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t8) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t9) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t10) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t11) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t12) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t13) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t14) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t15) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t16) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t17) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t18) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t19) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t20) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t21) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t22) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t23) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss0,t24) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t1) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t2) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t3) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t4) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t5) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t6) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t7) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t8) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t9) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t10) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t11) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t12) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t13) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t14) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t15) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t16) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t17) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t18) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t19) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t20) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t21) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t22) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t23) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss1,t24) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t1) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t2) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t3) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t4) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t5) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t6) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t7) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t8) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t9) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t10) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t11) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t12) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t13) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t14) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t15) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t16) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t17) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t18) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t19) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t20) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t21) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t22) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t23) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss2,t24) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t1) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t2) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t3) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t4) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t5) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t6) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t7) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t8) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t9) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t10) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t11) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t12) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t13) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t14) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t15) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t16) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t17) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t18) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t19) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t20) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t21) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t22) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t23) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss3,t24) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t1) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t2) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t3) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t4) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t5) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t6) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t7) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t8) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t9) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t10) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t11) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t12) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t13) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t14) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t15) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t16) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t17) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t18) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t19) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t20) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t21) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t22) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t23) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss4,t24) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t1) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t2) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t3) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t4) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t5) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t6) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t7) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t8) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t9) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t10) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t11) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t12) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t13) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t14) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t15) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t16) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t17) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t18) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t19) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t20) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t21) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t22) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t23) <= 1e+10
+ -1e+10 <= lambda_Power_Balance_RT(ss5,t24) <= 1e+10
  Constant = 1
 SOS
  s0:  S1 :: mu_Pmax_DA_GFPP(g1,t1):1 SOS1_Pmax_DA_GFPP(g1,t1):2

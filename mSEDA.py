@@ -162,7 +162,7 @@ for scen_ix in range(6):
 
 mCOMP = StochElecDA(comp=True)
 mCOMP.model.write('mCOMP.lp')
-#mCOMP.optimize()
+mCOMP.optimize()
 #mCOMP.get_results()
 #Temp=pd.concat([mCOMP.results.Pgen,mSEDA.results.Pgen],axis=1)
 #print(Temp)

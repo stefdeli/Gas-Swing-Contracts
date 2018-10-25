@@ -10,6 +10,7 @@ from collections import defaultdict
 import pandas as pd
 import gurobipy as gb
 
+LAMBDA_CONSTANT=1e10
         
  # Class which can have attributes set
 class expando(object):
@@ -72,7 +73,7 @@ def _complementarity_model(self):
 
     
         if pc_grb.sense == '=':
-            self.duals.lambdas[PrC] = m.addVar(lb=-gb.GRB.INFINITY, ub=gb.GRB.INFINITY, 
+            self.duals.lambdas[PrC] = m.addVar(lb=-LAMBDA_CONSTANT, ub=LAMBDA_CONSTANT, 
                                                name = 'lambda_' + pc_grb.ConstrName)     
             self.duals.lambdas_idx.append(pc_grb.ConstrName)   
            # m.update()                                    
