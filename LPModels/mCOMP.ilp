@@ -1,0 +1,91 @@
+\ Model _copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+  + Constant
+Subject To
+ PresMax(ng101,k0,t9): pres(ng101,k0,t9) = 370
+ PresMax(ng101,k0,t11): pres(ng101,k0,t11) = 370
+ PresMin(ng102,k0,t11): pres(ng102,k0,t11) >= 290
+ lpack_def(('ng101',_'ng102'),k0,t9): - 75 pres(ng101,k0,t9)
+   - 75 pres(ng102,k0,t9) + lpack(('ng101',_'ng102'),k0,t9) = 0
+ lpack_def(('ng101',_'ng102'),k0,t11): - 75 pres(ng101,k0,t11)
+   - 75 pres(ng102,k0,t11) + lpack(('ng101',_'ng102'),k0,t11) = 0
+ line_store(('ng101',_'ng102'),k0,t10): - lpack(('ng101',_'ng102'),k0,t9)
+   + lpack(('ng101',_'ng102'),k0,t10) - qin_sr(('ng101',_'ng102'),k0,t10)
+   + qout_sr(('ng101',_'ng102'),k0,t10) = 0
+ line_store(('ng101',_'ng102'),k0,t11): - lpack(('ng101',_'ng102'),k0,t10)
+   + lpack(('ng101',_'ng102'),k0,t11) - qin_sr(('ng101',_'ng102'),k0,t11)
+   + qout_sr(('ng101',_'ng102'),k0,t11) = 0
+ gas_balance(ng101,k0,t10): - qin_sr(('ng101',_'ng102'),k0,t10)
+   + gprod(gw1,k0,t10) = 0
+ gas_balance(ng102,k0,t10): qout_sr(('ng101',_'ng102'),k0,t10)
+   - gsin(gs1,t10,k0) + gsout(gs1,t10,k0) = 3007.28750184
+ gas_balance(ng101,k0,t11): - qin_sr(('ng101',_'ng102'),k0,t11)
+   + gprod(gw1,k0,t11) = 0
+ gas_balance(ng102,k0,t11): qout_sr(('ng101',_'ng102'),k0,t11)
+   - gsin(gs1,t11,k0) + gsout(gs1,t11,k0) = 3006.14337312
+ SOS1_PresMax(ng102,k0,t9): pres(ng102,k0,t9) + SOS1_PresMax(ng102,k0,t9)
+   = 370
+ SOS1_LB_qin_sr(('ng101',_'ng102'),k0,t10):
+   - qin_sr(('ng101',_'ng102'),k0,t10)
+   + SOS1_LB_qin_sr(('ng101',_'ng102'),k0,t10) = 0
+ SOS1_LB_qin_sr(('ng101',_'ng102'),k0,t11):
+   - qin_sr(('ng101',_'ng102'),k0,t11)
+   + SOS1_LB_qin_sr(('ng101',_'ng102'),k0,t11) = 0
+ SOS1_LB_gprod(gw1,k0,t10): - gprod(gw1,k0,t10) + SOS1_LB_gprod(gw1,k0,t10)
+   = 0
+ SOS1_LB_gprod(gw1,k0,t11): - gprod(gw1,k0,t11) + SOS1_LB_gprod(gw1,k0,t11)
+   = 0
+ dLag/qin_sr(('ng101',_'ng102'),k0,t10):
+   - 0.5 lambda_gflow_sr_io(('ng101',_'ng102')k0t10)
+   - lambda_line_store(('ng101',_'ng102'),k0,t10)
+   - lambda_gas_balance(ng101,k0,t10)
+   - muLB_qin_sr(('ng101',_'ng102'),k0,t10) = 0
+ dLag/qin_sr(('ng101',_'ng102'),k0,t11):
+   - 0.5 lambda_gflow_sr_io(('ng101',_'ng102')k0t11)
+   - lambda_line_store(('ng101',_'ng102'),k0,t11)
+   - lambda_gas_balance(ng101,k0,t11)
+   - muLB_qin_sr(('ng101',_'ng102'),k0,t11) = 0
+ dLag/gprod(gw1,k0,t10): mu_gprod_max(gw1k0t10)
+   + lambda_gas_balance(ng101,k0,t10) - muLB_gprod(gw1,k0,t10) = -2
+ dLag/gprod(gw1,k0,t11): mu_gprod_max(gw1k0t11)
+   + lambda_gas_balance(ng101,k0,t11) - muLB_gprod(gw1,k0,t11) = -2
+Bounds
+ pres(ng101,k0,t9) free
+ pres(ng101,k0,t11) free
+ pres(ng102,k0,t9) free
+ pres(ng102,k0,t11) free
+ lpack(('ng101',_'ng102'),k0,t9) free
+ lpack(('ng101',_'ng102'),k0,t10) free
+ qin_sr(('ng101',_'ng102'),k0,t10) free
+ qout_sr(('ng101',_'ng102'),k0,t10) free
+ lpack(('ng101',_'ng102'),k0,t11) free
+ qin_sr(('ng101',_'ng102'),k0,t11) free
+ qout_sr(('ng101',_'ng102'),k0,t11) free
+ gprod(gw1,k0,t10) free
+ gprod(gw1,k0,t11) free
+ -infinity <= gsout(gs1,t10,k0) <= 0
+ -infinity <= gsout(gs1,t11,k0) <= 0
+ -infinity <= lambda_gflow_sr_io(('ng101',_'ng102')k0t10) <= 0
+ -infinity <= lambda_gflow_sr_io(('ng101',_'ng102')k0t11) <= 0
+ -infinity <= lambda_line_store(('ng101',_'ng102'),k0,t10) <= 0
+ -infinity <= lambda_line_store(('ng101',_'ng102'),k0,t11) <= 0
+ lambda_gas_balance(ng101,k0,t10) free
+ lambda_gas_balance(ng101,k0,t11) free
+ muLB_qin_sr(('ng101',_'ng102'),k0,t10) free
+ SOS1_LB_qin_sr(('ng101',_'ng102'),k0,t10) free
+ muLB_qin_sr(('ng101',_'ng102'),k0,t11) free
+ SOS1_LB_qin_sr(('ng101',_'ng102'),k0,t11) free
+ muLB_gprod(gw1,k0,t10) free
+ SOS1_LB_gprod(gw1,k0,t10) free
+ muLB_gprod(gw1,k0,t11) free
+ SOS1_LB_gprod(gw1,k0,t11) free
+ Constant = 1
+SOS
+ s0:  S1 :: muLB_qin_sr(('ng101',_'ng102'),k0,t10):1
+     SOS1_LB_qin_sr(('ng101',_'ng102'),k0,t10):2
+ s1:  S1 :: muLB_qin_sr(('ng101',_'ng102'),k0,t11):1
+     SOS1_LB_qin_sr(('ng101',_'ng102'),k0,t11):2
+ s2:  S1 :: muLB_gprod(gw1,k0,t10):1 SOS1_LB_gprod(gw1,k0,t10):2
+ s3:  S1 :: muLB_gprod(gw1,k0,t11):1 SOS1_LB_gprod(gw1,k0,t11):2
+End

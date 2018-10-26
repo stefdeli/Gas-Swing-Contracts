@@ -18,7 +18,7 @@ gload_file = filepath_gas + '/GasLoad.csv'
 gstoragefile = filepath_gas + '/GasStorage.csv'
 
 # Number of fixed pressure points used for Weymooth outer approximation
-Nfxpoints = 10
+Nfxpoints = 2
 
 ## Electricity System Data
 

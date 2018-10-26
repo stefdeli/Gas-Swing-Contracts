@@ -113,7 +113,7 @@ class StochElecDA():
         self.model.update()
 
 mSEDA = StochElecDA(comp=False)
-mSEDA.model.write('mSEDA.lp')
+mSEDA.model.write('LPModels/mSEDA.lp')
 mSEDA.optimize()
 mSEDA.get_results()
 
@@ -161,11 +161,11 @@ for scen_ix in range(6):
 
 
 mCOMP = StochElecDA(comp=True)
-mCOMP.model.write('mCOMP.lp')
+mCOMP.model.write('LPModels/mCOMP.lp')
 mCOMP.optimize()
-#mCOMP.get_results()
-#Temp=pd.concat([mCOMP.results.Pgen,mSEDA.results.Pgen],axis=1)
-#print(Temp)
+mCOMP.get_results()
+Temp=pd.concat([mCOMP.results.Pgen,mSEDA.results.Pgen],axis=1)
+print(Temp)
 
 
 

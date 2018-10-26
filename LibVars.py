@@ -21,78 +21,128 @@ def _build_variables_gasDA(self):
         gnodes = self.gdata.gnodes
         pplines = self.gdata.pplineorder
         time = self.gdata.gasload.index.tolist()
+        primal =self.variables.primal
         
+        var=self.variables
         sclim = self.gdata.sclim # Swing contract limits
     
         # Nodal Pressures
-        self.variables.pr = {}
+        var.pr = {}
         for gn in gnodes:
             for t in time:
                 for k in sclim:
-                    self.variables.pr[gn,k,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='pres({0},{1},{2})'.format(gn,k,t))
+                    name='pres({0},{1},{2})'.format(gn,k,t)
+                    Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)
+                    var.pr[gn,k,t] = Temp
+                    primal[name]         = Temp
                 
         # Gas Flow
-        self.variables.gflow_sr = {} # Gas flow from sending to receiving end                  
+        var.gflow_sr = {} # Gas flow from sending to receiving end                  
         for pl in pplines:
             for t in time:
                 for k in sclim:
-                    self.variables.gflow_sr[pl,k,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='gflow_sr({0},{1},{2})'.format(pl,k,t))                
+                    name='gflow_sr({0},{1},{2})'.format(pl,k,t).replace(" ","")
+                    Temp =m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name) 
+                    var.gflow_sr[pl,k,t] = Temp
+                    primal[name]         = Temp
                     
                 
                   
         if self.gdata.flow2dir == True:
-            self.variables.gflow_rs = {} # Gas flow from receiving to sending end    
-            self.variables.u = {}        # Binary variables for the outer approximation of gas flow limits              
+            var.gflow_rs = {} # Gas flow from receiving to sending end    
+            var.u = {}        # Binary variables for the outer approximation of gas flow limits              
             for pl in pplines:
                 for t in time:
                     for k in sclim:
-                        self.variables.gflow_sr[pl,k,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='gflow_sr({0},{1},{2})'.format(pl,k,t))     
-                        self.variables.u[pl,k,t] = m.addVar(vtype=gb.GRB.BINARY, name='u({0}{1}{2})'.format(pl,k,t))
-                
+                        name='gflow_sr({0},{1},{2})'.format(pl,k,t).replace(" ","")
+                        Temp=m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)
+                        var.gflow_sr[pl,k,t] = Temp
+                        primal[name]         = Temp
+                        if self.comp  == False:   
+                            name='u({0}{1}{2})'.format(pl,k,t).replace(" ","")
+                            Temp =m.addVar(vtype=gb.GRB.BINARY, name=name)
+                            var.u[pl,k,t] = Temp
+                            primal[name]  = Temp
+                            
         # Linepack
-        self.variables.lpack = {}
-        self.variables.qin_sr = {}         
-        self.variables.qout_sr = {}
+        var.lpack = {}
+        var.qin_sr = {}         
+        var.qout_sr = {}
         
         for pl in pplines:
             for t in time:
                 for k in sclim:
-                    self.variables.lpack[pl,k,t] = m.addVar(lb=0.0, name='lpack({0},{1},{2})'.format(pl,k,t))
-                    self.variables.qin_sr[pl,k,t] = m.addVar(lb=0.0, name='qin_sr({0},{1},{2})'.format(pl,k,t) )        
-                    self.variables.qout_sr[pl,k,t] = m.addVar(lb=0.0, name='qout_sr({0},{1},{2})'.format(pl,k,t) )
+                    
+                    name='lpack({0},{1},{2})'.format(pl,k,t).replace(" ","")
+                    Temp= m.addVar(lb=0.0, name=name )
+                    var.lpack[pl,k,t] = Temp
+                    primal[name]=Temp
+                    
+                    name='qin_sr({0},{1},{2})'.format(pl,k,t).replace(" ","")
+                    Temp= m.addVar(lb=0.0, name=name)  
+                    var.qin_sr[pl,k,t] = Temp
+                    primal[name]=Temp
+                    
+                    
+                    name='qout_sr({0},{1},{2})'.format(pl,k,t).replace(" ","") 
+                    Temp=m.addVar(lb=0.0, name=name)
+                    var.qout_sr[pl,k,t] = Temp
+                    primal[name]=Temp
 
         
         if self.gdata.flow2dir == True:
-            self.variables.qin_rs = {}
-            self.variables.qout_rs = {}
+            var.qin_rs = {}
+            var.qout_rs = {}
             
             for pl in pplines:
                 for t in time:
                     for k in sclim:
-                        self.variables.qin_rs[pl,k,t] = m.addVar(lb=0.0, name='qin_rs({0},{1})'.format(pl,k,t) )                
-                        self.variables.qout_rs[pl,k,t] = m.addVar(lb=0.0, name='qout_rs({0},{1})'.format(pl,k,t) )
+                        name='qin_rs({0},{1})'.format(pl,k,t).replace(" ","")
+                        Temp=m.addVar(lb=0.0,name=name ) 
+                        var.qin_rs[pl,k,t] = Temp
+                        primal[name]=Temp
+                        
+                        name='qout_rs({0},{1})'.format(pl,k,t).replace(" ","")
+                        Temp=m.addVar(lb=0.0, name=name)
+                        var.qout_rs[pl,k,t] = Temp
+                        primal[name]=Temp
         
         # Gas production (wells)
         gwells = self.gdata.wellsinfo.index.tolist()
         
-        self.variables.gprod = {}
+        var.gprod = {}
         for gw in gwells:
             for t in time:
                 for k in sclim:
-                    self.variables.gprod[gw,k,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='gprod({0},{1},{2})'.format(gw,k,t))
-                
+                    
+                    name='gprod({0},{1},{2})'.format(gw,k,t)
+                    Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)
+                    var.gprod[gw,k,t] =Temp
+                    primal[name]=Temp
+                    
         # Gas storage               
-        self.variables.gsin = {}; self.variables.gsout = {}
-        self.variables.gstore = {}
+        var.gsin = {}; var.gsout = {}
+        var.gstore = {}
         
         for gs in self.gdata.gstorage:
             for t in time:
                 for k in sclim:
-                    self.variables.gsin[gs,k,t] = m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxInFlow'][gs],name='gsin({0},{1},{2})'.format(gs,t,k))
-                    self.variables.gsout[gs,k,t] = m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxOutFlow'][gs],name='gsout({0},{1},{2})'.format(gs,t,k))
-                    self.variables.gstore[gs,k,t] = m.addVar(lb=self.gdata.gstorageinfo['MinStore'][gs], 
-                                                             ub=self.gdata.gstorageinfo['MaxStore'][gs],name='gstore({0},{1},{2})'.format(gs,t,k))
-
+                    
+                    name='gsin({0},{1},{2})'.format(gs,t,k)
+                    Temp=m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxInFlow'][gs],name=name)
+                    var.gsin[gs,k,t] = Temp
+                    primal[name]=Temp
+                    
+                    name='gsout({0},{1},{2})'.format(gs,t,k)
+                    Temp= m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxOutFlow'][gs],name=name)
+                    var.gsout[gs,k,t] =Temp
+                    primal[name]=Temp                    
+                    
+                    name='gstore({0},{1},{2})'.format(gs,t,k)
+                    Temp=m.addVar(lb=self.gdata.gstorageinfo['MinStore'][gs], 
+                                                             ub=self.gdata.gstorageinfo['MaxStore'][gs],name=name)
+                    var.gstore[gs,k,t] = Temp
+                    primal[name]=Temp
         m.update()
         
 
@@ -113,47 +163,47 @@ def _build_variables_gasRT(self,mtype,dispatchElecRT):
     """
     scenarios = self.gdata.scenarios
         
+    var=self.variables
     
+    var.pr_rt = {}            # Nodal pressure : Real-time
     
-    self.variables.pr_rt = {}            # Nodal pressure : Real-time
+    var.gflow_sr_rt = {}     # Gas flow from sending to receiving end : Real-time   
     
-    self.variables.gflow_sr_rt = {}     # Gas flow from sending to receiving end : Real-time   
+    var.lpack_rt = {}        # Linepack : Real-time
+    var.qin_sr_rt = {}       # Flow IN pipeline (s,r) : Real-time  
+    var.qout_sr_rt = {}      # Flow OUT pipeline (s,r) : Real-time
     
-    self.variables.lpack_rt = {}        # Linepack : Real-time
-    self.variables.qin_sr_rt = {}       # Flow IN pipeline (s,r) : Real-time  
-    self.variables.qout_sr_rt = {}      # Flow OUT pipeline (s,r) : Real-time
+    var.gprodUp = {}         # Gas Production Up Regulation
+    var.gprodDn = {}         # Gas Production Down Regulation
     
-    self.variables.gprodUp = {}         # Gas Production Up Regulation
-    self.variables.gprodDn = {}         # Gas Production Down Regulation
+    var.gshed = {}           # Gas shedding : Real-time
     
-    self.variables.gshed = {}           # Gas shedding : Real-time
-    
-    self.variables.gsin_rt = {};        # Gas IN storage : Real-time
-    self.variables.gsout_rt = {}        # Gas OUT storage : Real-time
-    self.variables.gstore_rt = {}       # Gas stored in storage : Real-time
+    var.gsin_rt = {};        # Gas IN storage : Real-time
+    var.gsout_rt = {}        # Gas OUT storage : Real-time
+    var.gstore_rt = {}       # Gas stored in storage : Real-time
     
     for s in scenarios:
         for t in time:
         
             for gn in gnodes:
-                self.variables.pr_rt[gn,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='pres_rt({0},{1},{2})'.format(gn,s,t))
-                self.variables.gshed[gn,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='gshed({0},{1},{2})'.format(gn,s,t))
+                var.pr_rt[gn,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='pres_rt({0},{1},{2})'.format(gn,s,t))
+                var.gshed[gn,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='gshed({0},{1},{2})'.format(gn,s,t))
                 
             for pl in pplines:
-                self.variables.gflow_sr_rt[pl,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='gflow_sr_rt({0},{1},{2})'.format(pl,s,t))    
+                var.gflow_sr_rt[pl,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='gflow_sr_rt({0},{1},{2})'.format(pl,s,t))    
                 
-                self.variables.lpack_rt[pl,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY,name='lpack_rt({0},{1},{2})'.format(pl,s,t))
-                self.variables.qin_sr_rt[pl,s,t] = m.addVar(lb=0.0,ub=gb.GRB.INFINITY, name='qin_sr_rt({0},{1},{2})'.format(pl,s,t) )        
-                self.variables.qout_sr_rt[pl,s,t] = m.addVar(lb=0.0,ub=gb.GRB.INFINITY, name='qout_sr_rt({0},{1},{2})'.format(pl,s,t) )
+                var.lpack_rt[pl,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY,name='lpack_rt({0},{1},{2})'.format(pl,s,t))
+                var.qin_sr_rt[pl,s,t] = m.addVar(lb=0.0,ub=gb.GRB.INFINITY, name='qin_sr_rt({0},{1},{2})'.format(pl,s,t) )        
+                var.qout_sr_rt[pl,s,t] = m.addVar(lb=0.0,ub=gb.GRB.INFINITY, name='qout_sr_rt({0},{1},{2})'.format(pl,s,t) )
 
             for gw in gwells:
-                self.variables.gprodUp[gw,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='gprodUp({0},{1},{2})'.format(gw,s,t))
-                self.variables.gprodDn[gw,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='gprodDn({0},{1},{2})'.format(gw,s,t))
+                var.gprodUp[gw,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='gprodUp({0},{1},{2})'.format(gw,s,t))
+                var.gprodDn[gw,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='gprodDn({0},{1},{2})'.format(gw,s,t))
                 
             for gs in self.gdata.gstorage:
-                self.variables.gsin_rt[gs,s,t] = m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxInFlow'][gs], name='gsin_rt({0},{1},{2})'.format(gs,s,t))
-                self.variables.gsout_rt[gs,s,t] = m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxOutFlow'][gs], name='gsout_rt({0},{1},{2})'.format(gs,s,t))
-                self.variables.gstore_rt[gs,s,t] = m.addVar(lb=self.gdata.gstorageinfo['MinStore'][gs], ub=self.gdata.gstorageinfo['MaxStore'][gs], name='gstore_rt({0},{1},{2})'.format(gs,s,t))
+                var.gsin_rt[gs,s,t] = m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxInFlow'][gs], name='gsin_rt({0},{1},{2})'.format(gs,s,t))
+                var.gsout_rt[gs,s,t] = m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxOutFlow'][gs], name='gsout_rt({0},{1},{2})'.format(gs,s,t))
+                var.gstore_rt[gs,s,t] = m.addVar(lb=self.gdata.gstorageinfo['MinStore'][gs], ub=self.gdata.gstorageinfo['MaxStore'][gs], name='gstore_rt({0},{1},{2})'.format(gs,s,t))
 
     m.update()
          

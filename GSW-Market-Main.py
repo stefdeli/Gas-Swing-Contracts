@@ -16,7 +16,20 @@ import gurobipy as gb
 import pandas as pd
 import numpy as np
 import itertools
+import pickle
+
 #Test Test
+
+##--- To save data using pickle
+## Save a dictionary into a pickle file.
+#import pickle
+## Objec to save
+#favorite_color = { "lion": "yellow", "kitty": "red" }
+## Save
+#pickle.dump( favorite_color, open( "save.p", "wb" ) )
+## Load
+#favorite_color = pickle.load( open( "save.p", "rb" ) )
+#
 
 # Stochastic Day-ahead Electricity dispatch
 class expando(object):
@@ -29,16 +42,20 @@ class StochElecDA():
     Stochastic electricity system day-ahead scheduling
     '''
     
-    def __init__(self):
+    def __init__(self,comp=False):
         '''
         '''        
         self.edata = expando()
         self.variables = expando()
+        self.variables.primal = {}
         self.constraints = expando()
         self.results = expando()
 
         self._load_ElecData()
-        self._build_model()
+        if comp==False:
+            self._build_model()
+        elif comp==True:
+            self._build_CP_model()
         
     def optimize(self):
         self.model.optimize()
@@ -56,22 +73,50 @@ class StochElecDA():
         GetResults._results_StochD(self)
         
     def _build_model(self):
-        self.model = gb.Model() 
+        self.model = gb.Model()        
         self.constraints={} # to store all constraints
+        self.comp = False # Is it a complimentarity model
+        
         mtype = 'Stoch'      # 'Market type' = {Stoch, RealTime}
         dispatchElecDA = None
         
         LibVars._build_variables_elecDA(self)        
-        LibVars._build_variables_elecRT(self,mtype)        
+        LibVars._build_variables_elecRT(self,mtype)    
         
         LibCns_Elec._build_constraints_elecDA(self)
         LibCns_Elec._build_constraints_elecRT(self, mtype, dispatchElecDA)
        
         LibObjFunct._build_objective_StochElecDA(self)
         self.model.update()
+        
+    def _build_CP_model(self):
+        self.model = gb.Model()        
+        self.constraints={} # to store all constraints
+        self.comp = True # Is it a complimentarity model
+        mtype = 'Stoch'      # 'Market type' = {Stoch, RealTime}
+        dispatchElecDA = None
+        
+        LibVars._build_variables_elecDA(self)        
+        LibVars._build_variables_elecRT(self,mtype)        
 
-mSEDA = StochElecDA()
+        
+        LibCns_Elec._build_constraints_elecDA(self)
+        LibCns_Elec._build_constraints_elecRT(self, mtype, dispatchElecDA)
+        LibObjFunct._build_objective_StochElecDA(self)
+       
+        self.model.update()
+        # Add the KKT Conditions (Stationarity and complementarity)
+        KKTizer._complementarity_model(self)
+        
+        LibVars._build_dummy_objective_var(self)
+        LibObjFunct._build_objective_dummy_complementarity(self)
+        
+        self.model.Params.MIPFocus=1
+        self.model.Params.timelimit = 20.0
+        self.model.update()
 
+mSEDA = StochElecDA(comp=False)
+mSEDA.model.write('mSEDA.lp')
 mSEDA.optimize()
 mSEDA.get_results()
 
@@ -89,6 +134,9 @@ dispatchElecDA.RCup = mSEDA.results.RCup
 dispatchElecDA.RCdn = mSEDA.results.RCdn
 dispatchElecDA.RCupSC = mSEDA.results.RCupSC
 dispatchElecDA.RCdnSC = mSEDA.results.RCdnSC
+
+pickle.dump( dispatchElecDA, open( "dispatchElecDA.p", "wb" ) )
+
 
 
 # Extract Data for Comparison
@@ -132,19 +180,24 @@ class GasDA():
     '''
     Day-ahead gas system scheduling
     '''
-    def __init__(self, dispatchElecDA, f2d):
+    def __init__(self, dispatchElecDA, f2d,comp=False):
         '''
         '''
         self.gdata = expando()
         self.edata = expando()
         self.variables = expando()
+        self.variables.primal={}
         self.constraints = expando()
         self.results = expando()
-
+        
         self._setElecDAschedule(dispatchElecDA)
         self._load_data(dispatchElecDA,f2d)
-        self._build_model()
         
+        if comp==False:
+            self._build_model()
+        elif comp==True:
+            self._build_CP_model()
+            
     def optimize(self):
         self.model.optimize()
         
@@ -164,13 +217,41 @@ class GasDA():
         GasData_Load._load_SCinfo(self)          
         GasData_Load._ActiveSCinfo(self,dispatchElecDA)  
        
+        #self.gdata.time=['t1']
         
     def _build_model(self):
         self.model = gb.Model()
+        self.constraints={} # to store all constraints
+        self.comp= False
+        
+        
         LibVars._build_variables_gasDA(self)    
         LibCns_Gas._build_constraints_gasDA(self)
        
         LibObjFunct._build_objective_gasDA(self)
+        
+        self.model.update()
+
+    def _build_CP_model(self):
+        self.model = gb.Model()        
+        self.constraints={} # to store all constraints
+        self.comp = True # Is it a complimentarity model
+
+        
+        LibVars._build_variables_gasDA(self)    
+        LibCns_Gas._build_constraints_gasDA(self)
+       
+        LibObjFunct._build_objective_gasDA(self)
+       
+        self.model.update()
+        # Add the KKT Conditions (Stationarity and complementarity)
+        KKTizer._complementarity_model(self)
+        
+        LibVars._build_dummy_objective_var(self)
+        LibObjFunct._build_objective_dummy_complementarity(self)
+        
+        self.model.Params.MIPFocus=1
+        self.model.Params.timelimit = 1000.0
         
         self.model.update()
 
