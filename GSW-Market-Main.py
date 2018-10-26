@@ -11,6 +11,7 @@ import GasData_Load, ElecData_Load
 import LibVars
 import LibCns_Elec, LibCns_Gas
 import LibObjFunct 
+import KKTizer
 import GetResults
 import gurobipy as gb
 import pandas as pd
@@ -48,7 +49,7 @@ class StochElecDA():
         self.edata = expando()
         self.variables = expando()
         self.variables.primal = {}
-        self.constraints = expando()
+        self.constraints = {}
         self.results = expando()
 
         self._load_ElecData()
@@ -74,7 +75,7 @@ class StochElecDA():
         
     def _build_model(self):
         self.model = gb.Model()        
-        self.constraints={} # to store all constraints
+        #self.constraints={} # to store all constraints
         self.comp = False # Is it a complimentarity model
         
         mtype = 'Stoch'      # 'Market type' = {Stoch, RealTime}
@@ -91,7 +92,7 @@ class StochElecDA():
         
     def _build_CP_model(self):
         self.model = gb.Model()        
-        self.constraints={} # to store all constraints
+        #self.constraints={} # to store all constraints
         self.comp = True # Is it a complimentarity model
         mtype = 'Stoch'      # 'Market type' = {Stoch, RealTime}
         dispatchElecDA = None
@@ -115,7 +116,7 @@ class StochElecDA():
         self.model.Params.timelimit = 20.0
         self.model.update()
 
-mSEDA = StochElecDA(comp=False)
+mSEDA = StochElecDA()
 mSEDA.model.write('mSEDA.lp')
 mSEDA.optimize()
 mSEDA.get_results()
@@ -357,16 +358,21 @@ class ElecRT():
     Real-time electricity system dispatch
     '''
     
-    def __init__(self,dispatchElecDA):
+    def __init__(self,dispatchElecDA,comp=False):
         '''
         '''        
         self.edata = expando()
         self.variables = expando()
-        self.constraints = expando()
+        self.variables.primal={}
+        self.constraints = {}
         self.results = expando()
 
         self._load_ElecData()
-        self._build_model(dispatchElecDA)
+        if comp==False:
+            self._build_model(dispatchElecDA)
+        elif comp==True:
+            self._build_CP_model(dispatchElecDA)
+            
         
     def optimize(self):
         self.model.optimize()
@@ -387,13 +393,37 @@ class ElecRT():
         
     def _build_model(self, dispatchElecDA):
         self.model = gb.Model()        
-        
+        self.comp = False
         mtype = 'RealTime'      # 'Market type' = {Stoch, RealTime}
+        
         
         LibVars._build_variables_elecRT(self,mtype)        
         LibCns_Elec._build_constraints_elecRT(self,mtype,dispatchElecDA)       
         LibObjFunct._build_objective_ElecRT(self)
+        
         self.model.update()
+
+    def _build_CP_model(self, dispatchElecDA):
+        self.model = gb.Model()        
+        self.comp = True
+        mtype = 'RealTime'      # 'Market type' = {Stoch, RealTime}
+        
+        
+        LibVars._build_variables_elecRT(self,mtype)        
+        LibCns_Elec._build_constraints_elecRT(self,mtype,dispatchElecDA)       
+        LibObjFunct._build_objective_ElecRT(self)
+        
+        self.model.update()
+        
+        KKTizer._complementarity_model(self)
+        
+        LibVars._build_dummy_objective_var(self)
+        LibObjFunct._build_objective_dummy_complementarity(self)
+        
+        self.model.Params.MIPFocus=1
+        self.model.Params.timelimit = 20.0
+        self.model.update()
+        
 
 mERT = ElecRT(dispatchElecDA)
 
@@ -401,6 +431,7 @@ mERT.optimize()
 print ('########################################################')
 print ('Electricity Real-time dispatch - Solved')
 print ('########################################################')
+
 
 mERT.get_results()
 
@@ -417,6 +448,9 @@ dispatchElecRT.windscenprob=mERT.edata.windscenprob
 dispatchElecRT.windscenarios=mERT.edata.windscen_index
 
 
+
+mERT_COMP= ElecRT(dispatchElecDA,comp=True)
+mERT_COMP.optimize()
 
 ## Extract Data for Comparison
 #
@@ -447,19 +481,23 @@ class GasRT():
     Real-time gas system dispatch
     '''
     
-    def __init__(self, dispatchGasDA,dispatchElecRT,f2d):
+    def __init__(self, dispatchGasDA,dispatchElecRT,f2d,comp=False):
         '''
         '''
         self.gdata = expando()
         self.edata = expando()
         self.variables = expando()
-        self.constraints = expando()
+        self.variables.primal={}
+        self.constraints = {}
         self.results = expando()
 
         self._load_data(f2d,dispatchElecRT)
         
-        self._build_model(dispatchGasDA,dispatchElecRT)
-        
+        if comp==False:
+            self._build_model(dispatchGasDA,dispatchElecRT)
+        elif comp==True:
+            self._build_CP_model(dispatchGasDA,dispatchElecRT)
+
     def optimize(self):
         self.model.optimize()
         
@@ -479,7 +517,7 @@ class GasRT():
         
     def _build_model(self,dispatchGasDA,dispatchElecRT):
         self.model = gb.Model()
-        
+        self.comp=False
         mtype = 'RealTime' 
         
         LibVars._build_variables_gasRT(self,mtype,dispatchElecRT)    
@@ -488,12 +526,30 @@ class GasRT():
         LibObjFunct._build_objective_gasRT(self)
         
         self.model.update()
+        
+    def _build_CP_model(self,dispatchGasDA,dispatchElecRT):
+        self.model = gb.Model()
+        self.comp=True
+        mtype = 'RealTime' 
+        
+        LibVars._build_variables_gasRT(self,mtype,dispatchElecRT)    
+        LibCns_Gas._build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT)
+       
+        LibObjFunct._build_objective_gasRT(self)
+        
+        self.model.update()
+        
+        KKTizer._complementarity_model(self)
+        
+        LibVars._build_dummy_objective_var(self)
+        LibObjFunct._build_objective_dummy_complementarity(self)
+        
+        self.model.Params.MIPFocus=1
+        self.model.Params.timelimit = 100.0
+        self.model.update()
 
 mGRT = GasRT(dispatchGasDA,dispatchElecRT,f2d)
-
-
-
-mGRT.optimize() 
+mGRT.optimize()
 
 if mGRT.model.Status==2:
     print ('########################################################')
@@ -506,10 +562,18 @@ if mGRT.model.Status==2:
     dispatchGasRT.gprodDn = mGRT.results.gprodDn
     dispatchGasRT.gshed = mGRT.results.gshed
 
+
+mGRT_COMP = GasRT(dispatchGasDA,dispatchElecRT,f2d,comp=True)
+mGRT_COMP.optimize() 
        
-else:
-    mGRT.model.computeIIS()
-    mGRT.model.write("mGRT.ilp")
+
+if mGRT_COMP.model.Status==2:
+    print ('########################################################')
+    print ('Gas COMP Real-time dispatch - Solved')
+    print ('########################################################')
+    mGRT_COMP.get_results(f2d)
+       
+
 
 #
 ## Results for Comparison

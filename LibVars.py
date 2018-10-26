@@ -158,6 +158,8 @@ def _build_variables_gasRT(self,mtype,dispatchElecRT):
     time = self.gdata.gasload.index.tolist()
     gwells = self.gdata.wellsinfo.index.tolist()
     
+    primal=self.variables.primal
+    
     """
     Real time gas only required to handle the possible outcomes of the RT wind scenarios
     """
@@ -186,25 +188,67 @@ def _build_variables_gasRT(self,mtype,dispatchElecRT):
         for t in time:
         
             for gn in gnodes:
-                var.pr_rt[gn,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='pres_rt({0},{1},{2})'.format(gn,s,t))
-                var.gshed[gn,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='gshed({0},{1},{2})'.format(gn,s,t))
+                name='pres_rt({0},{1},{2})'.format(gn,s,t)
+                Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)
+                var.pr_rt[gn,s,t] = Temp
+                primal[name]=Temp
+                
+                name='gshed({0},{1},{2})'.format(gn,s,t)
+                Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)
+                var.gshed[gn,s,t] =Temp
+                primal[name]=Temp
+                
                 
             for pl in pplines:
-                var.gflow_sr_rt[pl,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='gflow_sr_rt({0},{1},{2})'.format(pl,s,t))    
                 
-                var.lpack_rt[pl,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY,name='lpack_rt({0},{1},{2})'.format(pl,s,t))
-                var.qin_sr_rt[pl,s,t] = m.addVar(lb=0.0,ub=gb.GRB.INFINITY, name='qin_sr_rt({0},{1},{2})'.format(pl,s,t) )        
-                var.qout_sr_rt[pl,s,t] = m.addVar(lb=0.0,ub=gb.GRB.INFINITY, name='qout_sr_rt({0},{1},{2})'.format(pl,s,t) )
+                name='gflow_sr_rt({0},{1},{2})'.format(pl,s,t)
+                Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)    
+                var.gflow_sr_rt[pl,s,t] =Temp 
+                primal[name]=Temp
+                
+                name='lpack_rt({0},{1},{2})'.format(pl,s,t)
+                Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY,name=name)
+                var.lpack_rt[pl,s,t] =Temp 
+                primal[name]=Temp
+                
+                name='qin_sr_rt({0},{1},{2})'.format(pl,s,t)
+                Temp= m.addVar(lb=0.0,ub=gb.GRB.INFINITY,  name=name)        
+                var.qin_sr_rt[pl,s,t] =Temp 
+                primal[name]=Temp
+                
+                name='qout_sr_rt({0},{1},{2})'.format(pl,s,t)
+                Temp= m.addVar(lb=0.0,ub=gb.GRB.INFINITY, name=name )
+                var.qout_sr_rt[pl,s,t] =Temp 
+                primal[name]=Temp
 
             for gw in gwells:
-                var.gprodUp[gw,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='gprodUp({0},{1},{2})'.format(gw,s,t))
-                var.gprodDn[gw,s,t] = m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name='gprodDn({0},{1},{2})'.format(gw,s,t))
+                
+                name='gprodUp({0},{1},{2})'.format(gw,s,t)
+                Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)
+                var.gprodUp[gw,s,t] =Temp 
+                primal[name]=Temp
+                
+                
+                name='gprodDn({0},{1},{2})'.format(gw,s,t)
+                Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)
+                var.gprodDn[gw,s,t] =Temp 
+                primal[name]=Temp
                 
             for gs in self.gdata.gstorage:
-                var.gsin_rt[gs,s,t] = m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxInFlow'][gs], name='gsin_rt({0},{1},{2})'.format(gs,s,t))
-                var.gsout_rt[gs,s,t] = m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxOutFlow'][gs], name='gsout_rt({0},{1},{2})'.format(gs,s,t))
-                var.gstore_rt[gs,s,t] = m.addVar(lb=self.gdata.gstorageinfo['MinStore'][gs], ub=self.gdata.gstorageinfo['MaxStore'][gs], name='gstore_rt({0},{1},{2})'.format(gs,s,t))
-
+                name='gsin_rt({0},{1},{2})'.format(gs,s,t)
+                Temp= m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxInFlow'][gs], name=name)
+                var.gsin_rt[gs,s,t] =Temp 
+                primal[name]=Temp
+                
+                name='gsout_rt({0},{1},{2})'.format(gs,s,t)
+                Temp= m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxOutFlow'][gs],name=name )
+                var.gsout_rt[gs,s,t] =Temp 
+                primal[name]=Temp
+                
+                name='gstore_rt({0},{1},{2})'.format(gs,s,t)
+                Temp= m.addVar(lb=self.gdata.gstorageinfo['MinStore'][gs], ub=self.gdata.gstorageinfo['MaxStore'][gs], name=name)
+                var.gstore_rt[gs,s,t] =Temp
+                primal[name]=Temp
     m.update()
          
         

@@ -10,7 +10,7 @@ from collections import defaultdict
 import pandas as pd
 import gurobipy as gb
 
-LAMBDA_CONSTANT= 1e3 #gb.GRB.INFINITY        
+LAMBDA_CONSTANT= 1e10 #gb.GRB.INFINITY        
  # Class which can have attributes set
 class expando(object):
     pass 
