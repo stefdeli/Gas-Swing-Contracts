@@ -52,6 +52,7 @@ def add_constraint(self,lhs,sign_str,rhs,name):
             cc.expr=self.model.addConstr(cc.lhs<=cc.rhs,name=name)
             
     elif sign_str=='==':
+        
         if defaults.REMOVE_EQUALITY:
             # gEQ
             self.constraints[name+'_geq']= expando()
@@ -436,6 +437,8 @@ def _build_constraints_gasDA(self):
                     cc.lhs= var.lpack[pl,k,t]
                     cc.rhs= var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t]
                     cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
+                    
+                    
                
         
     #--- Linepack End of Day
@@ -793,6 +796,12 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
                 lhs=var.lpack_rt[pl,s,t]  - var.qin_sr_rt[pl,s,t] + var.qout_sr_rt[pl,s,t]
                 rhs=  self.gdata.pplinelsini[pl] 
                 add_constraint(self,lhs,'==',rhs,name)
+                
+#                for t in time:
+#                    name='ss{0},{1},{2}'.format(pl,s,t)
+#                    lhs=- var.qin_sr_rt[pl,s,t] + var.qout_sr_rt[pl,s,t]
+#                    rhs=np.float64(0.0)
+#                    add_constraint(self,lhs,'==',rhs,name)
                    
     for s in scenarios:
         name='lpack_end_max({0})'.format(s)               
@@ -879,12 +888,14 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
             for t in time:
                 
                 name='gas_balance({0},{1},{2})'.format(gn,s,t)
+                
                 lhs=      gb.quicksum(( var.gprodUp[gw,s,t]  - var.gprodDn[gw,s,t]) for gw in self.gdata.Map_Gn2Gp[gn])  \
                         - gb.quicksum(( qout_sr[pl][t]['k0'] - var.qout_sr_rt[pl,s,t]) for pl in self.gdata.nodetoinpplines[gn]) \
                         + gb.quicksum(( qin_sr[pl][t]['k0']  - var.qin_sr_rt[pl,s,t] )   for pl in self.gdata.nodetooutpplines[gn]) \
                         + gb.quicksum(( var.gsout_rt[gs,s,t] - gsout[gs][t]['k0'] + gsin[gs][t]['k0'] - var.gsin_rt[gs,s,t]) for gs in self.gdata.Map_Gn2Gs[gn]) \
                         - gb.quicksum(Rgfpp[gen][t,s]*(HR[gen]) for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn]) \
                         + var.gshed[gn,s,t] # Load SHedding
+
                         
                 rhs = np.float64(0.0)  
                 add_constraint(self,lhs,'==',rhs,name)

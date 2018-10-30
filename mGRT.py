@@ -146,7 +146,7 @@ if mGRT_COMP.model.Status==2:
     print ('Gas COMP Real-time dispatch - Solved')
     print ('########################################################')
     mGRT_COMP.get_results(f2d)
-       
+   
 
 
 RUp_gfpp = dispatchElecRT.RUpSC.add(dispatchElecRT.RUp.loc[:, mGRT.gdata.gfpp]) 
@@ -182,8 +182,8 @@ for ng in mGRT.gdata.gnodes:
         
         Lshed=mGRT.results.gshed[ng].xs(s,level=1).rename('shed')
         
-        Temp=pd.concat([Gwells,-NetFlowTo,NetFlowAway,-Gen,Lshed],axis=1)
-        Scens[s]=Temp
+        Temp=pd.concat([Gwells,-NetFlowTo,NetFlowAway,-Gen,Lshed,Var_flow_away.rename('RT_out'),Var_flow_to.rename('RT_IN'),Par_flow_away.rename('DA_out'),Par_flow_to.rename('DA_IN')],axis=1)
+        Scens[s]=Temp.transpose()
     Nodal_Balance[ng]=Scens
     
     
