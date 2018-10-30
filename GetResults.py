@@ -155,3 +155,18 @@ def _results_gasRT(self, f2d):
     r.gflow_sr_rt = pd.DataFrame([[var.gflow_sr_rt[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in scenarios], index=index, columns=self.gdata.pplineorder)
     r.qin_sr_rt = pd.DataFrame([[var.qin_sr_rt[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in scenarios], index=index, columns=self.gdata.pplineorder)    
     r.qout_sr_rt = pd.DataFrame([[var.qout_sr_rt[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in scenarios], index=index, columns=self.gdata.pplineorder)  
+    
+    
+def _results_duals(self,f2d):
+    
+    dual_var={}
+    for i in self.variables.primal.keys():
+        dual_var[i]=self.variables.primal[i].rc
+        
+    dual_con={}
+    for i in self.constraints.keys():
+        dual_con[i]=self.constraints[i].expr.Pi
+        
+    self.results.dual_var=dual_var
+    self.results.dual_con=dual_con
+        

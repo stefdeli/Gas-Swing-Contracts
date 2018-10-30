@@ -567,6 +567,8 @@ class GasRT():
 #    dispatchElecRT.RDn['g1'][t,'s2']=s1_res
 #    
 #
+pickle.dump( dispatchGasDA, open( "dispatchGasDA.p", "wb" ) )
+pickle.dump( dispatchElecRT, open( "dispatchElecRT.p", "wb" ) )
 
 mGRT = GasRT(dispatchGasDA,dispatchElecRT,f2d)
 mGRT.optimize()

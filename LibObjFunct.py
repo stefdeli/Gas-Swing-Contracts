@@ -7,6 +7,7 @@ Created on Thu Dec  7 19:45:15 2017
 
 import gurobipy as gb
 import defaults
+import pandas as pd
 
     
 def _build_objective_StochElecDA(self):  
@@ -138,9 +139,16 @@ def _build_objective_gasRT(self):
     gnodes = self.gdata.gnodes
     pipes = self.gdata.pplineorder
     
+    print('\n\n Objecitve function altered to remove degeneracy\n\n')
+            
+    Cost=pd.DataFrame(index=time,columns=wells)
+    for w in wells:
+        for t in time:
+            Cost[w][t]=wdata.Cost[w]+int(t[1:])
+    
 
     m.setObjective(gb.quicksum(scenarioprob[s] * (
-                   gb.quicksum(wdata.Cost[gw]*(defaults.RESERVES_UP_PREMIUM*var.gprodUp[gw,s,t] - defaults.RESERVES_DN_PREMIUM*var.gprodDn[gw,s,t] ) for gw in wells for t in time) 
+                   gb.quicksum(Cost[w][t]*(defaults.RESERVES_UP_PREMIUM*var.gprodUp[gw,s,t] - defaults.RESERVES_DN_PREMIUM*var.gprodDn[gw,s,t] ) for gw in wells for t in time) 
                    +gb.quicksum(defaults.VOLL * var.gshed[gn,s,t] for gn in gnodes for t in time) 
                    +gb.quicksum( self.gdata.EPS*(var.pr_rt[pl[0],s,t]-var.pr_rt[pl[1],s,t]) for t in time for pl in pipes)
                    ) for s in scenarios),    

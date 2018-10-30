@@ -353,7 +353,7 @@ def _build_constraints_gasDA(self):
     '''
         
     if self.gdata.flow2dir == True:
-        gflow_rs_io = {} # Gas flow (R to S) 'decomposition' to IN/OUT
+         # Gas flow (R to S) 'decomposition' to IN/OUT
         
         for pl in pplines:
             ns, nr = pl
