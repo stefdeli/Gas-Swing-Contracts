@@ -61,7 +61,7 @@ class GasRT():
         GasData_Load._load_SCinfo(self)          
 #        GasData_Load._ActiveSCinfo(self,dispatchElecDA)  
        
-        self.gdata.time=['t1','t2']
+#        self.gdata.time=['t1','t2']
 #        self.gdata.scenarios=['s1','s2']
         
     def _build_model(self,dispatchGasDA,dispatchElecRT):
