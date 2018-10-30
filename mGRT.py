@@ -60,9 +60,10 @@ class GasRT():
         
         GasData_Load._load_SCinfo(self)          
 #        GasData_Load._ActiveSCinfo(self,dispatchElecDA)  
-       
-#        self.gdata.time=['t1','t2']
-#        self.gdata.scenarios=['s1','s2']
+#        self.gdata.gnodedf.PresMin=260
+#        self.gdata.gnodedf.PresMax=400
+#        self.gdata.time=['t1']
+#        self.gdata.scenarios=['s1']
         
     def _build_model(self,dispatchGasDA,dispatchElecRT):
         self.model = gb.Model()
@@ -90,23 +91,24 @@ class GasRT():
         
         KKTizer._complementarity_model(self)
         
-        LibVars._build_dummy_objective_var(self)
-        LibObjFunct._build_objective_dummy_complementarity(self)
+#        LibVars._build_dummy_objective_var(self)
+#        LibObjFunct._build_objective_dummy_complementarity(self)
         
         self.model.Params.MIPFocus=1
-        self.model.Params.timelimit = 10.0
+        self.model.Params.timelimit = 20.0
         #self.model.Params.PreSOS1BigM=1e3
         self.model.update()
 
 
 
-## Switch results
-#for t in mERT.edata.time:
-#    s1_res=dispatchElecRT.RDn['g1'][t,'s1']
-#    s2_res=dispatchElecRT.RDn['g1'][t,'s2']
-#    
-#    dispatchElecRT.RDn['g1'][t,'s1']=s1_res
-#    dispatchElecRT.RDn['g1'][t,'s2']=s1_res
+# Switch results
+for time in range(1,24):
+    t='t'+str(time)
+    s1_res=dispatchElecRT.RDn['g1'][t,'s1']
+    s2_res=dispatchElecRT.RDn['g1'][t,'s2']
+    
+    dispatchElecRT.RDn['g1'][t,'s1']=s1_res
+    dispatchElecRT.RDn['g1'][t,'s2']=s1_res
 
 ###############################################################################
 #                           PRIMAL        
@@ -167,6 +169,8 @@ Nodal_Balance={}
 for ng in mGRT.gdata.gnodes:
     Scens={}
     for s in mGRT.gdata.scenarios:
+        
+        Pressure=mGRT.results.pr_rt[ng].xs(s,level=1).rename('Pressure')
         Gwells= mGRT.results.gprodUp-mGRT.results.gprodDn
         Gwells = Gwells[ mGRT.gdata.Map_Gn2Gp[ng]].xs(s,level=1).sum(axis=1).rename('Gprod')
        
@@ -182,7 +186,7 @@ for ng in mGRT.gdata.gnodes:
         
         Lshed=mGRT.results.gshed[ng].xs(s,level=1).rename('shed')
         
-        Temp=pd.concat([Gwells,-NetFlowTo,NetFlowAway,-Gen,Lshed,Var_flow_away.rename('RT_out'),Var_flow_to.rename('RT_IN'),Par_flow_away.rename('DA_out'),Par_flow_to.rename('DA_IN')],axis=1)
+        Temp=pd.concat([Pressure,Gwells,-NetFlowTo,NetFlowAway,-Gen,Lshed,Var_flow_away.rename('RT_out'),Var_flow_to.rename('RT_IN'),Par_flow_away.rename('DA_out'),Par_flow_to.rename('DA_IN')],axis=1)
         Scens[s]=Temp.transpose()
     Nodal_Balance[ng]=Scens
     

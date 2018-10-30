@@ -18,7 +18,7 @@ gload_file = filepath_gas + '/GasLoad.csv'
 gstoragefile = filepath_gas + '/GasStorage.csv'
 
 # Number of fixed pressure points used for Weymooth outer approximation
-Nfxpoints = 2
+Nfxpoints = 4
 
 ## Electricity System Data
 
@@ -41,15 +41,15 @@ GasPriceScenRTprob_file = filepath_elec + '/GasPriceScenRT_prob.csv'
 VOLL = 10000 # Value of Lost Load
 
 EPS = 1e-3 # Pressure difference weight in gas objective
-GasSlack = 'None'#'FixInput', 'FixOutput', 'ConstantOutput'
+GasSlack = 'None'# 'None', 'FixInput', 'FixOutput', 'ConstantOutput'
 
 
 # The final line pack deviatons that is allowed, i.e. +/- 10% of the initial
-FINAL_LP_DEV=0.0 # 0.1 = 10%
+FINAL_LP_DEV=0.1 # 0.1 = 10%
 
 # Premium for deployment of reserves 
 RESERVES_UP_PREMIUM = 1.1
 RESERVES_DN_PREMIUM = 0.95
 
 # Remove equality constraints and replace lhs==rhs with lhs<=rhs and lhs>=rhs
-REMOVE_EQUALITY=True
+REMOVE_EQUALITY=False

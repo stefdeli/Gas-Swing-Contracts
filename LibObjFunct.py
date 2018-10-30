@@ -139,7 +139,7 @@ def _build_objective_gasRT(self):
     gnodes = self.gdata.gnodes
     pipes = self.gdata.pplineorder
     
-    print('\n\n Objecitve function altered to remove degeneracy\n\n')
+    print('\n\n Objective function altered to remove degeneracy\n\n')
             
     Cost=pd.DataFrame(index=time,columns=wells)
     for w in wells:

@@ -288,7 +288,7 @@ for pl in mGDA.gdata.pplineorder:
     Rp         = mGDA.results.pr[pl[1]].xs(scen_ix,level=1).rename('Receive Pressure')
     ActualFlow = (mGDA.gdata.pplineK[pl]*np.sqrt(Sp**2-Rp**2)).rename('Actual Flow')
     Error      = np.abs(ActualFlow-Flow).rename('Error')
-    dP         = Sp-Rp.rename('PressureLoss')
+    dP         = (Sp-Rp).rename('PressureLoss')
     Lpack_inj  = (qin_sr-qout_sr).rename('Lpackinj')
     Temp=pd.concat([Lpack_inj,dLpack,Lpack,qin_sr,qout_sr,Flow,Sp,Rp,dP,Flow,ActualFlow,Error
                 ],axis=1)   
@@ -304,48 +304,48 @@ for pl in mGDA.gdata.pplineorder:
     RP=RP.rename(index=str, columns={'Temp': pl})
 
 
+p=mGDA.gdata.pplineorder[0]
 
 
-
-#Flow_Errors.plot()
-#print(Pipelines[mGDA.gdata.pplineorder[0]]['Send Pressure'])
+Flow_Errors.plot()
+print(Pipelines[mGDA.gdata.pplineorder[0]]['Send Pressure'])
     
-## Look at the effects of discretizatoin on the error
-#Error_df=pd.DataFrame()
-#for Nx in [20]:
-#    print('Testing Nx= {0}'.format(Nx))
-#    mGDA = GasDA(dispatchElecDA,f2d)
-#    mGDA.gdata.Nfxpp=Nx
-#    # Rebuild model with new parameter
-#    mGDA._build_model()
-#    
-##mGDA.model.params.MIPGap = 0.0
-##mGDA.model.params.IntFeasTol = 1e-9
-#
-##mGDA.model.computeIIS()
-##mGDA.model.write("mGDA.ilp")
-#    mGDA.model.write("mGDA.lp")  
-#    mGDA.optimize()
-#    mGDA.get_results(f2d)
-#
-#    # Extract Data for Comparison
-#    Scen_Dict={}
-#    pl = mGDA.gdata.pplineorder[0]
-#    for scen_ix in mGDA.gdata.sclim:
-#        Lpack      = mGDA.results.lpack[pl].xs(scen_ix,level=1).rename('Lpack')
-#        Prod       = mGDA.results.gprod['gw1'].xs(scen_ix,level=1).rename('Production')
-#        qin_sr     = mGDA.results.qin_sr[pl].xs(scen_ix,level=1).rename('qin_sr')
-#        qout_sr    = mGDA.results.qout_sr[pl].xs(scen_ix,level=1).rename('qout_sr')
-#        Flow       = mGDA.results.gflow_sr[pl].xs(scen_ix,level=1).rename('Flow')
-#        Sp         = mGDA.results.pr[pl[0]].xs(scen_ix,level=1).rename('Send Pressure')
-#        Rp         = mGDA.results.pr[pl[1]].xs(scen_ix,level=1).rename('Receive Pressure')
-#        ActualFlow = (mGDA.gdata.pplineK[pl]*np.sqrt(Sp**2-Rp**2)).rename('Actual Flow')
-#        Error      = np.abs(ActualFlow-Flow).rename('Error')
-#        Temp=pd.concat([Lpack,Prod,qin_sr,qout_sr,Flow,Sp,Rp,ActualFlow,Error
-#                ],axis=1)   
-#        Scen_Dict[scen_ix]=Temp
-#    Error_df=Error_df.join((Scen_Dict['k0']['Error']).rename('Error_'+str(Nx)),how='right')
-#Scen_Dict['k0'].loc['t1']
+# Look at the effects of discretizatoin on the error
+Error_df=pd.DataFrame()
+for Nx in [20]:
+    print('Testing Nx= {0}'.format(Nx))
+    mGDA = GasDA(dispatchElecDA,f2d)
+    mGDA.gdata.Nfxpp=Nx
+    # Rebuild model with new parameter
+    mGDA._build_model()
+    
+#mGDA.model.params.MIPGap = 0.0
+#mGDA.model.params.IntFeasTol = 1e-9
+
+#mGDA.model.computeIIS()
+#mGDA.model.write("mGDA.ilp")
+    mGDA.model.write("mGDA.lp")  
+    mGDA.optimize()
+    mGDA.get_results(f2d)
+
+    # Extract Data for Comparison
+    Scen_Dict={}
+    pl = mGDA.gdata.pplineorder[0]
+    for scen_ix in mGDA.gdata.sclim:
+        Lpack      = mGDA.results.lpack[pl].xs(scen_ix,level=1).rename('Lpack')
+        Prod       = mGDA.results.gprod['gw1'].xs(scen_ix,level=1).rename('Production')
+        qin_sr     = mGDA.results.qin_sr[pl].xs(scen_ix,level=1).rename('qin_sr')
+        qout_sr    = mGDA.results.qout_sr[pl].xs(scen_ix,level=1).rename('qout_sr')
+        Flow       = mGDA.results.gflow_sr[pl].xs(scen_ix,level=1).rename('Flow')
+        Sp         = mGDA.results.pr[pl[0]].xs(scen_ix,level=1).rename('Send Pressure')
+        Rp         = mGDA.results.pr[pl[1]].xs(scen_ix,level=1).rename('Receive Pressure')
+        ActualFlow = (mGDA.gdata.pplineK[pl]*np.sqrt(Sp**2-Rp**2)).rename('Actual Flow')
+        Error      = np.abs(ActualFlow-Flow).rename('Error')
+        Temp=pd.concat([Lpack,Prod,qin_sr,qout_sr,Flow,Sp,Rp,ActualFlow,Error
+                ],axis=1)   
+        Scen_Dict[scen_ix]=Temp
+    Error_df=Error_df.join((Scen_Dict['k0']['Error']).rename('Error_'+str(Nx)),how='right')
+Scen_Dict['k0'].loc['t1']
 
 
 
@@ -550,11 +550,11 @@ class GasRT():
         
         KKTizer._complementarity_model(self)
         
-        LibVars._build_dummy_objective_var(self)
-        LibObjFunct._build_objective_dummy_complementarity(self)
-        
+#        LibVars._build_dummy_objective_var(self)
+#        LibObjFunct._build_objective_dummy_complementarity(self)
+#        
         self.model.Params.MIPFocus=1
-        self.model.Params.timelimit = 10.0
+        self.model.Params.timelimit = 100.0
         #self.model.Params.PreSOS1BigM=1e3
         self.model.update()
 

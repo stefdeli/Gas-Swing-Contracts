@@ -18,6 +18,49 @@ class expando(object):
 
 
 
+def OuterApprox_Discretization(self):
+        # Pressure discretization at every gas node
+    gnodes = self.gdata.gnodes
+    gndata = self.gdata.gnodedf
+    prd = defaultdict(list)
+    for gn in gnodes:            
+        prd[gn] = np.linspace(gndata['PresMin'][gn], gndata['PresMax'][gn], self.gdata.Nfxpp).tolist()
+
+    self.gdata.prd = prd
+    
+    # Create Parameter for Positive and negative part of outer approximation equation
+    Kpos = defaultdict(lambda: defaultdict(list) )    
+    
+    for pl in self.gdata.pplinepassive:
+        ns, nr = pl # Pipeline between nodes ns and nr
+                   
+        for vs, vr in list(itertools.product(range(self.gdata.Nfxpp), repeat = 2)):                                  
+            if prd[ns][vs] > prd[nr][vr]:
+                pres_s = prd[ns][vs]
+                pres_r = prd[nr][vr]
+                K =     self.gdata.pplineK[pl]             
+                Kpos[pl][vs, vr] = K/np.sqrt(np.square(pres_s) - np.square(pres_r))
+#            elif prd[ns][vs] == prd[nr][vr]:
+#                pres_s = prd[ns][vs]+1e-3
+#                pres_r = prd[nr][vr]
+#                K =     self.gdata.pplineK[pl]             
+#                Kpos[pl][vs, vr] =1#3 K/np.sqrt(np.square(pres_s) - np.square(pres_r))
+            
+    self.gdata.Kpos = Kpos
+   
+    # if bi-directional flow model flow limits from Receiving to Sending end
+    if self.gdata.flow2dir == True: 
+        
+        Kneg = defaultdict(lambda: defaultdict(list) )      
+    
+        for pl in self.gdata.pplinepassive:
+            ns, nr = pl
+                       
+            for vs, vr in list(itertools.product(range(self.gdata.Nfxpp), repeat = 2)):                                  
+                if prd[ns][vs] < prd[nr][vr]:
+                   Kneg[pl][vs, vr] = self.gdata.pplineK[pl]/np.sqrt(np.square(prd[nr][vr]) - np.square(prd[ns][vs])) 
+    
+        self.gdata.Kneg = Kneg
 
 
 def add_constraint(self,lhs,sign_str,rhs,name):
@@ -177,46 +220,22 @@ def _build_constraints_gasDA(self):
                 cc.lhs=var.pr[gn,k,t]
                 cc.rhs=self.gdata.gnodedf['PresMin'][gn]
                 cc.expr=m.addConstr(cc.lhs>=cc.rhs,name=name)
+                
+#    for t in time: 
+#        for k in sclim:
+#            name='Send_geq_Receive_{0}{1}'.format(t,k)
+#            lhs=var.pr['ng101',k,t]
+#            rhs=var.pr['ng102',k,t]
+#            add_constraint(self,lhs,'>=',rhs,name)
                                     
           
     # --- Outer Approximation of Weymouth
-    # Create Points for Outer Approximation 
+    # Create Points for Outer Approximation
+    OuterApprox_Discretization(self)
+    
     # Pressure discretization at every gas node
 
-    prd = defaultdict(list)
-    for gn in gnodes:            
-        prd[gn] = np.linspace(gndata['PresMin'][gn], gndata['PresMax'][gn], self.gdata.Nfxpp).tolist()
 
-    self.gdata.prd = prd
-    
-    # Create Parameter for Positive and negative part of outer approximation equation
-    Kpos = defaultdict(lambda: defaultdict(list) )    
-    
-    for pl in self.gdata.pplinepassive:
-        ns, nr = pl # Pipeline between nodes ns and nr
-                   
-        for vs, vr in list(itertools.product(range(self.gdata.Nfxpp), repeat = 2)):                                  
-            if prd[ns][vs] > prd[nr][vr]:
-                pres_s = prd[ns][vs]
-                pres_r = prd[nr][vr]
-                K =     self.gdata.pplineK[pl]             
-                Kpos[pl][vs, vr] = K/np.sqrt(np.square(pres_s) - np.square(pres_r)) 
-            
-    self.gdata.Kpos = Kpos
-   
-    # if bi-directional flow model flow limits from Receiving to Sending end
-    if self.gdata.flow2dir == True: 
-        
-        Kneg = defaultdict(lambda: defaultdict(list) )      
-    
-        for pl in self.gdata.pplinepassive:
-            ns, nr = pl
-                       
-            for vs, vr in list(itertools.product(range(self.gdata.Nfxpp), repeat = 2)):                                  
-                if prd[ns][vs] < prd[nr][vr]:
-                   Kneg[pl][vs, vr] = self.gdata.pplineK[pl]/np.sqrt(np.square(prd[nr][vr]) - np.square(prd[ns][vs])) 
-    
-        self.gdata.Kneg = Kneg
        
     # Gas flow outer approximation
     
@@ -226,7 +245,8 @@ def _build_constraints_gasDA(self):
     elif self.gdata.flow2dir == False:
         u = dict.fromkeys(self.variables.gflow_sr, 1.0) # if bi-directional flow u={1} i.e. from send to receive 
     
-    
+    Kpos=self.gdata.Kpos
+    prd=self.gdata.prd
     for pl in self.gdata.pplineorder:
         ns, nr = pl
         for t in time:                
@@ -253,7 +273,8 @@ def _build_constraints_gasDA(self):
     # if bi-directional flow add constraints from Receiving to Sending end    
     if self.gdata.flow2dir == True:
 
-        
+        Kneg=self.gdata.Kneg
+        prd=self.gdata.prd
         for pl in self.gdata.pplineorder:
             ns, nr = pl
             for t in time:                                    
@@ -266,7 +287,7 @@ def _build_constraints_gasDA(self):
                     cc.rhs=(1.0-u[pl,k,t])*bigM
                     cc.expr=m.addConstr(cc.lhs<=cc.rhs,name=name)
          
-                    for vs, vr in Kneg[pl].keys():
+                    for vs, vr in self.gdata.Kneg[pl].keys():
                         name = "gflow_rs_lim({0},{1},{2},{3},{4})".format(pl,k,t,vs,vr).replace(" ","")
                         self.constraints[name]= expando()
                         cc=self.constraints[name]
@@ -620,45 +641,27 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
                 add_constraint(self,lhs,'<=',rhs,name)
                         
                 
-                name=name="PresMin({0},{1},{2})".format(gn,s,t)            
+                name="PresMin({0},{1},{2})".format(gn,s,t)            
                 lhs=var.pr_rt[gn,s,t]
                 rhs=self.gdata.gnodedf['PresMin'][gn]
                 add_constraint(self,lhs,'>=',rhs,name)
 
+    for t in time: 
+        for s in scenarios:
+            name='Send_geq_Receive_rt{0}{1}'.format(t,s)
+            lhs=var.pr_rt['ng101',s,t]
+            rhs=var.pr_rt['ng102',s,t]
+            add_constraint(self,lhs,'>=',rhs,name)
+            
+
 
     #--- Outer Approximation
-    # Pressure discretization at every gas node
-    prd = defaultdict(list)
-    for gn in gnodes:            
-        prd[gn] = np.linspace(gndata['PresMin'][gn], gndata['PresMax'][gn], self.gdata.Nfxpp).tolist()
 
-    self.gdata.prd = prd
-    
-    Kpos = defaultdict(lambda: defaultdict(list) )    
-    
-    for pl in self.gdata.pplinepassive:
-        ns, nr = pl
-                   
-        for vs, vr in list(itertools.product(range(self.gdata.Nfxpp), repeat = 2)):                                  
-            if prd[ns][vs] > prd[nr][vr]:                    
-                Kpos[pl][vs, vr] = self.gdata.pplineK[pl]/np.sqrt(np.square(prd[ns][vs]) - np.square(prd[nr][vr])) 
-            
-    self.gdata.Kpos = Kpos
-    
-    # if bi-directional flow model flow limits from Receiving to Sending end    
-    if self.gdata.flow2dir == True:
-        
-        Kneg = defaultdict(lambda: defaultdict(list) )      
-    
-        for pl in self.gdata.pplinepassive:
-            ns, nr = pl
-                       
-            for vs, vr in list(itertools.product(range(self.gdata.Nfxpp), repeat = 2)):                                  
-                if prd[ns][vs] < prd[nr][vr]:
-                   Kneg[pl][vs, vr] = self.gdata.pplineK[pl]/np.sqrt(np.square(prd[nr][vr]) - np.square(prd[ns][vs])) 
-    
 
     # Gas flow outer approximation
+    
+    OuterApprox_Discretization(self)
+    
     
 
     if self.gdata.flow2dir == True:
@@ -666,56 +669,51 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
     elif self.gdata.flow2dir == False:
         u = dict.fromkeys(self.variables.gflow_sr_rt, 1.0) # if bi-directional flow u={1} i.e. from send to receive 
     
-    
+    Kpos=self.gdata.Kpos
+    prd=self.gdata.prd
     for pl in self.gdata.pplineorder:
         ns, nr = pl
         for t in time:                
             for s in scenarios:
+#                name = "gflow_sr_rt_logical_BIG_M({0},{1},{2})".format(pl,s,t).replace(" ","")
+#                lhs=var.gflow_sr_rt[pl,s,t]-u[pl,s,t]*bigM
+#                rhs=np.float64(0.0)
+#                add_constraint(self,lhs,'<=',rhs,name)
                 
-                
-                name = "gflow_sr_rt_log({0},{1},{2})".format(pl,s,t).replace(" ","")           
-                lhs=var.gflow_sr_rt[pl,s,t]
-                rhs=u[pl,s,t]*bigM
-                add_constraint(self,lhs,'<=',rhs,name)
-                
-    
                 for vs, vr in Kpos[pl].keys():
-                    
-                    name="gflow_sr_rt_lim({0},{1},{2},{3},{4})".format(pl,s,t,vs,vr).replace(" ","")               
-                    lhs=var.gflow_sr_rt[pl,s,t] \
-                        -Kpos[pl][vs,vr] * prd[ns][vs] * var.pr_rt[ns,s,t] \
-                        +Kpos[pl][vs,vr] * prd[nr][vr] * var.pr_rt[nr,s,t] \
-                        
-                    rhs= bigM * (1.0 - u[pl,s,t])
+                    name = "gflow_sr_rt_lim_approx_weymouth({0},{1},{2},{3},{4})".format(pl,s,t,vs,vr).replace(" ","")
+
+                    lhs=var.gflow_sr_rt[pl,s,t]
+                    rhs=Kpos[pl][vs,vr] * prd[ns][vs] * var.pr_rt[ns,s,t] - \
+                        Kpos[pl][vs,vr] * prd[nr][vr] * var.pr_rt[nr,s,t] 
+                            #+  bigM * (1.0 - u[pl,s,t])
                     add_constraint(self,lhs,'<=',rhs,name)
                     
 
+    # if bi-directional flow model flow limits from Receiving to Sending end
     # if bi-directional flow add constraints from Receiving to Sending end    
     if self.gdata.flow2dir == True:
-           # Gas flow limit receiving to sending 
-           # Logical constraint - Ensure only flow_sr OR flow_rs greater than zero
-        
-        
+
+        Kneg=self.gdata.Kneg
+        prd=self.gdata.prd
         for pl in self.gdata.pplineorder:
             ns, nr = pl
             for t in time:                                    
                 for s in scenarios:
-
-                    name = "gflow_rs_rt_log({0},{1},{2})".format(pl,s,t).replace(" ","")             
-                    lhs=var.gflow_rs_rt[pl,s,t]
+                   
+                    name = "gflow_rs_rt_logical_BIG_M({0},{1},{2})".format(pl,s,t).replace(" ","")
+                    lhs=var.gflow_rs[pl,s,t]
                     rhs=(1.0-u[pl,s,t])*bigM
-                    add_constraint(self,lhs,'<=',rhs,name)                  
-
-                                    
-                    for vs, vr in Kneg[pl].keys():
-                        
-                        name="gflow_rs_lim({0},{1},{2},{3},{4})".format(pl,s,t).replace(" ","")               
+                    add_constraint(self,lhs,'<=',rhs,name)
+         
+                    for vs, vr in self.gdata.Kneg[pl].keys():
+                        name = "gflow_rs_rt_lim_approx_weymouth({0},{1},{2},{3},{4})".format(pl,s,t,vs,vr).replace(" ","")
                         lhs=var.gflow_rs_rt[pl,s,t]
-                        rhs=Kneg[pl][vs,vr] * prd[nr][vr] * var.pr_rt[nr,s,t] - \
+                        rhs= Kneg[pl][vs,vr] * prd[nr][vr] * var.pr_rt[nr,s,t] - \
                             Kneg[pl][vs,vr] * prd[ns][vs] * var.pr_rt[ns,s,t] +\
                             bigM * u[pl,s,t]
-                        add_constraint(self,lhs,'<=',rhs,name)
-                                        
+                        add_constraint(self,lhs,'<=',rhs,name)    
+                                                                
         
  
     # Gas well maximum production
@@ -812,7 +810,7 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
         name='lpack_end_min({0})'.format(s)               
         lhs=gb.quicksum(var.lpack_rt[pl, s, time[-1]] for pl in pplines)
         rhs=  (1.0-defaults.FINAL_LP_DEV)*gb.quicksum(self.gdata.pplinelsini[pl] for pl in pplines)
-        add_constraint(self,lhs,'>=',rhs,name)
+        add_constraint(self,rhs,'<=',lhs,name)
                     
     #                                        
     # Gas Storage

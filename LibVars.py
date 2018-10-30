@@ -154,7 +154,7 @@ def _build_variables_gasRT(self,mtype,dispatchElecRT):
     
     gnodes = self.gdata.gnodes
     pplines = self.gdata.pplineorder
-    time = self.gdata.gasload.index.tolist()
+    time = self.gdata.time
     gwells = self.gdata.wellsinfo.index.tolist()
     
     primal=self.variables.primal
