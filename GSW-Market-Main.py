@@ -18,6 +18,7 @@ import pandas as pd
 import numpy as np
 import itertools
 import pickle
+import re
 
 #Test Test
 
@@ -117,7 +118,7 @@ class StochElecDA():
         self.model.update()
 
 mSEDA = StochElecDA()
-mSEDA.model.write('mSEDA.lp')
+mSEDA.model.write('LPModels/mSEDA.lp')
 mSEDA.optimize()
 mSEDA.get_results()
 
@@ -252,7 +253,7 @@ class GasDA():
         LibObjFunct._build_objective_dummy_complementarity(self)
         
         self.model.Params.MIPFocus=1
-        self.model.Params.timelimit = 1000.0
+        self.model.Params.timelimit = 20.0
         
         self.model.update()
 
@@ -301,6 +302,9 @@ for pl in mGDA.gdata.pplineorder:
     
     RP.loc[:,'Temp']=Rp.values
     RP=RP.rename(index=str, columns={'Temp': pl})
+
+
+
 
 
 #Flow_Errors.plot()
@@ -421,7 +425,7 @@ class ElecRT():
         LibObjFunct._build_objective_dummy_complementarity(self)
         
         self.model.Params.MIPFocus=1
-        self.model.Params.timelimit = 20.0
+        self.model.Params.timelimit = 10.0
         self.model.update()
         
 
@@ -502,7 +506,10 @@ class GasRT():
         self.model.optimize()
         
     def get_results(self,f2d):
-        GetResults._results_gasRT(self,f2d)        
+        GetResults._results_gasRT(self,f2d)
+        
+    def get_duals(self,f2d):
+        GetResults._results_duals(self,f2d)
 
     def _load_data(self,f2d,dispatchElecRT):
         GasData_Load._load_gas_network(self,f2d)              
@@ -514,6 +521,8 @@ class GasRT():
         GasData_Load._load_SCinfo(self)          
 #        GasData_Load._ActiveSCinfo(self,dispatchElecDA)  
        
+#        self.gdata.time=['t1','t2']
+#        self.gdata.scenarios=['s1','s2']
         
     def _build_model(self,dispatchGasDA,dispatchElecRT):
         self.model = gb.Model()
@@ -545,8 +554,19 @@ class GasRT():
         LibObjFunct._build_objective_dummy_complementarity(self)
         
         self.model.Params.MIPFocus=1
-        self.model.Params.timelimit = 100.0
+        self.model.Params.timelimit = 10.0
+        #self.model.Params.PreSOS1BigM=1e3
         self.model.update()
+
+
+#for t in mERT.edata.time:
+#    s1_res=dispatchElecRT.RDn['g1'][t,'s1']
+#    s2_res=dispatchElecRT.RDn['g1'][t,'s2']
+#    
+#    dispatchElecRT.RDn['g1'][t,'s1']=s1_res
+#    dispatchElecRT.RDn['g1'][t,'s2']=s1_res
+#    
+#
 
 mGRT = GasRT(dispatchGasDA,dispatchElecRT,f2d)
 mGRT.optimize()
@@ -556,15 +576,21 @@ if mGRT.model.Status==2:
     print ('Gas Real-time dispatch - Solved')
     print ('########################################################')
     mGRT.get_results(f2d)
+    #mGRT.get_duals(f2d)
+    mGRT.model.write('LPModels/mGRT.lp')
 
     dispatchGasRT = expando()
     dispatchGasRT.gprodUp = mGRT.results.gprodUp
     dispatchGasRT.gprodDn = mGRT.results.gprodDn
     dispatchGasRT.gshed = mGRT.results.gshed
-
+else:
+    mGRT.model.computeIIS()
+    mGRT.model.write('LPModels/mGRT.ilp')
+    
 
 mGRT_COMP = GasRT(dispatchGasDA,dispatchElecRT,f2d,comp=True)
-mGRT_COMP.optimize() 
+#mGRT_COMP.optimize() 
+mGRT_COMP.model.write('LPModels/mGRT_COMP.lp')
        
 
 if mGRT_COMP.model.Status==2:
@@ -573,6 +599,96 @@ if mGRT_COMP.model.Status==2:
     print ('########################################################')
     mGRT_COMP.get_results(f2d)
        
+
+
+#Var_Duals=pd.Series(mGRT.results.duals_var)
+#re.sub(r'\(.*\)', '', 'stuff(remove(me))')
+#Allduals=set([re.sub(r'\(.*\)', '', x) for x in Var_Duals.index])
+
+
+#Con_Duals=pd.Series(mGRT.results.duals_con)
+
+
+
+
+
+
+RUp_gfpp = dispatchElecRT.RUpSC.add(dispatchElecRT.RUp.loc[:, mGDA.gdata.gfpp]) 
+RDn_gfpp = dispatchElecRT.RDnSC.add(dispatchElecRT.RDn.loc[:, mGDA.gdata.gfpp]) 
+HR=mGDA.gdata.generatorinfo.HR
+
+Rgfpp = RUp_gfpp - RDn_gfpp
+for g in  mGDA.gdata.gfpp:
+    Rgfpp[g]=HR[g]*Rgfpp[g]
+
+# Day-ahead gas flows
+qin_sr = dispatchGasDA.qin_sr
+qout_sr = dispatchGasDA.qout_sr
+
+
+
+Nodal_Balance={}
+for ng in mGRT.gdata.gnodes:
+    Scens={}
+    for s in mGRT.gdata.scenarios:
+        Gwells= mGRT.results.gprodUp-mGRT.results.gprodDn
+        Gwells = Gwells[ mGRT.gdata.Map_Gn2Gp[ng]].xs(s,level=1).sum(axis=1).rename('Gprod')
+       
+        Gen =Rgfpp[mGRT.gdata.Map_Gn2Eg[ng]].xs(s,level=1).sum(axis=1).rename('Gen')
+        
+        Var_flow_away=mGRT.results.qin_sr_rt[mGRT.gdata.nodetooutpplines[ng]].xs(s,level=1).sum(axis=1)
+        Par_flow_away=qin_sr[mGRT.gdata.nodetooutpplines[ng]].xs('k0',level=1).sum(axis=1)
+        NetFlowAway=(Par_flow_away-Var_flow_away).rename('netflowaway')
+        
+        Var_flow_to=mGRT.results.qout_sr_rt[mGRT.gdata.nodetoinpplines[ng]].xs(s,level=1).sum(axis=1)
+        Par_flow_to=qout_sr[mGRT.gdata.nodetoinpplines[ng]].xs('k0',level=1).sum(axis=1)
+        NetFlowTo=(Par_flow_to-Var_flow_to).rename('netflowto')
+        
+        Lshed=mGRT.results.gshed[ng].xs(s,level=1).rename('shed')
+        
+        Temp=pd.concat([Gwells,-NetFlowTo,NetFlowAway,-Gen,Lshed],axis=1)
+        Scens[s]=Temp
+    Nodal_Balance[ng]=Scens
+        
+        
+
+        
+## Node 1
+#self=mGDA
+#Pgen = self.gdata.Pgen 
+#PgenSC = self.gdata.PgenSC 
+#RSC = self.gdata.RSC
+#HR=self.gdata.generatorinfo.HR['g1']
+#gn='ng102'
+#
+## Node 1
+#mGDA_n1=pd.concat([mGDA.results.gprod['gw1'].xs('k0',level=1).rename('Prod'),
+#                mGDA.results.qin_sr[('ng101', 'ng102')].xs('k0',level=1).rename('Pipe_in')
+#                ],axis=1) 
+## Node 2
+#mGDA_n2=pd.concat([(Pgen['g1']*HR+self.gdata.gasload[gn]).rename('Load'),
+#                mGDA.results.qout_sr[('ng101', 'ng102')].xs('k0',level=1).rename('Pipe_out')
+#                ],axis=1) 
+#
+#
+#
+#
+#
+#
+#gn='ng102'
+#
+#Temp=pd.concat([mGRT.results.gprodUp['gw1'].xs('s1',level=1).rename('ProdUp'),
+#                mGRT.results.gprodDn['gw1'].xs('s1',level=1).rename('ProdDn'),
+#                (mGRT.results.qin_sr_rt[('ng101', 'ng102')].xs('s1',level=1)-
+#                 mGDA.results.qin_sr[('ng101', 'ng102')].xs('k0',level=1)).rename('avgflow'),
+#                mGRT.results.qout_sr_rt[('ng101', 'ng102')].xs('s1',level=1).rename('avgflow')
+#                ],axis=1) 
+## Node 2
+#Temp=pd.concat([(Pgen['g1']*HR+self.gdata.gasload[gn]).rename('Load'),
+#                mGDA.results.qout_sr[('ng101', 'ng102')].xs('k0',level=1).rename('avgflow')
+#                ],axis=1) 
+
+
 
 
 #
@@ -663,5 +779,22 @@ if mGRT_COMP.model.Status==2:
 #
 #
 #
+
+#max_val=0
+#min_val=0
+#for i in mGRT.constraints.keys():
+#    if mGRT.constraints[i].expr.sense=='=':
+#        temp=mGRT.constraints[i].expr.Pi
+#        print(i +' : '+str(temp))
+#        max_val=max(temp,max_val)
+#        min_val=min(temp,min_val)
 #
 #
+#    
+#for i in mGRT_COMP.duals.lambdas:
+#    
+#    print(mGRT_COMP.duals.lambdas[i])   
+#   
+   
+   
+   

@@ -45,8 +45,7 @@ def _build_variables_gasDA(self):
                     Temp =m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name) 
                     var.gflow_sr[pl,k,t] = Temp
                     primal[name]         = Temp
-                    
-                
+        
                   
         if self.gdata.flow2dir == True:
             var.gflow_rs = {} # Gas flow from receiving to sending end    
@@ -201,22 +200,22 @@ def _build_variables_gasRT(self,mtype,dispatchElecRT):
                 
             for pl in pplines:
                 
-                name='gflow_sr_rt({0},{1},{2})'.format(pl,s,t)
+                name='gflow_sr_rt({0},{1},{2})'.format(pl,s,t).replace(" ","")
                 Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)    
                 var.gflow_sr_rt[pl,s,t] =Temp 
                 primal[name]=Temp
                 
-                name='lpack_rt({0},{1},{2})'.format(pl,s,t)
+                name='lpack_rt({0},{1},{2})'.format(pl,s,t).replace(" ","")
                 Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY,name=name)
                 var.lpack_rt[pl,s,t] =Temp 
                 primal[name]=Temp
                 
-                name='qin_sr_rt({0},{1},{2})'.format(pl,s,t)
+                name='qin_sr_rt({0},{1},{2})'.format(pl,s,t).replace(" ","")
                 Temp= m.addVar(lb=0.0,ub=gb.GRB.INFINITY,  name=name)        
                 var.qin_sr_rt[pl,s,t] =Temp 
                 primal[name]=Temp
                 
-                name='qout_sr_rt({0},{1},{2})'.format(pl,s,t)
+                name='qout_sr_rt({0},{1},{2})'.format(pl,s,t).replace(" ","")
                 Temp= m.addVar(lb=0.0,ub=gb.GRB.INFINITY, name=name )
                 var.qout_sr_rt[pl,s,t] =Temp 
                 primal[name]=Temp

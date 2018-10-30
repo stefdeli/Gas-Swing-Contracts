@@ -7,7 +7,6 @@ Created on Wed Dec  6 17:03:08 2017
 
 import pandas as pd
 import gurobipy as gb
-import numpy as np
 import defaults
 from collections import defaultdict
 from itertools import chain, product
@@ -60,8 +59,6 @@ def _load_network(self):
 
 def _load_generator_data(self):
     self.edata.generatorinfo = pd.read_csv(defaults.generatorfile).set_index(['ID'])
-    # Convert all values to float 64
-    self.edata.generatorinfo.capacity=self.edata.generatorinfo.capacity.astype(np.float64)
     self.edata.generators = self.edata.generatorinfo.index.tolist()
     
     # Mapping - Electricity node (Key) to Electricity generator (Value)      
@@ -219,10 +216,5 @@ def _load_SCinfo(self):
             tt = self.edata.time.index(t)+1            
             self.edata.SCP[sc,t] = 1.0 if (tt>= self.edata.SCdata.ts[sc] and tt<= self.edata.SCdata.te[sc]) else 0.0
             
-
-
-
-
-
 
 

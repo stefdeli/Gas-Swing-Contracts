@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Dec  8 13:42:43 2017
-
 @author: delikars
 """
 
@@ -24,8 +23,8 @@ def _results_StochD(self):
         
      self.results.WindDA = pd.DataFrame(
         [[self.variables.WindDA[j,t].x for j in windfarms] for t in time], index=time, columns=windfarms)
-     if self.comp==False:
-         self.results.usc = pd.DataFrame(
+     
+     self.results.usc = pd.DataFrame(
         [self.variables.usc[sc].x for sc in swingcontracts], index=swingcontracts)
      
      self.results.PgenSC = pd.DataFrame(
@@ -155,5 +154,4 @@ def _results_gasRT(self, f2d):
     
     r.gflow_sr_rt = pd.DataFrame([[var.gflow_sr_rt[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in scenarios], index=index, columns=self.gdata.pplineorder)
     r.qin_sr_rt = pd.DataFrame([[var.qin_sr_rt[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in scenarios], index=index, columns=self.gdata.pplineorder)    
-    r.qout_sr_rt = pd.DataFrame([[var.qout_sr_rt[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in scenarios], index=index, columns=self.gdata.pplineorder)    
-      
+    r.qout_sr_rt = pd.DataFrame([[var.qout_sr_rt[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in scenarios], index=index, columns=self.gdata.pplineorder)  

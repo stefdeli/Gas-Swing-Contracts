@@ -104,6 +104,8 @@ def _build_objective_ElecRT(self):
     
     m = self.model 
     
+    
+    
     # !NB Re-dispatch cost = Day-ahead energy cost (No premium)
     m.setObjective(              
     # Real-time redispatch cost                 
@@ -134,12 +136,14 @@ def _build_objective_gasRT(self):
     wdata = self.gdata.wellsinfo
     wells = self.gdata.wells
     gnodes = self.gdata.gnodes
+    pipes = self.gdata.pplineorder
     
-    k = 'k0' # Optimize for 'central case' k0
-    
+
     m.setObjective(gb.quicksum(scenarioprob[s] * (
-                   gb.quicksum(wdata.Cost[gw]*(defaults.RESERVES_UP_PREMIUM*var.gprodUp[gw,s,t] - defaults.RESERVES_DN_PREMIUM*var.gprodDn[gw,s,t] ) for gw in wells for t in time) +
-                   gb.quicksum(defaults.VOLL * var.gshed[gn,s,t] for gn in gnodes for t in time) ) for s in scenarios),
+                   gb.quicksum(wdata.Cost[gw]*(defaults.RESERVES_UP_PREMIUM*var.gprodUp[gw,s,t] - defaults.RESERVES_DN_PREMIUM*var.gprodDn[gw,s,t] ) for gw in wells for t in time) 
+                   +gb.quicksum(defaults.VOLL * var.gshed[gn,s,t] for gn in gnodes for t in time) 
+                   +gb.quicksum( self.gdata.EPS*(var.pr_rt[pl[0],s,t]-var.pr_rt[pl[1],s,t]) for t in time for pl in pipes)
+                   ) for s in scenarios),    
                    gb.GRB.MINIMIZE) 
     
     # NB! Gas storage costs NOT included in the objective function

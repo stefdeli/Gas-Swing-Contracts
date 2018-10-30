@@ -10,7 +10,8 @@ from collections import defaultdict
 import pandas as pd
 import gurobipy as gb
 
-LAMBDA_CONSTANT= 1e10 #gb.GRB.INFINITY        
+LAMBDA_CONSTANT_LOWER= -1e4 #gb.GRB.INFINITY
+LAMBDA_CONSTANT_UPPER= 1e4 #gb.GRB.INFINITY          
  # Class which can have attributes set
 class expando(object):
     pass 
@@ -72,7 +73,8 @@ def _complementarity_model(self):
 
     
         if pc_grb.sense == '=':
-            self.duals.lambdas[PrC] = m.addVar(lb=-LAMBDA_CONSTANT, ub=LAMBDA_CONSTANT, 
+            #print('Creating Lambda')
+            self.duals.lambdas[PrC] = m.addVar(lb=LAMBDA_CONSTANT_LOWER , ub=LAMBDA_CONSTANT_UPPER, 
                                                name = 'lambda_' + pc_grb.ConstrName)     
             self.duals.lambdas_idx.append(pc_grb.ConstrName)   
            # m.update()                                    
@@ -134,6 +136,11 @@ def _complementarity_model(self):
 
 # Build complementarity constraints  0<=x .perp. g(x) >=0
 def build_complementarity_LB(self, PrimalConstr, mu, SOS1):
+    return build_complementarity_SOS(self, PrimalConstr, mu, SOS1)
+    #return build_complementarity_BigM(self, PrimalConstr, mu, SOS1)
+    
+
+def build_complementarity_SOS(self, PrimalConstr, mu, SOS1):
     m = self.model    
     pc_grb = PrimalConstr.expr
     cSOS1 = m.addSOS(gb.GRB.SOS_TYPE1,[mu , SOS1])
@@ -146,6 +153,33 @@ def build_complementarity_LB(self, PrimalConstr, mu, SOS1):
                                   
    # m.update()                   
     return (cSOS1, cPrimal)
+
+
+# To be developed!!!!
+def build_complementarity_BigM(self, index, const_lhs, CnsName, bigM = 1e5 ):
+
+    m = self.model    
+    var = self.variables    
+    nameMu = 'mu_'+ CnsName
+    
+    u = {}; comp1 = {}; comp2 ={}
+    
+    u[index] =  m.addVar(vtype=gb.GRB.BINARY, name='u_'+ CnsName+'({0})'.format(index))
+    m.update()
+    
+    comp1[index] = m.addConstr(getattr(var,nameMu)[index], 
+                            gb.GRB.LESS_EQUAL,
+                            bigM * u[index], name = 'comp1_'+ CnsName+'({0})'.format(index))
+
+    comp2[index] = m.addConstr(const_lhs, 
+                            gb.GRB.LESS_EQUAL,
+                            bigM * (1.0 - u[index]), name = 'comp2_'+ CnsName+'({0})'.format(index))
+        
+    return (u, comp1, comp2)
+
+
+
+
 
 def coeff(A, row, col):
     try:

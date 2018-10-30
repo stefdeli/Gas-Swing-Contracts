@@ -13,6 +13,85 @@ import defaults
 
 class expando(object):
     pass
+
+
+
+
+
+
+
+def add_constraint(self,lhs,sign_str,rhs,name):
+    
+    ALL_ON_LHS=False
+    ALL_ON_RHS=False
+    # Only one will be executed
+
+    if sign_str=='>=':
+        self.constraints[name]= expando()
+        cc=self.constraints[name]
+        cc.lhs=lhs
+        cc.rhs=rhs
+        if ALL_ON_LHS:                    
+            cc.expr=self.model.addConstr( -cc.lhs+cc.rhs<=0.0,name=name)
+        elif ALL_ON_RHS:                    
+            cc.expr=self.model.addConstr(0.0<=cc.lhs-cc.rhs,name=name)
+        else:
+            cc.expr=self.model.addConstr(cc.lhs>=cc.rhs,name=name)
+            
+    elif sign_str=='<=':
+        self.constraints[name]= expando()
+        cc=self.constraints[name]
+        cc.lhs=lhs
+        cc.rhs=rhs                    
+
+        if ALL_ON_LHS:
+            cc.expr=self.model.addConstr(-cc.rhs+cc.lhs<=0.0,name=name)
+        elif ALL_ON_RHS:
+            cc.expr=self.model.addConstr(0.0<=cc.rhs-cc.lhs,name=name)
+        else:
+            cc.expr=self.model.addConstr(cc.lhs<=cc.rhs,name=name)
+            
+    elif sign_str=='==':
+        if defaults.REMOVE_EQUALITY:
+            # gEQ
+            self.constraints[name+'_geq']= expando()
+            cc=self.constraints[name+'_geq']
+            cc.lhs=lhs
+            cc.rhs=rhs 
+            if ALL_ON_LHS:
+                cc.expr=self.model.addConstr(-cc.lhs+cc.rhs<=0.0,name=name+'_geq')
+            elif ALL_ON_RHS:                    
+                cc.expr=self.model.addConstr(0.0<=cc.lhs-cc.rhs,name=name+'_geq')
+            else:
+                cc.expr=self.model.addConstr(cc.lhs>=cc.rhs,name=name+'_geq')
+            
+            self.constraints[name+'_leq']= expando()
+            cc=self.constraints[name+'_leq']
+            cc.lhs=lhs
+            cc.rhs=rhs
+            if ALL_ON_LHS:
+                cc.expr=self.model.addConstr(-cc.rhs+cc.lhs<=0.0,name=name+'_leq')
+            elif ALL_ON_RHS:                    
+                cc.expr=self.model.addConstr(0.0<=cc.rhs-cc.lhs,name=name+'_leq')
+            else:
+                cc.expr=self.model.addConstr(cc.lhs<=cc.rhs,name=name+'_leq')
+        else:
+            self.constraints[name]= expando()
+            cc=self.constraints[name]
+            cc.lhs=lhs
+            cc.rhs=rhs                    
+            if ALL_ON_LHS:
+                cc.expr=self.model.addConstr(cc.lhs-cc.rhs==0.0,name=name)
+            elif ALL_ON_RHS:                    
+                cc.expr=self.model.addConstr(0.0==cc.lhs-cc.rhs,name=name)
+            else:
+                cc.expr=self.model.addConstr(cc.lhs==cc.rhs,name=name)
+
+
+        
+    
+
+
 #==============================================================================
 # Gas system constraints 
 # NB! Gas storage constraints included as limits in variable definitions
@@ -179,7 +258,7 @@ def _build_constraints_gasDA(self):
             for t in time:                                    
                 for k in sclim:
                    
-                    name = "gflow_rs_log({0}{1},{2})".format(pl,k,t).replace(" ","")
+                    name = "gflow_rs_log({0},{1},{2})".format(pl,k,t).replace(" ","")
                     self.constraints[name]= expando()
                     cc=self.constraints[name]
                     cc.lhs=var.gflow_rs[pl,k,t]
@@ -203,7 +282,7 @@ def _build_constraints_gasDA(self):
     for gw in gwells:
         for k in sclim:
             for t in time:
-                name="gprod_max({0}{1}{2})".format(gw,k,t)
+                name="gprod_max({0},{1},{2})".format(gw,k,t)
                 self.constraints[name]= expando()
                 cc=self.constraints[name]
                 cc.lhs=var.gprod[gw,k,t]
@@ -221,14 +300,14 @@ def _build_constraints_gasDA(self):
         ns, nr = pl
         for t in time:
             for k in sclim:
-                name = 'compr_max({0}{1}{2})'.format(pl,k,t).replace(" ","")
+                name = 'compr_max({0},{1},{2})'.format(pl,k,t).replace(" ","")
                 self.constraints[name]= expando()
                 cc=self.constraints[name]
                 cc.lhs=var.pr[nr,k,t]
                 cc.rhs=self.gdata.pplinecr[pl] * var.pr[ns,k,t]
                 cc.expr=m.addConstr(cc.lhs<=cc.rhs,name=name)
      
-                name = 'compr_min({0}{1}{2})'.format(pl,k,t).replace(" ","")
+                name = 'compr_min({0},{1},{2})'.format(pl,k,t).replace(" ","")
                 self.constraints[name]= expando()
                 cc=self.constraints[name]
                 cc.lhs=var.pr[ns,k,t]
@@ -246,7 +325,7 @@ def _build_constraints_gasDA(self):
         for t in time: 
             for k in sclim: 
                 
-                name='gflow_sr_io({0}{1}{2})'.format(pl,k,t).replace(" ","")
+                name='gflow_sr_io({0},{1},{2})'.format(pl,k,t).replace(" ","")
                 self.constraints[name]= expando()
                 cc=self.constraints[name]
                 cc.lhs= var.gflow_sr[pl,k,t]
@@ -281,7 +360,7 @@ def _build_constraints_gasDA(self):
             
             for t in time:  
                 for k in sclim:
-                    name='gflow_rs_io({0}{1}{2})'.format(pl,k,t).replace(" ","")
+                    name='gflow_rs_io({0},{1},{2})'.format(pl,k,t).replace(" ","")
                     self.constraints[name]= expando()
                     cc=self.constraints[name]
                     cc.lhs=var.gflow_rs[pl,k,t]
@@ -457,10 +536,10 @@ def _build_constraints_gasDA(self):
                     name='gas_balance({0},{1},{2})'.format(gn,k,t)
                     self.constraints[name]= expando()
                     cc=self.constraints[name]                
-                    cc.lhs= gb.quicksum(var.gprod[gw,k,t] for gw in self.gdata.Map_Gn2Gp[gn]) + \
-                            gb.quicksum(var.qout_sr[pl,k,t] for pl in self.gdata.nodetoinpplines[gn]) -\
-                            gb.quicksum(var.qin_sr[pl,k,t] for pl in self.gdata.nodetooutpplines[gn]) +\
-                            gb.quicksum(var.gsout[gs,k,t] - var.gsin[gs,k,t] for gs in self.gdata.Map_Gn2Gs[gn])
+                    cc.lhs=   gb.quicksum(var.gprod[gw,k,t] for gw in self.gdata.Map_Gn2Gp[gn]) \
+                            + gb.quicksum(var.qout_sr[pl,k,t] for pl in self.gdata.nodetoinpplines[gn])\
+                            - gb.quicksum(var.qin_sr[pl,k,t] for pl in self.gdata.nodetooutpplines[gn]) \
+                            + gb.quicksum(var.gsout[gs,k,t] - var.gsin[gs,k,t] for gs in self.gdata.Map_Gn2Gs[gn])
                     cc.rhs= self.gdata.gasload[gn][t] + gb.quicksum((Pgen[gen][t]+ \
                                          PgenSC[gen][t]+RSC[gen,k,t])*HR[gen] for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn] )
                     cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)       
@@ -480,7 +559,7 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
     var = self.variables
     gnodes = self.gdata.gnodes
     pplines = self.gdata.pplineorder
-    time = self.gdata.gasload.index.tolist()
+    time = self.gdata.time
     gndata = self.gdata.gnodedf
     gstorage = self.gdata.gstorage     
     gwells = self.gdata.wellsinfo.index.tolist()
@@ -493,6 +572,38 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
     qout_sr = dispatchGasDA.qout_sr
     
     
+    
+    
+    if self.gdata.GasSlack=='FixInput':
+        gn=self.gdata.gnodeorder[0]
+        for t in time:
+            for s in scenarios:
+                name="PresSlackMax({0},{1},{2})".format(gn,s,t)
+                lhs=var.pr_rt[gn,s,t]
+                rhs=self.gdata.gnodedf['PresMax'][gn]
+                add_constraint(self,lhs,'==',rhs,name)
+                
+                     
+    elif self.gdata.GasSlack=='FixOutput':
+        gn=self.gdata.gnodeorder[-1] # Do it for last node
+        for t in time:
+            for s in scenarios:
+                name="PresSlackMin({0},{1},{2})".format(gn,s,t)
+                lhs=var.pr_rt[gn,s,t]
+                rhs=self.gdata.gnodedf['PresMax'][gn]
+                add_constraint(self,lhs,'==',rhs,name)
+                
+        
+    elif self.gdata.GasSlack == 'ConstantOutput':
+        gn=self.gdata.gnodeorder[0]
+        for tpr, t in zip(time, time[1:]):
+            for s in scenarios:
+                name="Constant_Slack({},{},{})".format(gn,t,tpr)
+                lhs= var.pr_rt[gn,s,t]-var.pr_rt[gn,s,tpr]
+                rhs=np.float64(0.0)
+                add_constraint(self,lhs,'==',rhs,name)
+    
+    
     #--- Gas pressure limits
 
     
@@ -500,20 +611,16 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
         for t in time: 
             for s in scenarios:
                 
-                name="PresMax({0},{1},{2})".format(gn,s,t)
-                self.constraints[name]= expando()
-                cc=self.constraints[name]                
-                cc.lhs=var.pr_rt[gn,s,t]
-                cc.rhs=self.gdata.gnodedf['PresMax'][gn]
-                cc.expr=m.addConstr(cc.lhs<=cc.rhs,name=name)
+                name="PresMax({0},{1},{2})".format(gn,s,t)               
+                lhs=var.pr_rt[gn,s,t]
+                rhs=self.gdata.gnodedf['PresMax'][gn]
+                add_constraint(self,lhs,'<=',rhs,name)
                         
                 
-                name=name="PresMin({0},{1},{2})".format(gn,s,t)
-                self.constraints[name]= expando()
-                cc=self.constraints[name]                
-                cc.lhs=var.pr_rt[gn,s,t]
-                cc.rhs=self.gdata.gnodedf['PresMin'][gn]
-                cc.expr=m.addConstr(cc.lhs>=cc.rhs,name=name)
+                name=name="PresMin({0},{1},{2})".format(gn,s,t)            
+                lhs=var.pr_rt[gn,s,t]
+                rhs=self.gdata.gnodedf['PresMin'][gn]
+                add_constraint(self,lhs,'>=',rhs,name)
 
 
     #--- Outer Approximation
@@ -563,30 +670,27 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
             for s in scenarios:
                 
                 
-                name = "gflow_sr_rt_log({0}{1},{2})".format(pl,s,t)
-                self.constraints[name]= expando()
-                cc=self.constraints[name]                
-                cc.lhs=var.gflow_sr_rt[pl,s,t]
-                cc.rhs=u[pl,s,t]*bigM
-                cc.expr=m.addConstr(cc.lhs<=cc.rhs,name=name)
+                name = "gflow_sr_rt_log({0},{1},{2})".format(pl,s,t).replace(" ","")           
+                lhs=var.gflow_sr_rt[pl,s,t]
+                rhs=u[pl,s,t]*bigM
+                add_constraint(self,lhs,'<=',rhs,name)
                 
     
                 for vs, vr in Kpos[pl].keys():
                     
-                    name="gflow_sr_rt_lim({0}{1}{2})".format(pl,s,t)
-                    self.constraints[name]= expando()
-                    cc=self.constraints[name]                
-                    cc.lhs=var.gflow_sr_rt[pl,s,t]
-                    cc.rhs=Kpos[pl][vs,vr] * prd[ns][vs] * var.pr_rt[ns,s,t] - \
-                        Kpos[pl][vs,vr] * prd[nr][vr] * var.pr_rt[nr,s,t] +\
-                        bigM * (1.0 - u[pl,s,t])
-                    cc.expr=m.addConstr(cc.lhs<=cc.rhs,name=name)
+                    name="gflow_sr_rt_lim({0},{1},{2},{3},{4})".format(pl,s,t,vs,vr).replace(" ","")               
+                    lhs=var.gflow_sr_rt[pl,s,t] \
+                        -Kpos[pl][vs,vr] * prd[ns][vs] * var.pr_rt[ns,s,t] \
+                        +Kpos[pl][vs,vr] * prd[nr][vr] * var.pr_rt[nr,s,t] \
+                        
+                    rhs= bigM * (1.0 - u[pl,s,t])
+                    add_constraint(self,lhs,'<=',rhs,name)
                     
 
     # if bi-directional flow add constraints from Receiving to Sending end    
     if self.gdata.flow2dir == True:
-        gflow_rs_rt_lim = {}   # Gas flow limit receiving to sending 
-        gflow_rs_rt_log = {}   # Logical constraint - Ensure only flow_sr OR flow_rs greater than zero
+           # Gas flow limit receiving to sending 
+           # Logical constraint - Ensure only flow_sr OR flow_rs greater than zero
         
         
         for pl in self.gdata.pplineorder:
@@ -594,24 +698,20 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
             for t in time:                                    
                 for s in scenarios:
 
-                    name = "gflow_rs_rt_log({0}{1}{2})".format(pl,s,t)
-                    self.constraints[name]= expando()
-                    cc=self.constraints[name]                
-                    cc.lhs=var.gflow_rs_rt[pl,s,t]
-                    cc.rhs=(1.0-u[pl,s,t])*bigM
-                    cc.expr=m.addConstr(cc.lhs<=cc.rhs,name=name)                    
+                    name = "gflow_rs_rt_log({0},{1},{2})".format(pl,s,t).replace(" ","")             
+                    lhs=var.gflow_rs_rt[pl,s,t]
+                    rhs=(1.0-u[pl,s,t])*bigM
+                    add_constraint(self,lhs,'<=',rhs,name)                  
 
                                     
                     for vs, vr in Kneg[pl].keys():
                         
-                        name="gflow_rs_lim({0}{1}{2})".format(pl,s,t)
-                        self.constraints[name]= expando()
-                        cc=self.constraints[name]                
-                        cc.lhs=var.gflow_rs_rt[pl,s,t]
-                        cc.rhs=Kneg[pl][vs,vr] * prd[nr][vr] * var.pr_rt[nr,s,t] - \
+                        name="gflow_rs_lim({0},{1},{2},{3},{4})".format(pl,s,t).replace(" ","")               
+                        lhs=var.gflow_rs_rt[pl,s,t]
+                        rhs=Kneg[pl][vs,vr] * prd[nr][vr] * var.pr_rt[nr,s,t] - \
                             Kneg[pl][vs,vr] * prd[ns][vs] * var.pr_rt[ns,s,t] +\
                             bigM * u[pl,s,t]
-                        cc.expr=m.addConstr(cc.lhs<=cc.rhs,name=name)
+                        add_constraint(self,lhs,'<=',rhs,name)
                                         
         
  
@@ -621,69 +721,54 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
         for s in scenarios:
             for t in time:
                 
-                name="gprodUp_max({0}{1}{2})".format(gw,s,t)
-                self.constraints[name]= expando()
-                cc=self.constraints[name]                
-                cc.lhs= var.gprodUp[gw,s,t]
-                cc.rhs=self.gdata.wellsinfo['MaxProd'][gw]-gprod[gw][t]['k0']
-                cc.expr=m.addConstr(cc.lhs<=cc.rhs,name=name)
+                name="gprodUp_max({0},{1},{2})".format(gw,s,t)           
+                lhs= var.gprodUp[gw,s,t]
+                rhs=self.gdata.wellsinfo['MaxProd'][gw]-gprod[gw][t]['k0']
+                add_constraint(self,lhs,'<=',rhs,name)
                     
-                name="gprodDn_max({0}{1}{2})".format(gw,s,t)
-                self.constraints[name]= expando()
-                cc=self.constraints[name]                
-                cc.lhs= var.gprodDn[gw,s,t]
-                cc.rhs=gprod[gw][t]['k0']
-                cc.expr=m.addConstr(cc.lhs<=cc.rhs,name=name) 
+                name="gprodDn_max({0},{1},{2})".format(gw,s,t)
+                lhs= var.gprodDn[gw,s,t]
+                rhs=gprod[gw][t]['k0']
+                add_constraint(self,lhs,'<=',rhs,name)
     
     
     # Compressors - Limit the outlet pressure of compressor to be less than 
     #               full compression (max)  and above the inlet pressure (min) 
     
-    compr_rt_max = {}      # Compression rate definition - Active pipelines
-    compr_rt_min = {} 
+        # Compression rate definition - Active pipelines
+
     for pl in self.gdata.pplineactive:
         ns, nr = pl
         for t in time:
             for s in scenarios:
                 
-                name = 'compr_rt_max({0}{1}{2})'.format(pl,s,t)
-                self.constraints[name]= expando()
-                cc=self.constraints[name]                
-                cc.lhs= var.pr_rt[nr,s,t]
-                cc.rhs=self.gdata.pplinecr[pl] * var.pr_rt[ns,s,t]
-                cc.expr=m.addConstr(cc.lhs<=cc.rhs,name=name)
+                name = 'compr_rt_max({0},{1},{2})'.format(pl,s,t).replace(" ","")             
+                lhs= var.pr_rt[nr,s,t] -self.gdata.pplinecr[pl] * var.pr_rt[ns,s,t]
+                rhs= np.float64(0.0)
+                add_constraint(self,lhs,'<=',rhs,name)
                 
-                name = 'compr_rt_min({0}{1}{2})'.format(pl,s,t)
-                self.constraints[name]= expando()
-                cc=self.constraints[name]                
-                cc.lhs=var.pr_rt[ns,s,t]
-                cc.rhs=var.pr_rt[nr,s,t]
-                cc.expr=m.addConstr(cc.lhs<=cc.rhs,name=name)
-                        
-                        
-     
+                name = 'compr_rt_min({0},{1},{2})'.format(pl,s,t).replace(" ","")             
+                lhs=var.pr_rt[ns,s,t] -var.pr_rt[nr,s,t]
+                rhs= np.float64(0.0)
+                add_constraint(self,lhs,'<=',rhs,name)
+                       
     # Line-pack constraints
 
     for pl in pplines:
         ns, nr = pl
-        
         for t in time: 
             for s in scenarios: 
                 
-                name='gflow_sr_io_rt({0}{1}{2})'.format(pl,s,t)
-                self.constraints[name]= expando()
-                cc=self.constraints[name]                
-                cc.lhs=var.gflow_sr_rt[pl,s,t]
-                cc.rhs=(var.qin_sr_rt[pl,s,t] + var.qout_sr_rt[pl,s,t]) * 0.5
-                cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
+                name='gflow_sr_io_rt({0},{1},{2})'.format(pl,s,t).replace(" ","")
+                lhs=var.gflow_sr_rt[pl,s,t]-(var.qin_sr_rt[pl,s,t] + var.qout_sr_rt[pl,s,t]) * 0.5
+                rhs=np.float64(0.0)
+                add_constraint(self,lhs,'==',rhs,name)
                 
             
-                name = 'lpack_def_rt({0},{1},{2})'.format(pl,s,t)
-                self.constraints[name]= expando()
-                cc=self.constraints[name]                
-                cc.lhs=var.lpack_rt[pl,s,t]
-                cc.rhs= self.gdata.pplinels[pl]*0.5*(var.pr_rt[ns,s,t]+var.pr_rt[nr,s,t])
-                cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
+                name = 'lpack_def_rt({0},{1},{2})'.format(pl,s,t).replace(" ","")
+                lhs=var.lpack_rt[pl,s,t]-self.gdata.pplinels[pl]*0.5*(var.pr_rt[ns,s,t]+var.pr_rt[nr,s,t])
+                rhs= np.float64(0.0)
+                add_constraint(self,lhs,'==',rhs,name)
                        
 
     '''
@@ -697,36 +782,28 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
             for s in scenarios:
         
                 for tpr, t in zip(time, time[1:]):
-                    name='line_store_rt({0},{1},{2})'.format(pl,s,t)
-                    self.constraints[name]= expando()
-                    cc=self.constraints[name]                
-                    cc.lhs=var.lpack_rt[pl,s,t]
-                    cc.rhs= var.lpack_rt[pl,s,tpr] + var.qin_sr_rt[pl,s,t] - var.qout_sr_rt[pl,s,t]
-                    cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
+                    name='line_store_rt({0},{1},{2})'.format(pl,s,t).replace(" ","")
+                    lhs=var.lpack_rt[pl,s,t] -var.lpack_rt[pl,s,tpr] - var.qin_sr_rt[pl,s,t] + var.qout_sr_rt[pl,s,t]
+                    rhs= np.float64(0.0)
+                    add_constraint(self,lhs,'==',rhs,name)
             
                 t = time[0]
             
-                name='line_store_rt({0},{1},{2})'.format(pl,s,t)
-                self.constraints[name]= expando()
-                cc=self.constraints[name]                
-                cc.lhs=var.lpack_rt[pl,s,t]
-                cc.rhs=  self.gdata.pplinelsini[pl] + var.qin_sr_rt[pl,s,t] - var.qout_sr_rt[pl,s,t]
-                cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
+                name='line_store_rt({0},{1},{2})'.format(pl,s,t).replace(" ","")
+                lhs=var.lpack_rt[pl,s,t]  - var.qin_sr_rt[pl,s,t] + var.qout_sr_rt[pl,s,t]
+                rhs=  self.gdata.pplinelsini[pl] 
+                add_constraint(self,lhs,'==',rhs,name)
                    
     for s in scenarios:
-        name='lpack_end_max({0})'.format(s)
-        self.constraints[name]= expando()
-        cc=self.constraints[name]                
-        cc.lhs=gb.quicksum(var.lpack_rt[pl, s, time[-1]] for pl in pplines)
-        cc.rhs=  (1.0+defaults.FINAL_LP_DEV)*gb.quicksum(self.gdata.pplinelsini[pl] for pl in pplines)
-        cc.expr=m.addConstr(cc.lhs<=cc.rhs,name=name)
+        name='lpack_end_max({0})'.format(s)               
+        lhs=gb.quicksum(var.lpack_rt[pl, s, time[-1]] for pl in pplines)
+        rhs=  (1.0+defaults.FINAL_LP_DEV)*gb.quicksum(self.gdata.pplinelsini[pl] for pl in pplines)
+        add_constraint(self,lhs,'<=',rhs,name)
         
-        name='lpack_end_min({0})'.format(s)
-        self.constraints[name]= expando()
-        cc=self.constraints[name]                
-        cc.lhs=gb.quicksum(var.lpack_rt[pl, s, time[-1]] for pl in pplines)
-        cc.rhs=  (1.0-defaults.FINAL_LP_DEV)*gb.quicksum(self.gdata.pplinelsini[pl] for pl in pplines)
-        cc.expr=m.addConstr(cc.lhs>=cc.rhs,name=name)
+        name='lpack_end_min({0})'.format(s)               
+        lhs=gb.quicksum(var.lpack_rt[pl, s, time[-1]] for pl in pplines)
+        rhs=  (1.0-defaults.FINAL_LP_DEV)*gb.quicksum(self.gdata.pplinelsini[pl] for pl in pplines)
+        add_constraint(self,lhs,'>=',rhs,name)
                     
     #                                        
     # Gas Storage
@@ -736,32 +813,26 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
             for tpr, t in zip(time, time[1:]):
                 
                 name='gstor_def_rt({0},{1},{2})'.format(gs,s,t)
-                self.constraints[name]= expando()
-                cc=self.constraints[name]                
-                cc.lhs=var.gstore_rt[gs,s,t]
-                cc.rhs= var.gstore_rt[gs,s,tpr]+var.gsin_rt[gs,s,t]-var.gsout_rt[gs,s,t]
-                cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
+                lhs=var.gstore_rt[gs,s,t]
+                rhs= var.gstore_rt[gs,s,tpr]+var.gsin_rt[gs,s,t]-var.gsout_rt[gs,s,t]
+                add_constraint(self,lhs,'==',rhs,name)
         
         
             t = time[0]
         
             name='gstor_def_rt({0},{1},{2})'.format(gs,s,t)
-            self.constraints[name]= expando()
-            cc=self.constraints[name]                
-            cc.lhs=var.gstore_rt[gs,s,t]
-            cc.rhs= self.gdata.gstorageinfo['IniStore'][gs]+var.gsin_rt[gs,s,t]-var.gsout_rt[gs,s,t]
-            cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
+            lhs=var.gstore_rt[gs,s,t]
+            rhs= self.gdata.gstorageinfo['IniStore'][gs]+var.gsin_rt[gs,s,t]-var.gsout_rt[gs,s,t]
+            add_constraint(self,lhs,'==',rhs,name)
             
 
             # At end of time the linepack should be +/- 10% percent of the initial value
             # Actual deviations stored in defaults.FINAL_LP_DEV
 
-            name='gstor_end({0}{1})'.format(gs,s)
-            self.constraints[name]= expando()
-            cc=self.constraints[name]                
-            cc.lhs=var.gstore_rt[gs, s, time[-1]]
-            cc.rhs= self.gdata.gstorageinfo['IniStore'][gs]
-            cc.expr=m.addConstr(cc.lhs>=cc.rhs,name=name)
+            name='gstor_end({0},{1})'.format(gs,s)
+            lhs=var.gstore_rt[gs, s, time[-1]]
+            rhs= self.gdata.gstorageinfo['IniStore'][gs]
+            add_constraint(self,lhs,'>=',rhs,name)
                      
                                     
     
@@ -770,13 +841,10 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
     for s in scenarios:
         for gn in gnodes:
             for t in time:
-
                 name = 'gas_shed_rt({0},{1},{2})'.format(gn,s,t)
-                self.constraints[name]= expando()
-                cc=self.constraints[name]                
-                cc.lhs=var.gshed[gn,s,t]
-                cc.rhs= self.gdata.gasload[gn][t]
-                cc.expr=m.addConstr(cc.lhs<=cc.rhs,name=name)
+                lhs= var.gshed[gn,s,t]
+                rhs= self.gdata.gasload[gn][t]
+                add_constraint(self,lhs,'<=',rhs,name)
                
     
      # Nodal Gas Balance : Real-time
@@ -811,18 +879,15 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
             for t in time:
                 
                 name='gas_balance({0},{1},{2})'.format(gn,s,t)
-                self.constraints[name]= expando()
-                cc=self.constraints[name]                
-                cc.lhs=   gb.quicksum((var.gprodUp[gw,s,t] - var.gprodDn[gw,s,t]) for gw in self.gdata.Map_Gn2Gp[gn])  \
-                        + gb.quicksum((qout_sr[pl][t]['k0'] - var.qout_sr_rt[pl,s,t]) for pl in self.gdata.nodetoinpplines[gn]) \
+                lhs=      gb.quicksum(( var.gprodUp[gw,s,t]  - var.gprodDn[gw,s,t]) for gw in self.gdata.Map_Gn2Gp[gn])  \
+                        - gb.quicksum(( qout_sr[pl][t]['k0'] - var.qout_sr_rt[pl,s,t]) for pl in self.gdata.nodetoinpplines[gn]) \
                         + gb.quicksum(( qin_sr[pl][t]['k0']  - var.qin_sr_rt[pl,s,t] )   for pl in self.gdata.nodetooutpplines[gn]) \
-                        + gb.quicksum((var.gsout_rt[gs,s,t] - gsout[gs][t]['k0'] + gsin[gs][t]['k0'] - var.gsin_rt[gs,s,t]) for gs in self.gdata.Map_Gn2Gs[gn]) \
-                        - gb.quicksum(Rgfpp[gen][t,s]*HR[gen] for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn]) \
+                        + gb.quicksum(( var.gsout_rt[gs,s,t] - gsout[gs][t]['k0'] + gsin[gs][t]['k0'] - var.gsin_rt[gs,s,t]) for gs in self.gdata.Map_Gn2Gs[gn]) \
+                        - gb.quicksum(Rgfpp[gen][t,s]*(HR[gen]) for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn]) \
                         + var.gshed[gn,s,t] # Load SHedding
                         
-                cc.rhs= np.float64(0.0)
-                cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
-                
+                rhs = np.float64(0.0)  
+                add_constraint(self,lhs,'==',rhs,name)
 
  
     m.update()
