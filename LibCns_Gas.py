@@ -585,7 +585,6 @@ def _build_constraints_gasDA(self):
                     cc.rhs= self.gdata.gasload[gn][t] + gb.quicksum((Pgen[gen][t]+ \
                                          PgenSC[gen][t]+RSC[gen,k,t])*HR[gen] for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn] )
                     cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)       
-                            
 
     m.update()
     

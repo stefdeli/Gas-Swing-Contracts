@@ -135,7 +135,6 @@ def _complementarity_model(self):
               (self.duals.musUB[var] if var in PrVarUB else 0) - (self.duals.musLB[var] if var in PrVarLB else 0), 
               gb.GRB.EQUAL, 0,  name = 'dLag/' + var)
     print('\n') # Skip to next line for remaining print   
-    print(var)
     m.update()    
  
 

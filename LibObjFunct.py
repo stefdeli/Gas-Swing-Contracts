@@ -71,6 +71,8 @@ def _build_objective_gasDA(self):
     wdata = self.gdata.wellsinfo
     wells = self.gdata.wells
     pipes = self.gdata.pplineorder
+    gsdata = self.gdata.gstorageinfo
+    gstorage = self.gdata.gstorage
     
     k_obj = ['k0','k1','k2'] # Optimize for 'central case' k0
     
@@ -82,13 +84,14 @@ def _build_objective_gasDA(self):
             Cost[w][t]=wdata.Cost[w]+int(t[1:])
     
     m.setObjective(gb.quicksum(Cost[gw][t]*var.gprod[gw,k,t] for gw in wells for k in k_obj for t in time)+
-                   gb.quicksum( self.gdata.EPS*(var.pr[pl[0],k,t]-var.pr[pl[1],k,t]) for t in time for k in k_obj for pl in pipes),                                      
+                   gb.quicksum( self.gdata.EPS*(var.pr[pl[0],k,t]-var.pr[pl[1],k,t]) for t in time for k in k_obj for pl in pipes)+
+                   gb.quicksum(gsdata.Cost[gs]*(var.gsin[gs,k,t]+var.gsout[gs,k,t]) for gs in gstorage for k in k_obj for t in time),                                      
                    gb.GRB.MINIMIZE) 
     
     # NB! Gas storage costs NOT included in the objective function
-    #    gstorage = self.gdata.gstorage
-    #    gsdata = self.gdata.gstorageinfo
-    # gb.quicksum(gsdata.Cost[gs]*(var.gsin[gs,k,t]+var.gsout[gs,k,t]) for gs in gstorage for t in time), 
+    #    
+    #    
+    # 
     
     
 def _build_objective_ElecRT(self):  
