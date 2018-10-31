@@ -72,9 +72,16 @@ def _build_objective_gasDA(self):
     wells = self.gdata.wells
     pipes = self.gdata.pplineorder
     
-    k_obj = ['k0'] # Optimize for 'central case' k0
+    k_obj = ['k0','k1','k2'] # Optimize for 'central case' k0
     
-    m.setObjective(gb.quicksum(wdata.Cost[gw]*var.gprod[gw,k,t] for gw in wells for k in k_obj for t in time)+
+    print('\n\n Objective function altered to remove degeneracy\n\n')
+            
+    Cost=pd.DataFrame(index=time,columns=wells)
+    for w in wells:
+        for t in time:
+            Cost[w][t]=wdata.Cost[w]+int(t[1:])
+    
+    m.setObjective(gb.quicksum(Cost[gw][t]*var.gprod[gw,k,t] for gw in wells for k in k_obj for t in time)+
                    gb.quicksum( self.gdata.EPS*(var.pr[pl[0],k,t]-var.pr[pl[1],k,t]) for t in time for k in k_obj for pl in pipes),                                      
                    gb.GRB.MINIMIZE) 
     

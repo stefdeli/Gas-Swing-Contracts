@@ -474,6 +474,33 @@ def _build_constraints_gasDA(self):
       
     #--- Gas Storage
     
+    
+    for gs in self.gdata.gstorage:
+        for t in time:
+            for k in sclim:
+                
+                name='gsinMax({0},{1},{2})'.format(gs,t,k)
+                lhs=var.gsin[gs,k,t]
+                rhs=self.gdata.gstorageinfo['MaxInFlow'][gs]
+                add_constraint(self,lhs,'<=',rhs,name)
+                
+                name='gsoutMax({0},{1},{2})'.format(gs,t,k)
+                lhs=var.gsout[gs,k,t]
+                rhs=self.gdata.gstorageinfo['MaxOutFlow'][gs]
+                add_constraint(self,lhs,'<=',rhs,name)
+                
+                
+                name='gstore_max({0},{1},{2})'.format(gs,t,k)
+                lhs=var.gstore[gs,k,t]
+                rhs=self.gdata.gstorageinfo['MaxStore'][gs]
+                add_constraint(self,lhs,'<=',rhs,name)
+                
+                name='gstore_min({0},{1},{2})'.format(gs,t,k)
+                lhs=var.gstore[gs,k,t]
+                rhs=self.gdata.gstorageinfo['MinStore'][gs]
+                add_constraint(self,lhs,'>=',rhs,name)
+                
+    
 
     for gs in gstorage:
         for k in sclim:
@@ -805,6 +832,30 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
                     
     #                                        
     # Gas Storage
+    for gs in self.gdata.gstorage:
+        for t in time:
+            for s in scenarios:
+                
+                name='gsinMax_rt({0},{1},{2})'.format(gs,t,s)
+                lhs=var.gsin_rt[gs,s,t]
+                rhs=self.gdata.gstorageinfo['MaxInFlow'][gs]
+                add_constraint(self,lhs,'<=',rhs,name)
+                
+                name='gsoutMax_rt({0},{1},{2})'.format(gs,t,s)
+                lhs=var.gsout_rt[gs,s,t]
+                rhs=self.gdata.gstorageinfo['MaxOutFlow'][gs]
+                add_constraint(self,lhs,'<=',rhs,name)
+                
+                
+                name='gstore_max_rt({0},{1},{2})'.format(gs,t,s)
+                lhs=var.gstore_rt[gs,s,t]
+                rhs=self.gdata.gstorageinfo['MaxStore'][gs]
+                add_constraint(self,lhs,'<=',rhs,name)
+                
+                name='gstore_min_rt({0},{1},{2})'.format(gs,t,s)
+                lhs=var.gstore_rt[gs,s,t]
+                rhs=self.gdata.gstorageinfo['MinStore'][gs]
+                add_constraint(self,lhs,'>=',rhs,name)
     
     for gs in gstorage:
         for s in scenarios:

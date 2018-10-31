@@ -532,7 +532,10 @@ def Compare_models(mPrimal,mComp):
         if var_name in set(mComp.variables.primal.keys()):
             COMPValue = mComp.variables.primal[var_name].x
             COMPLB    = mComp.duals.musLB[var_name].x # All values should have lower limit
-            if type(mComp.duals.musUB[var_name])==gb.Var: # Gubobi inf = 1e100
+            if type(mComp.duals.musUB[var_name])==gb.Var: #
+                # There shouldnt be any upper bounds on variables
+                # All upper bounds should be explicit constraints
+                print('Upperbound for {0}'.format(var_name))
                 
                 COMPUB    = mComp.duals.musUB[var_name].x
                 COMPDUAL = COMPLB-COMPUB
@@ -588,6 +591,63 @@ print('Check GRT')
 Var_Compare,Con_Compare = Compare_models(mGRT,mGRT_COMP)
 print('Check GDA')
 Var_Compare,Con_Compare = Compare_models(mGDA,mGDA_COMP)
+
+
+Diff_Value=(Var_Compare.PrimalValue-Var_Compare.COMPValue)
+Diff_Dual_Var =(Var_Compare.PrimalDual-Var_Compare.COMPDual)
+Problems_Var=Var_Compare[Diff_Dual_Var.abs()>1e-3]
+
+
+Diff_Dual_Con =(Con_Compare.Primal-Con_Compare.Comp)   
+Problems_Con=Con_Compare[Diff_Dual_Con.abs()>1e-3]  
+
+
+
+def Check_Dual_Objective(mPrimal,mComp):
+    Obj=0.0
+    Obj_e=0.0
+    Obj_l=0.0
+    Obj_g=0.0
+    PrimalConstraints=mPrimal.constraints.keys()
+    for con_name in PrimalConstraints:
+        c=mPrimal.constraints[con_name].expr
+        conSense=c.Sense
+        conRHS  =c.RHS
+        # Get dual from COMP problem
+        
+        if conSense=='=':
+            COMP_Dual= -1.0* mComp.duals.lambdas[con_name].x
+            Obj_e=Obj_e+COMP_Dual*conRHS
+        elif conSense=='<':
+            COMP_Dual= -1.0* mComp.duals.mus[con_name].x
+            Obj_l=Obj_l+COMP_Dual*conRHS
+        elif conSense=='>':
+            COMP_Dual= mComp.duals.mus[con_name].x
+            Obj_g=Obj_g+COMP_Dual*conRHS
+        
+        
+        Obj=Obj+COMP_Dual*conRHS
+
+    print('Equaltity Constraint Contribution={0}'.format(Obj_e))
+    print('"Less than" Constraint Contribution={0}'.format(Obj_l))
+    print('"Greater than" Constraint Contribution={0}'.format(Obj_g))
+    
+    primalObj=mPrimal.model.ObjVal
+    Error =primalObj-Obj
+    print('Primal - Comp = Error')
+    print('{0}-{1}={2}'.format(primalObj,Obj,Error))
+
+
+print('\n\nCheck GDA\n')
+Check_Dual_Objective(mGDA,mGDA_COMP)
+print('\n\nCheck GRT\n')
+Check_Dual_Objective(mGRT,mGRT_COMP)
+print('\n\nCheck ERT\n')
+Check_Dual_Objective(mERT,mERT_COMP)
+
+
+
+
 print('Check SEDA')
 Var_Compare,Con_Compare = Compare_models(mSEDA,mSEDA_COMP)
 
@@ -599,38 +659,7 @@ for u_name in mSEDA.variables.usc.keys():
 mSEDA.model.update()
 mSEDA.optimize()
 
-Diff_Value=(Var_Compare.PrimalValue-Var_Compare.COMPValue)
-Diff_Dual_Var =(Var_Compare.PrimalDual-Var_Compare.COMPDual)
-Problems_Var=Var_Compare[Diff_Dual_Var.abs()>1e-3]
 
-
-Diff_Dual_Con =(Con_Compare.Primal-Con_Compare.Comp)   
-Problems_Con=Con_Compare[Diff_Dual_Con.abs()>1e-3]  
-
-
-Obj=0.0
-PrimalConstraints=mERT.constraints.keys()
-for con_name in PrimalConstraints:
-    c=mERT.constraints[con_name].expr
-    conSense=c.Sense
-    conRHS  =c.RHS
-    # Get dual from COMP problem
-    if Sense=='=':
-        COMP_Dual= -1.0* mComp.duals.lambdas[con_name].x
-    elif Sense=='<':
-        
-        COMP_Dual= -1.0* mComp.duals.mus[con_name].x
-    elif Sense=='>':
-        COMP_Dual= mComp.duals.mus[con_name].x
-    
-    conRHS  =c.RHS
-    Obj=Obj+COMP_Dual*conRHS
-
-mERT.model.ObjVal
-
-
-
-   
 ##Problems=Problems.drop(columns=['PrimalValue','COMPValue'])
 #    # Check for duals due to constraints
 #    con_UB=[]
@@ -663,6 +692,7 @@ mERT.model.ObjVal
 
             
         
+
         
         
     

@@ -18,7 +18,7 @@ gload_file = filepath_gas + '/GasLoad.csv'
 gstoragefile = filepath_gas + '/GasStorage.csv'
 
 # Number of fixed pressure points used for Weymooth outer approximation
-Nfxpoints = 4
+Nfxpoints = 20
 
 ## Electricity System Data
 
@@ -40,7 +40,7 @@ GasPriceScenRTprob_file = filepath_elec + '/GasPriceScenRT_prob.csv'
 
 VOLL = 10000 # Value of Lost Load
 
-EPS = 1e-3 # Pressure difference weight in gas objective
+EPS = 1e-0 # Pressure difference weight in gas objective
 GasSlack = 'None'# 'None', 'FixInput', 'FixOutput', 'ConstantOutput'
 
 

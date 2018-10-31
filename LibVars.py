@@ -128,18 +128,17 @@ def _build_variables_gasDA(self):
                 for k in sclim:
                     
                     name='gsin({0},{1},{2})'.format(gs,t,k)
-                    Temp=m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxInFlow'][gs],name=name)
+                    Temp=m.addVar(lb=0.0, ub=gb.GRB.INFINITY,name=name)
                     var.gsin[gs,k,t] = Temp
                     primal[name]=Temp
                     
                     name='gsout({0},{1},{2})'.format(gs,t,k)
-                    Temp= m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxOutFlow'][gs],name=name)
+                    Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY,name=name)
                     var.gsout[gs,k,t] =Temp
                     primal[name]=Temp                    
                     
                     name='gstore({0},{1},{2})'.format(gs,t,k)
-                    Temp=m.addVar(lb=self.gdata.gstorageinfo['MinStore'][gs], 
-                                                             ub=self.gdata.gstorageinfo['MaxStore'][gs],name=name)
+                    Temp=m.addVar(lb=0.0,  ub=gb.GRB.INFINITY,name=name)
                     var.gstore[gs,k,t] = Temp
                     primal[name]=Temp
         m.update()
@@ -235,17 +234,17 @@ def _build_variables_gasRT(self,mtype,dispatchElecRT):
                 
             for gs in self.gdata.gstorage:
                 name='gsin_rt({0},{1},{2})'.format(gs,s,t)
-                Temp= m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxInFlow'][gs], name=name)
+                Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)
                 var.gsin_rt[gs,s,t] =Temp 
                 primal[name]=Temp
                 
                 name='gsout_rt({0},{1},{2})'.format(gs,s,t)
-                Temp= m.addVar(lb=0.0, ub=self.gdata.gstorageinfo['MaxOutFlow'][gs],name=name )
+                Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY,name=name )
                 var.gsout_rt[gs,s,t] =Temp 
                 primal[name]=Temp
                 
                 name='gstore_rt({0},{1},{2})'.format(gs,s,t)
-                Temp= m.addVar(lb=self.gdata.gstorageinfo['MinStore'][gs], ub=self.gdata.gstorageinfo['MaxStore'][gs], name=name)
+                Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)
                 var.gstore_rt[gs,s,t] =Temp
                 primal[name]=Temp
     m.update()
