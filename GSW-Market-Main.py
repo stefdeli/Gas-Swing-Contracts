@@ -515,5 +515,108 @@ else:
     mGRT_COMP.model.write('LPModels/mGRT_COMP.ilp')
        
 
-Nodal_Balance=GetResults.Get_Nodal_Balance_GRT(mGRT,dispatchGasDA,dispatchElecRT)
+# Compare Variables Results
+def Compare_models(mPrimal,mComp):
+    
+    Var_Compare=pd.DataFrame()
+    
+    for var_name in mPrimal.variables.primal.keys():
         
+        var_primal=mPrimal.variables.primal[var_name]
+        
+        PrimalValue =var_primal.x
+        PrimalLB    =var_primal.LB
+        PrimalUB    =var_primal.UB
+        PrimalDual  =var_primal.rc
+            
+        COMPValue = mComp.variables.primal[var_name].x
+        COMPLB    = mComp.duals.musLB[var_name].x # All values should have lower limit
+        if type(mComp.duals.musUB[var_name])==gb.Var: # Gubobi inf = 1e100
+            
+            COMPUB    = mComp.duals.musUB[var_name].x
+            COMPDUAL = COMPLB-COMPUB
+        else: 
+            COMPUB = []
+            COMPDUAL=COMPLB
+            
+        Var_Compare=Var_Compare.append(pd.DataFrame([[PrimalValue,COMPValue,PrimalDual,COMPDUAL,COMPLB,COMPUB,PrimalUB,PrimalLB]],
+                                                    columns=['PrimalValue','COMPValue','PrimalDual','COMPDual','COMPLB','COMPUB','UB','LB'],index=[var_name]))
+    
+    Con_Compare=pd.DataFrame()
+    for con_name in mPrimal.constraints.keys():
+        
+        con_primal=mPrimal.constraints[con_name]
+        
+        PrimalDual=con_primal.expr.Pi
+        Sense=con_primal.expr.Sense
+        
+        if Sense=='=':
+            COMP_Dual= -1.0* mComp.duals.lambdas[con_name].x
+        elif Sense=='<':
+            
+            COMP_Dual= -1.0* mComp.duals.mus[con_name].x
+        elif Sense=='>':
+            
+            COMP_Dual= mComp.duals.mus[con_name].x
+        
+        Con_Compare=Con_Compare.append(pd.DataFrame([[PrimalDual,COMP_Dual,Sense]],columns=['Primal','Comp','Sense'],index=[con_name]))
+    return Var_Compare,Con_Compare
+###############################################################################             
+   
+Var_Compare,Con_Compare = Compare_models(mSEDA,mSEDA_COMP)
+
+
+Diff_Value=(Var_Compare.PrimalValue-Var_Compare.COMPValue)
+Diff_Dual_Var =(Var_Compare.PrimalDual-Var_Compare.COMPDual)
+Problems_Var=Var_Compare[Diff_Dual_Var.abs()>1e-3]
+
+
+Diff_Dual_Con =(Con_Compare.Primal-Con_Compare.Comp)   
+Problems_Con=Con_Compare[Diff_Dual_Con.abs()>1e-3]      
+
+print('Max Error in Variable Values is {0}'.format(Diff_Value.abs().max()))
+print('Max Error in Variable Dual Values is {0}'.format(Diff_Dual_Var.abs().max()))
+print('Max Error in Constraint Dual Values is {0}'.format(Diff_Dual_Con.abs().max()))
+
+
+
+##Problems=Problems.drop(columns=['PrimalValue','COMPValue'])
+#    # Check for duals due to constraints
+#    con_UB=[]
+#    con_LB=[]
+#    con_EQ=[]
+#    
+#    for c in PrimalConstraints:
+#        conSense=c.Sense
+#        conDual = c.Pi
+#        conRHS  =c.RHS
+#        conRow=mGRT.model.getRow(c)
+#        no_var_in_constraint=conRow.size()
+#        vars_in_constraint=[]
+#        coeff_of_vars=[]
+#        for j in range(conRow.size()):
+#            vars_in_constraint.append(conRow.getVar(j))
+#            coeff_of_vars.append(conRow.getCoeff(j))
+#            
+#        # Check if variable is only one in constraint
+#        if var in set(vars_in_constraint):
+#            if no_var_in_constraint==1:
+#                # Need to consider coefficient but assume always 1.0 for now...
+#                if c.Sense == '<':
+#                    con_UB.append(conDual)
+#                elif c.Sense == '>':
+#                    con_LB.append(conDual)
+#                else:
+#                    con_EQ.append(conDual)
+            
+
+            
+        
+        
+        
+    
+            
+
+
+
+

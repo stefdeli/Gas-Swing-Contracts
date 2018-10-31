@@ -163,7 +163,7 @@ def _build_constraints_gasDA(self):
     sclim = self.gdata.sclim # Swing contract limits
     
     
-    #--- Define Pressure Limits 
+
 
     
     if self.gdata.GasSlack=='FixInput':
@@ -199,7 +199,8 @@ def _build_constraints_gasDA(self):
             cc.lhs= var.pr[gn,'k0',t]-var.pr[gn,'k0',tpr]
             cc.rhs=np.float64(0.0)
             cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
-
+    
+    #--- Define Pressure Limits 
 
     # Gas pressure limits
 
@@ -221,22 +222,12 @@ def _build_constraints_gasDA(self):
                 cc.rhs=self.gdata.gnodedf['PresMin'][gn]
                 cc.expr=m.addConstr(cc.lhs>=cc.rhs,name=name)
                 
-#    for t in time: 
-#        for k in sclim:
-#            name='Send_geq_Receive_{0}{1}'.format(t,k)
-#            lhs=var.pr['ng101',k,t]
-#            rhs=var.pr['ng102',k,t]
-#            add_constraint(self,lhs,'>=',rhs,name)
-                                    
+                                   
           
     # --- Outer Approximation of Weymouth
     # Create Points for Outer Approximation
     OuterApprox_Discretization(self)
     
-    # Pressure discretization at every gas node
-
-
-       
     # Gas flow outer approximation
     
 
