@@ -393,7 +393,7 @@ mERT_COMP.model.write('LPModels/mERT_COMP.lp')
 
 if mERT_COMP.model.Status==2:
     print ('########################################################')
-    print ('Electricity Real-time dispatch - Solved')
+    print ('Electricity Real-time dispatch COMPLEMENTARITY - Solved')
     print ('########################################################')
 
     mERT_COMP.get_results()
@@ -507,7 +507,7 @@ mGRT_COMP.model.write('LPModels/mGRT_COMP.lp')
 
 if mGRT_COMP.model.Status==2:
     print ('########################################################')
-    print ('Gas COMP Real-time dispatch - Solved')
+    print ('Gas COMP Real-time dispatch COMLEMENTARITY- Solved')
     print ('########################################################')
     mGRT_COMP.get_results(f2d)
 else:
@@ -560,9 +560,29 @@ def Compare_models(mPrimal,mComp):
             COMP_Dual= mComp.duals.mus[con_name].x
         
         Con_Compare=Con_Compare.append(pd.DataFrame([[PrimalDual,COMP_Dual,Sense]],columns=['Primal','Comp','Sense'],index=[con_name]))
+        
+    # Print some results
+    Diff_Value=(Var_Compare.PrimalValue-Var_Compare.COMPValue)
+    Diff_Dual_Var =(Var_Compare.PrimalDual-Var_Compare.COMPDual)   
+    Diff_Dual_Con =(Con_Compare.Primal-Con_Compare.Comp)   
+
+    
+    print('Max Error in Variable Values is {0}'.format(Diff_Value.abs().max()))
+    print('Max Error in Variable Dual Values is {0}'.format(Diff_Dual_Var.abs().max()))
+    print('Max Error in Constraint Dual Values is {0}'.format(Diff_Dual_Con.abs().max()))
+        
+    
     return Var_Compare,Con_Compare
 ###############################################################################             
-   
+
+
+print('Check ERT')
+Var_Compare,Con_Compare = Compare_models(mERT,mERT_COMP)
+print('Check GRT')
+Var_Compare,Con_Compare = Compare_models(mGRT,mGRT_COMP)
+print('Check GDA')
+Var_Compare,Con_Compare = Compare_models(mGDA,mGDA_COMP)
+print('Check SEDA')
 Var_Compare,Con_Compare = Compare_models(mSEDA,mSEDA_COMP)
 
 
@@ -572,12 +592,7 @@ Problems_Var=Var_Compare[Diff_Dual_Var.abs()>1e-3]
 
 
 Diff_Dual_Con =(Con_Compare.Primal-Con_Compare.Comp)   
-Problems_Con=Con_Compare[Diff_Dual_Con.abs()>1e-3]      
-
-print('Max Error in Variable Values is {0}'.format(Diff_Value.abs().max()))
-print('Max Error in Variable Dual Values is {0}'.format(Diff_Dual_Var.abs().max()))
-print('Max Error in Constraint Dual Values is {0}'.format(Diff_Dual_Con.abs().max()))
-
+Problems_Con=Con_Compare[Diff_Dual_Con.abs()>1e-3]  
 
 
 ##Problems=Problems.drop(columns=['PrimalValue','COMPValue'])
