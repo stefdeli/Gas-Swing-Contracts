@@ -528,16 +528,19 @@ def Compare_models(mPrimal,mComp):
         PrimalLB    =var_primal.LB
         PrimalUB    =var_primal.UB
         PrimalDual  =var_primal.rc
-            
-        COMPValue = mComp.variables.primal[var_name].x
-        COMPLB    = mComp.duals.musLB[var_name].x # All values should have lower limit
-        if type(mComp.duals.musUB[var_name])==gb.Var: # Gubobi inf = 1e100
-            
-            COMPUB    = mComp.duals.musUB[var_name].x
-            COMPDUAL = COMPLB-COMPUB
-        else: 
-            COMPUB = []
-            COMPDUAL=COMPLB
+        
+        if var_name in set(mComp.variables.primal.keys()):
+            COMPValue = mComp.variables.primal[var_name].x
+            COMPLB    = mComp.duals.musLB[var_name].x # All values should have lower limit
+            if type(mComp.duals.musUB[var_name])==gb.Var: # Gubobi inf = 1e100
+                
+                COMPUB    = mComp.duals.musUB[var_name].x
+                COMPDUAL = COMPLB-COMPUB
+            else: 
+                COMPUB = np.nan
+                COMPDUAL=COMPLB
+        else:
+            COMPValue=COMPLB=COMPUB=COMPDUAL=np.nan
             
         Var_Compare=Var_Compare.append(pd.DataFrame([[PrimalValue,COMPValue,PrimalDual,COMPDUAL,COMPLB,COMPUB,PrimalUB,PrimalLB]],
                                                     columns=['PrimalValue','COMPValue','PrimalDual','COMPDual','COMPLB','COMPUB','UB','LB'],index=[var_name]))
@@ -550,14 +553,17 @@ def Compare_models(mPrimal,mComp):
         PrimalDual=con_primal.expr.Pi
         Sense=con_primal.expr.Sense
         
-        if Sense=='=':
-            COMP_Dual= -1.0* mComp.duals.lambdas[con_name].x
-        elif Sense=='<':
-            
-            COMP_Dual= -1.0* mComp.duals.mus[con_name].x
-        elif Sense=='>':
-            
-            COMP_Dual= mComp.duals.mus[con_name].x
+        
+        if con_name in set(mComp.constraints.keys()):
+            if Sense=='=':
+                COMP_Dual= -1.0* mComp.duals.lambdas[con_name].x
+            elif Sense=='<':
+                
+                COMP_Dual= -1.0* mComp.duals.mus[con_name].x
+            elif Sense=='>':
+                COMP_Dual= mComp.duals.mus[con_name].x
+        else:
+            COMP_Dual=np.nan
         
         Con_Compare=Con_Compare.append(pd.DataFrame([[PrimalDual,COMP_Dual,Sense]],columns=['Primal','Comp','Sense'],index=[con_name]))
         
@@ -585,6 +591,13 @@ Var_Compare,Con_Compare = Compare_models(mGDA,mGDA_COMP)
 print('Check SEDA')
 Var_Compare,Con_Compare = Compare_models(mSEDA,mSEDA_COMP)
 
+for u_name in mSEDA.variables.usc.keys():
+    u_var=mSEDA.variables.usc[u_name]
+    u_var.VType='C'
+    u_var.LB=0.0
+    u_var.UB=0.0
+mSEDA.model.update()
+mSEDA.optimize()
 
 Diff_Value=(Var_Compare.PrimalValue-Var_Compare.COMPValue)
 Diff_Dual_Var =(Var_Compare.PrimalDual-Var_Compare.COMPDual)
@@ -595,6 +608,29 @@ Diff_Dual_Con =(Con_Compare.Primal-Con_Compare.Comp)
 Problems_Con=Con_Compare[Diff_Dual_Con.abs()>1e-3]  
 
 
+Obj=0.0
+PrimalConstraints=mERT.constraints.keys()
+for con_name in PrimalConstraints:
+    c=mERT.constraints[con_name].expr
+    conSense=c.Sense
+    conRHS  =c.RHS
+    # Get dual from COMP problem
+    if Sense=='=':
+        COMP_Dual= -1.0* mComp.duals.lambdas[con_name].x
+    elif Sense=='<':
+        
+        COMP_Dual= -1.0* mComp.duals.mus[con_name].x
+    elif Sense=='>':
+        COMP_Dual= mComp.duals.mus[con_name].x
+    
+    conRHS  =c.RHS
+    Obj=Obj+COMP_Dual*conRHS
+
+mERT.model.ObjVal
+
+
+
+   
 ##Problems=Problems.drop(columns=['PrimalValue','COMPValue'])
 #    # Check for duals due to constraints
 #    con_UB=[]
