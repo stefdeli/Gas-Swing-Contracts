@@ -9,9 +9,10 @@ Created on Mon Oct 22 14:23:14 2018
 from collections import defaultdict
 import pandas as pd
 import gurobipy as gb
+import sys
 
-LAMBDA_CONSTANT_LOWER= -1e4 #gb.GRB.INFINITY
-LAMBDA_CONSTANT_UPPER= 1e4 #gb.GRB.INFINITY          
+LAMBDA_CONSTANT_LOWER= -gb.GRB.INFINITY #gb.GRB.INFINITY
+LAMBDA_CONSTANT_UPPER= gb.GRB.INFINITY #gb.GRB.INFINITY          
  # Class which can have attributes set
 class expando(object):
     pass 
@@ -88,7 +89,7 @@ def _complementarity_model(self):
     
     
     #--- Dual variables & complementarity constraints - Upper bounds (if not INF)
-    print('Starting Upper Bounds')
+    print('Adding Upper Bounds')
     self.duals.musUB = defaultdict(list); self.duals.SOS1UB = defaultdict(list)
     self.comp.primalUB = defaultdict(); self.comp.SOS1UB = defaultdict()
     prVar = self.variables.primal
@@ -103,7 +104,7 @@ def _complementarity_model(self):
                                        [self.duals.musUB[PrV],self.duals.SOS1UB[PrV]])
                                        
     #--- Dual variables & complementarity constraints - Lower bounds (if not -INF) 
-    print('Starting Lower Bounds')
+    print('Adding Lower Bounds')
     self.duals.musLB = defaultdict(list); self.duals.SOS1LB = defaultdict(list)
     self.comp.primalLB = defaultdict(); self.comp.SOS1LB = defaultdict()
     for PrV in PrVarLB:        
@@ -118,10 +119,14 @@ def _complementarity_model(self):
 
        
     #--- Stationarity constraints
-    print('Starting Stationarity Constraints')
     self.cStat = defaultdict()
-    
-    for var in PrVarNames:     
+    count=1
+    for var in PrVarNames: 
+        
+        b = ("Adding Stationarity Constraints: " +str(count)+ "/" +str(len(PrVarNames)))
+        sys.stdout.write('\r'+b)
+        count=count+1
+        
         self.cStat[var] = m.addConstr(    
               obj_coeffs[var] +
               gb.quicksum(coeff(A_Eq, constr, var)*self.duals.lambdas[constr] for constr in self.duals.lambdas_idx)+ 
@@ -129,7 +134,7 @@ def _complementarity_model(self):
               gb.quicksum(coeff(A_ineqGE, constr, var)*self.duals.mus[constr] for constr in self.duals.mus_idx) +
               (self.duals.musUB[var] if var in PrVarUB else 0) - (self.duals.musLB[var] if var in PrVarLB else 0), 
               gb.GRB.EQUAL, 0,  name = 'dLag/' + var)
-    print('Finished Stationarity Constraints')   
+    print('\n') # Skip to next line for remaining print   
     m.update()    
  
 

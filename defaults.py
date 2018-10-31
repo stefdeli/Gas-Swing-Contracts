@@ -53,3 +53,5 @@ RESERVES_DN_PREMIUM = 0.95
 
 # Remove equality constraints and replace lhs==rhs with lhs<=rhs and lhs>=rhs
 REMOVE_EQUALITY=False
+
+GUROBI_OUTPUT=False
