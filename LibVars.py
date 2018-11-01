@@ -176,7 +176,7 @@ def _build_variables_gasRT(self,mtype,dispatchElecRT):
     var.gprodUp = {}         # Gas Production Up Regulation
     var.gprodDn = {}         # Gas Production Down Regulation
     
-    var.gshed = {}           # Gas shedding : Real-time
+    var.gshed_rt = {}           # Gas shedding : Real-time
     
     var.gsin_rt = {};        # Gas IN storage : Real-time
     var.gsout_rt = {}        # Gas OUT storage : Real-time
@@ -193,7 +193,7 @@ def _build_variables_gasRT(self,mtype,dispatchElecRT):
                 
                 name='gshed({0},{1},{2})'.format(gn,s,t)
                 Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)
-                var.gshed[gn,s,t] =Temp
+                var.gshed_rt[gn,s,t] =Temp
                 primal[name]=Temp
                 
                 

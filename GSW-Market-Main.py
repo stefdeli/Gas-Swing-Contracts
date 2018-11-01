@@ -726,7 +726,8 @@ for c in PrimalConstraints:
         COMP_Dual=0.0
         
     Obj=Obj+COMP_Dual*conRHS  
-    
+
+Error=mSEDA.model.ObjVal-Obj   
     
 ##Problems=Problems.drop(columns=['PrimalValue','COMPValue'])
 #    # Check for duals due to constraints

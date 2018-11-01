@@ -13585,582 +13585,627 @@ Subject To
  gprod_max(gw1,k2,t22): gprod(gw1,k2,t22) <= 100000
  gprod_max(gw1,k2,t23): gprod(gw1,k2,t23) <= 100000
  gprod_max(gw1,k2,t24): gprod(gw1,k2,t24) <= 100000
- gflow_sr_io(('ng101','ng102'),k0,t1): gflow_sr(('ng101','ng102'),k0,t1)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t1)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t1) = 0
- gflow_sr_io(('ng101','ng102'),k1,t1): gflow_sr(('ng101','ng102'),k1,t1)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t1)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t1) = 0
- gflow_sr_io(('ng101','ng102'),k2,t1): gflow_sr(('ng101','ng102'),k2,t1)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t1)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t1) = 0
- gflow_sr_io(('ng101','ng102'),k0,t2): gflow_sr(('ng101','ng102'),k0,t2)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t2)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t2) = 0
- gflow_sr_io(('ng101','ng102'),k1,t2): gflow_sr(('ng101','ng102'),k1,t2)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t2)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t2) = 0
- gflow_sr_io(('ng101','ng102'),k2,t2): gflow_sr(('ng101','ng102'),k2,t2)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t2)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t2) = 0
- gflow_sr_io(('ng101','ng102'),k0,t3): gflow_sr(('ng101','ng102'),k0,t3)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t3)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t3) = 0
- gflow_sr_io(('ng101','ng102'),k1,t3): gflow_sr(('ng101','ng102'),k1,t3)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t3)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t3) = 0
- gflow_sr_io(('ng101','ng102'),k2,t3): gflow_sr(('ng101','ng102'),k2,t3)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t3)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t3) = 0
- gflow_sr_io(('ng101','ng102'),k0,t4): gflow_sr(('ng101','ng102'),k0,t4)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t4)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t4) = 0
- gflow_sr_io(('ng101','ng102'),k1,t4): gflow_sr(('ng101','ng102'),k1,t4)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t4)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t4) = 0
- gflow_sr_io(('ng101','ng102'),k2,t4): gflow_sr(('ng101','ng102'),k2,t4)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t4)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t4) = 0
- gflow_sr_io(('ng101','ng102'),k0,t5): gflow_sr(('ng101','ng102'),k0,t5)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t5)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t5) = 0
- gflow_sr_io(('ng101','ng102'),k1,t5): gflow_sr(('ng101','ng102'),k1,t5)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t5)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t5) = 0
- gflow_sr_io(('ng101','ng102'),k2,t5): gflow_sr(('ng101','ng102'),k2,t5)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t5)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t5) = 0
- gflow_sr_io(('ng101','ng102'),k0,t6): gflow_sr(('ng101','ng102'),k0,t6)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t6)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t6) = 0
- gflow_sr_io(('ng101','ng102'),k1,t6): gflow_sr(('ng101','ng102'),k1,t6)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t6)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t6) = 0
- gflow_sr_io(('ng101','ng102'),k2,t6): gflow_sr(('ng101','ng102'),k2,t6)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t6)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t6) = 0
- gflow_sr_io(('ng101','ng102'),k0,t7): gflow_sr(('ng101','ng102'),k0,t7)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t7)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t7) = 0
- gflow_sr_io(('ng101','ng102'),k1,t7): gflow_sr(('ng101','ng102'),k1,t7)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t7)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t7) = 0
- gflow_sr_io(('ng101','ng102'),k2,t7): gflow_sr(('ng101','ng102'),k2,t7)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t7)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t7) = 0
- gflow_sr_io(('ng101','ng102'),k0,t8): gflow_sr(('ng101','ng102'),k0,t8)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t8)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t8) = 0
- gflow_sr_io(('ng101','ng102'),k1,t8): gflow_sr(('ng101','ng102'),k1,t8)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t8)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t8) = 0
- gflow_sr_io(('ng101','ng102'),k2,t8): gflow_sr(('ng101','ng102'),k2,t8)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t8)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t8) = 0
- gflow_sr_io(('ng101','ng102'),k0,t9): gflow_sr(('ng101','ng102'),k0,t9)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t9)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t9) = 0
- gflow_sr_io(('ng101','ng102'),k1,t9): gflow_sr(('ng101','ng102'),k1,t9)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t9)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t9) = 0
- gflow_sr_io(('ng101','ng102'),k2,t9): gflow_sr(('ng101','ng102'),k2,t9)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t9)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t9) = 0
- gflow_sr_io(('ng101','ng102'),k0,t10): gflow_sr(('ng101','ng102'),k0,t10)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t10)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t10) = 0
- gflow_sr_io(('ng101','ng102'),k1,t10): gflow_sr(('ng101','ng102'),k1,t10)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t10)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t10) = 0
- gflow_sr_io(('ng101','ng102'),k2,t10): gflow_sr(('ng101','ng102'),k2,t10)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t10)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t10) = 0
- gflow_sr_io(('ng101','ng102'),k0,t11): gflow_sr(('ng101','ng102'),k0,t11)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t11)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t11) = 0
- gflow_sr_io(('ng101','ng102'),k1,t11): gflow_sr(('ng101','ng102'),k1,t11)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t11)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t11) = 0
- gflow_sr_io(('ng101','ng102'),k2,t11): gflow_sr(('ng101','ng102'),k2,t11)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t11)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t11) = 0
- gflow_sr_io(('ng101','ng102'),k0,t12): gflow_sr(('ng101','ng102'),k0,t12)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t12)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t12) = 0
- gflow_sr_io(('ng101','ng102'),k1,t12): gflow_sr(('ng101','ng102'),k1,t12)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t12)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t12) = 0
- gflow_sr_io(('ng101','ng102'),k2,t12): gflow_sr(('ng101','ng102'),k2,t12)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t12)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t12) = 0
- gflow_sr_io(('ng101','ng102'),k0,t13): gflow_sr(('ng101','ng102'),k0,t13)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t13)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t13) = 0
- gflow_sr_io(('ng101','ng102'),k1,t13): gflow_sr(('ng101','ng102'),k1,t13)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t13)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t13) = 0
- gflow_sr_io(('ng101','ng102'),k2,t13): gflow_sr(('ng101','ng102'),k2,t13)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t13)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t13) = 0
- gflow_sr_io(('ng101','ng102'),k0,t14): gflow_sr(('ng101','ng102'),k0,t14)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t14)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t14) = 0
- gflow_sr_io(('ng101','ng102'),k1,t14): gflow_sr(('ng101','ng102'),k1,t14)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t14)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t14) = 0
- gflow_sr_io(('ng101','ng102'),k2,t14): gflow_sr(('ng101','ng102'),k2,t14)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t14)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t14) = 0
- gflow_sr_io(('ng101','ng102'),k0,t15): gflow_sr(('ng101','ng102'),k0,t15)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t15)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t15) = 0
- gflow_sr_io(('ng101','ng102'),k1,t15): gflow_sr(('ng101','ng102'),k1,t15)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t15)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t15) = 0
- gflow_sr_io(('ng101','ng102'),k2,t15): gflow_sr(('ng101','ng102'),k2,t15)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t15)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t15) = 0
- gflow_sr_io(('ng101','ng102'),k0,t16): gflow_sr(('ng101','ng102'),k0,t16)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t16)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t16) = 0
- gflow_sr_io(('ng101','ng102'),k1,t16): gflow_sr(('ng101','ng102'),k1,t16)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t16)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t16) = 0
- gflow_sr_io(('ng101','ng102'),k2,t16): gflow_sr(('ng101','ng102'),k2,t16)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t16)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t16) = 0
- gflow_sr_io(('ng101','ng102'),k0,t17): gflow_sr(('ng101','ng102'),k0,t17)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t17)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t17) = 0
- gflow_sr_io(('ng101','ng102'),k1,t17): gflow_sr(('ng101','ng102'),k1,t17)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t17)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t17) = 0
- gflow_sr_io(('ng101','ng102'),k2,t17): gflow_sr(('ng101','ng102'),k2,t17)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t17)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t17) = 0
- gflow_sr_io(('ng101','ng102'),k0,t18): gflow_sr(('ng101','ng102'),k0,t18)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t18)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t18) = 0
- gflow_sr_io(('ng101','ng102'),k1,t18): gflow_sr(('ng101','ng102'),k1,t18)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t18)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t18) = 0
- gflow_sr_io(('ng101','ng102'),k2,t18): gflow_sr(('ng101','ng102'),k2,t18)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t18)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t18) = 0
- gflow_sr_io(('ng101','ng102'),k0,t19): gflow_sr(('ng101','ng102'),k0,t19)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t19)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t19) = 0
- gflow_sr_io(('ng101','ng102'),k1,t19): gflow_sr(('ng101','ng102'),k1,t19)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t19)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t19) = 0
- gflow_sr_io(('ng101','ng102'),k2,t19): gflow_sr(('ng101','ng102'),k2,t19)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t19)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t19) = 0
- gflow_sr_io(('ng101','ng102'),k0,t20): gflow_sr(('ng101','ng102'),k0,t20)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t20)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t20) = 0
- gflow_sr_io(('ng101','ng102'),k1,t20): gflow_sr(('ng101','ng102'),k1,t20)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t20)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t20) = 0
- gflow_sr_io(('ng101','ng102'),k2,t20): gflow_sr(('ng101','ng102'),k2,t20)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t20)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t20) = 0
- gflow_sr_io(('ng101','ng102'),k0,t21): gflow_sr(('ng101','ng102'),k0,t21)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t21)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t21) = 0
- gflow_sr_io(('ng101','ng102'),k1,t21): gflow_sr(('ng101','ng102'),k1,t21)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t21)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t21) = 0
- gflow_sr_io(('ng101','ng102'),k2,t21): gflow_sr(('ng101','ng102'),k2,t21)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t21)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t21) = 0
- gflow_sr_io(('ng101','ng102'),k0,t22): gflow_sr(('ng101','ng102'),k0,t22)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t22)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t22) = 0
- gflow_sr_io(('ng101','ng102'),k1,t22): gflow_sr(('ng101','ng102'),k1,t22)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t22)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t22) = 0
- gflow_sr_io(('ng101','ng102'),k2,t22): gflow_sr(('ng101','ng102'),k2,t22)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t22)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t22) = 0
- gflow_sr_io(('ng101','ng102'),k0,t23): gflow_sr(('ng101','ng102'),k0,t23)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t23)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t23) = 0
- gflow_sr_io(('ng101','ng102'),k1,t23): gflow_sr(('ng101','ng102'),k1,t23)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t23)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t23) = 0
- gflow_sr_io(('ng101','ng102'),k2,t23): gflow_sr(('ng101','ng102'),k2,t23)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t23)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t23) = 0
- gflow_sr_io(('ng101','ng102'),k0,t24): gflow_sr(('ng101','ng102'),k0,t24)
-   - 0.5 qin_sr(('ng101','ng102'),k0,t24)
-   - 0.5 qout_sr(('ng101','ng102'),k0,t24) = 0
- gflow_sr_io(('ng101','ng102'),k1,t24): gflow_sr(('ng101','ng102'),k1,t24)
-   - 0.5 qin_sr(('ng101','ng102'),k1,t24)
-   - 0.5 qout_sr(('ng101','ng102'),k1,t24) = 0
- gflow_sr_io(('ng101','ng102'),k2,t24): gflow_sr(('ng101','ng102'),k2,t24)
-   - 0.5 qin_sr(('ng101','ng102'),k2,t24)
-   - 0.5 qout_sr(('ng101','ng102'),k2,t24) = 0
- lpack_def(('ng101','ng102'),k0,t1): - 75 pres(ng101,k0,t1)
-   - 75 pres(ng102,k0,t1) + lpack(('ng101','ng102'),k0,t1) = 0
- lpack_def(('ng101','ng102'),k0,t2): - 75 pres(ng101,k0,t2)
-   - 75 pres(ng102,k0,t2) + lpack(('ng101','ng102'),k0,t2) = 0
- lpack_def(('ng101','ng102'),k0,t3): - 75 pres(ng101,k0,t3)
-   - 75 pres(ng102,k0,t3) + lpack(('ng101','ng102'),k0,t3) = 0
- lpack_def(('ng101','ng102'),k0,t4): - 75 pres(ng101,k0,t4)
-   - 75 pres(ng102,k0,t4) + lpack(('ng101','ng102'),k0,t4) = 0
- lpack_def(('ng101','ng102'),k0,t5): - 75 pres(ng101,k0,t5)
-   - 75 pres(ng102,k0,t5) + lpack(('ng101','ng102'),k0,t5) = 0
- lpack_def(('ng101','ng102'),k0,t6): - 75 pres(ng101,k0,t6)
-   - 75 pres(ng102,k0,t6) + lpack(('ng101','ng102'),k0,t6) = 0
- lpack_def(('ng101','ng102'),k0,t7): - 75 pres(ng101,k0,t7)
-   - 75 pres(ng102,k0,t7) + lpack(('ng101','ng102'),k0,t7) = 0
- lpack_def(('ng101','ng102'),k0,t8): - 75 pres(ng101,k0,t8)
-   - 75 pres(ng102,k0,t8) + lpack(('ng101','ng102'),k0,t8) = 0
- lpack_def(('ng101','ng102'),k0,t9): - 75 pres(ng101,k0,t9)
-   - 75 pres(ng102,k0,t9) + lpack(('ng101','ng102'),k0,t9) = 0
- lpack_def(('ng101','ng102'),k0,t10): - 75 pres(ng101,k0,t10)
-   - 75 pres(ng102,k0,t10) + lpack(('ng101','ng102'),k0,t10) = 0
- lpack_def(('ng101','ng102'),k0,t11): - 75 pres(ng101,k0,t11)
-   - 75 pres(ng102,k0,t11) + lpack(('ng101','ng102'),k0,t11) = 0
- lpack_def(('ng101','ng102'),k0,t12): - 75 pres(ng101,k0,t12)
-   - 75 pres(ng102,k0,t12) + lpack(('ng101','ng102'),k0,t12) = 0
- lpack_def(('ng101','ng102'),k0,t13): - 75 pres(ng101,k0,t13)
-   - 75 pres(ng102,k0,t13) + lpack(('ng101','ng102'),k0,t13) = 0
- lpack_def(('ng101','ng102'),k0,t14): - 75 pres(ng101,k0,t14)
-   - 75 pres(ng102,k0,t14) + lpack(('ng101','ng102'),k0,t14) = 0
- lpack_def(('ng101','ng102'),k0,t15): - 75 pres(ng101,k0,t15)
-   - 75 pres(ng102,k0,t15) + lpack(('ng101','ng102'),k0,t15) = 0
- lpack_def(('ng101','ng102'),k0,t16): - 75 pres(ng101,k0,t16)
-   - 75 pres(ng102,k0,t16) + lpack(('ng101','ng102'),k0,t16) = 0
- lpack_def(('ng101','ng102'),k0,t17): - 75 pres(ng101,k0,t17)
-   - 75 pres(ng102,k0,t17) + lpack(('ng101','ng102'),k0,t17) = 0
- lpack_def(('ng101','ng102'),k0,t18): - 75 pres(ng101,k0,t18)
-   - 75 pres(ng102,k0,t18) + lpack(('ng101','ng102'),k0,t18) = 0
- lpack_def(('ng101','ng102'),k0,t19): - 75 pres(ng101,k0,t19)
-   - 75 pres(ng102,k0,t19) + lpack(('ng101','ng102'),k0,t19) = 0
- lpack_def(('ng101','ng102'),k0,t20): - 75 pres(ng101,k0,t20)
-   - 75 pres(ng102,k0,t20) + lpack(('ng101','ng102'),k0,t20) = 0
- lpack_def(('ng101','ng102'),k0,t21): - 75 pres(ng101,k0,t21)
-   - 75 pres(ng102,k0,t21) + lpack(('ng101','ng102'),k0,t21) = 0
- lpack_def(('ng101','ng102'),k0,t22): - 75 pres(ng101,k0,t22)
-   - 75 pres(ng102,k0,t22) + lpack(('ng101','ng102'),k0,t22) = 0
- lpack_def(('ng101','ng102'),k0,t23): - 75 pres(ng101,k0,t23)
-   - 75 pres(ng102,k0,t23) + lpack(('ng101','ng102'),k0,t23) = 0
- lpack_def(('ng101','ng102'),k0,t24): - 75 pres(ng101,k0,t24)
-   - 75 pres(ng102,k0,t24) + lpack(('ng101','ng102'),k0,t24) = 0
- lpack_def(('ng101','ng102'),k1,t1): - 75 pres(ng101,k1,t1)
-   - 75 pres(ng102,k1,t1) + lpack(('ng101','ng102'),k1,t1) = 0
- lpack_def(('ng101','ng102'),k1,t2): - 75 pres(ng101,k1,t2)
-   - 75 pres(ng102,k1,t2) + lpack(('ng101','ng102'),k1,t2) = 0
- lpack_def(('ng101','ng102'),k1,t3): - 75 pres(ng101,k1,t3)
-   - 75 pres(ng102,k1,t3) + lpack(('ng101','ng102'),k1,t3) = 0
- lpack_def(('ng101','ng102'),k1,t4): - 75 pres(ng101,k1,t4)
-   - 75 pres(ng102,k1,t4) + lpack(('ng101','ng102'),k1,t4) = 0
- lpack_def(('ng101','ng102'),k1,t5): - 75 pres(ng101,k1,t5)
-   - 75 pres(ng102,k1,t5) + lpack(('ng101','ng102'),k1,t5) = 0
- lpack_def(('ng101','ng102'),k1,t6): - 75 pres(ng101,k1,t6)
-   - 75 pres(ng102,k1,t6) + lpack(('ng101','ng102'),k1,t6) = 0
- lpack_def(('ng101','ng102'),k1,t7): - 75 pres(ng101,k1,t7)
-   - 75 pres(ng102,k1,t7) + lpack(('ng101','ng102'),k1,t7) = 0
- lpack_def(('ng101','ng102'),k1,t8): - 75 pres(ng101,k1,t8)
-   - 75 pres(ng102,k1,t8) + lpack(('ng101','ng102'),k1,t8) = 0
- lpack_def(('ng101','ng102'),k1,t9): - 75 pres(ng101,k1,t9)
-   - 75 pres(ng102,k1,t9) + lpack(('ng101','ng102'),k1,t9) = 0
- lpack_def(('ng101','ng102'),k1,t10): - 75 pres(ng101,k1,t10)
-   - 75 pres(ng102,k1,t10) + lpack(('ng101','ng102'),k1,t10) = 0
- lpack_def(('ng101','ng102'),k1,t11): - 75 pres(ng101,k1,t11)
-   - 75 pres(ng102,k1,t11) + lpack(('ng101','ng102'),k1,t11) = 0
- lpack_def(('ng101','ng102'),k1,t12): - 75 pres(ng101,k1,t12)
-   - 75 pres(ng102,k1,t12) + lpack(('ng101','ng102'),k1,t12) = 0
- lpack_def(('ng101','ng102'),k1,t13): - 75 pres(ng101,k1,t13)
-   - 75 pres(ng102,k1,t13) + lpack(('ng101','ng102'),k1,t13) = 0
- lpack_def(('ng101','ng102'),k1,t14): - 75 pres(ng101,k1,t14)
-   - 75 pres(ng102,k1,t14) + lpack(('ng101','ng102'),k1,t14) = 0
- lpack_def(('ng101','ng102'),k1,t15): - 75 pres(ng101,k1,t15)
-   - 75 pres(ng102,k1,t15) + lpack(('ng101','ng102'),k1,t15) = 0
- lpack_def(('ng101','ng102'),k1,t16): - 75 pres(ng101,k1,t16)
-   - 75 pres(ng102,k1,t16) + lpack(('ng101','ng102'),k1,t16) = 0
- lpack_def(('ng101','ng102'),k1,t17): - 75 pres(ng101,k1,t17)
-   - 75 pres(ng102,k1,t17) + lpack(('ng101','ng102'),k1,t17) = 0
- lpack_def(('ng101','ng102'),k1,t18): - 75 pres(ng101,k1,t18)
-   - 75 pres(ng102,k1,t18) + lpack(('ng101','ng102'),k1,t18) = 0
- lpack_def(('ng101','ng102'),k1,t19): - 75 pres(ng101,k1,t19)
-   - 75 pres(ng102,k1,t19) + lpack(('ng101','ng102'),k1,t19) = 0
- lpack_def(('ng101','ng102'),k1,t20): - 75 pres(ng101,k1,t20)
-   - 75 pres(ng102,k1,t20) + lpack(('ng101','ng102'),k1,t20) = 0
- lpack_def(('ng101','ng102'),k1,t21): - 75 pres(ng101,k1,t21)
-   - 75 pres(ng102,k1,t21) + lpack(('ng101','ng102'),k1,t21) = 0
- lpack_def(('ng101','ng102'),k1,t22): - 75 pres(ng101,k1,t22)
-   - 75 pres(ng102,k1,t22) + lpack(('ng101','ng102'),k1,t22) = 0
- lpack_def(('ng101','ng102'),k1,t23): - 75 pres(ng101,k1,t23)
-   - 75 pres(ng102,k1,t23) + lpack(('ng101','ng102'),k1,t23) = 0
- lpack_def(('ng101','ng102'),k1,t24): - 75 pres(ng101,k1,t24)
-   - 75 pres(ng102,k1,t24) + lpack(('ng101','ng102'),k1,t24) = 0
- lpack_def(('ng101','ng102'),k2,t1): - 75 pres(ng101,k2,t1)
-   - 75 pres(ng102,k2,t1) + lpack(('ng101','ng102'),k2,t1) = 0
- lpack_def(('ng101','ng102'),k2,t2): - 75 pres(ng101,k2,t2)
-   - 75 pres(ng102,k2,t2) + lpack(('ng101','ng102'),k2,t2) = 0
- lpack_def(('ng101','ng102'),k2,t3): - 75 pres(ng101,k2,t3)
-   - 75 pres(ng102,k2,t3) + lpack(('ng101','ng102'),k2,t3) = 0
- lpack_def(('ng101','ng102'),k2,t4): - 75 pres(ng101,k2,t4)
-   - 75 pres(ng102,k2,t4) + lpack(('ng101','ng102'),k2,t4) = 0
- lpack_def(('ng101','ng102'),k2,t5): - 75 pres(ng101,k2,t5)
-   - 75 pres(ng102,k2,t5) + lpack(('ng101','ng102'),k2,t5) = 0
- lpack_def(('ng101','ng102'),k2,t6): - 75 pres(ng101,k2,t6)
-   - 75 pres(ng102,k2,t6) + lpack(('ng101','ng102'),k2,t6) = 0
- lpack_def(('ng101','ng102'),k2,t7): - 75 pres(ng101,k2,t7)
-   - 75 pres(ng102,k2,t7) + lpack(('ng101','ng102'),k2,t7) = 0
- lpack_def(('ng101','ng102'),k2,t8): - 75 pres(ng101,k2,t8)
-   - 75 pres(ng102,k2,t8) + lpack(('ng101','ng102'),k2,t8) = 0
- lpack_def(('ng101','ng102'),k2,t9): - 75 pres(ng101,k2,t9)
-   - 75 pres(ng102,k2,t9) + lpack(('ng101','ng102'),k2,t9) = 0
- lpack_def(('ng101','ng102'),k2,t10): - 75 pres(ng101,k2,t10)
-   - 75 pres(ng102,k2,t10) + lpack(('ng101','ng102'),k2,t10) = 0
- lpack_def(('ng101','ng102'),k2,t11): - 75 pres(ng101,k2,t11)
-   - 75 pres(ng102,k2,t11) + lpack(('ng101','ng102'),k2,t11) = 0
- lpack_def(('ng101','ng102'),k2,t12): - 75 pres(ng101,k2,t12)
-   - 75 pres(ng102,k2,t12) + lpack(('ng101','ng102'),k2,t12) = 0
- lpack_def(('ng101','ng102'),k2,t13): - 75 pres(ng101,k2,t13)
-   - 75 pres(ng102,k2,t13) + lpack(('ng101','ng102'),k2,t13) = 0
- lpack_def(('ng101','ng102'),k2,t14): - 75 pres(ng101,k2,t14)
-   - 75 pres(ng102,k2,t14) + lpack(('ng101','ng102'),k2,t14) = 0
- lpack_def(('ng101','ng102'),k2,t15): - 75 pres(ng101,k2,t15)
-   - 75 pres(ng102,k2,t15) + lpack(('ng101','ng102'),k2,t15) = 0
- lpack_def(('ng101','ng102'),k2,t16): - 75 pres(ng101,k2,t16)
-   - 75 pres(ng102,k2,t16) + lpack(('ng101','ng102'),k2,t16) = 0
- lpack_def(('ng101','ng102'),k2,t17): - 75 pres(ng101,k2,t17)
-   - 75 pres(ng102,k2,t17) + lpack(('ng101','ng102'),k2,t17) = 0
- lpack_def(('ng101','ng102'),k2,t18): - 75 pres(ng101,k2,t18)
-   - 75 pres(ng102,k2,t18) + lpack(('ng101','ng102'),k2,t18) = 0
- lpack_def(('ng101','ng102'),k2,t19): - 75 pres(ng101,k2,t19)
-   - 75 pres(ng102,k2,t19) + lpack(('ng101','ng102'),k2,t19) = 0
- lpack_def(('ng101','ng102'),k2,t20): - 75 pres(ng101,k2,t20)
-   - 75 pres(ng102,k2,t20) + lpack(('ng101','ng102'),k2,t20) = 0
- lpack_def(('ng101','ng102'),k2,t21): - 75 pres(ng101,k2,t21)
-   - 75 pres(ng102,k2,t21) + lpack(('ng101','ng102'),k2,t21) = 0
- lpack_def(('ng101','ng102'),k2,t22): - 75 pres(ng101,k2,t22)
-   - 75 pres(ng102,k2,t22) + lpack(('ng101','ng102'),k2,t22) = 0
- lpack_def(('ng101','ng102'),k2,t23): - 75 pres(ng101,k2,t23)
-   - 75 pres(ng102,k2,t23) + lpack(('ng101','ng102'),k2,t23) = 0
- lpack_def(('ng101','ng102'),k2,t24): - 75 pres(ng101,k2,t24)
-   - 75 pres(ng102,k2,t24) + lpack(('ng101','ng102'),k2,t24) = 0
- line_store(('ng101','ng102'),k0,t2): - lpack(('ng101','ng102'),k0,t1)
-   + lpack(('ng101','ng102'),k0,t2) - qin_sr(('ng101','ng102'),k0,t2)
-   + qout_sr(('ng101','ng102'),k0,t2) = 0
- line_store(('ng101','ng102'),k0,t3): - lpack(('ng101','ng102'),k0,t2)
-   + lpack(('ng101','ng102'),k0,t3) - qin_sr(('ng101','ng102'),k0,t3)
-   + qout_sr(('ng101','ng102'),k0,t3) = 0
- line_store(('ng101','ng102'),k0,t4): - lpack(('ng101','ng102'),k0,t3)
-   + lpack(('ng101','ng102'),k0,t4) - qin_sr(('ng101','ng102'),k0,t4)
-   + qout_sr(('ng101','ng102'),k0,t4) = 0
- line_store(('ng101','ng102'),k0,t5): - lpack(('ng101','ng102'),k0,t4)
-   + lpack(('ng101','ng102'),k0,t5) - qin_sr(('ng101','ng102'),k0,t5)
-   + qout_sr(('ng101','ng102'),k0,t5) = 0
- line_store(('ng101','ng102'),k0,t6): - lpack(('ng101','ng102'),k0,t5)
-   + lpack(('ng101','ng102'),k0,t6) - qin_sr(('ng101','ng102'),k0,t6)
-   + qout_sr(('ng101','ng102'),k0,t6) = 0
- line_store(('ng101','ng102'),k0,t7): - lpack(('ng101','ng102'),k0,t6)
-   + lpack(('ng101','ng102'),k0,t7) - qin_sr(('ng101','ng102'),k0,t7)
-   + qout_sr(('ng101','ng102'),k0,t7) = 0
- line_store(('ng101','ng102'),k0,t8): - lpack(('ng101','ng102'),k0,t7)
-   + lpack(('ng101','ng102'),k0,t8) - qin_sr(('ng101','ng102'),k0,t8)
-   + qout_sr(('ng101','ng102'),k0,t8) = 0
- line_store(('ng101','ng102'),k0,t9): - lpack(('ng101','ng102'),k0,t8)
-   + lpack(('ng101','ng102'),k0,t9) - qin_sr(('ng101','ng102'),k0,t9)
-   + qout_sr(('ng101','ng102'),k0,t9) = 0
- line_store(('ng101','ng102'),k0,t10): - lpack(('ng101','ng102'),k0,t9)
-   + lpack(('ng101','ng102'),k0,t10) - qin_sr(('ng101','ng102'),k0,t10)
-   + qout_sr(('ng101','ng102'),k0,t10) = 0
- line_store(('ng101','ng102'),k0,t11): - lpack(('ng101','ng102'),k0,t10)
-   + lpack(('ng101','ng102'),k0,t11) - qin_sr(('ng101','ng102'),k0,t11)
-   + qout_sr(('ng101','ng102'),k0,t11) = 0
- line_store(('ng101','ng102'),k0,t12): - lpack(('ng101','ng102'),k0,t11)
-   + lpack(('ng101','ng102'),k0,t12) - qin_sr(('ng101','ng102'),k0,t12)
-   + qout_sr(('ng101','ng102'),k0,t12) = 0
- line_store(('ng101','ng102'),k0,t13): - lpack(('ng101','ng102'),k0,t12)
-   + lpack(('ng101','ng102'),k0,t13) - qin_sr(('ng101','ng102'),k0,t13)
-   + qout_sr(('ng101','ng102'),k0,t13) = 0
- line_store(('ng101','ng102'),k0,t14): - lpack(('ng101','ng102'),k0,t13)
-   + lpack(('ng101','ng102'),k0,t14) - qin_sr(('ng101','ng102'),k0,t14)
-   + qout_sr(('ng101','ng102'),k0,t14) = 0
- line_store(('ng101','ng102'),k0,t15): - lpack(('ng101','ng102'),k0,t14)
-   + lpack(('ng101','ng102'),k0,t15) - qin_sr(('ng101','ng102'),k0,t15)
-   + qout_sr(('ng101','ng102'),k0,t15) = 0
- line_store(('ng101','ng102'),k0,t16): - lpack(('ng101','ng102'),k0,t15)
-   + lpack(('ng101','ng102'),k0,t16) - qin_sr(('ng101','ng102'),k0,t16)
-   + qout_sr(('ng101','ng102'),k0,t16) = 0
- line_store(('ng101','ng102'),k0,t17): - lpack(('ng101','ng102'),k0,t16)
-   + lpack(('ng101','ng102'),k0,t17) - qin_sr(('ng101','ng102'),k0,t17)
-   + qout_sr(('ng101','ng102'),k0,t17) = 0
- line_store(('ng101','ng102'),k0,t18): - lpack(('ng101','ng102'),k0,t17)
-   + lpack(('ng101','ng102'),k0,t18) - qin_sr(('ng101','ng102'),k0,t18)
-   + qout_sr(('ng101','ng102'),k0,t18) = 0
- line_store(('ng101','ng102'),k0,t19): - lpack(('ng101','ng102'),k0,t18)
-   + lpack(('ng101','ng102'),k0,t19) - qin_sr(('ng101','ng102'),k0,t19)
-   + qout_sr(('ng101','ng102'),k0,t19) = 0
- line_store(('ng101','ng102'),k0,t20): - lpack(('ng101','ng102'),k0,t19)
-   + lpack(('ng101','ng102'),k0,t20) - qin_sr(('ng101','ng102'),k0,t20)
-   + qout_sr(('ng101','ng102'),k0,t20) = 0
- line_store(('ng101','ng102'),k0,t21): - lpack(('ng101','ng102'),k0,t20)
-   + lpack(('ng101','ng102'),k0,t21) - qin_sr(('ng101','ng102'),k0,t21)
-   + qout_sr(('ng101','ng102'),k0,t21) = 0
- line_store(('ng101','ng102'),k0,t22): - lpack(('ng101','ng102'),k0,t21)
-   + lpack(('ng101','ng102'),k0,t22) - qin_sr(('ng101','ng102'),k0,t22)
-   + qout_sr(('ng101','ng102'),k0,t22) = 0
- line_store(('ng101','ng102'),k0,t23): - lpack(('ng101','ng102'),k0,t22)
-   + lpack(('ng101','ng102'),k0,t23) - qin_sr(('ng101','ng102'),k0,t23)
-   + qout_sr(('ng101','ng102'),k0,t23) = 0
- line_store(('ng101','ng102'),k0,t24): - lpack(('ng101','ng102'),k0,t23)
-   + lpack(('ng101','ng102'),k0,t24) - qin_sr(('ng101','ng102'),k0,t24)
-   + qout_sr(('ng101','ng102'),k0,t24) = 0
- line_store(('ng101','ng102'),k0,t1): lpack(('ng101','ng102'),k0,t1)
-   - qin_sr(('ng101','ng102'),k0,t1) + qout_sr(('ng101','ng102'),k0,t1)
-   = 49300
- line_store(('ng101','ng102'),k1,t2): - lpack(('ng101','ng102'),k0,t1)
-   + lpack(('ng101','ng102'),k1,t2) - qin_sr(('ng101','ng102'),k1,t2)
-   + qout_sr(('ng101','ng102'),k1,t2) = 0
- line_store(('ng101','ng102'),k1,t3): - lpack(('ng101','ng102'),k0,t2)
-   + lpack(('ng101','ng102'),k1,t3) - qin_sr(('ng101','ng102'),k1,t3)
-   + qout_sr(('ng101','ng102'),k1,t3) = 0
- line_store(('ng101','ng102'),k1,t4): - lpack(('ng101','ng102'),k0,t3)
-   + lpack(('ng101','ng102'),k1,t4) - qin_sr(('ng101','ng102'),k1,t4)
-   + qout_sr(('ng101','ng102'),k1,t4) = 0
- line_store(('ng101','ng102'),k1,t5): - lpack(('ng101','ng102'),k0,t4)
-   + lpack(('ng101','ng102'),k1,t5) - qin_sr(('ng101','ng102'),k1,t5)
-   + qout_sr(('ng101','ng102'),k1,t5) = 0
- line_store(('ng101','ng102'),k1,t6): - lpack(('ng101','ng102'),k0,t5)
-   + lpack(('ng101','ng102'),k1,t6) - qin_sr(('ng101','ng102'),k1,t6)
-   + qout_sr(('ng101','ng102'),k1,t6) = 0
- line_store(('ng101','ng102'),k1,t7): - lpack(('ng101','ng102'),k0,t6)
-   + lpack(('ng101','ng102'),k1,t7) - qin_sr(('ng101','ng102'),k1,t7)
-   + qout_sr(('ng101','ng102'),k1,t7) = 0
- line_store(('ng101','ng102'),k1,t8): - lpack(('ng101','ng102'),k0,t7)
-   + lpack(('ng101','ng102'),k1,t8) - qin_sr(('ng101','ng102'),k1,t8)
-   + qout_sr(('ng101','ng102'),k1,t8) = 0
- line_store(('ng101','ng102'),k1,t9): - lpack(('ng101','ng102'),k0,t8)
-   + lpack(('ng101','ng102'),k1,t9) - qin_sr(('ng101','ng102'),k1,t9)
-   + qout_sr(('ng101','ng102'),k1,t9) = 0
- line_store(('ng101','ng102'),k1,t10): - lpack(('ng101','ng102'),k0,t9)
-   + lpack(('ng101','ng102'),k1,t10) - qin_sr(('ng101','ng102'),k1,t10)
-   + qout_sr(('ng101','ng102'),k1,t10) = 0
- line_store(('ng101','ng102'),k1,t11): - lpack(('ng101','ng102'),k0,t10)
-   + lpack(('ng101','ng102'),k1,t11) - qin_sr(('ng101','ng102'),k1,t11)
-   + qout_sr(('ng101','ng102'),k1,t11) = 0
- line_store(('ng101','ng102'),k1,t12): - lpack(('ng101','ng102'),k0,t11)
-   + lpack(('ng101','ng102'),k1,t12) - qin_sr(('ng101','ng102'),k1,t12)
-   + qout_sr(('ng101','ng102'),k1,t12) = 0
- line_store(('ng101','ng102'),k1,t13): - lpack(('ng101','ng102'),k0,t12)
-   + lpack(('ng101','ng102'),k1,t13) - qin_sr(('ng101','ng102'),k1,t13)
-   + qout_sr(('ng101','ng102'),k1,t13) = 0
- line_store(('ng101','ng102'),k1,t14): - lpack(('ng101','ng102'),k0,t13)
-   + lpack(('ng101','ng102'),k1,t14) - qin_sr(('ng101','ng102'),k1,t14)
-   + qout_sr(('ng101','ng102'),k1,t14) = 0
- line_store(('ng101','ng102'),k1,t15): - lpack(('ng101','ng102'),k0,t14)
-   + lpack(('ng101','ng102'),k1,t15) - qin_sr(('ng101','ng102'),k1,t15)
-   + qout_sr(('ng101','ng102'),k1,t15) = 0
- line_store(('ng101','ng102'),k1,t16): - lpack(('ng101','ng102'),k0,t15)
-   + lpack(('ng101','ng102'),k1,t16) - qin_sr(('ng101','ng102'),k1,t16)
-   + qout_sr(('ng101','ng102'),k1,t16) = 0
- line_store(('ng101','ng102'),k1,t17): - lpack(('ng101','ng102'),k0,t16)
-   + lpack(('ng101','ng102'),k1,t17) - qin_sr(('ng101','ng102'),k1,t17)
-   + qout_sr(('ng101','ng102'),k1,t17) = 0
- line_store(('ng101','ng102'),k1,t18): - lpack(('ng101','ng102'),k0,t17)
-   + lpack(('ng101','ng102'),k1,t18) - qin_sr(('ng101','ng102'),k1,t18)
-   + qout_sr(('ng101','ng102'),k1,t18) = 0
- line_store(('ng101','ng102'),k1,t19): - lpack(('ng101','ng102'),k0,t18)
-   + lpack(('ng101','ng102'),k1,t19) - qin_sr(('ng101','ng102'),k1,t19)
-   + qout_sr(('ng101','ng102'),k1,t19) = 0
- line_store(('ng101','ng102'),k1,t20): - lpack(('ng101','ng102'),k0,t19)
-   + lpack(('ng101','ng102'),k1,t20) - qin_sr(('ng101','ng102'),k1,t20)
-   + qout_sr(('ng101','ng102'),k1,t20) = 0
- line_store(('ng101','ng102'),k1,t21): - lpack(('ng101','ng102'),k0,t20)
-   + lpack(('ng101','ng102'),k1,t21) - qin_sr(('ng101','ng102'),k1,t21)
-   + qout_sr(('ng101','ng102'),k1,t21) = 0
- line_store(('ng101','ng102'),k1,t22): - lpack(('ng101','ng102'),k0,t21)
-   + lpack(('ng101','ng102'),k1,t22) - qin_sr(('ng101','ng102'),k1,t22)
-   + qout_sr(('ng101','ng102'),k1,t22) = 0
- line_store(('ng101','ng102'),k1,t23): - lpack(('ng101','ng102'),k0,t22)
-   + lpack(('ng101','ng102'),k1,t23) - qin_sr(('ng101','ng102'),k1,t23)
-   + qout_sr(('ng101','ng102'),k1,t23) = 0
- line_store(('ng101','ng102'),k1,t24): - lpack(('ng101','ng102'),k0,t23)
-   + lpack(('ng101','ng102'),k1,t24) - qin_sr(('ng101','ng102'),k1,t24)
-   + qout_sr(('ng101','ng102'),k1,t24) = 0
- line_store(('ng101','ng102'),k1,t1): lpack(('ng101','ng102'),k1,t1)
-   - qin_sr(('ng101','ng102'),k1,t1) + qout_sr(('ng101','ng102'),k1,t1)
-   = 49300
- line_store(('ng101','ng102'),k2,t2): - lpack(('ng101','ng102'),k0,t1)
-   + lpack(('ng101','ng102'),k2,t2) - qin_sr(('ng101','ng102'),k2,t2)
-   + qout_sr(('ng101','ng102'),k2,t2) = 0
- line_store(('ng101','ng102'),k2,t3): - lpack(('ng101','ng102'),k0,t2)
-   + lpack(('ng101','ng102'),k2,t3) - qin_sr(('ng101','ng102'),k2,t3)
-   + qout_sr(('ng101','ng102'),k2,t3) = 0
- line_store(('ng101','ng102'),k2,t4): - lpack(('ng101','ng102'),k0,t3)
-   + lpack(('ng101','ng102'),k2,t4) - qin_sr(('ng101','ng102'),k2,t4)
-   + qout_sr(('ng101','ng102'),k2,t4) = 0
- line_store(('ng101','ng102'),k2,t5): - lpack(('ng101','ng102'),k0,t4)
-   + lpack(('ng101','ng102'),k2,t5) - qin_sr(('ng101','ng102'),k2,t5)
-   + qout_sr(('ng101','ng102'),k2,t5) = 0
- line_store(('ng101','ng102'),k2,t6): - lpack(('ng101','ng102'),k0,t5)
-   + lpack(('ng101','ng102'),k2,t6) - qin_sr(('ng101','ng102'),k2,t6)
-   + qout_sr(('ng101','ng102'),k2,t6) = 0
- line_store(('ng101','ng102'),k2,t7): - lpack(('ng101','ng102'),k0,t6)
-   + lpack(('ng101','ng102'),k2,t7) - qin_sr(('ng101','ng102'),k2,t7)
-   + qout_sr(('ng101','ng102'),k2,t7) = 0
- line_store(('ng101','ng102'),k2,t8): - lpack(('ng101','ng102'),k0,t7)
-   + lpack(('ng101','ng102'),k2,t8) - qin_sr(('ng101','ng102'),k2,t8)
-   + qout_sr(('ng101','ng102'),k2,t8) = 0
- line_store(('ng101','ng102'),k2,t9): - lpack(('ng101','ng102'),k0,t8)
-   + lpack(('ng101','ng102'),k2,t9) - qin_sr(('ng101','ng102'),k2,t9)
-   + qout_sr(('ng101','ng102'),k2,t9) = 0
- line_store(('ng101','ng102'),k2,t10): - lpack(('ng101','ng102'),k0,t9)
-   + lpack(('ng101','ng102'),k2,t10) - qin_sr(('ng101','ng102'),k2,t10)
-   + qout_sr(('ng101','ng102'),k2,t10) = 0
- line_store(('ng101','ng102'),k2,t11): - lpack(('ng101','ng102'),k0,t10)
-   + lpack(('ng101','ng102'),k2,t11) - qin_sr(('ng101','ng102'),k2,t11)
-   + qout_sr(('ng101','ng102'),k2,t11) = 0
- line_store(('ng101','ng102'),k2,t12): - lpack(('ng101','ng102'),k0,t11)
-   + lpack(('ng101','ng102'),k2,t12) - qin_sr(('ng101','ng102'),k2,t12)
-   + qout_sr(('ng101','ng102'),k2,t12) = 0
- line_store(('ng101','ng102'),k2,t13): - lpack(('ng101','ng102'),k0,t12)
-   + lpack(('ng101','ng102'),k2,t13) - qin_sr(('ng101','ng102'),k2,t13)
-   + qout_sr(('ng101','ng102'),k2,t13) = 0
- line_store(('ng101','ng102'),k2,t14): - lpack(('ng101','ng102'),k0,t13)
-   + lpack(('ng101','ng102'),k2,t14) - qin_sr(('ng101','ng102'),k2,t14)
-   + qout_sr(('ng101','ng102'),k2,t14) = 0
- line_store(('ng101','ng102'),k2,t15): - lpack(('ng101','ng102'),k0,t14)
-   + lpack(('ng101','ng102'),k2,t15) - qin_sr(('ng101','ng102'),k2,t15)
-   + qout_sr(('ng101','ng102'),k2,t15) = 0
- line_store(('ng101','ng102'),k2,t16): - lpack(('ng101','ng102'),k0,t15)
-   + lpack(('ng101','ng102'),k2,t16) - qin_sr(('ng101','ng102'),k2,t16)
-   + qout_sr(('ng101','ng102'),k2,t16) = 0
- line_store(('ng101','ng102'),k2,t17): - lpack(('ng101','ng102'),k0,t16)
-   + lpack(('ng101','ng102'),k2,t17) - qin_sr(('ng101','ng102'),k2,t17)
-   + qout_sr(('ng101','ng102'),k2,t17) = 0
- line_store(('ng101','ng102'),k2,t18): - lpack(('ng101','ng102'),k0,t17)
-   + lpack(('ng101','ng102'),k2,t18) - qin_sr(('ng101','ng102'),k2,t18)
-   + qout_sr(('ng101','ng102'),k2,t18) = 0
- line_store(('ng101','ng102'),k2,t19): - lpack(('ng101','ng102'),k0,t18)
-   + lpack(('ng101','ng102'),k2,t19) - qin_sr(('ng101','ng102'),k2,t19)
-   + qout_sr(('ng101','ng102'),k2,t19) = 0
- line_store(('ng101','ng102'),k2,t20): - lpack(('ng101','ng102'),k0,t19)
-   + lpack(('ng101','ng102'),k2,t20) - qin_sr(('ng101','ng102'),k2,t20)
-   + qout_sr(('ng101','ng102'),k2,t20) = 0
- line_store(('ng101','ng102'),k2,t21): - lpack(('ng101','ng102'),k0,t20)
-   + lpack(('ng101','ng102'),k2,t21) - qin_sr(('ng101','ng102'),k2,t21)
-   + qout_sr(('ng101','ng102'),k2,t21) = 0
- line_store(('ng101','ng102'),k2,t22): - lpack(('ng101','ng102'),k0,t21)
-   + lpack(('ng101','ng102'),k2,t22) - qin_sr(('ng101','ng102'),k2,t22)
-   + qout_sr(('ng101','ng102'),k2,t22) = 0
- line_store(('ng101','ng102'),k2,t23): - lpack(('ng101','ng102'),k0,t22)
-   + lpack(('ng101','ng102'),k2,t23) - qin_sr(('ng101','ng102'),k2,t23)
-   + qout_sr(('ng101','ng102'),k2,t23) = 0
- line_store(('ng101','ng102'),k2,t24): - lpack(('ng101','ng102'),k0,t23)
-   + lpack(('ng101','ng102'),k2,t24) - qin_sr(('ng101','ng102'),k2,t24)
-   + qout_sr(('ng101','ng102'),k2,t24) = 0
- line_store(('ng101','ng102'),k2,t1): lpack(('ng101','ng102'),k2,t1)
-   - qin_sr(('ng101','ng102'),k2,t1) + qout_sr(('ng101','ng102'),k2,t1)
-   = 49300
+ gflow_sr_io(('ng101','ng102'),k0,t1): - gflow_sr(('ng101','ng102'),k0,t1)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t1)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t1) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t1): - gflow_sr(('ng101','ng102'),k1,t1)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t1)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t1) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t1): - gflow_sr(('ng101','ng102'),k2,t1)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t1)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t1) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t2): - gflow_sr(('ng101','ng102'),k0,t2)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t2)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t2) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t2): - gflow_sr(('ng101','ng102'),k1,t2)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t2)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t2) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t2): - gflow_sr(('ng101','ng102'),k2,t2)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t2)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t2) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t3): - gflow_sr(('ng101','ng102'),k0,t3)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t3)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t3) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t3): - gflow_sr(('ng101','ng102'),k1,t3)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t3)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t3) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t3): - gflow_sr(('ng101','ng102'),k2,t3)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t3)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t3) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t4): - gflow_sr(('ng101','ng102'),k0,t4)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t4)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t4) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t4): - gflow_sr(('ng101','ng102'),k1,t4)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t4)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t4) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t4): - gflow_sr(('ng101','ng102'),k2,t4)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t4)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t4) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t5): - gflow_sr(('ng101','ng102'),k0,t5)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t5)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t5) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t5): - gflow_sr(('ng101','ng102'),k1,t5)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t5)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t5) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t5): - gflow_sr(('ng101','ng102'),k2,t5)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t5)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t5) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t6): - gflow_sr(('ng101','ng102'),k0,t6)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t6)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t6) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t6): - gflow_sr(('ng101','ng102'),k1,t6)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t6)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t6) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t6): - gflow_sr(('ng101','ng102'),k2,t6)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t6)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t6) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t7): - gflow_sr(('ng101','ng102'),k0,t7)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t7)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t7) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t7): - gflow_sr(('ng101','ng102'),k1,t7)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t7)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t7) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t7): - gflow_sr(('ng101','ng102'),k2,t7)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t7)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t7) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t8): - gflow_sr(('ng101','ng102'),k0,t8)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t8)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t8) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t8): - gflow_sr(('ng101','ng102'),k1,t8)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t8)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t8) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t8): - gflow_sr(('ng101','ng102'),k2,t8)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t8)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t8) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t9): - gflow_sr(('ng101','ng102'),k0,t9)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t9)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t9) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t9): - gflow_sr(('ng101','ng102'),k1,t9)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t9)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t9) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t9): - gflow_sr(('ng101','ng102'),k2,t9)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t9)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t9) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t10):
+   - gflow_sr(('ng101','ng102'),k0,t10)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t10)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t10) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t10):
+   - gflow_sr(('ng101','ng102'),k1,t10)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t10)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t10) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t10):
+   - gflow_sr(('ng101','ng102'),k2,t10)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t10)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t10) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t11):
+   - gflow_sr(('ng101','ng102'),k0,t11)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t11)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t11) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t11):
+   - gflow_sr(('ng101','ng102'),k1,t11)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t11)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t11) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t11):
+   - gflow_sr(('ng101','ng102'),k2,t11)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t11)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t11) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t12):
+   - gflow_sr(('ng101','ng102'),k0,t12)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t12)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t12) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t12):
+   - gflow_sr(('ng101','ng102'),k1,t12)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t12)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t12) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t12):
+   - gflow_sr(('ng101','ng102'),k2,t12)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t12)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t12) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t13):
+   - gflow_sr(('ng101','ng102'),k0,t13)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t13)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t13) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t13):
+   - gflow_sr(('ng101','ng102'),k1,t13)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t13)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t13) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t13):
+   - gflow_sr(('ng101','ng102'),k2,t13)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t13)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t13) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t14):
+   - gflow_sr(('ng101','ng102'),k0,t14)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t14)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t14) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t14):
+   - gflow_sr(('ng101','ng102'),k1,t14)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t14)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t14) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t14):
+   - gflow_sr(('ng101','ng102'),k2,t14)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t14)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t14) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t15):
+   - gflow_sr(('ng101','ng102'),k0,t15)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t15)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t15) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t15):
+   - gflow_sr(('ng101','ng102'),k1,t15)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t15)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t15) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t15):
+   - gflow_sr(('ng101','ng102'),k2,t15)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t15)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t15) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t16):
+   - gflow_sr(('ng101','ng102'),k0,t16)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t16)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t16) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t16):
+   - gflow_sr(('ng101','ng102'),k1,t16)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t16)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t16) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t16):
+   - gflow_sr(('ng101','ng102'),k2,t16)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t16)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t16) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t17):
+   - gflow_sr(('ng101','ng102'),k0,t17)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t17)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t17) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t17):
+   - gflow_sr(('ng101','ng102'),k1,t17)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t17)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t17) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t17):
+   - gflow_sr(('ng101','ng102'),k2,t17)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t17)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t17) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t18):
+   - gflow_sr(('ng101','ng102'),k0,t18)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t18)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t18) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t18):
+   - gflow_sr(('ng101','ng102'),k1,t18)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t18)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t18) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t18):
+   - gflow_sr(('ng101','ng102'),k2,t18)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t18)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t18) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t19):
+   - gflow_sr(('ng101','ng102'),k0,t19)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t19)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t19) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t19):
+   - gflow_sr(('ng101','ng102'),k1,t19)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t19)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t19) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t19):
+   - gflow_sr(('ng101','ng102'),k2,t19)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t19)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t19) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t20):
+   - gflow_sr(('ng101','ng102'),k0,t20)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t20)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t20) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t20):
+   - gflow_sr(('ng101','ng102'),k1,t20)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t20)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t20) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t20):
+   - gflow_sr(('ng101','ng102'),k2,t20)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t20)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t20) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t21):
+   - gflow_sr(('ng101','ng102'),k0,t21)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t21)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t21) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t21):
+   - gflow_sr(('ng101','ng102'),k1,t21)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t21)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t21) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t21):
+   - gflow_sr(('ng101','ng102'),k2,t21)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t21)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t21) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t22):
+   - gflow_sr(('ng101','ng102'),k0,t22)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t22)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t22) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t22):
+   - gflow_sr(('ng101','ng102'),k1,t22)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t22)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t22) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t22):
+   - gflow_sr(('ng101','ng102'),k2,t22)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t22)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t22) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t23):
+   - gflow_sr(('ng101','ng102'),k0,t23)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t23)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t23) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t23):
+   - gflow_sr(('ng101','ng102'),k1,t23)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t23)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t23) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t23):
+   - gflow_sr(('ng101','ng102'),k2,t23)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t23)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t23) = 0
+ gflow_sr_io(('ng101','ng102'),k0,t24):
+   - gflow_sr(('ng101','ng102'),k0,t24)
+   + 0.5 qin_sr(('ng101','ng102'),k0,t24)
+   + 0.5 qout_sr(('ng101','ng102'),k0,t24) = 0
+ gflow_sr_io(('ng101','ng102'),k1,t24):
+   - gflow_sr(('ng101','ng102'),k1,t24)
+   + 0.5 qin_sr(('ng101','ng102'),k1,t24)
+   + 0.5 qout_sr(('ng101','ng102'),k1,t24) = 0
+ gflow_sr_io(('ng101','ng102'),k2,t24):
+   - gflow_sr(('ng101','ng102'),k2,t24)
+   + 0.5 qin_sr(('ng101','ng102'),k2,t24)
+   + 0.5 qout_sr(('ng101','ng102'),k2,t24) = 0
+ lpack_def(('ng101','ng102'),k0,t1): 75 pres(ng101,k0,t1)
+   + 75 pres(ng102,k0,t1) - lpack(('ng101','ng102'),k0,t1) = 0
+ lpack_def(('ng101','ng102'),k0,t2): 75 pres(ng101,k0,t2)
+   + 75 pres(ng102,k0,t2) - lpack(('ng101','ng102'),k0,t2) = 0
+ lpack_def(('ng101','ng102'),k0,t3): 75 pres(ng101,k0,t3)
+   + 75 pres(ng102,k0,t3) - lpack(('ng101','ng102'),k0,t3) = 0
+ lpack_def(('ng101','ng102'),k0,t4): 75 pres(ng101,k0,t4)
+   + 75 pres(ng102,k0,t4) - lpack(('ng101','ng102'),k0,t4) = 0
+ lpack_def(('ng101','ng102'),k0,t5): 75 pres(ng101,k0,t5)
+   + 75 pres(ng102,k0,t5) - lpack(('ng101','ng102'),k0,t5) = 0
+ lpack_def(('ng101','ng102'),k0,t6): 75 pres(ng101,k0,t6)
+   + 75 pres(ng102,k0,t6) - lpack(('ng101','ng102'),k0,t6) = 0
+ lpack_def(('ng101','ng102'),k0,t7): 75 pres(ng101,k0,t7)
+   + 75 pres(ng102,k0,t7) - lpack(('ng101','ng102'),k0,t7) = 0
+ lpack_def(('ng101','ng102'),k0,t8): 75 pres(ng101,k0,t8)
+   + 75 pres(ng102,k0,t8) - lpack(('ng101','ng102'),k0,t8) = 0
+ lpack_def(('ng101','ng102'),k0,t9): 75 pres(ng101,k0,t9)
+   + 75 pres(ng102,k0,t9) - lpack(('ng101','ng102'),k0,t9) = 0
+ lpack_def(('ng101','ng102'),k0,t10): 75 pres(ng101,k0,t10)
+   + 75 pres(ng102,k0,t10) - lpack(('ng101','ng102'),k0,t10) = 0
+ lpack_def(('ng101','ng102'),k0,t11): 75 pres(ng101,k0,t11)
+   + 75 pres(ng102,k0,t11) - lpack(('ng101','ng102'),k0,t11) = 0
+ lpack_def(('ng101','ng102'),k0,t12): 75 pres(ng101,k0,t12)
+   + 75 pres(ng102,k0,t12) - lpack(('ng101','ng102'),k0,t12) = 0
+ lpack_def(('ng101','ng102'),k0,t13): 75 pres(ng101,k0,t13)
+   + 75 pres(ng102,k0,t13) - lpack(('ng101','ng102'),k0,t13) = 0
+ lpack_def(('ng101','ng102'),k0,t14): 75 pres(ng101,k0,t14)
+   + 75 pres(ng102,k0,t14) - lpack(('ng101','ng102'),k0,t14) = 0
+ lpack_def(('ng101','ng102'),k0,t15): 75 pres(ng101,k0,t15)
+   + 75 pres(ng102,k0,t15) - lpack(('ng101','ng102'),k0,t15) = 0
+ lpack_def(('ng101','ng102'),k0,t16): 75 pres(ng101,k0,t16)
+   + 75 pres(ng102,k0,t16) - lpack(('ng101','ng102'),k0,t16) = 0
+ lpack_def(('ng101','ng102'),k0,t17): 75 pres(ng101,k0,t17)
+   + 75 pres(ng102,k0,t17) - lpack(('ng101','ng102'),k0,t17) = 0
+ lpack_def(('ng101','ng102'),k0,t18): 75 pres(ng101,k0,t18)
+   + 75 pres(ng102,k0,t18) - lpack(('ng101','ng102'),k0,t18) = 0
+ lpack_def(('ng101','ng102'),k0,t19): 75 pres(ng101,k0,t19)
+   + 75 pres(ng102,k0,t19) - lpack(('ng101','ng102'),k0,t19) = 0
+ lpack_def(('ng101','ng102'),k0,t20): 75 pres(ng101,k0,t20)
+   + 75 pres(ng102,k0,t20) - lpack(('ng101','ng102'),k0,t20) = 0
+ lpack_def(('ng101','ng102'),k0,t21): 75 pres(ng101,k0,t21)
+   + 75 pres(ng102,k0,t21) - lpack(('ng101','ng102'),k0,t21) = 0
+ lpack_def(('ng101','ng102'),k0,t22): 75 pres(ng101,k0,t22)
+   + 75 pres(ng102,k0,t22) - lpack(('ng101','ng102'),k0,t22) = 0
+ lpack_def(('ng101','ng102'),k0,t23): 75 pres(ng101,k0,t23)
+   + 75 pres(ng102,k0,t23) - lpack(('ng101','ng102'),k0,t23) = 0
+ lpack_def(('ng101','ng102'),k0,t24): 75 pres(ng101,k0,t24)
+   + 75 pres(ng102,k0,t24) - lpack(('ng101','ng102'),k0,t24) = 0
+ lpack_def(('ng101','ng102'),k1,t1): 75 pres(ng101,k1,t1)
+   + 75 pres(ng102,k1,t1) - lpack(('ng101','ng102'),k1,t1) = 0
+ lpack_def(('ng101','ng102'),k1,t2): 75 pres(ng101,k1,t2)
+   + 75 pres(ng102,k1,t2) - lpack(('ng101','ng102'),k1,t2) = 0
+ lpack_def(('ng101','ng102'),k1,t3): 75 pres(ng101,k1,t3)
+   + 75 pres(ng102,k1,t3) - lpack(('ng101','ng102'),k1,t3) = 0
+ lpack_def(('ng101','ng102'),k1,t4): 75 pres(ng101,k1,t4)
+   + 75 pres(ng102,k1,t4) - lpack(('ng101','ng102'),k1,t4) = 0
+ lpack_def(('ng101','ng102'),k1,t5): 75 pres(ng101,k1,t5)
+   + 75 pres(ng102,k1,t5) - lpack(('ng101','ng102'),k1,t5) = 0
+ lpack_def(('ng101','ng102'),k1,t6): 75 pres(ng101,k1,t6)
+   + 75 pres(ng102,k1,t6) - lpack(('ng101','ng102'),k1,t6) = 0
+ lpack_def(('ng101','ng102'),k1,t7): 75 pres(ng101,k1,t7)
+   + 75 pres(ng102,k1,t7) - lpack(('ng101','ng102'),k1,t7) = 0
+ lpack_def(('ng101','ng102'),k1,t8): 75 pres(ng101,k1,t8)
+   + 75 pres(ng102,k1,t8) - lpack(('ng101','ng102'),k1,t8) = 0
+ lpack_def(('ng101','ng102'),k1,t9): 75 pres(ng101,k1,t9)
+   + 75 pres(ng102,k1,t9) - lpack(('ng101','ng102'),k1,t9) = 0
+ lpack_def(('ng101','ng102'),k1,t10): 75 pres(ng101,k1,t10)
+   + 75 pres(ng102,k1,t10) - lpack(('ng101','ng102'),k1,t10) = 0
+ lpack_def(('ng101','ng102'),k1,t11): 75 pres(ng101,k1,t11)
+   + 75 pres(ng102,k1,t11) - lpack(('ng101','ng102'),k1,t11) = 0
+ lpack_def(('ng101','ng102'),k1,t12): 75 pres(ng101,k1,t12)
+   + 75 pres(ng102,k1,t12) - lpack(('ng101','ng102'),k1,t12) = 0
+ lpack_def(('ng101','ng102'),k1,t13): 75 pres(ng101,k1,t13)
+   + 75 pres(ng102,k1,t13) - lpack(('ng101','ng102'),k1,t13) = 0
+ lpack_def(('ng101','ng102'),k1,t14): 75 pres(ng101,k1,t14)
+   + 75 pres(ng102,k1,t14) - lpack(('ng101','ng102'),k1,t14) = 0
+ lpack_def(('ng101','ng102'),k1,t15): 75 pres(ng101,k1,t15)
+   + 75 pres(ng102,k1,t15) - lpack(('ng101','ng102'),k1,t15) = 0
+ lpack_def(('ng101','ng102'),k1,t16): 75 pres(ng101,k1,t16)
+   + 75 pres(ng102,k1,t16) - lpack(('ng101','ng102'),k1,t16) = 0
+ lpack_def(('ng101','ng102'),k1,t17): 75 pres(ng101,k1,t17)
+   + 75 pres(ng102,k1,t17) - lpack(('ng101','ng102'),k1,t17) = 0
+ lpack_def(('ng101','ng102'),k1,t18): 75 pres(ng101,k1,t18)
+   + 75 pres(ng102,k1,t18) - lpack(('ng101','ng102'),k1,t18) = 0
+ lpack_def(('ng101','ng102'),k1,t19): 75 pres(ng101,k1,t19)
+   + 75 pres(ng102,k1,t19) - lpack(('ng101','ng102'),k1,t19) = 0
+ lpack_def(('ng101','ng102'),k1,t20): 75 pres(ng101,k1,t20)
+   + 75 pres(ng102,k1,t20) - lpack(('ng101','ng102'),k1,t20) = 0
+ lpack_def(('ng101','ng102'),k1,t21): 75 pres(ng101,k1,t21)
+   + 75 pres(ng102,k1,t21) - lpack(('ng101','ng102'),k1,t21) = 0
+ lpack_def(('ng101','ng102'),k1,t22): 75 pres(ng101,k1,t22)
+   + 75 pres(ng102,k1,t22) - lpack(('ng101','ng102'),k1,t22) = 0
+ lpack_def(('ng101','ng102'),k1,t23): 75 pres(ng101,k1,t23)
+   + 75 pres(ng102,k1,t23) - lpack(('ng101','ng102'),k1,t23) = 0
+ lpack_def(('ng101','ng102'),k1,t24): 75 pres(ng101,k1,t24)
+   + 75 pres(ng102,k1,t24) - lpack(('ng101','ng102'),k1,t24) = 0
+ lpack_def(('ng101','ng102'),k2,t1): 75 pres(ng101,k2,t1)
+   + 75 pres(ng102,k2,t1) - lpack(('ng101','ng102'),k2,t1) = 0
+ lpack_def(('ng101','ng102'),k2,t2): 75 pres(ng101,k2,t2)
+   + 75 pres(ng102,k2,t2) - lpack(('ng101','ng102'),k2,t2) = 0
+ lpack_def(('ng101','ng102'),k2,t3): 75 pres(ng101,k2,t3)
+   + 75 pres(ng102,k2,t3) - lpack(('ng101','ng102'),k2,t3) = 0
+ lpack_def(('ng101','ng102'),k2,t4): 75 pres(ng101,k2,t4)
+   + 75 pres(ng102,k2,t4) - lpack(('ng101','ng102'),k2,t4) = 0
+ lpack_def(('ng101','ng102'),k2,t5): 75 pres(ng101,k2,t5)
+   + 75 pres(ng102,k2,t5) - lpack(('ng101','ng102'),k2,t5) = 0
+ lpack_def(('ng101','ng102'),k2,t6): 75 pres(ng101,k2,t6)
+   + 75 pres(ng102,k2,t6) - lpack(('ng101','ng102'),k2,t6) = 0
+ lpack_def(('ng101','ng102'),k2,t7): 75 pres(ng101,k2,t7)
+   + 75 pres(ng102,k2,t7) - lpack(('ng101','ng102'),k2,t7) = 0
+ lpack_def(('ng101','ng102'),k2,t8): 75 pres(ng101,k2,t8)
+   + 75 pres(ng102,k2,t8) - lpack(('ng101','ng102'),k2,t8) = 0
+ lpack_def(('ng101','ng102'),k2,t9): 75 pres(ng101,k2,t9)
+   + 75 pres(ng102,k2,t9) - lpack(('ng101','ng102'),k2,t9) = 0
+ lpack_def(('ng101','ng102'),k2,t10): 75 pres(ng101,k2,t10)
+   + 75 pres(ng102,k2,t10) - lpack(('ng101','ng102'),k2,t10) = 0
+ lpack_def(('ng101','ng102'),k2,t11): 75 pres(ng101,k2,t11)
+   + 75 pres(ng102,k2,t11) - lpack(('ng101','ng102'),k2,t11) = 0
+ lpack_def(('ng101','ng102'),k2,t12): 75 pres(ng101,k2,t12)
+   + 75 pres(ng102,k2,t12) - lpack(('ng101','ng102'),k2,t12) = 0
+ lpack_def(('ng101','ng102'),k2,t13): 75 pres(ng101,k2,t13)
+   + 75 pres(ng102,k2,t13) - lpack(('ng101','ng102'),k2,t13) = 0
+ lpack_def(('ng101','ng102'),k2,t14): 75 pres(ng101,k2,t14)
+   + 75 pres(ng102,k2,t14) - lpack(('ng101','ng102'),k2,t14) = 0
+ lpack_def(('ng101','ng102'),k2,t15): 75 pres(ng101,k2,t15)
+   + 75 pres(ng102,k2,t15) - lpack(('ng101','ng102'),k2,t15) = 0
+ lpack_def(('ng101','ng102'),k2,t16): 75 pres(ng101,k2,t16)
+   + 75 pres(ng102,k2,t16) - lpack(('ng101','ng102'),k2,t16) = 0
+ lpack_def(('ng101','ng102'),k2,t17): 75 pres(ng101,k2,t17)
+   + 75 pres(ng102,k2,t17) - lpack(('ng101','ng102'),k2,t17) = 0
+ lpack_def(('ng101','ng102'),k2,t18): 75 pres(ng101,k2,t18)
+   + 75 pres(ng102,k2,t18) - lpack(('ng101','ng102'),k2,t18) = 0
+ lpack_def(('ng101','ng102'),k2,t19): 75 pres(ng101,k2,t19)
+   + 75 pres(ng102,k2,t19) - lpack(('ng101','ng102'),k2,t19) = 0
+ lpack_def(('ng101','ng102'),k2,t20): 75 pres(ng101,k2,t20)
+   + 75 pres(ng102,k2,t20) - lpack(('ng101','ng102'),k2,t20) = 0
+ lpack_def(('ng101','ng102'),k2,t21): 75 pres(ng101,k2,t21)
+   + 75 pres(ng102,k2,t21) - lpack(('ng101','ng102'),k2,t21) = 0
+ lpack_def(('ng101','ng102'),k2,t22): 75 pres(ng101,k2,t22)
+   + 75 pres(ng102,k2,t22) - lpack(('ng101','ng102'),k2,t22) = 0
+ lpack_def(('ng101','ng102'),k2,t23): 75 pres(ng101,k2,t23)
+   + 75 pres(ng102,k2,t23) - lpack(('ng101','ng102'),k2,t23) = 0
+ lpack_def(('ng101','ng102'),k2,t24): 75 pres(ng101,k2,t24)
+   + 75 pres(ng102,k2,t24) - lpack(('ng101','ng102'),k2,t24) = 0
+ line_store(('ng101','ng102'),k0,t2): lpack(('ng101','ng102'),k0,t1)
+   - lpack(('ng101','ng102'),k0,t2) + qin_sr(('ng101','ng102'),k0,t2)
+   - qout_sr(('ng101','ng102'),k0,t2) = 0
+ line_store(('ng101','ng102'),k0,t3): lpack(('ng101','ng102'),k0,t2)
+   - lpack(('ng101','ng102'),k0,t3) + qin_sr(('ng101','ng102'),k0,t3)
+   - qout_sr(('ng101','ng102'),k0,t3) = 0
+ line_store(('ng101','ng102'),k0,t4): lpack(('ng101','ng102'),k0,t3)
+   - lpack(('ng101','ng102'),k0,t4) + qin_sr(('ng101','ng102'),k0,t4)
+   - qout_sr(('ng101','ng102'),k0,t4) = 0
+ line_store(('ng101','ng102'),k0,t5): lpack(('ng101','ng102'),k0,t4)
+   - lpack(('ng101','ng102'),k0,t5) + qin_sr(('ng101','ng102'),k0,t5)
+   - qout_sr(('ng101','ng102'),k0,t5) = 0
+ line_store(('ng101','ng102'),k0,t6): lpack(('ng101','ng102'),k0,t5)
+   - lpack(('ng101','ng102'),k0,t6) + qin_sr(('ng101','ng102'),k0,t6)
+   - qout_sr(('ng101','ng102'),k0,t6) = 0
+ line_store(('ng101','ng102'),k0,t7): lpack(('ng101','ng102'),k0,t6)
+   - lpack(('ng101','ng102'),k0,t7) + qin_sr(('ng101','ng102'),k0,t7)
+   - qout_sr(('ng101','ng102'),k0,t7) = 0
+ line_store(('ng101','ng102'),k0,t8): lpack(('ng101','ng102'),k0,t7)
+   - lpack(('ng101','ng102'),k0,t8) + qin_sr(('ng101','ng102'),k0,t8)
+   - qout_sr(('ng101','ng102'),k0,t8) = 0
+ line_store(('ng101','ng102'),k0,t9): lpack(('ng101','ng102'),k0,t8)
+   - lpack(('ng101','ng102'),k0,t9) + qin_sr(('ng101','ng102'),k0,t9)
+   - qout_sr(('ng101','ng102'),k0,t9) = 0
+ line_store(('ng101','ng102'),k0,t10): lpack(('ng101','ng102'),k0,t9)
+   - lpack(('ng101','ng102'),k0,t10) + qin_sr(('ng101','ng102'),k0,t10)
+   - qout_sr(('ng101','ng102'),k0,t10) = 0
+ line_store(('ng101','ng102'),k0,t11): lpack(('ng101','ng102'),k0,t10)
+   - lpack(('ng101','ng102'),k0,t11) + qin_sr(('ng101','ng102'),k0,t11)
+   - qout_sr(('ng101','ng102'),k0,t11) = 0
+ line_store(('ng101','ng102'),k0,t12): lpack(('ng101','ng102'),k0,t11)
+   - lpack(('ng101','ng102'),k0,t12) + qin_sr(('ng101','ng102'),k0,t12)
+   - qout_sr(('ng101','ng102'),k0,t12) = 0
+ line_store(('ng101','ng102'),k0,t13): lpack(('ng101','ng102'),k0,t12)
+   - lpack(('ng101','ng102'),k0,t13) + qin_sr(('ng101','ng102'),k0,t13)
+   - qout_sr(('ng101','ng102'),k0,t13) = 0
+ line_store(('ng101','ng102'),k0,t14): lpack(('ng101','ng102'),k0,t13)
+   - lpack(('ng101','ng102'),k0,t14) + qin_sr(('ng101','ng102'),k0,t14)
+   - qout_sr(('ng101','ng102'),k0,t14) = 0
+ line_store(('ng101','ng102'),k0,t15): lpack(('ng101','ng102'),k0,t14)
+   - lpack(('ng101','ng102'),k0,t15) + qin_sr(('ng101','ng102'),k0,t15)
+   - qout_sr(('ng101','ng102'),k0,t15) = 0
+ line_store(('ng101','ng102'),k0,t16): lpack(('ng101','ng102'),k0,t15)
+   - lpack(('ng101','ng102'),k0,t16) + qin_sr(('ng101','ng102'),k0,t16)
+   - qout_sr(('ng101','ng102'),k0,t16) = 0
+ line_store(('ng101','ng102'),k0,t17): lpack(('ng101','ng102'),k0,t16)
+   - lpack(('ng101','ng102'),k0,t17) + qin_sr(('ng101','ng102'),k0,t17)
+   - qout_sr(('ng101','ng102'),k0,t17) = 0
+ line_store(('ng101','ng102'),k0,t18): lpack(('ng101','ng102'),k0,t17)
+   - lpack(('ng101','ng102'),k0,t18) + qin_sr(('ng101','ng102'),k0,t18)
+   - qout_sr(('ng101','ng102'),k0,t18) = 0
+ line_store(('ng101','ng102'),k0,t19): lpack(('ng101','ng102'),k0,t18)
+   - lpack(('ng101','ng102'),k0,t19) + qin_sr(('ng101','ng102'),k0,t19)
+   - qout_sr(('ng101','ng102'),k0,t19) = 0
+ line_store(('ng101','ng102'),k0,t20): lpack(('ng101','ng102'),k0,t19)
+   - lpack(('ng101','ng102'),k0,t20) + qin_sr(('ng101','ng102'),k0,t20)
+   - qout_sr(('ng101','ng102'),k0,t20) = 0
+ line_store(('ng101','ng102'),k0,t21): lpack(('ng101','ng102'),k0,t20)
+   - lpack(('ng101','ng102'),k0,t21) + qin_sr(('ng101','ng102'),k0,t21)
+   - qout_sr(('ng101','ng102'),k0,t21) = 0
+ line_store(('ng101','ng102'),k0,t22): lpack(('ng101','ng102'),k0,t21)
+   - lpack(('ng101','ng102'),k0,t22) + qin_sr(('ng101','ng102'),k0,t22)
+   - qout_sr(('ng101','ng102'),k0,t22) = 0
+ line_store(('ng101','ng102'),k0,t23): lpack(('ng101','ng102'),k0,t22)
+   - lpack(('ng101','ng102'),k0,t23) + qin_sr(('ng101','ng102'),k0,t23)
+   - qout_sr(('ng101','ng102'),k0,t23) = 0
+ line_store(('ng101','ng102'),k0,t24): lpack(('ng101','ng102'),k0,t23)
+   - lpack(('ng101','ng102'),k0,t24) + qin_sr(('ng101','ng102'),k0,t24)
+   - qout_sr(('ng101','ng102'),k0,t24) = 0
+ line_store(('ng101','ng102'),k0,t1): - lpack(('ng101','ng102'),k0,t1)
+   + qin_sr(('ng101','ng102'),k0,t1) - qout_sr(('ng101','ng102'),k0,t1)
+   = -49300
+ line_store(('ng101','ng102'),k1,t2): lpack(('ng101','ng102'),k0,t1)
+   - lpack(('ng101','ng102'),k1,t2) + qin_sr(('ng101','ng102'),k1,t2)
+   - qout_sr(('ng101','ng102'),k1,t2) = 0
+ line_store(('ng101','ng102'),k1,t3): lpack(('ng101','ng102'),k0,t2)
+   - lpack(('ng101','ng102'),k1,t3) + qin_sr(('ng101','ng102'),k1,t3)
+   - qout_sr(('ng101','ng102'),k1,t3) = 0
+ line_store(('ng101','ng102'),k1,t4): lpack(('ng101','ng102'),k0,t3)
+   - lpack(('ng101','ng102'),k1,t4) + qin_sr(('ng101','ng102'),k1,t4)
+   - qout_sr(('ng101','ng102'),k1,t4) = 0
+ line_store(('ng101','ng102'),k1,t5): lpack(('ng101','ng102'),k0,t4)
+   - lpack(('ng101','ng102'),k1,t5) + qin_sr(('ng101','ng102'),k1,t5)
+   - qout_sr(('ng101','ng102'),k1,t5) = 0
+ line_store(('ng101','ng102'),k1,t6): lpack(('ng101','ng102'),k0,t5)
+   - lpack(('ng101','ng102'),k1,t6) + qin_sr(('ng101','ng102'),k1,t6)
+   - qout_sr(('ng101','ng102'),k1,t6) = 0
+ line_store(('ng101','ng102'),k1,t7): lpack(('ng101','ng102'),k0,t6)
+   - lpack(('ng101','ng102'),k1,t7) + qin_sr(('ng101','ng102'),k1,t7)
+   - qout_sr(('ng101','ng102'),k1,t7) = 0
+ line_store(('ng101','ng102'),k1,t8): lpack(('ng101','ng102'),k0,t7)
+   - lpack(('ng101','ng102'),k1,t8) + qin_sr(('ng101','ng102'),k1,t8)
+   - qout_sr(('ng101','ng102'),k1,t8) = 0
+ line_store(('ng101','ng102'),k1,t9): lpack(('ng101','ng102'),k0,t8)
+   - lpack(('ng101','ng102'),k1,t9) + qin_sr(('ng101','ng102'),k1,t9)
+   - qout_sr(('ng101','ng102'),k1,t9) = 0
+ line_store(('ng101','ng102'),k1,t10): lpack(('ng101','ng102'),k0,t9)
+   - lpack(('ng101','ng102'),k1,t10) + qin_sr(('ng101','ng102'),k1,t10)
+   - qout_sr(('ng101','ng102'),k1,t10) = 0
+ line_store(('ng101','ng102'),k1,t11): lpack(('ng101','ng102'),k0,t10)
+   - lpack(('ng101','ng102'),k1,t11) + qin_sr(('ng101','ng102'),k1,t11)
+   - qout_sr(('ng101','ng102'),k1,t11) = 0
+ line_store(('ng101','ng102'),k1,t12): lpack(('ng101','ng102'),k0,t11)
+   - lpack(('ng101','ng102'),k1,t12) + qin_sr(('ng101','ng102'),k1,t12)
+   - qout_sr(('ng101','ng102'),k1,t12) = 0
+ line_store(('ng101','ng102'),k1,t13): lpack(('ng101','ng102'),k0,t12)
+   - lpack(('ng101','ng102'),k1,t13) + qin_sr(('ng101','ng102'),k1,t13)
+   - qout_sr(('ng101','ng102'),k1,t13) = 0
+ line_store(('ng101','ng102'),k1,t14): lpack(('ng101','ng102'),k0,t13)
+   - lpack(('ng101','ng102'),k1,t14) + qin_sr(('ng101','ng102'),k1,t14)
+   - qout_sr(('ng101','ng102'),k1,t14) = 0
+ line_store(('ng101','ng102'),k1,t15): lpack(('ng101','ng102'),k0,t14)
+   - lpack(('ng101','ng102'),k1,t15) + qin_sr(('ng101','ng102'),k1,t15)
+   - qout_sr(('ng101','ng102'),k1,t15) = 0
+ line_store(('ng101','ng102'),k1,t16): lpack(('ng101','ng102'),k0,t15)
+   - lpack(('ng101','ng102'),k1,t16) + qin_sr(('ng101','ng102'),k1,t16)
+   - qout_sr(('ng101','ng102'),k1,t16) = 0
+ line_store(('ng101','ng102'),k1,t17): lpack(('ng101','ng102'),k0,t16)
+   - lpack(('ng101','ng102'),k1,t17) + qin_sr(('ng101','ng102'),k1,t17)
+   - qout_sr(('ng101','ng102'),k1,t17) = 0
+ line_store(('ng101','ng102'),k1,t18): lpack(('ng101','ng102'),k0,t17)
+   - lpack(('ng101','ng102'),k1,t18) + qin_sr(('ng101','ng102'),k1,t18)
+   - qout_sr(('ng101','ng102'),k1,t18) = 0
+ line_store(('ng101','ng102'),k1,t19): lpack(('ng101','ng102'),k0,t18)
+   - lpack(('ng101','ng102'),k1,t19) + qin_sr(('ng101','ng102'),k1,t19)
+   - qout_sr(('ng101','ng102'),k1,t19) = 0
+ line_store(('ng101','ng102'),k1,t20): lpack(('ng101','ng102'),k0,t19)
+   - lpack(('ng101','ng102'),k1,t20) + qin_sr(('ng101','ng102'),k1,t20)
+   - qout_sr(('ng101','ng102'),k1,t20) = 0
+ line_store(('ng101','ng102'),k1,t21): lpack(('ng101','ng102'),k0,t20)
+   - lpack(('ng101','ng102'),k1,t21) + qin_sr(('ng101','ng102'),k1,t21)
+   - qout_sr(('ng101','ng102'),k1,t21) = 0
+ line_store(('ng101','ng102'),k1,t22): lpack(('ng101','ng102'),k0,t21)
+   - lpack(('ng101','ng102'),k1,t22) + qin_sr(('ng101','ng102'),k1,t22)
+   - qout_sr(('ng101','ng102'),k1,t22) = 0
+ line_store(('ng101','ng102'),k1,t23): lpack(('ng101','ng102'),k0,t22)
+   - lpack(('ng101','ng102'),k1,t23) + qin_sr(('ng101','ng102'),k1,t23)
+   - qout_sr(('ng101','ng102'),k1,t23) = 0
+ line_store(('ng101','ng102'),k1,t24): lpack(('ng101','ng102'),k0,t23)
+   - lpack(('ng101','ng102'),k1,t24) + qin_sr(('ng101','ng102'),k1,t24)
+   - qout_sr(('ng101','ng102'),k1,t24) = 0
+ line_store(('ng101','ng102'),k1,t1): - lpack(('ng101','ng102'),k1,t1)
+   + qin_sr(('ng101','ng102'),k1,t1) - qout_sr(('ng101','ng102'),k1,t1)
+   = -49300
+ line_store(('ng101','ng102'),k2,t2): lpack(('ng101','ng102'),k0,t1)
+   - lpack(('ng101','ng102'),k2,t2) + qin_sr(('ng101','ng102'),k2,t2)
+   - qout_sr(('ng101','ng102'),k2,t2) = 0
+ line_store(('ng101','ng102'),k2,t3): lpack(('ng101','ng102'),k0,t2)
+   - lpack(('ng101','ng102'),k2,t3) + qin_sr(('ng101','ng102'),k2,t3)
+   - qout_sr(('ng101','ng102'),k2,t3) = 0
+ line_store(('ng101','ng102'),k2,t4): lpack(('ng101','ng102'),k0,t3)
+   - lpack(('ng101','ng102'),k2,t4) + qin_sr(('ng101','ng102'),k2,t4)
+   - qout_sr(('ng101','ng102'),k2,t4) = 0
+ line_store(('ng101','ng102'),k2,t5): lpack(('ng101','ng102'),k0,t4)
+   - lpack(('ng101','ng102'),k2,t5) + qin_sr(('ng101','ng102'),k2,t5)
+   - qout_sr(('ng101','ng102'),k2,t5) = 0
+ line_store(('ng101','ng102'),k2,t6): lpack(('ng101','ng102'),k0,t5)
+   - lpack(('ng101','ng102'),k2,t6) + qin_sr(('ng101','ng102'),k2,t6)
+   - qout_sr(('ng101','ng102'),k2,t6) = 0
+ line_store(('ng101','ng102'),k2,t7): lpack(('ng101','ng102'),k0,t6)
+   - lpack(('ng101','ng102'),k2,t7) + qin_sr(('ng101','ng102'),k2,t7)
+   - qout_sr(('ng101','ng102'),k2,t7) = 0
+ line_store(('ng101','ng102'),k2,t8): lpack(('ng101','ng102'),k0,t7)
+   - lpack(('ng101','ng102'),k2,t8) + qin_sr(('ng101','ng102'),k2,t8)
+   - qout_sr(('ng101','ng102'),k2,t8) = 0
+ line_store(('ng101','ng102'),k2,t9): lpack(('ng101','ng102'),k0,t8)
+   - lpack(('ng101','ng102'),k2,t9) + qin_sr(('ng101','ng102'),k2,t9)
+   - qout_sr(('ng101','ng102'),k2,t9) = 0
+ line_store(('ng101','ng102'),k2,t10): lpack(('ng101','ng102'),k0,t9)
+   - lpack(('ng101','ng102'),k2,t10) + qin_sr(('ng101','ng102'),k2,t10)
+   - qout_sr(('ng101','ng102'),k2,t10) = 0
+ line_store(('ng101','ng102'),k2,t11): lpack(('ng101','ng102'),k0,t10)
+   - lpack(('ng101','ng102'),k2,t11) + qin_sr(('ng101','ng102'),k2,t11)
+   - qout_sr(('ng101','ng102'),k2,t11) = 0
+ line_store(('ng101','ng102'),k2,t12): lpack(('ng101','ng102'),k0,t11)
+   - lpack(('ng101','ng102'),k2,t12) + qin_sr(('ng101','ng102'),k2,t12)
+   - qout_sr(('ng101','ng102'),k2,t12) = 0
+ line_store(('ng101','ng102'),k2,t13): lpack(('ng101','ng102'),k0,t12)
+   - lpack(('ng101','ng102'),k2,t13) + qin_sr(('ng101','ng102'),k2,t13)
+   - qout_sr(('ng101','ng102'),k2,t13) = 0
+ line_store(('ng101','ng102'),k2,t14): lpack(('ng101','ng102'),k0,t13)
+   - lpack(('ng101','ng102'),k2,t14) + qin_sr(('ng101','ng102'),k2,t14)
+   - qout_sr(('ng101','ng102'),k2,t14) = 0
+ line_store(('ng101','ng102'),k2,t15): lpack(('ng101','ng102'),k0,t14)
+   - lpack(('ng101','ng102'),k2,t15) + qin_sr(('ng101','ng102'),k2,t15)
+   - qout_sr(('ng101','ng102'),k2,t15) = 0
+ line_store(('ng101','ng102'),k2,t16): lpack(('ng101','ng102'),k0,t15)
+   - lpack(('ng101','ng102'),k2,t16) + qin_sr(('ng101','ng102'),k2,t16)
+   - qout_sr(('ng101','ng102'),k2,t16) = 0
+ line_store(('ng101','ng102'),k2,t17): lpack(('ng101','ng102'),k0,t16)
+   - lpack(('ng101','ng102'),k2,t17) + qin_sr(('ng101','ng102'),k2,t17)
+   - qout_sr(('ng101','ng102'),k2,t17) = 0
+ line_store(('ng101','ng102'),k2,t18): lpack(('ng101','ng102'),k0,t17)
+   - lpack(('ng101','ng102'),k2,t18) + qin_sr(('ng101','ng102'),k2,t18)
+   - qout_sr(('ng101','ng102'),k2,t18) = 0
+ line_store(('ng101','ng102'),k2,t19): lpack(('ng101','ng102'),k0,t18)
+   - lpack(('ng101','ng102'),k2,t19) + qin_sr(('ng101','ng102'),k2,t19)
+   - qout_sr(('ng101','ng102'),k2,t19) = 0
+ line_store(('ng101','ng102'),k2,t20): lpack(('ng101','ng102'),k0,t19)
+   - lpack(('ng101','ng102'),k2,t20) + qin_sr(('ng101','ng102'),k2,t20)
+   - qout_sr(('ng101','ng102'),k2,t20) = 0
+ line_store(('ng101','ng102'),k2,t21): lpack(('ng101','ng102'),k0,t20)
+   - lpack(('ng101','ng102'),k2,t21) + qin_sr(('ng101','ng102'),k2,t21)
+   - qout_sr(('ng101','ng102'),k2,t21) = 0
+ line_store(('ng101','ng102'),k2,t22): lpack(('ng101','ng102'),k0,t21)
+   - lpack(('ng101','ng102'),k2,t22) + qin_sr(('ng101','ng102'),k2,t22)
+   - qout_sr(('ng101','ng102'),k2,t22) = 0
+ line_store(('ng101','ng102'),k2,t23): lpack(('ng101','ng102'),k0,t22)
+   - lpack(('ng101','ng102'),k2,t23) + qin_sr(('ng101','ng102'),k2,t23)
+   - qout_sr(('ng101','ng102'),k2,t23) = 0
+ line_store(('ng101','ng102'),k2,t24): lpack(('ng101','ng102'),k0,t23)
+   - lpack(('ng101','ng102'),k2,t24) + qin_sr(('ng101','ng102'),k2,t24)
+   - qout_sr(('ng101','ng102'),k2,t24) = 0
+ line_store(('ng101','ng102'),k2,t1): - lpack(('ng101','ng102'),k2,t1)
+   + qin_sr(('ng101','ng102'),k2,t1) - qout_sr(('ng101','ng102'),k2,t1)
+   = -49300
  lpack_end: lpack(('ng101','ng102'),k0,t24) >= 49300
  gsinMax(gs1,t1,k0): gsin(gs1,t1,k0) <= 0
  gsoutMax(gs1,t1,k0): gsout(gs1,t1,k0) <= 0
@@ -14595,294 +14640,294 @@ Subject To
  gstor_def(gs1,k2,t1): - gsin(gs1,t1,k2) + gsout(gs1,t1,k2)
    + gstore(gs1,t1,k2) = 0
  gs_end(gs1,k0): gstore(gs1,t24,k0) >= 0
- gas_balance(ng101,k0,t1): - qin_sr(('ng101','ng102'),k0,t1)
-   + gprod(gw1,k0,t1) = 0
- gas_balance(ng101,k1,t1): - qin_sr(('ng101','ng102'),k1,t1)
-   + gprod(gw1,k1,t1) = 0
- gas_balance(ng101,k2,t1): - qin_sr(('ng101','ng102'),k2,t1)
-   + gprod(gw1,k2,t1) = 0
- gas_balance(ng102,k0,t1): qout_sr(('ng101','ng102'),k0,t1)
-   - gsin(gs1,t1,k0) + gsout(gs1,t1,k0) = 2422.55390392
- gas_balance(ng102,k1,t1): qout_sr(('ng101','ng102'),k1,t1)
-   - gsin(gs1,t1,k1) + gsout(gs1,t1,k1) = 2422.55390392
- gas_balance(ng102,k2,t1): qout_sr(('ng101','ng102'),k2,t1)
-   - gsin(gs1,t1,k2) + gsout(gs1,t1,k2) = 2422.55390392
- gas_balance(ng101,k0,t2): - qin_sr(('ng101','ng102'),k0,t2)
-   + gprod(gw1,k0,t2) = 0
- gas_balance(ng101,k1,t2): - qin_sr(('ng101','ng102'),k1,t2)
-   + gprod(gw1,k1,t2) = 0
- gas_balance(ng101,k2,t2): - qin_sr(('ng101','ng102'),k2,t2)
-   + gprod(gw1,k2,t2) = 0
- gas_balance(ng102,k0,t2): qout_sr(('ng101','ng102'),k0,t2)
-   - gsin(gs1,t2,k0) + gsout(gs1,t2,k0) = 2341.11895976
- gas_balance(ng102,k1,t2): qout_sr(('ng101','ng102'),k1,t2)
-   - gsin(gs1,t2,k1) + gsout(gs1,t2,k1) = 2341.11895976
- gas_balance(ng102,k2,t2): qout_sr(('ng101','ng102'),k2,t2)
-   - gsin(gs1,t2,k2) + gsout(gs1,t2,k2) = 2341.11895976
- gas_balance(ng101,k0,t3): - qin_sr(('ng101','ng102'),k0,t3)
-   + gprod(gw1,k0,t3) = 0
- gas_balance(ng101,k1,t3): - qin_sr(('ng101','ng102'),k1,t3)
-   + gprod(gw1,k1,t3) = 0
- gas_balance(ng101,k2,t3): - qin_sr(('ng101','ng102'),k2,t3)
-   + gprod(gw1,k2,t3) = 0
- gas_balance(ng102,k0,t3): qout_sr(('ng101','ng102'),k0,t3)
-   - gsin(gs1,t3,k0) + gsout(gs1,t3,k0) = 2257.20526248
- gas_balance(ng102,k1,t3): qout_sr(('ng101','ng102'),k1,t3)
-   - gsin(gs1,t3,k1) + gsout(gs1,t3,k1) = 2257.20526248
- gas_balance(ng102,k2,t3): qout_sr(('ng101','ng102'),k2,t3)
-   - gsin(gs1,t3,k2) + gsout(gs1,t3,k2) = 2257.20526248
- gas_balance(ng101,k0,t4): - qin_sr(('ng101','ng102'),k0,t4)
-   + gprod(gw1,k0,t4) = 0
- gas_balance(ng101,k1,t4): - qin_sr(('ng101','ng102'),k1,t4)
-   + gprod(gw1,k1,t4) = 0
- gas_balance(ng101,k2,t4): - qin_sr(('ng101','ng102'),k2,t4)
-   + gprod(gw1,k2,t4) = 0
- gas_balance(ng102,k0,t4): qout_sr(('ng101','ng102'),k0,t4)
-   - gsin(gs1,t4,k0) + gsout(gs1,t4,k0) = 2299.18227432
- gas_balance(ng102,k1,t4): qout_sr(('ng101','ng102'),k1,t4)
-   - gsin(gs1,t4,k1) + gsout(gs1,t4,k1) = 2299.18227432
- gas_balance(ng102,k2,t4): qout_sr(('ng101','ng102'),k2,t4)
-   - gsin(gs1,t4,k2) + gsout(gs1,t4,k2) = 2299.18227432
- gas_balance(ng101,k0,t5): - qin_sr(('ng101','ng102'),k0,t5)
-   + gprod(gw1,k0,t5) = 0
- gas_balance(ng101,k1,t5): - qin_sr(('ng101','ng102'),k1,t5)
-   + gprod(gw1,k1,t5) = 0
- gas_balance(ng101,k2,t5): - qin_sr(('ng101','ng102'),k2,t5)
-   + gprod(gw1,k2,t5) = 0
- gas_balance(ng102,k0,t5): qout_sr(('ng101','ng102'),k0,t5)
-   - gsin(gs1,t5,k0) + gsout(gs1,t5,k0) = 2334.34057704
- gas_balance(ng102,k1,t5): qout_sr(('ng101','ng102'),k1,t5)
-   - gsin(gs1,t5,k1) + gsout(gs1,t5,k1) = 2334.34057704
- gas_balance(ng102,k2,t5): qout_sr(('ng101','ng102'),k2,t5)
-   - gsin(gs1,t5,k2) + gsout(gs1,t5,k2) = 2334.34057704
- gas_balance(ng101,k0,t6): - qin_sr(('ng101','ng102'),k0,t6)
-   + gprod(gw1,k0,t6) = 0
- gas_balance(ng101,k1,t6): - qin_sr(('ng101','ng102'),k1,t6)
-   + gprod(gw1,k1,t6) = 0
- gas_balance(ng101,k2,t6): - qin_sr(('ng101','ng102'),k2,t6)
-   + gprod(gw1,k2,t6) = 0
- gas_balance(ng102,k0,t6): qout_sr(('ng101','ng102'),k0,t6)
-   - gsin(gs1,t6,k0) + gsout(gs1,t6,k0) = 2375.96135672
- gas_balance(ng102,k1,t6): qout_sr(('ng101','ng102'),k1,t6)
-   - gsin(gs1,t6,k1) + gsout(gs1,t6,k1) = 2375.96135672
- gas_balance(ng102,k2,t6): qout_sr(('ng101','ng102'),k2,t6)
-   - gsin(gs1,t6,k2) + gsout(gs1,t6,k2) = 2375.96135672
- gas_balance(ng101,k0,t7): - qin_sr(('ng101','ng102'),k0,t7)
-   + gprod(gw1,k0,t7) = 0
- gas_balance(ng101,k1,t7): - qin_sr(('ng101','ng102'),k1,t7)
-   + gprod(gw1,k1,t7) = 0
- gas_balance(ng101,k2,t7): - qin_sr(('ng101','ng102'),k2,t7)
-   + gprod(gw1,k2,t7) = 0
- gas_balance(ng102,k0,t7): qout_sr(('ng101','ng102'),k0,t7)
-   - gsin(gs1,t7,k0) + gsout(gs1,t7,k0) = 2698.62136664
- gas_balance(ng102,k1,t7): qout_sr(('ng101','ng102'),k1,t7)
-   - gsin(gs1,t7,k1) + gsout(gs1,t7,k1) = 2698.62136664
- gas_balance(ng102,k2,t7): qout_sr(('ng101','ng102'),k2,t7)
-   - gsin(gs1,t7,k2) + gsout(gs1,t7,k2) = 2698.62136664
- gas_balance(ng101,k0,t8): - qin_sr(('ng101','ng102'),k0,t8)
-   + gprod(gw1,k0,t8) = 0
- gas_balance(ng101,k1,t8): - qin_sr(('ng101','ng102'),k1,t8)
-   + gprod(gw1,k1,t8) = 0
- gas_balance(ng101,k2,t8): - qin_sr(('ng101','ng102'),k2,t8)
-   + gprod(gw1,k2,t8) = 0
- gas_balance(ng102,k0,t8): qout_sr(('ng101','ng102'),k0,t8)
-   - gsin(gs1,t8,k0) + gsout(gs1,t8,k0) = 2725.24979528
- gas_balance(ng102,k1,t8): qout_sr(('ng101','ng102'),k1,t8)
-   - gsin(gs1,t8,k1) + gsout(gs1,t8,k1) = 2725.24979528
- gas_balance(ng102,k2,t8): qout_sr(('ng101','ng102'),k2,t8)
-   - gsin(gs1,t8,k2) + gsout(gs1,t8,k2) = 2725.24979528
- gas_balance(ng101,k0,t9): - qin_sr(('ng101','ng102'),k0,t9)
-   + gprod(gw1,k0,t9) = 0
- gas_balance(ng101,k1,t9): - qin_sr(('ng101','ng102'),k1,t9)
-   + gprod(gw1,k1,t9) = 0
- gas_balance(ng101,k2,t9): - qin_sr(('ng101','ng102'),k2,t9)
-   + gprod(gw1,k2,t9) = 0
- gas_balance(ng102,k0,t9): qout_sr(('ng101','ng102'),k0,t9)
-   - gsin(gs1,t9,k0) + gsout(gs1,t9,k0) = 2957.7354816
- gas_balance(ng102,k1,t9): qout_sr(('ng101','ng102'),k1,t9)
-   - gsin(gs1,t9,k1) + gsout(gs1,t9,k1) = 2957.7354816
- gas_balance(ng102,k2,t9): qout_sr(('ng101','ng102'),k2,t9)
-   - gsin(gs1,t9,k2) + gsout(gs1,t9,k2) = 2957.7354816
- gas_balance(ng101,k0,t10): - qin_sr(('ng101','ng102'),k0,t10)
-   + gprod(gw1,k0,t10) = 0
- gas_balance(ng101,k1,t10): - qin_sr(('ng101','ng102'),k1,t10)
-   + gprod(gw1,k1,t10) = 0
- gas_balance(ng101,k2,t10): - qin_sr(('ng101','ng102'),k2,t10)
-   + gprod(gw1,k2,t10) = 0
- gas_balance(ng102,k0,t10): qout_sr(('ng101','ng102'),k0,t10)
-   - gsin(gs1,t10,k0) + gsout(gs1,t10,k0) = 3007.28750184
- gas_balance(ng102,k1,t10): qout_sr(('ng101','ng102'),k1,t10)
-   - gsin(gs1,t10,k1) + gsout(gs1,t10,k1) = 3007.28750184
- gas_balance(ng102,k2,t10): qout_sr(('ng101','ng102'),k2,t10)
-   - gsin(gs1,t10,k2) + gsout(gs1,t10,k2) = 3007.28750184
- gas_balance(ng101,k0,t11): - qin_sr(('ng101','ng102'),k0,t11)
-   + gprod(gw1,k0,t11) = 0
- gas_balance(ng101,k1,t11): - qin_sr(('ng101','ng102'),k1,t11)
-   + gprod(gw1,k1,t11) = 0
- gas_balance(ng101,k2,t11): - qin_sr(('ng101','ng102'),k2,t11)
-   + gprod(gw1,k2,t11) = 0
- gas_balance(ng102,k0,t11): qout_sr(('ng101','ng102'),k0,t11)
-   - gsin(gs1,t11,k0) + gsout(gs1,t11,k0) = 3006.14337312
- gas_balance(ng102,k1,t11): qout_sr(('ng101','ng102'),k1,t11)
-   - gsin(gs1,t11,k1) + gsout(gs1,t11,k1) = 3006.14337312
- gas_balance(ng102,k2,t11): qout_sr(('ng101','ng102'),k2,t11)
-   - gsin(gs1,t11,k2) + gsout(gs1,t11,k2) = 3006.14337312
- gas_balance(ng101,k0,t12): - qin_sr(('ng101','ng102'),k0,t12)
-   + gprod(gw1,k0,t12) = 0
- gas_balance(ng101,k1,t12): - qin_sr(('ng101','ng102'),k1,t12)
-   + gprod(gw1,k1,t12) = 0
- gas_balance(ng101,k2,t12): - qin_sr(('ng101','ng102'),k2,t12)
-   + gprod(gw1,k2,t12) = 0
- gas_balance(ng102,k0,t12): qout_sr(('ng101','ng102'),k0,t12)
-   - gsin(gs1,t12,k0) + gsout(gs1,t12,k0) = 2954.03198768
- gas_balance(ng102,k1,t12): qout_sr(('ng101','ng102'),k1,t12)
-   - gsin(gs1,t12,k1) + gsout(gs1,t12,k1) = 2954.03198768
- gas_balance(ng102,k2,t12): qout_sr(('ng101','ng102'),k2,t12)
-   - gsin(gs1,t12,k2) + gsout(gs1,t12,k2) = 2954.03198768
- gas_balance(ng101,k0,t13): - qin_sr(('ng101','ng102'),k0,t13)
-   + gprod(gw1,k0,t13) = 0
- gas_balance(ng101,k1,t13): - qin_sr(('ng101','ng102'),k1,t13)
-   + gprod(gw1,k1,t13) = 0
- gas_balance(ng101,k2,t13): - qin_sr(('ng101','ng102'),k2,t13)
-   + gprod(gw1,k2,t13) = 0
- gas_balance(ng102,k0,t13): qout_sr(('ng101','ng102'),k0,t13)
-   - gsin(gs1,t13,k0) + gsout(gs1,t13,k0) = 2943.15251872
- gas_balance(ng102,k1,t13): qout_sr(('ng101','ng102'),k1,t13)
-   - gsin(gs1,t13,k1) + gsout(gs1,t13,k1) = 2943.15251872
- gas_balance(ng102,k2,t13): qout_sr(('ng101','ng102'),k2,t13)
-   - gsin(gs1,t13,k2) + gsout(gs1,t13,k2) = 2943.15251872
- gas_balance(ng101,k0,t14): - qin_sr(('ng101','ng102'),k0,t14)
-   + gprod(gw1,k0,t14) = 0
- gas_balance(ng101,k1,t14): - qin_sr(('ng101','ng102'),k1,t14)
-   + gprod(gw1,k1,t14) = 0
- gas_balance(ng101,k2,t14): - qin_sr(('ng101','ng102'),k2,t14)
-   + gprod(gw1,k2,t14) = 0
- gas_balance(ng102,k0,t14): qout_sr(('ng101','ng102'),k0,t14)
-   - gsin(gs1,t14,k0) + gsout(gs1,t14,k0) = 2926.62853488
- gas_balance(ng102,k1,t14): qout_sr(('ng101','ng102'),k1,t14)
-   - gsin(gs1,t14,k1) + gsout(gs1,t14,k1) = 2926.62853488
- gas_balance(ng102,k2,t14): qout_sr(('ng101','ng102'),k2,t14)
-   - gsin(gs1,t14,k2) + gsout(gs1,t14,k2) = 2926.62853488
- gas_balance(ng101,k0,t15): - qin_sr(('ng101','ng102'),k0,t15)
-   + gprod(gw1,k0,t15) = 0
- gas_balance(ng101,k1,t15): - qin_sr(('ng101','ng102'),k1,t15)
-   + gprod(gw1,k1,t15) = 0
- gas_balance(ng101,k2,t15): - qin_sr(('ng101','ng102'),k2,t15)
-   + gprod(gw1,k2,t15) = 0
- gas_balance(ng102,k0,t15): qout_sr(('ng101','ng102'),k0,t15)
-   - gsin(gs1,t15,k0) + gsout(gs1,t15,k0) = 2868.1517756
- gas_balance(ng102,k1,t15): qout_sr(('ng101','ng102'),k1,t15)
-   - gsin(gs1,t15,k1) + gsout(gs1,t15,k1) = 2868.1517756
- gas_balance(ng102,k2,t15): qout_sr(('ng101','ng102'),k2,t15)
-   - gsin(gs1,t15,k2) + gsout(gs1,t15,k2) = 2868.1517756
- gas_balance(ng101,k0,t16): - qin_sr(('ng101','ng102'),k0,t16)
-   + gprod(gw1,k0,t16) = 0
- gas_balance(ng101,k1,t16): - qin_sr(('ng101','ng102'),k1,t16)
-   + gprod(gw1,k1,t16) = 0
- gas_balance(ng101,k2,t16): - qin_sr(('ng101','ng102'),k2,t16)
-   + gprod(gw1,k2,t16) = 0
- gas_balance(ng102,k0,t16): qout_sr(('ng101','ng102'),k0,t16)
-   - gsin(gs1,t16,k0) + gsout(gs1,t16,k0) = 2905.8461636
- gas_balance(ng102,k1,t16): qout_sr(('ng101','ng102'),k1,t16)
-   - gsin(gs1,t16,k1) + gsout(gs1,t16,k1) = 2905.8461636
- gas_balance(ng102,k2,t16): qout_sr(('ng101','ng102'),k2,t16)
-   - gsin(gs1,t16,k2) + gsout(gs1,t16,k2) = 2905.8461636
- gas_balance(ng101,k0,t17): - qin_sr(('ng101','ng102'),k0,t17)
-   + gprod(gw1,k0,t17) = 0
- gas_balance(ng101,k1,t17): - qin_sr(('ng101','ng102'),k1,t17)
-   + gprod(gw1,k1,t17) = 0
- gas_balance(ng101,k2,t17): - qin_sr(('ng101','ng102'),k2,t17)
-   + gprod(gw1,k2,t17) = 0
- gas_balance(ng102,k0,t17): qout_sr(('ng101','ng102'),k0,t17)
-   - gsin(gs1,t17,k0) + gsout(gs1,t17,k0) = 3039.46835048
- gas_balance(ng102,k1,t17): qout_sr(('ng101','ng102'),k1,t17)
-   - gsin(gs1,t17,k1) + gsout(gs1,t17,k1) = 3039.46835048
- gas_balance(ng102,k2,t17): qout_sr(('ng101','ng102'),k2,t17)
-   - gsin(gs1,t17,k2) + gsout(gs1,t17,k2) = 3039.46835048
- gas_balance(ng101,k0,t18): - qin_sr(('ng101','ng102'),k0,t18)
-   + gprod(gw1,k0,t18) = 0
- gas_balance(ng101,k1,t18): - qin_sr(('ng101','ng102'),k1,t18)
-   + gprod(gw1,k1,t18) = 0
- gas_balance(ng101,k2,t18): - qin_sr(('ng101','ng102'),k2,t18)
-   + gprod(gw1,k2,t18) = 0
- gas_balance(ng102,k0,t18): qout_sr(('ng101','ng102'),k0,t18)
-   - gsin(gs1,t18,k0) + gsout(gs1,t18,k0) = 3037.07651736
- gas_balance(ng102,k1,t18): qout_sr(('ng101','ng102'),k1,t18)
-   - gsin(gs1,t18,k1) + gsout(gs1,t18,k1) = 3037.07651736
- gas_balance(ng102,k2,t18): qout_sr(('ng101','ng102'),k2,t18)
-   - gsin(gs1,t18,k2) + gsout(gs1,t18,k2) = 3037.07651736
- gas_balance(ng101,k0,t19): - qin_sr(('ng101','ng102'),k0,t19)
-   + gprod(gw1,k0,t19) = 0
- gas_balance(ng101,k1,t19): - qin_sr(('ng101','ng102'),k1,t19)
-   + gprod(gw1,k1,t19) = 0
- gas_balance(ng101,k2,t19): - qin_sr(('ng101','ng102'),k2,t19)
-   + gprod(gw1,k2,t19) = 0
- gas_balance(ng102,k0,t19): qout_sr(('ng101','ng102'),k0,t19)
-   - gsin(gs1,t19,k0) + gsout(gs1,t19,k0) = 3036.89394792
- gas_balance(ng102,k1,t19): qout_sr(('ng101','ng102'),k1,t19)
-   - gsin(gs1,t19,k1) + gsout(gs1,t19,k1) = 3036.89394792
- gas_balance(ng102,k2,t19): qout_sr(('ng101','ng102'),k2,t19)
-   - gsin(gs1,t19,k2) + gsout(gs1,t19,k2) = 3036.89394792
- gas_balance(ng101,k0,t20): - qin_sr(('ng101','ng102'),k0,t20)
-   + gprod(gw1,k0,t20) = 0
- gas_balance(ng101,k1,t20): - qin_sr(('ng101','ng102'),k1,t20)
-   + gprod(gw1,k1,t20) = 0
- gas_balance(ng101,k2,t20): - qin_sr(('ng101','ng102'),k2,t20)
-   + gprod(gw1,k2,t20) = 0
- gas_balance(ng102,k0,t20): qout_sr(('ng101','ng102'),k0,t20)
-   - gsin(gs1,t20,k0) + gsout(gs1,t20,k0) = 2949.62215896
- gas_balance(ng102,k1,t20): qout_sr(('ng101','ng102'),k1,t20)
-   - gsin(gs1,t20,k1) + gsout(gs1,t20,k1) = 2949.62215896
- gas_balance(ng102,k2,t20): qout_sr(('ng101','ng102'),k2,t20)
-   - gsin(gs1,t20,k2) + gsout(gs1,t20,k2) = 2949.62215896
- gas_balance(ng101,k0,t21): - qin_sr(('ng101','ng102'),k0,t21)
-   + gprod(gw1,k0,t21) = 0
- gas_balance(ng101,k1,t21): - qin_sr(('ng101','ng102'),k1,t21)
-   + gprod(gw1,k1,t21) = 0
- gas_balance(ng101,k2,t21): - qin_sr(('ng101','ng102'),k2,t21)
-   + gprod(gw1,k2,t21) = 0
- gas_balance(ng102,k0,t21): qout_sr(('ng101','ng102'),k0,t21)
-   - gsin(gs1,t21,k0) + gsout(gs1,t21,k0) = 2820.95740136
- gas_balance(ng102,k1,t21): qout_sr(('ng101','ng102'),k1,t21)
-   - gsin(gs1,t21,k1) + gsout(gs1,t21,k1) = 2820.95740136
- gas_balance(ng102,k2,t21): qout_sr(('ng101','ng102'),k2,t21)
-   - gsin(gs1,t21,k2) + gsout(gs1,t21,k2) = 2820.95740136
- gas_balance(ng101,k0,t22): - qin_sr(('ng101','ng102'),k0,t22)
-   + gprod(gw1,k0,t22) = 0
- gas_balance(ng101,k1,t22): - qin_sr(('ng101','ng102'),k1,t22)
-   + gprod(gw1,k1,t22) = 0
- gas_balance(ng101,k2,t22): - qin_sr(('ng101','ng102'),k2,t22)
-   + gprod(gw1,k2,t22) = 0
- gas_balance(ng102,k0,t22): qout_sr(('ng101','ng102'),k0,t22)
-   - gsin(gs1,t22,k0) + gsout(gs1,t22,k0) = 2603.73841712
- gas_balance(ng102,k1,t22): qout_sr(('ng101','ng102'),k1,t22)
-   - gsin(gs1,t22,k1) + gsout(gs1,t22,k1) = 2603.73841712
- gas_balance(ng102,k2,t22): qout_sr(('ng101','ng102'),k2,t22)
-   - gsin(gs1,t22,k2) + gsout(gs1,t22,k2) = 2603.73841712
- gas_balance(ng101,k0,t23): - qin_sr(('ng101','ng102'),k0,t23)
-   + gprod(gw1,k0,t23) = 0
- gas_balance(ng101,k1,t23): - qin_sr(('ng101','ng102'),k1,t23)
-   + gprod(gw1,k1,t23) = 0
- gas_balance(ng101,k2,t23): - qin_sr(('ng101','ng102'),k2,t23)
-   + gprod(gw1,k2,t23) = 0
- gas_balance(ng102,k0,t23): qout_sr(('ng101','ng102'),k0,t23)
-   - gsin(gs1,t23,k0) + gsout(gs1,t23,k0) = 2344.4661284
- gas_balance(ng102,k1,t23): qout_sr(('ng101','ng102'),k1,t23)
-   - gsin(gs1,t23,k1) + gsout(gs1,t23,k1) = 2344.4661284
- gas_balance(ng102,k2,t23): qout_sr(('ng101','ng102'),k2,t23)
-   - gsin(gs1,t23,k2) + gsout(gs1,t23,k2) = 2344.4661284
- gas_balance(ng101,k0,t24): - qin_sr(('ng101','ng102'),k0,t24)
-   + gprod(gw1,k0,t24) = 0
- gas_balance(ng101,k1,t24): - qin_sr(('ng101','ng102'),k1,t24)
-   + gprod(gw1,k1,t24) = 0
- gas_balance(ng101,k2,t24): - qin_sr(('ng101','ng102'),k2,t24)
-   + gprod(gw1,k2,t24) = 0
- gas_balance(ng102,k0,t24): qout_sr(('ng101','ng102'),k0,t24)
-   - gsin(gs1,t24,k0) + gsout(gs1,t24,k0) = 2389.6162332
- gas_balance(ng102,k1,t24): qout_sr(('ng101','ng102'),k1,t24)
-   - gsin(gs1,t24,k1) + gsout(gs1,t24,k1) = 2389.6162332
- gas_balance(ng102,k2,t24): qout_sr(('ng101','ng102'),k2,t24)
-   - gsin(gs1,t24,k2) + gsout(gs1,t24,k2) = 2389.6162332
+ gas_balance(ng101,k0,t1): qin_sr(('ng101','ng102'),k0,t1)
+   - gprod(gw1,k0,t1) = 0
+ gas_balance(ng101,k1,t1): qin_sr(('ng101','ng102'),k1,t1)
+   - gprod(gw1,k1,t1) = 0
+ gas_balance(ng101,k2,t1): qin_sr(('ng101','ng102'),k2,t1)
+   - gprod(gw1,k2,t1) = 0
+ gas_balance(ng102,k0,t1): - qout_sr(('ng101','ng102'),k0,t1)
+   + gsin(gs1,t1,k0) - gsout(gs1,t1,k0) = -2422.55390392
+ gas_balance(ng102,k1,t1): - qout_sr(('ng101','ng102'),k1,t1)
+   + gsin(gs1,t1,k1) - gsout(gs1,t1,k1) = -2422.55390392
+ gas_balance(ng102,k2,t1): - qout_sr(('ng101','ng102'),k2,t1)
+   + gsin(gs1,t1,k2) - gsout(gs1,t1,k2) = -2422.55390392
+ gas_balance(ng101,k0,t2): qin_sr(('ng101','ng102'),k0,t2)
+   - gprod(gw1,k0,t2) = 0
+ gas_balance(ng101,k1,t2): qin_sr(('ng101','ng102'),k1,t2)
+   - gprod(gw1,k1,t2) = 0
+ gas_balance(ng101,k2,t2): qin_sr(('ng101','ng102'),k2,t2)
+   - gprod(gw1,k2,t2) = 0
+ gas_balance(ng102,k0,t2): - qout_sr(('ng101','ng102'),k0,t2)
+   + gsin(gs1,t2,k0) - gsout(gs1,t2,k0) = -2341.11895976
+ gas_balance(ng102,k1,t2): - qout_sr(('ng101','ng102'),k1,t2)
+   + gsin(gs1,t2,k1) - gsout(gs1,t2,k1) = -2341.11895976
+ gas_balance(ng102,k2,t2): - qout_sr(('ng101','ng102'),k2,t2)
+   + gsin(gs1,t2,k2) - gsout(gs1,t2,k2) = -2341.11895976
+ gas_balance(ng101,k0,t3): qin_sr(('ng101','ng102'),k0,t3)
+   - gprod(gw1,k0,t3) = 0
+ gas_balance(ng101,k1,t3): qin_sr(('ng101','ng102'),k1,t3)
+   - gprod(gw1,k1,t3) = 0
+ gas_balance(ng101,k2,t3): qin_sr(('ng101','ng102'),k2,t3)
+   - gprod(gw1,k2,t3) = 0
+ gas_balance(ng102,k0,t3): - qout_sr(('ng101','ng102'),k0,t3)
+   + gsin(gs1,t3,k0) - gsout(gs1,t3,k0) = -2257.20526248
+ gas_balance(ng102,k1,t3): - qout_sr(('ng101','ng102'),k1,t3)
+   + gsin(gs1,t3,k1) - gsout(gs1,t3,k1) = -2257.20526248
+ gas_balance(ng102,k2,t3): - qout_sr(('ng101','ng102'),k2,t3)
+   + gsin(gs1,t3,k2) - gsout(gs1,t3,k2) = -2257.20526248
+ gas_balance(ng101,k0,t4): qin_sr(('ng101','ng102'),k0,t4)
+   - gprod(gw1,k0,t4) = 0
+ gas_balance(ng101,k1,t4): qin_sr(('ng101','ng102'),k1,t4)
+   - gprod(gw1,k1,t4) = 0
+ gas_balance(ng101,k2,t4): qin_sr(('ng101','ng102'),k2,t4)
+   - gprod(gw1,k2,t4) = 0
+ gas_balance(ng102,k0,t4): - qout_sr(('ng101','ng102'),k0,t4)
+   + gsin(gs1,t4,k0) - gsout(gs1,t4,k0) = -2299.18227432
+ gas_balance(ng102,k1,t4): - qout_sr(('ng101','ng102'),k1,t4)
+   + gsin(gs1,t4,k1) - gsout(gs1,t4,k1) = -2299.18227432
+ gas_balance(ng102,k2,t4): - qout_sr(('ng101','ng102'),k2,t4)
+   + gsin(gs1,t4,k2) - gsout(gs1,t4,k2) = -2299.18227432
+ gas_balance(ng101,k0,t5): qin_sr(('ng101','ng102'),k0,t5)
+   - gprod(gw1,k0,t5) = 0
+ gas_balance(ng101,k1,t5): qin_sr(('ng101','ng102'),k1,t5)
+   - gprod(gw1,k1,t5) = 0
+ gas_balance(ng101,k2,t5): qin_sr(('ng101','ng102'),k2,t5)
+   - gprod(gw1,k2,t5) = 0
+ gas_balance(ng102,k0,t5): - qout_sr(('ng101','ng102'),k0,t5)
+   + gsin(gs1,t5,k0) - gsout(gs1,t5,k0) = -2334.34057704
+ gas_balance(ng102,k1,t5): - qout_sr(('ng101','ng102'),k1,t5)
+   + gsin(gs1,t5,k1) - gsout(gs1,t5,k1) = -2334.34057704
+ gas_balance(ng102,k2,t5): - qout_sr(('ng101','ng102'),k2,t5)
+   + gsin(gs1,t5,k2) - gsout(gs1,t5,k2) = -2334.34057704
+ gas_balance(ng101,k0,t6): qin_sr(('ng101','ng102'),k0,t6)
+   - gprod(gw1,k0,t6) = 0
+ gas_balance(ng101,k1,t6): qin_sr(('ng101','ng102'),k1,t6)
+   - gprod(gw1,k1,t6) = 0
+ gas_balance(ng101,k2,t6): qin_sr(('ng101','ng102'),k2,t6)
+   - gprod(gw1,k2,t6) = 0
+ gas_balance(ng102,k0,t6): - qout_sr(('ng101','ng102'),k0,t6)
+   + gsin(gs1,t6,k0) - gsout(gs1,t6,k0) = -2375.96135672
+ gas_balance(ng102,k1,t6): - qout_sr(('ng101','ng102'),k1,t6)
+   + gsin(gs1,t6,k1) - gsout(gs1,t6,k1) = -2375.96135672
+ gas_balance(ng102,k2,t6): - qout_sr(('ng101','ng102'),k2,t6)
+   + gsin(gs1,t6,k2) - gsout(gs1,t6,k2) = -2375.96135672
+ gas_balance(ng101,k0,t7): qin_sr(('ng101','ng102'),k0,t7)
+   - gprod(gw1,k0,t7) = 0
+ gas_balance(ng101,k1,t7): qin_sr(('ng101','ng102'),k1,t7)
+   - gprod(gw1,k1,t7) = 0
+ gas_balance(ng101,k2,t7): qin_sr(('ng101','ng102'),k2,t7)
+   - gprod(gw1,k2,t7) = 0
+ gas_balance(ng102,k0,t7): - qout_sr(('ng101','ng102'),k0,t7)
+   + gsin(gs1,t7,k0) - gsout(gs1,t7,k0) = -2698.62136664
+ gas_balance(ng102,k1,t7): - qout_sr(('ng101','ng102'),k1,t7)
+   + gsin(gs1,t7,k1) - gsout(gs1,t7,k1) = -2698.62136664
+ gas_balance(ng102,k2,t7): - qout_sr(('ng101','ng102'),k2,t7)
+   + gsin(gs1,t7,k2) - gsout(gs1,t7,k2) = -2698.62136664
+ gas_balance(ng101,k0,t8): qin_sr(('ng101','ng102'),k0,t8)
+   - gprod(gw1,k0,t8) = 0
+ gas_balance(ng101,k1,t8): qin_sr(('ng101','ng102'),k1,t8)
+   - gprod(gw1,k1,t8) = 0
+ gas_balance(ng101,k2,t8): qin_sr(('ng101','ng102'),k2,t8)
+   - gprod(gw1,k2,t8) = 0
+ gas_balance(ng102,k0,t8): - qout_sr(('ng101','ng102'),k0,t8)
+   + gsin(gs1,t8,k0) - gsout(gs1,t8,k0) = -2725.24979528
+ gas_balance(ng102,k1,t8): - qout_sr(('ng101','ng102'),k1,t8)
+   + gsin(gs1,t8,k1) - gsout(gs1,t8,k1) = -2725.24979528
+ gas_balance(ng102,k2,t8): - qout_sr(('ng101','ng102'),k2,t8)
+   + gsin(gs1,t8,k2) - gsout(gs1,t8,k2) = -2725.24979528
+ gas_balance(ng101,k0,t9): qin_sr(('ng101','ng102'),k0,t9)
+   - gprod(gw1,k0,t9) = 0
+ gas_balance(ng101,k1,t9): qin_sr(('ng101','ng102'),k1,t9)
+   - gprod(gw1,k1,t9) = 0
+ gas_balance(ng101,k2,t9): qin_sr(('ng101','ng102'),k2,t9)
+   - gprod(gw1,k2,t9) = 0
+ gas_balance(ng102,k0,t9): - qout_sr(('ng101','ng102'),k0,t9)
+   + gsin(gs1,t9,k0) - gsout(gs1,t9,k0) = -2957.7354816
+ gas_balance(ng102,k1,t9): - qout_sr(('ng101','ng102'),k1,t9)
+   + gsin(gs1,t9,k1) - gsout(gs1,t9,k1) = -2957.7354816
+ gas_balance(ng102,k2,t9): - qout_sr(('ng101','ng102'),k2,t9)
+   + gsin(gs1,t9,k2) - gsout(gs1,t9,k2) = -2957.7354816
+ gas_balance(ng101,k0,t10): qin_sr(('ng101','ng102'),k0,t10)
+   - gprod(gw1,k0,t10) = 0
+ gas_balance(ng101,k1,t10): qin_sr(('ng101','ng102'),k1,t10)
+   - gprod(gw1,k1,t10) = 0
+ gas_balance(ng101,k2,t10): qin_sr(('ng101','ng102'),k2,t10)
+   - gprod(gw1,k2,t10) = 0
+ gas_balance(ng102,k0,t10): - qout_sr(('ng101','ng102'),k0,t10)
+   + gsin(gs1,t10,k0) - gsout(gs1,t10,k0) = -3007.28750184
+ gas_balance(ng102,k1,t10): - qout_sr(('ng101','ng102'),k1,t10)
+   + gsin(gs1,t10,k1) - gsout(gs1,t10,k1) = -3007.28750184
+ gas_balance(ng102,k2,t10): - qout_sr(('ng101','ng102'),k2,t10)
+   + gsin(gs1,t10,k2) - gsout(gs1,t10,k2) = -3007.28750184
+ gas_balance(ng101,k0,t11): qin_sr(('ng101','ng102'),k0,t11)
+   - gprod(gw1,k0,t11) = 0
+ gas_balance(ng101,k1,t11): qin_sr(('ng101','ng102'),k1,t11)
+   - gprod(gw1,k1,t11) = 0
+ gas_balance(ng101,k2,t11): qin_sr(('ng101','ng102'),k2,t11)
+   - gprod(gw1,k2,t11) = 0
+ gas_balance(ng102,k0,t11): - qout_sr(('ng101','ng102'),k0,t11)
+   + gsin(gs1,t11,k0) - gsout(gs1,t11,k0) = -3006.14337312
+ gas_balance(ng102,k1,t11): - qout_sr(('ng101','ng102'),k1,t11)
+   + gsin(gs1,t11,k1) - gsout(gs1,t11,k1) = -3006.14337312
+ gas_balance(ng102,k2,t11): - qout_sr(('ng101','ng102'),k2,t11)
+   + gsin(gs1,t11,k2) - gsout(gs1,t11,k2) = -3006.14337312
+ gas_balance(ng101,k0,t12): qin_sr(('ng101','ng102'),k0,t12)
+   - gprod(gw1,k0,t12) = 0
+ gas_balance(ng101,k1,t12): qin_sr(('ng101','ng102'),k1,t12)
+   - gprod(gw1,k1,t12) = 0
+ gas_balance(ng101,k2,t12): qin_sr(('ng101','ng102'),k2,t12)
+   - gprod(gw1,k2,t12) = 0
+ gas_balance(ng102,k0,t12): - qout_sr(('ng101','ng102'),k0,t12)
+   + gsin(gs1,t12,k0) - gsout(gs1,t12,k0) = -2954.03198768
+ gas_balance(ng102,k1,t12): - qout_sr(('ng101','ng102'),k1,t12)
+   + gsin(gs1,t12,k1) - gsout(gs1,t12,k1) = -2954.03198768
+ gas_balance(ng102,k2,t12): - qout_sr(('ng101','ng102'),k2,t12)
+   + gsin(gs1,t12,k2) - gsout(gs1,t12,k2) = -2954.03198768
+ gas_balance(ng101,k0,t13): qin_sr(('ng101','ng102'),k0,t13)
+   - gprod(gw1,k0,t13) = 0
+ gas_balance(ng101,k1,t13): qin_sr(('ng101','ng102'),k1,t13)
+   - gprod(gw1,k1,t13) = 0
+ gas_balance(ng101,k2,t13): qin_sr(('ng101','ng102'),k2,t13)
+   - gprod(gw1,k2,t13) = 0
+ gas_balance(ng102,k0,t13): - qout_sr(('ng101','ng102'),k0,t13)
+   + gsin(gs1,t13,k0) - gsout(gs1,t13,k0) = -2943.15251872
+ gas_balance(ng102,k1,t13): - qout_sr(('ng101','ng102'),k1,t13)
+   + gsin(gs1,t13,k1) - gsout(gs1,t13,k1) = -2943.15251872
+ gas_balance(ng102,k2,t13): - qout_sr(('ng101','ng102'),k2,t13)
+   + gsin(gs1,t13,k2) - gsout(gs1,t13,k2) = -2943.15251872
+ gas_balance(ng101,k0,t14): qin_sr(('ng101','ng102'),k0,t14)
+   - gprod(gw1,k0,t14) = 0
+ gas_balance(ng101,k1,t14): qin_sr(('ng101','ng102'),k1,t14)
+   - gprod(gw1,k1,t14) = 0
+ gas_balance(ng101,k2,t14): qin_sr(('ng101','ng102'),k2,t14)
+   - gprod(gw1,k2,t14) = 0
+ gas_balance(ng102,k0,t14): - qout_sr(('ng101','ng102'),k0,t14)
+   + gsin(gs1,t14,k0) - gsout(gs1,t14,k0) = -2926.62853488
+ gas_balance(ng102,k1,t14): - qout_sr(('ng101','ng102'),k1,t14)
+   + gsin(gs1,t14,k1) - gsout(gs1,t14,k1) = -2926.62853488
+ gas_balance(ng102,k2,t14): - qout_sr(('ng101','ng102'),k2,t14)
+   + gsin(gs1,t14,k2) - gsout(gs1,t14,k2) = -2926.62853488
+ gas_balance(ng101,k0,t15): qin_sr(('ng101','ng102'),k0,t15)
+   - gprod(gw1,k0,t15) = 0
+ gas_balance(ng101,k1,t15): qin_sr(('ng101','ng102'),k1,t15)
+   - gprod(gw1,k1,t15) = 0
+ gas_balance(ng101,k2,t15): qin_sr(('ng101','ng102'),k2,t15)
+   - gprod(gw1,k2,t15) = 0
+ gas_balance(ng102,k0,t15): - qout_sr(('ng101','ng102'),k0,t15)
+   + gsin(gs1,t15,k0) - gsout(gs1,t15,k0) = -2868.1517756
+ gas_balance(ng102,k1,t15): - qout_sr(('ng101','ng102'),k1,t15)
+   + gsin(gs1,t15,k1) - gsout(gs1,t15,k1) = -2868.1517756
+ gas_balance(ng102,k2,t15): - qout_sr(('ng101','ng102'),k2,t15)
+   + gsin(gs1,t15,k2) - gsout(gs1,t15,k2) = -2868.1517756
+ gas_balance(ng101,k0,t16): qin_sr(('ng101','ng102'),k0,t16)
+   - gprod(gw1,k0,t16) = 0
+ gas_balance(ng101,k1,t16): qin_sr(('ng101','ng102'),k1,t16)
+   - gprod(gw1,k1,t16) = 0
+ gas_balance(ng101,k2,t16): qin_sr(('ng101','ng102'),k2,t16)
+   - gprod(gw1,k2,t16) = 0
+ gas_balance(ng102,k0,t16): - qout_sr(('ng101','ng102'),k0,t16)
+   + gsin(gs1,t16,k0) - gsout(gs1,t16,k0) = -2905.8461636
+ gas_balance(ng102,k1,t16): - qout_sr(('ng101','ng102'),k1,t16)
+   + gsin(gs1,t16,k1) - gsout(gs1,t16,k1) = -2905.8461636
+ gas_balance(ng102,k2,t16): - qout_sr(('ng101','ng102'),k2,t16)
+   + gsin(gs1,t16,k2) - gsout(gs1,t16,k2) = -2905.8461636
+ gas_balance(ng101,k0,t17): qin_sr(('ng101','ng102'),k0,t17)
+   - gprod(gw1,k0,t17) = 0
+ gas_balance(ng101,k1,t17): qin_sr(('ng101','ng102'),k1,t17)
+   - gprod(gw1,k1,t17) = 0
+ gas_balance(ng101,k2,t17): qin_sr(('ng101','ng102'),k2,t17)
+   - gprod(gw1,k2,t17) = 0
+ gas_balance(ng102,k0,t17): - qout_sr(('ng101','ng102'),k0,t17)
+   + gsin(gs1,t17,k0) - gsout(gs1,t17,k0) = -3039.46835048
+ gas_balance(ng102,k1,t17): - qout_sr(('ng101','ng102'),k1,t17)
+   + gsin(gs1,t17,k1) - gsout(gs1,t17,k1) = -3039.46835048
+ gas_balance(ng102,k2,t17): - qout_sr(('ng101','ng102'),k2,t17)
+   + gsin(gs1,t17,k2) - gsout(gs1,t17,k2) = -3039.46835048
+ gas_balance(ng101,k0,t18): qin_sr(('ng101','ng102'),k0,t18)
+   - gprod(gw1,k0,t18) = 0
+ gas_balance(ng101,k1,t18): qin_sr(('ng101','ng102'),k1,t18)
+   - gprod(gw1,k1,t18) = 0
+ gas_balance(ng101,k2,t18): qin_sr(('ng101','ng102'),k2,t18)
+   - gprod(gw1,k2,t18) = 0
+ gas_balance(ng102,k0,t18): - qout_sr(('ng101','ng102'),k0,t18)
+   + gsin(gs1,t18,k0) - gsout(gs1,t18,k0) = -3037.07651736
+ gas_balance(ng102,k1,t18): - qout_sr(('ng101','ng102'),k1,t18)
+   + gsin(gs1,t18,k1) - gsout(gs1,t18,k1) = -3037.07651736
+ gas_balance(ng102,k2,t18): - qout_sr(('ng101','ng102'),k2,t18)
+   + gsin(gs1,t18,k2) - gsout(gs1,t18,k2) = -3037.07651736
+ gas_balance(ng101,k0,t19): qin_sr(('ng101','ng102'),k0,t19)
+   - gprod(gw1,k0,t19) = 0
+ gas_balance(ng101,k1,t19): qin_sr(('ng101','ng102'),k1,t19)
+   - gprod(gw1,k1,t19) = 0
+ gas_balance(ng101,k2,t19): qin_sr(('ng101','ng102'),k2,t19)
+   - gprod(gw1,k2,t19) = 0
+ gas_balance(ng102,k0,t19): - qout_sr(('ng101','ng102'),k0,t19)
+   + gsin(gs1,t19,k0) - gsout(gs1,t19,k0) = -3036.89394792
+ gas_balance(ng102,k1,t19): - qout_sr(('ng101','ng102'),k1,t19)
+   + gsin(gs1,t19,k1) - gsout(gs1,t19,k1) = -3036.89394792
+ gas_balance(ng102,k2,t19): - qout_sr(('ng101','ng102'),k2,t19)
+   + gsin(gs1,t19,k2) - gsout(gs1,t19,k2) = -3036.89394792
+ gas_balance(ng101,k0,t20): qin_sr(('ng101','ng102'),k0,t20)
+   - gprod(gw1,k0,t20) = 0
+ gas_balance(ng101,k1,t20): qin_sr(('ng101','ng102'),k1,t20)
+   - gprod(gw1,k1,t20) = 0
+ gas_balance(ng101,k2,t20): qin_sr(('ng101','ng102'),k2,t20)
+   - gprod(gw1,k2,t20) = 0
+ gas_balance(ng102,k0,t20): - qout_sr(('ng101','ng102'),k0,t20)
+   + gsin(gs1,t20,k0) - gsout(gs1,t20,k0) = -2949.62215896
+ gas_balance(ng102,k1,t20): - qout_sr(('ng101','ng102'),k1,t20)
+   + gsin(gs1,t20,k1) - gsout(gs1,t20,k1) = -2949.62215896
+ gas_balance(ng102,k2,t20): - qout_sr(('ng101','ng102'),k2,t20)
+   + gsin(gs1,t20,k2) - gsout(gs1,t20,k2) = -2949.62215896
+ gas_balance(ng101,k0,t21): qin_sr(('ng101','ng102'),k0,t21)
+   - gprod(gw1,k0,t21) = 0
+ gas_balance(ng101,k1,t21): qin_sr(('ng101','ng102'),k1,t21)
+   - gprod(gw1,k1,t21) = 0
+ gas_balance(ng101,k2,t21): qin_sr(('ng101','ng102'),k2,t21)
+   - gprod(gw1,k2,t21) = 0
+ gas_balance(ng102,k0,t21): - qout_sr(('ng101','ng102'),k0,t21)
+   + gsin(gs1,t21,k0) - gsout(gs1,t21,k0) = -2820.95740136
+ gas_balance(ng102,k1,t21): - qout_sr(('ng101','ng102'),k1,t21)
+   + gsin(gs1,t21,k1) - gsout(gs1,t21,k1) = -2820.95740136
+ gas_balance(ng102,k2,t21): - qout_sr(('ng101','ng102'),k2,t21)
+   + gsin(gs1,t21,k2) - gsout(gs1,t21,k2) = -2820.95740136
+ gas_balance(ng101,k0,t22): qin_sr(('ng101','ng102'),k0,t22)
+   - gprod(gw1,k0,t22) = 0
+ gas_balance(ng101,k1,t22): qin_sr(('ng101','ng102'),k1,t22)
+   - gprod(gw1,k1,t22) = 0
+ gas_balance(ng101,k2,t22): qin_sr(('ng101','ng102'),k2,t22)
+   - gprod(gw1,k2,t22) = 0
+ gas_balance(ng102,k0,t22): - qout_sr(('ng101','ng102'),k0,t22)
+   + gsin(gs1,t22,k0) - gsout(gs1,t22,k0) = -2603.73841712
+ gas_balance(ng102,k1,t22): - qout_sr(('ng101','ng102'),k1,t22)
+   + gsin(gs1,t22,k1) - gsout(gs1,t22,k1) = -2603.73841712
+ gas_balance(ng102,k2,t22): - qout_sr(('ng101','ng102'),k2,t22)
+   + gsin(gs1,t22,k2) - gsout(gs1,t22,k2) = -2603.73841712
+ gas_balance(ng101,k0,t23): qin_sr(('ng101','ng102'),k0,t23)
+   - gprod(gw1,k0,t23) = 0
+ gas_balance(ng101,k1,t23): qin_sr(('ng101','ng102'),k1,t23)
+   - gprod(gw1,k1,t23) = 0
+ gas_balance(ng101,k2,t23): qin_sr(('ng101','ng102'),k2,t23)
+   - gprod(gw1,k2,t23) = 0
+ gas_balance(ng102,k0,t23): - qout_sr(('ng101','ng102'),k0,t23)
+   + gsin(gs1,t23,k0) - gsout(gs1,t23,k0) = -2344.4661284
+ gas_balance(ng102,k1,t23): - qout_sr(('ng101','ng102'),k1,t23)
+   + gsin(gs1,t23,k1) - gsout(gs1,t23,k1) = -2344.4661284
+ gas_balance(ng102,k2,t23): - qout_sr(('ng101','ng102'),k2,t23)
+   + gsin(gs1,t23,k2) - gsout(gs1,t23,k2) = -2344.4661284
+ gas_balance(ng101,k0,t24): qin_sr(('ng101','ng102'),k0,t24)
+   - gprod(gw1,k0,t24) = 0
+ gas_balance(ng101,k1,t24): qin_sr(('ng101','ng102'),k1,t24)
+   - gprod(gw1,k1,t24) = 0
+ gas_balance(ng101,k2,t24): qin_sr(('ng101','ng102'),k2,t24)
+   - gprod(gw1,k2,t24) = 0
+ gas_balance(ng102,k0,t24): - qout_sr(('ng101','ng102'),k0,t24)
+   + gsin(gs1,t24,k0) - gsout(gs1,t24,k0) = -2389.6162332
+ gas_balance(ng102,k1,t24): - qout_sr(('ng101','ng102'),k1,t24)
+   + gsin(gs1,t24,k1) - gsout(gs1,t24,k1) = -2389.6162332
+ gas_balance(ng102,k2,t24): - qout_sr(('ng101','ng102'),k2,t24)
+   + gsin(gs1,t24,k2) - gsout(gs1,t24,k2) = -2389.6162332
  SOS1_PresMax(ng101,k0,t1): pres(ng101,k0,t1) + SOS1_PresMax(ng101,k0,t1)
    = 370
  SOS1_PresMin(ng101,k0,t1): - pres(ng101,k0,t1) + SOS1_PresMin(ng101,k0,t1)
@@ -33904,7 +33949,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t1,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t1,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t1,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t1) - muLB_pres(ng101,k0,t1)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t1) - muLB_pres(ng101,k0,t1)
    = -1
  dLag/pres(ng101,k1,t1): mu_PresMax(ng101,k1,t1) - mu_PresMin(ng101,k1,t1)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k1,t1,1,0)
@@ -33952,7 +33997,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t1,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t1,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t1,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t1) - muLB_pres(ng101,k1,t1)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t1) - muLB_pres(ng101,k1,t1)
    = -1
  dLag/pres(ng101,k2,t1): mu_PresMax(ng101,k2,t1) - mu_PresMin(ng101,k2,t1)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k2,t1,1,0)
@@ -34000,7 +34045,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t1,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t1,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t1,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t1) - muLB_pres(ng101,k2,t1)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t1) - muLB_pres(ng101,k2,t1)
    = -1
  dLag/pres(ng101,k0,t2): mu_PresMax(ng101,k0,t2) - mu_PresMin(ng101,k0,t2)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k0,t2,1,0)
@@ -34048,7 +34093,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t2,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t2,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t2,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t2) - muLB_pres(ng101,k0,t2)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t2) - muLB_pres(ng101,k0,t2)
    = -1
  dLag/pres(ng101,k1,t2): mu_PresMax(ng101,k1,t2) - mu_PresMin(ng101,k1,t2)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k1,t2,1,0)
@@ -34096,7 +34141,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t2,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t2,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t2,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t2) - muLB_pres(ng101,k1,t2)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t2) - muLB_pres(ng101,k1,t2)
    = -1
  dLag/pres(ng101,k2,t2): mu_PresMax(ng101,k2,t2) - mu_PresMin(ng101,k2,t2)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k2,t2,1,0)
@@ -34144,7 +34189,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t2,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t2,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t2,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t2) - muLB_pres(ng101,k2,t2)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t2) - muLB_pres(ng101,k2,t2)
    = -1
  dLag/pres(ng101,k0,t3): mu_PresMax(ng101,k0,t3) - mu_PresMin(ng101,k0,t3)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k0,t3,1,0)
@@ -34192,7 +34237,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t3,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t3,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t3,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t3) - muLB_pres(ng101,k0,t3)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t3) - muLB_pres(ng101,k0,t3)
    = -1
  dLag/pres(ng101,k1,t3): mu_PresMax(ng101,k1,t3) - mu_PresMin(ng101,k1,t3)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k1,t3,1,0)
@@ -34240,7 +34285,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t3,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t3,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t3,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t3) - muLB_pres(ng101,k1,t3)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t3) - muLB_pres(ng101,k1,t3)
    = -1
  dLag/pres(ng101,k2,t3): mu_PresMax(ng101,k2,t3) - mu_PresMin(ng101,k2,t3)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k2,t3,1,0)
@@ -34288,7 +34333,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t3,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t3,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t3,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t3) - muLB_pres(ng101,k2,t3)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t3) - muLB_pres(ng101,k2,t3)
    = -1
  dLag/pres(ng101,k0,t4): mu_PresMax(ng101,k0,t4) - mu_PresMin(ng101,k0,t4)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k0,t4,1,0)
@@ -34336,7 +34381,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t4,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t4,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t4,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t4) - muLB_pres(ng101,k0,t4)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t4) - muLB_pres(ng101,k0,t4)
    = -1
  dLag/pres(ng101,k1,t4): mu_PresMax(ng101,k1,t4) - mu_PresMin(ng101,k1,t4)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k1,t4,1,0)
@@ -34384,7 +34429,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t4,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t4,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t4,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t4) - muLB_pres(ng101,k1,t4)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t4) - muLB_pres(ng101,k1,t4)
    = -1
  dLag/pres(ng101,k2,t4): mu_PresMax(ng101,k2,t4) - mu_PresMin(ng101,k2,t4)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k2,t4,1,0)
@@ -34432,7 +34477,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t4,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t4,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t4,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t4) - muLB_pres(ng101,k2,t4)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t4) - muLB_pres(ng101,k2,t4)
    = -1
  dLag/pres(ng101,k0,t5): mu_PresMax(ng101,k0,t5) - mu_PresMin(ng101,k0,t5)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k0,t5,1,0)
@@ -34480,7 +34525,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t5,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t5,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t5,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t5) - muLB_pres(ng101,k0,t5)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t5) - muLB_pres(ng101,k0,t5)
    = -1
  dLag/pres(ng101,k1,t5): mu_PresMax(ng101,k1,t5) - mu_PresMin(ng101,k1,t5)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k1,t5,1,0)
@@ -34528,7 +34573,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t5,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t5,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t5,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t5) - muLB_pres(ng101,k1,t5)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t5) - muLB_pres(ng101,k1,t5)
    = -1
  dLag/pres(ng101,k2,t5): mu_PresMax(ng101,k2,t5) - mu_PresMin(ng101,k2,t5)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k2,t5,1,0)
@@ -34576,7 +34621,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t5,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t5,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t5,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t5) - muLB_pres(ng101,k2,t5)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t5) - muLB_pres(ng101,k2,t5)
    = -1
  dLag/pres(ng101,k0,t6): mu_PresMax(ng101,k0,t6) - mu_PresMin(ng101,k0,t6)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k0,t6,1,0)
@@ -34624,7 +34669,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t6,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t6,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t6,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t6) - muLB_pres(ng101,k0,t6)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t6) - muLB_pres(ng101,k0,t6)
    = -1
  dLag/pres(ng101,k1,t6): mu_PresMax(ng101,k1,t6) - mu_PresMin(ng101,k1,t6)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k1,t6,1,0)
@@ -34672,7 +34717,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t6,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t6,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t6,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t6) - muLB_pres(ng101,k1,t6)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t6) - muLB_pres(ng101,k1,t6)
    = -1
  dLag/pres(ng101,k2,t6): mu_PresMax(ng101,k2,t6) - mu_PresMin(ng101,k2,t6)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k2,t6,1,0)
@@ -34720,7 +34765,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t6,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t6,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t6,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t6) - muLB_pres(ng101,k2,t6)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t6) - muLB_pres(ng101,k2,t6)
    = -1
  dLag/pres(ng101,k0,t7): mu_PresMax(ng101,k0,t7) - mu_PresMin(ng101,k0,t7)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k0,t7,1,0)
@@ -34768,7 +34813,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t7,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t7,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t7,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t7) - muLB_pres(ng101,k0,t7)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t7) - muLB_pres(ng101,k0,t7)
    = -1
  dLag/pres(ng101,k1,t7): mu_PresMax(ng101,k1,t7) - mu_PresMin(ng101,k1,t7)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k1,t7,1,0)
@@ -34816,7 +34861,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t7,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t7,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t7,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t7) - muLB_pres(ng101,k1,t7)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t7) - muLB_pres(ng101,k1,t7)
    = -1
  dLag/pres(ng101,k2,t7): mu_PresMax(ng101,k2,t7) - mu_PresMin(ng101,k2,t7)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k2,t7,1,0)
@@ -34864,7 +34909,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t7,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t7,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t7,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t7) - muLB_pres(ng101,k2,t7)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t7) - muLB_pres(ng101,k2,t7)
    = -1
  dLag/pres(ng101,k0,t8): mu_PresMax(ng101,k0,t8) - mu_PresMin(ng101,k0,t8)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k0,t8,1,0)
@@ -34912,7 +34957,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t8,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t8,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t8,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t8) - muLB_pres(ng101,k0,t8)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t8) - muLB_pres(ng101,k0,t8)
    = -1
  dLag/pres(ng101,k1,t8): mu_PresMax(ng101,k1,t8) - mu_PresMin(ng101,k1,t8)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k1,t8,1,0)
@@ -34960,7 +35005,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t8,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t8,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t8,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t8) - muLB_pres(ng101,k1,t8)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t8) - muLB_pres(ng101,k1,t8)
    = -1
  dLag/pres(ng101,k2,t8): mu_PresMax(ng101,k2,t8) - mu_PresMin(ng101,k2,t8)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k2,t8,1,0)
@@ -35008,7 +35053,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t8,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t8,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t8,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t8) - muLB_pres(ng101,k2,t8)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t8) - muLB_pres(ng101,k2,t8)
    = -1
  dLag/pres(ng101,k0,t9): mu_PresMax(ng101,k0,t9) - mu_PresMin(ng101,k0,t9)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k0,t9,1,0)
@@ -35056,7 +35101,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t9,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t9,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t9,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t9) - muLB_pres(ng101,k0,t9)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t9) - muLB_pres(ng101,k0,t9)
    = -1
  dLag/pres(ng101,k1,t9): mu_PresMax(ng101,k1,t9) - mu_PresMin(ng101,k1,t9)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k1,t9,1,0)
@@ -35104,7 +35149,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t9,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t9,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t9,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t9) - muLB_pres(ng101,k1,t9)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t9) - muLB_pres(ng101,k1,t9)
    = -1
  dLag/pres(ng101,k2,t9): mu_PresMax(ng101,k2,t9) - mu_PresMin(ng101,k2,t9)
    - 115.6717704998329 mu_gflow_sr_lim(('ng101','ng102'),k2,t9,1,0)
@@ -35152,7 +35197,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t9,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t9,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t9,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t9) - muLB_pres(ng101,k2,t9)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t9) - muLB_pres(ng101,k2,t9)
    = -1
  dLag/pres(ng101,k0,t10): mu_PresMax(ng101,k0,t10)
    - mu_PresMin(ng101,k0,t10)
@@ -35201,7 +35246,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t10,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t10,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t10,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t10)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t10)
    - muLB_pres(ng101,k0,t10) = -1
  dLag/pres(ng101,k1,t10): mu_PresMax(ng101,k1,t10)
    - mu_PresMin(ng101,k1,t10)
@@ -35250,7 +35295,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t10,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t10,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t10,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t10)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t10)
    - muLB_pres(ng101,k1,t10) = -1
  dLag/pres(ng101,k2,t10): mu_PresMax(ng101,k2,t10)
    - mu_PresMin(ng101,k2,t10)
@@ -35299,7 +35344,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t10,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t10,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t10,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t10)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t10)
    - muLB_pres(ng101,k2,t10) = -1
  dLag/pres(ng101,k0,t11): mu_PresMax(ng101,k0,t11)
    - mu_PresMin(ng101,k0,t11)
@@ -35348,7 +35393,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t11,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t11,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t11,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t11)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t11)
    - muLB_pres(ng101,k0,t11) = -1
  dLag/pres(ng101,k1,t11): mu_PresMax(ng101,k1,t11)
    - mu_PresMin(ng101,k1,t11)
@@ -35397,7 +35442,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t11,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t11,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t11,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t11)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t11)
    - muLB_pres(ng101,k1,t11) = -1
  dLag/pres(ng101,k2,t11): mu_PresMax(ng101,k2,t11)
    - mu_PresMin(ng101,k2,t11)
@@ -35446,7 +35491,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t11,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t11,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t11,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t11)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t11)
    - muLB_pres(ng101,k2,t11) = -1
  dLag/pres(ng101,k0,t12): mu_PresMax(ng101,k0,t12)
    - mu_PresMin(ng101,k0,t12)
@@ -35495,7 +35540,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t12,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t12,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t12,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t12)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t12)
    - muLB_pres(ng101,k0,t12) = -1
  dLag/pres(ng101,k1,t12): mu_PresMax(ng101,k1,t12)
    - mu_PresMin(ng101,k1,t12)
@@ -35544,7 +35589,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t12,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t12,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t12,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t12)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t12)
    - muLB_pres(ng101,k1,t12) = -1
  dLag/pres(ng101,k2,t12): mu_PresMax(ng101,k2,t12)
    - mu_PresMin(ng101,k2,t12)
@@ -35593,7 +35638,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t12,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t12,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t12,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t12)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t12)
    - muLB_pres(ng101,k2,t12) = -1
  dLag/pres(ng101,k0,t13): mu_PresMax(ng101,k0,t13)
    - mu_PresMin(ng101,k0,t13)
@@ -35642,7 +35687,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t13,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t13,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t13,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t13)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t13)
    - muLB_pres(ng101,k0,t13) = -1
  dLag/pres(ng101,k1,t13): mu_PresMax(ng101,k1,t13)
    - mu_PresMin(ng101,k1,t13)
@@ -35691,7 +35736,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t13,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t13,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t13,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t13)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t13)
    - muLB_pres(ng101,k1,t13) = -1
  dLag/pres(ng101,k2,t13): mu_PresMax(ng101,k2,t13)
    - mu_PresMin(ng101,k2,t13)
@@ -35740,7 +35785,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t13,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t13,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t13,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t13)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t13)
    - muLB_pres(ng101,k2,t13) = -1
  dLag/pres(ng101,k0,t14): mu_PresMax(ng101,k0,t14)
    - mu_PresMin(ng101,k0,t14)
@@ -35789,7 +35834,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t14,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t14,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t14,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t14)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t14)
    - muLB_pres(ng101,k0,t14) = -1
  dLag/pres(ng101,k1,t14): mu_PresMax(ng101,k1,t14)
    - mu_PresMin(ng101,k1,t14)
@@ -35838,7 +35883,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t14,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t14,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t14,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t14)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t14)
    - muLB_pres(ng101,k1,t14) = -1
  dLag/pres(ng101,k2,t14): mu_PresMax(ng101,k2,t14)
    - mu_PresMin(ng101,k2,t14)
@@ -35887,7 +35932,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t14,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t14,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t14,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t14)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t14)
    - muLB_pres(ng101,k2,t14) = -1
  dLag/pres(ng101,k0,t15): mu_PresMax(ng101,k0,t15)
    - mu_PresMin(ng101,k0,t15)
@@ -35936,7 +35981,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t15,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t15,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t15,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t15)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t15)
    - muLB_pres(ng101,k0,t15) = -1
  dLag/pres(ng101,k1,t15): mu_PresMax(ng101,k1,t15)
    - mu_PresMin(ng101,k1,t15)
@@ -35985,7 +36030,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t15,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t15,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t15,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t15)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t15)
    - muLB_pres(ng101,k1,t15) = -1
  dLag/pres(ng101,k2,t15): mu_PresMax(ng101,k2,t15)
    - mu_PresMin(ng101,k2,t15)
@@ -36034,7 +36079,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t15,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t15,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t15,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t15)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t15)
    - muLB_pres(ng101,k2,t15) = -1
  dLag/pres(ng101,k0,t16): mu_PresMax(ng101,k0,t16)
    - mu_PresMin(ng101,k0,t16)
@@ -36083,7 +36128,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t16,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t16,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t16,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t16)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t16)
    - muLB_pres(ng101,k0,t16) = -1
  dLag/pres(ng101,k1,t16): mu_PresMax(ng101,k1,t16)
    - mu_PresMin(ng101,k1,t16)
@@ -36132,7 +36177,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t16,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t16,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t16,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t16)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t16)
    - muLB_pres(ng101,k1,t16) = -1
  dLag/pres(ng101,k2,t16): mu_PresMax(ng101,k2,t16)
    - mu_PresMin(ng101,k2,t16)
@@ -36181,7 +36226,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t16,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t16,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t16,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t16)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t16)
    - muLB_pres(ng101,k2,t16) = -1
  dLag/pres(ng101,k0,t17): mu_PresMax(ng101,k0,t17)
    - mu_PresMin(ng101,k0,t17)
@@ -36230,7 +36275,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t17,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t17,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t17,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t17)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t17)
    - muLB_pres(ng101,k0,t17) = -1
  dLag/pres(ng101,k1,t17): mu_PresMax(ng101,k1,t17)
    - mu_PresMin(ng101,k1,t17)
@@ -36279,7 +36324,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t17,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t17,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t17,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t17)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t17)
    - muLB_pres(ng101,k1,t17) = -1
  dLag/pres(ng101,k2,t17): mu_PresMax(ng101,k2,t17)
    - mu_PresMin(ng101,k2,t17)
@@ -36328,7 +36373,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t17,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t17,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t17,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t17)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t17)
    - muLB_pres(ng101,k2,t17) = -1
  dLag/pres(ng101,k0,t18): mu_PresMax(ng101,k0,t18)
    - mu_PresMin(ng101,k0,t18)
@@ -36377,7 +36422,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t18,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t18,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t18,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t18)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t18)
    - muLB_pres(ng101,k0,t18) = -1
  dLag/pres(ng101,k1,t18): mu_PresMax(ng101,k1,t18)
    - mu_PresMin(ng101,k1,t18)
@@ -36426,7 +36471,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t18,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t18,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t18,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t18)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t18)
    - muLB_pres(ng101,k1,t18) = -1
  dLag/pres(ng101,k2,t18): mu_PresMax(ng101,k2,t18)
    - mu_PresMin(ng101,k2,t18)
@@ -36475,7 +36520,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t18,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t18,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t18,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t18)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t18)
    - muLB_pres(ng101,k2,t18) = -1
  dLag/pres(ng101,k0,t19): mu_PresMax(ng101,k0,t19)
    - mu_PresMin(ng101,k0,t19)
@@ -36524,7 +36569,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t19,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t19,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t19,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t19)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t19)
    - muLB_pres(ng101,k0,t19) = -1
  dLag/pres(ng101,k1,t19): mu_PresMax(ng101,k1,t19)
    - mu_PresMin(ng101,k1,t19)
@@ -36573,7 +36618,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t19,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t19,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t19,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t19)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t19)
    - muLB_pres(ng101,k1,t19) = -1
  dLag/pres(ng101,k2,t19): mu_PresMax(ng101,k2,t19)
    - mu_PresMin(ng101,k2,t19)
@@ -36622,7 +36667,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t19,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t19,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t19,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t19)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t19)
    - muLB_pres(ng101,k2,t19) = -1
  dLag/pres(ng101,k0,t20): mu_PresMax(ng101,k0,t20)
    - mu_PresMin(ng101,k0,t20)
@@ -36671,7 +36716,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t20,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t20,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t20,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t20)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t20)
    - muLB_pres(ng101,k0,t20) = -1
  dLag/pres(ng101,k1,t20): mu_PresMax(ng101,k1,t20)
    - mu_PresMin(ng101,k1,t20)
@@ -36720,7 +36765,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t20,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t20,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t20,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t20)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t20)
    - muLB_pres(ng101,k1,t20) = -1
  dLag/pres(ng101,k2,t20): mu_PresMax(ng101,k2,t20)
    - mu_PresMin(ng101,k2,t20)
@@ -36769,7 +36814,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t20,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t20,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t20,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t20)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t20)
    - muLB_pres(ng101,k2,t20) = -1
  dLag/pres(ng101,k0,t21): mu_PresMax(ng101,k0,t21)
    - mu_PresMin(ng101,k0,t21)
@@ -36818,7 +36863,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t21,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t21,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t21,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t21)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t21)
    - muLB_pres(ng101,k0,t21) = -1
  dLag/pres(ng101,k1,t21): mu_PresMax(ng101,k1,t21)
    - mu_PresMin(ng101,k1,t21)
@@ -36867,7 +36912,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t21,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t21,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t21,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t21)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t21)
    - muLB_pres(ng101,k1,t21) = -1
  dLag/pres(ng101,k2,t21): mu_PresMax(ng101,k2,t21)
    - mu_PresMin(ng101,k2,t21)
@@ -36916,7 +36961,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t21,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t21,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t21,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t21)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t21)
    - muLB_pres(ng101,k2,t21) = -1
  dLag/pres(ng101,k0,t22): mu_PresMax(ng101,k0,t22)
    - mu_PresMin(ng101,k0,t22)
@@ -36965,7 +37010,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t22,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t22,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t22,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t22)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t22)
    - muLB_pres(ng101,k0,t22) = -1
  dLag/pres(ng101,k1,t22): mu_PresMax(ng101,k1,t22)
    - mu_PresMin(ng101,k1,t22)
@@ -37014,7 +37059,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t22,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t22,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t22,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t22)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t22)
    - muLB_pres(ng101,k1,t22) = -1
  dLag/pres(ng101,k2,t22): mu_PresMax(ng101,k2,t22)
    - mu_PresMin(ng101,k2,t22)
@@ -37063,7 +37108,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t22,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t22,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t22,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t22)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t22)
    - muLB_pres(ng101,k2,t22) = -1
  dLag/pres(ng101,k0,t23): mu_PresMax(ng101,k0,t23)
    - mu_PresMin(ng101,k0,t23)
@@ -37112,7 +37157,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t23,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t23,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t23,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t23)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t23)
    - muLB_pres(ng101,k0,t23) = -1
  dLag/pres(ng101,k1,t23): mu_PresMax(ng101,k1,t23)
    - mu_PresMin(ng101,k1,t23)
@@ -37161,7 +37206,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t23,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t23,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t23,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t23)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t23)
    - muLB_pres(ng101,k1,t23) = -1
  dLag/pres(ng101,k2,t23): mu_PresMax(ng101,k2,t23)
    - mu_PresMin(ng101,k2,t23)
@@ -37210,7 +37255,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t23,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t23,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t23,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t23)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t23)
    - muLB_pres(ng101,k2,t23) = -1
  dLag/pres(ng101,k0,t24): mu_PresMax(ng101,k0,t24)
    - mu_PresMin(ng101,k0,t24)
@@ -37259,7 +37304,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k0,t24,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k0,t24,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k0,t24,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t24)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t24)
    - muLB_pres(ng101,k0,t24) = -1
  dLag/pres(ng101,k1,t24): mu_PresMax(ng101,k1,t24)
    - mu_PresMin(ng101,k1,t24)
@@ -37308,7 +37353,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k1,t24,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k1,t24,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k1,t24,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t24)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t24)
    - muLB_pres(ng101,k1,t24) = -1
  dLag/pres(ng101,k2,t24): mu_PresMax(ng101,k2,t24)
    - mu_PresMin(ng101,k2,t24)
@@ -37357,7 +37402,7 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_lim(('ng101','ng102'),k2,t24,9,6)
    - 91.42934220142139 mu_gflow_sr_lim(('ng101','ng102'),k2,t24,9,7)
    - 128.5121900004952 mu_gflow_sr_lim(('ng101','ng102'),k2,t24,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t24)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t24)
    - muLB_pres(ng101,k2,t24) = -1
  dLag/pres(ng102,k0,t1): mu_PresMax(ng102,k0,t1) - mu_PresMin(ng102,k0,t1)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k0,t1,1,0)
@@ -37405,7 +37450,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t1,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t1,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t1,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t1) - muLB_pres(ng102,k0,t1)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t1) - muLB_pres(ng102,k0,t1)
    = 1
  dLag/pres(ng102,k1,t1): mu_PresMax(ng102,k1,t1) - mu_PresMin(ng102,k1,t1)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k1,t1,1,0)
@@ -37453,7 +37498,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t1,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t1,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t1,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t1) - muLB_pres(ng102,k1,t1)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t1) - muLB_pres(ng102,k1,t1)
    = 1
  dLag/pres(ng102,k2,t1): mu_PresMax(ng102,k2,t1) - mu_PresMin(ng102,k2,t1)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k2,t1,1,0)
@@ -37501,7 +37546,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t1,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t1,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t1,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t1) - muLB_pres(ng102,k2,t1)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t1) - muLB_pres(ng102,k2,t1)
    = 1
  dLag/pres(ng102,k0,t2): mu_PresMax(ng102,k0,t2) - mu_PresMin(ng102,k0,t2)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k0,t2,1,0)
@@ -37549,7 +37594,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t2,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t2,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t2,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t2) - muLB_pres(ng102,k0,t2)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t2) - muLB_pres(ng102,k0,t2)
    = 1
  dLag/pres(ng102,k1,t2): mu_PresMax(ng102,k1,t2) - mu_PresMin(ng102,k1,t2)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k1,t2,1,0)
@@ -37597,7 +37642,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t2,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t2,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t2,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t2) - muLB_pres(ng102,k1,t2)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t2) - muLB_pres(ng102,k1,t2)
    = 1
  dLag/pres(ng102,k2,t2): mu_PresMax(ng102,k2,t2) - mu_PresMin(ng102,k2,t2)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k2,t2,1,0)
@@ -37645,7 +37690,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t2,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t2,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t2,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t2) - muLB_pres(ng102,k2,t2)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t2) - muLB_pres(ng102,k2,t2)
    = 1
  dLag/pres(ng102,k0,t3): mu_PresMax(ng102,k0,t3) - mu_PresMin(ng102,k0,t3)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k0,t3,1,0)
@@ -37693,7 +37738,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t3,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t3,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t3,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t3) - muLB_pres(ng102,k0,t3)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t3) - muLB_pres(ng102,k0,t3)
    = 1
  dLag/pres(ng102,k1,t3): mu_PresMax(ng102,k1,t3) - mu_PresMin(ng102,k1,t3)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k1,t3,1,0)
@@ -37741,7 +37786,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t3,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t3,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t3,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t3) - muLB_pres(ng102,k1,t3)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t3) - muLB_pres(ng102,k1,t3)
    = 1
  dLag/pres(ng102,k2,t3): mu_PresMax(ng102,k2,t3) - mu_PresMin(ng102,k2,t3)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k2,t3,1,0)
@@ -37789,7 +37834,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t3,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t3,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t3,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t3) - muLB_pres(ng102,k2,t3)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t3) - muLB_pres(ng102,k2,t3)
    = 1
  dLag/pres(ng102,k0,t4): mu_PresMax(ng102,k0,t4) - mu_PresMin(ng102,k0,t4)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k0,t4,1,0)
@@ -37837,7 +37882,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t4,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t4,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t4,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t4) - muLB_pres(ng102,k0,t4)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t4) - muLB_pres(ng102,k0,t4)
    = 1
  dLag/pres(ng102,k1,t4): mu_PresMax(ng102,k1,t4) - mu_PresMin(ng102,k1,t4)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k1,t4,1,0)
@@ -37885,7 +37930,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t4,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t4,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t4,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t4) - muLB_pres(ng102,k1,t4)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t4) - muLB_pres(ng102,k1,t4)
    = 1
  dLag/pres(ng102,k2,t4): mu_PresMax(ng102,k2,t4) - mu_PresMin(ng102,k2,t4)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k2,t4,1,0)
@@ -37933,7 +37978,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t4,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t4,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t4,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t4) - muLB_pres(ng102,k2,t4)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t4) - muLB_pres(ng102,k2,t4)
    = 1
  dLag/pres(ng102,k0,t5): mu_PresMax(ng102,k0,t5) - mu_PresMin(ng102,k0,t5)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k0,t5,1,0)
@@ -37981,7 +38026,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t5,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t5,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t5,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t5) - muLB_pres(ng102,k0,t5)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t5) - muLB_pres(ng102,k0,t5)
    = 1
  dLag/pres(ng102,k1,t5): mu_PresMax(ng102,k1,t5) - mu_PresMin(ng102,k1,t5)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k1,t5,1,0)
@@ -38029,7 +38074,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t5,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t5,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t5,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t5) - muLB_pres(ng102,k1,t5)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t5) - muLB_pres(ng102,k1,t5)
    = 1
  dLag/pres(ng102,k2,t5): mu_PresMax(ng102,k2,t5) - mu_PresMin(ng102,k2,t5)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k2,t5,1,0)
@@ -38077,7 +38122,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t5,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t5,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t5,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t5) - muLB_pres(ng102,k2,t5)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t5) - muLB_pres(ng102,k2,t5)
    = 1
  dLag/pres(ng102,k0,t6): mu_PresMax(ng102,k0,t6) - mu_PresMin(ng102,k0,t6)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k0,t6,1,0)
@@ -38125,7 +38170,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t6,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t6,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t6,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t6) - muLB_pres(ng102,k0,t6)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t6) - muLB_pres(ng102,k0,t6)
    = 1
  dLag/pres(ng102,k1,t6): mu_PresMax(ng102,k1,t6) - mu_PresMin(ng102,k1,t6)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k1,t6,1,0)
@@ -38173,7 +38218,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t6,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t6,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t6,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t6) - muLB_pres(ng102,k1,t6)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t6) - muLB_pres(ng102,k1,t6)
    = 1
  dLag/pres(ng102,k2,t6): mu_PresMax(ng102,k2,t6) - mu_PresMin(ng102,k2,t6)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k2,t6,1,0)
@@ -38221,7 +38266,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t6,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t6,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t6,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t6) - muLB_pres(ng102,k2,t6)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t6) - muLB_pres(ng102,k2,t6)
    = 1
  dLag/pres(ng102,k0,t7): mu_PresMax(ng102,k0,t7) - mu_PresMin(ng102,k0,t7)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k0,t7,1,0)
@@ -38269,7 +38314,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t7,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t7,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t7,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t7) - muLB_pres(ng102,k0,t7)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t7) - muLB_pres(ng102,k0,t7)
    = 1
  dLag/pres(ng102,k1,t7): mu_PresMax(ng102,k1,t7) - mu_PresMin(ng102,k1,t7)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k1,t7,1,0)
@@ -38317,7 +38362,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t7,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t7,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t7,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t7) - muLB_pres(ng102,k1,t7)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t7) - muLB_pres(ng102,k1,t7)
    = 1
  dLag/pres(ng102,k2,t7): mu_PresMax(ng102,k2,t7) - mu_PresMin(ng102,k2,t7)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k2,t7,1,0)
@@ -38365,7 +38410,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t7,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t7,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t7,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t7) - muLB_pres(ng102,k2,t7)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t7) - muLB_pres(ng102,k2,t7)
    = 1
  dLag/pres(ng102,k0,t8): mu_PresMax(ng102,k0,t8) - mu_PresMin(ng102,k0,t8)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k0,t8,1,0)
@@ -38413,7 +38458,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t8,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t8,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t8,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t8) - muLB_pres(ng102,k0,t8)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t8) - muLB_pres(ng102,k0,t8)
    = 1
  dLag/pres(ng102,k1,t8): mu_PresMax(ng102,k1,t8) - mu_PresMin(ng102,k1,t8)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k1,t8,1,0)
@@ -38461,7 +38506,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t8,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t8,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t8,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t8) - muLB_pres(ng102,k1,t8)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t8) - muLB_pres(ng102,k1,t8)
    = 1
  dLag/pres(ng102,k2,t8): mu_PresMax(ng102,k2,t8) - mu_PresMin(ng102,k2,t8)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k2,t8,1,0)
@@ -38509,7 +38554,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t8,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t8,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t8,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t8) - muLB_pres(ng102,k2,t8)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t8) - muLB_pres(ng102,k2,t8)
    = 1
  dLag/pres(ng102,k0,t9): mu_PresMax(ng102,k0,t9) - mu_PresMin(ng102,k0,t9)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k0,t9,1,0)
@@ -38557,7 +38602,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t9,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t9,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t9,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t9) - muLB_pres(ng102,k0,t9)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t9) - muLB_pres(ng102,k0,t9)
    = 1
  dLag/pres(ng102,k1,t9): mu_PresMax(ng102,k1,t9) - mu_PresMin(ng102,k1,t9)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k1,t9,1,0)
@@ -38605,7 +38650,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t9,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t9,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t9,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t9) - muLB_pres(ng102,k1,t9)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t9) - muLB_pres(ng102,k1,t9)
    = 1
  dLag/pres(ng102,k2,t9): mu_PresMax(ng102,k2,t9) - mu_PresMin(ng102,k2,t9)
    + 112.2317178455628 mu_gflow_sr_lim(('ng101','ng102'),k2,t9,1,0)
@@ -38653,7 +38698,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t9,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t9,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t9,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t9) - muLB_pres(ng102,k2,t9)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t9) - muLB_pres(ng102,k2,t9)
    = 1
  dLag/pres(ng102,k0,t10): mu_PresMax(ng102,k0,t10)
    - mu_PresMin(ng102,k0,t10)
@@ -38702,7 +38747,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t10,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t10,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t10,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t10)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t10)
    - muLB_pres(ng102,k0,t10) = 1
  dLag/pres(ng102,k1,t10): mu_PresMax(ng102,k1,t10)
    - mu_PresMin(ng102,k1,t10)
@@ -38751,7 +38796,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t10,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t10,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t10,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t10)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t10)
    - muLB_pres(ng102,k1,t10) = 1
  dLag/pres(ng102,k2,t10): mu_PresMax(ng102,k2,t10)
    - mu_PresMin(ng102,k2,t10)
@@ -38800,7 +38845,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t10,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t10,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t10,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t10)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t10)
    - muLB_pres(ng102,k2,t10) = 1
  dLag/pres(ng102,k0,t11): mu_PresMax(ng102,k0,t11)
    - mu_PresMin(ng102,k0,t11)
@@ -38849,7 +38894,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t11,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t11,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t11,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t11)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t11)
    - muLB_pres(ng102,k0,t11) = 1
  dLag/pres(ng102,k1,t11): mu_PresMax(ng102,k1,t11)
    - mu_PresMin(ng102,k1,t11)
@@ -38898,7 +38943,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t11,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t11,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t11,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t11)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t11)
    - muLB_pres(ng102,k1,t11) = 1
  dLag/pres(ng102,k2,t11): mu_PresMax(ng102,k2,t11)
    - mu_PresMin(ng102,k2,t11)
@@ -38947,7 +38992,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t11,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t11,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t11,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t11)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t11)
    - muLB_pres(ng102,k2,t11) = 1
  dLag/pres(ng102,k0,t12): mu_PresMax(ng102,k0,t12)
    - mu_PresMin(ng102,k0,t12)
@@ -38996,7 +39041,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t12,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t12,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t12,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t12)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t12)
    - muLB_pres(ng102,k0,t12) = 1
  dLag/pres(ng102,k1,t12): mu_PresMax(ng102,k1,t12)
    - mu_PresMin(ng102,k1,t12)
@@ -39045,7 +39090,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t12,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t12,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t12,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t12)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t12)
    - muLB_pres(ng102,k1,t12) = 1
  dLag/pres(ng102,k2,t12): mu_PresMax(ng102,k2,t12)
    - mu_PresMin(ng102,k2,t12)
@@ -39094,7 +39139,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t12,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t12,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t12,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t12)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t12)
    - muLB_pres(ng102,k2,t12) = 1
  dLag/pres(ng102,k0,t13): mu_PresMax(ng102,k0,t13)
    - mu_PresMin(ng102,k0,t13)
@@ -39143,7 +39188,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t13,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t13,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t13,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t13)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t13)
    - muLB_pres(ng102,k0,t13) = 1
  dLag/pres(ng102,k1,t13): mu_PresMax(ng102,k1,t13)
    - mu_PresMin(ng102,k1,t13)
@@ -39192,7 +39237,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t13,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t13,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t13,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t13)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t13)
    - muLB_pres(ng102,k1,t13) = 1
  dLag/pres(ng102,k2,t13): mu_PresMax(ng102,k2,t13)
    - mu_PresMin(ng102,k2,t13)
@@ -39241,7 +39286,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t13,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t13,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t13,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t13)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t13)
    - muLB_pres(ng102,k2,t13) = 1
  dLag/pres(ng102,k0,t14): mu_PresMax(ng102,k0,t14)
    - mu_PresMin(ng102,k0,t14)
@@ -39290,7 +39335,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t14,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t14,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t14,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t14)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t14)
    - muLB_pres(ng102,k0,t14) = 1
  dLag/pres(ng102,k1,t14): mu_PresMax(ng102,k1,t14)
    - mu_PresMin(ng102,k1,t14)
@@ -39339,7 +39384,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t14,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t14,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t14,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t14)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t14)
    - muLB_pres(ng102,k1,t14) = 1
  dLag/pres(ng102,k2,t14): mu_PresMax(ng102,k2,t14)
    - mu_PresMin(ng102,k2,t14)
@@ -39388,7 +39433,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t14,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t14,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t14,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t14)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t14)
    - muLB_pres(ng102,k2,t14) = 1
  dLag/pres(ng102,k0,t15): mu_PresMax(ng102,k0,t15)
    - mu_PresMin(ng102,k0,t15)
@@ -39437,7 +39482,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t15,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t15,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t15,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t15)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t15)
    - muLB_pres(ng102,k0,t15) = 1
  dLag/pres(ng102,k1,t15): mu_PresMax(ng102,k1,t15)
    - mu_PresMin(ng102,k1,t15)
@@ -39486,7 +39531,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t15,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t15,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t15,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t15)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t15)
    - muLB_pres(ng102,k1,t15) = 1
  dLag/pres(ng102,k2,t15): mu_PresMax(ng102,k2,t15)
    - mu_PresMin(ng102,k2,t15)
@@ -39535,7 +39580,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t15,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t15,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t15,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t15)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t15)
    - muLB_pres(ng102,k2,t15) = 1
  dLag/pres(ng102,k0,t16): mu_PresMax(ng102,k0,t16)
    - mu_PresMin(ng102,k0,t16)
@@ -39584,7 +39629,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t16,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t16,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t16,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t16)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t16)
    - muLB_pres(ng102,k0,t16) = 1
  dLag/pres(ng102,k1,t16): mu_PresMax(ng102,k1,t16)
    - mu_PresMin(ng102,k1,t16)
@@ -39633,7 +39678,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t16,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t16,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t16,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t16)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t16)
    - muLB_pres(ng102,k1,t16) = 1
  dLag/pres(ng102,k2,t16): mu_PresMax(ng102,k2,t16)
    - mu_PresMin(ng102,k2,t16)
@@ -39682,7 +39727,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t16,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t16,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t16,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t16)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t16)
    - muLB_pres(ng102,k2,t16) = 1
  dLag/pres(ng102,k0,t17): mu_PresMax(ng102,k0,t17)
    - mu_PresMin(ng102,k0,t17)
@@ -39731,7 +39776,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t17,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t17,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t17,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t17)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t17)
    - muLB_pres(ng102,k0,t17) = 1
  dLag/pres(ng102,k1,t17): mu_PresMax(ng102,k1,t17)
    - mu_PresMin(ng102,k1,t17)
@@ -39780,7 +39825,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t17,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t17,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t17,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t17)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t17)
    - muLB_pres(ng102,k1,t17) = 1
  dLag/pres(ng102,k2,t17): mu_PresMax(ng102,k2,t17)
    - mu_PresMin(ng102,k2,t17)
@@ -39829,7 +39874,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t17,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t17,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t17,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t17)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t17)
    - muLB_pres(ng102,k2,t17) = 1
  dLag/pres(ng102,k0,t18): mu_PresMax(ng102,k0,t18)
    - mu_PresMin(ng102,k0,t18)
@@ -39878,7 +39923,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t18,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t18,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t18,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t18)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t18)
    - muLB_pres(ng102,k0,t18) = 1
  dLag/pres(ng102,k1,t18): mu_PresMax(ng102,k1,t18)
    - mu_PresMin(ng102,k1,t18)
@@ -39927,7 +39972,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t18,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t18,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t18,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t18)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t18)
    - muLB_pres(ng102,k1,t18) = 1
  dLag/pres(ng102,k2,t18): mu_PresMax(ng102,k2,t18)
    - mu_PresMin(ng102,k2,t18)
@@ -39976,7 +40021,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t18,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t18,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t18,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t18)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t18)
    - muLB_pres(ng102,k2,t18) = 1
  dLag/pres(ng102,k0,t19): mu_PresMax(ng102,k0,t19)
    - mu_PresMin(ng102,k0,t19)
@@ -40025,7 +40070,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t19,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t19,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t19,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t19)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t19)
    - muLB_pres(ng102,k0,t19) = 1
  dLag/pres(ng102,k1,t19): mu_PresMax(ng102,k1,t19)
    - mu_PresMin(ng102,k1,t19)
@@ -40074,7 +40119,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t19,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t19,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t19,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t19)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t19)
    - muLB_pres(ng102,k1,t19) = 1
  dLag/pres(ng102,k2,t19): mu_PresMax(ng102,k2,t19)
    - mu_PresMin(ng102,k2,t19)
@@ -40123,7 +40168,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t19,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t19,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t19,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t19)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t19)
    - muLB_pres(ng102,k2,t19) = 1
  dLag/pres(ng102,k0,t20): mu_PresMax(ng102,k0,t20)
    - mu_PresMin(ng102,k0,t20)
@@ -40172,7 +40217,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t20,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t20,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t20,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t20)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t20)
    - muLB_pres(ng102,k0,t20) = 1
  dLag/pres(ng102,k1,t20): mu_PresMax(ng102,k1,t20)
    - mu_PresMin(ng102,k1,t20)
@@ -40221,7 +40266,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t20,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t20,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t20,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t20)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t20)
    - muLB_pres(ng102,k1,t20) = 1
  dLag/pres(ng102,k2,t20): mu_PresMax(ng102,k2,t20)
    - mu_PresMin(ng102,k2,t20)
@@ -40270,7 +40315,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t20,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t20,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t20,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t20)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t20)
    - muLB_pres(ng102,k2,t20) = 1
  dLag/pres(ng102,k0,t21): mu_PresMax(ng102,k0,t21)
    - mu_PresMin(ng102,k0,t21)
@@ -40319,7 +40364,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t21,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t21,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t21,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t21)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t21)
    - muLB_pres(ng102,k0,t21) = 1
  dLag/pres(ng102,k1,t21): mu_PresMax(ng102,k1,t21)
    - mu_PresMin(ng102,k1,t21)
@@ -40368,7 +40413,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t21,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t21,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t21,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t21)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t21)
    - muLB_pres(ng102,k1,t21) = 1
  dLag/pres(ng102,k2,t21): mu_PresMax(ng102,k2,t21)
    - mu_PresMin(ng102,k2,t21)
@@ -40417,7 +40462,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t21,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t21,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t21,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t21)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t21)
    - muLB_pres(ng102,k2,t21) = 1
  dLag/pres(ng102,k0,t22): mu_PresMax(ng102,k0,t22)
    - mu_PresMin(ng102,k0,t22)
@@ -40466,7 +40511,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t22,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t22,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t22,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t22)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t22)
    - muLB_pres(ng102,k0,t22) = 1
  dLag/pres(ng102,k1,t22): mu_PresMax(ng102,k1,t22)
    - mu_PresMin(ng102,k1,t22)
@@ -40515,7 +40560,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t22,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t22,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t22,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t22)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t22)
    - muLB_pres(ng102,k1,t22) = 1
  dLag/pres(ng102,k2,t22): mu_PresMax(ng102,k2,t22)
    - mu_PresMin(ng102,k2,t22)
@@ -40564,7 +40609,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t22,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t22,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t22,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t22)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t22)
    - muLB_pres(ng102,k2,t22) = 1
  dLag/pres(ng102,k0,t23): mu_PresMax(ng102,k0,t23)
    - mu_PresMin(ng102,k0,t23)
@@ -40613,7 +40658,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t23,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t23,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t23,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t23)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t23)
    - muLB_pres(ng102,k0,t23) = 1
  dLag/pres(ng102,k1,t23): mu_PresMax(ng102,k1,t23)
    - mu_PresMin(ng102,k1,t23)
@@ -40662,7 +40707,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t23,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t23,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t23,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t23)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t23)
    - muLB_pres(ng102,k1,t23) = 1
  dLag/pres(ng102,k2,t23): mu_PresMax(ng102,k2,t23)
    - mu_PresMin(ng102,k2,t23)
@@ -40711,7 +40756,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t23,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t23,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t23,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t23)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t23)
    - muLB_pres(ng102,k2,t23) = 1
  dLag/pres(ng102,k0,t24): mu_PresMax(ng102,k0,t24)
    - mu_PresMin(ng102,k0,t24)
@@ -40760,7 +40805,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k0,t24,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k0,t24,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k0,t24,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k0,t24)
+   + 75 lambda_lpack_def(('ng101','ng102'),k0,t24)
    - muLB_pres(ng102,k0,t24) = 1
  dLag/pres(ng102,k1,t24): mu_PresMax(ng102,k1,t24)
    - mu_PresMin(ng102,k1,t24)
@@ -40809,7 +40854,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k1,t24,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k1,t24,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k1,t24,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k1,t24)
+   + 75 lambda_lpack_def(('ng101','ng102'),k1,t24)
    - muLB_pres(ng102,k1,t24) = 1
  dLag/pres(ng102,k2,t24): mu_PresMax(ng102,k2,t24)
    - mu_PresMin(ng102,k2,t24)
@@ -40858,7 +40903,7 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_lim(('ng101','ng102'),k2,t24,9,6)
    + 87.03634077432606 mu_gflow_sr_lim(('ng101','ng102'),k2,t24,9,7)
    + 125.4248100605433 mu_gflow_sr_lim(('ng101','ng102'),k2,t24,9,8)
-   - 75 lambda_lpack_def(('ng101','ng102'),k2,t24)
+   + 75 lambda_lpack_def(('ng101','ng102'),k2,t24)
    - muLB_pres(ng102,k2,t24) = 1
  dLag/gflow_sr(('ng101','ng102'),k0,t1):
    mu_gflow_sr_log(('ng101','ng102'),k0,t1)
@@ -40907,7 +40952,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t1,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t1,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t1,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t1)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t1)
    - muLB_gflow_sr(('ng101','ng102'),k0,t1) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t1):
    mu_gflow_sr_log(('ng101','ng102'),k1,t1)
@@ -40956,7 +41001,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t1,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t1,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t1,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t1)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t1)
    - muLB_gflow_sr(('ng101','ng102'),k1,t1) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t1):
    mu_gflow_sr_log(('ng101','ng102'),k2,t1)
@@ -41005,7 +41050,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t1,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t1,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t1,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t1)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t1)
    - muLB_gflow_sr(('ng101','ng102'),k2,t1) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t2):
    mu_gflow_sr_log(('ng101','ng102'),k0,t2)
@@ -41054,7 +41099,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t2,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t2,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t2,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t2)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t2)
    - muLB_gflow_sr(('ng101','ng102'),k0,t2) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t2):
    mu_gflow_sr_log(('ng101','ng102'),k1,t2)
@@ -41103,7 +41148,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t2,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t2,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t2,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t2)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t2)
    - muLB_gflow_sr(('ng101','ng102'),k1,t2) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t2):
    mu_gflow_sr_log(('ng101','ng102'),k2,t2)
@@ -41152,7 +41197,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t2,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t2,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t2,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t2)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t2)
    - muLB_gflow_sr(('ng101','ng102'),k2,t2) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t3):
    mu_gflow_sr_log(('ng101','ng102'),k0,t3)
@@ -41201,7 +41246,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t3,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t3,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t3,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t3)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t3)
    - muLB_gflow_sr(('ng101','ng102'),k0,t3) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t3):
    mu_gflow_sr_log(('ng101','ng102'),k1,t3)
@@ -41250,7 +41295,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t3,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t3,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t3,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t3)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t3)
    - muLB_gflow_sr(('ng101','ng102'),k1,t3) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t3):
    mu_gflow_sr_log(('ng101','ng102'),k2,t3)
@@ -41299,7 +41344,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t3,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t3,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t3,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t3)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t3)
    - muLB_gflow_sr(('ng101','ng102'),k2,t3) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t4):
    mu_gflow_sr_log(('ng101','ng102'),k0,t4)
@@ -41348,7 +41393,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t4,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t4,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t4,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t4)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t4)
    - muLB_gflow_sr(('ng101','ng102'),k0,t4) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t4):
    mu_gflow_sr_log(('ng101','ng102'),k1,t4)
@@ -41397,7 +41442,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t4,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t4,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t4,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t4)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t4)
    - muLB_gflow_sr(('ng101','ng102'),k1,t4) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t4):
    mu_gflow_sr_log(('ng101','ng102'),k2,t4)
@@ -41446,7 +41491,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t4,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t4,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t4,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t4)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t4)
    - muLB_gflow_sr(('ng101','ng102'),k2,t4) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t5):
    mu_gflow_sr_log(('ng101','ng102'),k0,t5)
@@ -41495,7 +41540,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t5,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t5,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t5,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t5)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t5)
    - muLB_gflow_sr(('ng101','ng102'),k0,t5) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t5):
    mu_gflow_sr_log(('ng101','ng102'),k1,t5)
@@ -41544,7 +41589,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t5,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t5,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t5,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t5)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t5)
    - muLB_gflow_sr(('ng101','ng102'),k1,t5) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t5):
    mu_gflow_sr_log(('ng101','ng102'),k2,t5)
@@ -41593,7 +41638,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t5,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t5,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t5,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t5)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t5)
    - muLB_gflow_sr(('ng101','ng102'),k2,t5) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t6):
    mu_gflow_sr_log(('ng101','ng102'),k0,t6)
@@ -41642,7 +41687,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t6,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t6,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t6,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t6)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t6)
    - muLB_gflow_sr(('ng101','ng102'),k0,t6) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t6):
    mu_gflow_sr_log(('ng101','ng102'),k1,t6)
@@ -41691,7 +41736,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t6,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t6,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t6,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t6)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t6)
    - muLB_gflow_sr(('ng101','ng102'),k1,t6) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t6):
    mu_gflow_sr_log(('ng101','ng102'),k2,t6)
@@ -41740,7 +41785,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t6,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t6,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t6,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t6)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t6)
    - muLB_gflow_sr(('ng101','ng102'),k2,t6) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t7):
    mu_gflow_sr_log(('ng101','ng102'),k0,t7)
@@ -41789,7 +41834,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t7,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t7,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t7,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t7)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t7)
    - muLB_gflow_sr(('ng101','ng102'),k0,t7) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t7):
    mu_gflow_sr_log(('ng101','ng102'),k1,t7)
@@ -41838,7 +41883,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t7,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t7,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t7,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t7)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t7)
    - muLB_gflow_sr(('ng101','ng102'),k1,t7) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t7):
    mu_gflow_sr_log(('ng101','ng102'),k2,t7)
@@ -41887,7 +41932,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t7,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t7,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t7,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t7)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t7)
    - muLB_gflow_sr(('ng101','ng102'),k2,t7) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t8):
    mu_gflow_sr_log(('ng101','ng102'),k0,t8)
@@ -41936,7 +41981,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t8,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t8,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t8,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t8)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t8)
    - muLB_gflow_sr(('ng101','ng102'),k0,t8) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t8):
    mu_gflow_sr_log(('ng101','ng102'),k1,t8)
@@ -41985,7 +42030,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t8,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t8,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t8,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t8)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t8)
    - muLB_gflow_sr(('ng101','ng102'),k1,t8) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t8):
    mu_gflow_sr_log(('ng101','ng102'),k2,t8)
@@ -42034,7 +42079,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t8,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t8,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t8,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t8)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t8)
    - muLB_gflow_sr(('ng101','ng102'),k2,t8) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t9):
    mu_gflow_sr_log(('ng101','ng102'),k0,t9)
@@ -42083,7 +42128,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t9,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t9,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t9,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t9)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t9)
    - muLB_gflow_sr(('ng101','ng102'),k0,t9) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t9):
    mu_gflow_sr_log(('ng101','ng102'),k1,t9)
@@ -42132,7 +42177,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t9,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t9,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t9,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t9)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t9)
    - muLB_gflow_sr(('ng101','ng102'),k1,t9) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t9):
    mu_gflow_sr_log(('ng101','ng102'),k2,t9)
@@ -42181,7 +42226,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t9,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t9,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t9,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t9)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t9)
    - muLB_gflow_sr(('ng101','ng102'),k2,t9) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t10):
    mu_gflow_sr_log(('ng101','ng102'),k0,t10)
@@ -42230,7 +42275,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t10,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t10,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t10,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t10)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t10)
    - muLB_gflow_sr(('ng101','ng102'),k0,t10) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t10):
    mu_gflow_sr_log(('ng101','ng102'),k1,t10)
@@ -42279,7 +42324,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t10,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t10,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t10,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t10)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t10)
    - muLB_gflow_sr(('ng101','ng102'),k1,t10) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t10):
    mu_gflow_sr_log(('ng101','ng102'),k2,t10)
@@ -42328,7 +42373,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t10,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t10,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t10,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t10)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t10)
    - muLB_gflow_sr(('ng101','ng102'),k2,t10) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t11):
    mu_gflow_sr_log(('ng101','ng102'),k0,t11)
@@ -42377,7 +42422,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t11,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t11,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t11,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t11)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t11)
    - muLB_gflow_sr(('ng101','ng102'),k0,t11) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t11):
    mu_gflow_sr_log(('ng101','ng102'),k1,t11)
@@ -42426,7 +42471,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t11,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t11,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t11,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t11)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t11)
    - muLB_gflow_sr(('ng101','ng102'),k1,t11) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t11):
    mu_gflow_sr_log(('ng101','ng102'),k2,t11)
@@ -42475,7 +42520,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t11,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t11,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t11,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t11)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t11)
    - muLB_gflow_sr(('ng101','ng102'),k2,t11) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t12):
    mu_gflow_sr_log(('ng101','ng102'),k0,t12)
@@ -42524,7 +42569,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t12,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t12,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t12,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t12)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t12)
    - muLB_gflow_sr(('ng101','ng102'),k0,t12) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t12):
    mu_gflow_sr_log(('ng101','ng102'),k1,t12)
@@ -42573,7 +42618,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t12,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t12,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t12,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t12)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t12)
    - muLB_gflow_sr(('ng101','ng102'),k1,t12) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t12):
    mu_gflow_sr_log(('ng101','ng102'),k2,t12)
@@ -42622,7 +42667,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t12,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t12,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t12,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t12)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t12)
    - muLB_gflow_sr(('ng101','ng102'),k2,t12) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t13):
    mu_gflow_sr_log(('ng101','ng102'),k0,t13)
@@ -42671,7 +42716,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t13,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t13,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t13,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t13)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t13)
    - muLB_gflow_sr(('ng101','ng102'),k0,t13) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t13):
    mu_gflow_sr_log(('ng101','ng102'),k1,t13)
@@ -42720,7 +42765,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t13,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t13,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t13,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t13)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t13)
    - muLB_gflow_sr(('ng101','ng102'),k1,t13) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t13):
    mu_gflow_sr_log(('ng101','ng102'),k2,t13)
@@ -42769,7 +42814,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t13,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t13,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t13,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t13)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t13)
    - muLB_gflow_sr(('ng101','ng102'),k2,t13) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t14):
    mu_gflow_sr_log(('ng101','ng102'),k0,t14)
@@ -42818,7 +42863,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t14,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t14,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t14,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t14)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t14)
    - muLB_gflow_sr(('ng101','ng102'),k0,t14) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t14):
    mu_gflow_sr_log(('ng101','ng102'),k1,t14)
@@ -42867,7 +42912,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t14,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t14,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t14,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t14)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t14)
    - muLB_gflow_sr(('ng101','ng102'),k1,t14) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t14):
    mu_gflow_sr_log(('ng101','ng102'),k2,t14)
@@ -42916,7 +42961,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t14,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t14,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t14,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t14)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t14)
    - muLB_gflow_sr(('ng101','ng102'),k2,t14) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t15):
    mu_gflow_sr_log(('ng101','ng102'),k0,t15)
@@ -42965,7 +43010,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t15,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t15,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t15,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t15)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t15)
    - muLB_gflow_sr(('ng101','ng102'),k0,t15) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t15):
    mu_gflow_sr_log(('ng101','ng102'),k1,t15)
@@ -43014,7 +43059,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t15,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t15,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t15,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t15)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t15)
    - muLB_gflow_sr(('ng101','ng102'),k1,t15) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t15):
    mu_gflow_sr_log(('ng101','ng102'),k2,t15)
@@ -43063,7 +43108,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t15,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t15,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t15,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t15)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t15)
    - muLB_gflow_sr(('ng101','ng102'),k2,t15) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t16):
    mu_gflow_sr_log(('ng101','ng102'),k0,t16)
@@ -43112,7 +43157,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t16,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t16,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t16,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t16)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t16)
    - muLB_gflow_sr(('ng101','ng102'),k0,t16) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t16):
    mu_gflow_sr_log(('ng101','ng102'),k1,t16)
@@ -43161,7 +43206,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t16,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t16,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t16,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t16)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t16)
    - muLB_gflow_sr(('ng101','ng102'),k1,t16) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t16):
    mu_gflow_sr_log(('ng101','ng102'),k2,t16)
@@ -43210,7 +43255,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t16,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t16,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t16,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t16)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t16)
    - muLB_gflow_sr(('ng101','ng102'),k2,t16) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t17):
    mu_gflow_sr_log(('ng101','ng102'),k0,t17)
@@ -43259,7 +43304,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t17,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t17,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t17,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t17)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t17)
    - muLB_gflow_sr(('ng101','ng102'),k0,t17) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t17):
    mu_gflow_sr_log(('ng101','ng102'),k1,t17)
@@ -43308,7 +43353,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t17,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t17,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t17,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t17)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t17)
    - muLB_gflow_sr(('ng101','ng102'),k1,t17) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t17):
    mu_gflow_sr_log(('ng101','ng102'),k2,t17)
@@ -43357,7 +43402,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t17,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t17,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t17,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t17)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t17)
    - muLB_gflow_sr(('ng101','ng102'),k2,t17) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t18):
    mu_gflow_sr_log(('ng101','ng102'),k0,t18)
@@ -43406,7 +43451,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t18,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t18,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t18,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t18)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t18)
    - muLB_gflow_sr(('ng101','ng102'),k0,t18) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t18):
    mu_gflow_sr_log(('ng101','ng102'),k1,t18)
@@ -43455,7 +43500,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t18,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t18,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t18,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t18)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t18)
    - muLB_gflow_sr(('ng101','ng102'),k1,t18) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t18):
    mu_gflow_sr_log(('ng101','ng102'),k2,t18)
@@ -43504,7 +43549,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t18,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t18,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t18,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t18)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t18)
    - muLB_gflow_sr(('ng101','ng102'),k2,t18) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t19):
    mu_gflow_sr_log(('ng101','ng102'),k0,t19)
@@ -43553,7 +43598,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t19,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t19,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t19,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t19)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t19)
    - muLB_gflow_sr(('ng101','ng102'),k0,t19) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t19):
    mu_gflow_sr_log(('ng101','ng102'),k1,t19)
@@ -43602,7 +43647,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t19,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t19,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t19,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t19)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t19)
    - muLB_gflow_sr(('ng101','ng102'),k1,t19) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t19):
    mu_gflow_sr_log(('ng101','ng102'),k2,t19)
@@ -43651,7 +43696,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t19,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t19,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t19,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t19)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t19)
    - muLB_gflow_sr(('ng101','ng102'),k2,t19) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t20):
    mu_gflow_sr_log(('ng101','ng102'),k0,t20)
@@ -43700,7 +43745,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t20,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t20,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t20,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t20)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t20)
    - muLB_gflow_sr(('ng101','ng102'),k0,t20) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t20):
    mu_gflow_sr_log(('ng101','ng102'),k1,t20)
@@ -43749,7 +43794,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t20,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t20,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t20,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t20)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t20)
    - muLB_gflow_sr(('ng101','ng102'),k1,t20) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t20):
    mu_gflow_sr_log(('ng101','ng102'),k2,t20)
@@ -43798,7 +43843,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t20,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t20,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t20,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t20)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t20)
    - muLB_gflow_sr(('ng101','ng102'),k2,t20) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t21):
    mu_gflow_sr_log(('ng101','ng102'),k0,t21)
@@ -43847,7 +43892,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t21,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t21,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t21,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t21)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t21)
    - muLB_gflow_sr(('ng101','ng102'),k0,t21) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t21):
    mu_gflow_sr_log(('ng101','ng102'),k1,t21)
@@ -43896,7 +43941,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t21,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t21,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t21,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t21)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t21)
    - muLB_gflow_sr(('ng101','ng102'),k1,t21) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t21):
    mu_gflow_sr_log(('ng101','ng102'),k2,t21)
@@ -43945,7 +43990,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t21,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t21,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t21,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t21)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t21)
    - muLB_gflow_sr(('ng101','ng102'),k2,t21) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t22):
    mu_gflow_sr_log(('ng101','ng102'),k0,t22)
@@ -43994,7 +44039,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t22,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t22,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t22,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t22)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t22)
    - muLB_gflow_sr(('ng101','ng102'),k0,t22) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t22):
    mu_gflow_sr_log(('ng101','ng102'),k1,t22)
@@ -44043,7 +44088,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t22,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t22,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t22,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t22)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t22)
    - muLB_gflow_sr(('ng101','ng102'),k1,t22) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t22):
    mu_gflow_sr_log(('ng101','ng102'),k2,t22)
@@ -44092,7 +44137,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t22,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t22,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t22,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t22)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t22)
    - muLB_gflow_sr(('ng101','ng102'),k2,t22) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t23):
    mu_gflow_sr_log(('ng101','ng102'),k0,t23)
@@ -44141,7 +44186,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t23,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t23,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t23,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t23)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t23)
    - muLB_gflow_sr(('ng101','ng102'),k0,t23) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t23):
    mu_gflow_sr_log(('ng101','ng102'),k1,t23)
@@ -44190,7 +44235,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t23,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t23,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t23,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t23)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t23)
    - muLB_gflow_sr(('ng101','ng102'),k1,t23) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t23):
    mu_gflow_sr_log(('ng101','ng102'),k2,t23)
@@ -44239,7 +44284,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t23,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t23,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t23,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t23)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t23)
    - muLB_gflow_sr(('ng101','ng102'),k2,t23) = 0
  dLag/gflow_sr(('ng101','ng102'),k0,t24):
    mu_gflow_sr_log(('ng101','ng102'),k0,t24)
@@ -44288,7 +44333,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t24,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t24,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k0,t24,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k0,t24)
+   - lambda_gflow_sr_io(('ng101','ng102'),k0,t24)
    - muLB_gflow_sr(('ng101','ng102'),k0,t24) = 0
  dLag/gflow_sr(('ng101','ng102'),k1,t24):
    mu_gflow_sr_log(('ng101','ng102'),k1,t24)
@@ -44337,7 +44382,7 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t24,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t24,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k1,t24,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k1,t24)
+   - lambda_gflow_sr_io(('ng101','ng102'),k1,t24)
    - muLB_gflow_sr(('ng101','ng102'),k1,t24) = 0
  dLag/gflow_sr(('ng101','ng102'),k2,t24):
    mu_gflow_sr_log(('ng101','ng102'),k2,t24)
@@ -44386,1846 +44431,1846 @@ Subject To
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t24,9,6)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t24,9,7)
    + mu_gflow_sr_lim(('ng101','ng102'),k2,t24,9,8)
-   + lambda_gflow_sr_io(('ng101','ng102'),k2,t24)
+   - lambda_gflow_sr_io(('ng101','ng102'),k2,t24)
    - muLB_gflow_sr(('ng101','ng102'),k2,t24) = 0
  dLag/lpack(('ng101','ng102'),k0,t1):
-   lambda_lpack_def(('ng101','ng102'),k0,t1)
-   - lambda_line_store(('ng101','ng102'),k0,t2)
-   + lambda_line_store(('ng101','ng102'),k0,t1)
-   - lambda_line_store(('ng101','ng102'),k1,t2)
-   - lambda_line_store(('ng101','ng102'),k2,t2)
+   - lambda_lpack_def(('ng101','ng102'),k0,t1)
+   + lambda_line_store(('ng101','ng102'),k0,t2)
+   - lambda_line_store(('ng101','ng102'),k0,t1)
+   + lambda_line_store(('ng101','ng102'),k1,t2)
+   + lambda_line_store(('ng101','ng102'),k2,t2)
    - muLB_lpack(('ng101','ng102'),k0,t1) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t1):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t1)
-   - lambda_line_store(('ng101','ng102'),k0,t1)
-   - lambda_gas_balance(ng101,k0,t1) - muLB_qin_sr(('ng101','ng102'),k0,t1)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t1)
+   + lambda_line_store(('ng101','ng102'),k0,t1)
+   + lambda_gas_balance(ng101,k0,t1) - muLB_qin_sr(('ng101','ng102'),k0,t1)
    = 0
  dLag/qout_sr(('ng101','ng102'),k0,t1):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t1)
-   + lambda_line_store(('ng101','ng102'),k0,t1)
-   + lambda_gas_balance(ng102,k0,t1)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t1)
+   - lambda_line_store(('ng101','ng102'),k0,t1)
+   - lambda_gas_balance(ng102,k0,t1)
    - muLB_qout_sr(('ng101','ng102'),k0,t1) = 0
  dLag/lpack(('ng101','ng102'),k1,t1):
-   lambda_lpack_def(('ng101','ng102'),k1,t1)
-   + lambda_line_store(('ng101','ng102'),k1,t1)
+   - lambda_lpack_def(('ng101','ng102'),k1,t1)
+   - lambda_line_store(('ng101','ng102'),k1,t1)
    - muLB_lpack(('ng101','ng102'),k1,t1) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t1):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t1)
-   - lambda_line_store(('ng101','ng102'),k1,t1)
-   - lambda_gas_balance(ng101,k1,t1) - muLB_qin_sr(('ng101','ng102'),k1,t1)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t1)
+   + lambda_line_store(('ng101','ng102'),k1,t1)
+   + lambda_gas_balance(ng101,k1,t1) - muLB_qin_sr(('ng101','ng102'),k1,t1)
    = 0
  dLag/qout_sr(('ng101','ng102'),k1,t1):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t1)
-   + lambda_line_store(('ng101','ng102'),k1,t1)
-   + lambda_gas_balance(ng102,k1,t1)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t1)
+   - lambda_line_store(('ng101','ng102'),k1,t1)
+   - lambda_gas_balance(ng102,k1,t1)
    - muLB_qout_sr(('ng101','ng102'),k1,t1) = 0
  dLag/lpack(('ng101','ng102'),k2,t1):
-   lambda_lpack_def(('ng101','ng102'),k2,t1)
-   + lambda_line_store(('ng101','ng102'),k2,t1)
+   - lambda_lpack_def(('ng101','ng102'),k2,t1)
+   - lambda_line_store(('ng101','ng102'),k2,t1)
    - muLB_lpack(('ng101','ng102'),k2,t1) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t1):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t1)
-   - lambda_line_store(('ng101','ng102'),k2,t1)
-   - lambda_gas_balance(ng101,k2,t1) - muLB_qin_sr(('ng101','ng102'),k2,t1)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t1)
+   + lambda_line_store(('ng101','ng102'),k2,t1)
+   + lambda_gas_balance(ng101,k2,t1) - muLB_qin_sr(('ng101','ng102'),k2,t1)
    = 0
  dLag/qout_sr(('ng101','ng102'),k2,t1):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t1)
-   + lambda_line_store(('ng101','ng102'),k2,t1)
-   + lambda_gas_balance(ng102,k2,t1)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t1)
+   - lambda_line_store(('ng101','ng102'),k2,t1)
+   - lambda_gas_balance(ng102,k2,t1)
    - muLB_qout_sr(('ng101','ng102'),k2,t1) = 0
  dLag/lpack(('ng101','ng102'),k0,t2):
-   lambda_lpack_def(('ng101','ng102'),k0,t2)
-   + lambda_line_store(('ng101','ng102'),k0,t2)
-   - lambda_line_store(('ng101','ng102'),k0,t3)
-   - lambda_line_store(('ng101','ng102'),k1,t3)
-   - lambda_line_store(('ng101','ng102'),k2,t3)
+   - lambda_lpack_def(('ng101','ng102'),k0,t2)
+   - lambda_line_store(('ng101','ng102'),k0,t2)
+   + lambda_line_store(('ng101','ng102'),k0,t3)
+   + lambda_line_store(('ng101','ng102'),k1,t3)
+   + lambda_line_store(('ng101','ng102'),k2,t3)
    - muLB_lpack(('ng101','ng102'),k0,t2) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t2):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t2)
-   - lambda_line_store(('ng101','ng102'),k0,t2)
-   - lambda_gas_balance(ng101,k0,t2) - muLB_qin_sr(('ng101','ng102'),k0,t2)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t2)
+   + lambda_line_store(('ng101','ng102'),k0,t2)
+   + lambda_gas_balance(ng101,k0,t2) - muLB_qin_sr(('ng101','ng102'),k0,t2)
    = 0
  dLag/qout_sr(('ng101','ng102'),k0,t2):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t2)
-   + lambda_line_store(('ng101','ng102'),k0,t2)
-   + lambda_gas_balance(ng102,k0,t2)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t2)
+   - lambda_line_store(('ng101','ng102'),k0,t2)
+   - lambda_gas_balance(ng102,k0,t2)
    - muLB_qout_sr(('ng101','ng102'),k0,t2) = 0
  dLag/lpack(('ng101','ng102'),k1,t2):
-   lambda_lpack_def(('ng101','ng102'),k1,t2)
-   + lambda_line_store(('ng101','ng102'),k1,t2)
+   - lambda_lpack_def(('ng101','ng102'),k1,t2)
+   - lambda_line_store(('ng101','ng102'),k1,t2)
    - muLB_lpack(('ng101','ng102'),k1,t2) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t2):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t2)
-   - lambda_line_store(('ng101','ng102'),k1,t2)
-   - lambda_gas_balance(ng101,k1,t2) - muLB_qin_sr(('ng101','ng102'),k1,t2)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t2)
+   + lambda_line_store(('ng101','ng102'),k1,t2)
+   + lambda_gas_balance(ng101,k1,t2) - muLB_qin_sr(('ng101','ng102'),k1,t2)
    = 0
  dLag/qout_sr(('ng101','ng102'),k1,t2):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t2)
-   + lambda_line_store(('ng101','ng102'),k1,t2)
-   + lambda_gas_balance(ng102,k1,t2)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t2)
+   - lambda_line_store(('ng101','ng102'),k1,t2)
+   - lambda_gas_balance(ng102,k1,t2)
    - muLB_qout_sr(('ng101','ng102'),k1,t2) = 0
  dLag/lpack(('ng101','ng102'),k2,t2):
-   lambda_lpack_def(('ng101','ng102'),k2,t2)
-   + lambda_line_store(('ng101','ng102'),k2,t2)
+   - lambda_lpack_def(('ng101','ng102'),k2,t2)
+   - lambda_line_store(('ng101','ng102'),k2,t2)
    - muLB_lpack(('ng101','ng102'),k2,t2) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t2):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t2)
-   - lambda_line_store(('ng101','ng102'),k2,t2)
-   - lambda_gas_balance(ng101,k2,t2) - muLB_qin_sr(('ng101','ng102'),k2,t2)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t2)
+   + lambda_line_store(('ng101','ng102'),k2,t2)
+   + lambda_gas_balance(ng101,k2,t2) - muLB_qin_sr(('ng101','ng102'),k2,t2)
    = 0
  dLag/qout_sr(('ng101','ng102'),k2,t2):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t2)
-   + lambda_line_store(('ng101','ng102'),k2,t2)
-   + lambda_gas_balance(ng102,k2,t2)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t2)
+   - lambda_line_store(('ng101','ng102'),k2,t2)
+   - lambda_gas_balance(ng102,k2,t2)
    - muLB_qout_sr(('ng101','ng102'),k2,t2) = 0
  dLag/lpack(('ng101','ng102'),k0,t3):
-   lambda_lpack_def(('ng101','ng102'),k0,t3)
-   + lambda_line_store(('ng101','ng102'),k0,t3)
-   - lambda_line_store(('ng101','ng102'),k0,t4)
-   - lambda_line_store(('ng101','ng102'),k1,t4)
-   - lambda_line_store(('ng101','ng102'),k2,t4)
+   - lambda_lpack_def(('ng101','ng102'),k0,t3)
+   - lambda_line_store(('ng101','ng102'),k0,t3)
+   + lambda_line_store(('ng101','ng102'),k0,t4)
+   + lambda_line_store(('ng101','ng102'),k1,t4)
+   + lambda_line_store(('ng101','ng102'),k2,t4)
    - muLB_lpack(('ng101','ng102'),k0,t3) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t3):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t3)
-   - lambda_line_store(('ng101','ng102'),k0,t3)
-   - lambda_gas_balance(ng101,k0,t3) - muLB_qin_sr(('ng101','ng102'),k0,t3)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t3)
+   + lambda_line_store(('ng101','ng102'),k0,t3)
+   + lambda_gas_balance(ng101,k0,t3) - muLB_qin_sr(('ng101','ng102'),k0,t3)
    = 0
  dLag/qout_sr(('ng101','ng102'),k0,t3):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t3)
-   + lambda_line_store(('ng101','ng102'),k0,t3)
-   + lambda_gas_balance(ng102,k0,t3)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t3)
+   - lambda_line_store(('ng101','ng102'),k0,t3)
+   - lambda_gas_balance(ng102,k0,t3)
    - muLB_qout_sr(('ng101','ng102'),k0,t3) = 0
  dLag/lpack(('ng101','ng102'),k1,t3):
-   lambda_lpack_def(('ng101','ng102'),k1,t3)
-   + lambda_line_store(('ng101','ng102'),k1,t3)
+   - lambda_lpack_def(('ng101','ng102'),k1,t3)
+   - lambda_line_store(('ng101','ng102'),k1,t3)
    - muLB_lpack(('ng101','ng102'),k1,t3) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t3):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t3)
-   - lambda_line_store(('ng101','ng102'),k1,t3)
-   - lambda_gas_balance(ng101,k1,t3) - muLB_qin_sr(('ng101','ng102'),k1,t3)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t3)
+   + lambda_line_store(('ng101','ng102'),k1,t3)
+   + lambda_gas_balance(ng101,k1,t3) - muLB_qin_sr(('ng101','ng102'),k1,t3)
    = 0
  dLag/qout_sr(('ng101','ng102'),k1,t3):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t3)
-   + lambda_line_store(('ng101','ng102'),k1,t3)
-   + lambda_gas_balance(ng102,k1,t3)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t3)
+   - lambda_line_store(('ng101','ng102'),k1,t3)
+   - lambda_gas_balance(ng102,k1,t3)
    - muLB_qout_sr(('ng101','ng102'),k1,t3) = 0
  dLag/lpack(('ng101','ng102'),k2,t3):
-   lambda_lpack_def(('ng101','ng102'),k2,t3)
-   + lambda_line_store(('ng101','ng102'),k2,t3)
+   - lambda_lpack_def(('ng101','ng102'),k2,t3)
+   - lambda_line_store(('ng101','ng102'),k2,t3)
    - muLB_lpack(('ng101','ng102'),k2,t3) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t3):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t3)
-   - lambda_line_store(('ng101','ng102'),k2,t3)
-   - lambda_gas_balance(ng101,k2,t3) - muLB_qin_sr(('ng101','ng102'),k2,t3)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t3)
+   + lambda_line_store(('ng101','ng102'),k2,t3)
+   + lambda_gas_balance(ng101,k2,t3) - muLB_qin_sr(('ng101','ng102'),k2,t3)
    = 0
  dLag/qout_sr(('ng101','ng102'),k2,t3):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t3)
-   + lambda_line_store(('ng101','ng102'),k2,t3)
-   + lambda_gas_balance(ng102,k2,t3)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t3)
+   - lambda_line_store(('ng101','ng102'),k2,t3)
+   - lambda_gas_balance(ng102,k2,t3)
    - muLB_qout_sr(('ng101','ng102'),k2,t3) = 0
  dLag/lpack(('ng101','ng102'),k0,t4):
-   lambda_lpack_def(('ng101','ng102'),k0,t4)
-   + lambda_line_store(('ng101','ng102'),k0,t4)
-   - lambda_line_store(('ng101','ng102'),k0,t5)
-   - lambda_line_store(('ng101','ng102'),k1,t5)
-   - lambda_line_store(('ng101','ng102'),k2,t5)
+   - lambda_lpack_def(('ng101','ng102'),k0,t4)
+   - lambda_line_store(('ng101','ng102'),k0,t4)
+   + lambda_line_store(('ng101','ng102'),k0,t5)
+   + lambda_line_store(('ng101','ng102'),k1,t5)
+   + lambda_line_store(('ng101','ng102'),k2,t5)
    - muLB_lpack(('ng101','ng102'),k0,t4) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t4):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t4)
-   - lambda_line_store(('ng101','ng102'),k0,t4)
-   - lambda_gas_balance(ng101,k0,t4) - muLB_qin_sr(('ng101','ng102'),k0,t4)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t4)
+   + lambda_line_store(('ng101','ng102'),k0,t4)
+   + lambda_gas_balance(ng101,k0,t4) - muLB_qin_sr(('ng101','ng102'),k0,t4)
    = 0
  dLag/qout_sr(('ng101','ng102'),k0,t4):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t4)
-   + lambda_line_store(('ng101','ng102'),k0,t4)
-   + lambda_gas_balance(ng102,k0,t4)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t4)
+   - lambda_line_store(('ng101','ng102'),k0,t4)
+   - lambda_gas_balance(ng102,k0,t4)
    - muLB_qout_sr(('ng101','ng102'),k0,t4) = 0
  dLag/lpack(('ng101','ng102'),k1,t4):
-   lambda_lpack_def(('ng101','ng102'),k1,t4)
-   + lambda_line_store(('ng101','ng102'),k1,t4)
+   - lambda_lpack_def(('ng101','ng102'),k1,t4)
+   - lambda_line_store(('ng101','ng102'),k1,t4)
    - muLB_lpack(('ng101','ng102'),k1,t4) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t4):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t4)
-   - lambda_line_store(('ng101','ng102'),k1,t4)
-   - lambda_gas_balance(ng101,k1,t4) - muLB_qin_sr(('ng101','ng102'),k1,t4)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t4)
+   + lambda_line_store(('ng101','ng102'),k1,t4)
+   + lambda_gas_balance(ng101,k1,t4) - muLB_qin_sr(('ng101','ng102'),k1,t4)
    = 0
  dLag/qout_sr(('ng101','ng102'),k1,t4):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t4)
-   + lambda_line_store(('ng101','ng102'),k1,t4)
-   + lambda_gas_balance(ng102,k1,t4)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t4)
+   - lambda_line_store(('ng101','ng102'),k1,t4)
+   - lambda_gas_balance(ng102,k1,t4)
    - muLB_qout_sr(('ng101','ng102'),k1,t4) = 0
  dLag/lpack(('ng101','ng102'),k2,t4):
-   lambda_lpack_def(('ng101','ng102'),k2,t4)
-   + lambda_line_store(('ng101','ng102'),k2,t4)
+   - lambda_lpack_def(('ng101','ng102'),k2,t4)
+   - lambda_line_store(('ng101','ng102'),k2,t4)
    - muLB_lpack(('ng101','ng102'),k2,t4) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t4):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t4)
-   - lambda_line_store(('ng101','ng102'),k2,t4)
-   - lambda_gas_balance(ng101,k2,t4) - muLB_qin_sr(('ng101','ng102'),k2,t4)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t4)
+   + lambda_line_store(('ng101','ng102'),k2,t4)
+   + lambda_gas_balance(ng101,k2,t4) - muLB_qin_sr(('ng101','ng102'),k2,t4)
    = 0
  dLag/qout_sr(('ng101','ng102'),k2,t4):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t4)
-   + lambda_line_store(('ng101','ng102'),k2,t4)
-   + lambda_gas_balance(ng102,k2,t4)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t4)
+   - lambda_line_store(('ng101','ng102'),k2,t4)
+   - lambda_gas_balance(ng102,k2,t4)
    - muLB_qout_sr(('ng101','ng102'),k2,t4) = 0
  dLag/lpack(('ng101','ng102'),k0,t5):
-   lambda_lpack_def(('ng101','ng102'),k0,t5)
-   + lambda_line_store(('ng101','ng102'),k0,t5)
-   - lambda_line_store(('ng101','ng102'),k0,t6)
-   - lambda_line_store(('ng101','ng102'),k1,t6)
-   - lambda_line_store(('ng101','ng102'),k2,t6)
+   - lambda_lpack_def(('ng101','ng102'),k0,t5)
+   - lambda_line_store(('ng101','ng102'),k0,t5)
+   + lambda_line_store(('ng101','ng102'),k0,t6)
+   + lambda_line_store(('ng101','ng102'),k1,t6)
+   + lambda_line_store(('ng101','ng102'),k2,t6)
    - muLB_lpack(('ng101','ng102'),k0,t5) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t5):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t5)
-   - lambda_line_store(('ng101','ng102'),k0,t5)
-   - lambda_gas_balance(ng101,k0,t5) - muLB_qin_sr(('ng101','ng102'),k0,t5)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t5)
+   + lambda_line_store(('ng101','ng102'),k0,t5)
+   + lambda_gas_balance(ng101,k0,t5) - muLB_qin_sr(('ng101','ng102'),k0,t5)
    = 0
  dLag/qout_sr(('ng101','ng102'),k0,t5):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t5)
-   + lambda_line_store(('ng101','ng102'),k0,t5)
-   + lambda_gas_balance(ng102,k0,t5)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t5)
+   - lambda_line_store(('ng101','ng102'),k0,t5)
+   - lambda_gas_balance(ng102,k0,t5)
    - muLB_qout_sr(('ng101','ng102'),k0,t5) = 0
  dLag/lpack(('ng101','ng102'),k1,t5):
-   lambda_lpack_def(('ng101','ng102'),k1,t5)
-   + lambda_line_store(('ng101','ng102'),k1,t5)
+   - lambda_lpack_def(('ng101','ng102'),k1,t5)
+   - lambda_line_store(('ng101','ng102'),k1,t5)
    - muLB_lpack(('ng101','ng102'),k1,t5) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t5):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t5)
-   - lambda_line_store(('ng101','ng102'),k1,t5)
-   - lambda_gas_balance(ng101,k1,t5) - muLB_qin_sr(('ng101','ng102'),k1,t5)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t5)
+   + lambda_line_store(('ng101','ng102'),k1,t5)
+   + lambda_gas_balance(ng101,k1,t5) - muLB_qin_sr(('ng101','ng102'),k1,t5)
    = 0
  dLag/qout_sr(('ng101','ng102'),k1,t5):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t5)
-   + lambda_line_store(('ng101','ng102'),k1,t5)
-   + lambda_gas_balance(ng102,k1,t5)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t5)
+   - lambda_line_store(('ng101','ng102'),k1,t5)
+   - lambda_gas_balance(ng102,k1,t5)
    - muLB_qout_sr(('ng101','ng102'),k1,t5) = 0
  dLag/lpack(('ng101','ng102'),k2,t5):
-   lambda_lpack_def(('ng101','ng102'),k2,t5)
-   + lambda_line_store(('ng101','ng102'),k2,t5)
+   - lambda_lpack_def(('ng101','ng102'),k2,t5)
+   - lambda_line_store(('ng101','ng102'),k2,t5)
    - muLB_lpack(('ng101','ng102'),k2,t5) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t5):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t5)
-   - lambda_line_store(('ng101','ng102'),k2,t5)
-   - lambda_gas_balance(ng101,k2,t5) - muLB_qin_sr(('ng101','ng102'),k2,t5)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t5)
+   + lambda_line_store(('ng101','ng102'),k2,t5)
+   + lambda_gas_balance(ng101,k2,t5) - muLB_qin_sr(('ng101','ng102'),k2,t5)
    = 0
  dLag/qout_sr(('ng101','ng102'),k2,t5):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t5)
-   + lambda_line_store(('ng101','ng102'),k2,t5)
-   + lambda_gas_balance(ng102,k2,t5)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t5)
+   - lambda_line_store(('ng101','ng102'),k2,t5)
+   - lambda_gas_balance(ng102,k2,t5)
    - muLB_qout_sr(('ng101','ng102'),k2,t5) = 0
  dLag/lpack(('ng101','ng102'),k0,t6):
-   lambda_lpack_def(('ng101','ng102'),k0,t6)
-   + lambda_line_store(('ng101','ng102'),k0,t6)
-   - lambda_line_store(('ng101','ng102'),k0,t7)
-   - lambda_line_store(('ng101','ng102'),k1,t7)
-   - lambda_line_store(('ng101','ng102'),k2,t7)
+   - lambda_lpack_def(('ng101','ng102'),k0,t6)
+   - lambda_line_store(('ng101','ng102'),k0,t6)
+   + lambda_line_store(('ng101','ng102'),k0,t7)
+   + lambda_line_store(('ng101','ng102'),k1,t7)
+   + lambda_line_store(('ng101','ng102'),k2,t7)
    - muLB_lpack(('ng101','ng102'),k0,t6) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t6):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t6)
-   - lambda_line_store(('ng101','ng102'),k0,t6)
-   - lambda_gas_balance(ng101,k0,t6) - muLB_qin_sr(('ng101','ng102'),k0,t6)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t6)
+   + lambda_line_store(('ng101','ng102'),k0,t6)
+   + lambda_gas_balance(ng101,k0,t6) - muLB_qin_sr(('ng101','ng102'),k0,t6)
    = 0
  dLag/qout_sr(('ng101','ng102'),k0,t6):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t6)
-   + lambda_line_store(('ng101','ng102'),k0,t6)
-   + lambda_gas_balance(ng102,k0,t6)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t6)
+   - lambda_line_store(('ng101','ng102'),k0,t6)
+   - lambda_gas_balance(ng102,k0,t6)
    - muLB_qout_sr(('ng101','ng102'),k0,t6) = 0
  dLag/lpack(('ng101','ng102'),k1,t6):
-   lambda_lpack_def(('ng101','ng102'),k1,t6)
-   + lambda_line_store(('ng101','ng102'),k1,t6)
+   - lambda_lpack_def(('ng101','ng102'),k1,t6)
+   - lambda_line_store(('ng101','ng102'),k1,t6)
    - muLB_lpack(('ng101','ng102'),k1,t6) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t6):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t6)
-   - lambda_line_store(('ng101','ng102'),k1,t6)
-   - lambda_gas_balance(ng101,k1,t6) - muLB_qin_sr(('ng101','ng102'),k1,t6)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t6)
+   + lambda_line_store(('ng101','ng102'),k1,t6)
+   + lambda_gas_balance(ng101,k1,t6) - muLB_qin_sr(('ng101','ng102'),k1,t6)
    = 0
  dLag/qout_sr(('ng101','ng102'),k1,t6):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t6)
-   + lambda_line_store(('ng101','ng102'),k1,t6)
-   + lambda_gas_balance(ng102,k1,t6)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t6)
+   - lambda_line_store(('ng101','ng102'),k1,t6)
+   - lambda_gas_balance(ng102,k1,t6)
    - muLB_qout_sr(('ng101','ng102'),k1,t6) = 0
  dLag/lpack(('ng101','ng102'),k2,t6):
-   lambda_lpack_def(('ng101','ng102'),k2,t6)
-   + lambda_line_store(('ng101','ng102'),k2,t6)
+   - lambda_lpack_def(('ng101','ng102'),k2,t6)
+   - lambda_line_store(('ng101','ng102'),k2,t6)
    - muLB_lpack(('ng101','ng102'),k2,t6) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t6):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t6)
-   - lambda_line_store(('ng101','ng102'),k2,t6)
-   - lambda_gas_balance(ng101,k2,t6) - muLB_qin_sr(('ng101','ng102'),k2,t6)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t6)
+   + lambda_line_store(('ng101','ng102'),k2,t6)
+   + lambda_gas_balance(ng101,k2,t6) - muLB_qin_sr(('ng101','ng102'),k2,t6)
    = 0
  dLag/qout_sr(('ng101','ng102'),k2,t6):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t6)
-   + lambda_line_store(('ng101','ng102'),k2,t6)
-   + lambda_gas_balance(ng102,k2,t6)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t6)
+   - lambda_line_store(('ng101','ng102'),k2,t6)
+   - lambda_gas_balance(ng102,k2,t6)
    - muLB_qout_sr(('ng101','ng102'),k2,t6) = 0
  dLag/lpack(('ng101','ng102'),k0,t7):
-   lambda_lpack_def(('ng101','ng102'),k0,t7)
-   + lambda_line_store(('ng101','ng102'),k0,t7)
-   - lambda_line_store(('ng101','ng102'),k0,t8)
-   - lambda_line_store(('ng101','ng102'),k1,t8)
-   - lambda_line_store(('ng101','ng102'),k2,t8)
+   - lambda_lpack_def(('ng101','ng102'),k0,t7)
+   - lambda_line_store(('ng101','ng102'),k0,t7)
+   + lambda_line_store(('ng101','ng102'),k0,t8)
+   + lambda_line_store(('ng101','ng102'),k1,t8)
+   + lambda_line_store(('ng101','ng102'),k2,t8)
    - muLB_lpack(('ng101','ng102'),k0,t7) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t7):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t7)
-   - lambda_line_store(('ng101','ng102'),k0,t7)
-   - lambda_gas_balance(ng101,k0,t7) - muLB_qin_sr(('ng101','ng102'),k0,t7)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t7)
+   + lambda_line_store(('ng101','ng102'),k0,t7)
+   + lambda_gas_balance(ng101,k0,t7) - muLB_qin_sr(('ng101','ng102'),k0,t7)
    = 0
  dLag/qout_sr(('ng101','ng102'),k0,t7):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t7)
-   + lambda_line_store(('ng101','ng102'),k0,t7)
-   + lambda_gas_balance(ng102,k0,t7)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t7)
+   - lambda_line_store(('ng101','ng102'),k0,t7)
+   - lambda_gas_balance(ng102,k0,t7)
    - muLB_qout_sr(('ng101','ng102'),k0,t7) = 0
  dLag/lpack(('ng101','ng102'),k1,t7):
-   lambda_lpack_def(('ng101','ng102'),k1,t7)
-   + lambda_line_store(('ng101','ng102'),k1,t7)
+   - lambda_lpack_def(('ng101','ng102'),k1,t7)
+   - lambda_line_store(('ng101','ng102'),k1,t7)
    - muLB_lpack(('ng101','ng102'),k1,t7) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t7):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t7)
-   - lambda_line_store(('ng101','ng102'),k1,t7)
-   - lambda_gas_balance(ng101,k1,t7) - muLB_qin_sr(('ng101','ng102'),k1,t7)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t7)
+   + lambda_line_store(('ng101','ng102'),k1,t7)
+   + lambda_gas_balance(ng101,k1,t7) - muLB_qin_sr(('ng101','ng102'),k1,t7)
    = 0
  dLag/qout_sr(('ng101','ng102'),k1,t7):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t7)
-   + lambda_line_store(('ng101','ng102'),k1,t7)
-   + lambda_gas_balance(ng102,k1,t7)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t7)
+   - lambda_line_store(('ng101','ng102'),k1,t7)
+   - lambda_gas_balance(ng102,k1,t7)
    - muLB_qout_sr(('ng101','ng102'),k1,t7) = 0
  dLag/lpack(('ng101','ng102'),k2,t7):
-   lambda_lpack_def(('ng101','ng102'),k2,t7)
-   + lambda_line_store(('ng101','ng102'),k2,t7)
+   - lambda_lpack_def(('ng101','ng102'),k2,t7)
+   - lambda_line_store(('ng101','ng102'),k2,t7)
    - muLB_lpack(('ng101','ng102'),k2,t7) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t7):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t7)
-   - lambda_line_store(('ng101','ng102'),k2,t7)
-   - lambda_gas_balance(ng101,k2,t7) - muLB_qin_sr(('ng101','ng102'),k2,t7)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t7)
+   + lambda_line_store(('ng101','ng102'),k2,t7)
+   + lambda_gas_balance(ng101,k2,t7) - muLB_qin_sr(('ng101','ng102'),k2,t7)
    = 0
  dLag/qout_sr(('ng101','ng102'),k2,t7):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t7)
-   + lambda_line_store(('ng101','ng102'),k2,t7)
-   + lambda_gas_balance(ng102,k2,t7)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t7)
+   - lambda_line_store(('ng101','ng102'),k2,t7)
+   - lambda_gas_balance(ng102,k2,t7)
    - muLB_qout_sr(('ng101','ng102'),k2,t7) = 0
  dLag/lpack(('ng101','ng102'),k0,t8):
-   lambda_lpack_def(('ng101','ng102'),k0,t8)
-   + lambda_line_store(('ng101','ng102'),k0,t8)
-   - lambda_line_store(('ng101','ng102'),k0,t9)
-   - lambda_line_store(('ng101','ng102'),k1,t9)
-   - lambda_line_store(('ng101','ng102'),k2,t9)
+   - lambda_lpack_def(('ng101','ng102'),k0,t8)
+   - lambda_line_store(('ng101','ng102'),k0,t8)
+   + lambda_line_store(('ng101','ng102'),k0,t9)
+   + lambda_line_store(('ng101','ng102'),k1,t9)
+   + lambda_line_store(('ng101','ng102'),k2,t9)
    - muLB_lpack(('ng101','ng102'),k0,t8) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t8):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t8)
-   - lambda_line_store(('ng101','ng102'),k0,t8)
-   - lambda_gas_balance(ng101,k0,t8) - muLB_qin_sr(('ng101','ng102'),k0,t8)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t8)
+   + lambda_line_store(('ng101','ng102'),k0,t8)
+   + lambda_gas_balance(ng101,k0,t8) - muLB_qin_sr(('ng101','ng102'),k0,t8)
    = 0
  dLag/qout_sr(('ng101','ng102'),k0,t8):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t8)
-   + lambda_line_store(('ng101','ng102'),k0,t8)
-   + lambda_gas_balance(ng102,k0,t8)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t8)
+   - lambda_line_store(('ng101','ng102'),k0,t8)
+   - lambda_gas_balance(ng102,k0,t8)
    - muLB_qout_sr(('ng101','ng102'),k0,t8) = 0
  dLag/lpack(('ng101','ng102'),k1,t8):
-   lambda_lpack_def(('ng101','ng102'),k1,t8)
-   + lambda_line_store(('ng101','ng102'),k1,t8)
+   - lambda_lpack_def(('ng101','ng102'),k1,t8)
+   - lambda_line_store(('ng101','ng102'),k1,t8)
    - muLB_lpack(('ng101','ng102'),k1,t8) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t8):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t8)
-   - lambda_line_store(('ng101','ng102'),k1,t8)
-   - lambda_gas_balance(ng101,k1,t8) - muLB_qin_sr(('ng101','ng102'),k1,t8)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t8)
+   + lambda_line_store(('ng101','ng102'),k1,t8)
+   + lambda_gas_balance(ng101,k1,t8) - muLB_qin_sr(('ng101','ng102'),k1,t8)
    = 0
  dLag/qout_sr(('ng101','ng102'),k1,t8):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t8)
-   + lambda_line_store(('ng101','ng102'),k1,t8)
-   + lambda_gas_balance(ng102,k1,t8)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t8)
+   - lambda_line_store(('ng101','ng102'),k1,t8)
+   - lambda_gas_balance(ng102,k1,t8)
    - muLB_qout_sr(('ng101','ng102'),k1,t8) = 0
  dLag/lpack(('ng101','ng102'),k2,t8):
-   lambda_lpack_def(('ng101','ng102'),k2,t8)
-   + lambda_line_store(('ng101','ng102'),k2,t8)
+   - lambda_lpack_def(('ng101','ng102'),k2,t8)
+   - lambda_line_store(('ng101','ng102'),k2,t8)
    - muLB_lpack(('ng101','ng102'),k2,t8) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t8):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t8)
-   - lambda_line_store(('ng101','ng102'),k2,t8)
-   - lambda_gas_balance(ng101,k2,t8) - muLB_qin_sr(('ng101','ng102'),k2,t8)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t8)
+   + lambda_line_store(('ng101','ng102'),k2,t8)
+   + lambda_gas_balance(ng101,k2,t8) - muLB_qin_sr(('ng101','ng102'),k2,t8)
    = 0
  dLag/qout_sr(('ng101','ng102'),k2,t8):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t8)
-   + lambda_line_store(('ng101','ng102'),k2,t8)
-   + lambda_gas_balance(ng102,k2,t8)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t8)
+   - lambda_line_store(('ng101','ng102'),k2,t8)
+   - lambda_gas_balance(ng102,k2,t8)
    - muLB_qout_sr(('ng101','ng102'),k2,t8) = 0
  dLag/lpack(('ng101','ng102'),k0,t9):
-   lambda_lpack_def(('ng101','ng102'),k0,t9)
-   + lambda_line_store(('ng101','ng102'),k0,t9)
-   - lambda_line_store(('ng101','ng102'),k0,t10)
-   - lambda_line_store(('ng101','ng102'),k1,t10)
-   - lambda_line_store(('ng101','ng102'),k2,t10)
+   - lambda_lpack_def(('ng101','ng102'),k0,t9)
+   - lambda_line_store(('ng101','ng102'),k0,t9)
+   + lambda_line_store(('ng101','ng102'),k0,t10)
+   + lambda_line_store(('ng101','ng102'),k1,t10)
+   + lambda_line_store(('ng101','ng102'),k2,t10)
    - muLB_lpack(('ng101','ng102'),k0,t9) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t9):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t9)
-   - lambda_line_store(('ng101','ng102'),k0,t9)
-   - lambda_gas_balance(ng101,k0,t9) - muLB_qin_sr(('ng101','ng102'),k0,t9)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t9)
+   + lambda_line_store(('ng101','ng102'),k0,t9)
+   + lambda_gas_balance(ng101,k0,t9) - muLB_qin_sr(('ng101','ng102'),k0,t9)
    = 0
  dLag/qout_sr(('ng101','ng102'),k0,t9):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t9)
-   + lambda_line_store(('ng101','ng102'),k0,t9)
-   + lambda_gas_balance(ng102,k0,t9)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t9)
+   - lambda_line_store(('ng101','ng102'),k0,t9)
+   - lambda_gas_balance(ng102,k0,t9)
    - muLB_qout_sr(('ng101','ng102'),k0,t9) = 0
  dLag/lpack(('ng101','ng102'),k1,t9):
-   lambda_lpack_def(('ng101','ng102'),k1,t9)
-   + lambda_line_store(('ng101','ng102'),k1,t9)
+   - lambda_lpack_def(('ng101','ng102'),k1,t9)
+   - lambda_line_store(('ng101','ng102'),k1,t9)
    - muLB_lpack(('ng101','ng102'),k1,t9) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t9):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t9)
-   - lambda_line_store(('ng101','ng102'),k1,t9)
-   - lambda_gas_balance(ng101,k1,t9) - muLB_qin_sr(('ng101','ng102'),k1,t9)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t9)
+   + lambda_line_store(('ng101','ng102'),k1,t9)
+   + lambda_gas_balance(ng101,k1,t9) - muLB_qin_sr(('ng101','ng102'),k1,t9)
    = 0
  dLag/qout_sr(('ng101','ng102'),k1,t9):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t9)
-   + lambda_line_store(('ng101','ng102'),k1,t9)
-   + lambda_gas_balance(ng102,k1,t9)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t9)
+   - lambda_line_store(('ng101','ng102'),k1,t9)
+   - lambda_gas_balance(ng102,k1,t9)
    - muLB_qout_sr(('ng101','ng102'),k1,t9) = 0
  dLag/lpack(('ng101','ng102'),k2,t9):
-   lambda_lpack_def(('ng101','ng102'),k2,t9)
-   + lambda_line_store(('ng101','ng102'),k2,t9)
+   - lambda_lpack_def(('ng101','ng102'),k2,t9)
+   - lambda_line_store(('ng101','ng102'),k2,t9)
    - muLB_lpack(('ng101','ng102'),k2,t9) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t9):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t9)
-   - lambda_line_store(('ng101','ng102'),k2,t9)
-   - lambda_gas_balance(ng101,k2,t9) - muLB_qin_sr(('ng101','ng102'),k2,t9)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t9)
+   + lambda_line_store(('ng101','ng102'),k2,t9)
+   + lambda_gas_balance(ng101,k2,t9) - muLB_qin_sr(('ng101','ng102'),k2,t9)
    = 0
  dLag/qout_sr(('ng101','ng102'),k2,t9):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t9)
-   + lambda_line_store(('ng101','ng102'),k2,t9)
-   + lambda_gas_balance(ng102,k2,t9)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t9)
+   - lambda_line_store(('ng101','ng102'),k2,t9)
+   - lambda_gas_balance(ng102,k2,t9)
    - muLB_qout_sr(('ng101','ng102'),k2,t9) = 0
  dLag/lpack(('ng101','ng102'),k0,t10):
-   lambda_lpack_def(('ng101','ng102'),k0,t10)
-   + lambda_line_store(('ng101','ng102'),k0,t10)
-   - lambda_line_store(('ng101','ng102'),k0,t11)
-   - lambda_line_store(('ng101','ng102'),k1,t11)
-   - lambda_line_store(('ng101','ng102'),k2,t11)
+   - lambda_lpack_def(('ng101','ng102'),k0,t10)
+   - lambda_line_store(('ng101','ng102'),k0,t10)
+   + lambda_line_store(('ng101','ng102'),k0,t11)
+   + lambda_line_store(('ng101','ng102'),k1,t11)
+   + lambda_line_store(('ng101','ng102'),k2,t11)
    - muLB_lpack(('ng101','ng102'),k0,t10) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t10):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t10)
-   - lambda_line_store(('ng101','ng102'),k0,t10)
-   - lambda_gas_balance(ng101,k0,t10)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t10)
+   + lambda_line_store(('ng101','ng102'),k0,t10)
+   + lambda_gas_balance(ng101,k0,t10)
    - muLB_qin_sr(('ng101','ng102'),k0,t10) = 0
  dLag/qout_sr(('ng101','ng102'),k0,t10):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t10)
-   + lambda_line_store(('ng101','ng102'),k0,t10)
-   + lambda_gas_balance(ng102,k0,t10)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t10)
+   - lambda_line_store(('ng101','ng102'),k0,t10)
+   - lambda_gas_balance(ng102,k0,t10)
    - muLB_qout_sr(('ng101','ng102'),k0,t10) = 0
  dLag/lpack(('ng101','ng102'),k1,t10):
-   lambda_lpack_def(('ng101','ng102'),k1,t10)
-   + lambda_line_store(('ng101','ng102'),k1,t10)
+   - lambda_lpack_def(('ng101','ng102'),k1,t10)
+   - lambda_line_store(('ng101','ng102'),k1,t10)
    - muLB_lpack(('ng101','ng102'),k1,t10) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t10):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t10)
-   - lambda_line_store(('ng101','ng102'),k1,t10)
-   - lambda_gas_balance(ng101,k1,t10)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t10)
+   + lambda_line_store(('ng101','ng102'),k1,t10)
+   + lambda_gas_balance(ng101,k1,t10)
    - muLB_qin_sr(('ng101','ng102'),k1,t10) = 0
  dLag/qout_sr(('ng101','ng102'),k1,t10):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t10)
-   + lambda_line_store(('ng101','ng102'),k1,t10)
-   + lambda_gas_balance(ng102,k1,t10)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t10)
+   - lambda_line_store(('ng101','ng102'),k1,t10)
+   - lambda_gas_balance(ng102,k1,t10)
    - muLB_qout_sr(('ng101','ng102'),k1,t10) = 0
  dLag/lpack(('ng101','ng102'),k2,t10):
-   lambda_lpack_def(('ng101','ng102'),k2,t10)
-   + lambda_line_store(('ng101','ng102'),k2,t10)
+   - lambda_lpack_def(('ng101','ng102'),k2,t10)
+   - lambda_line_store(('ng101','ng102'),k2,t10)
    - muLB_lpack(('ng101','ng102'),k2,t10) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t10):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t10)
-   - lambda_line_store(('ng101','ng102'),k2,t10)
-   - lambda_gas_balance(ng101,k2,t10)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t10)
+   + lambda_line_store(('ng101','ng102'),k2,t10)
+   + lambda_gas_balance(ng101,k2,t10)
    - muLB_qin_sr(('ng101','ng102'),k2,t10) = 0
  dLag/qout_sr(('ng101','ng102'),k2,t10):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t10)
-   + lambda_line_store(('ng101','ng102'),k2,t10)
-   + lambda_gas_balance(ng102,k2,t10)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t10)
+   - lambda_line_store(('ng101','ng102'),k2,t10)
+   - lambda_gas_balance(ng102,k2,t10)
    - muLB_qout_sr(('ng101','ng102'),k2,t10) = 0
  dLag/lpack(('ng101','ng102'),k0,t11):
-   lambda_lpack_def(('ng101','ng102'),k0,t11)
-   + lambda_line_store(('ng101','ng102'),k0,t11)
-   - lambda_line_store(('ng101','ng102'),k0,t12)
-   - lambda_line_store(('ng101','ng102'),k1,t12)
-   - lambda_line_store(('ng101','ng102'),k2,t12)
+   - lambda_lpack_def(('ng101','ng102'),k0,t11)
+   - lambda_line_store(('ng101','ng102'),k0,t11)
+   + lambda_line_store(('ng101','ng102'),k0,t12)
+   + lambda_line_store(('ng101','ng102'),k1,t12)
+   + lambda_line_store(('ng101','ng102'),k2,t12)
    - muLB_lpack(('ng101','ng102'),k0,t11) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t11):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t11)
-   - lambda_line_store(('ng101','ng102'),k0,t11)
-   - lambda_gas_balance(ng101,k0,t11)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t11)
+   + lambda_line_store(('ng101','ng102'),k0,t11)
+   + lambda_gas_balance(ng101,k0,t11)
    - muLB_qin_sr(('ng101','ng102'),k0,t11) = 0
  dLag/qout_sr(('ng101','ng102'),k0,t11):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t11)
-   + lambda_line_store(('ng101','ng102'),k0,t11)
-   + lambda_gas_balance(ng102,k0,t11)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t11)
+   - lambda_line_store(('ng101','ng102'),k0,t11)
+   - lambda_gas_balance(ng102,k0,t11)
    - muLB_qout_sr(('ng101','ng102'),k0,t11) = 0
  dLag/lpack(('ng101','ng102'),k1,t11):
-   lambda_lpack_def(('ng101','ng102'),k1,t11)
-   + lambda_line_store(('ng101','ng102'),k1,t11)
+   - lambda_lpack_def(('ng101','ng102'),k1,t11)
+   - lambda_line_store(('ng101','ng102'),k1,t11)
    - muLB_lpack(('ng101','ng102'),k1,t11) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t11):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t11)
-   - lambda_line_store(('ng101','ng102'),k1,t11)
-   - lambda_gas_balance(ng101,k1,t11)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t11)
+   + lambda_line_store(('ng101','ng102'),k1,t11)
+   + lambda_gas_balance(ng101,k1,t11)
    - muLB_qin_sr(('ng101','ng102'),k1,t11) = 0
  dLag/qout_sr(('ng101','ng102'),k1,t11):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t11)
-   + lambda_line_store(('ng101','ng102'),k1,t11)
-   + lambda_gas_balance(ng102,k1,t11)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t11)
+   - lambda_line_store(('ng101','ng102'),k1,t11)
+   - lambda_gas_balance(ng102,k1,t11)
    - muLB_qout_sr(('ng101','ng102'),k1,t11) = 0
  dLag/lpack(('ng101','ng102'),k2,t11):
-   lambda_lpack_def(('ng101','ng102'),k2,t11)
-   + lambda_line_store(('ng101','ng102'),k2,t11)
+   - lambda_lpack_def(('ng101','ng102'),k2,t11)
+   - lambda_line_store(('ng101','ng102'),k2,t11)
    - muLB_lpack(('ng101','ng102'),k2,t11) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t11):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t11)
-   - lambda_line_store(('ng101','ng102'),k2,t11)
-   - lambda_gas_balance(ng101,k2,t11)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t11)
+   + lambda_line_store(('ng101','ng102'),k2,t11)
+   + lambda_gas_balance(ng101,k2,t11)
    - muLB_qin_sr(('ng101','ng102'),k2,t11) = 0
  dLag/qout_sr(('ng101','ng102'),k2,t11):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t11)
-   + lambda_line_store(('ng101','ng102'),k2,t11)
-   + lambda_gas_balance(ng102,k2,t11)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t11)
+   - lambda_line_store(('ng101','ng102'),k2,t11)
+   - lambda_gas_balance(ng102,k2,t11)
    - muLB_qout_sr(('ng101','ng102'),k2,t11) = 0
  dLag/lpack(('ng101','ng102'),k0,t12):
-   lambda_lpack_def(('ng101','ng102'),k0,t12)
-   + lambda_line_store(('ng101','ng102'),k0,t12)
-   - lambda_line_store(('ng101','ng102'),k0,t13)
-   - lambda_line_store(('ng101','ng102'),k1,t13)
-   - lambda_line_store(('ng101','ng102'),k2,t13)
+   - lambda_lpack_def(('ng101','ng102'),k0,t12)
+   - lambda_line_store(('ng101','ng102'),k0,t12)
+   + lambda_line_store(('ng101','ng102'),k0,t13)
+   + lambda_line_store(('ng101','ng102'),k1,t13)
+   + lambda_line_store(('ng101','ng102'),k2,t13)
    - muLB_lpack(('ng101','ng102'),k0,t12) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t12):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t12)
-   - lambda_line_store(('ng101','ng102'),k0,t12)
-   - lambda_gas_balance(ng101,k0,t12)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t12)
+   + lambda_line_store(('ng101','ng102'),k0,t12)
+   + lambda_gas_balance(ng101,k0,t12)
    - muLB_qin_sr(('ng101','ng102'),k0,t12) = 0
  dLag/qout_sr(('ng101','ng102'),k0,t12):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t12)
-   + lambda_line_store(('ng101','ng102'),k0,t12)
-   + lambda_gas_balance(ng102,k0,t12)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t12)
+   - lambda_line_store(('ng101','ng102'),k0,t12)
+   - lambda_gas_balance(ng102,k0,t12)
    - muLB_qout_sr(('ng101','ng102'),k0,t12) = 0
  dLag/lpack(('ng101','ng102'),k1,t12):
-   lambda_lpack_def(('ng101','ng102'),k1,t12)
-   + lambda_line_store(('ng101','ng102'),k1,t12)
+   - lambda_lpack_def(('ng101','ng102'),k1,t12)
+   - lambda_line_store(('ng101','ng102'),k1,t12)
    - muLB_lpack(('ng101','ng102'),k1,t12) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t12):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t12)
-   - lambda_line_store(('ng101','ng102'),k1,t12)
-   - lambda_gas_balance(ng101,k1,t12)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t12)
+   + lambda_line_store(('ng101','ng102'),k1,t12)
+   + lambda_gas_balance(ng101,k1,t12)
    - muLB_qin_sr(('ng101','ng102'),k1,t12) = 0
  dLag/qout_sr(('ng101','ng102'),k1,t12):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t12)
-   + lambda_line_store(('ng101','ng102'),k1,t12)
-   + lambda_gas_balance(ng102,k1,t12)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t12)
+   - lambda_line_store(('ng101','ng102'),k1,t12)
+   - lambda_gas_balance(ng102,k1,t12)
    - muLB_qout_sr(('ng101','ng102'),k1,t12) = 0
  dLag/lpack(('ng101','ng102'),k2,t12):
-   lambda_lpack_def(('ng101','ng102'),k2,t12)
-   + lambda_line_store(('ng101','ng102'),k2,t12)
+   - lambda_lpack_def(('ng101','ng102'),k2,t12)
+   - lambda_line_store(('ng101','ng102'),k2,t12)
    - muLB_lpack(('ng101','ng102'),k2,t12) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t12):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t12)
-   - lambda_line_store(('ng101','ng102'),k2,t12)
-   - lambda_gas_balance(ng101,k2,t12)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t12)
+   + lambda_line_store(('ng101','ng102'),k2,t12)
+   + lambda_gas_balance(ng101,k2,t12)
    - muLB_qin_sr(('ng101','ng102'),k2,t12) = 0
  dLag/qout_sr(('ng101','ng102'),k2,t12):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t12)
-   + lambda_line_store(('ng101','ng102'),k2,t12)
-   + lambda_gas_balance(ng102,k2,t12)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t12)
+   - lambda_line_store(('ng101','ng102'),k2,t12)
+   - lambda_gas_balance(ng102,k2,t12)
    - muLB_qout_sr(('ng101','ng102'),k2,t12) = 0
  dLag/lpack(('ng101','ng102'),k0,t13):
-   lambda_lpack_def(('ng101','ng102'),k0,t13)
-   + lambda_line_store(('ng101','ng102'),k0,t13)
-   - lambda_line_store(('ng101','ng102'),k0,t14)
-   - lambda_line_store(('ng101','ng102'),k1,t14)
-   - lambda_line_store(('ng101','ng102'),k2,t14)
+   - lambda_lpack_def(('ng101','ng102'),k0,t13)
+   - lambda_line_store(('ng101','ng102'),k0,t13)
+   + lambda_line_store(('ng101','ng102'),k0,t14)
+   + lambda_line_store(('ng101','ng102'),k1,t14)
+   + lambda_line_store(('ng101','ng102'),k2,t14)
    - muLB_lpack(('ng101','ng102'),k0,t13) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t13):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t13)
-   - lambda_line_store(('ng101','ng102'),k0,t13)
-   - lambda_gas_balance(ng101,k0,t13)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t13)
+   + lambda_line_store(('ng101','ng102'),k0,t13)
+   + lambda_gas_balance(ng101,k0,t13)
    - muLB_qin_sr(('ng101','ng102'),k0,t13) = 0
  dLag/qout_sr(('ng101','ng102'),k0,t13):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t13)
-   + lambda_line_store(('ng101','ng102'),k0,t13)
-   + lambda_gas_balance(ng102,k0,t13)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t13)
+   - lambda_line_store(('ng101','ng102'),k0,t13)
+   - lambda_gas_balance(ng102,k0,t13)
    - muLB_qout_sr(('ng101','ng102'),k0,t13) = 0
  dLag/lpack(('ng101','ng102'),k1,t13):
-   lambda_lpack_def(('ng101','ng102'),k1,t13)
-   + lambda_line_store(('ng101','ng102'),k1,t13)
+   - lambda_lpack_def(('ng101','ng102'),k1,t13)
+   - lambda_line_store(('ng101','ng102'),k1,t13)
    - muLB_lpack(('ng101','ng102'),k1,t13) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t13):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t13)
-   - lambda_line_store(('ng101','ng102'),k1,t13)
-   - lambda_gas_balance(ng101,k1,t13)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t13)
+   + lambda_line_store(('ng101','ng102'),k1,t13)
+   + lambda_gas_balance(ng101,k1,t13)
    - muLB_qin_sr(('ng101','ng102'),k1,t13) = 0
  dLag/qout_sr(('ng101','ng102'),k1,t13):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t13)
-   + lambda_line_store(('ng101','ng102'),k1,t13)
-   + lambda_gas_balance(ng102,k1,t13)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t13)
+   - lambda_line_store(('ng101','ng102'),k1,t13)
+   - lambda_gas_balance(ng102,k1,t13)
    - muLB_qout_sr(('ng101','ng102'),k1,t13) = 0
  dLag/lpack(('ng101','ng102'),k2,t13):
-   lambda_lpack_def(('ng101','ng102'),k2,t13)
-   + lambda_line_store(('ng101','ng102'),k2,t13)
+   - lambda_lpack_def(('ng101','ng102'),k2,t13)
+   - lambda_line_store(('ng101','ng102'),k2,t13)
    - muLB_lpack(('ng101','ng102'),k2,t13) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t13):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t13)
-   - lambda_line_store(('ng101','ng102'),k2,t13)
-   - lambda_gas_balance(ng101,k2,t13)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t13)
+   + lambda_line_store(('ng101','ng102'),k2,t13)
+   + lambda_gas_balance(ng101,k2,t13)
    - muLB_qin_sr(('ng101','ng102'),k2,t13) = 0
  dLag/qout_sr(('ng101','ng102'),k2,t13):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t13)
-   + lambda_line_store(('ng101','ng102'),k2,t13)
-   + lambda_gas_balance(ng102,k2,t13)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t13)
+   - lambda_line_store(('ng101','ng102'),k2,t13)
+   - lambda_gas_balance(ng102,k2,t13)
    - muLB_qout_sr(('ng101','ng102'),k2,t13) = 0
  dLag/lpack(('ng101','ng102'),k0,t14):
-   lambda_lpack_def(('ng101','ng102'),k0,t14)
-   + lambda_line_store(('ng101','ng102'),k0,t14)
-   - lambda_line_store(('ng101','ng102'),k0,t15)
-   - lambda_line_store(('ng101','ng102'),k1,t15)
-   - lambda_line_store(('ng101','ng102'),k2,t15)
+   - lambda_lpack_def(('ng101','ng102'),k0,t14)
+   - lambda_line_store(('ng101','ng102'),k0,t14)
+   + lambda_line_store(('ng101','ng102'),k0,t15)
+   + lambda_line_store(('ng101','ng102'),k1,t15)
+   + lambda_line_store(('ng101','ng102'),k2,t15)
    - muLB_lpack(('ng101','ng102'),k0,t14) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t14):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t14)
-   - lambda_line_store(('ng101','ng102'),k0,t14)
-   - lambda_gas_balance(ng101,k0,t14)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t14)
+   + lambda_line_store(('ng101','ng102'),k0,t14)
+   + lambda_gas_balance(ng101,k0,t14)
    - muLB_qin_sr(('ng101','ng102'),k0,t14) = 0
  dLag/qout_sr(('ng101','ng102'),k0,t14):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t14)
-   + lambda_line_store(('ng101','ng102'),k0,t14)
-   + lambda_gas_balance(ng102,k0,t14)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t14)
+   - lambda_line_store(('ng101','ng102'),k0,t14)
+   - lambda_gas_balance(ng102,k0,t14)
    - muLB_qout_sr(('ng101','ng102'),k0,t14) = 0
  dLag/lpack(('ng101','ng102'),k1,t14):
-   lambda_lpack_def(('ng101','ng102'),k1,t14)
-   + lambda_line_store(('ng101','ng102'),k1,t14)
+   - lambda_lpack_def(('ng101','ng102'),k1,t14)
+   - lambda_line_store(('ng101','ng102'),k1,t14)
    - muLB_lpack(('ng101','ng102'),k1,t14) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t14):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t14)
-   - lambda_line_store(('ng101','ng102'),k1,t14)
-   - lambda_gas_balance(ng101,k1,t14)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t14)
+   + lambda_line_store(('ng101','ng102'),k1,t14)
+   + lambda_gas_balance(ng101,k1,t14)
    - muLB_qin_sr(('ng101','ng102'),k1,t14) = 0
  dLag/qout_sr(('ng101','ng102'),k1,t14):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t14)
-   + lambda_line_store(('ng101','ng102'),k1,t14)
-   + lambda_gas_balance(ng102,k1,t14)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t14)
+   - lambda_line_store(('ng101','ng102'),k1,t14)
+   - lambda_gas_balance(ng102,k1,t14)
    - muLB_qout_sr(('ng101','ng102'),k1,t14) = 0
  dLag/lpack(('ng101','ng102'),k2,t14):
-   lambda_lpack_def(('ng101','ng102'),k2,t14)
-   + lambda_line_store(('ng101','ng102'),k2,t14)
+   - lambda_lpack_def(('ng101','ng102'),k2,t14)
+   - lambda_line_store(('ng101','ng102'),k2,t14)
    - muLB_lpack(('ng101','ng102'),k2,t14) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t14):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t14)
-   - lambda_line_store(('ng101','ng102'),k2,t14)
-   - lambda_gas_balance(ng101,k2,t14)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t14)
+   + lambda_line_store(('ng101','ng102'),k2,t14)
+   + lambda_gas_balance(ng101,k2,t14)
    - muLB_qin_sr(('ng101','ng102'),k2,t14) = 0
  dLag/qout_sr(('ng101','ng102'),k2,t14):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t14)
-   + lambda_line_store(('ng101','ng102'),k2,t14)
-   + lambda_gas_balance(ng102,k2,t14)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t14)
+   - lambda_line_store(('ng101','ng102'),k2,t14)
+   - lambda_gas_balance(ng102,k2,t14)
    - muLB_qout_sr(('ng101','ng102'),k2,t14) = 0
  dLag/lpack(('ng101','ng102'),k0,t15):
-   lambda_lpack_def(('ng101','ng102'),k0,t15)
-   + lambda_line_store(('ng101','ng102'),k0,t15)
-   - lambda_line_store(('ng101','ng102'),k0,t16)
-   - lambda_line_store(('ng101','ng102'),k1,t16)
-   - lambda_line_store(('ng101','ng102'),k2,t16)
+   - lambda_lpack_def(('ng101','ng102'),k0,t15)
+   - lambda_line_store(('ng101','ng102'),k0,t15)
+   + lambda_line_store(('ng101','ng102'),k0,t16)
+   + lambda_line_store(('ng101','ng102'),k1,t16)
+   + lambda_line_store(('ng101','ng102'),k2,t16)
    - muLB_lpack(('ng101','ng102'),k0,t15) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t15):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t15)
-   - lambda_line_store(('ng101','ng102'),k0,t15)
-   - lambda_gas_balance(ng101,k0,t15)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t15)
+   + lambda_line_store(('ng101','ng102'),k0,t15)
+   + lambda_gas_balance(ng101,k0,t15)
    - muLB_qin_sr(('ng101','ng102'),k0,t15) = 0
  dLag/qout_sr(('ng101','ng102'),k0,t15):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t15)
-   + lambda_line_store(('ng101','ng102'),k0,t15)
-   + lambda_gas_balance(ng102,k0,t15)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t15)
+   - lambda_line_store(('ng101','ng102'),k0,t15)
+   - lambda_gas_balance(ng102,k0,t15)
    - muLB_qout_sr(('ng101','ng102'),k0,t15) = 0
  dLag/lpack(('ng101','ng102'),k1,t15):
-   lambda_lpack_def(('ng101','ng102'),k1,t15)
-   + lambda_line_store(('ng101','ng102'),k1,t15)
+   - lambda_lpack_def(('ng101','ng102'),k1,t15)
+   - lambda_line_store(('ng101','ng102'),k1,t15)
    - muLB_lpack(('ng101','ng102'),k1,t15) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t15):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t15)
-   - lambda_line_store(('ng101','ng102'),k1,t15)
-   - lambda_gas_balance(ng101,k1,t15)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t15)
+   + lambda_line_store(('ng101','ng102'),k1,t15)
+   + lambda_gas_balance(ng101,k1,t15)
    - muLB_qin_sr(('ng101','ng102'),k1,t15) = 0
  dLag/qout_sr(('ng101','ng102'),k1,t15):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t15)
-   + lambda_line_store(('ng101','ng102'),k1,t15)
-   + lambda_gas_balance(ng102,k1,t15)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t15)
+   - lambda_line_store(('ng101','ng102'),k1,t15)
+   - lambda_gas_balance(ng102,k1,t15)
    - muLB_qout_sr(('ng101','ng102'),k1,t15) = 0
  dLag/lpack(('ng101','ng102'),k2,t15):
-   lambda_lpack_def(('ng101','ng102'),k2,t15)
-   + lambda_line_store(('ng101','ng102'),k2,t15)
+   - lambda_lpack_def(('ng101','ng102'),k2,t15)
+   - lambda_line_store(('ng101','ng102'),k2,t15)
    - muLB_lpack(('ng101','ng102'),k2,t15) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t15):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t15)
-   - lambda_line_store(('ng101','ng102'),k2,t15)
-   - lambda_gas_balance(ng101,k2,t15)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t15)
+   + lambda_line_store(('ng101','ng102'),k2,t15)
+   + lambda_gas_balance(ng101,k2,t15)
    - muLB_qin_sr(('ng101','ng102'),k2,t15) = 0
  dLag/qout_sr(('ng101','ng102'),k2,t15):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t15)
-   + lambda_line_store(('ng101','ng102'),k2,t15)
-   + lambda_gas_balance(ng102,k2,t15)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t15)
+   - lambda_line_store(('ng101','ng102'),k2,t15)
+   - lambda_gas_balance(ng102,k2,t15)
    - muLB_qout_sr(('ng101','ng102'),k2,t15) = 0
  dLag/lpack(('ng101','ng102'),k0,t16):
-   lambda_lpack_def(('ng101','ng102'),k0,t16)
-   + lambda_line_store(('ng101','ng102'),k0,t16)
-   - lambda_line_store(('ng101','ng102'),k0,t17)
-   - lambda_line_store(('ng101','ng102'),k1,t17)
-   - lambda_line_store(('ng101','ng102'),k2,t17)
+   - lambda_lpack_def(('ng101','ng102'),k0,t16)
+   - lambda_line_store(('ng101','ng102'),k0,t16)
+   + lambda_line_store(('ng101','ng102'),k0,t17)
+   + lambda_line_store(('ng101','ng102'),k1,t17)
+   + lambda_line_store(('ng101','ng102'),k2,t17)
    - muLB_lpack(('ng101','ng102'),k0,t16) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t16):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t16)
-   - lambda_line_store(('ng101','ng102'),k0,t16)
-   - lambda_gas_balance(ng101,k0,t16)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t16)
+   + lambda_line_store(('ng101','ng102'),k0,t16)
+   + lambda_gas_balance(ng101,k0,t16)
    - muLB_qin_sr(('ng101','ng102'),k0,t16) = 0
  dLag/qout_sr(('ng101','ng102'),k0,t16):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t16)
-   + lambda_line_store(('ng101','ng102'),k0,t16)
-   + lambda_gas_balance(ng102,k0,t16)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t16)
+   - lambda_line_store(('ng101','ng102'),k0,t16)
+   - lambda_gas_balance(ng102,k0,t16)
    - muLB_qout_sr(('ng101','ng102'),k0,t16) = 0
  dLag/lpack(('ng101','ng102'),k1,t16):
-   lambda_lpack_def(('ng101','ng102'),k1,t16)
-   + lambda_line_store(('ng101','ng102'),k1,t16)
+   - lambda_lpack_def(('ng101','ng102'),k1,t16)
+   - lambda_line_store(('ng101','ng102'),k1,t16)
    - muLB_lpack(('ng101','ng102'),k1,t16) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t16):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t16)
-   - lambda_line_store(('ng101','ng102'),k1,t16)
-   - lambda_gas_balance(ng101,k1,t16)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t16)
+   + lambda_line_store(('ng101','ng102'),k1,t16)
+   + lambda_gas_balance(ng101,k1,t16)
    - muLB_qin_sr(('ng101','ng102'),k1,t16) = 0
  dLag/qout_sr(('ng101','ng102'),k1,t16):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t16)
-   + lambda_line_store(('ng101','ng102'),k1,t16)
-   + lambda_gas_balance(ng102,k1,t16)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t16)
+   - lambda_line_store(('ng101','ng102'),k1,t16)
+   - lambda_gas_balance(ng102,k1,t16)
    - muLB_qout_sr(('ng101','ng102'),k1,t16) = 0
  dLag/lpack(('ng101','ng102'),k2,t16):
-   lambda_lpack_def(('ng101','ng102'),k2,t16)
-   + lambda_line_store(('ng101','ng102'),k2,t16)
+   - lambda_lpack_def(('ng101','ng102'),k2,t16)
+   - lambda_line_store(('ng101','ng102'),k2,t16)
    - muLB_lpack(('ng101','ng102'),k2,t16) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t16):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t16)
-   - lambda_line_store(('ng101','ng102'),k2,t16)
-   - lambda_gas_balance(ng101,k2,t16)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t16)
+   + lambda_line_store(('ng101','ng102'),k2,t16)
+   + lambda_gas_balance(ng101,k2,t16)
    - muLB_qin_sr(('ng101','ng102'),k2,t16) = 0
  dLag/qout_sr(('ng101','ng102'),k2,t16):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t16)
-   + lambda_line_store(('ng101','ng102'),k2,t16)
-   + lambda_gas_balance(ng102,k2,t16)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t16)
+   - lambda_line_store(('ng101','ng102'),k2,t16)
+   - lambda_gas_balance(ng102,k2,t16)
    - muLB_qout_sr(('ng101','ng102'),k2,t16) = 0
  dLag/lpack(('ng101','ng102'),k0,t17):
-   lambda_lpack_def(('ng101','ng102'),k0,t17)
-   + lambda_line_store(('ng101','ng102'),k0,t17)
-   - lambda_line_store(('ng101','ng102'),k0,t18)
-   - lambda_line_store(('ng101','ng102'),k1,t18)
-   - lambda_line_store(('ng101','ng102'),k2,t18)
+   - lambda_lpack_def(('ng101','ng102'),k0,t17)
+   - lambda_line_store(('ng101','ng102'),k0,t17)
+   + lambda_line_store(('ng101','ng102'),k0,t18)
+   + lambda_line_store(('ng101','ng102'),k1,t18)
+   + lambda_line_store(('ng101','ng102'),k2,t18)
    - muLB_lpack(('ng101','ng102'),k0,t17) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t17):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t17)
-   - lambda_line_store(('ng101','ng102'),k0,t17)
-   - lambda_gas_balance(ng101,k0,t17)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t17)
+   + lambda_line_store(('ng101','ng102'),k0,t17)
+   + lambda_gas_balance(ng101,k0,t17)
    - muLB_qin_sr(('ng101','ng102'),k0,t17) = 0
  dLag/qout_sr(('ng101','ng102'),k0,t17):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t17)
-   + lambda_line_store(('ng101','ng102'),k0,t17)
-   + lambda_gas_balance(ng102,k0,t17)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t17)
+   - lambda_line_store(('ng101','ng102'),k0,t17)
+   - lambda_gas_balance(ng102,k0,t17)
    - muLB_qout_sr(('ng101','ng102'),k0,t17) = 0
  dLag/lpack(('ng101','ng102'),k1,t17):
-   lambda_lpack_def(('ng101','ng102'),k1,t17)
-   + lambda_line_store(('ng101','ng102'),k1,t17)
+   - lambda_lpack_def(('ng101','ng102'),k1,t17)
+   - lambda_line_store(('ng101','ng102'),k1,t17)
    - muLB_lpack(('ng101','ng102'),k1,t17) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t17):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t17)
-   - lambda_line_store(('ng101','ng102'),k1,t17)
-   - lambda_gas_balance(ng101,k1,t17)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t17)
+   + lambda_line_store(('ng101','ng102'),k1,t17)
+   + lambda_gas_balance(ng101,k1,t17)
    - muLB_qin_sr(('ng101','ng102'),k1,t17) = 0
  dLag/qout_sr(('ng101','ng102'),k1,t17):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t17)
-   + lambda_line_store(('ng101','ng102'),k1,t17)
-   + lambda_gas_balance(ng102,k1,t17)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t17)
+   - lambda_line_store(('ng101','ng102'),k1,t17)
+   - lambda_gas_balance(ng102,k1,t17)
    - muLB_qout_sr(('ng101','ng102'),k1,t17) = 0
  dLag/lpack(('ng101','ng102'),k2,t17):
-   lambda_lpack_def(('ng101','ng102'),k2,t17)
-   + lambda_line_store(('ng101','ng102'),k2,t17)
+   - lambda_lpack_def(('ng101','ng102'),k2,t17)
+   - lambda_line_store(('ng101','ng102'),k2,t17)
    - muLB_lpack(('ng101','ng102'),k2,t17) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t17):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t17)
-   - lambda_line_store(('ng101','ng102'),k2,t17)
-   - lambda_gas_balance(ng101,k2,t17)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t17)
+   + lambda_line_store(('ng101','ng102'),k2,t17)
+   + lambda_gas_balance(ng101,k2,t17)
    - muLB_qin_sr(('ng101','ng102'),k2,t17) = 0
  dLag/qout_sr(('ng101','ng102'),k2,t17):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t17)
-   + lambda_line_store(('ng101','ng102'),k2,t17)
-   + lambda_gas_balance(ng102,k2,t17)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t17)
+   - lambda_line_store(('ng101','ng102'),k2,t17)
+   - lambda_gas_balance(ng102,k2,t17)
    - muLB_qout_sr(('ng101','ng102'),k2,t17) = 0
  dLag/lpack(('ng101','ng102'),k0,t18):
-   lambda_lpack_def(('ng101','ng102'),k0,t18)
-   + lambda_line_store(('ng101','ng102'),k0,t18)
-   - lambda_line_store(('ng101','ng102'),k0,t19)
-   - lambda_line_store(('ng101','ng102'),k1,t19)
-   - lambda_line_store(('ng101','ng102'),k2,t19)
+   - lambda_lpack_def(('ng101','ng102'),k0,t18)
+   - lambda_line_store(('ng101','ng102'),k0,t18)
+   + lambda_line_store(('ng101','ng102'),k0,t19)
+   + lambda_line_store(('ng101','ng102'),k1,t19)
+   + lambda_line_store(('ng101','ng102'),k2,t19)
    - muLB_lpack(('ng101','ng102'),k0,t18) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t18):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t18)
-   - lambda_line_store(('ng101','ng102'),k0,t18)
-   - lambda_gas_balance(ng101,k0,t18)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t18)
+   + lambda_line_store(('ng101','ng102'),k0,t18)
+   + lambda_gas_balance(ng101,k0,t18)
    - muLB_qin_sr(('ng101','ng102'),k0,t18) = 0
  dLag/qout_sr(('ng101','ng102'),k0,t18):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t18)
-   + lambda_line_store(('ng101','ng102'),k0,t18)
-   + lambda_gas_balance(ng102,k0,t18)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t18)
+   - lambda_line_store(('ng101','ng102'),k0,t18)
+   - lambda_gas_balance(ng102,k0,t18)
    - muLB_qout_sr(('ng101','ng102'),k0,t18) = 0
  dLag/lpack(('ng101','ng102'),k1,t18):
-   lambda_lpack_def(('ng101','ng102'),k1,t18)
-   + lambda_line_store(('ng101','ng102'),k1,t18)
+   - lambda_lpack_def(('ng101','ng102'),k1,t18)
+   - lambda_line_store(('ng101','ng102'),k1,t18)
    - muLB_lpack(('ng101','ng102'),k1,t18) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t18):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t18)
-   - lambda_line_store(('ng101','ng102'),k1,t18)
-   - lambda_gas_balance(ng101,k1,t18)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t18)
+   + lambda_line_store(('ng101','ng102'),k1,t18)
+   + lambda_gas_balance(ng101,k1,t18)
    - muLB_qin_sr(('ng101','ng102'),k1,t18) = 0
  dLag/qout_sr(('ng101','ng102'),k1,t18):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t18)
-   + lambda_line_store(('ng101','ng102'),k1,t18)
-   + lambda_gas_balance(ng102,k1,t18)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t18)
+   - lambda_line_store(('ng101','ng102'),k1,t18)
+   - lambda_gas_balance(ng102,k1,t18)
    - muLB_qout_sr(('ng101','ng102'),k1,t18) = 0
  dLag/lpack(('ng101','ng102'),k2,t18):
-   lambda_lpack_def(('ng101','ng102'),k2,t18)
-   + lambda_line_store(('ng101','ng102'),k2,t18)
+   - lambda_lpack_def(('ng101','ng102'),k2,t18)
+   - lambda_line_store(('ng101','ng102'),k2,t18)
    - muLB_lpack(('ng101','ng102'),k2,t18) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t18):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t18)
-   - lambda_line_store(('ng101','ng102'),k2,t18)
-   - lambda_gas_balance(ng101,k2,t18)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t18)
+   + lambda_line_store(('ng101','ng102'),k2,t18)
+   + lambda_gas_balance(ng101,k2,t18)
    - muLB_qin_sr(('ng101','ng102'),k2,t18) = 0
  dLag/qout_sr(('ng101','ng102'),k2,t18):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t18)
-   + lambda_line_store(('ng101','ng102'),k2,t18)
-   + lambda_gas_balance(ng102,k2,t18)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t18)
+   - lambda_line_store(('ng101','ng102'),k2,t18)
+   - lambda_gas_balance(ng102,k2,t18)
    - muLB_qout_sr(('ng101','ng102'),k2,t18) = 0
  dLag/lpack(('ng101','ng102'),k0,t19):
-   lambda_lpack_def(('ng101','ng102'),k0,t19)
-   + lambda_line_store(('ng101','ng102'),k0,t19)
-   - lambda_line_store(('ng101','ng102'),k0,t20)
-   - lambda_line_store(('ng101','ng102'),k1,t20)
-   - lambda_line_store(('ng101','ng102'),k2,t20)
+   - lambda_lpack_def(('ng101','ng102'),k0,t19)
+   - lambda_line_store(('ng101','ng102'),k0,t19)
+   + lambda_line_store(('ng101','ng102'),k0,t20)
+   + lambda_line_store(('ng101','ng102'),k1,t20)
+   + lambda_line_store(('ng101','ng102'),k2,t20)
    - muLB_lpack(('ng101','ng102'),k0,t19) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t19):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t19)
-   - lambda_line_store(('ng101','ng102'),k0,t19)
-   - lambda_gas_balance(ng101,k0,t19)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t19)
+   + lambda_line_store(('ng101','ng102'),k0,t19)
+   + lambda_gas_balance(ng101,k0,t19)
    - muLB_qin_sr(('ng101','ng102'),k0,t19) = 0
  dLag/qout_sr(('ng101','ng102'),k0,t19):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t19)
-   + lambda_line_store(('ng101','ng102'),k0,t19)
-   + lambda_gas_balance(ng102,k0,t19)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t19)
+   - lambda_line_store(('ng101','ng102'),k0,t19)
+   - lambda_gas_balance(ng102,k0,t19)
    - muLB_qout_sr(('ng101','ng102'),k0,t19) = 0
  dLag/lpack(('ng101','ng102'),k1,t19):
-   lambda_lpack_def(('ng101','ng102'),k1,t19)
-   + lambda_line_store(('ng101','ng102'),k1,t19)
+   - lambda_lpack_def(('ng101','ng102'),k1,t19)
+   - lambda_line_store(('ng101','ng102'),k1,t19)
    - muLB_lpack(('ng101','ng102'),k1,t19) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t19):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t19)
-   - lambda_line_store(('ng101','ng102'),k1,t19)
-   - lambda_gas_balance(ng101,k1,t19)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t19)
+   + lambda_line_store(('ng101','ng102'),k1,t19)
+   + lambda_gas_balance(ng101,k1,t19)
    - muLB_qin_sr(('ng101','ng102'),k1,t19) = 0
  dLag/qout_sr(('ng101','ng102'),k1,t19):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t19)
-   + lambda_line_store(('ng101','ng102'),k1,t19)
-   + lambda_gas_balance(ng102,k1,t19)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t19)
+   - lambda_line_store(('ng101','ng102'),k1,t19)
+   - lambda_gas_balance(ng102,k1,t19)
    - muLB_qout_sr(('ng101','ng102'),k1,t19) = 0
  dLag/lpack(('ng101','ng102'),k2,t19):
-   lambda_lpack_def(('ng101','ng102'),k2,t19)
-   + lambda_line_store(('ng101','ng102'),k2,t19)
+   - lambda_lpack_def(('ng101','ng102'),k2,t19)
+   - lambda_line_store(('ng101','ng102'),k2,t19)
    - muLB_lpack(('ng101','ng102'),k2,t19) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t19):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t19)
-   - lambda_line_store(('ng101','ng102'),k2,t19)
-   - lambda_gas_balance(ng101,k2,t19)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t19)
+   + lambda_line_store(('ng101','ng102'),k2,t19)
+   + lambda_gas_balance(ng101,k2,t19)
    - muLB_qin_sr(('ng101','ng102'),k2,t19) = 0
  dLag/qout_sr(('ng101','ng102'),k2,t19):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t19)
-   + lambda_line_store(('ng101','ng102'),k2,t19)
-   + lambda_gas_balance(ng102,k2,t19)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t19)
+   - lambda_line_store(('ng101','ng102'),k2,t19)
+   - lambda_gas_balance(ng102,k2,t19)
    - muLB_qout_sr(('ng101','ng102'),k2,t19) = 0
  dLag/lpack(('ng101','ng102'),k0,t20):
-   lambda_lpack_def(('ng101','ng102'),k0,t20)
-   + lambda_line_store(('ng101','ng102'),k0,t20)
-   - lambda_line_store(('ng101','ng102'),k0,t21)
-   - lambda_line_store(('ng101','ng102'),k1,t21)
-   - lambda_line_store(('ng101','ng102'),k2,t21)
+   - lambda_lpack_def(('ng101','ng102'),k0,t20)
+   - lambda_line_store(('ng101','ng102'),k0,t20)
+   + lambda_line_store(('ng101','ng102'),k0,t21)
+   + lambda_line_store(('ng101','ng102'),k1,t21)
+   + lambda_line_store(('ng101','ng102'),k2,t21)
    - muLB_lpack(('ng101','ng102'),k0,t20) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t20):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t20)
-   - lambda_line_store(('ng101','ng102'),k0,t20)
-   - lambda_gas_balance(ng101,k0,t20)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t20)
+   + lambda_line_store(('ng101','ng102'),k0,t20)
+   + lambda_gas_balance(ng101,k0,t20)
    - muLB_qin_sr(('ng101','ng102'),k0,t20) = 0
  dLag/qout_sr(('ng101','ng102'),k0,t20):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t20)
-   + lambda_line_store(('ng101','ng102'),k0,t20)
-   + lambda_gas_balance(ng102,k0,t20)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t20)
+   - lambda_line_store(('ng101','ng102'),k0,t20)
+   - lambda_gas_balance(ng102,k0,t20)
    - muLB_qout_sr(('ng101','ng102'),k0,t20) = 0
  dLag/lpack(('ng101','ng102'),k1,t20):
-   lambda_lpack_def(('ng101','ng102'),k1,t20)
-   + lambda_line_store(('ng101','ng102'),k1,t20)
+   - lambda_lpack_def(('ng101','ng102'),k1,t20)
+   - lambda_line_store(('ng101','ng102'),k1,t20)
    - muLB_lpack(('ng101','ng102'),k1,t20) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t20):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t20)
-   - lambda_line_store(('ng101','ng102'),k1,t20)
-   - lambda_gas_balance(ng101,k1,t20)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t20)
+   + lambda_line_store(('ng101','ng102'),k1,t20)
+   + lambda_gas_balance(ng101,k1,t20)
    - muLB_qin_sr(('ng101','ng102'),k1,t20) = 0
  dLag/qout_sr(('ng101','ng102'),k1,t20):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t20)
-   + lambda_line_store(('ng101','ng102'),k1,t20)
-   + lambda_gas_balance(ng102,k1,t20)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t20)
+   - lambda_line_store(('ng101','ng102'),k1,t20)
+   - lambda_gas_balance(ng102,k1,t20)
    - muLB_qout_sr(('ng101','ng102'),k1,t20) = 0
  dLag/lpack(('ng101','ng102'),k2,t20):
-   lambda_lpack_def(('ng101','ng102'),k2,t20)
-   + lambda_line_store(('ng101','ng102'),k2,t20)
+   - lambda_lpack_def(('ng101','ng102'),k2,t20)
+   - lambda_line_store(('ng101','ng102'),k2,t20)
    - muLB_lpack(('ng101','ng102'),k2,t20) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t20):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t20)
-   - lambda_line_store(('ng101','ng102'),k2,t20)
-   - lambda_gas_balance(ng101,k2,t20)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t20)
+   + lambda_line_store(('ng101','ng102'),k2,t20)
+   + lambda_gas_balance(ng101,k2,t20)
    - muLB_qin_sr(('ng101','ng102'),k2,t20) = 0
  dLag/qout_sr(('ng101','ng102'),k2,t20):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t20)
-   + lambda_line_store(('ng101','ng102'),k2,t20)
-   + lambda_gas_balance(ng102,k2,t20)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t20)
+   - lambda_line_store(('ng101','ng102'),k2,t20)
+   - lambda_gas_balance(ng102,k2,t20)
    - muLB_qout_sr(('ng101','ng102'),k2,t20) = 0
  dLag/lpack(('ng101','ng102'),k0,t21):
-   lambda_lpack_def(('ng101','ng102'),k0,t21)
-   + lambda_line_store(('ng101','ng102'),k0,t21)
-   - lambda_line_store(('ng101','ng102'),k0,t22)
-   - lambda_line_store(('ng101','ng102'),k1,t22)
-   - lambda_line_store(('ng101','ng102'),k2,t22)
+   - lambda_lpack_def(('ng101','ng102'),k0,t21)
+   - lambda_line_store(('ng101','ng102'),k0,t21)
+   + lambda_line_store(('ng101','ng102'),k0,t22)
+   + lambda_line_store(('ng101','ng102'),k1,t22)
+   + lambda_line_store(('ng101','ng102'),k2,t22)
    - muLB_lpack(('ng101','ng102'),k0,t21) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t21):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t21)
-   - lambda_line_store(('ng101','ng102'),k0,t21)
-   - lambda_gas_balance(ng101,k0,t21)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t21)
+   + lambda_line_store(('ng101','ng102'),k0,t21)
+   + lambda_gas_balance(ng101,k0,t21)
    - muLB_qin_sr(('ng101','ng102'),k0,t21) = 0
  dLag/qout_sr(('ng101','ng102'),k0,t21):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t21)
-   + lambda_line_store(('ng101','ng102'),k0,t21)
-   + lambda_gas_balance(ng102,k0,t21)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t21)
+   - lambda_line_store(('ng101','ng102'),k0,t21)
+   - lambda_gas_balance(ng102,k0,t21)
    - muLB_qout_sr(('ng101','ng102'),k0,t21) = 0
  dLag/lpack(('ng101','ng102'),k1,t21):
-   lambda_lpack_def(('ng101','ng102'),k1,t21)
-   + lambda_line_store(('ng101','ng102'),k1,t21)
+   - lambda_lpack_def(('ng101','ng102'),k1,t21)
+   - lambda_line_store(('ng101','ng102'),k1,t21)
    - muLB_lpack(('ng101','ng102'),k1,t21) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t21):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t21)
-   - lambda_line_store(('ng101','ng102'),k1,t21)
-   - lambda_gas_balance(ng101,k1,t21)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t21)
+   + lambda_line_store(('ng101','ng102'),k1,t21)
+   + lambda_gas_balance(ng101,k1,t21)
    - muLB_qin_sr(('ng101','ng102'),k1,t21) = 0
  dLag/qout_sr(('ng101','ng102'),k1,t21):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t21)
-   + lambda_line_store(('ng101','ng102'),k1,t21)
-   + lambda_gas_balance(ng102,k1,t21)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t21)
+   - lambda_line_store(('ng101','ng102'),k1,t21)
+   - lambda_gas_balance(ng102,k1,t21)
    - muLB_qout_sr(('ng101','ng102'),k1,t21) = 0
  dLag/lpack(('ng101','ng102'),k2,t21):
-   lambda_lpack_def(('ng101','ng102'),k2,t21)
-   + lambda_line_store(('ng101','ng102'),k2,t21)
+   - lambda_lpack_def(('ng101','ng102'),k2,t21)
+   - lambda_line_store(('ng101','ng102'),k2,t21)
    - muLB_lpack(('ng101','ng102'),k2,t21) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t21):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t21)
-   - lambda_line_store(('ng101','ng102'),k2,t21)
-   - lambda_gas_balance(ng101,k2,t21)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t21)
+   + lambda_line_store(('ng101','ng102'),k2,t21)
+   + lambda_gas_balance(ng101,k2,t21)
    - muLB_qin_sr(('ng101','ng102'),k2,t21) = 0
  dLag/qout_sr(('ng101','ng102'),k2,t21):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t21)
-   + lambda_line_store(('ng101','ng102'),k2,t21)
-   + lambda_gas_balance(ng102,k2,t21)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t21)
+   - lambda_line_store(('ng101','ng102'),k2,t21)
+   - lambda_gas_balance(ng102,k2,t21)
    - muLB_qout_sr(('ng101','ng102'),k2,t21) = 0
  dLag/lpack(('ng101','ng102'),k0,t22):
-   lambda_lpack_def(('ng101','ng102'),k0,t22)
-   + lambda_line_store(('ng101','ng102'),k0,t22)
-   - lambda_line_store(('ng101','ng102'),k0,t23)
-   - lambda_line_store(('ng101','ng102'),k1,t23)
-   - lambda_line_store(('ng101','ng102'),k2,t23)
+   - lambda_lpack_def(('ng101','ng102'),k0,t22)
+   - lambda_line_store(('ng101','ng102'),k0,t22)
+   + lambda_line_store(('ng101','ng102'),k0,t23)
+   + lambda_line_store(('ng101','ng102'),k1,t23)
+   + lambda_line_store(('ng101','ng102'),k2,t23)
    - muLB_lpack(('ng101','ng102'),k0,t22) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t22):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t22)
-   - lambda_line_store(('ng101','ng102'),k0,t22)
-   - lambda_gas_balance(ng101,k0,t22)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t22)
+   + lambda_line_store(('ng101','ng102'),k0,t22)
+   + lambda_gas_balance(ng101,k0,t22)
    - muLB_qin_sr(('ng101','ng102'),k0,t22) = 0
  dLag/qout_sr(('ng101','ng102'),k0,t22):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t22)
-   + lambda_line_store(('ng101','ng102'),k0,t22)
-   + lambda_gas_balance(ng102,k0,t22)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t22)
+   - lambda_line_store(('ng101','ng102'),k0,t22)
+   - lambda_gas_balance(ng102,k0,t22)
    - muLB_qout_sr(('ng101','ng102'),k0,t22) = 0
  dLag/lpack(('ng101','ng102'),k1,t22):
-   lambda_lpack_def(('ng101','ng102'),k1,t22)
-   + lambda_line_store(('ng101','ng102'),k1,t22)
+   - lambda_lpack_def(('ng101','ng102'),k1,t22)
+   - lambda_line_store(('ng101','ng102'),k1,t22)
    - muLB_lpack(('ng101','ng102'),k1,t22) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t22):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t22)
-   - lambda_line_store(('ng101','ng102'),k1,t22)
-   - lambda_gas_balance(ng101,k1,t22)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t22)
+   + lambda_line_store(('ng101','ng102'),k1,t22)
+   + lambda_gas_balance(ng101,k1,t22)
    - muLB_qin_sr(('ng101','ng102'),k1,t22) = 0
  dLag/qout_sr(('ng101','ng102'),k1,t22):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t22)
-   + lambda_line_store(('ng101','ng102'),k1,t22)
-   + lambda_gas_balance(ng102,k1,t22)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t22)
+   - lambda_line_store(('ng101','ng102'),k1,t22)
+   - lambda_gas_balance(ng102,k1,t22)
    - muLB_qout_sr(('ng101','ng102'),k1,t22) = 0
  dLag/lpack(('ng101','ng102'),k2,t22):
-   lambda_lpack_def(('ng101','ng102'),k2,t22)
-   + lambda_line_store(('ng101','ng102'),k2,t22)
+   - lambda_lpack_def(('ng101','ng102'),k2,t22)
+   - lambda_line_store(('ng101','ng102'),k2,t22)
    - muLB_lpack(('ng101','ng102'),k2,t22) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t22):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t22)
-   - lambda_line_store(('ng101','ng102'),k2,t22)
-   - lambda_gas_balance(ng101,k2,t22)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t22)
+   + lambda_line_store(('ng101','ng102'),k2,t22)
+   + lambda_gas_balance(ng101,k2,t22)
    - muLB_qin_sr(('ng101','ng102'),k2,t22) = 0
  dLag/qout_sr(('ng101','ng102'),k2,t22):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t22)
-   + lambda_line_store(('ng101','ng102'),k2,t22)
-   + lambda_gas_balance(ng102,k2,t22)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t22)
+   - lambda_line_store(('ng101','ng102'),k2,t22)
+   - lambda_gas_balance(ng102,k2,t22)
    - muLB_qout_sr(('ng101','ng102'),k2,t22) = 0
  dLag/lpack(('ng101','ng102'),k0,t23):
-   lambda_lpack_def(('ng101','ng102'),k0,t23)
-   + lambda_line_store(('ng101','ng102'),k0,t23)
-   - lambda_line_store(('ng101','ng102'),k0,t24)
-   - lambda_line_store(('ng101','ng102'),k1,t24)
-   - lambda_line_store(('ng101','ng102'),k2,t24)
+   - lambda_lpack_def(('ng101','ng102'),k0,t23)
+   - lambda_line_store(('ng101','ng102'),k0,t23)
+   + lambda_line_store(('ng101','ng102'),k0,t24)
+   + lambda_line_store(('ng101','ng102'),k1,t24)
+   + lambda_line_store(('ng101','ng102'),k2,t24)
    - muLB_lpack(('ng101','ng102'),k0,t23) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t23):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t23)
-   - lambda_line_store(('ng101','ng102'),k0,t23)
-   - lambda_gas_balance(ng101,k0,t23)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t23)
+   + lambda_line_store(('ng101','ng102'),k0,t23)
+   + lambda_gas_balance(ng101,k0,t23)
    - muLB_qin_sr(('ng101','ng102'),k0,t23) = 0
  dLag/qout_sr(('ng101','ng102'),k0,t23):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t23)
-   + lambda_line_store(('ng101','ng102'),k0,t23)
-   + lambda_gas_balance(ng102,k0,t23)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t23)
+   - lambda_line_store(('ng101','ng102'),k0,t23)
+   - lambda_gas_balance(ng102,k0,t23)
    - muLB_qout_sr(('ng101','ng102'),k0,t23) = 0
  dLag/lpack(('ng101','ng102'),k1,t23):
-   lambda_lpack_def(('ng101','ng102'),k1,t23)
-   + lambda_line_store(('ng101','ng102'),k1,t23)
+   - lambda_lpack_def(('ng101','ng102'),k1,t23)
+   - lambda_line_store(('ng101','ng102'),k1,t23)
    - muLB_lpack(('ng101','ng102'),k1,t23) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t23):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t23)
-   - lambda_line_store(('ng101','ng102'),k1,t23)
-   - lambda_gas_balance(ng101,k1,t23)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t23)
+   + lambda_line_store(('ng101','ng102'),k1,t23)
+   + lambda_gas_balance(ng101,k1,t23)
    - muLB_qin_sr(('ng101','ng102'),k1,t23) = 0
  dLag/qout_sr(('ng101','ng102'),k1,t23):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t23)
-   + lambda_line_store(('ng101','ng102'),k1,t23)
-   + lambda_gas_balance(ng102,k1,t23)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t23)
+   - lambda_line_store(('ng101','ng102'),k1,t23)
+   - lambda_gas_balance(ng102,k1,t23)
    - muLB_qout_sr(('ng101','ng102'),k1,t23) = 0
  dLag/lpack(('ng101','ng102'),k2,t23):
-   lambda_lpack_def(('ng101','ng102'),k2,t23)
-   + lambda_line_store(('ng101','ng102'),k2,t23)
+   - lambda_lpack_def(('ng101','ng102'),k2,t23)
+   - lambda_line_store(('ng101','ng102'),k2,t23)
    - muLB_lpack(('ng101','ng102'),k2,t23) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t23):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t23)
-   - lambda_line_store(('ng101','ng102'),k2,t23)
-   - lambda_gas_balance(ng101,k2,t23)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t23)
+   + lambda_line_store(('ng101','ng102'),k2,t23)
+   + lambda_gas_balance(ng101,k2,t23)
    - muLB_qin_sr(('ng101','ng102'),k2,t23) = 0
  dLag/qout_sr(('ng101','ng102'),k2,t23):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t23)
-   + lambda_line_store(('ng101','ng102'),k2,t23)
-   + lambda_gas_balance(ng102,k2,t23)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t23)
+   - lambda_line_store(('ng101','ng102'),k2,t23)
+   - lambda_gas_balance(ng102,k2,t23)
    - muLB_qout_sr(('ng101','ng102'),k2,t23) = 0
  dLag/lpack(('ng101','ng102'),k0,t24):
-   lambda_lpack_def(('ng101','ng102'),k0,t24)
-   + lambda_line_store(('ng101','ng102'),k0,t24) - mu_lpack_end
+   - lambda_lpack_def(('ng101','ng102'),k0,t24)
+   - lambda_line_store(('ng101','ng102'),k0,t24) - mu_lpack_end
    - muLB_lpack(('ng101','ng102'),k0,t24) = 0
  dLag/qin_sr(('ng101','ng102'),k0,t24):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t24)
-   - lambda_line_store(('ng101','ng102'),k0,t24)
-   - lambda_gas_balance(ng101,k0,t24)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t24)
+   + lambda_line_store(('ng101','ng102'),k0,t24)
+   + lambda_gas_balance(ng101,k0,t24)
    - muLB_qin_sr(('ng101','ng102'),k0,t24) = 0
  dLag/qout_sr(('ng101','ng102'),k0,t24):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t24)
-   + lambda_line_store(('ng101','ng102'),k0,t24)
-   + lambda_gas_balance(ng102,k0,t24)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k0,t24)
+   - lambda_line_store(('ng101','ng102'),k0,t24)
+   - lambda_gas_balance(ng102,k0,t24)
    - muLB_qout_sr(('ng101','ng102'),k0,t24) = 0
  dLag/lpack(('ng101','ng102'),k1,t24):
-   lambda_lpack_def(('ng101','ng102'),k1,t24)
-   + lambda_line_store(('ng101','ng102'),k1,t24)
+   - lambda_lpack_def(('ng101','ng102'),k1,t24)
+   - lambda_line_store(('ng101','ng102'),k1,t24)
    - muLB_lpack(('ng101','ng102'),k1,t24) = 0
  dLag/qin_sr(('ng101','ng102'),k1,t24):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t24)
-   - lambda_line_store(('ng101','ng102'),k1,t24)
-   - lambda_gas_balance(ng101,k1,t24)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t24)
+   + lambda_line_store(('ng101','ng102'),k1,t24)
+   + lambda_gas_balance(ng101,k1,t24)
    - muLB_qin_sr(('ng101','ng102'),k1,t24) = 0
  dLag/qout_sr(('ng101','ng102'),k1,t24):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t24)
-   + lambda_line_store(('ng101','ng102'),k1,t24)
-   + lambda_gas_balance(ng102,k1,t24)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k1,t24)
+   - lambda_line_store(('ng101','ng102'),k1,t24)
+   - lambda_gas_balance(ng102,k1,t24)
    - muLB_qout_sr(('ng101','ng102'),k1,t24) = 0
  dLag/lpack(('ng101','ng102'),k2,t24):
-   lambda_lpack_def(('ng101','ng102'),k2,t24)
-   + lambda_line_store(('ng101','ng102'),k2,t24)
+   - lambda_lpack_def(('ng101','ng102'),k2,t24)
+   - lambda_line_store(('ng101','ng102'),k2,t24)
    - muLB_lpack(('ng101','ng102'),k2,t24) = 0
  dLag/qin_sr(('ng101','ng102'),k2,t24):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t24)
-   - lambda_line_store(('ng101','ng102'),k2,t24)
-   - lambda_gas_balance(ng101,k2,t24)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t24)
+   + lambda_line_store(('ng101','ng102'),k2,t24)
+   + lambda_gas_balance(ng101,k2,t24)
    - muLB_qin_sr(('ng101','ng102'),k2,t24) = 0
  dLag/qout_sr(('ng101','ng102'),k2,t24):
-   - 0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t24)
-   + lambda_line_store(('ng101','ng102'),k2,t24)
-   + lambda_gas_balance(ng102,k2,t24)
+   0.5 lambda_gflow_sr_io(('ng101','ng102'),k2,t24)
+   - lambda_line_store(('ng101','ng102'),k2,t24)
+   - lambda_gas_balance(ng102,k2,t24)
    - muLB_qout_sr(('ng101','ng102'),k2,t24) = 0
  dLag/gprod(gw1,k0,t1): mu_gprod_max(gw1,k0,t1)
-   + lambda_gas_balance(ng101,k0,t1) - muLB_gprod(gw1,k0,t1) = -3
+   - lambda_gas_balance(ng101,k0,t1) - muLB_gprod(gw1,k0,t1) = -3
  dLag/gprod(gw1,k1,t1): mu_gprod_max(gw1,k1,t1)
-   + lambda_gas_balance(ng101,k1,t1) - muLB_gprod(gw1,k1,t1) = -3
+   - lambda_gas_balance(ng101,k1,t1) - muLB_gprod(gw1,k1,t1) = -3
  dLag/gprod(gw1,k2,t1): mu_gprod_max(gw1,k2,t1)
-   + lambda_gas_balance(ng101,k2,t1) - muLB_gprod(gw1,k2,t1) = -3
+   - lambda_gas_balance(ng101,k2,t1) - muLB_gprod(gw1,k2,t1) = -3
  dLag/gprod(gw1,k0,t2): mu_gprod_max(gw1,k0,t2)
-   + lambda_gas_balance(ng101,k0,t2) - muLB_gprod(gw1,k0,t2) = -4
+   - lambda_gas_balance(ng101,k0,t2) - muLB_gprod(gw1,k0,t2) = -4
  dLag/gprod(gw1,k1,t2): mu_gprod_max(gw1,k1,t2)
-   + lambda_gas_balance(ng101,k1,t2) - muLB_gprod(gw1,k1,t2) = -4
+   - lambda_gas_balance(ng101,k1,t2) - muLB_gprod(gw1,k1,t2) = -4
  dLag/gprod(gw1,k2,t2): mu_gprod_max(gw1,k2,t2)
-   + lambda_gas_balance(ng101,k2,t2) - muLB_gprod(gw1,k2,t2) = -4
+   - lambda_gas_balance(ng101,k2,t2) - muLB_gprod(gw1,k2,t2) = -4
  dLag/gprod(gw1,k0,t3): mu_gprod_max(gw1,k0,t3)
-   + lambda_gas_balance(ng101,k0,t3) - muLB_gprod(gw1,k0,t3) = -5
+   - lambda_gas_balance(ng101,k0,t3) - muLB_gprod(gw1,k0,t3) = -5
  dLag/gprod(gw1,k1,t3): mu_gprod_max(gw1,k1,t3)
-   + lambda_gas_balance(ng101,k1,t3) - muLB_gprod(gw1,k1,t3) = -5
+   - lambda_gas_balance(ng101,k1,t3) - muLB_gprod(gw1,k1,t3) = -5
  dLag/gprod(gw1,k2,t3): mu_gprod_max(gw1,k2,t3)
-   + lambda_gas_balance(ng101,k2,t3) - muLB_gprod(gw1,k2,t3) = -5
+   - lambda_gas_balance(ng101,k2,t3) - muLB_gprod(gw1,k2,t3) = -5
  dLag/gprod(gw1,k0,t4): mu_gprod_max(gw1,k0,t4)
-   + lambda_gas_balance(ng101,k0,t4) - muLB_gprod(gw1,k0,t4) = -6
+   - lambda_gas_balance(ng101,k0,t4) - muLB_gprod(gw1,k0,t4) = -6
  dLag/gprod(gw1,k1,t4): mu_gprod_max(gw1,k1,t4)
-   + lambda_gas_balance(ng101,k1,t4) - muLB_gprod(gw1,k1,t4) = -6
+   - lambda_gas_balance(ng101,k1,t4) - muLB_gprod(gw1,k1,t4) = -6
  dLag/gprod(gw1,k2,t4): mu_gprod_max(gw1,k2,t4)
-   + lambda_gas_balance(ng101,k2,t4) - muLB_gprod(gw1,k2,t4) = -6
+   - lambda_gas_balance(ng101,k2,t4) - muLB_gprod(gw1,k2,t4) = -6
  dLag/gprod(gw1,k0,t5): mu_gprod_max(gw1,k0,t5)
-   + lambda_gas_balance(ng101,k0,t5) - muLB_gprod(gw1,k0,t5) = -7
+   - lambda_gas_balance(ng101,k0,t5) - muLB_gprod(gw1,k0,t5) = -7
  dLag/gprod(gw1,k1,t5): mu_gprod_max(gw1,k1,t5)
-   + lambda_gas_balance(ng101,k1,t5) - muLB_gprod(gw1,k1,t5) = -7
+   - lambda_gas_balance(ng101,k1,t5) - muLB_gprod(gw1,k1,t5) = -7
  dLag/gprod(gw1,k2,t5): mu_gprod_max(gw1,k2,t5)
-   + lambda_gas_balance(ng101,k2,t5) - muLB_gprod(gw1,k2,t5) = -7
+   - lambda_gas_balance(ng101,k2,t5) - muLB_gprod(gw1,k2,t5) = -7
  dLag/gprod(gw1,k0,t6): mu_gprod_max(gw1,k0,t6)
-   + lambda_gas_balance(ng101,k0,t6) - muLB_gprod(gw1,k0,t6) = -8
+   - lambda_gas_balance(ng101,k0,t6) - muLB_gprod(gw1,k0,t6) = -8
  dLag/gprod(gw1,k1,t6): mu_gprod_max(gw1,k1,t6)
-   + lambda_gas_balance(ng101,k1,t6) - muLB_gprod(gw1,k1,t6) = -8
+   - lambda_gas_balance(ng101,k1,t6) - muLB_gprod(gw1,k1,t6) = -8
  dLag/gprod(gw1,k2,t6): mu_gprod_max(gw1,k2,t6)
-   + lambda_gas_balance(ng101,k2,t6) - muLB_gprod(gw1,k2,t6) = -8
+   - lambda_gas_balance(ng101,k2,t6) - muLB_gprod(gw1,k2,t6) = -8
  dLag/gprod(gw1,k0,t7): mu_gprod_max(gw1,k0,t7)
-   + lambda_gas_balance(ng101,k0,t7) - muLB_gprod(gw1,k0,t7) = -9
+   - lambda_gas_balance(ng101,k0,t7) - muLB_gprod(gw1,k0,t7) = -9
  dLag/gprod(gw1,k1,t7): mu_gprod_max(gw1,k1,t7)
-   + lambda_gas_balance(ng101,k1,t7) - muLB_gprod(gw1,k1,t7) = -9
+   - lambda_gas_balance(ng101,k1,t7) - muLB_gprod(gw1,k1,t7) = -9
  dLag/gprod(gw1,k2,t7): mu_gprod_max(gw1,k2,t7)
-   + lambda_gas_balance(ng101,k2,t7) - muLB_gprod(gw1,k2,t7) = -9
+   - lambda_gas_balance(ng101,k2,t7) - muLB_gprod(gw1,k2,t7) = -9
  dLag/gprod(gw1,k0,t8): mu_gprod_max(gw1,k0,t8)
-   + lambda_gas_balance(ng101,k0,t8) - muLB_gprod(gw1,k0,t8) = -10
+   - lambda_gas_balance(ng101,k0,t8) - muLB_gprod(gw1,k0,t8) = -10
  dLag/gprod(gw1,k1,t8): mu_gprod_max(gw1,k1,t8)
-   + lambda_gas_balance(ng101,k1,t8) - muLB_gprod(gw1,k1,t8) = -10
+   - lambda_gas_balance(ng101,k1,t8) - muLB_gprod(gw1,k1,t8) = -10
  dLag/gprod(gw1,k2,t8): mu_gprod_max(gw1,k2,t8)
-   + lambda_gas_balance(ng101,k2,t8) - muLB_gprod(gw1,k2,t8) = -10
+   - lambda_gas_balance(ng101,k2,t8) - muLB_gprod(gw1,k2,t8) = -10
  dLag/gprod(gw1,k0,t9): mu_gprod_max(gw1,k0,t9)
-   + lambda_gas_balance(ng101,k0,t9) - muLB_gprod(gw1,k0,t9) = -11
+   - lambda_gas_balance(ng101,k0,t9) - muLB_gprod(gw1,k0,t9) = -11
  dLag/gprod(gw1,k1,t9): mu_gprod_max(gw1,k1,t9)
-   + lambda_gas_balance(ng101,k1,t9) - muLB_gprod(gw1,k1,t9) = -11
+   - lambda_gas_balance(ng101,k1,t9) - muLB_gprod(gw1,k1,t9) = -11
  dLag/gprod(gw1,k2,t9): mu_gprod_max(gw1,k2,t9)
-   + lambda_gas_balance(ng101,k2,t9) - muLB_gprod(gw1,k2,t9) = -11
+   - lambda_gas_balance(ng101,k2,t9) - muLB_gprod(gw1,k2,t9) = -11
  dLag/gprod(gw1,k0,t10): mu_gprod_max(gw1,k0,t10)
-   + lambda_gas_balance(ng101,k0,t10) - muLB_gprod(gw1,k0,t10) = -12
+   - lambda_gas_balance(ng101,k0,t10) - muLB_gprod(gw1,k0,t10) = -12
  dLag/gprod(gw1,k1,t10): mu_gprod_max(gw1,k1,t10)
-   + lambda_gas_balance(ng101,k1,t10) - muLB_gprod(gw1,k1,t10) = -12
+   - lambda_gas_balance(ng101,k1,t10) - muLB_gprod(gw1,k1,t10) = -12
  dLag/gprod(gw1,k2,t10): mu_gprod_max(gw1,k2,t10)
-   + lambda_gas_balance(ng101,k2,t10) - muLB_gprod(gw1,k2,t10) = -12
+   - lambda_gas_balance(ng101,k2,t10) - muLB_gprod(gw1,k2,t10) = -12
  dLag/gprod(gw1,k0,t11): mu_gprod_max(gw1,k0,t11)
-   + lambda_gas_balance(ng101,k0,t11) - muLB_gprod(gw1,k0,t11) = -13
+   - lambda_gas_balance(ng101,k0,t11) - muLB_gprod(gw1,k0,t11) = -13
  dLag/gprod(gw1,k1,t11): mu_gprod_max(gw1,k1,t11)
-   + lambda_gas_balance(ng101,k1,t11) - muLB_gprod(gw1,k1,t11) = -13
+   - lambda_gas_balance(ng101,k1,t11) - muLB_gprod(gw1,k1,t11) = -13
  dLag/gprod(gw1,k2,t11): mu_gprod_max(gw1,k2,t11)
-   + lambda_gas_balance(ng101,k2,t11) - muLB_gprod(gw1,k2,t11) = -13
+   - lambda_gas_balance(ng101,k2,t11) - muLB_gprod(gw1,k2,t11) = -13
  dLag/gprod(gw1,k0,t12): mu_gprod_max(gw1,k0,t12)
-   + lambda_gas_balance(ng101,k0,t12) - muLB_gprod(gw1,k0,t12) = -14
+   - lambda_gas_balance(ng101,k0,t12) - muLB_gprod(gw1,k0,t12) = -14
  dLag/gprod(gw1,k1,t12): mu_gprod_max(gw1,k1,t12)
-   + lambda_gas_balance(ng101,k1,t12) - muLB_gprod(gw1,k1,t12) = -14
+   - lambda_gas_balance(ng101,k1,t12) - muLB_gprod(gw1,k1,t12) = -14
  dLag/gprod(gw1,k2,t12): mu_gprod_max(gw1,k2,t12)
-   + lambda_gas_balance(ng101,k2,t12) - muLB_gprod(gw1,k2,t12) = -14
+   - lambda_gas_balance(ng101,k2,t12) - muLB_gprod(gw1,k2,t12) = -14
  dLag/gprod(gw1,k0,t13): mu_gprod_max(gw1,k0,t13)
-   + lambda_gas_balance(ng101,k0,t13) - muLB_gprod(gw1,k0,t13) = -15
+   - lambda_gas_balance(ng101,k0,t13) - muLB_gprod(gw1,k0,t13) = -15
  dLag/gprod(gw1,k1,t13): mu_gprod_max(gw1,k1,t13)
-   + lambda_gas_balance(ng101,k1,t13) - muLB_gprod(gw1,k1,t13) = -15
+   - lambda_gas_balance(ng101,k1,t13) - muLB_gprod(gw1,k1,t13) = -15
  dLag/gprod(gw1,k2,t13): mu_gprod_max(gw1,k2,t13)
-   + lambda_gas_balance(ng101,k2,t13) - muLB_gprod(gw1,k2,t13) = -15
+   - lambda_gas_balance(ng101,k2,t13) - muLB_gprod(gw1,k2,t13) = -15
  dLag/gprod(gw1,k0,t14): mu_gprod_max(gw1,k0,t14)
-   + lambda_gas_balance(ng101,k0,t14) - muLB_gprod(gw1,k0,t14) = -16
+   - lambda_gas_balance(ng101,k0,t14) - muLB_gprod(gw1,k0,t14) = -16
  dLag/gprod(gw1,k1,t14): mu_gprod_max(gw1,k1,t14)
-   + lambda_gas_balance(ng101,k1,t14) - muLB_gprod(gw1,k1,t14) = -16
+   - lambda_gas_balance(ng101,k1,t14) - muLB_gprod(gw1,k1,t14) = -16
  dLag/gprod(gw1,k2,t14): mu_gprod_max(gw1,k2,t14)
-   + lambda_gas_balance(ng101,k2,t14) - muLB_gprod(gw1,k2,t14) = -16
+   - lambda_gas_balance(ng101,k2,t14) - muLB_gprod(gw1,k2,t14) = -16
  dLag/gprod(gw1,k0,t15): mu_gprod_max(gw1,k0,t15)
-   + lambda_gas_balance(ng101,k0,t15) - muLB_gprod(gw1,k0,t15) = -17
+   - lambda_gas_balance(ng101,k0,t15) - muLB_gprod(gw1,k0,t15) = -17
  dLag/gprod(gw1,k1,t15): mu_gprod_max(gw1,k1,t15)
-   + lambda_gas_balance(ng101,k1,t15) - muLB_gprod(gw1,k1,t15) = -17
+   - lambda_gas_balance(ng101,k1,t15) - muLB_gprod(gw1,k1,t15) = -17
  dLag/gprod(gw1,k2,t15): mu_gprod_max(gw1,k2,t15)
-   + lambda_gas_balance(ng101,k2,t15) - muLB_gprod(gw1,k2,t15) = -17
+   - lambda_gas_balance(ng101,k2,t15) - muLB_gprod(gw1,k2,t15) = -17
  dLag/gprod(gw1,k0,t16): mu_gprod_max(gw1,k0,t16)
-   + lambda_gas_balance(ng101,k0,t16) - muLB_gprod(gw1,k0,t16) = -18
+   - lambda_gas_balance(ng101,k0,t16) - muLB_gprod(gw1,k0,t16) = -18
  dLag/gprod(gw1,k1,t16): mu_gprod_max(gw1,k1,t16)
-   + lambda_gas_balance(ng101,k1,t16) - muLB_gprod(gw1,k1,t16) = -18
+   - lambda_gas_balance(ng101,k1,t16) - muLB_gprod(gw1,k1,t16) = -18
  dLag/gprod(gw1,k2,t16): mu_gprod_max(gw1,k2,t16)
-   + lambda_gas_balance(ng101,k2,t16) - muLB_gprod(gw1,k2,t16) = -18
+   - lambda_gas_balance(ng101,k2,t16) - muLB_gprod(gw1,k2,t16) = -18
  dLag/gprod(gw1,k0,t17): mu_gprod_max(gw1,k0,t17)
-   + lambda_gas_balance(ng101,k0,t17) - muLB_gprod(gw1,k0,t17) = -19
+   - lambda_gas_balance(ng101,k0,t17) - muLB_gprod(gw1,k0,t17) = -19
  dLag/gprod(gw1,k1,t17): mu_gprod_max(gw1,k1,t17)
-   + lambda_gas_balance(ng101,k1,t17) - muLB_gprod(gw1,k1,t17) = -19
+   - lambda_gas_balance(ng101,k1,t17) - muLB_gprod(gw1,k1,t17) = -19
  dLag/gprod(gw1,k2,t17): mu_gprod_max(gw1,k2,t17)
-   + lambda_gas_balance(ng101,k2,t17) - muLB_gprod(gw1,k2,t17) = -19
+   - lambda_gas_balance(ng101,k2,t17) - muLB_gprod(gw1,k2,t17) = -19
  dLag/gprod(gw1,k0,t18): mu_gprod_max(gw1,k0,t18)
-   + lambda_gas_balance(ng101,k0,t18) - muLB_gprod(gw1,k0,t18) = -20
+   - lambda_gas_balance(ng101,k0,t18) - muLB_gprod(gw1,k0,t18) = -20
  dLag/gprod(gw1,k1,t18): mu_gprod_max(gw1,k1,t18)
-   + lambda_gas_balance(ng101,k1,t18) - muLB_gprod(gw1,k1,t18) = -20
+   - lambda_gas_balance(ng101,k1,t18) - muLB_gprod(gw1,k1,t18) = -20
  dLag/gprod(gw1,k2,t18): mu_gprod_max(gw1,k2,t18)
-   + lambda_gas_balance(ng101,k2,t18) - muLB_gprod(gw1,k2,t18) = -20
+   - lambda_gas_balance(ng101,k2,t18) - muLB_gprod(gw1,k2,t18) = -20
  dLag/gprod(gw1,k0,t19): mu_gprod_max(gw1,k0,t19)
-   + lambda_gas_balance(ng101,k0,t19) - muLB_gprod(gw1,k0,t19) = -21
+   - lambda_gas_balance(ng101,k0,t19) - muLB_gprod(gw1,k0,t19) = -21
  dLag/gprod(gw1,k1,t19): mu_gprod_max(gw1,k1,t19)
-   + lambda_gas_balance(ng101,k1,t19) - muLB_gprod(gw1,k1,t19) = -21
+   - lambda_gas_balance(ng101,k1,t19) - muLB_gprod(gw1,k1,t19) = -21
  dLag/gprod(gw1,k2,t19): mu_gprod_max(gw1,k2,t19)
-   + lambda_gas_balance(ng101,k2,t19) - muLB_gprod(gw1,k2,t19) = -21
+   - lambda_gas_balance(ng101,k2,t19) - muLB_gprod(gw1,k2,t19) = -21
  dLag/gprod(gw1,k0,t20): mu_gprod_max(gw1,k0,t20)
-   + lambda_gas_balance(ng101,k0,t20) - muLB_gprod(gw1,k0,t20) = -22
+   - lambda_gas_balance(ng101,k0,t20) - muLB_gprod(gw1,k0,t20) = -22
  dLag/gprod(gw1,k1,t20): mu_gprod_max(gw1,k1,t20)
-   + lambda_gas_balance(ng101,k1,t20) - muLB_gprod(gw1,k1,t20) = -22
+   - lambda_gas_balance(ng101,k1,t20) - muLB_gprod(gw1,k1,t20) = -22
  dLag/gprod(gw1,k2,t20): mu_gprod_max(gw1,k2,t20)
-   + lambda_gas_balance(ng101,k2,t20) - muLB_gprod(gw1,k2,t20) = -22
+   - lambda_gas_balance(ng101,k2,t20) - muLB_gprod(gw1,k2,t20) = -22
  dLag/gprod(gw1,k0,t21): mu_gprod_max(gw1,k0,t21)
-   + lambda_gas_balance(ng101,k0,t21) - muLB_gprod(gw1,k0,t21) = -23
+   - lambda_gas_balance(ng101,k0,t21) - muLB_gprod(gw1,k0,t21) = -23
  dLag/gprod(gw1,k1,t21): mu_gprod_max(gw1,k1,t21)
-   + lambda_gas_balance(ng101,k1,t21) - muLB_gprod(gw1,k1,t21) = -23
+   - lambda_gas_balance(ng101,k1,t21) - muLB_gprod(gw1,k1,t21) = -23
  dLag/gprod(gw1,k2,t21): mu_gprod_max(gw1,k2,t21)
-   + lambda_gas_balance(ng101,k2,t21) - muLB_gprod(gw1,k2,t21) = -23
+   - lambda_gas_balance(ng101,k2,t21) - muLB_gprod(gw1,k2,t21) = -23
  dLag/gprod(gw1,k0,t22): mu_gprod_max(gw1,k0,t22)
-   + lambda_gas_balance(ng101,k0,t22) - muLB_gprod(gw1,k0,t22) = -24
+   - lambda_gas_balance(ng101,k0,t22) - muLB_gprod(gw1,k0,t22) = -24
  dLag/gprod(gw1,k1,t22): mu_gprod_max(gw1,k1,t22)
-   + lambda_gas_balance(ng101,k1,t22) - muLB_gprod(gw1,k1,t22) = -24
+   - lambda_gas_balance(ng101,k1,t22) - muLB_gprod(gw1,k1,t22) = -24
  dLag/gprod(gw1,k2,t22): mu_gprod_max(gw1,k2,t22)
-   + lambda_gas_balance(ng101,k2,t22) - muLB_gprod(gw1,k2,t22) = -24
+   - lambda_gas_balance(ng101,k2,t22) - muLB_gprod(gw1,k2,t22) = -24
  dLag/gprod(gw1,k0,t23): mu_gprod_max(gw1,k0,t23)
-   + lambda_gas_balance(ng101,k0,t23) - muLB_gprod(gw1,k0,t23) = -25
+   - lambda_gas_balance(ng101,k0,t23) - muLB_gprod(gw1,k0,t23) = -25
  dLag/gprod(gw1,k1,t23): mu_gprod_max(gw1,k1,t23)
-   + lambda_gas_balance(ng101,k1,t23) - muLB_gprod(gw1,k1,t23) = -25
+   - lambda_gas_balance(ng101,k1,t23) - muLB_gprod(gw1,k1,t23) = -25
  dLag/gprod(gw1,k2,t23): mu_gprod_max(gw1,k2,t23)
-   + lambda_gas_balance(ng101,k2,t23) - muLB_gprod(gw1,k2,t23) = -25
+   - lambda_gas_balance(ng101,k2,t23) - muLB_gprod(gw1,k2,t23) = -25
  dLag/gprod(gw1,k0,t24): mu_gprod_max(gw1,k0,t24)
-   + lambda_gas_balance(ng101,k0,t24) - muLB_gprod(gw1,k0,t24) = -26
+   - lambda_gas_balance(ng101,k0,t24) - muLB_gprod(gw1,k0,t24) = -26
  dLag/gprod(gw1,k1,t24): mu_gprod_max(gw1,k1,t24)
-   + lambda_gas_balance(ng101,k1,t24) - muLB_gprod(gw1,k1,t24) = -26
+   - lambda_gas_balance(ng101,k1,t24) - muLB_gprod(gw1,k1,t24) = -26
  dLag/gprod(gw1,k2,t24): mu_gprod_max(gw1,k2,t24)
-   + lambda_gas_balance(ng101,k2,t24) - muLB_gprod(gw1,k2,t24) = -26
+   - lambda_gas_balance(ng101,k2,t24) - muLB_gprod(gw1,k2,t24) = -26
  dLag/gsin(gs1,t1,k0): mu_gsinMax(gs1,t1,k0) - lambda_gstor_def(gs1,k0,t1)
-   - lambda_gas_balance(ng102,k0,t1) - muLB_gsin(gs1,t1,k0) = -2.1
+   + lambda_gas_balance(ng102,k0,t1) - muLB_gsin(gs1,t1,k0) = -2.1
  dLag/gsout(gs1,t1,k0): mu_gsoutMax(gs1,t1,k0)
-   + lambda_gstor_def(gs1,k0,t1) + lambda_gas_balance(ng102,k0,t1)
+   + lambda_gstor_def(gs1,k0,t1) - lambda_gas_balance(ng102,k0,t1)
    - muLB_gsout(gs1,t1,k0) = -2.1
  dLag/gstore(gs1,t1,k0): mu_gstore_max(gs1,t1,k0)
    - mu_gstore_min(gs1,t1,k0) - lambda_gstor_def(gs1,k0,t2)
    + lambda_gstor_def(gs1,k0,t1) - muLB_gstore(gs1,t1,k0) = 0
  dLag/gsin(gs1,t1,k1): mu_gsinMax(gs1,t1,k1) - lambda_gstor_def(gs1,k1,t1)
-   - lambda_gas_balance(ng102,k1,t1) - muLB_gsin(gs1,t1,k1) = -2.1
+   + lambda_gas_balance(ng102,k1,t1) - muLB_gsin(gs1,t1,k1) = -2.1
  dLag/gsout(gs1,t1,k1): mu_gsoutMax(gs1,t1,k1)
-   + lambda_gstor_def(gs1,k1,t1) + lambda_gas_balance(ng102,k1,t1)
+   + lambda_gstor_def(gs1,k1,t1) - lambda_gas_balance(ng102,k1,t1)
    - muLB_gsout(gs1,t1,k1) = -2.1
  dLag/gstore(gs1,t1,k1): mu_gstore_max(gs1,t1,k1)
    - mu_gstore_min(gs1,t1,k1) - lambda_gstor_def(gs1,k1,t2)
    + lambda_gstor_def(gs1,k1,t1) - muLB_gstore(gs1,t1,k1) = 0
  dLag/gsin(gs1,t1,k2): mu_gsinMax(gs1,t1,k2) - lambda_gstor_def(gs1,k2,t1)
-   - lambda_gas_balance(ng102,k2,t1) - muLB_gsin(gs1,t1,k2) = -2.1
+   + lambda_gas_balance(ng102,k2,t1) - muLB_gsin(gs1,t1,k2) = -2.1
  dLag/gsout(gs1,t1,k2): mu_gsoutMax(gs1,t1,k2)
-   + lambda_gstor_def(gs1,k2,t1) + lambda_gas_balance(ng102,k2,t1)
+   + lambda_gstor_def(gs1,k2,t1) - lambda_gas_balance(ng102,k2,t1)
    - muLB_gsout(gs1,t1,k2) = -2.1
  dLag/gstore(gs1,t1,k2): mu_gstore_max(gs1,t1,k2)
    - mu_gstore_min(gs1,t1,k2) - lambda_gstor_def(gs1,k2,t2)
    + lambda_gstor_def(gs1,k2,t1) - muLB_gstore(gs1,t1,k2) = 0
  dLag/gsin(gs1,t2,k0): mu_gsinMax(gs1,t2,k0) - lambda_gstor_def(gs1,k0,t2)
-   - lambda_gas_balance(ng102,k0,t2) - muLB_gsin(gs1,t2,k0) = -2.1
+   + lambda_gas_balance(ng102,k0,t2) - muLB_gsin(gs1,t2,k0) = -2.1
  dLag/gsout(gs1,t2,k0): mu_gsoutMax(gs1,t2,k0)
-   + lambda_gstor_def(gs1,k0,t2) + lambda_gas_balance(ng102,k0,t2)
+   + lambda_gstor_def(gs1,k0,t2) - lambda_gas_balance(ng102,k0,t2)
    - muLB_gsout(gs1,t2,k0) = -2.1
  dLag/gstore(gs1,t2,k0): mu_gstore_max(gs1,t2,k0)
    - mu_gstore_min(gs1,t2,k0) + lambda_gstor_def(gs1,k0,t2)
    - lambda_gstor_def(gs1,k0,t3) - muLB_gstore(gs1,t2,k0) = 0
  dLag/gsin(gs1,t2,k1): mu_gsinMax(gs1,t2,k1) - lambda_gstor_def(gs1,k1,t2)
-   - lambda_gas_balance(ng102,k1,t2) - muLB_gsin(gs1,t2,k1) = -2.1
+   + lambda_gas_balance(ng102,k1,t2) - muLB_gsin(gs1,t2,k1) = -2.1
  dLag/gsout(gs1,t2,k1): mu_gsoutMax(gs1,t2,k1)
-   + lambda_gstor_def(gs1,k1,t2) + lambda_gas_balance(ng102,k1,t2)
+   + lambda_gstor_def(gs1,k1,t2) - lambda_gas_balance(ng102,k1,t2)
    - muLB_gsout(gs1,t2,k1) = -2.1
  dLag/gstore(gs1,t2,k1): mu_gstore_max(gs1,t2,k1)
    - mu_gstore_min(gs1,t2,k1) + lambda_gstor_def(gs1,k1,t2)
    - lambda_gstor_def(gs1,k1,t3) - muLB_gstore(gs1,t2,k1) = 0
  dLag/gsin(gs1,t2,k2): mu_gsinMax(gs1,t2,k2) - lambda_gstor_def(gs1,k2,t2)
-   - lambda_gas_balance(ng102,k2,t2) - muLB_gsin(gs1,t2,k2) = -2.1
+   + lambda_gas_balance(ng102,k2,t2) - muLB_gsin(gs1,t2,k2) = -2.1
  dLag/gsout(gs1,t2,k2): mu_gsoutMax(gs1,t2,k2)
-   + lambda_gstor_def(gs1,k2,t2) + lambda_gas_balance(ng102,k2,t2)
+   + lambda_gstor_def(gs1,k2,t2) - lambda_gas_balance(ng102,k2,t2)
    - muLB_gsout(gs1,t2,k2) = -2.1
  dLag/gstore(gs1,t2,k2): mu_gstore_max(gs1,t2,k2)
    - mu_gstore_min(gs1,t2,k2) + lambda_gstor_def(gs1,k2,t2)
    - lambda_gstor_def(gs1,k2,t3) - muLB_gstore(gs1,t2,k2) = 0
  dLag/gsin(gs1,t3,k0): mu_gsinMax(gs1,t3,k0) - lambda_gstor_def(gs1,k0,t3)
-   - lambda_gas_balance(ng102,k0,t3) - muLB_gsin(gs1,t3,k0) = -2.1
+   + lambda_gas_balance(ng102,k0,t3) - muLB_gsin(gs1,t3,k0) = -2.1
  dLag/gsout(gs1,t3,k0): mu_gsoutMax(gs1,t3,k0)
-   + lambda_gstor_def(gs1,k0,t3) + lambda_gas_balance(ng102,k0,t3)
+   + lambda_gstor_def(gs1,k0,t3) - lambda_gas_balance(ng102,k0,t3)
    - muLB_gsout(gs1,t3,k0) = -2.1
  dLag/gstore(gs1,t3,k0): mu_gstore_max(gs1,t3,k0)
    - mu_gstore_min(gs1,t3,k0) + lambda_gstor_def(gs1,k0,t3)
    - lambda_gstor_def(gs1,k0,t4) - muLB_gstore(gs1,t3,k0) = 0
  dLag/gsin(gs1,t3,k1): mu_gsinMax(gs1,t3,k1) - lambda_gstor_def(gs1,k1,t3)
-   - lambda_gas_balance(ng102,k1,t3) - muLB_gsin(gs1,t3,k1) = -2.1
+   + lambda_gas_balance(ng102,k1,t3) - muLB_gsin(gs1,t3,k1) = -2.1
  dLag/gsout(gs1,t3,k1): mu_gsoutMax(gs1,t3,k1)
-   + lambda_gstor_def(gs1,k1,t3) + lambda_gas_balance(ng102,k1,t3)
+   + lambda_gstor_def(gs1,k1,t3) - lambda_gas_balance(ng102,k1,t3)
    - muLB_gsout(gs1,t3,k1) = -2.1
  dLag/gstore(gs1,t3,k1): mu_gstore_max(gs1,t3,k1)
    - mu_gstore_min(gs1,t3,k1) + lambda_gstor_def(gs1,k1,t3)
    - lambda_gstor_def(gs1,k1,t4) - muLB_gstore(gs1,t3,k1) = 0
  dLag/gsin(gs1,t3,k2): mu_gsinMax(gs1,t3,k2) - lambda_gstor_def(gs1,k2,t3)
-   - lambda_gas_balance(ng102,k2,t3) - muLB_gsin(gs1,t3,k2) = -2.1
+   + lambda_gas_balance(ng102,k2,t3) - muLB_gsin(gs1,t3,k2) = -2.1
  dLag/gsout(gs1,t3,k2): mu_gsoutMax(gs1,t3,k2)
-   + lambda_gstor_def(gs1,k2,t3) + lambda_gas_balance(ng102,k2,t3)
+   + lambda_gstor_def(gs1,k2,t3) - lambda_gas_balance(ng102,k2,t3)
    - muLB_gsout(gs1,t3,k2) = -2.1
  dLag/gstore(gs1,t3,k2): mu_gstore_max(gs1,t3,k2)
    - mu_gstore_min(gs1,t3,k2) + lambda_gstor_def(gs1,k2,t3)
    - lambda_gstor_def(gs1,k2,t4) - muLB_gstore(gs1,t3,k2) = 0
  dLag/gsin(gs1,t4,k0): mu_gsinMax(gs1,t4,k0) - lambda_gstor_def(gs1,k0,t4)
-   - lambda_gas_balance(ng102,k0,t4) - muLB_gsin(gs1,t4,k0) = -2.1
+   + lambda_gas_balance(ng102,k0,t4) - muLB_gsin(gs1,t4,k0) = -2.1
  dLag/gsout(gs1,t4,k0): mu_gsoutMax(gs1,t4,k0)
-   + lambda_gstor_def(gs1,k0,t4) + lambda_gas_balance(ng102,k0,t4)
+   + lambda_gstor_def(gs1,k0,t4) - lambda_gas_balance(ng102,k0,t4)
    - muLB_gsout(gs1,t4,k0) = -2.1
  dLag/gstore(gs1,t4,k0): mu_gstore_max(gs1,t4,k0)
    - mu_gstore_min(gs1,t4,k0) + lambda_gstor_def(gs1,k0,t4)
    - lambda_gstor_def(gs1,k0,t5) - muLB_gstore(gs1,t4,k0) = 0
  dLag/gsin(gs1,t4,k1): mu_gsinMax(gs1,t4,k1) - lambda_gstor_def(gs1,k1,t4)
-   - lambda_gas_balance(ng102,k1,t4) - muLB_gsin(gs1,t4,k1) = -2.1
+   + lambda_gas_balance(ng102,k1,t4) - muLB_gsin(gs1,t4,k1) = -2.1
  dLag/gsout(gs1,t4,k1): mu_gsoutMax(gs1,t4,k1)
-   + lambda_gstor_def(gs1,k1,t4) + lambda_gas_balance(ng102,k1,t4)
+   + lambda_gstor_def(gs1,k1,t4) - lambda_gas_balance(ng102,k1,t4)
    - muLB_gsout(gs1,t4,k1) = -2.1
  dLag/gstore(gs1,t4,k1): mu_gstore_max(gs1,t4,k1)
    - mu_gstore_min(gs1,t4,k1) + lambda_gstor_def(gs1,k1,t4)
    - lambda_gstor_def(gs1,k1,t5) - muLB_gstore(gs1,t4,k1) = 0
  dLag/gsin(gs1,t4,k2): mu_gsinMax(gs1,t4,k2) - lambda_gstor_def(gs1,k2,t4)
-   - lambda_gas_balance(ng102,k2,t4) - muLB_gsin(gs1,t4,k2) = -2.1
+   + lambda_gas_balance(ng102,k2,t4) - muLB_gsin(gs1,t4,k2) = -2.1
  dLag/gsout(gs1,t4,k2): mu_gsoutMax(gs1,t4,k2)
-   + lambda_gstor_def(gs1,k2,t4) + lambda_gas_balance(ng102,k2,t4)
+   + lambda_gstor_def(gs1,k2,t4) - lambda_gas_balance(ng102,k2,t4)
    - muLB_gsout(gs1,t4,k2) = -2.1
  dLag/gstore(gs1,t4,k2): mu_gstore_max(gs1,t4,k2)
    - mu_gstore_min(gs1,t4,k2) + lambda_gstor_def(gs1,k2,t4)
    - lambda_gstor_def(gs1,k2,t5) - muLB_gstore(gs1,t4,k2) = 0
  dLag/gsin(gs1,t5,k0): mu_gsinMax(gs1,t5,k0) - lambda_gstor_def(gs1,k0,t5)
-   - lambda_gas_balance(ng102,k0,t5) - muLB_gsin(gs1,t5,k0) = -2.1
+   + lambda_gas_balance(ng102,k0,t5) - muLB_gsin(gs1,t5,k0) = -2.1
  dLag/gsout(gs1,t5,k0): mu_gsoutMax(gs1,t5,k0)
-   + lambda_gstor_def(gs1,k0,t5) + lambda_gas_balance(ng102,k0,t5)
+   + lambda_gstor_def(gs1,k0,t5) - lambda_gas_balance(ng102,k0,t5)
    - muLB_gsout(gs1,t5,k0) = -2.1
  dLag/gstore(gs1,t5,k0): mu_gstore_max(gs1,t5,k0)
    - mu_gstore_min(gs1,t5,k0) + lambda_gstor_def(gs1,k0,t5)
    - lambda_gstor_def(gs1,k0,t6) - muLB_gstore(gs1,t5,k0) = 0
  dLag/gsin(gs1,t5,k1): mu_gsinMax(gs1,t5,k1) - lambda_gstor_def(gs1,k1,t5)
-   - lambda_gas_balance(ng102,k1,t5) - muLB_gsin(gs1,t5,k1) = -2.1
+   + lambda_gas_balance(ng102,k1,t5) - muLB_gsin(gs1,t5,k1) = -2.1
  dLag/gsout(gs1,t5,k1): mu_gsoutMax(gs1,t5,k1)
-   + lambda_gstor_def(gs1,k1,t5) + lambda_gas_balance(ng102,k1,t5)
+   + lambda_gstor_def(gs1,k1,t5) - lambda_gas_balance(ng102,k1,t5)
    - muLB_gsout(gs1,t5,k1) = -2.1
  dLag/gstore(gs1,t5,k1): mu_gstore_max(gs1,t5,k1)
    - mu_gstore_min(gs1,t5,k1) + lambda_gstor_def(gs1,k1,t5)
    - lambda_gstor_def(gs1,k1,t6) - muLB_gstore(gs1,t5,k1) = 0
  dLag/gsin(gs1,t5,k2): mu_gsinMax(gs1,t5,k2) - lambda_gstor_def(gs1,k2,t5)
-   - lambda_gas_balance(ng102,k2,t5) - muLB_gsin(gs1,t5,k2) = -2.1
+   + lambda_gas_balance(ng102,k2,t5) - muLB_gsin(gs1,t5,k2) = -2.1
  dLag/gsout(gs1,t5,k2): mu_gsoutMax(gs1,t5,k2)
-   + lambda_gstor_def(gs1,k2,t5) + lambda_gas_balance(ng102,k2,t5)
+   + lambda_gstor_def(gs1,k2,t5) - lambda_gas_balance(ng102,k2,t5)
    - muLB_gsout(gs1,t5,k2) = -2.1
  dLag/gstore(gs1,t5,k2): mu_gstore_max(gs1,t5,k2)
    - mu_gstore_min(gs1,t5,k2) + lambda_gstor_def(gs1,k2,t5)
    - lambda_gstor_def(gs1,k2,t6) - muLB_gstore(gs1,t5,k2) = 0
  dLag/gsin(gs1,t6,k0): mu_gsinMax(gs1,t6,k0) - lambda_gstor_def(gs1,k0,t6)
-   - lambda_gas_balance(ng102,k0,t6) - muLB_gsin(gs1,t6,k0) = -2.1
+   + lambda_gas_balance(ng102,k0,t6) - muLB_gsin(gs1,t6,k0) = -2.1
  dLag/gsout(gs1,t6,k0): mu_gsoutMax(gs1,t6,k0)
-   + lambda_gstor_def(gs1,k0,t6) + lambda_gas_balance(ng102,k0,t6)
+   + lambda_gstor_def(gs1,k0,t6) - lambda_gas_balance(ng102,k0,t6)
    - muLB_gsout(gs1,t6,k0) = -2.1
  dLag/gstore(gs1,t6,k0): mu_gstore_max(gs1,t6,k0)
    - mu_gstore_min(gs1,t6,k0) + lambda_gstor_def(gs1,k0,t6)
    - lambda_gstor_def(gs1,k0,t7) - muLB_gstore(gs1,t6,k0) = 0
  dLag/gsin(gs1,t6,k1): mu_gsinMax(gs1,t6,k1) - lambda_gstor_def(gs1,k1,t6)
-   - lambda_gas_balance(ng102,k1,t6) - muLB_gsin(gs1,t6,k1) = -2.1
+   + lambda_gas_balance(ng102,k1,t6) - muLB_gsin(gs1,t6,k1) = -2.1
  dLag/gsout(gs1,t6,k1): mu_gsoutMax(gs1,t6,k1)
-   + lambda_gstor_def(gs1,k1,t6) + lambda_gas_balance(ng102,k1,t6)
+   + lambda_gstor_def(gs1,k1,t6) - lambda_gas_balance(ng102,k1,t6)
    - muLB_gsout(gs1,t6,k1) = -2.1
  dLag/gstore(gs1,t6,k1): mu_gstore_max(gs1,t6,k1)
    - mu_gstore_min(gs1,t6,k1) + lambda_gstor_def(gs1,k1,t6)
    - lambda_gstor_def(gs1,k1,t7) - muLB_gstore(gs1,t6,k1) = 0
  dLag/gsin(gs1,t6,k2): mu_gsinMax(gs1,t6,k2) - lambda_gstor_def(gs1,k2,t6)
-   - lambda_gas_balance(ng102,k2,t6) - muLB_gsin(gs1,t6,k2) = -2.1
+   + lambda_gas_balance(ng102,k2,t6) - muLB_gsin(gs1,t6,k2) = -2.1
  dLag/gsout(gs1,t6,k2): mu_gsoutMax(gs1,t6,k2)
-   + lambda_gstor_def(gs1,k2,t6) + lambda_gas_balance(ng102,k2,t6)
+   + lambda_gstor_def(gs1,k2,t6) - lambda_gas_balance(ng102,k2,t6)
    - muLB_gsout(gs1,t6,k2) = -2.1
  dLag/gstore(gs1,t6,k2): mu_gstore_max(gs1,t6,k2)
    - mu_gstore_min(gs1,t6,k2) + lambda_gstor_def(gs1,k2,t6)
    - lambda_gstor_def(gs1,k2,t7) - muLB_gstore(gs1,t6,k2) = 0
  dLag/gsin(gs1,t7,k0): mu_gsinMax(gs1,t7,k0) - lambda_gstor_def(gs1,k0,t7)
-   - lambda_gas_balance(ng102,k0,t7) - muLB_gsin(gs1,t7,k0) = -2.1
+   + lambda_gas_balance(ng102,k0,t7) - muLB_gsin(gs1,t7,k0) = -2.1
  dLag/gsout(gs1,t7,k0): mu_gsoutMax(gs1,t7,k0)
-   + lambda_gstor_def(gs1,k0,t7) + lambda_gas_balance(ng102,k0,t7)
+   + lambda_gstor_def(gs1,k0,t7) - lambda_gas_balance(ng102,k0,t7)
    - muLB_gsout(gs1,t7,k0) = -2.1
  dLag/gstore(gs1,t7,k0): mu_gstore_max(gs1,t7,k0)
    - mu_gstore_min(gs1,t7,k0) + lambda_gstor_def(gs1,k0,t7)
    - lambda_gstor_def(gs1,k0,t8) - muLB_gstore(gs1,t7,k0) = 0
  dLag/gsin(gs1,t7,k1): mu_gsinMax(gs1,t7,k1) - lambda_gstor_def(gs1,k1,t7)
-   - lambda_gas_balance(ng102,k1,t7) - muLB_gsin(gs1,t7,k1) = -2.1
+   + lambda_gas_balance(ng102,k1,t7) - muLB_gsin(gs1,t7,k1) = -2.1
  dLag/gsout(gs1,t7,k1): mu_gsoutMax(gs1,t7,k1)
-   + lambda_gstor_def(gs1,k1,t7) + lambda_gas_balance(ng102,k1,t7)
+   + lambda_gstor_def(gs1,k1,t7) - lambda_gas_balance(ng102,k1,t7)
    - muLB_gsout(gs1,t7,k1) = -2.1
  dLag/gstore(gs1,t7,k1): mu_gstore_max(gs1,t7,k1)
    - mu_gstore_min(gs1,t7,k1) + lambda_gstor_def(gs1,k1,t7)
    - lambda_gstor_def(gs1,k1,t8) - muLB_gstore(gs1,t7,k1) = 0
  dLag/gsin(gs1,t7,k2): mu_gsinMax(gs1,t7,k2) - lambda_gstor_def(gs1,k2,t7)
-   - lambda_gas_balance(ng102,k2,t7) - muLB_gsin(gs1,t7,k2) = -2.1
+   + lambda_gas_balance(ng102,k2,t7) - muLB_gsin(gs1,t7,k2) = -2.1
  dLag/gsout(gs1,t7,k2): mu_gsoutMax(gs1,t7,k2)
-   + lambda_gstor_def(gs1,k2,t7) + lambda_gas_balance(ng102,k2,t7)
+   + lambda_gstor_def(gs1,k2,t7) - lambda_gas_balance(ng102,k2,t7)
    - muLB_gsout(gs1,t7,k2) = -2.1
  dLag/gstore(gs1,t7,k2): mu_gstore_max(gs1,t7,k2)
    - mu_gstore_min(gs1,t7,k2) + lambda_gstor_def(gs1,k2,t7)
    - lambda_gstor_def(gs1,k2,t8) - muLB_gstore(gs1,t7,k2) = 0
  dLag/gsin(gs1,t8,k0): mu_gsinMax(gs1,t8,k0) - lambda_gstor_def(gs1,k0,t8)
-   - lambda_gas_balance(ng102,k0,t8) - muLB_gsin(gs1,t8,k0) = -2.1
+   + lambda_gas_balance(ng102,k0,t8) - muLB_gsin(gs1,t8,k0) = -2.1
  dLag/gsout(gs1,t8,k0): mu_gsoutMax(gs1,t8,k0)
-   + lambda_gstor_def(gs1,k0,t8) + lambda_gas_balance(ng102,k0,t8)
+   + lambda_gstor_def(gs1,k0,t8) - lambda_gas_balance(ng102,k0,t8)
    - muLB_gsout(gs1,t8,k0) = -2.1
  dLag/gstore(gs1,t8,k0): mu_gstore_max(gs1,t8,k0)
    - mu_gstore_min(gs1,t8,k0) + lambda_gstor_def(gs1,k0,t8)
    - lambda_gstor_def(gs1,k0,t9) - muLB_gstore(gs1,t8,k0) = 0
  dLag/gsin(gs1,t8,k1): mu_gsinMax(gs1,t8,k1) - lambda_gstor_def(gs1,k1,t8)
-   - lambda_gas_balance(ng102,k1,t8) - muLB_gsin(gs1,t8,k1) = -2.1
+   + lambda_gas_balance(ng102,k1,t8) - muLB_gsin(gs1,t8,k1) = -2.1
  dLag/gsout(gs1,t8,k1): mu_gsoutMax(gs1,t8,k1)
-   + lambda_gstor_def(gs1,k1,t8) + lambda_gas_balance(ng102,k1,t8)
+   + lambda_gstor_def(gs1,k1,t8) - lambda_gas_balance(ng102,k1,t8)
    - muLB_gsout(gs1,t8,k1) = -2.1
  dLag/gstore(gs1,t8,k1): mu_gstore_max(gs1,t8,k1)
    - mu_gstore_min(gs1,t8,k1) + lambda_gstor_def(gs1,k1,t8)
    - lambda_gstor_def(gs1,k1,t9) - muLB_gstore(gs1,t8,k1) = 0
  dLag/gsin(gs1,t8,k2): mu_gsinMax(gs1,t8,k2) - lambda_gstor_def(gs1,k2,t8)
-   - lambda_gas_balance(ng102,k2,t8) - muLB_gsin(gs1,t8,k2) = -2.1
+   + lambda_gas_balance(ng102,k2,t8) - muLB_gsin(gs1,t8,k2) = -2.1
  dLag/gsout(gs1,t8,k2): mu_gsoutMax(gs1,t8,k2)
-   + lambda_gstor_def(gs1,k2,t8) + lambda_gas_balance(ng102,k2,t8)
+   + lambda_gstor_def(gs1,k2,t8) - lambda_gas_balance(ng102,k2,t8)
    - muLB_gsout(gs1,t8,k2) = -2.1
  dLag/gstore(gs1,t8,k2): mu_gstore_max(gs1,t8,k2)
    - mu_gstore_min(gs1,t8,k2) + lambda_gstor_def(gs1,k2,t8)
    - lambda_gstor_def(gs1,k2,t9) - muLB_gstore(gs1,t8,k2) = 0
  dLag/gsin(gs1,t9,k0): mu_gsinMax(gs1,t9,k0) - lambda_gstor_def(gs1,k0,t9)
-   - lambda_gas_balance(ng102,k0,t9) - muLB_gsin(gs1,t9,k0) = -2.1
+   + lambda_gas_balance(ng102,k0,t9) - muLB_gsin(gs1,t9,k0) = -2.1
  dLag/gsout(gs1,t9,k0): mu_gsoutMax(gs1,t9,k0)
-   + lambda_gstor_def(gs1,k0,t9) + lambda_gas_balance(ng102,k0,t9)
+   + lambda_gstor_def(gs1,k0,t9) - lambda_gas_balance(ng102,k0,t9)
    - muLB_gsout(gs1,t9,k0) = -2.1
  dLag/gstore(gs1,t9,k0): mu_gstore_max(gs1,t9,k0)
    - mu_gstore_min(gs1,t9,k0) + lambda_gstor_def(gs1,k0,t9)
    - lambda_gstor_def(gs1,k0,t10) - muLB_gstore(gs1,t9,k0) = 0
  dLag/gsin(gs1,t9,k1): mu_gsinMax(gs1,t9,k1) - lambda_gstor_def(gs1,k1,t9)
-   - lambda_gas_balance(ng102,k1,t9) - muLB_gsin(gs1,t9,k1) = -2.1
+   + lambda_gas_balance(ng102,k1,t9) - muLB_gsin(gs1,t9,k1) = -2.1
  dLag/gsout(gs1,t9,k1): mu_gsoutMax(gs1,t9,k1)
-   + lambda_gstor_def(gs1,k1,t9) + lambda_gas_balance(ng102,k1,t9)
+   + lambda_gstor_def(gs1,k1,t9) - lambda_gas_balance(ng102,k1,t9)
    - muLB_gsout(gs1,t9,k1) = -2.1
  dLag/gstore(gs1,t9,k1): mu_gstore_max(gs1,t9,k1)
    - mu_gstore_min(gs1,t9,k1) + lambda_gstor_def(gs1,k1,t9)
    - lambda_gstor_def(gs1,k1,t10) - muLB_gstore(gs1,t9,k1) = 0
  dLag/gsin(gs1,t9,k2): mu_gsinMax(gs1,t9,k2) - lambda_gstor_def(gs1,k2,t9)
-   - lambda_gas_balance(ng102,k2,t9) - muLB_gsin(gs1,t9,k2) = -2.1
+   + lambda_gas_balance(ng102,k2,t9) - muLB_gsin(gs1,t9,k2) = -2.1
  dLag/gsout(gs1,t9,k2): mu_gsoutMax(gs1,t9,k2)
-   + lambda_gstor_def(gs1,k2,t9) + lambda_gas_balance(ng102,k2,t9)
+   + lambda_gstor_def(gs1,k2,t9) - lambda_gas_balance(ng102,k2,t9)
    - muLB_gsout(gs1,t9,k2) = -2.1
  dLag/gstore(gs1,t9,k2): mu_gstore_max(gs1,t9,k2)
    - mu_gstore_min(gs1,t9,k2) + lambda_gstor_def(gs1,k2,t9)
    - lambda_gstor_def(gs1,k2,t10) - muLB_gstore(gs1,t9,k2) = 0
  dLag/gsin(gs1,t10,k0): mu_gsinMax(gs1,t10,k0)
-   - lambda_gstor_def(gs1,k0,t10) - lambda_gas_balance(ng102,k0,t10)
+   - lambda_gstor_def(gs1,k0,t10) + lambda_gas_balance(ng102,k0,t10)
    - muLB_gsin(gs1,t10,k0) = -2.1
  dLag/gsout(gs1,t10,k0): mu_gsoutMax(gs1,t10,k0)
-   + lambda_gstor_def(gs1,k0,t10) + lambda_gas_balance(ng102,k0,t10)
+   + lambda_gstor_def(gs1,k0,t10) - lambda_gas_balance(ng102,k0,t10)
    - muLB_gsout(gs1,t10,k0) = -2.1
  dLag/gstore(gs1,t10,k0): mu_gstore_max(gs1,t10,k0)
    - mu_gstore_min(gs1,t10,k0) + lambda_gstor_def(gs1,k0,t10)
    - lambda_gstor_def(gs1,k0,t11) - muLB_gstore(gs1,t10,k0) = 0
  dLag/gsin(gs1,t10,k1): mu_gsinMax(gs1,t10,k1)
-   - lambda_gstor_def(gs1,k1,t10) - lambda_gas_balance(ng102,k1,t10)
+   - lambda_gstor_def(gs1,k1,t10) + lambda_gas_balance(ng102,k1,t10)
    - muLB_gsin(gs1,t10,k1) = -2.1
  dLag/gsout(gs1,t10,k1): mu_gsoutMax(gs1,t10,k1)
-   + lambda_gstor_def(gs1,k1,t10) + lambda_gas_balance(ng102,k1,t10)
+   + lambda_gstor_def(gs1,k1,t10) - lambda_gas_balance(ng102,k1,t10)
    - muLB_gsout(gs1,t10,k1) = -2.1
  dLag/gstore(gs1,t10,k1): mu_gstore_max(gs1,t10,k1)
    - mu_gstore_min(gs1,t10,k1) + lambda_gstor_def(gs1,k1,t10)
    - lambda_gstor_def(gs1,k1,t11) - muLB_gstore(gs1,t10,k1) = 0
  dLag/gsin(gs1,t10,k2): mu_gsinMax(gs1,t10,k2)
-   - lambda_gstor_def(gs1,k2,t10) - lambda_gas_balance(ng102,k2,t10)
+   - lambda_gstor_def(gs1,k2,t10) + lambda_gas_balance(ng102,k2,t10)
    - muLB_gsin(gs1,t10,k2) = -2.1
  dLag/gsout(gs1,t10,k2): mu_gsoutMax(gs1,t10,k2)
-   + lambda_gstor_def(gs1,k2,t10) + lambda_gas_balance(ng102,k2,t10)
+   + lambda_gstor_def(gs1,k2,t10) - lambda_gas_balance(ng102,k2,t10)
    - muLB_gsout(gs1,t10,k2) = -2.1
  dLag/gstore(gs1,t10,k2): mu_gstore_max(gs1,t10,k2)
    - mu_gstore_min(gs1,t10,k2) + lambda_gstor_def(gs1,k2,t10)
    - lambda_gstor_def(gs1,k2,t11) - muLB_gstore(gs1,t10,k2) = 0
  dLag/gsin(gs1,t11,k0): mu_gsinMax(gs1,t11,k0)
-   - lambda_gstor_def(gs1,k0,t11) - lambda_gas_balance(ng102,k0,t11)
+   - lambda_gstor_def(gs1,k0,t11) + lambda_gas_balance(ng102,k0,t11)
    - muLB_gsin(gs1,t11,k0) = -2.1
  dLag/gsout(gs1,t11,k0): mu_gsoutMax(gs1,t11,k0)
-   + lambda_gstor_def(gs1,k0,t11) + lambda_gas_balance(ng102,k0,t11)
+   + lambda_gstor_def(gs1,k0,t11) - lambda_gas_balance(ng102,k0,t11)
    - muLB_gsout(gs1,t11,k0) = -2.1
  dLag/gstore(gs1,t11,k0): mu_gstore_max(gs1,t11,k0)
    - mu_gstore_min(gs1,t11,k0) + lambda_gstor_def(gs1,k0,t11)
    - lambda_gstor_def(gs1,k0,t12) - muLB_gstore(gs1,t11,k0) = 0
  dLag/gsin(gs1,t11,k1): mu_gsinMax(gs1,t11,k1)
-   - lambda_gstor_def(gs1,k1,t11) - lambda_gas_balance(ng102,k1,t11)
+   - lambda_gstor_def(gs1,k1,t11) + lambda_gas_balance(ng102,k1,t11)
    - muLB_gsin(gs1,t11,k1) = -2.1
  dLag/gsout(gs1,t11,k1): mu_gsoutMax(gs1,t11,k1)
-   + lambda_gstor_def(gs1,k1,t11) + lambda_gas_balance(ng102,k1,t11)
+   + lambda_gstor_def(gs1,k1,t11) - lambda_gas_balance(ng102,k1,t11)
    - muLB_gsout(gs1,t11,k1) = -2.1
  dLag/gstore(gs1,t11,k1): mu_gstore_max(gs1,t11,k1)
    - mu_gstore_min(gs1,t11,k1) + lambda_gstor_def(gs1,k1,t11)
    - lambda_gstor_def(gs1,k1,t12) - muLB_gstore(gs1,t11,k1) = 0
  dLag/gsin(gs1,t11,k2): mu_gsinMax(gs1,t11,k2)
-   - lambda_gstor_def(gs1,k2,t11) - lambda_gas_balance(ng102,k2,t11)
+   - lambda_gstor_def(gs1,k2,t11) + lambda_gas_balance(ng102,k2,t11)
    - muLB_gsin(gs1,t11,k2) = -2.1
  dLag/gsout(gs1,t11,k2): mu_gsoutMax(gs1,t11,k2)
-   + lambda_gstor_def(gs1,k2,t11) + lambda_gas_balance(ng102,k2,t11)
+   + lambda_gstor_def(gs1,k2,t11) - lambda_gas_balance(ng102,k2,t11)
    - muLB_gsout(gs1,t11,k2) = -2.1
  dLag/gstore(gs1,t11,k2): mu_gstore_max(gs1,t11,k2)
    - mu_gstore_min(gs1,t11,k2) + lambda_gstor_def(gs1,k2,t11)
    - lambda_gstor_def(gs1,k2,t12) - muLB_gstore(gs1,t11,k2) = 0
  dLag/gsin(gs1,t12,k0): mu_gsinMax(gs1,t12,k0)
-   - lambda_gstor_def(gs1,k0,t12) - lambda_gas_balance(ng102,k0,t12)
+   - lambda_gstor_def(gs1,k0,t12) + lambda_gas_balance(ng102,k0,t12)
    - muLB_gsin(gs1,t12,k0) = -2.1
  dLag/gsout(gs1,t12,k0): mu_gsoutMax(gs1,t12,k0)
-   + lambda_gstor_def(gs1,k0,t12) + lambda_gas_balance(ng102,k0,t12)
+   + lambda_gstor_def(gs1,k0,t12) - lambda_gas_balance(ng102,k0,t12)
    - muLB_gsout(gs1,t12,k0) = -2.1
  dLag/gstore(gs1,t12,k0): mu_gstore_max(gs1,t12,k0)
    - mu_gstore_min(gs1,t12,k0) + lambda_gstor_def(gs1,k0,t12)
    - lambda_gstor_def(gs1,k0,t13) - muLB_gstore(gs1,t12,k0) = 0
  dLag/gsin(gs1,t12,k1): mu_gsinMax(gs1,t12,k1)
-   - lambda_gstor_def(gs1,k1,t12) - lambda_gas_balance(ng102,k1,t12)
+   - lambda_gstor_def(gs1,k1,t12) + lambda_gas_balance(ng102,k1,t12)
    - muLB_gsin(gs1,t12,k1) = -2.1
  dLag/gsout(gs1,t12,k1): mu_gsoutMax(gs1,t12,k1)
-   + lambda_gstor_def(gs1,k1,t12) + lambda_gas_balance(ng102,k1,t12)
+   + lambda_gstor_def(gs1,k1,t12) - lambda_gas_balance(ng102,k1,t12)
    - muLB_gsout(gs1,t12,k1) = -2.1
  dLag/gstore(gs1,t12,k1): mu_gstore_max(gs1,t12,k1)
    - mu_gstore_min(gs1,t12,k1) + lambda_gstor_def(gs1,k1,t12)
    - lambda_gstor_def(gs1,k1,t13) - muLB_gstore(gs1,t12,k1) = 0
  dLag/gsin(gs1,t12,k2): mu_gsinMax(gs1,t12,k2)
-   - lambda_gstor_def(gs1,k2,t12) - lambda_gas_balance(ng102,k2,t12)
+   - lambda_gstor_def(gs1,k2,t12) + lambda_gas_balance(ng102,k2,t12)
    - muLB_gsin(gs1,t12,k2) = -2.1
  dLag/gsout(gs1,t12,k2): mu_gsoutMax(gs1,t12,k2)
-   + lambda_gstor_def(gs1,k2,t12) + lambda_gas_balance(ng102,k2,t12)
+   + lambda_gstor_def(gs1,k2,t12) - lambda_gas_balance(ng102,k2,t12)
    - muLB_gsout(gs1,t12,k2) = -2.1
  dLag/gstore(gs1,t12,k2): mu_gstore_max(gs1,t12,k2)
    - mu_gstore_min(gs1,t12,k2) + lambda_gstor_def(gs1,k2,t12)
    - lambda_gstor_def(gs1,k2,t13) - muLB_gstore(gs1,t12,k2) = 0
  dLag/gsin(gs1,t13,k0): mu_gsinMax(gs1,t13,k0)
-   - lambda_gstor_def(gs1,k0,t13) - lambda_gas_balance(ng102,k0,t13)
+   - lambda_gstor_def(gs1,k0,t13) + lambda_gas_balance(ng102,k0,t13)
    - muLB_gsin(gs1,t13,k0) = -2.1
  dLag/gsout(gs1,t13,k0): mu_gsoutMax(gs1,t13,k0)
-   + lambda_gstor_def(gs1,k0,t13) + lambda_gas_balance(ng102,k0,t13)
+   + lambda_gstor_def(gs1,k0,t13) - lambda_gas_balance(ng102,k0,t13)
    - muLB_gsout(gs1,t13,k0) = -2.1
  dLag/gstore(gs1,t13,k0): mu_gstore_max(gs1,t13,k0)
    - mu_gstore_min(gs1,t13,k0) + lambda_gstor_def(gs1,k0,t13)
    - lambda_gstor_def(gs1,k0,t14) - muLB_gstore(gs1,t13,k0) = 0
  dLag/gsin(gs1,t13,k1): mu_gsinMax(gs1,t13,k1)
-   - lambda_gstor_def(gs1,k1,t13) - lambda_gas_balance(ng102,k1,t13)
+   - lambda_gstor_def(gs1,k1,t13) + lambda_gas_balance(ng102,k1,t13)
    - muLB_gsin(gs1,t13,k1) = -2.1
  dLag/gsout(gs1,t13,k1): mu_gsoutMax(gs1,t13,k1)
-   + lambda_gstor_def(gs1,k1,t13) + lambda_gas_balance(ng102,k1,t13)
+   + lambda_gstor_def(gs1,k1,t13) - lambda_gas_balance(ng102,k1,t13)
    - muLB_gsout(gs1,t13,k1) = -2.1
  dLag/gstore(gs1,t13,k1): mu_gstore_max(gs1,t13,k1)
    - mu_gstore_min(gs1,t13,k1) + lambda_gstor_def(gs1,k1,t13)
    - lambda_gstor_def(gs1,k1,t14) - muLB_gstore(gs1,t13,k1) = 0
  dLag/gsin(gs1,t13,k2): mu_gsinMax(gs1,t13,k2)
-   - lambda_gstor_def(gs1,k2,t13) - lambda_gas_balance(ng102,k2,t13)
+   - lambda_gstor_def(gs1,k2,t13) + lambda_gas_balance(ng102,k2,t13)
    - muLB_gsin(gs1,t13,k2) = -2.1
  dLag/gsout(gs1,t13,k2): mu_gsoutMax(gs1,t13,k2)
-   + lambda_gstor_def(gs1,k2,t13) + lambda_gas_balance(ng102,k2,t13)
+   + lambda_gstor_def(gs1,k2,t13) - lambda_gas_balance(ng102,k2,t13)
    - muLB_gsout(gs1,t13,k2) = -2.1
  dLag/gstore(gs1,t13,k2): mu_gstore_max(gs1,t13,k2)
    - mu_gstore_min(gs1,t13,k2) + lambda_gstor_def(gs1,k2,t13)
    - lambda_gstor_def(gs1,k2,t14) - muLB_gstore(gs1,t13,k2) = 0
  dLag/gsin(gs1,t14,k0): mu_gsinMax(gs1,t14,k0)
-   - lambda_gstor_def(gs1,k0,t14) - lambda_gas_balance(ng102,k0,t14)
+   - lambda_gstor_def(gs1,k0,t14) + lambda_gas_balance(ng102,k0,t14)
    - muLB_gsin(gs1,t14,k0) = -2.1
  dLag/gsout(gs1,t14,k0): mu_gsoutMax(gs1,t14,k0)
-   + lambda_gstor_def(gs1,k0,t14) + lambda_gas_balance(ng102,k0,t14)
+   + lambda_gstor_def(gs1,k0,t14) - lambda_gas_balance(ng102,k0,t14)
    - muLB_gsout(gs1,t14,k0) = -2.1
  dLag/gstore(gs1,t14,k0): mu_gstore_max(gs1,t14,k0)
    - mu_gstore_min(gs1,t14,k0) + lambda_gstor_def(gs1,k0,t14)
    - lambda_gstor_def(gs1,k0,t15) - muLB_gstore(gs1,t14,k0) = 0
  dLag/gsin(gs1,t14,k1): mu_gsinMax(gs1,t14,k1)
-   - lambda_gstor_def(gs1,k1,t14) - lambda_gas_balance(ng102,k1,t14)
+   - lambda_gstor_def(gs1,k1,t14) + lambda_gas_balance(ng102,k1,t14)
    - muLB_gsin(gs1,t14,k1) = -2.1
  dLag/gsout(gs1,t14,k1): mu_gsoutMax(gs1,t14,k1)
-   + lambda_gstor_def(gs1,k1,t14) + lambda_gas_balance(ng102,k1,t14)
+   + lambda_gstor_def(gs1,k1,t14) - lambda_gas_balance(ng102,k1,t14)
    - muLB_gsout(gs1,t14,k1) = -2.1
  dLag/gstore(gs1,t14,k1): mu_gstore_max(gs1,t14,k1)
    - mu_gstore_min(gs1,t14,k1) + lambda_gstor_def(gs1,k1,t14)
    - lambda_gstor_def(gs1,k1,t15) - muLB_gstore(gs1,t14,k1) = 0
  dLag/gsin(gs1,t14,k2): mu_gsinMax(gs1,t14,k2)
-   - lambda_gstor_def(gs1,k2,t14) - lambda_gas_balance(ng102,k2,t14)
+   - lambda_gstor_def(gs1,k2,t14) + lambda_gas_balance(ng102,k2,t14)
    - muLB_gsin(gs1,t14,k2) = -2.1
  dLag/gsout(gs1,t14,k2): mu_gsoutMax(gs1,t14,k2)
-   + lambda_gstor_def(gs1,k2,t14) + lambda_gas_balance(ng102,k2,t14)
+   + lambda_gstor_def(gs1,k2,t14) - lambda_gas_balance(ng102,k2,t14)
    - muLB_gsout(gs1,t14,k2) = -2.1
  dLag/gstore(gs1,t14,k2): mu_gstore_max(gs1,t14,k2)
    - mu_gstore_min(gs1,t14,k2) + lambda_gstor_def(gs1,k2,t14)
    - lambda_gstor_def(gs1,k2,t15) - muLB_gstore(gs1,t14,k2) = 0
  dLag/gsin(gs1,t15,k0): mu_gsinMax(gs1,t15,k0)
-   - lambda_gstor_def(gs1,k0,t15) - lambda_gas_balance(ng102,k0,t15)
+   - lambda_gstor_def(gs1,k0,t15) + lambda_gas_balance(ng102,k0,t15)
    - muLB_gsin(gs1,t15,k0) = -2.1
  dLag/gsout(gs1,t15,k0): mu_gsoutMax(gs1,t15,k0)
-   + lambda_gstor_def(gs1,k0,t15) + lambda_gas_balance(ng102,k0,t15)
+   + lambda_gstor_def(gs1,k0,t15) - lambda_gas_balance(ng102,k0,t15)
    - muLB_gsout(gs1,t15,k0) = -2.1
  dLag/gstore(gs1,t15,k0): mu_gstore_max(gs1,t15,k0)
    - mu_gstore_min(gs1,t15,k0) + lambda_gstor_def(gs1,k0,t15)
    - lambda_gstor_def(gs1,k0,t16) - muLB_gstore(gs1,t15,k0) = 0
  dLag/gsin(gs1,t15,k1): mu_gsinMax(gs1,t15,k1)
-   - lambda_gstor_def(gs1,k1,t15) - lambda_gas_balance(ng102,k1,t15)
+   - lambda_gstor_def(gs1,k1,t15) + lambda_gas_balance(ng102,k1,t15)
    - muLB_gsin(gs1,t15,k1) = -2.1
  dLag/gsout(gs1,t15,k1): mu_gsoutMax(gs1,t15,k1)
-   + lambda_gstor_def(gs1,k1,t15) + lambda_gas_balance(ng102,k1,t15)
+   + lambda_gstor_def(gs1,k1,t15) - lambda_gas_balance(ng102,k1,t15)
    - muLB_gsout(gs1,t15,k1) = -2.1
  dLag/gstore(gs1,t15,k1): mu_gstore_max(gs1,t15,k1)
    - mu_gstore_min(gs1,t15,k1) + lambda_gstor_def(gs1,k1,t15)
    - lambda_gstor_def(gs1,k1,t16) - muLB_gstore(gs1,t15,k1) = 0
  dLag/gsin(gs1,t15,k2): mu_gsinMax(gs1,t15,k2)
-   - lambda_gstor_def(gs1,k2,t15) - lambda_gas_balance(ng102,k2,t15)
+   - lambda_gstor_def(gs1,k2,t15) + lambda_gas_balance(ng102,k2,t15)
    - muLB_gsin(gs1,t15,k2) = -2.1
  dLag/gsout(gs1,t15,k2): mu_gsoutMax(gs1,t15,k2)
-   + lambda_gstor_def(gs1,k2,t15) + lambda_gas_balance(ng102,k2,t15)
+   + lambda_gstor_def(gs1,k2,t15) - lambda_gas_balance(ng102,k2,t15)
    - muLB_gsout(gs1,t15,k2) = -2.1
  dLag/gstore(gs1,t15,k2): mu_gstore_max(gs1,t15,k2)
    - mu_gstore_min(gs1,t15,k2) + lambda_gstor_def(gs1,k2,t15)
    - lambda_gstor_def(gs1,k2,t16) - muLB_gstore(gs1,t15,k2) = 0
  dLag/gsin(gs1,t16,k0): mu_gsinMax(gs1,t16,k0)
-   - lambda_gstor_def(gs1,k0,t16) - lambda_gas_balance(ng102,k0,t16)
+   - lambda_gstor_def(gs1,k0,t16) + lambda_gas_balance(ng102,k0,t16)
    - muLB_gsin(gs1,t16,k0) = -2.1
  dLag/gsout(gs1,t16,k0): mu_gsoutMax(gs1,t16,k0)
-   + lambda_gstor_def(gs1,k0,t16) + lambda_gas_balance(ng102,k0,t16)
+   + lambda_gstor_def(gs1,k0,t16) - lambda_gas_balance(ng102,k0,t16)
    - muLB_gsout(gs1,t16,k0) = -2.1
  dLag/gstore(gs1,t16,k0): mu_gstore_max(gs1,t16,k0)
    - mu_gstore_min(gs1,t16,k0) + lambda_gstor_def(gs1,k0,t16)
    - lambda_gstor_def(gs1,k0,t17) - muLB_gstore(gs1,t16,k0) = 0
  dLag/gsin(gs1,t16,k1): mu_gsinMax(gs1,t16,k1)
-   - lambda_gstor_def(gs1,k1,t16) - lambda_gas_balance(ng102,k1,t16)
+   - lambda_gstor_def(gs1,k1,t16) + lambda_gas_balance(ng102,k1,t16)
    - muLB_gsin(gs1,t16,k1) = -2.1
  dLag/gsout(gs1,t16,k1): mu_gsoutMax(gs1,t16,k1)
-   + lambda_gstor_def(gs1,k1,t16) + lambda_gas_balance(ng102,k1,t16)
+   + lambda_gstor_def(gs1,k1,t16) - lambda_gas_balance(ng102,k1,t16)
    - muLB_gsout(gs1,t16,k1) = -2.1
  dLag/gstore(gs1,t16,k1): mu_gstore_max(gs1,t16,k1)
    - mu_gstore_min(gs1,t16,k1) + lambda_gstor_def(gs1,k1,t16)
    - lambda_gstor_def(gs1,k1,t17) - muLB_gstore(gs1,t16,k1) = 0
  dLag/gsin(gs1,t16,k2): mu_gsinMax(gs1,t16,k2)
-   - lambda_gstor_def(gs1,k2,t16) - lambda_gas_balance(ng102,k2,t16)
+   - lambda_gstor_def(gs1,k2,t16) + lambda_gas_balance(ng102,k2,t16)
    - muLB_gsin(gs1,t16,k2) = -2.1
  dLag/gsout(gs1,t16,k2): mu_gsoutMax(gs1,t16,k2)
-   + lambda_gstor_def(gs1,k2,t16) + lambda_gas_balance(ng102,k2,t16)
+   + lambda_gstor_def(gs1,k2,t16) - lambda_gas_balance(ng102,k2,t16)
    - muLB_gsout(gs1,t16,k2) = -2.1
  dLag/gstore(gs1,t16,k2): mu_gstore_max(gs1,t16,k2)
    - mu_gstore_min(gs1,t16,k2) + lambda_gstor_def(gs1,k2,t16)
    - lambda_gstor_def(gs1,k2,t17) - muLB_gstore(gs1,t16,k2) = 0
  dLag/gsin(gs1,t17,k0): mu_gsinMax(gs1,t17,k0)
-   - lambda_gstor_def(gs1,k0,t17) - lambda_gas_balance(ng102,k0,t17)
+   - lambda_gstor_def(gs1,k0,t17) + lambda_gas_balance(ng102,k0,t17)
    - muLB_gsin(gs1,t17,k0) = -2.1
  dLag/gsout(gs1,t17,k0): mu_gsoutMax(gs1,t17,k0)
-   + lambda_gstor_def(gs1,k0,t17) + lambda_gas_balance(ng102,k0,t17)
+   + lambda_gstor_def(gs1,k0,t17) - lambda_gas_balance(ng102,k0,t17)
    - muLB_gsout(gs1,t17,k0) = -2.1
  dLag/gstore(gs1,t17,k0): mu_gstore_max(gs1,t17,k0)
    - mu_gstore_min(gs1,t17,k0) + lambda_gstor_def(gs1,k0,t17)
    - lambda_gstor_def(gs1,k0,t18) - muLB_gstore(gs1,t17,k0) = 0
  dLag/gsin(gs1,t17,k1): mu_gsinMax(gs1,t17,k1)
-   - lambda_gstor_def(gs1,k1,t17) - lambda_gas_balance(ng102,k1,t17)
+   - lambda_gstor_def(gs1,k1,t17) + lambda_gas_balance(ng102,k1,t17)
    - muLB_gsin(gs1,t17,k1) = -2.1
  dLag/gsout(gs1,t17,k1): mu_gsoutMax(gs1,t17,k1)
-   + lambda_gstor_def(gs1,k1,t17) + lambda_gas_balance(ng102,k1,t17)
+   + lambda_gstor_def(gs1,k1,t17) - lambda_gas_balance(ng102,k1,t17)
    - muLB_gsout(gs1,t17,k1) = -2.1
  dLag/gstore(gs1,t17,k1): mu_gstore_max(gs1,t17,k1)
    - mu_gstore_min(gs1,t17,k1) + lambda_gstor_def(gs1,k1,t17)
    - lambda_gstor_def(gs1,k1,t18) - muLB_gstore(gs1,t17,k1) = 0
  dLag/gsin(gs1,t17,k2): mu_gsinMax(gs1,t17,k2)
-   - lambda_gstor_def(gs1,k2,t17) - lambda_gas_balance(ng102,k2,t17)
+   - lambda_gstor_def(gs1,k2,t17) + lambda_gas_balance(ng102,k2,t17)
    - muLB_gsin(gs1,t17,k2) = -2.1
  dLag/gsout(gs1,t17,k2): mu_gsoutMax(gs1,t17,k2)
-   + lambda_gstor_def(gs1,k2,t17) + lambda_gas_balance(ng102,k2,t17)
+   + lambda_gstor_def(gs1,k2,t17) - lambda_gas_balance(ng102,k2,t17)
    - muLB_gsout(gs1,t17,k2) = -2.1
  dLag/gstore(gs1,t17,k2): mu_gstore_max(gs1,t17,k2)
    - mu_gstore_min(gs1,t17,k2) + lambda_gstor_def(gs1,k2,t17)
    - lambda_gstor_def(gs1,k2,t18) - muLB_gstore(gs1,t17,k2) = 0
  dLag/gsin(gs1,t18,k0): mu_gsinMax(gs1,t18,k0)
-   - lambda_gstor_def(gs1,k0,t18) - lambda_gas_balance(ng102,k0,t18)
+   - lambda_gstor_def(gs1,k0,t18) + lambda_gas_balance(ng102,k0,t18)
    - muLB_gsin(gs1,t18,k0) = -2.1
  dLag/gsout(gs1,t18,k0): mu_gsoutMax(gs1,t18,k0)
-   + lambda_gstor_def(gs1,k0,t18) + lambda_gas_balance(ng102,k0,t18)
+   + lambda_gstor_def(gs1,k0,t18) - lambda_gas_balance(ng102,k0,t18)
    - muLB_gsout(gs1,t18,k0) = -2.1
  dLag/gstore(gs1,t18,k0): mu_gstore_max(gs1,t18,k0)
    - mu_gstore_min(gs1,t18,k0) + lambda_gstor_def(gs1,k0,t18)
    - lambda_gstor_def(gs1,k0,t19) - muLB_gstore(gs1,t18,k0) = 0
  dLag/gsin(gs1,t18,k1): mu_gsinMax(gs1,t18,k1)
-   - lambda_gstor_def(gs1,k1,t18) - lambda_gas_balance(ng102,k1,t18)
+   - lambda_gstor_def(gs1,k1,t18) + lambda_gas_balance(ng102,k1,t18)
    - muLB_gsin(gs1,t18,k1) = -2.1
  dLag/gsout(gs1,t18,k1): mu_gsoutMax(gs1,t18,k1)
-   + lambda_gstor_def(gs1,k1,t18) + lambda_gas_balance(ng102,k1,t18)
+   + lambda_gstor_def(gs1,k1,t18) - lambda_gas_balance(ng102,k1,t18)
    - muLB_gsout(gs1,t18,k1) = -2.1
  dLag/gstore(gs1,t18,k1): mu_gstore_max(gs1,t18,k1)
    - mu_gstore_min(gs1,t18,k1) + lambda_gstor_def(gs1,k1,t18)
    - lambda_gstor_def(gs1,k1,t19) - muLB_gstore(gs1,t18,k1) = 0
  dLag/gsin(gs1,t18,k2): mu_gsinMax(gs1,t18,k2)
-   - lambda_gstor_def(gs1,k2,t18) - lambda_gas_balance(ng102,k2,t18)
+   - lambda_gstor_def(gs1,k2,t18) + lambda_gas_balance(ng102,k2,t18)
    - muLB_gsin(gs1,t18,k2) = -2.1
  dLag/gsout(gs1,t18,k2): mu_gsoutMax(gs1,t18,k2)
-   + lambda_gstor_def(gs1,k2,t18) + lambda_gas_balance(ng102,k2,t18)
+   + lambda_gstor_def(gs1,k2,t18) - lambda_gas_balance(ng102,k2,t18)
    - muLB_gsout(gs1,t18,k2) = -2.1
  dLag/gstore(gs1,t18,k2): mu_gstore_max(gs1,t18,k2)
    - mu_gstore_min(gs1,t18,k2) + lambda_gstor_def(gs1,k2,t18)
    - lambda_gstor_def(gs1,k2,t19) - muLB_gstore(gs1,t18,k2) = 0
  dLag/gsin(gs1,t19,k0): mu_gsinMax(gs1,t19,k0)
-   - lambda_gstor_def(gs1,k0,t19) - lambda_gas_balance(ng102,k0,t19)
+   - lambda_gstor_def(gs1,k0,t19) + lambda_gas_balance(ng102,k0,t19)
    - muLB_gsin(gs1,t19,k0) = -2.1
  dLag/gsout(gs1,t19,k0): mu_gsoutMax(gs1,t19,k0)
-   + lambda_gstor_def(gs1,k0,t19) + lambda_gas_balance(ng102,k0,t19)
+   + lambda_gstor_def(gs1,k0,t19) - lambda_gas_balance(ng102,k0,t19)
    - muLB_gsout(gs1,t19,k0) = -2.1
  dLag/gstore(gs1,t19,k0): mu_gstore_max(gs1,t19,k0)
    - mu_gstore_min(gs1,t19,k0) + lambda_gstor_def(gs1,k0,t19)
    - lambda_gstor_def(gs1,k0,t20) - muLB_gstore(gs1,t19,k0) = 0
  dLag/gsin(gs1,t19,k1): mu_gsinMax(gs1,t19,k1)
-   - lambda_gstor_def(gs1,k1,t19) - lambda_gas_balance(ng102,k1,t19)
+   - lambda_gstor_def(gs1,k1,t19) + lambda_gas_balance(ng102,k1,t19)
    - muLB_gsin(gs1,t19,k1) = -2.1
  dLag/gsout(gs1,t19,k1): mu_gsoutMax(gs1,t19,k1)
-   + lambda_gstor_def(gs1,k1,t19) + lambda_gas_balance(ng102,k1,t19)
+   + lambda_gstor_def(gs1,k1,t19) - lambda_gas_balance(ng102,k1,t19)
    - muLB_gsout(gs1,t19,k1) = -2.1
  dLag/gstore(gs1,t19,k1): mu_gstore_max(gs1,t19,k1)
    - mu_gstore_min(gs1,t19,k1) + lambda_gstor_def(gs1,k1,t19)
    - lambda_gstor_def(gs1,k1,t20) - muLB_gstore(gs1,t19,k1) = 0
  dLag/gsin(gs1,t19,k2): mu_gsinMax(gs1,t19,k2)
-   - lambda_gstor_def(gs1,k2,t19) - lambda_gas_balance(ng102,k2,t19)
+   - lambda_gstor_def(gs1,k2,t19) + lambda_gas_balance(ng102,k2,t19)
    - muLB_gsin(gs1,t19,k2) = -2.1
  dLag/gsout(gs1,t19,k2): mu_gsoutMax(gs1,t19,k2)
-   + lambda_gstor_def(gs1,k2,t19) + lambda_gas_balance(ng102,k2,t19)
+   + lambda_gstor_def(gs1,k2,t19) - lambda_gas_balance(ng102,k2,t19)
    - muLB_gsout(gs1,t19,k2) = -2.1
  dLag/gstore(gs1,t19,k2): mu_gstore_max(gs1,t19,k2)
    - mu_gstore_min(gs1,t19,k2) + lambda_gstor_def(gs1,k2,t19)
    - lambda_gstor_def(gs1,k2,t20) - muLB_gstore(gs1,t19,k2) = 0
  dLag/gsin(gs1,t20,k0): mu_gsinMax(gs1,t20,k0)
-   - lambda_gstor_def(gs1,k0,t20) - lambda_gas_balance(ng102,k0,t20)
+   - lambda_gstor_def(gs1,k0,t20) + lambda_gas_balance(ng102,k0,t20)
    - muLB_gsin(gs1,t20,k0) = -2.1
  dLag/gsout(gs1,t20,k0): mu_gsoutMax(gs1,t20,k0)
-   + lambda_gstor_def(gs1,k0,t20) + lambda_gas_balance(ng102,k0,t20)
+   + lambda_gstor_def(gs1,k0,t20) - lambda_gas_balance(ng102,k0,t20)
    - muLB_gsout(gs1,t20,k0) = -2.1
  dLag/gstore(gs1,t20,k0): mu_gstore_max(gs1,t20,k0)
    - mu_gstore_min(gs1,t20,k0) + lambda_gstor_def(gs1,k0,t20)
    - lambda_gstor_def(gs1,k0,t21) - muLB_gstore(gs1,t20,k0) = 0
  dLag/gsin(gs1,t20,k1): mu_gsinMax(gs1,t20,k1)
-   - lambda_gstor_def(gs1,k1,t20) - lambda_gas_balance(ng102,k1,t20)
+   - lambda_gstor_def(gs1,k1,t20) + lambda_gas_balance(ng102,k1,t20)
    - muLB_gsin(gs1,t20,k1) = -2.1
  dLag/gsout(gs1,t20,k1): mu_gsoutMax(gs1,t20,k1)
-   + lambda_gstor_def(gs1,k1,t20) + lambda_gas_balance(ng102,k1,t20)
+   + lambda_gstor_def(gs1,k1,t20) - lambda_gas_balance(ng102,k1,t20)
    - muLB_gsout(gs1,t20,k1) = -2.1
  dLag/gstore(gs1,t20,k1): mu_gstore_max(gs1,t20,k1)
    - mu_gstore_min(gs1,t20,k1) + lambda_gstor_def(gs1,k1,t20)
    - lambda_gstor_def(gs1,k1,t21) - muLB_gstore(gs1,t20,k1) = 0
  dLag/gsin(gs1,t20,k2): mu_gsinMax(gs1,t20,k2)
-   - lambda_gstor_def(gs1,k2,t20) - lambda_gas_balance(ng102,k2,t20)
+   - lambda_gstor_def(gs1,k2,t20) + lambda_gas_balance(ng102,k2,t20)
    - muLB_gsin(gs1,t20,k2) = -2.1
  dLag/gsout(gs1,t20,k2): mu_gsoutMax(gs1,t20,k2)
-   + lambda_gstor_def(gs1,k2,t20) + lambda_gas_balance(ng102,k2,t20)
+   + lambda_gstor_def(gs1,k2,t20) - lambda_gas_balance(ng102,k2,t20)
    - muLB_gsout(gs1,t20,k2) = -2.1
  dLag/gstore(gs1,t20,k2): mu_gstore_max(gs1,t20,k2)
    - mu_gstore_min(gs1,t20,k2) + lambda_gstor_def(gs1,k2,t20)
    - lambda_gstor_def(gs1,k2,t21) - muLB_gstore(gs1,t20,k2) = 0
  dLag/gsin(gs1,t21,k0): mu_gsinMax(gs1,t21,k0)
-   - lambda_gstor_def(gs1,k0,t21) - lambda_gas_balance(ng102,k0,t21)
+   - lambda_gstor_def(gs1,k0,t21) + lambda_gas_balance(ng102,k0,t21)
    - muLB_gsin(gs1,t21,k0) = -2.1
  dLag/gsout(gs1,t21,k0): mu_gsoutMax(gs1,t21,k0)
-   + lambda_gstor_def(gs1,k0,t21) + lambda_gas_balance(ng102,k0,t21)
+   + lambda_gstor_def(gs1,k0,t21) - lambda_gas_balance(ng102,k0,t21)
    - muLB_gsout(gs1,t21,k0) = -2.1
  dLag/gstore(gs1,t21,k0): mu_gstore_max(gs1,t21,k0)
    - mu_gstore_min(gs1,t21,k0) + lambda_gstor_def(gs1,k0,t21)
    - lambda_gstor_def(gs1,k0,t22) - muLB_gstore(gs1,t21,k0) = 0
  dLag/gsin(gs1,t21,k1): mu_gsinMax(gs1,t21,k1)
-   - lambda_gstor_def(gs1,k1,t21) - lambda_gas_balance(ng102,k1,t21)
+   - lambda_gstor_def(gs1,k1,t21) + lambda_gas_balance(ng102,k1,t21)
    - muLB_gsin(gs1,t21,k1) = -2.1
  dLag/gsout(gs1,t21,k1): mu_gsoutMax(gs1,t21,k1)
-   + lambda_gstor_def(gs1,k1,t21) + lambda_gas_balance(ng102,k1,t21)
+   + lambda_gstor_def(gs1,k1,t21) - lambda_gas_balance(ng102,k1,t21)
    - muLB_gsout(gs1,t21,k1) = -2.1
  dLag/gstore(gs1,t21,k1): mu_gstore_max(gs1,t21,k1)
    - mu_gstore_min(gs1,t21,k1) + lambda_gstor_def(gs1,k1,t21)
    - lambda_gstor_def(gs1,k1,t22) - muLB_gstore(gs1,t21,k1) = 0
  dLag/gsin(gs1,t21,k2): mu_gsinMax(gs1,t21,k2)
-   - lambda_gstor_def(gs1,k2,t21) - lambda_gas_balance(ng102,k2,t21)
+   - lambda_gstor_def(gs1,k2,t21) + lambda_gas_balance(ng102,k2,t21)
    - muLB_gsin(gs1,t21,k2) = -2.1
  dLag/gsout(gs1,t21,k2): mu_gsoutMax(gs1,t21,k2)
-   + lambda_gstor_def(gs1,k2,t21) + lambda_gas_balance(ng102,k2,t21)
+   + lambda_gstor_def(gs1,k2,t21) - lambda_gas_balance(ng102,k2,t21)
    - muLB_gsout(gs1,t21,k2) = -2.1
  dLag/gstore(gs1,t21,k2): mu_gstore_max(gs1,t21,k2)
    - mu_gstore_min(gs1,t21,k2) + lambda_gstor_def(gs1,k2,t21)
    - lambda_gstor_def(gs1,k2,t22) - muLB_gstore(gs1,t21,k2) = 0
  dLag/gsin(gs1,t22,k0): mu_gsinMax(gs1,t22,k0)
-   - lambda_gstor_def(gs1,k0,t22) - lambda_gas_balance(ng102,k0,t22)
+   - lambda_gstor_def(gs1,k0,t22) + lambda_gas_balance(ng102,k0,t22)
    - muLB_gsin(gs1,t22,k0) = -2.1
  dLag/gsout(gs1,t22,k0): mu_gsoutMax(gs1,t22,k0)
-   + lambda_gstor_def(gs1,k0,t22) + lambda_gas_balance(ng102,k0,t22)
+   + lambda_gstor_def(gs1,k0,t22) - lambda_gas_balance(ng102,k0,t22)
    - muLB_gsout(gs1,t22,k0) = -2.1
  dLag/gstore(gs1,t22,k0): mu_gstore_max(gs1,t22,k0)
    - mu_gstore_min(gs1,t22,k0) + lambda_gstor_def(gs1,k0,t22)
    - lambda_gstor_def(gs1,k0,t23) - muLB_gstore(gs1,t22,k0) = 0
  dLag/gsin(gs1,t22,k1): mu_gsinMax(gs1,t22,k1)
-   - lambda_gstor_def(gs1,k1,t22) - lambda_gas_balance(ng102,k1,t22)
+   - lambda_gstor_def(gs1,k1,t22) + lambda_gas_balance(ng102,k1,t22)
    - muLB_gsin(gs1,t22,k1) = -2.1
  dLag/gsout(gs1,t22,k1): mu_gsoutMax(gs1,t22,k1)
-   + lambda_gstor_def(gs1,k1,t22) + lambda_gas_balance(ng102,k1,t22)
+   + lambda_gstor_def(gs1,k1,t22) - lambda_gas_balance(ng102,k1,t22)
    - muLB_gsout(gs1,t22,k1) = -2.1
  dLag/gstore(gs1,t22,k1): mu_gstore_max(gs1,t22,k1)
    - mu_gstore_min(gs1,t22,k1) + lambda_gstor_def(gs1,k1,t22)
    - lambda_gstor_def(gs1,k1,t23) - muLB_gstore(gs1,t22,k1) = 0
  dLag/gsin(gs1,t22,k2): mu_gsinMax(gs1,t22,k2)
-   - lambda_gstor_def(gs1,k2,t22) - lambda_gas_balance(ng102,k2,t22)
+   - lambda_gstor_def(gs1,k2,t22) + lambda_gas_balance(ng102,k2,t22)
    - muLB_gsin(gs1,t22,k2) = -2.1
  dLag/gsout(gs1,t22,k2): mu_gsoutMax(gs1,t22,k2)
-   + lambda_gstor_def(gs1,k2,t22) + lambda_gas_balance(ng102,k2,t22)
+   + lambda_gstor_def(gs1,k2,t22) - lambda_gas_balance(ng102,k2,t22)
    - muLB_gsout(gs1,t22,k2) = -2.1
  dLag/gstore(gs1,t22,k2): mu_gstore_max(gs1,t22,k2)
    - mu_gstore_min(gs1,t22,k2) + lambda_gstor_def(gs1,k2,t22)
    - lambda_gstor_def(gs1,k2,t23) - muLB_gstore(gs1,t22,k2) = 0
  dLag/gsin(gs1,t23,k0): mu_gsinMax(gs1,t23,k0)
-   - lambda_gstor_def(gs1,k0,t23) - lambda_gas_balance(ng102,k0,t23)
+   - lambda_gstor_def(gs1,k0,t23) + lambda_gas_balance(ng102,k0,t23)
    - muLB_gsin(gs1,t23,k0) = -2.1
  dLag/gsout(gs1,t23,k0): mu_gsoutMax(gs1,t23,k0)
-   + lambda_gstor_def(gs1,k0,t23) + lambda_gas_balance(ng102,k0,t23)
+   + lambda_gstor_def(gs1,k0,t23) - lambda_gas_balance(ng102,k0,t23)
    - muLB_gsout(gs1,t23,k0) = -2.1
  dLag/gstore(gs1,t23,k0): mu_gstore_max(gs1,t23,k0)
    - mu_gstore_min(gs1,t23,k0) + lambda_gstor_def(gs1,k0,t23)
    - lambda_gstor_def(gs1,k0,t24) - muLB_gstore(gs1,t23,k0) = 0
  dLag/gsin(gs1,t23,k1): mu_gsinMax(gs1,t23,k1)
-   - lambda_gstor_def(gs1,k1,t23) - lambda_gas_balance(ng102,k1,t23)
+   - lambda_gstor_def(gs1,k1,t23) + lambda_gas_balance(ng102,k1,t23)
    - muLB_gsin(gs1,t23,k1) = -2.1
  dLag/gsout(gs1,t23,k1): mu_gsoutMax(gs1,t23,k1)
-   + lambda_gstor_def(gs1,k1,t23) + lambda_gas_balance(ng102,k1,t23)
+   + lambda_gstor_def(gs1,k1,t23) - lambda_gas_balance(ng102,k1,t23)
    - muLB_gsout(gs1,t23,k1) = -2.1
  dLag/gstore(gs1,t23,k1): mu_gstore_max(gs1,t23,k1)
    - mu_gstore_min(gs1,t23,k1) + lambda_gstor_def(gs1,k1,t23)
    - lambda_gstor_def(gs1,k1,t24) - muLB_gstore(gs1,t23,k1) = 0
  dLag/gsin(gs1,t23,k2): mu_gsinMax(gs1,t23,k2)
-   - lambda_gstor_def(gs1,k2,t23) - lambda_gas_balance(ng102,k2,t23)
+   - lambda_gstor_def(gs1,k2,t23) + lambda_gas_balance(ng102,k2,t23)
    - muLB_gsin(gs1,t23,k2) = -2.1
  dLag/gsout(gs1,t23,k2): mu_gsoutMax(gs1,t23,k2)
-   + lambda_gstor_def(gs1,k2,t23) + lambda_gas_balance(ng102,k2,t23)
+   + lambda_gstor_def(gs1,k2,t23) - lambda_gas_balance(ng102,k2,t23)
    - muLB_gsout(gs1,t23,k2) = -2.1
  dLag/gstore(gs1,t23,k2): mu_gstore_max(gs1,t23,k2)
    - mu_gstore_min(gs1,t23,k2) + lambda_gstor_def(gs1,k2,t23)
    - lambda_gstor_def(gs1,k2,t24) - muLB_gstore(gs1,t23,k2) = 0
  dLag/gsin(gs1,t24,k0): mu_gsinMax(gs1,t24,k0)
-   - lambda_gstor_def(gs1,k0,t24) - lambda_gas_balance(ng102,k0,t24)
+   - lambda_gstor_def(gs1,k0,t24) + lambda_gas_balance(ng102,k0,t24)
    - muLB_gsin(gs1,t24,k0) = -2.1
  dLag/gsout(gs1,t24,k0): mu_gsoutMax(gs1,t24,k0)
-   + lambda_gstor_def(gs1,k0,t24) + lambda_gas_balance(ng102,k0,t24)
+   + lambda_gstor_def(gs1,k0,t24) - lambda_gas_balance(ng102,k0,t24)
    - muLB_gsout(gs1,t24,k0) = -2.1
  dLag/gstore(gs1,t24,k0): mu_gstore_max(gs1,t24,k0)
    - mu_gstore_min(gs1,t24,k0) + lambda_gstor_def(gs1,k0,t24)
    - mu_gs_end(gs1,k0) - muLB_gstore(gs1,t24,k0) = 0
  dLag/gsin(gs1,t24,k1): mu_gsinMax(gs1,t24,k1)
-   - lambda_gstor_def(gs1,k1,t24) - lambda_gas_balance(ng102,k1,t24)
+   - lambda_gstor_def(gs1,k1,t24) + lambda_gas_balance(ng102,k1,t24)
    - muLB_gsin(gs1,t24,k1) = -2.1
  dLag/gsout(gs1,t24,k1): mu_gsoutMax(gs1,t24,k1)
-   + lambda_gstor_def(gs1,k1,t24) + lambda_gas_balance(ng102,k1,t24)
+   + lambda_gstor_def(gs1,k1,t24) - lambda_gas_balance(ng102,k1,t24)
    - muLB_gsout(gs1,t24,k1) = -2.1
  dLag/gstore(gs1,t24,k1): mu_gstore_max(gs1,t24,k1)
    - mu_gstore_min(gs1,t24,k1) + lambda_gstor_def(gs1,k1,t24)
    - muLB_gstore(gs1,t24,k1) = 0
  dLag/gsin(gs1,t24,k2): mu_gsinMax(gs1,t24,k2)
-   - lambda_gstor_def(gs1,k2,t24) - lambda_gas_balance(ng102,k2,t24)
+   - lambda_gstor_def(gs1,k2,t24) + lambda_gas_balance(ng102,k2,t24)
    - muLB_gsin(gs1,t24,k2) = -2.1
  dLag/gsout(gs1,t24,k2): mu_gsoutMax(gs1,t24,k2)
-   + lambda_gstor_def(gs1,k2,t24) + lambda_gas_balance(ng102,k2,t24)
+   + lambda_gstor_def(gs1,k2,t24) - lambda_gas_balance(ng102,k2,t24)
    - muLB_gsout(gs1,t24,k2) = -2.1
  dLag/gstore(gs1,t24,k2): mu_gstore_max(gs1,t24,k2)
    - mu_gstore_min(gs1,t24,k2) + lambda_gstor_def(gs1,k2,t24)

@@ -9,11 +9,80 @@ from collections import defaultdict
 import numpy as np
 import itertools
 import gurobipy as gb
+import defaults
 
 
 class expando(object):
     pass
 
+
+def add_constraint(self,lhs,sign_str,rhs,name):
+    
+    ALL_ON_LHS=False
+    ALL_ON_RHS=False
+    # Only one will be executed
+
+    if sign_str=='>=':
+        self.constraints[name]= expando()
+        cc=self.constraints[name]
+        cc.lhs=lhs
+        cc.rhs=rhs
+        if ALL_ON_LHS:                    
+            cc.expr=self.model.addConstr( -cc.lhs+cc.rhs<=0.0,name=name)
+        elif ALL_ON_RHS:                    
+            cc.expr=self.model.addConstr(0.0<=cc.lhs-cc.rhs,name=name)
+        else:
+            cc.expr=self.model.addConstr(cc.lhs>=cc.rhs,name=name)
+            
+    elif sign_str=='<=':
+        self.constraints[name]= expando()
+        cc=self.constraints[name]
+        cc.lhs=lhs
+        cc.rhs=rhs                    
+
+        if ALL_ON_LHS:
+            cc.expr=self.model.addConstr(-cc.rhs+cc.lhs<=0.0,name=name)
+        elif ALL_ON_RHS:
+            cc.expr=self.model.addConstr(0.0<=cc.rhs-cc.lhs,name=name)
+        else:
+            cc.expr=self.model.addConstr(cc.lhs<=cc.rhs,name=name)
+            
+    elif sign_str=='==':
+        
+        if defaults.REMOVE_EQUALITY:
+            # gEQ
+            self.constraints[name+'_geq']= expando()
+            cc=self.constraints[name+'_geq']
+            cc.lhs=lhs
+            cc.rhs=rhs 
+            if ALL_ON_LHS:
+                cc.expr=self.model.addConstr(-cc.lhs+cc.rhs<=0.0,name=name+'_geq')
+            elif ALL_ON_RHS:                    
+                cc.expr=self.model.addConstr(0.0<=cc.lhs-cc.rhs,name=name+'_geq')
+            else:
+                cc.expr=self.model.addConstr(cc.lhs>=cc.rhs,name=name+'_geq')
+            
+            self.constraints[name+'_leq']= expando()
+            cc=self.constraints[name+'_leq']
+            cc.lhs=lhs
+            cc.rhs=rhs
+            if ALL_ON_LHS:
+                cc.expr=self.model.addConstr(-cc.rhs+cc.lhs<=0.0,name=name+'_leq')
+            elif ALL_ON_RHS:                    
+                cc.expr=self.model.addConstr(0.0<=cc.rhs-cc.lhs,name=name+'_leq')
+            else:
+                cc.expr=self.model.addConstr(cc.lhs<=cc.rhs,name=name+'_leq')
+        else:
+            self.constraints[name]= expando()
+            cc=self.constraints[name]
+            cc.lhs=lhs
+            cc.rhs=rhs                    
+            if ALL_ON_LHS:
+                cc.expr=self.model.addConstr(cc.lhs-cc.rhs==0.0,name=name)
+            elif ALL_ON_RHS:                    
+                cc.expr=self.model.addConstr(0.0==cc.lhs-cc.rhs,name=name)
+            else:
+                cc.expr=self.model.addConstr(cc.lhs==cc.rhs,name=name)
 #==============================================================================
 # Electricity system constraints 
 #==============================================================================
@@ -37,13 +106,11 @@ def _build_constraints_elecDA(self):
     #--- Power balance
     for t in time:
         name='PowerBalance({0})'.format(t)
-        self.constraints[name]= expando()
-        cc=self.constraints[name]
-        cc.lhs =   gb.quicksum(var.WindDA[wf,t] for wf in windfarms) \
+        lhs =      gb.quicksum(var.WindDA[wf,t] for wf in windfarms) \
                 +  gb.quicksum(var.Pgen[gen,t] for gen in generators)\
-                +  gb.quicksum(var.PgenSC[gen,t] for gen in gfpp)
-        cc.rhs = self.edata.sysload[t]
-        cc.expr = m.addConstr(cc.lhs == cc.rhs,name=name)
+                + gb.quicksum(var.PgenSC[gen,t] for gen in gfpp)
+        rhs =  + self.edata.sysload[t]
+        add_constraint(self,-lhs,'==',-rhs,name)
 
     #--- Maximum Capacity limits
     for t in time:
@@ -228,16 +295,15 @@ def _build_constraints_elecRT(self,mtype,dispatchElecDA):
     for s in scenarios:                
         for t in time:
             name = 'Power_Balance_RT({0},{1})'.format(s,t)
-            self.constraints[name]= expando()
-            cc=self.constraints[name]
+
             
-            cc.lhs =    gb.quicksum(var.RUp[g,s,t] - var.RDn[g,s,t] for g in generators)  \
+            lhs =    gb.quicksum(var.RUp[g,s,t] - var.RDn[g,s,t] for g in generators)  \
                       + gb.quicksum(var.RUpSC[g,s,t] - var.RDnSC[g,s,t] for g in gfpp)   \
                       - gb.quicksum(WindDA[w,t] for w in windfarms) \
                       - gb.quicksum(var.Wspill[w,s,t] for w in windfarms)  \
                       + var.Lshed[s,t]
-            cc.rhs =  - sum(wscen[w][scenwind[s]][t]*wcap[w] for w in windfarms)
-            cc.expr = m.addConstr(cc.lhs == cc.rhs,name=name)
+            rhs =  - sum(wscen[w][scenwind[s]][t]*wcap[w] for w in windfarms)
+            add_constraint(self,-lhs,'==',-rhs,name)
   
     
     #--- Up and down regulation no-SC

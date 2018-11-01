@@ -49,135 +49,132 @@ Minimize
    - 38 RDn(g1,s2,t23) + 5000 Lshed(s2,t23) + 44 RUp(g1,s2,t24)
    - 38 RDn(g1,s2,t24) + 5000 Lshed(s2,t24)
 Subject To
- Power_Balance_RT(s1,t1): RUp(g1,s1,t1) - RDn(g1,s1,t1) + RUpSC(g1,s1,t1)
-   - RDnSC(g1,s1,t1) - Wspill(w1,s1,t1) + Lshed(s1,t1) = -9.68076198
- Power_Balance_RT(s1,t2): RUp(g1,s1,t2) - RDn(g1,s1,t2) + RUpSC(g1,s1,t2)
-   - RDnSC(g1,s1,t2) - Wspill(w1,s1,t2) + Lshed(s1,t2)
-   = -9.904225260000001
- Power_Balance_RT(s1,t3): RUp(g1,s1,t3) - RDn(g1,s1,t3) + RUpSC(g1,s1,t3)
-   - RDnSC(g1,s1,t3) - Wspill(w1,s1,t3) + Lshed(s1,t3) = -10.34934216
- Power_Balance_RT(s1,t4): RUp(g1,s1,t4) - RDn(g1,s1,t4) + RUpSC(g1,s1,t4)
-   - RDnSC(g1,s1,t4) - Wspill(w1,s1,t4) + Lshed(s1,t4)
-   = -9.887749590000002
- Power_Balance_RT(s1,t5): RUp(g1,s1,t5) - RDn(g1,s1,t5) + RUpSC(g1,s1,t5)
-   - RDnSC(g1,s1,t5) - Wspill(w1,s1,t5) + Lshed(s1,t5) = -10.03755486
- Power_Balance_RT(s1,t6): RUp(g1,s1,t6) - RDn(g1,s1,t6) + RUpSC(g1,s1,t6)
-   - RDnSC(g1,s1,t6) - Wspill(w1,s1,t6) + Lshed(s1,t6) = -9.08445951
- Power_Balance_RT(s1,t7): RUp(g1,s1,t7) - RDn(g1,s1,t7) + RUpSC(g1,s1,t7)
-   - RDnSC(g1,s1,t7) - Wspill(w1,s1,t7) + Lshed(s1,t7)
-   = -8.297329169999999
- Power_Balance_RT(s1,t8): RUp(g1,s1,t8) - RDn(g1,s1,t8) + RUpSC(g1,s1,t8)
-   - RDnSC(g1,s1,t8) - Wspill(w1,s1,t8) + Lshed(s1,t8) = -6.67340472
- Power_Balance_RT(s1,t9): RUp(g1,s1,t9) - RDn(g1,s1,t9) + RUpSC(g1,s1,t9)
-   - RDnSC(g1,s1,t9) - Wspill(w1,s1,t9) + Lshed(s1,t9) = -5.23819182
- Power_Balance_RT(s1,t10): RUp(g1,s1,t10) - RDn(g1,s1,t10)
-   + RUpSC(g1,s1,t10) - RDnSC(g1,s1,t10) - Wspill(w1,s1,t10)
-   + Lshed(s1,t10) = -3.874596150000001
- Power_Balance_RT(s1,t11): RUp(g1,s1,t11) - RDn(g1,s1,t11)
-   + RUpSC(g1,s1,t11) - RDnSC(g1,s1,t11) - Wspill(w1,s1,t11)
-   + Lshed(s1,t11) = -2.98207836
- Power_Balance_RT(s1,t12): RUp(g1,s1,t12) - RDn(g1,s1,t12)
-   + RUpSC(g1,s1,t12) - RDnSC(g1,s1,t12) - Wspill(w1,s1,t12)
-   + Lshed(s1,t12) = -2.66509674
- Power_Balance_RT(s1,t13): RUp(g1,s1,t13) - RDn(g1,s1,t13)
-   + RUpSC(g1,s1,t13) - RDnSC(g1,s1,t13) - Wspill(w1,s1,t13)
-   + Lshed(s1,t13) = -2.73093516
- Power_Balance_RT(s1,t14): RUp(g1,s1,t14) - RDn(g1,s1,t14)
-   + RUpSC(g1,s1,t14) - RDnSC(g1,s1,t14) - Wspill(w1,s1,t14)
-   + Lshed(s1,t14) = -3.50233791
- Power_Balance_RT(s1,t15): RUp(g1,s1,t15) - RDn(g1,s1,t15)
-   + RUpSC(g1,s1,t15) - RDnSC(g1,s1,t15) - Wspill(w1,s1,t15)
-   + Lshed(s1,t15) = -3.98102805
- Power_Balance_RT(s1,t16): RUp(g1,s1,t16) - RDn(g1,s1,t16)
-   + RUpSC(g1,s1,t16) - RDnSC(g1,s1,t16) - Wspill(w1,s1,t16)
-   + Lshed(s1,t16) = -3.85869564
- Power_Balance_RT(s1,t17): RUp(g1,s1,t17) - RDn(g1,s1,t17)
-   + RUpSC(g1,s1,t17) - RDnSC(g1,s1,t17) - Wspill(w1,s1,t17)
-   + Lshed(s1,t17) = -3.23632914
- Power_Balance_RT(s1,t18): RUp(g1,s1,t18) - RDn(g1,s1,t18)
-   + RUpSC(g1,s1,t18) - RDnSC(g1,s1,t18) - Wspill(w1,s1,t18)
-   + Lshed(s1,t18) = -3.035806169999999
- Power_Balance_RT(s1,t19): RUp(g1,s1,t19) - RDn(g1,s1,t19)
-   + RUpSC(g1,s1,t19) - RDnSC(g1,s1,t19) - Wspill(w1,s1,t19)
-   + Lshed(s1,t19) = -2.88825651
- Power_Balance_RT(s1,t20): RUp(g1,s1,t20) - RDn(g1,s1,t20)
-   + RUpSC(g1,s1,t20) - RDnSC(g1,s1,t20) - Wspill(w1,s1,t20)
-   + Lshed(s1,t20) = -2.717601
- Power_Balance_RT(s1,t21): RUp(g1,s1,t21) - RDn(g1,s1,t21)
-   + RUpSC(g1,s1,t21) - RDnSC(g1,s1,t21) - Wspill(w1,s1,t21)
-   + Lshed(s1,t21) = -2.42519778
- Power_Balance_RT(s1,t22): RUp(g1,s1,t22) - RDn(g1,s1,t22)
-   + RUpSC(g1,s1,t22) - RDnSC(g1,s1,t22) - Wspill(w1,s1,t22)
-   + Lshed(s1,t22) = -2.24716395
- Power_Balance_RT(s1,t23): RUp(g1,s1,t23) - RDn(g1,s1,t23)
-   + RUpSC(g1,s1,t23) - RDnSC(g1,s1,t23) - Wspill(w1,s1,t23)
-   + Lshed(s1,t23) = -1.94173392
- Power_Balance_RT(s1,t24): RUp(g1,s1,t24) - RDn(g1,s1,t24)
-   + RUpSC(g1,s1,t24) - RDnSC(g1,s1,t24) - Wspill(w1,s1,t24)
-   + Lshed(s1,t24) = -1.25387559
- Power_Balance_RT(s2,t1): RUp(g1,s2,t1) - RDn(g1,s2,t1) + RUpSC(g1,s2,t1)
-   - RDnSC(g1,s2,t1) - Wspill(w1,s2,t1) + Lshed(s2,t1) = 0
- Power_Balance_RT(s2,t2): RUp(g1,s2,t2) - RDn(g1,s2,t2) + RUpSC(g1,s2,t2)
-   - RDnSC(g1,s2,t2) - Wspill(w1,s2,t2) + Lshed(s2,t2) = 0
- Power_Balance_RT(s2,t3): RUp(g1,s2,t3) - RDn(g1,s2,t3) + RUpSC(g1,s2,t3)
-   - RDnSC(g1,s2,t3) - Wspill(w1,s2,t3) + Lshed(s2,t3) = 0
- Power_Balance_RT(s2,t4): RUp(g1,s2,t4) - RDn(g1,s2,t4) + RUpSC(g1,s2,t4)
-   - RDnSC(g1,s2,t4) - Wspill(w1,s2,t4) + Lshed(s2,t4) = 0
- Power_Balance_RT(s2,t5): RUp(g1,s2,t5) - RDn(g1,s2,t5) + RUpSC(g1,s2,t5)
-   - RDnSC(g1,s2,t5) - Wspill(w1,s2,t5) + Lshed(s2,t5) = 0
- Power_Balance_RT(s2,t6): RUp(g1,s2,t6) - RDn(g1,s2,t6) + RUpSC(g1,s2,t6)
-   - RDnSC(g1,s2,t6) - Wspill(w1,s2,t6) + Lshed(s2,t6) = 0
- Power_Balance_RT(s2,t7): RUp(g1,s2,t7) - RDn(g1,s2,t7) + RUpSC(g1,s2,t7)
-   - RDnSC(g1,s2,t7) - Wspill(w1,s2,t7) + Lshed(s2,t7) = 0
- Power_Balance_RT(s2,t8): RUp(g1,s2,t8) - RDn(g1,s2,t8) + RUpSC(g1,s2,t8)
-   - RDnSC(g1,s2,t8) - Wspill(w1,s2,t8) + Lshed(s2,t8) = 0
- Power_Balance_RT(s2,t9): RUp(g1,s2,t9) - RDn(g1,s2,t9) + RUpSC(g1,s2,t9)
-   - RDnSC(g1,s2,t9) - Wspill(w1,s2,t9) + Lshed(s2,t9) = 0
- Power_Balance_RT(s2,t10): RUp(g1,s2,t10) - RDn(g1,s2,t10)
-   + RUpSC(g1,s2,t10) - RDnSC(g1,s2,t10) - Wspill(w1,s2,t10)
-   + Lshed(s2,t10) = 0
- Power_Balance_RT(s2,t11): RUp(g1,s2,t11) - RDn(g1,s2,t11)
-   + RUpSC(g1,s2,t11) - RDnSC(g1,s2,t11) - Wspill(w1,s2,t11)
-   + Lshed(s2,t11) = 0
- Power_Balance_RT(s2,t12): RUp(g1,s2,t12) - RDn(g1,s2,t12)
-   + RUpSC(g1,s2,t12) - RDnSC(g1,s2,t12) - Wspill(w1,s2,t12)
-   + Lshed(s2,t12) = 0
- Power_Balance_RT(s2,t13): RUp(g1,s2,t13) - RDn(g1,s2,t13)
-   + RUpSC(g1,s2,t13) - RDnSC(g1,s2,t13) - Wspill(w1,s2,t13)
-   + Lshed(s2,t13) = 0
- Power_Balance_RT(s2,t14): RUp(g1,s2,t14) - RDn(g1,s2,t14)
-   + RUpSC(g1,s2,t14) - RDnSC(g1,s2,t14) - Wspill(w1,s2,t14)
-   + Lshed(s2,t14) = 0
- Power_Balance_RT(s2,t15): RUp(g1,s2,t15) - RDn(g1,s2,t15)
-   + RUpSC(g1,s2,t15) - RDnSC(g1,s2,t15) - Wspill(w1,s2,t15)
-   + Lshed(s2,t15) = 0
- Power_Balance_RT(s2,t16): RUp(g1,s2,t16) - RDn(g1,s2,t16)
-   + RUpSC(g1,s2,t16) - RDnSC(g1,s2,t16) - Wspill(w1,s2,t16)
-   + Lshed(s2,t16) = 0
- Power_Balance_RT(s2,t17): RUp(g1,s2,t17) - RDn(g1,s2,t17)
-   + RUpSC(g1,s2,t17) - RDnSC(g1,s2,t17) - Wspill(w1,s2,t17)
-   + Lshed(s2,t17) = 0
- Power_Balance_RT(s2,t18): RUp(g1,s2,t18) - RDn(g1,s2,t18)
-   + RUpSC(g1,s2,t18) - RDnSC(g1,s2,t18) - Wspill(w1,s2,t18)
-   + Lshed(s2,t18) = 0
- Power_Balance_RT(s2,t19): RUp(g1,s2,t19) - RDn(g1,s2,t19)
-   + RUpSC(g1,s2,t19) - RDnSC(g1,s2,t19) - Wspill(w1,s2,t19)
-   + Lshed(s2,t19) = 0
- Power_Balance_RT(s2,t20): RUp(g1,s2,t20) - RDn(g1,s2,t20)
-   + RUpSC(g1,s2,t20) - RDnSC(g1,s2,t20) - Wspill(w1,s2,t20)
-   + Lshed(s2,t20) = 0
- Power_Balance_RT(s2,t21): RUp(g1,s2,t21) - RDn(g1,s2,t21)
-   + RUpSC(g1,s2,t21) - RDnSC(g1,s2,t21) - Wspill(w1,s2,t21)
-   + Lshed(s2,t21) = 0
- Power_Balance_RT(s2,t22): RUp(g1,s2,t22) - RDn(g1,s2,t22)
-   + RUpSC(g1,s2,t22) - RDnSC(g1,s2,t22) - Wspill(w1,s2,t22)
-   + Lshed(s2,t22) = 0
- Power_Balance_RT(s2,t23): RUp(g1,s2,t23) - RDn(g1,s2,t23)
-   + RUpSC(g1,s2,t23) - RDnSC(g1,s2,t23) - Wspill(w1,s2,t23)
-   + Lshed(s2,t23) = 0
- Power_Balance_RT(s2,t24): RUp(g1,s2,t24) - RDn(g1,s2,t24)
-   + RUpSC(g1,s2,t24) - RDnSC(g1,s2,t24) - Wspill(w1,s2,t24)
-   + Lshed(s2,t24) = 0
+ Power_Balance_RT(s1,t1): - RUp(g1,s1,t1) + RDn(g1,s1,t1) - RUpSC(g1,s1,t1)
+   + RDnSC(g1,s1,t1) + Wspill(w1,s1,t1) - Lshed(s1,t1) = 9.68076198
+ Power_Balance_RT(s1,t2): - RUp(g1,s1,t2) + RDn(g1,s1,t2) - RUpSC(g1,s1,t2)
+   + RDnSC(g1,s1,t2) + Wspill(w1,s1,t2) - Lshed(s1,t2) = 9.904225260000001
+ Power_Balance_RT(s1,t3): - RUp(g1,s1,t3) + RDn(g1,s1,t3) - RUpSC(g1,s1,t3)
+   + RDnSC(g1,s1,t3) + Wspill(w1,s1,t3) - Lshed(s1,t3) = 10.34934216
+ Power_Balance_RT(s1,t4): - RUp(g1,s1,t4) + RDn(g1,s1,t4) - RUpSC(g1,s1,t4)
+   + RDnSC(g1,s1,t4) + Wspill(w1,s1,t4) - Lshed(s1,t4) = 9.887749590000002
+ Power_Balance_RT(s1,t5): - RUp(g1,s1,t5) + RDn(g1,s1,t5) - RUpSC(g1,s1,t5)
+   + RDnSC(g1,s1,t5) + Wspill(w1,s1,t5) - Lshed(s1,t5) = 10.03755486
+ Power_Balance_RT(s1,t6): - RUp(g1,s1,t6) + RDn(g1,s1,t6) - RUpSC(g1,s1,t6)
+   + RDnSC(g1,s1,t6) + Wspill(w1,s1,t6) - Lshed(s1,t6) = 9.08445951
+ Power_Balance_RT(s1,t7): - RUp(g1,s1,t7) + RDn(g1,s1,t7) - RUpSC(g1,s1,t7)
+   + RDnSC(g1,s1,t7) + Wspill(w1,s1,t7) - Lshed(s1,t7) = 8.297329169999999
+ Power_Balance_RT(s1,t8): - RUp(g1,s1,t8) + RDn(g1,s1,t8) - RUpSC(g1,s1,t8)
+   + RDnSC(g1,s1,t8) + Wspill(w1,s1,t8) - Lshed(s1,t8) = 6.67340472
+ Power_Balance_RT(s1,t9): - RUp(g1,s1,t9) + RDn(g1,s1,t9) - RUpSC(g1,s1,t9)
+   + RDnSC(g1,s1,t9) + Wspill(w1,s1,t9) - Lshed(s1,t9) = 5.23819182
+ Power_Balance_RT(s1,t10): - RUp(g1,s1,t10) + RDn(g1,s1,t10)
+   - RUpSC(g1,s1,t10) + RDnSC(g1,s1,t10) + Wspill(w1,s1,t10)
+   - Lshed(s1,t10) = 3.874596150000001
+ Power_Balance_RT(s1,t11): - RUp(g1,s1,t11) + RDn(g1,s1,t11)
+   - RUpSC(g1,s1,t11) + RDnSC(g1,s1,t11) + Wspill(w1,s1,t11)
+   - Lshed(s1,t11) = 2.98207836
+ Power_Balance_RT(s1,t12): - RUp(g1,s1,t12) + RDn(g1,s1,t12)
+   - RUpSC(g1,s1,t12) + RDnSC(g1,s1,t12) + Wspill(w1,s1,t12)
+   - Lshed(s1,t12) = 2.66509674
+ Power_Balance_RT(s1,t13): - RUp(g1,s1,t13) + RDn(g1,s1,t13)
+   - RUpSC(g1,s1,t13) + RDnSC(g1,s1,t13) + Wspill(w1,s1,t13)
+   - Lshed(s1,t13) = 2.73093516
+ Power_Balance_RT(s1,t14): - RUp(g1,s1,t14) + RDn(g1,s1,t14)
+   - RUpSC(g1,s1,t14) + RDnSC(g1,s1,t14) + Wspill(w1,s1,t14)
+   - Lshed(s1,t14) = 3.50233791
+ Power_Balance_RT(s1,t15): - RUp(g1,s1,t15) + RDn(g1,s1,t15)
+   - RUpSC(g1,s1,t15) + RDnSC(g1,s1,t15) + Wspill(w1,s1,t15)
+   - Lshed(s1,t15) = 3.98102805
+ Power_Balance_RT(s1,t16): - RUp(g1,s1,t16) + RDn(g1,s1,t16)
+   - RUpSC(g1,s1,t16) + RDnSC(g1,s1,t16) + Wspill(w1,s1,t16)
+   - Lshed(s1,t16) = 3.85869564
+ Power_Balance_RT(s1,t17): - RUp(g1,s1,t17) + RDn(g1,s1,t17)
+   - RUpSC(g1,s1,t17) + RDnSC(g1,s1,t17) + Wspill(w1,s1,t17)
+   - Lshed(s1,t17) = 3.23632914
+ Power_Balance_RT(s1,t18): - RUp(g1,s1,t18) + RDn(g1,s1,t18)
+   - RUpSC(g1,s1,t18) + RDnSC(g1,s1,t18) + Wspill(w1,s1,t18)
+   - Lshed(s1,t18) = 3.035806169999999
+ Power_Balance_RT(s1,t19): - RUp(g1,s1,t19) + RDn(g1,s1,t19)
+   - RUpSC(g1,s1,t19) + RDnSC(g1,s1,t19) + Wspill(w1,s1,t19)
+   - Lshed(s1,t19) = 2.88825651
+ Power_Balance_RT(s1,t20): - RUp(g1,s1,t20) + RDn(g1,s1,t20)
+   - RUpSC(g1,s1,t20) + RDnSC(g1,s1,t20) + Wspill(w1,s1,t20)
+   - Lshed(s1,t20) = 2.717601
+ Power_Balance_RT(s1,t21): - RUp(g1,s1,t21) + RDn(g1,s1,t21)
+   - RUpSC(g1,s1,t21) + RDnSC(g1,s1,t21) + Wspill(w1,s1,t21)
+   - Lshed(s1,t21) = 2.42519778
+ Power_Balance_RT(s1,t22): - RUp(g1,s1,t22) + RDn(g1,s1,t22)
+   - RUpSC(g1,s1,t22) + RDnSC(g1,s1,t22) + Wspill(w1,s1,t22)
+   - Lshed(s1,t22) = 2.24716395
+ Power_Balance_RT(s1,t23): - RUp(g1,s1,t23) + RDn(g1,s1,t23)
+   - RUpSC(g1,s1,t23) + RDnSC(g1,s1,t23) + Wspill(w1,s1,t23)
+   - Lshed(s1,t23) = 1.94173392
+ Power_Balance_RT(s1,t24): - RUp(g1,s1,t24) + RDn(g1,s1,t24)
+   - RUpSC(g1,s1,t24) + RDnSC(g1,s1,t24) + Wspill(w1,s1,t24)
+   - Lshed(s1,t24) = 1.25387559
+ Power_Balance_RT(s2,t1): - RUp(g1,s2,t1) + RDn(g1,s2,t1) - RUpSC(g1,s2,t1)
+   + RDnSC(g1,s2,t1) + Wspill(w1,s2,t1) - Lshed(s2,t1) = 0
+ Power_Balance_RT(s2,t2): - RUp(g1,s2,t2) + RDn(g1,s2,t2) - RUpSC(g1,s2,t2)
+   + RDnSC(g1,s2,t2) + Wspill(w1,s2,t2) - Lshed(s2,t2) = 0
+ Power_Balance_RT(s2,t3): - RUp(g1,s2,t3) + RDn(g1,s2,t3) - RUpSC(g1,s2,t3)
+   + RDnSC(g1,s2,t3) + Wspill(w1,s2,t3) - Lshed(s2,t3) = 0
+ Power_Balance_RT(s2,t4): - RUp(g1,s2,t4) + RDn(g1,s2,t4) - RUpSC(g1,s2,t4)
+   + RDnSC(g1,s2,t4) + Wspill(w1,s2,t4) - Lshed(s2,t4) = 0
+ Power_Balance_RT(s2,t5): - RUp(g1,s2,t5) + RDn(g1,s2,t5) - RUpSC(g1,s2,t5)
+   + RDnSC(g1,s2,t5) + Wspill(w1,s2,t5) - Lshed(s2,t5) = 0
+ Power_Balance_RT(s2,t6): - RUp(g1,s2,t6) + RDn(g1,s2,t6) - RUpSC(g1,s2,t6)
+   + RDnSC(g1,s2,t6) + Wspill(w1,s2,t6) - Lshed(s2,t6) = 0
+ Power_Balance_RT(s2,t7): - RUp(g1,s2,t7) + RDn(g1,s2,t7) - RUpSC(g1,s2,t7)
+   + RDnSC(g1,s2,t7) + Wspill(w1,s2,t7) - Lshed(s2,t7) = 0
+ Power_Balance_RT(s2,t8): - RUp(g1,s2,t8) + RDn(g1,s2,t8) - RUpSC(g1,s2,t8)
+   + RDnSC(g1,s2,t8) + Wspill(w1,s2,t8) - Lshed(s2,t8) = 0
+ Power_Balance_RT(s2,t9): - RUp(g1,s2,t9) + RDn(g1,s2,t9) - RUpSC(g1,s2,t9)
+   + RDnSC(g1,s2,t9) + Wspill(w1,s2,t9) - Lshed(s2,t9) = 0
+ Power_Balance_RT(s2,t10): - RUp(g1,s2,t10) + RDn(g1,s2,t10)
+   - RUpSC(g1,s2,t10) + RDnSC(g1,s2,t10) + Wspill(w1,s2,t10)
+   - Lshed(s2,t10) = 0
+ Power_Balance_RT(s2,t11): - RUp(g1,s2,t11) + RDn(g1,s2,t11)
+   - RUpSC(g1,s2,t11) + RDnSC(g1,s2,t11) + Wspill(w1,s2,t11)
+   - Lshed(s2,t11) = 0
+ Power_Balance_RT(s2,t12): - RUp(g1,s2,t12) + RDn(g1,s2,t12)
+   - RUpSC(g1,s2,t12) + RDnSC(g1,s2,t12) + Wspill(w1,s2,t12)
+   - Lshed(s2,t12) = 0
+ Power_Balance_RT(s2,t13): - RUp(g1,s2,t13) + RDn(g1,s2,t13)
+   - RUpSC(g1,s2,t13) + RDnSC(g1,s2,t13) + Wspill(w1,s2,t13)
+   - Lshed(s2,t13) = 0
+ Power_Balance_RT(s2,t14): - RUp(g1,s2,t14) + RDn(g1,s2,t14)
+   - RUpSC(g1,s2,t14) + RDnSC(g1,s2,t14) + Wspill(w1,s2,t14)
+   - Lshed(s2,t14) = 0
+ Power_Balance_RT(s2,t15): - RUp(g1,s2,t15) + RDn(g1,s2,t15)
+   - RUpSC(g1,s2,t15) + RDnSC(g1,s2,t15) + Wspill(w1,s2,t15)
+   - Lshed(s2,t15) = 0
+ Power_Balance_RT(s2,t16): - RUp(g1,s2,t16) + RDn(g1,s2,t16)
+   - RUpSC(g1,s2,t16) + RDnSC(g1,s2,t16) + Wspill(w1,s2,t16)
+   - Lshed(s2,t16) = 0
+ Power_Balance_RT(s2,t17): - RUp(g1,s2,t17) + RDn(g1,s2,t17)
+   - RUpSC(g1,s2,t17) + RDnSC(g1,s2,t17) + Wspill(w1,s2,t17)
+   - Lshed(s2,t17) = 0
+ Power_Balance_RT(s2,t18): - RUp(g1,s2,t18) + RDn(g1,s2,t18)
+   - RUpSC(g1,s2,t18) + RDnSC(g1,s2,t18) + Wspill(w1,s2,t18)
+   - Lshed(s2,t18) = 0
+ Power_Balance_RT(s2,t19): - RUp(g1,s2,t19) + RDn(g1,s2,t19)
+   - RUpSC(g1,s2,t19) + RDnSC(g1,s2,t19) + Wspill(w1,s2,t19)
+   - Lshed(s2,t19) = 0
+ Power_Balance_RT(s2,t20): - RUp(g1,s2,t20) + RDn(g1,s2,t20)
+   - RUpSC(g1,s2,t20) + RDnSC(g1,s2,t20) + Wspill(w1,s2,t20)
+   - Lshed(s2,t20) = 0
+ Power_Balance_RT(s2,t21): - RUp(g1,s2,t21) + RDn(g1,s2,t21)
+   - RUpSC(g1,s2,t21) + RDnSC(g1,s2,t21) + Wspill(w1,s2,t21)
+   - Lshed(s2,t21) = 0
+ Power_Balance_RT(s2,t22): - RUp(g1,s2,t22) + RDn(g1,s2,t22)
+   - RUpSC(g1,s2,t22) + RDnSC(g1,s2,t22) + Wspill(w1,s2,t22)
+   - Lshed(s2,t22) = 0
+ Power_Balance_RT(s2,t23): - RUp(g1,s2,t23) + RDn(g1,s2,t23)
+   - RUpSC(g1,s2,t23) + RDnSC(g1,s2,t23) + Wspill(w1,s2,t23)
+   - Lshed(s2,t23) = 0
+ Power_Balance_RT(s2,t24): - RUp(g1,s2,t24) + RDn(g1,s2,t24)
+   - RUpSC(g1,s2,t24) + RDnSC(g1,s2,t24) + Wspill(w1,s2,t24)
+   - Lshed(s2,t24) = 0
  RegUp_max_RT(g1,s1,t1): RUp(g1,s1,t1) <= 111.68076201
  RegDown_max_RT(g1,s1,t1): RDn(g1,s1,t1) <= 40.31923799000001
  RegUp_max_RT(g1,s1,t2): RUp(g1,s1,t2) <= 110.61013003

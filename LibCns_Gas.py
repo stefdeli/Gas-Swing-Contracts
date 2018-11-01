@@ -339,11 +339,9 @@ def _build_constraints_gasDA(self):
             for k in sclim: 
                 
                 name='gflow_sr_io({0},{1},{2})'.format(pl,k,t).replace(" ","")
-                self.constraints[name]= expando()
-                cc=self.constraints[name]
-                cc.lhs= var.gflow_sr[pl,k,t]
-                cc.rhs=(var.qin_sr[pl,k,t] + var.qout_sr[pl,k,t]) * 0.5
-                cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
+                lhs= var.gflow_sr[pl,k,t]
+                rhs=(var.qin_sr[pl,k,t] + var.qout_sr[pl,k,t]) * 0.5
+                add_constraint(self,-lhs,'==',-rhs,name=name)
                    
             # Separate for debugging purposes
     for pl in pplines:
@@ -351,11 +349,9 @@ def _build_constraints_gasDA(self):
         for k in sclim: 
             for t in time:
                 name= 'lpack_def({0},{1},{2})'.format(pl,k,t).replace(" ","")
-                self.constraints[name]= expando()
-                cc=self.constraints[name]
-                cc.lhs= var.lpack[pl,k,t]
-                cc.rhs= self.gdata.pplinels[pl]*0.5*(var.pr[ns,k,t]+var.pr[nr,k,t])
-                cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
+                lhs= var.lpack[pl,k,t]
+                rhs= self.gdata.pplinels[pl]*0.5*(var.pr[ns,k,t]+var.pr[nr,k,t])
+                add_constraint(self,-lhs,'==',-rhs,name=name)
                      
         
 
@@ -385,12 +381,11 @@ def _build_constraints_gasDA(self):
                 k = 'k0' # Line-pack storage defined for 'central case' k0
                 
                 name='line_store({0},{1},{2})'.format(pl,k,t).replace(" ","")
-                self.constraints[name]= expando()
-                cc=self.constraints[name]
-                cc.lhs= var.lpack[pl,k,t]
-                cc.rhs=var.lpack[pl,k,tpr] + var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t] \
+
+                lhs= var.lpack[pl,k,t]
+                rhs=var.lpack[pl,k,tpr] + var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t] \
                                             + var.qin_rs[pl,k,t] - var.qout_rs[pl,k,t] 
-                cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
+                add_constraint(self,-lhs,'==',-rhs,name=name)
             
             
             t = time[0]
@@ -398,12 +393,10 @@ def _build_constraints_gasDA(self):
             
             
             name='line_store({0},{1},{2})'.format(pl,k,t).replace(" ","")
-            self.constraints[name]= expando()
-            cc=self.constraints[name]
-            cc.lhs= var.lpack[pl,k,t]
-            cc.rhs= self.gdata.pplinelsini[pl] + var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t] \
+            lhs= var.lpack[pl,k,t]
+            rhs= self.gdata.pplinelsini[pl] + var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t] \
                                                    + var.qin_rs[pl,k,t] - var.qout_rs[pl,k,t] 
-            cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
+            add_constraint(self,-lhs,'==',-rhs,name=name)
           
             
   
@@ -420,11 +413,9 @@ def _build_constraints_gasDA(self):
                 for tpr, t in zip(time, time[1:]):
                     
                     name='line_store({0},{1},{2})'.format(pl,k,t).replace(" ","")
-                    self.constraints[name]= expando()
-                    cc=self.constraints[name]
-                    cc.lhs=var.lpack[pl,k,t]
-                    cc.rhs=var.lpack[pl,kappa,tpr] + var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t]
-                    cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
+                    lhs=var.lpack[pl,k,t]
+                    rhs=var.lpack[pl,kappa,tpr] + var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t]
+                    add_constraint(self,-lhs,'==',-rhs,name=name)
                     
                 
                 # Time =0   Either Steady State or Transient 
@@ -433,22 +424,18 @@ def _build_constraints_gasDA(self):
                 if self.gdata.pplinels[pl] >0 :
                     
                     name='line_store({0},{1},{2})'.format(pl,k,t).replace(" ","")
-                    self.constraints[name]= expando()
-                    cc=self.constraints[name]
-                    cc.lhs= var.lpack[pl,k,t]
-                    cc.rhs= self.gdata.pplinelsini[pl] + var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t]
-                    cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
+                    lhs= var.lpack[pl,k,t]
+                    rhs= self.gdata.pplinelsini[pl] + var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t]
+                    add_constraint(self,-lhs,'==',-rhs,name=name)
 
                 
                 # Otherwise system is in steady state and there is no initial linepack
                 else:
                     
                     name='line_store({0},{1},{2})'.format(pl,k,t).replace(" ","")
-                    self.constraints[name]= expando()
-                    cc=self.constraints[name]
-                    cc.lhs= var.lpack[pl,k,t]
-                    cc.rhs= var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t]
-                    cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
+                    lhs= var.lpack[pl,k,t]
+                    rhs= var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t]
+                    add_constraint(self,-lhs,'==',-rhs,name=name)
                     
                     
                
@@ -554,17 +541,15 @@ def _build_constraints_gasDA(self):
         for k in sclim:
             for gn in gnodes:
                 for t in time:
-                    name='gas_balance({0},{1},{2})'.format(gn,k,t)
-                    self.constraints[name]= expando()
-                    cc=self.constraints[name]                
-                    cc.lhs=gb.quicksum(var.gprod[gw,k,t] for gw in self.gdata.Map_Gn2Gp[gn]) +\
+                    name='gas_balance({0},{1},{2})'.format(gn,k,t)              
+                    lhs=gb.quicksum(var.gprod[gw,k,t] for gw in self.gdata.Map_Gn2Gp[gn]) +\
                             gb.quicksum(var.qout_sr[pl,k,t] - var.qin_rs[pl,k,t] for pl in self.gdata.nodetoinpplines[gn]) +\
                             gb.quicksum(var.qout_rs[pl,k,t] - var.qin_sr[pl,k,t] for pl in self.gdata.nodetooutpplines[gn])+\
                             gb.quicksum(var.gsout[gs,k,t] - var.gsin[gs,k,t] for gs in self.gdata.Map_Gn2Gs[gn])
                             
-                    cc.rhs=self.gdata.gasload[gn][t]+  gb.quicksum((Pgen[gen][t]+ \
+                    rhs=self.gdata.gasload[gn][t]+  gb.quicksum((Pgen[gen][t]+ \
                                          PgenSC[gen][t]+RSC[gen,k,t])*self.gdata.generatorinfo.HR[gen] for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn] )
-                    cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
+                    add_constraint(self,-lhs,'==',-rhs,name=name)
                     
    
      
@@ -575,16 +560,14 @@ def _build_constraints_gasDA(self):
         for t in time:
             for gn in gnodes:
                 for k in sclim:
-                    name='gas_balance({0},{1},{2})'.format(gn,k,t)
-                    self.constraints[name]= expando()
-                    cc=self.constraints[name]                
-                    cc.lhs=   gb.quicksum(var.gprod[gw,k,t] for gw in self.gdata.Map_Gn2Gp[gn]) \
+                    name='gas_balance({0},{1},{2})'.format(gn,k,t)               
+                    lhs=   gb.quicksum(var.gprod[gw,k,t] for gw in self.gdata.Map_Gn2Gp[gn]) \
                             + gb.quicksum(var.qout_sr[pl,k,t] for pl in self.gdata.nodetoinpplines[gn])\
                             - gb.quicksum(var.qin_sr[pl,k,t] for pl in self.gdata.nodetooutpplines[gn]) \
                             + gb.quicksum(var.gsout[gs,k,t] - var.gsin[gs,k,t] for gs in self.gdata.Map_Gn2Gs[gn])
-                    cc.rhs= self.gdata.gasload[gn][t] + gb.quicksum((Pgen[gen][t]+ \
+                    rhs= self.gdata.gasload[gn][t] + gb.quicksum((Pgen[gen][t]+ \
                                          PgenSC[gen][t]+RSC[gen,k,t])*HR[gen] for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn] )
-                    cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)       
+                    add_constraint(self,-lhs,'==',-rhs,name=name)      
 
     m.update()
     
@@ -663,13 +646,13 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
                 rhs=self.gdata.gnodedf['PresMin'][gn]
                 add_constraint(self,lhs,'>=',rhs,name)
 
-    for t in time: 
-        for s in scenarios:
-            name='Send_geq_Receive_rt{0}{1}'.format(t,s)
-            lhs=var.pr_rt['ng101',s,t]
-            rhs=var.pr_rt['ng102',s,t]
-            add_constraint(self,lhs,'>=',rhs,name)
-            
+#    for t in time: 
+#        for s in scenarios:
+#            name='Send_geq_Receive_rt{0}{1}'.format(t,s)
+#            lhs=var.pr_rt['ng101',s,t]
+#            rhs=var.pr_rt['ng102',s,t]
+#            add_constraint(self,lhs,'>=',rhs,name)
+#            
 
 
     #--- Outer Approximation
@@ -780,13 +763,13 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
                 name='gflow_sr_io_rt({0},{1},{2})'.format(pl,s,t).replace(" ","")
                 lhs=var.gflow_sr_rt[pl,s,t]-(var.qin_sr_rt[pl,s,t] + var.qout_sr_rt[pl,s,t]) * 0.5
                 rhs=np.float64(0.0)
-                add_constraint(self,lhs,'==',rhs,name)
+                add_constraint(self,-lhs,'==',-rhs,name)
                 
             
                 name = 'lpack_def_rt({0},{1},{2})'.format(pl,s,t).replace(" ","")
                 lhs=var.lpack_rt[pl,s,t]-self.gdata.pplinels[pl]*0.5*(var.pr_rt[ns,s,t]+var.pr_rt[nr,s,t])
                 rhs= np.float64(0.0)
-                add_constraint(self,lhs,'==',rhs,name)
+                add_constraint(self,-lhs,'==',-rhs,name)
                        
 
     '''
@@ -803,14 +786,14 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
                     name='line_store_rt({0},{1},{2})'.format(pl,s,t).replace(" ","")
                     lhs=var.lpack_rt[pl,s,t] -var.lpack_rt[pl,s,tpr] - var.qin_sr_rt[pl,s,t] + var.qout_sr_rt[pl,s,t]
                     rhs= np.float64(0.0)
-                    add_constraint(self,lhs,'==',rhs,name)
+                    add_constraint(self,-lhs,'==',-rhs,name)
             
                 t = time[0]
             
                 name='line_store_rt({0},{1},{2})'.format(pl,s,t).replace(" ","")
                 lhs=var.lpack_rt[pl,s,t]  - var.qin_sr_rt[pl,s,t] + var.qout_sr_rt[pl,s,t]
                 rhs=  self.gdata.pplinelsini[pl] 
-                add_constraint(self,lhs,'==',rhs,name)
+                add_constraint(self,-lhs,'==',-rhs,name)
                 
 #                for t in time:
 #                    name='ss{0},{1},{2}'.format(pl,s,t)
@@ -863,7 +846,7 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
                 name='gstor_def_rt({0},{1},{2})'.format(gs,s,t)
                 lhs=var.gstore_rt[gs,s,t]
                 rhs= var.gstore_rt[gs,s,tpr]+var.gsin_rt[gs,s,t]-var.gsout_rt[gs,s,t]
-                add_constraint(self,lhs,'==',rhs,name)
+                add_constraint(self,-lhs,'==',-rhs,name)
         
         
             t = time[0]
@@ -871,7 +854,7 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
             name='gstor_def_rt({0},{1},{2})'.format(gs,s,t)
             lhs=var.gstore_rt[gs,s,t]
             rhs= self.gdata.gstorageinfo['IniStore'][gs]+var.gsin_rt[gs,s,t]-var.gsout_rt[gs,s,t]
-            add_constraint(self,lhs,'==',rhs,name)
+            add_constraint(self,-lhs,'==',-rhs,name)
             
 
             # At end of time the linepack should be +/- 10% percent of the initial value
@@ -890,7 +873,7 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
         for gn in gnodes:
             for t in time:
                 name = 'gas_shed_rt({0},{1},{2})'.format(gn,s,t)
-                lhs= var.gshed[gn,s,t]
+                lhs= var.gshed_rt[gn,s,t]
                 rhs= self.gdata.gasload[gn][t]
                 add_constraint(self,lhs,'<=',rhs,name)
                
@@ -937,7 +920,7 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
 
                         
                 rhs = np.float64(0.0)  
-                add_constraint(self,lhs,'==',rhs,name)
+                add_constraint(self,-lhs,'==',-rhs,name)
 
  
     m.update()
