@@ -9151,1018 +9151,512 @@ Subject To
  gprodDn_max(gw1,s2,t23): gprodDn(gw1,s2,t23) <= 0
  gprodUp_max(gw1,s2,t24): gprodUp(gw1,s2,t24) <= 100000
  gprodDn_max(gw1,s2,t24): gprodDn(gw1,s2,t24) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t1)_geq:
+ gflow_sr_io_rt(('ng101','ng102'),s1,t1):
    gflow_sr_rt(('ng101','ng102'),s1,t1)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t1)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t1) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t1)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t1)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t1)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t1) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t1)_geq: - 75 pres_rt(ng101,s1,t1)
-   - 75 pres_rt(ng102,s1,t1) + lpack_rt(('ng101','ng102'),s1,t1) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t1)_leq: - 75 pres_rt(ng101,s1,t1)
-   - 75 pres_rt(ng102,s1,t1) + lpack_rt(('ng101','ng102'),s1,t1) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t1)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t1) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t1): - 75 pres_rt(ng101,s1,t1)
+   - 75 pres_rt(ng102,s1,t1) + lpack_rt(('ng101','ng102'),s1,t1) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t1):
    gflow_sr_rt(('ng101','ng102'),s2,t1)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t1)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t1) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t1)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t1)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t1)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t1) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t1)_geq: - 75 pres_rt(ng101,s2,t1)
-   - 75 pres_rt(ng102,s2,t1) + lpack_rt(('ng101','ng102'),s2,t1) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t1)_leq: - 75 pres_rt(ng101,s2,t1)
-   - 75 pres_rt(ng102,s2,t1) + lpack_rt(('ng101','ng102'),s2,t1) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t2)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t1) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t1): - 75 pres_rt(ng101,s2,t1)
+   - 75 pres_rt(ng102,s2,t1) + lpack_rt(('ng101','ng102'),s2,t1) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t2):
    gflow_sr_rt(('ng101','ng102'),s1,t2)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t2)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t2) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t2)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t2)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t2)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t2) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t2)_geq: - 75 pres_rt(ng101,s1,t2)
-   - 75 pres_rt(ng102,s1,t2) + lpack_rt(('ng101','ng102'),s1,t2) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t2)_leq: - 75 pres_rt(ng101,s1,t2)
-   - 75 pres_rt(ng102,s1,t2) + lpack_rt(('ng101','ng102'),s1,t2) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t2)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t2) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t2): - 75 pres_rt(ng101,s1,t2)
+   - 75 pres_rt(ng102,s1,t2) + lpack_rt(('ng101','ng102'),s1,t2) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t2):
    gflow_sr_rt(('ng101','ng102'),s2,t2)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t2)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t2) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t2)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t2)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t2)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t2) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t2)_geq: - 75 pres_rt(ng101,s2,t2)
-   - 75 pres_rt(ng102,s2,t2) + lpack_rt(('ng101','ng102'),s2,t2) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t2)_leq: - 75 pres_rt(ng101,s2,t2)
-   - 75 pres_rt(ng102,s2,t2) + lpack_rt(('ng101','ng102'),s2,t2) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t3)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t2) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t2): - 75 pres_rt(ng101,s2,t2)
+   - 75 pres_rt(ng102,s2,t2) + lpack_rt(('ng101','ng102'),s2,t2) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t3):
    gflow_sr_rt(('ng101','ng102'),s1,t3)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t3)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t3) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t3)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t3)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t3)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t3) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t3)_geq: - 75 pres_rt(ng101,s1,t3)
-   - 75 pres_rt(ng102,s1,t3) + lpack_rt(('ng101','ng102'),s1,t3) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t3)_leq: - 75 pres_rt(ng101,s1,t3)
-   - 75 pres_rt(ng102,s1,t3) + lpack_rt(('ng101','ng102'),s1,t3) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t3)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t3) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t3): - 75 pres_rt(ng101,s1,t3)
+   - 75 pres_rt(ng102,s1,t3) + lpack_rt(('ng101','ng102'),s1,t3) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t3):
    gflow_sr_rt(('ng101','ng102'),s2,t3)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t3)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t3) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t3)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t3)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t3)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t3) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t3)_geq: - 75 pres_rt(ng101,s2,t3)
-   - 75 pres_rt(ng102,s2,t3) + lpack_rt(('ng101','ng102'),s2,t3) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t3)_leq: - 75 pres_rt(ng101,s2,t3)
-   - 75 pres_rt(ng102,s2,t3) + lpack_rt(('ng101','ng102'),s2,t3) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t4)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t3) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t3): - 75 pres_rt(ng101,s2,t3)
+   - 75 pres_rt(ng102,s2,t3) + lpack_rt(('ng101','ng102'),s2,t3) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t4):
    gflow_sr_rt(('ng101','ng102'),s1,t4)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t4)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t4) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t4)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t4)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t4)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t4) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t4)_geq: - 75 pres_rt(ng101,s1,t4)
-   - 75 pres_rt(ng102,s1,t4) + lpack_rt(('ng101','ng102'),s1,t4) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t4)_leq: - 75 pres_rt(ng101,s1,t4)
-   - 75 pres_rt(ng102,s1,t4) + lpack_rt(('ng101','ng102'),s1,t4) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t4)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t4) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t4): - 75 pres_rt(ng101,s1,t4)
+   - 75 pres_rt(ng102,s1,t4) + lpack_rt(('ng101','ng102'),s1,t4) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t4):
    gflow_sr_rt(('ng101','ng102'),s2,t4)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t4)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t4) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t4)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t4)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t4)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t4) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t4)_geq: - 75 pres_rt(ng101,s2,t4)
-   - 75 pres_rt(ng102,s2,t4) + lpack_rt(('ng101','ng102'),s2,t4) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t4)_leq: - 75 pres_rt(ng101,s2,t4)
-   - 75 pres_rt(ng102,s2,t4) + lpack_rt(('ng101','ng102'),s2,t4) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t5)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t4) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t4): - 75 pres_rt(ng101,s2,t4)
+   - 75 pres_rt(ng102,s2,t4) + lpack_rt(('ng101','ng102'),s2,t4) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t5):
    gflow_sr_rt(('ng101','ng102'),s1,t5)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t5)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t5) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t5)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t5)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t5)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t5) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t5)_geq: - 75 pres_rt(ng101,s1,t5)
-   - 75 pres_rt(ng102,s1,t5) + lpack_rt(('ng101','ng102'),s1,t5) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t5)_leq: - 75 pres_rt(ng101,s1,t5)
-   - 75 pres_rt(ng102,s1,t5) + lpack_rt(('ng101','ng102'),s1,t5) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t5)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t5) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t5): - 75 pres_rt(ng101,s1,t5)
+   - 75 pres_rt(ng102,s1,t5) + lpack_rt(('ng101','ng102'),s1,t5) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t5):
    gflow_sr_rt(('ng101','ng102'),s2,t5)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t5)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t5) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t5)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t5)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t5)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t5) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t5)_geq: - 75 pres_rt(ng101,s2,t5)
-   - 75 pres_rt(ng102,s2,t5) + lpack_rt(('ng101','ng102'),s2,t5) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t5)_leq: - 75 pres_rt(ng101,s2,t5)
-   - 75 pres_rt(ng102,s2,t5) + lpack_rt(('ng101','ng102'),s2,t5) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t6)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t5) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t5): - 75 pres_rt(ng101,s2,t5)
+   - 75 pres_rt(ng102,s2,t5) + lpack_rt(('ng101','ng102'),s2,t5) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t6):
    gflow_sr_rt(('ng101','ng102'),s1,t6)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t6)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t6) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t6)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t6)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t6)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t6) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t6)_geq: - 75 pres_rt(ng101,s1,t6)
-   - 75 pres_rt(ng102,s1,t6) + lpack_rt(('ng101','ng102'),s1,t6) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t6)_leq: - 75 pres_rt(ng101,s1,t6)
-   - 75 pres_rt(ng102,s1,t6) + lpack_rt(('ng101','ng102'),s1,t6) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t6)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t6) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t6): - 75 pres_rt(ng101,s1,t6)
+   - 75 pres_rt(ng102,s1,t6) + lpack_rt(('ng101','ng102'),s1,t6) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t6):
    gflow_sr_rt(('ng101','ng102'),s2,t6)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t6)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t6) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t6)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t6)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t6)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t6) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t6)_geq: - 75 pres_rt(ng101,s2,t6)
-   - 75 pres_rt(ng102,s2,t6) + lpack_rt(('ng101','ng102'),s2,t6) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t6)_leq: - 75 pres_rt(ng101,s2,t6)
-   - 75 pres_rt(ng102,s2,t6) + lpack_rt(('ng101','ng102'),s2,t6) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t7)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t6) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t6): - 75 pres_rt(ng101,s2,t6)
+   - 75 pres_rt(ng102,s2,t6) + lpack_rt(('ng101','ng102'),s2,t6) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t7):
    gflow_sr_rt(('ng101','ng102'),s1,t7)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t7)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t7) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t7)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t7)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t7)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t7) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t7)_geq: - 75 pres_rt(ng101,s1,t7)
-   - 75 pres_rt(ng102,s1,t7) + lpack_rt(('ng101','ng102'),s1,t7) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t7)_leq: - 75 pres_rt(ng101,s1,t7)
-   - 75 pres_rt(ng102,s1,t7) + lpack_rt(('ng101','ng102'),s1,t7) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t7)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t7) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t7): - 75 pres_rt(ng101,s1,t7)
+   - 75 pres_rt(ng102,s1,t7) + lpack_rt(('ng101','ng102'),s1,t7) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t7):
    gflow_sr_rt(('ng101','ng102'),s2,t7)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t7)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t7) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t7)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t7)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t7)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t7) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t7)_geq: - 75 pres_rt(ng101,s2,t7)
-   - 75 pres_rt(ng102,s2,t7) + lpack_rt(('ng101','ng102'),s2,t7) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t7)_leq: - 75 pres_rt(ng101,s2,t7)
-   - 75 pres_rt(ng102,s2,t7) + lpack_rt(('ng101','ng102'),s2,t7) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t8)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t7) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t7): - 75 pres_rt(ng101,s2,t7)
+   - 75 pres_rt(ng102,s2,t7) + lpack_rt(('ng101','ng102'),s2,t7) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t8):
    gflow_sr_rt(('ng101','ng102'),s1,t8)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t8)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t8) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t8)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t8)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t8)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t8) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t8)_geq: - 75 pres_rt(ng101,s1,t8)
-   - 75 pres_rt(ng102,s1,t8) + lpack_rt(('ng101','ng102'),s1,t8) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t8)_leq: - 75 pres_rt(ng101,s1,t8)
-   - 75 pres_rt(ng102,s1,t8) + lpack_rt(('ng101','ng102'),s1,t8) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t8)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t8) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t8): - 75 pres_rt(ng101,s1,t8)
+   - 75 pres_rt(ng102,s1,t8) + lpack_rt(('ng101','ng102'),s1,t8) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t8):
    gflow_sr_rt(('ng101','ng102'),s2,t8)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t8)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t8) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t8)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t8)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t8)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t8) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t8)_geq: - 75 pres_rt(ng101,s2,t8)
-   - 75 pres_rt(ng102,s2,t8) + lpack_rt(('ng101','ng102'),s2,t8) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t8)_leq: - 75 pres_rt(ng101,s2,t8)
-   - 75 pres_rt(ng102,s2,t8) + lpack_rt(('ng101','ng102'),s2,t8) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t9)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t8) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t8): - 75 pres_rt(ng101,s2,t8)
+   - 75 pres_rt(ng102,s2,t8) + lpack_rt(('ng101','ng102'),s2,t8) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t9):
    gflow_sr_rt(('ng101','ng102'),s1,t9)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t9)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t9) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t9)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t9)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t9)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t9) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t9)_geq: - 75 pres_rt(ng101,s1,t9)
-   - 75 pres_rt(ng102,s1,t9) + lpack_rt(('ng101','ng102'),s1,t9) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t9)_leq: - 75 pres_rt(ng101,s1,t9)
-   - 75 pres_rt(ng102,s1,t9) + lpack_rt(('ng101','ng102'),s1,t9) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t9)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t9) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t9): - 75 pres_rt(ng101,s1,t9)
+   - 75 pres_rt(ng102,s1,t9) + lpack_rt(('ng101','ng102'),s1,t9) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t9):
    gflow_sr_rt(('ng101','ng102'),s2,t9)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t9)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t9) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t9)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t9)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t9)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t9) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t9)_geq: - 75 pres_rt(ng101,s2,t9)
-   - 75 pres_rt(ng102,s2,t9) + lpack_rt(('ng101','ng102'),s2,t9) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t9)_leq: - 75 pres_rt(ng101,s2,t9)
-   - 75 pres_rt(ng102,s2,t9) + lpack_rt(('ng101','ng102'),s2,t9) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t10)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t9) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t9): - 75 pres_rt(ng101,s2,t9)
+   - 75 pres_rt(ng102,s2,t9) + lpack_rt(('ng101','ng102'),s2,t9) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t10):
    gflow_sr_rt(('ng101','ng102'),s1,t10)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t10)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t10) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t10)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t10)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t10)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t10) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t10)_geq: - 75 pres_rt(ng101,s1,t10)
-   - 75 pres_rt(ng102,s1,t10) + lpack_rt(('ng101','ng102'),s1,t10) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t10)_leq: - 75 pres_rt(ng101,s1,t10)
-   - 75 pres_rt(ng102,s1,t10) + lpack_rt(('ng101','ng102'),s1,t10) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t10)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t10) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t10): - 75 pres_rt(ng101,s1,t10)
+   - 75 pres_rt(ng102,s1,t10) + lpack_rt(('ng101','ng102'),s1,t10) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t10):
    gflow_sr_rt(('ng101','ng102'),s2,t10)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t10)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t10) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t10)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t10)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t10)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t10) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t10)_geq: - 75 pres_rt(ng101,s2,t10)
-   - 75 pres_rt(ng102,s2,t10) + lpack_rt(('ng101','ng102'),s2,t10) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t10)_leq: - 75 pres_rt(ng101,s2,t10)
-   - 75 pres_rt(ng102,s2,t10) + lpack_rt(('ng101','ng102'),s2,t10) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t11)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t10) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t10): - 75 pres_rt(ng101,s2,t10)
+   - 75 pres_rt(ng102,s2,t10) + lpack_rt(('ng101','ng102'),s2,t10) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t11):
    gflow_sr_rt(('ng101','ng102'),s1,t11)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t11)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t11) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t11)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t11)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t11)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t11) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t11)_geq: - 75 pres_rt(ng101,s1,t11)
-   - 75 pres_rt(ng102,s1,t11) + lpack_rt(('ng101','ng102'),s1,t11) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t11)_leq: - 75 pres_rt(ng101,s1,t11)
-   - 75 pres_rt(ng102,s1,t11) + lpack_rt(('ng101','ng102'),s1,t11) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t11)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t11) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t11): - 75 pres_rt(ng101,s1,t11)
+   - 75 pres_rt(ng102,s1,t11) + lpack_rt(('ng101','ng102'),s1,t11) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t11):
    gflow_sr_rt(('ng101','ng102'),s2,t11)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t11)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t11) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t11)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t11)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t11)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t11) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t11)_geq: - 75 pres_rt(ng101,s2,t11)
-   - 75 pres_rt(ng102,s2,t11) + lpack_rt(('ng101','ng102'),s2,t11) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t11)_leq: - 75 pres_rt(ng101,s2,t11)
-   - 75 pres_rt(ng102,s2,t11) + lpack_rt(('ng101','ng102'),s2,t11) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t12)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t11) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t11): - 75 pres_rt(ng101,s2,t11)
+   - 75 pres_rt(ng102,s2,t11) + lpack_rt(('ng101','ng102'),s2,t11) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t12):
    gflow_sr_rt(('ng101','ng102'),s1,t12)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t12)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t12) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t12)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t12)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t12)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t12) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t12)_geq: - 75 pres_rt(ng101,s1,t12)
-   - 75 pres_rt(ng102,s1,t12) + lpack_rt(('ng101','ng102'),s1,t12) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t12)_leq: - 75 pres_rt(ng101,s1,t12)
-   - 75 pres_rt(ng102,s1,t12) + lpack_rt(('ng101','ng102'),s1,t12) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t12)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t12) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t12): - 75 pres_rt(ng101,s1,t12)
+   - 75 pres_rt(ng102,s1,t12) + lpack_rt(('ng101','ng102'),s1,t12) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t12):
    gflow_sr_rt(('ng101','ng102'),s2,t12)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t12)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t12) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t12)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t12)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t12)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t12) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t12)_geq: - 75 pres_rt(ng101,s2,t12)
-   - 75 pres_rt(ng102,s2,t12) + lpack_rt(('ng101','ng102'),s2,t12) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t12)_leq: - 75 pres_rt(ng101,s2,t12)
-   - 75 pres_rt(ng102,s2,t12) + lpack_rt(('ng101','ng102'),s2,t12) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t13)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t12) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t12): - 75 pres_rt(ng101,s2,t12)
+   - 75 pres_rt(ng102,s2,t12) + lpack_rt(('ng101','ng102'),s2,t12) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t13):
    gflow_sr_rt(('ng101','ng102'),s1,t13)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t13)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t13) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t13)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t13)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t13)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t13) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t13)_geq: - 75 pres_rt(ng101,s1,t13)
-   - 75 pres_rt(ng102,s1,t13) + lpack_rt(('ng101','ng102'),s1,t13) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t13)_leq: - 75 pres_rt(ng101,s1,t13)
-   - 75 pres_rt(ng102,s1,t13) + lpack_rt(('ng101','ng102'),s1,t13) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t13)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t13) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t13): - 75 pres_rt(ng101,s1,t13)
+   - 75 pres_rt(ng102,s1,t13) + lpack_rt(('ng101','ng102'),s1,t13) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t13):
    gflow_sr_rt(('ng101','ng102'),s2,t13)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t13)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t13) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t13)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t13)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t13)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t13) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t13)_geq: - 75 pres_rt(ng101,s2,t13)
-   - 75 pres_rt(ng102,s2,t13) + lpack_rt(('ng101','ng102'),s2,t13) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t13)_leq: - 75 pres_rt(ng101,s2,t13)
-   - 75 pres_rt(ng102,s2,t13) + lpack_rt(('ng101','ng102'),s2,t13) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t14)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t13) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t13): - 75 pres_rt(ng101,s2,t13)
+   - 75 pres_rt(ng102,s2,t13) + lpack_rt(('ng101','ng102'),s2,t13) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t14):
    gflow_sr_rt(('ng101','ng102'),s1,t14)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t14)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t14) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t14)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t14)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t14)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t14) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t14)_geq: - 75 pres_rt(ng101,s1,t14)
-   - 75 pres_rt(ng102,s1,t14) + lpack_rt(('ng101','ng102'),s1,t14) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t14)_leq: - 75 pres_rt(ng101,s1,t14)
-   - 75 pres_rt(ng102,s1,t14) + lpack_rt(('ng101','ng102'),s1,t14) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t14)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t14) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t14): - 75 pres_rt(ng101,s1,t14)
+   - 75 pres_rt(ng102,s1,t14) + lpack_rt(('ng101','ng102'),s1,t14) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t14):
    gflow_sr_rt(('ng101','ng102'),s2,t14)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t14)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t14) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t14)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t14)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t14)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t14) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t14)_geq: - 75 pres_rt(ng101,s2,t14)
-   - 75 pres_rt(ng102,s2,t14) + lpack_rt(('ng101','ng102'),s2,t14) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t14)_leq: - 75 pres_rt(ng101,s2,t14)
-   - 75 pres_rt(ng102,s2,t14) + lpack_rt(('ng101','ng102'),s2,t14) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t15)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t14) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t14): - 75 pres_rt(ng101,s2,t14)
+   - 75 pres_rt(ng102,s2,t14) + lpack_rt(('ng101','ng102'),s2,t14) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t15):
    gflow_sr_rt(('ng101','ng102'),s1,t15)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t15)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t15) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t15)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t15)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t15)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t15) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t15)_geq: - 75 pres_rt(ng101,s1,t15)
-   - 75 pres_rt(ng102,s1,t15) + lpack_rt(('ng101','ng102'),s1,t15) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t15)_leq: - 75 pres_rt(ng101,s1,t15)
-   - 75 pres_rt(ng102,s1,t15) + lpack_rt(('ng101','ng102'),s1,t15) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t15)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t15) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t15): - 75 pres_rt(ng101,s1,t15)
+   - 75 pres_rt(ng102,s1,t15) + lpack_rt(('ng101','ng102'),s1,t15) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t15):
    gflow_sr_rt(('ng101','ng102'),s2,t15)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t15)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t15) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t15)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t15)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t15)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t15) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t15)_geq: - 75 pres_rt(ng101,s2,t15)
-   - 75 pres_rt(ng102,s2,t15) + lpack_rt(('ng101','ng102'),s2,t15) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t15)_leq: - 75 pres_rt(ng101,s2,t15)
-   - 75 pres_rt(ng102,s2,t15) + lpack_rt(('ng101','ng102'),s2,t15) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t16)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t15) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t15): - 75 pres_rt(ng101,s2,t15)
+   - 75 pres_rt(ng102,s2,t15) + lpack_rt(('ng101','ng102'),s2,t15) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t16):
    gflow_sr_rt(('ng101','ng102'),s1,t16)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t16)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t16) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t16)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t16)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t16)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t16) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t16)_geq: - 75 pres_rt(ng101,s1,t16)
-   - 75 pres_rt(ng102,s1,t16) + lpack_rt(('ng101','ng102'),s1,t16) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t16)_leq: - 75 pres_rt(ng101,s1,t16)
-   - 75 pres_rt(ng102,s1,t16) + lpack_rt(('ng101','ng102'),s1,t16) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t16)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t16) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t16): - 75 pres_rt(ng101,s1,t16)
+   - 75 pres_rt(ng102,s1,t16) + lpack_rt(('ng101','ng102'),s1,t16) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t16):
    gflow_sr_rt(('ng101','ng102'),s2,t16)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t16)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t16) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t16)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t16)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t16)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t16) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t16)_geq: - 75 pres_rt(ng101,s2,t16)
-   - 75 pres_rt(ng102,s2,t16) + lpack_rt(('ng101','ng102'),s2,t16) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t16)_leq: - 75 pres_rt(ng101,s2,t16)
-   - 75 pres_rt(ng102,s2,t16) + lpack_rt(('ng101','ng102'),s2,t16) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t17)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t16) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t16): - 75 pres_rt(ng101,s2,t16)
+   - 75 pres_rt(ng102,s2,t16) + lpack_rt(('ng101','ng102'),s2,t16) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t17):
    gflow_sr_rt(('ng101','ng102'),s1,t17)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t17)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t17) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t17)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t17)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t17)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t17) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t17)_geq: - 75 pres_rt(ng101,s1,t17)
-   - 75 pres_rt(ng102,s1,t17) + lpack_rt(('ng101','ng102'),s1,t17) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t17)_leq: - 75 pres_rt(ng101,s1,t17)
-   - 75 pres_rt(ng102,s1,t17) + lpack_rt(('ng101','ng102'),s1,t17) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t17)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t17) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t17): - 75 pres_rt(ng101,s1,t17)
+   - 75 pres_rt(ng102,s1,t17) + lpack_rt(('ng101','ng102'),s1,t17) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t17):
    gflow_sr_rt(('ng101','ng102'),s2,t17)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t17)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t17) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t17)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t17)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t17)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t17) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t17)_geq: - 75 pres_rt(ng101,s2,t17)
-   - 75 pres_rt(ng102,s2,t17) + lpack_rt(('ng101','ng102'),s2,t17) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t17)_leq: - 75 pres_rt(ng101,s2,t17)
-   - 75 pres_rt(ng102,s2,t17) + lpack_rt(('ng101','ng102'),s2,t17) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t18)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t17) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t17): - 75 pres_rt(ng101,s2,t17)
+   - 75 pres_rt(ng102,s2,t17) + lpack_rt(('ng101','ng102'),s2,t17) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t18):
    gflow_sr_rt(('ng101','ng102'),s1,t18)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t18)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t18) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t18)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t18)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t18)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t18) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t18)_geq: - 75 pres_rt(ng101,s1,t18)
-   - 75 pres_rt(ng102,s1,t18) + lpack_rt(('ng101','ng102'),s1,t18) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t18)_leq: - 75 pres_rt(ng101,s1,t18)
-   - 75 pres_rt(ng102,s1,t18) + lpack_rt(('ng101','ng102'),s1,t18) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t18)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t18) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t18): - 75 pres_rt(ng101,s1,t18)
+   - 75 pres_rt(ng102,s1,t18) + lpack_rt(('ng101','ng102'),s1,t18) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t18):
    gflow_sr_rt(('ng101','ng102'),s2,t18)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t18)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t18) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t18)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t18)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t18)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t18) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t18)_geq: - 75 pres_rt(ng101,s2,t18)
-   - 75 pres_rt(ng102,s2,t18) + lpack_rt(('ng101','ng102'),s2,t18) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t18)_leq: - 75 pres_rt(ng101,s2,t18)
-   - 75 pres_rt(ng102,s2,t18) + lpack_rt(('ng101','ng102'),s2,t18) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t19)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t18) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t18): - 75 pres_rt(ng101,s2,t18)
+   - 75 pres_rt(ng102,s2,t18) + lpack_rt(('ng101','ng102'),s2,t18) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t19):
    gflow_sr_rt(('ng101','ng102'),s1,t19)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t19)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t19) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t19)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t19)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t19)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t19) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t19)_geq: - 75 pres_rt(ng101,s1,t19)
-   - 75 pres_rt(ng102,s1,t19) + lpack_rt(('ng101','ng102'),s1,t19) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t19)_leq: - 75 pres_rt(ng101,s1,t19)
-   - 75 pres_rt(ng102,s1,t19) + lpack_rt(('ng101','ng102'),s1,t19) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t19)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t19) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t19): - 75 pres_rt(ng101,s1,t19)
+   - 75 pres_rt(ng102,s1,t19) + lpack_rt(('ng101','ng102'),s1,t19) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t19):
    gflow_sr_rt(('ng101','ng102'),s2,t19)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t19)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t19) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t19)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t19)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t19)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t19) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t19)_geq: - 75 pres_rt(ng101,s2,t19)
-   - 75 pres_rt(ng102,s2,t19) + lpack_rt(('ng101','ng102'),s2,t19) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t19)_leq: - 75 pres_rt(ng101,s2,t19)
-   - 75 pres_rt(ng102,s2,t19) + lpack_rt(('ng101','ng102'),s2,t19) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t20)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t19) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t19): - 75 pres_rt(ng101,s2,t19)
+   - 75 pres_rt(ng102,s2,t19) + lpack_rt(('ng101','ng102'),s2,t19) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t20):
    gflow_sr_rt(('ng101','ng102'),s1,t20)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t20)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t20) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t20)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t20)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t20)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t20) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t20)_geq: - 75 pres_rt(ng101,s1,t20)
-   - 75 pres_rt(ng102,s1,t20) + lpack_rt(('ng101','ng102'),s1,t20) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t20)_leq: - 75 pres_rt(ng101,s1,t20)
-   - 75 pres_rt(ng102,s1,t20) + lpack_rt(('ng101','ng102'),s1,t20) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t20)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t20) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t20): - 75 pres_rt(ng101,s1,t20)
+   - 75 pres_rt(ng102,s1,t20) + lpack_rt(('ng101','ng102'),s1,t20) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t20):
    gflow_sr_rt(('ng101','ng102'),s2,t20)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t20)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t20) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t20)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t20)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t20)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t20) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t20)_geq: - 75 pres_rt(ng101,s2,t20)
-   - 75 pres_rt(ng102,s2,t20) + lpack_rt(('ng101','ng102'),s2,t20) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t20)_leq: - 75 pres_rt(ng101,s2,t20)
-   - 75 pres_rt(ng102,s2,t20) + lpack_rt(('ng101','ng102'),s2,t20) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t21)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t20) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t20): - 75 pres_rt(ng101,s2,t20)
+   - 75 pres_rt(ng102,s2,t20) + lpack_rt(('ng101','ng102'),s2,t20) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t21):
    gflow_sr_rt(('ng101','ng102'),s1,t21)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t21)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t21) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t21)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t21)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t21)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t21) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t21)_geq: - 75 pres_rt(ng101,s1,t21)
-   - 75 pres_rt(ng102,s1,t21) + lpack_rt(('ng101','ng102'),s1,t21) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t21)_leq: - 75 pres_rt(ng101,s1,t21)
-   - 75 pres_rt(ng102,s1,t21) + lpack_rt(('ng101','ng102'),s1,t21) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t21)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t21) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t21): - 75 pres_rt(ng101,s1,t21)
+   - 75 pres_rt(ng102,s1,t21) + lpack_rt(('ng101','ng102'),s1,t21) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t21):
    gflow_sr_rt(('ng101','ng102'),s2,t21)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t21)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t21) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t21)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t21)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t21)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t21) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t21)_geq: - 75 pres_rt(ng101,s2,t21)
-   - 75 pres_rt(ng102,s2,t21) + lpack_rt(('ng101','ng102'),s2,t21) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t21)_leq: - 75 pres_rt(ng101,s2,t21)
-   - 75 pres_rt(ng102,s2,t21) + lpack_rt(('ng101','ng102'),s2,t21) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t22)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t21) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t21): - 75 pres_rt(ng101,s2,t21)
+   - 75 pres_rt(ng102,s2,t21) + lpack_rt(('ng101','ng102'),s2,t21) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t22):
    gflow_sr_rt(('ng101','ng102'),s1,t22)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t22)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t22) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t22)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t22)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t22)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t22) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t22)_geq: - 75 pres_rt(ng101,s1,t22)
-   - 75 pres_rt(ng102,s1,t22) + lpack_rt(('ng101','ng102'),s1,t22) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t22)_leq: - 75 pres_rt(ng101,s1,t22)
-   - 75 pres_rt(ng102,s1,t22) + lpack_rt(('ng101','ng102'),s1,t22) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t22)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t22) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t22): - 75 pres_rt(ng101,s1,t22)
+   - 75 pres_rt(ng102,s1,t22) + lpack_rt(('ng101','ng102'),s1,t22) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t22):
    gflow_sr_rt(('ng101','ng102'),s2,t22)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t22)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t22) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t22)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t22)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t22)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t22) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t22)_geq: - 75 pres_rt(ng101,s2,t22)
-   - 75 pres_rt(ng102,s2,t22) + lpack_rt(('ng101','ng102'),s2,t22) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t22)_leq: - 75 pres_rt(ng101,s2,t22)
-   - 75 pres_rt(ng102,s2,t22) + lpack_rt(('ng101','ng102'),s2,t22) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t23)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t22) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t22): - 75 pres_rt(ng101,s2,t22)
+   - 75 pres_rt(ng102,s2,t22) + lpack_rt(('ng101','ng102'),s2,t22) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t23):
    gflow_sr_rt(('ng101','ng102'),s1,t23)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t23)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t23) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t23)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t23)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t23)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t23) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t23)_geq: - 75 pres_rt(ng101,s1,t23)
-   - 75 pres_rt(ng102,s1,t23) + lpack_rt(('ng101','ng102'),s1,t23) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t23)_leq: - 75 pres_rt(ng101,s1,t23)
-   - 75 pres_rt(ng102,s1,t23) + lpack_rt(('ng101','ng102'),s1,t23) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t23)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t23) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t23): - 75 pres_rt(ng101,s1,t23)
+   - 75 pres_rt(ng102,s1,t23) + lpack_rt(('ng101','ng102'),s1,t23) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t23):
    gflow_sr_rt(('ng101','ng102'),s2,t23)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t23)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t23) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t23)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t23)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t23)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t23) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t23)_geq: - 75 pres_rt(ng101,s2,t23)
-   - 75 pres_rt(ng102,s2,t23) + lpack_rt(('ng101','ng102'),s2,t23) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t23)_leq: - 75 pres_rt(ng101,s2,t23)
-   - 75 pres_rt(ng102,s2,t23) + lpack_rt(('ng101','ng102'),s2,t23) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t24)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t23) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t23): - 75 pres_rt(ng101,s2,t23)
+   - 75 pres_rt(ng102,s2,t23) + lpack_rt(('ng101','ng102'),s2,t23) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s1,t24):
    gflow_sr_rt(('ng101','ng102'),s1,t24)
    - 0.5 qin_sr_rt(('ng101','ng102'),s1,t24)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t24) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s1,t24)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t24)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t24)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t24) <= 0
- lpack_def_rt(('ng101','ng102'),s1,t24)_geq: - 75 pres_rt(ng101,s1,t24)
-   - 75 pres_rt(ng102,s1,t24) + lpack_rt(('ng101','ng102'),s1,t24) >= 0
- lpack_def_rt(('ng101','ng102'),s1,t24)_leq: - 75 pres_rt(ng101,s1,t24)
-   - 75 pres_rt(ng102,s1,t24) + lpack_rt(('ng101','ng102'),s1,t24) <= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t24)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t24) = 0
+ lpack_def_rt(('ng101','ng102'),s1,t24): - 75 pres_rt(ng101,s1,t24)
+   - 75 pres_rt(ng102,s1,t24) + lpack_rt(('ng101','ng102'),s1,t24) = 0
+ gflow_sr_io_rt(('ng101','ng102'),s2,t24):
    gflow_sr_rt(('ng101','ng102'),s2,t24)
    - 0.5 qin_sr_rt(('ng101','ng102'),s2,t24)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t24) >= 0
- gflow_sr_io_rt(('ng101','ng102'),s2,t24)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t24)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t24)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t24) <= 0
- lpack_def_rt(('ng101','ng102'),s2,t24)_geq: - 75 pres_rt(ng101,s2,t24)
-   - 75 pres_rt(ng102,s2,t24) + lpack_rt(('ng101','ng102'),s2,t24) >= 0
- lpack_def_rt(('ng101','ng102'),s2,t24)_leq: - 75 pres_rt(ng101,s2,t24)
-   - 75 pres_rt(ng102,s2,t24) + lpack_rt(('ng101','ng102'),s2,t24) <= 0
- line_store_rt(('ng101','ng102'),s1,t2)_geq:
+   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t24) = 0
+ lpack_def_rt(('ng101','ng102'),s2,t24): - 75 pres_rt(ng101,s2,t24)
+   - 75 pres_rt(ng102,s2,t24) + lpack_rt(('ng101','ng102'),s2,t24) = 0
+ line_store_rt(('ng101','ng102'),s1,t2):
    - lpack_rt(('ng101','ng102'),s1,t1) + lpack_rt(('ng101','ng102'),s1,t2)
    - qin_sr_rt(('ng101','ng102'),s1,t2)
-   + qout_sr_rt(('ng101','ng102'),s1,t2) >= 0
- line_store_rt(('ng101','ng102'),s1,t2)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t1) + lpack_rt(('ng101','ng102'),s1,t2)
-   - qin_sr_rt(('ng101','ng102'),s1,t2)
-   + qout_sr_rt(('ng101','ng102'),s1,t2) <= 0
- line_store_rt(('ng101','ng102'),s1,t3)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t2) = 0
+ line_store_rt(('ng101','ng102'),s1,t3):
    - lpack_rt(('ng101','ng102'),s1,t2) + lpack_rt(('ng101','ng102'),s1,t3)
    - qin_sr_rt(('ng101','ng102'),s1,t3)
-   + qout_sr_rt(('ng101','ng102'),s1,t3) >= 0
- line_store_rt(('ng101','ng102'),s1,t3)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t2) + lpack_rt(('ng101','ng102'),s1,t3)
-   - qin_sr_rt(('ng101','ng102'),s1,t3)
-   + qout_sr_rt(('ng101','ng102'),s1,t3) <= 0
- line_store_rt(('ng101','ng102'),s1,t4)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t3) = 0
+ line_store_rt(('ng101','ng102'),s1,t4):
    - lpack_rt(('ng101','ng102'),s1,t3) + lpack_rt(('ng101','ng102'),s1,t4)
    - qin_sr_rt(('ng101','ng102'),s1,t4)
-   + qout_sr_rt(('ng101','ng102'),s1,t4) >= 0
- line_store_rt(('ng101','ng102'),s1,t4)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t3) + lpack_rt(('ng101','ng102'),s1,t4)
-   - qin_sr_rt(('ng101','ng102'),s1,t4)
-   + qout_sr_rt(('ng101','ng102'),s1,t4) <= 0
- line_store_rt(('ng101','ng102'),s1,t5)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t4) = 0
+ line_store_rt(('ng101','ng102'),s1,t5):
    - lpack_rt(('ng101','ng102'),s1,t4) + lpack_rt(('ng101','ng102'),s1,t5)
    - qin_sr_rt(('ng101','ng102'),s1,t5)
-   + qout_sr_rt(('ng101','ng102'),s1,t5) >= 0
- line_store_rt(('ng101','ng102'),s1,t5)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t4) + lpack_rt(('ng101','ng102'),s1,t5)
-   - qin_sr_rt(('ng101','ng102'),s1,t5)
-   + qout_sr_rt(('ng101','ng102'),s1,t5) <= 0
- line_store_rt(('ng101','ng102'),s1,t6)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t5) = 0
+ line_store_rt(('ng101','ng102'),s1,t6):
    - lpack_rt(('ng101','ng102'),s1,t5) + lpack_rt(('ng101','ng102'),s1,t6)
    - qin_sr_rt(('ng101','ng102'),s1,t6)
-   + qout_sr_rt(('ng101','ng102'),s1,t6) >= 0
- line_store_rt(('ng101','ng102'),s1,t6)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t5) + lpack_rt(('ng101','ng102'),s1,t6)
-   - qin_sr_rt(('ng101','ng102'),s1,t6)
-   + qout_sr_rt(('ng101','ng102'),s1,t6) <= 0
- line_store_rt(('ng101','ng102'),s1,t7)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t6) = 0
+ line_store_rt(('ng101','ng102'),s1,t7):
    - lpack_rt(('ng101','ng102'),s1,t6) + lpack_rt(('ng101','ng102'),s1,t7)
    - qin_sr_rt(('ng101','ng102'),s1,t7)
-   + qout_sr_rt(('ng101','ng102'),s1,t7) >= 0
- line_store_rt(('ng101','ng102'),s1,t7)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t6) + lpack_rt(('ng101','ng102'),s1,t7)
-   - qin_sr_rt(('ng101','ng102'),s1,t7)
-   + qout_sr_rt(('ng101','ng102'),s1,t7) <= 0
- line_store_rt(('ng101','ng102'),s1,t8)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t7) = 0
+ line_store_rt(('ng101','ng102'),s1,t8):
    - lpack_rt(('ng101','ng102'),s1,t7) + lpack_rt(('ng101','ng102'),s1,t8)
    - qin_sr_rt(('ng101','ng102'),s1,t8)
-   + qout_sr_rt(('ng101','ng102'),s1,t8) >= 0
- line_store_rt(('ng101','ng102'),s1,t8)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t7) + lpack_rt(('ng101','ng102'),s1,t8)
-   - qin_sr_rt(('ng101','ng102'),s1,t8)
-   + qout_sr_rt(('ng101','ng102'),s1,t8) <= 0
- line_store_rt(('ng101','ng102'),s1,t9)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t8) = 0
+ line_store_rt(('ng101','ng102'),s1,t9):
    - lpack_rt(('ng101','ng102'),s1,t8) + lpack_rt(('ng101','ng102'),s1,t9)
    - qin_sr_rt(('ng101','ng102'),s1,t9)
-   + qout_sr_rt(('ng101','ng102'),s1,t9) >= 0
- line_store_rt(('ng101','ng102'),s1,t9)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t8) + lpack_rt(('ng101','ng102'),s1,t9)
-   - qin_sr_rt(('ng101','ng102'),s1,t9)
-   + qout_sr_rt(('ng101','ng102'),s1,t9) <= 0
- line_store_rt(('ng101','ng102'),s1,t10)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t9) = 0
+ line_store_rt(('ng101','ng102'),s1,t10):
    - lpack_rt(('ng101','ng102'),s1,t9) + lpack_rt(('ng101','ng102'),s1,t10)
    - qin_sr_rt(('ng101','ng102'),s1,t10)
-   + qout_sr_rt(('ng101','ng102'),s1,t10) >= 0
- line_store_rt(('ng101','ng102'),s1,t10)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t9) + lpack_rt(('ng101','ng102'),s1,t10)
-   - qin_sr_rt(('ng101','ng102'),s1,t10)
-   + qout_sr_rt(('ng101','ng102'),s1,t10) <= 0
- line_store_rt(('ng101','ng102'),s1,t11)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t10) = 0
+ line_store_rt(('ng101','ng102'),s1,t11):
    - lpack_rt(('ng101','ng102'),s1,t10)
    + lpack_rt(('ng101','ng102'),s1,t11)
    - qin_sr_rt(('ng101','ng102'),s1,t11)
-   + qout_sr_rt(('ng101','ng102'),s1,t11) >= 0
- line_store_rt(('ng101','ng102'),s1,t11)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t10)
-   + lpack_rt(('ng101','ng102'),s1,t11)
-   - qin_sr_rt(('ng101','ng102'),s1,t11)
-   + qout_sr_rt(('ng101','ng102'),s1,t11) <= 0
- line_store_rt(('ng101','ng102'),s1,t12)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t11) = 0
+ line_store_rt(('ng101','ng102'),s1,t12):
    - lpack_rt(('ng101','ng102'),s1,t11)
    + lpack_rt(('ng101','ng102'),s1,t12)
    - qin_sr_rt(('ng101','ng102'),s1,t12)
-   + qout_sr_rt(('ng101','ng102'),s1,t12) >= 0
- line_store_rt(('ng101','ng102'),s1,t12)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t11)
-   + lpack_rt(('ng101','ng102'),s1,t12)
-   - qin_sr_rt(('ng101','ng102'),s1,t12)
-   + qout_sr_rt(('ng101','ng102'),s1,t12) <= 0
- line_store_rt(('ng101','ng102'),s1,t13)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t12) = 0
+ line_store_rt(('ng101','ng102'),s1,t13):
    - lpack_rt(('ng101','ng102'),s1,t12)
    + lpack_rt(('ng101','ng102'),s1,t13)
    - qin_sr_rt(('ng101','ng102'),s1,t13)
-   + qout_sr_rt(('ng101','ng102'),s1,t13) >= 0
- line_store_rt(('ng101','ng102'),s1,t13)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t12)
-   + lpack_rt(('ng101','ng102'),s1,t13)
-   - qin_sr_rt(('ng101','ng102'),s1,t13)
-   + qout_sr_rt(('ng101','ng102'),s1,t13) <= 0
- line_store_rt(('ng101','ng102'),s1,t14)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t13) = 0
+ line_store_rt(('ng101','ng102'),s1,t14):
    - lpack_rt(('ng101','ng102'),s1,t13)
    + lpack_rt(('ng101','ng102'),s1,t14)
    - qin_sr_rt(('ng101','ng102'),s1,t14)
-   + qout_sr_rt(('ng101','ng102'),s1,t14) >= 0
- line_store_rt(('ng101','ng102'),s1,t14)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t13)
-   + lpack_rt(('ng101','ng102'),s1,t14)
-   - qin_sr_rt(('ng101','ng102'),s1,t14)
-   + qout_sr_rt(('ng101','ng102'),s1,t14) <= 0
- line_store_rt(('ng101','ng102'),s1,t15)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t14) = 0
+ line_store_rt(('ng101','ng102'),s1,t15):
    - lpack_rt(('ng101','ng102'),s1,t14)
    + lpack_rt(('ng101','ng102'),s1,t15)
    - qin_sr_rt(('ng101','ng102'),s1,t15)
-   + qout_sr_rt(('ng101','ng102'),s1,t15) >= 0
- line_store_rt(('ng101','ng102'),s1,t15)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t14)
-   + lpack_rt(('ng101','ng102'),s1,t15)
-   - qin_sr_rt(('ng101','ng102'),s1,t15)
-   + qout_sr_rt(('ng101','ng102'),s1,t15) <= 0
- line_store_rt(('ng101','ng102'),s1,t16)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t15) = 0
+ line_store_rt(('ng101','ng102'),s1,t16):
    - lpack_rt(('ng101','ng102'),s1,t15)
    + lpack_rt(('ng101','ng102'),s1,t16)
    - qin_sr_rt(('ng101','ng102'),s1,t16)
-   + qout_sr_rt(('ng101','ng102'),s1,t16) >= 0
- line_store_rt(('ng101','ng102'),s1,t16)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t15)
-   + lpack_rt(('ng101','ng102'),s1,t16)
-   - qin_sr_rt(('ng101','ng102'),s1,t16)
-   + qout_sr_rt(('ng101','ng102'),s1,t16) <= 0
- line_store_rt(('ng101','ng102'),s1,t17)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t16) = 0
+ line_store_rt(('ng101','ng102'),s1,t17):
    - lpack_rt(('ng101','ng102'),s1,t16)
    + lpack_rt(('ng101','ng102'),s1,t17)
    - qin_sr_rt(('ng101','ng102'),s1,t17)
-   + qout_sr_rt(('ng101','ng102'),s1,t17) >= 0
- line_store_rt(('ng101','ng102'),s1,t17)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t16)
-   + lpack_rt(('ng101','ng102'),s1,t17)
-   - qin_sr_rt(('ng101','ng102'),s1,t17)
-   + qout_sr_rt(('ng101','ng102'),s1,t17) <= 0
- line_store_rt(('ng101','ng102'),s1,t18)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t17) = 0
+ line_store_rt(('ng101','ng102'),s1,t18):
    - lpack_rt(('ng101','ng102'),s1,t17)
    + lpack_rt(('ng101','ng102'),s1,t18)
    - qin_sr_rt(('ng101','ng102'),s1,t18)
-   + qout_sr_rt(('ng101','ng102'),s1,t18) >= 0
- line_store_rt(('ng101','ng102'),s1,t18)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t17)
-   + lpack_rt(('ng101','ng102'),s1,t18)
-   - qin_sr_rt(('ng101','ng102'),s1,t18)
-   + qout_sr_rt(('ng101','ng102'),s1,t18) <= 0
- line_store_rt(('ng101','ng102'),s1,t19)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t18) = 0
+ line_store_rt(('ng101','ng102'),s1,t19):
    - lpack_rt(('ng101','ng102'),s1,t18)
    + lpack_rt(('ng101','ng102'),s1,t19)
    - qin_sr_rt(('ng101','ng102'),s1,t19)
-   + qout_sr_rt(('ng101','ng102'),s1,t19) >= 0
- line_store_rt(('ng101','ng102'),s1,t19)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t18)
-   + lpack_rt(('ng101','ng102'),s1,t19)
-   - qin_sr_rt(('ng101','ng102'),s1,t19)
-   + qout_sr_rt(('ng101','ng102'),s1,t19) <= 0
- line_store_rt(('ng101','ng102'),s1,t20)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t19) = 0
+ line_store_rt(('ng101','ng102'),s1,t20):
    - lpack_rt(('ng101','ng102'),s1,t19)
    + lpack_rt(('ng101','ng102'),s1,t20)
    - qin_sr_rt(('ng101','ng102'),s1,t20)
-   + qout_sr_rt(('ng101','ng102'),s1,t20) >= 0
- line_store_rt(('ng101','ng102'),s1,t20)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t19)
-   + lpack_rt(('ng101','ng102'),s1,t20)
-   - qin_sr_rt(('ng101','ng102'),s1,t20)
-   + qout_sr_rt(('ng101','ng102'),s1,t20) <= 0
- line_store_rt(('ng101','ng102'),s1,t21)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t20) = 0
+ line_store_rt(('ng101','ng102'),s1,t21):
    - lpack_rt(('ng101','ng102'),s1,t20)
    + lpack_rt(('ng101','ng102'),s1,t21)
    - qin_sr_rt(('ng101','ng102'),s1,t21)
-   + qout_sr_rt(('ng101','ng102'),s1,t21) >= 0
- line_store_rt(('ng101','ng102'),s1,t21)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t20)
-   + lpack_rt(('ng101','ng102'),s1,t21)
-   - qin_sr_rt(('ng101','ng102'),s1,t21)
-   + qout_sr_rt(('ng101','ng102'),s1,t21) <= 0
- line_store_rt(('ng101','ng102'),s1,t22)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t21) = 0
+ line_store_rt(('ng101','ng102'),s1,t22):
    - lpack_rt(('ng101','ng102'),s1,t21)
    + lpack_rt(('ng101','ng102'),s1,t22)
    - qin_sr_rt(('ng101','ng102'),s1,t22)
-   + qout_sr_rt(('ng101','ng102'),s1,t22) >= 0
- line_store_rt(('ng101','ng102'),s1,t22)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t21)
-   + lpack_rt(('ng101','ng102'),s1,t22)
-   - qin_sr_rt(('ng101','ng102'),s1,t22)
-   + qout_sr_rt(('ng101','ng102'),s1,t22) <= 0
- line_store_rt(('ng101','ng102'),s1,t23)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t22) = 0
+ line_store_rt(('ng101','ng102'),s1,t23):
    - lpack_rt(('ng101','ng102'),s1,t22)
    + lpack_rt(('ng101','ng102'),s1,t23)
    - qin_sr_rt(('ng101','ng102'),s1,t23)
-   + qout_sr_rt(('ng101','ng102'),s1,t23) >= 0
- line_store_rt(('ng101','ng102'),s1,t23)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t22)
-   + lpack_rt(('ng101','ng102'),s1,t23)
-   - qin_sr_rt(('ng101','ng102'),s1,t23)
-   + qout_sr_rt(('ng101','ng102'),s1,t23) <= 0
- line_store_rt(('ng101','ng102'),s1,t24)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t23) = 0
+ line_store_rt(('ng101','ng102'),s1,t24):
    - lpack_rt(('ng101','ng102'),s1,t23)
    + lpack_rt(('ng101','ng102'),s1,t24)
    - qin_sr_rt(('ng101','ng102'),s1,t24)
-   + qout_sr_rt(('ng101','ng102'),s1,t24) >= 0
- line_store_rt(('ng101','ng102'),s1,t24)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t23)
-   + lpack_rt(('ng101','ng102'),s1,t24)
-   - qin_sr_rt(('ng101','ng102'),s1,t24)
-   + qout_sr_rt(('ng101','ng102'),s1,t24) <= 0
- line_store_rt(('ng101','ng102'),s1,t1)_geq:
-   lpack_rt(('ng101','ng102'),s1,t1) - qin_sr_rt(('ng101','ng102'),s1,t1)
-   + qout_sr_rt(('ng101','ng102'),s1,t1) >= 49300
- line_store_rt(('ng101','ng102'),s1,t1)_leq:
-   lpack_rt(('ng101','ng102'),s1,t1) - qin_sr_rt(('ng101','ng102'),s1,t1)
-   + qout_sr_rt(('ng101','ng102'),s1,t1) <= 49300
- line_store_rt(('ng101','ng102'),s2,t2)_geq:
+   + qout_sr_rt(('ng101','ng102'),s1,t24) = 0
+ line_store_rt(('ng101','ng102'),s1,t1): lpack_rt(('ng101','ng102'),s1,t1)
+   - qin_sr_rt(('ng101','ng102'),s1,t1)
+   + qout_sr_rt(('ng101','ng102'),s1,t1) = 49300
+ line_store_rt(('ng101','ng102'),s2,t2):
    - lpack_rt(('ng101','ng102'),s2,t1) + lpack_rt(('ng101','ng102'),s2,t2)
    - qin_sr_rt(('ng101','ng102'),s2,t2)
-   + qout_sr_rt(('ng101','ng102'),s2,t2) >= 0
- line_store_rt(('ng101','ng102'),s2,t2)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t1) + lpack_rt(('ng101','ng102'),s2,t2)
-   - qin_sr_rt(('ng101','ng102'),s2,t2)
-   + qout_sr_rt(('ng101','ng102'),s2,t2) <= 0
- line_store_rt(('ng101','ng102'),s2,t3)_geq:
+   + qout_sr_rt(('ng101','ng102'),s2,t2) = 0
+ line_store_rt(('ng101','ng102'),s2,t3):
    - lpack_rt(('ng101','ng102'),s2,t2) + lpack_rt(('ng101','ng102'),s2,t3)
    - qin_sr_rt(('ng101','ng102'),s2,t3)
-   + qout_sr_rt(('ng101','ng102'),s2,t3) >= 0
- line_store_rt(('ng101','ng102'),s2,t3)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t2) + lpack_rt(('ng101','ng102'),s2,t3)
-   - qin_sr_rt(('ng101','ng102'),s2,t3)
-   + qout_sr_rt(('ng101','ng102'),s2,t3) <= 0
- line_store_rt(('ng101','ng102'),s2,t4)_geq:
+   + qout_sr_rt(('ng101','ng102'),s2,t3) = 0
+ line_store_rt(('ng101','ng102'),s2,t4):
    - lpack_rt(('ng101','ng102'),s2,t3) + lpack_rt(('ng101','ng102'),s2,t4)
    - qin_sr_rt(('ng101','ng102'),s2,t4)
-   + qout_sr_rt(('ng101','ng102'),s2,t4) >= 0
- line_store_rt(('ng101','ng102'),s2,t4)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t3) + lpack_rt(('ng101','ng102'),s2,t4)
-   - qin_sr_rt(('ng101','ng102'),s2,t4)
-   + qout_sr_rt(('ng101','ng102'),s2,t4) <= 0
- line_store_rt(('ng101','ng102'),s2,t5)_geq:
+   + qout_sr_rt(('ng101','ng102'),s2,t4) = 0
+ line_store_rt(('ng101','ng102'),s2,t5):
    - lpack_rt(('ng101','ng102'),s2,t4) + lpack_rt(('ng101','ng102'),s2,t5)
    - qin_sr_rt(('ng101','ng102'),s2,t5)
-   + qout_sr_rt(('ng101','ng102'),s2,t5) >= 0
- line_store_rt(('ng101','ng102'),s2,t5)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t4) + lpack_rt(('ng101','ng102'),s2,t5)
-   - qin_sr_rt(('ng101','ng102'),s2,t5)
-   + qout_sr_rt(('ng101','ng102'),s2,t5) <= 0
- line_store_rt(('ng101','ng102'),s2,t6)_geq:
+   + qout_sr_rt(('ng101','ng102'),s2,t5) = 0
+ line_store_rt(('ng101','ng102'),s2,t6):
    - lpack_rt(('ng101','ng102'),s2,t5) + lpack_rt(('ng101','ng102'),s2,t6)
    - qin_sr_rt(('ng101','ng102'),s2,t6)
-   + qout_sr_rt(('ng101','ng102'),s2,t6) >= 0
- line_store_rt(('ng101','ng102'),s2,t6)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t5) + lpack_rt(('ng101','ng102'),s2,t6)
-   - qin_sr_rt(('ng101','ng102'),s2,t6)
-   + qout_sr_rt(('ng101','ng102'),s2,t6) <= 0
- line_store_rt(('ng101','ng102'),s2,t7)_geq:
+   + qout_sr_rt(('ng101','ng102'),s2,t6) = 0
+ line_store_rt(('ng101','ng102'),s2,t7):
    - lpack_rt(('ng101','ng102'),s2,t6) + lpack_rt(('ng101','ng102'),s2,t7)
    - qin_sr_rt(('ng101','ng102'),s2,t7)
-   + qout_sr_rt(('ng101','ng102'),s2,t7) >= 0
- line_store_rt(('ng101','ng102'),s2,t7)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t6) + lpack_rt(('ng101','ng102'),s2,t7)
-   - qin_sr_rt(('ng101','ng102'),s2,t7)
-   + qout_sr_rt(('ng101','ng102'),s2,t7) <= 0
- line_store_rt(('ng101','ng102'),s2,t8)_geq:
+   + qout_sr_rt(('ng101','ng102'),s2,t7) = 0
+ line_store_rt(('ng101','ng102'),s2,t8):
    - lpack_rt(('ng101','ng102'),s2,t7) + lpack_rt(('ng101','ng102'),s2,t8)
    - qin_sr_rt(('ng101','ng102'),s2,t8)
-   + qout_sr_rt(('ng101','ng102'),s2,t8) >= 0
- line_store_rt(('ng101','ng102'),s2,t8)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t7) + lpack_rt(('ng101','ng102'),s2,t8)
-   - qin_sr_rt(('ng101','ng102'),s2,t8)
-   + qout_sr_rt(('ng101','ng102'),s2,t8) <= 0
- line_store_rt(('ng101','ng102'),s2,t9)_geq:
+   + qout_sr_rt(('ng101','ng102'),s2,t8) = 0
+ line_store_rt(('ng101','ng102'),s2,t9):
    - lpack_rt(('ng101','ng102'),s2,t8) + lpack_rt(('ng101','ng102'),s2,t9)
    - qin_sr_rt(('ng101','ng102'),s2,t9)
-   + qout_sr_rt(('ng101','ng102'),s2,t9) >= 0
- line_store_rt(('ng101','ng102'),s2,t9)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t8) + lpack_rt(('ng101','ng102'),s2,t9)
-   - qin_sr_rt(('ng101','ng102'),s2,t9)
-   + qout_sr_rt(('ng101','ng102'),s2,t9) <= 0
- line_store_rt(('ng101','ng102'),s2,t10)_geq:
+   + qout_sr_rt(('ng101','ng102'),s2,t9) = 0
+ line_store_rt(('ng101','ng102'),s2,t10):
    - lpack_rt(('ng101','ng102'),s2,t9) + lpack_rt(('ng101','ng102'),s2,t10)
    - qin_sr_rt(('ng101','ng102'),s2,t10)
-   + qout_sr_rt(('ng101','ng102'),s2,t10) >= 0
- line_store_rt(('ng101','ng102'),s2,t10)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t9) + lpack_rt(('ng101','ng102'),s2,t10)
-   - qin_sr_rt(('ng101','ng102'),s2,t10)
-   + qout_sr_rt(('ng101','ng102'),s2,t10) <= 0
- line_store_rt(('ng101','ng102'),s2,t11)_geq:
+   + qout_sr_rt(('ng101','ng102'),s2,t10) = 0
+ line_store_rt(('ng101','ng102'),s2,t11):
    - lpack_rt(('ng101','ng102'),s2,t10)
    + lpack_rt(('ng101','ng102'),s2,t11)
    - qin_sr_rt(('ng101','ng102'),s2,t11)
-   + qout_sr_rt(('ng101','ng102'),s2,t11) >= 0
- line_store_rt(('ng101','ng102'),s2,t11)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t10)
-   + lpack_rt(('ng101','ng102'),s2,t11)
-   - qin_sr_rt(('ng101','ng102'),s2,t11)
-   + qout_sr_rt(('ng101','ng102'),s2,t11) <= 0
- line_store_rt(('ng101','ng102'),s2,t12)_geq:
+   + qout_sr_rt(('ng101','ng102'),s2,t11) = 0
+ line_store_rt(('ng101','ng102'),s2,t12):
    - lpack_rt(('ng101','ng102'),s2,t11)
    + lpack_rt(('ng101','ng102'),s2,t12)
    - qin_sr_rt(('ng101','ng102'),s2,t12)
-   + qout_sr_rt(('ng101','ng102'),s2,t12) >= 0
- line_store_rt(('ng101','ng102'),s2,t12)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t11)
-   + lpack_rt(('ng101','ng102'),s2,t12)
-   - qin_sr_rt(('ng101','ng102'),s2,t12)
-   + qout_sr_rt(('ng101','ng102'),s2,t12) <= 0
- line_store_rt(('ng101','ng102'),s2,t13)_geq:
+   + qout_sr_rt(('ng101','ng102'),s2,t12) = 0
+ line_store_rt(('ng101','ng102'),s2,t13):
    - lpack_rt(('ng101','ng102'),s2,t12)
    + lpack_rt(('ng101','ng102'),s2,t13)
    - qin_sr_rt(('ng101','ng102'),s2,t13)
-   + qout_sr_rt(('ng101','ng102'),s2,t13) >= 0
- line_store_rt(('ng101','ng102'),s2,t13)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t12)
-   + lpack_rt(('ng101','ng102'),s2,t13)
-   - qin_sr_rt(('ng101','ng102'),s2,t13)
-   + qout_sr_rt(('ng101','ng102'),s2,t13) <= 0
- line_store_rt(('ng101','ng102'),s2,t14)_geq:
+   + qout_sr_rt(('ng101','ng102'),s2,t13) = 0
+ line_store_rt(('ng101','ng102'),s2,t14):
    - lpack_rt(('ng101','ng102'),s2,t13)
    + lpack_rt(('ng101','ng102'),s2,t14)
    - qin_sr_rt(('ng101','ng102'),s2,t14)
-   + qout_sr_rt(('ng101','ng102'),s2,t14) >= 0
- line_store_rt(('ng101','ng102'),s2,t14)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t13)
-   + lpack_rt(('ng101','ng102'),s2,t14)
-   - qin_sr_rt(('ng101','ng102'),s2,t14)
-   + qout_sr_rt(('ng101','ng102'),s2,t14) <= 0
- line_store_rt(('ng101','ng102'),s2,t15)_geq:
+   + qout_sr_rt(('ng101','ng102'),s2,t14) = 0
+ line_store_rt(('ng101','ng102'),s2,t15):
    - lpack_rt(('ng101','ng102'),s2,t14)
    + lpack_rt(('ng101','ng102'),s2,t15)
    - qin_sr_rt(('ng101','ng102'),s2,t15)
-   + qout_sr_rt(('ng101','ng102'),s2,t15) >= 0
- line_store_rt(('ng101','ng102'),s2,t15)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t14)
-   + lpack_rt(('ng101','ng102'),s2,t15)
-   - qin_sr_rt(('ng101','ng102'),s2,t15)
-   + qout_sr_rt(('ng101','ng102'),s2,t15) <= 0
- line_store_rt(('ng101','ng102'),s2,t16)_geq:
+   + qout_sr_rt(('ng101','ng102'),s2,t15) = 0
+ line_store_rt(('ng101','ng102'),s2,t16):
    - lpack_rt(('ng101','ng102'),s2,t15)
    + lpack_rt(('ng101','ng102'),s2,t16)
    - qin_sr_rt(('ng101','ng102'),s2,t16)
-   + qout_sr_rt(('ng101','ng102'),s2,t16) >= 0
- line_store_rt(('ng101','ng102'),s2,t16)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t15)
-   + lpack_rt(('ng101','ng102'),s2,t16)
-   - qin_sr_rt(('ng101','ng102'),s2,t16)
-   + qout_sr_rt(('ng101','ng102'),s2,t16) <= 0
- line_store_rt(('ng101','ng102'),s2,t17)_geq:
+   + qout_sr_rt(('ng101','ng102'),s2,t16) = 0
+ line_store_rt(('ng101','ng102'),s2,t17):
    - lpack_rt(('ng101','ng102'),s2,t16)
    + lpack_rt(('ng101','ng102'),s2,t17)
    - qin_sr_rt(('ng101','ng102'),s2,t17)
-   + qout_sr_rt(('ng101','ng102'),s2,t17) >= 0
- line_store_rt(('ng101','ng102'),s2,t17)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t16)
-   + lpack_rt(('ng101','ng102'),s2,t17)
-   - qin_sr_rt(('ng101','ng102'),s2,t17)
-   + qout_sr_rt(('ng101','ng102'),s2,t17) <= 0
- line_store_rt(('ng101','ng102'),s2,t18)_geq:
+   + qout_sr_rt(('ng101','ng102'),s2,t17) = 0
+ line_store_rt(('ng101','ng102'),s2,t18):
    - lpack_rt(('ng101','ng102'),s2,t17)
    + lpack_rt(('ng101','ng102'),s2,t18)
    - qin_sr_rt(('ng101','ng102'),s2,t18)
-   + qout_sr_rt(('ng101','ng102'),s2,t18) >= 0
- line_store_rt(('ng101','ng102'),s2,t18)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t17)
-   + lpack_rt(('ng101','ng102'),s2,t18)
-   - qin_sr_rt(('ng101','ng102'),s2,t18)
-   + qout_sr_rt(('ng101','ng102'),s2,t18) <= 0
- line_store_rt(('ng101','ng102'),s2,t19)_geq:
+   + qout_sr_rt(('ng101','ng102'),s2,t18) = 0
+ line_store_rt(('ng101','ng102'),s2,t19):
    - lpack_rt(('ng101','ng102'),s2,t18)
    + lpack_rt(('ng101','ng102'),s2,t19)
    - qin_sr_rt(('ng101','ng102'),s2,t19)
-   + qout_sr_rt(('ng101','ng102'),s2,t19) >= 0
- line_store_rt(('ng101','ng102'),s2,t19)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t18)
-   + lpack_rt(('ng101','ng102'),s2,t19)
-   - qin_sr_rt(('ng101','ng102'),s2,t19)
-   + qout_sr_rt(('ng101','ng102'),s2,t19) <= 0
- line_store_rt(('ng101','ng102'),s2,t20)_geq:
+   + qout_sr_rt(('ng101','ng102'),s2,t19) = 0
+ line_store_rt(('ng101','ng102'),s2,t20):
    - lpack_rt(('ng101','ng102'),s2,t19)
    + lpack_rt(('ng101','ng102'),s2,t20)
    - qin_sr_rt(('ng101','ng102'),s2,t20)
-   + qout_sr_rt(('ng101','ng102'),s2,t20) >= 0
- line_store_rt(('ng101','ng102'),s2,t20)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t19)
-   + lpack_rt(('ng101','ng102'),s2,t20)
-   - qin_sr_rt(('ng101','ng102'),s2,t20)
-   + qout_sr_rt(('ng101','ng102'),s2,t20) <= 0
- line_store_rt(('ng101','ng102'),s2,t21)_geq:
+   + qout_sr_rt(('ng101','ng102'),s2,t20) = 0
+ line_store_rt(('ng101','ng102'),s2,t21):
    - lpack_rt(('ng101','ng102'),s2,t20)
    + lpack_rt(('ng101','ng102'),s2,t21)
    - qin_sr_rt(('ng101','ng102'),s2,t21)
-   + qout_sr_rt(('ng101','ng102'),s2,t21) >= 0
- line_store_rt(('ng101','ng102'),s2,t21)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t20)
-   + lpack_rt(('ng101','ng102'),s2,t21)
-   - qin_sr_rt(('ng101','ng102'),s2,t21)
-   + qout_sr_rt(('ng101','ng102'),s2,t21) <= 0
- line_store_rt(('ng101','ng102'),s2,t22)_geq:
+   + qout_sr_rt(('ng101','ng102'),s2,t21) = 0
+ line_store_rt(('ng101','ng102'),s2,t22):
    - lpack_rt(('ng101','ng102'),s2,t21)
    + lpack_rt(('ng101','ng102'),s2,t22)
    - qin_sr_rt(('ng101','ng102'),s2,t22)
-   + qout_sr_rt(('ng101','ng102'),s2,t22) >= 0
- line_store_rt(('ng101','ng102'),s2,t22)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t21)
-   + lpack_rt(('ng101','ng102'),s2,t22)
-   - qin_sr_rt(('ng101','ng102'),s2,t22)
-   + qout_sr_rt(('ng101','ng102'),s2,t22) <= 0
- line_store_rt(('ng101','ng102'),s2,t23)_geq:
+   + qout_sr_rt(('ng101','ng102'),s2,t22) = 0
+ line_store_rt(('ng101','ng102'),s2,t23):
    - lpack_rt(('ng101','ng102'),s2,t22)
    + lpack_rt(('ng101','ng102'),s2,t23)
    - qin_sr_rt(('ng101','ng102'),s2,t23)
-   + qout_sr_rt(('ng101','ng102'),s2,t23) >= 0
- line_store_rt(('ng101','ng102'),s2,t23)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t22)
-   + lpack_rt(('ng101','ng102'),s2,t23)
-   - qin_sr_rt(('ng101','ng102'),s2,t23)
-   + qout_sr_rt(('ng101','ng102'),s2,t23) <= 0
- line_store_rt(('ng101','ng102'),s2,t24)_geq:
+   + qout_sr_rt(('ng101','ng102'),s2,t23) = 0
+ line_store_rt(('ng101','ng102'),s2,t24):
    - lpack_rt(('ng101','ng102'),s2,t23)
    + lpack_rt(('ng101','ng102'),s2,t24)
    - qin_sr_rt(('ng101','ng102'),s2,t24)
-   + qout_sr_rt(('ng101','ng102'),s2,t24) >= 0
- line_store_rt(('ng101','ng102'),s2,t24)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t23)
-   + lpack_rt(('ng101','ng102'),s2,t24)
-   - qin_sr_rt(('ng101','ng102'),s2,t24)
-   + qout_sr_rt(('ng101','ng102'),s2,t24) <= 0
- line_store_rt(('ng101','ng102'),s2,t1)_geq:
-   lpack_rt(('ng101','ng102'),s2,t1) - qin_sr_rt(('ng101','ng102'),s2,t1)
-   + qout_sr_rt(('ng101','ng102'),s2,t1) >= 49300
- line_store_rt(('ng101','ng102'),s2,t1)_leq:
-   lpack_rt(('ng101','ng102'),s2,t1) - qin_sr_rt(('ng101','ng102'),s2,t1)
-   + qout_sr_rt(('ng101','ng102'),s2,t1) <= 49300
+   + qout_sr_rt(('ng101','ng102'),s2,t24) = 0
+ line_store_rt(('ng101','ng102'),s2,t1): lpack_rt(('ng101','ng102'),s2,t1)
+   - qin_sr_rt(('ng101','ng102'),s2,t1)
+   + qout_sr_rt(('ng101','ng102'),s2,t1) = 49300
  lpack_end_max(s1): lpack_rt(('ng101','ng102'),s1,t24) <= 54230
  lpack_end_min(s1): - lpack_rt(('ng101','ng102'),s1,t24) <= -44370
  lpack_end_max(s2): lpack_rt(('ng101','ng102'),s2,t24) <= 54230
@@ -10359,255 +9853,103 @@ Subject To
  gsoutMax_rt(gs1,t24,s2): gsout_rt(gs1,s2,t24) <= 0
  gstore_max_rt(gs1,t24,s2): gstore_rt(gs1,s2,t24) <= 0
  gstore_min_rt(gs1,t24,s2): gstore_rt(gs1,s2,t24) >= 0
- gstor_def_rt(gs1,s1,t2)_geq: - gstore_rt(gs1,s1,t1) - gsin_rt(gs1,s1,t2)
-   + gsout_rt(gs1,s1,t2) + gstore_rt(gs1,s1,t2) >= 0
- gstor_def_rt(gs1,s1,t2)_leq: - gstore_rt(gs1,s1,t1) - gsin_rt(gs1,s1,t2)
-   + gsout_rt(gs1,s1,t2) + gstore_rt(gs1,s1,t2) <= 0
- gstor_def_rt(gs1,s1,t3)_geq: - gstore_rt(gs1,s1,t2) - gsin_rt(gs1,s1,t3)
-   + gsout_rt(gs1,s1,t3) + gstore_rt(gs1,s1,t3) >= 0
- gstor_def_rt(gs1,s1,t3)_leq: - gstore_rt(gs1,s1,t2) - gsin_rt(gs1,s1,t3)
-   + gsout_rt(gs1,s1,t3) + gstore_rt(gs1,s1,t3) <= 0
- gstor_def_rt(gs1,s1,t4)_geq: - gstore_rt(gs1,s1,t3) - gsin_rt(gs1,s1,t4)
-   + gsout_rt(gs1,s1,t4) + gstore_rt(gs1,s1,t4) >= 0
- gstor_def_rt(gs1,s1,t4)_leq: - gstore_rt(gs1,s1,t3) - gsin_rt(gs1,s1,t4)
-   + gsout_rt(gs1,s1,t4) + gstore_rt(gs1,s1,t4) <= 0
- gstor_def_rt(gs1,s1,t5)_geq: - gstore_rt(gs1,s1,t4) - gsin_rt(gs1,s1,t5)
-   + gsout_rt(gs1,s1,t5) + gstore_rt(gs1,s1,t5) >= 0
- gstor_def_rt(gs1,s1,t5)_leq: - gstore_rt(gs1,s1,t4) - gsin_rt(gs1,s1,t5)
-   + gsout_rt(gs1,s1,t5) + gstore_rt(gs1,s1,t5) <= 0
- gstor_def_rt(gs1,s1,t6)_geq: - gstore_rt(gs1,s1,t5) - gsin_rt(gs1,s1,t6)
-   + gsout_rt(gs1,s1,t6) + gstore_rt(gs1,s1,t6) >= 0
- gstor_def_rt(gs1,s1,t6)_leq: - gstore_rt(gs1,s1,t5) - gsin_rt(gs1,s1,t6)
-   + gsout_rt(gs1,s1,t6) + gstore_rt(gs1,s1,t6) <= 0
- gstor_def_rt(gs1,s1,t7)_geq: - gstore_rt(gs1,s1,t6) - gsin_rt(gs1,s1,t7)
-   + gsout_rt(gs1,s1,t7) + gstore_rt(gs1,s1,t7) >= 0
- gstor_def_rt(gs1,s1,t7)_leq: - gstore_rt(gs1,s1,t6) - gsin_rt(gs1,s1,t7)
-   + gsout_rt(gs1,s1,t7) + gstore_rt(gs1,s1,t7) <= 0
- gstor_def_rt(gs1,s1,t8)_geq: - gstore_rt(gs1,s1,t7) - gsin_rt(gs1,s1,t8)
-   + gsout_rt(gs1,s1,t8) + gstore_rt(gs1,s1,t8) >= 0
- gstor_def_rt(gs1,s1,t8)_leq: - gstore_rt(gs1,s1,t7) - gsin_rt(gs1,s1,t8)
-   + gsout_rt(gs1,s1,t8) + gstore_rt(gs1,s1,t8) <= 0
- gstor_def_rt(gs1,s1,t9)_geq: - gstore_rt(gs1,s1,t8) - gsin_rt(gs1,s1,t9)
-   + gsout_rt(gs1,s1,t9) + gstore_rt(gs1,s1,t9) >= 0
- gstor_def_rt(gs1,s1,t9)_leq: - gstore_rt(gs1,s1,t8) - gsin_rt(gs1,s1,t9)
-   + gsout_rt(gs1,s1,t9) + gstore_rt(gs1,s1,t9) <= 0
- gstor_def_rt(gs1,s1,t10)_geq: - gstore_rt(gs1,s1,t9) - gsin_rt(gs1,s1,t10)
-   + gsout_rt(gs1,s1,t10) + gstore_rt(gs1,s1,t10) >= 0
- gstor_def_rt(gs1,s1,t10)_leq: - gstore_rt(gs1,s1,t9) - gsin_rt(gs1,s1,t10)
-   + gsout_rt(gs1,s1,t10) + gstore_rt(gs1,s1,t10) <= 0
- gstor_def_rt(gs1,s1,t11)_geq: - gstore_rt(gs1,s1,t10)
-   - gsin_rt(gs1,s1,t11) + gsout_rt(gs1,s1,t11) + gstore_rt(gs1,s1,t11)
-   >= 0
- gstor_def_rt(gs1,s1,t11)_leq: - gstore_rt(gs1,s1,t10)
-   - gsin_rt(gs1,s1,t11) + gsout_rt(gs1,s1,t11) + gstore_rt(gs1,s1,t11)
-   <= 0
- gstor_def_rt(gs1,s1,t12)_geq: - gstore_rt(gs1,s1,t11)
-   - gsin_rt(gs1,s1,t12) + gsout_rt(gs1,s1,t12) + gstore_rt(gs1,s1,t12)
-   >= 0
- gstor_def_rt(gs1,s1,t12)_leq: - gstore_rt(gs1,s1,t11)
-   - gsin_rt(gs1,s1,t12) + gsout_rt(gs1,s1,t12) + gstore_rt(gs1,s1,t12)
-   <= 0
- gstor_def_rt(gs1,s1,t13)_geq: - gstore_rt(gs1,s1,t12)
-   - gsin_rt(gs1,s1,t13) + gsout_rt(gs1,s1,t13) + gstore_rt(gs1,s1,t13)
-   >= 0
- gstor_def_rt(gs1,s1,t13)_leq: - gstore_rt(gs1,s1,t12)
-   - gsin_rt(gs1,s1,t13) + gsout_rt(gs1,s1,t13) + gstore_rt(gs1,s1,t13)
-   <= 0
- gstor_def_rt(gs1,s1,t14)_geq: - gstore_rt(gs1,s1,t13)
-   - gsin_rt(gs1,s1,t14) + gsout_rt(gs1,s1,t14) + gstore_rt(gs1,s1,t14)
-   >= 0
- gstor_def_rt(gs1,s1,t14)_leq: - gstore_rt(gs1,s1,t13)
-   - gsin_rt(gs1,s1,t14) + gsout_rt(gs1,s1,t14) + gstore_rt(gs1,s1,t14)
-   <= 0
- gstor_def_rt(gs1,s1,t15)_geq: - gstore_rt(gs1,s1,t14)
-   - gsin_rt(gs1,s1,t15) + gsout_rt(gs1,s1,t15) + gstore_rt(gs1,s1,t15)
-   >= 0
- gstor_def_rt(gs1,s1,t15)_leq: - gstore_rt(gs1,s1,t14)
-   - gsin_rt(gs1,s1,t15) + gsout_rt(gs1,s1,t15) + gstore_rt(gs1,s1,t15)
-   <= 0
- gstor_def_rt(gs1,s1,t16)_geq: - gstore_rt(gs1,s1,t15)
-   - gsin_rt(gs1,s1,t16) + gsout_rt(gs1,s1,t16) + gstore_rt(gs1,s1,t16)
-   >= 0
- gstor_def_rt(gs1,s1,t16)_leq: - gstore_rt(gs1,s1,t15)
-   - gsin_rt(gs1,s1,t16) + gsout_rt(gs1,s1,t16) + gstore_rt(gs1,s1,t16)
-   <= 0
- gstor_def_rt(gs1,s1,t17)_geq: - gstore_rt(gs1,s1,t16)
-   - gsin_rt(gs1,s1,t17) + gsout_rt(gs1,s1,t17) + gstore_rt(gs1,s1,t17)
-   >= 0
- gstor_def_rt(gs1,s1,t17)_leq: - gstore_rt(gs1,s1,t16)
-   - gsin_rt(gs1,s1,t17) + gsout_rt(gs1,s1,t17) + gstore_rt(gs1,s1,t17)
-   <= 0
- gstor_def_rt(gs1,s1,t18)_geq: - gstore_rt(gs1,s1,t17)
-   - gsin_rt(gs1,s1,t18) + gsout_rt(gs1,s1,t18) + gstore_rt(gs1,s1,t18)
-   >= 0
- gstor_def_rt(gs1,s1,t18)_leq: - gstore_rt(gs1,s1,t17)
-   - gsin_rt(gs1,s1,t18) + gsout_rt(gs1,s1,t18) + gstore_rt(gs1,s1,t18)
-   <= 0
- gstor_def_rt(gs1,s1,t19)_geq: - gstore_rt(gs1,s1,t18)
-   - gsin_rt(gs1,s1,t19) + gsout_rt(gs1,s1,t19) + gstore_rt(gs1,s1,t19)
-   >= 0
- gstor_def_rt(gs1,s1,t19)_leq: - gstore_rt(gs1,s1,t18)
-   - gsin_rt(gs1,s1,t19) + gsout_rt(gs1,s1,t19) + gstore_rt(gs1,s1,t19)
-   <= 0
- gstor_def_rt(gs1,s1,t20)_geq: - gstore_rt(gs1,s1,t19)
-   - gsin_rt(gs1,s1,t20) + gsout_rt(gs1,s1,t20) + gstore_rt(gs1,s1,t20)
-   >= 0
- gstor_def_rt(gs1,s1,t20)_leq: - gstore_rt(gs1,s1,t19)
-   - gsin_rt(gs1,s1,t20) + gsout_rt(gs1,s1,t20) + gstore_rt(gs1,s1,t20)
-   <= 0
- gstor_def_rt(gs1,s1,t21)_geq: - gstore_rt(gs1,s1,t20)
-   - gsin_rt(gs1,s1,t21) + gsout_rt(gs1,s1,t21) + gstore_rt(gs1,s1,t21)
-   >= 0
- gstor_def_rt(gs1,s1,t21)_leq: - gstore_rt(gs1,s1,t20)
-   - gsin_rt(gs1,s1,t21) + gsout_rt(gs1,s1,t21) + gstore_rt(gs1,s1,t21)
-   <= 0
- gstor_def_rt(gs1,s1,t22)_geq: - gstore_rt(gs1,s1,t21)
-   - gsin_rt(gs1,s1,t22) + gsout_rt(gs1,s1,t22) + gstore_rt(gs1,s1,t22)
-   >= 0
- gstor_def_rt(gs1,s1,t22)_leq: - gstore_rt(gs1,s1,t21)
-   - gsin_rt(gs1,s1,t22) + gsout_rt(gs1,s1,t22) + gstore_rt(gs1,s1,t22)
-   <= 0
- gstor_def_rt(gs1,s1,t23)_geq: - gstore_rt(gs1,s1,t22)
-   - gsin_rt(gs1,s1,t23) + gsout_rt(gs1,s1,t23) + gstore_rt(gs1,s1,t23)
-   >= 0
- gstor_def_rt(gs1,s1,t23)_leq: - gstore_rt(gs1,s1,t22)
-   - gsin_rt(gs1,s1,t23) + gsout_rt(gs1,s1,t23) + gstore_rt(gs1,s1,t23)
-   <= 0
- gstor_def_rt(gs1,s1,t24)_geq: - gstore_rt(gs1,s1,t23)
-   - gsin_rt(gs1,s1,t24) + gsout_rt(gs1,s1,t24) + gstore_rt(gs1,s1,t24)
-   >= 0
- gstor_def_rt(gs1,s1,t24)_leq: - gstore_rt(gs1,s1,t23)
-   - gsin_rt(gs1,s1,t24) + gsout_rt(gs1,s1,t24) + gstore_rt(gs1,s1,t24)
-   <= 0
- gstor_def_rt(gs1,s1,t1)_geq: - gsin_rt(gs1,s1,t1) + gsout_rt(gs1,s1,t1)
-   + gstore_rt(gs1,s1,t1) >= 0
- gstor_def_rt(gs1,s1,t1)_leq: - gsin_rt(gs1,s1,t1) + gsout_rt(gs1,s1,t1)
-   + gstore_rt(gs1,s1,t1) <= 0
+ gstor_def_rt(gs1,s1,t2): - gstore_rt(gs1,s1,t1) - gsin_rt(gs1,s1,t2)
+   + gsout_rt(gs1,s1,t2) + gstore_rt(gs1,s1,t2) = 0
+ gstor_def_rt(gs1,s1,t3): - gstore_rt(gs1,s1,t2) - gsin_rt(gs1,s1,t3)
+   + gsout_rt(gs1,s1,t3) + gstore_rt(gs1,s1,t3) = 0
+ gstor_def_rt(gs1,s1,t4): - gstore_rt(gs1,s1,t3) - gsin_rt(gs1,s1,t4)
+   + gsout_rt(gs1,s1,t4) + gstore_rt(gs1,s1,t4) = 0
+ gstor_def_rt(gs1,s1,t5): - gstore_rt(gs1,s1,t4) - gsin_rt(gs1,s1,t5)
+   + gsout_rt(gs1,s1,t5) + gstore_rt(gs1,s1,t5) = 0
+ gstor_def_rt(gs1,s1,t6): - gstore_rt(gs1,s1,t5) - gsin_rt(gs1,s1,t6)
+   + gsout_rt(gs1,s1,t6) + gstore_rt(gs1,s1,t6) = 0
+ gstor_def_rt(gs1,s1,t7): - gstore_rt(gs1,s1,t6) - gsin_rt(gs1,s1,t7)
+   + gsout_rt(gs1,s1,t7) + gstore_rt(gs1,s1,t7) = 0
+ gstor_def_rt(gs1,s1,t8): - gstore_rt(gs1,s1,t7) - gsin_rt(gs1,s1,t8)
+   + gsout_rt(gs1,s1,t8) + gstore_rt(gs1,s1,t8) = 0
+ gstor_def_rt(gs1,s1,t9): - gstore_rt(gs1,s1,t8) - gsin_rt(gs1,s1,t9)
+   + gsout_rt(gs1,s1,t9) + gstore_rt(gs1,s1,t9) = 0
+ gstor_def_rt(gs1,s1,t10): - gstore_rt(gs1,s1,t9) - gsin_rt(gs1,s1,t10)
+   + gsout_rt(gs1,s1,t10) + gstore_rt(gs1,s1,t10) = 0
+ gstor_def_rt(gs1,s1,t11): - gstore_rt(gs1,s1,t10) - gsin_rt(gs1,s1,t11)
+   + gsout_rt(gs1,s1,t11) + gstore_rt(gs1,s1,t11) = 0
+ gstor_def_rt(gs1,s1,t12): - gstore_rt(gs1,s1,t11) - gsin_rt(gs1,s1,t12)
+   + gsout_rt(gs1,s1,t12) + gstore_rt(gs1,s1,t12) = 0
+ gstor_def_rt(gs1,s1,t13): - gstore_rt(gs1,s1,t12) - gsin_rt(gs1,s1,t13)
+   + gsout_rt(gs1,s1,t13) + gstore_rt(gs1,s1,t13) = 0
+ gstor_def_rt(gs1,s1,t14): - gstore_rt(gs1,s1,t13) - gsin_rt(gs1,s1,t14)
+   + gsout_rt(gs1,s1,t14) + gstore_rt(gs1,s1,t14) = 0
+ gstor_def_rt(gs1,s1,t15): - gstore_rt(gs1,s1,t14) - gsin_rt(gs1,s1,t15)
+   + gsout_rt(gs1,s1,t15) + gstore_rt(gs1,s1,t15) = 0
+ gstor_def_rt(gs1,s1,t16): - gstore_rt(gs1,s1,t15) - gsin_rt(gs1,s1,t16)
+   + gsout_rt(gs1,s1,t16) + gstore_rt(gs1,s1,t16) = 0
+ gstor_def_rt(gs1,s1,t17): - gstore_rt(gs1,s1,t16) - gsin_rt(gs1,s1,t17)
+   + gsout_rt(gs1,s1,t17) + gstore_rt(gs1,s1,t17) = 0
+ gstor_def_rt(gs1,s1,t18): - gstore_rt(gs1,s1,t17) - gsin_rt(gs1,s1,t18)
+   + gsout_rt(gs1,s1,t18) + gstore_rt(gs1,s1,t18) = 0
+ gstor_def_rt(gs1,s1,t19): - gstore_rt(gs1,s1,t18) - gsin_rt(gs1,s1,t19)
+   + gsout_rt(gs1,s1,t19) + gstore_rt(gs1,s1,t19) = 0
+ gstor_def_rt(gs1,s1,t20): - gstore_rt(gs1,s1,t19) - gsin_rt(gs1,s1,t20)
+   + gsout_rt(gs1,s1,t20) + gstore_rt(gs1,s1,t20) = 0
+ gstor_def_rt(gs1,s1,t21): - gstore_rt(gs1,s1,t20) - gsin_rt(gs1,s1,t21)
+   + gsout_rt(gs1,s1,t21) + gstore_rt(gs1,s1,t21) = 0
+ gstor_def_rt(gs1,s1,t22): - gstore_rt(gs1,s1,t21) - gsin_rt(gs1,s1,t22)
+   + gsout_rt(gs1,s1,t22) + gstore_rt(gs1,s1,t22) = 0
+ gstor_def_rt(gs1,s1,t23): - gstore_rt(gs1,s1,t22) - gsin_rt(gs1,s1,t23)
+   + gsout_rt(gs1,s1,t23) + gstore_rt(gs1,s1,t23) = 0
+ gstor_def_rt(gs1,s1,t24): - gstore_rt(gs1,s1,t23) - gsin_rt(gs1,s1,t24)
+   + gsout_rt(gs1,s1,t24) + gstore_rt(gs1,s1,t24) = 0
+ gstor_def_rt(gs1,s1,t1): - gsin_rt(gs1,s1,t1) + gsout_rt(gs1,s1,t1)
+   + gstore_rt(gs1,s1,t1) = 0
  gstor_end(gs1,s1): gstore_rt(gs1,s1,t24) >= 0
- gstor_def_rt(gs1,s2,t2)_geq: - gstore_rt(gs1,s2,t1) - gsin_rt(gs1,s2,t2)
-   + gsout_rt(gs1,s2,t2) + gstore_rt(gs1,s2,t2) >= 0
- gstor_def_rt(gs1,s2,t2)_leq: - gstore_rt(gs1,s2,t1) - gsin_rt(gs1,s2,t2)
-   + gsout_rt(gs1,s2,t2) + gstore_rt(gs1,s2,t2) <= 0
- gstor_def_rt(gs1,s2,t3)_geq: - gstore_rt(gs1,s2,t2) - gsin_rt(gs1,s2,t3)
-   + gsout_rt(gs1,s2,t3) + gstore_rt(gs1,s2,t3) >= 0
- gstor_def_rt(gs1,s2,t3)_leq: - gstore_rt(gs1,s2,t2) - gsin_rt(gs1,s2,t3)
-   + gsout_rt(gs1,s2,t3) + gstore_rt(gs1,s2,t3) <= 0
- gstor_def_rt(gs1,s2,t4)_geq: - gstore_rt(gs1,s2,t3) - gsin_rt(gs1,s2,t4)
-   + gsout_rt(gs1,s2,t4) + gstore_rt(gs1,s2,t4) >= 0
- gstor_def_rt(gs1,s2,t4)_leq: - gstore_rt(gs1,s2,t3) - gsin_rt(gs1,s2,t4)
-   + gsout_rt(gs1,s2,t4) + gstore_rt(gs1,s2,t4) <= 0
- gstor_def_rt(gs1,s2,t5)_geq: - gstore_rt(gs1,s2,t4) - gsin_rt(gs1,s2,t5)
-   + gsout_rt(gs1,s2,t5) + gstore_rt(gs1,s2,t5) >= 0
- gstor_def_rt(gs1,s2,t5)_leq: - gstore_rt(gs1,s2,t4) - gsin_rt(gs1,s2,t5)
-   + gsout_rt(gs1,s2,t5) + gstore_rt(gs1,s2,t5) <= 0
- gstor_def_rt(gs1,s2,t6)_geq: - gstore_rt(gs1,s2,t5) - gsin_rt(gs1,s2,t6)
-   + gsout_rt(gs1,s2,t6) + gstore_rt(gs1,s2,t6) >= 0
- gstor_def_rt(gs1,s2,t6)_leq: - gstore_rt(gs1,s2,t5) - gsin_rt(gs1,s2,t6)
-   + gsout_rt(gs1,s2,t6) + gstore_rt(gs1,s2,t6) <= 0
- gstor_def_rt(gs1,s2,t7)_geq: - gstore_rt(gs1,s2,t6) - gsin_rt(gs1,s2,t7)
-   + gsout_rt(gs1,s2,t7) + gstore_rt(gs1,s2,t7) >= 0
- gstor_def_rt(gs1,s2,t7)_leq: - gstore_rt(gs1,s2,t6) - gsin_rt(gs1,s2,t7)
-   + gsout_rt(gs1,s2,t7) + gstore_rt(gs1,s2,t7) <= 0
- gstor_def_rt(gs1,s2,t8)_geq: - gstore_rt(gs1,s2,t7) - gsin_rt(gs1,s2,t8)
-   + gsout_rt(gs1,s2,t8) + gstore_rt(gs1,s2,t8) >= 0
- gstor_def_rt(gs1,s2,t8)_leq: - gstore_rt(gs1,s2,t7) - gsin_rt(gs1,s2,t8)
-   + gsout_rt(gs1,s2,t8) + gstore_rt(gs1,s2,t8) <= 0
- gstor_def_rt(gs1,s2,t9)_geq: - gstore_rt(gs1,s2,t8) - gsin_rt(gs1,s2,t9)
-   + gsout_rt(gs1,s2,t9) + gstore_rt(gs1,s2,t9) >= 0
- gstor_def_rt(gs1,s2,t9)_leq: - gstore_rt(gs1,s2,t8) - gsin_rt(gs1,s2,t9)
-   + gsout_rt(gs1,s2,t9) + gstore_rt(gs1,s2,t9) <= 0
- gstor_def_rt(gs1,s2,t10)_geq: - gstore_rt(gs1,s2,t9) - gsin_rt(gs1,s2,t10)
-   + gsout_rt(gs1,s2,t10) + gstore_rt(gs1,s2,t10) >= 0
- gstor_def_rt(gs1,s2,t10)_leq: - gstore_rt(gs1,s2,t9) - gsin_rt(gs1,s2,t10)
-   + gsout_rt(gs1,s2,t10) + gstore_rt(gs1,s2,t10) <= 0
- gstor_def_rt(gs1,s2,t11)_geq: - gstore_rt(gs1,s2,t10)
-   - gsin_rt(gs1,s2,t11) + gsout_rt(gs1,s2,t11) + gstore_rt(gs1,s2,t11)
-   >= 0
- gstor_def_rt(gs1,s2,t11)_leq: - gstore_rt(gs1,s2,t10)
-   - gsin_rt(gs1,s2,t11) + gsout_rt(gs1,s2,t11) + gstore_rt(gs1,s2,t11)
-   <= 0
- gstor_def_rt(gs1,s2,t12)_geq: - gstore_rt(gs1,s2,t11)
-   - gsin_rt(gs1,s2,t12) + gsout_rt(gs1,s2,t12) + gstore_rt(gs1,s2,t12)
-   >= 0
- gstor_def_rt(gs1,s2,t12)_leq: - gstore_rt(gs1,s2,t11)
-   - gsin_rt(gs1,s2,t12) + gsout_rt(gs1,s2,t12) + gstore_rt(gs1,s2,t12)
-   <= 0
- gstor_def_rt(gs1,s2,t13)_geq: - gstore_rt(gs1,s2,t12)
-   - gsin_rt(gs1,s2,t13) + gsout_rt(gs1,s2,t13) + gstore_rt(gs1,s2,t13)
-   >= 0
- gstor_def_rt(gs1,s2,t13)_leq: - gstore_rt(gs1,s2,t12)
-   - gsin_rt(gs1,s2,t13) + gsout_rt(gs1,s2,t13) + gstore_rt(gs1,s2,t13)
-   <= 0
- gstor_def_rt(gs1,s2,t14)_geq: - gstore_rt(gs1,s2,t13)
-   - gsin_rt(gs1,s2,t14) + gsout_rt(gs1,s2,t14) + gstore_rt(gs1,s2,t14)
-   >= 0
- gstor_def_rt(gs1,s2,t14)_leq: - gstore_rt(gs1,s2,t13)
-   - gsin_rt(gs1,s2,t14) + gsout_rt(gs1,s2,t14) + gstore_rt(gs1,s2,t14)
-   <= 0
- gstor_def_rt(gs1,s2,t15)_geq: - gstore_rt(gs1,s2,t14)
-   - gsin_rt(gs1,s2,t15) + gsout_rt(gs1,s2,t15) + gstore_rt(gs1,s2,t15)
-   >= 0
- gstor_def_rt(gs1,s2,t15)_leq: - gstore_rt(gs1,s2,t14)
-   - gsin_rt(gs1,s2,t15) + gsout_rt(gs1,s2,t15) + gstore_rt(gs1,s2,t15)
-   <= 0
- gstor_def_rt(gs1,s2,t16)_geq: - gstore_rt(gs1,s2,t15)
-   - gsin_rt(gs1,s2,t16) + gsout_rt(gs1,s2,t16) + gstore_rt(gs1,s2,t16)
-   >= 0
- gstor_def_rt(gs1,s2,t16)_leq: - gstore_rt(gs1,s2,t15)
-   - gsin_rt(gs1,s2,t16) + gsout_rt(gs1,s2,t16) + gstore_rt(gs1,s2,t16)
-   <= 0
- gstor_def_rt(gs1,s2,t17)_geq: - gstore_rt(gs1,s2,t16)
-   - gsin_rt(gs1,s2,t17) + gsout_rt(gs1,s2,t17) + gstore_rt(gs1,s2,t17)
-   >= 0
- gstor_def_rt(gs1,s2,t17)_leq: - gstore_rt(gs1,s2,t16)
-   - gsin_rt(gs1,s2,t17) + gsout_rt(gs1,s2,t17) + gstore_rt(gs1,s2,t17)
-   <= 0
- gstor_def_rt(gs1,s2,t18)_geq: - gstore_rt(gs1,s2,t17)
-   - gsin_rt(gs1,s2,t18) + gsout_rt(gs1,s2,t18) + gstore_rt(gs1,s2,t18)
-   >= 0
- gstor_def_rt(gs1,s2,t18)_leq: - gstore_rt(gs1,s2,t17)
-   - gsin_rt(gs1,s2,t18) + gsout_rt(gs1,s2,t18) + gstore_rt(gs1,s2,t18)
-   <= 0
- gstor_def_rt(gs1,s2,t19)_geq: - gstore_rt(gs1,s2,t18)
-   - gsin_rt(gs1,s2,t19) + gsout_rt(gs1,s2,t19) + gstore_rt(gs1,s2,t19)
-   >= 0
- gstor_def_rt(gs1,s2,t19)_leq: - gstore_rt(gs1,s2,t18)
-   - gsin_rt(gs1,s2,t19) + gsout_rt(gs1,s2,t19) + gstore_rt(gs1,s2,t19)
-   <= 0
- gstor_def_rt(gs1,s2,t20)_geq: - gstore_rt(gs1,s2,t19)
-   - gsin_rt(gs1,s2,t20) + gsout_rt(gs1,s2,t20) + gstore_rt(gs1,s2,t20)
-   >= 0
- gstor_def_rt(gs1,s2,t20)_leq: - gstore_rt(gs1,s2,t19)
-   - gsin_rt(gs1,s2,t20) + gsout_rt(gs1,s2,t20) + gstore_rt(gs1,s2,t20)
-   <= 0
- gstor_def_rt(gs1,s2,t21)_geq: - gstore_rt(gs1,s2,t20)
-   - gsin_rt(gs1,s2,t21) + gsout_rt(gs1,s2,t21) + gstore_rt(gs1,s2,t21)
-   >= 0
- gstor_def_rt(gs1,s2,t21)_leq: - gstore_rt(gs1,s2,t20)
-   - gsin_rt(gs1,s2,t21) + gsout_rt(gs1,s2,t21) + gstore_rt(gs1,s2,t21)
-   <= 0
- gstor_def_rt(gs1,s2,t22)_geq: - gstore_rt(gs1,s2,t21)
-   - gsin_rt(gs1,s2,t22) + gsout_rt(gs1,s2,t22) + gstore_rt(gs1,s2,t22)
-   >= 0
- gstor_def_rt(gs1,s2,t22)_leq: - gstore_rt(gs1,s2,t21)
-   - gsin_rt(gs1,s2,t22) + gsout_rt(gs1,s2,t22) + gstore_rt(gs1,s2,t22)
-   <= 0
- gstor_def_rt(gs1,s2,t23)_geq: - gstore_rt(gs1,s2,t22)
-   - gsin_rt(gs1,s2,t23) + gsout_rt(gs1,s2,t23) + gstore_rt(gs1,s2,t23)
-   >= 0
- gstor_def_rt(gs1,s2,t23)_leq: - gstore_rt(gs1,s2,t22)
-   - gsin_rt(gs1,s2,t23) + gsout_rt(gs1,s2,t23) + gstore_rt(gs1,s2,t23)
-   <= 0
- gstor_def_rt(gs1,s2,t24)_geq: - gstore_rt(gs1,s2,t23)
-   - gsin_rt(gs1,s2,t24) + gsout_rt(gs1,s2,t24) + gstore_rt(gs1,s2,t24)
-   >= 0
- gstor_def_rt(gs1,s2,t24)_leq: - gstore_rt(gs1,s2,t23)
-   - gsin_rt(gs1,s2,t24) + gsout_rt(gs1,s2,t24) + gstore_rt(gs1,s2,t24)
-   <= 0
- gstor_def_rt(gs1,s2,t1)_geq: - gsin_rt(gs1,s2,t1) + gsout_rt(gs1,s2,t1)
-   + gstore_rt(gs1,s2,t1) >= 0
- gstor_def_rt(gs1,s2,t1)_leq: - gsin_rt(gs1,s2,t1) + gsout_rt(gs1,s2,t1)
-   + gstore_rt(gs1,s2,t1) <= 0
+ gstor_def_rt(gs1,s2,t2): - gstore_rt(gs1,s2,t1) - gsin_rt(gs1,s2,t2)
+   + gsout_rt(gs1,s2,t2) + gstore_rt(gs1,s2,t2) = 0
+ gstor_def_rt(gs1,s2,t3): - gstore_rt(gs1,s2,t2) - gsin_rt(gs1,s2,t3)
+   + gsout_rt(gs1,s2,t3) + gstore_rt(gs1,s2,t3) = 0
+ gstor_def_rt(gs1,s2,t4): - gstore_rt(gs1,s2,t3) - gsin_rt(gs1,s2,t4)
+   + gsout_rt(gs1,s2,t4) + gstore_rt(gs1,s2,t4) = 0
+ gstor_def_rt(gs1,s2,t5): - gstore_rt(gs1,s2,t4) - gsin_rt(gs1,s2,t5)
+   + gsout_rt(gs1,s2,t5) + gstore_rt(gs1,s2,t5) = 0
+ gstor_def_rt(gs1,s2,t6): - gstore_rt(gs1,s2,t5) - gsin_rt(gs1,s2,t6)
+   + gsout_rt(gs1,s2,t6) + gstore_rt(gs1,s2,t6) = 0
+ gstor_def_rt(gs1,s2,t7): - gstore_rt(gs1,s2,t6) - gsin_rt(gs1,s2,t7)
+   + gsout_rt(gs1,s2,t7) + gstore_rt(gs1,s2,t7) = 0
+ gstor_def_rt(gs1,s2,t8): - gstore_rt(gs1,s2,t7) - gsin_rt(gs1,s2,t8)
+   + gsout_rt(gs1,s2,t8) + gstore_rt(gs1,s2,t8) = 0
+ gstor_def_rt(gs1,s2,t9): - gstore_rt(gs1,s2,t8) - gsin_rt(gs1,s2,t9)
+   + gsout_rt(gs1,s2,t9) + gstore_rt(gs1,s2,t9) = 0
+ gstor_def_rt(gs1,s2,t10): - gstore_rt(gs1,s2,t9) - gsin_rt(gs1,s2,t10)
+   + gsout_rt(gs1,s2,t10) + gstore_rt(gs1,s2,t10) = 0
+ gstor_def_rt(gs1,s2,t11): - gstore_rt(gs1,s2,t10) - gsin_rt(gs1,s2,t11)
+   + gsout_rt(gs1,s2,t11) + gstore_rt(gs1,s2,t11) = 0
+ gstor_def_rt(gs1,s2,t12): - gstore_rt(gs1,s2,t11) - gsin_rt(gs1,s2,t12)
+   + gsout_rt(gs1,s2,t12) + gstore_rt(gs1,s2,t12) = 0
+ gstor_def_rt(gs1,s2,t13): - gstore_rt(gs1,s2,t12) - gsin_rt(gs1,s2,t13)
+   + gsout_rt(gs1,s2,t13) + gstore_rt(gs1,s2,t13) = 0
+ gstor_def_rt(gs1,s2,t14): - gstore_rt(gs1,s2,t13) - gsin_rt(gs1,s2,t14)
+   + gsout_rt(gs1,s2,t14) + gstore_rt(gs1,s2,t14) = 0
+ gstor_def_rt(gs1,s2,t15): - gstore_rt(gs1,s2,t14) - gsin_rt(gs1,s2,t15)
+   + gsout_rt(gs1,s2,t15) + gstore_rt(gs1,s2,t15) = 0
+ gstor_def_rt(gs1,s2,t16): - gstore_rt(gs1,s2,t15) - gsin_rt(gs1,s2,t16)
+   + gsout_rt(gs1,s2,t16) + gstore_rt(gs1,s2,t16) = 0
+ gstor_def_rt(gs1,s2,t17): - gstore_rt(gs1,s2,t16) - gsin_rt(gs1,s2,t17)
+   + gsout_rt(gs1,s2,t17) + gstore_rt(gs1,s2,t17) = 0
+ gstor_def_rt(gs1,s2,t18): - gstore_rt(gs1,s2,t17) - gsin_rt(gs1,s2,t18)
+   + gsout_rt(gs1,s2,t18) + gstore_rt(gs1,s2,t18) = 0
+ gstor_def_rt(gs1,s2,t19): - gstore_rt(gs1,s2,t18) - gsin_rt(gs1,s2,t19)
+   + gsout_rt(gs1,s2,t19) + gstore_rt(gs1,s2,t19) = 0
+ gstor_def_rt(gs1,s2,t20): - gstore_rt(gs1,s2,t19) - gsin_rt(gs1,s2,t20)
+   + gsout_rt(gs1,s2,t20) + gstore_rt(gs1,s2,t20) = 0
+ gstor_def_rt(gs1,s2,t21): - gstore_rt(gs1,s2,t20) - gsin_rt(gs1,s2,t21)
+   + gsout_rt(gs1,s2,t21) + gstore_rt(gs1,s2,t21) = 0
+ gstor_def_rt(gs1,s2,t22): - gstore_rt(gs1,s2,t21) - gsin_rt(gs1,s2,t22)
+   + gsout_rt(gs1,s2,t22) + gstore_rt(gs1,s2,t22) = 0
+ gstor_def_rt(gs1,s2,t23): - gstore_rt(gs1,s2,t22) - gsin_rt(gs1,s2,t23)
+   + gsout_rt(gs1,s2,t23) + gstore_rt(gs1,s2,t23) = 0
+ gstor_def_rt(gs1,s2,t24): - gstore_rt(gs1,s2,t23) - gsin_rt(gs1,s2,t24)
+   + gsout_rt(gs1,s2,t24) + gstore_rt(gs1,s2,t24) = 0
+ gstor_def_rt(gs1,s2,t1): - gsin_rt(gs1,s2,t1) + gsout_rt(gs1,s2,t1)
+   + gstore_rt(gs1,s2,t1) = 0
  gstor_end(gs1,s2): gstore_rt(gs1,s2,t24) >= 0
  gas_shed_rt(ng101,s1,t1): gshed(ng101,s1,t1) <= 0
  gas_shed_rt(ng101,s1,t2): gshed(ng101,s1,t2) <= 0
@@ -10705,582 +10047,294 @@ Subject To
  gas_shed_rt(ng102,s2,t22): gshed(ng102,s2,t22) <= 2250
  gas_shed_rt(ng102,s2,t23): gshed(ng102,s2,t23) <= 1980
  gas_shed_rt(ng102,s2,t24): gshed(ng102,s2,t24) <= 2010
- gas_balance(ng101,s1,t1)_geq: gshed(ng101,s1,t1)
+ gas_balance(ng101,s1,t1): gshed(ng101,s1,t1)
    - qin_sr_rt(('ng101','ng102'),s1,t1) + gprodUp(gw1,s1,t1)
-   - gprodDn(gw1,s1,t1) >= -6142.913841710055
- gas_balance(ng101,s1,t1)_leq: gshed(ng101,s1,t1)
-   - qin_sr_rt(('ng101','ng102'),s1,t1) + gprodUp(gw1,s1,t1)
-   - gprodDn(gw1,s1,t1) <= -6142.913841710055
- gas_balance(ng101,s1,t2)_geq: gshed(ng101,s1,t2)
+   - gprodDn(gw1,s1,t1) = -6142.913841710055
+ gas_balance(ng101,s1,t2): gshed(ng101,s1,t2)
    - qin_sr_rt(('ng101','ng102'),s1,t2) + gprodUp(gw1,s1,t2)
-   - gprodDn(gw1,s1,t2) >= -3643.073586529465
- gas_balance(ng101,s1,t2)_leq: gshed(ng101,s1,t2)
-   - qin_sr_rt(('ng101','ng102'),s1,t2) + gprodUp(gw1,s1,t2)
-   - gprodDn(gw1,s1,t2) <= -3643.073586529465
- gas_balance(ng101,s1,t3)_geq: gshed(ng101,s1,t3)
+   - gprodDn(gw1,s1,t2) = -3643.073586529465
+ gas_balance(ng101,s1,t3): gshed(ng101,s1,t3)
    - qin_sr_rt(('ng101','ng102'),s1,t3) + gprodUp(gw1,s1,t3)
-   - gprodDn(gw1,s1,t3) >= -2646.558067906661
- gas_balance(ng101,s1,t3)_leq: gshed(ng101,s1,t3)
-   - qin_sr_rt(('ng101','ng102'),s1,t3) + gprodUp(gw1,s1,t3)
-   - gprodDn(gw1,s1,t3) <= -2646.558067906661
- gas_balance(ng101,s1,t4)_geq: gshed(ng101,s1,t4)
+   - gprodDn(gw1,s1,t3) = -2646.558067906661
+ gas_balance(ng101,s1,t4): gshed(ng101,s1,t4)
    - qin_sr_rt(('ng101','ng102'),s1,t4) + gprodUp(gw1,s1,t4)
-   - gprodDn(gw1,s1,t4) >= -2372.864974219922
- gas_balance(ng101,s1,t4)_leq: gshed(ng101,s1,t4)
-   - qin_sr_rt(('ng101','ng102'),s1,t4) + gprodUp(gw1,s1,t4)
-   - gprodDn(gw1,s1,t4) <= -2372.864974219922
- gas_balance(ng101,s1,t5)_geq: gshed(ng101,s1,t5)
+   - gprodDn(gw1,s1,t4) = -2372.864974219922
+ gas_balance(ng101,s1,t5): gshed(ng101,s1,t5)
    - qin_sr_rt(('ng101','ng102'),s1,t5) + gprodUp(gw1,s1,t5)
-   - gprodDn(gw1,s1,t5) >= -2335.138751940844
- gas_balance(ng101,s1,t5)_leq: gshed(ng101,s1,t5)
-   - qin_sr_rt(('ng101','ng102'),s1,t5) + gprodUp(gw1,s1,t5)
-   - gprodDn(gw1,s1,t5) <= -2335.138751940844
- gas_balance(ng101,s1,t6)_geq: gshed(ng101,s1,t6)
+   - gprodDn(gw1,s1,t5) = -2335.138751940844
+ gas_balance(ng101,s1,t6): gshed(ng101,s1,t6)
    - qin_sr_rt(('ng101','ng102'),s1,t6) + gprodUp(gw1,s1,t6)
-   - gprodDn(gw1,s1,t6) >= -2356.355078951455
- gas_balance(ng101,s1,t6)_leq: gshed(ng101,s1,t6)
-   - qin_sr_rt(('ng101','ng102'),s1,t6) + gprodUp(gw1,s1,t6)
-   - gprodDn(gw1,s1,t6) <= -2356.355078951455
- gas_balance(ng101,s1,t7)_geq: gshed(ng101,s1,t7)
+   - gprodDn(gw1,s1,t6) = -2356.355078951455
+ gas_balance(ng101,s1,t7): gshed(ng101,s1,t7)
    - qin_sr_rt(('ng101','ng102'),s1,t7) + gprodUp(gw1,s1,t7)
-   - gprodDn(gw1,s1,t7) >= -2534.208063386133
- gas_balance(ng101,s1,t7)_leq: gshed(ng101,s1,t7)
-   - qin_sr_rt(('ng101','ng102'),s1,t7) + gprodUp(gw1,s1,t7)
-   - gprodDn(gw1,s1,t7) <= -2534.208063386133
- gas_balance(ng101,s1,t8)_geq: gshed(ng101,s1,t8)
+   - gprodDn(gw1,s1,t7) = -2534.208063386133
+ gas_balance(ng101,s1,t8): gshed(ng101,s1,t8)
    - qin_sr_rt(('ng101','ng102'),s1,t8) + gprodUp(gw1,s1,t8)
-   - gprodDn(gw1,s1,t8) >= -2670.734752392153
- gas_balance(ng101,s1,t8)_leq: gshed(ng101,s1,t8)
-   - qin_sr_rt(('ng101','ng102'),s1,t8) + gprodUp(gw1,s1,t8)
-   - gprodDn(gw1,s1,t8) <= -2670.734752392153
- gas_balance(ng101,s1,t9)_geq: gshed(ng101,s1,t9)
+   - gprodDn(gw1,s1,t8) = -2670.734752392153
+ gas_balance(ng101,s1,t9): gshed(ng101,s1,t9)
    - qin_sr_rt(('ng101','ng102'),s1,t9) + gprodUp(gw1,s1,t9)
-   - gprodDn(gw1,s1,t9) >= -2820.971016143471
- gas_balance(ng101,s1,t9)_leq: gshed(ng101,s1,t9)
-   - qin_sr_rt(('ng101','ng102'),s1,t9) + gprodUp(gw1,s1,t9)
-   - gprodDn(gw1,s1,t9) <= -2820.971016143471
- gas_balance(ng101,s1,t10)_geq: gshed(ng101,s1,t10)
+   - gprodDn(gw1,s1,t9) = -2820.971016143471
+ gas_balance(ng101,s1,t10): gshed(ng101,s1,t10)
    - qin_sr_rt(('ng101','ng102'),s1,t10) + gprodUp(gw1,s1,t10)
-   - gprodDn(gw1,s1,t10) >= -2936.263502599119
- gas_balance(ng101,s1,t10)_leq: gshed(ng101,s1,t10)
-   - qin_sr_rt(('ng101','ng102'),s1,t10) + gprodUp(gw1,s1,t10)
-   - gprodDn(gw1,s1,t10) <= -2936.263502599119
- gas_balance(ng101,s1,t11)_geq: gshed(ng101,s1,t11)
+   - gprodDn(gw1,s1,t10) = -2936.263502599119
+ gas_balance(ng101,s1,t11): gshed(ng101,s1,t11)
    - qin_sr_rt(('ng101','ng102'),s1,t11) + gprodUp(gw1,s1,t11)
-   - gprodDn(gw1,s1,t11) >= -2985.445877902895
- gas_balance(ng101,s1,t11)_leq: gshed(ng101,s1,t11)
-   - qin_sr_rt(('ng101','ng102'),s1,t11) + gprodUp(gw1,s1,t11)
-   - gprodDn(gw1,s1,t11) <= -2985.445877902895
- gas_balance(ng101,s1,t12)_geq: gshed(ng101,s1,t12)
+   - gprodDn(gw1,s1,t11) = -2985.445877902895
+ gas_balance(ng101,s1,t12): gshed(ng101,s1,t12)
    - qin_sr_rt(('ng101','ng102'),s1,t12) + gprodUp(gw1,s1,t12)
-   - gprodDn(gw1,s1,t12) >= -2979.182861857632
- gas_balance(ng101,s1,t12)_leq: gshed(ng101,s1,t12)
-   - qin_sr_rt(('ng101','ng102'),s1,t12) + gprodUp(gw1,s1,t12)
-   - gprodDn(gw1,s1,t12) <= -2979.182861857632
- gas_balance(ng101,s1,t13)_geq: gshed(ng101,s1,t13)
+   - gprodDn(gw1,s1,t12) = -2979.182861857632
+ gas_balance(ng101,s1,t13): gshed(ng101,s1,t13)
    - qin_sr_rt(('ng101','ng102'),s1,t13) + gprodUp(gw1,s1,t13)
-   - gprodDn(gw1,s1,t13) >= -2957.277857096926
- gas_balance(ng101,s1,t13)_leq: gshed(ng101,s1,t13)
-   - qin_sr_rt(('ng101','ng102'),s1,t13) + gprodUp(gw1,s1,t13)
-   - gprodDn(gw1,s1,t13) <= -2957.277857096926
- gas_balance(ng101,s1,t14)_geq: gshed(ng101,s1,t14)
+   - gprodDn(gw1,s1,t13) = -2957.277857096926
+ gas_balance(ng101,s1,t14): gshed(ng101,s1,t14)
    - qin_sr_rt(('ng101','ng102'),s1,t14) + gprodUp(gw1,s1,t14)
-   - gprodDn(gw1,s1,t14) >= -2940.833215747743
- gas_balance(ng101,s1,t14)_leq: gshed(ng101,s1,t14)
-   - qin_sr_rt(('ng101','ng102'),s1,t14) + gprodUp(gw1,s1,t14)
-   - gprodDn(gw1,s1,t14) <= -2940.833215747743
- gas_balance(ng101,s1,t15)_geq: gshed(ng101,s1,t15)
+   - gprodDn(gw1,s1,t14) = -2940.833215747743
+ gas_balance(ng101,s1,t15): gshed(ng101,s1,t15)
    - qin_sr_rt(('ng101','ng102'),s1,t15) + gprodUp(gw1,s1,t15)
-   - gprodDn(gw1,s1,t15) >= -2907.645729316322
- gas_balance(ng101,s1,t15)_leq: gshed(ng101,s1,t15)
-   - qin_sr_rt(('ng101','ng102'),s1,t15) + gprodUp(gw1,s1,t15)
-   - gprodDn(gw1,s1,t15) <= -2907.645729316322
- gas_balance(ng101,s1,t16)_geq: gshed(ng101,s1,t16)
+   - gprodDn(gw1,s1,t15) = -2907.645729316322
+ gas_balance(ng101,s1,t16): gshed(ng101,s1,t16)
    - qin_sr_rt(('ng101','ng102'),s1,t16) + gprodUp(gw1,s1,t16)
-   - gprodDn(gw1,s1,t16) >= -2895.037625086115
- gas_balance(ng101,s1,t16)_leq: gshed(ng101,s1,t16)
-   - qin_sr_rt(('ng101','ng102'),s1,t16) + gprodUp(gw1,s1,t16)
-   - gprodDn(gw1,s1,t16) <= -2895.037625086115
- gas_balance(ng101,s1,t17)_geq: gshed(ng101,s1,t17)
+   - gprodDn(gw1,s1,t16) = -2895.037625086115
+ gas_balance(ng101,s1,t17): gshed(ng101,s1,t17)
    - qin_sr_rt(('ng101','ng102'),s1,t17) + gprodUp(gw1,s1,t17)
-   - gprodDn(gw1,s1,t17) >= -2955.741912514682
- gas_balance(ng101,s1,t17)_leq: gshed(ng101,s1,t17)
-   - qin_sr_rt(('ng101','ng102'),s1,t17) + gprodUp(gw1,s1,t17)
-   - gprodDn(gw1,s1,t17) <= -2955.741912514682
- gas_balance(ng101,s1,t18)_geq: gshed(ng101,s1,t18)
+   - gprodDn(gw1,s1,t17) = -2955.741912514682
+ gas_balance(ng101,s1,t18): gshed(ng101,s1,t18)
    - qin_sr_rt(('ng101','ng102'),s1,t18) + gprodUp(gw1,s1,t18)
-   - gprodDn(gw1,s1,t18) >= -3013.305512677407
- gas_balance(ng101,s1,t18)_leq: gshed(ng101,s1,t18)
-   - qin_sr_rt(('ng101','ng102'),s1,t18) + gprodUp(gw1,s1,t18)
-   - gprodDn(gw1,s1,t18) <= -3013.305512677407
- gas_balance(ng101,s1,t19)_geq: gshed(ng101,s1,t19)
+   - gprodDn(gw1,s1,t18) = -3013.305512677407
+ gas_balance(ng101,s1,t19): gshed(ng101,s1,t19)
    - qin_sr_rt(('ng101','ng102'),s1,t19) + gprodUp(gw1,s1,t19)
-   - gprodDn(gw1,s1,t19) >= -3029.846045579687
- gas_balance(ng101,s1,t19)_leq: gshed(ng101,s1,t19)
-   - qin_sr_rt(('ng101','ng102'),s1,t19) + gprodUp(gw1,s1,t19)
-   - gprodDn(gw1,s1,t19) <= -3029.846045579687
- gas_balance(ng101,s1,t20)_geq: gshed(ng101,s1,t20)
+   - gprodDn(gw1,s1,t19) = -3029.846045579687
+ gas_balance(ng101,s1,t20): gshed(ng101,s1,t20)
    - qin_sr_rt(('ng101','ng102'),s1,t20) + gprodUp(gw1,s1,t20)
-   - gprodDn(gw1,s1,t20) >= -3000.057941761911
- gas_balance(ng101,s1,t20)_leq: gshed(ng101,s1,t20)
-   - qin_sr_rt(('ng101','ng102'),s1,t20) + gprodUp(gw1,s1,t20)
-   - gprodDn(gw1,s1,t20) <= -3000.057941761911
- gas_balance(ng101,s1,t21)_geq: gshed(ng101,s1,t21)
+   - gprodDn(gw1,s1,t20) = -3000.057941761911
+ gas_balance(ng101,s1,t21): gshed(ng101,s1,t21)
    - qin_sr_rt(('ng101','ng102'),s1,t21) + gprodUp(gw1,s1,t21)
-   - gprodDn(gw1,s1,t21) >= -2913.630741553817
- gas_balance(ng101,s1,t21)_leq: gshed(ng101,s1,t21)
-   - qin_sr_rt(('ng101','ng102'),s1,t21) + gprodUp(gw1,s1,t21)
-   - gprodDn(gw1,s1,t21) <= -2913.630741553817
- gas_balance(ng101,s1,t22)_geq: gshed(ng101,s1,t22)
+   - gprodDn(gw1,s1,t21) = -2913.630741553817
+ gas_balance(ng101,s1,t22): gshed(ng101,s1,t22)
    - qin_sr_rt(('ng101','ng102'),s1,t22) + gprodUp(gw1,s1,t22)
-   - gprodDn(gw1,s1,t22) >= -2207.963031125539
- gas_balance(ng101,s1,t22)_leq: gshed(ng101,s1,t22)
-   - qin_sr_rt(('ng101','ng102'),s1,t22) + gprodUp(gw1,s1,t22)
-   - gprodDn(gw1,s1,t22) <= -2207.963031125539
- gas_balance(ng101,s1,t23)_geq: gshed(ng101,s1,t23)
+   - gprodDn(gw1,s1,t22) = -2207.963031125539
+ gas_balance(ng101,s1,t23): gshed(ng101,s1,t23)
    - qin_sr_rt(('ng101','ng102'),s1,t23) + gprodUp(gw1,s1,t23)
-   - gprodDn(gw1,s1,t23) >= 0
- gas_balance(ng101,s1,t23)_leq: gshed(ng101,s1,t23)
-   - qin_sr_rt(('ng101','ng102'),s1,t23) + gprodUp(gw1,s1,t23)
-   - gprodDn(gw1,s1,t23) <= 0
- gas_balance(ng101,s1,t24)_geq: gshed(ng101,s1,t24)
+   - gprodDn(gw1,s1,t23) = 0
+ gas_balance(ng101,s1,t24): gshed(ng101,s1,t24)
    - qin_sr_rt(('ng101','ng102'),s1,t24) + gprodUp(gw1,s1,t24)
-   - gprodDn(gw1,s1,t24) >= 0
- gas_balance(ng101,s1,t24)_leq: gshed(ng101,s1,t24)
-   - qin_sr_rt(('ng101','ng102'),s1,t24) + gprodUp(gw1,s1,t24)
-   - gprodDn(gw1,s1,t24) <= 0
- gas_balance(ng102,s1,t1)_geq: gshed(ng102,s1,t1)
+   - gprodDn(gw1,s1,t24) = 0
+ gas_balance(ng102,s1,t1): gshed(ng102,s1,t1)
    + qout_sr_rt(('ng101','ng102'),s1,t1) - gsin_rt(gs1,s1,t1)
-   + gsout_rt(gs1,s1,t1) >= 2345.10780808
- gas_balance(ng102,s1,t1)_leq: gshed(ng102,s1,t1)
-   + qout_sr_rt(('ng101','ng102'),s1,t1) - gsin_rt(gs1,s1,t1)
-   + gsout_rt(gs1,s1,t1) <= 2345.10780808
- gas_balance(ng102,s1,t2)_geq: gshed(ng102,s1,t2)
+   + gsout_rt(gs1,s1,t1) = 2345.10780808
+ gas_balance(ng102,s1,t2): gshed(ng102,s1,t2)
    + qout_sr_rt(('ng101','ng102'),s1,t2) - gsin_rt(gs1,s1,t2)
-   + gsout_rt(gs1,s1,t2) >= 2261.88515768
- gas_balance(ng102,s1,t2)_leq: gshed(ng102,s1,t2)
-   + qout_sr_rt(('ng101','ng102'),s1,t2) - gsin_rt(gs1,s1,t2)
-   + gsout_rt(gs1,s1,t2) <= 2261.88515768
- gas_balance(ng102,s1,t3)_geq: gshed(ng102,s1,t3)
+   + gsout_rt(gs1,s1,t2) = 2261.88515768
+ gas_balance(ng102,s1,t3): gshed(ng102,s1,t3)
    + qout_sr_rt(('ng101','ng102'),s1,t3) - gsin_rt(gs1,s1,t3)
-   + gsout_rt(gs1,s1,t3) >= 2174.4105252
- gas_balance(ng102,s1,t3)_leq: gshed(ng102,s1,t3)
-   + qout_sr_rt(('ng101','ng102'),s1,t3) - gsin_rt(gs1,s1,t3)
-   + gsout_rt(gs1,s1,t3) <= 2174.4105252
- gas_balance(ng102,s1,t4)_geq: gshed(ng102,s1,t4)
+   + gsout_rt(gs1,s1,t3) = 2174.4105252
+ gas_balance(ng102,s1,t4): gshed(ng102,s1,t4)
    + qout_sr_rt(('ng101','ng102'),s1,t4) - gsin_rt(gs1,s1,t4)
-   + gsout_rt(gs1,s1,t4) >= 2220.0802776
- gas_balance(ng102,s1,t4)_leq: gshed(ng102,s1,t4)
-   + qout_sr_rt(('ng101','ng102'),s1,t4) - gsin_rt(gs1,s1,t4)
-   + gsout_rt(gs1,s1,t4) <= 2220.0802776
- gas_balance(ng102,s1,t5)_geq: gshed(ng102,s1,t5)
+   + gsout_rt(gs1,s1,t4) = 2220.0802776
+ gas_balance(ng102,s1,t5): gshed(ng102,s1,t5)
    + qout_sr_rt(('ng101','ng102'),s1,t5) - gsin_rt(gs1,s1,t5)
-   + gsout_rt(gs1,s1,t5) >= 2254.04013816
- gas_balance(ng102,s1,t5)_leq: gshed(ng102,s1,t5)
-   + qout_sr_rt(('ng101','ng102'),s1,t5) - gsin_rt(gs1,s1,t5)
-   + gsout_rt(gs1,s1,t5) <= 2254.04013816
- gas_balance(ng102,s1,t6)_geq: gshed(ng102,s1,t6)
+   + gsout_rt(gs1,s1,t5) = 2254.04013816
+ gas_balance(ng102,s1,t6): gshed(ng102,s1,t6)
    + qout_sr_rt(('ng101','ng102'),s1,t6) - gsin_rt(gs1,s1,t6)
-   + gsout_rt(gs1,s1,t6) >= 2303.28568064
- gas_balance(ng102,s1,t6)_leq: gshed(ng102,s1,t6)
-   + qout_sr_rt(('ng101','ng102'),s1,t6) - gsin_rt(gs1,s1,t6)
-   + gsout_rt(gs1,s1,t6) <= 2303.28568064
- gas_balance(ng102,s1,t7)_geq: gshed(ng102,s1,t7)
+   + gsout_rt(gs1,s1,t6) = 2303.28568064
+ gas_balance(ng102,s1,t7): gshed(ng102,s1,t7)
    + qout_sr_rt(('ng101','ng102'),s1,t7) - gsin_rt(gs1,s1,t7)
-   + gsout_rt(gs1,s1,t7) >= 2632.24273328
- gas_balance(ng102,s1,t7)_leq: gshed(ng102,s1,t7)
-   + qout_sr_rt(('ng101','ng102'),s1,t7) - gsin_rt(gs1,s1,t7)
-   + gsout_rt(gs1,s1,t7) <= 2632.24273328
- gas_balance(ng102,s1,t8)_geq: gshed(ng102,s1,t8)
+   + gsout_rt(gs1,s1,t7) = 2632.24273328
+ gas_balance(ng102,s1,t8): gshed(ng102,s1,t8)
    + qout_sr_rt(('ng101','ng102'),s1,t8) - gsin_rt(gs1,s1,t8)
-   + gsout_rt(gs1,s1,t8) >= 2671.86255752
- gas_balance(ng102,s1,t8)_leq: gshed(ng102,s1,t8)
-   + qout_sr_rt(('ng101','ng102'),s1,t8) - gsin_rt(gs1,s1,t8)
-   + gsout_rt(gs1,s1,t8) <= 2671.86255752
- gas_balance(ng102,s1,t9)_geq: gshed(ng102,s1,t9)
+   + gsout_rt(gs1,s1,t8) = 2671.86255752
+ gas_balance(ng102,s1,t9): gshed(ng102,s1,t9)
    + qout_sr_rt(('ng101','ng102'),s1,t9) - gsin_rt(gs1,s1,t9)
-   + gsout_rt(gs1,s1,t9) >= 2915.82994704
- gas_balance(ng102,s1,t9)_leq: gshed(ng102,s1,t9)
-   + qout_sr_rt(('ng101','ng102'),s1,t9) - gsin_rt(gs1,s1,t9)
-   + gsout_rt(gs1,s1,t9) <= 2915.82994704
- gas_balance(ng102,s1,t10)_geq: gshed(ng102,s1,t10)
+   + gsout_rt(gs1,s1,t9) = 2915.82994704
+ gas_balance(ng102,s1,t10): gshed(ng102,s1,t10)
    + qout_sr_rt(('ng101','ng102'),s1,t10) - gsin_rt(gs1,s1,t10)
-   + gsout_rt(gs1,s1,t10) >= 2976.29073264
- gas_balance(ng102,s1,t10)_leq: gshed(ng102,s1,t10)
-   + qout_sr_rt(('ng101','ng102'),s1,t10) - gsin_rt(gs1,s1,t10)
-   + gsout_rt(gs1,s1,t10) <= 2976.29073264
- gas_balance(ng102,s1,t11)_geq: gshed(ng102,s1,t11)
+   + gsout_rt(gs1,s1,t10) = 2976.29073264
+ gas_balance(ng102,s1,t11): gshed(ng102,s1,t11)
    + qout_sr_rt(('ng101','ng102'),s1,t11) - gsin_rt(gs1,s1,t11)
-   + gsout_rt(gs1,s1,t11) >= 2982.28674624
- gas_balance(ng102,s1,t11)_leq: gshed(ng102,s1,t11)
-   + qout_sr_rt(('ng101','ng102'),s1,t11) - gsin_rt(gs1,s1,t11)
-   + gsout_rt(gs1,s1,t11) <= 2982.28674624
- gas_balance(ng102,s1,t12)_geq: gshed(ng102,s1,t12)
+   + gsout_rt(gs1,s1,t11) = 2982.28674624
+ gas_balance(ng102,s1,t12): gshed(ng102,s1,t12)
    + qout_sr_rt(('ng101','ng102'),s1,t12) - gsin_rt(gs1,s1,t12)
-   + gsout_rt(gs1,s1,t12) >= 2932.71121376
- gas_balance(ng102,s1,t12)_leq: gshed(ng102,s1,t12)
-   + qout_sr_rt(('ng101','ng102'),s1,t12) - gsin_rt(gs1,s1,t12)
-   + gsout_rt(gs1,s1,t12) <= 2932.71121376
- gas_balance(ng102,s1,t13)_geq: gshed(ng102,s1,t13)
+   + gsout_rt(gs1,s1,t12) = 2932.71121376
+ gas_balance(ng102,s1,t13): gshed(ng102,s1,t13)
    + qout_sr_rt(('ng101','ng102'),s1,t13) - gsin_rt(gs1,s1,t13)
-   + gsout_rt(gs1,s1,t13) >= 2921.30503744
- gas_balance(ng102,s1,t13)_leq: gshed(ng102,s1,t13)
-   + qout_sr_rt(('ng101','ng102'),s1,t13) - gsin_rt(gs1,s1,t13)
-   + gsout_rt(gs1,s1,t13) <= 2921.30503744
- gas_balance(ng102,s1,t14)_geq: gshed(ng102,s1,t14)
+   + gsout_rt(gs1,s1,t13) = 2921.30503744
+ gas_balance(ng102,s1,t14): gshed(ng102,s1,t14)
    + qout_sr_rt(('ng101','ng102'),s1,t14) - gsin_rt(gs1,s1,t14)
-   + gsout_rt(gs1,s1,t14) >= 2898.6098316
- gas_balance(ng102,s1,t14)_leq: gshed(ng102,s1,t14)
-   + qout_sr_rt(('ng101','ng102'),s1,t14) - gsin_rt(gs1,s1,t14)
-   + gsout_rt(gs1,s1,t14) <= 2898.6098316
- gas_balance(ng102,s1,t15)_geq: gshed(ng102,s1,t15)
+   + gsout_rt(gs1,s1,t14) = 2898.6098316
+ gas_balance(ng102,s1,t15): gshed(ng102,s1,t15)
    + qout_sr_rt(('ng101','ng102'),s1,t15) - gsin_rt(gs1,s1,t15)
-   + gsout_rt(gs1,s1,t15) >= 2836.3035512
- gas_balance(ng102,s1,t15)_leq: gshed(ng102,s1,t15)
-   + qout_sr_rt(('ng101','ng102'),s1,t15) - gsin_rt(gs1,s1,t15)
-   + gsout_rt(gs1,s1,t15) <= 2836.3035512
- gas_balance(ng102,s1,t16)_geq: gshed(ng102,s1,t16)
+   + gsout_rt(gs1,s1,t15) = 2836.3035512
+ gas_balance(ng102,s1,t16): gshed(ng102,s1,t16)
    + qout_sr_rt(('ng101','ng102'),s1,t16) - gsin_rt(gs1,s1,t16)
-   + gsout_rt(gs1,s1,t16) >= 2874.97659848
- gas_balance(ng102,s1,t16)_leq: gshed(ng102,s1,t16)
-   + qout_sr_rt(('ng101','ng102'),s1,t16) - gsin_rt(gs1,s1,t16)
-   + gsout_rt(gs1,s1,t16) <= 2874.97659848
- gas_balance(ng102,s1,t17)_geq: gshed(ng102,s1,t17)
+   + gsout_rt(gs1,s1,t16) = 2874.97659848
+ gas_balance(ng102,s1,t17): gshed(ng102,s1,t17)
    + qout_sr_rt(('ng101','ng102'),s1,t17) - gsin_rt(gs1,s1,t17)
-   + gsout_rt(gs1,s1,t17) >= 3013.57771736
- gas_balance(ng102,s1,t17)_leq: gshed(ng102,s1,t17)
-   + qout_sr_rt(('ng101','ng102'),s1,t17) - gsin_rt(gs1,s1,t17)
-   + gsout_rt(gs1,s1,t17) <= 3013.57771736
- gas_balance(ng102,s1,t18)_geq: gshed(ng102,s1,t18)
+   + gsout_rt(gs1,s1,t17) = 3013.57771736
+ gas_balance(ng102,s1,t18): gshed(ng102,s1,t18)
    + qout_sr_rt(('ng101','ng102'),s1,t18) - gsin_rt(gs1,s1,t18)
-   + gsout_rt(gs1,s1,t18) >= 3012.790068
- gas_balance(ng102,s1,t18)_leq: gshed(ng102,s1,t18)
-   + qout_sr_rt(('ng101','ng102'),s1,t18) - gsin_rt(gs1,s1,t18)
-   + gsout_rt(gs1,s1,t18) <= 3012.790068
- gas_balance(ng102,s1,t19)_geq: gshed(ng102,s1,t19)
+   + gsout_rt(gs1,s1,t18) = 3012.790068
+ gas_balance(ng102,s1,t19): gshed(ng102,s1,t19)
    + qout_sr_rt(('ng101','ng102'),s1,t19) - gsin_rt(gs1,s1,t19)
-   + gsout_rt(gs1,s1,t19) >= 3013.78789584
- gas_balance(ng102,s1,t19)_leq: gshed(ng102,s1,t19)
-   + qout_sr_rt(('ng101','ng102'),s1,t19) - gsin_rt(gs1,s1,t19)
-   + gsout_rt(gs1,s1,t19) <= 3013.78789584
- gas_balance(ng102,s1,t20)_geq: gshed(ng102,s1,t20)
+   + gsout_rt(gs1,s1,t19) = 3013.78789584
+ gas_balance(ng102,s1,t20): gshed(ng102,s1,t20)
    + qout_sr_rt(('ng101','ng102'),s1,t20) - gsin_rt(gs1,s1,t20)
-   + gsout_rt(gs1,s1,t20) >= 2927.88135096
- gas_balance(ng102,s1,t20)_leq: gshed(ng102,s1,t20)
-   + qout_sr_rt(('ng101','ng102'),s1,t20) - gsin_rt(gs1,s1,t20)
-   + gsout_rt(gs1,s1,t20) <= 2927.88135096
- gas_balance(ng102,s1,t21)_geq: gshed(ng102,s1,t21)
+   + gsout_rt(gs1,s1,t20) = 2927.88135096
+ gas_balance(ng102,s1,t21): gshed(ng102,s1,t21)
    + qout_sr_rt(('ng101','ng102'),s1,t21) - gsin_rt(gs1,s1,t21)
-   + gsout_rt(gs1,s1,t21) >= 2801.55581912
- gas_balance(ng102,s1,t21)_leq: gshed(ng102,s1,t21)
-   + qout_sr_rt(('ng101','ng102'),s1,t21) - gsin_rt(gs1,s1,t21)
-   + gsout_rt(gs1,s1,t21) <= 2801.55581912
- gas_balance(ng102,s1,t22)_geq: gshed(ng102,s1,t22)
+   + gsout_rt(gs1,s1,t21) = 2801.55581912
+ gas_balance(ng102,s1,t22): gshed(ng102,s1,t22)
    + qout_sr_rt(('ng101','ng102'),s1,t22) - gsin_rt(gs1,s1,t22)
-   + gsout_rt(gs1,s1,t22) >= 2585.76110552
- gas_balance(ng102,s1,t22)_leq: gshed(ng102,s1,t22)
-   + qout_sr_rt(('ng101','ng102'),s1,t22) - gsin_rt(gs1,s1,t22)
-   + gsout_rt(gs1,s1,t22) <= 2585.76110552
- gas_balance(ng102,s1,t23)_geq: gshed(ng102,s1,t23)
+   + gsout_rt(gs1,s1,t22) = 2585.76110552
+ gas_balance(ng102,s1,t23): gshed(ng102,s1,t23)
    + qout_sr_rt(('ng101','ng102'),s1,t23) - gsin_rt(gs1,s1,t23)
-   + gsout_rt(gs1,s1,t23) >= 2328.93225704
- gas_balance(ng102,s1,t23)_leq: gshed(ng102,s1,t23)
-   + qout_sr_rt(('ng101','ng102'),s1,t23) - gsin_rt(gs1,s1,t23)
-   + gsout_rt(gs1,s1,t23) <= 2328.93225704
- gas_balance(ng102,s1,t24)_geq: gshed(ng102,s1,t24)
+   + gsout_rt(gs1,s1,t23) = 2328.93225704
+ gas_balance(ng102,s1,t24): gshed(ng102,s1,t24)
    + qout_sr_rt(('ng101','ng102'),s1,t24) - gsin_rt(gs1,s1,t24)
-   + gsout_rt(gs1,s1,t24) >= 2379.58522848
- gas_balance(ng102,s1,t24)_leq: gshed(ng102,s1,t24)
-   + qout_sr_rt(('ng101','ng102'),s1,t24) - gsin_rt(gs1,s1,t24)
-   + gsout_rt(gs1,s1,t24) <= 2379.58522848
- gas_balance(ng101,s2,t1)_geq: gshed(ng101,s2,t1)
+   + gsout_rt(gs1,s1,t24) = 2379.58522848
+ gas_balance(ng101,s2,t1): gshed(ng101,s2,t1)
    - qin_sr_rt(('ng101','ng102'),s2,t1) + gprodUp(gw1,s2,t1)
-   - gprodDn(gw1,s2,t1) >= -6142.913841710055
- gas_balance(ng101,s2,t1)_leq: gshed(ng101,s2,t1)
-   - qin_sr_rt(('ng101','ng102'),s2,t1) + gprodUp(gw1,s2,t1)
-   - gprodDn(gw1,s2,t1) <= -6142.913841710055
- gas_balance(ng101,s2,t2)_geq: gshed(ng101,s2,t2)
+   - gprodDn(gw1,s2,t1) = -6142.913841710055
+ gas_balance(ng101,s2,t2): gshed(ng101,s2,t2)
    - qin_sr_rt(('ng101','ng102'),s2,t2) + gprodUp(gw1,s2,t2)
-   - gprodDn(gw1,s2,t2) >= -3643.073586529465
- gas_balance(ng101,s2,t2)_leq: gshed(ng101,s2,t2)
-   - qin_sr_rt(('ng101','ng102'),s2,t2) + gprodUp(gw1,s2,t2)
-   - gprodDn(gw1,s2,t2) <= -3643.073586529465
- gas_balance(ng101,s2,t3)_geq: gshed(ng101,s2,t3)
+   - gprodDn(gw1,s2,t2) = -3643.073586529465
+ gas_balance(ng101,s2,t3): gshed(ng101,s2,t3)
    - qin_sr_rt(('ng101','ng102'),s2,t3) + gprodUp(gw1,s2,t3)
-   - gprodDn(gw1,s2,t3) >= -2646.558067906661
- gas_balance(ng101,s2,t3)_leq: gshed(ng101,s2,t3)
-   - qin_sr_rt(('ng101','ng102'),s2,t3) + gprodUp(gw1,s2,t3)
-   - gprodDn(gw1,s2,t3) <= -2646.558067906661
- gas_balance(ng101,s2,t4)_geq: gshed(ng101,s2,t4)
+   - gprodDn(gw1,s2,t3) = -2646.558067906661
+ gas_balance(ng101,s2,t4): gshed(ng101,s2,t4)
    - qin_sr_rt(('ng101','ng102'),s2,t4) + gprodUp(gw1,s2,t4)
-   - gprodDn(gw1,s2,t4) >= -2372.864974219922
- gas_balance(ng101,s2,t4)_leq: gshed(ng101,s2,t4)
-   - qin_sr_rt(('ng101','ng102'),s2,t4) + gprodUp(gw1,s2,t4)
-   - gprodDn(gw1,s2,t4) <= -2372.864974219922
- gas_balance(ng101,s2,t5)_geq: gshed(ng101,s2,t5)
+   - gprodDn(gw1,s2,t4) = -2372.864974219922
+ gas_balance(ng101,s2,t5): gshed(ng101,s2,t5)
    - qin_sr_rt(('ng101','ng102'),s2,t5) + gprodUp(gw1,s2,t5)
-   - gprodDn(gw1,s2,t5) >= -2335.138751940844
- gas_balance(ng101,s2,t5)_leq: gshed(ng101,s2,t5)
-   - qin_sr_rt(('ng101','ng102'),s2,t5) + gprodUp(gw1,s2,t5)
-   - gprodDn(gw1,s2,t5) <= -2335.138751940844
- gas_balance(ng101,s2,t6)_geq: gshed(ng101,s2,t6)
+   - gprodDn(gw1,s2,t5) = -2335.138751940844
+ gas_balance(ng101,s2,t6): gshed(ng101,s2,t6)
    - qin_sr_rt(('ng101','ng102'),s2,t6) + gprodUp(gw1,s2,t6)
-   - gprodDn(gw1,s2,t6) >= -2356.355078951455
- gas_balance(ng101,s2,t6)_leq: gshed(ng101,s2,t6)
-   - qin_sr_rt(('ng101','ng102'),s2,t6) + gprodUp(gw1,s2,t6)
-   - gprodDn(gw1,s2,t6) <= -2356.355078951455
- gas_balance(ng101,s2,t7)_geq: gshed(ng101,s2,t7)
+   - gprodDn(gw1,s2,t6) = -2356.355078951455
+ gas_balance(ng101,s2,t7): gshed(ng101,s2,t7)
    - qin_sr_rt(('ng101','ng102'),s2,t7) + gprodUp(gw1,s2,t7)
-   - gprodDn(gw1,s2,t7) >= -2534.208063386133
- gas_balance(ng101,s2,t7)_leq: gshed(ng101,s2,t7)
-   - qin_sr_rt(('ng101','ng102'),s2,t7) + gprodUp(gw1,s2,t7)
-   - gprodDn(gw1,s2,t7) <= -2534.208063386133
- gas_balance(ng101,s2,t8)_geq: gshed(ng101,s2,t8)
+   - gprodDn(gw1,s2,t7) = -2534.208063386133
+ gas_balance(ng101,s2,t8): gshed(ng101,s2,t8)
    - qin_sr_rt(('ng101','ng102'),s2,t8) + gprodUp(gw1,s2,t8)
-   - gprodDn(gw1,s2,t8) >= -2670.734752392153
- gas_balance(ng101,s2,t8)_leq: gshed(ng101,s2,t8)
-   - qin_sr_rt(('ng101','ng102'),s2,t8) + gprodUp(gw1,s2,t8)
-   - gprodDn(gw1,s2,t8) <= -2670.734752392153
- gas_balance(ng101,s2,t9)_geq: gshed(ng101,s2,t9)
+   - gprodDn(gw1,s2,t8) = -2670.734752392153
+ gas_balance(ng101,s2,t9): gshed(ng101,s2,t9)
    - qin_sr_rt(('ng101','ng102'),s2,t9) + gprodUp(gw1,s2,t9)
-   - gprodDn(gw1,s2,t9) >= -2820.971016143471
- gas_balance(ng101,s2,t9)_leq: gshed(ng101,s2,t9)
-   - qin_sr_rt(('ng101','ng102'),s2,t9) + gprodUp(gw1,s2,t9)
-   - gprodDn(gw1,s2,t9) <= -2820.971016143471
- gas_balance(ng101,s2,t10)_geq: gshed(ng101,s2,t10)
+   - gprodDn(gw1,s2,t9) = -2820.971016143471
+ gas_balance(ng101,s2,t10): gshed(ng101,s2,t10)
    - qin_sr_rt(('ng101','ng102'),s2,t10) + gprodUp(gw1,s2,t10)
-   - gprodDn(gw1,s2,t10) >= -2936.263502599119
- gas_balance(ng101,s2,t10)_leq: gshed(ng101,s2,t10)
-   - qin_sr_rt(('ng101','ng102'),s2,t10) + gprodUp(gw1,s2,t10)
-   - gprodDn(gw1,s2,t10) <= -2936.263502599119
- gas_balance(ng101,s2,t11)_geq: gshed(ng101,s2,t11)
+   - gprodDn(gw1,s2,t10) = -2936.263502599119
+ gas_balance(ng101,s2,t11): gshed(ng101,s2,t11)
    - qin_sr_rt(('ng101','ng102'),s2,t11) + gprodUp(gw1,s2,t11)
-   - gprodDn(gw1,s2,t11) >= -2985.445877902895
- gas_balance(ng101,s2,t11)_leq: gshed(ng101,s2,t11)
-   - qin_sr_rt(('ng101','ng102'),s2,t11) + gprodUp(gw1,s2,t11)
-   - gprodDn(gw1,s2,t11) <= -2985.445877902895
- gas_balance(ng101,s2,t12)_geq: gshed(ng101,s2,t12)
+   - gprodDn(gw1,s2,t11) = -2985.445877902895
+ gas_balance(ng101,s2,t12): gshed(ng101,s2,t12)
    - qin_sr_rt(('ng101','ng102'),s2,t12) + gprodUp(gw1,s2,t12)
-   - gprodDn(gw1,s2,t12) >= -2979.182861857632
- gas_balance(ng101,s2,t12)_leq: gshed(ng101,s2,t12)
-   - qin_sr_rt(('ng101','ng102'),s2,t12) + gprodUp(gw1,s2,t12)
-   - gprodDn(gw1,s2,t12) <= -2979.182861857632
- gas_balance(ng101,s2,t13)_geq: gshed(ng101,s2,t13)
+   - gprodDn(gw1,s2,t12) = -2979.182861857632
+ gas_balance(ng101,s2,t13): gshed(ng101,s2,t13)
    - qin_sr_rt(('ng101','ng102'),s2,t13) + gprodUp(gw1,s2,t13)
-   - gprodDn(gw1,s2,t13) >= -2957.277857096926
- gas_balance(ng101,s2,t13)_leq: gshed(ng101,s2,t13)
-   - qin_sr_rt(('ng101','ng102'),s2,t13) + gprodUp(gw1,s2,t13)
-   - gprodDn(gw1,s2,t13) <= -2957.277857096926
- gas_balance(ng101,s2,t14)_geq: gshed(ng101,s2,t14)
+   - gprodDn(gw1,s2,t13) = -2957.277857096926
+ gas_balance(ng101,s2,t14): gshed(ng101,s2,t14)
    - qin_sr_rt(('ng101','ng102'),s2,t14) + gprodUp(gw1,s2,t14)
-   - gprodDn(gw1,s2,t14) >= -2940.833215747743
- gas_balance(ng101,s2,t14)_leq: gshed(ng101,s2,t14)
-   - qin_sr_rt(('ng101','ng102'),s2,t14) + gprodUp(gw1,s2,t14)
-   - gprodDn(gw1,s2,t14) <= -2940.833215747743
- gas_balance(ng101,s2,t15)_geq: gshed(ng101,s2,t15)
+   - gprodDn(gw1,s2,t14) = -2940.833215747743
+ gas_balance(ng101,s2,t15): gshed(ng101,s2,t15)
    - qin_sr_rt(('ng101','ng102'),s2,t15) + gprodUp(gw1,s2,t15)
-   - gprodDn(gw1,s2,t15) >= -2907.645729316322
- gas_balance(ng101,s2,t15)_leq: gshed(ng101,s2,t15)
-   - qin_sr_rt(('ng101','ng102'),s2,t15) + gprodUp(gw1,s2,t15)
-   - gprodDn(gw1,s2,t15) <= -2907.645729316322
- gas_balance(ng101,s2,t16)_geq: gshed(ng101,s2,t16)
+   - gprodDn(gw1,s2,t15) = -2907.645729316322
+ gas_balance(ng101,s2,t16): gshed(ng101,s2,t16)
    - qin_sr_rt(('ng101','ng102'),s2,t16) + gprodUp(gw1,s2,t16)
-   - gprodDn(gw1,s2,t16) >= -2895.037625086115
- gas_balance(ng101,s2,t16)_leq: gshed(ng101,s2,t16)
-   - qin_sr_rt(('ng101','ng102'),s2,t16) + gprodUp(gw1,s2,t16)
-   - gprodDn(gw1,s2,t16) <= -2895.037625086115
- gas_balance(ng101,s2,t17)_geq: gshed(ng101,s2,t17)
+   - gprodDn(gw1,s2,t16) = -2895.037625086115
+ gas_balance(ng101,s2,t17): gshed(ng101,s2,t17)
    - qin_sr_rt(('ng101','ng102'),s2,t17) + gprodUp(gw1,s2,t17)
-   - gprodDn(gw1,s2,t17) >= -2955.741912514682
- gas_balance(ng101,s2,t17)_leq: gshed(ng101,s2,t17)
-   - qin_sr_rt(('ng101','ng102'),s2,t17) + gprodUp(gw1,s2,t17)
-   - gprodDn(gw1,s2,t17) <= -2955.741912514682
- gas_balance(ng101,s2,t18)_geq: gshed(ng101,s2,t18)
+   - gprodDn(gw1,s2,t17) = -2955.741912514682
+ gas_balance(ng101,s2,t18): gshed(ng101,s2,t18)
    - qin_sr_rt(('ng101','ng102'),s2,t18) + gprodUp(gw1,s2,t18)
-   - gprodDn(gw1,s2,t18) >= -3013.305512677407
- gas_balance(ng101,s2,t18)_leq: gshed(ng101,s2,t18)
-   - qin_sr_rt(('ng101','ng102'),s2,t18) + gprodUp(gw1,s2,t18)
-   - gprodDn(gw1,s2,t18) <= -3013.305512677407
- gas_balance(ng101,s2,t19)_geq: gshed(ng101,s2,t19)
+   - gprodDn(gw1,s2,t18) = -3013.305512677407
+ gas_balance(ng101,s2,t19): gshed(ng101,s2,t19)
    - qin_sr_rt(('ng101','ng102'),s2,t19) + gprodUp(gw1,s2,t19)
-   - gprodDn(gw1,s2,t19) >= -3029.846045579687
- gas_balance(ng101,s2,t19)_leq: gshed(ng101,s2,t19)
-   - qin_sr_rt(('ng101','ng102'),s2,t19) + gprodUp(gw1,s2,t19)
-   - gprodDn(gw1,s2,t19) <= -3029.846045579687
- gas_balance(ng101,s2,t20)_geq: gshed(ng101,s2,t20)
+   - gprodDn(gw1,s2,t19) = -3029.846045579687
+ gas_balance(ng101,s2,t20): gshed(ng101,s2,t20)
    - qin_sr_rt(('ng101','ng102'),s2,t20) + gprodUp(gw1,s2,t20)
-   - gprodDn(gw1,s2,t20) >= -3000.057941761911
- gas_balance(ng101,s2,t20)_leq: gshed(ng101,s2,t20)
-   - qin_sr_rt(('ng101','ng102'),s2,t20) + gprodUp(gw1,s2,t20)
-   - gprodDn(gw1,s2,t20) <= -3000.057941761911
- gas_balance(ng101,s2,t21)_geq: gshed(ng101,s2,t21)
+   - gprodDn(gw1,s2,t20) = -3000.057941761911
+ gas_balance(ng101,s2,t21): gshed(ng101,s2,t21)
    - qin_sr_rt(('ng101','ng102'),s2,t21) + gprodUp(gw1,s2,t21)
-   - gprodDn(gw1,s2,t21) >= -2913.630741553817
- gas_balance(ng101,s2,t21)_leq: gshed(ng101,s2,t21)
-   - qin_sr_rt(('ng101','ng102'),s2,t21) + gprodUp(gw1,s2,t21)
-   - gprodDn(gw1,s2,t21) <= -2913.630741553817
- gas_balance(ng101,s2,t22)_geq: gshed(ng101,s2,t22)
+   - gprodDn(gw1,s2,t21) = -2913.630741553817
+ gas_balance(ng101,s2,t22): gshed(ng101,s2,t22)
    - qin_sr_rt(('ng101','ng102'),s2,t22) + gprodUp(gw1,s2,t22)
-   - gprodDn(gw1,s2,t22) >= -2207.963031125539
- gas_balance(ng101,s2,t22)_leq: gshed(ng101,s2,t22)
-   - qin_sr_rt(('ng101','ng102'),s2,t22) + gprodUp(gw1,s2,t22)
-   - gprodDn(gw1,s2,t22) <= -2207.963031125539
- gas_balance(ng101,s2,t23)_geq: gshed(ng101,s2,t23)
+   - gprodDn(gw1,s2,t22) = -2207.963031125539
+ gas_balance(ng101,s2,t23): gshed(ng101,s2,t23)
    - qin_sr_rt(('ng101','ng102'),s2,t23) + gprodUp(gw1,s2,t23)
-   - gprodDn(gw1,s2,t23) >= 0
- gas_balance(ng101,s2,t23)_leq: gshed(ng101,s2,t23)
-   - qin_sr_rt(('ng101','ng102'),s2,t23) + gprodUp(gw1,s2,t23)
-   - gprodDn(gw1,s2,t23) <= 0
- gas_balance(ng101,s2,t24)_geq: gshed(ng101,s2,t24)
+   - gprodDn(gw1,s2,t23) = 0
+ gas_balance(ng101,s2,t24): gshed(ng101,s2,t24)
    - qin_sr_rt(('ng101','ng102'),s2,t24) + gprodUp(gw1,s2,t24)
-   - gprodDn(gw1,s2,t24) >= 0
- gas_balance(ng101,s2,t24)_leq: gshed(ng101,s2,t24)
-   - qin_sr_rt(('ng101','ng102'),s2,t24) + gprodUp(gw1,s2,t24)
-   - gprodDn(gw1,s2,t24) <= 0
- gas_balance(ng102,s2,t1)_geq: gshed(ng102,s2,t1)
+   - gprodDn(gw1,s2,t24) = 0
+ gas_balance(ng102,s2,t1): gshed(ng102,s2,t1)
    + qout_sr_rt(('ng101','ng102'),s2,t1) - gsin_rt(gs1,s2,t1)
-   + gsout_rt(gs1,s2,t1) >= 2422.55390392
- gas_balance(ng102,s2,t1)_leq: gshed(ng102,s2,t1)
-   + qout_sr_rt(('ng101','ng102'),s2,t1) - gsin_rt(gs1,s2,t1)
-   + gsout_rt(gs1,s2,t1) <= 2422.55390392
- gas_balance(ng102,s2,t2)_geq: gshed(ng102,s2,t2)
+   + gsout_rt(gs1,s2,t1) = 2422.55390392
+ gas_balance(ng102,s2,t2): gshed(ng102,s2,t2)
    + qout_sr_rt(('ng101','ng102'),s2,t2) - gsin_rt(gs1,s2,t2)
-   + gsout_rt(gs1,s2,t2) >= 2341.11895976
- gas_balance(ng102,s2,t2)_leq: gshed(ng102,s2,t2)
-   + qout_sr_rt(('ng101','ng102'),s2,t2) - gsin_rt(gs1,s2,t2)
-   + gsout_rt(gs1,s2,t2) <= 2341.11895976
- gas_balance(ng102,s2,t3)_geq: gshed(ng102,s2,t3)
+   + gsout_rt(gs1,s2,t2) = 2341.11895976
+ gas_balance(ng102,s2,t3): gshed(ng102,s2,t3)
    + qout_sr_rt(('ng101','ng102'),s2,t3) - gsin_rt(gs1,s2,t3)
-   + gsout_rt(gs1,s2,t3) >= 2257.20526248
- gas_balance(ng102,s2,t3)_leq: gshed(ng102,s2,t3)
-   + qout_sr_rt(('ng101','ng102'),s2,t3) - gsin_rt(gs1,s2,t3)
-   + gsout_rt(gs1,s2,t3) <= 2257.20526248
- gas_balance(ng102,s2,t4)_geq: gshed(ng102,s2,t4)
+   + gsout_rt(gs1,s2,t3) = 2257.20526248
+ gas_balance(ng102,s2,t4): gshed(ng102,s2,t4)
    + qout_sr_rt(('ng101','ng102'),s2,t4) - gsin_rt(gs1,s2,t4)
-   + gsout_rt(gs1,s2,t4) >= 2299.18227432
- gas_balance(ng102,s2,t4)_leq: gshed(ng102,s2,t4)
-   + qout_sr_rt(('ng101','ng102'),s2,t4) - gsin_rt(gs1,s2,t4)
-   + gsout_rt(gs1,s2,t4) <= 2299.18227432
- gas_balance(ng102,s2,t5)_geq: gshed(ng102,s2,t5)
+   + gsout_rt(gs1,s2,t4) = 2299.18227432
+ gas_balance(ng102,s2,t5): gshed(ng102,s2,t5)
    + qout_sr_rt(('ng101','ng102'),s2,t5) - gsin_rt(gs1,s2,t5)
-   + gsout_rt(gs1,s2,t5) >= 2334.34057704
- gas_balance(ng102,s2,t5)_leq: gshed(ng102,s2,t5)
-   + qout_sr_rt(('ng101','ng102'),s2,t5) - gsin_rt(gs1,s2,t5)
-   + gsout_rt(gs1,s2,t5) <= 2334.34057704
- gas_balance(ng102,s2,t6)_geq: gshed(ng102,s2,t6)
+   + gsout_rt(gs1,s2,t5) = 2334.34057704
+ gas_balance(ng102,s2,t6): gshed(ng102,s2,t6)
    + qout_sr_rt(('ng101','ng102'),s2,t6) - gsin_rt(gs1,s2,t6)
-   + gsout_rt(gs1,s2,t6) >= 2375.96135672
- gas_balance(ng102,s2,t6)_leq: gshed(ng102,s2,t6)
-   + qout_sr_rt(('ng101','ng102'),s2,t6) - gsin_rt(gs1,s2,t6)
-   + gsout_rt(gs1,s2,t6) <= 2375.96135672
- gas_balance(ng102,s2,t7)_geq: gshed(ng102,s2,t7)
+   + gsout_rt(gs1,s2,t6) = 2375.96135672
+ gas_balance(ng102,s2,t7): gshed(ng102,s2,t7)
    + qout_sr_rt(('ng101','ng102'),s2,t7) - gsin_rt(gs1,s2,t7)
-   + gsout_rt(gs1,s2,t7) >= 2698.62136664
- gas_balance(ng102,s2,t7)_leq: gshed(ng102,s2,t7)
-   + qout_sr_rt(('ng101','ng102'),s2,t7) - gsin_rt(gs1,s2,t7)
-   + gsout_rt(gs1,s2,t7) <= 2698.62136664
- gas_balance(ng102,s2,t8)_geq: gshed(ng102,s2,t8)
+   + gsout_rt(gs1,s2,t7) = 2698.62136664
+ gas_balance(ng102,s2,t8): gshed(ng102,s2,t8)
    + qout_sr_rt(('ng101','ng102'),s2,t8) - gsin_rt(gs1,s2,t8)
-   + gsout_rt(gs1,s2,t8) >= 2725.24979528
- gas_balance(ng102,s2,t8)_leq: gshed(ng102,s2,t8)
-   + qout_sr_rt(('ng101','ng102'),s2,t8) - gsin_rt(gs1,s2,t8)
-   + gsout_rt(gs1,s2,t8) <= 2725.24979528
- gas_balance(ng102,s2,t9)_geq: gshed(ng102,s2,t9)
+   + gsout_rt(gs1,s2,t8) = 2725.24979528
+ gas_balance(ng102,s2,t9): gshed(ng102,s2,t9)
    + qout_sr_rt(('ng101','ng102'),s2,t9) - gsin_rt(gs1,s2,t9)
-   + gsout_rt(gs1,s2,t9) >= 2957.7354816
- gas_balance(ng102,s2,t9)_leq: gshed(ng102,s2,t9)
-   + qout_sr_rt(('ng101','ng102'),s2,t9) - gsin_rt(gs1,s2,t9)
-   + gsout_rt(gs1,s2,t9) <= 2957.7354816
- gas_balance(ng102,s2,t10)_geq: gshed(ng102,s2,t10)
+   + gsout_rt(gs1,s2,t9) = 2957.7354816
+ gas_balance(ng102,s2,t10): gshed(ng102,s2,t10)
    + qout_sr_rt(('ng101','ng102'),s2,t10) - gsin_rt(gs1,s2,t10)
-   + gsout_rt(gs1,s2,t10) >= 3007.28750184
- gas_balance(ng102,s2,t10)_leq: gshed(ng102,s2,t10)
-   + qout_sr_rt(('ng101','ng102'),s2,t10) - gsin_rt(gs1,s2,t10)
-   + gsout_rt(gs1,s2,t10) <= 3007.28750184
- gas_balance(ng102,s2,t11)_geq: gshed(ng102,s2,t11)
+   + gsout_rt(gs1,s2,t10) = 3007.28750184
+ gas_balance(ng102,s2,t11): gshed(ng102,s2,t11)
    + qout_sr_rt(('ng101','ng102'),s2,t11) - gsin_rt(gs1,s2,t11)
-   + gsout_rt(gs1,s2,t11) >= 3006.14337312
- gas_balance(ng102,s2,t11)_leq: gshed(ng102,s2,t11)
-   + qout_sr_rt(('ng101','ng102'),s2,t11) - gsin_rt(gs1,s2,t11)
-   + gsout_rt(gs1,s2,t11) <= 3006.14337312
- gas_balance(ng102,s2,t12)_geq: gshed(ng102,s2,t12)
+   + gsout_rt(gs1,s2,t11) = 3006.14337312
+ gas_balance(ng102,s2,t12): gshed(ng102,s2,t12)
    + qout_sr_rt(('ng101','ng102'),s2,t12) - gsin_rt(gs1,s2,t12)
-   + gsout_rt(gs1,s2,t12) >= 2954.03198768
- gas_balance(ng102,s2,t12)_leq: gshed(ng102,s2,t12)
-   + qout_sr_rt(('ng101','ng102'),s2,t12) - gsin_rt(gs1,s2,t12)
-   + gsout_rt(gs1,s2,t12) <= 2954.03198768
- gas_balance(ng102,s2,t13)_geq: gshed(ng102,s2,t13)
+   + gsout_rt(gs1,s2,t12) = 2954.03198768
+ gas_balance(ng102,s2,t13): gshed(ng102,s2,t13)
    + qout_sr_rt(('ng101','ng102'),s2,t13) - gsin_rt(gs1,s2,t13)
-   + gsout_rt(gs1,s2,t13) >= 2943.15251872
- gas_balance(ng102,s2,t13)_leq: gshed(ng102,s2,t13)
-   + qout_sr_rt(('ng101','ng102'),s2,t13) - gsin_rt(gs1,s2,t13)
-   + gsout_rt(gs1,s2,t13) <= 2943.15251872
- gas_balance(ng102,s2,t14)_geq: gshed(ng102,s2,t14)
+   + gsout_rt(gs1,s2,t13) = 2943.15251872
+ gas_balance(ng102,s2,t14): gshed(ng102,s2,t14)
    + qout_sr_rt(('ng101','ng102'),s2,t14) - gsin_rt(gs1,s2,t14)
-   + gsout_rt(gs1,s2,t14) >= 2926.62853488
- gas_balance(ng102,s2,t14)_leq: gshed(ng102,s2,t14)
-   + qout_sr_rt(('ng101','ng102'),s2,t14) - gsin_rt(gs1,s2,t14)
-   + gsout_rt(gs1,s2,t14) <= 2926.62853488
- gas_balance(ng102,s2,t15)_geq: gshed(ng102,s2,t15)
+   + gsout_rt(gs1,s2,t14) = 2926.62853488
+ gas_balance(ng102,s2,t15): gshed(ng102,s2,t15)
    + qout_sr_rt(('ng101','ng102'),s2,t15) - gsin_rt(gs1,s2,t15)
-   + gsout_rt(gs1,s2,t15) >= 2868.1517756
- gas_balance(ng102,s2,t15)_leq: gshed(ng102,s2,t15)
-   + qout_sr_rt(('ng101','ng102'),s2,t15) - gsin_rt(gs1,s2,t15)
-   + gsout_rt(gs1,s2,t15) <= 2868.1517756
- gas_balance(ng102,s2,t16)_geq: gshed(ng102,s2,t16)
+   + gsout_rt(gs1,s2,t15) = 2868.1517756
+ gas_balance(ng102,s2,t16): gshed(ng102,s2,t16)
    + qout_sr_rt(('ng101','ng102'),s2,t16) - gsin_rt(gs1,s2,t16)
-   + gsout_rt(gs1,s2,t16) >= 2905.8461636
- gas_balance(ng102,s2,t16)_leq: gshed(ng102,s2,t16)
-   + qout_sr_rt(('ng101','ng102'),s2,t16) - gsin_rt(gs1,s2,t16)
-   + gsout_rt(gs1,s2,t16) <= 2905.8461636
- gas_balance(ng102,s2,t17)_geq: gshed(ng102,s2,t17)
+   + gsout_rt(gs1,s2,t16) = 2905.8461636
+ gas_balance(ng102,s2,t17): gshed(ng102,s2,t17)
    + qout_sr_rt(('ng101','ng102'),s2,t17) - gsin_rt(gs1,s2,t17)
-   + gsout_rt(gs1,s2,t17) >= 3039.46835048
- gas_balance(ng102,s2,t17)_leq: gshed(ng102,s2,t17)
-   + qout_sr_rt(('ng101','ng102'),s2,t17) - gsin_rt(gs1,s2,t17)
-   + gsout_rt(gs1,s2,t17) <= 3039.46835048
- gas_balance(ng102,s2,t18)_geq: gshed(ng102,s2,t18)
+   + gsout_rt(gs1,s2,t17) = 3039.46835048
+ gas_balance(ng102,s2,t18): gshed(ng102,s2,t18)
    + qout_sr_rt(('ng101','ng102'),s2,t18) - gsin_rt(gs1,s2,t18)
-   + gsout_rt(gs1,s2,t18) >= 3037.07651736
- gas_balance(ng102,s2,t18)_leq: gshed(ng102,s2,t18)
-   + qout_sr_rt(('ng101','ng102'),s2,t18) - gsin_rt(gs1,s2,t18)
-   + gsout_rt(gs1,s2,t18) <= 3037.07651736
- gas_balance(ng102,s2,t19)_geq: gshed(ng102,s2,t19)
+   + gsout_rt(gs1,s2,t18) = 3037.07651736
+ gas_balance(ng102,s2,t19): gshed(ng102,s2,t19)
    + qout_sr_rt(('ng101','ng102'),s2,t19) - gsin_rt(gs1,s2,t19)
-   + gsout_rt(gs1,s2,t19) >= 3036.89394792
- gas_balance(ng102,s2,t19)_leq: gshed(ng102,s2,t19)
-   + qout_sr_rt(('ng101','ng102'),s2,t19) - gsin_rt(gs1,s2,t19)
-   + gsout_rt(gs1,s2,t19) <= 3036.89394792
- gas_balance(ng102,s2,t20)_geq: gshed(ng102,s2,t20)
+   + gsout_rt(gs1,s2,t19) = 3036.89394792
+ gas_balance(ng102,s2,t20): gshed(ng102,s2,t20)
    + qout_sr_rt(('ng101','ng102'),s2,t20) - gsin_rt(gs1,s2,t20)
-   + gsout_rt(gs1,s2,t20) >= 2949.62215896
- gas_balance(ng102,s2,t20)_leq: gshed(ng102,s2,t20)
-   + qout_sr_rt(('ng101','ng102'),s2,t20) - gsin_rt(gs1,s2,t20)
-   + gsout_rt(gs1,s2,t20) <= 2949.62215896
- gas_balance(ng102,s2,t21)_geq: gshed(ng102,s2,t21)
+   + gsout_rt(gs1,s2,t20) = 2949.62215896
+ gas_balance(ng102,s2,t21): gshed(ng102,s2,t21)
    + qout_sr_rt(('ng101','ng102'),s2,t21) - gsin_rt(gs1,s2,t21)
-   + gsout_rt(gs1,s2,t21) >= 2820.95740136
- gas_balance(ng102,s2,t21)_leq: gshed(ng102,s2,t21)
-   + qout_sr_rt(('ng101','ng102'),s2,t21) - gsin_rt(gs1,s2,t21)
-   + gsout_rt(gs1,s2,t21) <= 2820.95740136
- gas_balance(ng102,s2,t22)_geq: gshed(ng102,s2,t22)
+   + gsout_rt(gs1,s2,t21) = 2820.95740136
+ gas_balance(ng102,s2,t22): gshed(ng102,s2,t22)
    + qout_sr_rt(('ng101','ng102'),s2,t22) - gsin_rt(gs1,s2,t22)
-   + gsout_rt(gs1,s2,t22) >= 2603.73841712
- gas_balance(ng102,s2,t22)_leq: gshed(ng102,s2,t22)
-   + qout_sr_rt(('ng101','ng102'),s2,t22) - gsin_rt(gs1,s2,t22)
-   + gsout_rt(gs1,s2,t22) <= 2603.73841712
- gas_balance(ng102,s2,t23)_geq: gshed(ng102,s2,t23)
+   + gsout_rt(gs1,s2,t22) = 2603.73841712
+ gas_balance(ng102,s2,t23): gshed(ng102,s2,t23)
    + qout_sr_rt(('ng101','ng102'),s2,t23) - gsin_rt(gs1,s2,t23)
-   + gsout_rt(gs1,s2,t23) >= 2344.4661284
- gas_balance(ng102,s2,t23)_leq: gshed(ng102,s2,t23)
-   + qout_sr_rt(('ng101','ng102'),s2,t23) - gsin_rt(gs1,s2,t23)
-   + gsout_rt(gs1,s2,t23) <= 2344.4661284
- gas_balance(ng102,s2,t24)_geq: gshed(ng102,s2,t24)
+   + gsout_rt(gs1,s2,t23) = 2344.4661284
+ gas_balance(ng102,s2,t24): gshed(ng102,s2,t24)
    + qout_sr_rt(('ng101','ng102'),s2,t24) - gsin_rt(gs1,s2,t24)
-   + gsout_rt(gs1,s2,t24) >= 2389.6162332
- gas_balance(ng102,s2,t24)_leq: gshed(ng102,s2,t24)
-   + qout_sr_rt(('ng101','ng102'),s2,t24) - gsin_rt(gs1,s2,t24)
-   + gsout_rt(gs1,s2,t24) <= 2389.6162332
+   + gsout_rt(gs1,s2,t24) = 2389.6162332
  SOS1_PresMax(ng101,s1,t1): pres_rt(ng101,s1,t1)
    + SOS1_PresMax(ng101,s1,t1) = 370
  SOS1_PresMin(ng101,s1,t1): - pres_rt(ng101,s1,t1)
@@ -24103,1308 +23157,6 @@ Subject To
    + SOS1_gprodUp_max(gw1,s2,t24) = 100000
  SOS1_gprodDn_max(gw1,s2,t24): gprodDn(gw1,s2,t24)
    + SOS1_gprodDn_max(gw1,s2,t24) = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t1)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t1)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t1)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t1)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t1)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t1)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t1)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t1)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t1)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t1)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t1)_geq: 75 pres_rt(ng101,s1,t1)
-   + 75 pres_rt(ng102,s1,t1) - lpack_rt(('ng101','ng102'),s1,t1)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t1)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t1)_leq: - 75 pres_rt(ng101,s1,t1)
-   - 75 pres_rt(ng102,s1,t1) + lpack_rt(('ng101','ng102'),s1,t1)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t1)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t1)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t1)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t1)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t1)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t1)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t1)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t1)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t1)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t1)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t1)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t1)_geq: 75 pres_rt(ng101,s2,t1)
-   + 75 pres_rt(ng102,s2,t1) - lpack_rt(('ng101','ng102'),s2,t1)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t1)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t1)_leq: - 75 pres_rt(ng101,s2,t1)
-   - 75 pres_rt(ng102,s2,t1) + lpack_rt(('ng101','ng102'),s2,t1)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t1)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t2)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t2)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t2)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t2)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t2)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t2)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t2)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t2)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t2)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t2)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t2)_geq: 75 pres_rt(ng101,s1,t2)
-   + 75 pres_rt(ng102,s1,t2) - lpack_rt(('ng101','ng102'),s1,t2)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t2)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t2)_leq: - 75 pres_rt(ng101,s1,t2)
-   - 75 pres_rt(ng102,s1,t2) + lpack_rt(('ng101','ng102'),s1,t2)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t2)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t2)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t2)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t2)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t2)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t2)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t2)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t2)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t2)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t2)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t2)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t2)_geq: 75 pres_rt(ng101,s2,t2)
-   + 75 pres_rt(ng102,s2,t2) - lpack_rt(('ng101','ng102'),s2,t2)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t2)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t2)_leq: - 75 pres_rt(ng101,s2,t2)
-   - 75 pres_rt(ng102,s2,t2) + lpack_rt(('ng101','ng102'),s2,t2)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t2)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t3)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t3)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t3)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t3)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t3)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t3)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t3)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t3)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t3)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t3)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t3)_geq: 75 pres_rt(ng101,s1,t3)
-   + 75 pres_rt(ng102,s1,t3) - lpack_rt(('ng101','ng102'),s1,t3)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t3)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t3)_leq: - 75 pres_rt(ng101,s1,t3)
-   - 75 pres_rt(ng102,s1,t3) + lpack_rt(('ng101','ng102'),s1,t3)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t3)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t3)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t3)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t3)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t3)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t3)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t3)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t3)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t3)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t3)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t3)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t3)_geq: 75 pres_rt(ng101,s2,t3)
-   + 75 pres_rt(ng102,s2,t3) - lpack_rt(('ng101','ng102'),s2,t3)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t3)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t3)_leq: - 75 pres_rt(ng101,s2,t3)
-   - 75 pres_rt(ng102,s2,t3) + lpack_rt(('ng101','ng102'),s2,t3)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t3)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t4)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t4)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t4)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t4)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t4)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t4)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t4)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t4)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t4)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t4)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t4)_geq: 75 pres_rt(ng101,s1,t4)
-   + 75 pres_rt(ng102,s1,t4) - lpack_rt(('ng101','ng102'),s1,t4)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t4)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t4)_leq: - 75 pres_rt(ng101,s1,t4)
-   - 75 pres_rt(ng102,s1,t4) + lpack_rt(('ng101','ng102'),s1,t4)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t4)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t4)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t4)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t4)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t4)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t4)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t4)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t4)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t4)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t4)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t4)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t4)_geq: 75 pres_rt(ng101,s2,t4)
-   + 75 pres_rt(ng102,s2,t4) - lpack_rt(('ng101','ng102'),s2,t4)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t4)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t4)_leq: - 75 pres_rt(ng101,s2,t4)
-   - 75 pres_rt(ng102,s2,t4) + lpack_rt(('ng101','ng102'),s2,t4)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t4)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t5)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t5)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t5)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t5)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t5)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t5)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t5)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t5)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t5)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t5)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t5)_geq: 75 pres_rt(ng101,s1,t5)
-   + 75 pres_rt(ng102,s1,t5) - lpack_rt(('ng101','ng102'),s1,t5)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t5)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t5)_leq: - 75 pres_rt(ng101,s1,t5)
-   - 75 pres_rt(ng102,s1,t5) + lpack_rt(('ng101','ng102'),s1,t5)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t5)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t5)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t5)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t5)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t5)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t5)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t5)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t5)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t5)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t5)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t5)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t5)_geq: 75 pres_rt(ng101,s2,t5)
-   + 75 pres_rt(ng102,s2,t5) - lpack_rt(('ng101','ng102'),s2,t5)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t5)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t5)_leq: - 75 pres_rt(ng101,s2,t5)
-   - 75 pres_rt(ng102,s2,t5) + lpack_rt(('ng101','ng102'),s2,t5)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t5)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t6)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t6)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t6)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t6)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t6)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t6)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t6)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t6)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t6)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t6)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t6)_geq: 75 pres_rt(ng101,s1,t6)
-   + 75 pres_rt(ng102,s1,t6) - lpack_rt(('ng101','ng102'),s1,t6)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t6)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t6)_leq: - 75 pres_rt(ng101,s1,t6)
-   - 75 pres_rt(ng102,s1,t6) + lpack_rt(('ng101','ng102'),s1,t6)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t6)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t6)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t6)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t6)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t6)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t6)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t6)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t6)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t6)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t6)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t6)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t6)_geq: 75 pres_rt(ng101,s2,t6)
-   + 75 pres_rt(ng102,s2,t6) - lpack_rt(('ng101','ng102'),s2,t6)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t6)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t6)_leq: - 75 pres_rt(ng101,s2,t6)
-   - 75 pres_rt(ng102,s2,t6) + lpack_rt(('ng101','ng102'),s2,t6)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t6)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t7)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t7)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t7)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t7)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t7)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t7)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t7)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t7)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t7)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t7)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t7)_geq: 75 pres_rt(ng101,s1,t7)
-   + 75 pres_rt(ng102,s1,t7) - lpack_rt(('ng101','ng102'),s1,t7)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t7)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t7)_leq: - 75 pres_rt(ng101,s1,t7)
-   - 75 pres_rt(ng102,s1,t7) + lpack_rt(('ng101','ng102'),s1,t7)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t7)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t7)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t7)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t7)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t7)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t7)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t7)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t7)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t7)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t7)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t7)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t7)_geq: 75 pres_rt(ng101,s2,t7)
-   + 75 pres_rt(ng102,s2,t7) - lpack_rt(('ng101','ng102'),s2,t7)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t7)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t7)_leq: - 75 pres_rt(ng101,s2,t7)
-   - 75 pres_rt(ng102,s2,t7) + lpack_rt(('ng101','ng102'),s2,t7)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t7)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t8)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t8)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t8)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t8)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t8)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t8)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t8)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t8)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t8)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t8)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t8)_geq: 75 pres_rt(ng101,s1,t8)
-   + 75 pres_rt(ng102,s1,t8) - lpack_rt(('ng101','ng102'),s1,t8)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t8)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t8)_leq: - 75 pres_rt(ng101,s1,t8)
-   - 75 pres_rt(ng102,s1,t8) + lpack_rt(('ng101','ng102'),s1,t8)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t8)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t8)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t8)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t8)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t8)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t8)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t8)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t8)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t8)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t8)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t8)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t8)_geq: 75 pres_rt(ng101,s2,t8)
-   + 75 pres_rt(ng102,s2,t8) - lpack_rt(('ng101','ng102'),s2,t8)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t8)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t8)_leq: - 75 pres_rt(ng101,s2,t8)
-   - 75 pres_rt(ng102,s2,t8) + lpack_rt(('ng101','ng102'),s2,t8)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t8)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t9)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t9)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t9)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t9)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t9)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t9)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t9)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t9)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t9)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t9)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t9)_geq: 75 pres_rt(ng101,s1,t9)
-   + 75 pres_rt(ng102,s1,t9) - lpack_rt(('ng101','ng102'),s1,t9)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t9)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t9)_leq: - 75 pres_rt(ng101,s1,t9)
-   - 75 pres_rt(ng102,s1,t9) + lpack_rt(('ng101','ng102'),s1,t9)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t9)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t9)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t9)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t9)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t9)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t9)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t9)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t9)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t9)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t9)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t9)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t9)_geq: 75 pres_rt(ng101,s2,t9)
-   + 75 pres_rt(ng102,s2,t9) - lpack_rt(('ng101','ng102'),s2,t9)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t9)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t9)_leq: - 75 pres_rt(ng101,s2,t9)
-   - 75 pres_rt(ng102,s2,t9) + lpack_rt(('ng101','ng102'),s2,t9)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t9)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t10)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t10)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t10)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t10)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t10)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t10)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t10)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t10)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t10)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t10)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t10)_geq: 75 pres_rt(ng101,s1,t10)
-   + 75 pres_rt(ng102,s1,t10) - lpack_rt(('ng101','ng102'),s1,t10)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t10)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t10)_leq:
-   - 75 pres_rt(ng101,s1,t10) - 75 pres_rt(ng102,s1,t10)
-   + lpack_rt(('ng101','ng102'),s1,t10)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t10)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t10)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t10)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t10)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t10)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t10)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t10)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t10)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t10)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t10)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t10)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t10)_geq: 75 pres_rt(ng101,s2,t10)
-   + 75 pres_rt(ng102,s2,t10) - lpack_rt(('ng101','ng102'),s2,t10)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t10)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t10)_leq:
-   - 75 pres_rt(ng101,s2,t10) - 75 pres_rt(ng102,s2,t10)
-   + lpack_rt(('ng101','ng102'),s2,t10)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t10)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t11)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t11)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t11)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t11)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t11)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t11)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t11)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t11)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t11)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t11)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t11)_geq: 75 pres_rt(ng101,s1,t11)
-   + 75 pres_rt(ng102,s1,t11) - lpack_rt(('ng101','ng102'),s1,t11)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t11)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t11)_leq:
-   - 75 pres_rt(ng101,s1,t11) - 75 pres_rt(ng102,s1,t11)
-   + lpack_rt(('ng101','ng102'),s1,t11)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t11)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t11)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t11)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t11)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t11)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t11)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t11)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t11)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t11)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t11)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t11)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t11)_geq: 75 pres_rt(ng101,s2,t11)
-   + 75 pres_rt(ng102,s2,t11) - lpack_rt(('ng101','ng102'),s2,t11)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t11)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t11)_leq:
-   - 75 pres_rt(ng101,s2,t11) - 75 pres_rt(ng102,s2,t11)
-   + lpack_rt(('ng101','ng102'),s2,t11)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t11)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t12)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t12)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t12)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t12)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t12)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t12)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t12)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t12)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t12)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t12)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t12)_geq: 75 pres_rt(ng101,s1,t12)
-   + 75 pres_rt(ng102,s1,t12) - lpack_rt(('ng101','ng102'),s1,t12)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t12)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t12)_leq:
-   - 75 pres_rt(ng101,s1,t12) - 75 pres_rt(ng102,s1,t12)
-   + lpack_rt(('ng101','ng102'),s1,t12)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t12)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t12)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t12)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t12)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t12)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t12)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t12)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t12)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t12)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t12)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t12)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t12)_geq: 75 pres_rt(ng101,s2,t12)
-   + 75 pres_rt(ng102,s2,t12) - lpack_rt(('ng101','ng102'),s2,t12)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t12)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t12)_leq:
-   - 75 pres_rt(ng101,s2,t12) - 75 pres_rt(ng102,s2,t12)
-   + lpack_rt(('ng101','ng102'),s2,t12)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t12)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t13)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t13)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t13)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t13)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t13)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t13)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t13)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t13)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t13)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t13)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t13)_geq: 75 pres_rt(ng101,s1,t13)
-   + 75 pres_rt(ng102,s1,t13) - lpack_rt(('ng101','ng102'),s1,t13)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t13)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t13)_leq:
-   - 75 pres_rt(ng101,s1,t13) - 75 pres_rt(ng102,s1,t13)
-   + lpack_rt(('ng101','ng102'),s1,t13)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t13)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t13)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t13)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t13)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t13)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t13)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t13)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t13)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t13)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t13)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t13)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t13)_geq: 75 pres_rt(ng101,s2,t13)
-   + 75 pres_rt(ng102,s2,t13) - lpack_rt(('ng101','ng102'),s2,t13)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t13)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t13)_leq:
-   - 75 pres_rt(ng101,s2,t13) - 75 pres_rt(ng102,s2,t13)
-   + lpack_rt(('ng101','ng102'),s2,t13)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t13)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t14)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t14)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t14)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t14)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t14)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t14)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t14)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t14)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t14)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t14)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t14)_geq: 75 pres_rt(ng101,s1,t14)
-   + 75 pres_rt(ng102,s1,t14) - lpack_rt(('ng101','ng102'),s1,t14)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t14)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t14)_leq:
-   - 75 pres_rt(ng101,s1,t14) - 75 pres_rt(ng102,s1,t14)
-   + lpack_rt(('ng101','ng102'),s1,t14)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t14)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t14)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t14)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t14)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t14)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t14)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t14)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t14)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t14)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t14)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t14)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t14)_geq: 75 pres_rt(ng101,s2,t14)
-   + 75 pres_rt(ng102,s2,t14) - lpack_rt(('ng101','ng102'),s2,t14)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t14)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t14)_leq:
-   - 75 pres_rt(ng101,s2,t14) - 75 pres_rt(ng102,s2,t14)
-   + lpack_rt(('ng101','ng102'),s2,t14)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t14)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t15)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t15)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t15)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t15)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t15)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t15)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t15)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t15)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t15)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t15)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t15)_geq: 75 pres_rt(ng101,s1,t15)
-   + 75 pres_rt(ng102,s1,t15) - lpack_rt(('ng101','ng102'),s1,t15)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t15)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t15)_leq:
-   - 75 pres_rt(ng101,s1,t15) - 75 pres_rt(ng102,s1,t15)
-   + lpack_rt(('ng101','ng102'),s1,t15)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t15)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t15)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t15)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t15)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t15)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t15)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t15)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t15)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t15)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t15)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t15)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t15)_geq: 75 pres_rt(ng101,s2,t15)
-   + 75 pres_rt(ng102,s2,t15) - lpack_rt(('ng101','ng102'),s2,t15)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t15)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t15)_leq:
-   - 75 pres_rt(ng101,s2,t15) - 75 pres_rt(ng102,s2,t15)
-   + lpack_rt(('ng101','ng102'),s2,t15)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t15)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t16)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t16)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t16)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t16)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t16)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t16)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t16)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t16)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t16)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t16)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t16)_geq: 75 pres_rt(ng101,s1,t16)
-   + 75 pres_rt(ng102,s1,t16) - lpack_rt(('ng101','ng102'),s1,t16)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t16)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t16)_leq:
-   - 75 pres_rt(ng101,s1,t16) - 75 pres_rt(ng102,s1,t16)
-   + lpack_rt(('ng101','ng102'),s1,t16)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t16)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t16)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t16)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t16)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t16)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t16)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t16)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t16)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t16)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t16)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t16)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t16)_geq: 75 pres_rt(ng101,s2,t16)
-   + 75 pres_rt(ng102,s2,t16) - lpack_rt(('ng101','ng102'),s2,t16)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t16)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t16)_leq:
-   - 75 pres_rt(ng101,s2,t16) - 75 pres_rt(ng102,s2,t16)
-   + lpack_rt(('ng101','ng102'),s2,t16)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t16)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t17)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t17)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t17)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t17)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t17)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t17)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t17)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t17)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t17)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t17)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t17)_geq: 75 pres_rt(ng101,s1,t17)
-   + 75 pres_rt(ng102,s1,t17) - lpack_rt(('ng101','ng102'),s1,t17)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t17)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t17)_leq:
-   - 75 pres_rt(ng101,s1,t17) - 75 pres_rt(ng102,s1,t17)
-   + lpack_rt(('ng101','ng102'),s1,t17)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t17)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t17)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t17)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t17)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t17)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t17)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t17)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t17)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t17)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t17)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t17)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t17)_geq: 75 pres_rt(ng101,s2,t17)
-   + 75 pres_rt(ng102,s2,t17) - lpack_rt(('ng101','ng102'),s2,t17)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t17)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t17)_leq:
-   - 75 pres_rt(ng101,s2,t17) - 75 pres_rt(ng102,s2,t17)
-   + lpack_rt(('ng101','ng102'),s2,t17)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t17)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t18)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t18)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t18)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t18)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t18)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t18)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t18)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t18)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t18)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t18)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t18)_geq: 75 pres_rt(ng101,s1,t18)
-   + 75 pres_rt(ng102,s1,t18) - lpack_rt(('ng101','ng102'),s1,t18)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t18)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t18)_leq:
-   - 75 pres_rt(ng101,s1,t18) - 75 pres_rt(ng102,s1,t18)
-   + lpack_rt(('ng101','ng102'),s1,t18)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t18)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t18)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t18)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t18)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t18)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t18)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t18)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t18)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t18)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t18)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t18)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t18)_geq: 75 pres_rt(ng101,s2,t18)
-   + 75 pres_rt(ng102,s2,t18) - lpack_rt(('ng101','ng102'),s2,t18)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t18)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t18)_leq:
-   - 75 pres_rt(ng101,s2,t18) - 75 pres_rt(ng102,s2,t18)
-   + lpack_rt(('ng101','ng102'),s2,t18)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t18)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t19)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t19)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t19)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t19)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t19)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t19)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t19)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t19)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t19)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t19)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t19)_geq: 75 pres_rt(ng101,s1,t19)
-   + 75 pres_rt(ng102,s1,t19) - lpack_rt(('ng101','ng102'),s1,t19)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t19)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t19)_leq:
-   - 75 pres_rt(ng101,s1,t19) - 75 pres_rt(ng102,s1,t19)
-   + lpack_rt(('ng101','ng102'),s1,t19)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t19)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t19)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t19)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t19)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t19)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t19)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t19)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t19)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t19)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t19)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t19)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t19)_geq: 75 pres_rt(ng101,s2,t19)
-   + 75 pres_rt(ng102,s2,t19) - lpack_rt(('ng101','ng102'),s2,t19)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t19)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t19)_leq:
-   - 75 pres_rt(ng101,s2,t19) - 75 pres_rt(ng102,s2,t19)
-   + lpack_rt(('ng101','ng102'),s2,t19)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t19)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t20)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t20)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t20)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t20)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t20)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t20)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t20)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t20)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t20)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t20)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t20)_geq: 75 pres_rt(ng101,s1,t20)
-   + 75 pres_rt(ng102,s1,t20) - lpack_rt(('ng101','ng102'),s1,t20)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t20)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t20)_leq:
-   - 75 pres_rt(ng101,s1,t20) - 75 pres_rt(ng102,s1,t20)
-   + lpack_rt(('ng101','ng102'),s1,t20)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t20)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t20)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t20)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t20)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t20)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t20)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t20)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t20)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t20)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t20)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t20)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t20)_geq: 75 pres_rt(ng101,s2,t20)
-   + 75 pres_rt(ng102,s2,t20) - lpack_rt(('ng101','ng102'),s2,t20)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t20)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t20)_leq:
-   - 75 pres_rt(ng101,s2,t20) - 75 pres_rt(ng102,s2,t20)
-   + lpack_rt(('ng101','ng102'),s2,t20)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t20)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t21)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t21)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t21)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t21)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t21)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t21)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t21)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t21)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t21)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t21)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t21)_geq: 75 pres_rt(ng101,s1,t21)
-   + 75 pres_rt(ng102,s1,t21) - lpack_rt(('ng101','ng102'),s1,t21)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t21)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t21)_leq:
-   - 75 pres_rt(ng101,s1,t21) - 75 pres_rt(ng102,s1,t21)
-   + lpack_rt(('ng101','ng102'),s1,t21)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t21)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t21)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t21)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t21)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t21)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t21)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t21)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t21)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t21)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t21)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t21)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t21)_geq: 75 pres_rt(ng101,s2,t21)
-   + 75 pres_rt(ng102,s2,t21) - lpack_rt(('ng101','ng102'),s2,t21)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t21)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t21)_leq:
-   - 75 pres_rt(ng101,s2,t21) - 75 pres_rt(ng102,s2,t21)
-   + lpack_rt(('ng101','ng102'),s2,t21)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t21)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t22)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t22)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t22)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t22)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t22)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t22)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t22)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t22)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t22)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t22)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t22)_geq: 75 pres_rt(ng101,s1,t22)
-   + 75 pres_rt(ng102,s1,t22) - lpack_rt(('ng101','ng102'),s1,t22)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t22)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t22)_leq:
-   - 75 pres_rt(ng101,s1,t22) - 75 pres_rt(ng102,s1,t22)
-   + lpack_rt(('ng101','ng102'),s1,t22)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t22)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t22)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t22)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t22)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t22)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t22)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t22)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t22)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t22)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t22)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t22)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t22)_geq: 75 pres_rt(ng101,s2,t22)
-   + 75 pres_rt(ng102,s2,t22) - lpack_rt(('ng101','ng102'),s2,t22)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t22)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t22)_leq:
-   - 75 pres_rt(ng101,s2,t22) - 75 pres_rt(ng102,s2,t22)
-   + lpack_rt(('ng101','ng102'),s2,t22)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t22)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t23)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t23)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t23)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t23)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t23)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t23)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t23)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t23)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t23)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t23)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t23)_geq: 75 pres_rt(ng101,s1,t23)
-   + 75 pres_rt(ng102,s1,t23) - lpack_rt(('ng101','ng102'),s1,t23)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t23)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t23)_leq:
-   - 75 pres_rt(ng101,s1,t23) - 75 pres_rt(ng102,s1,t23)
-   + lpack_rt(('ng101','ng102'),s1,t23)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t23)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t23)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t23)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t23)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t23)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t23)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t23)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t23)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t23)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t23)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t23)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t23)_geq: 75 pres_rt(ng101,s2,t23)
-   + 75 pres_rt(ng102,s2,t23) - lpack_rt(('ng101','ng102'),s2,t23)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t23)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t23)_leq:
-   - 75 pres_rt(ng101,s2,t23) - 75 pres_rt(ng102,s2,t23)
-   + lpack_rt(('ng101','ng102'),s2,t23)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t23)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t24)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s1,t24)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s1,t24)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s1,t24)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t24)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t24)_leq:
-   gflow_sr_rt(('ng101','ng102'),s1,t24)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s1,t24)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s1,t24)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t24)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t24)_geq: 75 pres_rt(ng101,s1,t24)
-   + 75 pres_rt(ng102,s1,t24) - lpack_rt(('ng101','ng102'),s1,t24)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t24)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s1,t24)_leq:
-   - 75 pres_rt(ng101,s1,t24) - 75 pres_rt(ng102,s1,t24)
-   + lpack_rt(('ng101','ng102'),s1,t24)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s1,t24)_leq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t24)_geq:
-   - gflow_sr_rt(('ng101','ng102'),s2,t24)
-   + 0.5 qin_sr_rt(('ng101','ng102'),s2,t24)
-   + 0.5 qout_sr_rt(('ng101','ng102'),s2,t24)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t24)_geq = 0
- SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t24)_leq:
-   gflow_sr_rt(('ng101','ng102'),s2,t24)
-   - 0.5 qin_sr_rt(('ng101','ng102'),s2,t24)
-   - 0.5 qout_sr_rt(('ng101','ng102'),s2,t24)
-   + SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t24)_leq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t24)_geq: 75 pres_rt(ng101,s2,t24)
-   + 75 pres_rt(ng102,s2,t24) - lpack_rt(('ng101','ng102'),s2,t24)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t24)_geq = 0
- SOS1_lpack_def_rt(('ng101','ng102'),s2,t24)_leq:
-   - 75 pres_rt(ng101,s2,t24) - 75 pres_rt(ng102,s2,t24)
-   + lpack_rt(('ng101','ng102'),s2,t24)
-   + SOS1_lpack_def_rt(('ng101','ng102'),s2,t24)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t2)_geq:
-   lpack_rt(('ng101','ng102'),s1,t1) - lpack_rt(('ng101','ng102'),s1,t2)
-   + qin_sr_rt(('ng101','ng102'),s1,t2)
-   - qout_sr_rt(('ng101','ng102'),s1,t2)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t2)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t2)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t1) + lpack_rt(('ng101','ng102'),s1,t2)
-   - qin_sr_rt(('ng101','ng102'),s1,t2)
-   + qout_sr_rt(('ng101','ng102'),s1,t2)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t2)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t3)_geq:
-   lpack_rt(('ng101','ng102'),s1,t2) - lpack_rt(('ng101','ng102'),s1,t3)
-   + qin_sr_rt(('ng101','ng102'),s1,t3)
-   - qout_sr_rt(('ng101','ng102'),s1,t3)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t3)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t3)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t2) + lpack_rt(('ng101','ng102'),s1,t3)
-   - qin_sr_rt(('ng101','ng102'),s1,t3)
-   + qout_sr_rt(('ng101','ng102'),s1,t3)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t3)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t4)_geq:
-   lpack_rt(('ng101','ng102'),s1,t3) - lpack_rt(('ng101','ng102'),s1,t4)
-   + qin_sr_rt(('ng101','ng102'),s1,t4)
-   - qout_sr_rt(('ng101','ng102'),s1,t4)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t4)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t4)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t3) + lpack_rt(('ng101','ng102'),s1,t4)
-   - qin_sr_rt(('ng101','ng102'),s1,t4)
-   + qout_sr_rt(('ng101','ng102'),s1,t4)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t4)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t5)_geq:
-   lpack_rt(('ng101','ng102'),s1,t4) - lpack_rt(('ng101','ng102'),s1,t5)
-   + qin_sr_rt(('ng101','ng102'),s1,t5)
-   - qout_sr_rt(('ng101','ng102'),s1,t5)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t5)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t5)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t4) + lpack_rt(('ng101','ng102'),s1,t5)
-   - qin_sr_rt(('ng101','ng102'),s1,t5)
-   + qout_sr_rt(('ng101','ng102'),s1,t5)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t5)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t6)_geq:
-   lpack_rt(('ng101','ng102'),s1,t5) - lpack_rt(('ng101','ng102'),s1,t6)
-   + qin_sr_rt(('ng101','ng102'),s1,t6)
-   - qout_sr_rt(('ng101','ng102'),s1,t6)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t6)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t6)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t5) + lpack_rt(('ng101','ng102'),s1,t6)
-   - qin_sr_rt(('ng101','ng102'),s1,t6)
-   + qout_sr_rt(('ng101','ng102'),s1,t6)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t6)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t7)_geq:
-   lpack_rt(('ng101','ng102'),s1,t6) - lpack_rt(('ng101','ng102'),s1,t7)
-   + qin_sr_rt(('ng101','ng102'),s1,t7)
-   - qout_sr_rt(('ng101','ng102'),s1,t7)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t7)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t7)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t6) + lpack_rt(('ng101','ng102'),s1,t7)
-   - qin_sr_rt(('ng101','ng102'),s1,t7)
-   + qout_sr_rt(('ng101','ng102'),s1,t7)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t7)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t8)_geq:
-   lpack_rt(('ng101','ng102'),s1,t7) - lpack_rt(('ng101','ng102'),s1,t8)
-   + qin_sr_rt(('ng101','ng102'),s1,t8)
-   - qout_sr_rt(('ng101','ng102'),s1,t8)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t8)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t8)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t7) + lpack_rt(('ng101','ng102'),s1,t8)
-   - qin_sr_rt(('ng101','ng102'),s1,t8)
-   + qout_sr_rt(('ng101','ng102'),s1,t8)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t8)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t9)_geq:
-   lpack_rt(('ng101','ng102'),s1,t8) - lpack_rt(('ng101','ng102'),s1,t9)
-   + qin_sr_rt(('ng101','ng102'),s1,t9)
-   - qout_sr_rt(('ng101','ng102'),s1,t9)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t9)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t9)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t8) + lpack_rt(('ng101','ng102'),s1,t9)
-   - qin_sr_rt(('ng101','ng102'),s1,t9)
-   + qout_sr_rt(('ng101','ng102'),s1,t9)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t9)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t10)_geq:
-   lpack_rt(('ng101','ng102'),s1,t9) - lpack_rt(('ng101','ng102'),s1,t10)
-   + qin_sr_rt(('ng101','ng102'),s1,t10)
-   - qout_sr_rt(('ng101','ng102'),s1,t10)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t10)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t10)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t9) + lpack_rt(('ng101','ng102'),s1,t10)
-   - qin_sr_rt(('ng101','ng102'),s1,t10)
-   + qout_sr_rt(('ng101','ng102'),s1,t10)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t10)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t11)_geq:
-   lpack_rt(('ng101','ng102'),s1,t10) - lpack_rt(('ng101','ng102'),s1,t11)
-   + qin_sr_rt(('ng101','ng102'),s1,t11)
-   - qout_sr_rt(('ng101','ng102'),s1,t11)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t11)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t11)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t10)
-   + lpack_rt(('ng101','ng102'),s1,t11)
-   - qin_sr_rt(('ng101','ng102'),s1,t11)
-   + qout_sr_rt(('ng101','ng102'),s1,t11)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t11)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t12)_geq:
-   lpack_rt(('ng101','ng102'),s1,t11) - lpack_rt(('ng101','ng102'),s1,t12)
-   + qin_sr_rt(('ng101','ng102'),s1,t12)
-   - qout_sr_rt(('ng101','ng102'),s1,t12)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t12)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t12)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t11)
-   + lpack_rt(('ng101','ng102'),s1,t12)
-   - qin_sr_rt(('ng101','ng102'),s1,t12)
-   + qout_sr_rt(('ng101','ng102'),s1,t12)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t12)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t13)_geq:
-   lpack_rt(('ng101','ng102'),s1,t12) - lpack_rt(('ng101','ng102'),s1,t13)
-   + qin_sr_rt(('ng101','ng102'),s1,t13)
-   - qout_sr_rt(('ng101','ng102'),s1,t13)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t13)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t13)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t12)
-   + lpack_rt(('ng101','ng102'),s1,t13)
-   - qin_sr_rt(('ng101','ng102'),s1,t13)
-   + qout_sr_rt(('ng101','ng102'),s1,t13)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t13)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t14)_geq:
-   lpack_rt(('ng101','ng102'),s1,t13) - lpack_rt(('ng101','ng102'),s1,t14)
-   + qin_sr_rt(('ng101','ng102'),s1,t14)
-   - qout_sr_rt(('ng101','ng102'),s1,t14)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t14)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t14)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t13)
-   + lpack_rt(('ng101','ng102'),s1,t14)
-   - qin_sr_rt(('ng101','ng102'),s1,t14)
-   + qout_sr_rt(('ng101','ng102'),s1,t14)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t14)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t15)_geq:
-   lpack_rt(('ng101','ng102'),s1,t14) - lpack_rt(('ng101','ng102'),s1,t15)
-   + qin_sr_rt(('ng101','ng102'),s1,t15)
-   - qout_sr_rt(('ng101','ng102'),s1,t15)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t15)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t15)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t14)
-   + lpack_rt(('ng101','ng102'),s1,t15)
-   - qin_sr_rt(('ng101','ng102'),s1,t15)
-   + qout_sr_rt(('ng101','ng102'),s1,t15)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t15)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t16)_geq:
-   lpack_rt(('ng101','ng102'),s1,t15) - lpack_rt(('ng101','ng102'),s1,t16)
-   + qin_sr_rt(('ng101','ng102'),s1,t16)
-   - qout_sr_rt(('ng101','ng102'),s1,t16)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t16)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t16)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t15)
-   + lpack_rt(('ng101','ng102'),s1,t16)
-   - qin_sr_rt(('ng101','ng102'),s1,t16)
-   + qout_sr_rt(('ng101','ng102'),s1,t16)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t16)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t17)_geq:
-   lpack_rt(('ng101','ng102'),s1,t16) - lpack_rt(('ng101','ng102'),s1,t17)
-   + qin_sr_rt(('ng101','ng102'),s1,t17)
-   - qout_sr_rt(('ng101','ng102'),s1,t17)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t17)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t17)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t16)
-   + lpack_rt(('ng101','ng102'),s1,t17)
-   - qin_sr_rt(('ng101','ng102'),s1,t17)
-   + qout_sr_rt(('ng101','ng102'),s1,t17)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t17)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t18)_geq:
-   lpack_rt(('ng101','ng102'),s1,t17) - lpack_rt(('ng101','ng102'),s1,t18)
-   + qin_sr_rt(('ng101','ng102'),s1,t18)
-   - qout_sr_rt(('ng101','ng102'),s1,t18)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t18)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t18)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t17)
-   + lpack_rt(('ng101','ng102'),s1,t18)
-   - qin_sr_rt(('ng101','ng102'),s1,t18)
-   + qout_sr_rt(('ng101','ng102'),s1,t18)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t18)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t19)_geq:
-   lpack_rt(('ng101','ng102'),s1,t18) - lpack_rt(('ng101','ng102'),s1,t19)
-   + qin_sr_rt(('ng101','ng102'),s1,t19)
-   - qout_sr_rt(('ng101','ng102'),s1,t19)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t19)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t19)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t18)
-   + lpack_rt(('ng101','ng102'),s1,t19)
-   - qin_sr_rt(('ng101','ng102'),s1,t19)
-   + qout_sr_rt(('ng101','ng102'),s1,t19)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t19)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t20)_geq:
-   lpack_rt(('ng101','ng102'),s1,t19) - lpack_rt(('ng101','ng102'),s1,t20)
-   + qin_sr_rt(('ng101','ng102'),s1,t20)
-   - qout_sr_rt(('ng101','ng102'),s1,t20)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t20)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t20)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t19)
-   + lpack_rt(('ng101','ng102'),s1,t20)
-   - qin_sr_rt(('ng101','ng102'),s1,t20)
-   + qout_sr_rt(('ng101','ng102'),s1,t20)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t20)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t21)_geq:
-   lpack_rt(('ng101','ng102'),s1,t20) - lpack_rt(('ng101','ng102'),s1,t21)
-   + qin_sr_rt(('ng101','ng102'),s1,t21)
-   - qout_sr_rt(('ng101','ng102'),s1,t21)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t21)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t21)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t20)
-   + lpack_rt(('ng101','ng102'),s1,t21)
-   - qin_sr_rt(('ng101','ng102'),s1,t21)
-   + qout_sr_rt(('ng101','ng102'),s1,t21)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t21)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t22)_geq:
-   lpack_rt(('ng101','ng102'),s1,t21) - lpack_rt(('ng101','ng102'),s1,t22)
-   + qin_sr_rt(('ng101','ng102'),s1,t22)
-   - qout_sr_rt(('ng101','ng102'),s1,t22)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t22)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t22)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t21)
-   + lpack_rt(('ng101','ng102'),s1,t22)
-   - qin_sr_rt(('ng101','ng102'),s1,t22)
-   + qout_sr_rt(('ng101','ng102'),s1,t22)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t22)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t23)_geq:
-   lpack_rt(('ng101','ng102'),s1,t22) - lpack_rt(('ng101','ng102'),s1,t23)
-   + qin_sr_rt(('ng101','ng102'),s1,t23)
-   - qout_sr_rt(('ng101','ng102'),s1,t23)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t23)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t23)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t22)
-   + lpack_rt(('ng101','ng102'),s1,t23)
-   - qin_sr_rt(('ng101','ng102'),s1,t23)
-   + qout_sr_rt(('ng101','ng102'),s1,t23)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t23)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t24)_geq:
-   lpack_rt(('ng101','ng102'),s1,t23) - lpack_rt(('ng101','ng102'),s1,t24)
-   + qin_sr_rt(('ng101','ng102'),s1,t24)
-   - qout_sr_rt(('ng101','ng102'),s1,t24)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t24)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t24)_leq:
-   - lpack_rt(('ng101','ng102'),s1,t23)
-   + lpack_rt(('ng101','ng102'),s1,t24)
-   - qin_sr_rt(('ng101','ng102'),s1,t24)
-   + qout_sr_rt(('ng101','ng102'),s1,t24)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t24)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s1,t1)_geq:
-   - lpack_rt(('ng101','ng102'),s1,t1) + qin_sr_rt(('ng101','ng102'),s1,t1)
-   - qout_sr_rt(('ng101','ng102'),s1,t1)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t1)_geq = -49300
- SOS1_line_store_rt(('ng101','ng102'),s1,t1)_leq:
-   lpack_rt(('ng101','ng102'),s1,t1) - qin_sr_rt(('ng101','ng102'),s1,t1)
-   + qout_sr_rt(('ng101','ng102'),s1,t1)
-   + SOS1_line_store_rt(('ng101','ng102'),s1,t1)_leq = 49300
- SOS1_line_store_rt(('ng101','ng102'),s2,t2)_geq:
-   lpack_rt(('ng101','ng102'),s2,t1) - lpack_rt(('ng101','ng102'),s2,t2)
-   + qin_sr_rt(('ng101','ng102'),s2,t2)
-   - qout_sr_rt(('ng101','ng102'),s2,t2)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t2)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t2)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t1) + lpack_rt(('ng101','ng102'),s2,t2)
-   - qin_sr_rt(('ng101','ng102'),s2,t2)
-   + qout_sr_rt(('ng101','ng102'),s2,t2)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t2)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t3)_geq:
-   lpack_rt(('ng101','ng102'),s2,t2) - lpack_rt(('ng101','ng102'),s2,t3)
-   + qin_sr_rt(('ng101','ng102'),s2,t3)
-   - qout_sr_rt(('ng101','ng102'),s2,t3)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t3)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t3)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t2) + lpack_rt(('ng101','ng102'),s2,t3)
-   - qin_sr_rt(('ng101','ng102'),s2,t3)
-   + qout_sr_rt(('ng101','ng102'),s2,t3)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t3)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t4)_geq:
-   lpack_rt(('ng101','ng102'),s2,t3) - lpack_rt(('ng101','ng102'),s2,t4)
-   + qin_sr_rt(('ng101','ng102'),s2,t4)
-   - qout_sr_rt(('ng101','ng102'),s2,t4)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t4)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t4)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t3) + lpack_rt(('ng101','ng102'),s2,t4)
-   - qin_sr_rt(('ng101','ng102'),s2,t4)
-   + qout_sr_rt(('ng101','ng102'),s2,t4)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t4)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t5)_geq:
-   lpack_rt(('ng101','ng102'),s2,t4) - lpack_rt(('ng101','ng102'),s2,t5)
-   + qin_sr_rt(('ng101','ng102'),s2,t5)
-   - qout_sr_rt(('ng101','ng102'),s2,t5)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t5)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t5)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t4) + lpack_rt(('ng101','ng102'),s2,t5)
-   - qin_sr_rt(('ng101','ng102'),s2,t5)
-   + qout_sr_rt(('ng101','ng102'),s2,t5)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t5)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t6)_geq:
-   lpack_rt(('ng101','ng102'),s2,t5) - lpack_rt(('ng101','ng102'),s2,t6)
-   + qin_sr_rt(('ng101','ng102'),s2,t6)
-   - qout_sr_rt(('ng101','ng102'),s2,t6)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t6)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t6)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t5) + lpack_rt(('ng101','ng102'),s2,t6)
-   - qin_sr_rt(('ng101','ng102'),s2,t6)
-   + qout_sr_rt(('ng101','ng102'),s2,t6)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t6)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t7)_geq:
-   lpack_rt(('ng101','ng102'),s2,t6) - lpack_rt(('ng101','ng102'),s2,t7)
-   + qin_sr_rt(('ng101','ng102'),s2,t7)
-   - qout_sr_rt(('ng101','ng102'),s2,t7)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t7)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t7)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t6) + lpack_rt(('ng101','ng102'),s2,t7)
-   - qin_sr_rt(('ng101','ng102'),s2,t7)
-   + qout_sr_rt(('ng101','ng102'),s2,t7)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t7)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t8)_geq:
-   lpack_rt(('ng101','ng102'),s2,t7) - lpack_rt(('ng101','ng102'),s2,t8)
-   + qin_sr_rt(('ng101','ng102'),s2,t8)
-   - qout_sr_rt(('ng101','ng102'),s2,t8)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t8)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t8)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t7) + lpack_rt(('ng101','ng102'),s2,t8)
-   - qin_sr_rt(('ng101','ng102'),s2,t8)
-   + qout_sr_rt(('ng101','ng102'),s2,t8)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t8)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t9)_geq:
-   lpack_rt(('ng101','ng102'),s2,t8) - lpack_rt(('ng101','ng102'),s2,t9)
-   + qin_sr_rt(('ng101','ng102'),s2,t9)
-   - qout_sr_rt(('ng101','ng102'),s2,t9)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t9)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t9)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t8) + lpack_rt(('ng101','ng102'),s2,t9)
-   - qin_sr_rt(('ng101','ng102'),s2,t9)
-   + qout_sr_rt(('ng101','ng102'),s2,t9)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t9)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t10)_geq:
-   lpack_rt(('ng101','ng102'),s2,t9) - lpack_rt(('ng101','ng102'),s2,t10)
-   + qin_sr_rt(('ng101','ng102'),s2,t10)
-   - qout_sr_rt(('ng101','ng102'),s2,t10)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t10)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t10)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t9) + lpack_rt(('ng101','ng102'),s2,t10)
-   - qin_sr_rt(('ng101','ng102'),s2,t10)
-   + qout_sr_rt(('ng101','ng102'),s2,t10)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t10)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t11)_geq:
-   lpack_rt(('ng101','ng102'),s2,t10) - lpack_rt(('ng101','ng102'),s2,t11)
-   + qin_sr_rt(('ng101','ng102'),s2,t11)
-   - qout_sr_rt(('ng101','ng102'),s2,t11)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t11)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t11)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t10)
-   + lpack_rt(('ng101','ng102'),s2,t11)
-   - qin_sr_rt(('ng101','ng102'),s2,t11)
-   + qout_sr_rt(('ng101','ng102'),s2,t11)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t11)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t12)_geq:
-   lpack_rt(('ng101','ng102'),s2,t11) - lpack_rt(('ng101','ng102'),s2,t12)
-   + qin_sr_rt(('ng101','ng102'),s2,t12)
-   - qout_sr_rt(('ng101','ng102'),s2,t12)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t12)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t12)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t11)
-   + lpack_rt(('ng101','ng102'),s2,t12)
-   - qin_sr_rt(('ng101','ng102'),s2,t12)
-   + qout_sr_rt(('ng101','ng102'),s2,t12)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t12)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t13)_geq:
-   lpack_rt(('ng101','ng102'),s2,t12) - lpack_rt(('ng101','ng102'),s2,t13)
-   + qin_sr_rt(('ng101','ng102'),s2,t13)
-   - qout_sr_rt(('ng101','ng102'),s2,t13)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t13)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t13)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t12)
-   + lpack_rt(('ng101','ng102'),s2,t13)
-   - qin_sr_rt(('ng101','ng102'),s2,t13)
-   + qout_sr_rt(('ng101','ng102'),s2,t13)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t13)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t14)_geq:
-   lpack_rt(('ng101','ng102'),s2,t13) - lpack_rt(('ng101','ng102'),s2,t14)
-   + qin_sr_rt(('ng101','ng102'),s2,t14)
-   - qout_sr_rt(('ng101','ng102'),s2,t14)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t14)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t14)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t13)
-   + lpack_rt(('ng101','ng102'),s2,t14)
-   - qin_sr_rt(('ng101','ng102'),s2,t14)
-   + qout_sr_rt(('ng101','ng102'),s2,t14)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t14)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t15)_geq:
-   lpack_rt(('ng101','ng102'),s2,t14) - lpack_rt(('ng101','ng102'),s2,t15)
-   + qin_sr_rt(('ng101','ng102'),s2,t15)
-   - qout_sr_rt(('ng101','ng102'),s2,t15)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t15)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t15)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t14)
-   + lpack_rt(('ng101','ng102'),s2,t15)
-   - qin_sr_rt(('ng101','ng102'),s2,t15)
-   + qout_sr_rt(('ng101','ng102'),s2,t15)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t15)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t16)_geq:
-   lpack_rt(('ng101','ng102'),s2,t15) - lpack_rt(('ng101','ng102'),s2,t16)
-   + qin_sr_rt(('ng101','ng102'),s2,t16)
-   - qout_sr_rt(('ng101','ng102'),s2,t16)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t16)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t16)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t15)
-   + lpack_rt(('ng101','ng102'),s2,t16)
-   - qin_sr_rt(('ng101','ng102'),s2,t16)
-   + qout_sr_rt(('ng101','ng102'),s2,t16)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t16)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t17)_geq:
-   lpack_rt(('ng101','ng102'),s2,t16) - lpack_rt(('ng101','ng102'),s2,t17)
-   + qin_sr_rt(('ng101','ng102'),s2,t17)
-   - qout_sr_rt(('ng101','ng102'),s2,t17)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t17)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t17)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t16)
-   + lpack_rt(('ng101','ng102'),s2,t17)
-   - qin_sr_rt(('ng101','ng102'),s2,t17)
-   + qout_sr_rt(('ng101','ng102'),s2,t17)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t17)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t18)_geq:
-   lpack_rt(('ng101','ng102'),s2,t17) - lpack_rt(('ng101','ng102'),s2,t18)
-   + qin_sr_rt(('ng101','ng102'),s2,t18)
-   - qout_sr_rt(('ng101','ng102'),s2,t18)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t18)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t18)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t17)
-   + lpack_rt(('ng101','ng102'),s2,t18)
-   - qin_sr_rt(('ng101','ng102'),s2,t18)
-   + qout_sr_rt(('ng101','ng102'),s2,t18)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t18)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t19)_geq:
-   lpack_rt(('ng101','ng102'),s2,t18) - lpack_rt(('ng101','ng102'),s2,t19)
-   + qin_sr_rt(('ng101','ng102'),s2,t19)
-   - qout_sr_rt(('ng101','ng102'),s2,t19)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t19)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t19)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t18)
-   + lpack_rt(('ng101','ng102'),s2,t19)
-   - qin_sr_rt(('ng101','ng102'),s2,t19)
-   + qout_sr_rt(('ng101','ng102'),s2,t19)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t19)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t20)_geq:
-   lpack_rt(('ng101','ng102'),s2,t19) - lpack_rt(('ng101','ng102'),s2,t20)
-   + qin_sr_rt(('ng101','ng102'),s2,t20)
-   - qout_sr_rt(('ng101','ng102'),s2,t20)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t20)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t20)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t19)
-   + lpack_rt(('ng101','ng102'),s2,t20)
-   - qin_sr_rt(('ng101','ng102'),s2,t20)
-   + qout_sr_rt(('ng101','ng102'),s2,t20)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t20)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t21)_geq:
-   lpack_rt(('ng101','ng102'),s2,t20) - lpack_rt(('ng101','ng102'),s2,t21)
-   + qin_sr_rt(('ng101','ng102'),s2,t21)
-   - qout_sr_rt(('ng101','ng102'),s2,t21)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t21)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t21)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t20)
-   + lpack_rt(('ng101','ng102'),s2,t21)
-   - qin_sr_rt(('ng101','ng102'),s2,t21)
-   + qout_sr_rt(('ng101','ng102'),s2,t21)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t21)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t22)_geq:
-   lpack_rt(('ng101','ng102'),s2,t21) - lpack_rt(('ng101','ng102'),s2,t22)
-   + qin_sr_rt(('ng101','ng102'),s2,t22)
-   - qout_sr_rt(('ng101','ng102'),s2,t22)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t22)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t22)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t21)
-   + lpack_rt(('ng101','ng102'),s2,t22)
-   - qin_sr_rt(('ng101','ng102'),s2,t22)
-   + qout_sr_rt(('ng101','ng102'),s2,t22)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t22)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t23)_geq:
-   lpack_rt(('ng101','ng102'),s2,t22) - lpack_rt(('ng101','ng102'),s2,t23)
-   + qin_sr_rt(('ng101','ng102'),s2,t23)
-   - qout_sr_rt(('ng101','ng102'),s2,t23)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t23)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t23)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t22)
-   + lpack_rt(('ng101','ng102'),s2,t23)
-   - qin_sr_rt(('ng101','ng102'),s2,t23)
-   + qout_sr_rt(('ng101','ng102'),s2,t23)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t23)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t24)_geq:
-   lpack_rt(('ng101','ng102'),s2,t23) - lpack_rt(('ng101','ng102'),s2,t24)
-   + qin_sr_rt(('ng101','ng102'),s2,t24)
-   - qout_sr_rt(('ng101','ng102'),s2,t24)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t24)_geq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t24)_leq:
-   - lpack_rt(('ng101','ng102'),s2,t23)
-   + lpack_rt(('ng101','ng102'),s2,t24)
-   - qin_sr_rt(('ng101','ng102'),s2,t24)
-   + qout_sr_rt(('ng101','ng102'),s2,t24)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t24)_leq = 0
- SOS1_line_store_rt(('ng101','ng102'),s2,t1)_geq:
-   - lpack_rt(('ng101','ng102'),s2,t1) + qin_sr_rt(('ng101','ng102'),s2,t1)
-   - qout_sr_rt(('ng101','ng102'),s2,t1)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t1)_geq = -49300
- SOS1_line_store_rt(('ng101','ng102'),s2,t1)_leq:
-   lpack_rt(('ng101','ng102'),s2,t1) - qin_sr_rt(('ng101','ng102'),s2,t1)
-   + qout_sr_rt(('ng101','ng102'),s2,t1)
-   + SOS1_line_store_rt(('ng101','ng102'),s2,t1)_leq = 49300
  SOS1_lpack_end_max(s1): lpack_rt(('ng101','ng102'),s1,t24)
    + SOS1_lpack_end_max(s1) = 54230
  SOS1_lpack_end_min(s1): - lpack_rt(('ng101','ng102'),s1,t24)
@@ -25797,294 +23549,8 @@ Subject To
    + SOS1_gstore_max_rt(gs1,t24,s2) = 0
  SOS1_gstore_min_rt(gs1,t24,s2): - gstore_rt(gs1,s2,t24)
    + SOS1_gstore_min_rt(gs1,t24,s2) = 0
- SOS1_gstor_def_rt(gs1,s1,t2)_geq: gstore_rt(gs1,s1,t1)
-   + gsin_rt(gs1,s1,t2) - gsout_rt(gs1,s1,t2) - gstore_rt(gs1,s1,t2)
-   + SOS1_gstor_def_rt(gs1,s1,t2)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t2)_leq: - gstore_rt(gs1,s1,t1)
-   - gsin_rt(gs1,s1,t2) + gsout_rt(gs1,s1,t2) + gstore_rt(gs1,s1,t2)
-   + SOS1_gstor_def_rt(gs1,s1,t2)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t3)_geq: gstore_rt(gs1,s1,t2)
-   + gsin_rt(gs1,s1,t3) - gsout_rt(gs1,s1,t3) - gstore_rt(gs1,s1,t3)
-   + SOS1_gstor_def_rt(gs1,s1,t3)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t3)_leq: - gstore_rt(gs1,s1,t2)
-   - gsin_rt(gs1,s1,t3) + gsout_rt(gs1,s1,t3) + gstore_rt(gs1,s1,t3)
-   + SOS1_gstor_def_rt(gs1,s1,t3)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t4)_geq: gstore_rt(gs1,s1,t3)
-   + gsin_rt(gs1,s1,t4) - gsout_rt(gs1,s1,t4) - gstore_rt(gs1,s1,t4)
-   + SOS1_gstor_def_rt(gs1,s1,t4)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t4)_leq: - gstore_rt(gs1,s1,t3)
-   - gsin_rt(gs1,s1,t4) + gsout_rt(gs1,s1,t4) + gstore_rt(gs1,s1,t4)
-   + SOS1_gstor_def_rt(gs1,s1,t4)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t5)_geq: gstore_rt(gs1,s1,t4)
-   + gsin_rt(gs1,s1,t5) - gsout_rt(gs1,s1,t5) - gstore_rt(gs1,s1,t5)
-   + SOS1_gstor_def_rt(gs1,s1,t5)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t5)_leq: - gstore_rt(gs1,s1,t4)
-   - gsin_rt(gs1,s1,t5) + gsout_rt(gs1,s1,t5) + gstore_rt(gs1,s1,t5)
-   + SOS1_gstor_def_rt(gs1,s1,t5)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t6)_geq: gstore_rt(gs1,s1,t5)
-   + gsin_rt(gs1,s1,t6) - gsout_rt(gs1,s1,t6) - gstore_rt(gs1,s1,t6)
-   + SOS1_gstor_def_rt(gs1,s1,t6)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t6)_leq: - gstore_rt(gs1,s1,t5)
-   - gsin_rt(gs1,s1,t6) + gsout_rt(gs1,s1,t6) + gstore_rt(gs1,s1,t6)
-   + SOS1_gstor_def_rt(gs1,s1,t6)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t7)_geq: gstore_rt(gs1,s1,t6)
-   + gsin_rt(gs1,s1,t7) - gsout_rt(gs1,s1,t7) - gstore_rt(gs1,s1,t7)
-   + SOS1_gstor_def_rt(gs1,s1,t7)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t7)_leq: - gstore_rt(gs1,s1,t6)
-   - gsin_rt(gs1,s1,t7) + gsout_rt(gs1,s1,t7) + gstore_rt(gs1,s1,t7)
-   + SOS1_gstor_def_rt(gs1,s1,t7)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t8)_geq: gstore_rt(gs1,s1,t7)
-   + gsin_rt(gs1,s1,t8) - gsout_rt(gs1,s1,t8) - gstore_rt(gs1,s1,t8)
-   + SOS1_gstor_def_rt(gs1,s1,t8)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t8)_leq: - gstore_rt(gs1,s1,t7)
-   - gsin_rt(gs1,s1,t8) + gsout_rt(gs1,s1,t8) + gstore_rt(gs1,s1,t8)
-   + SOS1_gstor_def_rt(gs1,s1,t8)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t9)_geq: gstore_rt(gs1,s1,t8)
-   + gsin_rt(gs1,s1,t9) - gsout_rt(gs1,s1,t9) - gstore_rt(gs1,s1,t9)
-   + SOS1_gstor_def_rt(gs1,s1,t9)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t9)_leq: - gstore_rt(gs1,s1,t8)
-   - gsin_rt(gs1,s1,t9) + gsout_rt(gs1,s1,t9) + gstore_rt(gs1,s1,t9)
-   + SOS1_gstor_def_rt(gs1,s1,t9)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t10)_geq: gstore_rt(gs1,s1,t9)
-   + gsin_rt(gs1,s1,t10) - gsout_rt(gs1,s1,t10) - gstore_rt(gs1,s1,t10)
-   + SOS1_gstor_def_rt(gs1,s1,t10)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t10)_leq: - gstore_rt(gs1,s1,t9)
-   - gsin_rt(gs1,s1,t10) + gsout_rt(gs1,s1,t10) + gstore_rt(gs1,s1,t10)
-   + SOS1_gstor_def_rt(gs1,s1,t10)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t11)_geq: gstore_rt(gs1,s1,t10)
-   + gsin_rt(gs1,s1,t11) - gsout_rt(gs1,s1,t11) - gstore_rt(gs1,s1,t11)
-   + SOS1_gstor_def_rt(gs1,s1,t11)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t11)_leq: - gstore_rt(gs1,s1,t10)
-   - gsin_rt(gs1,s1,t11) + gsout_rt(gs1,s1,t11) + gstore_rt(gs1,s1,t11)
-   + SOS1_gstor_def_rt(gs1,s1,t11)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t12)_geq: gstore_rt(gs1,s1,t11)
-   + gsin_rt(gs1,s1,t12) - gsout_rt(gs1,s1,t12) - gstore_rt(gs1,s1,t12)
-   + SOS1_gstor_def_rt(gs1,s1,t12)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t12)_leq: - gstore_rt(gs1,s1,t11)
-   - gsin_rt(gs1,s1,t12) + gsout_rt(gs1,s1,t12) + gstore_rt(gs1,s1,t12)
-   + SOS1_gstor_def_rt(gs1,s1,t12)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t13)_geq: gstore_rt(gs1,s1,t12)
-   + gsin_rt(gs1,s1,t13) - gsout_rt(gs1,s1,t13) - gstore_rt(gs1,s1,t13)
-   + SOS1_gstor_def_rt(gs1,s1,t13)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t13)_leq: - gstore_rt(gs1,s1,t12)
-   - gsin_rt(gs1,s1,t13) + gsout_rt(gs1,s1,t13) + gstore_rt(gs1,s1,t13)
-   + SOS1_gstor_def_rt(gs1,s1,t13)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t14)_geq: gstore_rt(gs1,s1,t13)
-   + gsin_rt(gs1,s1,t14) - gsout_rt(gs1,s1,t14) - gstore_rt(gs1,s1,t14)
-   + SOS1_gstor_def_rt(gs1,s1,t14)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t14)_leq: - gstore_rt(gs1,s1,t13)
-   - gsin_rt(gs1,s1,t14) + gsout_rt(gs1,s1,t14) + gstore_rt(gs1,s1,t14)
-   + SOS1_gstor_def_rt(gs1,s1,t14)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t15)_geq: gstore_rt(gs1,s1,t14)
-   + gsin_rt(gs1,s1,t15) - gsout_rt(gs1,s1,t15) - gstore_rt(gs1,s1,t15)
-   + SOS1_gstor_def_rt(gs1,s1,t15)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t15)_leq: - gstore_rt(gs1,s1,t14)
-   - gsin_rt(gs1,s1,t15) + gsout_rt(gs1,s1,t15) + gstore_rt(gs1,s1,t15)
-   + SOS1_gstor_def_rt(gs1,s1,t15)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t16)_geq: gstore_rt(gs1,s1,t15)
-   + gsin_rt(gs1,s1,t16) - gsout_rt(gs1,s1,t16) - gstore_rt(gs1,s1,t16)
-   + SOS1_gstor_def_rt(gs1,s1,t16)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t16)_leq: - gstore_rt(gs1,s1,t15)
-   - gsin_rt(gs1,s1,t16) + gsout_rt(gs1,s1,t16) + gstore_rt(gs1,s1,t16)
-   + SOS1_gstor_def_rt(gs1,s1,t16)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t17)_geq: gstore_rt(gs1,s1,t16)
-   + gsin_rt(gs1,s1,t17) - gsout_rt(gs1,s1,t17) - gstore_rt(gs1,s1,t17)
-   + SOS1_gstor_def_rt(gs1,s1,t17)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t17)_leq: - gstore_rt(gs1,s1,t16)
-   - gsin_rt(gs1,s1,t17) + gsout_rt(gs1,s1,t17) + gstore_rt(gs1,s1,t17)
-   + SOS1_gstor_def_rt(gs1,s1,t17)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t18)_geq: gstore_rt(gs1,s1,t17)
-   + gsin_rt(gs1,s1,t18) - gsout_rt(gs1,s1,t18) - gstore_rt(gs1,s1,t18)
-   + SOS1_gstor_def_rt(gs1,s1,t18)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t18)_leq: - gstore_rt(gs1,s1,t17)
-   - gsin_rt(gs1,s1,t18) + gsout_rt(gs1,s1,t18) + gstore_rt(gs1,s1,t18)
-   + SOS1_gstor_def_rt(gs1,s1,t18)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t19)_geq: gstore_rt(gs1,s1,t18)
-   + gsin_rt(gs1,s1,t19) - gsout_rt(gs1,s1,t19) - gstore_rt(gs1,s1,t19)
-   + SOS1_gstor_def_rt(gs1,s1,t19)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t19)_leq: - gstore_rt(gs1,s1,t18)
-   - gsin_rt(gs1,s1,t19) + gsout_rt(gs1,s1,t19) + gstore_rt(gs1,s1,t19)
-   + SOS1_gstor_def_rt(gs1,s1,t19)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t20)_geq: gstore_rt(gs1,s1,t19)
-   + gsin_rt(gs1,s1,t20) - gsout_rt(gs1,s1,t20) - gstore_rt(gs1,s1,t20)
-   + SOS1_gstor_def_rt(gs1,s1,t20)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t20)_leq: - gstore_rt(gs1,s1,t19)
-   - gsin_rt(gs1,s1,t20) + gsout_rt(gs1,s1,t20) + gstore_rt(gs1,s1,t20)
-   + SOS1_gstor_def_rt(gs1,s1,t20)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t21)_geq: gstore_rt(gs1,s1,t20)
-   + gsin_rt(gs1,s1,t21) - gsout_rt(gs1,s1,t21) - gstore_rt(gs1,s1,t21)
-   + SOS1_gstor_def_rt(gs1,s1,t21)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t21)_leq: - gstore_rt(gs1,s1,t20)
-   - gsin_rt(gs1,s1,t21) + gsout_rt(gs1,s1,t21) + gstore_rt(gs1,s1,t21)
-   + SOS1_gstor_def_rt(gs1,s1,t21)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t22)_geq: gstore_rt(gs1,s1,t21)
-   + gsin_rt(gs1,s1,t22) - gsout_rt(gs1,s1,t22) - gstore_rt(gs1,s1,t22)
-   + SOS1_gstor_def_rt(gs1,s1,t22)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t22)_leq: - gstore_rt(gs1,s1,t21)
-   - gsin_rt(gs1,s1,t22) + gsout_rt(gs1,s1,t22) + gstore_rt(gs1,s1,t22)
-   + SOS1_gstor_def_rt(gs1,s1,t22)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t23)_geq: gstore_rt(gs1,s1,t22)
-   + gsin_rt(gs1,s1,t23) - gsout_rt(gs1,s1,t23) - gstore_rt(gs1,s1,t23)
-   + SOS1_gstor_def_rt(gs1,s1,t23)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t23)_leq: - gstore_rt(gs1,s1,t22)
-   - gsin_rt(gs1,s1,t23) + gsout_rt(gs1,s1,t23) + gstore_rt(gs1,s1,t23)
-   + SOS1_gstor_def_rt(gs1,s1,t23)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t24)_geq: gstore_rt(gs1,s1,t23)
-   + gsin_rt(gs1,s1,t24) - gsout_rt(gs1,s1,t24) - gstore_rt(gs1,s1,t24)
-   + SOS1_gstor_def_rt(gs1,s1,t24)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t24)_leq: - gstore_rt(gs1,s1,t23)
-   - gsin_rt(gs1,s1,t24) + gsout_rt(gs1,s1,t24) + gstore_rt(gs1,s1,t24)
-   + SOS1_gstor_def_rt(gs1,s1,t24)_leq = 0
- SOS1_gstor_def_rt(gs1,s1,t1)_geq: gsin_rt(gs1,s1,t1) - gsout_rt(gs1,s1,t1)
-   - gstore_rt(gs1,s1,t1) + SOS1_gstor_def_rt(gs1,s1,t1)_geq = 0
- SOS1_gstor_def_rt(gs1,s1,t1)_leq: - gsin_rt(gs1,s1,t1)
-   + gsout_rt(gs1,s1,t1) + gstore_rt(gs1,s1,t1)
-   + SOS1_gstor_def_rt(gs1,s1,t1)_leq = 0
  SOS1_gstor_end(gs1,s1): - gstore_rt(gs1,s1,t24) + SOS1_gstor_end(gs1,s1)
    = 0
- SOS1_gstor_def_rt(gs1,s2,t2)_geq: gstore_rt(gs1,s2,t1)
-   + gsin_rt(gs1,s2,t2) - gsout_rt(gs1,s2,t2) - gstore_rt(gs1,s2,t2)
-   + SOS1_gstor_def_rt(gs1,s2,t2)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t2)_leq: - gstore_rt(gs1,s2,t1)
-   - gsin_rt(gs1,s2,t2) + gsout_rt(gs1,s2,t2) + gstore_rt(gs1,s2,t2)
-   + SOS1_gstor_def_rt(gs1,s2,t2)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t3)_geq: gstore_rt(gs1,s2,t2)
-   + gsin_rt(gs1,s2,t3) - gsout_rt(gs1,s2,t3) - gstore_rt(gs1,s2,t3)
-   + SOS1_gstor_def_rt(gs1,s2,t3)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t3)_leq: - gstore_rt(gs1,s2,t2)
-   - gsin_rt(gs1,s2,t3) + gsout_rt(gs1,s2,t3) + gstore_rt(gs1,s2,t3)
-   + SOS1_gstor_def_rt(gs1,s2,t3)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t4)_geq: gstore_rt(gs1,s2,t3)
-   + gsin_rt(gs1,s2,t4) - gsout_rt(gs1,s2,t4) - gstore_rt(gs1,s2,t4)
-   + SOS1_gstor_def_rt(gs1,s2,t4)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t4)_leq: - gstore_rt(gs1,s2,t3)
-   - gsin_rt(gs1,s2,t4) + gsout_rt(gs1,s2,t4) + gstore_rt(gs1,s2,t4)
-   + SOS1_gstor_def_rt(gs1,s2,t4)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t5)_geq: gstore_rt(gs1,s2,t4)
-   + gsin_rt(gs1,s2,t5) - gsout_rt(gs1,s2,t5) - gstore_rt(gs1,s2,t5)
-   + SOS1_gstor_def_rt(gs1,s2,t5)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t5)_leq: - gstore_rt(gs1,s2,t4)
-   - gsin_rt(gs1,s2,t5) + gsout_rt(gs1,s2,t5) + gstore_rt(gs1,s2,t5)
-   + SOS1_gstor_def_rt(gs1,s2,t5)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t6)_geq: gstore_rt(gs1,s2,t5)
-   + gsin_rt(gs1,s2,t6) - gsout_rt(gs1,s2,t6) - gstore_rt(gs1,s2,t6)
-   + SOS1_gstor_def_rt(gs1,s2,t6)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t6)_leq: - gstore_rt(gs1,s2,t5)
-   - gsin_rt(gs1,s2,t6) + gsout_rt(gs1,s2,t6) + gstore_rt(gs1,s2,t6)
-   + SOS1_gstor_def_rt(gs1,s2,t6)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t7)_geq: gstore_rt(gs1,s2,t6)
-   + gsin_rt(gs1,s2,t7) - gsout_rt(gs1,s2,t7) - gstore_rt(gs1,s2,t7)
-   + SOS1_gstor_def_rt(gs1,s2,t7)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t7)_leq: - gstore_rt(gs1,s2,t6)
-   - gsin_rt(gs1,s2,t7) + gsout_rt(gs1,s2,t7) + gstore_rt(gs1,s2,t7)
-   + SOS1_gstor_def_rt(gs1,s2,t7)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t8)_geq: gstore_rt(gs1,s2,t7)
-   + gsin_rt(gs1,s2,t8) - gsout_rt(gs1,s2,t8) - gstore_rt(gs1,s2,t8)
-   + SOS1_gstor_def_rt(gs1,s2,t8)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t8)_leq: - gstore_rt(gs1,s2,t7)
-   - gsin_rt(gs1,s2,t8) + gsout_rt(gs1,s2,t8) + gstore_rt(gs1,s2,t8)
-   + SOS1_gstor_def_rt(gs1,s2,t8)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t9)_geq: gstore_rt(gs1,s2,t8)
-   + gsin_rt(gs1,s2,t9) - gsout_rt(gs1,s2,t9) - gstore_rt(gs1,s2,t9)
-   + SOS1_gstor_def_rt(gs1,s2,t9)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t9)_leq: - gstore_rt(gs1,s2,t8)
-   - gsin_rt(gs1,s2,t9) + gsout_rt(gs1,s2,t9) + gstore_rt(gs1,s2,t9)
-   + SOS1_gstor_def_rt(gs1,s2,t9)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t10)_geq: gstore_rt(gs1,s2,t9)
-   + gsin_rt(gs1,s2,t10) - gsout_rt(gs1,s2,t10) - gstore_rt(gs1,s2,t10)
-   + SOS1_gstor_def_rt(gs1,s2,t10)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t10)_leq: - gstore_rt(gs1,s2,t9)
-   - gsin_rt(gs1,s2,t10) + gsout_rt(gs1,s2,t10) + gstore_rt(gs1,s2,t10)
-   + SOS1_gstor_def_rt(gs1,s2,t10)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t11)_geq: gstore_rt(gs1,s2,t10)
-   + gsin_rt(gs1,s2,t11) - gsout_rt(gs1,s2,t11) - gstore_rt(gs1,s2,t11)
-   + SOS1_gstor_def_rt(gs1,s2,t11)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t11)_leq: - gstore_rt(gs1,s2,t10)
-   - gsin_rt(gs1,s2,t11) + gsout_rt(gs1,s2,t11) + gstore_rt(gs1,s2,t11)
-   + SOS1_gstor_def_rt(gs1,s2,t11)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t12)_geq: gstore_rt(gs1,s2,t11)
-   + gsin_rt(gs1,s2,t12) - gsout_rt(gs1,s2,t12) - gstore_rt(gs1,s2,t12)
-   + SOS1_gstor_def_rt(gs1,s2,t12)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t12)_leq: - gstore_rt(gs1,s2,t11)
-   - gsin_rt(gs1,s2,t12) + gsout_rt(gs1,s2,t12) + gstore_rt(gs1,s2,t12)
-   + SOS1_gstor_def_rt(gs1,s2,t12)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t13)_geq: gstore_rt(gs1,s2,t12)
-   + gsin_rt(gs1,s2,t13) - gsout_rt(gs1,s2,t13) - gstore_rt(gs1,s2,t13)
-   + SOS1_gstor_def_rt(gs1,s2,t13)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t13)_leq: - gstore_rt(gs1,s2,t12)
-   - gsin_rt(gs1,s2,t13) + gsout_rt(gs1,s2,t13) + gstore_rt(gs1,s2,t13)
-   + SOS1_gstor_def_rt(gs1,s2,t13)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t14)_geq: gstore_rt(gs1,s2,t13)
-   + gsin_rt(gs1,s2,t14) - gsout_rt(gs1,s2,t14) - gstore_rt(gs1,s2,t14)
-   + SOS1_gstor_def_rt(gs1,s2,t14)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t14)_leq: - gstore_rt(gs1,s2,t13)
-   - gsin_rt(gs1,s2,t14) + gsout_rt(gs1,s2,t14) + gstore_rt(gs1,s2,t14)
-   + SOS1_gstor_def_rt(gs1,s2,t14)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t15)_geq: gstore_rt(gs1,s2,t14)
-   + gsin_rt(gs1,s2,t15) - gsout_rt(gs1,s2,t15) - gstore_rt(gs1,s2,t15)
-   + SOS1_gstor_def_rt(gs1,s2,t15)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t15)_leq: - gstore_rt(gs1,s2,t14)
-   - gsin_rt(gs1,s2,t15) + gsout_rt(gs1,s2,t15) + gstore_rt(gs1,s2,t15)
-   + SOS1_gstor_def_rt(gs1,s2,t15)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t16)_geq: gstore_rt(gs1,s2,t15)
-   + gsin_rt(gs1,s2,t16) - gsout_rt(gs1,s2,t16) - gstore_rt(gs1,s2,t16)
-   + SOS1_gstor_def_rt(gs1,s2,t16)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t16)_leq: - gstore_rt(gs1,s2,t15)
-   - gsin_rt(gs1,s2,t16) + gsout_rt(gs1,s2,t16) + gstore_rt(gs1,s2,t16)
-   + SOS1_gstor_def_rt(gs1,s2,t16)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t17)_geq: gstore_rt(gs1,s2,t16)
-   + gsin_rt(gs1,s2,t17) - gsout_rt(gs1,s2,t17) - gstore_rt(gs1,s2,t17)
-   + SOS1_gstor_def_rt(gs1,s2,t17)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t17)_leq: - gstore_rt(gs1,s2,t16)
-   - gsin_rt(gs1,s2,t17) + gsout_rt(gs1,s2,t17) + gstore_rt(gs1,s2,t17)
-   + SOS1_gstor_def_rt(gs1,s2,t17)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t18)_geq: gstore_rt(gs1,s2,t17)
-   + gsin_rt(gs1,s2,t18) - gsout_rt(gs1,s2,t18) - gstore_rt(gs1,s2,t18)
-   + SOS1_gstor_def_rt(gs1,s2,t18)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t18)_leq: - gstore_rt(gs1,s2,t17)
-   - gsin_rt(gs1,s2,t18) + gsout_rt(gs1,s2,t18) + gstore_rt(gs1,s2,t18)
-   + SOS1_gstor_def_rt(gs1,s2,t18)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t19)_geq: gstore_rt(gs1,s2,t18)
-   + gsin_rt(gs1,s2,t19) - gsout_rt(gs1,s2,t19) - gstore_rt(gs1,s2,t19)
-   + SOS1_gstor_def_rt(gs1,s2,t19)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t19)_leq: - gstore_rt(gs1,s2,t18)
-   - gsin_rt(gs1,s2,t19) + gsout_rt(gs1,s2,t19) + gstore_rt(gs1,s2,t19)
-   + SOS1_gstor_def_rt(gs1,s2,t19)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t20)_geq: gstore_rt(gs1,s2,t19)
-   + gsin_rt(gs1,s2,t20) - gsout_rt(gs1,s2,t20) - gstore_rt(gs1,s2,t20)
-   + SOS1_gstor_def_rt(gs1,s2,t20)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t20)_leq: - gstore_rt(gs1,s2,t19)
-   - gsin_rt(gs1,s2,t20) + gsout_rt(gs1,s2,t20) + gstore_rt(gs1,s2,t20)
-   + SOS1_gstor_def_rt(gs1,s2,t20)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t21)_geq: gstore_rt(gs1,s2,t20)
-   + gsin_rt(gs1,s2,t21) - gsout_rt(gs1,s2,t21) - gstore_rt(gs1,s2,t21)
-   + SOS1_gstor_def_rt(gs1,s2,t21)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t21)_leq: - gstore_rt(gs1,s2,t20)
-   - gsin_rt(gs1,s2,t21) + gsout_rt(gs1,s2,t21) + gstore_rt(gs1,s2,t21)
-   + SOS1_gstor_def_rt(gs1,s2,t21)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t22)_geq: gstore_rt(gs1,s2,t21)
-   + gsin_rt(gs1,s2,t22) - gsout_rt(gs1,s2,t22) - gstore_rt(gs1,s2,t22)
-   + SOS1_gstor_def_rt(gs1,s2,t22)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t22)_leq: - gstore_rt(gs1,s2,t21)
-   - gsin_rt(gs1,s2,t22) + gsout_rt(gs1,s2,t22) + gstore_rt(gs1,s2,t22)
-   + SOS1_gstor_def_rt(gs1,s2,t22)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t23)_geq: gstore_rt(gs1,s2,t22)
-   + gsin_rt(gs1,s2,t23) - gsout_rt(gs1,s2,t23) - gstore_rt(gs1,s2,t23)
-   + SOS1_gstor_def_rt(gs1,s2,t23)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t23)_leq: - gstore_rt(gs1,s2,t22)
-   - gsin_rt(gs1,s2,t23) + gsout_rt(gs1,s2,t23) + gstore_rt(gs1,s2,t23)
-   + SOS1_gstor_def_rt(gs1,s2,t23)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t24)_geq: gstore_rt(gs1,s2,t23)
-   + gsin_rt(gs1,s2,t24) - gsout_rt(gs1,s2,t24) - gstore_rt(gs1,s2,t24)
-   + SOS1_gstor_def_rt(gs1,s2,t24)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t24)_leq: - gstore_rt(gs1,s2,t23)
-   - gsin_rt(gs1,s2,t24) + gsout_rt(gs1,s2,t24) + gstore_rt(gs1,s2,t24)
-   + SOS1_gstor_def_rt(gs1,s2,t24)_leq = 0
- SOS1_gstor_def_rt(gs1,s2,t1)_geq: gsin_rt(gs1,s2,t1) - gsout_rt(gs1,s2,t1)
-   - gstore_rt(gs1,s2,t1) + SOS1_gstor_def_rt(gs1,s2,t1)_geq = 0
- SOS1_gstor_def_rt(gs1,s2,t1)_leq: - gsin_rt(gs1,s2,t1)
-   + gsout_rt(gs1,s2,t1) + gstore_rt(gs1,s2,t1)
-   + SOS1_gstor_def_rt(gs1,s2,t1)_leq = 0
  SOS1_gstor_end(gs1,s2): - gstore_rt(gs1,s2,t24) + SOS1_gstor_end(gs1,s2)
    = 0
  SOS1_gas_shed_rt(ng101,s1,t1): gshed(ng101,s1,t1)
@@ -26279,766 +23745,6 @@ Subject To
    + SOS1_gas_shed_rt(ng102,s2,t23) = 1980
  SOS1_gas_shed_rt(ng102,s2,t24): gshed(ng102,s2,t24)
    + SOS1_gas_shed_rt(ng102,s2,t24) = 2010
- SOS1_gas_balance(ng101,s1,t1)_geq: - gshed(ng101,s1,t1)
-   + qin_sr_rt(('ng101','ng102'),s1,t1) - gprodUp(gw1,s1,t1)
-   + gprodDn(gw1,s1,t1) + SOS1_gas_balance(ng101,s1,t1)_geq
-   = 6142.913841710055
- SOS1_gas_balance(ng101,s1,t1)_leq: gshed(ng101,s1,t1)
-   - qin_sr_rt(('ng101','ng102'),s1,t1) + gprodUp(gw1,s1,t1)
-   - gprodDn(gw1,s1,t1) + SOS1_gas_balance(ng101,s1,t1)_leq
-   = -6142.913841710055
- SOS1_gas_balance(ng101,s1,t2)_geq: - gshed(ng101,s1,t2)
-   + qin_sr_rt(('ng101','ng102'),s1,t2) - gprodUp(gw1,s1,t2)
-   + gprodDn(gw1,s1,t2) + SOS1_gas_balance(ng101,s1,t2)_geq
-   = 3643.073586529465
- SOS1_gas_balance(ng101,s1,t2)_leq: gshed(ng101,s1,t2)
-   - qin_sr_rt(('ng101','ng102'),s1,t2) + gprodUp(gw1,s1,t2)
-   - gprodDn(gw1,s1,t2) + SOS1_gas_balance(ng101,s1,t2)_leq
-   = -3643.073586529465
- SOS1_gas_balance(ng101,s1,t3)_geq: - gshed(ng101,s1,t3)
-   + qin_sr_rt(('ng101','ng102'),s1,t3) - gprodUp(gw1,s1,t3)
-   + gprodDn(gw1,s1,t3) + SOS1_gas_balance(ng101,s1,t3)_geq
-   = 2646.558067906661
- SOS1_gas_balance(ng101,s1,t3)_leq: gshed(ng101,s1,t3)
-   - qin_sr_rt(('ng101','ng102'),s1,t3) + gprodUp(gw1,s1,t3)
-   - gprodDn(gw1,s1,t3) + SOS1_gas_balance(ng101,s1,t3)_leq
-   = -2646.558067906661
- SOS1_gas_balance(ng101,s1,t4)_geq: - gshed(ng101,s1,t4)
-   + qin_sr_rt(('ng101','ng102'),s1,t4) - gprodUp(gw1,s1,t4)
-   + gprodDn(gw1,s1,t4) + SOS1_gas_balance(ng101,s1,t4)_geq
-   = 2372.864974219922
- SOS1_gas_balance(ng101,s1,t4)_leq: gshed(ng101,s1,t4)
-   - qin_sr_rt(('ng101','ng102'),s1,t4) + gprodUp(gw1,s1,t4)
-   - gprodDn(gw1,s1,t4) + SOS1_gas_balance(ng101,s1,t4)_leq
-   = -2372.864974219922
- SOS1_gas_balance(ng101,s1,t5)_geq: - gshed(ng101,s1,t5)
-   + qin_sr_rt(('ng101','ng102'),s1,t5) - gprodUp(gw1,s1,t5)
-   + gprodDn(gw1,s1,t5) + SOS1_gas_balance(ng101,s1,t5)_geq
-   = 2335.138751940844
- SOS1_gas_balance(ng101,s1,t5)_leq: gshed(ng101,s1,t5)
-   - qin_sr_rt(('ng101','ng102'),s1,t5) + gprodUp(gw1,s1,t5)
-   - gprodDn(gw1,s1,t5) + SOS1_gas_balance(ng101,s1,t5)_leq
-   = -2335.138751940844
- SOS1_gas_balance(ng101,s1,t6)_geq: - gshed(ng101,s1,t6)
-   + qin_sr_rt(('ng101','ng102'),s1,t6) - gprodUp(gw1,s1,t6)
-   + gprodDn(gw1,s1,t6) + SOS1_gas_balance(ng101,s1,t6)_geq
-   = 2356.355078951455
- SOS1_gas_balance(ng101,s1,t6)_leq: gshed(ng101,s1,t6)
-   - qin_sr_rt(('ng101','ng102'),s1,t6) + gprodUp(gw1,s1,t6)
-   - gprodDn(gw1,s1,t6) + SOS1_gas_balance(ng101,s1,t6)_leq
-   = -2356.355078951455
- SOS1_gas_balance(ng101,s1,t7)_geq: - gshed(ng101,s1,t7)
-   + qin_sr_rt(('ng101','ng102'),s1,t7) - gprodUp(gw1,s1,t7)
-   + gprodDn(gw1,s1,t7) + SOS1_gas_balance(ng101,s1,t7)_geq
-   = 2534.208063386133
- SOS1_gas_balance(ng101,s1,t7)_leq: gshed(ng101,s1,t7)
-   - qin_sr_rt(('ng101','ng102'),s1,t7) + gprodUp(gw1,s1,t7)
-   - gprodDn(gw1,s1,t7) + SOS1_gas_balance(ng101,s1,t7)_leq
-   = -2534.208063386133
- SOS1_gas_balance(ng101,s1,t8)_geq: - gshed(ng101,s1,t8)
-   + qin_sr_rt(('ng101','ng102'),s1,t8) - gprodUp(gw1,s1,t8)
-   + gprodDn(gw1,s1,t8) + SOS1_gas_balance(ng101,s1,t8)_geq
-   = 2670.734752392153
- SOS1_gas_balance(ng101,s1,t8)_leq: gshed(ng101,s1,t8)
-   - qin_sr_rt(('ng101','ng102'),s1,t8) + gprodUp(gw1,s1,t8)
-   - gprodDn(gw1,s1,t8) + SOS1_gas_balance(ng101,s1,t8)_leq
-   = -2670.734752392153
- SOS1_gas_balance(ng101,s1,t9)_geq: - gshed(ng101,s1,t9)
-   + qin_sr_rt(('ng101','ng102'),s1,t9) - gprodUp(gw1,s1,t9)
-   + gprodDn(gw1,s1,t9) + SOS1_gas_balance(ng101,s1,t9)_geq
-   = 2820.971016143471
- SOS1_gas_balance(ng101,s1,t9)_leq: gshed(ng101,s1,t9)
-   - qin_sr_rt(('ng101','ng102'),s1,t9) + gprodUp(gw1,s1,t9)
-   - gprodDn(gw1,s1,t9) + SOS1_gas_balance(ng101,s1,t9)_leq
-   = -2820.971016143471
- SOS1_gas_balance(ng101,s1,t10)_geq: - gshed(ng101,s1,t10)
-   + qin_sr_rt(('ng101','ng102'),s1,t10) - gprodUp(gw1,s1,t10)
-   + gprodDn(gw1,s1,t10) + SOS1_gas_balance(ng101,s1,t10)_geq
-   = 2936.263502599119
- SOS1_gas_balance(ng101,s1,t10)_leq: gshed(ng101,s1,t10)
-   - qin_sr_rt(('ng101','ng102'),s1,t10) + gprodUp(gw1,s1,t10)
-   - gprodDn(gw1,s1,t10) + SOS1_gas_balance(ng101,s1,t10)_leq
-   = -2936.263502599119
- SOS1_gas_balance(ng101,s1,t11)_geq: - gshed(ng101,s1,t11)
-   + qin_sr_rt(('ng101','ng102'),s1,t11) - gprodUp(gw1,s1,t11)
-   + gprodDn(gw1,s1,t11) + SOS1_gas_balance(ng101,s1,t11)_geq
-   = 2985.445877902895
- SOS1_gas_balance(ng101,s1,t11)_leq: gshed(ng101,s1,t11)
-   - qin_sr_rt(('ng101','ng102'),s1,t11) + gprodUp(gw1,s1,t11)
-   - gprodDn(gw1,s1,t11) + SOS1_gas_balance(ng101,s1,t11)_leq
-   = -2985.445877902895
- SOS1_gas_balance(ng101,s1,t12)_geq: - gshed(ng101,s1,t12)
-   + qin_sr_rt(('ng101','ng102'),s1,t12) - gprodUp(gw1,s1,t12)
-   + gprodDn(gw1,s1,t12) + SOS1_gas_balance(ng101,s1,t12)_geq
-   = 2979.182861857632
- SOS1_gas_balance(ng101,s1,t12)_leq: gshed(ng101,s1,t12)
-   - qin_sr_rt(('ng101','ng102'),s1,t12) + gprodUp(gw1,s1,t12)
-   - gprodDn(gw1,s1,t12) + SOS1_gas_balance(ng101,s1,t12)_leq
-   = -2979.182861857632
- SOS1_gas_balance(ng101,s1,t13)_geq: - gshed(ng101,s1,t13)
-   + qin_sr_rt(('ng101','ng102'),s1,t13) - gprodUp(gw1,s1,t13)
-   + gprodDn(gw1,s1,t13) + SOS1_gas_balance(ng101,s1,t13)_geq
-   = 2957.277857096926
- SOS1_gas_balance(ng101,s1,t13)_leq: gshed(ng101,s1,t13)
-   - qin_sr_rt(('ng101','ng102'),s1,t13) + gprodUp(gw1,s1,t13)
-   - gprodDn(gw1,s1,t13) + SOS1_gas_balance(ng101,s1,t13)_leq
-   = -2957.277857096926
- SOS1_gas_balance(ng101,s1,t14)_geq: - gshed(ng101,s1,t14)
-   + qin_sr_rt(('ng101','ng102'),s1,t14) - gprodUp(gw1,s1,t14)
-   + gprodDn(gw1,s1,t14) + SOS1_gas_balance(ng101,s1,t14)_geq
-   = 2940.833215747743
- SOS1_gas_balance(ng101,s1,t14)_leq: gshed(ng101,s1,t14)
-   - qin_sr_rt(('ng101','ng102'),s1,t14) + gprodUp(gw1,s1,t14)
-   - gprodDn(gw1,s1,t14) + SOS1_gas_balance(ng101,s1,t14)_leq
-   = -2940.833215747743
- SOS1_gas_balance(ng101,s1,t15)_geq: - gshed(ng101,s1,t15)
-   + qin_sr_rt(('ng101','ng102'),s1,t15) - gprodUp(gw1,s1,t15)
-   + gprodDn(gw1,s1,t15) + SOS1_gas_balance(ng101,s1,t15)_geq
-   = 2907.645729316322
- SOS1_gas_balance(ng101,s1,t15)_leq: gshed(ng101,s1,t15)
-   - qin_sr_rt(('ng101','ng102'),s1,t15) + gprodUp(gw1,s1,t15)
-   - gprodDn(gw1,s1,t15) + SOS1_gas_balance(ng101,s1,t15)_leq
-   = -2907.645729316322
- SOS1_gas_balance(ng101,s1,t16)_geq: - gshed(ng101,s1,t16)
-   + qin_sr_rt(('ng101','ng102'),s1,t16) - gprodUp(gw1,s1,t16)
-   + gprodDn(gw1,s1,t16) + SOS1_gas_balance(ng101,s1,t16)_geq
-   = 2895.037625086115
- SOS1_gas_balance(ng101,s1,t16)_leq: gshed(ng101,s1,t16)
-   - qin_sr_rt(('ng101','ng102'),s1,t16) + gprodUp(gw1,s1,t16)
-   - gprodDn(gw1,s1,t16) + SOS1_gas_balance(ng101,s1,t16)_leq
-   = -2895.037625086115
- SOS1_gas_balance(ng101,s1,t17)_geq: - gshed(ng101,s1,t17)
-   + qin_sr_rt(('ng101','ng102'),s1,t17) - gprodUp(gw1,s1,t17)
-   + gprodDn(gw1,s1,t17) + SOS1_gas_balance(ng101,s1,t17)_geq
-   = 2955.741912514682
- SOS1_gas_balance(ng101,s1,t17)_leq: gshed(ng101,s1,t17)
-   - qin_sr_rt(('ng101','ng102'),s1,t17) + gprodUp(gw1,s1,t17)
-   - gprodDn(gw1,s1,t17) + SOS1_gas_balance(ng101,s1,t17)_leq
-   = -2955.741912514682
- SOS1_gas_balance(ng101,s1,t18)_geq: - gshed(ng101,s1,t18)
-   + qin_sr_rt(('ng101','ng102'),s1,t18) - gprodUp(gw1,s1,t18)
-   + gprodDn(gw1,s1,t18) + SOS1_gas_balance(ng101,s1,t18)_geq
-   = 3013.305512677407
- SOS1_gas_balance(ng101,s1,t18)_leq: gshed(ng101,s1,t18)
-   - qin_sr_rt(('ng101','ng102'),s1,t18) + gprodUp(gw1,s1,t18)
-   - gprodDn(gw1,s1,t18) + SOS1_gas_balance(ng101,s1,t18)_leq
-   = -3013.305512677407
- SOS1_gas_balance(ng101,s1,t19)_geq: - gshed(ng101,s1,t19)
-   + qin_sr_rt(('ng101','ng102'),s1,t19) - gprodUp(gw1,s1,t19)
-   + gprodDn(gw1,s1,t19) + SOS1_gas_balance(ng101,s1,t19)_geq
-   = 3029.846045579687
- SOS1_gas_balance(ng101,s1,t19)_leq: gshed(ng101,s1,t19)
-   - qin_sr_rt(('ng101','ng102'),s1,t19) + gprodUp(gw1,s1,t19)
-   - gprodDn(gw1,s1,t19) + SOS1_gas_balance(ng101,s1,t19)_leq
-   = -3029.846045579687
- SOS1_gas_balance(ng101,s1,t20)_geq: - gshed(ng101,s1,t20)
-   + qin_sr_rt(('ng101','ng102'),s1,t20) - gprodUp(gw1,s1,t20)
-   + gprodDn(gw1,s1,t20) + SOS1_gas_balance(ng101,s1,t20)_geq
-   = 3000.057941761911
- SOS1_gas_balance(ng101,s1,t20)_leq: gshed(ng101,s1,t20)
-   - qin_sr_rt(('ng101','ng102'),s1,t20) + gprodUp(gw1,s1,t20)
-   - gprodDn(gw1,s1,t20) + SOS1_gas_balance(ng101,s1,t20)_leq
-   = -3000.057941761911
- SOS1_gas_balance(ng101,s1,t21)_geq: - gshed(ng101,s1,t21)
-   + qin_sr_rt(('ng101','ng102'),s1,t21) - gprodUp(gw1,s1,t21)
-   + gprodDn(gw1,s1,t21) + SOS1_gas_balance(ng101,s1,t21)_geq
-   = 2913.630741553817
- SOS1_gas_balance(ng101,s1,t21)_leq: gshed(ng101,s1,t21)
-   - qin_sr_rt(('ng101','ng102'),s1,t21) + gprodUp(gw1,s1,t21)
-   - gprodDn(gw1,s1,t21) + SOS1_gas_balance(ng101,s1,t21)_leq
-   = -2913.630741553817
- SOS1_gas_balance(ng101,s1,t22)_geq: - gshed(ng101,s1,t22)
-   + qin_sr_rt(('ng101','ng102'),s1,t22) - gprodUp(gw1,s1,t22)
-   + gprodDn(gw1,s1,t22) + SOS1_gas_balance(ng101,s1,t22)_geq
-   = 2207.963031125539
- SOS1_gas_balance(ng101,s1,t22)_leq: gshed(ng101,s1,t22)
-   - qin_sr_rt(('ng101','ng102'),s1,t22) + gprodUp(gw1,s1,t22)
-   - gprodDn(gw1,s1,t22) + SOS1_gas_balance(ng101,s1,t22)_leq
-   = -2207.963031125539
- SOS1_gas_balance(ng101,s1,t23)_geq: - gshed(ng101,s1,t23)
-   + qin_sr_rt(('ng101','ng102'),s1,t23) - gprodUp(gw1,s1,t23)
-   + gprodDn(gw1,s1,t23) + SOS1_gas_balance(ng101,s1,t23)_geq = 0
- SOS1_gas_balance(ng101,s1,t23)_leq: gshed(ng101,s1,t23)
-   - qin_sr_rt(('ng101','ng102'),s1,t23) + gprodUp(gw1,s1,t23)
-   - gprodDn(gw1,s1,t23) + SOS1_gas_balance(ng101,s1,t23)_leq = 0
- SOS1_gas_balance(ng101,s1,t24)_geq: - gshed(ng101,s1,t24)
-   + qin_sr_rt(('ng101','ng102'),s1,t24) - gprodUp(gw1,s1,t24)
-   + gprodDn(gw1,s1,t24) + SOS1_gas_balance(ng101,s1,t24)_geq = 0
- SOS1_gas_balance(ng101,s1,t24)_leq: gshed(ng101,s1,t24)
-   - qin_sr_rt(('ng101','ng102'),s1,t24) + gprodUp(gw1,s1,t24)
-   - gprodDn(gw1,s1,t24) + SOS1_gas_balance(ng101,s1,t24)_leq = 0
- SOS1_gas_balance(ng102,s1,t1)_geq: - gshed(ng102,s1,t1)
-   - qout_sr_rt(('ng101','ng102'),s1,t1) + gsin_rt(gs1,s1,t1)
-   - gsout_rt(gs1,s1,t1) + SOS1_gas_balance(ng102,s1,t1)_geq
-   = -2345.10780808
- SOS1_gas_balance(ng102,s1,t1)_leq: gshed(ng102,s1,t1)
-   + qout_sr_rt(('ng101','ng102'),s1,t1) - gsin_rt(gs1,s1,t1)
-   + gsout_rt(gs1,s1,t1) + SOS1_gas_balance(ng102,s1,t1)_leq
-   = 2345.10780808
- SOS1_gas_balance(ng102,s1,t2)_geq: - gshed(ng102,s1,t2)
-   - qout_sr_rt(('ng101','ng102'),s1,t2) + gsin_rt(gs1,s1,t2)
-   - gsout_rt(gs1,s1,t2) + SOS1_gas_balance(ng102,s1,t2)_geq
-   = -2261.88515768
- SOS1_gas_balance(ng102,s1,t2)_leq: gshed(ng102,s1,t2)
-   + qout_sr_rt(('ng101','ng102'),s1,t2) - gsin_rt(gs1,s1,t2)
-   + gsout_rt(gs1,s1,t2) + SOS1_gas_balance(ng102,s1,t2)_leq
-   = 2261.88515768
- SOS1_gas_balance(ng102,s1,t3)_geq: - gshed(ng102,s1,t3)
-   - qout_sr_rt(('ng101','ng102'),s1,t3) + gsin_rt(gs1,s1,t3)
-   - gsout_rt(gs1,s1,t3) + SOS1_gas_balance(ng102,s1,t3)_geq
-   = -2174.4105252
- SOS1_gas_balance(ng102,s1,t3)_leq: gshed(ng102,s1,t3)
-   + qout_sr_rt(('ng101','ng102'),s1,t3) - gsin_rt(gs1,s1,t3)
-   + gsout_rt(gs1,s1,t3) + SOS1_gas_balance(ng102,s1,t3)_leq
-   = 2174.4105252
- SOS1_gas_balance(ng102,s1,t4)_geq: - gshed(ng102,s1,t4)
-   - qout_sr_rt(('ng101','ng102'),s1,t4) + gsin_rt(gs1,s1,t4)
-   - gsout_rt(gs1,s1,t4) + SOS1_gas_balance(ng102,s1,t4)_geq
-   = -2220.0802776
- SOS1_gas_balance(ng102,s1,t4)_leq: gshed(ng102,s1,t4)
-   + qout_sr_rt(('ng101','ng102'),s1,t4) - gsin_rt(gs1,s1,t4)
-   + gsout_rt(gs1,s1,t4) + SOS1_gas_balance(ng102,s1,t4)_leq
-   = 2220.0802776
- SOS1_gas_balance(ng102,s1,t5)_geq: - gshed(ng102,s1,t5)
-   - qout_sr_rt(('ng101','ng102'),s1,t5) + gsin_rt(gs1,s1,t5)
-   - gsout_rt(gs1,s1,t5) + SOS1_gas_balance(ng102,s1,t5)_geq
-   = -2254.04013816
- SOS1_gas_balance(ng102,s1,t5)_leq: gshed(ng102,s1,t5)
-   + qout_sr_rt(('ng101','ng102'),s1,t5) - gsin_rt(gs1,s1,t5)
-   + gsout_rt(gs1,s1,t5) + SOS1_gas_balance(ng102,s1,t5)_leq
-   = 2254.04013816
- SOS1_gas_balance(ng102,s1,t6)_geq: - gshed(ng102,s1,t6)
-   - qout_sr_rt(('ng101','ng102'),s1,t6) + gsin_rt(gs1,s1,t6)
-   - gsout_rt(gs1,s1,t6) + SOS1_gas_balance(ng102,s1,t6)_geq
-   = -2303.28568064
- SOS1_gas_balance(ng102,s1,t6)_leq: gshed(ng102,s1,t6)
-   + qout_sr_rt(('ng101','ng102'),s1,t6) - gsin_rt(gs1,s1,t6)
-   + gsout_rt(gs1,s1,t6) + SOS1_gas_balance(ng102,s1,t6)_leq
-   = 2303.28568064
- SOS1_gas_balance(ng102,s1,t7)_geq: - gshed(ng102,s1,t7)
-   - qout_sr_rt(('ng101','ng102'),s1,t7) + gsin_rt(gs1,s1,t7)
-   - gsout_rt(gs1,s1,t7) + SOS1_gas_balance(ng102,s1,t7)_geq
-   = -2632.24273328
- SOS1_gas_balance(ng102,s1,t7)_leq: gshed(ng102,s1,t7)
-   + qout_sr_rt(('ng101','ng102'),s1,t7) - gsin_rt(gs1,s1,t7)
-   + gsout_rt(gs1,s1,t7) + SOS1_gas_balance(ng102,s1,t7)_leq
-   = 2632.24273328
- SOS1_gas_balance(ng102,s1,t8)_geq: - gshed(ng102,s1,t8)
-   - qout_sr_rt(('ng101','ng102'),s1,t8) + gsin_rt(gs1,s1,t8)
-   - gsout_rt(gs1,s1,t8) + SOS1_gas_balance(ng102,s1,t8)_geq
-   = -2671.86255752
- SOS1_gas_balance(ng102,s1,t8)_leq: gshed(ng102,s1,t8)
-   + qout_sr_rt(('ng101','ng102'),s1,t8) - gsin_rt(gs1,s1,t8)
-   + gsout_rt(gs1,s1,t8) + SOS1_gas_balance(ng102,s1,t8)_leq
-   = 2671.86255752
- SOS1_gas_balance(ng102,s1,t9)_geq: - gshed(ng102,s1,t9)
-   - qout_sr_rt(('ng101','ng102'),s1,t9) + gsin_rt(gs1,s1,t9)
-   - gsout_rt(gs1,s1,t9) + SOS1_gas_balance(ng102,s1,t9)_geq
-   = -2915.82994704
- SOS1_gas_balance(ng102,s1,t9)_leq: gshed(ng102,s1,t9)
-   + qout_sr_rt(('ng101','ng102'),s1,t9) - gsin_rt(gs1,s1,t9)
-   + gsout_rt(gs1,s1,t9) + SOS1_gas_balance(ng102,s1,t9)_leq
-   = 2915.82994704
- SOS1_gas_balance(ng102,s1,t10)_geq: - gshed(ng102,s1,t10)
-   - qout_sr_rt(('ng101','ng102'),s1,t10) + gsin_rt(gs1,s1,t10)
-   - gsout_rt(gs1,s1,t10) + SOS1_gas_balance(ng102,s1,t10)_geq
-   = -2976.29073264
- SOS1_gas_balance(ng102,s1,t10)_leq: gshed(ng102,s1,t10)
-   + qout_sr_rt(('ng101','ng102'),s1,t10) - gsin_rt(gs1,s1,t10)
-   + gsout_rt(gs1,s1,t10) + SOS1_gas_balance(ng102,s1,t10)_leq
-   = 2976.29073264
- SOS1_gas_balance(ng102,s1,t11)_geq: - gshed(ng102,s1,t11)
-   - qout_sr_rt(('ng101','ng102'),s1,t11) + gsin_rt(gs1,s1,t11)
-   - gsout_rt(gs1,s1,t11) + SOS1_gas_balance(ng102,s1,t11)_geq
-   = -2982.28674624
- SOS1_gas_balance(ng102,s1,t11)_leq: gshed(ng102,s1,t11)
-   + qout_sr_rt(('ng101','ng102'),s1,t11) - gsin_rt(gs1,s1,t11)
-   + gsout_rt(gs1,s1,t11) + SOS1_gas_balance(ng102,s1,t11)_leq
-   = 2982.28674624
- SOS1_gas_balance(ng102,s1,t12)_geq: - gshed(ng102,s1,t12)
-   - qout_sr_rt(('ng101','ng102'),s1,t12) + gsin_rt(gs1,s1,t12)
-   - gsout_rt(gs1,s1,t12) + SOS1_gas_balance(ng102,s1,t12)_geq
-   = -2932.71121376
- SOS1_gas_balance(ng102,s1,t12)_leq: gshed(ng102,s1,t12)
-   + qout_sr_rt(('ng101','ng102'),s1,t12) - gsin_rt(gs1,s1,t12)
-   + gsout_rt(gs1,s1,t12) + SOS1_gas_balance(ng102,s1,t12)_leq
-   = 2932.71121376
- SOS1_gas_balance(ng102,s1,t13)_geq: - gshed(ng102,s1,t13)
-   - qout_sr_rt(('ng101','ng102'),s1,t13) + gsin_rt(gs1,s1,t13)
-   - gsout_rt(gs1,s1,t13) + SOS1_gas_balance(ng102,s1,t13)_geq
-   = -2921.30503744
- SOS1_gas_balance(ng102,s1,t13)_leq: gshed(ng102,s1,t13)
-   + qout_sr_rt(('ng101','ng102'),s1,t13) - gsin_rt(gs1,s1,t13)
-   + gsout_rt(gs1,s1,t13) + SOS1_gas_balance(ng102,s1,t13)_leq
-   = 2921.30503744
- SOS1_gas_balance(ng102,s1,t14)_geq: - gshed(ng102,s1,t14)
-   - qout_sr_rt(('ng101','ng102'),s1,t14) + gsin_rt(gs1,s1,t14)
-   - gsout_rt(gs1,s1,t14) + SOS1_gas_balance(ng102,s1,t14)_geq
-   = -2898.6098316
- SOS1_gas_balance(ng102,s1,t14)_leq: gshed(ng102,s1,t14)
-   + qout_sr_rt(('ng101','ng102'),s1,t14) - gsin_rt(gs1,s1,t14)
-   + gsout_rt(gs1,s1,t14) + SOS1_gas_balance(ng102,s1,t14)_leq
-   = 2898.6098316
- SOS1_gas_balance(ng102,s1,t15)_geq: - gshed(ng102,s1,t15)
-   - qout_sr_rt(('ng101','ng102'),s1,t15) + gsin_rt(gs1,s1,t15)
-   - gsout_rt(gs1,s1,t15) + SOS1_gas_balance(ng102,s1,t15)_geq
-   = -2836.3035512
- SOS1_gas_balance(ng102,s1,t15)_leq: gshed(ng102,s1,t15)
-   + qout_sr_rt(('ng101','ng102'),s1,t15) - gsin_rt(gs1,s1,t15)
-   + gsout_rt(gs1,s1,t15) + SOS1_gas_balance(ng102,s1,t15)_leq
-   = 2836.3035512
- SOS1_gas_balance(ng102,s1,t16)_geq: - gshed(ng102,s1,t16)
-   - qout_sr_rt(('ng101','ng102'),s1,t16) + gsin_rt(gs1,s1,t16)
-   - gsout_rt(gs1,s1,t16) + SOS1_gas_balance(ng102,s1,t16)_geq
-   = -2874.97659848
- SOS1_gas_balance(ng102,s1,t16)_leq: gshed(ng102,s1,t16)
-   + qout_sr_rt(('ng101','ng102'),s1,t16) - gsin_rt(gs1,s1,t16)
-   + gsout_rt(gs1,s1,t16) + SOS1_gas_balance(ng102,s1,t16)_leq
-   = 2874.97659848
- SOS1_gas_balance(ng102,s1,t17)_geq: - gshed(ng102,s1,t17)
-   - qout_sr_rt(('ng101','ng102'),s1,t17) + gsin_rt(gs1,s1,t17)
-   - gsout_rt(gs1,s1,t17) + SOS1_gas_balance(ng102,s1,t17)_geq
-   = -3013.57771736
- SOS1_gas_balance(ng102,s1,t17)_leq: gshed(ng102,s1,t17)
-   + qout_sr_rt(('ng101','ng102'),s1,t17) - gsin_rt(gs1,s1,t17)
-   + gsout_rt(gs1,s1,t17) + SOS1_gas_balance(ng102,s1,t17)_leq
-   = 3013.57771736
- SOS1_gas_balance(ng102,s1,t18)_geq: - gshed(ng102,s1,t18)
-   - qout_sr_rt(('ng101','ng102'),s1,t18) + gsin_rt(gs1,s1,t18)
-   - gsout_rt(gs1,s1,t18) + SOS1_gas_balance(ng102,s1,t18)_geq
-   = -3012.790068
- SOS1_gas_balance(ng102,s1,t18)_leq: gshed(ng102,s1,t18)
-   + qout_sr_rt(('ng101','ng102'),s1,t18) - gsin_rt(gs1,s1,t18)
-   + gsout_rt(gs1,s1,t18) + SOS1_gas_balance(ng102,s1,t18)_leq
-   = 3012.790068
- SOS1_gas_balance(ng102,s1,t19)_geq: - gshed(ng102,s1,t19)
-   - qout_sr_rt(('ng101','ng102'),s1,t19) + gsin_rt(gs1,s1,t19)
-   - gsout_rt(gs1,s1,t19) + SOS1_gas_balance(ng102,s1,t19)_geq
-   = -3013.78789584
- SOS1_gas_balance(ng102,s1,t19)_leq: gshed(ng102,s1,t19)
-   + qout_sr_rt(('ng101','ng102'),s1,t19) - gsin_rt(gs1,s1,t19)
-   + gsout_rt(gs1,s1,t19) + SOS1_gas_balance(ng102,s1,t19)_leq
-   = 3013.78789584
- SOS1_gas_balance(ng102,s1,t20)_geq: - gshed(ng102,s1,t20)
-   - qout_sr_rt(('ng101','ng102'),s1,t20) + gsin_rt(gs1,s1,t20)
-   - gsout_rt(gs1,s1,t20) + SOS1_gas_balance(ng102,s1,t20)_geq
-   = -2927.88135096
- SOS1_gas_balance(ng102,s1,t20)_leq: gshed(ng102,s1,t20)
-   + qout_sr_rt(('ng101','ng102'),s1,t20) - gsin_rt(gs1,s1,t20)
-   + gsout_rt(gs1,s1,t20) + SOS1_gas_balance(ng102,s1,t20)_leq
-   = 2927.88135096
- SOS1_gas_balance(ng102,s1,t21)_geq: - gshed(ng102,s1,t21)
-   - qout_sr_rt(('ng101','ng102'),s1,t21) + gsin_rt(gs1,s1,t21)
-   - gsout_rt(gs1,s1,t21) + SOS1_gas_balance(ng102,s1,t21)_geq
-   = -2801.55581912
- SOS1_gas_balance(ng102,s1,t21)_leq: gshed(ng102,s1,t21)
-   + qout_sr_rt(('ng101','ng102'),s1,t21) - gsin_rt(gs1,s1,t21)
-   + gsout_rt(gs1,s1,t21) + SOS1_gas_balance(ng102,s1,t21)_leq
-   = 2801.55581912
- SOS1_gas_balance(ng102,s1,t22)_geq: - gshed(ng102,s1,t22)
-   - qout_sr_rt(('ng101','ng102'),s1,t22) + gsin_rt(gs1,s1,t22)
-   - gsout_rt(gs1,s1,t22) + SOS1_gas_balance(ng102,s1,t22)_geq
-   = -2585.76110552
- SOS1_gas_balance(ng102,s1,t22)_leq: gshed(ng102,s1,t22)
-   + qout_sr_rt(('ng101','ng102'),s1,t22) - gsin_rt(gs1,s1,t22)
-   + gsout_rt(gs1,s1,t22) + SOS1_gas_balance(ng102,s1,t22)_leq
-   = 2585.76110552
- SOS1_gas_balance(ng102,s1,t23)_geq: - gshed(ng102,s1,t23)
-   - qout_sr_rt(('ng101','ng102'),s1,t23) + gsin_rt(gs1,s1,t23)
-   - gsout_rt(gs1,s1,t23) + SOS1_gas_balance(ng102,s1,t23)_geq
-   = -2328.93225704
- SOS1_gas_balance(ng102,s1,t23)_leq: gshed(ng102,s1,t23)
-   + qout_sr_rt(('ng101','ng102'),s1,t23) - gsin_rt(gs1,s1,t23)
-   + gsout_rt(gs1,s1,t23) + SOS1_gas_balance(ng102,s1,t23)_leq
-   = 2328.93225704
- SOS1_gas_balance(ng102,s1,t24)_geq: - gshed(ng102,s1,t24)
-   - qout_sr_rt(('ng101','ng102'),s1,t24) + gsin_rt(gs1,s1,t24)
-   - gsout_rt(gs1,s1,t24) + SOS1_gas_balance(ng102,s1,t24)_geq
-   = -2379.58522848
- SOS1_gas_balance(ng102,s1,t24)_leq: gshed(ng102,s1,t24)
-   + qout_sr_rt(('ng101','ng102'),s1,t24) - gsin_rt(gs1,s1,t24)
-   + gsout_rt(gs1,s1,t24) + SOS1_gas_balance(ng102,s1,t24)_leq
-   = 2379.58522848
- SOS1_gas_balance(ng101,s2,t1)_geq: - gshed(ng101,s2,t1)
-   + qin_sr_rt(('ng101','ng102'),s2,t1) - gprodUp(gw1,s2,t1)
-   + gprodDn(gw1,s2,t1) + SOS1_gas_balance(ng101,s2,t1)_geq
-   = 6142.913841710055
- SOS1_gas_balance(ng101,s2,t1)_leq: gshed(ng101,s2,t1)
-   - qin_sr_rt(('ng101','ng102'),s2,t1) + gprodUp(gw1,s2,t1)
-   - gprodDn(gw1,s2,t1) + SOS1_gas_balance(ng101,s2,t1)_leq
-   = -6142.913841710055
- SOS1_gas_balance(ng101,s2,t2)_geq: - gshed(ng101,s2,t2)
-   + qin_sr_rt(('ng101','ng102'),s2,t2) - gprodUp(gw1,s2,t2)
-   + gprodDn(gw1,s2,t2) + SOS1_gas_balance(ng101,s2,t2)_geq
-   = 3643.073586529465
- SOS1_gas_balance(ng101,s2,t2)_leq: gshed(ng101,s2,t2)
-   - qin_sr_rt(('ng101','ng102'),s2,t2) + gprodUp(gw1,s2,t2)
-   - gprodDn(gw1,s2,t2) + SOS1_gas_balance(ng101,s2,t2)_leq
-   = -3643.073586529465
- SOS1_gas_balance(ng101,s2,t3)_geq: - gshed(ng101,s2,t3)
-   + qin_sr_rt(('ng101','ng102'),s2,t3) - gprodUp(gw1,s2,t3)
-   + gprodDn(gw1,s2,t3) + SOS1_gas_balance(ng101,s2,t3)_geq
-   = 2646.558067906661
- SOS1_gas_balance(ng101,s2,t3)_leq: gshed(ng101,s2,t3)
-   - qin_sr_rt(('ng101','ng102'),s2,t3) + gprodUp(gw1,s2,t3)
-   - gprodDn(gw1,s2,t3) + SOS1_gas_balance(ng101,s2,t3)_leq
-   = -2646.558067906661
- SOS1_gas_balance(ng101,s2,t4)_geq: - gshed(ng101,s2,t4)
-   + qin_sr_rt(('ng101','ng102'),s2,t4) - gprodUp(gw1,s2,t4)
-   + gprodDn(gw1,s2,t4) + SOS1_gas_balance(ng101,s2,t4)_geq
-   = 2372.864974219922
- SOS1_gas_balance(ng101,s2,t4)_leq: gshed(ng101,s2,t4)
-   - qin_sr_rt(('ng101','ng102'),s2,t4) + gprodUp(gw1,s2,t4)
-   - gprodDn(gw1,s2,t4) + SOS1_gas_balance(ng101,s2,t4)_leq
-   = -2372.864974219922
- SOS1_gas_balance(ng101,s2,t5)_geq: - gshed(ng101,s2,t5)
-   + qin_sr_rt(('ng101','ng102'),s2,t5) - gprodUp(gw1,s2,t5)
-   + gprodDn(gw1,s2,t5) + SOS1_gas_balance(ng101,s2,t5)_geq
-   = 2335.138751940844
- SOS1_gas_balance(ng101,s2,t5)_leq: gshed(ng101,s2,t5)
-   - qin_sr_rt(('ng101','ng102'),s2,t5) + gprodUp(gw1,s2,t5)
-   - gprodDn(gw1,s2,t5) + SOS1_gas_balance(ng101,s2,t5)_leq
-   = -2335.138751940844
- SOS1_gas_balance(ng101,s2,t6)_geq: - gshed(ng101,s2,t6)
-   + qin_sr_rt(('ng101','ng102'),s2,t6) - gprodUp(gw1,s2,t6)
-   + gprodDn(gw1,s2,t6) + SOS1_gas_balance(ng101,s2,t6)_geq
-   = 2356.355078951455
- SOS1_gas_balance(ng101,s2,t6)_leq: gshed(ng101,s2,t6)
-   - qin_sr_rt(('ng101','ng102'),s2,t6) + gprodUp(gw1,s2,t6)
-   - gprodDn(gw1,s2,t6) + SOS1_gas_balance(ng101,s2,t6)_leq
-   = -2356.355078951455
- SOS1_gas_balance(ng101,s2,t7)_geq: - gshed(ng101,s2,t7)
-   + qin_sr_rt(('ng101','ng102'),s2,t7) - gprodUp(gw1,s2,t7)
-   + gprodDn(gw1,s2,t7) + SOS1_gas_balance(ng101,s2,t7)_geq
-   = 2534.208063386133
- SOS1_gas_balance(ng101,s2,t7)_leq: gshed(ng101,s2,t7)
-   - qin_sr_rt(('ng101','ng102'),s2,t7) + gprodUp(gw1,s2,t7)
-   - gprodDn(gw1,s2,t7) + SOS1_gas_balance(ng101,s2,t7)_leq
-   = -2534.208063386133
- SOS1_gas_balance(ng101,s2,t8)_geq: - gshed(ng101,s2,t8)
-   + qin_sr_rt(('ng101','ng102'),s2,t8) - gprodUp(gw1,s2,t8)
-   + gprodDn(gw1,s2,t8) + SOS1_gas_balance(ng101,s2,t8)_geq
-   = 2670.734752392153
- SOS1_gas_balance(ng101,s2,t8)_leq: gshed(ng101,s2,t8)
-   - qin_sr_rt(('ng101','ng102'),s2,t8) + gprodUp(gw1,s2,t8)
-   - gprodDn(gw1,s2,t8) + SOS1_gas_balance(ng101,s2,t8)_leq
-   = -2670.734752392153
- SOS1_gas_balance(ng101,s2,t9)_geq: - gshed(ng101,s2,t9)
-   + qin_sr_rt(('ng101','ng102'),s2,t9) - gprodUp(gw1,s2,t9)
-   + gprodDn(gw1,s2,t9) + SOS1_gas_balance(ng101,s2,t9)_geq
-   = 2820.971016143471
- SOS1_gas_balance(ng101,s2,t9)_leq: gshed(ng101,s2,t9)
-   - qin_sr_rt(('ng101','ng102'),s2,t9) + gprodUp(gw1,s2,t9)
-   - gprodDn(gw1,s2,t9) + SOS1_gas_balance(ng101,s2,t9)_leq
-   = -2820.971016143471
- SOS1_gas_balance(ng101,s2,t10)_geq: - gshed(ng101,s2,t10)
-   + qin_sr_rt(('ng101','ng102'),s2,t10) - gprodUp(gw1,s2,t10)
-   + gprodDn(gw1,s2,t10) + SOS1_gas_balance(ng101,s2,t10)_geq
-   = 2936.263502599119
- SOS1_gas_balance(ng101,s2,t10)_leq: gshed(ng101,s2,t10)
-   - qin_sr_rt(('ng101','ng102'),s2,t10) + gprodUp(gw1,s2,t10)
-   - gprodDn(gw1,s2,t10) + SOS1_gas_balance(ng101,s2,t10)_leq
-   = -2936.263502599119
- SOS1_gas_balance(ng101,s2,t11)_geq: - gshed(ng101,s2,t11)
-   + qin_sr_rt(('ng101','ng102'),s2,t11) - gprodUp(gw1,s2,t11)
-   + gprodDn(gw1,s2,t11) + SOS1_gas_balance(ng101,s2,t11)_geq
-   = 2985.445877902895
- SOS1_gas_balance(ng101,s2,t11)_leq: gshed(ng101,s2,t11)
-   - qin_sr_rt(('ng101','ng102'),s2,t11) + gprodUp(gw1,s2,t11)
-   - gprodDn(gw1,s2,t11) + SOS1_gas_balance(ng101,s2,t11)_leq
-   = -2985.445877902895
- SOS1_gas_balance(ng101,s2,t12)_geq: - gshed(ng101,s2,t12)
-   + qin_sr_rt(('ng101','ng102'),s2,t12) - gprodUp(gw1,s2,t12)
-   + gprodDn(gw1,s2,t12) + SOS1_gas_balance(ng101,s2,t12)_geq
-   = 2979.182861857632
- SOS1_gas_balance(ng101,s2,t12)_leq: gshed(ng101,s2,t12)
-   - qin_sr_rt(('ng101','ng102'),s2,t12) + gprodUp(gw1,s2,t12)
-   - gprodDn(gw1,s2,t12) + SOS1_gas_balance(ng101,s2,t12)_leq
-   = -2979.182861857632
- SOS1_gas_balance(ng101,s2,t13)_geq: - gshed(ng101,s2,t13)
-   + qin_sr_rt(('ng101','ng102'),s2,t13) - gprodUp(gw1,s2,t13)
-   + gprodDn(gw1,s2,t13) + SOS1_gas_balance(ng101,s2,t13)_geq
-   = 2957.277857096926
- SOS1_gas_balance(ng101,s2,t13)_leq: gshed(ng101,s2,t13)
-   - qin_sr_rt(('ng101','ng102'),s2,t13) + gprodUp(gw1,s2,t13)
-   - gprodDn(gw1,s2,t13) + SOS1_gas_balance(ng101,s2,t13)_leq
-   = -2957.277857096926
- SOS1_gas_balance(ng101,s2,t14)_geq: - gshed(ng101,s2,t14)
-   + qin_sr_rt(('ng101','ng102'),s2,t14) - gprodUp(gw1,s2,t14)
-   + gprodDn(gw1,s2,t14) + SOS1_gas_balance(ng101,s2,t14)_geq
-   = 2940.833215747743
- SOS1_gas_balance(ng101,s2,t14)_leq: gshed(ng101,s2,t14)
-   - qin_sr_rt(('ng101','ng102'),s2,t14) + gprodUp(gw1,s2,t14)
-   - gprodDn(gw1,s2,t14) + SOS1_gas_balance(ng101,s2,t14)_leq
-   = -2940.833215747743
- SOS1_gas_balance(ng101,s2,t15)_geq: - gshed(ng101,s2,t15)
-   + qin_sr_rt(('ng101','ng102'),s2,t15) - gprodUp(gw1,s2,t15)
-   + gprodDn(gw1,s2,t15) + SOS1_gas_balance(ng101,s2,t15)_geq
-   = 2907.645729316322
- SOS1_gas_balance(ng101,s2,t15)_leq: gshed(ng101,s2,t15)
-   - qin_sr_rt(('ng101','ng102'),s2,t15) + gprodUp(gw1,s2,t15)
-   - gprodDn(gw1,s2,t15) + SOS1_gas_balance(ng101,s2,t15)_leq
-   = -2907.645729316322
- SOS1_gas_balance(ng101,s2,t16)_geq: - gshed(ng101,s2,t16)
-   + qin_sr_rt(('ng101','ng102'),s2,t16) - gprodUp(gw1,s2,t16)
-   + gprodDn(gw1,s2,t16) + SOS1_gas_balance(ng101,s2,t16)_geq
-   = 2895.037625086115
- SOS1_gas_balance(ng101,s2,t16)_leq: gshed(ng101,s2,t16)
-   - qin_sr_rt(('ng101','ng102'),s2,t16) + gprodUp(gw1,s2,t16)
-   - gprodDn(gw1,s2,t16) + SOS1_gas_balance(ng101,s2,t16)_leq
-   = -2895.037625086115
- SOS1_gas_balance(ng101,s2,t17)_geq: - gshed(ng101,s2,t17)
-   + qin_sr_rt(('ng101','ng102'),s2,t17) - gprodUp(gw1,s2,t17)
-   + gprodDn(gw1,s2,t17) + SOS1_gas_balance(ng101,s2,t17)_geq
-   = 2955.741912514682
- SOS1_gas_balance(ng101,s2,t17)_leq: gshed(ng101,s2,t17)
-   - qin_sr_rt(('ng101','ng102'),s2,t17) + gprodUp(gw1,s2,t17)
-   - gprodDn(gw1,s2,t17) + SOS1_gas_balance(ng101,s2,t17)_leq
-   = -2955.741912514682
- SOS1_gas_balance(ng101,s2,t18)_geq: - gshed(ng101,s2,t18)
-   + qin_sr_rt(('ng101','ng102'),s2,t18) - gprodUp(gw1,s2,t18)
-   + gprodDn(gw1,s2,t18) + SOS1_gas_balance(ng101,s2,t18)_geq
-   = 3013.305512677407
- SOS1_gas_balance(ng101,s2,t18)_leq: gshed(ng101,s2,t18)
-   - qin_sr_rt(('ng101','ng102'),s2,t18) + gprodUp(gw1,s2,t18)
-   - gprodDn(gw1,s2,t18) + SOS1_gas_balance(ng101,s2,t18)_leq
-   = -3013.305512677407
- SOS1_gas_balance(ng101,s2,t19)_geq: - gshed(ng101,s2,t19)
-   + qin_sr_rt(('ng101','ng102'),s2,t19) - gprodUp(gw1,s2,t19)
-   + gprodDn(gw1,s2,t19) + SOS1_gas_balance(ng101,s2,t19)_geq
-   = 3029.846045579687
- SOS1_gas_balance(ng101,s2,t19)_leq: gshed(ng101,s2,t19)
-   - qin_sr_rt(('ng101','ng102'),s2,t19) + gprodUp(gw1,s2,t19)
-   - gprodDn(gw1,s2,t19) + SOS1_gas_balance(ng101,s2,t19)_leq
-   = -3029.846045579687
- SOS1_gas_balance(ng101,s2,t20)_geq: - gshed(ng101,s2,t20)
-   + qin_sr_rt(('ng101','ng102'),s2,t20) - gprodUp(gw1,s2,t20)
-   + gprodDn(gw1,s2,t20) + SOS1_gas_balance(ng101,s2,t20)_geq
-   = 3000.057941761911
- SOS1_gas_balance(ng101,s2,t20)_leq: gshed(ng101,s2,t20)
-   - qin_sr_rt(('ng101','ng102'),s2,t20) + gprodUp(gw1,s2,t20)
-   - gprodDn(gw1,s2,t20) + SOS1_gas_balance(ng101,s2,t20)_leq
-   = -3000.057941761911
- SOS1_gas_balance(ng101,s2,t21)_geq: - gshed(ng101,s2,t21)
-   + qin_sr_rt(('ng101','ng102'),s2,t21) - gprodUp(gw1,s2,t21)
-   + gprodDn(gw1,s2,t21) + SOS1_gas_balance(ng101,s2,t21)_geq
-   = 2913.630741553817
- SOS1_gas_balance(ng101,s2,t21)_leq: gshed(ng101,s2,t21)
-   - qin_sr_rt(('ng101','ng102'),s2,t21) + gprodUp(gw1,s2,t21)
-   - gprodDn(gw1,s2,t21) + SOS1_gas_balance(ng101,s2,t21)_leq
-   = -2913.630741553817
- SOS1_gas_balance(ng101,s2,t22)_geq: - gshed(ng101,s2,t22)
-   + qin_sr_rt(('ng101','ng102'),s2,t22) - gprodUp(gw1,s2,t22)
-   + gprodDn(gw1,s2,t22) + SOS1_gas_balance(ng101,s2,t22)_geq
-   = 2207.963031125539
- SOS1_gas_balance(ng101,s2,t22)_leq: gshed(ng101,s2,t22)
-   - qin_sr_rt(('ng101','ng102'),s2,t22) + gprodUp(gw1,s2,t22)
-   - gprodDn(gw1,s2,t22) + SOS1_gas_balance(ng101,s2,t22)_leq
-   = -2207.963031125539
- SOS1_gas_balance(ng101,s2,t23)_geq: - gshed(ng101,s2,t23)
-   + qin_sr_rt(('ng101','ng102'),s2,t23) - gprodUp(gw1,s2,t23)
-   + gprodDn(gw1,s2,t23) + SOS1_gas_balance(ng101,s2,t23)_geq = 0
- SOS1_gas_balance(ng101,s2,t23)_leq: gshed(ng101,s2,t23)
-   - qin_sr_rt(('ng101','ng102'),s2,t23) + gprodUp(gw1,s2,t23)
-   - gprodDn(gw1,s2,t23) + SOS1_gas_balance(ng101,s2,t23)_leq = 0
- SOS1_gas_balance(ng101,s2,t24)_geq: - gshed(ng101,s2,t24)
-   + qin_sr_rt(('ng101','ng102'),s2,t24) - gprodUp(gw1,s2,t24)
-   + gprodDn(gw1,s2,t24) + SOS1_gas_balance(ng101,s2,t24)_geq = 0
- SOS1_gas_balance(ng101,s2,t24)_leq: gshed(ng101,s2,t24)
-   - qin_sr_rt(('ng101','ng102'),s2,t24) + gprodUp(gw1,s2,t24)
-   - gprodDn(gw1,s2,t24) + SOS1_gas_balance(ng101,s2,t24)_leq = 0
- SOS1_gas_balance(ng102,s2,t1)_geq: - gshed(ng102,s2,t1)
-   - qout_sr_rt(('ng101','ng102'),s2,t1) + gsin_rt(gs1,s2,t1)
-   - gsout_rt(gs1,s2,t1) + SOS1_gas_balance(ng102,s2,t1)_geq
-   = -2422.55390392
- SOS1_gas_balance(ng102,s2,t1)_leq: gshed(ng102,s2,t1)
-   + qout_sr_rt(('ng101','ng102'),s2,t1) - gsin_rt(gs1,s2,t1)
-   + gsout_rt(gs1,s2,t1) + SOS1_gas_balance(ng102,s2,t1)_leq
-   = 2422.55390392
- SOS1_gas_balance(ng102,s2,t2)_geq: - gshed(ng102,s2,t2)
-   - qout_sr_rt(('ng101','ng102'),s2,t2) + gsin_rt(gs1,s2,t2)
-   - gsout_rt(gs1,s2,t2) + SOS1_gas_balance(ng102,s2,t2)_geq
-   = -2341.11895976
- SOS1_gas_balance(ng102,s2,t2)_leq: gshed(ng102,s2,t2)
-   + qout_sr_rt(('ng101','ng102'),s2,t2) - gsin_rt(gs1,s2,t2)
-   + gsout_rt(gs1,s2,t2) + SOS1_gas_balance(ng102,s2,t2)_leq
-   = 2341.11895976
- SOS1_gas_balance(ng102,s2,t3)_geq: - gshed(ng102,s2,t3)
-   - qout_sr_rt(('ng101','ng102'),s2,t3) + gsin_rt(gs1,s2,t3)
-   - gsout_rt(gs1,s2,t3) + SOS1_gas_balance(ng102,s2,t3)_geq
-   = -2257.20526248
- SOS1_gas_balance(ng102,s2,t3)_leq: gshed(ng102,s2,t3)
-   + qout_sr_rt(('ng101','ng102'),s2,t3) - gsin_rt(gs1,s2,t3)
-   + gsout_rt(gs1,s2,t3) + SOS1_gas_balance(ng102,s2,t3)_leq
-   = 2257.20526248
- SOS1_gas_balance(ng102,s2,t4)_geq: - gshed(ng102,s2,t4)
-   - qout_sr_rt(('ng101','ng102'),s2,t4) + gsin_rt(gs1,s2,t4)
-   - gsout_rt(gs1,s2,t4) + SOS1_gas_balance(ng102,s2,t4)_geq
-   = -2299.18227432
- SOS1_gas_balance(ng102,s2,t4)_leq: gshed(ng102,s2,t4)
-   + qout_sr_rt(('ng101','ng102'),s2,t4) - gsin_rt(gs1,s2,t4)
-   + gsout_rt(gs1,s2,t4) + SOS1_gas_balance(ng102,s2,t4)_leq
-   = 2299.18227432
- SOS1_gas_balance(ng102,s2,t5)_geq: - gshed(ng102,s2,t5)
-   - qout_sr_rt(('ng101','ng102'),s2,t5) + gsin_rt(gs1,s2,t5)
-   - gsout_rt(gs1,s2,t5) + SOS1_gas_balance(ng102,s2,t5)_geq
-   = -2334.34057704
- SOS1_gas_balance(ng102,s2,t5)_leq: gshed(ng102,s2,t5)
-   + qout_sr_rt(('ng101','ng102'),s2,t5) - gsin_rt(gs1,s2,t5)
-   + gsout_rt(gs1,s2,t5) + SOS1_gas_balance(ng102,s2,t5)_leq
-   = 2334.34057704
- SOS1_gas_balance(ng102,s2,t6)_geq: - gshed(ng102,s2,t6)
-   - qout_sr_rt(('ng101','ng102'),s2,t6) + gsin_rt(gs1,s2,t6)
-   - gsout_rt(gs1,s2,t6) + SOS1_gas_balance(ng102,s2,t6)_geq
-   = -2375.96135672
- SOS1_gas_balance(ng102,s2,t6)_leq: gshed(ng102,s2,t6)
-   + qout_sr_rt(('ng101','ng102'),s2,t6) - gsin_rt(gs1,s2,t6)
-   + gsout_rt(gs1,s2,t6) + SOS1_gas_balance(ng102,s2,t6)_leq
-   = 2375.96135672
- SOS1_gas_balance(ng102,s2,t7)_geq: - gshed(ng102,s2,t7)
-   - qout_sr_rt(('ng101','ng102'),s2,t7) + gsin_rt(gs1,s2,t7)
-   - gsout_rt(gs1,s2,t7) + SOS1_gas_balance(ng102,s2,t7)_geq
-   = -2698.62136664
- SOS1_gas_balance(ng102,s2,t7)_leq: gshed(ng102,s2,t7)
-   + qout_sr_rt(('ng101','ng102'),s2,t7) - gsin_rt(gs1,s2,t7)
-   + gsout_rt(gs1,s2,t7) + SOS1_gas_balance(ng102,s2,t7)_leq
-   = 2698.62136664
- SOS1_gas_balance(ng102,s2,t8)_geq: - gshed(ng102,s2,t8)
-   - qout_sr_rt(('ng101','ng102'),s2,t8) + gsin_rt(gs1,s2,t8)
-   - gsout_rt(gs1,s2,t8) + SOS1_gas_balance(ng102,s2,t8)_geq
-   = -2725.24979528
- SOS1_gas_balance(ng102,s2,t8)_leq: gshed(ng102,s2,t8)
-   + qout_sr_rt(('ng101','ng102'),s2,t8) - gsin_rt(gs1,s2,t8)
-   + gsout_rt(gs1,s2,t8) + SOS1_gas_balance(ng102,s2,t8)_leq
-   = 2725.24979528
- SOS1_gas_balance(ng102,s2,t9)_geq: - gshed(ng102,s2,t9)
-   - qout_sr_rt(('ng101','ng102'),s2,t9) + gsin_rt(gs1,s2,t9)
-   - gsout_rt(gs1,s2,t9) + SOS1_gas_balance(ng102,s2,t9)_geq
-   = -2957.7354816
- SOS1_gas_balance(ng102,s2,t9)_leq: gshed(ng102,s2,t9)
-   + qout_sr_rt(('ng101','ng102'),s2,t9) - gsin_rt(gs1,s2,t9)
-   + gsout_rt(gs1,s2,t9) + SOS1_gas_balance(ng102,s2,t9)_leq
-   = 2957.7354816
- SOS1_gas_balance(ng102,s2,t10)_geq: - gshed(ng102,s2,t10)
-   - qout_sr_rt(('ng101','ng102'),s2,t10) + gsin_rt(gs1,s2,t10)
-   - gsout_rt(gs1,s2,t10) + SOS1_gas_balance(ng102,s2,t10)_geq
-   = -3007.28750184
- SOS1_gas_balance(ng102,s2,t10)_leq: gshed(ng102,s2,t10)
-   + qout_sr_rt(('ng101','ng102'),s2,t10) - gsin_rt(gs1,s2,t10)
-   + gsout_rt(gs1,s2,t10) + SOS1_gas_balance(ng102,s2,t10)_leq
-   = 3007.28750184
- SOS1_gas_balance(ng102,s2,t11)_geq: - gshed(ng102,s2,t11)
-   - qout_sr_rt(('ng101','ng102'),s2,t11) + gsin_rt(gs1,s2,t11)
-   - gsout_rt(gs1,s2,t11) + SOS1_gas_balance(ng102,s2,t11)_geq
-   = -3006.14337312
- SOS1_gas_balance(ng102,s2,t11)_leq: gshed(ng102,s2,t11)
-   + qout_sr_rt(('ng101','ng102'),s2,t11) - gsin_rt(gs1,s2,t11)
-   + gsout_rt(gs1,s2,t11) + SOS1_gas_balance(ng102,s2,t11)_leq
-   = 3006.14337312
- SOS1_gas_balance(ng102,s2,t12)_geq: - gshed(ng102,s2,t12)
-   - qout_sr_rt(('ng101','ng102'),s2,t12) + gsin_rt(gs1,s2,t12)
-   - gsout_rt(gs1,s2,t12) + SOS1_gas_balance(ng102,s2,t12)_geq
-   = -2954.03198768
- SOS1_gas_balance(ng102,s2,t12)_leq: gshed(ng102,s2,t12)
-   + qout_sr_rt(('ng101','ng102'),s2,t12) - gsin_rt(gs1,s2,t12)
-   + gsout_rt(gs1,s2,t12) + SOS1_gas_balance(ng102,s2,t12)_leq
-   = 2954.03198768
- SOS1_gas_balance(ng102,s2,t13)_geq: - gshed(ng102,s2,t13)
-   - qout_sr_rt(('ng101','ng102'),s2,t13) + gsin_rt(gs1,s2,t13)
-   - gsout_rt(gs1,s2,t13) + SOS1_gas_balance(ng102,s2,t13)_geq
-   = -2943.15251872
- SOS1_gas_balance(ng102,s2,t13)_leq: gshed(ng102,s2,t13)
-   + qout_sr_rt(('ng101','ng102'),s2,t13) - gsin_rt(gs1,s2,t13)
-   + gsout_rt(gs1,s2,t13) + SOS1_gas_balance(ng102,s2,t13)_leq
-   = 2943.15251872
- SOS1_gas_balance(ng102,s2,t14)_geq: - gshed(ng102,s2,t14)
-   - qout_sr_rt(('ng101','ng102'),s2,t14) + gsin_rt(gs1,s2,t14)
-   - gsout_rt(gs1,s2,t14) + SOS1_gas_balance(ng102,s2,t14)_geq
-   = -2926.62853488
- SOS1_gas_balance(ng102,s2,t14)_leq: gshed(ng102,s2,t14)
-   + qout_sr_rt(('ng101','ng102'),s2,t14) - gsin_rt(gs1,s2,t14)
-   + gsout_rt(gs1,s2,t14) + SOS1_gas_balance(ng102,s2,t14)_leq
-   = 2926.62853488
- SOS1_gas_balance(ng102,s2,t15)_geq: - gshed(ng102,s2,t15)
-   - qout_sr_rt(('ng101','ng102'),s2,t15) + gsin_rt(gs1,s2,t15)
-   - gsout_rt(gs1,s2,t15) + SOS1_gas_balance(ng102,s2,t15)_geq
-   = -2868.1517756
- SOS1_gas_balance(ng102,s2,t15)_leq: gshed(ng102,s2,t15)
-   + qout_sr_rt(('ng101','ng102'),s2,t15) - gsin_rt(gs1,s2,t15)
-   + gsout_rt(gs1,s2,t15) + SOS1_gas_balance(ng102,s2,t15)_leq
-   = 2868.1517756
- SOS1_gas_balance(ng102,s2,t16)_geq: - gshed(ng102,s2,t16)
-   - qout_sr_rt(('ng101','ng102'),s2,t16) + gsin_rt(gs1,s2,t16)
-   - gsout_rt(gs1,s2,t16) + SOS1_gas_balance(ng102,s2,t16)_geq
-   = -2905.8461636
- SOS1_gas_balance(ng102,s2,t16)_leq: gshed(ng102,s2,t16)
-   + qout_sr_rt(('ng101','ng102'),s2,t16) - gsin_rt(gs1,s2,t16)
-   + gsout_rt(gs1,s2,t16) + SOS1_gas_balance(ng102,s2,t16)_leq
-   = 2905.8461636
- SOS1_gas_balance(ng102,s2,t17)_geq: - gshed(ng102,s2,t17)
-   - qout_sr_rt(('ng101','ng102'),s2,t17) + gsin_rt(gs1,s2,t17)
-   - gsout_rt(gs1,s2,t17) + SOS1_gas_balance(ng102,s2,t17)_geq
-   = -3039.46835048
- SOS1_gas_balance(ng102,s2,t17)_leq: gshed(ng102,s2,t17)
-   + qout_sr_rt(('ng101','ng102'),s2,t17) - gsin_rt(gs1,s2,t17)
-   + gsout_rt(gs1,s2,t17) + SOS1_gas_balance(ng102,s2,t17)_leq
-   = 3039.46835048
- SOS1_gas_balance(ng102,s2,t18)_geq: - gshed(ng102,s2,t18)
-   - qout_sr_rt(('ng101','ng102'),s2,t18) + gsin_rt(gs1,s2,t18)
-   - gsout_rt(gs1,s2,t18) + SOS1_gas_balance(ng102,s2,t18)_geq
-   = -3037.07651736
- SOS1_gas_balance(ng102,s2,t18)_leq: gshed(ng102,s2,t18)
-   + qout_sr_rt(('ng101','ng102'),s2,t18) - gsin_rt(gs1,s2,t18)
-   + gsout_rt(gs1,s2,t18) + SOS1_gas_balance(ng102,s2,t18)_leq
-   = 3037.07651736
- SOS1_gas_balance(ng102,s2,t19)_geq: - gshed(ng102,s2,t19)
-   - qout_sr_rt(('ng101','ng102'),s2,t19) + gsin_rt(gs1,s2,t19)
-   - gsout_rt(gs1,s2,t19) + SOS1_gas_balance(ng102,s2,t19)_geq
-   = -3036.89394792
- SOS1_gas_balance(ng102,s2,t19)_leq: gshed(ng102,s2,t19)
-   + qout_sr_rt(('ng101','ng102'),s2,t19) - gsin_rt(gs1,s2,t19)
-   + gsout_rt(gs1,s2,t19) + SOS1_gas_balance(ng102,s2,t19)_leq
-   = 3036.89394792
- SOS1_gas_balance(ng102,s2,t20)_geq: - gshed(ng102,s2,t20)
-   - qout_sr_rt(('ng101','ng102'),s2,t20) + gsin_rt(gs1,s2,t20)
-   - gsout_rt(gs1,s2,t20) + SOS1_gas_balance(ng102,s2,t20)_geq
-   = -2949.62215896
- SOS1_gas_balance(ng102,s2,t20)_leq: gshed(ng102,s2,t20)
-   + qout_sr_rt(('ng101','ng102'),s2,t20) - gsin_rt(gs1,s2,t20)
-   + gsout_rt(gs1,s2,t20) + SOS1_gas_balance(ng102,s2,t20)_leq
-   = 2949.62215896
- SOS1_gas_balance(ng102,s2,t21)_geq: - gshed(ng102,s2,t21)
-   - qout_sr_rt(('ng101','ng102'),s2,t21) + gsin_rt(gs1,s2,t21)
-   - gsout_rt(gs1,s2,t21) + SOS1_gas_balance(ng102,s2,t21)_geq
-   = -2820.95740136
- SOS1_gas_balance(ng102,s2,t21)_leq: gshed(ng102,s2,t21)
-   + qout_sr_rt(('ng101','ng102'),s2,t21) - gsin_rt(gs1,s2,t21)
-   + gsout_rt(gs1,s2,t21) + SOS1_gas_balance(ng102,s2,t21)_leq
-   = 2820.95740136
- SOS1_gas_balance(ng102,s2,t22)_geq: - gshed(ng102,s2,t22)
-   - qout_sr_rt(('ng101','ng102'),s2,t22) + gsin_rt(gs1,s2,t22)
-   - gsout_rt(gs1,s2,t22) + SOS1_gas_balance(ng102,s2,t22)_geq
-   = -2603.73841712
- SOS1_gas_balance(ng102,s2,t22)_leq: gshed(ng102,s2,t22)
-   + qout_sr_rt(('ng101','ng102'),s2,t22) - gsin_rt(gs1,s2,t22)
-   + gsout_rt(gs1,s2,t22) + SOS1_gas_balance(ng102,s2,t22)_leq
-   = 2603.73841712
- SOS1_gas_balance(ng102,s2,t23)_geq: - gshed(ng102,s2,t23)
-   - qout_sr_rt(('ng101','ng102'),s2,t23) + gsin_rt(gs1,s2,t23)
-   - gsout_rt(gs1,s2,t23) + SOS1_gas_balance(ng102,s2,t23)_geq
-   = -2344.4661284
- SOS1_gas_balance(ng102,s2,t23)_leq: gshed(ng102,s2,t23)
-   + qout_sr_rt(('ng101','ng102'),s2,t23) - gsin_rt(gs1,s2,t23)
-   + gsout_rt(gs1,s2,t23) + SOS1_gas_balance(ng102,s2,t23)_leq
-   = 2344.4661284
- SOS1_gas_balance(ng102,s2,t24)_geq: - gshed(ng102,s2,t24)
-   - qout_sr_rt(('ng101','ng102'),s2,t24) + gsin_rt(gs1,s2,t24)
-   - gsout_rt(gs1,s2,t24) + SOS1_gas_balance(ng102,s2,t24)_geq
-   = -2389.6162332
- SOS1_gas_balance(ng102,s2,t24)_leq: gshed(ng102,s2,t24)
-   + qout_sr_rt(('ng101','ng102'),s2,t24) - gsin_rt(gs1,s2,t24)
-   + gsout_rt(gs1,s2,t24) + SOS1_gas_balance(ng102,s2,t24)_leq
-   = 2389.6162332
  SOS1_LB_pres_rt(ng101,s1,t1): - pres_rt(ng101,s1,t1)
    + SOS1_LB_pres_rt(ng101,s1,t1) = 0
  SOS1_LB_gshed(ng101,s1,t1): - gshed(ng101,s1,t1)
@@ -28526,12 +25232,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t1,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t1,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t1,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t1)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t1)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t1)
    - muLB_pres_rt(ng101,s1,t1) = -0.5
  dLag/gshed(ng101,s1,t1): mu_gas_shed_rt(ng101,s1,t1)
-   - mu_gas_balance(ng101,s1,t1)_geq + mu_gas_balance(ng101,s1,t1)_leq
-   - muLB_gshed(ng101,s1,t1) = -5000
+   + lambda_gas_balance(ng101,s1,t1) - muLB_gshed(ng101,s1,t1) = -5000
  dLag/pres_rt(ng102,s1,t1): mu_PresMax(ng102,s1,t1)
    - mu_PresMin(ng102,s1,t1) + mu_Send_geq_Receive_rtt1s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t1,1,0)
@@ -28579,12 +25283,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t1,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t1,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t1,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t1)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t1)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t1)
    - muLB_pres_rt(ng102,s1,t1) = 0.5
  dLag/gshed(ng102,s1,t1): mu_gas_shed_rt(ng102,s1,t1)
-   - mu_gas_balance(ng102,s1,t1)_geq + mu_gas_balance(ng102,s1,t1)_leq
-   - muLB_gshed(ng102,s1,t1) = -5000
+   + lambda_gas_balance(ng102,s1,t1) - muLB_gshed(ng102,s1,t1) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t1):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t1,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t1,2,0)
@@ -28631,49 +25333,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t1,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t1,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t1,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t1)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t1)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t1)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t1) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t1):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t1)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t1)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t2)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t2)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t1)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t1)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t1)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t2)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t1)
    - muLB_lpack_rt(('ng101','ng102'),s1,t1) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t1):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t1)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t1)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t1)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t1)_leq
-   + mu_gas_balance(ng101,s1,t1)_geq - mu_gas_balance(ng101,s1,t1)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t1)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t1)
+   - lambda_gas_balance(ng101,s1,t1)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t1) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t1):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t1)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t1)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t1)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t1)_leq
-   - mu_gas_balance(ng102,s1,t1)_geq + mu_gas_balance(ng102,s1,t1)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t1)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t1)
+   + lambda_gas_balance(ng102,s1,t1)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t1) = 0
  dLag/gprodUp(gw1,s1,t1): mu_gprodUp_max(gw1,s1,t1)
-   - mu_gas_balance(ng101,s1,t1)_geq + mu_gas_balance(ng101,s1,t1)_leq
-   - muLB_gprodUp(gw1,s1,t1) = -1.65
+   + lambda_gas_balance(ng101,s1,t1) - muLB_gprodUp(gw1,s1,t1) = -1.65
  dLag/gprodDn(gw1,s1,t1): mu_gprodDn_max(gw1,s1,t1)
-   + mu_gas_balance(ng101,s1,t1)_geq - mu_gas_balance(ng101,s1,t1)_leq
-   - muLB_gprodDn(gw1,s1,t1) = 1.425
+   - lambda_gas_balance(ng101,s1,t1) - muLB_gprodDn(gw1,s1,t1) = 1.425
  dLag/gsin_rt(gs1,s1,t1): mu_gsinMax_rt(gs1,t1,s1)
-   + mu_gstor_def_rt(gs1,s1,t1)_geq - mu_gstor_def_rt(gs1,s1,t1)_leq
-   + mu_gas_balance(ng102,s1,t1)_geq - mu_gas_balance(ng102,s1,t1)_leq
+   - lambda_gstor_def_rt(gs1,s1,t1) - lambda_gas_balance(ng102,s1,t1)
    - muLB_gsin_rt(gs1,s1,t1) = 0
  dLag/gsout_rt(gs1,s1,t1): mu_gsoutMax_rt(gs1,t1,s1)
-   - mu_gstor_def_rt(gs1,s1,t1)_geq + mu_gstor_def_rt(gs1,s1,t1)_leq
-   - mu_gas_balance(ng102,s1,t1)_geq + mu_gas_balance(ng102,s1,t1)_leq
+   + lambda_gstor_def_rt(gs1,s1,t1) + lambda_gas_balance(ng102,s1,t1)
    - muLB_gsout_rt(gs1,s1,t1) = 0
  dLag/gstore_rt(gs1,s1,t1): mu_gstore_max_rt(gs1,t1,s1)
-   - mu_gstore_min_rt(gs1,t1,s1) + mu_gstor_def_rt(gs1,s1,t2)_geq
-   - mu_gstor_def_rt(gs1,s1,t2)_leq - mu_gstor_def_rt(gs1,s1,t1)_geq
-   + mu_gstor_def_rt(gs1,s1,t1)_leq - muLB_gstore_rt(gs1,s1,t1) = 0
+   - mu_gstore_min_rt(gs1,t1,s1) - lambda_gstor_def_rt(gs1,s1,t2)
+   + lambda_gstor_def_rt(gs1,s1,t1) - muLB_gstore_rt(gs1,s1,t1) = 0
  dLag/pres_rt(ng101,s1,t2): mu_PresMax(ng101,s1,t2)
    - mu_PresMin(ng101,s1,t2) - mu_Send_geq_Receive_rtt2s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t2,1,0)
@@ -28721,12 +25410,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t2,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t2,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t2,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t2)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t2)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t2)
    - muLB_pres_rt(ng101,s1,t2) = -0.5
  dLag/gshed(ng101,s1,t2): mu_gas_shed_rt(ng101,s1,t2)
-   - mu_gas_balance(ng101,s1,t2)_geq + mu_gas_balance(ng101,s1,t2)_leq
-   - muLB_gshed(ng101,s1,t2) = -5000
+   + lambda_gas_balance(ng101,s1,t2) - muLB_gshed(ng101,s1,t2) = -5000
  dLag/pres_rt(ng102,s1,t2): mu_PresMax(ng102,s1,t2)
    - mu_PresMin(ng102,s1,t2) + mu_Send_geq_Receive_rtt2s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t2,1,0)
@@ -28774,12 +25461,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t2,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t2,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t2,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t2)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t2)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t2)
    - muLB_pres_rt(ng102,s1,t2) = 0.5
  dLag/gshed(ng102,s1,t2): mu_gas_shed_rt(ng102,s1,t2)
-   - mu_gas_balance(ng102,s1,t2)_geq + mu_gas_balance(ng102,s1,t2)_leq
-   - muLB_gshed(ng102,s1,t2) = -5000
+   + lambda_gas_balance(ng102,s1,t2) - muLB_gshed(ng102,s1,t2) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t2):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t2,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t2,2,0)
@@ -28826,49 +25511,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t2,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t2,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t2,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t2)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t2)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t2)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t2) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t2):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t2)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t2)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t2)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t2)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t3)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t3)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t2)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t2)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t3)
    - muLB_lpack_rt(('ng101','ng102'),s1,t2) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t2):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t2)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t2)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t2)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t2)_leq
-   + mu_gas_balance(ng101,s1,t2)_geq - mu_gas_balance(ng101,s1,t2)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t2)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t2)
+   - lambda_gas_balance(ng101,s1,t2)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t2) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t2):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t2)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t2)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t2)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t2)_leq
-   - mu_gas_balance(ng102,s1,t2)_geq + mu_gas_balance(ng102,s1,t2)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t2)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t2)
+   + lambda_gas_balance(ng102,s1,t2)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t2) = 0
  dLag/gprodUp(gw1,s1,t2): mu_gprodUp_max(gw1,s1,t2)
-   - mu_gas_balance(ng101,s1,t2)_geq + mu_gas_balance(ng101,s1,t2)_leq
-   - muLB_gprodUp(gw1,s1,t2) = -2.2
+   + lambda_gas_balance(ng101,s1,t2) - muLB_gprodUp(gw1,s1,t2) = -2.2
  dLag/gprodDn(gw1,s1,t2): mu_gprodDn_max(gw1,s1,t2)
-   + mu_gas_balance(ng101,s1,t2)_geq - mu_gas_balance(ng101,s1,t2)_leq
-   - muLB_gprodDn(gw1,s1,t2) = 1.9
+   - lambda_gas_balance(ng101,s1,t2) - muLB_gprodDn(gw1,s1,t2) = 1.9
  dLag/gsin_rt(gs1,s1,t2): mu_gsinMax_rt(gs1,t2,s1)
-   + mu_gstor_def_rt(gs1,s1,t2)_geq - mu_gstor_def_rt(gs1,s1,t2)_leq
-   + mu_gas_balance(ng102,s1,t2)_geq - mu_gas_balance(ng102,s1,t2)_leq
+   - lambda_gstor_def_rt(gs1,s1,t2) - lambda_gas_balance(ng102,s1,t2)
    - muLB_gsin_rt(gs1,s1,t2) = 0
  dLag/gsout_rt(gs1,s1,t2): mu_gsoutMax_rt(gs1,t2,s1)
-   - mu_gstor_def_rt(gs1,s1,t2)_geq + mu_gstor_def_rt(gs1,s1,t2)_leq
-   - mu_gas_balance(ng102,s1,t2)_geq + mu_gas_balance(ng102,s1,t2)_leq
+   + lambda_gstor_def_rt(gs1,s1,t2) + lambda_gas_balance(ng102,s1,t2)
    - muLB_gsout_rt(gs1,s1,t2) = 0
  dLag/gstore_rt(gs1,s1,t2): mu_gstore_max_rt(gs1,t2,s1)
-   - mu_gstore_min_rt(gs1,t2,s1) - mu_gstor_def_rt(gs1,s1,t2)_geq
-   + mu_gstor_def_rt(gs1,s1,t2)_leq + mu_gstor_def_rt(gs1,s1,t3)_geq
-   - mu_gstor_def_rt(gs1,s1,t3)_leq - muLB_gstore_rt(gs1,s1,t2) = 0
+   - mu_gstore_min_rt(gs1,t2,s1) + lambda_gstor_def_rt(gs1,s1,t2)
+   - lambda_gstor_def_rt(gs1,s1,t3) - muLB_gstore_rt(gs1,s1,t2) = 0
  dLag/pres_rt(ng101,s1,t3): mu_PresMax(ng101,s1,t3)
    - mu_PresMin(ng101,s1,t3) - mu_Send_geq_Receive_rtt3s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t3,1,0)
@@ -28916,12 +25588,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t3,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t3,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t3,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t3)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t3)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t3)
    - muLB_pres_rt(ng101,s1,t3) = -0.5
  dLag/gshed(ng101,s1,t3): mu_gas_shed_rt(ng101,s1,t3)
-   - mu_gas_balance(ng101,s1,t3)_geq + mu_gas_balance(ng101,s1,t3)_leq
-   - muLB_gshed(ng101,s1,t3) = -5000
+   + lambda_gas_balance(ng101,s1,t3) - muLB_gshed(ng101,s1,t3) = -5000
  dLag/pres_rt(ng102,s1,t3): mu_PresMax(ng102,s1,t3)
    - mu_PresMin(ng102,s1,t3) + mu_Send_geq_Receive_rtt3s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t3,1,0)
@@ -28969,12 +25639,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t3,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t3,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t3,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t3)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t3)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t3)
    - muLB_pres_rt(ng102,s1,t3) = 0.5
  dLag/gshed(ng102,s1,t3): mu_gas_shed_rt(ng102,s1,t3)
-   - mu_gas_balance(ng102,s1,t3)_geq + mu_gas_balance(ng102,s1,t3)_leq
-   - muLB_gshed(ng102,s1,t3) = -5000
+   + lambda_gas_balance(ng102,s1,t3) - muLB_gshed(ng102,s1,t3) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t3):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t3,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t3,2,0)
@@ -29021,49 +25689,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t3,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t3,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t3,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t3)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t3)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t3)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t3) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t3):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t3)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t3)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t3)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t3)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t4)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t4)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t3)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t3)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t4)
    - muLB_lpack_rt(('ng101','ng102'),s1,t3) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t3):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t3)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t3)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t3)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t3)_leq
-   + mu_gas_balance(ng101,s1,t3)_geq - mu_gas_balance(ng101,s1,t3)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t3)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t3)
+   - lambda_gas_balance(ng101,s1,t3)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t3) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t3):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t3)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t3)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t3)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t3)_leq
-   - mu_gas_balance(ng102,s1,t3)_geq + mu_gas_balance(ng102,s1,t3)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t3)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t3)
+   + lambda_gas_balance(ng102,s1,t3)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t3) = 0
  dLag/gprodUp(gw1,s1,t3): mu_gprodUp_max(gw1,s1,t3)
-   - mu_gas_balance(ng101,s1,t3)_geq + mu_gas_balance(ng101,s1,t3)_leq
-   - muLB_gprodUp(gw1,s1,t3) = -2.75
+   + lambda_gas_balance(ng101,s1,t3) - muLB_gprodUp(gw1,s1,t3) = -2.75
  dLag/gprodDn(gw1,s1,t3): mu_gprodDn_max(gw1,s1,t3)
-   + mu_gas_balance(ng101,s1,t3)_geq - mu_gas_balance(ng101,s1,t3)_leq
-   - muLB_gprodDn(gw1,s1,t3) = 2.375
+   - lambda_gas_balance(ng101,s1,t3) - muLB_gprodDn(gw1,s1,t3) = 2.375
  dLag/gsin_rt(gs1,s1,t3): mu_gsinMax_rt(gs1,t3,s1)
-   + mu_gstor_def_rt(gs1,s1,t3)_geq - mu_gstor_def_rt(gs1,s1,t3)_leq
-   + mu_gas_balance(ng102,s1,t3)_geq - mu_gas_balance(ng102,s1,t3)_leq
+   - lambda_gstor_def_rt(gs1,s1,t3) - lambda_gas_balance(ng102,s1,t3)
    - muLB_gsin_rt(gs1,s1,t3) = 0
  dLag/gsout_rt(gs1,s1,t3): mu_gsoutMax_rt(gs1,t3,s1)
-   - mu_gstor_def_rt(gs1,s1,t3)_geq + mu_gstor_def_rt(gs1,s1,t3)_leq
-   - mu_gas_balance(ng102,s1,t3)_geq + mu_gas_balance(ng102,s1,t3)_leq
+   + lambda_gstor_def_rt(gs1,s1,t3) + lambda_gas_balance(ng102,s1,t3)
    - muLB_gsout_rt(gs1,s1,t3) = 0
  dLag/gstore_rt(gs1,s1,t3): mu_gstore_max_rt(gs1,t3,s1)
-   - mu_gstore_min_rt(gs1,t3,s1) - mu_gstor_def_rt(gs1,s1,t3)_geq
-   + mu_gstor_def_rt(gs1,s1,t3)_leq + mu_gstor_def_rt(gs1,s1,t4)_geq
-   - mu_gstor_def_rt(gs1,s1,t4)_leq - muLB_gstore_rt(gs1,s1,t3) = 0
+   - mu_gstore_min_rt(gs1,t3,s1) + lambda_gstor_def_rt(gs1,s1,t3)
+   - lambda_gstor_def_rt(gs1,s1,t4) - muLB_gstore_rt(gs1,s1,t3) = 0
  dLag/pres_rt(ng101,s1,t4): mu_PresMax(ng101,s1,t4)
    - mu_PresMin(ng101,s1,t4) - mu_Send_geq_Receive_rtt4s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t4,1,0)
@@ -29111,12 +25766,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t4,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t4,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t4,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t4)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t4)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t4)
    - muLB_pres_rt(ng101,s1,t4) = -0.5
  dLag/gshed(ng101,s1,t4): mu_gas_shed_rt(ng101,s1,t4)
-   - mu_gas_balance(ng101,s1,t4)_geq + mu_gas_balance(ng101,s1,t4)_leq
-   - muLB_gshed(ng101,s1,t4) = -5000
+   + lambda_gas_balance(ng101,s1,t4) - muLB_gshed(ng101,s1,t4) = -5000
  dLag/pres_rt(ng102,s1,t4): mu_PresMax(ng102,s1,t4)
    - mu_PresMin(ng102,s1,t4) + mu_Send_geq_Receive_rtt4s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t4,1,0)
@@ -29164,12 +25817,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t4,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t4,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t4,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t4)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t4)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t4)
    - muLB_pres_rt(ng102,s1,t4) = 0.5
  dLag/gshed(ng102,s1,t4): mu_gas_shed_rt(ng102,s1,t4)
-   - mu_gas_balance(ng102,s1,t4)_geq + mu_gas_balance(ng102,s1,t4)_leq
-   - muLB_gshed(ng102,s1,t4) = -5000
+   + lambda_gas_balance(ng102,s1,t4) - muLB_gshed(ng102,s1,t4) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t4):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t4,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t4,2,0)
@@ -29216,49 +25867,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t4,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t4,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t4,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t4)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t4)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t4)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t4) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t4):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t4)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t4)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t4)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t4)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t5)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t5)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t4)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t4)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t5)
    - muLB_lpack_rt(('ng101','ng102'),s1,t4) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t4):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t4)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t4)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t4)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t4)_leq
-   + mu_gas_balance(ng101,s1,t4)_geq - mu_gas_balance(ng101,s1,t4)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t4)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t4)
+   - lambda_gas_balance(ng101,s1,t4)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t4) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t4):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t4)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t4)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t4)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t4)_leq
-   - mu_gas_balance(ng102,s1,t4)_geq + mu_gas_balance(ng102,s1,t4)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t4)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t4)
+   + lambda_gas_balance(ng102,s1,t4)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t4) = 0
  dLag/gprodUp(gw1,s1,t4): mu_gprodUp_max(gw1,s1,t4)
-   - mu_gas_balance(ng101,s1,t4)_geq + mu_gas_balance(ng101,s1,t4)_leq
-   - muLB_gprodUp(gw1,s1,t4) = -3.3
+   + lambda_gas_balance(ng101,s1,t4) - muLB_gprodUp(gw1,s1,t4) = -3.3
  dLag/gprodDn(gw1,s1,t4): mu_gprodDn_max(gw1,s1,t4)
-   + mu_gas_balance(ng101,s1,t4)_geq - mu_gas_balance(ng101,s1,t4)_leq
-   - muLB_gprodDn(gw1,s1,t4) = 2.85
+   - lambda_gas_balance(ng101,s1,t4) - muLB_gprodDn(gw1,s1,t4) = 2.85
  dLag/gsin_rt(gs1,s1,t4): mu_gsinMax_rt(gs1,t4,s1)
-   + mu_gstor_def_rt(gs1,s1,t4)_geq - mu_gstor_def_rt(gs1,s1,t4)_leq
-   + mu_gas_balance(ng102,s1,t4)_geq - mu_gas_balance(ng102,s1,t4)_leq
+   - lambda_gstor_def_rt(gs1,s1,t4) - lambda_gas_balance(ng102,s1,t4)
    - muLB_gsin_rt(gs1,s1,t4) = 0
  dLag/gsout_rt(gs1,s1,t4): mu_gsoutMax_rt(gs1,t4,s1)
-   - mu_gstor_def_rt(gs1,s1,t4)_geq + mu_gstor_def_rt(gs1,s1,t4)_leq
-   - mu_gas_balance(ng102,s1,t4)_geq + mu_gas_balance(ng102,s1,t4)_leq
+   + lambda_gstor_def_rt(gs1,s1,t4) + lambda_gas_balance(ng102,s1,t4)
    - muLB_gsout_rt(gs1,s1,t4) = 0
  dLag/gstore_rt(gs1,s1,t4): mu_gstore_max_rt(gs1,t4,s1)
-   - mu_gstore_min_rt(gs1,t4,s1) - mu_gstor_def_rt(gs1,s1,t4)_geq
-   + mu_gstor_def_rt(gs1,s1,t4)_leq + mu_gstor_def_rt(gs1,s1,t5)_geq
-   - mu_gstor_def_rt(gs1,s1,t5)_leq - muLB_gstore_rt(gs1,s1,t4) = 0
+   - mu_gstore_min_rt(gs1,t4,s1) + lambda_gstor_def_rt(gs1,s1,t4)
+   - lambda_gstor_def_rt(gs1,s1,t5) - muLB_gstore_rt(gs1,s1,t4) = 0
  dLag/pres_rt(ng101,s1,t5): mu_PresMax(ng101,s1,t5)
    - mu_PresMin(ng101,s1,t5) - mu_Send_geq_Receive_rtt5s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t5,1,0)
@@ -29306,12 +25944,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t5,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t5,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t5,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t5)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t5)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t5)
    - muLB_pres_rt(ng101,s1,t5) = -0.5
  dLag/gshed(ng101,s1,t5): mu_gas_shed_rt(ng101,s1,t5)
-   - mu_gas_balance(ng101,s1,t5)_geq + mu_gas_balance(ng101,s1,t5)_leq
-   - muLB_gshed(ng101,s1,t5) = -5000
+   + lambda_gas_balance(ng101,s1,t5) - muLB_gshed(ng101,s1,t5) = -5000
  dLag/pres_rt(ng102,s1,t5): mu_PresMax(ng102,s1,t5)
    - mu_PresMin(ng102,s1,t5) + mu_Send_geq_Receive_rtt5s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t5,1,0)
@@ -29359,12 +25995,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t5,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t5,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t5,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t5)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t5)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t5)
    - muLB_pres_rt(ng102,s1,t5) = 0.5
  dLag/gshed(ng102,s1,t5): mu_gas_shed_rt(ng102,s1,t5)
-   - mu_gas_balance(ng102,s1,t5)_geq + mu_gas_balance(ng102,s1,t5)_leq
-   - muLB_gshed(ng102,s1,t5) = -5000
+   + lambda_gas_balance(ng102,s1,t5) - muLB_gshed(ng102,s1,t5) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t5):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t5,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t5,2,0)
@@ -29411,49 +26045,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t5,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t5,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t5,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t5)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t5)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t5)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t5) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t5):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t5)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t5)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t5)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t5)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t6)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t6)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t5)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t5)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t6)
    - muLB_lpack_rt(('ng101','ng102'),s1,t5) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t5):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t5)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t5)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t5)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t5)_leq
-   + mu_gas_balance(ng101,s1,t5)_geq - mu_gas_balance(ng101,s1,t5)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t5)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t5)
+   - lambda_gas_balance(ng101,s1,t5)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t5) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t5):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t5)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t5)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t5)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t5)_leq
-   - mu_gas_balance(ng102,s1,t5)_geq + mu_gas_balance(ng102,s1,t5)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t5)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t5)
+   + lambda_gas_balance(ng102,s1,t5)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t5) = 0
  dLag/gprodUp(gw1,s1,t5): mu_gprodUp_max(gw1,s1,t5)
-   - mu_gas_balance(ng101,s1,t5)_geq + mu_gas_balance(ng101,s1,t5)_leq
-   - muLB_gprodUp(gw1,s1,t5) = -3.85
+   + lambda_gas_balance(ng101,s1,t5) - muLB_gprodUp(gw1,s1,t5) = -3.85
  dLag/gprodDn(gw1,s1,t5): mu_gprodDn_max(gw1,s1,t5)
-   + mu_gas_balance(ng101,s1,t5)_geq - mu_gas_balance(ng101,s1,t5)_leq
-   - muLB_gprodDn(gw1,s1,t5) = 3.325
+   - lambda_gas_balance(ng101,s1,t5) - muLB_gprodDn(gw1,s1,t5) = 3.325
  dLag/gsin_rt(gs1,s1,t5): mu_gsinMax_rt(gs1,t5,s1)
-   + mu_gstor_def_rt(gs1,s1,t5)_geq - mu_gstor_def_rt(gs1,s1,t5)_leq
-   + mu_gas_balance(ng102,s1,t5)_geq - mu_gas_balance(ng102,s1,t5)_leq
+   - lambda_gstor_def_rt(gs1,s1,t5) - lambda_gas_balance(ng102,s1,t5)
    - muLB_gsin_rt(gs1,s1,t5) = 0
  dLag/gsout_rt(gs1,s1,t5): mu_gsoutMax_rt(gs1,t5,s1)
-   - mu_gstor_def_rt(gs1,s1,t5)_geq + mu_gstor_def_rt(gs1,s1,t5)_leq
-   - mu_gas_balance(ng102,s1,t5)_geq + mu_gas_balance(ng102,s1,t5)_leq
+   + lambda_gstor_def_rt(gs1,s1,t5) + lambda_gas_balance(ng102,s1,t5)
    - muLB_gsout_rt(gs1,s1,t5) = 0
  dLag/gstore_rt(gs1,s1,t5): mu_gstore_max_rt(gs1,t5,s1)
-   - mu_gstore_min_rt(gs1,t5,s1) - mu_gstor_def_rt(gs1,s1,t5)_geq
-   + mu_gstor_def_rt(gs1,s1,t5)_leq + mu_gstor_def_rt(gs1,s1,t6)_geq
-   - mu_gstor_def_rt(gs1,s1,t6)_leq - muLB_gstore_rt(gs1,s1,t5) = 0
+   - mu_gstore_min_rt(gs1,t5,s1) + lambda_gstor_def_rt(gs1,s1,t5)
+   - lambda_gstor_def_rt(gs1,s1,t6) - muLB_gstore_rt(gs1,s1,t5) = 0
  dLag/pres_rt(ng101,s1,t6): mu_PresMax(ng101,s1,t6)
    - mu_PresMin(ng101,s1,t6) - mu_Send_geq_Receive_rtt6s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t6,1,0)
@@ -29501,12 +26122,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t6,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t6,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t6,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t6)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t6)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t6)
    - muLB_pres_rt(ng101,s1,t6) = -0.5
  dLag/gshed(ng101,s1,t6): mu_gas_shed_rt(ng101,s1,t6)
-   - mu_gas_balance(ng101,s1,t6)_geq + mu_gas_balance(ng101,s1,t6)_leq
-   - muLB_gshed(ng101,s1,t6) = -5000
+   + lambda_gas_balance(ng101,s1,t6) - muLB_gshed(ng101,s1,t6) = -5000
  dLag/pres_rt(ng102,s1,t6): mu_PresMax(ng102,s1,t6)
    - mu_PresMin(ng102,s1,t6) + mu_Send_geq_Receive_rtt6s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t6,1,0)
@@ -29554,12 +26173,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t6,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t6,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t6,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t6)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t6)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t6)
    - muLB_pres_rt(ng102,s1,t6) = 0.5
  dLag/gshed(ng102,s1,t6): mu_gas_shed_rt(ng102,s1,t6)
-   - mu_gas_balance(ng102,s1,t6)_geq + mu_gas_balance(ng102,s1,t6)_leq
-   - muLB_gshed(ng102,s1,t6) = -5000
+   + lambda_gas_balance(ng102,s1,t6) - muLB_gshed(ng102,s1,t6) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t6):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t6,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t6,2,0)
@@ -29606,49 +26223,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t6,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t6,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t6,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t6)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t6)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t6)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t6) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t6):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t6)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t6)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t6)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t6)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t7)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t7)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t6)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t6)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t7)
    - muLB_lpack_rt(('ng101','ng102'),s1,t6) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t6):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t6)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t6)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t6)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t6)_leq
-   + mu_gas_balance(ng101,s1,t6)_geq - mu_gas_balance(ng101,s1,t6)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t6)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t6)
+   - lambda_gas_balance(ng101,s1,t6)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t6) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t6):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t6)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t6)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t6)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t6)_leq
-   - mu_gas_balance(ng102,s1,t6)_geq + mu_gas_balance(ng102,s1,t6)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t6)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t6)
+   + lambda_gas_balance(ng102,s1,t6)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t6) = 0
  dLag/gprodUp(gw1,s1,t6): mu_gprodUp_max(gw1,s1,t6)
-   - mu_gas_balance(ng101,s1,t6)_geq + mu_gas_balance(ng101,s1,t6)_leq
-   - muLB_gprodUp(gw1,s1,t6) = -4.4
+   + lambda_gas_balance(ng101,s1,t6) - muLB_gprodUp(gw1,s1,t6) = -4.4
  dLag/gprodDn(gw1,s1,t6): mu_gprodDn_max(gw1,s1,t6)
-   + mu_gas_balance(ng101,s1,t6)_geq - mu_gas_balance(ng101,s1,t6)_leq
-   - muLB_gprodDn(gw1,s1,t6) = 3.8
+   - lambda_gas_balance(ng101,s1,t6) - muLB_gprodDn(gw1,s1,t6) = 3.8
  dLag/gsin_rt(gs1,s1,t6): mu_gsinMax_rt(gs1,t6,s1)
-   + mu_gstor_def_rt(gs1,s1,t6)_geq - mu_gstor_def_rt(gs1,s1,t6)_leq
-   + mu_gas_balance(ng102,s1,t6)_geq - mu_gas_balance(ng102,s1,t6)_leq
+   - lambda_gstor_def_rt(gs1,s1,t6) - lambda_gas_balance(ng102,s1,t6)
    - muLB_gsin_rt(gs1,s1,t6) = 0
  dLag/gsout_rt(gs1,s1,t6): mu_gsoutMax_rt(gs1,t6,s1)
-   - mu_gstor_def_rt(gs1,s1,t6)_geq + mu_gstor_def_rt(gs1,s1,t6)_leq
-   - mu_gas_balance(ng102,s1,t6)_geq + mu_gas_balance(ng102,s1,t6)_leq
+   + lambda_gstor_def_rt(gs1,s1,t6) + lambda_gas_balance(ng102,s1,t6)
    - muLB_gsout_rt(gs1,s1,t6) = 0
  dLag/gstore_rt(gs1,s1,t6): mu_gstore_max_rt(gs1,t6,s1)
-   - mu_gstore_min_rt(gs1,t6,s1) - mu_gstor_def_rt(gs1,s1,t6)_geq
-   + mu_gstor_def_rt(gs1,s1,t6)_leq + mu_gstor_def_rt(gs1,s1,t7)_geq
-   - mu_gstor_def_rt(gs1,s1,t7)_leq - muLB_gstore_rt(gs1,s1,t6) = 0
+   - mu_gstore_min_rt(gs1,t6,s1) + lambda_gstor_def_rt(gs1,s1,t6)
+   - lambda_gstor_def_rt(gs1,s1,t7) - muLB_gstore_rt(gs1,s1,t6) = 0
  dLag/pres_rt(ng101,s1,t7): mu_PresMax(ng101,s1,t7)
    - mu_PresMin(ng101,s1,t7) - mu_Send_geq_Receive_rtt7s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t7,1,0)
@@ -29696,12 +26300,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t7,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t7,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t7,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t7)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t7)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t7)
    - muLB_pres_rt(ng101,s1,t7) = -0.5
  dLag/gshed(ng101,s1,t7): mu_gas_shed_rt(ng101,s1,t7)
-   - mu_gas_balance(ng101,s1,t7)_geq + mu_gas_balance(ng101,s1,t7)_leq
-   - muLB_gshed(ng101,s1,t7) = -5000
+   + lambda_gas_balance(ng101,s1,t7) - muLB_gshed(ng101,s1,t7) = -5000
  dLag/pres_rt(ng102,s1,t7): mu_PresMax(ng102,s1,t7)
    - mu_PresMin(ng102,s1,t7) + mu_Send_geq_Receive_rtt7s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t7,1,0)
@@ -29749,12 +26351,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t7,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t7,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t7,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t7)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t7)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t7)
    - muLB_pres_rt(ng102,s1,t7) = 0.5
  dLag/gshed(ng102,s1,t7): mu_gas_shed_rt(ng102,s1,t7)
-   - mu_gas_balance(ng102,s1,t7)_geq + mu_gas_balance(ng102,s1,t7)_leq
-   - muLB_gshed(ng102,s1,t7) = -5000
+   + lambda_gas_balance(ng102,s1,t7) - muLB_gshed(ng102,s1,t7) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t7):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t7,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t7,2,0)
@@ -29801,49 +26401,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t7,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t7,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t7,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t7)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t7)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t7)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t7) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t7):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t7)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t7)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t7)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t7)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t8)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t8)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t7)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t7)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t8)
    - muLB_lpack_rt(('ng101','ng102'),s1,t7) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t7):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t7)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t7)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t7)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t7)_leq
-   + mu_gas_balance(ng101,s1,t7)_geq - mu_gas_balance(ng101,s1,t7)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t7)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t7)
+   - lambda_gas_balance(ng101,s1,t7)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t7) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t7):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t7)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t7)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t7)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t7)_leq
-   - mu_gas_balance(ng102,s1,t7)_geq + mu_gas_balance(ng102,s1,t7)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t7)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t7)
+   + lambda_gas_balance(ng102,s1,t7)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t7) = 0
  dLag/gprodUp(gw1,s1,t7): mu_gprodUp_max(gw1,s1,t7)
-   - mu_gas_balance(ng101,s1,t7)_geq + mu_gas_balance(ng101,s1,t7)_leq
-   - muLB_gprodUp(gw1,s1,t7) = -4.95
+   + lambda_gas_balance(ng101,s1,t7) - muLB_gprodUp(gw1,s1,t7) = -4.95
  dLag/gprodDn(gw1,s1,t7): mu_gprodDn_max(gw1,s1,t7)
-   + mu_gas_balance(ng101,s1,t7)_geq - mu_gas_balance(ng101,s1,t7)_leq
-   - muLB_gprodDn(gw1,s1,t7) = 4.275
+   - lambda_gas_balance(ng101,s1,t7) - muLB_gprodDn(gw1,s1,t7) = 4.275
  dLag/gsin_rt(gs1,s1,t7): mu_gsinMax_rt(gs1,t7,s1)
-   + mu_gstor_def_rt(gs1,s1,t7)_geq - mu_gstor_def_rt(gs1,s1,t7)_leq
-   + mu_gas_balance(ng102,s1,t7)_geq - mu_gas_balance(ng102,s1,t7)_leq
+   - lambda_gstor_def_rt(gs1,s1,t7) - lambda_gas_balance(ng102,s1,t7)
    - muLB_gsin_rt(gs1,s1,t7) = 0
  dLag/gsout_rt(gs1,s1,t7): mu_gsoutMax_rt(gs1,t7,s1)
-   - mu_gstor_def_rt(gs1,s1,t7)_geq + mu_gstor_def_rt(gs1,s1,t7)_leq
-   - mu_gas_balance(ng102,s1,t7)_geq + mu_gas_balance(ng102,s1,t7)_leq
+   + lambda_gstor_def_rt(gs1,s1,t7) + lambda_gas_balance(ng102,s1,t7)
    - muLB_gsout_rt(gs1,s1,t7) = 0
  dLag/gstore_rt(gs1,s1,t7): mu_gstore_max_rt(gs1,t7,s1)
-   - mu_gstore_min_rt(gs1,t7,s1) - mu_gstor_def_rt(gs1,s1,t7)_geq
-   + mu_gstor_def_rt(gs1,s1,t7)_leq + mu_gstor_def_rt(gs1,s1,t8)_geq
-   - mu_gstor_def_rt(gs1,s1,t8)_leq - muLB_gstore_rt(gs1,s1,t7) = 0
+   - mu_gstore_min_rt(gs1,t7,s1) + lambda_gstor_def_rt(gs1,s1,t7)
+   - lambda_gstor_def_rt(gs1,s1,t8) - muLB_gstore_rt(gs1,s1,t7) = 0
  dLag/pres_rt(ng101,s1,t8): mu_PresMax(ng101,s1,t8)
    - mu_PresMin(ng101,s1,t8) - mu_Send_geq_Receive_rtt8s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t8,1,0)
@@ -29891,12 +26478,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t8,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t8,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t8,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t8)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t8)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t8)
    - muLB_pres_rt(ng101,s1,t8) = -0.5
  dLag/gshed(ng101,s1,t8): mu_gas_shed_rt(ng101,s1,t8)
-   - mu_gas_balance(ng101,s1,t8)_geq + mu_gas_balance(ng101,s1,t8)_leq
-   - muLB_gshed(ng101,s1,t8) = -5000
+   + lambda_gas_balance(ng101,s1,t8) - muLB_gshed(ng101,s1,t8) = -5000
  dLag/pres_rt(ng102,s1,t8): mu_PresMax(ng102,s1,t8)
    - mu_PresMin(ng102,s1,t8) + mu_Send_geq_Receive_rtt8s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t8,1,0)
@@ -29944,12 +26529,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t8,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t8,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t8,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t8)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t8)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t8)
    - muLB_pres_rt(ng102,s1,t8) = 0.5
  dLag/gshed(ng102,s1,t8): mu_gas_shed_rt(ng102,s1,t8)
-   - mu_gas_balance(ng102,s1,t8)_geq + mu_gas_balance(ng102,s1,t8)_leq
-   - muLB_gshed(ng102,s1,t8) = -5000
+   + lambda_gas_balance(ng102,s1,t8) - muLB_gshed(ng102,s1,t8) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t8):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t8,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t8,2,0)
@@ -29996,49 +26579,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t8,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t8,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t8,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t8)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t8)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t8)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t8) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t8):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t8)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t8)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t8)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t8)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t9)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t9)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t8)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t8)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t9)
    - muLB_lpack_rt(('ng101','ng102'),s1,t8) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t8):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t8)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t8)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t8)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t8)_leq
-   + mu_gas_balance(ng101,s1,t8)_geq - mu_gas_balance(ng101,s1,t8)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t8)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t8)
+   - lambda_gas_balance(ng101,s1,t8)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t8) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t8):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t8)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t8)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t8)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t8)_leq
-   - mu_gas_balance(ng102,s1,t8)_geq + mu_gas_balance(ng102,s1,t8)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t8)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t8)
+   + lambda_gas_balance(ng102,s1,t8)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t8) = 0
  dLag/gprodUp(gw1,s1,t8): mu_gprodUp_max(gw1,s1,t8)
-   - mu_gas_balance(ng101,s1,t8)_geq + mu_gas_balance(ng101,s1,t8)_leq
-   - muLB_gprodUp(gw1,s1,t8) = -5.5
+   + lambda_gas_balance(ng101,s1,t8) - muLB_gprodUp(gw1,s1,t8) = -5.5
  dLag/gprodDn(gw1,s1,t8): mu_gprodDn_max(gw1,s1,t8)
-   + mu_gas_balance(ng101,s1,t8)_geq - mu_gas_balance(ng101,s1,t8)_leq
-   - muLB_gprodDn(gw1,s1,t8) = 4.75
+   - lambda_gas_balance(ng101,s1,t8) - muLB_gprodDn(gw1,s1,t8) = 4.75
  dLag/gsin_rt(gs1,s1,t8): mu_gsinMax_rt(gs1,t8,s1)
-   + mu_gstor_def_rt(gs1,s1,t8)_geq - mu_gstor_def_rt(gs1,s1,t8)_leq
-   + mu_gas_balance(ng102,s1,t8)_geq - mu_gas_balance(ng102,s1,t8)_leq
+   - lambda_gstor_def_rt(gs1,s1,t8) - lambda_gas_balance(ng102,s1,t8)
    - muLB_gsin_rt(gs1,s1,t8) = 0
  dLag/gsout_rt(gs1,s1,t8): mu_gsoutMax_rt(gs1,t8,s1)
-   - mu_gstor_def_rt(gs1,s1,t8)_geq + mu_gstor_def_rt(gs1,s1,t8)_leq
-   - mu_gas_balance(ng102,s1,t8)_geq + mu_gas_balance(ng102,s1,t8)_leq
+   + lambda_gstor_def_rt(gs1,s1,t8) + lambda_gas_balance(ng102,s1,t8)
    - muLB_gsout_rt(gs1,s1,t8) = 0
  dLag/gstore_rt(gs1,s1,t8): mu_gstore_max_rt(gs1,t8,s1)
-   - mu_gstore_min_rt(gs1,t8,s1) - mu_gstor_def_rt(gs1,s1,t8)_geq
-   + mu_gstor_def_rt(gs1,s1,t8)_leq + mu_gstor_def_rt(gs1,s1,t9)_geq
-   - mu_gstor_def_rt(gs1,s1,t9)_leq - muLB_gstore_rt(gs1,s1,t8) = 0
+   - mu_gstore_min_rt(gs1,t8,s1) + lambda_gstor_def_rt(gs1,s1,t8)
+   - lambda_gstor_def_rt(gs1,s1,t9) - muLB_gstore_rt(gs1,s1,t8) = 0
  dLag/pres_rt(ng101,s1,t9): mu_PresMax(ng101,s1,t9)
    - mu_PresMin(ng101,s1,t9) - mu_Send_geq_Receive_rtt9s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t9,1,0)
@@ -30086,12 +26656,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t9,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t9,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t9,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t9)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t9)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t9)
    - muLB_pres_rt(ng101,s1,t9) = -0.5
  dLag/gshed(ng101,s1,t9): mu_gas_shed_rt(ng101,s1,t9)
-   - mu_gas_balance(ng101,s1,t9)_geq + mu_gas_balance(ng101,s1,t9)_leq
-   - muLB_gshed(ng101,s1,t9) = -5000
+   + lambda_gas_balance(ng101,s1,t9) - muLB_gshed(ng101,s1,t9) = -5000
  dLag/pres_rt(ng102,s1,t9): mu_PresMax(ng102,s1,t9)
    - mu_PresMin(ng102,s1,t9) + mu_Send_geq_Receive_rtt9s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t9,1,0)
@@ -30139,12 +26707,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t9,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t9,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t9,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t9)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t9)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t9)
    - muLB_pres_rt(ng102,s1,t9) = 0.5
  dLag/gshed(ng102,s1,t9): mu_gas_shed_rt(ng102,s1,t9)
-   - mu_gas_balance(ng102,s1,t9)_geq + mu_gas_balance(ng102,s1,t9)_leq
-   - muLB_gshed(ng102,s1,t9) = -5000
+   + lambda_gas_balance(ng102,s1,t9) - muLB_gshed(ng102,s1,t9) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t9):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t9,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t9,2,0)
@@ -30191,49 +26757,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t9,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t9,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t9,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t9)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t9)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t9)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t9) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t9):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t9)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t9)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t9)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t9)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t10)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t10)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t9)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t9)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t10)
    - muLB_lpack_rt(('ng101','ng102'),s1,t9) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t9):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t9)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t9)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t9)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t9)_leq
-   + mu_gas_balance(ng101,s1,t9)_geq - mu_gas_balance(ng101,s1,t9)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t9)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t9)
+   - lambda_gas_balance(ng101,s1,t9)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t9) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t9):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t9)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t9)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t9)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t9)_leq
-   - mu_gas_balance(ng102,s1,t9)_geq + mu_gas_balance(ng102,s1,t9)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t9)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t9)
+   + lambda_gas_balance(ng102,s1,t9)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t9) = 0
  dLag/gprodUp(gw1,s1,t9): mu_gprodUp_max(gw1,s1,t9)
-   - mu_gas_balance(ng101,s1,t9)_geq + mu_gas_balance(ng101,s1,t9)_leq
-   - muLB_gprodUp(gw1,s1,t9) = -6.05
+   + lambda_gas_balance(ng101,s1,t9) - muLB_gprodUp(gw1,s1,t9) = -6.05
  dLag/gprodDn(gw1,s1,t9): mu_gprodDn_max(gw1,s1,t9)
-   + mu_gas_balance(ng101,s1,t9)_geq - mu_gas_balance(ng101,s1,t9)_leq
-   - muLB_gprodDn(gw1,s1,t9) = 5.225
+   - lambda_gas_balance(ng101,s1,t9) - muLB_gprodDn(gw1,s1,t9) = 5.225
  dLag/gsin_rt(gs1,s1,t9): mu_gsinMax_rt(gs1,t9,s1)
-   + mu_gstor_def_rt(gs1,s1,t9)_geq - mu_gstor_def_rt(gs1,s1,t9)_leq
-   + mu_gas_balance(ng102,s1,t9)_geq - mu_gas_balance(ng102,s1,t9)_leq
+   - lambda_gstor_def_rt(gs1,s1,t9) - lambda_gas_balance(ng102,s1,t9)
    - muLB_gsin_rt(gs1,s1,t9) = 0
  dLag/gsout_rt(gs1,s1,t9): mu_gsoutMax_rt(gs1,t9,s1)
-   - mu_gstor_def_rt(gs1,s1,t9)_geq + mu_gstor_def_rt(gs1,s1,t9)_leq
-   - mu_gas_balance(ng102,s1,t9)_geq + mu_gas_balance(ng102,s1,t9)_leq
+   + lambda_gstor_def_rt(gs1,s1,t9) + lambda_gas_balance(ng102,s1,t9)
    - muLB_gsout_rt(gs1,s1,t9) = 0
  dLag/gstore_rt(gs1,s1,t9): mu_gstore_max_rt(gs1,t9,s1)
-   - mu_gstore_min_rt(gs1,t9,s1) - mu_gstor_def_rt(gs1,s1,t9)_geq
-   + mu_gstor_def_rt(gs1,s1,t9)_leq + mu_gstor_def_rt(gs1,s1,t10)_geq
-   - mu_gstor_def_rt(gs1,s1,t10)_leq - muLB_gstore_rt(gs1,s1,t9) = 0
+   - mu_gstore_min_rt(gs1,t9,s1) + lambda_gstor_def_rt(gs1,s1,t9)
+   - lambda_gstor_def_rt(gs1,s1,t10) - muLB_gstore_rt(gs1,s1,t9) = 0
  dLag/pres_rt(ng101,s1,t10): mu_PresMax(ng101,s1,t10)
    - mu_PresMin(ng101,s1,t10) - mu_Send_geq_Receive_rtt10s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t10,1,0)
@@ -30281,12 +26834,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t10,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t10,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t10,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t10)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t10)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t10)
    - muLB_pres_rt(ng101,s1,t10) = -0.5
  dLag/gshed(ng101,s1,t10): mu_gas_shed_rt(ng101,s1,t10)
-   - mu_gas_balance(ng101,s1,t10)_geq + mu_gas_balance(ng101,s1,t10)_leq
-   - muLB_gshed(ng101,s1,t10) = -5000
+   + lambda_gas_balance(ng101,s1,t10) - muLB_gshed(ng101,s1,t10) = -5000
  dLag/pres_rt(ng102,s1,t10): mu_PresMax(ng102,s1,t10)
    - mu_PresMin(ng102,s1,t10) + mu_Send_geq_Receive_rtt10s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t10,1,0)
@@ -30334,12 +26885,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t10,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t10,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t10,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t10)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t10)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t10)
    - muLB_pres_rt(ng102,s1,t10) = 0.5
  dLag/gshed(ng102,s1,t10): mu_gas_shed_rt(ng102,s1,t10)
-   - mu_gas_balance(ng102,s1,t10)_geq + mu_gas_balance(ng102,s1,t10)_leq
-   - muLB_gshed(ng102,s1,t10) = -5000
+   + lambda_gas_balance(ng102,s1,t10) - muLB_gshed(ng102,s1,t10) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t10):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t10,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t10,2,0)
@@ -30386,49 +26935,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t10,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t10,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t10,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t10)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t10)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t10)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t10) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t10):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t10)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t10)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t10)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t10)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t11)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t11)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t10)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t10)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t11)
    - muLB_lpack_rt(('ng101','ng102'),s1,t10) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t10):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t10)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t10)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t10)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t10)_leq
-   + mu_gas_balance(ng101,s1,t10)_geq - mu_gas_balance(ng101,s1,t10)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t10)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t10)
+   - lambda_gas_balance(ng101,s1,t10)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t10) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t10):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t10)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t10)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t10)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t10)_leq
-   - mu_gas_balance(ng102,s1,t10)_geq + mu_gas_balance(ng102,s1,t10)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t10)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t10)
+   + lambda_gas_balance(ng102,s1,t10)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t10) = 0
  dLag/gprodUp(gw1,s1,t10): mu_gprodUp_max(gw1,s1,t10)
-   - mu_gas_balance(ng101,s1,t10)_geq + mu_gas_balance(ng101,s1,t10)_leq
-   - muLB_gprodUp(gw1,s1,t10) = -6.6
+   + lambda_gas_balance(ng101,s1,t10) - muLB_gprodUp(gw1,s1,t10) = -6.6
  dLag/gprodDn(gw1,s1,t10): mu_gprodDn_max(gw1,s1,t10)
-   + mu_gas_balance(ng101,s1,t10)_geq - mu_gas_balance(ng101,s1,t10)_leq
-   - muLB_gprodDn(gw1,s1,t10) = 5.7
+   - lambda_gas_balance(ng101,s1,t10) - muLB_gprodDn(gw1,s1,t10) = 5.7
  dLag/gsin_rt(gs1,s1,t10): mu_gsinMax_rt(gs1,t10,s1)
-   + mu_gstor_def_rt(gs1,s1,t10)_geq - mu_gstor_def_rt(gs1,s1,t10)_leq
-   + mu_gas_balance(ng102,s1,t10)_geq - mu_gas_balance(ng102,s1,t10)_leq
+   - lambda_gstor_def_rt(gs1,s1,t10) - lambda_gas_balance(ng102,s1,t10)
    - muLB_gsin_rt(gs1,s1,t10) = 0
  dLag/gsout_rt(gs1,s1,t10): mu_gsoutMax_rt(gs1,t10,s1)
-   - mu_gstor_def_rt(gs1,s1,t10)_geq + mu_gstor_def_rt(gs1,s1,t10)_leq
-   - mu_gas_balance(ng102,s1,t10)_geq + mu_gas_balance(ng102,s1,t10)_leq
+   + lambda_gstor_def_rt(gs1,s1,t10) + lambda_gas_balance(ng102,s1,t10)
    - muLB_gsout_rt(gs1,s1,t10) = 0
  dLag/gstore_rt(gs1,s1,t10): mu_gstore_max_rt(gs1,t10,s1)
-   - mu_gstore_min_rt(gs1,t10,s1) - mu_gstor_def_rt(gs1,s1,t10)_geq
-   + mu_gstor_def_rt(gs1,s1,t10)_leq + mu_gstor_def_rt(gs1,s1,t11)_geq
-   - mu_gstor_def_rt(gs1,s1,t11)_leq - muLB_gstore_rt(gs1,s1,t10) = 0
+   - mu_gstore_min_rt(gs1,t10,s1) + lambda_gstor_def_rt(gs1,s1,t10)
+   - lambda_gstor_def_rt(gs1,s1,t11) - muLB_gstore_rt(gs1,s1,t10) = 0
  dLag/pres_rt(ng101,s1,t11): mu_PresMax(ng101,s1,t11)
    - mu_PresMin(ng101,s1,t11) - mu_Send_geq_Receive_rtt11s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t11,1,0)
@@ -30476,12 +27012,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t11,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t11,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t11,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t11)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t11)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t11)
    - muLB_pres_rt(ng101,s1,t11) = -0.5
  dLag/gshed(ng101,s1,t11): mu_gas_shed_rt(ng101,s1,t11)
-   - mu_gas_balance(ng101,s1,t11)_geq + mu_gas_balance(ng101,s1,t11)_leq
-   - muLB_gshed(ng101,s1,t11) = -5000
+   + lambda_gas_balance(ng101,s1,t11) - muLB_gshed(ng101,s1,t11) = -5000
  dLag/pres_rt(ng102,s1,t11): mu_PresMax(ng102,s1,t11)
    - mu_PresMin(ng102,s1,t11) + mu_Send_geq_Receive_rtt11s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t11,1,0)
@@ -30529,12 +27063,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t11,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t11,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t11,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t11)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t11)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t11)
    - muLB_pres_rt(ng102,s1,t11) = 0.5
  dLag/gshed(ng102,s1,t11): mu_gas_shed_rt(ng102,s1,t11)
-   - mu_gas_balance(ng102,s1,t11)_geq + mu_gas_balance(ng102,s1,t11)_leq
-   - muLB_gshed(ng102,s1,t11) = -5000
+   + lambda_gas_balance(ng102,s1,t11) - muLB_gshed(ng102,s1,t11) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t11):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t11,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t11,2,0)
@@ -30581,49 +27113,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t11,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t11,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t11,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t11)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t11)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t11)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t11) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t11):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t11)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t11)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t11)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t11)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t12)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t12)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t11)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t11)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t12)
    - muLB_lpack_rt(('ng101','ng102'),s1,t11) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t11):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t11)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t11)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t11)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t11)_leq
-   + mu_gas_balance(ng101,s1,t11)_geq - mu_gas_balance(ng101,s1,t11)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t11)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t11)
+   - lambda_gas_balance(ng101,s1,t11)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t11) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t11):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t11)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t11)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t11)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t11)_leq
-   - mu_gas_balance(ng102,s1,t11)_geq + mu_gas_balance(ng102,s1,t11)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t11)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t11)
+   + lambda_gas_balance(ng102,s1,t11)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t11) = 0
  dLag/gprodUp(gw1,s1,t11): mu_gprodUp_max(gw1,s1,t11)
-   - mu_gas_balance(ng101,s1,t11)_geq + mu_gas_balance(ng101,s1,t11)_leq
-   - muLB_gprodUp(gw1,s1,t11) = -7.15
+   + lambda_gas_balance(ng101,s1,t11) - muLB_gprodUp(gw1,s1,t11) = -7.15
  dLag/gprodDn(gw1,s1,t11): mu_gprodDn_max(gw1,s1,t11)
-   + mu_gas_balance(ng101,s1,t11)_geq - mu_gas_balance(ng101,s1,t11)_leq
-   - muLB_gprodDn(gw1,s1,t11) = 6.175
+   - lambda_gas_balance(ng101,s1,t11) - muLB_gprodDn(gw1,s1,t11) = 6.175
  dLag/gsin_rt(gs1,s1,t11): mu_gsinMax_rt(gs1,t11,s1)
-   + mu_gstor_def_rt(gs1,s1,t11)_geq - mu_gstor_def_rt(gs1,s1,t11)_leq
-   + mu_gas_balance(ng102,s1,t11)_geq - mu_gas_balance(ng102,s1,t11)_leq
+   - lambda_gstor_def_rt(gs1,s1,t11) - lambda_gas_balance(ng102,s1,t11)
    - muLB_gsin_rt(gs1,s1,t11) = 0
  dLag/gsout_rt(gs1,s1,t11): mu_gsoutMax_rt(gs1,t11,s1)
-   - mu_gstor_def_rt(gs1,s1,t11)_geq + mu_gstor_def_rt(gs1,s1,t11)_leq
-   - mu_gas_balance(ng102,s1,t11)_geq + mu_gas_balance(ng102,s1,t11)_leq
+   + lambda_gstor_def_rt(gs1,s1,t11) + lambda_gas_balance(ng102,s1,t11)
    - muLB_gsout_rt(gs1,s1,t11) = 0
  dLag/gstore_rt(gs1,s1,t11): mu_gstore_max_rt(gs1,t11,s1)
-   - mu_gstore_min_rt(gs1,t11,s1) - mu_gstor_def_rt(gs1,s1,t11)_geq
-   + mu_gstor_def_rt(gs1,s1,t11)_leq + mu_gstor_def_rt(gs1,s1,t12)_geq
-   - mu_gstor_def_rt(gs1,s1,t12)_leq - muLB_gstore_rt(gs1,s1,t11) = 0
+   - mu_gstore_min_rt(gs1,t11,s1) + lambda_gstor_def_rt(gs1,s1,t11)
+   - lambda_gstor_def_rt(gs1,s1,t12) - muLB_gstore_rt(gs1,s1,t11) = 0
  dLag/pres_rt(ng101,s1,t12): mu_PresMax(ng101,s1,t12)
    - mu_PresMin(ng101,s1,t12) - mu_Send_geq_Receive_rtt12s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t12,1,0)
@@ -30671,12 +27190,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t12,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t12,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t12,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t12)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t12)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t12)
    - muLB_pres_rt(ng101,s1,t12) = -0.5
  dLag/gshed(ng101,s1,t12): mu_gas_shed_rt(ng101,s1,t12)
-   - mu_gas_balance(ng101,s1,t12)_geq + mu_gas_balance(ng101,s1,t12)_leq
-   - muLB_gshed(ng101,s1,t12) = -5000
+   + lambda_gas_balance(ng101,s1,t12) - muLB_gshed(ng101,s1,t12) = -5000
  dLag/pres_rt(ng102,s1,t12): mu_PresMax(ng102,s1,t12)
    - mu_PresMin(ng102,s1,t12) + mu_Send_geq_Receive_rtt12s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t12,1,0)
@@ -30724,12 +27241,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t12,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t12,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t12,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t12)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t12)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t12)
    - muLB_pres_rt(ng102,s1,t12) = 0.5
  dLag/gshed(ng102,s1,t12): mu_gas_shed_rt(ng102,s1,t12)
-   - mu_gas_balance(ng102,s1,t12)_geq + mu_gas_balance(ng102,s1,t12)_leq
-   - muLB_gshed(ng102,s1,t12) = -5000
+   + lambda_gas_balance(ng102,s1,t12) - muLB_gshed(ng102,s1,t12) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t12):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t12,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t12,2,0)
@@ -30776,49 +27291,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t12,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t12,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t12,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t12)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t12)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t12)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t12) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t12):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t12)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t12)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t12)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t12)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t13)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t13)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t12)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t12)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t13)
    - muLB_lpack_rt(('ng101','ng102'),s1,t12) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t12):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t12)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t12)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t12)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t12)_leq
-   + mu_gas_balance(ng101,s1,t12)_geq - mu_gas_balance(ng101,s1,t12)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t12)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t12)
+   - lambda_gas_balance(ng101,s1,t12)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t12) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t12):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t12)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t12)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t12)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t12)_leq
-   - mu_gas_balance(ng102,s1,t12)_geq + mu_gas_balance(ng102,s1,t12)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t12)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t12)
+   + lambda_gas_balance(ng102,s1,t12)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t12) = 0
  dLag/gprodUp(gw1,s1,t12): mu_gprodUp_max(gw1,s1,t12)
-   - mu_gas_balance(ng101,s1,t12)_geq + mu_gas_balance(ng101,s1,t12)_leq
-   - muLB_gprodUp(gw1,s1,t12) = -7.7
+   + lambda_gas_balance(ng101,s1,t12) - muLB_gprodUp(gw1,s1,t12) = -7.7
  dLag/gprodDn(gw1,s1,t12): mu_gprodDn_max(gw1,s1,t12)
-   + mu_gas_balance(ng101,s1,t12)_geq - mu_gas_balance(ng101,s1,t12)_leq
-   - muLB_gprodDn(gw1,s1,t12) = 6.65
+   - lambda_gas_balance(ng101,s1,t12) - muLB_gprodDn(gw1,s1,t12) = 6.65
  dLag/gsin_rt(gs1,s1,t12): mu_gsinMax_rt(gs1,t12,s1)
-   + mu_gstor_def_rt(gs1,s1,t12)_geq - mu_gstor_def_rt(gs1,s1,t12)_leq
-   + mu_gas_balance(ng102,s1,t12)_geq - mu_gas_balance(ng102,s1,t12)_leq
+   - lambda_gstor_def_rt(gs1,s1,t12) - lambda_gas_balance(ng102,s1,t12)
    - muLB_gsin_rt(gs1,s1,t12) = 0
  dLag/gsout_rt(gs1,s1,t12): mu_gsoutMax_rt(gs1,t12,s1)
-   - mu_gstor_def_rt(gs1,s1,t12)_geq + mu_gstor_def_rt(gs1,s1,t12)_leq
-   - mu_gas_balance(ng102,s1,t12)_geq + mu_gas_balance(ng102,s1,t12)_leq
+   + lambda_gstor_def_rt(gs1,s1,t12) + lambda_gas_balance(ng102,s1,t12)
    - muLB_gsout_rt(gs1,s1,t12) = 0
  dLag/gstore_rt(gs1,s1,t12): mu_gstore_max_rt(gs1,t12,s1)
-   - mu_gstore_min_rt(gs1,t12,s1) - mu_gstor_def_rt(gs1,s1,t12)_geq
-   + mu_gstor_def_rt(gs1,s1,t12)_leq + mu_gstor_def_rt(gs1,s1,t13)_geq
-   - mu_gstor_def_rt(gs1,s1,t13)_leq - muLB_gstore_rt(gs1,s1,t12) = 0
+   - mu_gstore_min_rt(gs1,t12,s1) + lambda_gstor_def_rt(gs1,s1,t12)
+   - lambda_gstor_def_rt(gs1,s1,t13) - muLB_gstore_rt(gs1,s1,t12) = 0
  dLag/pres_rt(ng101,s1,t13): mu_PresMax(ng101,s1,t13)
    - mu_PresMin(ng101,s1,t13) - mu_Send_geq_Receive_rtt13s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t13,1,0)
@@ -30866,12 +27368,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t13,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t13,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t13,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t13)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t13)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t13)
    - muLB_pres_rt(ng101,s1,t13) = -0.5
  dLag/gshed(ng101,s1,t13): mu_gas_shed_rt(ng101,s1,t13)
-   - mu_gas_balance(ng101,s1,t13)_geq + mu_gas_balance(ng101,s1,t13)_leq
-   - muLB_gshed(ng101,s1,t13) = -5000
+   + lambda_gas_balance(ng101,s1,t13) - muLB_gshed(ng101,s1,t13) = -5000
  dLag/pres_rt(ng102,s1,t13): mu_PresMax(ng102,s1,t13)
    - mu_PresMin(ng102,s1,t13) + mu_Send_geq_Receive_rtt13s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t13,1,0)
@@ -30919,12 +27419,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t13,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t13,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t13,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t13)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t13)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t13)
    - muLB_pres_rt(ng102,s1,t13) = 0.5
  dLag/gshed(ng102,s1,t13): mu_gas_shed_rt(ng102,s1,t13)
-   - mu_gas_balance(ng102,s1,t13)_geq + mu_gas_balance(ng102,s1,t13)_leq
-   - muLB_gshed(ng102,s1,t13) = -5000
+   + lambda_gas_balance(ng102,s1,t13) - muLB_gshed(ng102,s1,t13) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t13):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t13,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t13,2,0)
@@ -30971,49 +27469,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t13,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t13,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t13,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t13)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t13)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t13)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t13) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t13):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t13)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t13)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t13)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t13)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t14)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t14)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t13)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t13)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t14)
    - muLB_lpack_rt(('ng101','ng102'),s1,t13) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t13):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t13)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t13)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t13)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t13)_leq
-   + mu_gas_balance(ng101,s1,t13)_geq - mu_gas_balance(ng101,s1,t13)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t13)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t13)
+   - lambda_gas_balance(ng101,s1,t13)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t13) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t13):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t13)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t13)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t13)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t13)_leq
-   - mu_gas_balance(ng102,s1,t13)_geq + mu_gas_balance(ng102,s1,t13)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t13)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t13)
+   + lambda_gas_balance(ng102,s1,t13)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t13) = 0
  dLag/gprodUp(gw1,s1,t13): mu_gprodUp_max(gw1,s1,t13)
-   - mu_gas_balance(ng101,s1,t13)_geq + mu_gas_balance(ng101,s1,t13)_leq
-   - muLB_gprodUp(gw1,s1,t13) = -8.25
+   + lambda_gas_balance(ng101,s1,t13) - muLB_gprodUp(gw1,s1,t13) = -8.25
  dLag/gprodDn(gw1,s1,t13): mu_gprodDn_max(gw1,s1,t13)
-   + mu_gas_balance(ng101,s1,t13)_geq - mu_gas_balance(ng101,s1,t13)_leq
-   - muLB_gprodDn(gw1,s1,t13) = 7.125
+   - lambda_gas_balance(ng101,s1,t13) - muLB_gprodDn(gw1,s1,t13) = 7.125
  dLag/gsin_rt(gs1,s1,t13): mu_gsinMax_rt(gs1,t13,s1)
-   + mu_gstor_def_rt(gs1,s1,t13)_geq - mu_gstor_def_rt(gs1,s1,t13)_leq
-   + mu_gas_balance(ng102,s1,t13)_geq - mu_gas_balance(ng102,s1,t13)_leq
+   - lambda_gstor_def_rt(gs1,s1,t13) - lambda_gas_balance(ng102,s1,t13)
    - muLB_gsin_rt(gs1,s1,t13) = 0
  dLag/gsout_rt(gs1,s1,t13): mu_gsoutMax_rt(gs1,t13,s1)
-   - mu_gstor_def_rt(gs1,s1,t13)_geq + mu_gstor_def_rt(gs1,s1,t13)_leq
-   - mu_gas_balance(ng102,s1,t13)_geq + mu_gas_balance(ng102,s1,t13)_leq
+   + lambda_gstor_def_rt(gs1,s1,t13) + lambda_gas_balance(ng102,s1,t13)
    - muLB_gsout_rt(gs1,s1,t13) = 0
  dLag/gstore_rt(gs1,s1,t13): mu_gstore_max_rt(gs1,t13,s1)
-   - mu_gstore_min_rt(gs1,t13,s1) - mu_gstor_def_rt(gs1,s1,t13)_geq
-   + mu_gstor_def_rt(gs1,s1,t13)_leq + mu_gstor_def_rt(gs1,s1,t14)_geq
-   - mu_gstor_def_rt(gs1,s1,t14)_leq - muLB_gstore_rt(gs1,s1,t13) = 0
+   - mu_gstore_min_rt(gs1,t13,s1) + lambda_gstor_def_rt(gs1,s1,t13)
+   - lambda_gstor_def_rt(gs1,s1,t14) - muLB_gstore_rt(gs1,s1,t13) = 0
  dLag/pres_rt(ng101,s1,t14): mu_PresMax(ng101,s1,t14)
    - mu_PresMin(ng101,s1,t14) - mu_Send_geq_Receive_rtt14s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t14,1,0)
@@ -31061,12 +27546,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t14,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t14,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t14,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t14)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t14)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t14)
    - muLB_pres_rt(ng101,s1,t14) = -0.5
  dLag/gshed(ng101,s1,t14): mu_gas_shed_rt(ng101,s1,t14)
-   - mu_gas_balance(ng101,s1,t14)_geq + mu_gas_balance(ng101,s1,t14)_leq
-   - muLB_gshed(ng101,s1,t14) = -5000
+   + lambda_gas_balance(ng101,s1,t14) - muLB_gshed(ng101,s1,t14) = -5000
  dLag/pres_rt(ng102,s1,t14): mu_PresMax(ng102,s1,t14)
    - mu_PresMin(ng102,s1,t14) + mu_Send_geq_Receive_rtt14s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t14,1,0)
@@ -31114,12 +27597,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t14,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t14,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t14,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t14)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t14)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t14)
    - muLB_pres_rt(ng102,s1,t14) = 0.5
  dLag/gshed(ng102,s1,t14): mu_gas_shed_rt(ng102,s1,t14)
-   - mu_gas_balance(ng102,s1,t14)_geq + mu_gas_balance(ng102,s1,t14)_leq
-   - muLB_gshed(ng102,s1,t14) = -5000
+   + lambda_gas_balance(ng102,s1,t14) - muLB_gshed(ng102,s1,t14) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t14):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t14,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t14,2,0)
@@ -31166,49 +27647,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t14,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t14,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t14,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t14)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t14)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t14)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t14) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t14):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t14)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t14)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t14)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t14)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t15)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t15)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t14)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t14)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t15)
    - muLB_lpack_rt(('ng101','ng102'),s1,t14) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t14):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t14)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t14)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t14)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t14)_leq
-   + mu_gas_balance(ng101,s1,t14)_geq - mu_gas_balance(ng101,s1,t14)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t14)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t14)
+   - lambda_gas_balance(ng101,s1,t14)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t14) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t14):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t14)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t14)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t14)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t14)_leq
-   - mu_gas_balance(ng102,s1,t14)_geq + mu_gas_balance(ng102,s1,t14)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t14)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t14)
+   + lambda_gas_balance(ng102,s1,t14)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t14) = 0
  dLag/gprodUp(gw1,s1,t14): mu_gprodUp_max(gw1,s1,t14)
-   - mu_gas_balance(ng101,s1,t14)_geq + mu_gas_balance(ng101,s1,t14)_leq
-   - muLB_gprodUp(gw1,s1,t14) = -8.8
+   + lambda_gas_balance(ng101,s1,t14) - muLB_gprodUp(gw1,s1,t14) = -8.8
  dLag/gprodDn(gw1,s1,t14): mu_gprodDn_max(gw1,s1,t14)
-   + mu_gas_balance(ng101,s1,t14)_geq - mu_gas_balance(ng101,s1,t14)_leq
-   - muLB_gprodDn(gw1,s1,t14) = 7.6
+   - lambda_gas_balance(ng101,s1,t14) - muLB_gprodDn(gw1,s1,t14) = 7.6
  dLag/gsin_rt(gs1,s1,t14): mu_gsinMax_rt(gs1,t14,s1)
-   + mu_gstor_def_rt(gs1,s1,t14)_geq - mu_gstor_def_rt(gs1,s1,t14)_leq
-   + mu_gas_balance(ng102,s1,t14)_geq - mu_gas_balance(ng102,s1,t14)_leq
+   - lambda_gstor_def_rt(gs1,s1,t14) - lambda_gas_balance(ng102,s1,t14)
    - muLB_gsin_rt(gs1,s1,t14) = 0
  dLag/gsout_rt(gs1,s1,t14): mu_gsoutMax_rt(gs1,t14,s1)
-   - mu_gstor_def_rt(gs1,s1,t14)_geq + mu_gstor_def_rt(gs1,s1,t14)_leq
-   - mu_gas_balance(ng102,s1,t14)_geq + mu_gas_balance(ng102,s1,t14)_leq
+   + lambda_gstor_def_rt(gs1,s1,t14) + lambda_gas_balance(ng102,s1,t14)
    - muLB_gsout_rt(gs1,s1,t14) = 0
  dLag/gstore_rt(gs1,s1,t14): mu_gstore_max_rt(gs1,t14,s1)
-   - mu_gstore_min_rt(gs1,t14,s1) - mu_gstor_def_rt(gs1,s1,t14)_geq
-   + mu_gstor_def_rt(gs1,s1,t14)_leq + mu_gstor_def_rt(gs1,s1,t15)_geq
-   - mu_gstor_def_rt(gs1,s1,t15)_leq - muLB_gstore_rt(gs1,s1,t14) = 0
+   - mu_gstore_min_rt(gs1,t14,s1) + lambda_gstor_def_rt(gs1,s1,t14)
+   - lambda_gstor_def_rt(gs1,s1,t15) - muLB_gstore_rt(gs1,s1,t14) = 0
  dLag/pres_rt(ng101,s1,t15): mu_PresMax(ng101,s1,t15)
    - mu_PresMin(ng101,s1,t15) - mu_Send_geq_Receive_rtt15s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t15,1,0)
@@ -31256,12 +27724,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t15,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t15,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t15,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t15)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t15)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t15)
    - muLB_pres_rt(ng101,s1,t15) = -0.5
  dLag/gshed(ng101,s1,t15): mu_gas_shed_rt(ng101,s1,t15)
-   - mu_gas_balance(ng101,s1,t15)_geq + mu_gas_balance(ng101,s1,t15)_leq
-   - muLB_gshed(ng101,s1,t15) = -5000
+   + lambda_gas_balance(ng101,s1,t15) - muLB_gshed(ng101,s1,t15) = -5000
  dLag/pres_rt(ng102,s1,t15): mu_PresMax(ng102,s1,t15)
    - mu_PresMin(ng102,s1,t15) + mu_Send_geq_Receive_rtt15s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t15,1,0)
@@ -31309,12 +27775,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t15,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t15,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t15,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t15)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t15)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t15)
    - muLB_pres_rt(ng102,s1,t15) = 0.5
  dLag/gshed(ng102,s1,t15): mu_gas_shed_rt(ng102,s1,t15)
-   - mu_gas_balance(ng102,s1,t15)_geq + mu_gas_balance(ng102,s1,t15)_leq
-   - muLB_gshed(ng102,s1,t15) = -5000
+   + lambda_gas_balance(ng102,s1,t15) - muLB_gshed(ng102,s1,t15) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t15):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t15,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t15,2,0)
@@ -31361,49 +27825,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t15,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t15,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t15,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t15)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t15)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t15)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t15) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t15):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t15)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t15)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t15)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t15)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t16)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t16)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t15)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t15)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t16)
    - muLB_lpack_rt(('ng101','ng102'),s1,t15) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t15):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t15)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t15)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t15)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t15)_leq
-   + mu_gas_balance(ng101,s1,t15)_geq - mu_gas_balance(ng101,s1,t15)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t15)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t15)
+   - lambda_gas_balance(ng101,s1,t15)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t15) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t15):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t15)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t15)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t15)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t15)_leq
-   - mu_gas_balance(ng102,s1,t15)_geq + mu_gas_balance(ng102,s1,t15)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t15)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t15)
+   + lambda_gas_balance(ng102,s1,t15)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t15) = 0
  dLag/gprodUp(gw1,s1,t15): mu_gprodUp_max(gw1,s1,t15)
-   - mu_gas_balance(ng101,s1,t15)_geq + mu_gas_balance(ng101,s1,t15)_leq
-   - muLB_gprodUp(gw1,s1,t15) = -9.35
+   + lambda_gas_balance(ng101,s1,t15) - muLB_gprodUp(gw1,s1,t15) = -9.35
  dLag/gprodDn(gw1,s1,t15): mu_gprodDn_max(gw1,s1,t15)
-   + mu_gas_balance(ng101,s1,t15)_geq - mu_gas_balance(ng101,s1,t15)_leq
-   - muLB_gprodDn(gw1,s1,t15) = 8.075
+   - lambda_gas_balance(ng101,s1,t15) - muLB_gprodDn(gw1,s1,t15) = 8.075
  dLag/gsin_rt(gs1,s1,t15): mu_gsinMax_rt(gs1,t15,s1)
-   + mu_gstor_def_rt(gs1,s1,t15)_geq - mu_gstor_def_rt(gs1,s1,t15)_leq
-   + mu_gas_balance(ng102,s1,t15)_geq - mu_gas_balance(ng102,s1,t15)_leq
+   - lambda_gstor_def_rt(gs1,s1,t15) - lambda_gas_balance(ng102,s1,t15)
    - muLB_gsin_rt(gs1,s1,t15) = 0
  dLag/gsout_rt(gs1,s1,t15): mu_gsoutMax_rt(gs1,t15,s1)
-   - mu_gstor_def_rt(gs1,s1,t15)_geq + mu_gstor_def_rt(gs1,s1,t15)_leq
-   - mu_gas_balance(ng102,s1,t15)_geq + mu_gas_balance(ng102,s1,t15)_leq
+   + lambda_gstor_def_rt(gs1,s1,t15) + lambda_gas_balance(ng102,s1,t15)
    - muLB_gsout_rt(gs1,s1,t15) = 0
  dLag/gstore_rt(gs1,s1,t15): mu_gstore_max_rt(gs1,t15,s1)
-   - mu_gstore_min_rt(gs1,t15,s1) - mu_gstor_def_rt(gs1,s1,t15)_geq
-   + mu_gstor_def_rt(gs1,s1,t15)_leq + mu_gstor_def_rt(gs1,s1,t16)_geq
-   - mu_gstor_def_rt(gs1,s1,t16)_leq - muLB_gstore_rt(gs1,s1,t15) = 0
+   - mu_gstore_min_rt(gs1,t15,s1) + lambda_gstor_def_rt(gs1,s1,t15)
+   - lambda_gstor_def_rt(gs1,s1,t16) - muLB_gstore_rt(gs1,s1,t15) = 0
  dLag/pres_rt(ng101,s1,t16): mu_PresMax(ng101,s1,t16)
    - mu_PresMin(ng101,s1,t16) - mu_Send_geq_Receive_rtt16s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t16,1,0)
@@ -31451,12 +27902,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t16,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t16,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t16,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t16)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t16)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t16)
    - muLB_pres_rt(ng101,s1,t16) = -0.5
  dLag/gshed(ng101,s1,t16): mu_gas_shed_rt(ng101,s1,t16)
-   - mu_gas_balance(ng101,s1,t16)_geq + mu_gas_balance(ng101,s1,t16)_leq
-   - muLB_gshed(ng101,s1,t16) = -5000
+   + lambda_gas_balance(ng101,s1,t16) - muLB_gshed(ng101,s1,t16) = -5000
  dLag/pres_rt(ng102,s1,t16): mu_PresMax(ng102,s1,t16)
    - mu_PresMin(ng102,s1,t16) + mu_Send_geq_Receive_rtt16s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t16,1,0)
@@ -31504,12 +27953,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t16,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t16,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t16,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t16)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t16)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t16)
    - muLB_pres_rt(ng102,s1,t16) = 0.5
  dLag/gshed(ng102,s1,t16): mu_gas_shed_rt(ng102,s1,t16)
-   - mu_gas_balance(ng102,s1,t16)_geq + mu_gas_balance(ng102,s1,t16)_leq
-   - muLB_gshed(ng102,s1,t16) = -5000
+   + lambda_gas_balance(ng102,s1,t16) - muLB_gshed(ng102,s1,t16) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t16):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t16,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t16,2,0)
@@ -31556,49 +28003,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t16,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t16,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t16,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t16)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t16)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t16)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t16) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t16):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t16)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t16)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t16)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t16)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t17)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t17)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t16)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t16)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t17)
    - muLB_lpack_rt(('ng101','ng102'),s1,t16) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t16):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t16)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t16)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t16)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t16)_leq
-   + mu_gas_balance(ng101,s1,t16)_geq - mu_gas_balance(ng101,s1,t16)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t16)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t16)
+   - lambda_gas_balance(ng101,s1,t16)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t16) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t16):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t16)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t16)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t16)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t16)_leq
-   - mu_gas_balance(ng102,s1,t16)_geq + mu_gas_balance(ng102,s1,t16)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t16)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t16)
+   + lambda_gas_balance(ng102,s1,t16)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t16) = 0
  dLag/gprodUp(gw1,s1,t16): mu_gprodUp_max(gw1,s1,t16)
-   - mu_gas_balance(ng101,s1,t16)_geq + mu_gas_balance(ng101,s1,t16)_leq
-   - muLB_gprodUp(gw1,s1,t16) = -9.9
+   + lambda_gas_balance(ng101,s1,t16) - muLB_gprodUp(gw1,s1,t16) = -9.9
  dLag/gprodDn(gw1,s1,t16): mu_gprodDn_max(gw1,s1,t16)
-   + mu_gas_balance(ng101,s1,t16)_geq - mu_gas_balance(ng101,s1,t16)_leq
-   - muLB_gprodDn(gw1,s1,t16) = 8.55
+   - lambda_gas_balance(ng101,s1,t16) - muLB_gprodDn(gw1,s1,t16) = 8.55
  dLag/gsin_rt(gs1,s1,t16): mu_gsinMax_rt(gs1,t16,s1)
-   + mu_gstor_def_rt(gs1,s1,t16)_geq - mu_gstor_def_rt(gs1,s1,t16)_leq
-   + mu_gas_balance(ng102,s1,t16)_geq - mu_gas_balance(ng102,s1,t16)_leq
+   - lambda_gstor_def_rt(gs1,s1,t16) - lambda_gas_balance(ng102,s1,t16)
    - muLB_gsin_rt(gs1,s1,t16) = 0
  dLag/gsout_rt(gs1,s1,t16): mu_gsoutMax_rt(gs1,t16,s1)
-   - mu_gstor_def_rt(gs1,s1,t16)_geq + mu_gstor_def_rt(gs1,s1,t16)_leq
-   - mu_gas_balance(ng102,s1,t16)_geq + mu_gas_balance(ng102,s1,t16)_leq
+   + lambda_gstor_def_rt(gs1,s1,t16) + lambda_gas_balance(ng102,s1,t16)
    - muLB_gsout_rt(gs1,s1,t16) = 0
  dLag/gstore_rt(gs1,s1,t16): mu_gstore_max_rt(gs1,t16,s1)
-   - mu_gstore_min_rt(gs1,t16,s1) - mu_gstor_def_rt(gs1,s1,t16)_geq
-   + mu_gstor_def_rt(gs1,s1,t16)_leq + mu_gstor_def_rt(gs1,s1,t17)_geq
-   - mu_gstor_def_rt(gs1,s1,t17)_leq - muLB_gstore_rt(gs1,s1,t16) = 0
+   - mu_gstore_min_rt(gs1,t16,s1) + lambda_gstor_def_rt(gs1,s1,t16)
+   - lambda_gstor_def_rt(gs1,s1,t17) - muLB_gstore_rt(gs1,s1,t16) = 0
  dLag/pres_rt(ng101,s1,t17): mu_PresMax(ng101,s1,t17)
    - mu_PresMin(ng101,s1,t17) - mu_Send_geq_Receive_rtt17s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t17,1,0)
@@ -31646,12 +28080,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t17,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t17,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t17,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t17)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t17)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t17)
    - muLB_pres_rt(ng101,s1,t17) = -0.5
  dLag/gshed(ng101,s1,t17): mu_gas_shed_rt(ng101,s1,t17)
-   - mu_gas_balance(ng101,s1,t17)_geq + mu_gas_balance(ng101,s1,t17)_leq
-   - muLB_gshed(ng101,s1,t17) = -5000
+   + lambda_gas_balance(ng101,s1,t17) - muLB_gshed(ng101,s1,t17) = -5000
  dLag/pres_rt(ng102,s1,t17): mu_PresMax(ng102,s1,t17)
    - mu_PresMin(ng102,s1,t17) + mu_Send_geq_Receive_rtt17s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t17,1,0)
@@ -31699,12 +28131,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t17,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t17,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t17,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t17)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t17)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t17)
    - muLB_pres_rt(ng102,s1,t17) = 0.5
  dLag/gshed(ng102,s1,t17): mu_gas_shed_rt(ng102,s1,t17)
-   - mu_gas_balance(ng102,s1,t17)_geq + mu_gas_balance(ng102,s1,t17)_leq
-   - muLB_gshed(ng102,s1,t17) = -5000
+   + lambda_gas_balance(ng102,s1,t17) - muLB_gshed(ng102,s1,t17) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t17):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t17,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t17,2,0)
@@ -31751,49 +28181,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t17,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t17,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t17,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t17)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t17)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t17)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t17) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t17):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t17)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t17)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t17)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t17)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t18)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t18)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t17)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t17)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t18)
    - muLB_lpack_rt(('ng101','ng102'),s1,t17) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t17):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t17)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t17)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t17)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t17)_leq
-   + mu_gas_balance(ng101,s1,t17)_geq - mu_gas_balance(ng101,s1,t17)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t17)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t17)
+   - lambda_gas_balance(ng101,s1,t17)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t17) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t17):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t17)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t17)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t17)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t17)_leq
-   - mu_gas_balance(ng102,s1,t17)_geq + mu_gas_balance(ng102,s1,t17)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t17)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t17)
+   + lambda_gas_balance(ng102,s1,t17)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t17) = 0
  dLag/gprodUp(gw1,s1,t17): mu_gprodUp_max(gw1,s1,t17)
-   - mu_gas_balance(ng101,s1,t17)_geq + mu_gas_balance(ng101,s1,t17)_leq
-   - muLB_gprodUp(gw1,s1,t17) = -10.45
+   + lambda_gas_balance(ng101,s1,t17) - muLB_gprodUp(gw1,s1,t17) = -10.45
  dLag/gprodDn(gw1,s1,t17): mu_gprodDn_max(gw1,s1,t17)
-   + mu_gas_balance(ng101,s1,t17)_geq - mu_gas_balance(ng101,s1,t17)_leq
-   - muLB_gprodDn(gw1,s1,t17) = 9.025
+   - lambda_gas_balance(ng101,s1,t17) - muLB_gprodDn(gw1,s1,t17) = 9.025
  dLag/gsin_rt(gs1,s1,t17): mu_gsinMax_rt(gs1,t17,s1)
-   + mu_gstor_def_rt(gs1,s1,t17)_geq - mu_gstor_def_rt(gs1,s1,t17)_leq
-   + mu_gas_balance(ng102,s1,t17)_geq - mu_gas_balance(ng102,s1,t17)_leq
+   - lambda_gstor_def_rt(gs1,s1,t17) - lambda_gas_balance(ng102,s1,t17)
    - muLB_gsin_rt(gs1,s1,t17) = 0
  dLag/gsout_rt(gs1,s1,t17): mu_gsoutMax_rt(gs1,t17,s1)
-   - mu_gstor_def_rt(gs1,s1,t17)_geq + mu_gstor_def_rt(gs1,s1,t17)_leq
-   - mu_gas_balance(ng102,s1,t17)_geq + mu_gas_balance(ng102,s1,t17)_leq
+   + lambda_gstor_def_rt(gs1,s1,t17) + lambda_gas_balance(ng102,s1,t17)
    - muLB_gsout_rt(gs1,s1,t17) = 0
  dLag/gstore_rt(gs1,s1,t17): mu_gstore_max_rt(gs1,t17,s1)
-   - mu_gstore_min_rt(gs1,t17,s1) - mu_gstor_def_rt(gs1,s1,t17)_geq
-   + mu_gstor_def_rt(gs1,s1,t17)_leq + mu_gstor_def_rt(gs1,s1,t18)_geq
-   - mu_gstor_def_rt(gs1,s1,t18)_leq - muLB_gstore_rt(gs1,s1,t17) = 0
+   - mu_gstore_min_rt(gs1,t17,s1) + lambda_gstor_def_rt(gs1,s1,t17)
+   - lambda_gstor_def_rt(gs1,s1,t18) - muLB_gstore_rt(gs1,s1,t17) = 0
  dLag/pres_rt(ng101,s1,t18): mu_PresMax(ng101,s1,t18)
    - mu_PresMin(ng101,s1,t18) - mu_Send_geq_Receive_rtt18s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t18,1,0)
@@ -31841,12 +28258,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t18,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t18,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t18,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t18)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t18)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t18)
    - muLB_pres_rt(ng101,s1,t18) = -0.5
  dLag/gshed(ng101,s1,t18): mu_gas_shed_rt(ng101,s1,t18)
-   - mu_gas_balance(ng101,s1,t18)_geq + mu_gas_balance(ng101,s1,t18)_leq
-   - muLB_gshed(ng101,s1,t18) = -5000
+   + lambda_gas_balance(ng101,s1,t18) - muLB_gshed(ng101,s1,t18) = -5000
  dLag/pres_rt(ng102,s1,t18): mu_PresMax(ng102,s1,t18)
    - mu_PresMin(ng102,s1,t18) + mu_Send_geq_Receive_rtt18s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t18,1,0)
@@ -31894,12 +28309,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t18,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t18,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t18,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t18)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t18)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t18)
    - muLB_pres_rt(ng102,s1,t18) = 0.5
  dLag/gshed(ng102,s1,t18): mu_gas_shed_rt(ng102,s1,t18)
-   - mu_gas_balance(ng102,s1,t18)_geq + mu_gas_balance(ng102,s1,t18)_leq
-   - muLB_gshed(ng102,s1,t18) = -5000
+   + lambda_gas_balance(ng102,s1,t18) - muLB_gshed(ng102,s1,t18) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t18):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t18,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t18,2,0)
@@ -31946,49 +28359,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t18,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t18,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t18,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t18)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t18)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t18)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t18) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t18):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t18)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t18)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t18)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t18)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t19)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t19)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t18)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t18)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t19)
    - muLB_lpack_rt(('ng101','ng102'),s1,t18) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t18):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t18)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t18)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t18)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t18)_leq
-   + mu_gas_balance(ng101,s1,t18)_geq - mu_gas_balance(ng101,s1,t18)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t18)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t18)
+   - lambda_gas_balance(ng101,s1,t18)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t18) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t18):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t18)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t18)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t18)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t18)_leq
-   - mu_gas_balance(ng102,s1,t18)_geq + mu_gas_balance(ng102,s1,t18)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t18)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t18)
+   + lambda_gas_balance(ng102,s1,t18)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t18) = 0
  dLag/gprodUp(gw1,s1,t18): mu_gprodUp_max(gw1,s1,t18)
-   - mu_gas_balance(ng101,s1,t18)_geq + mu_gas_balance(ng101,s1,t18)_leq
-   - muLB_gprodUp(gw1,s1,t18) = -11
+   + lambda_gas_balance(ng101,s1,t18) - muLB_gprodUp(gw1,s1,t18) = -11
  dLag/gprodDn(gw1,s1,t18): mu_gprodDn_max(gw1,s1,t18)
-   + mu_gas_balance(ng101,s1,t18)_geq - mu_gas_balance(ng101,s1,t18)_leq
-   - muLB_gprodDn(gw1,s1,t18) = 9.5
+   - lambda_gas_balance(ng101,s1,t18) - muLB_gprodDn(gw1,s1,t18) = 9.5
  dLag/gsin_rt(gs1,s1,t18): mu_gsinMax_rt(gs1,t18,s1)
-   + mu_gstor_def_rt(gs1,s1,t18)_geq - mu_gstor_def_rt(gs1,s1,t18)_leq
-   + mu_gas_balance(ng102,s1,t18)_geq - mu_gas_balance(ng102,s1,t18)_leq
+   - lambda_gstor_def_rt(gs1,s1,t18) - lambda_gas_balance(ng102,s1,t18)
    - muLB_gsin_rt(gs1,s1,t18) = 0
  dLag/gsout_rt(gs1,s1,t18): mu_gsoutMax_rt(gs1,t18,s1)
-   - mu_gstor_def_rt(gs1,s1,t18)_geq + mu_gstor_def_rt(gs1,s1,t18)_leq
-   - mu_gas_balance(ng102,s1,t18)_geq + mu_gas_balance(ng102,s1,t18)_leq
+   + lambda_gstor_def_rt(gs1,s1,t18) + lambda_gas_balance(ng102,s1,t18)
    - muLB_gsout_rt(gs1,s1,t18) = 0
  dLag/gstore_rt(gs1,s1,t18): mu_gstore_max_rt(gs1,t18,s1)
-   - mu_gstore_min_rt(gs1,t18,s1) - mu_gstor_def_rt(gs1,s1,t18)_geq
-   + mu_gstor_def_rt(gs1,s1,t18)_leq + mu_gstor_def_rt(gs1,s1,t19)_geq
-   - mu_gstor_def_rt(gs1,s1,t19)_leq - muLB_gstore_rt(gs1,s1,t18) = 0
+   - mu_gstore_min_rt(gs1,t18,s1) + lambda_gstor_def_rt(gs1,s1,t18)
+   - lambda_gstor_def_rt(gs1,s1,t19) - muLB_gstore_rt(gs1,s1,t18) = 0
  dLag/pres_rt(ng101,s1,t19): mu_PresMax(ng101,s1,t19)
    - mu_PresMin(ng101,s1,t19) - mu_Send_geq_Receive_rtt19s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t19,1,0)
@@ -32036,12 +28436,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t19,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t19,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t19,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t19)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t19)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t19)
    - muLB_pres_rt(ng101,s1,t19) = -0.5
  dLag/gshed(ng101,s1,t19): mu_gas_shed_rt(ng101,s1,t19)
-   - mu_gas_balance(ng101,s1,t19)_geq + mu_gas_balance(ng101,s1,t19)_leq
-   - muLB_gshed(ng101,s1,t19) = -5000
+   + lambda_gas_balance(ng101,s1,t19) - muLB_gshed(ng101,s1,t19) = -5000
  dLag/pres_rt(ng102,s1,t19): mu_PresMax(ng102,s1,t19)
    - mu_PresMin(ng102,s1,t19) + mu_Send_geq_Receive_rtt19s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t19,1,0)
@@ -32089,12 +28487,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t19,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t19,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t19,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t19)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t19)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t19)
    - muLB_pres_rt(ng102,s1,t19) = 0.5
  dLag/gshed(ng102,s1,t19): mu_gas_shed_rt(ng102,s1,t19)
-   - mu_gas_balance(ng102,s1,t19)_geq + mu_gas_balance(ng102,s1,t19)_leq
-   - muLB_gshed(ng102,s1,t19) = -5000
+   + lambda_gas_balance(ng102,s1,t19) - muLB_gshed(ng102,s1,t19) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t19):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t19,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t19,2,0)
@@ -32141,49 +28537,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t19,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t19,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t19,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t19)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t19)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t19)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t19) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t19):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t19)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t19)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t19)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t19)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t20)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t20)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t19)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t19)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t20)
    - muLB_lpack_rt(('ng101','ng102'),s1,t19) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t19):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t19)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t19)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t19)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t19)_leq
-   + mu_gas_balance(ng101,s1,t19)_geq - mu_gas_balance(ng101,s1,t19)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t19)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t19)
+   - lambda_gas_balance(ng101,s1,t19)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t19) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t19):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t19)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t19)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t19)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t19)_leq
-   - mu_gas_balance(ng102,s1,t19)_geq + mu_gas_balance(ng102,s1,t19)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t19)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t19)
+   + lambda_gas_balance(ng102,s1,t19)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t19) = 0
  dLag/gprodUp(gw1,s1,t19): mu_gprodUp_max(gw1,s1,t19)
-   - mu_gas_balance(ng101,s1,t19)_geq + mu_gas_balance(ng101,s1,t19)_leq
-   - muLB_gprodUp(gw1,s1,t19) = -11.55
+   + lambda_gas_balance(ng101,s1,t19) - muLB_gprodUp(gw1,s1,t19) = -11.55
  dLag/gprodDn(gw1,s1,t19): mu_gprodDn_max(gw1,s1,t19)
-   + mu_gas_balance(ng101,s1,t19)_geq - mu_gas_balance(ng101,s1,t19)_leq
-   - muLB_gprodDn(gw1,s1,t19) = 9.975
+   - lambda_gas_balance(ng101,s1,t19) - muLB_gprodDn(gw1,s1,t19) = 9.975
  dLag/gsin_rt(gs1,s1,t19): mu_gsinMax_rt(gs1,t19,s1)
-   + mu_gstor_def_rt(gs1,s1,t19)_geq - mu_gstor_def_rt(gs1,s1,t19)_leq
-   + mu_gas_balance(ng102,s1,t19)_geq - mu_gas_balance(ng102,s1,t19)_leq
+   - lambda_gstor_def_rt(gs1,s1,t19) - lambda_gas_balance(ng102,s1,t19)
    - muLB_gsin_rt(gs1,s1,t19) = 0
  dLag/gsout_rt(gs1,s1,t19): mu_gsoutMax_rt(gs1,t19,s1)
-   - mu_gstor_def_rt(gs1,s1,t19)_geq + mu_gstor_def_rt(gs1,s1,t19)_leq
-   - mu_gas_balance(ng102,s1,t19)_geq + mu_gas_balance(ng102,s1,t19)_leq
+   + lambda_gstor_def_rt(gs1,s1,t19) + lambda_gas_balance(ng102,s1,t19)
    - muLB_gsout_rt(gs1,s1,t19) = 0
  dLag/gstore_rt(gs1,s1,t19): mu_gstore_max_rt(gs1,t19,s1)
-   - mu_gstore_min_rt(gs1,t19,s1) - mu_gstor_def_rt(gs1,s1,t19)_geq
-   + mu_gstor_def_rt(gs1,s1,t19)_leq + mu_gstor_def_rt(gs1,s1,t20)_geq
-   - mu_gstor_def_rt(gs1,s1,t20)_leq - muLB_gstore_rt(gs1,s1,t19) = 0
+   - mu_gstore_min_rt(gs1,t19,s1) + lambda_gstor_def_rt(gs1,s1,t19)
+   - lambda_gstor_def_rt(gs1,s1,t20) - muLB_gstore_rt(gs1,s1,t19) = 0
  dLag/pres_rt(ng101,s1,t20): mu_PresMax(ng101,s1,t20)
    - mu_PresMin(ng101,s1,t20) - mu_Send_geq_Receive_rtt20s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t20,1,0)
@@ -32231,12 +28614,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t20,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t20,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t20,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t20)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t20)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t20)
    - muLB_pres_rt(ng101,s1,t20) = -0.5
  dLag/gshed(ng101,s1,t20): mu_gas_shed_rt(ng101,s1,t20)
-   - mu_gas_balance(ng101,s1,t20)_geq + mu_gas_balance(ng101,s1,t20)_leq
-   - muLB_gshed(ng101,s1,t20) = -5000
+   + lambda_gas_balance(ng101,s1,t20) - muLB_gshed(ng101,s1,t20) = -5000
  dLag/pres_rt(ng102,s1,t20): mu_PresMax(ng102,s1,t20)
    - mu_PresMin(ng102,s1,t20) + mu_Send_geq_Receive_rtt20s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t20,1,0)
@@ -32284,12 +28665,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t20,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t20,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t20,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t20)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t20)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t20)
    - muLB_pres_rt(ng102,s1,t20) = 0.5
  dLag/gshed(ng102,s1,t20): mu_gas_shed_rt(ng102,s1,t20)
-   - mu_gas_balance(ng102,s1,t20)_geq + mu_gas_balance(ng102,s1,t20)_leq
-   - muLB_gshed(ng102,s1,t20) = -5000
+   + lambda_gas_balance(ng102,s1,t20) - muLB_gshed(ng102,s1,t20) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t20):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t20,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t20,2,0)
@@ -32336,49 +28715,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t20,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t20,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t20,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t20)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t20)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t20)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t20) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t20):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t20)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t20)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t20)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t20)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t21)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t21)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t20)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t20)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t21)
    - muLB_lpack_rt(('ng101','ng102'),s1,t20) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t20):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t20)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t20)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t20)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t20)_leq
-   + mu_gas_balance(ng101,s1,t20)_geq - mu_gas_balance(ng101,s1,t20)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t20)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t20)
+   - lambda_gas_balance(ng101,s1,t20)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t20) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t20):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t20)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t20)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t20)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t20)_leq
-   - mu_gas_balance(ng102,s1,t20)_geq + mu_gas_balance(ng102,s1,t20)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t20)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t20)
+   + lambda_gas_balance(ng102,s1,t20)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t20) = 0
  dLag/gprodUp(gw1,s1,t20): mu_gprodUp_max(gw1,s1,t20)
-   - mu_gas_balance(ng101,s1,t20)_geq + mu_gas_balance(ng101,s1,t20)_leq
-   - muLB_gprodUp(gw1,s1,t20) = -12.1
+   + lambda_gas_balance(ng101,s1,t20) - muLB_gprodUp(gw1,s1,t20) = -12.1
  dLag/gprodDn(gw1,s1,t20): mu_gprodDn_max(gw1,s1,t20)
-   + mu_gas_balance(ng101,s1,t20)_geq - mu_gas_balance(ng101,s1,t20)_leq
-   - muLB_gprodDn(gw1,s1,t20) = 10.45
+   - lambda_gas_balance(ng101,s1,t20) - muLB_gprodDn(gw1,s1,t20) = 10.45
  dLag/gsin_rt(gs1,s1,t20): mu_gsinMax_rt(gs1,t20,s1)
-   + mu_gstor_def_rt(gs1,s1,t20)_geq - mu_gstor_def_rt(gs1,s1,t20)_leq
-   + mu_gas_balance(ng102,s1,t20)_geq - mu_gas_balance(ng102,s1,t20)_leq
+   - lambda_gstor_def_rt(gs1,s1,t20) - lambda_gas_balance(ng102,s1,t20)
    - muLB_gsin_rt(gs1,s1,t20) = 0
  dLag/gsout_rt(gs1,s1,t20): mu_gsoutMax_rt(gs1,t20,s1)
-   - mu_gstor_def_rt(gs1,s1,t20)_geq + mu_gstor_def_rt(gs1,s1,t20)_leq
-   - mu_gas_balance(ng102,s1,t20)_geq + mu_gas_balance(ng102,s1,t20)_leq
+   + lambda_gstor_def_rt(gs1,s1,t20) + lambda_gas_balance(ng102,s1,t20)
    - muLB_gsout_rt(gs1,s1,t20) = 0
  dLag/gstore_rt(gs1,s1,t20): mu_gstore_max_rt(gs1,t20,s1)
-   - mu_gstore_min_rt(gs1,t20,s1) - mu_gstor_def_rt(gs1,s1,t20)_geq
-   + mu_gstor_def_rt(gs1,s1,t20)_leq + mu_gstor_def_rt(gs1,s1,t21)_geq
-   - mu_gstor_def_rt(gs1,s1,t21)_leq - muLB_gstore_rt(gs1,s1,t20) = 0
+   - mu_gstore_min_rt(gs1,t20,s1) + lambda_gstor_def_rt(gs1,s1,t20)
+   - lambda_gstor_def_rt(gs1,s1,t21) - muLB_gstore_rt(gs1,s1,t20) = 0
  dLag/pres_rt(ng101,s1,t21): mu_PresMax(ng101,s1,t21)
    - mu_PresMin(ng101,s1,t21) - mu_Send_geq_Receive_rtt21s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t21,1,0)
@@ -32426,12 +28792,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t21,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t21,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t21,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t21)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t21)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t21)
    - muLB_pres_rt(ng101,s1,t21) = -0.5
  dLag/gshed(ng101,s1,t21): mu_gas_shed_rt(ng101,s1,t21)
-   - mu_gas_balance(ng101,s1,t21)_geq + mu_gas_balance(ng101,s1,t21)_leq
-   - muLB_gshed(ng101,s1,t21) = -5000
+   + lambda_gas_balance(ng101,s1,t21) - muLB_gshed(ng101,s1,t21) = -5000
  dLag/pres_rt(ng102,s1,t21): mu_PresMax(ng102,s1,t21)
    - mu_PresMin(ng102,s1,t21) + mu_Send_geq_Receive_rtt21s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t21,1,0)
@@ -32479,12 +28843,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t21,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t21,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t21,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t21)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t21)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t21)
    - muLB_pres_rt(ng102,s1,t21) = 0.5
  dLag/gshed(ng102,s1,t21): mu_gas_shed_rt(ng102,s1,t21)
-   - mu_gas_balance(ng102,s1,t21)_geq + mu_gas_balance(ng102,s1,t21)_leq
-   - muLB_gshed(ng102,s1,t21) = -5000
+   + lambda_gas_balance(ng102,s1,t21) - muLB_gshed(ng102,s1,t21) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t21):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t21,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t21,2,0)
@@ -32531,49 +28893,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t21,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t21,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t21,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t21)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t21)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t21)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t21) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t21):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t21)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t21)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t21)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t21)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t22)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t22)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t21)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t21)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t22)
    - muLB_lpack_rt(('ng101','ng102'),s1,t21) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t21):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t21)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t21)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t21)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t21)_leq
-   + mu_gas_balance(ng101,s1,t21)_geq - mu_gas_balance(ng101,s1,t21)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t21)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t21)
+   - lambda_gas_balance(ng101,s1,t21)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t21) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t21):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t21)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t21)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t21)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t21)_leq
-   - mu_gas_balance(ng102,s1,t21)_geq + mu_gas_balance(ng102,s1,t21)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t21)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t21)
+   + lambda_gas_balance(ng102,s1,t21)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t21) = 0
  dLag/gprodUp(gw1,s1,t21): mu_gprodUp_max(gw1,s1,t21)
-   - mu_gas_balance(ng101,s1,t21)_geq + mu_gas_balance(ng101,s1,t21)_leq
-   - muLB_gprodUp(gw1,s1,t21) = -12.65
+   + lambda_gas_balance(ng101,s1,t21) - muLB_gprodUp(gw1,s1,t21) = -12.65
  dLag/gprodDn(gw1,s1,t21): mu_gprodDn_max(gw1,s1,t21)
-   + mu_gas_balance(ng101,s1,t21)_geq - mu_gas_balance(ng101,s1,t21)_leq
-   - muLB_gprodDn(gw1,s1,t21) = 10.925
+   - lambda_gas_balance(ng101,s1,t21) - muLB_gprodDn(gw1,s1,t21) = 10.925
  dLag/gsin_rt(gs1,s1,t21): mu_gsinMax_rt(gs1,t21,s1)
-   + mu_gstor_def_rt(gs1,s1,t21)_geq - mu_gstor_def_rt(gs1,s1,t21)_leq
-   + mu_gas_balance(ng102,s1,t21)_geq - mu_gas_balance(ng102,s1,t21)_leq
+   - lambda_gstor_def_rt(gs1,s1,t21) - lambda_gas_balance(ng102,s1,t21)
    - muLB_gsin_rt(gs1,s1,t21) = 0
  dLag/gsout_rt(gs1,s1,t21): mu_gsoutMax_rt(gs1,t21,s1)
-   - mu_gstor_def_rt(gs1,s1,t21)_geq + mu_gstor_def_rt(gs1,s1,t21)_leq
-   - mu_gas_balance(ng102,s1,t21)_geq + mu_gas_balance(ng102,s1,t21)_leq
+   + lambda_gstor_def_rt(gs1,s1,t21) + lambda_gas_balance(ng102,s1,t21)
    - muLB_gsout_rt(gs1,s1,t21) = 0
  dLag/gstore_rt(gs1,s1,t21): mu_gstore_max_rt(gs1,t21,s1)
-   - mu_gstore_min_rt(gs1,t21,s1) - mu_gstor_def_rt(gs1,s1,t21)_geq
-   + mu_gstor_def_rt(gs1,s1,t21)_leq + mu_gstor_def_rt(gs1,s1,t22)_geq
-   - mu_gstor_def_rt(gs1,s1,t22)_leq - muLB_gstore_rt(gs1,s1,t21) = 0
+   - mu_gstore_min_rt(gs1,t21,s1) + lambda_gstor_def_rt(gs1,s1,t21)
+   - lambda_gstor_def_rt(gs1,s1,t22) - muLB_gstore_rt(gs1,s1,t21) = 0
  dLag/pres_rt(ng101,s1,t22): mu_PresMax(ng101,s1,t22)
    - mu_PresMin(ng101,s1,t22) - mu_Send_geq_Receive_rtt22s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t22,1,0)
@@ -32621,12 +28970,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t22,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t22,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t22,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t22)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t22)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t22)
    - muLB_pres_rt(ng101,s1,t22) = -0.5
  dLag/gshed(ng101,s1,t22): mu_gas_shed_rt(ng101,s1,t22)
-   - mu_gas_balance(ng101,s1,t22)_geq + mu_gas_balance(ng101,s1,t22)_leq
-   - muLB_gshed(ng101,s1,t22) = -5000
+   + lambda_gas_balance(ng101,s1,t22) - muLB_gshed(ng101,s1,t22) = -5000
  dLag/pres_rt(ng102,s1,t22): mu_PresMax(ng102,s1,t22)
    - mu_PresMin(ng102,s1,t22) + mu_Send_geq_Receive_rtt22s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t22,1,0)
@@ -32674,12 +29021,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t22,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t22,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t22,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t22)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t22)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t22)
    - muLB_pres_rt(ng102,s1,t22) = 0.5
  dLag/gshed(ng102,s1,t22): mu_gas_shed_rt(ng102,s1,t22)
-   - mu_gas_balance(ng102,s1,t22)_geq + mu_gas_balance(ng102,s1,t22)_leq
-   - muLB_gshed(ng102,s1,t22) = -5000
+   + lambda_gas_balance(ng102,s1,t22) - muLB_gshed(ng102,s1,t22) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t22):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t22,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t22,2,0)
@@ -32726,49 +29071,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t22,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t22,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t22,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t22)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t22)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t22)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t22) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t22):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t22)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t22)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t22)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t22)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t23)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t23)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t22)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t22)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t23)
    - muLB_lpack_rt(('ng101','ng102'),s1,t22) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t22):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t22)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t22)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t22)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t22)_leq
-   + mu_gas_balance(ng101,s1,t22)_geq - mu_gas_balance(ng101,s1,t22)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t22)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t22)
+   - lambda_gas_balance(ng101,s1,t22)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t22) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t22):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t22)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t22)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t22)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t22)_leq
-   - mu_gas_balance(ng102,s1,t22)_geq + mu_gas_balance(ng102,s1,t22)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t22)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t22)
+   + lambda_gas_balance(ng102,s1,t22)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t22) = 0
  dLag/gprodUp(gw1,s1,t22): mu_gprodUp_max(gw1,s1,t22)
-   - mu_gas_balance(ng101,s1,t22)_geq + mu_gas_balance(ng101,s1,t22)_leq
-   - muLB_gprodUp(gw1,s1,t22) = -13.2
+   + lambda_gas_balance(ng101,s1,t22) - muLB_gprodUp(gw1,s1,t22) = -13.2
  dLag/gprodDn(gw1,s1,t22): mu_gprodDn_max(gw1,s1,t22)
-   + mu_gas_balance(ng101,s1,t22)_geq - mu_gas_balance(ng101,s1,t22)_leq
-   - muLB_gprodDn(gw1,s1,t22) = 11.4
+   - lambda_gas_balance(ng101,s1,t22) - muLB_gprodDn(gw1,s1,t22) = 11.4
  dLag/gsin_rt(gs1,s1,t22): mu_gsinMax_rt(gs1,t22,s1)
-   + mu_gstor_def_rt(gs1,s1,t22)_geq - mu_gstor_def_rt(gs1,s1,t22)_leq
-   + mu_gas_balance(ng102,s1,t22)_geq - mu_gas_balance(ng102,s1,t22)_leq
+   - lambda_gstor_def_rt(gs1,s1,t22) - lambda_gas_balance(ng102,s1,t22)
    - muLB_gsin_rt(gs1,s1,t22) = 0
  dLag/gsout_rt(gs1,s1,t22): mu_gsoutMax_rt(gs1,t22,s1)
-   - mu_gstor_def_rt(gs1,s1,t22)_geq + mu_gstor_def_rt(gs1,s1,t22)_leq
-   - mu_gas_balance(ng102,s1,t22)_geq + mu_gas_balance(ng102,s1,t22)_leq
+   + lambda_gstor_def_rt(gs1,s1,t22) + lambda_gas_balance(ng102,s1,t22)
    - muLB_gsout_rt(gs1,s1,t22) = 0
  dLag/gstore_rt(gs1,s1,t22): mu_gstore_max_rt(gs1,t22,s1)
-   - mu_gstore_min_rt(gs1,t22,s1) - mu_gstor_def_rt(gs1,s1,t22)_geq
-   + mu_gstor_def_rt(gs1,s1,t22)_leq + mu_gstor_def_rt(gs1,s1,t23)_geq
-   - mu_gstor_def_rt(gs1,s1,t23)_leq - muLB_gstore_rt(gs1,s1,t22) = 0
+   - mu_gstore_min_rt(gs1,t22,s1) + lambda_gstor_def_rt(gs1,s1,t22)
+   - lambda_gstor_def_rt(gs1,s1,t23) - muLB_gstore_rt(gs1,s1,t22) = 0
  dLag/pres_rt(ng101,s1,t23): mu_PresMax(ng101,s1,t23)
    - mu_PresMin(ng101,s1,t23) - mu_Send_geq_Receive_rtt23s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t23,1,0)
@@ -32816,12 +29148,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t23,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t23,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t23,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t23)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t23)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t23)
    - muLB_pres_rt(ng101,s1,t23) = -0.5
  dLag/gshed(ng101,s1,t23): mu_gas_shed_rt(ng101,s1,t23)
-   - mu_gas_balance(ng101,s1,t23)_geq + mu_gas_balance(ng101,s1,t23)_leq
-   - muLB_gshed(ng101,s1,t23) = -5000
+   + lambda_gas_balance(ng101,s1,t23) - muLB_gshed(ng101,s1,t23) = -5000
  dLag/pres_rt(ng102,s1,t23): mu_PresMax(ng102,s1,t23)
    - mu_PresMin(ng102,s1,t23) + mu_Send_geq_Receive_rtt23s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t23,1,0)
@@ -32869,12 +29199,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t23,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t23,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t23,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t23)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t23)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t23)
    - muLB_pres_rt(ng102,s1,t23) = 0.5
  dLag/gshed(ng102,s1,t23): mu_gas_shed_rt(ng102,s1,t23)
-   - mu_gas_balance(ng102,s1,t23)_geq + mu_gas_balance(ng102,s1,t23)_leq
-   - muLB_gshed(ng102,s1,t23) = -5000
+   + lambda_gas_balance(ng102,s1,t23) - muLB_gshed(ng102,s1,t23) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t23):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t23,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t23,2,0)
@@ -32921,49 +29249,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t23,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t23,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t23,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t23)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t23)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t23)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t23) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t23):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t23)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t23)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t23)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t23)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t24)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t24)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t23)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t23)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t24)
    - muLB_lpack_rt(('ng101','ng102'),s1,t23) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t23):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t23)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t23)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t23)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t23)_leq
-   + mu_gas_balance(ng101,s1,t23)_geq - mu_gas_balance(ng101,s1,t23)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t23)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t23)
+   - lambda_gas_balance(ng101,s1,t23)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t23) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t23):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t23)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t23)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t23)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t23)_leq
-   - mu_gas_balance(ng102,s1,t23)_geq + mu_gas_balance(ng102,s1,t23)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t23)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t23)
+   + lambda_gas_balance(ng102,s1,t23)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t23) = 0
  dLag/gprodUp(gw1,s1,t23): mu_gprodUp_max(gw1,s1,t23)
-   - mu_gas_balance(ng101,s1,t23)_geq + mu_gas_balance(ng101,s1,t23)_leq
-   - muLB_gprodUp(gw1,s1,t23) = -13.75
+   + lambda_gas_balance(ng101,s1,t23) - muLB_gprodUp(gw1,s1,t23) = -13.75
  dLag/gprodDn(gw1,s1,t23): mu_gprodDn_max(gw1,s1,t23)
-   + mu_gas_balance(ng101,s1,t23)_geq - mu_gas_balance(ng101,s1,t23)_leq
-   - muLB_gprodDn(gw1,s1,t23) = 11.875
+   - lambda_gas_balance(ng101,s1,t23) - muLB_gprodDn(gw1,s1,t23) = 11.875
  dLag/gsin_rt(gs1,s1,t23): mu_gsinMax_rt(gs1,t23,s1)
-   + mu_gstor_def_rt(gs1,s1,t23)_geq - mu_gstor_def_rt(gs1,s1,t23)_leq
-   + mu_gas_balance(ng102,s1,t23)_geq - mu_gas_balance(ng102,s1,t23)_leq
+   - lambda_gstor_def_rt(gs1,s1,t23) - lambda_gas_balance(ng102,s1,t23)
    - muLB_gsin_rt(gs1,s1,t23) = 0
  dLag/gsout_rt(gs1,s1,t23): mu_gsoutMax_rt(gs1,t23,s1)
-   - mu_gstor_def_rt(gs1,s1,t23)_geq + mu_gstor_def_rt(gs1,s1,t23)_leq
-   - mu_gas_balance(ng102,s1,t23)_geq + mu_gas_balance(ng102,s1,t23)_leq
+   + lambda_gstor_def_rt(gs1,s1,t23) + lambda_gas_balance(ng102,s1,t23)
    - muLB_gsout_rt(gs1,s1,t23) = 0
  dLag/gstore_rt(gs1,s1,t23): mu_gstore_max_rt(gs1,t23,s1)
-   - mu_gstore_min_rt(gs1,t23,s1) - mu_gstor_def_rt(gs1,s1,t23)_geq
-   + mu_gstor_def_rt(gs1,s1,t23)_leq + mu_gstor_def_rt(gs1,s1,t24)_geq
-   - mu_gstor_def_rt(gs1,s1,t24)_leq - muLB_gstore_rt(gs1,s1,t23) = 0
+   - mu_gstore_min_rt(gs1,t23,s1) + lambda_gstor_def_rt(gs1,s1,t23)
+   - lambda_gstor_def_rt(gs1,s1,t24) - muLB_gstore_rt(gs1,s1,t23) = 0
  dLag/pres_rt(ng101,s1,t24): mu_PresMax(ng101,s1,t24)
    - mu_PresMin(ng101,s1,t24) - mu_Send_geq_Receive_rtt24s1
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t24,1,0)
@@ -33011,12 +29326,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t24,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t24,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t24,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t24)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t24)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t24)
    - muLB_pres_rt(ng101,s1,t24) = -0.5
  dLag/gshed(ng101,s1,t24): mu_gas_shed_rt(ng101,s1,t24)
-   - mu_gas_balance(ng101,s1,t24)_geq + mu_gas_balance(ng101,s1,t24)_leq
-   - muLB_gshed(ng101,s1,t24) = -5000
+   + lambda_gas_balance(ng101,s1,t24) - muLB_gshed(ng101,s1,t24) = -5000
  dLag/pres_rt(ng102,s1,t24): mu_PresMax(ng102,s1,t24)
    - mu_PresMin(ng102,s1,t24) + mu_Send_geq_Receive_rtt24s1
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t24,1,0)
@@ -33064,12 +29377,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t24,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t24,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t24,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s1,t24)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s1,t24)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s1,t24)
    - muLB_pres_rt(ng102,s1,t24) = 0.5
  dLag/gshed(ng102,s1,t24): mu_gas_shed_rt(ng102,s1,t24)
-   - mu_gas_balance(ng102,s1,t24)_geq + mu_gas_balance(ng102,s1,t24)_leq
-   - muLB_gshed(ng102,s1,t24) = -5000
+   + lambda_gas_balance(ng102,s1,t24) - muLB_gshed(ng102,s1,t24) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s1,t24):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t24,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t24,2,0)
@@ -33116,47 +29427,35 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t24,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t24,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s1,t24,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s1,t24)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s1,t24)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t24)
    - muLB_gflow_sr_rt(('ng101','ng102'),s1,t24) = 0
  dLag/lpack_rt(('ng101','ng102'),s1,t24):
-   - mu_lpack_def_rt(('ng101','ng102'),s1,t24)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s1,t24)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t24)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t24)_leq + mu_lpack_end_max(s1)
+   lambda_lpack_def_rt(('ng101','ng102'),s1,t24)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t24) + mu_lpack_end_max(s1)
    - mu_lpack_end_min(s1) - muLB_lpack_rt(('ng101','ng102'),s1,t24) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s1,t24):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t24)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t24)_leq
-   + mu_line_store_rt(('ng101','ng102'),s1,t24)_geq
-   - mu_line_store_rt(('ng101','ng102'),s1,t24)_leq
-   + mu_gas_balance(ng101,s1,t24)_geq - mu_gas_balance(ng101,s1,t24)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t24)
+   - lambda_line_store_rt(('ng101','ng102'),s1,t24)
+   - lambda_gas_balance(ng101,s1,t24)
    - muLB_qin_sr_rt(('ng101','ng102'),s1,t24) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s1,t24):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t24)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s1,t24)_leq
-   - mu_line_store_rt(('ng101','ng102'),s1,t24)_geq
-   + mu_line_store_rt(('ng101','ng102'),s1,t24)_leq
-   - mu_gas_balance(ng102,s1,t24)_geq + mu_gas_balance(ng102,s1,t24)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t24)
+   + lambda_line_store_rt(('ng101','ng102'),s1,t24)
+   + lambda_gas_balance(ng102,s1,t24)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t24) = 0
  dLag/gprodUp(gw1,s1,t24): mu_gprodUp_max(gw1,s1,t24)
-   - mu_gas_balance(ng101,s1,t24)_geq + mu_gas_balance(ng101,s1,t24)_leq
-   - muLB_gprodUp(gw1,s1,t24) = -14.3
+   + lambda_gas_balance(ng101,s1,t24) - muLB_gprodUp(gw1,s1,t24) = -14.3
  dLag/gprodDn(gw1,s1,t24): mu_gprodDn_max(gw1,s1,t24)
-   + mu_gas_balance(ng101,s1,t24)_geq - mu_gas_balance(ng101,s1,t24)_leq
-   - muLB_gprodDn(gw1,s1,t24) = 12.35
+   - lambda_gas_balance(ng101,s1,t24) - muLB_gprodDn(gw1,s1,t24) = 12.35
  dLag/gsin_rt(gs1,s1,t24): mu_gsinMax_rt(gs1,t24,s1)
-   + mu_gstor_def_rt(gs1,s1,t24)_geq - mu_gstor_def_rt(gs1,s1,t24)_leq
-   + mu_gas_balance(ng102,s1,t24)_geq - mu_gas_balance(ng102,s1,t24)_leq
+   - lambda_gstor_def_rt(gs1,s1,t24) - lambda_gas_balance(ng102,s1,t24)
    - muLB_gsin_rt(gs1,s1,t24) = 0
  dLag/gsout_rt(gs1,s1,t24): mu_gsoutMax_rt(gs1,t24,s1)
-   - mu_gstor_def_rt(gs1,s1,t24)_geq + mu_gstor_def_rt(gs1,s1,t24)_leq
-   - mu_gas_balance(ng102,s1,t24)_geq + mu_gas_balance(ng102,s1,t24)_leq
+   + lambda_gstor_def_rt(gs1,s1,t24) + lambda_gas_balance(ng102,s1,t24)
    - muLB_gsout_rt(gs1,s1,t24) = 0
  dLag/gstore_rt(gs1,s1,t24): mu_gstore_max_rt(gs1,t24,s1)
-   - mu_gstore_min_rt(gs1,t24,s1) - mu_gstor_def_rt(gs1,s1,t24)_geq
-   + mu_gstor_def_rt(gs1,s1,t24)_leq - mu_gstor_end(gs1,s1)
-   - muLB_gstore_rt(gs1,s1,t24) = 0
+   - mu_gstore_min_rt(gs1,t24,s1) + lambda_gstor_def_rt(gs1,s1,t24)
+   - mu_gstor_end(gs1,s1) - muLB_gstore_rt(gs1,s1,t24) = 0
  dLag/pres_rt(ng101,s2,t1): mu_PresMax(ng101,s2,t1)
    - mu_PresMin(ng101,s2,t1) - mu_Send_geq_Receive_rtt1s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t1,1,0)
@@ -33204,12 +29503,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t1,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t1,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t1,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t1)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t1)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t1)
    - muLB_pres_rt(ng101,s2,t1) = -0.5
  dLag/gshed(ng101,s2,t1): mu_gas_shed_rt(ng101,s2,t1)
-   - mu_gas_balance(ng101,s2,t1)_geq + mu_gas_balance(ng101,s2,t1)_leq
-   - muLB_gshed(ng101,s2,t1) = -5000
+   + lambda_gas_balance(ng101,s2,t1) - muLB_gshed(ng101,s2,t1) = -5000
  dLag/pres_rt(ng102,s2,t1): mu_PresMax(ng102,s2,t1)
    - mu_PresMin(ng102,s2,t1) + mu_Send_geq_Receive_rtt1s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t1,1,0)
@@ -33257,12 +29554,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t1,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t1,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t1,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t1)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t1)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t1)
    - muLB_pres_rt(ng102,s2,t1) = 0.5
  dLag/gshed(ng102,s2,t1): mu_gas_shed_rt(ng102,s2,t1)
-   - mu_gas_balance(ng102,s2,t1)_geq + mu_gas_balance(ng102,s2,t1)_leq
-   - muLB_gshed(ng102,s2,t1) = -5000
+   + lambda_gas_balance(ng102,s2,t1) - muLB_gshed(ng102,s2,t1) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t1):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t1,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t1,2,0)
@@ -33309,49 +29604,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t1,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t1,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t1,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t1)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t1)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t1)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t1) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t1):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t1)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t1)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t2)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t2)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t1)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t1)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t1)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t2)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t1)
    - muLB_lpack_rt(('ng101','ng102'),s2,t1) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t1):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t1)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t1)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t1)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t1)_leq
-   + mu_gas_balance(ng101,s2,t1)_geq - mu_gas_balance(ng101,s2,t1)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t1)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t1)
+   - lambda_gas_balance(ng101,s2,t1)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t1) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t1):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t1)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t1)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t1)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t1)_leq
-   - mu_gas_balance(ng102,s2,t1)_geq + mu_gas_balance(ng102,s2,t1)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t1)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t1)
+   + lambda_gas_balance(ng102,s2,t1)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t1) = 0
  dLag/gprodUp(gw1,s2,t1): mu_gprodUp_max(gw1,s2,t1)
-   - mu_gas_balance(ng101,s2,t1)_geq + mu_gas_balance(ng101,s2,t1)_leq
-   - muLB_gprodUp(gw1,s2,t1) = -1.65
+   + lambda_gas_balance(ng101,s2,t1) - muLB_gprodUp(gw1,s2,t1) = -1.65
  dLag/gprodDn(gw1,s2,t1): mu_gprodDn_max(gw1,s2,t1)
-   + mu_gas_balance(ng101,s2,t1)_geq - mu_gas_balance(ng101,s2,t1)_leq
-   - muLB_gprodDn(gw1,s2,t1) = 1.425
+   - lambda_gas_balance(ng101,s2,t1) - muLB_gprodDn(gw1,s2,t1) = 1.425
  dLag/gsin_rt(gs1,s2,t1): mu_gsinMax_rt(gs1,t1,s2)
-   + mu_gstor_def_rt(gs1,s2,t1)_geq - mu_gstor_def_rt(gs1,s2,t1)_leq
-   + mu_gas_balance(ng102,s2,t1)_geq - mu_gas_balance(ng102,s2,t1)_leq
+   - lambda_gstor_def_rt(gs1,s2,t1) - lambda_gas_balance(ng102,s2,t1)
    - muLB_gsin_rt(gs1,s2,t1) = 0
  dLag/gsout_rt(gs1,s2,t1): mu_gsoutMax_rt(gs1,t1,s2)
-   - mu_gstor_def_rt(gs1,s2,t1)_geq + mu_gstor_def_rt(gs1,s2,t1)_leq
-   - mu_gas_balance(ng102,s2,t1)_geq + mu_gas_balance(ng102,s2,t1)_leq
+   + lambda_gstor_def_rt(gs1,s2,t1) + lambda_gas_balance(ng102,s2,t1)
    - muLB_gsout_rt(gs1,s2,t1) = 0
  dLag/gstore_rt(gs1,s2,t1): mu_gstore_max_rt(gs1,t1,s2)
-   - mu_gstore_min_rt(gs1,t1,s2) + mu_gstor_def_rt(gs1,s2,t2)_geq
-   - mu_gstor_def_rt(gs1,s2,t2)_leq - mu_gstor_def_rt(gs1,s2,t1)_geq
-   + mu_gstor_def_rt(gs1,s2,t1)_leq - muLB_gstore_rt(gs1,s2,t1) = 0
+   - mu_gstore_min_rt(gs1,t1,s2) - lambda_gstor_def_rt(gs1,s2,t2)
+   + lambda_gstor_def_rt(gs1,s2,t1) - muLB_gstore_rt(gs1,s2,t1) = 0
  dLag/pres_rt(ng101,s2,t2): mu_PresMax(ng101,s2,t2)
    - mu_PresMin(ng101,s2,t2) - mu_Send_geq_Receive_rtt2s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t2,1,0)
@@ -33399,12 +29681,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t2,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t2,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t2,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t2)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t2)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t2)
    - muLB_pres_rt(ng101,s2,t2) = -0.5
  dLag/gshed(ng101,s2,t2): mu_gas_shed_rt(ng101,s2,t2)
-   - mu_gas_balance(ng101,s2,t2)_geq + mu_gas_balance(ng101,s2,t2)_leq
-   - muLB_gshed(ng101,s2,t2) = -5000
+   + lambda_gas_balance(ng101,s2,t2) - muLB_gshed(ng101,s2,t2) = -5000
  dLag/pres_rt(ng102,s2,t2): mu_PresMax(ng102,s2,t2)
    - mu_PresMin(ng102,s2,t2) + mu_Send_geq_Receive_rtt2s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t2,1,0)
@@ -33452,12 +29732,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t2,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t2,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t2,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t2)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t2)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t2)
    - muLB_pres_rt(ng102,s2,t2) = 0.5
  dLag/gshed(ng102,s2,t2): mu_gas_shed_rt(ng102,s2,t2)
-   - mu_gas_balance(ng102,s2,t2)_geq + mu_gas_balance(ng102,s2,t2)_leq
-   - muLB_gshed(ng102,s2,t2) = -5000
+   + lambda_gas_balance(ng102,s2,t2) - muLB_gshed(ng102,s2,t2) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t2):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t2,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t2,2,0)
@@ -33504,49 +29782,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t2,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t2,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t2,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t2)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t2)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t2)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t2) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t2):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t2)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t2)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t2)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t2)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t3)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t3)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t2)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t2)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t3)
    - muLB_lpack_rt(('ng101','ng102'),s2,t2) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t2):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t2)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t2)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t2)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t2)_leq
-   + mu_gas_balance(ng101,s2,t2)_geq - mu_gas_balance(ng101,s2,t2)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t2)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t2)
+   - lambda_gas_balance(ng101,s2,t2)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t2) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t2):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t2)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t2)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t2)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t2)_leq
-   - mu_gas_balance(ng102,s2,t2)_geq + mu_gas_balance(ng102,s2,t2)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t2)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t2)
+   + lambda_gas_balance(ng102,s2,t2)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t2) = 0
  dLag/gprodUp(gw1,s2,t2): mu_gprodUp_max(gw1,s2,t2)
-   - mu_gas_balance(ng101,s2,t2)_geq + mu_gas_balance(ng101,s2,t2)_leq
-   - muLB_gprodUp(gw1,s2,t2) = -2.2
+   + lambda_gas_balance(ng101,s2,t2) - muLB_gprodUp(gw1,s2,t2) = -2.2
  dLag/gprodDn(gw1,s2,t2): mu_gprodDn_max(gw1,s2,t2)
-   + mu_gas_balance(ng101,s2,t2)_geq - mu_gas_balance(ng101,s2,t2)_leq
-   - muLB_gprodDn(gw1,s2,t2) = 1.9
+   - lambda_gas_balance(ng101,s2,t2) - muLB_gprodDn(gw1,s2,t2) = 1.9
  dLag/gsin_rt(gs1,s2,t2): mu_gsinMax_rt(gs1,t2,s2)
-   + mu_gstor_def_rt(gs1,s2,t2)_geq - mu_gstor_def_rt(gs1,s2,t2)_leq
-   + mu_gas_balance(ng102,s2,t2)_geq - mu_gas_balance(ng102,s2,t2)_leq
+   - lambda_gstor_def_rt(gs1,s2,t2) - lambda_gas_balance(ng102,s2,t2)
    - muLB_gsin_rt(gs1,s2,t2) = 0
  dLag/gsout_rt(gs1,s2,t2): mu_gsoutMax_rt(gs1,t2,s2)
-   - mu_gstor_def_rt(gs1,s2,t2)_geq + mu_gstor_def_rt(gs1,s2,t2)_leq
-   - mu_gas_balance(ng102,s2,t2)_geq + mu_gas_balance(ng102,s2,t2)_leq
+   + lambda_gstor_def_rt(gs1,s2,t2) + lambda_gas_balance(ng102,s2,t2)
    - muLB_gsout_rt(gs1,s2,t2) = 0
  dLag/gstore_rt(gs1,s2,t2): mu_gstore_max_rt(gs1,t2,s2)
-   - mu_gstore_min_rt(gs1,t2,s2) - mu_gstor_def_rt(gs1,s2,t2)_geq
-   + mu_gstor_def_rt(gs1,s2,t2)_leq + mu_gstor_def_rt(gs1,s2,t3)_geq
-   - mu_gstor_def_rt(gs1,s2,t3)_leq - muLB_gstore_rt(gs1,s2,t2) = 0
+   - mu_gstore_min_rt(gs1,t2,s2) + lambda_gstor_def_rt(gs1,s2,t2)
+   - lambda_gstor_def_rt(gs1,s2,t3) - muLB_gstore_rt(gs1,s2,t2) = 0
  dLag/pres_rt(ng101,s2,t3): mu_PresMax(ng101,s2,t3)
    - mu_PresMin(ng101,s2,t3) - mu_Send_geq_Receive_rtt3s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t3,1,0)
@@ -33594,12 +29859,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t3,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t3,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t3,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t3)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t3)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t3)
    - muLB_pres_rt(ng101,s2,t3) = -0.5
  dLag/gshed(ng101,s2,t3): mu_gas_shed_rt(ng101,s2,t3)
-   - mu_gas_balance(ng101,s2,t3)_geq + mu_gas_balance(ng101,s2,t3)_leq
-   - muLB_gshed(ng101,s2,t3) = -5000
+   + lambda_gas_balance(ng101,s2,t3) - muLB_gshed(ng101,s2,t3) = -5000
  dLag/pres_rt(ng102,s2,t3): mu_PresMax(ng102,s2,t3)
    - mu_PresMin(ng102,s2,t3) + mu_Send_geq_Receive_rtt3s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t3,1,0)
@@ -33647,12 +29910,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t3,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t3,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t3,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t3)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t3)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t3)
    - muLB_pres_rt(ng102,s2,t3) = 0.5
  dLag/gshed(ng102,s2,t3): mu_gas_shed_rt(ng102,s2,t3)
-   - mu_gas_balance(ng102,s2,t3)_geq + mu_gas_balance(ng102,s2,t3)_leq
-   - muLB_gshed(ng102,s2,t3) = -5000
+   + lambda_gas_balance(ng102,s2,t3) - muLB_gshed(ng102,s2,t3) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t3):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t3,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t3,2,0)
@@ -33699,49 +29960,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t3,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t3,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t3,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t3)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t3)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t3)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t3) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t3):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t3)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t3)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t3)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t3)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t4)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t4)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t3)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t3)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t4)
    - muLB_lpack_rt(('ng101','ng102'),s2,t3) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t3):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t3)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t3)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t3)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t3)_leq
-   + mu_gas_balance(ng101,s2,t3)_geq - mu_gas_balance(ng101,s2,t3)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t3)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t3)
+   - lambda_gas_balance(ng101,s2,t3)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t3) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t3):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t3)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t3)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t3)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t3)_leq
-   - mu_gas_balance(ng102,s2,t3)_geq + mu_gas_balance(ng102,s2,t3)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t3)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t3)
+   + lambda_gas_balance(ng102,s2,t3)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t3) = 0
  dLag/gprodUp(gw1,s2,t3): mu_gprodUp_max(gw1,s2,t3)
-   - mu_gas_balance(ng101,s2,t3)_geq + mu_gas_balance(ng101,s2,t3)_leq
-   - muLB_gprodUp(gw1,s2,t3) = -2.75
+   + lambda_gas_balance(ng101,s2,t3) - muLB_gprodUp(gw1,s2,t3) = -2.75
  dLag/gprodDn(gw1,s2,t3): mu_gprodDn_max(gw1,s2,t3)
-   + mu_gas_balance(ng101,s2,t3)_geq - mu_gas_balance(ng101,s2,t3)_leq
-   - muLB_gprodDn(gw1,s2,t3) = 2.375
+   - lambda_gas_balance(ng101,s2,t3) - muLB_gprodDn(gw1,s2,t3) = 2.375
  dLag/gsin_rt(gs1,s2,t3): mu_gsinMax_rt(gs1,t3,s2)
-   + mu_gstor_def_rt(gs1,s2,t3)_geq - mu_gstor_def_rt(gs1,s2,t3)_leq
-   + mu_gas_balance(ng102,s2,t3)_geq - mu_gas_balance(ng102,s2,t3)_leq
+   - lambda_gstor_def_rt(gs1,s2,t3) - lambda_gas_balance(ng102,s2,t3)
    - muLB_gsin_rt(gs1,s2,t3) = 0
  dLag/gsout_rt(gs1,s2,t3): mu_gsoutMax_rt(gs1,t3,s2)
-   - mu_gstor_def_rt(gs1,s2,t3)_geq + mu_gstor_def_rt(gs1,s2,t3)_leq
-   - mu_gas_balance(ng102,s2,t3)_geq + mu_gas_balance(ng102,s2,t3)_leq
+   + lambda_gstor_def_rt(gs1,s2,t3) + lambda_gas_balance(ng102,s2,t3)
    - muLB_gsout_rt(gs1,s2,t3) = 0
  dLag/gstore_rt(gs1,s2,t3): mu_gstore_max_rt(gs1,t3,s2)
-   - mu_gstore_min_rt(gs1,t3,s2) - mu_gstor_def_rt(gs1,s2,t3)_geq
-   + mu_gstor_def_rt(gs1,s2,t3)_leq + mu_gstor_def_rt(gs1,s2,t4)_geq
-   - mu_gstor_def_rt(gs1,s2,t4)_leq - muLB_gstore_rt(gs1,s2,t3) = 0
+   - mu_gstore_min_rt(gs1,t3,s2) + lambda_gstor_def_rt(gs1,s2,t3)
+   - lambda_gstor_def_rt(gs1,s2,t4) - muLB_gstore_rt(gs1,s2,t3) = 0
  dLag/pres_rt(ng101,s2,t4): mu_PresMax(ng101,s2,t4)
    - mu_PresMin(ng101,s2,t4) - mu_Send_geq_Receive_rtt4s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t4,1,0)
@@ -33789,12 +30037,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t4,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t4,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t4,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t4)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t4)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t4)
    - muLB_pres_rt(ng101,s2,t4) = -0.5
  dLag/gshed(ng101,s2,t4): mu_gas_shed_rt(ng101,s2,t4)
-   - mu_gas_balance(ng101,s2,t4)_geq + mu_gas_balance(ng101,s2,t4)_leq
-   - muLB_gshed(ng101,s2,t4) = -5000
+   + lambda_gas_balance(ng101,s2,t4) - muLB_gshed(ng101,s2,t4) = -5000
  dLag/pres_rt(ng102,s2,t4): mu_PresMax(ng102,s2,t4)
    - mu_PresMin(ng102,s2,t4) + mu_Send_geq_Receive_rtt4s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t4,1,0)
@@ -33842,12 +30088,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t4,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t4,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t4,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t4)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t4)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t4)
    - muLB_pres_rt(ng102,s2,t4) = 0.5
  dLag/gshed(ng102,s2,t4): mu_gas_shed_rt(ng102,s2,t4)
-   - mu_gas_balance(ng102,s2,t4)_geq + mu_gas_balance(ng102,s2,t4)_leq
-   - muLB_gshed(ng102,s2,t4) = -5000
+   + lambda_gas_balance(ng102,s2,t4) - muLB_gshed(ng102,s2,t4) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t4):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t4,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t4,2,0)
@@ -33894,49 +30138,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t4,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t4,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t4,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t4)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t4)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t4)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t4) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t4):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t4)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t4)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t4)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t4)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t5)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t5)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t4)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t4)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t5)
    - muLB_lpack_rt(('ng101','ng102'),s2,t4) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t4):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t4)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t4)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t4)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t4)_leq
-   + mu_gas_balance(ng101,s2,t4)_geq - mu_gas_balance(ng101,s2,t4)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t4)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t4)
+   - lambda_gas_balance(ng101,s2,t4)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t4) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t4):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t4)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t4)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t4)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t4)_leq
-   - mu_gas_balance(ng102,s2,t4)_geq + mu_gas_balance(ng102,s2,t4)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t4)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t4)
+   + lambda_gas_balance(ng102,s2,t4)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t4) = 0
  dLag/gprodUp(gw1,s2,t4): mu_gprodUp_max(gw1,s2,t4)
-   - mu_gas_balance(ng101,s2,t4)_geq + mu_gas_balance(ng101,s2,t4)_leq
-   - muLB_gprodUp(gw1,s2,t4) = -3.3
+   + lambda_gas_balance(ng101,s2,t4) - muLB_gprodUp(gw1,s2,t4) = -3.3
  dLag/gprodDn(gw1,s2,t4): mu_gprodDn_max(gw1,s2,t4)
-   + mu_gas_balance(ng101,s2,t4)_geq - mu_gas_balance(ng101,s2,t4)_leq
-   - muLB_gprodDn(gw1,s2,t4) = 2.85
+   - lambda_gas_balance(ng101,s2,t4) - muLB_gprodDn(gw1,s2,t4) = 2.85
  dLag/gsin_rt(gs1,s2,t4): mu_gsinMax_rt(gs1,t4,s2)
-   + mu_gstor_def_rt(gs1,s2,t4)_geq - mu_gstor_def_rt(gs1,s2,t4)_leq
-   + mu_gas_balance(ng102,s2,t4)_geq - mu_gas_balance(ng102,s2,t4)_leq
+   - lambda_gstor_def_rt(gs1,s2,t4) - lambda_gas_balance(ng102,s2,t4)
    - muLB_gsin_rt(gs1,s2,t4) = 0
  dLag/gsout_rt(gs1,s2,t4): mu_gsoutMax_rt(gs1,t4,s2)
-   - mu_gstor_def_rt(gs1,s2,t4)_geq + mu_gstor_def_rt(gs1,s2,t4)_leq
-   - mu_gas_balance(ng102,s2,t4)_geq + mu_gas_balance(ng102,s2,t4)_leq
+   + lambda_gstor_def_rt(gs1,s2,t4) + lambda_gas_balance(ng102,s2,t4)
    - muLB_gsout_rt(gs1,s2,t4) = 0
  dLag/gstore_rt(gs1,s2,t4): mu_gstore_max_rt(gs1,t4,s2)
-   - mu_gstore_min_rt(gs1,t4,s2) - mu_gstor_def_rt(gs1,s2,t4)_geq
-   + mu_gstor_def_rt(gs1,s2,t4)_leq + mu_gstor_def_rt(gs1,s2,t5)_geq
-   - mu_gstor_def_rt(gs1,s2,t5)_leq - muLB_gstore_rt(gs1,s2,t4) = 0
+   - mu_gstore_min_rt(gs1,t4,s2) + lambda_gstor_def_rt(gs1,s2,t4)
+   - lambda_gstor_def_rt(gs1,s2,t5) - muLB_gstore_rt(gs1,s2,t4) = 0
  dLag/pres_rt(ng101,s2,t5): mu_PresMax(ng101,s2,t5)
    - mu_PresMin(ng101,s2,t5) - mu_Send_geq_Receive_rtt5s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t5,1,0)
@@ -33984,12 +30215,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t5,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t5,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t5,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t5)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t5)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t5)
    - muLB_pres_rt(ng101,s2,t5) = -0.5
  dLag/gshed(ng101,s2,t5): mu_gas_shed_rt(ng101,s2,t5)
-   - mu_gas_balance(ng101,s2,t5)_geq + mu_gas_balance(ng101,s2,t5)_leq
-   - muLB_gshed(ng101,s2,t5) = -5000
+   + lambda_gas_balance(ng101,s2,t5) - muLB_gshed(ng101,s2,t5) = -5000
  dLag/pres_rt(ng102,s2,t5): mu_PresMax(ng102,s2,t5)
    - mu_PresMin(ng102,s2,t5) + mu_Send_geq_Receive_rtt5s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t5,1,0)
@@ -34037,12 +30266,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t5,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t5,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t5,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t5)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t5)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t5)
    - muLB_pres_rt(ng102,s2,t5) = 0.5
  dLag/gshed(ng102,s2,t5): mu_gas_shed_rt(ng102,s2,t5)
-   - mu_gas_balance(ng102,s2,t5)_geq + mu_gas_balance(ng102,s2,t5)_leq
-   - muLB_gshed(ng102,s2,t5) = -5000
+   + lambda_gas_balance(ng102,s2,t5) - muLB_gshed(ng102,s2,t5) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t5):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t5,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t5,2,0)
@@ -34089,49 +30316,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t5,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t5,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t5,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t5)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t5)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t5)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t5) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t5):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t5)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t5)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t5)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t5)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t6)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t6)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t5)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t5)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t6)
    - muLB_lpack_rt(('ng101','ng102'),s2,t5) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t5):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t5)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t5)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t5)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t5)_leq
-   + mu_gas_balance(ng101,s2,t5)_geq - mu_gas_balance(ng101,s2,t5)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t5)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t5)
+   - lambda_gas_balance(ng101,s2,t5)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t5) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t5):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t5)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t5)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t5)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t5)_leq
-   - mu_gas_balance(ng102,s2,t5)_geq + mu_gas_balance(ng102,s2,t5)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t5)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t5)
+   + lambda_gas_balance(ng102,s2,t5)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t5) = 0
  dLag/gprodUp(gw1,s2,t5): mu_gprodUp_max(gw1,s2,t5)
-   - mu_gas_balance(ng101,s2,t5)_geq + mu_gas_balance(ng101,s2,t5)_leq
-   - muLB_gprodUp(gw1,s2,t5) = -3.85
+   + lambda_gas_balance(ng101,s2,t5) - muLB_gprodUp(gw1,s2,t5) = -3.85
  dLag/gprodDn(gw1,s2,t5): mu_gprodDn_max(gw1,s2,t5)
-   + mu_gas_balance(ng101,s2,t5)_geq - mu_gas_balance(ng101,s2,t5)_leq
-   - muLB_gprodDn(gw1,s2,t5) = 3.325
+   - lambda_gas_balance(ng101,s2,t5) - muLB_gprodDn(gw1,s2,t5) = 3.325
  dLag/gsin_rt(gs1,s2,t5): mu_gsinMax_rt(gs1,t5,s2)
-   + mu_gstor_def_rt(gs1,s2,t5)_geq - mu_gstor_def_rt(gs1,s2,t5)_leq
-   + mu_gas_balance(ng102,s2,t5)_geq - mu_gas_balance(ng102,s2,t5)_leq
+   - lambda_gstor_def_rt(gs1,s2,t5) - lambda_gas_balance(ng102,s2,t5)
    - muLB_gsin_rt(gs1,s2,t5) = 0
  dLag/gsout_rt(gs1,s2,t5): mu_gsoutMax_rt(gs1,t5,s2)
-   - mu_gstor_def_rt(gs1,s2,t5)_geq + mu_gstor_def_rt(gs1,s2,t5)_leq
-   - mu_gas_balance(ng102,s2,t5)_geq + mu_gas_balance(ng102,s2,t5)_leq
+   + lambda_gstor_def_rt(gs1,s2,t5) + lambda_gas_balance(ng102,s2,t5)
    - muLB_gsout_rt(gs1,s2,t5) = 0
  dLag/gstore_rt(gs1,s2,t5): mu_gstore_max_rt(gs1,t5,s2)
-   - mu_gstore_min_rt(gs1,t5,s2) - mu_gstor_def_rt(gs1,s2,t5)_geq
-   + mu_gstor_def_rt(gs1,s2,t5)_leq + mu_gstor_def_rt(gs1,s2,t6)_geq
-   - mu_gstor_def_rt(gs1,s2,t6)_leq - muLB_gstore_rt(gs1,s2,t5) = 0
+   - mu_gstore_min_rt(gs1,t5,s2) + lambda_gstor_def_rt(gs1,s2,t5)
+   - lambda_gstor_def_rt(gs1,s2,t6) - muLB_gstore_rt(gs1,s2,t5) = 0
  dLag/pres_rt(ng101,s2,t6): mu_PresMax(ng101,s2,t6)
    - mu_PresMin(ng101,s2,t6) - mu_Send_geq_Receive_rtt6s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t6,1,0)
@@ -34179,12 +30393,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t6,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t6,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t6,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t6)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t6)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t6)
    - muLB_pres_rt(ng101,s2,t6) = -0.5
  dLag/gshed(ng101,s2,t6): mu_gas_shed_rt(ng101,s2,t6)
-   - mu_gas_balance(ng101,s2,t6)_geq + mu_gas_balance(ng101,s2,t6)_leq
-   - muLB_gshed(ng101,s2,t6) = -5000
+   + lambda_gas_balance(ng101,s2,t6) - muLB_gshed(ng101,s2,t6) = -5000
  dLag/pres_rt(ng102,s2,t6): mu_PresMax(ng102,s2,t6)
    - mu_PresMin(ng102,s2,t6) + mu_Send_geq_Receive_rtt6s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t6,1,0)
@@ -34232,12 +30444,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t6,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t6,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t6,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t6)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t6)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t6)
    - muLB_pres_rt(ng102,s2,t6) = 0.5
  dLag/gshed(ng102,s2,t6): mu_gas_shed_rt(ng102,s2,t6)
-   - mu_gas_balance(ng102,s2,t6)_geq + mu_gas_balance(ng102,s2,t6)_leq
-   - muLB_gshed(ng102,s2,t6) = -5000
+   + lambda_gas_balance(ng102,s2,t6) - muLB_gshed(ng102,s2,t6) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t6):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t6,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t6,2,0)
@@ -34284,49 +30494,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t6,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t6,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t6,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t6)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t6)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t6)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t6) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t6):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t6)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t6)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t6)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t6)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t7)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t7)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t6)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t6)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t7)
    - muLB_lpack_rt(('ng101','ng102'),s2,t6) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t6):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t6)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t6)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t6)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t6)_leq
-   + mu_gas_balance(ng101,s2,t6)_geq - mu_gas_balance(ng101,s2,t6)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t6)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t6)
+   - lambda_gas_balance(ng101,s2,t6)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t6) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t6):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t6)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t6)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t6)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t6)_leq
-   - mu_gas_balance(ng102,s2,t6)_geq + mu_gas_balance(ng102,s2,t6)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t6)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t6)
+   + lambda_gas_balance(ng102,s2,t6)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t6) = 0
  dLag/gprodUp(gw1,s2,t6): mu_gprodUp_max(gw1,s2,t6)
-   - mu_gas_balance(ng101,s2,t6)_geq + mu_gas_balance(ng101,s2,t6)_leq
-   - muLB_gprodUp(gw1,s2,t6) = -4.4
+   + lambda_gas_balance(ng101,s2,t6) - muLB_gprodUp(gw1,s2,t6) = -4.4
  dLag/gprodDn(gw1,s2,t6): mu_gprodDn_max(gw1,s2,t6)
-   + mu_gas_balance(ng101,s2,t6)_geq - mu_gas_balance(ng101,s2,t6)_leq
-   - muLB_gprodDn(gw1,s2,t6) = 3.8
+   - lambda_gas_balance(ng101,s2,t6) - muLB_gprodDn(gw1,s2,t6) = 3.8
  dLag/gsin_rt(gs1,s2,t6): mu_gsinMax_rt(gs1,t6,s2)
-   + mu_gstor_def_rt(gs1,s2,t6)_geq - mu_gstor_def_rt(gs1,s2,t6)_leq
-   + mu_gas_balance(ng102,s2,t6)_geq - mu_gas_balance(ng102,s2,t6)_leq
+   - lambda_gstor_def_rt(gs1,s2,t6) - lambda_gas_balance(ng102,s2,t6)
    - muLB_gsin_rt(gs1,s2,t6) = 0
  dLag/gsout_rt(gs1,s2,t6): mu_gsoutMax_rt(gs1,t6,s2)
-   - mu_gstor_def_rt(gs1,s2,t6)_geq + mu_gstor_def_rt(gs1,s2,t6)_leq
-   - mu_gas_balance(ng102,s2,t6)_geq + mu_gas_balance(ng102,s2,t6)_leq
+   + lambda_gstor_def_rt(gs1,s2,t6) + lambda_gas_balance(ng102,s2,t6)
    - muLB_gsout_rt(gs1,s2,t6) = 0
  dLag/gstore_rt(gs1,s2,t6): mu_gstore_max_rt(gs1,t6,s2)
-   - mu_gstore_min_rt(gs1,t6,s2) - mu_gstor_def_rt(gs1,s2,t6)_geq
-   + mu_gstor_def_rt(gs1,s2,t6)_leq + mu_gstor_def_rt(gs1,s2,t7)_geq
-   - mu_gstor_def_rt(gs1,s2,t7)_leq - muLB_gstore_rt(gs1,s2,t6) = 0
+   - mu_gstore_min_rt(gs1,t6,s2) + lambda_gstor_def_rt(gs1,s2,t6)
+   - lambda_gstor_def_rt(gs1,s2,t7) - muLB_gstore_rt(gs1,s2,t6) = 0
  dLag/pres_rt(ng101,s2,t7): mu_PresMax(ng101,s2,t7)
    - mu_PresMin(ng101,s2,t7) - mu_Send_geq_Receive_rtt7s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t7,1,0)
@@ -34374,12 +30571,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t7,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t7,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t7,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t7)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t7)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t7)
    - muLB_pres_rt(ng101,s2,t7) = -0.5
  dLag/gshed(ng101,s2,t7): mu_gas_shed_rt(ng101,s2,t7)
-   - mu_gas_balance(ng101,s2,t7)_geq + mu_gas_balance(ng101,s2,t7)_leq
-   - muLB_gshed(ng101,s2,t7) = -5000
+   + lambda_gas_balance(ng101,s2,t7) - muLB_gshed(ng101,s2,t7) = -5000
  dLag/pres_rt(ng102,s2,t7): mu_PresMax(ng102,s2,t7)
    - mu_PresMin(ng102,s2,t7) + mu_Send_geq_Receive_rtt7s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t7,1,0)
@@ -34427,12 +30622,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t7,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t7,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t7,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t7)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t7)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t7)
    - muLB_pres_rt(ng102,s2,t7) = 0.5
  dLag/gshed(ng102,s2,t7): mu_gas_shed_rt(ng102,s2,t7)
-   - mu_gas_balance(ng102,s2,t7)_geq + mu_gas_balance(ng102,s2,t7)_leq
-   - muLB_gshed(ng102,s2,t7) = -5000
+   + lambda_gas_balance(ng102,s2,t7) - muLB_gshed(ng102,s2,t7) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t7):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t7,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t7,2,0)
@@ -34479,49 +30672,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t7,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t7,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t7,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t7)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t7)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t7)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t7) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t7):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t7)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t7)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t7)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t7)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t8)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t8)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t7)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t7)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t8)
    - muLB_lpack_rt(('ng101','ng102'),s2,t7) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t7):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t7)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t7)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t7)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t7)_leq
-   + mu_gas_balance(ng101,s2,t7)_geq - mu_gas_balance(ng101,s2,t7)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t7)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t7)
+   - lambda_gas_balance(ng101,s2,t7)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t7) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t7):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t7)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t7)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t7)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t7)_leq
-   - mu_gas_balance(ng102,s2,t7)_geq + mu_gas_balance(ng102,s2,t7)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t7)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t7)
+   + lambda_gas_balance(ng102,s2,t7)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t7) = 0
  dLag/gprodUp(gw1,s2,t7): mu_gprodUp_max(gw1,s2,t7)
-   - mu_gas_balance(ng101,s2,t7)_geq + mu_gas_balance(ng101,s2,t7)_leq
-   - muLB_gprodUp(gw1,s2,t7) = -4.95
+   + lambda_gas_balance(ng101,s2,t7) - muLB_gprodUp(gw1,s2,t7) = -4.95
  dLag/gprodDn(gw1,s2,t7): mu_gprodDn_max(gw1,s2,t7)
-   + mu_gas_balance(ng101,s2,t7)_geq - mu_gas_balance(ng101,s2,t7)_leq
-   - muLB_gprodDn(gw1,s2,t7) = 4.275
+   - lambda_gas_balance(ng101,s2,t7) - muLB_gprodDn(gw1,s2,t7) = 4.275
  dLag/gsin_rt(gs1,s2,t7): mu_gsinMax_rt(gs1,t7,s2)
-   + mu_gstor_def_rt(gs1,s2,t7)_geq - mu_gstor_def_rt(gs1,s2,t7)_leq
-   + mu_gas_balance(ng102,s2,t7)_geq - mu_gas_balance(ng102,s2,t7)_leq
+   - lambda_gstor_def_rt(gs1,s2,t7) - lambda_gas_balance(ng102,s2,t7)
    - muLB_gsin_rt(gs1,s2,t7) = 0
  dLag/gsout_rt(gs1,s2,t7): mu_gsoutMax_rt(gs1,t7,s2)
-   - mu_gstor_def_rt(gs1,s2,t7)_geq + mu_gstor_def_rt(gs1,s2,t7)_leq
-   - mu_gas_balance(ng102,s2,t7)_geq + mu_gas_balance(ng102,s2,t7)_leq
+   + lambda_gstor_def_rt(gs1,s2,t7) + lambda_gas_balance(ng102,s2,t7)
    - muLB_gsout_rt(gs1,s2,t7) = 0
  dLag/gstore_rt(gs1,s2,t7): mu_gstore_max_rt(gs1,t7,s2)
-   - mu_gstore_min_rt(gs1,t7,s2) - mu_gstor_def_rt(gs1,s2,t7)_geq
-   + mu_gstor_def_rt(gs1,s2,t7)_leq + mu_gstor_def_rt(gs1,s2,t8)_geq
-   - mu_gstor_def_rt(gs1,s2,t8)_leq - muLB_gstore_rt(gs1,s2,t7) = 0
+   - mu_gstore_min_rt(gs1,t7,s2) + lambda_gstor_def_rt(gs1,s2,t7)
+   - lambda_gstor_def_rt(gs1,s2,t8) - muLB_gstore_rt(gs1,s2,t7) = 0
  dLag/pres_rt(ng101,s2,t8): mu_PresMax(ng101,s2,t8)
    - mu_PresMin(ng101,s2,t8) - mu_Send_geq_Receive_rtt8s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t8,1,0)
@@ -34569,12 +30749,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t8,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t8,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t8,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t8)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t8)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t8)
    - muLB_pres_rt(ng101,s2,t8) = -0.5
  dLag/gshed(ng101,s2,t8): mu_gas_shed_rt(ng101,s2,t8)
-   - mu_gas_balance(ng101,s2,t8)_geq + mu_gas_balance(ng101,s2,t8)_leq
-   - muLB_gshed(ng101,s2,t8) = -5000
+   + lambda_gas_balance(ng101,s2,t8) - muLB_gshed(ng101,s2,t8) = -5000
  dLag/pres_rt(ng102,s2,t8): mu_PresMax(ng102,s2,t8)
    - mu_PresMin(ng102,s2,t8) + mu_Send_geq_Receive_rtt8s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t8,1,0)
@@ -34622,12 +30800,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t8,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t8,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t8,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t8)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t8)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t8)
    - muLB_pres_rt(ng102,s2,t8) = 0.5
  dLag/gshed(ng102,s2,t8): mu_gas_shed_rt(ng102,s2,t8)
-   - mu_gas_balance(ng102,s2,t8)_geq + mu_gas_balance(ng102,s2,t8)_leq
-   - muLB_gshed(ng102,s2,t8) = -5000
+   + lambda_gas_balance(ng102,s2,t8) - muLB_gshed(ng102,s2,t8) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t8):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t8,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t8,2,0)
@@ -34674,49 +30850,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t8,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t8,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t8,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t8)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t8)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t8)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t8) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t8):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t8)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t8)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t8)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t8)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t9)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t9)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t8)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t8)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t9)
    - muLB_lpack_rt(('ng101','ng102'),s2,t8) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t8):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t8)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t8)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t8)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t8)_leq
-   + mu_gas_balance(ng101,s2,t8)_geq - mu_gas_balance(ng101,s2,t8)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t8)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t8)
+   - lambda_gas_balance(ng101,s2,t8)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t8) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t8):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t8)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t8)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t8)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t8)_leq
-   - mu_gas_balance(ng102,s2,t8)_geq + mu_gas_balance(ng102,s2,t8)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t8)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t8)
+   + lambda_gas_balance(ng102,s2,t8)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t8) = 0
  dLag/gprodUp(gw1,s2,t8): mu_gprodUp_max(gw1,s2,t8)
-   - mu_gas_balance(ng101,s2,t8)_geq + mu_gas_balance(ng101,s2,t8)_leq
-   - muLB_gprodUp(gw1,s2,t8) = -5.5
+   + lambda_gas_balance(ng101,s2,t8) - muLB_gprodUp(gw1,s2,t8) = -5.5
  dLag/gprodDn(gw1,s2,t8): mu_gprodDn_max(gw1,s2,t8)
-   + mu_gas_balance(ng101,s2,t8)_geq - mu_gas_balance(ng101,s2,t8)_leq
-   - muLB_gprodDn(gw1,s2,t8) = 4.75
+   - lambda_gas_balance(ng101,s2,t8) - muLB_gprodDn(gw1,s2,t8) = 4.75
  dLag/gsin_rt(gs1,s2,t8): mu_gsinMax_rt(gs1,t8,s2)
-   + mu_gstor_def_rt(gs1,s2,t8)_geq - mu_gstor_def_rt(gs1,s2,t8)_leq
-   + mu_gas_balance(ng102,s2,t8)_geq - mu_gas_balance(ng102,s2,t8)_leq
+   - lambda_gstor_def_rt(gs1,s2,t8) - lambda_gas_balance(ng102,s2,t8)
    - muLB_gsin_rt(gs1,s2,t8) = 0
  dLag/gsout_rt(gs1,s2,t8): mu_gsoutMax_rt(gs1,t8,s2)
-   - mu_gstor_def_rt(gs1,s2,t8)_geq + mu_gstor_def_rt(gs1,s2,t8)_leq
-   - mu_gas_balance(ng102,s2,t8)_geq + mu_gas_balance(ng102,s2,t8)_leq
+   + lambda_gstor_def_rt(gs1,s2,t8) + lambda_gas_balance(ng102,s2,t8)
    - muLB_gsout_rt(gs1,s2,t8) = 0
  dLag/gstore_rt(gs1,s2,t8): mu_gstore_max_rt(gs1,t8,s2)
-   - mu_gstore_min_rt(gs1,t8,s2) - mu_gstor_def_rt(gs1,s2,t8)_geq
-   + mu_gstor_def_rt(gs1,s2,t8)_leq + mu_gstor_def_rt(gs1,s2,t9)_geq
-   - mu_gstor_def_rt(gs1,s2,t9)_leq - muLB_gstore_rt(gs1,s2,t8) = 0
+   - mu_gstore_min_rt(gs1,t8,s2) + lambda_gstor_def_rt(gs1,s2,t8)
+   - lambda_gstor_def_rt(gs1,s2,t9) - muLB_gstore_rt(gs1,s2,t8) = 0
  dLag/pres_rt(ng101,s2,t9): mu_PresMax(ng101,s2,t9)
    - mu_PresMin(ng101,s2,t9) - mu_Send_geq_Receive_rtt9s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t9,1,0)
@@ -34764,12 +30927,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t9,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t9,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t9,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t9)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t9)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t9)
    - muLB_pres_rt(ng101,s2,t9) = -0.5
  dLag/gshed(ng101,s2,t9): mu_gas_shed_rt(ng101,s2,t9)
-   - mu_gas_balance(ng101,s2,t9)_geq + mu_gas_balance(ng101,s2,t9)_leq
-   - muLB_gshed(ng101,s2,t9) = -5000
+   + lambda_gas_balance(ng101,s2,t9) - muLB_gshed(ng101,s2,t9) = -5000
  dLag/pres_rt(ng102,s2,t9): mu_PresMax(ng102,s2,t9)
    - mu_PresMin(ng102,s2,t9) + mu_Send_geq_Receive_rtt9s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t9,1,0)
@@ -34817,12 +30978,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t9,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t9,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t9,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t9)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t9)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t9)
    - muLB_pres_rt(ng102,s2,t9) = 0.5
  dLag/gshed(ng102,s2,t9): mu_gas_shed_rt(ng102,s2,t9)
-   - mu_gas_balance(ng102,s2,t9)_geq + mu_gas_balance(ng102,s2,t9)_leq
-   - muLB_gshed(ng102,s2,t9) = -5000
+   + lambda_gas_balance(ng102,s2,t9) - muLB_gshed(ng102,s2,t9) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t9):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t9,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t9,2,0)
@@ -34869,49 +31028,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t9,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t9,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t9,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t9)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t9)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t9)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t9) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t9):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t9)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t9)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t9)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t9)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t10)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t10)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t9)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t9)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t10)
    - muLB_lpack_rt(('ng101','ng102'),s2,t9) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t9):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t9)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t9)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t9)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t9)_leq
-   + mu_gas_balance(ng101,s2,t9)_geq - mu_gas_balance(ng101,s2,t9)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t9)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t9)
+   - lambda_gas_balance(ng101,s2,t9)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t9) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t9):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t9)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t9)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t9)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t9)_leq
-   - mu_gas_balance(ng102,s2,t9)_geq + mu_gas_balance(ng102,s2,t9)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t9)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t9)
+   + lambda_gas_balance(ng102,s2,t9)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t9) = 0
  dLag/gprodUp(gw1,s2,t9): mu_gprodUp_max(gw1,s2,t9)
-   - mu_gas_balance(ng101,s2,t9)_geq + mu_gas_balance(ng101,s2,t9)_leq
-   - muLB_gprodUp(gw1,s2,t9) = -6.05
+   + lambda_gas_balance(ng101,s2,t9) - muLB_gprodUp(gw1,s2,t9) = -6.05
  dLag/gprodDn(gw1,s2,t9): mu_gprodDn_max(gw1,s2,t9)
-   + mu_gas_balance(ng101,s2,t9)_geq - mu_gas_balance(ng101,s2,t9)_leq
-   - muLB_gprodDn(gw1,s2,t9) = 5.225
+   - lambda_gas_balance(ng101,s2,t9) - muLB_gprodDn(gw1,s2,t9) = 5.225
  dLag/gsin_rt(gs1,s2,t9): mu_gsinMax_rt(gs1,t9,s2)
-   + mu_gstor_def_rt(gs1,s2,t9)_geq - mu_gstor_def_rt(gs1,s2,t9)_leq
-   + mu_gas_balance(ng102,s2,t9)_geq - mu_gas_balance(ng102,s2,t9)_leq
+   - lambda_gstor_def_rt(gs1,s2,t9) - lambda_gas_balance(ng102,s2,t9)
    - muLB_gsin_rt(gs1,s2,t9) = 0
  dLag/gsout_rt(gs1,s2,t9): mu_gsoutMax_rt(gs1,t9,s2)
-   - mu_gstor_def_rt(gs1,s2,t9)_geq + mu_gstor_def_rt(gs1,s2,t9)_leq
-   - mu_gas_balance(ng102,s2,t9)_geq + mu_gas_balance(ng102,s2,t9)_leq
+   + lambda_gstor_def_rt(gs1,s2,t9) + lambda_gas_balance(ng102,s2,t9)
    - muLB_gsout_rt(gs1,s2,t9) = 0
  dLag/gstore_rt(gs1,s2,t9): mu_gstore_max_rt(gs1,t9,s2)
-   - mu_gstore_min_rt(gs1,t9,s2) - mu_gstor_def_rt(gs1,s2,t9)_geq
-   + mu_gstor_def_rt(gs1,s2,t9)_leq + mu_gstor_def_rt(gs1,s2,t10)_geq
-   - mu_gstor_def_rt(gs1,s2,t10)_leq - muLB_gstore_rt(gs1,s2,t9) = 0
+   - mu_gstore_min_rt(gs1,t9,s2) + lambda_gstor_def_rt(gs1,s2,t9)
+   - lambda_gstor_def_rt(gs1,s2,t10) - muLB_gstore_rt(gs1,s2,t9) = 0
  dLag/pres_rt(ng101,s2,t10): mu_PresMax(ng101,s2,t10)
    - mu_PresMin(ng101,s2,t10) - mu_Send_geq_Receive_rtt10s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t10,1,0)
@@ -34959,12 +31105,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t10,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t10,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t10,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t10)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t10)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t10)
    - muLB_pres_rt(ng101,s2,t10) = -0.5
  dLag/gshed(ng101,s2,t10): mu_gas_shed_rt(ng101,s2,t10)
-   - mu_gas_balance(ng101,s2,t10)_geq + mu_gas_balance(ng101,s2,t10)_leq
-   - muLB_gshed(ng101,s2,t10) = -5000
+   + lambda_gas_balance(ng101,s2,t10) - muLB_gshed(ng101,s2,t10) = -5000
  dLag/pres_rt(ng102,s2,t10): mu_PresMax(ng102,s2,t10)
    - mu_PresMin(ng102,s2,t10) + mu_Send_geq_Receive_rtt10s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t10,1,0)
@@ -35012,12 +31156,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t10,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t10,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t10,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t10)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t10)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t10)
    - muLB_pres_rt(ng102,s2,t10) = 0.5
  dLag/gshed(ng102,s2,t10): mu_gas_shed_rt(ng102,s2,t10)
-   - mu_gas_balance(ng102,s2,t10)_geq + mu_gas_balance(ng102,s2,t10)_leq
-   - muLB_gshed(ng102,s2,t10) = -5000
+   + lambda_gas_balance(ng102,s2,t10) - muLB_gshed(ng102,s2,t10) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t10):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t10,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t10,2,0)
@@ -35064,49 +31206,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t10,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t10,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t10,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t10)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t10)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t10)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t10) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t10):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t10)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t10)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t10)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t10)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t11)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t11)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t10)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t10)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t11)
    - muLB_lpack_rt(('ng101','ng102'),s2,t10) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t10):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t10)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t10)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t10)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t10)_leq
-   + mu_gas_balance(ng101,s2,t10)_geq - mu_gas_balance(ng101,s2,t10)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t10)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t10)
+   - lambda_gas_balance(ng101,s2,t10)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t10) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t10):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t10)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t10)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t10)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t10)_leq
-   - mu_gas_balance(ng102,s2,t10)_geq + mu_gas_balance(ng102,s2,t10)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t10)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t10)
+   + lambda_gas_balance(ng102,s2,t10)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t10) = 0
  dLag/gprodUp(gw1,s2,t10): mu_gprodUp_max(gw1,s2,t10)
-   - mu_gas_balance(ng101,s2,t10)_geq + mu_gas_balance(ng101,s2,t10)_leq
-   - muLB_gprodUp(gw1,s2,t10) = -6.6
+   + lambda_gas_balance(ng101,s2,t10) - muLB_gprodUp(gw1,s2,t10) = -6.6
  dLag/gprodDn(gw1,s2,t10): mu_gprodDn_max(gw1,s2,t10)
-   + mu_gas_balance(ng101,s2,t10)_geq - mu_gas_balance(ng101,s2,t10)_leq
-   - muLB_gprodDn(gw1,s2,t10) = 5.7
+   - lambda_gas_balance(ng101,s2,t10) - muLB_gprodDn(gw1,s2,t10) = 5.7
  dLag/gsin_rt(gs1,s2,t10): mu_gsinMax_rt(gs1,t10,s2)
-   + mu_gstor_def_rt(gs1,s2,t10)_geq - mu_gstor_def_rt(gs1,s2,t10)_leq
-   + mu_gas_balance(ng102,s2,t10)_geq - mu_gas_balance(ng102,s2,t10)_leq
+   - lambda_gstor_def_rt(gs1,s2,t10) - lambda_gas_balance(ng102,s2,t10)
    - muLB_gsin_rt(gs1,s2,t10) = 0
  dLag/gsout_rt(gs1,s2,t10): mu_gsoutMax_rt(gs1,t10,s2)
-   - mu_gstor_def_rt(gs1,s2,t10)_geq + mu_gstor_def_rt(gs1,s2,t10)_leq
-   - mu_gas_balance(ng102,s2,t10)_geq + mu_gas_balance(ng102,s2,t10)_leq
+   + lambda_gstor_def_rt(gs1,s2,t10) + lambda_gas_balance(ng102,s2,t10)
    - muLB_gsout_rt(gs1,s2,t10) = 0
  dLag/gstore_rt(gs1,s2,t10): mu_gstore_max_rt(gs1,t10,s2)
-   - mu_gstore_min_rt(gs1,t10,s2) - mu_gstor_def_rt(gs1,s2,t10)_geq
-   + mu_gstor_def_rt(gs1,s2,t10)_leq + mu_gstor_def_rt(gs1,s2,t11)_geq
-   - mu_gstor_def_rt(gs1,s2,t11)_leq - muLB_gstore_rt(gs1,s2,t10) = 0
+   - mu_gstore_min_rt(gs1,t10,s2) + lambda_gstor_def_rt(gs1,s2,t10)
+   - lambda_gstor_def_rt(gs1,s2,t11) - muLB_gstore_rt(gs1,s2,t10) = 0
  dLag/pres_rt(ng101,s2,t11): mu_PresMax(ng101,s2,t11)
    - mu_PresMin(ng101,s2,t11) - mu_Send_geq_Receive_rtt11s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t11,1,0)
@@ -35154,12 +31283,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t11,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t11,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t11,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t11)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t11)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t11)
    - muLB_pres_rt(ng101,s2,t11) = -0.5
  dLag/gshed(ng101,s2,t11): mu_gas_shed_rt(ng101,s2,t11)
-   - mu_gas_balance(ng101,s2,t11)_geq + mu_gas_balance(ng101,s2,t11)_leq
-   - muLB_gshed(ng101,s2,t11) = -5000
+   + lambda_gas_balance(ng101,s2,t11) - muLB_gshed(ng101,s2,t11) = -5000
  dLag/pres_rt(ng102,s2,t11): mu_PresMax(ng102,s2,t11)
    - mu_PresMin(ng102,s2,t11) + mu_Send_geq_Receive_rtt11s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t11,1,0)
@@ -35207,12 +31334,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t11,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t11,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t11,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t11)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t11)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t11)
    - muLB_pres_rt(ng102,s2,t11) = 0.5
  dLag/gshed(ng102,s2,t11): mu_gas_shed_rt(ng102,s2,t11)
-   - mu_gas_balance(ng102,s2,t11)_geq + mu_gas_balance(ng102,s2,t11)_leq
-   - muLB_gshed(ng102,s2,t11) = -5000
+   + lambda_gas_balance(ng102,s2,t11) - muLB_gshed(ng102,s2,t11) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t11):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t11,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t11,2,0)
@@ -35259,49 +31384,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t11,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t11,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t11,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t11)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t11)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t11)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t11) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t11):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t11)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t11)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t11)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t11)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t12)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t12)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t11)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t11)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t12)
    - muLB_lpack_rt(('ng101','ng102'),s2,t11) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t11):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t11)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t11)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t11)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t11)_leq
-   + mu_gas_balance(ng101,s2,t11)_geq - mu_gas_balance(ng101,s2,t11)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t11)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t11)
+   - lambda_gas_balance(ng101,s2,t11)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t11) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t11):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t11)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t11)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t11)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t11)_leq
-   - mu_gas_balance(ng102,s2,t11)_geq + mu_gas_balance(ng102,s2,t11)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t11)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t11)
+   + lambda_gas_balance(ng102,s2,t11)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t11) = 0
  dLag/gprodUp(gw1,s2,t11): mu_gprodUp_max(gw1,s2,t11)
-   - mu_gas_balance(ng101,s2,t11)_geq + mu_gas_balance(ng101,s2,t11)_leq
-   - muLB_gprodUp(gw1,s2,t11) = -7.15
+   + lambda_gas_balance(ng101,s2,t11) - muLB_gprodUp(gw1,s2,t11) = -7.15
  dLag/gprodDn(gw1,s2,t11): mu_gprodDn_max(gw1,s2,t11)
-   + mu_gas_balance(ng101,s2,t11)_geq - mu_gas_balance(ng101,s2,t11)_leq
-   - muLB_gprodDn(gw1,s2,t11) = 6.175
+   - lambda_gas_balance(ng101,s2,t11) - muLB_gprodDn(gw1,s2,t11) = 6.175
  dLag/gsin_rt(gs1,s2,t11): mu_gsinMax_rt(gs1,t11,s2)
-   + mu_gstor_def_rt(gs1,s2,t11)_geq - mu_gstor_def_rt(gs1,s2,t11)_leq
-   + mu_gas_balance(ng102,s2,t11)_geq - mu_gas_balance(ng102,s2,t11)_leq
+   - lambda_gstor_def_rt(gs1,s2,t11) - lambda_gas_balance(ng102,s2,t11)
    - muLB_gsin_rt(gs1,s2,t11) = 0
  dLag/gsout_rt(gs1,s2,t11): mu_gsoutMax_rt(gs1,t11,s2)
-   - mu_gstor_def_rt(gs1,s2,t11)_geq + mu_gstor_def_rt(gs1,s2,t11)_leq
-   - mu_gas_balance(ng102,s2,t11)_geq + mu_gas_balance(ng102,s2,t11)_leq
+   + lambda_gstor_def_rt(gs1,s2,t11) + lambda_gas_balance(ng102,s2,t11)
    - muLB_gsout_rt(gs1,s2,t11) = 0
  dLag/gstore_rt(gs1,s2,t11): mu_gstore_max_rt(gs1,t11,s2)
-   - mu_gstore_min_rt(gs1,t11,s2) - mu_gstor_def_rt(gs1,s2,t11)_geq
-   + mu_gstor_def_rt(gs1,s2,t11)_leq + mu_gstor_def_rt(gs1,s2,t12)_geq
-   - mu_gstor_def_rt(gs1,s2,t12)_leq - muLB_gstore_rt(gs1,s2,t11) = 0
+   - mu_gstore_min_rt(gs1,t11,s2) + lambda_gstor_def_rt(gs1,s2,t11)
+   - lambda_gstor_def_rt(gs1,s2,t12) - muLB_gstore_rt(gs1,s2,t11) = 0
  dLag/pres_rt(ng101,s2,t12): mu_PresMax(ng101,s2,t12)
    - mu_PresMin(ng101,s2,t12) - mu_Send_geq_Receive_rtt12s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t12,1,0)
@@ -35349,12 +31461,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t12,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t12,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t12,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t12)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t12)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t12)
    - muLB_pres_rt(ng101,s2,t12) = -0.5
  dLag/gshed(ng101,s2,t12): mu_gas_shed_rt(ng101,s2,t12)
-   - mu_gas_balance(ng101,s2,t12)_geq + mu_gas_balance(ng101,s2,t12)_leq
-   - muLB_gshed(ng101,s2,t12) = -5000
+   + lambda_gas_balance(ng101,s2,t12) - muLB_gshed(ng101,s2,t12) = -5000
  dLag/pres_rt(ng102,s2,t12): mu_PresMax(ng102,s2,t12)
    - mu_PresMin(ng102,s2,t12) + mu_Send_geq_Receive_rtt12s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t12,1,0)
@@ -35402,12 +31512,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t12,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t12,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t12,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t12)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t12)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t12)
    - muLB_pres_rt(ng102,s2,t12) = 0.5
  dLag/gshed(ng102,s2,t12): mu_gas_shed_rt(ng102,s2,t12)
-   - mu_gas_balance(ng102,s2,t12)_geq + mu_gas_balance(ng102,s2,t12)_leq
-   - muLB_gshed(ng102,s2,t12) = -5000
+   + lambda_gas_balance(ng102,s2,t12) - muLB_gshed(ng102,s2,t12) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t12):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t12,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t12,2,0)
@@ -35454,49 +31562,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t12,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t12,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t12,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t12)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t12)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t12)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t12) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t12):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t12)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t12)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t12)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t12)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t13)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t13)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t12)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t12)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t13)
    - muLB_lpack_rt(('ng101','ng102'),s2,t12) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t12):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t12)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t12)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t12)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t12)_leq
-   + mu_gas_balance(ng101,s2,t12)_geq - mu_gas_balance(ng101,s2,t12)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t12)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t12)
+   - lambda_gas_balance(ng101,s2,t12)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t12) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t12):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t12)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t12)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t12)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t12)_leq
-   - mu_gas_balance(ng102,s2,t12)_geq + mu_gas_balance(ng102,s2,t12)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t12)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t12)
+   + lambda_gas_balance(ng102,s2,t12)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t12) = 0
  dLag/gprodUp(gw1,s2,t12): mu_gprodUp_max(gw1,s2,t12)
-   - mu_gas_balance(ng101,s2,t12)_geq + mu_gas_balance(ng101,s2,t12)_leq
-   - muLB_gprodUp(gw1,s2,t12) = -7.7
+   + lambda_gas_balance(ng101,s2,t12) - muLB_gprodUp(gw1,s2,t12) = -7.7
  dLag/gprodDn(gw1,s2,t12): mu_gprodDn_max(gw1,s2,t12)
-   + mu_gas_balance(ng101,s2,t12)_geq - mu_gas_balance(ng101,s2,t12)_leq
-   - muLB_gprodDn(gw1,s2,t12) = 6.65
+   - lambda_gas_balance(ng101,s2,t12) - muLB_gprodDn(gw1,s2,t12) = 6.65
  dLag/gsin_rt(gs1,s2,t12): mu_gsinMax_rt(gs1,t12,s2)
-   + mu_gstor_def_rt(gs1,s2,t12)_geq - mu_gstor_def_rt(gs1,s2,t12)_leq
-   + mu_gas_balance(ng102,s2,t12)_geq - mu_gas_balance(ng102,s2,t12)_leq
+   - lambda_gstor_def_rt(gs1,s2,t12) - lambda_gas_balance(ng102,s2,t12)
    - muLB_gsin_rt(gs1,s2,t12) = 0
  dLag/gsout_rt(gs1,s2,t12): mu_gsoutMax_rt(gs1,t12,s2)
-   - mu_gstor_def_rt(gs1,s2,t12)_geq + mu_gstor_def_rt(gs1,s2,t12)_leq
-   - mu_gas_balance(ng102,s2,t12)_geq + mu_gas_balance(ng102,s2,t12)_leq
+   + lambda_gstor_def_rt(gs1,s2,t12) + lambda_gas_balance(ng102,s2,t12)
    - muLB_gsout_rt(gs1,s2,t12) = 0
  dLag/gstore_rt(gs1,s2,t12): mu_gstore_max_rt(gs1,t12,s2)
-   - mu_gstore_min_rt(gs1,t12,s2) - mu_gstor_def_rt(gs1,s2,t12)_geq
-   + mu_gstor_def_rt(gs1,s2,t12)_leq + mu_gstor_def_rt(gs1,s2,t13)_geq
-   - mu_gstor_def_rt(gs1,s2,t13)_leq - muLB_gstore_rt(gs1,s2,t12) = 0
+   - mu_gstore_min_rt(gs1,t12,s2) + lambda_gstor_def_rt(gs1,s2,t12)
+   - lambda_gstor_def_rt(gs1,s2,t13) - muLB_gstore_rt(gs1,s2,t12) = 0
  dLag/pres_rt(ng101,s2,t13): mu_PresMax(ng101,s2,t13)
    - mu_PresMin(ng101,s2,t13) - mu_Send_geq_Receive_rtt13s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t13,1,0)
@@ -35544,12 +31639,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t13,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t13,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t13,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t13)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t13)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t13)
    - muLB_pres_rt(ng101,s2,t13) = -0.5
  dLag/gshed(ng101,s2,t13): mu_gas_shed_rt(ng101,s2,t13)
-   - mu_gas_balance(ng101,s2,t13)_geq + mu_gas_balance(ng101,s2,t13)_leq
-   - muLB_gshed(ng101,s2,t13) = -5000
+   + lambda_gas_balance(ng101,s2,t13) - muLB_gshed(ng101,s2,t13) = -5000
  dLag/pres_rt(ng102,s2,t13): mu_PresMax(ng102,s2,t13)
    - mu_PresMin(ng102,s2,t13) + mu_Send_geq_Receive_rtt13s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t13,1,0)
@@ -35597,12 +31690,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t13,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t13,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t13,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t13)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t13)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t13)
    - muLB_pres_rt(ng102,s2,t13) = 0.5
  dLag/gshed(ng102,s2,t13): mu_gas_shed_rt(ng102,s2,t13)
-   - mu_gas_balance(ng102,s2,t13)_geq + mu_gas_balance(ng102,s2,t13)_leq
-   - muLB_gshed(ng102,s2,t13) = -5000
+   + lambda_gas_balance(ng102,s2,t13) - muLB_gshed(ng102,s2,t13) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t13):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t13,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t13,2,0)
@@ -35649,49 +31740,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t13,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t13,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t13,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t13)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t13)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t13)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t13) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t13):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t13)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t13)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t13)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t13)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t14)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t14)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t13)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t13)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t14)
    - muLB_lpack_rt(('ng101','ng102'),s2,t13) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t13):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t13)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t13)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t13)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t13)_leq
-   + mu_gas_balance(ng101,s2,t13)_geq - mu_gas_balance(ng101,s2,t13)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t13)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t13)
+   - lambda_gas_balance(ng101,s2,t13)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t13) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t13):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t13)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t13)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t13)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t13)_leq
-   - mu_gas_balance(ng102,s2,t13)_geq + mu_gas_balance(ng102,s2,t13)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t13)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t13)
+   + lambda_gas_balance(ng102,s2,t13)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t13) = 0
  dLag/gprodUp(gw1,s2,t13): mu_gprodUp_max(gw1,s2,t13)
-   - mu_gas_balance(ng101,s2,t13)_geq + mu_gas_balance(ng101,s2,t13)_leq
-   - muLB_gprodUp(gw1,s2,t13) = -8.25
+   + lambda_gas_balance(ng101,s2,t13) - muLB_gprodUp(gw1,s2,t13) = -8.25
  dLag/gprodDn(gw1,s2,t13): mu_gprodDn_max(gw1,s2,t13)
-   + mu_gas_balance(ng101,s2,t13)_geq - mu_gas_balance(ng101,s2,t13)_leq
-   - muLB_gprodDn(gw1,s2,t13) = 7.125
+   - lambda_gas_balance(ng101,s2,t13) - muLB_gprodDn(gw1,s2,t13) = 7.125
  dLag/gsin_rt(gs1,s2,t13): mu_gsinMax_rt(gs1,t13,s2)
-   + mu_gstor_def_rt(gs1,s2,t13)_geq - mu_gstor_def_rt(gs1,s2,t13)_leq
-   + mu_gas_balance(ng102,s2,t13)_geq - mu_gas_balance(ng102,s2,t13)_leq
+   - lambda_gstor_def_rt(gs1,s2,t13) - lambda_gas_balance(ng102,s2,t13)
    - muLB_gsin_rt(gs1,s2,t13) = 0
  dLag/gsout_rt(gs1,s2,t13): mu_gsoutMax_rt(gs1,t13,s2)
-   - mu_gstor_def_rt(gs1,s2,t13)_geq + mu_gstor_def_rt(gs1,s2,t13)_leq
-   - mu_gas_balance(ng102,s2,t13)_geq + mu_gas_balance(ng102,s2,t13)_leq
+   + lambda_gstor_def_rt(gs1,s2,t13) + lambda_gas_balance(ng102,s2,t13)
    - muLB_gsout_rt(gs1,s2,t13) = 0
  dLag/gstore_rt(gs1,s2,t13): mu_gstore_max_rt(gs1,t13,s2)
-   - mu_gstore_min_rt(gs1,t13,s2) - mu_gstor_def_rt(gs1,s2,t13)_geq
-   + mu_gstor_def_rt(gs1,s2,t13)_leq + mu_gstor_def_rt(gs1,s2,t14)_geq
-   - mu_gstor_def_rt(gs1,s2,t14)_leq - muLB_gstore_rt(gs1,s2,t13) = 0
+   - mu_gstore_min_rt(gs1,t13,s2) + lambda_gstor_def_rt(gs1,s2,t13)
+   - lambda_gstor_def_rt(gs1,s2,t14) - muLB_gstore_rt(gs1,s2,t13) = 0
  dLag/pres_rt(ng101,s2,t14): mu_PresMax(ng101,s2,t14)
    - mu_PresMin(ng101,s2,t14) - mu_Send_geq_Receive_rtt14s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t14,1,0)
@@ -35739,12 +31817,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t14,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t14,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t14,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t14)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t14)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t14)
    - muLB_pres_rt(ng101,s2,t14) = -0.5
  dLag/gshed(ng101,s2,t14): mu_gas_shed_rt(ng101,s2,t14)
-   - mu_gas_balance(ng101,s2,t14)_geq + mu_gas_balance(ng101,s2,t14)_leq
-   - muLB_gshed(ng101,s2,t14) = -5000
+   + lambda_gas_balance(ng101,s2,t14) - muLB_gshed(ng101,s2,t14) = -5000
  dLag/pres_rt(ng102,s2,t14): mu_PresMax(ng102,s2,t14)
    - mu_PresMin(ng102,s2,t14) + mu_Send_geq_Receive_rtt14s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t14,1,0)
@@ -35792,12 +31868,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t14,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t14,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t14,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t14)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t14)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t14)
    - muLB_pres_rt(ng102,s2,t14) = 0.5
  dLag/gshed(ng102,s2,t14): mu_gas_shed_rt(ng102,s2,t14)
-   - mu_gas_balance(ng102,s2,t14)_geq + mu_gas_balance(ng102,s2,t14)_leq
-   - muLB_gshed(ng102,s2,t14) = -5000
+   + lambda_gas_balance(ng102,s2,t14) - muLB_gshed(ng102,s2,t14) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t14):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t14,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t14,2,0)
@@ -35844,49 +31918,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t14,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t14,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t14,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t14)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t14)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t14)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t14) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t14):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t14)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t14)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t14)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t14)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t15)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t15)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t14)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t14)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t15)
    - muLB_lpack_rt(('ng101','ng102'),s2,t14) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t14):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t14)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t14)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t14)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t14)_leq
-   + mu_gas_balance(ng101,s2,t14)_geq - mu_gas_balance(ng101,s2,t14)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t14)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t14)
+   - lambda_gas_balance(ng101,s2,t14)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t14) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t14):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t14)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t14)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t14)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t14)_leq
-   - mu_gas_balance(ng102,s2,t14)_geq + mu_gas_balance(ng102,s2,t14)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t14)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t14)
+   + lambda_gas_balance(ng102,s2,t14)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t14) = 0
  dLag/gprodUp(gw1,s2,t14): mu_gprodUp_max(gw1,s2,t14)
-   - mu_gas_balance(ng101,s2,t14)_geq + mu_gas_balance(ng101,s2,t14)_leq
-   - muLB_gprodUp(gw1,s2,t14) = -8.8
+   + lambda_gas_balance(ng101,s2,t14) - muLB_gprodUp(gw1,s2,t14) = -8.8
  dLag/gprodDn(gw1,s2,t14): mu_gprodDn_max(gw1,s2,t14)
-   + mu_gas_balance(ng101,s2,t14)_geq - mu_gas_balance(ng101,s2,t14)_leq
-   - muLB_gprodDn(gw1,s2,t14) = 7.6
+   - lambda_gas_balance(ng101,s2,t14) - muLB_gprodDn(gw1,s2,t14) = 7.6
  dLag/gsin_rt(gs1,s2,t14): mu_gsinMax_rt(gs1,t14,s2)
-   + mu_gstor_def_rt(gs1,s2,t14)_geq - mu_gstor_def_rt(gs1,s2,t14)_leq
-   + mu_gas_balance(ng102,s2,t14)_geq - mu_gas_balance(ng102,s2,t14)_leq
+   - lambda_gstor_def_rt(gs1,s2,t14) - lambda_gas_balance(ng102,s2,t14)
    - muLB_gsin_rt(gs1,s2,t14) = 0
  dLag/gsout_rt(gs1,s2,t14): mu_gsoutMax_rt(gs1,t14,s2)
-   - mu_gstor_def_rt(gs1,s2,t14)_geq + mu_gstor_def_rt(gs1,s2,t14)_leq
-   - mu_gas_balance(ng102,s2,t14)_geq + mu_gas_balance(ng102,s2,t14)_leq
+   + lambda_gstor_def_rt(gs1,s2,t14) + lambda_gas_balance(ng102,s2,t14)
    - muLB_gsout_rt(gs1,s2,t14) = 0
  dLag/gstore_rt(gs1,s2,t14): mu_gstore_max_rt(gs1,t14,s2)
-   - mu_gstore_min_rt(gs1,t14,s2) - mu_gstor_def_rt(gs1,s2,t14)_geq
-   + mu_gstor_def_rt(gs1,s2,t14)_leq + mu_gstor_def_rt(gs1,s2,t15)_geq
-   - mu_gstor_def_rt(gs1,s2,t15)_leq - muLB_gstore_rt(gs1,s2,t14) = 0
+   - mu_gstore_min_rt(gs1,t14,s2) + lambda_gstor_def_rt(gs1,s2,t14)
+   - lambda_gstor_def_rt(gs1,s2,t15) - muLB_gstore_rt(gs1,s2,t14) = 0
  dLag/pres_rt(ng101,s2,t15): mu_PresMax(ng101,s2,t15)
    - mu_PresMin(ng101,s2,t15) - mu_Send_geq_Receive_rtt15s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t15,1,0)
@@ -35934,12 +31995,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t15,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t15,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t15,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t15)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t15)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t15)
    - muLB_pres_rt(ng101,s2,t15) = -0.5
  dLag/gshed(ng101,s2,t15): mu_gas_shed_rt(ng101,s2,t15)
-   - mu_gas_balance(ng101,s2,t15)_geq + mu_gas_balance(ng101,s2,t15)_leq
-   - muLB_gshed(ng101,s2,t15) = -5000
+   + lambda_gas_balance(ng101,s2,t15) - muLB_gshed(ng101,s2,t15) = -5000
  dLag/pres_rt(ng102,s2,t15): mu_PresMax(ng102,s2,t15)
    - mu_PresMin(ng102,s2,t15) + mu_Send_geq_Receive_rtt15s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t15,1,0)
@@ -35987,12 +32046,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t15,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t15,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t15,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t15)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t15)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t15)
    - muLB_pres_rt(ng102,s2,t15) = 0.5
  dLag/gshed(ng102,s2,t15): mu_gas_shed_rt(ng102,s2,t15)
-   - mu_gas_balance(ng102,s2,t15)_geq + mu_gas_balance(ng102,s2,t15)_leq
-   - muLB_gshed(ng102,s2,t15) = -5000
+   + lambda_gas_balance(ng102,s2,t15) - muLB_gshed(ng102,s2,t15) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t15):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t15,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t15,2,0)
@@ -36039,49 +32096,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t15,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t15,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t15,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t15)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t15)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t15)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t15) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t15):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t15)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t15)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t15)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t15)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t16)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t16)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t15)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t15)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t16)
    - muLB_lpack_rt(('ng101','ng102'),s2,t15) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t15):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t15)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t15)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t15)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t15)_leq
-   + mu_gas_balance(ng101,s2,t15)_geq - mu_gas_balance(ng101,s2,t15)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t15)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t15)
+   - lambda_gas_balance(ng101,s2,t15)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t15) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t15):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t15)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t15)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t15)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t15)_leq
-   - mu_gas_balance(ng102,s2,t15)_geq + mu_gas_balance(ng102,s2,t15)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t15)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t15)
+   + lambda_gas_balance(ng102,s2,t15)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t15) = 0
  dLag/gprodUp(gw1,s2,t15): mu_gprodUp_max(gw1,s2,t15)
-   - mu_gas_balance(ng101,s2,t15)_geq + mu_gas_balance(ng101,s2,t15)_leq
-   - muLB_gprodUp(gw1,s2,t15) = -9.35
+   + lambda_gas_balance(ng101,s2,t15) - muLB_gprodUp(gw1,s2,t15) = -9.35
  dLag/gprodDn(gw1,s2,t15): mu_gprodDn_max(gw1,s2,t15)
-   + mu_gas_balance(ng101,s2,t15)_geq - mu_gas_balance(ng101,s2,t15)_leq
-   - muLB_gprodDn(gw1,s2,t15) = 8.075
+   - lambda_gas_balance(ng101,s2,t15) - muLB_gprodDn(gw1,s2,t15) = 8.075
  dLag/gsin_rt(gs1,s2,t15): mu_gsinMax_rt(gs1,t15,s2)
-   + mu_gstor_def_rt(gs1,s2,t15)_geq - mu_gstor_def_rt(gs1,s2,t15)_leq
-   + mu_gas_balance(ng102,s2,t15)_geq - mu_gas_balance(ng102,s2,t15)_leq
+   - lambda_gstor_def_rt(gs1,s2,t15) - lambda_gas_balance(ng102,s2,t15)
    - muLB_gsin_rt(gs1,s2,t15) = 0
  dLag/gsout_rt(gs1,s2,t15): mu_gsoutMax_rt(gs1,t15,s2)
-   - mu_gstor_def_rt(gs1,s2,t15)_geq + mu_gstor_def_rt(gs1,s2,t15)_leq
-   - mu_gas_balance(ng102,s2,t15)_geq + mu_gas_balance(ng102,s2,t15)_leq
+   + lambda_gstor_def_rt(gs1,s2,t15) + lambda_gas_balance(ng102,s2,t15)
    - muLB_gsout_rt(gs1,s2,t15) = 0
  dLag/gstore_rt(gs1,s2,t15): mu_gstore_max_rt(gs1,t15,s2)
-   - mu_gstore_min_rt(gs1,t15,s2) - mu_gstor_def_rt(gs1,s2,t15)_geq
-   + mu_gstor_def_rt(gs1,s2,t15)_leq + mu_gstor_def_rt(gs1,s2,t16)_geq
-   - mu_gstor_def_rt(gs1,s2,t16)_leq - muLB_gstore_rt(gs1,s2,t15) = 0
+   - mu_gstore_min_rt(gs1,t15,s2) + lambda_gstor_def_rt(gs1,s2,t15)
+   - lambda_gstor_def_rt(gs1,s2,t16) - muLB_gstore_rt(gs1,s2,t15) = 0
  dLag/pres_rt(ng101,s2,t16): mu_PresMax(ng101,s2,t16)
    - mu_PresMin(ng101,s2,t16) - mu_Send_geq_Receive_rtt16s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t16,1,0)
@@ -36129,12 +32173,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t16,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t16,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t16,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t16)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t16)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t16)
    - muLB_pres_rt(ng101,s2,t16) = -0.5
  dLag/gshed(ng101,s2,t16): mu_gas_shed_rt(ng101,s2,t16)
-   - mu_gas_balance(ng101,s2,t16)_geq + mu_gas_balance(ng101,s2,t16)_leq
-   - muLB_gshed(ng101,s2,t16) = -5000
+   + lambda_gas_balance(ng101,s2,t16) - muLB_gshed(ng101,s2,t16) = -5000
  dLag/pres_rt(ng102,s2,t16): mu_PresMax(ng102,s2,t16)
    - mu_PresMin(ng102,s2,t16) + mu_Send_geq_Receive_rtt16s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t16,1,0)
@@ -36182,12 +32224,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t16,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t16,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t16,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t16)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t16)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t16)
    - muLB_pres_rt(ng102,s2,t16) = 0.5
  dLag/gshed(ng102,s2,t16): mu_gas_shed_rt(ng102,s2,t16)
-   - mu_gas_balance(ng102,s2,t16)_geq + mu_gas_balance(ng102,s2,t16)_leq
-   - muLB_gshed(ng102,s2,t16) = -5000
+   + lambda_gas_balance(ng102,s2,t16) - muLB_gshed(ng102,s2,t16) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t16):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t16,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t16,2,0)
@@ -36234,49 +32274,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t16,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t16,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t16,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t16)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t16)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t16)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t16) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t16):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t16)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t16)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t16)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t16)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t17)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t17)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t16)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t16)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t17)
    - muLB_lpack_rt(('ng101','ng102'),s2,t16) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t16):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t16)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t16)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t16)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t16)_leq
-   + mu_gas_balance(ng101,s2,t16)_geq - mu_gas_balance(ng101,s2,t16)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t16)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t16)
+   - lambda_gas_balance(ng101,s2,t16)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t16) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t16):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t16)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t16)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t16)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t16)_leq
-   - mu_gas_balance(ng102,s2,t16)_geq + mu_gas_balance(ng102,s2,t16)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t16)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t16)
+   + lambda_gas_balance(ng102,s2,t16)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t16) = 0
  dLag/gprodUp(gw1,s2,t16): mu_gprodUp_max(gw1,s2,t16)
-   - mu_gas_balance(ng101,s2,t16)_geq + mu_gas_balance(ng101,s2,t16)_leq
-   - muLB_gprodUp(gw1,s2,t16) = -9.9
+   + lambda_gas_balance(ng101,s2,t16) - muLB_gprodUp(gw1,s2,t16) = -9.9
  dLag/gprodDn(gw1,s2,t16): mu_gprodDn_max(gw1,s2,t16)
-   + mu_gas_balance(ng101,s2,t16)_geq - mu_gas_balance(ng101,s2,t16)_leq
-   - muLB_gprodDn(gw1,s2,t16) = 8.55
+   - lambda_gas_balance(ng101,s2,t16) - muLB_gprodDn(gw1,s2,t16) = 8.55
  dLag/gsin_rt(gs1,s2,t16): mu_gsinMax_rt(gs1,t16,s2)
-   + mu_gstor_def_rt(gs1,s2,t16)_geq - mu_gstor_def_rt(gs1,s2,t16)_leq
-   + mu_gas_balance(ng102,s2,t16)_geq - mu_gas_balance(ng102,s2,t16)_leq
+   - lambda_gstor_def_rt(gs1,s2,t16) - lambda_gas_balance(ng102,s2,t16)
    - muLB_gsin_rt(gs1,s2,t16) = 0
  dLag/gsout_rt(gs1,s2,t16): mu_gsoutMax_rt(gs1,t16,s2)
-   - mu_gstor_def_rt(gs1,s2,t16)_geq + mu_gstor_def_rt(gs1,s2,t16)_leq
-   - mu_gas_balance(ng102,s2,t16)_geq + mu_gas_balance(ng102,s2,t16)_leq
+   + lambda_gstor_def_rt(gs1,s2,t16) + lambda_gas_balance(ng102,s2,t16)
    - muLB_gsout_rt(gs1,s2,t16) = 0
  dLag/gstore_rt(gs1,s2,t16): mu_gstore_max_rt(gs1,t16,s2)
-   - mu_gstore_min_rt(gs1,t16,s2) - mu_gstor_def_rt(gs1,s2,t16)_geq
-   + mu_gstor_def_rt(gs1,s2,t16)_leq + mu_gstor_def_rt(gs1,s2,t17)_geq
-   - mu_gstor_def_rt(gs1,s2,t17)_leq - muLB_gstore_rt(gs1,s2,t16) = 0
+   - mu_gstore_min_rt(gs1,t16,s2) + lambda_gstor_def_rt(gs1,s2,t16)
+   - lambda_gstor_def_rt(gs1,s2,t17) - muLB_gstore_rt(gs1,s2,t16) = 0
  dLag/pres_rt(ng101,s2,t17): mu_PresMax(ng101,s2,t17)
    - mu_PresMin(ng101,s2,t17) - mu_Send_geq_Receive_rtt17s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t17,1,0)
@@ -36324,12 +32351,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t17,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t17,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t17,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t17)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t17)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t17)
    - muLB_pres_rt(ng101,s2,t17) = -0.5
  dLag/gshed(ng101,s2,t17): mu_gas_shed_rt(ng101,s2,t17)
-   - mu_gas_balance(ng101,s2,t17)_geq + mu_gas_balance(ng101,s2,t17)_leq
-   - muLB_gshed(ng101,s2,t17) = -5000
+   + lambda_gas_balance(ng101,s2,t17) - muLB_gshed(ng101,s2,t17) = -5000
  dLag/pres_rt(ng102,s2,t17): mu_PresMax(ng102,s2,t17)
    - mu_PresMin(ng102,s2,t17) + mu_Send_geq_Receive_rtt17s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t17,1,0)
@@ -36377,12 +32402,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t17,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t17,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t17,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t17)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t17)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t17)
    - muLB_pres_rt(ng102,s2,t17) = 0.5
  dLag/gshed(ng102,s2,t17): mu_gas_shed_rt(ng102,s2,t17)
-   - mu_gas_balance(ng102,s2,t17)_geq + mu_gas_balance(ng102,s2,t17)_leq
-   - muLB_gshed(ng102,s2,t17) = -5000
+   + lambda_gas_balance(ng102,s2,t17) - muLB_gshed(ng102,s2,t17) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t17):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t17,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t17,2,0)
@@ -36429,49 +32452,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t17,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t17,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t17,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t17)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t17)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t17)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t17) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t17):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t17)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t17)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t17)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t17)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t18)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t18)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t17)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t17)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t18)
    - muLB_lpack_rt(('ng101','ng102'),s2,t17) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t17):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t17)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t17)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t17)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t17)_leq
-   + mu_gas_balance(ng101,s2,t17)_geq - mu_gas_balance(ng101,s2,t17)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t17)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t17)
+   - lambda_gas_balance(ng101,s2,t17)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t17) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t17):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t17)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t17)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t17)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t17)_leq
-   - mu_gas_balance(ng102,s2,t17)_geq + mu_gas_balance(ng102,s2,t17)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t17)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t17)
+   + lambda_gas_balance(ng102,s2,t17)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t17) = 0
  dLag/gprodUp(gw1,s2,t17): mu_gprodUp_max(gw1,s2,t17)
-   - mu_gas_balance(ng101,s2,t17)_geq + mu_gas_balance(ng101,s2,t17)_leq
-   - muLB_gprodUp(gw1,s2,t17) = -10.45
+   + lambda_gas_balance(ng101,s2,t17) - muLB_gprodUp(gw1,s2,t17) = -10.45
  dLag/gprodDn(gw1,s2,t17): mu_gprodDn_max(gw1,s2,t17)
-   + mu_gas_balance(ng101,s2,t17)_geq - mu_gas_balance(ng101,s2,t17)_leq
-   - muLB_gprodDn(gw1,s2,t17) = 9.025
+   - lambda_gas_balance(ng101,s2,t17) - muLB_gprodDn(gw1,s2,t17) = 9.025
  dLag/gsin_rt(gs1,s2,t17): mu_gsinMax_rt(gs1,t17,s2)
-   + mu_gstor_def_rt(gs1,s2,t17)_geq - mu_gstor_def_rt(gs1,s2,t17)_leq
-   + mu_gas_balance(ng102,s2,t17)_geq - mu_gas_balance(ng102,s2,t17)_leq
+   - lambda_gstor_def_rt(gs1,s2,t17) - lambda_gas_balance(ng102,s2,t17)
    - muLB_gsin_rt(gs1,s2,t17) = 0
  dLag/gsout_rt(gs1,s2,t17): mu_gsoutMax_rt(gs1,t17,s2)
-   - mu_gstor_def_rt(gs1,s2,t17)_geq + mu_gstor_def_rt(gs1,s2,t17)_leq
-   - mu_gas_balance(ng102,s2,t17)_geq + mu_gas_balance(ng102,s2,t17)_leq
+   + lambda_gstor_def_rt(gs1,s2,t17) + lambda_gas_balance(ng102,s2,t17)
    - muLB_gsout_rt(gs1,s2,t17) = 0
  dLag/gstore_rt(gs1,s2,t17): mu_gstore_max_rt(gs1,t17,s2)
-   - mu_gstore_min_rt(gs1,t17,s2) - mu_gstor_def_rt(gs1,s2,t17)_geq
-   + mu_gstor_def_rt(gs1,s2,t17)_leq + mu_gstor_def_rt(gs1,s2,t18)_geq
-   - mu_gstor_def_rt(gs1,s2,t18)_leq - muLB_gstore_rt(gs1,s2,t17) = 0
+   - mu_gstore_min_rt(gs1,t17,s2) + lambda_gstor_def_rt(gs1,s2,t17)
+   - lambda_gstor_def_rt(gs1,s2,t18) - muLB_gstore_rt(gs1,s2,t17) = 0
  dLag/pres_rt(ng101,s2,t18): mu_PresMax(ng101,s2,t18)
    - mu_PresMin(ng101,s2,t18) - mu_Send_geq_Receive_rtt18s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t18,1,0)
@@ -36519,12 +32529,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t18,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t18,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t18,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t18)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t18)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t18)
    - muLB_pres_rt(ng101,s2,t18) = -0.5
  dLag/gshed(ng101,s2,t18): mu_gas_shed_rt(ng101,s2,t18)
-   - mu_gas_balance(ng101,s2,t18)_geq + mu_gas_balance(ng101,s2,t18)_leq
-   - muLB_gshed(ng101,s2,t18) = -5000
+   + lambda_gas_balance(ng101,s2,t18) - muLB_gshed(ng101,s2,t18) = -5000
  dLag/pres_rt(ng102,s2,t18): mu_PresMax(ng102,s2,t18)
    - mu_PresMin(ng102,s2,t18) + mu_Send_geq_Receive_rtt18s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t18,1,0)
@@ -36572,12 +32580,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t18,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t18,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t18,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t18)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t18)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t18)
    - muLB_pres_rt(ng102,s2,t18) = 0.5
  dLag/gshed(ng102,s2,t18): mu_gas_shed_rt(ng102,s2,t18)
-   - mu_gas_balance(ng102,s2,t18)_geq + mu_gas_balance(ng102,s2,t18)_leq
-   - muLB_gshed(ng102,s2,t18) = -5000
+   + lambda_gas_balance(ng102,s2,t18) - muLB_gshed(ng102,s2,t18) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t18):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t18,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t18,2,0)
@@ -36624,49 +32630,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t18,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t18,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t18,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t18)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t18)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t18)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t18) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t18):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t18)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t18)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t18)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t18)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t19)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t19)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t18)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t18)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t19)
    - muLB_lpack_rt(('ng101','ng102'),s2,t18) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t18):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t18)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t18)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t18)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t18)_leq
-   + mu_gas_balance(ng101,s2,t18)_geq - mu_gas_balance(ng101,s2,t18)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t18)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t18)
+   - lambda_gas_balance(ng101,s2,t18)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t18) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t18):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t18)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t18)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t18)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t18)_leq
-   - mu_gas_balance(ng102,s2,t18)_geq + mu_gas_balance(ng102,s2,t18)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t18)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t18)
+   + lambda_gas_balance(ng102,s2,t18)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t18) = 0
  dLag/gprodUp(gw1,s2,t18): mu_gprodUp_max(gw1,s2,t18)
-   - mu_gas_balance(ng101,s2,t18)_geq + mu_gas_balance(ng101,s2,t18)_leq
-   - muLB_gprodUp(gw1,s2,t18) = -11
+   + lambda_gas_balance(ng101,s2,t18) - muLB_gprodUp(gw1,s2,t18) = -11
  dLag/gprodDn(gw1,s2,t18): mu_gprodDn_max(gw1,s2,t18)
-   + mu_gas_balance(ng101,s2,t18)_geq - mu_gas_balance(ng101,s2,t18)_leq
-   - muLB_gprodDn(gw1,s2,t18) = 9.5
+   - lambda_gas_balance(ng101,s2,t18) - muLB_gprodDn(gw1,s2,t18) = 9.5
  dLag/gsin_rt(gs1,s2,t18): mu_gsinMax_rt(gs1,t18,s2)
-   + mu_gstor_def_rt(gs1,s2,t18)_geq - mu_gstor_def_rt(gs1,s2,t18)_leq
-   + mu_gas_balance(ng102,s2,t18)_geq - mu_gas_balance(ng102,s2,t18)_leq
+   - lambda_gstor_def_rt(gs1,s2,t18) - lambda_gas_balance(ng102,s2,t18)
    - muLB_gsin_rt(gs1,s2,t18) = 0
  dLag/gsout_rt(gs1,s2,t18): mu_gsoutMax_rt(gs1,t18,s2)
-   - mu_gstor_def_rt(gs1,s2,t18)_geq + mu_gstor_def_rt(gs1,s2,t18)_leq
-   - mu_gas_balance(ng102,s2,t18)_geq + mu_gas_balance(ng102,s2,t18)_leq
+   + lambda_gstor_def_rt(gs1,s2,t18) + lambda_gas_balance(ng102,s2,t18)
    - muLB_gsout_rt(gs1,s2,t18) = 0
  dLag/gstore_rt(gs1,s2,t18): mu_gstore_max_rt(gs1,t18,s2)
-   - mu_gstore_min_rt(gs1,t18,s2) - mu_gstor_def_rt(gs1,s2,t18)_geq
-   + mu_gstor_def_rt(gs1,s2,t18)_leq + mu_gstor_def_rt(gs1,s2,t19)_geq
-   - mu_gstor_def_rt(gs1,s2,t19)_leq - muLB_gstore_rt(gs1,s2,t18) = 0
+   - mu_gstore_min_rt(gs1,t18,s2) + lambda_gstor_def_rt(gs1,s2,t18)
+   - lambda_gstor_def_rt(gs1,s2,t19) - muLB_gstore_rt(gs1,s2,t18) = 0
  dLag/pres_rt(ng101,s2,t19): mu_PresMax(ng101,s2,t19)
    - mu_PresMin(ng101,s2,t19) - mu_Send_geq_Receive_rtt19s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t19,1,0)
@@ -36714,12 +32707,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t19,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t19,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t19,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t19)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t19)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t19)
    - muLB_pres_rt(ng101,s2,t19) = -0.5
  dLag/gshed(ng101,s2,t19): mu_gas_shed_rt(ng101,s2,t19)
-   - mu_gas_balance(ng101,s2,t19)_geq + mu_gas_balance(ng101,s2,t19)_leq
-   - muLB_gshed(ng101,s2,t19) = -5000
+   + lambda_gas_balance(ng101,s2,t19) - muLB_gshed(ng101,s2,t19) = -5000
  dLag/pres_rt(ng102,s2,t19): mu_PresMax(ng102,s2,t19)
    - mu_PresMin(ng102,s2,t19) + mu_Send_geq_Receive_rtt19s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t19,1,0)
@@ -36767,12 +32758,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t19,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t19,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t19,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t19)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t19)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t19)
    - muLB_pres_rt(ng102,s2,t19) = 0.5
  dLag/gshed(ng102,s2,t19): mu_gas_shed_rt(ng102,s2,t19)
-   - mu_gas_balance(ng102,s2,t19)_geq + mu_gas_balance(ng102,s2,t19)_leq
-   - muLB_gshed(ng102,s2,t19) = -5000
+   + lambda_gas_balance(ng102,s2,t19) - muLB_gshed(ng102,s2,t19) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t19):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t19,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t19,2,0)
@@ -36819,49 +32808,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t19,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t19,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t19,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t19)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t19)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t19)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t19) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t19):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t19)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t19)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t19)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t19)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t20)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t20)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t19)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t19)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t20)
    - muLB_lpack_rt(('ng101','ng102'),s2,t19) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t19):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t19)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t19)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t19)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t19)_leq
-   + mu_gas_balance(ng101,s2,t19)_geq - mu_gas_balance(ng101,s2,t19)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t19)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t19)
+   - lambda_gas_balance(ng101,s2,t19)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t19) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t19):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t19)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t19)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t19)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t19)_leq
-   - mu_gas_balance(ng102,s2,t19)_geq + mu_gas_balance(ng102,s2,t19)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t19)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t19)
+   + lambda_gas_balance(ng102,s2,t19)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t19) = 0
  dLag/gprodUp(gw1,s2,t19): mu_gprodUp_max(gw1,s2,t19)
-   - mu_gas_balance(ng101,s2,t19)_geq + mu_gas_balance(ng101,s2,t19)_leq
-   - muLB_gprodUp(gw1,s2,t19) = -11.55
+   + lambda_gas_balance(ng101,s2,t19) - muLB_gprodUp(gw1,s2,t19) = -11.55
  dLag/gprodDn(gw1,s2,t19): mu_gprodDn_max(gw1,s2,t19)
-   + mu_gas_balance(ng101,s2,t19)_geq - mu_gas_balance(ng101,s2,t19)_leq
-   - muLB_gprodDn(gw1,s2,t19) = 9.975
+   - lambda_gas_balance(ng101,s2,t19) - muLB_gprodDn(gw1,s2,t19) = 9.975
  dLag/gsin_rt(gs1,s2,t19): mu_gsinMax_rt(gs1,t19,s2)
-   + mu_gstor_def_rt(gs1,s2,t19)_geq - mu_gstor_def_rt(gs1,s2,t19)_leq
-   + mu_gas_balance(ng102,s2,t19)_geq - mu_gas_balance(ng102,s2,t19)_leq
+   - lambda_gstor_def_rt(gs1,s2,t19) - lambda_gas_balance(ng102,s2,t19)
    - muLB_gsin_rt(gs1,s2,t19) = 0
  dLag/gsout_rt(gs1,s2,t19): mu_gsoutMax_rt(gs1,t19,s2)
-   - mu_gstor_def_rt(gs1,s2,t19)_geq + mu_gstor_def_rt(gs1,s2,t19)_leq
-   - mu_gas_balance(ng102,s2,t19)_geq + mu_gas_balance(ng102,s2,t19)_leq
+   + lambda_gstor_def_rt(gs1,s2,t19) + lambda_gas_balance(ng102,s2,t19)
    - muLB_gsout_rt(gs1,s2,t19) = 0
  dLag/gstore_rt(gs1,s2,t19): mu_gstore_max_rt(gs1,t19,s2)
-   - mu_gstore_min_rt(gs1,t19,s2) - mu_gstor_def_rt(gs1,s2,t19)_geq
-   + mu_gstor_def_rt(gs1,s2,t19)_leq + mu_gstor_def_rt(gs1,s2,t20)_geq
-   - mu_gstor_def_rt(gs1,s2,t20)_leq - muLB_gstore_rt(gs1,s2,t19) = 0
+   - mu_gstore_min_rt(gs1,t19,s2) + lambda_gstor_def_rt(gs1,s2,t19)
+   - lambda_gstor_def_rt(gs1,s2,t20) - muLB_gstore_rt(gs1,s2,t19) = 0
  dLag/pres_rt(ng101,s2,t20): mu_PresMax(ng101,s2,t20)
    - mu_PresMin(ng101,s2,t20) - mu_Send_geq_Receive_rtt20s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t20,1,0)
@@ -36909,12 +32885,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t20,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t20,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t20,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t20)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t20)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t20)
    - muLB_pres_rt(ng101,s2,t20) = -0.5
  dLag/gshed(ng101,s2,t20): mu_gas_shed_rt(ng101,s2,t20)
-   - mu_gas_balance(ng101,s2,t20)_geq + mu_gas_balance(ng101,s2,t20)_leq
-   - muLB_gshed(ng101,s2,t20) = -5000
+   + lambda_gas_balance(ng101,s2,t20) - muLB_gshed(ng101,s2,t20) = -5000
  dLag/pres_rt(ng102,s2,t20): mu_PresMax(ng102,s2,t20)
    - mu_PresMin(ng102,s2,t20) + mu_Send_geq_Receive_rtt20s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t20,1,0)
@@ -36962,12 +32936,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t20,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t20,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t20,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t20)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t20)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t20)
    - muLB_pres_rt(ng102,s2,t20) = 0.5
  dLag/gshed(ng102,s2,t20): mu_gas_shed_rt(ng102,s2,t20)
-   - mu_gas_balance(ng102,s2,t20)_geq + mu_gas_balance(ng102,s2,t20)_leq
-   - muLB_gshed(ng102,s2,t20) = -5000
+   + lambda_gas_balance(ng102,s2,t20) - muLB_gshed(ng102,s2,t20) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t20):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t20,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t20,2,0)
@@ -37014,49 +32986,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t20,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t20,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t20,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t20)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t20)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t20)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t20) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t20):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t20)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t20)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t20)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t20)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t21)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t21)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t20)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t20)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t21)
    - muLB_lpack_rt(('ng101','ng102'),s2,t20) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t20):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t20)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t20)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t20)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t20)_leq
-   + mu_gas_balance(ng101,s2,t20)_geq - mu_gas_balance(ng101,s2,t20)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t20)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t20)
+   - lambda_gas_balance(ng101,s2,t20)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t20) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t20):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t20)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t20)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t20)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t20)_leq
-   - mu_gas_balance(ng102,s2,t20)_geq + mu_gas_balance(ng102,s2,t20)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t20)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t20)
+   + lambda_gas_balance(ng102,s2,t20)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t20) = 0
  dLag/gprodUp(gw1,s2,t20): mu_gprodUp_max(gw1,s2,t20)
-   - mu_gas_balance(ng101,s2,t20)_geq + mu_gas_balance(ng101,s2,t20)_leq
-   - muLB_gprodUp(gw1,s2,t20) = -12.1
+   + lambda_gas_balance(ng101,s2,t20) - muLB_gprodUp(gw1,s2,t20) = -12.1
  dLag/gprodDn(gw1,s2,t20): mu_gprodDn_max(gw1,s2,t20)
-   + mu_gas_balance(ng101,s2,t20)_geq - mu_gas_balance(ng101,s2,t20)_leq
-   - muLB_gprodDn(gw1,s2,t20) = 10.45
+   - lambda_gas_balance(ng101,s2,t20) - muLB_gprodDn(gw1,s2,t20) = 10.45
  dLag/gsin_rt(gs1,s2,t20): mu_gsinMax_rt(gs1,t20,s2)
-   + mu_gstor_def_rt(gs1,s2,t20)_geq - mu_gstor_def_rt(gs1,s2,t20)_leq
-   + mu_gas_balance(ng102,s2,t20)_geq - mu_gas_balance(ng102,s2,t20)_leq
+   - lambda_gstor_def_rt(gs1,s2,t20) - lambda_gas_balance(ng102,s2,t20)
    - muLB_gsin_rt(gs1,s2,t20) = 0
  dLag/gsout_rt(gs1,s2,t20): mu_gsoutMax_rt(gs1,t20,s2)
-   - mu_gstor_def_rt(gs1,s2,t20)_geq + mu_gstor_def_rt(gs1,s2,t20)_leq
-   - mu_gas_balance(ng102,s2,t20)_geq + mu_gas_balance(ng102,s2,t20)_leq
+   + lambda_gstor_def_rt(gs1,s2,t20) + lambda_gas_balance(ng102,s2,t20)
    - muLB_gsout_rt(gs1,s2,t20) = 0
  dLag/gstore_rt(gs1,s2,t20): mu_gstore_max_rt(gs1,t20,s2)
-   - mu_gstore_min_rt(gs1,t20,s2) - mu_gstor_def_rt(gs1,s2,t20)_geq
-   + mu_gstor_def_rt(gs1,s2,t20)_leq + mu_gstor_def_rt(gs1,s2,t21)_geq
-   - mu_gstor_def_rt(gs1,s2,t21)_leq - muLB_gstore_rt(gs1,s2,t20) = 0
+   - mu_gstore_min_rt(gs1,t20,s2) + lambda_gstor_def_rt(gs1,s2,t20)
+   - lambda_gstor_def_rt(gs1,s2,t21) - muLB_gstore_rt(gs1,s2,t20) = 0
  dLag/pres_rt(ng101,s2,t21): mu_PresMax(ng101,s2,t21)
    - mu_PresMin(ng101,s2,t21) - mu_Send_geq_Receive_rtt21s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t21,1,0)
@@ -37104,12 +33063,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t21,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t21,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t21,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t21)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t21)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t21)
    - muLB_pres_rt(ng101,s2,t21) = -0.5
  dLag/gshed(ng101,s2,t21): mu_gas_shed_rt(ng101,s2,t21)
-   - mu_gas_balance(ng101,s2,t21)_geq + mu_gas_balance(ng101,s2,t21)_leq
-   - muLB_gshed(ng101,s2,t21) = -5000
+   + lambda_gas_balance(ng101,s2,t21) - muLB_gshed(ng101,s2,t21) = -5000
  dLag/pres_rt(ng102,s2,t21): mu_PresMax(ng102,s2,t21)
    - mu_PresMin(ng102,s2,t21) + mu_Send_geq_Receive_rtt21s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t21,1,0)
@@ -37157,12 +33114,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t21,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t21,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t21,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t21)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t21)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t21)
    - muLB_pres_rt(ng102,s2,t21) = 0.5
  dLag/gshed(ng102,s2,t21): mu_gas_shed_rt(ng102,s2,t21)
-   - mu_gas_balance(ng102,s2,t21)_geq + mu_gas_balance(ng102,s2,t21)_leq
-   - muLB_gshed(ng102,s2,t21) = -5000
+   + lambda_gas_balance(ng102,s2,t21) - muLB_gshed(ng102,s2,t21) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t21):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t21,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t21,2,0)
@@ -37209,49 +33164,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t21,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t21,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t21,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t21)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t21)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t21)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t21) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t21):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t21)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t21)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t21)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t21)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t22)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t22)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t21)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t21)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t22)
    - muLB_lpack_rt(('ng101','ng102'),s2,t21) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t21):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t21)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t21)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t21)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t21)_leq
-   + mu_gas_balance(ng101,s2,t21)_geq - mu_gas_balance(ng101,s2,t21)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t21)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t21)
+   - lambda_gas_balance(ng101,s2,t21)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t21) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t21):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t21)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t21)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t21)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t21)_leq
-   - mu_gas_balance(ng102,s2,t21)_geq + mu_gas_balance(ng102,s2,t21)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t21)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t21)
+   + lambda_gas_balance(ng102,s2,t21)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t21) = 0
  dLag/gprodUp(gw1,s2,t21): mu_gprodUp_max(gw1,s2,t21)
-   - mu_gas_balance(ng101,s2,t21)_geq + mu_gas_balance(ng101,s2,t21)_leq
-   - muLB_gprodUp(gw1,s2,t21) = -12.65
+   + lambda_gas_balance(ng101,s2,t21) - muLB_gprodUp(gw1,s2,t21) = -12.65
  dLag/gprodDn(gw1,s2,t21): mu_gprodDn_max(gw1,s2,t21)
-   + mu_gas_balance(ng101,s2,t21)_geq - mu_gas_balance(ng101,s2,t21)_leq
-   - muLB_gprodDn(gw1,s2,t21) = 10.925
+   - lambda_gas_balance(ng101,s2,t21) - muLB_gprodDn(gw1,s2,t21) = 10.925
  dLag/gsin_rt(gs1,s2,t21): mu_gsinMax_rt(gs1,t21,s2)
-   + mu_gstor_def_rt(gs1,s2,t21)_geq - mu_gstor_def_rt(gs1,s2,t21)_leq
-   + mu_gas_balance(ng102,s2,t21)_geq - mu_gas_balance(ng102,s2,t21)_leq
+   - lambda_gstor_def_rt(gs1,s2,t21) - lambda_gas_balance(ng102,s2,t21)
    - muLB_gsin_rt(gs1,s2,t21) = 0
  dLag/gsout_rt(gs1,s2,t21): mu_gsoutMax_rt(gs1,t21,s2)
-   - mu_gstor_def_rt(gs1,s2,t21)_geq + mu_gstor_def_rt(gs1,s2,t21)_leq
-   - mu_gas_balance(ng102,s2,t21)_geq + mu_gas_balance(ng102,s2,t21)_leq
+   + lambda_gstor_def_rt(gs1,s2,t21) + lambda_gas_balance(ng102,s2,t21)
    - muLB_gsout_rt(gs1,s2,t21) = 0
  dLag/gstore_rt(gs1,s2,t21): mu_gstore_max_rt(gs1,t21,s2)
-   - mu_gstore_min_rt(gs1,t21,s2) - mu_gstor_def_rt(gs1,s2,t21)_geq
-   + mu_gstor_def_rt(gs1,s2,t21)_leq + mu_gstor_def_rt(gs1,s2,t22)_geq
-   - mu_gstor_def_rt(gs1,s2,t22)_leq - muLB_gstore_rt(gs1,s2,t21) = 0
+   - mu_gstore_min_rt(gs1,t21,s2) + lambda_gstor_def_rt(gs1,s2,t21)
+   - lambda_gstor_def_rt(gs1,s2,t22) - muLB_gstore_rt(gs1,s2,t21) = 0
  dLag/pres_rt(ng101,s2,t22): mu_PresMax(ng101,s2,t22)
    - mu_PresMin(ng101,s2,t22) - mu_Send_geq_Receive_rtt22s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t22,1,0)
@@ -37299,12 +33241,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t22,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t22,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t22,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t22)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t22)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t22)
    - muLB_pres_rt(ng101,s2,t22) = -0.5
  dLag/gshed(ng101,s2,t22): mu_gas_shed_rt(ng101,s2,t22)
-   - mu_gas_balance(ng101,s2,t22)_geq + mu_gas_balance(ng101,s2,t22)_leq
-   - muLB_gshed(ng101,s2,t22) = -5000
+   + lambda_gas_balance(ng101,s2,t22) - muLB_gshed(ng101,s2,t22) = -5000
  dLag/pres_rt(ng102,s2,t22): mu_PresMax(ng102,s2,t22)
    - mu_PresMin(ng102,s2,t22) + mu_Send_geq_Receive_rtt22s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t22,1,0)
@@ -37352,12 +33292,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t22,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t22,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t22,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t22)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t22)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t22)
    - muLB_pres_rt(ng102,s2,t22) = 0.5
  dLag/gshed(ng102,s2,t22): mu_gas_shed_rt(ng102,s2,t22)
-   - mu_gas_balance(ng102,s2,t22)_geq + mu_gas_balance(ng102,s2,t22)_leq
-   - muLB_gshed(ng102,s2,t22) = -5000
+   + lambda_gas_balance(ng102,s2,t22) - muLB_gshed(ng102,s2,t22) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t22):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t22,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t22,2,0)
@@ -37404,49 +33342,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t22,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t22,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t22,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t22)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t22)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t22)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t22) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t22):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t22)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t22)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t22)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t22)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t23)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t23)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t22)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t22)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t23)
    - muLB_lpack_rt(('ng101','ng102'),s2,t22) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t22):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t22)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t22)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t22)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t22)_leq
-   + mu_gas_balance(ng101,s2,t22)_geq - mu_gas_balance(ng101,s2,t22)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t22)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t22)
+   - lambda_gas_balance(ng101,s2,t22)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t22) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t22):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t22)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t22)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t22)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t22)_leq
-   - mu_gas_balance(ng102,s2,t22)_geq + mu_gas_balance(ng102,s2,t22)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t22)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t22)
+   + lambda_gas_balance(ng102,s2,t22)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t22) = 0
  dLag/gprodUp(gw1,s2,t22): mu_gprodUp_max(gw1,s2,t22)
-   - mu_gas_balance(ng101,s2,t22)_geq + mu_gas_balance(ng101,s2,t22)_leq
-   - muLB_gprodUp(gw1,s2,t22) = -13.2
+   + lambda_gas_balance(ng101,s2,t22) - muLB_gprodUp(gw1,s2,t22) = -13.2
  dLag/gprodDn(gw1,s2,t22): mu_gprodDn_max(gw1,s2,t22)
-   + mu_gas_balance(ng101,s2,t22)_geq - mu_gas_balance(ng101,s2,t22)_leq
-   - muLB_gprodDn(gw1,s2,t22) = 11.4
+   - lambda_gas_balance(ng101,s2,t22) - muLB_gprodDn(gw1,s2,t22) = 11.4
  dLag/gsin_rt(gs1,s2,t22): mu_gsinMax_rt(gs1,t22,s2)
-   + mu_gstor_def_rt(gs1,s2,t22)_geq - mu_gstor_def_rt(gs1,s2,t22)_leq
-   + mu_gas_balance(ng102,s2,t22)_geq - mu_gas_balance(ng102,s2,t22)_leq
+   - lambda_gstor_def_rt(gs1,s2,t22) - lambda_gas_balance(ng102,s2,t22)
    - muLB_gsin_rt(gs1,s2,t22) = 0
  dLag/gsout_rt(gs1,s2,t22): mu_gsoutMax_rt(gs1,t22,s2)
-   - mu_gstor_def_rt(gs1,s2,t22)_geq + mu_gstor_def_rt(gs1,s2,t22)_leq
-   - mu_gas_balance(ng102,s2,t22)_geq + mu_gas_balance(ng102,s2,t22)_leq
+   + lambda_gstor_def_rt(gs1,s2,t22) + lambda_gas_balance(ng102,s2,t22)
    - muLB_gsout_rt(gs1,s2,t22) = 0
  dLag/gstore_rt(gs1,s2,t22): mu_gstore_max_rt(gs1,t22,s2)
-   - mu_gstore_min_rt(gs1,t22,s2) - mu_gstor_def_rt(gs1,s2,t22)_geq
-   + mu_gstor_def_rt(gs1,s2,t22)_leq + mu_gstor_def_rt(gs1,s2,t23)_geq
-   - mu_gstor_def_rt(gs1,s2,t23)_leq - muLB_gstore_rt(gs1,s2,t22) = 0
+   - mu_gstore_min_rt(gs1,t22,s2) + lambda_gstor_def_rt(gs1,s2,t22)
+   - lambda_gstor_def_rt(gs1,s2,t23) - muLB_gstore_rt(gs1,s2,t22) = 0
  dLag/pres_rt(ng101,s2,t23): mu_PresMax(ng101,s2,t23)
    - mu_PresMin(ng101,s2,t23) - mu_Send_geq_Receive_rtt23s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t23,1,0)
@@ -37494,12 +33419,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t23,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t23,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t23,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t23)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t23)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t23)
    - muLB_pres_rt(ng101,s2,t23) = -0.5
  dLag/gshed(ng101,s2,t23): mu_gas_shed_rt(ng101,s2,t23)
-   - mu_gas_balance(ng101,s2,t23)_geq + mu_gas_balance(ng101,s2,t23)_leq
-   - muLB_gshed(ng101,s2,t23) = -5000
+   + lambda_gas_balance(ng101,s2,t23) - muLB_gshed(ng101,s2,t23) = -5000
  dLag/pres_rt(ng102,s2,t23): mu_PresMax(ng102,s2,t23)
    - mu_PresMin(ng102,s2,t23) + mu_Send_geq_Receive_rtt23s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t23,1,0)
@@ -37547,12 +33470,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t23,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t23,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t23,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t23)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t23)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t23)
    - muLB_pres_rt(ng102,s2,t23) = 0.5
  dLag/gshed(ng102,s2,t23): mu_gas_shed_rt(ng102,s2,t23)
-   - mu_gas_balance(ng102,s2,t23)_geq + mu_gas_balance(ng102,s2,t23)_leq
-   - muLB_gshed(ng102,s2,t23) = -5000
+   + lambda_gas_balance(ng102,s2,t23) - muLB_gshed(ng102,s2,t23) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t23):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t23,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t23,2,0)
@@ -37599,49 +33520,36 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t23,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t23,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t23,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t23)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t23)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t23)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t23) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t23):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t23)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t23)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t23)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t23)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t24)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t24)_leq
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t23)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t23)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t24)
    - muLB_lpack_rt(('ng101','ng102'),s2,t23) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t23):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t23)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t23)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t23)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t23)_leq
-   + mu_gas_balance(ng101,s2,t23)_geq - mu_gas_balance(ng101,s2,t23)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t23)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t23)
+   - lambda_gas_balance(ng101,s2,t23)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t23) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t23):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t23)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t23)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t23)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t23)_leq
-   - mu_gas_balance(ng102,s2,t23)_geq + mu_gas_balance(ng102,s2,t23)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t23)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t23)
+   + lambda_gas_balance(ng102,s2,t23)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t23) = 0
  dLag/gprodUp(gw1,s2,t23): mu_gprodUp_max(gw1,s2,t23)
-   - mu_gas_balance(ng101,s2,t23)_geq + mu_gas_balance(ng101,s2,t23)_leq
-   - muLB_gprodUp(gw1,s2,t23) = -13.75
+   + lambda_gas_balance(ng101,s2,t23) - muLB_gprodUp(gw1,s2,t23) = -13.75
  dLag/gprodDn(gw1,s2,t23): mu_gprodDn_max(gw1,s2,t23)
-   + mu_gas_balance(ng101,s2,t23)_geq - mu_gas_balance(ng101,s2,t23)_leq
-   - muLB_gprodDn(gw1,s2,t23) = 11.875
+   - lambda_gas_balance(ng101,s2,t23) - muLB_gprodDn(gw1,s2,t23) = 11.875
  dLag/gsin_rt(gs1,s2,t23): mu_gsinMax_rt(gs1,t23,s2)
-   + mu_gstor_def_rt(gs1,s2,t23)_geq - mu_gstor_def_rt(gs1,s2,t23)_leq
-   + mu_gas_balance(ng102,s2,t23)_geq - mu_gas_balance(ng102,s2,t23)_leq
+   - lambda_gstor_def_rt(gs1,s2,t23) - lambda_gas_balance(ng102,s2,t23)
    - muLB_gsin_rt(gs1,s2,t23) = 0
  dLag/gsout_rt(gs1,s2,t23): mu_gsoutMax_rt(gs1,t23,s2)
-   - mu_gstor_def_rt(gs1,s2,t23)_geq + mu_gstor_def_rt(gs1,s2,t23)_leq
-   - mu_gas_balance(ng102,s2,t23)_geq + mu_gas_balance(ng102,s2,t23)_leq
+   + lambda_gstor_def_rt(gs1,s2,t23) + lambda_gas_balance(ng102,s2,t23)
    - muLB_gsout_rt(gs1,s2,t23) = 0
  dLag/gstore_rt(gs1,s2,t23): mu_gstore_max_rt(gs1,t23,s2)
-   - mu_gstore_min_rt(gs1,t23,s2) - mu_gstor_def_rt(gs1,s2,t23)_geq
-   + mu_gstor_def_rt(gs1,s2,t23)_leq + mu_gstor_def_rt(gs1,s2,t24)_geq
-   - mu_gstor_def_rt(gs1,s2,t24)_leq - muLB_gstore_rt(gs1,s2,t23) = 0
+   - mu_gstore_min_rt(gs1,t23,s2) + lambda_gstor_def_rt(gs1,s2,t23)
+   - lambda_gstor_def_rt(gs1,s2,t24) - muLB_gstore_rt(gs1,s2,t23) = 0
  dLag/pres_rt(ng101,s2,t24): mu_PresMax(ng101,s2,t24)
    - mu_PresMin(ng101,s2,t24) - mu_Send_geq_Receive_rtt24s2
    - 115.6717704998329 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t24,1,0)
@@ -37689,12 +33597,10 @@ Subject To
    - 75.11542519884803 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t24,9,6)
    - 91.42934220142139 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t24,9,7)
    - 128.5121900004952 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t24,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t24)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t24)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t24)
    - muLB_pres_rt(ng101,s2,t24) = -0.5
  dLag/gshed(ng101,s2,t24): mu_gas_shed_rt(ng101,s2,t24)
-   - mu_gas_balance(ng101,s2,t24)_geq + mu_gas_balance(ng101,s2,t24)_leq
-   - muLB_gshed(ng101,s2,t24) = -5000
+   + lambda_gas_balance(ng101,s2,t24) - muLB_gshed(ng101,s2,t24) = -5000
  dLag/pres_rt(ng102,s2,t24): mu_PresMax(ng102,s2,t24)
    - mu_PresMin(ng102,s2,t24) + mu_Send_geq_Receive_rtt24s2
    + 112.2317178455628 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t24,1,0)
@@ -37742,12 +33648,10 @@ Subject To
    + 69.70170086019232 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t24,9,6)
    + 87.03634077432606 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t24,9,7)
    + 125.4248100605433 mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t24,9,8)
-   + 75 mu_lpack_def_rt(('ng101','ng102'),s2,t24)_geq
-   - 75 mu_lpack_def_rt(('ng101','ng102'),s2,t24)_leq
+   - 75 lambda_lpack_def_rt(('ng101','ng102'),s2,t24)
    - muLB_pres_rt(ng102,s2,t24) = 0.5
  dLag/gshed(ng102,s2,t24): mu_gas_shed_rt(ng102,s2,t24)
-   - mu_gas_balance(ng102,s2,t24)_geq + mu_gas_balance(ng102,s2,t24)_leq
-   - muLB_gshed(ng102,s2,t24) = -5000
+   + lambda_gas_balance(ng102,s2,t24) - muLB_gshed(ng102,s2,t24) = -5000
  dLag/gflow_sr_rt(('ng101','ng102'),s2,t24):
    mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t24,1,0)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t24,2,0)
@@ -37794,48 +33698,324 @@ Subject To
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t24,9,6)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t24,9,7)
    + mu_gflow_sr_rt_lim_approx_weymouth(('ng101','ng102'),s2,t24,9,8)
-   - mu_gflow_sr_io_rt(('ng101','ng102'),s2,t24)_geq
-   + mu_gflow_sr_io_rt(('ng101','ng102'),s2,t24)_leq
+   + lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t24)
    - muLB_gflow_sr_rt(('ng101','ng102'),s2,t24) = 0
  dLag/lpack_rt(('ng101','ng102'),s2,t24):
-   - mu_lpack_def_rt(('ng101','ng102'),s2,t24)_geq
-   + mu_lpack_def_rt(('ng101','ng102'),s2,t24)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t24)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t24)_leq + mu_lpack_end_max(s2)
+   lambda_lpack_def_rt(('ng101','ng102'),s2,t24)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t24) + mu_lpack_end_max(s2)
    - mu_lpack_end_min(s2) - muLB_lpack_rt(('ng101','ng102'),s2,t24) = 0
  dLag/qin_sr_rt(('ng101','ng102'),s2,t24):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t24)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t24)_leq
-   + mu_line_store_rt(('ng101','ng102'),s2,t24)_geq
-   - mu_line_store_rt(('ng101','ng102'),s2,t24)_leq
-   + mu_gas_balance(ng101,s2,t24)_geq - mu_gas_balance(ng101,s2,t24)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t24)
+   - lambda_line_store_rt(('ng101','ng102'),s2,t24)
+   - lambda_gas_balance(ng101,s2,t24)
    - muLB_qin_sr_rt(('ng101','ng102'),s2,t24) = 0
  dLag/qout_sr_rt(('ng101','ng102'),s2,t24):
-   0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t24)_geq
-   - 0.5 mu_gflow_sr_io_rt(('ng101','ng102'),s2,t24)_leq
-   - mu_line_store_rt(('ng101','ng102'),s2,t24)_geq
-   + mu_line_store_rt(('ng101','ng102'),s2,t24)_leq
-   - mu_gas_balance(ng102,s2,t24)_geq + mu_gas_balance(ng102,s2,t24)_leq
+   - 0.5 lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t24)
+   + lambda_line_store_rt(('ng101','ng102'),s2,t24)
+   + lambda_gas_balance(ng102,s2,t24)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t24) = 0
  dLag/gprodUp(gw1,s2,t24): mu_gprodUp_max(gw1,s2,t24)
-   - mu_gas_balance(ng101,s2,t24)_geq + mu_gas_balance(ng101,s2,t24)_leq
-   - muLB_gprodUp(gw1,s2,t24) = -14.3
+   + lambda_gas_balance(ng101,s2,t24) - muLB_gprodUp(gw1,s2,t24) = -14.3
  dLag/gprodDn(gw1,s2,t24): mu_gprodDn_max(gw1,s2,t24)
-   + mu_gas_balance(ng101,s2,t24)_geq - mu_gas_balance(ng101,s2,t24)_leq
-   - muLB_gprodDn(gw1,s2,t24) = 12.35
+   - lambda_gas_balance(ng101,s2,t24) - muLB_gprodDn(gw1,s2,t24) = 12.35
  dLag/gsin_rt(gs1,s2,t24): mu_gsinMax_rt(gs1,t24,s2)
-   + mu_gstor_def_rt(gs1,s2,t24)_geq - mu_gstor_def_rt(gs1,s2,t24)_leq
-   + mu_gas_balance(ng102,s2,t24)_geq - mu_gas_balance(ng102,s2,t24)_leq
+   - lambda_gstor_def_rt(gs1,s2,t24) - lambda_gas_balance(ng102,s2,t24)
    - muLB_gsin_rt(gs1,s2,t24) = 0
  dLag/gsout_rt(gs1,s2,t24): mu_gsoutMax_rt(gs1,t24,s2)
-   - mu_gstor_def_rt(gs1,s2,t24)_geq + mu_gstor_def_rt(gs1,s2,t24)_leq
-   - mu_gas_balance(ng102,s2,t24)_geq + mu_gas_balance(ng102,s2,t24)_leq
+   + lambda_gstor_def_rt(gs1,s2,t24) + lambda_gas_balance(ng102,s2,t24)
    - muLB_gsout_rt(gs1,s2,t24) = 0
  dLag/gstore_rt(gs1,s2,t24): mu_gstore_max_rt(gs1,t24,s2)
-   - mu_gstore_min_rt(gs1,t24,s2) - mu_gstor_def_rt(gs1,s2,t24)_geq
-   + mu_gstor_def_rt(gs1,s2,t24)_leq - mu_gstor_end(gs1,s2)
-   - muLB_gstore_rt(gs1,s2,t24) = 0
+   - mu_gstore_min_rt(gs1,t24,s2) + lambda_gstor_def_rt(gs1,s2,t24)
+   - mu_gstor_end(gs1,s2) - muLB_gstore_rt(gs1,s2,t24) = 0
 Bounds
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t1) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t1) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t1) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t1) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t2) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t2) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t2) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t2) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t3) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t3) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t3) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t3) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t4) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t4) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t4) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t4) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t5) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t5) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t5) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t5) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t6) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t6) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t6) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t6) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t7) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t7) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t7) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t7) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t8) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t8) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t8) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t8) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t9) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t9) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t9) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t9) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t10) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t10) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t10) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t10) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t11) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t11) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t11) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t11) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t12) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t12) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t12) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t12) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t13) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t13) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t13) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t13) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t14) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t14) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t14) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t14) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t15) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t15) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t15) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t15) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t16) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t16) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t16) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t16) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t17) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t17) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t17) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t17) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t18) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t18) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t18) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t18) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t19) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t19) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t19) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t19) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t20) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t20) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t20) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t20) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t21) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t21) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t21) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t21) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t22) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t22) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t22) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t22) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t23) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t23) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t23) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t23) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s1,t24) free
+ lambda_lpack_def_rt(('ng101','ng102'),s1,t24) free
+ lambda_gflow_sr_io_rt(('ng101','ng102'),s2,t24) free
+ lambda_lpack_def_rt(('ng101','ng102'),s2,t24) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t2) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t3) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t4) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t5) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t6) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t7) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t8) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t9) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t10) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t11) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t12) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t13) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t14) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t15) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t16) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t17) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t18) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t19) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t20) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t21) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t22) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t23) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t24) free
+ lambda_line_store_rt(('ng101','ng102'),s1,t1) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t2) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t3) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t4) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t5) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t6) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t7) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t8) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t9) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t10) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t11) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t12) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t13) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t14) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t15) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t16) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t17) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t18) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t19) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t20) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t21) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t22) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t23) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t24) free
+ lambda_line_store_rt(('ng101','ng102'),s2,t1) free
+ lambda_gstor_def_rt(gs1,s1,t2) free
+ lambda_gstor_def_rt(gs1,s1,t3) free
+ lambda_gstor_def_rt(gs1,s1,t4) free
+ lambda_gstor_def_rt(gs1,s1,t5) free
+ lambda_gstor_def_rt(gs1,s1,t6) free
+ lambda_gstor_def_rt(gs1,s1,t7) free
+ lambda_gstor_def_rt(gs1,s1,t8) free
+ lambda_gstor_def_rt(gs1,s1,t9) free
+ lambda_gstor_def_rt(gs1,s1,t10) free
+ lambda_gstor_def_rt(gs1,s1,t11) free
+ lambda_gstor_def_rt(gs1,s1,t12) free
+ lambda_gstor_def_rt(gs1,s1,t13) free
+ lambda_gstor_def_rt(gs1,s1,t14) free
+ lambda_gstor_def_rt(gs1,s1,t15) free
+ lambda_gstor_def_rt(gs1,s1,t16) free
+ lambda_gstor_def_rt(gs1,s1,t17) free
+ lambda_gstor_def_rt(gs1,s1,t18) free
+ lambda_gstor_def_rt(gs1,s1,t19) free
+ lambda_gstor_def_rt(gs1,s1,t20) free
+ lambda_gstor_def_rt(gs1,s1,t21) free
+ lambda_gstor_def_rt(gs1,s1,t22) free
+ lambda_gstor_def_rt(gs1,s1,t23) free
+ lambda_gstor_def_rt(gs1,s1,t24) free
+ lambda_gstor_def_rt(gs1,s1,t1) free
+ lambda_gstor_def_rt(gs1,s2,t2) free
+ lambda_gstor_def_rt(gs1,s2,t3) free
+ lambda_gstor_def_rt(gs1,s2,t4) free
+ lambda_gstor_def_rt(gs1,s2,t5) free
+ lambda_gstor_def_rt(gs1,s2,t6) free
+ lambda_gstor_def_rt(gs1,s2,t7) free
+ lambda_gstor_def_rt(gs1,s2,t8) free
+ lambda_gstor_def_rt(gs1,s2,t9) free
+ lambda_gstor_def_rt(gs1,s2,t10) free
+ lambda_gstor_def_rt(gs1,s2,t11) free
+ lambda_gstor_def_rt(gs1,s2,t12) free
+ lambda_gstor_def_rt(gs1,s2,t13) free
+ lambda_gstor_def_rt(gs1,s2,t14) free
+ lambda_gstor_def_rt(gs1,s2,t15) free
+ lambda_gstor_def_rt(gs1,s2,t16) free
+ lambda_gstor_def_rt(gs1,s2,t17) free
+ lambda_gstor_def_rt(gs1,s2,t18) free
+ lambda_gstor_def_rt(gs1,s2,t19) free
+ lambda_gstor_def_rt(gs1,s2,t20) free
+ lambda_gstor_def_rt(gs1,s2,t21) free
+ lambda_gstor_def_rt(gs1,s2,t22) free
+ lambda_gstor_def_rt(gs1,s2,t23) free
+ lambda_gstor_def_rt(gs1,s2,t24) free
+ lambda_gstor_def_rt(gs1,s2,t1) free
+ lambda_gas_balance(ng101,s1,t1) free
+ lambda_gas_balance(ng101,s1,t2) free
+ lambda_gas_balance(ng101,s1,t3) free
+ lambda_gas_balance(ng101,s1,t4) free
+ lambda_gas_balance(ng101,s1,t5) free
+ lambda_gas_balance(ng101,s1,t6) free
+ lambda_gas_balance(ng101,s1,t7) free
+ lambda_gas_balance(ng101,s1,t8) free
+ lambda_gas_balance(ng101,s1,t9) free
+ lambda_gas_balance(ng101,s1,t10) free
+ lambda_gas_balance(ng101,s1,t11) free
+ lambda_gas_balance(ng101,s1,t12) free
+ lambda_gas_balance(ng101,s1,t13) free
+ lambda_gas_balance(ng101,s1,t14) free
+ lambda_gas_balance(ng101,s1,t15) free
+ lambda_gas_balance(ng101,s1,t16) free
+ lambda_gas_balance(ng101,s1,t17) free
+ lambda_gas_balance(ng101,s1,t18) free
+ lambda_gas_balance(ng101,s1,t19) free
+ lambda_gas_balance(ng101,s1,t20) free
+ lambda_gas_balance(ng101,s1,t21) free
+ lambda_gas_balance(ng101,s1,t22) free
+ lambda_gas_balance(ng101,s1,t23) free
+ lambda_gas_balance(ng101,s1,t24) free
+ lambda_gas_balance(ng102,s1,t1) free
+ lambda_gas_balance(ng102,s1,t2) free
+ lambda_gas_balance(ng102,s1,t3) free
+ lambda_gas_balance(ng102,s1,t4) free
+ lambda_gas_balance(ng102,s1,t5) free
+ lambda_gas_balance(ng102,s1,t6) free
+ lambda_gas_balance(ng102,s1,t7) free
+ lambda_gas_balance(ng102,s1,t8) free
+ lambda_gas_balance(ng102,s1,t9) free
+ lambda_gas_balance(ng102,s1,t10) free
+ lambda_gas_balance(ng102,s1,t11) free
+ lambda_gas_balance(ng102,s1,t12) free
+ lambda_gas_balance(ng102,s1,t13) free
+ lambda_gas_balance(ng102,s1,t14) free
+ lambda_gas_balance(ng102,s1,t15) free
+ lambda_gas_balance(ng102,s1,t16) free
+ lambda_gas_balance(ng102,s1,t17) free
+ lambda_gas_balance(ng102,s1,t18) free
+ lambda_gas_balance(ng102,s1,t19) free
+ lambda_gas_balance(ng102,s1,t20) free
+ lambda_gas_balance(ng102,s1,t21) free
+ lambda_gas_balance(ng102,s1,t22) free
+ lambda_gas_balance(ng102,s1,t23) free
+ lambda_gas_balance(ng102,s1,t24) free
+ lambda_gas_balance(ng101,s2,t1) free
+ lambda_gas_balance(ng101,s2,t2) free
+ lambda_gas_balance(ng101,s2,t3) free
+ lambda_gas_balance(ng101,s2,t4) free
+ lambda_gas_balance(ng101,s2,t5) free
+ lambda_gas_balance(ng101,s2,t6) free
+ lambda_gas_balance(ng101,s2,t7) free
+ lambda_gas_balance(ng101,s2,t8) free
+ lambda_gas_balance(ng101,s2,t9) free
+ lambda_gas_balance(ng101,s2,t10) free
+ lambda_gas_balance(ng101,s2,t11) free
+ lambda_gas_balance(ng101,s2,t12) free
+ lambda_gas_balance(ng101,s2,t13) free
+ lambda_gas_balance(ng101,s2,t14) free
+ lambda_gas_balance(ng101,s2,t15) free
+ lambda_gas_balance(ng101,s2,t16) free
+ lambda_gas_balance(ng101,s2,t17) free
+ lambda_gas_balance(ng101,s2,t18) free
+ lambda_gas_balance(ng101,s2,t19) free
+ lambda_gas_balance(ng101,s2,t20) free
+ lambda_gas_balance(ng101,s2,t21) free
+ lambda_gas_balance(ng101,s2,t22) free
+ lambda_gas_balance(ng101,s2,t23) free
+ lambda_gas_balance(ng101,s2,t24) free
+ lambda_gas_balance(ng102,s2,t1) free
+ lambda_gas_balance(ng102,s2,t2) free
+ lambda_gas_balance(ng102,s2,t3) free
+ lambda_gas_balance(ng102,s2,t4) free
+ lambda_gas_balance(ng102,s2,t5) free
+ lambda_gas_balance(ng102,s2,t6) free
+ lambda_gas_balance(ng102,s2,t7) free
+ lambda_gas_balance(ng102,s2,t8) free
+ lambda_gas_balance(ng102,s2,t9) free
+ lambda_gas_balance(ng102,s2,t10) free
+ lambda_gas_balance(ng102,s2,t11) free
+ lambda_gas_balance(ng102,s2,t12) free
+ lambda_gas_balance(ng102,s2,t13) free
+ lambda_gas_balance(ng102,s2,t14) free
+ lambda_gas_balance(ng102,s2,t15) free
+ lambda_gas_balance(ng102,s2,t16) free
+ lambda_gas_balance(ng102,s2,t17) free
+ lambda_gas_balance(ng102,s2,t18) free
+ lambda_gas_balance(ng102,s2,t19) free
+ lambda_gas_balance(ng102,s2,t20) free
+ lambda_gas_balance(ng102,s2,t21) free
+ lambda_gas_balance(ng102,s2,t22) free
+ lambda_gas_balance(ng102,s2,t23) free
+ lambda_gas_balance(ng102,s2,t24) free
 SOS
  s0:  S1 :: mu_PresMax(ng101,s1,t1):1 SOS1_PresMax(ng101,s1,t1):2
  s1:  S1 :: mu_PresMin(ng101,s1,t1):1 SOS1_PresMin(ng101,s1,t1):2
@@ -44653,2458 +40833,1306 @@ SOS
  s2493:  S1 :: mu_gprodDn_max(gw1,s2,t23):1 SOS1_gprodDn_max(gw1,s2,t23):2
  s2494:  S1 :: mu_gprodUp_max(gw1,s2,t24):1 SOS1_gprodUp_max(gw1,s2,t24):2
  s2495:  S1 :: mu_gprodDn_max(gw1,s2,t24):1 SOS1_gprodDn_max(gw1,s2,t24):2
- s2496:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t1)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t1)_geq:2
- s2497:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t1)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t1)_leq:2
- s2498:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t1)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t1)_geq:2
- s2499:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t1)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t1)_leq:2
- s2500:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t1)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t1)_geq:2
- s2501:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t1)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t1)_leq:2
- s2502:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t1)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t1)_geq:2
- s2503:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t1)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t1)_leq:2
- s2504:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t2)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t2)_geq:2
- s2505:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t2)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t2)_leq:2
- s2506:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t2)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t2)_geq:2
- s2507:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t2)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t2)_leq:2
- s2508:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t2)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t2)_geq:2
- s2509:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t2)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t2)_leq:2
- s2510:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t2)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t2)_geq:2
- s2511:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t2)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t2)_leq:2
- s2512:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t3)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t3)_geq:2
- s2513:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t3)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t3)_leq:2
- s2514:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t3)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t3)_geq:2
- s2515:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t3)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t3)_leq:2
- s2516:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t3)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t3)_geq:2
- s2517:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t3)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t3)_leq:2
- s2518:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t3)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t3)_geq:2
- s2519:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t3)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t3)_leq:2
- s2520:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t4)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t4)_geq:2
- s2521:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t4)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t4)_leq:2
- s2522:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t4)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t4)_geq:2
- s2523:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t4)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t4)_leq:2
- s2524:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t4)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t4)_geq:2
- s2525:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t4)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t4)_leq:2
- s2526:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t4)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t4)_geq:2
- s2527:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t4)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t4)_leq:2
- s2528:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t5)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t5)_geq:2
- s2529:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t5)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t5)_leq:2
- s2530:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t5)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t5)_geq:2
- s2531:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t5)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t5)_leq:2
- s2532:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t5)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t5)_geq:2
- s2533:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t5)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t5)_leq:2
- s2534:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t5)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t5)_geq:2
- s2535:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t5)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t5)_leq:2
- s2536:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t6)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t6)_geq:2
- s2537:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t6)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t6)_leq:2
- s2538:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t6)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t6)_geq:2
- s2539:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t6)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t6)_leq:2
- s2540:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t6)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t6)_geq:2
- s2541:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t6)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t6)_leq:2
- s2542:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t6)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t6)_geq:2
- s2543:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t6)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t6)_leq:2
- s2544:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t7)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t7)_geq:2
- s2545:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t7)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t7)_leq:2
- s2546:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t7)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t7)_geq:2
- s2547:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t7)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t7)_leq:2
- s2548:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t7)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t7)_geq:2
- s2549:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t7)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t7)_leq:2
- s2550:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t7)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t7)_geq:2
- s2551:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t7)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t7)_leq:2
- s2552:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t8)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t8)_geq:2
- s2553:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t8)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t8)_leq:2
- s2554:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t8)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t8)_geq:2
- s2555:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t8)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t8)_leq:2
- s2556:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t8)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t8)_geq:2
- s2557:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t8)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t8)_leq:2
- s2558:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t8)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t8)_geq:2
- s2559:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t8)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t8)_leq:2
- s2560:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t9)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t9)_geq:2
- s2561:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t9)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t9)_leq:2
- s2562:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t9)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t9)_geq:2
- s2563:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t9)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t9)_leq:2
- s2564:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t9)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t9)_geq:2
- s2565:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t9)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t9)_leq:2
- s2566:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t9)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t9)_geq:2
- s2567:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t9)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t9)_leq:2
- s2568:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t10)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t10)_geq:2
- s2569:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t10)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t10)_leq:2
- s2570:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t10)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t10)_geq:2
- s2571:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t10)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t10)_leq:2
- s2572:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t10)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t10)_geq:2
- s2573:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t10)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t10)_leq:2
- s2574:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t10)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t10)_geq:2
- s2575:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t10)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t10)_leq:2
- s2576:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t11)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t11)_geq:2
- s2577:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t11)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t11)_leq:2
- s2578:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t11)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t11)_geq:2
- s2579:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t11)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t11)_leq:2
- s2580:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t11)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t11)_geq:2
- s2581:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t11)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t11)_leq:2
- s2582:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t11)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t11)_geq:2
- s2583:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t11)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t11)_leq:2
- s2584:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t12)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t12)_geq:2
- s2585:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t12)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t12)_leq:2
- s2586:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t12)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t12)_geq:2
- s2587:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t12)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t12)_leq:2
- s2588:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t12)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t12)_geq:2
- s2589:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t12)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t12)_leq:2
- s2590:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t12)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t12)_geq:2
- s2591:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t12)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t12)_leq:2
- s2592:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t13)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t13)_geq:2
- s2593:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t13)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t13)_leq:2
- s2594:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t13)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t13)_geq:2
- s2595:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t13)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t13)_leq:2
- s2596:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t13)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t13)_geq:2
- s2597:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t13)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t13)_leq:2
- s2598:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t13)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t13)_geq:2
- s2599:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t13)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t13)_leq:2
- s2600:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t14)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t14)_geq:2
- s2601:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t14)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t14)_leq:2
- s2602:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t14)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t14)_geq:2
- s2603:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t14)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t14)_leq:2
- s2604:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t14)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t14)_geq:2
- s2605:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t14)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t14)_leq:2
- s2606:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t14)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t14)_geq:2
- s2607:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t14)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t14)_leq:2
- s2608:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t15)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t15)_geq:2
- s2609:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t15)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t15)_leq:2
- s2610:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t15)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t15)_geq:2
- s2611:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t15)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t15)_leq:2
- s2612:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t15)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t15)_geq:2
- s2613:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t15)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t15)_leq:2
- s2614:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t15)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t15)_geq:2
- s2615:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t15)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t15)_leq:2
- s2616:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t16)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t16)_geq:2
- s2617:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t16)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t16)_leq:2
- s2618:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t16)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t16)_geq:2
- s2619:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t16)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t16)_leq:2
- s2620:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t16)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t16)_geq:2
- s2621:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t16)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t16)_leq:2
- s2622:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t16)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t16)_geq:2
- s2623:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t16)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t16)_leq:2
- s2624:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t17)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t17)_geq:2
- s2625:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t17)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t17)_leq:2
- s2626:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t17)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t17)_geq:2
- s2627:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t17)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t17)_leq:2
- s2628:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t17)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t17)_geq:2
- s2629:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t17)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t17)_leq:2
- s2630:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t17)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t17)_geq:2
- s2631:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t17)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t17)_leq:2
- s2632:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t18)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t18)_geq:2
- s2633:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t18)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t18)_leq:2
- s2634:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t18)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t18)_geq:2
- s2635:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t18)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t18)_leq:2
- s2636:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t18)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t18)_geq:2
- s2637:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t18)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t18)_leq:2
- s2638:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t18)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t18)_geq:2
- s2639:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t18)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t18)_leq:2
- s2640:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t19)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t19)_geq:2
- s2641:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t19)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t19)_leq:2
- s2642:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t19)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t19)_geq:2
- s2643:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t19)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t19)_leq:2
- s2644:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t19)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t19)_geq:2
- s2645:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t19)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t19)_leq:2
- s2646:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t19)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t19)_geq:2
- s2647:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t19)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t19)_leq:2
- s2648:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t20)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t20)_geq:2
- s2649:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t20)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t20)_leq:2
- s2650:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t20)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t20)_geq:2
- s2651:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t20)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t20)_leq:2
- s2652:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t20)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t20)_geq:2
- s2653:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t20)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t20)_leq:2
- s2654:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t20)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t20)_geq:2
- s2655:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t20)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t20)_leq:2
- s2656:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t21)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t21)_geq:2
- s2657:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t21)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t21)_leq:2
- s2658:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t21)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t21)_geq:2
- s2659:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t21)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t21)_leq:2
- s2660:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t21)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t21)_geq:2
- s2661:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t21)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t21)_leq:2
- s2662:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t21)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t21)_geq:2
- s2663:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t21)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t21)_leq:2
- s2664:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t22)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t22)_geq:2
- s2665:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t22)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t22)_leq:2
- s2666:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t22)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t22)_geq:2
- s2667:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t22)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t22)_leq:2
- s2668:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t22)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t22)_geq:2
- s2669:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t22)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t22)_leq:2
- s2670:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t22)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t22)_geq:2
- s2671:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t22)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t22)_leq:2
- s2672:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t23)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t23)_geq:2
- s2673:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t23)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t23)_leq:2
- s2674:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t23)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t23)_geq:2
- s2675:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t23)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t23)_leq:2
- s2676:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t23)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t23)_geq:2
- s2677:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t23)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t23)_leq:2
- s2678:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t23)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t23)_geq:2
- s2679:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t23)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t23)_leq:2
- s2680:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t24)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t24)_geq:2
- s2681:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s1,t24)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s1,t24)_leq:2
- s2682:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t24)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t24)_geq:2
- s2683:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s1,t24)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s1,t24)_leq:2
- s2684:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t24)_geq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t24)_geq:2
- s2685:  S1 :: mu_gflow_sr_io_rt(('ng101','ng102'),s2,t24)_leq:1
-     SOS1_gflow_sr_io_rt(('ng101','ng102'),s2,t24)_leq:2
- s2686:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t24)_geq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t24)_geq:2
- s2687:  S1 :: mu_lpack_def_rt(('ng101','ng102'),s2,t24)_leq:1
-     SOS1_lpack_def_rt(('ng101','ng102'),s2,t24)_leq:2
- s2688:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t2)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t2)_geq:2
- s2689:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t2)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t2)_leq:2
- s2690:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t3)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t3)_geq:2
- s2691:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t3)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t3)_leq:2
- s2692:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t4)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t4)_geq:2
- s2693:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t4)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t4)_leq:2
- s2694:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t5)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t5)_geq:2
- s2695:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t5)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t5)_leq:2
- s2696:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t6)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t6)_geq:2
- s2697:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t6)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t6)_leq:2
- s2698:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t7)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t7)_geq:2
- s2699:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t7)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t7)_leq:2
- s2700:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t8)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t8)_geq:2
- s2701:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t8)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t8)_leq:2
- s2702:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t9)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t9)_geq:2
- s2703:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t9)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t9)_leq:2
- s2704:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t10)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t10)_geq:2
- s2705:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t10)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t10)_leq:2
- s2706:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t11)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t11)_geq:2
- s2707:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t11)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t11)_leq:2
- s2708:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t12)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t12)_geq:2
- s2709:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t12)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t12)_leq:2
- s2710:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t13)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t13)_geq:2
- s2711:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t13)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t13)_leq:2
- s2712:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t14)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t14)_geq:2
- s2713:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t14)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t14)_leq:2
- s2714:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t15)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t15)_geq:2
- s2715:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t15)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t15)_leq:2
- s2716:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t16)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t16)_geq:2
- s2717:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t16)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t16)_leq:2
- s2718:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t17)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t17)_geq:2
- s2719:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t17)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t17)_leq:2
- s2720:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t18)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t18)_geq:2
- s2721:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t18)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t18)_leq:2
- s2722:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t19)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t19)_geq:2
- s2723:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t19)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t19)_leq:2
- s2724:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t20)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t20)_geq:2
- s2725:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t20)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t20)_leq:2
- s2726:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t21)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t21)_geq:2
- s2727:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t21)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t21)_leq:2
- s2728:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t22)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t22)_geq:2
- s2729:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t22)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t22)_leq:2
- s2730:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t23)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t23)_geq:2
- s2731:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t23)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t23)_leq:2
- s2732:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t24)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t24)_geq:2
- s2733:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t24)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t24)_leq:2
- s2734:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t1)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t1)_geq:2
- s2735:  S1 :: mu_line_store_rt(('ng101','ng102'),s1,t1)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s1,t1)_leq:2
- s2736:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t2)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t2)_geq:2
- s2737:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t2)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t2)_leq:2
- s2738:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t3)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t3)_geq:2
- s2739:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t3)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t3)_leq:2
- s2740:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t4)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t4)_geq:2
- s2741:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t4)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t4)_leq:2
- s2742:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t5)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t5)_geq:2
- s2743:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t5)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t5)_leq:2
- s2744:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t6)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t6)_geq:2
- s2745:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t6)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t6)_leq:2
- s2746:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t7)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t7)_geq:2
- s2747:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t7)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t7)_leq:2
- s2748:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t8)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t8)_geq:2
- s2749:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t8)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t8)_leq:2
- s2750:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t9)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t9)_geq:2
- s2751:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t9)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t9)_leq:2
- s2752:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t10)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t10)_geq:2
- s2753:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t10)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t10)_leq:2
- s2754:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t11)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t11)_geq:2
- s2755:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t11)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t11)_leq:2
- s2756:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t12)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t12)_geq:2
- s2757:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t12)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t12)_leq:2
- s2758:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t13)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t13)_geq:2
- s2759:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t13)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t13)_leq:2
- s2760:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t14)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t14)_geq:2
- s2761:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t14)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t14)_leq:2
- s2762:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t15)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t15)_geq:2
- s2763:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t15)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t15)_leq:2
- s2764:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t16)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t16)_geq:2
- s2765:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t16)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t16)_leq:2
- s2766:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t17)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t17)_geq:2
- s2767:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t17)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t17)_leq:2
- s2768:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t18)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t18)_geq:2
- s2769:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t18)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t18)_leq:2
- s2770:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t19)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t19)_geq:2
- s2771:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t19)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t19)_leq:2
- s2772:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t20)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t20)_geq:2
- s2773:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t20)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t20)_leq:2
- s2774:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t21)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t21)_geq:2
- s2775:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t21)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t21)_leq:2
- s2776:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t22)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t22)_geq:2
- s2777:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t22)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t22)_leq:2
- s2778:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t23)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t23)_geq:2
- s2779:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t23)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t23)_leq:2
- s2780:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t24)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t24)_geq:2
- s2781:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t24)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t24)_leq:2
- s2782:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t1)_geq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t1)_geq:2
- s2783:  S1 :: mu_line_store_rt(('ng101','ng102'),s2,t1)_leq:1
-     SOS1_line_store_rt(('ng101','ng102'),s2,t1)_leq:2
- s2784:  S1 :: mu_lpack_end_max(s1):1 SOS1_lpack_end_max(s1):2
- s2785:  S1 :: mu_lpack_end_min(s1):1 SOS1_lpack_end_min(s1):2
- s2786:  S1 :: mu_lpack_end_max(s2):1 SOS1_lpack_end_max(s2):2
- s2787:  S1 :: mu_lpack_end_min(s2):1 SOS1_lpack_end_min(s2):2
- s2788:  S1 :: mu_gsinMax_rt(gs1,t1,s1):1 SOS1_gsinMax_rt(gs1,t1,s1):2
- s2789:  S1 :: mu_gsoutMax_rt(gs1,t1,s1):1 SOS1_gsoutMax_rt(gs1,t1,s1):2
- s2790:  S1 :: mu_gstore_max_rt(gs1,t1,s1):1
+ s2496:  S1 :: mu_lpack_end_max(s1):1 SOS1_lpack_end_max(s1):2
+ s2497:  S1 :: mu_lpack_end_min(s1):1 SOS1_lpack_end_min(s1):2
+ s2498:  S1 :: mu_lpack_end_max(s2):1 SOS1_lpack_end_max(s2):2
+ s2499:  S1 :: mu_lpack_end_min(s2):1 SOS1_lpack_end_min(s2):2
+ s2500:  S1 :: mu_gsinMax_rt(gs1,t1,s1):1 SOS1_gsinMax_rt(gs1,t1,s1):2
+ s2501:  S1 :: mu_gsoutMax_rt(gs1,t1,s1):1 SOS1_gsoutMax_rt(gs1,t1,s1):2
+ s2502:  S1 :: mu_gstore_max_rt(gs1,t1,s1):1
      SOS1_gstore_max_rt(gs1,t1,s1):2
- s2791:  S1 :: mu_gstore_min_rt(gs1,t1,s1):1
+ s2503:  S1 :: mu_gstore_min_rt(gs1,t1,s1):1
      SOS1_gstore_min_rt(gs1,t1,s1):2
- s2792:  S1 :: mu_gsinMax_rt(gs1,t1,s2):1 SOS1_gsinMax_rt(gs1,t1,s2):2
- s2793:  S1 :: mu_gsoutMax_rt(gs1,t1,s2):1 SOS1_gsoutMax_rt(gs1,t1,s2):2
- s2794:  S1 :: mu_gstore_max_rt(gs1,t1,s2):1
+ s2504:  S1 :: mu_gsinMax_rt(gs1,t1,s2):1 SOS1_gsinMax_rt(gs1,t1,s2):2
+ s2505:  S1 :: mu_gsoutMax_rt(gs1,t1,s2):1 SOS1_gsoutMax_rt(gs1,t1,s2):2
+ s2506:  S1 :: mu_gstore_max_rt(gs1,t1,s2):1
      SOS1_gstore_max_rt(gs1,t1,s2):2
- s2795:  S1 :: mu_gstore_min_rt(gs1,t1,s2):1
+ s2507:  S1 :: mu_gstore_min_rt(gs1,t1,s2):1
      SOS1_gstore_min_rt(gs1,t1,s2):2
- s2796:  S1 :: mu_gsinMax_rt(gs1,t2,s1):1 SOS1_gsinMax_rt(gs1,t2,s1):2
- s2797:  S1 :: mu_gsoutMax_rt(gs1,t2,s1):1 SOS1_gsoutMax_rt(gs1,t2,s1):2
- s2798:  S1 :: mu_gstore_max_rt(gs1,t2,s1):1
+ s2508:  S1 :: mu_gsinMax_rt(gs1,t2,s1):1 SOS1_gsinMax_rt(gs1,t2,s1):2
+ s2509:  S1 :: mu_gsoutMax_rt(gs1,t2,s1):1 SOS1_gsoutMax_rt(gs1,t2,s1):2
+ s2510:  S1 :: mu_gstore_max_rt(gs1,t2,s1):1
      SOS1_gstore_max_rt(gs1,t2,s1):2
- s2799:  S1 :: mu_gstore_min_rt(gs1,t2,s1):1
+ s2511:  S1 :: mu_gstore_min_rt(gs1,t2,s1):1
      SOS1_gstore_min_rt(gs1,t2,s1):2
- s2800:  S1 :: mu_gsinMax_rt(gs1,t2,s2):1 SOS1_gsinMax_rt(gs1,t2,s2):2
- s2801:  S1 :: mu_gsoutMax_rt(gs1,t2,s2):1 SOS1_gsoutMax_rt(gs1,t2,s2):2
- s2802:  S1 :: mu_gstore_max_rt(gs1,t2,s2):1
+ s2512:  S1 :: mu_gsinMax_rt(gs1,t2,s2):1 SOS1_gsinMax_rt(gs1,t2,s2):2
+ s2513:  S1 :: mu_gsoutMax_rt(gs1,t2,s2):1 SOS1_gsoutMax_rt(gs1,t2,s2):2
+ s2514:  S1 :: mu_gstore_max_rt(gs1,t2,s2):1
      SOS1_gstore_max_rt(gs1,t2,s2):2
- s2803:  S1 :: mu_gstore_min_rt(gs1,t2,s2):1
+ s2515:  S1 :: mu_gstore_min_rt(gs1,t2,s2):1
      SOS1_gstore_min_rt(gs1,t2,s2):2
- s2804:  S1 :: mu_gsinMax_rt(gs1,t3,s1):1 SOS1_gsinMax_rt(gs1,t3,s1):2
- s2805:  S1 :: mu_gsoutMax_rt(gs1,t3,s1):1 SOS1_gsoutMax_rt(gs1,t3,s1):2
- s2806:  S1 :: mu_gstore_max_rt(gs1,t3,s1):1
+ s2516:  S1 :: mu_gsinMax_rt(gs1,t3,s1):1 SOS1_gsinMax_rt(gs1,t3,s1):2
+ s2517:  S1 :: mu_gsoutMax_rt(gs1,t3,s1):1 SOS1_gsoutMax_rt(gs1,t3,s1):2
+ s2518:  S1 :: mu_gstore_max_rt(gs1,t3,s1):1
      SOS1_gstore_max_rt(gs1,t3,s1):2
- s2807:  S1 :: mu_gstore_min_rt(gs1,t3,s1):1
+ s2519:  S1 :: mu_gstore_min_rt(gs1,t3,s1):1
      SOS1_gstore_min_rt(gs1,t3,s1):2
- s2808:  S1 :: mu_gsinMax_rt(gs1,t3,s2):1 SOS1_gsinMax_rt(gs1,t3,s2):2
- s2809:  S1 :: mu_gsoutMax_rt(gs1,t3,s2):1 SOS1_gsoutMax_rt(gs1,t3,s2):2
- s2810:  S1 :: mu_gstore_max_rt(gs1,t3,s2):1
+ s2520:  S1 :: mu_gsinMax_rt(gs1,t3,s2):1 SOS1_gsinMax_rt(gs1,t3,s2):2
+ s2521:  S1 :: mu_gsoutMax_rt(gs1,t3,s2):1 SOS1_gsoutMax_rt(gs1,t3,s2):2
+ s2522:  S1 :: mu_gstore_max_rt(gs1,t3,s2):1
      SOS1_gstore_max_rt(gs1,t3,s2):2
- s2811:  S1 :: mu_gstore_min_rt(gs1,t3,s2):1
+ s2523:  S1 :: mu_gstore_min_rt(gs1,t3,s2):1
      SOS1_gstore_min_rt(gs1,t3,s2):2
- s2812:  S1 :: mu_gsinMax_rt(gs1,t4,s1):1 SOS1_gsinMax_rt(gs1,t4,s1):2
- s2813:  S1 :: mu_gsoutMax_rt(gs1,t4,s1):1 SOS1_gsoutMax_rt(gs1,t4,s1):2
- s2814:  S1 :: mu_gstore_max_rt(gs1,t4,s1):1
+ s2524:  S1 :: mu_gsinMax_rt(gs1,t4,s1):1 SOS1_gsinMax_rt(gs1,t4,s1):2
+ s2525:  S1 :: mu_gsoutMax_rt(gs1,t4,s1):1 SOS1_gsoutMax_rt(gs1,t4,s1):2
+ s2526:  S1 :: mu_gstore_max_rt(gs1,t4,s1):1
      SOS1_gstore_max_rt(gs1,t4,s1):2
- s2815:  S1 :: mu_gstore_min_rt(gs1,t4,s1):1
+ s2527:  S1 :: mu_gstore_min_rt(gs1,t4,s1):1
      SOS1_gstore_min_rt(gs1,t4,s1):2
- s2816:  S1 :: mu_gsinMax_rt(gs1,t4,s2):1 SOS1_gsinMax_rt(gs1,t4,s2):2
- s2817:  S1 :: mu_gsoutMax_rt(gs1,t4,s2):1 SOS1_gsoutMax_rt(gs1,t4,s2):2
- s2818:  S1 :: mu_gstore_max_rt(gs1,t4,s2):1
+ s2528:  S1 :: mu_gsinMax_rt(gs1,t4,s2):1 SOS1_gsinMax_rt(gs1,t4,s2):2
+ s2529:  S1 :: mu_gsoutMax_rt(gs1,t4,s2):1 SOS1_gsoutMax_rt(gs1,t4,s2):2
+ s2530:  S1 :: mu_gstore_max_rt(gs1,t4,s2):1
      SOS1_gstore_max_rt(gs1,t4,s2):2
- s2819:  S1 :: mu_gstore_min_rt(gs1,t4,s2):1
+ s2531:  S1 :: mu_gstore_min_rt(gs1,t4,s2):1
      SOS1_gstore_min_rt(gs1,t4,s2):2
- s2820:  S1 :: mu_gsinMax_rt(gs1,t5,s1):1 SOS1_gsinMax_rt(gs1,t5,s1):2
- s2821:  S1 :: mu_gsoutMax_rt(gs1,t5,s1):1 SOS1_gsoutMax_rt(gs1,t5,s1):2
- s2822:  S1 :: mu_gstore_max_rt(gs1,t5,s1):1
+ s2532:  S1 :: mu_gsinMax_rt(gs1,t5,s1):1 SOS1_gsinMax_rt(gs1,t5,s1):2
+ s2533:  S1 :: mu_gsoutMax_rt(gs1,t5,s1):1 SOS1_gsoutMax_rt(gs1,t5,s1):2
+ s2534:  S1 :: mu_gstore_max_rt(gs1,t5,s1):1
      SOS1_gstore_max_rt(gs1,t5,s1):2
- s2823:  S1 :: mu_gstore_min_rt(gs1,t5,s1):1
+ s2535:  S1 :: mu_gstore_min_rt(gs1,t5,s1):1
      SOS1_gstore_min_rt(gs1,t5,s1):2
- s2824:  S1 :: mu_gsinMax_rt(gs1,t5,s2):1 SOS1_gsinMax_rt(gs1,t5,s2):2
- s2825:  S1 :: mu_gsoutMax_rt(gs1,t5,s2):1 SOS1_gsoutMax_rt(gs1,t5,s2):2
- s2826:  S1 :: mu_gstore_max_rt(gs1,t5,s2):1
+ s2536:  S1 :: mu_gsinMax_rt(gs1,t5,s2):1 SOS1_gsinMax_rt(gs1,t5,s2):2
+ s2537:  S1 :: mu_gsoutMax_rt(gs1,t5,s2):1 SOS1_gsoutMax_rt(gs1,t5,s2):2
+ s2538:  S1 :: mu_gstore_max_rt(gs1,t5,s2):1
      SOS1_gstore_max_rt(gs1,t5,s2):2
- s2827:  S1 :: mu_gstore_min_rt(gs1,t5,s2):1
+ s2539:  S1 :: mu_gstore_min_rt(gs1,t5,s2):1
      SOS1_gstore_min_rt(gs1,t5,s2):2
- s2828:  S1 :: mu_gsinMax_rt(gs1,t6,s1):1 SOS1_gsinMax_rt(gs1,t6,s1):2
- s2829:  S1 :: mu_gsoutMax_rt(gs1,t6,s1):1 SOS1_gsoutMax_rt(gs1,t6,s1):2
- s2830:  S1 :: mu_gstore_max_rt(gs1,t6,s1):1
+ s2540:  S1 :: mu_gsinMax_rt(gs1,t6,s1):1 SOS1_gsinMax_rt(gs1,t6,s1):2
+ s2541:  S1 :: mu_gsoutMax_rt(gs1,t6,s1):1 SOS1_gsoutMax_rt(gs1,t6,s1):2
+ s2542:  S1 :: mu_gstore_max_rt(gs1,t6,s1):1
      SOS1_gstore_max_rt(gs1,t6,s1):2
- s2831:  S1 :: mu_gstore_min_rt(gs1,t6,s1):1
+ s2543:  S1 :: mu_gstore_min_rt(gs1,t6,s1):1
      SOS1_gstore_min_rt(gs1,t6,s1):2
- s2832:  S1 :: mu_gsinMax_rt(gs1,t6,s2):1 SOS1_gsinMax_rt(gs1,t6,s2):2
- s2833:  S1 :: mu_gsoutMax_rt(gs1,t6,s2):1 SOS1_gsoutMax_rt(gs1,t6,s2):2
- s2834:  S1 :: mu_gstore_max_rt(gs1,t6,s2):1
+ s2544:  S1 :: mu_gsinMax_rt(gs1,t6,s2):1 SOS1_gsinMax_rt(gs1,t6,s2):2
+ s2545:  S1 :: mu_gsoutMax_rt(gs1,t6,s2):1 SOS1_gsoutMax_rt(gs1,t6,s2):2
+ s2546:  S1 :: mu_gstore_max_rt(gs1,t6,s2):1
      SOS1_gstore_max_rt(gs1,t6,s2):2
- s2835:  S1 :: mu_gstore_min_rt(gs1,t6,s2):1
+ s2547:  S1 :: mu_gstore_min_rt(gs1,t6,s2):1
      SOS1_gstore_min_rt(gs1,t6,s2):2
- s2836:  S1 :: mu_gsinMax_rt(gs1,t7,s1):1 SOS1_gsinMax_rt(gs1,t7,s1):2
- s2837:  S1 :: mu_gsoutMax_rt(gs1,t7,s1):1 SOS1_gsoutMax_rt(gs1,t7,s1):2
- s2838:  S1 :: mu_gstore_max_rt(gs1,t7,s1):1
+ s2548:  S1 :: mu_gsinMax_rt(gs1,t7,s1):1 SOS1_gsinMax_rt(gs1,t7,s1):2
+ s2549:  S1 :: mu_gsoutMax_rt(gs1,t7,s1):1 SOS1_gsoutMax_rt(gs1,t7,s1):2
+ s2550:  S1 :: mu_gstore_max_rt(gs1,t7,s1):1
      SOS1_gstore_max_rt(gs1,t7,s1):2
- s2839:  S1 :: mu_gstore_min_rt(gs1,t7,s1):1
+ s2551:  S1 :: mu_gstore_min_rt(gs1,t7,s1):1
      SOS1_gstore_min_rt(gs1,t7,s1):2
- s2840:  S1 :: mu_gsinMax_rt(gs1,t7,s2):1 SOS1_gsinMax_rt(gs1,t7,s2):2
- s2841:  S1 :: mu_gsoutMax_rt(gs1,t7,s2):1 SOS1_gsoutMax_rt(gs1,t7,s2):2
- s2842:  S1 :: mu_gstore_max_rt(gs1,t7,s2):1
+ s2552:  S1 :: mu_gsinMax_rt(gs1,t7,s2):1 SOS1_gsinMax_rt(gs1,t7,s2):2
+ s2553:  S1 :: mu_gsoutMax_rt(gs1,t7,s2):1 SOS1_gsoutMax_rt(gs1,t7,s2):2
+ s2554:  S1 :: mu_gstore_max_rt(gs1,t7,s2):1
      SOS1_gstore_max_rt(gs1,t7,s2):2
- s2843:  S1 :: mu_gstore_min_rt(gs1,t7,s2):1
+ s2555:  S1 :: mu_gstore_min_rt(gs1,t7,s2):1
      SOS1_gstore_min_rt(gs1,t7,s2):2
- s2844:  S1 :: mu_gsinMax_rt(gs1,t8,s1):1 SOS1_gsinMax_rt(gs1,t8,s1):2
- s2845:  S1 :: mu_gsoutMax_rt(gs1,t8,s1):1 SOS1_gsoutMax_rt(gs1,t8,s1):2
- s2846:  S1 :: mu_gstore_max_rt(gs1,t8,s1):1
+ s2556:  S1 :: mu_gsinMax_rt(gs1,t8,s1):1 SOS1_gsinMax_rt(gs1,t8,s1):2
+ s2557:  S1 :: mu_gsoutMax_rt(gs1,t8,s1):1 SOS1_gsoutMax_rt(gs1,t8,s1):2
+ s2558:  S1 :: mu_gstore_max_rt(gs1,t8,s1):1
      SOS1_gstore_max_rt(gs1,t8,s1):2
- s2847:  S1 :: mu_gstore_min_rt(gs1,t8,s1):1
+ s2559:  S1 :: mu_gstore_min_rt(gs1,t8,s1):1
      SOS1_gstore_min_rt(gs1,t8,s1):2
- s2848:  S1 :: mu_gsinMax_rt(gs1,t8,s2):1 SOS1_gsinMax_rt(gs1,t8,s2):2
- s2849:  S1 :: mu_gsoutMax_rt(gs1,t8,s2):1 SOS1_gsoutMax_rt(gs1,t8,s2):2
- s2850:  S1 :: mu_gstore_max_rt(gs1,t8,s2):1
+ s2560:  S1 :: mu_gsinMax_rt(gs1,t8,s2):1 SOS1_gsinMax_rt(gs1,t8,s2):2
+ s2561:  S1 :: mu_gsoutMax_rt(gs1,t8,s2):1 SOS1_gsoutMax_rt(gs1,t8,s2):2
+ s2562:  S1 :: mu_gstore_max_rt(gs1,t8,s2):1
      SOS1_gstore_max_rt(gs1,t8,s2):2
- s2851:  S1 :: mu_gstore_min_rt(gs1,t8,s2):1
+ s2563:  S1 :: mu_gstore_min_rt(gs1,t8,s2):1
      SOS1_gstore_min_rt(gs1,t8,s2):2
- s2852:  S1 :: mu_gsinMax_rt(gs1,t9,s1):1 SOS1_gsinMax_rt(gs1,t9,s1):2
- s2853:  S1 :: mu_gsoutMax_rt(gs1,t9,s1):1 SOS1_gsoutMax_rt(gs1,t9,s1):2
- s2854:  S1 :: mu_gstore_max_rt(gs1,t9,s1):1
+ s2564:  S1 :: mu_gsinMax_rt(gs1,t9,s1):1 SOS1_gsinMax_rt(gs1,t9,s1):2
+ s2565:  S1 :: mu_gsoutMax_rt(gs1,t9,s1):1 SOS1_gsoutMax_rt(gs1,t9,s1):2
+ s2566:  S1 :: mu_gstore_max_rt(gs1,t9,s1):1
      SOS1_gstore_max_rt(gs1,t9,s1):2
- s2855:  S1 :: mu_gstore_min_rt(gs1,t9,s1):1
+ s2567:  S1 :: mu_gstore_min_rt(gs1,t9,s1):1
      SOS1_gstore_min_rt(gs1,t9,s1):2
- s2856:  S1 :: mu_gsinMax_rt(gs1,t9,s2):1 SOS1_gsinMax_rt(gs1,t9,s2):2
- s2857:  S1 :: mu_gsoutMax_rt(gs1,t9,s2):1 SOS1_gsoutMax_rt(gs1,t9,s2):2
- s2858:  S1 :: mu_gstore_max_rt(gs1,t9,s2):1
+ s2568:  S1 :: mu_gsinMax_rt(gs1,t9,s2):1 SOS1_gsinMax_rt(gs1,t9,s2):2
+ s2569:  S1 :: mu_gsoutMax_rt(gs1,t9,s2):1 SOS1_gsoutMax_rt(gs1,t9,s2):2
+ s2570:  S1 :: mu_gstore_max_rt(gs1,t9,s2):1
      SOS1_gstore_max_rt(gs1,t9,s2):2
- s2859:  S1 :: mu_gstore_min_rt(gs1,t9,s2):1
+ s2571:  S1 :: mu_gstore_min_rt(gs1,t9,s2):1
      SOS1_gstore_min_rt(gs1,t9,s2):2
- s2860:  S1 :: mu_gsinMax_rt(gs1,t10,s1):1 SOS1_gsinMax_rt(gs1,t10,s1):2
- s2861:  S1 :: mu_gsoutMax_rt(gs1,t10,s1):1 SOS1_gsoutMax_rt(gs1,t10,s1):2
- s2862:  S1 :: mu_gstore_max_rt(gs1,t10,s1):1
+ s2572:  S1 :: mu_gsinMax_rt(gs1,t10,s1):1 SOS1_gsinMax_rt(gs1,t10,s1):2
+ s2573:  S1 :: mu_gsoutMax_rt(gs1,t10,s1):1 SOS1_gsoutMax_rt(gs1,t10,s1):2
+ s2574:  S1 :: mu_gstore_max_rt(gs1,t10,s1):1
      SOS1_gstore_max_rt(gs1,t10,s1):2
- s2863:  S1 :: mu_gstore_min_rt(gs1,t10,s1):1
+ s2575:  S1 :: mu_gstore_min_rt(gs1,t10,s1):1
      SOS1_gstore_min_rt(gs1,t10,s1):2
- s2864:  S1 :: mu_gsinMax_rt(gs1,t10,s2):1 SOS1_gsinMax_rt(gs1,t10,s2):2
- s2865:  S1 :: mu_gsoutMax_rt(gs1,t10,s2):1 SOS1_gsoutMax_rt(gs1,t10,s2):2
- s2866:  S1 :: mu_gstore_max_rt(gs1,t10,s2):1
+ s2576:  S1 :: mu_gsinMax_rt(gs1,t10,s2):1 SOS1_gsinMax_rt(gs1,t10,s2):2
+ s2577:  S1 :: mu_gsoutMax_rt(gs1,t10,s2):1 SOS1_gsoutMax_rt(gs1,t10,s2):2
+ s2578:  S1 :: mu_gstore_max_rt(gs1,t10,s2):1
      SOS1_gstore_max_rt(gs1,t10,s2):2
- s2867:  S1 :: mu_gstore_min_rt(gs1,t10,s2):1
+ s2579:  S1 :: mu_gstore_min_rt(gs1,t10,s2):1
      SOS1_gstore_min_rt(gs1,t10,s2):2
- s2868:  S1 :: mu_gsinMax_rt(gs1,t11,s1):1 SOS1_gsinMax_rt(gs1,t11,s1):2
- s2869:  S1 :: mu_gsoutMax_rt(gs1,t11,s1):1 SOS1_gsoutMax_rt(gs1,t11,s1):2
- s2870:  S1 :: mu_gstore_max_rt(gs1,t11,s1):1
+ s2580:  S1 :: mu_gsinMax_rt(gs1,t11,s1):1 SOS1_gsinMax_rt(gs1,t11,s1):2
+ s2581:  S1 :: mu_gsoutMax_rt(gs1,t11,s1):1 SOS1_gsoutMax_rt(gs1,t11,s1):2
+ s2582:  S1 :: mu_gstore_max_rt(gs1,t11,s1):1
      SOS1_gstore_max_rt(gs1,t11,s1):2
- s2871:  S1 :: mu_gstore_min_rt(gs1,t11,s1):1
+ s2583:  S1 :: mu_gstore_min_rt(gs1,t11,s1):1
      SOS1_gstore_min_rt(gs1,t11,s1):2
- s2872:  S1 :: mu_gsinMax_rt(gs1,t11,s2):1 SOS1_gsinMax_rt(gs1,t11,s2):2
- s2873:  S1 :: mu_gsoutMax_rt(gs1,t11,s2):1 SOS1_gsoutMax_rt(gs1,t11,s2):2
- s2874:  S1 :: mu_gstore_max_rt(gs1,t11,s2):1
+ s2584:  S1 :: mu_gsinMax_rt(gs1,t11,s2):1 SOS1_gsinMax_rt(gs1,t11,s2):2
+ s2585:  S1 :: mu_gsoutMax_rt(gs1,t11,s2):1 SOS1_gsoutMax_rt(gs1,t11,s2):2
+ s2586:  S1 :: mu_gstore_max_rt(gs1,t11,s2):1
      SOS1_gstore_max_rt(gs1,t11,s2):2
- s2875:  S1 :: mu_gstore_min_rt(gs1,t11,s2):1
+ s2587:  S1 :: mu_gstore_min_rt(gs1,t11,s2):1
      SOS1_gstore_min_rt(gs1,t11,s2):2
- s2876:  S1 :: mu_gsinMax_rt(gs1,t12,s1):1 SOS1_gsinMax_rt(gs1,t12,s1):2
- s2877:  S1 :: mu_gsoutMax_rt(gs1,t12,s1):1 SOS1_gsoutMax_rt(gs1,t12,s1):2
- s2878:  S1 :: mu_gstore_max_rt(gs1,t12,s1):1
+ s2588:  S1 :: mu_gsinMax_rt(gs1,t12,s1):1 SOS1_gsinMax_rt(gs1,t12,s1):2
+ s2589:  S1 :: mu_gsoutMax_rt(gs1,t12,s1):1 SOS1_gsoutMax_rt(gs1,t12,s1):2
+ s2590:  S1 :: mu_gstore_max_rt(gs1,t12,s1):1
      SOS1_gstore_max_rt(gs1,t12,s1):2
- s2879:  S1 :: mu_gstore_min_rt(gs1,t12,s1):1
+ s2591:  S1 :: mu_gstore_min_rt(gs1,t12,s1):1
      SOS1_gstore_min_rt(gs1,t12,s1):2
- s2880:  S1 :: mu_gsinMax_rt(gs1,t12,s2):1 SOS1_gsinMax_rt(gs1,t12,s2):2
- s2881:  S1 :: mu_gsoutMax_rt(gs1,t12,s2):1 SOS1_gsoutMax_rt(gs1,t12,s2):2
- s2882:  S1 :: mu_gstore_max_rt(gs1,t12,s2):1
+ s2592:  S1 :: mu_gsinMax_rt(gs1,t12,s2):1 SOS1_gsinMax_rt(gs1,t12,s2):2
+ s2593:  S1 :: mu_gsoutMax_rt(gs1,t12,s2):1 SOS1_gsoutMax_rt(gs1,t12,s2):2
+ s2594:  S1 :: mu_gstore_max_rt(gs1,t12,s2):1
      SOS1_gstore_max_rt(gs1,t12,s2):2
- s2883:  S1 :: mu_gstore_min_rt(gs1,t12,s2):1
+ s2595:  S1 :: mu_gstore_min_rt(gs1,t12,s2):1
      SOS1_gstore_min_rt(gs1,t12,s2):2
- s2884:  S1 :: mu_gsinMax_rt(gs1,t13,s1):1 SOS1_gsinMax_rt(gs1,t13,s1):2
- s2885:  S1 :: mu_gsoutMax_rt(gs1,t13,s1):1 SOS1_gsoutMax_rt(gs1,t13,s1):2
- s2886:  S1 :: mu_gstore_max_rt(gs1,t13,s1):1
+ s2596:  S1 :: mu_gsinMax_rt(gs1,t13,s1):1 SOS1_gsinMax_rt(gs1,t13,s1):2
+ s2597:  S1 :: mu_gsoutMax_rt(gs1,t13,s1):1 SOS1_gsoutMax_rt(gs1,t13,s1):2
+ s2598:  S1 :: mu_gstore_max_rt(gs1,t13,s1):1
      SOS1_gstore_max_rt(gs1,t13,s1):2
- s2887:  S1 :: mu_gstore_min_rt(gs1,t13,s1):1
+ s2599:  S1 :: mu_gstore_min_rt(gs1,t13,s1):1
      SOS1_gstore_min_rt(gs1,t13,s1):2
- s2888:  S1 :: mu_gsinMax_rt(gs1,t13,s2):1 SOS1_gsinMax_rt(gs1,t13,s2):2
- s2889:  S1 :: mu_gsoutMax_rt(gs1,t13,s2):1 SOS1_gsoutMax_rt(gs1,t13,s2):2
- s2890:  S1 :: mu_gstore_max_rt(gs1,t13,s2):1
+ s2600:  S1 :: mu_gsinMax_rt(gs1,t13,s2):1 SOS1_gsinMax_rt(gs1,t13,s2):2
+ s2601:  S1 :: mu_gsoutMax_rt(gs1,t13,s2):1 SOS1_gsoutMax_rt(gs1,t13,s2):2
+ s2602:  S1 :: mu_gstore_max_rt(gs1,t13,s2):1
      SOS1_gstore_max_rt(gs1,t13,s2):2
- s2891:  S1 :: mu_gstore_min_rt(gs1,t13,s2):1
+ s2603:  S1 :: mu_gstore_min_rt(gs1,t13,s2):1
      SOS1_gstore_min_rt(gs1,t13,s2):2
- s2892:  S1 :: mu_gsinMax_rt(gs1,t14,s1):1 SOS1_gsinMax_rt(gs1,t14,s1):2
- s2893:  S1 :: mu_gsoutMax_rt(gs1,t14,s1):1 SOS1_gsoutMax_rt(gs1,t14,s1):2
- s2894:  S1 :: mu_gstore_max_rt(gs1,t14,s1):1
+ s2604:  S1 :: mu_gsinMax_rt(gs1,t14,s1):1 SOS1_gsinMax_rt(gs1,t14,s1):2
+ s2605:  S1 :: mu_gsoutMax_rt(gs1,t14,s1):1 SOS1_gsoutMax_rt(gs1,t14,s1):2
+ s2606:  S1 :: mu_gstore_max_rt(gs1,t14,s1):1
      SOS1_gstore_max_rt(gs1,t14,s1):2
- s2895:  S1 :: mu_gstore_min_rt(gs1,t14,s1):1
+ s2607:  S1 :: mu_gstore_min_rt(gs1,t14,s1):1
      SOS1_gstore_min_rt(gs1,t14,s1):2
- s2896:  S1 :: mu_gsinMax_rt(gs1,t14,s2):1 SOS1_gsinMax_rt(gs1,t14,s2):2
- s2897:  S1 :: mu_gsoutMax_rt(gs1,t14,s2):1 SOS1_gsoutMax_rt(gs1,t14,s2):2
- s2898:  S1 :: mu_gstore_max_rt(gs1,t14,s2):1
+ s2608:  S1 :: mu_gsinMax_rt(gs1,t14,s2):1 SOS1_gsinMax_rt(gs1,t14,s2):2
+ s2609:  S1 :: mu_gsoutMax_rt(gs1,t14,s2):1 SOS1_gsoutMax_rt(gs1,t14,s2):2
+ s2610:  S1 :: mu_gstore_max_rt(gs1,t14,s2):1
      SOS1_gstore_max_rt(gs1,t14,s2):2
- s2899:  S1 :: mu_gstore_min_rt(gs1,t14,s2):1
+ s2611:  S1 :: mu_gstore_min_rt(gs1,t14,s2):1
      SOS1_gstore_min_rt(gs1,t14,s2):2
- s2900:  S1 :: mu_gsinMax_rt(gs1,t15,s1):1 SOS1_gsinMax_rt(gs1,t15,s1):2
- s2901:  S1 :: mu_gsoutMax_rt(gs1,t15,s1):1 SOS1_gsoutMax_rt(gs1,t15,s1):2
- s2902:  S1 :: mu_gstore_max_rt(gs1,t15,s1):1
+ s2612:  S1 :: mu_gsinMax_rt(gs1,t15,s1):1 SOS1_gsinMax_rt(gs1,t15,s1):2
+ s2613:  S1 :: mu_gsoutMax_rt(gs1,t15,s1):1 SOS1_gsoutMax_rt(gs1,t15,s1):2
+ s2614:  S1 :: mu_gstore_max_rt(gs1,t15,s1):1
      SOS1_gstore_max_rt(gs1,t15,s1):2
- s2903:  S1 :: mu_gstore_min_rt(gs1,t15,s1):1
+ s2615:  S1 :: mu_gstore_min_rt(gs1,t15,s1):1
      SOS1_gstore_min_rt(gs1,t15,s1):2
- s2904:  S1 :: mu_gsinMax_rt(gs1,t15,s2):1 SOS1_gsinMax_rt(gs1,t15,s2):2
- s2905:  S1 :: mu_gsoutMax_rt(gs1,t15,s2):1 SOS1_gsoutMax_rt(gs1,t15,s2):2
- s2906:  S1 :: mu_gstore_max_rt(gs1,t15,s2):1
+ s2616:  S1 :: mu_gsinMax_rt(gs1,t15,s2):1 SOS1_gsinMax_rt(gs1,t15,s2):2
+ s2617:  S1 :: mu_gsoutMax_rt(gs1,t15,s2):1 SOS1_gsoutMax_rt(gs1,t15,s2):2
+ s2618:  S1 :: mu_gstore_max_rt(gs1,t15,s2):1
      SOS1_gstore_max_rt(gs1,t15,s2):2
- s2907:  S1 :: mu_gstore_min_rt(gs1,t15,s2):1
+ s2619:  S1 :: mu_gstore_min_rt(gs1,t15,s2):1
      SOS1_gstore_min_rt(gs1,t15,s2):2
- s2908:  S1 :: mu_gsinMax_rt(gs1,t16,s1):1 SOS1_gsinMax_rt(gs1,t16,s1):2
- s2909:  S1 :: mu_gsoutMax_rt(gs1,t16,s1):1 SOS1_gsoutMax_rt(gs1,t16,s1):2
- s2910:  S1 :: mu_gstore_max_rt(gs1,t16,s1):1
+ s2620:  S1 :: mu_gsinMax_rt(gs1,t16,s1):1 SOS1_gsinMax_rt(gs1,t16,s1):2
+ s2621:  S1 :: mu_gsoutMax_rt(gs1,t16,s1):1 SOS1_gsoutMax_rt(gs1,t16,s1):2
+ s2622:  S1 :: mu_gstore_max_rt(gs1,t16,s1):1
      SOS1_gstore_max_rt(gs1,t16,s1):2
- s2911:  S1 :: mu_gstore_min_rt(gs1,t16,s1):1
+ s2623:  S1 :: mu_gstore_min_rt(gs1,t16,s1):1
      SOS1_gstore_min_rt(gs1,t16,s1):2
- s2912:  S1 :: mu_gsinMax_rt(gs1,t16,s2):1 SOS1_gsinMax_rt(gs1,t16,s2):2
- s2913:  S1 :: mu_gsoutMax_rt(gs1,t16,s2):1 SOS1_gsoutMax_rt(gs1,t16,s2):2
- s2914:  S1 :: mu_gstore_max_rt(gs1,t16,s2):1
+ s2624:  S1 :: mu_gsinMax_rt(gs1,t16,s2):1 SOS1_gsinMax_rt(gs1,t16,s2):2
+ s2625:  S1 :: mu_gsoutMax_rt(gs1,t16,s2):1 SOS1_gsoutMax_rt(gs1,t16,s2):2
+ s2626:  S1 :: mu_gstore_max_rt(gs1,t16,s2):1
      SOS1_gstore_max_rt(gs1,t16,s2):2
- s2915:  S1 :: mu_gstore_min_rt(gs1,t16,s2):1
+ s2627:  S1 :: mu_gstore_min_rt(gs1,t16,s2):1
      SOS1_gstore_min_rt(gs1,t16,s2):2
- s2916:  S1 :: mu_gsinMax_rt(gs1,t17,s1):1 SOS1_gsinMax_rt(gs1,t17,s1):2
- s2917:  S1 :: mu_gsoutMax_rt(gs1,t17,s1):1 SOS1_gsoutMax_rt(gs1,t17,s1):2
- s2918:  S1 :: mu_gstore_max_rt(gs1,t17,s1):1
+ s2628:  S1 :: mu_gsinMax_rt(gs1,t17,s1):1 SOS1_gsinMax_rt(gs1,t17,s1):2
+ s2629:  S1 :: mu_gsoutMax_rt(gs1,t17,s1):1 SOS1_gsoutMax_rt(gs1,t17,s1):2
+ s2630:  S1 :: mu_gstore_max_rt(gs1,t17,s1):1
      SOS1_gstore_max_rt(gs1,t17,s1):2
- s2919:  S1 :: mu_gstore_min_rt(gs1,t17,s1):1
+ s2631:  S1 :: mu_gstore_min_rt(gs1,t17,s1):1
      SOS1_gstore_min_rt(gs1,t17,s1):2
- s2920:  S1 :: mu_gsinMax_rt(gs1,t17,s2):1 SOS1_gsinMax_rt(gs1,t17,s2):2
- s2921:  S1 :: mu_gsoutMax_rt(gs1,t17,s2):1 SOS1_gsoutMax_rt(gs1,t17,s2):2
- s2922:  S1 :: mu_gstore_max_rt(gs1,t17,s2):1
+ s2632:  S1 :: mu_gsinMax_rt(gs1,t17,s2):1 SOS1_gsinMax_rt(gs1,t17,s2):2
+ s2633:  S1 :: mu_gsoutMax_rt(gs1,t17,s2):1 SOS1_gsoutMax_rt(gs1,t17,s2):2
+ s2634:  S1 :: mu_gstore_max_rt(gs1,t17,s2):1
      SOS1_gstore_max_rt(gs1,t17,s2):2
- s2923:  S1 :: mu_gstore_min_rt(gs1,t17,s2):1
+ s2635:  S1 :: mu_gstore_min_rt(gs1,t17,s2):1
      SOS1_gstore_min_rt(gs1,t17,s2):2
- s2924:  S1 :: mu_gsinMax_rt(gs1,t18,s1):1 SOS1_gsinMax_rt(gs1,t18,s1):2
- s2925:  S1 :: mu_gsoutMax_rt(gs1,t18,s1):1 SOS1_gsoutMax_rt(gs1,t18,s1):2
- s2926:  S1 :: mu_gstore_max_rt(gs1,t18,s1):1
+ s2636:  S1 :: mu_gsinMax_rt(gs1,t18,s1):1 SOS1_gsinMax_rt(gs1,t18,s1):2
+ s2637:  S1 :: mu_gsoutMax_rt(gs1,t18,s1):1 SOS1_gsoutMax_rt(gs1,t18,s1):2
+ s2638:  S1 :: mu_gstore_max_rt(gs1,t18,s1):1
      SOS1_gstore_max_rt(gs1,t18,s1):2
- s2927:  S1 :: mu_gstore_min_rt(gs1,t18,s1):1
+ s2639:  S1 :: mu_gstore_min_rt(gs1,t18,s1):1
      SOS1_gstore_min_rt(gs1,t18,s1):2
- s2928:  S1 :: mu_gsinMax_rt(gs1,t18,s2):1 SOS1_gsinMax_rt(gs1,t18,s2):2
- s2929:  S1 :: mu_gsoutMax_rt(gs1,t18,s2):1 SOS1_gsoutMax_rt(gs1,t18,s2):2
- s2930:  S1 :: mu_gstore_max_rt(gs1,t18,s2):1
+ s2640:  S1 :: mu_gsinMax_rt(gs1,t18,s2):1 SOS1_gsinMax_rt(gs1,t18,s2):2
+ s2641:  S1 :: mu_gsoutMax_rt(gs1,t18,s2):1 SOS1_gsoutMax_rt(gs1,t18,s2):2
+ s2642:  S1 :: mu_gstore_max_rt(gs1,t18,s2):1
      SOS1_gstore_max_rt(gs1,t18,s2):2
- s2931:  S1 :: mu_gstore_min_rt(gs1,t18,s2):1
+ s2643:  S1 :: mu_gstore_min_rt(gs1,t18,s2):1
      SOS1_gstore_min_rt(gs1,t18,s2):2
- s2932:  S1 :: mu_gsinMax_rt(gs1,t19,s1):1 SOS1_gsinMax_rt(gs1,t19,s1):2
- s2933:  S1 :: mu_gsoutMax_rt(gs1,t19,s1):1 SOS1_gsoutMax_rt(gs1,t19,s1):2
- s2934:  S1 :: mu_gstore_max_rt(gs1,t19,s1):1
+ s2644:  S1 :: mu_gsinMax_rt(gs1,t19,s1):1 SOS1_gsinMax_rt(gs1,t19,s1):2
+ s2645:  S1 :: mu_gsoutMax_rt(gs1,t19,s1):1 SOS1_gsoutMax_rt(gs1,t19,s1):2
+ s2646:  S1 :: mu_gstore_max_rt(gs1,t19,s1):1
      SOS1_gstore_max_rt(gs1,t19,s1):2
- s2935:  S1 :: mu_gstore_min_rt(gs1,t19,s1):1
+ s2647:  S1 :: mu_gstore_min_rt(gs1,t19,s1):1
      SOS1_gstore_min_rt(gs1,t19,s1):2
- s2936:  S1 :: mu_gsinMax_rt(gs1,t19,s2):1 SOS1_gsinMax_rt(gs1,t19,s2):2
- s2937:  S1 :: mu_gsoutMax_rt(gs1,t19,s2):1 SOS1_gsoutMax_rt(gs1,t19,s2):2
- s2938:  S1 :: mu_gstore_max_rt(gs1,t19,s2):1
+ s2648:  S1 :: mu_gsinMax_rt(gs1,t19,s2):1 SOS1_gsinMax_rt(gs1,t19,s2):2
+ s2649:  S1 :: mu_gsoutMax_rt(gs1,t19,s2):1 SOS1_gsoutMax_rt(gs1,t19,s2):2
+ s2650:  S1 :: mu_gstore_max_rt(gs1,t19,s2):1
      SOS1_gstore_max_rt(gs1,t19,s2):2
- s2939:  S1 :: mu_gstore_min_rt(gs1,t19,s2):1
+ s2651:  S1 :: mu_gstore_min_rt(gs1,t19,s2):1
      SOS1_gstore_min_rt(gs1,t19,s2):2
- s2940:  S1 :: mu_gsinMax_rt(gs1,t20,s1):1 SOS1_gsinMax_rt(gs1,t20,s1):2
- s2941:  S1 :: mu_gsoutMax_rt(gs1,t20,s1):1 SOS1_gsoutMax_rt(gs1,t20,s1):2
- s2942:  S1 :: mu_gstore_max_rt(gs1,t20,s1):1
+ s2652:  S1 :: mu_gsinMax_rt(gs1,t20,s1):1 SOS1_gsinMax_rt(gs1,t20,s1):2
+ s2653:  S1 :: mu_gsoutMax_rt(gs1,t20,s1):1 SOS1_gsoutMax_rt(gs1,t20,s1):2
+ s2654:  S1 :: mu_gstore_max_rt(gs1,t20,s1):1
      SOS1_gstore_max_rt(gs1,t20,s1):2
- s2943:  S1 :: mu_gstore_min_rt(gs1,t20,s1):1
+ s2655:  S1 :: mu_gstore_min_rt(gs1,t20,s1):1
      SOS1_gstore_min_rt(gs1,t20,s1):2
- s2944:  S1 :: mu_gsinMax_rt(gs1,t20,s2):1 SOS1_gsinMax_rt(gs1,t20,s2):2
- s2945:  S1 :: mu_gsoutMax_rt(gs1,t20,s2):1 SOS1_gsoutMax_rt(gs1,t20,s2):2
- s2946:  S1 :: mu_gstore_max_rt(gs1,t20,s2):1
+ s2656:  S1 :: mu_gsinMax_rt(gs1,t20,s2):1 SOS1_gsinMax_rt(gs1,t20,s2):2
+ s2657:  S1 :: mu_gsoutMax_rt(gs1,t20,s2):1 SOS1_gsoutMax_rt(gs1,t20,s2):2
+ s2658:  S1 :: mu_gstore_max_rt(gs1,t20,s2):1
      SOS1_gstore_max_rt(gs1,t20,s2):2
- s2947:  S1 :: mu_gstore_min_rt(gs1,t20,s2):1
+ s2659:  S1 :: mu_gstore_min_rt(gs1,t20,s2):1
      SOS1_gstore_min_rt(gs1,t20,s2):2
- s2948:  S1 :: mu_gsinMax_rt(gs1,t21,s1):1 SOS1_gsinMax_rt(gs1,t21,s1):2
- s2949:  S1 :: mu_gsoutMax_rt(gs1,t21,s1):1 SOS1_gsoutMax_rt(gs1,t21,s1):2
- s2950:  S1 :: mu_gstore_max_rt(gs1,t21,s1):1
+ s2660:  S1 :: mu_gsinMax_rt(gs1,t21,s1):1 SOS1_gsinMax_rt(gs1,t21,s1):2
+ s2661:  S1 :: mu_gsoutMax_rt(gs1,t21,s1):1 SOS1_gsoutMax_rt(gs1,t21,s1):2
+ s2662:  S1 :: mu_gstore_max_rt(gs1,t21,s1):1
      SOS1_gstore_max_rt(gs1,t21,s1):2
- s2951:  S1 :: mu_gstore_min_rt(gs1,t21,s1):1
+ s2663:  S1 :: mu_gstore_min_rt(gs1,t21,s1):1
      SOS1_gstore_min_rt(gs1,t21,s1):2
- s2952:  S1 :: mu_gsinMax_rt(gs1,t21,s2):1 SOS1_gsinMax_rt(gs1,t21,s2):2
- s2953:  S1 :: mu_gsoutMax_rt(gs1,t21,s2):1 SOS1_gsoutMax_rt(gs1,t21,s2):2
- s2954:  S1 :: mu_gstore_max_rt(gs1,t21,s2):1
+ s2664:  S1 :: mu_gsinMax_rt(gs1,t21,s2):1 SOS1_gsinMax_rt(gs1,t21,s2):2
+ s2665:  S1 :: mu_gsoutMax_rt(gs1,t21,s2):1 SOS1_gsoutMax_rt(gs1,t21,s2):2
+ s2666:  S1 :: mu_gstore_max_rt(gs1,t21,s2):1
      SOS1_gstore_max_rt(gs1,t21,s2):2
- s2955:  S1 :: mu_gstore_min_rt(gs1,t21,s2):1
+ s2667:  S1 :: mu_gstore_min_rt(gs1,t21,s2):1
      SOS1_gstore_min_rt(gs1,t21,s2):2
- s2956:  S1 :: mu_gsinMax_rt(gs1,t22,s1):1 SOS1_gsinMax_rt(gs1,t22,s1):2
- s2957:  S1 :: mu_gsoutMax_rt(gs1,t22,s1):1 SOS1_gsoutMax_rt(gs1,t22,s1):2
- s2958:  S1 :: mu_gstore_max_rt(gs1,t22,s1):1
+ s2668:  S1 :: mu_gsinMax_rt(gs1,t22,s1):1 SOS1_gsinMax_rt(gs1,t22,s1):2
+ s2669:  S1 :: mu_gsoutMax_rt(gs1,t22,s1):1 SOS1_gsoutMax_rt(gs1,t22,s1):2
+ s2670:  S1 :: mu_gstore_max_rt(gs1,t22,s1):1
      SOS1_gstore_max_rt(gs1,t22,s1):2
- s2959:  S1 :: mu_gstore_min_rt(gs1,t22,s1):1
+ s2671:  S1 :: mu_gstore_min_rt(gs1,t22,s1):1
      SOS1_gstore_min_rt(gs1,t22,s1):2
- s2960:  S1 :: mu_gsinMax_rt(gs1,t22,s2):1 SOS1_gsinMax_rt(gs1,t22,s2):2
- s2961:  S1 :: mu_gsoutMax_rt(gs1,t22,s2):1 SOS1_gsoutMax_rt(gs1,t22,s2):2
- s2962:  S1 :: mu_gstore_max_rt(gs1,t22,s2):1
+ s2672:  S1 :: mu_gsinMax_rt(gs1,t22,s2):1 SOS1_gsinMax_rt(gs1,t22,s2):2
+ s2673:  S1 :: mu_gsoutMax_rt(gs1,t22,s2):1 SOS1_gsoutMax_rt(gs1,t22,s2):2
+ s2674:  S1 :: mu_gstore_max_rt(gs1,t22,s2):1
      SOS1_gstore_max_rt(gs1,t22,s2):2
- s2963:  S1 :: mu_gstore_min_rt(gs1,t22,s2):1
+ s2675:  S1 :: mu_gstore_min_rt(gs1,t22,s2):1
      SOS1_gstore_min_rt(gs1,t22,s2):2
- s2964:  S1 :: mu_gsinMax_rt(gs1,t23,s1):1 SOS1_gsinMax_rt(gs1,t23,s1):2
- s2965:  S1 :: mu_gsoutMax_rt(gs1,t23,s1):1 SOS1_gsoutMax_rt(gs1,t23,s1):2
- s2966:  S1 :: mu_gstore_max_rt(gs1,t23,s1):1
+ s2676:  S1 :: mu_gsinMax_rt(gs1,t23,s1):1 SOS1_gsinMax_rt(gs1,t23,s1):2
+ s2677:  S1 :: mu_gsoutMax_rt(gs1,t23,s1):1 SOS1_gsoutMax_rt(gs1,t23,s1):2
+ s2678:  S1 :: mu_gstore_max_rt(gs1,t23,s1):1
      SOS1_gstore_max_rt(gs1,t23,s1):2
- s2967:  S1 :: mu_gstore_min_rt(gs1,t23,s1):1
+ s2679:  S1 :: mu_gstore_min_rt(gs1,t23,s1):1
      SOS1_gstore_min_rt(gs1,t23,s1):2
- s2968:  S1 :: mu_gsinMax_rt(gs1,t23,s2):1 SOS1_gsinMax_rt(gs1,t23,s2):2
- s2969:  S1 :: mu_gsoutMax_rt(gs1,t23,s2):1 SOS1_gsoutMax_rt(gs1,t23,s2):2
- s2970:  S1 :: mu_gstore_max_rt(gs1,t23,s2):1
+ s2680:  S1 :: mu_gsinMax_rt(gs1,t23,s2):1 SOS1_gsinMax_rt(gs1,t23,s2):2
+ s2681:  S1 :: mu_gsoutMax_rt(gs1,t23,s2):1 SOS1_gsoutMax_rt(gs1,t23,s2):2
+ s2682:  S1 :: mu_gstore_max_rt(gs1,t23,s2):1
      SOS1_gstore_max_rt(gs1,t23,s2):2
- s2971:  S1 :: mu_gstore_min_rt(gs1,t23,s2):1
+ s2683:  S1 :: mu_gstore_min_rt(gs1,t23,s2):1
      SOS1_gstore_min_rt(gs1,t23,s2):2
- s2972:  S1 :: mu_gsinMax_rt(gs1,t24,s1):1 SOS1_gsinMax_rt(gs1,t24,s1):2
- s2973:  S1 :: mu_gsoutMax_rt(gs1,t24,s1):1 SOS1_gsoutMax_rt(gs1,t24,s1):2
- s2974:  S1 :: mu_gstore_max_rt(gs1,t24,s1):1
+ s2684:  S1 :: mu_gsinMax_rt(gs1,t24,s1):1 SOS1_gsinMax_rt(gs1,t24,s1):2
+ s2685:  S1 :: mu_gsoutMax_rt(gs1,t24,s1):1 SOS1_gsoutMax_rt(gs1,t24,s1):2
+ s2686:  S1 :: mu_gstore_max_rt(gs1,t24,s1):1
      SOS1_gstore_max_rt(gs1,t24,s1):2
- s2975:  S1 :: mu_gstore_min_rt(gs1,t24,s1):1
+ s2687:  S1 :: mu_gstore_min_rt(gs1,t24,s1):1
      SOS1_gstore_min_rt(gs1,t24,s1):2
- s2976:  S1 :: mu_gsinMax_rt(gs1,t24,s2):1 SOS1_gsinMax_rt(gs1,t24,s2):2
- s2977:  S1 :: mu_gsoutMax_rt(gs1,t24,s2):1 SOS1_gsoutMax_rt(gs1,t24,s2):2
- s2978:  S1 :: mu_gstore_max_rt(gs1,t24,s2):1
+ s2688:  S1 :: mu_gsinMax_rt(gs1,t24,s2):1 SOS1_gsinMax_rt(gs1,t24,s2):2
+ s2689:  S1 :: mu_gsoutMax_rt(gs1,t24,s2):1 SOS1_gsoutMax_rt(gs1,t24,s2):2
+ s2690:  S1 :: mu_gstore_max_rt(gs1,t24,s2):1
      SOS1_gstore_max_rt(gs1,t24,s2):2
- s2979:  S1 :: mu_gstore_min_rt(gs1,t24,s2):1
+ s2691:  S1 :: mu_gstore_min_rt(gs1,t24,s2):1
      SOS1_gstore_min_rt(gs1,t24,s2):2
- s2980:  S1 :: mu_gstor_def_rt(gs1,s1,t2)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t2)_geq:2
- s2981:  S1 :: mu_gstor_def_rt(gs1,s1,t2)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t2)_leq:2
- s2982:  S1 :: mu_gstor_def_rt(gs1,s1,t3)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t3)_geq:2
- s2983:  S1 :: mu_gstor_def_rt(gs1,s1,t3)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t3)_leq:2
- s2984:  S1 :: mu_gstor_def_rt(gs1,s1,t4)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t4)_geq:2
- s2985:  S1 :: mu_gstor_def_rt(gs1,s1,t4)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t4)_leq:2
- s2986:  S1 :: mu_gstor_def_rt(gs1,s1,t5)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t5)_geq:2
- s2987:  S1 :: mu_gstor_def_rt(gs1,s1,t5)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t5)_leq:2
- s2988:  S1 :: mu_gstor_def_rt(gs1,s1,t6)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t6)_geq:2
- s2989:  S1 :: mu_gstor_def_rt(gs1,s1,t6)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t6)_leq:2
- s2990:  S1 :: mu_gstor_def_rt(gs1,s1,t7)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t7)_geq:2
- s2991:  S1 :: mu_gstor_def_rt(gs1,s1,t7)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t7)_leq:2
- s2992:  S1 :: mu_gstor_def_rt(gs1,s1,t8)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t8)_geq:2
- s2993:  S1 :: mu_gstor_def_rt(gs1,s1,t8)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t8)_leq:2
- s2994:  S1 :: mu_gstor_def_rt(gs1,s1,t9)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t9)_geq:2
- s2995:  S1 :: mu_gstor_def_rt(gs1,s1,t9)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t9)_leq:2
- s2996:  S1 :: mu_gstor_def_rt(gs1,s1,t10)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t10)_geq:2
- s2997:  S1 :: mu_gstor_def_rt(gs1,s1,t10)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t10)_leq:2
- s2998:  S1 :: mu_gstor_def_rt(gs1,s1,t11)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t11)_geq:2
- s2999:  S1 :: mu_gstor_def_rt(gs1,s1,t11)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t11)_leq:2
- s3000:  S1 :: mu_gstor_def_rt(gs1,s1,t12)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t12)_geq:2
- s3001:  S1 :: mu_gstor_def_rt(gs1,s1,t12)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t12)_leq:2
- s3002:  S1 :: mu_gstor_def_rt(gs1,s1,t13)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t13)_geq:2
- s3003:  S1 :: mu_gstor_def_rt(gs1,s1,t13)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t13)_leq:2
- s3004:  S1 :: mu_gstor_def_rt(gs1,s1,t14)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t14)_geq:2
- s3005:  S1 :: mu_gstor_def_rt(gs1,s1,t14)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t14)_leq:2
- s3006:  S1 :: mu_gstor_def_rt(gs1,s1,t15)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t15)_geq:2
- s3007:  S1 :: mu_gstor_def_rt(gs1,s1,t15)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t15)_leq:2
- s3008:  S1 :: mu_gstor_def_rt(gs1,s1,t16)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t16)_geq:2
- s3009:  S1 :: mu_gstor_def_rt(gs1,s1,t16)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t16)_leq:2
- s3010:  S1 :: mu_gstor_def_rt(gs1,s1,t17)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t17)_geq:2
- s3011:  S1 :: mu_gstor_def_rt(gs1,s1,t17)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t17)_leq:2
- s3012:  S1 :: mu_gstor_def_rt(gs1,s1,t18)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t18)_geq:2
- s3013:  S1 :: mu_gstor_def_rt(gs1,s1,t18)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t18)_leq:2
- s3014:  S1 :: mu_gstor_def_rt(gs1,s1,t19)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t19)_geq:2
- s3015:  S1 :: mu_gstor_def_rt(gs1,s1,t19)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t19)_leq:2
- s3016:  S1 :: mu_gstor_def_rt(gs1,s1,t20)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t20)_geq:2
- s3017:  S1 :: mu_gstor_def_rt(gs1,s1,t20)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t20)_leq:2
- s3018:  S1 :: mu_gstor_def_rt(gs1,s1,t21)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t21)_geq:2
- s3019:  S1 :: mu_gstor_def_rt(gs1,s1,t21)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t21)_leq:2
- s3020:  S1 :: mu_gstor_def_rt(gs1,s1,t22)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t22)_geq:2
- s3021:  S1 :: mu_gstor_def_rt(gs1,s1,t22)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t22)_leq:2
- s3022:  S1 :: mu_gstor_def_rt(gs1,s1,t23)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t23)_geq:2
- s3023:  S1 :: mu_gstor_def_rt(gs1,s1,t23)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t23)_leq:2
- s3024:  S1 :: mu_gstor_def_rt(gs1,s1,t24)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t24)_geq:2
- s3025:  S1 :: mu_gstor_def_rt(gs1,s1,t24)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t24)_leq:2
- s3026:  S1 :: mu_gstor_def_rt(gs1,s1,t1)_geq:1
-     SOS1_gstor_def_rt(gs1,s1,t1)_geq:2
- s3027:  S1 :: mu_gstor_def_rt(gs1,s1,t1)_leq:1
-     SOS1_gstor_def_rt(gs1,s1,t1)_leq:2
- s3028:  S1 :: mu_gstor_end(gs1,s1):1 SOS1_gstor_end(gs1,s1):2
- s3029:  S1 :: mu_gstor_def_rt(gs1,s2,t2)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t2)_geq:2
- s3030:  S1 :: mu_gstor_def_rt(gs1,s2,t2)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t2)_leq:2
- s3031:  S1 :: mu_gstor_def_rt(gs1,s2,t3)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t3)_geq:2
- s3032:  S1 :: mu_gstor_def_rt(gs1,s2,t3)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t3)_leq:2
- s3033:  S1 :: mu_gstor_def_rt(gs1,s2,t4)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t4)_geq:2
- s3034:  S1 :: mu_gstor_def_rt(gs1,s2,t4)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t4)_leq:2
- s3035:  S1 :: mu_gstor_def_rt(gs1,s2,t5)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t5)_geq:2
- s3036:  S1 :: mu_gstor_def_rt(gs1,s2,t5)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t5)_leq:2
- s3037:  S1 :: mu_gstor_def_rt(gs1,s2,t6)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t6)_geq:2
- s3038:  S1 :: mu_gstor_def_rt(gs1,s2,t6)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t6)_leq:2
- s3039:  S1 :: mu_gstor_def_rt(gs1,s2,t7)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t7)_geq:2
- s3040:  S1 :: mu_gstor_def_rt(gs1,s2,t7)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t7)_leq:2
- s3041:  S1 :: mu_gstor_def_rt(gs1,s2,t8)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t8)_geq:2
- s3042:  S1 :: mu_gstor_def_rt(gs1,s2,t8)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t8)_leq:2
- s3043:  S1 :: mu_gstor_def_rt(gs1,s2,t9)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t9)_geq:2
- s3044:  S1 :: mu_gstor_def_rt(gs1,s2,t9)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t9)_leq:2
- s3045:  S1 :: mu_gstor_def_rt(gs1,s2,t10)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t10)_geq:2
- s3046:  S1 :: mu_gstor_def_rt(gs1,s2,t10)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t10)_leq:2
- s3047:  S1 :: mu_gstor_def_rt(gs1,s2,t11)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t11)_geq:2
- s3048:  S1 :: mu_gstor_def_rt(gs1,s2,t11)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t11)_leq:2
- s3049:  S1 :: mu_gstor_def_rt(gs1,s2,t12)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t12)_geq:2
- s3050:  S1 :: mu_gstor_def_rt(gs1,s2,t12)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t12)_leq:2
- s3051:  S1 :: mu_gstor_def_rt(gs1,s2,t13)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t13)_geq:2
- s3052:  S1 :: mu_gstor_def_rt(gs1,s2,t13)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t13)_leq:2
- s3053:  S1 :: mu_gstor_def_rt(gs1,s2,t14)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t14)_geq:2
- s3054:  S1 :: mu_gstor_def_rt(gs1,s2,t14)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t14)_leq:2
- s3055:  S1 :: mu_gstor_def_rt(gs1,s2,t15)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t15)_geq:2
- s3056:  S1 :: mu_gstor_def_rt(gs1,s2,t15)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t15)_leq:2
- s3057:  S1 :: mu_gstor_def_rt(gs1,s2,t16)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t16)_geq:2
- s3058:  S1 :: mu_gstor_def_rt(gs1,s2,t16)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t16)_leq:2
- s3059:  S1 :: mu_gstor_def_rt(gs1,s2,t17)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t17)_geq:2
- s3060:  S1 :: mu_gstor_def_rt(gs1,s2,t17)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t17)_leq:2
- s3061:  S1 :: mu_gstor_def_rt(gs1,s2,t18)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t18)_geq:2
- s3062:  S1 :: mu_gstor_def_rt(gs1,s2,t18)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t18)_leq:2
- s3063:  S1 :: mu_gstor_def_rt(gs1,s2,t19)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t19)_geq:2
- s3064:  S1 :: mu_gstor_def_rt(gs1,s2,t19)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t19)_leq:2
- s3065:  S1 :: mu_gstor_def_rt(gs1,s2,t20)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t20)_geq:2
- s3066:  S1 :: mu_gstor_def_rt(gs1,s2,t20)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t20)_leq:2
- s3067:  S1 :: mu_gstor_def_rt(gs1,s2,t21)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t21)_geq:2
- s3068:  S1 :: mu_gstor_def_rt(gs1,s2,t21)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t21)_leq:2
- s3069:  S1 :: mu_gstor_def_rt(gs1,s2,t22)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t22)_geq:2
- s3070:  S1 :: mu_gstor_def_rt(gs1,s2,t22)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t22)_leq:2
- s3071:  S1 :: mu_gstor_def_rt(gs1,s2,t23)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t23)_geq:2
- s3072:  S1 :: mu_gstor_def_rt(gs1,s2,t23)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t23)_leq:2
- s3073:  S1 :: mu_gstor_def_rt(gs1,s2,t24)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t24)_geq:2
- s3074:  S1 :: mu_gstor_def_rt(gs1,s2,t24)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t24)_leq:2
- s3075:  S1 :: mu_gstor_def_rt(gs1,s2,t1)_geq:1
-     SOS1_gstor_def_rt(gs1,s2,t1)_geq:2
- s3076:  S1 :: mu_gstor_def_rt(gs1,s2,t1)_leq:1
-     SOS1_gstor_def_rt(gs1,s2,t1)_leq:2
- s3077:  S1 :: mu_gstor_end(gs1,s2):1 SOS1_gstor_end(gs1,s2):2
- s3078:  S1 :: mu_gas_shed_rt(ng101,s1,t1):1
+ s2692:  S1 :: mu_gstor_end(gs1,s1):1 SOS1_gstor_end(gs1,s1):2
+ s2693:  S1 :: mu_gstor_end(gs1,s2):1 SOS1_gstor_end(gs1,s2):2
+ s2694:  S1 :: mu_gas_shed_rt(ng101,s1,t1):1
      SOS1_gas_shed_rt(ng101,s1,t1):2
- s3079:  S1 :: mu_gas_shed_rt(ng101,s1,t2):1
+ s2695:  S1 :: mu_gas_shed_rt(ng101,s1,t2):1
      SOS1_gas_shed_rt(ng101,s1,t2):2
- s3080:  S1 :: mu_gas_shed_rt(ng101,s1,t3):1
+ s2696:  S1 :: mu_gas_shed_rt(ng101,s1,t3):1
      SOS1_gas_shed_rt(ng101,s1,t3):2
- s3081:  S1 :: mu_gas_shed_rt(ng101,s1,t4):1
+ s2697:  S1 :: mu_gas_shed_rt(ng101,s1,t4):1
      SOS1_gas_shed_rt(ng101,s1,t4):2
- s3082:  S1 :: mu_gas_shed_rt(ng101,s1,t5):1
+ s2698:  S1 :: mu_gas_shed_rt(ng101,s1,t5):1
      SOS1_gas_shed_rt(ng101,s1,t5):2
- s3083:  S1 :: mu_gas_shed_rt(ng101,s1,t6):1
+ s2699:  S1 :: mu_gas_shed_rt(ng101,s1,t6):1
      SOS1_gas_shed_rt(ng101,s1,t6):2
- s3084:  S1 :: mu_gas_shed_rt(ng101,s1,t7):1
+ s2700:  S1 :: mu_gas_shed_rt(ng101,s1,t7):1
      SOS1_gas_shed_rt(ng101,s1,t7):2
- s3085:  S1 :: mu_gas_shed_rt(ng101,s1,t8):1
+ s2701:  S1 :: mu_gas_shed_rt(ng101,s1,t8):1
      SOS1_gas_shed_rt(ng101,s1,t8):2
- s3086:  S1 :: mu_gas_shed_rt(ng101,s1,t9):1
+ s2702:  S1 :: mu_gas_shed_rt(ng101,s1,t9):1
      SOS1_gas_shed_rt(ng101,s1,t9):2
- s3087:  S1 :: mu_gas_shed_rt(ng101,s1,t10):1
+ s2703:  S1 :: mu_gas_shed_rt(ng101,s1,t10):1
      SOS1_gas_shed_rt(ng101,s1,t10):2
- s3088:  S1 :: mu_gas_shed_rt(ng101,s1,t11):1
+ s2704:  S1 :: mu_gas_shed_rt(ng101,s1,t11):1
      SOS1_gas_shed_rt(ng101,s1,t11):2
- s3089:  S1 :: mu_gas_shed_rt(ng101,s1,t12):1
+ s2705:  S1 :: mu_gas_shed_rt(ng101,s1,t12):1
      SOS1_gas_shed_rt(ng101,s1,t12):2
- s3090:  S1 :: mu_gas_shed_rt(ng101,s1,t13):1
+ s2706:  S1 :: mu_gas_shed_rt(ng101,s1,t13):1
      SOS1_gas_shed_rt(ng101,s1,t13):2
- s3091:  S1 :: mu_gas_shed_rt(ng101,s1,t14):1
+ s2707:  S1 :: mu_gas_shed_rt(ng101,s1,t14):1
      SOS1_gas_shed_rt(ng101,s1,t14):2
- s3092:  S1 :: mu_gas_shed_rt(ng101,s1,t15):1
+ s2708:  S1 :: mu_gas_shed_rt(ng101,s1,t15):1
      SOS1_gas_shed_rt(ng101,s1,t15):2
- s3093:  S1 :: mu_gas_shed_rt(ng101,s1,t16):1
+ s2709:  S1 :: mu_gas_shed_rt(ng101,s1,t16):1
      SOS1_gas_shed_rt(ng101,s1,t16):2
- s3094:  S1 :: mu_gas_shed_rt(ng101,s1,t17):1
+ s2710:  S1 :: mu_gas_shed_rt(ng101,s1,t17):1
      SOS1_gas_shed_rt(ng101,s1,t17):2
- s3095:  S1 :: mu_gas_shed_rt(ng101,s1,t18):1
+ s2711:  S1 :: mu_gas_shed_rt(ng101,s1,t18):1
      SOS1_gas_shed_rt(ng101,s1,t18):2
- s3096:  S1 :: mu_gas_shed_rt(ng101,s1,t19):1
+ s2712:  S1 :: mu_gas_shed_rt(ng101,s1,t19):1
      SOS1_gas_shed_rt(ng101,s1,t19):2
- s3097:  S1 :: mu_gas_shed_rt(ng101,s1,t20):1
+ s2713:  S1 :: mu_gas_shed_rt(ng101,s1,t20):1
      SOS1_gas_shed_rt(ng101,s1,t20):2
- s3098:  S1 :: mu_gas_shed_rt(ng101,s1,t21):1
+ s2714:  S1 :: mu_gas_shed_rt(ng101,s1,t21):1
      SOS1_gas_shed_rt(ng101,s1,t21):2
- s3099:  S1 :: mu_gas_shed_rt(ng101,s1,t22):1
+ s2715:  S1 :: mu_gas_shed_rt(ng101,s1,t22):1
      SOS1_gas_shed_rt(ng101,s1,t22):2
- s3100:  S1 :: mu_gas_shed_rt(ng101,s1,t23):1
+ s2716:  S1 :: mu_gas_shed_rt(ng101,s1,t23):1
      SOS1_gas_shed_rt(ng101,s1,t23):2
- s3101:  S1 :: mu_gas_shed_rt(ng101,s1,t24):1
+ s2717:  S1 :: mu_gas_shed_rt(ng101,s1,t24):1
      SOS1_gas_shed_rt(ng101,s1,t24):2
- s3102:  S1 :: mu_gas_shed_rt(ng102,s1,t1):1
+ s2718:  S1 :: mu_gas_shed_rt(ng102,s1,t1):1
      SOS1_gas_shed_rt(ng102,s1,t1):2
- s3103:  S1 :: mu_gas_shed_rt(ng102,s1,t2):1
+ s2719:  S1 :: mu_gas_shed_rt(ng102,s1,t2):1
      SOS1_gas_shed_rt(ng102,s1,t2):2
- s3104:  S1 :: mu_gas_shed_rt(ng102,s1,t3):1
+ s2720:  S1 :: mu_gas_shed_rt(ng102,s1,t3):1
      SOS1_gas_shed_rt(ng102,s1,t3):2
- s3105:  S1 :: mu_gas_shed_rt(ng102,s1,t4):1
+ s2721:  S1 :: mu_gas_shed_rt(ng102,s1,t4):1
      SOS1_gas_shed_rt(ng102,s1,t4):2
- s3106:  S1 :: mu_gas_shed_rt(ng102,s1,t5):1
+ s2722:  S1 :: mu_gas_shed_rt(ng102,s1,t5):1
      SOS1_gas_shed_rt(ng102,s1,t5):2
- s3107:  S1 :: mu_gas_shed_rt(ng102,s1,t6):1
+ s2723:  S1 :: mu_gas_shed_rt(ng102,s1,t6):1
      SOS1_gas_shed_rt(ng102,s1,t6):2
- s3108:  S1 :: mu_gas_shed_rt(ng102,s1,t7):1
+ s2724:  S1 :: mu_gas_shed_rt(ng102,s1,t7):1
      SOS1_gas_shed_rt(ng102,s1,t7):2
- s3109:  S1 :: mu_gas_shed_rt(ng102,s1,t8):1
+ s2725:  S1 :: mu_gas_shed_rt(ng102,s1,t8):1
      SOS1_gas_shed_rt(ng102,s1,t8):2
- s3110:  S1 :: mu_gas_shed_rt(ng102,s1,t9):1
+ s2726:  S1 :: mu_gas_shed_rt(ng102,s1,t9):1
      SOS1_gas_shed_rt(ng102,s1,t9):2
- s3111:  S1 :: mu_gas_shed_rt(ng102,s1,t10):1
+ s2727:  S1 :: mu_gas_shed_rt(ng102,s1,t10):1
      SOS1_gas_shed_rt(ng102,s1,t10):2
- s3112:  S1 :: mu_gas_shed_rt(ng102,s1,t11):1
+ s2728:  S1 :: mu_gas_shed_rt(ng102,s1,t11):1
      SOS1_gas_shed_rt(ng102,s1,t11):2
- s3113:  S1 :: mu_gas_shed_rt(ng102,s1,t12):1
+ s2729:  S1 :: mu_gas_shed_rt(ng102,s1,t12):1
      SOS1_gas_shed_rt(ng102,s1,t12):2
- s3114:  S1 :: mu_gas_shed_rt(ng102,s1,t13):1
+ s2730:  S1 :: mu_gas_shed_rt(ng102,s1,t13):1
      SOS1_gas_shed_rt(ng102,s1,t13):2
- s3115:  S1 :: mu_gas_shed_rt(ng102,s1,t14):1
+ s2731:  S1 :: mu_gas_shed_rt(ng102,s1,t14):1
      SOS1_gas_shed_rt(ng102,s1,t14):2
- s3116:  S1 :: mu_gas_shed_rt(ng102,s1,t15):1
+ s2732:  S1 :: mu_gas_shed_rt(ng102,s1,t15):1
      SOS1_gas_shed_rt(ng102,s1,t15):2
- s3117:  S1 :: mu_gas_shed_rt(ng102,s1,t16):1
+ s2733:  S1 :: mu_gas_shed_rt(ng102,s1,t16):1
      SOS1_gas_shed_rt(ng102,s1,t16):2
- s3118:  S1 :: mu_gas_shed_rt(ng102,s1,t17):1
+ s2734:  S1 :: mu_gas_shed_rt(ng102,s1,t17):1
      SOS1_gas_shed_rt(ng102,s1,t17):2
- s3119:  S1 :: mu_gas_shed_rt(ng102,s1,t18):1
+ s2735:  S1 :: mu_gas_shed_rt(ng102,s1,t18):1
      SOS1_gas_shed_rt(ng102,s1,t18):2
- s3120:  S1 :: mu_gas_shed_rt(ng102,s1,t19):1
+ s2736:  S1 :: mu_gas_shed_rt(ng102,s1,t19):1
      SOS1_gas_shed_rt(ng102,s1,t19):2
- s3121:  S1 :: mu_gas_shed_rt(ng102,s1,t20):1
+ s2737:  S1 :: mu_gas_shed_rt(ng102,s1,t20):1
      SOS1_gas_shed_rt(ng102,s1,t20):2
- s3122:  S1 :: mu_gas_shed_rt(ng102,s1,t21):1
+ s2738:  S1 :: mu_gas_shed_rt(ng102,s1,t21):1
      SOS1_gas_shed_rt(ng102,s1,t21):2
- s3123:  S1 :: mu_gas_shed_rt(ng102,s1,t22):1
+ s2739:  S1 :: mu_gas_shed_rt(ng102,s1,t22):1
      SOS1_gas_shed_rt(ng102,s1,t22):2
- s3124:  S1 :: mu_gas_shed_rt(ng102,s1,t23):1
+ s2740:  S1 :: mu_gas_shed_rt(ng102,s1,t23):1
      SOS1_gas_shed_rt(ng102,s1,t23):2
- s3125:  S1 :: mu_gas_shed_rt(ng102,s1,t24):1
+ s2741:  S1 :: mu_gas_shed_rt(ng102,s1,t24):1
      SOS1_gas_shed_rt(ng102,s1,t24):2
- s3126:  S1 :: mu_gas_shed_rt(ng101,s2,t1):1
+ s2742:  S1 :: mu_gas_shed_rt(ng101,s2,t1):1
      SOS1_gas_shed_rt(ng101,s2,t1):2
- s3127:  S1 :: mu_gas_shed_rt(ng101,s2,t2):1
+ s2743:  S1 :: mu_gas_shed_rt(ng101,s2,t2):1
      SOS1_gas_shed_rt(ng101,s2,t2):2
- s3128:  S1 :: mu_gas_shed_rt(ng101,s2,t3):1
+ s2744:  S1 :: mu_gas_shed_rt(ng101,s2,t3):1
      SOS1_gas_shed_rt(ng101,s2,t3):2
- s3129:  S1 :: mu_gas_shed_rt(ng101,s2,t4):1
+ s2745:  S1 :: mu_gas_shed_rt(ng101,s2,t4):1
      SOS1_gas_shed_rt(ng101,s2,t4):2
- s3130:  S1 :: mu_gas_shed_rt(ng101,s2,t5):1
+ s2746:  S1 :: mu_gas_shed_rt(ng101,s2,t5):1
      SOS1_gas_shed_rt(ng101,s2,t5):2
- s3131:  S1 :: mu_gas_shed_rt(ng101,s2,t6):1
+ s2747:  S1 :: mu_gas_shed_rt(ng101,s2,t6):1
      SOS1_gas_shed_rt(ng101,s2,t6):2
- s3132:  S1 :: mu_gas_shed_rt(ng101,s2,t7):1
+ s2748:  S1 :: mu_gas_shed_rt(ng101,s2,t7):1
      SOS1_gas_shed_rt(ng101,s2,t7):2
- s3133:  S1 :: mu_gas_shed_rt(ng101,s2,t8):1
+ s2749:  S1 :: mu_gas_shed_rt(ng101,s2,t8):1
      SOS1_gas_shed_rt(ng101,s2,t8):2
- s3134:  S1 :: mu_gas_shed_rt(ng101,s2,t9):1
+ s2750:  S1 :: mu_gas_shed_rt(ng101,s2,t9):1
      SOS1_gas_shed_rt(ng101,s2,t9):2
- s3135:  S1 :: mu_gas_shed_rt(ng101,s2,t10):1
+ s2751:  S1 :: mu_gas_shed_rt(ng101,s2,t10):1
      SOS1_gas_shed_rt(ng101,s2,t10):2
- s3136:  S1 :: mu_gas_shed_rt(ng101,s2,t11):1
+ s2752:  S1 :: mu_gas_shed_rt(ng101,s2,t11):1
      SOS1_gas_shed_rt(ng101,s2,t11):2
- s3137:  S1 :: mu_gas_shed_rt(ng101,s2,t12):1
+ s2753:  S1 :: mu_gas_shed_rt(ng101,s2,t12):1
      SOS1_gas_shed_rt(ng101,s2,t12):2
- s3138:  S1 :: mu_gas_shed_rt(ng101,s2,t13):1
+ s2754:  S1 :: mu_gas_shed_rt(ng101,s2,t13):1
      SOS1_gas_shed_rt(ng101,s2,t13):2
- s3139:  S1 :: mu_gas_shed_rt(ng101,s2,t14):1
+ s2755:  S1 :: mu_gas_shed_rt(ng101,s2,t14):1
      SOS1_gas_shed_rt(ng101,s2,t14):2
- s3140:  S1 :: mu_gas_shed_rt(ng101,s2,t15):1
+ s2756:  S1 :: mu_gas_shed_rt(ng101,s2,t15):1
      SOS1_gas_shed_rt(ng101,s2,t15):2
- s3141:  S1 :: mu_gas_shed_rt(ng101,s2,t16):1
+ s2757:  S1 :: mu_gas_shed_rt(ng101,s2,t16):1
      SOS1_gas_shed_rt(ng101,s2,t16):2
- s3142:  S1 :: mu_gas_shed_rt(ng101,s2,t17):1
+ s2758:  S1 :: mu_gas_shed_rt(ng101,s2,t17):1
      SOS1_gas_shed_rt(ng101,s2,t17):2
- s3143:  S1 :: mu_gas_shed_rt(ng101,s2,t18):1
+ s2759:  S1 :: mu_gas_shed_rt(ng101,s2,t18):1
      SOS1_gas_shed_rt(ng101,s2,t18):2
- s3144:  S1 :: mu_gas_shed_rt(ng101,s2,t19):1
+ s2760:  S1 :: mu_gas_shed_rt(ng101,s2,t19):1
      SOS1_gas_shed_rt(ng101,s2,t19):2
- s3145:  S1 :: mu_gas_shed_rt(ng101,s2,t20):1
+ s2761:  S1 :: mu_gas_shed_rt(ng101,s2,t20):1
      SOS1_gas_shed_rt(ng101,s2,t20):2
- s3146:  S1 :: mu_gas_shed_rt(ng101,s2,t21):1
+ s2762:  S1 :: mu_gas_shed_rt(ng101,s2,t21):1
      SOS1_gas_shed_rt(ng101,s2,t21):2
- s3147:  S1 :: mu_gas_shed_rt(ng101,s2,t22):1
+ s2763:  S1 :: mu_gas_shed_rt(ng101,s2,t22):1
      SOS1_gas_shed_rt(ng101,s2,t22):2
- s3148:  S1 :: mu_gas_shed_rt(ng101,s2,t23):1
+ s2764:  S1 :: mu_gas_shed_rt(ng101,s2,t23):1
      SOS1_gas_shed_rt(ng101,s2,t23):2
- s3149:  S1 :: mu_gas_shed_rt(ng101,s2,t24):1
+ s2765:  S1 :: mu_gas_shed_rt(ng101,s2,t24):1
      SOS1_gas_shed_rt(ng101,s2,t24):2
- s3150:  S1 :: mu_gas_shed_rt(ng102,s2,t1):1
+ s2766:  S1 :: mu_gas_shed_rt(ng102,s2,t1):1
      SOS1_gas_shed_rt(ng102,s2,t1):2
- s3151:  S1 :: mu_gas_shed_rt(ng102,s2,t2):1
+ s2767:  S1 :: mu_gas_shed_rt(ng102,s2,t2):1
      SOS1_gas_shed_rt(ng102,s2,t2):2
- s3152:  S1 :: mu_gas_shed_rt(ng102,s2,t3):1
+ s2768:  S1 :: mu_gas_shed_rt(ng102,s2,t3):1
      SOS1_gas_shed_rt(ng102,s2,t3):2
- s3153:  S1 :: mu_gas_shed_rt(ng102,s2,t4):1
+ s2769:  S1 :: mu_gas_shed_rt(ng102,s2,t4):1
      SOS1_gas_shed_rt(ng102,s2,t4):2
- s3154:  S1 :: mu_gas_shed_rt(ng102,s2,t5):1
+ s2770:  S1 :: mu_gas_shed_rt(ng102,s2,t5):1
      SOS1_gas_shed_rt(ng102,s2,t5):2
- s3155:  S1 :: mu_gas_shed_rt(ng102,s2,t6):1
+ s2771:  S1 :: mu_gas_shed_rt(ng102,s2,t6):1
      SOS1_gas_shed_rt(ng102,s2,t6):2
- s3156:  S1 :: mu_gas_shed_rt(ng102,s2,t7):1
+ s2772:  S1 :: mu_gas_shed_rt(ng102,s2,t7):1
      SOS1_gas_shed_rt(ng102,s2,t7):2
- s3157:  S1 :: mu_gas_shed_rt(ng102,s2,t8):1
+ s2773:  S1 :: mu_gas_shed_rt(ng102,s2,t8):1
      SOS1_gas_shed_rt(ng102,s2,t8):2
- s3158:  S1 :: mu_gas_shed_rt(ng102,s2,t9):1
+ s2774:  S1 :: mu_gas_shed_rt(ng102,s2,t9):1
      SOS1_gas_shed_rt(ng102,s2,t9):2
- s3159:  S1 :: mu_gas_shed_rt(ng102,s2,t10):1
+ s2775:  S1 :: mu_gas_shed_rt(ng102,s2,t10):1
      SOS1_gas_shed_rt(ng102,s2,t10):2
- s3160:  S1 :: mu_gas_shed_rt(ng102,s2,t11):1
+ s2776:  S1 :: mu_gas_shed_rt(ng102,s2,t11):1
      SOS1_gas_shed_rt(ng102,s2,t11):2
- s3161:  S1 :: mu_gas_shed_rt(ng102,s2,t12):1
+ s2777:  S1 :: mu_gas_shed_rt(ng102,s2,t12):1
      SOS1_gas_shed_rt(ng102,s2,t12):2
- s3162:  S1 :: mu_gas_shed_rt(ng102,s2,t13):1
+ s2778:  S1 :: mu_gas_shed_rt(ng102,s2,t13):1
      SOS1_gas_shed_rt(ng102,s2,t13):2
- s3163:  S1 :: mu_gas_shed_rt(ng102,s2,t14):1
+ s2779:  S1 :: mu_gas_shed_rt(ng102,s2,t14):1
      SOS1_gas_shed_rt(ng102,s2,t14):2
- s3164:  S1 :: mu_gas_shed_rt(ng102,s2,t15):1
+ s2780:  S1 :: mu_gas_shed_rt(ng102,s2,t15):1
      SOS1_gas_shed_rt(ng102,s2,t15):2
- s3165:  S1 :: mu_gas_shed_rt(ng102,s2,t16):1
+ s2781:  S1 :: mu_gas_shed_rt(ng102,s2,t16):1
      SOS1_gas_shed_rt(ng102,s2,t16):2
- s3166:  S1 :: mu_gas_shed_rt(ng102,s2,t17):1
+ s2782:  S1 :: mu_gas_shed_rt(ng102,s2,t17):1
      SOS1_gas_shed_rt(ng102,s2,t17):2
- s3167:  S1 :: mu_gas_shed_rt(ng102,s2,t18):1
+ s2783:  S1 :: mu_gas_shed_rt(ng102,s2,t18):1
      SOS1_gas_shed_rt(ng102,s2,t18):2
- s3168:  S1 :: mu_gas_shed_rt(ng102,s2,t19):1
+ s2784:  S1 :: mu_gas_shed_rt(ng102,s2,t19):1
      SOS1_gas_shed_rt(ng102,s2,t19):2
- s3169:  S1 :: mu_gas_shed_rt(ng102,s2,t20):1
+ s2785:  S1 :: mu_gas_shed_rt(ng102,s2,t20):1
      SOS1_gas_shed_rt(ng102,s2,t20):2
- s3170:  S1 :: mu_gas_shed_rt(ng102,s2,t21):1
+ s2786:  S1 :: mu_gas_shed_rt(ng102,s2,t21):1
      SOS1_gas_shed_rt(ng102,s2,t21):2
- s3171:  S1 :: mu_gas_shed_rt(ng102,s2,t22):1
+ s2787:  S1 :: mu_gas_shed_rt(ng102,s2,t22):1
      SOS1_gas_shed_rt(ng102,s2,t22):2
- s3172:  S1 :: mu_gas_shed_rt(ng102,s2,t23):1
+ s2788:  S1 :: mu_gas_shed_rt(ng102,s2,t23):1
      SOS1_gas_shed_rt(ng102,s2,t23):2
- s3173:  S1 :: mu_gas_shed_rt(ng102,s2,t24):1
+ s2789:  S1 :: mu_gas_shed_rt(ng102,s2,t24):1
      SOS1_gas_shed_rt(ng102,s2,t24):2
- s3174:  S1 :: mu_gas_balance(ng101,s1,t1)_geq:1
-     SOS1_gas_balance(ng101,s1,t1)_geq:2
- s3175:  S1 :: mu_gas_balance(ng101,s1,t1)_leq:1
-     SOS1_gas_balance(ng101,s1,t1)_leq:2
- s3176:  S1 :: mu_gas_balance(ng101,s1,t2)_geq:1
-     SOS1_gas_balance(ng101,s1,t2)_geq:2
- s3177:  S1 :: mu_gas_balance(ng101,s1,t2)_leq:1
-     SOS1_gas_balance(ng101,s1,t2)_leq:2
- s3178:  S1 :: mu_gas_balance(ng101,s1,t3)_geq:1
-     SOS1_gas_balance(ng101,s1,t3)_geq:2
- s3179:  S1 :: mu_gas_balance(ng101,s1,t3)_leq:1
-     SOS1_gas_balance(ng101,s1,t3)_leq:2
- s3180:  S1 :: mu_gas_balance(ng101,s1,t4)_geq:1
-     SOS1_gas_balance(ng101,s1,t4)_geq:2
- s3181:  S1 :: mu_gas_balance(ng101,s1,t4)_leq:1
-     SOS1_gas_balance(ng101,s1,t4)_leq:2
- s3182:  S1 :: mu_gas_balance(ng101,s1,t5)_geq:1
-     SOS1_gas_balance(ng101,s1,t5)_geq:2
- s3183:  S1 :: mu_gas_balance(ng101,s1,t5)_leq:1
-     SOS1_gas_balance(ng101,s1,t5)_leq:2
- s3184:  S1 :: mu_gas_balance(ng101,s1,t6)_geq:1
-     SOS1_gas_balance(ng101,s1,t6)_geq:2
- s3185:  S1 :: mu_gas_balance(ng101,s1,t6)_leq:1
-     SOS1_gas_balance(ng101,s1,t6)_leq:2
- s3186:  S1 :: mu_gas_balance(ng101,s1,t7)_geq:1
-     SOS1_gas_balance(ng101,s1,t7)_geq:2
- s3187:  S1 :: mu_gas_balance(ng101,s1,t7)_leq:1
-     SOS1_gas_balance(ng101,s1,t7)_leq:2
- s3188:  S1 :: mu_gas_balance(ng101,s1,t8)_geq:1
-     SOS1_gas_balance(ng101,s1,t8)_geq:2
- s3189:  S1 :: mu_gas_balance(ng101,s1,t8)_leq:1
-     SOS1_gas_balance(ng101,s1,t8)_leq:2
- s3190:  S1 :: mu_gas_balance(ng101,s1,t9)_geq:1
-     SOS1_gas_balance(ng101,s1,t9)_geq:2
- s3191:  S1 :: mu_gas_balance(ng101,s1,t9)_leq:1
-     SOS1_gas_balance(ng101,s1,t9)_leq:2
- s3192:  S1 :: mu_gas_balance(ng101,s1,t10)_geq:1
-     SOS1_gas_balance(ng101,s1,t10)_geq:2
- s3193:  S1 :: mu_gas_balance(ng101,s1,t10)_leq:1
-     SOS1_gas_balance(ng101,s1,t10)_leq:2
- s3194:  S1 :: mu_gas_balance(ng101,s1,t11)_geq:1
-     SOS1_gas_balance(ng101,s1,t11)_geq:2
- s3195:  S1 :: mu_gas_balance(ng101,s1,t11)_leq:1
-     SOS1_gas_balance(ng101,s1,t11)_leq:2
- s3196:  S1 :: mu_gas_balance(ng101,s1,t12)_geq:1
-     SOS1_gas_balance(ng101,s1,t12)_geq:2
- s3197:  S1 :: mu_gas_balance(ng101,s1,t12)_leq:1
-     SOS1_gas_balance(ng101,s1,t12)_leq:2
- s3198:  S1 :: mu_gas_balance(ng101,s1,t13)_geq:1
-     SOS1_gas_balance(ng101,s1,t13)_geq:2
- s3199:  S1 :: mu_gas_balance(ng101,s1,t13)_leq:1
-     SOS1_gas_balance(ng101,s1,t13)_leq:2
- s3200:  S1 :: mu_gas_balance(ng101,s1,t14)_geq:1
-     SOS1_gas_balance(ng101,s1,t14)_geq:2
- s3201:  S1 :: mu_gas_balance(ng101,s1,t14)_leq:1
-     SOS1_gas_balance(ng101,s1,t14)_leq:2
- s3202:  S1 :: mu_gas_balance(ng101,s1,t15)_geq:1
-     SOS1_gas_balance(ng101,s1,t15)_geq:2
- s3203:  S1 :: mu_gas_balance(ng101,s1,t15)_leq:1
-     SOS1_gas_balance(ng101,s1,t15)_leq:2
- s3204:  S1 :: mu_gas_balance(ng101,s1,t16)_geq:1
-     SOS1_gas_balance(ng101,s1,t16)_geq:2
- s3205:  S1 :: mu_gas_balance(ng101,s1,t16)_leq:1
-     SOS1_gas_balance(ng101,s1,t16)_leq:2
- s3206:  S1 :: mu_gas_balance(ng101,s1,t17)_geq:1
-     SOS1_gas_balance(ng101,s1,t17)_geq:2
- s3207:  S1 :: mu_gas_balance(ng101,s1,t17)_leq:1
-     SOS1_gas_balance(ng101,s1,t17)_leq:2
- s3208:  S1 :: mu_gas_balance(ng101,s1,t18)_geq:1
-     SOS1_gas_balance(ng101,s1,t18)_geq:2
- s3209:  S1 :: mu_gas_balance(ng101,s1,t18)_leq:1
-     SOS1_gas_balance(ng101,s1,t18)_leq:2
- s3210:  S1 :: mu_gas_balance(ng101,s1,t19)_geq:1
-     SOS1_gas_balance(ng101,s1,t19)_geq:2
- s3211:  S1 :: mu_gas_balance(ng101,s1,t19)_leq:1
-     SOS1_gas_balance(ng101,s1,t19)_leq:2
- s3212:  S1 :: mu_gas_balance(ng101,s1,t20)_geq:1
-     SOS1_gas_balance(ng101,s1,t20)_geq:2
- s3213:  S1 :: mu_gas_balance(ng101,s1,t20)_leq:1
-     SOS1_gas_balance(ng101,s1,t20)_leq:2
- s3214:  S1 :: mu_gas_balance(ng101,s1,t21)_geq:1
-     SOS1_gas_balance(ng101,s1,t21)_geq:2
- s3215:  S1 :: mu_gas_balance(ng101,s1,t21)_leq:1
-     SOS1_gas_balance(ng101,s1,t21)_leq:2
- s3216:  S1 :: mu_gas_balance(ng101,s1,t22)_geq:1
-     SOS1_gas_balance(ng101,s1,t22)_geq:2
- s3217:  S1 :: mu_gas_balance(ng101,s1,t22)_leq:1
-     SOS1_gas_balance(ng101,s1,t22)_leq:2
- s3218:  S1 :: mu_gas_balance(ng101,s1,t23)_geq:1
-     SOS1_gas_balance(ng101,s1,t23)_geq:2
- s3219:  S1 :: mu_gas_balance(ng101,s1,t23)_leq:1
-     SOS1_gas_balance(ng101,s1,t23)_leq:2
- s3220:  S1 :: mu_gas_balance(ng101,s1,t24)_geq:1
-     SOS1_gas_balance(ng101,s1,t24)_geq:2
- s3221:  S1 :: mu_gas_balance(ng101,s1,t24)_leq:1
-     SOS1_gas_balance(ng101,s1,t24)_leq:2
- s3222:  S1 :: mu_gas_balance(ng102,s1,t1)_geq:1
-     SOS1_gas_balance(ng102,s1,t1)_geq:2
- s3223:  S1 :: mu_gas_balance(ng102,s1,t1)_leq:1
-     SOS1_gas_balance(ng102,s1,t1)_leq:2
- s3224:  S1 :: mu_gas_balance(ng102,s1,t2)_geq:1
-     SOS1_gas_balance(ng102,s1,t2)_geq:2
- s3225:  S1 :: mu_gas_balance(ng102,s1,t2)_leq:1
-     SOS1_gas_balance(ng102,s1,t2)_leq:2
- s3226:  S1 :: mu_gas_balance(ng102,s1,t3)_geq:1
-     SOS1_gas_balance(ng102,s1,t3)_geq:2
- s3227:  S1 :: mu_gas_balance(ng102,s1,t3)_leq:1
-     SOS1_gas_balance(ng102,s1,t3)_leq:2
- s3228:  S1 :: mu_gas_balance(ng102,s1,t4)_geq:1
-     SOS1_gas_balance(ng102,s1,t4)_geq:2
- s3229:  S1 :: mu_gas_balance(ng102,s1,t4)_leq:1
-     SOS1_gas_balance(ng102,s1,t4)_leq:2
- s3230:  S1 :: mu_gas_balance(ng102,s1,t5)_geq:1
-     SOS1_gas_balance(ng102,s1,t5)_geq:2
- s3231:  S1 :: mu_gas_balance(ng102,s1,t5)_leq:1
-     SOS1_gas_balance(ng102,s1,t5)_leq:2
- s3232:  S1 :: mu_gas_balance(ng102,s1,t6)_geq:1
-     SOS1_gas_balance(ng102,s1,t6)_geq:2
- s3233:  S1 :: mu_gas_balance(ng102,s1,t6)_leq:1
-     SOS1_gas_balance(ng102,s1,t6)_leq:2
- s3234:  S1 :: mu_gas_balance(ng102,s1,t7)_geq:1
-     SOS1_gas_balance(ng102,s1,t7)_geq:2
- s3235:  S1 :: mu_gas_balance(ng102,s1,t7)_leq:1
-     SOS1_gas_balance(ng102,s1,t7)_leq:2
- s3236:  S1 :: mu_gas_balance(ng102,s1,t8)_geq:1
-     SOS1_gas_balance(ng102,s1,t8)_geq:2
- s3237:  S1 :: mu_gas_balance(ng102,s1,t8)_leq:1
-     SOS1_gas_balance(ng102,s1,t8)_leq:2
- s3238:  S1 :: mu_gas_balance(ng102,s1,t9)_geq:1
-     SOS1_gas_balance(ng102,s1,t9)_geq:2
- s3239:  S1 :: mu_gas_balance(ng102,s1,t9)_leq:1
-     SOS1_gas_balance(ng102,s1,t9)_leq:2
- s3240:  S1 :: mu_gas_balance(ng102,s1,t10)_geq:1
-     SOS1_gas_balance(ng102,s1,t10)_geq:2
- s3241:  S1 :: mu_gas_balance(ng102,s1,t10)_leq:1
-     SOS1_gas_balance(ng102,s1,t10)_leq:2
- s3242:  S1 :: mu_gas_balance(ng102,s1,t11)_geq:1
-     SOS1_gas_balance(ng102,s1,t11)_geq:2
- s3243:  S1 :: mu_gas_balance(ng102,s1,t11)_leq:1
-     SOS1_gas_balance(ng102,s1,t11)_leq:2
- s3244:  S1 :: mu_gas_balance(ng102,s1,t12)_geq:1
-     SOS1_gas_balance(ng102,s1,t12)_geq:2
- s3245:  S1 :: mu_gas_balance(ng102,s1,t12)_leq:1
-     SOS1_gas_balance(ng102,s1,t12)_leq:2
- s3246:  S1 :: mu_gas_balance(ng102,s1,t13)_geq:1
-     SOS1_gas_balance(ng102,s1,t13)_geq:2
- s3247:  S1 :: mu_gas_balance(ng102,s1,t13)_leq:1
-     SOS1_gas_balance(ng102,s1,t13)_leq:2
- s3248:  S1 :: mu_gas_balance(ng102,s1,t14)_geq:1
-     SOS1_gas_balance(ng102,s1,t14)_geq:2
- s3249:  S1 :: mu_gas_balance(ng102,s1,t14)_leq:1
-     SOS1_gas_balance(ng102,s1,t14)_leq:2
- s3250:  S1 :: mu_gas_balance(ng102,s1,t15)_geq:1
-     SOS1_gas_balance(ng102,s1,t15)_geq:2
- s3251:  S1 :: mu_gas_balance(ng102,s1,t15)_leq:1
-     SOS1_gas_balance(ng102,s1,t15)_leq:2
- s3252:  S1 :: mu_gas_balance(ng102,s1,t16)_geq:1
-     SOS1_gas_balance(ng102,s1,t16)_geq:2
- s3253:  S1 :: mu_gas_balance(ng102,s1,t16)_leq:1
-     SOS1_gas_balance(ng102,s1,t16)_leq:2
- s3254:  S1 :: mu_gas_balance(ng102,s1,t17)_geq:1
-     SOS1_gas_balance(ng102,s1,t17)_geq:2
- s3255:  S1 :: mu_gas_balance(ng102,s1,t17)_leq:1
-     SOS1_gas_balance(ng102,s1,t17)_leq:2
- s3256:  S1 :: mu_gas_balance(ng102,s1,t18)_geq:1
-     SOS1_gas_balance(ng102,s1,t18)_geq:2
- s3257:  S1 :: mu_gas_balance(ng102,s1,t18)_leq:1
-     SOS1_gas_balance(ng102,s1,t18)_leq:2
- s3258:  S1 :: mu_gas_balance(ng102,s1,t19)_geq:1
-     SOS1_gas_balance(ng102,s1,t19)_geq:2
- s3259:  S1 :: mu_gas_balance(ng102,s1,t19)_leq:1
-     SOS1_gas_balance(ng102,s1,t19)_leq:2
- s3260:  S1 :: mu_gas_balance(ng102,s1,t20)_geq:1
-     SOS1_gas_balance(ng102,s1,t20)_geq:2
- s3261:  S1 :: mu_gas_balance(ng102,s1,t20)_leq:1
-     SOS1_gas_balance(ng102,s1,t20)_leq:2
- s3262:  S1 :: mu_gas_balance(ng102,s1,t21)_geq:1
-     SOS1_gas_balance(ng102,s1,t21)_geq:2
- s3263:  S1 :: mu_gas_balance(ng102,s1,t21)_leq:1
-     SOS1_gas_balance(ng102,s1,t21)_leq:2
- s3264:  S1 :: mu_gas_balance(ng102,s1,t22)_geq:1
-     SOS1_gas_balance(ng102,s1,t22)_geq:2
- s3265:  S1 :: mu_gas_balance(ng102,s1,t22)_leq:1
-     SOS1_gas_balance(ng102,s1,t22)_leq:2
- s3266:  S1 :: mu_gas_balance(ng102,s1,t23)_geq:1
-     SOS1_gas_balance(ng102,s1,t23)_geq:2
- s3267:  S1 :: mu_gas_balance(ng102,s1,t23)_leq:1
-     SOS1_gas_balance(ng102,s1,t23)_leq:2
- s3268:  S1 :: mu_gas_balance(ng102,s1,t24)_geq:1
-     SOS1_gas_balance(ng102,s1,t24)_geq:2
- s3269:  S1 :: mu_gas_balance(ng102,s1,t24)_leq:1
-     SOS1_gas_balance(ng102,s1,t24)_leq:2
- s3270:  S1 :: mu_gas_balance(ng101,s2,t1)_geq:1
-     SOS1_gas_balance(ng101,s2,t1)_geq:2
- s3271:  S1 :: mu_gas_balance(ng101,s2,t1)_leq:1
-     SOS1_gas_balance(ng101,s2,t1)_leq:2
- s3272:  S1 :: mu_gas_balance(ng101,s2,t2)_geq:1
-     SOS1_gas_balance(ng101,s2,t2)_geq:2
- s3273:  S1 :: mu_gas_balance(ng101,s2,t2)_leq:1
-     SOS1_gas_balance(ng101,s2,t2)_leq:2
- s3274:  S1 :: mu_gas_balance(ng101,s2,t3)_geq:1
-     SOS1_gas_balance(ng101,s2,t3)_geq:2
- s3275:  S1 :: mu_gas_balance(ng101,s2,t3)_leq:1
-     SOS1_gas_balance(ng101,s2,t3)_leq:2
- s3276:  S1 :: mu_gas_balance(ng101,s2,t4)_geq:1
-     SOS1_gas_balance(ng101,s2,t4)_geq:2
- s3277:  S1 :: mu_gas_balance(ng101,s2,t4)_leq:1
-     SOS1_gas_balance(ng101,s2,t4)_leq:2
- s3278:  S1 :: mu_gas_balance(ng101,s2,t5)_geq:1
-     SOS1_gas_balance(ng101,s2,t5)_geq:2
- s3279:  S1 :: mu_gas_balance(ng101,s2,t5)_leq:1
-     SOS1_gas_balance(ng101,s2,t5)_leq:2
- s3280:  S1 :: mu_gas_balance(ng101,s2,t6)_geq:1
-     SOS1_gas_balance(ng101,s2,t6)_geq:2
- s3281:  S1 :: mu_gas_balance(ng101,s2,t6)_leq:1
-     SOS1_gas_balance(ng101,s2,t6)_leq:2
- s3282:  S1 :: mu_gas_balance(ng101,s2,t7)_geq:1
-     SOS1_gas_balance(ng101,s2,t7)_geq:2
- s3283:  S1 :: mu_gas_balance(ng101,s2,t7)_leq:1
-     SOS1_gas_balance(ng101,s2,t7)_leq:2
- s3284:  S1 :: mu_gas_balance(ng101,s2,t8)_geq:1
-     SOS1_gas_balance(ng101,s2,t8)_geq:2
- s3285:  S1 :: mu_gas_balance(ng101,s2,t8)_leq:1
-     SOS1_gas_balance(ng101,s2,t8)_leq:2
- s3286:  S1 :: mu_gas_balance(ng101,s2,t9)_geq:1
-     SOS1_gas_balance(ng101,s2,t9)_geq:2
- s3287:  S1 :: mu_gas_balance(ng101,s2,t9)_leq:1
-     SOS1_gas_balance(ng101,s2,t9)_leq:2
- s3288:  S1 :: mu_gas_balance(ng101,s2,t10)_geq:1
-     SOS1_gas_balance(ng101,s2,t10)_geq:2
- s3289:  S1 :: mu_gas_balance(ng101,s2,t10)_leq:1
-     SOS1_gas_balance(ng101,s2,t10)_leq:2
- s3290:  S1 :: mu_gas_balance(ng101,s2,t11)_geq:1
-     SOS1_gas_balance(ng101,s2,t11)_geq:2
- s3291:  S1 :: mu_gas_balance(ng101,s2,t11)_leq:1
-     SOS1_gas_balance(ng101,s2,t11)_leq:2
- s3292:  S1 :: mu_gas_balance(ng101,s2,t12)_geq:1
-     SOS1_gas_balance(ng101,s2,t12)_geq:2
- s3293:  S1 :: mu_gas_balance(ng101,s2,t12)_leq:1
-     SOS1_gas_balance(ng101,s2,t12)_leq:2
- s3294:  S1 :: mu_gas_balance(ng101,s2,t13)_geq:1
-     SOS1_gas_balance(ng101,s2,t13)_geq:2
- s3295:  S1 :: mu_gas_balance(ng101,s2,t13)_leq:1
-     SOS1_gas_balance(ng101,s2,t13)_leq:2
- s3296:  S1 :: mu_gas_balance(ng101,s2,t14)_geq:1
-     SOS1_gas_balance(ng101,s2,t14)_geq:2
- s3297:  S1 :: mu_gas_balance(ng101,s2,t14)_leq:1
-     SOS1_gas_balance(ng101,s2,t14)_leq:2
- s3298:  S1 :: mu_gas_balance(ng101,s2,t15)_geq:1
-     SOS1_gas_balance(ng101,s2,t15)_geq:2
- s3299:  S1 :: mu_gas_balance(ng101,s2,t15)_leq:1
-     SOS1_gas_balance(ng101,s2,t15)_leq:2
- s3300:  S1 :: mu_gas_balance(ng101,s2,t16)_geq:1
-     SOS1_gas_balance(ng101,s2,t16)_geq:2
- s3301:  S1 :: mu_gas_balance(ng101,s2,t16)_leq:1
-     SOS1_gas_balance(ng101,s2,t16)_leq:2
- s3302:  S1 :: mu_gas_balance(ng101,s2,t17)_geq:1
-     SOS1_gas_balance(ng101,s2,t17)_geq:2
- s3303:  S1 :: mu_gas_balance(ng101,s2,t17)_leq:1
-     SOS1_gas_balance(ng101,s2,t17)_leq:2
- s3304:  S1 :: mu_gas_balance(ng101,s2,t18)_geq:1
-     SOS1_gas_balance(ng101,s2,t18)_geq:2
- s3305:  S1 :: mu_gas_balance(ng101,s2,t18)_leq:1
-     SOS1_gas_balance(ng101,s2,t18)_leq:2
- s3306:  S1 :: mu_gas_balance(ng101,s2,t19)_geq:1
-     SOS1_gas_balance(ng101,s2,t19)_geq:2
- s3307:  S1 :: mu_gas_balance(ng101,s2,t19)_leq:1
-     SOS1_gas_balance(ng101,s2,t19)_leq:2
- s3308:  S1 :: mu_gas_balance(ng101,s2,t20)_geq:1
-     SOS1_gas_balance(ng101,s2,t20)_geq:2
- s3309:  S1 :: mu_gas_balance(ng101,s2,t20)_leq:1
-     SOS1_gas_balance(ng101,s2,t20)_leq:2
- s3310:  S1 :: mu_gas_balance(ng101,s2,t21)_geq:1
-     SOS1_gas_balance(ng101,s2,t21)_geq:2
- s3311:  S1 :: mu_gas_balance(ng101,s2,t21)_leq:1
-     SOS1_gas_balance(ng101,s2,t21)_leq:2
- s3312:  S1 :: mu_gas_balance(ng101,s2,t22)_geq:1
-     SOS1_gas_balance(ng101,s2,t22)_geq:2
- s3313:  S1 :: mu_gas_balance(ng101,s2,t22)_leq:1
-     SOS1_gas_balance(ng101,s2,t22)_leq:2
- s3314:  S1 :: mu_gas_balance(ng101,s2,t23)_geq:1
-     SOS1_gas_balance(ng101,s2,t23)_geq:2
- s3315:  S1 :: mu_gas_balance(ng101,s2,t23)_leq:1
-     SOS1_gas_balance(ng101,s2,t23)_leq:2
- s3316:  S1 :: mu_gas_balance(ng101,s2,t24)_geq:1
-     SOS1_gas_balance(ng101,s2,t24)_geq:2
- s3317:  S1 :: mu_gas_balance(ng101,s2,t24)_leq:1
-     SOS1_gas_balance(ng101,s2,t24)_leq:2
- s3318:  S1 :: mu_gas_balance(ng102,s2,t1)_geq:1
-     SOS1_gas_balance(ng102,s2,t1)_geq:2
- s3319:  S1 :: mu_gas_balance(ng102,s2,t1)_leq:1
-     SOS1_gas_balance(ng102,s2,t1)_leq:2
- s3320:  S1 :: mu_gas_balance(ng102,s2,t2)_geq:1
-     SOS1_gas_balance(ng102,s2,t2)_geq:2
- s3321:  S1 :: mu_gas_balance(ng102,s2,t2)_leq:1
-     SOS1_gas_balance(ng102,s2,t2)_leq:2
- s3322:  S1 :: mu_gas_balance(ng102,s2,t3)_geq:1
-     SOS1_gas_balance(ng102,s2,t3)_geq:2
- s3323:  S1 :: mu_gas_balance(ng102,s2,t3)_leq:1
-     SOS1_gas_balance(ng102,s2,t3)_leq:2
- s3324:  S1 :: mu_gas_balance(ng102,s2,t4)_geq:1
-     SOS1_gas_balance(ng102,s2,t4)_geq:2
- s3325:  S1 :: mu_gas_balance(ng102,s2,t4)_leq:1
-     SOS1_gas_balance(ng102,s2,t4)_leq:2
- s3326:  S1 :: mu_gas_balance(ng102,s2,t5)_geq:1
-     SOS1_gas_balance(ng102,s2,t5)_geq:2
- s3327:  S1 :: mu_gas_balance(ng102,s2,t5)_leq:1
-     SOS1_gas_balance(ng102,s2,t5)_leq:2
- s3328:  S1 :: mu_gas_balance(ng102,s2,t6)_geq:1
-     SOS1_gas_balance(ng102,s2,t6)_geq:2
- s3329:  S1 :: mu_gas_balance(ng102,s2,t6)_leq:1
-     SOS1_gas_balance(ng102,s2,t6)_leq:2
- s3330:  S1 :: mu_gas_balance(ng102,s2,t7)_geq:1
-     SOS1_gas_balance(ng102,s2,t7)_geq:2
- s3331:  S1 :: mu_gas_balance(ng102,s2,t7)_leq:1
-     SOS1_gas_balance(ng102,s2,t7)_leq:2
- s3332:  S1 :: mu_gas_balance(ng102,s2,t8)_geq:1
-     SOS1_gas_balance(ng102,s2,t8)_geq:2
- s3333:  S1 :: mu_gas_balance(ng102,s2,t8)_leq:1
-     SOS1_gas_balance(ng102,s2,t8)_leq:2
- s3334:  S1 :: mu_gas_balance(ng102,s2,t9)_geq:1
-     SOS1_gas_balance(ng102,s2,t9)_geq:2
- s3335:  S1 :: mu_gas_balance(ng102,s2,t9)_leq:1
-     SOS1_gas_balance(ng102,s2,t9)_leq:2
- s3336:  S1 :: mu_gas_balance(ng102,s2,t10)_geq:1
-     SOS1_gas_balance(ng102,s2,t10)_geq:2
- s3337:  S1 :: mu_gas_balance(ng102,s2,t10)_leq:1
-     SOS1_gas_balance(ng102,s2,t10)_leq:2
- s3338:  S1 :: mu_gas_balance(ng102,s2,t11)_geq:1
-     SOS1_gas_balance(ng102,s2,t11)_geq:2
- s3339:  S1 :: mu_gas_balance(ng102,s2,t11)_leq:1
-     SOS1_gas_balance(ng102,s2,t11)_leq:2
- s3340:  S1 :: mu_gas_balance(ng102,s2,t12)_geq:1
-     SOS1_gas_balance(ng102,s2,t12)_geq:2
- s3341:  S1 :: mu_gas_balance(ng102,s2,t12)_leq:1
-     SOS1_gas_balance(ng102,s2,t12)_leq:2
- s3342:  S1 :: mu_gas_balance(ng102,s2,t13)_geq:1
-     SOS1_gas_balance(ng102,s2,t13)_geq:2
- s3343:  S1 :: mu_gas_balance(ng102,s2,t13)_leq:1
-     SOS1_gas_balance(ng102,s2,t13)_leq:2
- s3344:  S1 :: mu_gas_balance(ng102,s2,t14)_geq:1
-     SOS1_gas_balance(ng102,s2,t14)_geq:2
- s3345:  S1 :: mu_gas_balance(ng102,s2,t14)_leq:1
-     SOS1_gas_balance(ng102,s2,t14)_leq:2
- s3346:  S1 :: mu_gas_balance(ng102,s2,t15)_geq:1
-     SOS1_gas_balance(ng102,s2,t15)_geq:2
- s3347:  S1 :: mu_gas_balance(ng102,s2,t15)_leq:1
-     SOS1_gas_balance(ng102,s2,t15)_leq:2
- s3348:  S1 :: mu_gas_balance(ng102,s2,t16)_geq:1
-     SOS1_gas_balance(ng102,s2,t16)_geq:2
- s3349:  S1 :: mu_gas_balance(ng102,s2,t16)_leq:1
-     SOS1_gas_balance(ng102,s2,t16)_leq:2
- s3350:  S1 :: mu_gas_balance(ng102,s2,t17)_geq:1
-     SOS1_gas_balance(ng102,s2,t17)_geq:2
- s3351:  S1 :: mu_gas_balance(ng102,s2,t17)_leq:1
-     SOS1_gas_balance(ng102,s2,t17)_leq:2
- s3352:  S1 :: mu_gas_balance(ng102,s2,t18)_geq:1
-     SOS1_gas_balance(ng102,s2,t18)_geq:2
- s3353:  S1 :: mu_gas_balance(ng102,s2,t18)_leq:1
-     SOS1_gas_balance(ng102,s2,t18)_leq:2
- s3354:  S1 :: mu_gas_balance(ng102,s2,t19)_geq:1
-     SOS1_gas_balance(ng102,s2,t19)_geq:2
- s3355:  S1 :: mu_gas_balance(ng102,s2,t19)_leq:1
-     SOS1_gas_balance(ng102,s2,t19)_leq:2
- s3356:  S1 :: mu_gas_balance(ng102,s2,t20)_geq:1
-     SOS1_gas_balance(ng102,s2,t20)_geq:2
- s3357:  S1 :: mu_gas_balance(ng102,s2,t20)_leq:1
-     SOS1_gas_balance(ng102,s2,t20)_leq:2
- s3358:  S1 :: mu_gas_balance(ng102,s2,t21)_geq:1
-     SOS1_gas_balance(ng102,s2,t21)_geq:2
- s3359:  S1 :: mu_gas_balance(ng102,s2,t21)_leq:1
-     SOS1_gas_balance(ng102,s2,t21)_leq:2
- s3360:  S1 :: mu_gas_balance(ng102,s2,t22)_geq:1
-     SOS1_gas_balance(ng102,s2,t22)_geq:2
- s3361:  S1 :: mu_gas_balance(ng102,s2,t22)_leq:1
-     SOS1_gas_balance(ng102,s2,t22)_leq:2
- s3362:  S1 :: mu_gas_balance(ng102,s2,t23)_geq:1
-     SOS1_gas_balance(ng102,s2,t23)_geq:2
- s3363:  S1 :: mu_gas_balance(ng102,s2,t23)_leq:1
-     SOS1_gas_balance(ng102,s2,t23)_leq:2
- s3364:  S1 :: mu_gas_balance(ng102,s2,t24)_geq:1
-     SOS1_gas_balance(ng102,s2,t24)_geq:2
- s3365:  S1 :: mu_gas_balance(ng102,s2,t24)_leq:1
-     SOS1_gas_balance(ng102,s2,t24)_leq:2
- s3366:  S1 :: muLB_pres_rt(ng101,s1,t1):1 SOS1_LB_pres_rt(ng101,s1,t1):2
- s3367:  S1 :: muLB_gshed(ng101,s1,t1):1 SOS1_LB_gshed(ng101,s1,t1):2
- s3368:  S1 :: muLB_pres_rt(ng102,s1,t1):1 SOS1_LB_pres_rt(ng102,s1,t1):2
- s3369:  S1 :: muLB_gshed(ng102,s1,t1):1 SOS1_LB_gshed(ng102,s1,t1):2
- s3370:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t1):1
+ s2790:  S1 :: muLB_pres_rt(ng101,s1,t1):1 SOS1_LB_pres_rt(ng101,s1,t1):2
+ s2791:  S1 :: muLB_gshed(ng101,s1,t1):1 SOS1_LB_gshed(ng101,s1,t1):2
+ s2792:  S1 :: muLB_pres_rt(ng102,s1,t1):1 SOS1_LB_pres_rt(ng102,s1,t1):2
+ s2793:  S1 :: muLB_gshed(ng102,s1,t1):1 SOS1_LB_gshed(ng102,s1,t1):2
+ s2794:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t1):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t1):2
- s3371:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t1):1
+ s2795:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t1):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t1):2
- s3372:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t1):1
+ s2796:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t1):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t1):2
- s3373:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t1):1
+ s2797:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t1):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t1):2
- s3374:  S1 :: muLB_gprodUp(gw1,s1,t1):1 SOS1_LB_gprodUp(gw1,s1,t1):2
- s3375:  S1 :: muLB_gprodDn(gw1,s1,t1):1 SOS1_LB_gprodDn(gw1,s1,t1):2
- s3376:  S1 :: muLB_gsin_rt(gs1,s1,t1):1 SOS1_LB_gsin_rt(gs1,s1,t1):2
- s3377:  S1 :: muLB_gsout_rt(gs1,s1,t1):1 SOS1_LB_gsout_rt(gs1,s1,t1):2
- s3378:  S1 :: muLB_gstore_rt(gs1,s1,t1):1 SOS1_LB_gstore_rt(gs1,s1,t1):2
- s3379:  S1 :: muLB_pres_rt(ng101,s1,t2):1 SOS1_LB_pres_rt(ng101,s1,t2):2
- s3380:  S1 :: muLB_gshed(ng101,s1,t2):1 SOS1_LB_gshed(ng101,s1,t2):2
- s3381:  S1 :: muLB_pres_rt(ng102,s1,t2):1 SOS1_LB_pres_rt(ng102,s1,t2):2
- s3382:  S1 :: muLB_gshed(ng102,s1,t2):1 SOS1_LB_gshed(ng102,s1,t2):2
- s3383:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t2):1
+ s2798:  S1 :: muLB_gprodUp(gw1,s1,t1):1 SOS1_LB_gprodUp(gw1,s1,t1):2
+ s2799:  S1 :: muLB_gprodDn(gw1,s1,t1):1 SOS1_LB_gprodDn(gw1,s1,t1):2
+ s2800:  S1 :: muLB_gsin_rt(gs1,s1,t1):1 SOS1_LB_gsin_rt(gs1,s1,t1):2
+ s2801:  S1 :: muLB_gsout_rt(gs1,s1,t1):1 SOS1_LB_gsout_rt(gs1,s1,t1):2
+ s2802:  S1 :: muLB_gstore_rt(gs1,s1,t1):1 SOS1_LB_gstore_rt(gs1,s1,t1):2
+ s2803:  S1 :: muLB_pres_rt(ng101,s1,t2):1 SOS1_LB_pres_rt(ng101,s1,t2):2
+ s2804:  S1 :: muLB_gshed(ng101,s1,t2):1 SOS1_LB_gshed(ng101,s1,t2):2
+ s2805:  S1 :: muLB_pres_rt(ng102,s1,t2):1 SOS1_LB_pres_rt(ng102,s1,t2):2
+ s2806:  S1 :: muLB_gshed(ng102,s1,t2):1 SOS1_LB_gshed(ng102,s1,t2):2
+ s2807:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t2):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t2):2
- s3384:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t2):1
+ s2808:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t2):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t2):2
- s3385:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t2):1
+ s2809:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t2):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t2):2
- s3386:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t2):1
+ s2810:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t2):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t2):2
- s3387:  S1 :: muLB_gprodUp(gw1,s1,t2):1 SOS1_LB_gprodUp(gw1,s1,t2):2
- s3388:  S1 :: muLB_gprodDn(gw1,s1,t2):1 SOS1_LB_gprodDn(gw1,s1,t2):2
- s3389:  S1 :: muLB_gsin_rt(gs1,s1,t2):1 SOS1_LB_gsin_rt(gs1,s1,t2):2
- s3390:  S1 :: muLB_gsout_rt(gs1,s1,t2):1 SOS1_LB_gsout_rt(gs1,s1,t2):2
- s3391:  S1 :: muLB_gstore_rt(gs1,s1,t2):1 SOS1_LB_gstore_rt(gs1,s1,t2):2
- s3392:  S1 :: muLB_pres_rt(ng101,s1,t3):1 SOS1_LB_pres_rt(ng101,s1,t3):2
- s3393:  S1 :: muLB_gshed(ng101,s1,t3):1 SOS1_LB_gshed(ng101,s1,t3):2
- s3394:  S1 :: muLB_pres_rt(ng102,s1,t3):1 SOS1_LB_pres_rt(ng102,s1,t3):2
- s3395:  S1 :: muLB_gshed(ng102,s1,t3):1 SOS1_LB_gshed(ng102,s1,t3):2
- s3396:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t3):1
+ s2811:  S1 :: muLB_gprodUp(gw1,s1,t2):1 SOS1_LB_gprodUp(gw1,s1,t2):2
+ s2812:  S1 :: muLB_gprodDn(gw1,s1,t2):1 SOS1_LB_gprodDn(gw1,s1,t2):2
+ s2813:  S1 :: muLB_gsin_rt(gs1,s1,t2):1 SOS1_LB_gsin_rt(gs1,s1,t2):2
+ s2814:  S1 :: muLB_gsout_rt(gs1,s1,t2):1 SOS1_LB_gsout_rt(gs1,s1,t2):2
+ s2815:  S1 :: muLB_gstore_rt(gs1,s1,t2):1 SOS1_LB_gstore_rt(gs1,s1,t2):2
+ s2816:  S1 :: muLB_pres_rt(ng101,s1,t3):1 SOS1_LB_pres_rt(ng101,s1,t3):2
+ s2817:  S1 :: muLB_gshed(ng101,s1,t3):1 SOS1_LB_gshed(ng101,s1,t3):2
+ s2818:  S1 :: muLB_pres_rt(ng102,s1,t3):1 SOS1_LB_pres_rt(ng102,s1,t3):2
+ s2819:  S1 :: muLB_gshed(ng102,s1,t3):1 SOS1_LB_gshed(ng102,s1,t3):2
+ s2820:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t3):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t3):2
- s3397:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t3):1
+ s2821:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t3):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t3):2
- s3398:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t3):1
+ s2822:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t3):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t3):2
- s3399:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t3):1
+ s2823:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t3):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t3):2
- s3400:  S1 :: muLB_gprodUp(gw1,s1,t3):1 SOS1_LB_gprodUp(gw1,s1,t3):2
- s3401:  S1 :: muLB_gprodDn(gw1,s1,t3):1 SOS1_LB_gprodDn(gw1,s1,t3):2
- s3402:  S1 :: muLB_gsin_rt(gs1,s1,t3):1 SOS1_LB_gsin_rt(gs1,s1,t3):2
- s3403:  S1 :: muLB_gsout_rt(gs1,s1,t3):1 SOS1_LB_gsout_rt(gs1,s1,t3):2
- s3404:  S1 :: muLB_gstore_rt(gs1,s1,t3):1 SOS1_LB_gstore_rt(gs1,s1,t3):2
- s3405:  S1 :: muLB_pres_rt(ng101,s1,t4):1 SOS1_LB_pres_rt(ng101,s1,t4):2
- s3406:  S1 :: muLB_gshed(ng101,s1,t4):1 SOS1_LB_gshed(ng101,s1,t4):2
- s3407:  S1 :: muLB_pres_rt(ng102,s1,t4):1 SOS1_LB_pres_rt(ng102,s1,t4):2
- s3408:  S1 :: muLB_gshed(ng102,s1,t4):1 SOS1_LB_gshed(ng102,s1,t4):2
- s3409:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t4):1
+ s2824:  S1 :: muLB_gprodUp(gw1,s1,t3):1 SOS1_LB_gprodUp(gw1,s1,t3):2
+ s2825:  S1 :: muLB_gprodDn(gw1,s1,t3):1 SOS1_LB_gprodDn(gw1,s1,t3):2
+ s2826:  S1 :: muLB_gsin_rt(gs1,s1,t3):1 SOS1_LB_gsin_rt(gs1,s1,t3):2
+ s2827:  S1 :: muLB_gsout_rt(gs1,s1,t3):1 SOS1_LB_gsout_rt(gs1,s1,t3):2
+ s2828:  S1 :: muLB_gstore_rt(gs1,s1,t3):1 SOS1_LB_gstore_rt(gs1,s1,t3):2
+ s2829:  S1 :: muLB_pres_rt(ng101,s1,t4):1 SOS1_LB_pres_rt(ng101,s1,t4):2
+ s2830:  S1 :: muLB_gshed(ng101,s1,t4):1 SOS1_LB_gshed(ng101,s1,t4):2
+ s2831:  S1 :: muLB_pres_rt(ng102,s1,t4):1 SOS1_LB_pres_rt(ng102,s1,t4):2
+ s2832:  S1 :: muLB_gshed(ng102,s1,t4):1 SOS1_LB_gshed(ng102,s1,t4):2
+ s2833:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t4):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t4):2
- s3410:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t4):1
+ s2834:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t4):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t4):2
- s3411:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t4):1
+ s2835:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t4):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t4):2
- s3412:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t4):1
+ s2836:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t4):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t4):2
- s3413:  S1 :: muLB_gprodUp(gw1,s1,t4):1 SOS1_LB_gprodUp(gw1,s1,t4):2
- s3414:  S1 :: muLB_gprodDn(gw1,s1,t4):1 SOS1_LB_gprodDn(gw1,s1,t4):2
- s3415:  S1 :: muLB_gsin_rt(gs1,s1,t4):1 SOS1_LB_gsin_rt(gs1,s1,t4):2
- s3416:  S1 :: muLB_gsout_rt(gs1,s1,t4):1 SOS1_LB_gsout_rt(gs1,s1,t4):2
- s3417:  S1 :: muLB_gstore_rt(gs1,s1,t4):1 SOS1_LB_gstore_rt(gs1,s1,t4):2
- s3418:  S1 :: muLB_pres_rt(ng101,s1,t5):1 SOS1_LB_pres_rt(ng101,s1,t5):2
- s3419:  S1 :: muLB_gshed(ng101,s1,t5):1 SOS1_LB_gshed(ng101,s1,t5):2
- s3420:  S1 :: muLB_pres_rt(ng102,s1,t5):1 SOS1_LB_pres_rt(ng102,s1,t5):2
- s3421:  S1 :: muLB_gshed(ng102,s1,t5):1 SOS1_LB_gshed(ng102,s1,t5):2
- s3422:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t5):1
+ s2837:  S1 :: muLB_gprodUp(gw1,s1,t4):1 SOS1_LB_gprodUp(gw1,s1,t4):2
+ s2838:  S1 :: muLB_gprodDn(gw1,s1,t4):1 SOS1_LB_gprodDn(gw1,s1,t4):2
+ s2839:  S1 :: muLB_gsin_rt(gs1,s1,t4):1 SOS1_LB_gsin_rt(gs1,s1,t4):2
+ s2840:  S1 :: muLB_gsout_rt(gs1,s1,t4):1 SOS1_LB_gsout_rt(gs1,s1,t4):2
+ s2841:  S1 :: muLB_gstore_rt(gs1,s1,t4):1 SOS1_LB_gstore_rt(gs1,s1,t4):2
+ s2842:  S1 :: muLB_pres_rt(ng101,s1,t5):1 SOS1_LB_pres_rt(ng101,s1,t5):2
+ s2843:  S1 :: muLB_gshed(ng101,s1,t5):1 SOS1_LB_gshed(ng101,s1,t5):2
+ s2844:  S1 :: muLB_pres_rt(ng102,s1,t5):1 SOS1_LB_pres_rt(ng102,s1,t5):2
+ s2845:  S1 :: muLB_gshed(ng102,s1,t5):1 SOS1_LB_gshed(ng102,s1,t5):2
+ s2846:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t5):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t5):2
- s3423:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t5):1
+ s2847:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t5):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t5):2
- s3424:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t5):1
+ s2848:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t5):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t5):2
- s3425:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t5):1
+ s2849:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t5):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t5):2
- s3426:  S1 :: muLB_gprodUp(gw1,s1,t5):1 SOS1_LB_gprodUp(gw1,s1,t5):2
- s3427:  S1 :: muLB_gprodDn(gw1,s1,t5):1 SOS1_LB_gprodDn(gw1,s1,t5):2
- s3428:  S1 :: muLB_gsin_rt(gs1,s1,t5):1 SOS1_LB_gsin_rt(gs1,s1,t5):2
- s3429:  S1 :: muLB_gsout_rt(gs1,s1,t5):1 SOS1_LB_gsout_rt(gs1,s1,t5):2
- s3430:  S1 :: muLB_gstore_rt(gs1,s1,t5):1 SOS1_LB_gstore_rt(gs1,s1,t5):2
- s3431:  S1 :: muLB_pres_rt(ng101,s1,t6):1 SOS1_LB_pres_rt(ng101,s1,t6):2
- s3432:  S1 :: muLB_gshed(ng101,s1,t6):1 SOS1_LB_gshed(ng101,s1,t6):2
- s3433:  S1 :: muLB_pres_rt(ng102,s1,t6):1 SOS1_LB_pres_rt(ng102,s1,t6):2
- s3434:  S1 :: muLB_gshed(ng102,s1,t6):1 SOS1_LB_gshed(ng102,s1,t6):2
- s3435:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t6):1
+ s2850:  S1 :: muLB_gprodUp(gw1,s1,t5):1 SOS1_LB_gprodUp(gw1,s1,t5):2
+ s2851:  S1 :: muLB_gprodDn(gw1,s1,t5):1 SOS1_LB_gprodDn(gw1,s1,t5):2
+ s2852:  S1 :: muLB_gsin_rt(gs1,s1,t5):1 SOS1_LB_gsin_rt(gs1,s1,t5):2
+ s2853:  S1 :: muLB_gsout_rt(gs1,s1,t5):1 SOS1_LB_gsout_rt(gs1,s1,t5):2
+ s2854:  S1 :: muLB_gstore_rt(gs1,s1,t5):1 SOS1_LB_gstore_rt(gs1,s1,t5):2
+ s2855:  S1 :: muLB_pres_rt(ng101,s1,t6):1 SOS1_LB_pres_rt(ng101,s1,t6):2
+ s2856:  S1 :: muLB_gshed(ng101,s1,t6):1 SOS1_LB_gshed(ng101,s1,t6):2
+ s2857:  S1 :: muLB_pres_rt(ng102,s1,t6):1 SOS1_LB_pres_rt(ng102,s1,t6):2
+ s2858:  S1 :: muLB_gshed(ng102,s1,t6):1 SOS1_LB_gshed(ng102,s1,t6):2
+ s2859:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t6):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t6):2
- s3436:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t6):1
+ s2860:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t6):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t6):2
- s3437:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t6):1
+ s2861:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t6):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t6):2
- s3438:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t6):1
+ s2862:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t6):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t6):2
- s3439:  S1 :: muLB_gprodUp(gw1,s1,t6):1 SOS1_LB_gprodUp(gw1,s1,t6):2
- s3440:  S1 :: muLB_gprodDn(gw1,s1,t6):1 SOS1_LB_gprodDn(gw1,s1,t6):2
- s3441:  S1 :: muLB_gsin_rt(gs1,s1,t6):1 SOS1_LB_gsin_rt(gs1,s1,t6):2
- s3442:  S1 :: muLB_gsout_rt(gs1,s1,t6):1 SOS1_LB_gsout_rt(gs1,s1,t6):2
- s3443:  S1 :: muLB_gstore_rt(gs1,s1,t6):1 SOS1_LB_gstore_rt(gs1,s1,t6):2
- s3444:  S1 :: muLB_pres_rt(ng101,s1,t7):1 SOS1_LB_pres_rt(ng101,s1,t7):2
- s3445:  S1 :: muLB_gshed(ng101,s1,t7):1 SOS1_LB_gshed(ng101,s1,t7):2
- s3446:  S1 :: muLB_pres_rt(ng102,s1,t7):1 SOS1_LB_pres_rt(ng102,s1,t7):2
- s3447:  S1 :: muLB_gshed(ng102,s1,t7):1 SOS1_LB_gshed(ng102,s1,t7):2
- s3448:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t7):1
+ s2863:  S1 :: muLB_gprodUp(gw1,s1,t6):1 SOS1_LB_gprodUp(gw1,s1,t6):2
+ s2864:  S1 :: muLB_gprodDn(gw1,s1,t6):1 SOS1_LB_gprodDn(gw1,s1,t6):2
+ s2865:  S1 :: muLB_gsin_rt(gs1,s1,t6):1 SOS1_LB_gsin_rt(gs1,s1,t6):2
+ s2866:  S1 :: muLB_gsout_rt(gs1,s1,t6):1 SOS1_LB_gsout_rt(gs1,s1,t6):2
+ s2867:  S1 :: muLB_gstore_rt(gs1,s1,t6):1 SOS1_LB_gstore_rt(gs1,s1,t6):2
+ s2868:  S1 :: muLB_pres_rt(ng101,s1,t7):1 SOS1_LB_pres_rt(ng101,s1,t7):2
+ s2869:  S1 :: muLB_gshed(ng101,s1,t7):1 SOS1_LB_gshed(ng101,s1,t7):2
+ s2870:  S1 :: muLB_pres_rt(ng102,s1,t7):1 SOS1_LB_pres_rt(ng102,s1,t7):2
+ s2871:  S1 :: muLB_gshed(ng102,s1,t7):1 SOS1_LB_gshed(ng102,s1,t7):2
+ s2872:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t7):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t7):2
- s3449:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t7):1
+ s2873:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t7):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t7):2
- s3450:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t7):1
+ s2874:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t7):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t7):2
- s3451:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t7):1
+ s2875:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t7):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t7):2
- s3452:  S1 :: muLB_gprodUp(gw1,s1,t7):1 SOS1_LB_gprodUp(gw1,s1,t7):2
- s3453:  S1 :: muLB_gprodDn(gw1,s1,t7):1 SOS1_LB_gprodDn(gw1,s1,t7):2
- s3454:  S1 :: muLB_gsin_rt(gs1,s1,t7):1 SOS1_LB_gsin_rt(gs1,s1,t7):2
- s3455:  S1 :: muLB_gsout_rt(gs1,s1,t7):1 SOS1_LB_gsout_rt(gs1,s1,t7):2
- s3456:  S1 :: muLB_gstore_rt(gs1,s1,t7):1 SOS1_LB_gstore_rt(gs1,s1,t7):2
- s3457:  S1 :: muLB_pres_rt(ng101,s1,t8):1 SOS1_LB_pres_rt(ng101,s1,t8):2
- s3458:  S1 :: muLB_gshed(ng101,s1,t8):1 SOS1_LB_gshed(ng101,s1,t8):2
- s3459:  S1 :: muLB_pres_rt(ng102,s1,t8):1 SOS1_LB_pres_rt(ng102,s1,t8):2
- s3460:  S1 :: muLB_gshed(ng102,s1,t8):1 SOS1_LB_gshed(ng102,s1,t8):2
- s3461:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t8):1
+ s2876:  S1 :: muLB_gprodUp(gw1,s1,t7):1 SOS1_LB_gprodUp(gw1,s1,t7):2
+ s2877:  S1 :: muLB_gprodDn(gw1,s1,t7):1 SOS1_LB_gprodDn(gw1,s1,t7):2
+ s2878:  S1 :: muLB_gsin_rt(gs1,s1,t7):1 SOS1_LB_gsin_rt(gs1,s1,t7):2
+ s2879:  S1 :: muLB_gsout_rt(gs1,s1,t7):1 SOS1_LB_gsout_rt(gs1,s1,t7):2
+ s2880:  S1 :: muLB_gstore_rt(gs1,s1,t7):1 SOS1_LB_gstore_rt(gs1,s1,t7):2
+ s2881:  S1 :: muLB_pres_rt(ng101,s1,t8):1 SOS1_LB_pres_rt(ng101,s1,t8):2
+ s2882:  S1 :: muLB_gshed(ng101,s1,t8):1 SOS1_LB_gshed(ng101,s1,t8):2
+ s2883:  S1 :: muLB_pres_rt(ng102,s1,t8):1 SOS1_LB_pres_rt(ng102,s1,t8):2
+ s2884:  S1 :: muLB_gshed(ng102,s1,t8):1 SOS1_LB_gshed(ng102,s1,t8):2
+ s2885:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t8):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t8):2
- s3462:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t8):1
+ s2886:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t8):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t8):2
- s3463:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t8):1
+ s2887:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t8):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t8):2
- s3464:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t8):1
+ s2888:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t8):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t8):2
- s3465:  S1 :: muLB_gprodUp(gw1,s1,t8):1 SOS1_LB_gprodUp(gw1,s1,t8):2
- s3466:  S1 :: muLB_gprodDn(gw1,s1,t8):1 SOS1_LB_gprodDn(gw1,s1,t8):2
- s3467:  S1 :: muLB_gsin_rt(gs1,s1,t8):1 SOS1_LB_gsin_rt(gs1,s1,t8):2
- s3468:  S1 :: muLB_gsout_rt(gs1,s1,t8):1 SOS1_LB_gsout_rt(gs1,s1,t8):2
- s3469:  S1 :: muLB_gstore_rt(gs1,s1,t8):1 SOS1_LB_gstore_rt(gs1,s1,t8):2
- s3470:  S1 :: muLB_pres_rt(ng101,s1,t9):1 SOS1_LB_pres_rt(ng101,s1,t9):2
- s3471:  S1 :: muLB_gshed(ng101,s1,t9):1 SOS1_LB_gshed(ng101,s1,t9):2
- s3472:  S1 :: muLB_pres_rt(ng102,s1,t9):1 SOS1_LB_pres_rt(ng102,s1,t9):2
- s3473:  S1 :: muLB_gshed(ng102,s1,t9):1 SOS1_LB_gshed(ng102,s1,t9):2
- s3474:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t9):1
+ s2889:  S1 :: muLB_gprodUp(gw1,s1,t8):1 SOS1_LB_gprodUp(gw1,s1,t8):2
+ s2890:  S1 :: muLB_gprodDn(gw1,s1,t8):1 SOS1_LB_gprodDn(gw1,s1,t8):2
+ s2891:  S1 :: muLB_gsin_rt(gs1,s1,t8):1 SOS1_LB_gsin_rt(gs1,s1,t8):2
+ s2892:  S1 :: muLB_gsout_rt(gs1,s1,t8):1 SOS1_LB_gsout_rt(gs1,s1,t8):2
+ s2893:  S1 :: muLB_gstore_rt(gs1,s1,t8):1 SOS1_LB_gstore_rt(gs1,s1,t8):2
+ s2894:  S1 :: muLB_pres_rt(ng101,s1,t9):1 SOS1_LB_pres_rt(ng101,s1,t9):2
+ s2895:  S1 :: muLB_gshed(ng101,s1,t9):1 SOS1_LB_gshed(ng101,s1,t9):2
+ s2896:  S1 :: muLB_pres_rt(ng102,s1,t9):1 SOS1_LB_pres_rt(ng102,s1,t9):2
+ s2897:  S1 :: muLB_gshed(ng102,s1,t9):1 SOS1_LB_gshed(ng102,s1,t9):2
+ s2898:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t9):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t9):2
- s3475:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t9):1
+ s2899:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t9):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t9):2
- s3476:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t9):1
+ s2900:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t9):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t9):2
- s3477:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t9):1
+ s2901:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t9):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t9):2
- s3478:  S1 :: muLB_gprodUp(gw1,s1,t9):1 SOS1_LB_gprodUp(gw1,s1,t9):2
- s3479:  S1 :: muLB_gprodDn(gw1,s1,t9):1 SOS1_LB_gprodDn(gw1,s1,t9):2
- s3480:  S1 :: muLB_gsin_rt(gs1,s1,t9):1 SOS1_LB_gsin_rt(gs1,s1,t9):2
- s3481:  S1 :: muLB_gsout_rt(gs1,s1,t9):1 SOS1_LB_gsout_rt(gs1,s1,t9):2
- s3482:  S1 :: muLB_gstore_rt(gs1,s1,t9):1 SOS1_LB_gstore_rt(gs1,s1,t9):2
- s3483:  S1 :: muLB_pres_rt(ng101,s1,t10):1 SOS1_LB_pres_rt(ng101,s1,t10):2
- s3484:  S1 :: muLB_gshed(ng101,s1,t10):1 SOS1_LB_gshed(ng101,s1,t10):2
- s3485:  S1 :: muLB_pres_rt(ng102,s1,t10):1 SOS1_LB_pres_rt(ng102,s1,t10):2
- s3486:  S1 :: muLB_gshed(ng102,s1,t10):1 SOS1_LB_gshed(ng102,s1,t10):2
- s3487:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t10):1
+ s2902:  S1 :: muLB_gprodUp(gw1,s1,t9):1 SOS1_LB_gprodUp(gw1,s1,t9):2
+ s2903:  S1 :: muLB_gprodDn(gw1,s1,t9):1 SOS1_LB_gprodDn(gw1,s1,t9):2
+ s2904:  S1 :: muLB_gsin_rt(gs1,s1,t9):1 SOS1_LB_gsin_rt(gs1,s1,t9):2
+ s2905:  S1 :: muLB_gsout_rt(gs1,s1,t9):1 SOS1_LB_gsout_rt(gs1,s1,t9):2
+ s2906:  S1 :: muLB_gstore_rt(gs1,s1,t9):1 SOS1_LB_gstore_rt(gs1,s1,t9):2
+ s2907:  S1 :: muLB_pres_rt(ng101,s1,t10):1 SOS1_LB_pres_rt(ng101,s1,t10):2
+ s2908:  S1 :: muLB_gshed(ng101,s1,t10):1 SOS1_LB_gshed(ng101,s1,t10):2
+ s2909:  S1 :: muLB_pres_rt(ng102,s1,t10):1 SOS1_LB_pres_rt(ng102,s1,t10):2
+ s2910:  S1 :: muLB_gshed(ng102,s1,t10):1 SOS1_LB_gshed(ng102,s1,t10):2
+ s2911:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t10):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t10):2
- s3488:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t10):1
+ s2912:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t10):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t10):2
- s3489:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t10):1
+ s2913:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t10):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t10):2
- s3490:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t10):1
+ s2914:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t10):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t10):2
- s3491:  S1 :: muLB_gprodUp(gw1,s1,t10):1 SOS1_LB_gprodUp(gw1,s1,t10):2
- s3492:  S1 :: muLB_gprodDn(gw1,s1,t10):1 SOS1_LB_gprodDn(gw1,s1,t10):2
- s3493:  S1 :: muLB_gsin_rt(gs1,s1,t10):1 SOS1_LB_gsin_rt(gs1,s1,t10):2
- s3494:  S1 :: muLB_gsout_rt(gs1,s1,t10):1 SOS1_LB_gsout_rt(gs1,s1,t10):2
- s3495:  S1 :: muLB_gstore_rt(gs1,s1,t10):1 SOS1_LB_gstore_rt(gs1,s1,t10):2
- s3496:  S1 :: muLB_pres_rt(ng101,s1,t11):1 SOS1_LB_pres_rt(ng101,s1,t11):2
- s3497:  S1 :: muLB_gshed(ng101,s1,t11):1 SOS1_LB_gshed(ng101,s1,t11):2
- s3498:  S1 :: muLB_pres_rt(ng102,s1,t11):1 SOS1_LB_pres_rt(ng102,s1,t11):2
- s3499:  S1 :: muLB_gshed(ng102,s1,t11):1 SOS1_LB_gshed(ng102,s1,t11):2
- s3500:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t11):1
+ s2915:  S1 :: muLB_gprodUp(gw1,s1,t10):1 SOS1_LB_gprodUp(gw1,s1,t10):2
+ s2916:  S1 :: muLB_gprodDn(gw1,s1,t10):1 SOS1_LB_gprodDn(gw1,s1,t10):2
+ s2917:  S1 :: muLB_gsin_rt(gs1,s1,t10):1 SOS1_LB_gsin_rt(gs1,s1,t10):2
+ s2918:  S1 :: muLB_gsout_rt(gs1,s1,t10):1 SOS1_LB_gsout_rt(gs1,s1,t10):2
+ s2919:  S1 :: muLB_gstore_rt(gs1,s1,t10):1 SOS1_LB_gstore_rt(gs1,s1,t10):2
+ s2920:  S1 :: muLB_pres_rt(ng101,s1,t11):1 SOS1_LB_pres_rt(ng101,s1,t11):2
+ s2921:  S1 :: muLB_gshed(ng101,s1,t11):1 SOS1_LB_gshed(ng101,s1,t11):2
+ s2922:  S1 :: muLB_pres_rt(ng102,s1,t11):1 SOS1_LB_pres_rt(ng102,s1,t11):2
+ s2923:  S1 :: muLB_gshed(ng102,s1,t11):1 SOS1_LB_gshed(ng102,s1,t11):2
+ s2924:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t11):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t11):2
- s3501:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t11):1
+ s2925:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t11):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t11):2
- s3502:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t11):1
+ s2926:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t11):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t11):2
- s3503:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t11):1
+ s2927:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t11):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t11):2
- s3504:  S1 :: muLB_gprodUp(gw1,s1,t11):1 SOS1_LB_gprodUp(gw1,s1,t11):2
- s3505:  S1 :: muLB_gprodDn(gw1,s1,t11):1 SOS1_LB_gprodDn(gw1,s1,t11):2
- s3506:  S1 :: muLB_gsin_rt(gs1,s1,t11):1 SOS1_LB_gsin_rt(gs1,s1,t11):2
- s3507:  S1 :: muLB_gsout_rt(gs1,s1,t11):1 SOS1_LB_gsout_rt(gs1,s1,t11):2
- s3508:  S1 :: muLB_gstore_rt(gs1,s1,t11):1 SOS1_LB_gstore_rt(gs1,s1,t11):2
- s3509:  S1 :: muLB_pres_rt(ng101,s1,t12):1 SOS1_LB_pres_rt(ng101,s1,t12):2
- s3510:  S1 :: muLB_gshed(ng101,s1,t12):1 SOS1_LB_gshed(ng101,s1,t12):2
- s3511:  S1 :: muLB_pres_rt(ng102,s1,t12):1 SOS1_LB_pres_rt(ng102,s1,t12):2
- s3512:  S1 :: muLB_gshed(ng102,s1,t12):1 SOS1_LB_gshed(ng102,s1,t12):2
- s3513:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t12):1
+ s2928:  S1 :: muLB_gprodUp(gw1,s1,t11):1 SOS1_LB_gprodUp(gw1,s1,t11):2
+ s2929:  S1 :: muLB_gprodDn(gw1,s1,t11):1 SOS1_LB_gprodDn(gw1,s1,t11):2
+ s2930:  S1 :: muLB_gsin_rt(gs1,s1,t11):1 SOS1_LB_gsin_rt(gs1,s1,t11):2
+ s2931:  S1 :: muLB_gsout_rt(gs1,s1,t11):1 SOS1_LB_gsout_rt(gs1,s1,t11):2
+ s2932:  S1 :: muLB_gstore_rt(gs1,s1,t11):1 SOS1_LB_gstore_rt(gs1,s1,t11):2
+ s2933:  S1 :: muLB_pres_rt(ng101,s1,t12):1 SOS1_LB_pres_rt(ng101,s1,t12):2
+ s2934:  S1 :: muLB_gshed(ng101,s1,t12):1 SOS1_LB_gshed(ng101,s1,t12):2
+ s2935:  S1 :: muLB_pres_rt(ng102,s1,t12):1 SOS1_LB_pres_rt(ng102,s1,t12):2
+ s2936:  S1 :: muLB_gshed(ng102,s1,t12):1 SOS1_LB_gshed(ng102,s1,t12):2
+ s2937:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t12):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t12):2
- s3514:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t12):1
+ s2938:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t12):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t12):2
- s3515:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t12):1
+ s2939:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t12):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t12):2
- s3516:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t12):1
+ s2940:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t12):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t12):2
- s3517:  S1 :: muLB_gprodUp(gw1,s1,t12):1 SOS1_LB_gprodUp(gw1,s1,t12):2
- s3518:  S1 :: muLB_gprodDn(gw1,s1,t12):1 SOS1_LB_gprodDn(gw1,s1,t12):2
- s3519:  S1 :: muLB_gsin_rt(gs1,s1,t12):1 SOS1_LB_gsin_rt(gs1,s1,t12):2
- s3520:  S1 :: muLB_gsout_rt(gs1,s1,t12):1 SOS1_LB_gsout_rt(gs1,s1,t12):2
- s3521:  S1 :: muLB_gstore_rt(gs1,s1,t12):1 SOS1_LB_gstore_rt(gs1,s1,t12):2
- s3522:  S1 :: muLB_pres_rt(ng101,s1,t13):1 SOS1_LB_pres_rt(ng101,s1,t13):2
- s3523:  S1 :: muLB_gshed(ng101,s1,t13):1 SOS1_LB_gshed(ng101,s1,t13):2
- s3524:  S1 :: muLB_pres_rt(ng102,s1,t13):1 SOS1_LB_pres_rt(ng102,s1,t13):2
- s3525:  S1 :: muLB_gshed(ng102,s1,t13):1 SOS1_LB_gshed(ng102,s1,t13):2
- s3526:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t13):1
+ s2941:  S1 :: muLB_gprodUp(gw1,s1,t12):1 SOS1_LB_gprodUp(gw1,s1,t12):2
+ s2942:  S1 :: muLB_gprodDn(gw1,s1,t12):1 SOS1_LB_gprodDn(gw1,s1,t12):2
+ s2943:  S1 :: muLB_gsin_rt(gs1,s1,t12):1 SOS1_LB_gsin_rt(gs1,s1,t12):2
+ s2944:  S1 :: muLB_gsout_rt(gs1,s1,t12):1 SOS1_LB_gsout_rt(gs1,s1,t12):2
+ s2945:  S1 :: muLB_gstore_rt(gs1,s1,t12):1 SOS1_LB_gstore_rt(gs1,s1,t12):2
+ s2946:  S1 :: muLB_pres_rt(ng101,s1,t13):1 SOS1_LB_pres_rt(ng101,s1,t13):2
+ s2947:  S1 :: muLB_gshed(ng101,s1,t13):1 SOS1_LB_gshed(ng101,s1,t13):2
+ s2948:  S1 :: muLB_pres_rt(ng102,s1,t13):1 SOS1_LB_pres_rt(ng102,s1,t13):2
+ s2949:  S1 :: muLB_gshed(ng102,s1,t13):1 SOS1_LB_gshed(ng102,s1,t13):2
+ s2950:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t13):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t13):2
- s3527:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t13):1
+ s2951:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t13):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t13):2
- s3528:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t13):1
+ s2952:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t13):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t13):2
- s3529:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t13):1
+ s2953:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t13):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t13):2
- s3530:  S1 :: muLB_gprodUp(gw1,s1,t13):1 SOS1_LB_gprodUp(gw1,s1,t13):2
- s3531:  S1 :: muLB_gprodDn(gw1,s1,t13):1 SOS1_LB_gprodDn(gw1,s1,t13):2
- s3532:  S1 :: muLB_gsin_rt(gs1,s1,t13):1 SOS1_LB_gsin_rt(gs1,s1,t13):2
- s3533:  S1 :: muLB_gsout_rt(gs1,s1,t13):1 SOS1_LB_gsout_rt(gs1,s1,t13):2
- s3534:  S1 :: muLB_gstore_rt(gs1,s1,t13):1 SOS1_LB_gstore_rt(gs1,s1,t13):2
- s3535:  S1 :: muLB_pres_rt(ng101,s1,t14):1 SOS1_LB_pres_rt(ng101,s1,t14):2
- s3536:  S1 :: muLB_gshed(ng101,s1,t14):1 SOS1_LB_gshed(ng101,s1,t14):2
- s3537:  S1 :: muLB_pres_rt(ng102,s1,t14):1 SOS1_LB_pres_rt(ng102,s1,t14):2
- s3538:  S1 :: muLB_gshed(ng102,s1,t14):1 SOS1_LB_gshed(ng102,s1,t14):2
- s3539:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t14):1
+ s2954:  S1 :: muLB_gprodUp(gw1,s1,t13):1 SOS1_LB_gprodUp(gw1,s1,t13):2
+ s2955:  S1 :: muLB_gprodDn(gw1,s1,t13):1 SOS1_LB_gprodDn(gw1,s1,t13):2
+ s2956:  S1 :: muLB_gsin_rt(gs1,s1,t13):1 SOS1_LB_gsin_rt(gs1,s1,t13):2
+ s2957:  S1 :: muLB_gsout_rt(gs1,s1,t13):1 SOS1_LB_gsout_rt(gs1,s1,t13):2
+ s2958:  S1 :: muLB_gstore_rt(gs1,s1,t13):1 SOS1_LB_gstore_rt(gs1,s1,t13):2
+ s2959:  S1 :: muLB_pres_rt(ng101,s1,t14):1 SOS1_LB_pres_rt(ng101,s1,t14):2
+ s2960:  S1 :: muLB_gshed(ng101,s1,t14):1 SOS1_LB_gshed(ng101,s1,t14):2
+ s2961:  S1 :: muLB_pres_rt(ng102,s1,t14):1 SOS1_LB_pres_rt(ng102,s1,t14):2
+ s2962:  S1 :: muLB_gshed(ng102,s1,t14):1 SOS1_LB_gshed(ng102,s1,t14):2
+ s2963:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t14):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t14):2
- s3540:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t14):1
+ s2964:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t14):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t14):2
- s3541:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t14):1
+ s2965:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t14):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t14):2
- s3542:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t14):1
+ s2966:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t14):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t14):2
- s3543:  S1 :: muLB_gprodUp(gw1,s1,t14):1 SOS1_LB_gprodUp(gw1,s1,t14):2
- s3544:  S1 :: muLB_gprodDn(gw1,s1,t14):1 SOS1_LB_gprodDn(gw1,s1,t14):2
- s3545:  S1 :: muLB_gsin_rt(gs1,s1,t14):1 SOS1_LB_gsin_rt(gs1,s1,t14):2
- s3546:  S1 :: muLB_gsout_rt(gs1,s1,t14):1 SOS1_LB_gsout_rt(gs1,s1,t14):2
- s3547:  S1 :: muLB_gstore_rt(gs1,s1,t14):1 SOS1_LB_gstore_rt(gs1,s1,t14):2
- s3548:  S1 :: muLB_pres_rt(ng101,s1,t15):1 SOS1_LB_pres_rt(ng101,s1,t15):2
- s3549:  S1 :: muLB_gshed(ng101,s1,t15):1 SOS1_LB_gshed(ng101,s1,t15):2
- s3550:  S1 :: muLB_pres_rt(ng102,s1,t15):1 SOS1_LB_pres_rt(ng102,s1,t15):2
- s3551:  S1 :: muLB_gshed(ng102,s1,t15):1 SOS1_LB_gshed(ng102,s1,t15):2
- s3552:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t15):1
+ s2967:  S1 :: muLB_gprodUp(gw1,s1,t14):1 SOS1_LB_gprodUp(gw1,s1,t14):2
+ s2968:  S1 :: muLB_gprodDn(gw1,s1,t14):1 SOS1_LB_gprodDn(gw1,s1,t14):2
+ s2969:  S1 :: muLB_gsin_rt(gs1,s1,t14):1 SOS1_LB_gsin_rt(gs1,s1,t14):2
+ s2970:  S1 :: muLB_gsout_rt(gs1,s1,t14):1 SOS1_LB_gsout_rt(gs1,s1,t14):2
+ s2971:  S1 :: muLB_gstore_rt(gs1,s1,t14):1 SOS1_LB_gstore_rt(gs1,s1,t14):2
+ s2972:  S1 :: muLB_pres_rt(ng101,s1,t15):1 SOS1_LB_pres_rt(ng101,s1,t15):2
+ s2973:  S1 :: muLB_gshed(ng101,s1,t15):1 SOS1_LB_gshed(ng101,s1,t15):2
+ s2974:  S1 :: muLB_pres_rt(ng102,s1,t15):1 SOS1_LB_pres_rt(ng102,s1,t15):2
+ s2975:  S1 :: muLB_gshed(ng102,s1,t15):1 SOS1_LB_gshed(ng102,s1,t15):2
+ s2976:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t15):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t15):2
- s3553:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t15):1
+ s2977:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t15):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t15):2
- s3554:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t15):1
+ s2978:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t15):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t15):2
- s3555:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t15):1
+ s2979:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t15):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t15):2
- s3556:  S1 :: muLB_gprodUp(gw1,s1,t15):1 SOS1_LB_gprodUp(gw1,s1,t15):2
- s3557:  S1 :: muLB_gprodDn(gw1,s1,t15):1 SOS1_LB_gprodDn(gw1,s1,t15):2
- s3558:  S1 :: muLB_gsin_rt(gs1,s1,t15):1 SOS1_LB_gsin_rt(gs1,s1,t15):2
- s3559:  S1 :: muLB_gsout_rt(gs1,s1,t15):1 SOS1_LB_gsout_rt(gs1,s1,t15):2
- s3560:  S1 :: muLB_gstore_rt(gs1,s1,t15):1 SOS1_LB_gstore_rt(gs1,s1,t15):2
- s3561:  S1 :: muLB_pres_rt(ng101,s1,t16):1 SOS1_LB_pres_rt(ng101,s1,t16):2
- s3562:  S1 :: muLB_gshed(ng101,s1,t16):1 SOS1_LB_gshed(ng101,s1,t16):2
- s3563:  S1 :: muLB_pres_rt(ng102,s1,t16):1 SOS1_LB_pres_rt(ng102,s1,t16):2
- s3564:  S1 :: muLB_gshed(ng102,s1,t16):1 SOS1_LB_gshed(ng102,s1,t16):2
- s3565:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t16):1
+ s2980:  S1 :: muLB_gprodUp(gw1,s1,t15):1 SOS1_LB_gprodUp(gw1,s1,t15):2
+ s2981:  S1 :: muLB_gprodDn(gw1,s1,t15):1 SOS1_LB_gprodDn(gw1,s1,t15):2
+ s2982:  S1 :: muLB_gsin_rt(gs1,s1,t15):1 SOS1_LB_gsin_rt(gs1,s1,t15):2
+ s2983:  S1 :: muLB_gsout_rt(gs1,s1,t15):1 SOS1_LB_gsout_rt(gs1,s1,t15):2
+ s2984:  S1 :: muLB_gstore_rt(gs1,s1,t15):1 SOS1_LB_gstore_rt(gs1,s1,t15):2
+ s2985:  S1 :: muLB_pres_rt(ng101,s1,t16):1 SOS1_LB_pres_rt(ng101,s1,t16):2
+ s2986:  S1 :: muLB_gshed(ng101,s1,t16):1 SOS1_LB_gshed(ng101,s1,t16):2
+ s2987:  S1 :: muLB_pres_rt(ng102,s1,t16):1 SOS1_LB_pres_rt(ng102,s1,t16):2
+ s2988:  S1 :: muLB_gshed(ng102,s1,t16):1 SOS1_LB_gshed(ng102,s1,t16):2
+ s2989:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t16):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t16):2
- s3566:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t16):1
+ s2990:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t16):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t16):2
- s3567:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t16):1
+ s2991:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t16):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t16):2
- s3568:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t16):1
+ s2992:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t16):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t16):2
- s3569:  S1 :: muLB_gprodUp(gw1,s1,t16):1 SOS1_LB_gprodUp(gw1,s1,t16):2
- s3570:  S1 :: muLB_gprodDn(gw1,s1,t16):1 SOS1_LB_gprodDn(gw1,s1,t16):2
- s3571:  S1 :: muLB_gsin_rt(gs1,s1,t16):1 SOS1_LB_gsin_rt(gs1,s1,t16):2
- s3572:  S1 :: muLB_gsout_rt(gs1,s1,t16):1 SOS1_LB_gsout_rt(gs1,s1,t16):2
- s3573:  S1 :: muLB_gstore_rt(gs1,s1,t16):1 SOS1_LB_gstore_rt(gs1,s1,t16):2
- s3574:  S1 :: muLB_pres_rt(ng101,s1,t17):1 SOS1_LB_pres_rt(ng101,s1,t17):2
- s3575:  S1 :: muLB_gshed(ng101,s1,t17):1 SOS1_LB_gshed(ng101,s1,t17):2
- s3576:  S1 :: muLB_pres_rt(ng102,s1,t17):1 SOS1_LB_pres_rt(ng102,s1,t17):2
- s3577:  S1 :: muLB_gshed(ng102,s1,t17):1 SOS1_LB_gshed(ng102,s1,t17):2
- s3578:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t17):1
+ s2993:  S1 :: muLB_gprodUp(gw1,s1,t16):1 SOS1_LB_gprodUp(gw1,s1,t16):2
+ s2994:  S1 :: muLB_gprodDn(gw1,s1,t16):1 SOS1_LB_gprodDn(gw1,s1,t16):2
+ s2995:  S1 :: muLB_gsin_rt(gs1,s1,t16):1 SOS1_LB_gsin_rt(gs1,s1,t16):2
+ s2996:  S1 :: muLB_gsout_rt(gs1,s1,t16):1 SOS1_LB_gsout_rt(gs1,s1,t16):2
+ s2997:  S1 :: muLB_gstore_rt(gs1,s1,t16):1 SOS1_LB_gstore_rt(gs1,s1,t16):2
+ s2998:  S1 :: muLB_pres_rt(ng101,s1,t17):1 SOS1_LB_pres_rt(ng101,s1,t17):2
+ s2999:  S1 :: muLB_gshed(ng101,s1,t17):1 SOS1_LB_gshed(ng101,s1,t17):2
+ s3000:  S1 :: muLB_pres_rt(ng102,s1,t17):1 SOS1_LB_pres_rt(ng102,s1,t17):2
+ s3001:  S1 :: muLB_gshed(ng102,s1,t17):1 SOS1_LB_gshed(ng102,s1,t17):2
+ s3002:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t17):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t17):2
- s3579:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t17):1
+ s3003:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t17):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t17):2
- s3580:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t17):1
+ s3004:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t17):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t17):2
- s3581:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t17):1
+ s3005:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t17):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t17):2
- s3582:  S1 :: muLB_gprodUp(gw1,s1,t17):1 SOS1_LB_gprodUp(gw1,s1,t17):2
- s3583:  S1 :: muLB_gprodDn(gw1,s1,t17):1 SOS1_LB_gprodDn(gw1,s1,t17):2
- s3584:  S1 :: muLB_gsin_rt(gs1,s1,t17):1 SOS1_LB_gsin_rt(gs1,s1,t17):2
- s3585:  S1 :: muLB_gsout_rt(gs1,s1,t17):1 SOS1_LB_gsout_rt(gs1,s1,t17):2
- s3586:  S1 :: muLB_gstore_rt(gs1,s1,t17):1 SOS1_LB_gstore_rt(gs1,s1,t17):2
- s3587:  S1 :: muLB_pres_rt(ng101,s1,t18):1 SOS1_LB_pres_rt(ng101,s1,t18):2
- s3588:  S1 :: muLB_gshed(ng101,s1,t18):1 SOS1_LB_gshed(ng101,s1,t18):2
- s3589:  S1 :: muLB_pres_rt(ng102,s1,t18):1 SOS1_LB_pres_rt(ng102,s1,t18):2
- s3590:  S1 :: muLB_gshed(ng102,s1,t18):1 SOS1_LB_gshed(ng102,s1,t18):2
- s3591:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t18):1
+ s3006:  S1 :: muLB_gprodUp(gw1,s1,t17):1 SOS1_LB_gprodUp(gw1,s1,t17):2
+ s3007:  S1 :: muLB_gprodDn(gw1,s1,t17):1 SOS1_LB_gprodDn(gw1,s1,t17):2
+ s3008:  S1 :: muLB_gsin_rt(gs1,s1,t17):1 SOS1_LB_gsin_rt(gs1,s1,t17):2
+ s3009:  S1 :: muLB_gsout_rt(gs1,s1,t17):1 SOS1_LB_gsout_rt(gs1,s1,t17):2
+ s3010:  S1 :: muLB_gstore_rt(gs1,s1,t17):1 SOS1_LB_gstore_rt(gs1,s1,t17):2
+ s3011:  S1 :: muLB_pres_rt(ng101,s1,t18):1 SOS1_LB_pres_rt(ng101,s1,t18):2
+ s3012:  S1 :: muLB_gshed(ng101,s1,t18):1 SOS1_LB_gshed(ng101,s1,t18):2
+ s3013:  S1 :: muLB_pres_rt(ng102,s1,t18):1 SOS1_LB_pres_rt(ng102,s1,t18):2
+ s3014:  S1 :: muLB_gshed(ng102,s1,t18):1 SOS1_LB_gshed(ng102,s1,t18):2
+ s3015:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t18):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t18):2
- s3592:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t18):1
+ s3016:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t18):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t18):2
- s3593:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t18):1
+ s3017:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t18):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t18):2
- s3594:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t18):1
+ s3018:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t18):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t18):2
- s3595:  S1 :: muLB_gprodUp(gw1,s1,t18):1 SOS1_LB_gprodUp(gw1,s1,t18):2
- s3596:  S1 :: muLB_gprodDn(gw1,s1,t18):1 SOS1_LB_gprodDn(gw1,s1,t18):2
- s3597:  S1 :: muLB_gsin_rt(gs1,s1,t18):1 SOS1_LB_gsin_rt(gs1,s1,t18):2
- s3598:  S1 :: muLB_gsout_rt(gs1,s1,t18):1 SOS1_LB_gsout_rt(gs1,s1,t18):2
- s3599:  S1 :: muLB_gstore_rt(gs1,s1,t18):1 SOS1_LB_gstore_rt(gs1,s1,t18):2
- s3600:  S1 :: muLB_pres_rt(ng101,s1,t19):1 SOS1_LB_pres_rt(ng101,s1,t19):2
- s3601:  S1 :: muLB_gshed(ng101,s1,t19):1 SOS1_LB_gshed(ng101,s1,t19):2
- s3602:  S1 :: muLB_pres_rt(ng102,s1,t19):1 SOS1_LB_pres_rt(ng102,s1,t19):2
- s3603:  S1 :: muLB_gshed(ng102,s1,t19):1 SOS1_LB_gshed(ng102,s1,t19):2
- s3604:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t19):1
+ s3019:  S1 :: muLB_gprodUp(gw1,s1,t18):1 SOS1_LB_gprodUp(gw1,s1,t18):2
+ s3020:  S1 :: muLB_gprodDn(gw1,s1,t18):1 SOS1_LB_gprodDn(gw1,s1,t18):2
+ s3021:  S1 :: muLB_gsin_rt(gs1,s1,t18):1 SOS1_LB_gsin_rt(gs1,s1,t18):2
+ s3022:  S1 :: muLB_gsout_rt(gs1,s1,t18):1 SOS1_LB_gsout_rt(gs1,s1,t18):2
+ s3023:  S1 :: muLB_gstore_rt(gs1,s1,t18):1 SOS1_LB_gstore_rt(gs1,s1,t18):2
+ s3024:  S1 :: muLB_pres_rt(ng101,s1,t19):1 SOS1_LB_pres_rt(ng101,s1,t19):2
+ s3025:  S1 :: muLB_gshed(ng101,s1,t19):1 SOS1_LB_gshed(ng101,s1,t19):2
+ s3026:  S1 :: muLB_pres_rt(ng102,s1,t19):1 SOS1_LB_pres_rt(ng102,s1,t19):2
+ s3027:  S1 :: muLB_gshed(ng102,s1,t19):1 SOS1_LB_gshed(ng102,s1,t19):2
+ s3028:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t19):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t19):2
- s3605:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t19):1
+ s3029:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t19):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t19):2
- s3606:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t19):1
+ s3030:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t19):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t19):2
- s3607:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t19):1
+ s3031:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t19):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t19):2
- s3608:  S1 :: muLB_gprodUp(gw1,s1,t19):1 SOS1_LB_gprodUp(gw1,s1,t19):2
- s3609:  S1 :: muLB_gprodDn(gw1,s1,t19):1 SOS1_LB_gprodDn(gw1,s1,t19):2
- s3610:  S1 :: muLB_gsin_rt(gs1,s1,t19):1 SOS1_LB_gsin_rt(gs1,s1,t19):2
- s3611:  S1 :: muLB_gsout_rt(gs1,s1,t19):1 SOS1_LB_gsout_rt(gs1,s1,t19):2
- s3612:  S1 :: muLB_gstore_rt(gs1,s1,t19):1 SOS1_LB_gstore_rt(gs1,s1,t19):2
- s3613:  S1 :: muLB_pres_rt(ng101,s1,t20):1 SOS1_LB_pres_rt(ng101,s1,t20):2
- s3614:  S1 :: muLB_gshed(ng101,s1,t20):1 SOS1_LB_gshed(ng101,s1,t20):2
- s3615:  S1 :: muLB_pres_rt(ng102,s1,t20):1 SOS1_LB_pres_rt(ng102,s1,t20):2
- s3616:  S1 :: muLB_gshed(ng102,s1,t20):1 SOS1_LB_gshed(ng102,s1,t20):2
- s3617:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t20):1
+ s3032:  S1 :: muLB_gprodUp(gw1,s1,t19):1 SOS1_LB_gprodUp(gw1,s1,t19):2
+ s3033:  S1 :: muLB_gprodDn(gw1,s1,t19):1 SOS1_LB_gprodDn(gw1,s1,t19):2
+ s3034:  S1 :: muLB_gsin_rt(gs1,s1,t19):1 SOS1_LB_gsin_rt(gs1,s1,t19):2
+ s3035:  S1 :: muLB_gsout_rt(gs1,s1,t19):1 SOS1_LB_gsout_rt(gs1,s1,t19):2
+ s3036:  S1 :: muLB_gstore_rt(gs1,s1,t19):1 SOS1_LB_gstore_rt(gs1,s1,t19):2
+ s3037:  S1 :: muLB_pres_rt(ng101,s1,t20):1 SOS1_LB_pres_rt(ng101,s1,t20):2
+ s3038:  S1 :: muLB_gshed(ng101,s1,t20):1 SOS1_LB_gshed(ng101,s1,t20):2
+ s3039:  S1 :: muLB_pres_rt(ng102,s1,t20):1 SOS1_LB_pres_rt(ng102,s1,t20):2
+ s3040:  S1 :: muLB_gshed(ng102,s1,t20):1 SOS1_LB_gshed(ng102,s1,t20):2
+ s3041:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t20):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t20):2
- s3618:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t20):1
+ s3042:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t20):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t20):2
- s3619:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t20):1
+ s3043:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t20):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t20):2
- s3620:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t20):1
+ s3044:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t20):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t20):2
- s3621:  S1 :: muLB_gprodUp(gw1,s1,t20):1 SOS1_LB_gprodUp(gw1,s1,t20):2
- s3622:  S1 :: muLB_gprodDn(gw1,s1,t20):1 SOS1_LB_gprodDn(gw1,s1,t20):2
- s3623:  S1 :: muLB_gsin_rt(gs1,s1,t20):1 SOS1_LB_gsin_rt(gs1,s1,t20):2
- s3624:  S1 :: muLB_gsout_rt(gs1,s1,t20):1 SOS1_LB_gsout_rt(gs1,s1,t20):2
- s3625:  S1 :: muLB_gstore_rt(gs1,s1,t20):1 SOS1_LB_gstore_rt(gs1,s1,t20):2
- s3626:  S1 :: muLB_pres_rt(ng101,s1,t21):1 SOS1_LB_pres_rt(ng101,s1,t21):2
- s3627:  S1 :: muLB_gshed(ng101,s1,t21):1 SOS1_LB_gshed(ng101,s1,t21):2
- s3628:  S1 :: muLB_pres_rt(ng102,s1,t21):1 SOS1_LB_pres_rt(ng102,s1,t21):2
- s3629:  S1 :: muLB_gshed(ng102,s1,t21):1 SOS1_LB_gshed(ng102,s1,t21):2
- s3630:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t21):1
+ s3045:  S1 :: muLB_gprodUp(gw1,s1,t20):1 SOS1_LB_gprodUp(gw1,s1,t20):2
+ s3046:  S1 :: muLB_gprodDn(gw1,s1,t20):1 SOS1_LB_gprodDn(gw1,s1,t20):2
+ s3047:  S1 :: muLB_gsin_rt(gs1,s1,t20):1 SOS1_LB_gsin_rt(gs1,s1,t20):2
+ s3048:  S1 :: muLB_gsout_rt(gs1,s1,t20):1 SOS1_LB_gsout_rt(gs1,s1,t20):2
+ s3049:  S1 :: muLB_gstore_rt(gs1,s1,t20):1 SOS1_LB_gstore_rt(gs1,s1,t20):2
+ s3050:  S1 :: muLB_pres_rt(ng101,s1,t21):1 SOS1_LB_pres_rt(ng101,s1,t21):2
+ s3051:  S1 :: muLB_gshed(ng101,s1,t21):1 SOS1_LB_gshed(ng101,s1,t21):2
+ s3052:  S1 :: muLB_pres_rt(ng102,s1,t21):1 SOS1_LB_pres_rt(ng102,s1,t21):2
+ s3053:  S1 :: muLB_gshed(ng102,s1,t21):1 SOS1_LB_gshed(ng102,s1,t21):2
+ s3054:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t21):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t21):2
- s3631:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t21):1
+ s3055:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t21):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t21):2
- s3632:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t21):1
+ s3056:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t21):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t21):2
- s3633:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t21):1
+ s3057:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t21):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t21):2
- s3634:  S1 :: muLB_gprodUp(gw1,s1,t21):1 SOS1_LB_gprodUp(gw1,s1,t21):2
- s3635:  S1 :: muLB_gprodDn(gw1,s1,t21):1 SOS1_LB_gprodDn(gw1,s1,t21):2
- s3636:  S1 :: muLB_gsin_rt(gs1,s1,t21):1 SOS1_LB_gsin_rt(gs1,s1,t21):2
- s3637:  S1 :: muLB_gsout_rt(gs1,s1,t21):1 SOS1_LB_gsout_rt(gs1,s1,t21):2
- s3638:  S1 :: muLB_gstore_rt(gs1,s1,t21):1 SOS1_LB_gstore_rt(gs1,s1,t21):2
- s3639:  S1 :: muLB_pres_rt(ng101,s1,t22):1 SOS1_LB_pres_rt(ng101,s1,t22):2
- s3640:  S1 :: muLB_gshed(ng101,s1,t22):1 SOS1_LB_gshed(ng101,s1,t22):2
- s3641:  S1 :: muLB_pres_rt(ng102,s1,t22):1 SOS1_LB_pres_rt(ng102,s1,t22):2
- s3642:  S1 :: muLB_gshed(ng102,s1,t22):1 SOS1_LB_gshed(ng102,s1,t22):2
- s3643:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t22):1
+ s3058:  S1 :: muLB_gprodUp(gw1,s1,t21):1 SOS1_LB_gprodUp(gw1,s1,t21):2
+ s3059:  S1 :: muLB_gprodDn(gw1,s1,t21):1 SOS1_LB_gprodDn(gw1,s1,t21):2
+ s3060:  S1 :: muLB_gsin_rt(gs1,s1,t21):1 SOS1_LB_gsin_rt(gs1,s1,t21):2
+ s3061:  S1 :: muLB_gsout_rt(gs1,s1,t21):1 SOS1_LB_gsout_rt(gs1,s1,t21):2
+ s3062:  S1 :: muLB_gstore_rt(gs1,s1,t21):1 SOS1_LB_gstore_rt(gs1,s1,t21):2
+ s3063:  S1 :: muLB_pres_rt(ng101,s1,t22):1 SOS1_LB_pres_rt(ng101,s1,t22):2
+ s3064:  S1 :: muLB_gshed(ng101,s1,t22):1 SOS1_LB_gshed(ng101,s1,t22):2
+ s3065:  S1 :: muLB_pres_rt(ng102,s1,t22):1 SOS1_LB_pres_rt(ng102,s1,t22):2
+ s3066:  S1 :: muLB_gshed(ng102,s1,t22):1 SOS1_LB_gshed(ng102,s1,t22):2
+ s3067:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t22):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t22):2
- s3644:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t22):1
+ s3068:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t22):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t22):2
- s3645:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t22):1
+ s3069:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t22):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t22):2
- s3646:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t22):1
+ s3070:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t22):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t22):2
- s3647:  S1 :: muLB_gprodUp(gw1,s1,t22):1 SOS1_LB_gprodUp(gw1,s1,t22):2
- s3648:  S1 :: muLB_gprodDn(gw1,s1,t22):1 SOS1_LB_gprodDn(gw1,s1,t22):2
- s3649:  S1 :: muLB_gsin_rt(gs1,s1,t22):1 SOS1_LB_gsin_rt(gs1,s1,t22):2
- s3650:  S1 :: muLB_gsout_rt(gs1,s1,t22):1 SOS1_LB_gsout_rt(gs1,s1,t22):2
- s3651:  S1 :: muLB_gstore_rt(gs1,s1,t22):1 SOS1_LB_gstore_rt(gs1,s1,t22):2
- s3652:  S1 :: muLB_pres_rt(ng101,s1,t23):1 SOS1_LB_pres_rt(ng101,s1,t23):2
- s3653:  S1 :: muLB_gshed(ng101,s1,t23):1 SOS1_LB_gshed(ng101,s1,t23):2
- s3654:  S1 :: muLB_pres_rt(ng102,s1,t23):1 SOS1_LB_pres_rt(ng102,s1,t23):2
- s3655:  S1 :: muLB_gshed(ng102,s1,t23):1 SOS1_LB_gshed(ng102,s1,t23):2
- s3656:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t23):1
+ s3071:  S1 :: muLB_gprodUp(gw1,s1,t22):1 SOS1_LB_gprodUp(gw1,s1,t22):2
+ s3072:  S1 :: muLB_gprodDn(gw1,s1,t22):1 SOS1_LB_gprodDn(gw1,s1,t22):2
+ s3073:  S1 :: muLB_gsin_rt(gs1,s1,t22):1 SOS1_LB_gsin_rt(gs1,s1,t22):2
+ s3074:  S1 :: muLB_gsout_rt(gs1,s1,t22):1 SOS1_LB_gsout_rt(gs1,s1,t22):2
+ s3075:  S1 :: muLB_gstore_rt(gs1,s1,t22):1 SOS1_LB_gstore_rt(gs1,s1,t22):2
+ s3076:  S1 :: muLB_pres_rt(ng101,s1,t23):1 SOS1_LB_pres_rt(ng101,s1,t23):2
+ s3077:  S1 :: muLB_gshed(ng101,s1,t23):1 SOS1_LB_gshed(ng101,s1,t23):2
+ s3078:  S1 :: muLB_pres_rt(ng102,s1,t23):1 SOS1_LB_pres_rt(ng102,s1,t23):2
+ s3079:  S1 :: muLB_gshed(ng102,s1,t23):1 SOS1_LB_gshed(ng102,s1,t23):2
+ s3080:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t23):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t23):2
- s3657:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t23):1
+ s3081:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t23):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t23):2
- s3658:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t23):1
+ s3082:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t23):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t23):2
- s3659:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t23):1
+ s3083:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t23):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t23):2
- s3660:  S1 :: muLB_gprodUp(gw1,s1,t23):1 SOS1_LB_gprodUp(gw1,s1,t23):2
- s3661:  S1 :: muLB_gprodDn(gw1,s1,t23):1 SOS1_LB_gprodDn(gw1,s1,t23):2
- s3662:  S1 :: muLB_gsin_rt(gs1,s1,t23):1 SOS1_LB_gsin_rt(gs1,s1,t23):2
- s3663:  S1 :: muLB_gsout_rt(gs1,s1,t23):1 SOS1_LB_gsout_rt(gs1,s1,t23):2
- s3664:  S1 :: muLB_gstore_rt(gs1,s1,t23):1 SOS1_LB_gstore_rt(gs1,s1,t23):2
- s3665:  S1 :: muLB_pres_rt(ng101,s1,t24):1 SOS1_LB_pres_rt(ng101,s1,t24):2
- s3666:  S1 :: muLB_gshed(ng101,s1,t24):1 SOS1_LB_gshed(ng101,s1,t24):2
- s3667:  S1 :: muLB_pres_rt(ng102,s1,t24):1 SOS1_LB_pres_rt(ng102,s1,t24):2
- s3668:  S1 :: muLB_gshed(ng102,s1,t24):1 SOS1_LB_gshed(ng102,s1,t24):2
- s3669:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t24):1
+ s3084:  S1 :: muLB_gprodUp(gw1,s1,t23):1 SOS1_LB_gprodUp(gw1,s1,t23):2
+ s3085:  S1 :: muLB_gprodDn(gw1,s1,t23):1 SOS1_LB_gprodDn(gw1,s1,t23):2
+ s3086:  S1 :: muLB_gsin_rt(gs1,s1,t23):1 SOS1_LB_gsin_rt(gs1,s1,t23):2
+ s3087:  S1 :: muLB_gsout_rt(gs1,s1,t23):1 SOS1_LB_gsout_rt(gs1,s1,t23):2
+ s3088:  S1 :: muLB_gstore_rt(gs1,s1,t23):1 SOS1_LB_gstore_rt(gs1,s1,t23):2
+ s3089:  S1 :: muLB_pres_rt(ng101,s1,t24):1 SOS1_LB_pres_rt(ng101,s1,t24):2
+ s3090:  S1 :: muLB_gshed(ng101,s1,t24):1 SOS1_LB_gshed(ng101,s1,t24):2
+ s3091:  S1 :: muLB_pres_rt(ng102,s1,t24):1 SOS1_LB_pres_rt(ng102,s1,t24):2
+ s3092:  S1 :: muLB_gshed(ng102,s1,t24):1 SOS1_LB_gshed(ng102,s1,t24):2
+ s3093:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t24):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t24):2
- s3670:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t24):1
+ s3094:  S1 :: muLB_lpack_rt(('ng101','ng102'),s1,t24):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s1,t24):2
- s3671:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t24):1
+ s3095:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t24):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t24):2
- s3672:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t24):1
+ s3096:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t24):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t24):2
- s3673:  S1 :: muLB_gprodUp(gw1,s1,t24):1 SOS1_LB_gprodUp(gw1,s1,t24):2
- s3674:  S1 :: muLB_gprodDn(gw1,s1,t24):1 SOS1_LB_gprodDn(gw1,s1,t24):2
- s3675:  S1 :: muLB_gsin_rt(gs1,s1,t24):1 SOS1_LB_gsin_rt(gs1,s1,t24):2
- s3676:  S1 :: muLB_gsout_rt(gs1,s1,t24):1 SOS1_LB_gsout_rt(gs1,s1,t24):2
- s3677:  S1 :: muLB_gstore_rt(gs1,s1,t24):1 SOS1_LB_gstore_rt(gs1,s1,t24):2
- s3678:  S1 :: muLB_pres_rt(ng101,s2,t1):1 SOS1_LB_pres_rt(ng101,s2,t1):2
- s3679:  S1 :: muLB_gshed(ng101,s2,t1):1 SOS1_LB_gshed(ng101,s2,t1):2
- s3680:  S1 :: muLB_pres_rt(ng102,s2,t1):1 SOS1_LB_pres_rt(ng102,s2,t1):2
- s3681:  S1 :: muLB_gshed(ng102,s2,t1):1 SOS1_LB_gshed(ng102,s2,t1):2
- s3682:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t1):1
+ s3097:  S1 :: muLB_gprodUp(gw1,s1,t24):1 SOS1_LB_gprodUp(gw1,s1,t24):2
+ s3098:  S1 :: muLB_gprodDn(gw1,s1,t24):1 SOS1_LB_gprodDn(gw1,s1,t24):2
+ s3099:  S1 :: muLB_gsin_rt(gs1,s1,t24):1 SOS1_LB_gsin_rt(gs1,s1,t24):2
+ s3100:  S1 :: muLB_gsout_rt(gs1,s1,t24):1 SOS1_LB_gsout_rt(gs1,s1,t24):2
+ s3101:  S1 :: muLB_gstore_rt(gs1,s1,t24):1 SOS1_LB_gstore_rt(gs1,s1,t24):2
+ s3102:  S1 :: muLB_pres_rt(ng101,s2,t1):1 SOS1_LB_pres_rt(ng101,s2,t1):2
+ s3103:  S1 :: muLB_gshed(ng101,s2,t1):1 SOS1_LB_gshed(ng101,s2,t1):2
+ s3104:  S1 :: muLB_pres_rt(ng102,s2,t1):1 SOS1_LB_pres_rt(ng102,s2,t1):2
+ s3105:  S1 :: muLB_gshed(ng102,s2,t1):1 SOS1_LB_gshed(ng102,s2,t1):2
+ s3106:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t1):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t1):2
- s3683:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t1):1
+ s3107:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t1):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t1):2
- s3684:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t1):1
+ s3108:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t1):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t1):2
- s3685:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t1):1
+ s3109:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t1):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t1):2
- s3686:  S1 :: muLB_gprodUp(gw1,s2,t1):1 SOS1_LB_gprodUp(gw1,s2,t1):2
- s3687:  S1 :: muLB_gprodDn(gw1,s2,t1):1 SOS1_LB_gprodDn(gw1,s2,t1):2
- s3688:  S1 :: muLB_gsin_rt(gs1,s2,t1):1 SOS1_LB_gsin_rt(gs1,s2,t1):2
- s3689:  S1 :: muLB_gsout_rt(gs1,s2,t1):1 SOS1_LB_gsout_rt(gs1,s2,t1):2
- s3690:  S1 :: muLB_gstore_rt(gs1,s2,t1):1 SOS1_LB_gstore_rt(gs1,s2,t1):2
- s3691:  S1 :: muLB_pres_rt(ng101,s2,t2):1 SOS1_LB_pres_rt(ng101,s2,t2):2
- s3692:  S1 :: muLB_gshed(ng101,s2,t2):1 SOS1_LB_gshed(ng101,s2,t2):2
- s3693:  S1 :: muLB_pres_rt(ng102,s2,t2):1 SOS1_LB_pres_rt(ng102,s2,t2):2
- s3694:  S1 :: muLB_gshed(ng102,s2,t2):1 SOS1_LB_gshed(ng102,s2,t2):2
- s3695:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t2):1
+ s3110:  S1 :: muLB_gprodUp(gw1,s2,t1):1 SOS1_LB_gprodUp(gw1,s2,t1):2
+ s3111:  S1 :: muLB_gprodDn(gw1,s2,t1):1 SOS1_LB_gprodDn(gw1,s2,t1):2
+ s3112:  S1 :: muLB_gsin_rt(gs1,s2,t1):1 SOS1_LB_gsin_rt(gs1,s2,t1):2
+ s3113:  S1 :: muLB_gsout_rt(gs1,s2,t1):1 SOS1_LB_gsout_rt(gs1,s2,t1):2
+ s3114:  S1 :: muLB_gstore_rt(gs1,s2,t1):1 SOS1_LB_gstore_rt(gs1,s2,t1):2
+ s3115:  S1 :: muLB_pres_rt(ng101,s2,t2):1 SOS1_LB_pres_rt(ng101,s2,t2):2
+ s3116:  S1 :: muLB_gshed(ng101,s2,t2):1 SOS1_LB_gshed(ng101,s2,t2):2
+ s3117:  S1 :: muLB_pres_rt(ng102,s2,t2):1 SOS1_LB_pres_rt(ng102,s2,t2):2
+ s3118:  S1 :: muLB_gshed(ng102,s2,t2):1 SOS1_LB_gshed(ng102,s2,t2):2
+ s3119:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t2):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t2):2
- s3696:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t2):1
+ s3120:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t2):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t2):2
- s3697:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t2):1
+ s3121:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t2):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t2):2
- s3698:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t2):1
+ s3122:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t2):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t2):2
- s3699:  S1 :: muLB_gprodUp(gw1,s2,t2):1 SOS1_LB_gprodUp(gw1,s2,t2):2
- s3700:  S1 :: muLB_gprodDn(gw1,s2,t2):1 SOS1_LB_gprodDn(gw1,s2,t2):2
- s3701:  S1 :: muLB_gsin_rt(gs1,s2,t2):1 SOS1_LB_gsin_rt(gs1,s2,t2):2
- s3702:  S1 :: muLB_gsout_rt(gs1,s2,t2):1 SOS1_LB_gsout_rt(gs1,s2,t2):2
- s3703:  S1 :: muLB_gstore_rt(gs1,s2,t2):1 SOS1_LB_gstore_rt(gs1,s2,t2):2
- s3704:  S1 :: muLB_pres_rt(ng101,s2,t3):1 SOS1_LB_pres_rt(ng101,s2,t3):2
- s3705:  S1 :: muLB_gshed(ng101,s2,t3):1 SOS1_LB_gshed(ng101,s2,t3):2
- s3706:  S1 :: muLB_pres_rt(ng102,s2,t3):1 SOS1_LB_pres_rt(ng102,s2,t3):2
- s3707:  S1 :: muLB_gshed(ng102,s2,t3):1 SOS1_LB_gshed(ng102,s2,t3):2
- s3708:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t3):1
+ s3123:  S1 :: muLB_gprodUp(gw1,s2,t2):1 SOS1_LB_gprodUp(gw1,s2,t2):2
+ s3124:  S1 :: muLB_gprodDn(gw1,s2,t2):1 SOS1_LB_gprodDn(gw1,s2,t2):2
+ s3125:  S1 :: muLB_gsin_rt(gs1,s2,t2):1 SOS1_LB_gsin_rt(gs1,s2,t2):2
+ s3126:  S1 :: muLB_gsout_rt(gs1,s2,t2):1 SOS1_LB_gsout_rt(gs1,s2,t2):2
+ s3127:  S1 :: muLB_gstore_rt(gs1,s2,t2):1 SOS1_LB_gstore_rt(gs1,s2,t2):2
+ s3128:  S1 :: muLB_pres_rt(ng101,s2,t3):1 SOS1_LB_pres_rt(ng101,s2,t3):2
+ s3129:  S1 :: muLB_gshed(ng101,s2,t3):1 SOS1_LB_gshed(ng101,s2,t3):2
+ s3130:  S1 :: muLB_pres_rt(ng102,s2,t3):1 SOS1_LB_pres_rt(ng102,s2,t3):2
+ s3131:  S1 :: muLB_gshed(ng102,s2,t3):1 SOS1_LB_gshed(ng102,s2,t3):2
+ s3132:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t3):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t3):2
- s3709:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t3):1
+ s3133:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t3):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t3):2
- s3710:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t3):1
+ s3134:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t3):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t3):2
- s3711:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t3):1
+ s3135:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t3):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t3):2
- s3712:  S1 :: muLB_gprodUp(gw1,s2,t3):1 SOS1_LB_gprodUp(gw1,s2,t3):2
- s3713:  S1 :: muLB_gprodDn(gw1,s2,t3):1 SOS1_LB_gprodDn(gw1,s2,t3):2
- s3714:  S1 :: muLB_gsin_rt(gs1,s2,t3):1 SOS1_LB_gsin_rt(gs1,s2,t3):2
- s3715:  S1 :: muLB_gsout_rt(gs1,s2,t3):1 SOS1_LB_gsout_rt(gs1,s2,t3):2
- s3716:  S1 :: muLB_gstore_rt(gs1,s2,t3):1 SOS1_LB_gstore_rt(gs1,s2,t3):2
- s3717:  S1 :: muLB_pres_rt(ng101,s2,t4):1 SOS1_LB_pres_rt(ng101,s2,t4):2
- s3718:  S1 :: muLB_gshed(ng101,s2,t4):1 SOS1_LB_gshed(ng101,s2,t4):2
- s3719:  S1 :: muLB_pres_rt(ng102,s2,t4):1 SOS1_LB_pres_rt(ng102,s2,t4):2
- s3720:  S1 :: muLB_gshed(ng102,s2,t4):1 SOS1_LB_gshed(ng102,s2,t4):2
- s3721:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t4):1
+ s3136:  S1 :: muLB_gprodUp(gw1,s2,t3):1 SOS1_LB_gprodUp(gw1,s2,t3):2
+ s3137:  S1 :: muLB_gprodDn(gw1,s2,t3):1 SOS1_LB_gprodDn(gw1,s2,t3):2
+ s3138:  S1 :: muLB_gsin_rt(gs1,s2,t3):1 SOS1_LB_gsin_rt(gs1,s2,t3):2
+ s3139:  S1 :: muLB_gsout_rt(gs1,s2,t3):1 SOS1_LB_gsout_rt(gs1,s2,t3):2
+ s3140:  S1 :: muLB_gstore_rt(gs1,s2,t3):1 SOS1_LB_gstore_rt(gs1,s2,t3):2
+ s3141:  S1 :: muLB_pres_rt(ng101,s2,t4):1 SOS1_LB_pres_rt(ng101,s2,t4):2
+ s3142:  S1 :: muLB_gshed(ng101,s2,t4):1 SOS1_LB_gshed(ng101,s2,t4):2
+ s3143:  S1 :: muLB_pres_rt(ng102,s2,t4):1 SOS1_LB_pres_rt(ng102,s2,t4):2
+ s3144:  S1 :: muLB_gshed(ng102,s2,t4):1 SOS1_LB_gshed(ng102,s2,t4):2
+ s3145:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t4):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t4):2
- s3722:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t4):1
+ s3146:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t4):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t4):2
- s3723:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t4):1
+ s3147:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t4):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t4):2
- s3724:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t4):1
+ s3148:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t4):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t4):2
- s3725:  S1 :: muLB_gprodUp(gw1,s2,t4):1 SOS1_LB_gprodUp(gw1,s2,t4):2
- s3726:  S1 :: muLB_gprodDn(gw1,s2,t4):1 SOS1_LB_gprodDn(gw1,s2,t4):2
- s3727:  S1 :: muLB_gsin_rt(gs1,s2,t4):1 SOS1_LB_gsin_rt(gs1,s2,t4):2
- s3728:  S1 :: muLB_gsout_rt(gs1,s2,t4):1 SOS1_LB_gsout_rt(gs1,s2,t4):2
- s3729:  S1 :: muLB_gstore_rt(gs1,s2,t4):1 SOS1_LB_gstore_rt(gs1,s2,t4):2
- s3730:  S1 :: muLB_pres_rt(ng101,s2,t5):1 SOS1_LB_pres_rt(ng101,s2,t5):2
- s3731:  S1 :: muLB_gshed(ng101,s2,t5):1 SOS1_LB_gshed(ng101,s2,t5):2
- s3732:  S1 :: muLB_pres_rt(ng102,s2,t5):1 SOS1_LB_pres_rt(ng102,s2,t5):2
- s3733:  S1 :: muLB_gshed(ng102,s2,t5):1 SOS1_LB_gshed(ng102,s2,t5):2
- s3734:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t5):1
+ s3149:  S1 :: muLB_gprodUp(gw1,s2,t4):1 SOS1_LB_gprodUp(gw1,s2,t4):2
+ s3150:  S1 :: muLB_gprodDn(gw1,s2,t4):1 SOS1_LB_gprodDn(gw1,s2,t4):2
+ s3151:  S1 :: muLB_gsin_rt(gs1,s2,t4):1 SOS1_LB_gsin_rt(gs1,s2,t4):2
+ s3152:  S1 :: muLB_gsout_rt(gs1,s2,t4):1 SOS1_LB_gsout_rt(gs1,s2,t4):2
+ s3153:  S1 :: muLB_gstore_rt(gs1,s2,t4):1 SOS1_LB_gstore_rt(gs1,s2,t4):2
+ s3154:  S1 :: muLB_pres_rt(ng101,s2,t5):1 SOS1_LB_pres_rt(ng101,s2,t5):2
+ s3155:  S1 :: muLB_gshed(ng101,s2,t5):1 SOS1_LB_gshed(ng101,s2,t5):2
+ s3156:  S1 :: muLB_pres_rt(ng102,s2,t5):1 SOS1_LB_pres_rt(ng102,s2,t5):2
+ s3157:  S1 :: muLB_gshed(ng102,s2,t5):1 SOS1_LB_gshed(ng102,s2,t5):2
+ s3158:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t5):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t5):2
- s3735:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t5):1
+ s3159:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t5):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t5):2
- s3736:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t5):1
+ s3160:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t5):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t5):2
- s3737:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t5):1
+ s3161:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t5):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t5):2
- s3738:  S1 :: muLB_gprodUp(gw1,s2,t5):1 SOS1_LB_gprodUp(gw1,s2,t5):2
- s3739:  S1 :: muLB_gprodDn(gw1,s2,t5):1 SOS1_LB_gprodDn(gw1,s2,t5):2
- s3740:  S1 :: muLB_gsin_rt(gs1,s2,t5):1 SOS1_LB_gsin_rt(gs1,s2,t5):2
- s3741:  S1 :: muLB_gsout_rt(gs1,s2,t5):1 SOS1_LB_gsout_rt(gs1,s2,t5):2
- s3742:  S1 :: muLB_gstore_rt(gs1,s2,t5):1 SOS1_LB_gstore_rt(gs1,s2,t5):2
- s3743:  S1 :: muLB_pres_rt(ng101,s2,t6):1 SOS1_LB_pres_rt(ng101,s2,t6):2
- s3744:  S1 :: muLB_gshed(ng101,s2,t6):1 SOS1_LB_gshed(ng101,s2,t6):2
- s3745:  S1 :: muLB_pres_rt(ng102,s2,t6):1 SOS1_LB_pres_rt(ng102,s2,t6):2
- s3746:  S1 :: muLB_gshed(ng102,s2,t6):1 SOS1_LB_gshed(ng102,s2,t6):2
- s3747:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t6):1
+ s3162:  S1 :: muLB_gprodUp(gw1,s2,t5):1 SOS1_LB_gprodUp(gw1,s2,t5):2
+ s3163:  S1 :: muLB_gprodDn(gw1,s2,t5):1 SOS1_LB_gprodDn(gw1,s2,t5):2
+ s3164:  S1 :: muLB_gsin_rt(gs1,s2,t5):1 SOS1_LB_gsin_rt(gs1,s2,t5):2
+ s3165:  S1 :: muLB_gsout_rt(gs1,s2,t5):1 SOS1_LB_gsout_rt(gs1,s2,t5):2
+ s3166:  S1 :: muLB_gstore_rt(gs1,s2,t5):1 SOS1_LB_gstore_rt(gs1,s2,t5):2
+ s3167:  S1 :: muLB_pres_rt(ng101,s2,t6):1 SOS1_LB_pres_rt(ng101,s2,t6):2
+ s3168:  S1 :: muLB_gshed(ng101,s2,t6):1 SOS1_LB_gshed(ng101,s2,t6):2
+ s3169:  S1 :: muLB_pres_rt(ng102,s2,t6):1 SOS1_LB_pres_rt(ng102,s2,t6):2
+ s3170:  S1 :: muLB_gshed(ng102,s2,t6):1 SOS1_LB_gshed(ng102,s2,t6):2
+ s3171:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t6):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t6):2
- s3748:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t6):1
+ s3172:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t6):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t6):2
- s3749:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t6):1
+ s3173:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t6):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t6):2
- s3750:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t6):1
+ s3174:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t6):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t6):2
- s3751:  S1 :: muLB_gprodUp(gw1,s2,t6):1 SOS1_LB_gprodUp(gw1,s2,t6):2
- s3752:  S1 :: muLB_gprodDn(gw1,s2,t6):1 SOS1_LB_gprodDn(gw1,s2,t6):2
- s3753:  S1 :: muLB_gsin_rt(gs1,s2,t6):1 SOS1_LB_gsin_rt(gs1,s2,t6):2
- s3754:  S1 :: muLB_gsout_rt(gs1,s2,t6):1 SOS1_LB_gsout_rt(gs1,s2,t6):2
- s3755:  S1 :: muLB_gstore_rt(gs1,s2,t6):1 SOS1_LB_gstore_rt(gs1,s2,t6):2
- s3756:  S1 :: muLB_pres_rt(ng101,s2,t7):1 SOS1_LB_pres_rt(ng101,s2,t7):2
- s3757:  S1 :: muLB_gshed(ng101,s2,t7):1 SOS1_LB_gshed(ng101,s2,t7):2
- s3758:  S1 :: muLB_pres_rt(ng102,s2,t7):1 SOS1_LB_pres_rt(ng102,s2,t7):2
- s3759:  S1 :: muLB_gshed(ng102,s2,t7):1 SOS1_LB_gshed(ng102,s2,t7):2
- s3760:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t7):1
+ s3175:  S1 :: muLB_gprodUp(gw1,s2,t6):1 SOS1_LB_gprodUp(gw1,s2,t6):2
+ s3176:  S1 :: muLB_gprodDn(gw1,s2,t6):1 SOS1_LB_gprodDn(gw1,s2,t6):2
+ s3177:  S1 :: muLB_gsin_rt(gs1,s2,t6):1 SOS1_LB_gsin_rt(gs1,s2,t6):2
+ s3178:  S1 :: muLB_gsout_rt(gs1,s2,t6):1 SOS1_LB_gsout_rt(gs1,s2,t6):2
+ s3179:  S1 :: muLB_gstore_rt(gs1,s2,t6):1 SOS1_LB_gstore_rt(gs1,s2,t6):2
+ s3180:  S1 :: muLB_pres_rt(ng101,s2,t7):1 SOS1_LB_pres_rt(ng101,s2,t7):2
+ s3181:  S1 :: muLB_gshed(ng101,s2,t7):1 SOS1_LB_gshed(ng101,s2,t7):2
+ s3182:  S1 :: muLB_pres_rt(ng102,s2,t7):1 SOS1_LB_pres_rt(ng102,s2,t7):2
+ s3183:  S1 :: muLB_gshed(ng102,s2,t7):1 SOS1_LB_gshed(ng102,s2,t7):2
+ s3184:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t7):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t7):2
- s3761:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t7):1
+ s3185:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t7):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t7):2
- s3762:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t7):1
+ s3186:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t7):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t7):2
- s3763:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t7):1
+ s3187:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t7):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t7):2
- s3764:  S1 :: muLB_gprodUp(gw1,s2,t7):1 SOS1_LB_gprodUp(gw1,s2,t7):2
- s3765:  S1 :: muLB_gprodDn(gw1,s2,t7):1 SOS1_LB_gprodDn(gw1,s2,t7):2
- s3766:  S1 :: muLB_gsin_rt(gs1,s2,t7):1 SOS1_LB_gsin_rt(gs1,s2,t7):2
- s3767:  S1 :: muLB_gsout_rt(gs1,s2,t7):1 SOS1_LB_gsout_rt(gs1,s2,t7):2
- s3768:  S1 :: muLB_gstore_rt(gs1,s2,t7):1 SOS1_LB_gstore_rt(gs1,s2,t7):2
- s3769:  S1 :: muLB_pres_rt(ng101,s2,t8):1 SOS1_LB_pres_rt(ng101,s2,t8):2
- s3770:  S1 :: muLB_gshed(ng101,s2,t8):1 SOS1_LB_gshed(ng101,s2,t8):2
- s3771:  S1 :: muLB_pres_rt(ng102,s2,t8):1 SOS1_LB_pres_rt(ng102,s2,t8):2
- s3772:  S1 :: muLB_gshed(ng102,s2,t8):1 SOS1_LB_gshed(ng102,s2,t8):2
- s3773:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t8):1
+ s3188:  S1 :: muLB_gprodUp(gw1,s2,t7):1 SOS1_LB_gprodUp(gw1,s2,t7):2
+ s3189:  S1 :: muLB_gprodDn(gw1,s2,t7):1 SOS1_LB_gprodDn(gw1,s2,t7):2
+ s3190:  S1 :: muLB_gsin_rt(gs1,s2,t7):1 SOS1_LB_gsin_rt(gs1,s2,t7):2
+ s3191:  S1 :: muLB_gsout_rt(gs1,s2,t7):1 SOS1_LB_gsout_rt(gs1,s2,t7):2
+ s3192:  S1 :: muLB_gstore_rt(gs1,s2,t7):1 SOS1_LB_gstore_rt(gs1,s2,t7):2
+ s3193:  S1 :: muLB_pres_rt(ng101,s2,t8):1 SOS1_LB_pres_rt(ng101,s2,t8):2
+ s3194:  S1 :: muLB_gshed(ng101,s2,t8):1 SOS1_LB_gshed(ng101,s2,t8):2
+ s3195:  S1 :: muLB_pres_rt(ng102,s2,t8):1 SOS1_LB_pres_rt(ng102,s2,t8):2
+ s3196:  S1 :: muLB_gshed(ng102,s2,t8):1 SOS1_LB_gshed(ng102,s2,t8):2
+ s3197:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t8):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t8):2
- s3774:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t8):1
+ s3198:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t8):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t8):2
- s3775:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t8):1
+ s3199:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t8):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t8):2
- s3776:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t8):1
+ s3200:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t8):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t8):2
- s3777:  S1 :: muLB_gprodUp(gw1,s2,t8):1 SOS1_LB_gprodUp(gw1,s2,t8):2
- s3778:  S1 :: muLB_gprodDn(gw1,s2,t8):1 SOS1_LB_gprodDn(gw1,s2,t8):2
- s3779:  S1 :: muLB_gsin_rt(gs1,s2,t8):1 SOS1_LB_gsin_rt(gs1,s2,t8):2
- s3780:  S1 :: muLB_gsout_rt(gs1,s2,t8):1 SOS1_LB_gsout_rt(gs1,s2,t8):2
- s3781:  S1 :: muLB_gstore_rt(gs1,s2,t8):1 SOS1_LB_gstore_rt(gs1,s2,t8):2
- s3782:  S1 :: muLB_pres_rt(ng101,s2,t9):1 SOS1_LB_pres_rt(ng101,s2,t9):2
- s3783:  S1 :: muLB_gshed(ng101,s2,t9):1 SOS1_LB_gshed(ng101,s2,t9):2
- s3784:  S1 :: muLB_pres_rt(ng102,s2,t9):1 SOS1_LB_pres_rt(ng102,s2,t9):2
- s3785:  S1 :: muLB_gshed(ng102,s2,t9):1 SOS1_LB_gshed(ng102,s2,t9):2
- s3786:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t9):1
+ s3201:  S1 :: muLB_gprodUp(gw1,s2,t8):1 SOS1_LB_gprodUp(gw1,s2,t8):2
+ s3202:  S1 :: muLB_gprodDn(gw1,s2,t8):1 SOS1_LB_gprodDn(gw1,s2,t8):2
+ s3203:  S1 :: muLB_gsin_rt(gs1,s2,t8):1 SOS1_LB_gsin_rt(gs1,s2,t8):2
+ s3204:  S1 :: muLB_gsout_rt(gs1,s2,t8):1 SOS1_LB_gsout_rt(gs1,s2,t8):2
+ s3205:  S1 :: muLB_gstore_rt(gs1,s2,t8):1 SOS1_LB_gstore_rt(gs1,s2,t8):2
+ s3206:  S1 :: muLB_pres_rt(ng101,s2,t9):1 SOS1_LB_pres_rt(ng101,s2,t9):2
+ s3207:  S1 :: muLB_gshed(ng101,s2,t9):1 SOS1_LB_gshed(ng101,s2,t9):2
+ s3208:  S1 :: muLB_pres_rt(ng102,s2,t9):1 SOS1_LB_pres_rt(ng102,s2,t9):2
+ s3209:  S1 :: muLB_gshed(ng102,s2,t9):1 SOS1_LB_gshed(ng102,s2,t9):2
+ s3210:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t9):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t9):2
- s3787:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t9):1
+ s3211:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t9):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t9):2
- s3788:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t9):1
+ s3212:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t9):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t9):2
- s3789:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t9):1
+ s3213:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t9):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t9):2
- s3790:  S1 :: muLB_gprodUp(gw1,s2,t9):1 SOS1_LB_gprodUp(gw1,s2,t9):2
- s3791:  S1 :: muLB_gprodDn(gw1,s2,t9):1 SOS1_LB_gprodDn(gw1,s2,t9):2
- s3792:  S1 :: muLB_gsin_rt(gs1,s2,t9):1 SOS1_LB_gsin_rt(gs1,s2,t9):2
- s3793:  S1 :: muLB_gsout_rt(gs1,s2,t9):1 SOS1_LB_gsout_rt(gs1,s2,t9):2
- s3794:  S1 :: muLB_gstore_rt(gs1,s2,t9):1 SOS1_LB_gstore_rt(gs1,s2,t9):2
- s3795:  S1 :: muLB_pres_rt(ng101,s2,t10):1 SOS1_LB_pres_rt(ng101,s2,t10):2
- s3796:  S1 :: muLB_gshed(ng101,s2,t10):1 SOS1_LB_gshed(ng101,s2,t10):2
- s3797:  S1 :: muLB_pres_rt(ng102,s2,t10):1 SOS1_LB_pres_rt(ng102,s2,t10):2
- s3798:  S1 :: muLB_gshed(ng102,s2,t10):1 SOS1_LB_gshed(ng102,s2,t10):2
- s3799:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t10):1
+ s3214:  S1 :: muLB_gprodUp(gw1,s2,t9):1 SOS1_LB_gprodUp(gw1,s2,t9):2
+ s3215:  S1 :: muLB_gprodDn(gw1,s2,t9):1 SOS1_LB_gprodDn(gw1,s2,t9):2
+ s3216:  S1 :: muLB_gsin_rt(gs1,s2,t9):1 SOS1_LB_gsin_rt(gs1,s2,t9):2
+ s3217:  S1 :: muLB_gsout_rt(gs1,s2,t9):1 SOS1_LB_gsout_rt(gs1,s2,t9):2
+ s3218:  S1 :: muLB_gstore_rt(gs1,s2,t9):1 SOS1_LB_gstore_rt(gs1,s2,t9):2
+ s3219:  S1 :: muLB_pres_rt(ng101,s2,t10):1 SOS1_LB_pres_rt(ng101,s2,t10):2
+ s3220:  S1 :: muLB_gshed(ng101,s2,t10):1 SOS1_LB_gshed(ng101,s2,t10):2
+ s3221:  S1 :: muLB_pres_rt(ng102,s2,t10):1 SOS1_LB_pres_rt(ng102,s2,t10):2
+ s3222:  S1 :: muLB_gshed(ng102,s2,t10):1 SOS1_LB_gshed(ng102,s2,t10):2
+ s3223:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t10):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t10):2
- s3800:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t10):1
+ s3224:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t10):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t10):2
- s3801:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t10):1
+ s3225:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t10):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t10):2
- s3802:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t10):1
+ s3226:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t10):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t10):2
- s3803:  S1 :: muLB_gprodUp(gw1,s2,t10):1 SOS1_LB_gprodUp(gw1,s2,t10):2
- s3804:  S1 :: muLB_gprodDn(gw1,s2,t10):1 SOS1_LB_gprodDn(gw1,s2,t10):2
- s3805:  S1 :: muLB_gsin_rt(gs1,s2,t10):1 SOS1_LB_gsin_rt(gs1,s2,t10):2
- s3806:  S1 :: muLB_gsout_rt(gs1,s2,t10):1 SOS1_LB_gsout_rt(gs1,s2,t10):2
- s3807:  S1 :: muLB_gstore_rt(gs1,s2,t10):1 SOS1_LB_gstore_rt(gs1,s2,t10):2
- s3808:  S1 :: muLB_pres_rt(ng101,s2,t11):1 SOS1_LB_pres_rt(ng101,s2,t11):2
- s3809:  S1 :: muLB_gshed(ng101,s2,t11):1 SOS1_LB_gshed(ng101,s2,t11):2
- s3810:  S1 :: muLB_pres_rt(ng102,s2,t11):1 SOS1_LB_pres_rt(ng102,s2,t11):2
- s3811:  S1 :: muLB_gshed(ng102,s2,t11):1 SOS1_LB_gshed(ng102,s2,t11):2
- s3812:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t11):1
+ s3227:  S1 :: muLB_gprodUp(gw1,s2,t10):1 SOS1_LB_gprodUp(gw1,s2,t10):2
+ s3228:  S1 :: muLB_gprodDn(gw1,s2,t10):1 SOS1_LB_gprodDn(gw1,s2,t10):2
+ s3229:  S1 :: muLB_gsin_rt(gs1,s2,t10):1 SOS1_LB_gsin_rt(gs1,s2,t10):2
+ s3230:  S1 :: muLB_gsout_rt(gs1,s2,t10):1 SOS1_LB_gsout_rt(gs1,s2,t10):2
+ s3231:  S1 :: muLB_gstore_rt(gs1,s2,t10):1 SOS1_LB_gstore_rt(gs1,s2,t10):2
+ s3232:  S1 :: muLB_pres_rt(ng101,s2,t11):1 SOS1_LB_pres_rt(ng101,s2,t11):2
+ s3233:  S1 :: muLB_gshed(ng101,s2,t11):1 SOS1_LB_gshed(ng101,s2,t11):2
+ s3234:  S1 :: muLB_pres_rt(ng102,s2,t11):1 SOS1_LB_pres_rt(ng102,s2,t11):2
+ s3235:  S1 :: muLB_gshed(ng102,s2,t11):1 SOS1_LB_gshed(ng102,s2,t11):2
+ s3236:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t11):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t11):2
- s3813:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t11):1
+ s3237:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t11):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t11):2
- s3814:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t11):1
+ s3238:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t11):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t11):2
- s3815:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t11):1
+ s3239:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t11):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t11):2
- s3816:  S1 :: muLB_gprodUp(gw1,s2,t11):1 SOS1_LB_gprodUp(gw1,s2,t11):2
- s3817:  S1 :: muLB_gprodDn(gw1,s2,t11):1 SOS1_LB_gprodDn(gw1,s2,t11):2
- s3818:  S1 :: muLB_gsin_rt(gs1,s2,t11):1 SOS1_LB_gsin_rt(gs1,s2,t11):2
- s3819:  S1 :: muLB_gsout_rt(gs1,s2,t11):1 SOS1_LB_gsout_rt(gs1,s2,t11):2
- s3820:  S1 :: muLB_gstore_rt(gs1,s2,t11):1 SOS1_LB_gstore_rt(gs1,s2,t11):2
- s3821:  S1 :: muLB_pres_rt(ng101,s2,t12):1 SOS1_LB_pres_rt(ng101,s2,t12):2
- s3822:  S1 :: muLB_gshed(ng101,s2,t12):1 SOS1_LB_gshed(ng101,s2,t12):2
- s3823:  S1 :: muLB_pres_rt(ng102,s2,t12):1 SOS1_LB_pres_rt(ng102,s2,t12):2
- s3824:  S1 :: muLB_gshed(ng102,s2,t12):1 SOS1_LB_gshed(ng102,s2,t12):2
- s3825:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t12):1
+ s3240:  S1 :: muLB_gprodUp(gw1,s2,t11):1 SOS1_LB_gprodUp(gw1,s2,t11):2
+ s3241:  S1 :: muLB_gprodDn(gw1,s2,t11):1 SOS1_LB_gprodDn(gw1,s2,t11):2
+ s3242:  S1 :: muLB_gsin_rt(gs1,s2,t11):1 SOS1_LB_gsin_rt(gs1,s2,t11):2
+ s3243:  S1 :: muLB_gsout_rt(gs1,s2,t11):1 SOS1_LB_gsout_rt(gs1,s2,t11):2
+ s3244:  S1 :: muLB_gstore_rt(gs1,s2,t11):1 SOS1_LB_gstore_rt(gs1,s2,t11):2
+ s3245:  S1 :: muLB_pres_rt(ng101,s2,t12):1 SOS1_LB_pres_rt(ng101,s2,t12):2
+ s3246:  S1 :: muLB_gshed(ng101,s2,t12):1 SOS1_LB_gshed(ng101,s2,t12):2
+ s3247:  S1 :: muLB_pres_rt(ng102,s2,t12):1 SOS1_LB_pres_rt(ng102,s2,t12):2
+ s3248:  S1 :: muLB_gshed(ng102,s2,t12):1 SOS1_LB_gshed(ng102,s2,t12):2
+ s3249:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t12):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t12):2
- s3826:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t12):1
+ s3250:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t12):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t12):2
- s3827:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t12):1
+ s3251:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t12):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t12):2
- s3828:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t12):1
+ s3252:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t12):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t12):2
- s3829:  S1 :: muLB_gprodUp(gw1,s2,t12):1 SOS1_LB_gprodUp(gw1,s2,t12):2
- s3830:  S1 :: muLB_gprodDn(gw1,s2,t12):1 SOS1_LB_gprodDn(gw1,s2,t12):2
- s3831:  S1 :: muLB_gsin_rt(gs1,s2,t12):1 SOS1_LB_gsin_rt(gs1,s2,t12):2
- s3832:  S1 :: muLB_gsout_rt(gs1,s2,t12):1 SOS1_LB_gsout_rt(gs1,s2,t12):2
- s3833:  S1 :: muLB_gstore_rt(gs1,s2,t12):1 SOS1_LB_gstore_rt(gs1,s2,t12):2
- s3834:  S1 :: muLB_pres_rt(ng101,s2,t13):1 SOS1_LB_pres_rt(ng101,s2,t13):2
- s3835:  S1 :: muLB_gshed(ng101,s2,t13):1 SOS1_LB_gshed(ng101,s2,t13):2
- s3836:  S1 :: muLB_pres_rt(ng102,s2,t13):1 SOS1_LB_pres_rt(ng102,s2,t13):2
- s3837:  S1 :: muLB_gshed(ng102,s2,t13):1 SOS1_LB_gshed(ng102,s2,t13):2
- s3838:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t13):1
+ s3253:  S1 :: muLB_gprodUp(gw1,s2,t12):1 SOS1_LB_gprodUp(gw1,s2,t12):2
+ s3254:  S1 :: muLB_gprodDn(gw1,s2,t12):1 SOS1_LB_gprodDn(gw1,s2,t12):2
+ s3255:  S1 :: muLB_gsin_rt(gs1,s2,t12):1 SOS1_LB_gsin_rt(gs1,s2,t12):2
+ s3256:  S1 :: muLB_gsout_rt(gs1,s2,t12):1 SOS1_LB_gsout_rt(gs1,s2,t12):2
+ s3257:  S1 :: muLB_gstore_rt(gs1,s2,t12):1 SOS1_LB_gstore_rt(gs1,s2,t12):2
+ s3258:  S1 :: muLB_pres_rt(ng101,s2,t13):1 SOS1_LB_pres_rt(ng101,s2,t13):2
+ s3259:  S1 :: muLB_gshed(ng101,s2,t13):1 SOS1_LB_gshed(ng101,s2,t13):2
+ s3260:  S1 :: muLB_pres_rt(ng102,s2,t13):1 SOS1_LB_pres_rt(ng102,s2,t13):2
+ s3261:  S1 :: muLB_gshed(ng102,s2,t13):1 SOS1_LB_gshed(ng102,s2,t13):2
+ s3262:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t13):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t13):2
- s3839:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t13):1
+ s3263:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t13):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t13):2
- s3840:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t13):1
+ s3264:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t13):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t13):2
- s3841:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t13):1
+ s3265:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t13):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t13):2
- s3842:  S1 :: muLB_gprodUp(gw1,s2,t13):1 SOS1_LB_gprodUp(gw1,s2,t13):2
- s3843:  S1 :: muLB_gprodDn(gw1,s2,t13):1 SOS1_LB_gprodDn(gw1,s2,t13):2
- s3844:  S1 :: muLB_gsin_rt(gs1,s2,t13):1 SOS1_LB_gsin_rt(gs1,s2,t13):2
- s3845:  S1 :: muLB_gsout_rt(gs1,s2,t13):1 SOS1_LB_gsout_rt(gs1,s2,t13):2
- s3846:  S1 :: muLB_gstore_rt(gs1,s2,t13):1 SOS1_LB_gstore_rt(gs1,s2,t13):2
- s3847:  S1 :: muLB_pres_rt(ng101,s2,t14):1 SOS1_LB_pres_rt(ng101,s2,t14):2
- s3848:  S1 :: muLB_gshed(ng101,s2,t14):1 SOS1_LB_gshed(ng101,s2,t14):2
- s3849:  S1 :: muLB_pres_rt(ng102,s2,t14):1 SOS1_LB_pres_rt(ng102,s2,t14):2
- s3850:  S1 :: muLB_gshed(ng102,s2,t14):1 SOS1_LB_gshed(ng102,s2,t14):2
- s3851:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t14):1
+ s3266:  S1 :: muLB_gprodUp(gw1,s2,t13):1 SOS1_LB_gprodUp(gw1,s2,t13):2
+ s3267:  S1 :: muLB_gprodDn(gw1,s2,t13):1 SOS1_LB_gprodDn(gw1,s2,t13):2
+ s3268:  S1 :: muLB_gsin_rt(gs1,s2,t13):1 SOS1_LB_gsin_rt(gs1,s2,t13):2
+ s3269:  S1 :: muLB_gsout_rt(gs1,s2,t13):1 SOS1_LB_gsout_rt(gs1,s2,t13):2
+ s3270:  S1 :: muLB_gstore_rt(gs1,s2,t13):1 SOS1_LB_gstore_rt(gs1,s2,t13):2
+ s3271:  S1 :: muLB_pres_rt(ng101,s2,t14):1 SOS1_LB_pres_rt(ng101,s2,t14):2
+ s3272:  S1 :: muLB_gshed(ng101,s2,t14):1 SOS1_LB_gshed(ng101,s2,t14):2
+ s3273:  S1 :: muLB_pres_rt(ng102,s2,t14):1 SOS1_LB_pres_rt(ng102,s2,t14):2
+ s3274:  S1 :: muLB_gshed(ng102,s2,t14):1 SOS1_LB_gshed(ng102,s2,t14):2
+ s3275:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t14):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t14):2
- s3852:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t14):1
+ s3276:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t14):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t14):2
- s3853:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t14):1
+ s3277:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t14):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t14):2
- s3854:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t14):1
+ s3278:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t14):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t14):2
- s3855:  S1 :: muLB_gprodUp(gw1,s2,t14):1 SOS1_LB_gprodUp(gw1,s2,t14):2
- s3856:  S1 :: muLB_gprodDn(gw1,s2,t14):1 SOS1_LB_gprodDn(gw1,s2,t14):2
- s3857:  S1 :: muLB_gsin_rt(gs1,s2,t14):1 SOS1_LB_gsin_rt(gs1,s2,t14):2
- s3858:  S1 :: muLB_gsout_rt(gs1,s2,t14):1 SOS1_LB_gsout_rt(gs1,s2,t14):2
- s3859:  S1 :: muLB_gstore_rt(gs1,s2,t14):1 SOS1_LB_gstore_rt(gs1,s2,t14):2
- s3860:  S1 :: muLB_pres_rt(ng101,s2,t15):1 SOS1_LB_pres_rt(ng101,s2,t15):2
- s3861:  S1 :: muLB_gshed(ng101,s2,t15):1 SOS1_LB_gshed(ng101,s2,t15):2
- s3862:  S1 :: muLB_pres_rt(ng102,s2,t15):1 SOS1_LB_pres_rt(ng102,s2,t15):2
- s3863:  S1 :: muLB_gshed(ng102,s2,t15):1 SOS1_LB_gshed(ng102,s2,t15):2
- s3864:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t15):1
+ s3279:  S1 :: muLB_gprodUp(gw1,s2,t14):1 SOS1_LB_gprodUp(gw1,s2,t14):2
+ s3280:  S1 :: muLB_gprodDn(gw1,s2,t14):1 SOS1_LB_gprodDn(gw1,s2,t14):2
+ s3281:  S1 :: muLB_gsin_rt(gs1,s2,t14):1 SOS1_LB_gsin_rt(gs1,s2,t14):2
+ s3282:  S1 :: muLB_gsout_rt(gs1,s2,t14):1 SOS1_LB_gsout_rt(gs1,s2,t14):2
+ s3283:  S1 :: muLB_gstore_rt(gs1,s2,t14):1 SOS1_LB_gstore_rt(gs1,s2,t14):2
+ s3284:  S1 :: muLB_pres_rt(ng101,s2,t15):1 SOS1_LB_pres_rt(ng101,s2,t15):2
+ s3285:  S1 :: muLB_gshed(ng101,s2,t15):1 SOS1_LB_gshed(ng101,s2,t15):2
+ s3286:  S1 :: muLB_pres_rt(ng102,s2,t15):1 SOS1_LB_pres_rt(ng102,s2,t15):2
+ s3287:  S1 :: muLB_gshed(ng102,s2,t15):1 SOS1_LB_gshed(ng102,s2,t15):2
+ s3288:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t15):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t15):2
- s3865:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t15):1
+ s3289:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t15):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t15):2
- s3866:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t15):1
+ s3290:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t15):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t15):2
- s3867:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t15):1
+ s3291:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t15):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t15):2
- s3868:  S1 :: muLB_gprodUp(gw1,s2,t15):1 SOS1_LB_gprodUp(gw1,s2,t15):2
- s3869:  S1 :: muLB_gprodDn(gw1,s2,t15):1 SOS1_LB_gprodDn(gw1,s2,t15):2
- s3870:  S1 :: muLB_gsin_rt(gs1,s2,t15):1 SOS1_LB_gsin_rt(gs1,s2,t15):2
- s3871:  S1 :: muLB_gsout_rt(gs1,s2,t15):1 SOS1_LB_gsout_rt(gs1,s2,t15):2
- s3872:  S1 :: muLB_gstore_rt(gs1,s2,t15):1 SOS1_LB_gstore_rt(gs1,s2,t15):2
- s3873:  S1 :: muLB_pres_rt(ng101,s2,t16):1 SOS1_LB_pres_rt(ng101,s2,t16):2
- s3874:  S1 :: muLB_gshed(ng101,s2,t16):1 SOS1_LB_gshed(ng101,s2,t16):2
- s3875:  S1 :: muLB_pres_rt(ng102,s2,t16):1 SOS1_LB_pres_rt(ng102,s2,t16):2
- s3876:  S1 :: muLB_gshed(ng102,s2,t16):1 SOS1_LB_gshed(ng102,s2,t16):2
- s3877:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t16):1
+ s3292:  S1 :: muLB_gprodUp(gw1,s2,t15):1 SOS1_LB_gprodUp(gw1,s2,t15):2
+ s3293:  S1 :: muLB_gprodDn(gw1,s2,t15):1 SOS1_LB_gprodDn(gw1,s2,t15):2
+ s3294:  S1 :: muLB_gsin_rt(gs1,s2,t15):1 SOS1_LB_gsin_rt(gs1,s2,t15):2
+ s3295:  S1 :: muLB_gsout_rt(gs1,s2,t15):1 SOS1_LB_gsout_rt(gs1,s2,t15):2
+ s3296:  S1 :: muLB_gstore_rt(gs1,s2,t15):1 SOS1_LB_gstore_rt(gs1,s2,t15):2
+ s3297:  S1 :: muLB_pres_rt(ng101,s2,t16):1 SOS1_LB_pres_rt(ng101,s2,t16):2
+ s3298:  S1 :: muLB_gshed(ng101,s2,t16):1 SOS1_LB_gshed(ng101,s2,t16):2
+ s3299:  S1 :: muLB_pres_rt(ng102,s2,t16):1 SOS1_LB_pres_rt(ng102,s2,t16):2
+ s3300:  S1 :: muLB_gshed(ng102,s2,t16):1 SOS1_LB_gshed(ng102,s2,t16):2
+ s3301:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t16):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t16):2
- s3878:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t16):1
+ s3302:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t16):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t16):2
- s3879:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t16):1
+ s3303:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t16):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t16):2
- s3880:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t16):1
+ s3304:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t16):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t16):2
- s3881:  S1 :: muLB_gprodUp(gw1,s2,t16):1 SOS1_LB_gprodUp(gw1,s2,t16):2
- s3882:  S1 :: muLB_gprodDn(gw1,s2,t16):1 SOS1_LB_gprodDn(gw1,s2,t16):2
- s3883:  S1 :: muLB_gsin_rt(gs1,s2,t16):1 SOS1_LB_gsin_rt(gs1,s2,t16):2
- s3884:  S1 :: muLB_gsout_rt(gs1,s2,t16):1 SOS1_LB_gsout_rt(gs1,s2,t16):2
- s3885:  S1 :: muLB_gstore_rt(gs1,s2,t16):1 SOS1_LB_gstore_rt(gs1,s2,t16):2
- s3886:  S1 :: muLB_pres_rt(ng101,s2,t17):1 SOS1_LB_pres_rt(ng101,s2,t17):2
- s3887:  S1 :: muLB_gshed(ng101,s2,t17):1 SOS1_LB_gshed(ng101,s2,t17):2
- s3888:  S1 :: muLB_pres_rt(ng102,s2,t17):1 SOS1_LB_pres_rt(ng102,s2,t17):2
- s3889:  S1 :: muLB_gshed(ng102,s2,t17):1 SOS1_LB_gshed(ng102,s2,t17):2
- s3890:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t17):1
+ s3305:  S1 :: muLB_gprodUp(gw1,s2,t16):1 SOS1_LB_gprodUp(gw1,s2,t16):2
+ s3306:  S1 :: muLB_gprodDn(gw1,s2,t16):1 SOS1_LB_gprodDn(gw1,s2,t16):2
+ s3307:  S1 :: muLB_gsin_rt(gs1,s2,t16):1 SOS1_LB_gsin_rt(gs1,s2,t16):2
+ s3308:  S1 :: muLB_gsout_rt(gs1,s2,t16):1 SOS1_LB_gsout_rt(gs1,s2,t16):2
+ s3309:  S1 :: muLB_gstore_rt(gs1,s2,t16):1 SOS1_LB_gstore_rt(gs1,s2,t16):2
+ s3310:  S1 :: muLB_pres_rt(ng101,s2,t17):1 SOS1_LB_pres_rt(ng101,s2,t17):2
+ s3311:  S1 :: muLB_gshed(ng101,s2,t17):1 SOS1_LB_gshed(ng101,s2,t17):2
+ s3312:  S1 :: muLB_pres_rt(ng102,s2,t17):1 SOS1_LB_pres_rt(ng102,s2,t17):2
+ s3313:  S1 :: muLB_gshed(ng102,s2,t17):1 SOS1_LB_gshed(ng102,s2,t17):2
+ s3314:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t17):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t17):2
- s3891:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t17):1
+ s3315:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t17):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t17):2
- s3892:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t17):1
+ s3316:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t17):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t17):2
- s3893:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t17):1
+ s3317:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t17):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t17):2
- s3894:  S1 :: muLB_gprodUp(gw1,s2,t17):1 SOS1_LB_gprodUp(gw1,s2,t17):2
- s3895:  S1 :: muLB_gprodDn(gw1,s2,t17):1 SOS1_LB_gprodDn(gw1,s2,t17):2
- s3896:  S1 :: muLB_gsin_rt(gs1,s2,t17):1 SOS1_LB_gsin_rt(gs1,s2,t17):2
- s3897:  S1 :: muLB_gsout_rt(gs1,s2,t17):1 SOS1_LB_gsout_rt(gs1,s2,t17):2
- s3898:  S1 :: muLB_gstore_rt(gs1,s2,t17):1 SOS1_LB_gstore_rt(gs1,s2,t17):2
- s3899:  S1 :: muLB_pres_rt(ng101,s2,t18):1 SOS1_LB_pres_rt(ng101,s2,t18):2
- s3900:  S1 :: muLB_gshed(ng101,s2,t18):1 SOS1_LB_gshed(ng101,s2,t18):2
- s3901:  S1 :: muLB_pres_rt(ng102,s2,t18):1 SOS1_LB_pres_rt(ng102,s2,t18):2
- s3902:  S1 :: muLB_gshed(ng102,s2,t18):1 SOS1_LB_gshed(ng102,s2,t18):2
- s3903:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t18):1
+ s3318:  S1 :: muLB_gprodUp(gw1,s2,t17):1 SOS1_LB_gprodUp(gw1,s2,t17):2
+ s3319:  S1 :: muLB_gprodDn(gw1,s2,t17):1 SOS1_LB_gprodDn(gw1,s2,t17):2
+ s3320:  S1 :: muLB_gsin_rt(gs1,s2,t17):1 SOS1_LB_gsin_rt(gs1,s2,t17):2
+ s3321:  S1 :: muLB_gsout_rt(gs1,s2,t17):1 SOS1_LB_gsout_rt(gs1,s2,t17):2
+ s3322:  S1 :: muLB_gstore_rt(gs1,s2,t17):1 SOS1_LB_gstore_rt(gs1,s2,t17):2
+ s3323:  S1 :: muLB_pres_rt(ng101,s2,t18):1 SOS1_LB_pres_rt(ng101,s2,t18):2
+ s3324:  S1 :: muLB_gshed(ng101,s2,t18):1 SOS1_LB_gshed(ng101,s2,t18):2
+ s3325:  S1 :: muLB_pres_rt(ng102,s2,t18):1 SOS1_LB_pres_rt(ng102,s2,t18):2
+ s3326:  S1 :: muLB_gshed(ng102,s2,t18):1 SOS1_LB_gshed(ng102,s2,t18):2
+ s3327:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t18):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t18):2
- s3904:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t18):1
+ s3328:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t18):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t18):2
- s3905:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t18):1
+ s3329:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t18):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t18):2
- s3906:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t18):1
+ s3330:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t18):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t18):2
- s3907:  S1 :: muLB_gprodUp(gw1,s2,t18):1 SOS1_LB_gprodUp(gw1,s2,t18):2
- s3908:  S1 :: muLB_gprodDn(gw1,s2,t18):1 SOS1_LB_gprodDn(gw1,s2,t18):2
- s3909:  S1 :: muLB_gsin_rt(gs1,s2,t18):1 SOS1_LB_gsin_rt(gs1,s2,t18):2
- s3910:  S1 :: muLB_gsout_rt(gs1,s2,t18):1 SOS1_LB_gsout_rt(gs1,s2,t18):2
- s3911:  S1 :: muLB_gstore_rt(gs1,s2,t18):1 SOS1_LB_gstore_rt(gs1,s2,t18):2
- s3912:  S1 :: muLB_pres_rt(ng101,s2,t19):1 SOS1_LB_pres_rt(ng101,s2,t19):2
- s3913:  S1 :: muLB_gshed(ng101,s2,t19):1 SOS1_LB_gshed(ng101,s2,t19):2
- s3914:  S1 :: muLB_pres_rt(ng102,s2,t19):1 SOS1_LB_pres_rt(ng102,s2,t19):2
- s3915:  S1 :: muLB_gshed(ng102,s2,t19):1 SOS1_LB_gshed(ng102,s2,t19):2
- s3916:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t19):1
+ s3331:  S1 :: muLB_gprodUp(gw1,s2,t18):1 SOS1_LB_gprodUp(gw1,s2,t18):2
+ s3332:  S1 :: muLB_gprodDn(gw1,s2,t18):1 SOS1_LB_gprodDn(gw1,s2,t18):2
+ s3333:  S1 :: muLB_gsin_rt(gs1,s2,t18):1 SOS1_LB_gsin_rt(gs1,s2,t18):2
+ s3334:  S1 :: muLB_gsout_rt(gs1,s2,t18):1 SOS1_LB_gsout_rt(gs1,s2,t18):2
+ s3335:  S1 :: muLB_gstore_rt(gs1,s2,t18):1 SOS1_LB_gstore_rt(gs1,s2,t18):2
+ s3336:  S1 :: muLB_pres_rt(ng101,s2,t19):1 SOS1_LB_pres_rt(ng101,s2,t19):2
+ s3337:  S1 :: muLB_gshed(ng101,s2,t19):1 SOS1_LB_gshed(ng101,s2,t19):2
+ s3338:  S1 :: muLB_pres_rt(ng102,s2,t19):1 SOS1_LB_pres_rt(ng102,s2,t19):2
+ s3339:  S1 :: muLB_gshed(ng102,s2,t19):1 SOS1_LB_gshed(ng102,s2,t19):2
+ s3340:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t19):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t19):2
- s3917:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t19):1
+ s3341:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t19):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t19):2
- s3918:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t19):1
+ s3342:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t19):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t19):2
- s3919:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t19):1
+ s3343:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t19):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t19):2
- s3920:  S1 :: muLB_gprodUp(gw1,s2,t19):1 SOS1_LB_gprodUp(gw1,s2,t19):2
- s3921:  S1 :: muLB_gprodDn(gw1,s2,t19):1 SOS1_LB_gprodDn(gw1,s2,t19):2
- s3922:  S1 :: muLB_gsin_rt(gs1,s2,t19):1 SOS1_LB_gsin_rt(gs1,s2,t19):2
- s3923:  S1 :: muLB_gsout_rt(gs1,s2,t19):1 SOS1_LB_gsout_rt(gs1,s2,t19):2
- s3924:  S1 :: muLB_gstore_rt(gs1,s2,t19):1 SOS1_LB_gstore_rt(gs1,s2,t19):2
- s3925:  S1 :: muLB_pres_rt(ng101,s2,t20):1 SOS1_LB_pres_rt(ng101,s2,t20):2
- s3926:  S1 :: muLB_gshed(ng101,s2,t20):1 SOS1_LB_gshed(ng101,s2,t20):2
- s3927:  S1 :: muLB_pres_rt(ng102,s2,t20):1 SOS1_LB_pres_rt(ng102,s2,t20):2
- s3928:  S1 :: muLB_gshed(ng102,s2,t20):1 SOS1_LB_gshed(ng102,s2,t20):2
- s3929:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t20):1
+ s3344:  S1 :: muLB_gprodUp(gw1,s2,t19):1 SOS1_LB_gprodUp(gw1,s2,t19):2
+ s3345:  S1 :: muLB_gprodDn(gw1,s2,t19):1 SOS1_LB_gprodDn(gw1,s2,t19):2
+ s3346:  S1 :: muLB_gsin_rt(gs1,s2,t19):1 SOS1_LB_gsin_rt(gs1,s2,t19):2
+ s3347:  S1 :: muLB_gsout_rt(gs1,s2,t19):1 SOS1_LB_gsout_rt(gs1,s2,t19):2
+ s3348:  S1 :: muLB_gstore_rt(gs1,s2,t19):1 SOS1_LB_gstore_rt(gs1,s2,t19):2
+ s3349:  S1 :: muLB_pres_rt(ng101,s2,t20):1 SOS1_LB_pres_rt(ng101,s2,t20):2
+ s3350:  S1 :: muLB_gshed(ng101,s2,t20):1 SOS1_LB_gshed(ng101,s2,t20):2
+ s3351:  S1 :: muLB_pres_rt(ng102,s2,t20):1 SOS1_LB_pres_rt(ng102,s2,t20):2
+ s3352:  S1 :: muLB_gshed(ng102,s2,t20):1 SOS1_LB_gshed(ng102,s2,t20):2
+ s3353:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t20):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t20):2
- s3930:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t20):1
+ s3354:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t20):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t20):2
- s3931:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t20):1
+ s3355:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t20):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t20):2
- s3932:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t20):1
+ s3356:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t20):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t20):2
- s3933:  S1 :: muLB_gprodUp(gw1,s2,t20):1 SOS1_LB_gprodUp(gw1,s2,t20):2
- s3934:  S1 :: muLB_gprodDn(gw1,s2,t20):1 SOS1_LB_gprodDn(gw1,s2,t20):2
- s3935:  S1 :: muLB_gsin_rt(gs1,s2,t20):1 SOS1_LB_gsin_rt(gs1,s2,t20):2
- s3936:  S1 :: muLB_gsout_rt(gs1,s2,t20):1 SOS1_LB_gsout_rt(gs1,s2,t20):2
- s3937:  S1 :: muLB_gstore_rt(gs1,s2,t20):1 SOS1_LB_gstore_rt(gs1,s2,t20):2
- s3938:  S1 :: muLB_pres_rt(ng101,s2,t21):1 SOS1_LB_pres_rt(ng101,s2,t21):2
- s3939:  S1 :: muLB_gshed(ng101,s2,t21):1 SOS1_LB_gshed(ng101,s2,t21):2
- s3940:  S1 :: muLB_pres_rt(ng102,s2,t21):1 SOS1_LB_pres_rt(ng102,s2,t21):2
- s3941:  S1 :: muLB_gshed(ng102,s2,t21):1 SOS1_LB_gshed(ng102,s2,t21):2
- s3942:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t21):1
+ s3357:  S1 :: muLB_gprodUp(gw1,s2,t20):1 SOS1_LB_gprodUp(gw1,s2,t20):2
+ s3358:  S1 :: muLB_gprodDn(gw1,s2,t20):1 SOS1_LB_gprodDn(gw1,s2,t20):2
+ s3359:  S1 :: muLB_gsin_rt(gs1,s2,t20):1 SOS1_LB_gsin_rt(gs1,s2,t20):2
+ s3360:  S1 :: muLB_gsout_rt(gs1,s2,t20):1 SOS1_LB_gsout_rt(gs1,s2,t20):2
+ s3361:  S1 :: muLB_gstore_rt(gs1,s2,t20):1 SOS1_LB_gstore_rt(gs1,s2,t20):2
+ s3362:  S1 :: muLB_pres_rt(ng101,s2,t21):1 SOS1_LB_pres_rt(ng101,s2,t21):2
+ s3363:  S1 :: muLB_gshed(ng101,s2,t21):1 SOS1_LB_gshed(ng101,s2,t21):2
+ s3364:  S1 :: muLB_pres_rt(ng102,s2,t21):1 SOS1_LB_pres_rt(ng102,s2,t21):2
+ s3365:  S1 :: muLB_gshed(ng102,s2,t21):1 SOS1_LB_gshed(ng102,s2,t21):2
+ s3366:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t21):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t21):2
- s3943:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t21):1
+ s3367:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t21):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t21):2
- s3944:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t21):1
+ s3368:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t21):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t21):2
- s3945:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t21):1
+ s3369:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t21):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t21):2
- s3946:  S1 :: muLB_gprodUp(gw1,s2,t21):1 SOS1_LB_gprodUp(gw1,s2,t21):2
- s3947:  S1 :: muLB_gprodDn(gw1,s2,t21):1 SOS1_LB_gprodDn(gw1,s2,t21):2
- s3948:  S1 :: muLB_gsin_rt(gs1,s2,t21):1 SOS1_LB_gsin_rt(gs1,s2,t21):2
- s3949:  S1 :: muLB_gsout_rt(gs1,s2,t21):1 SOS1_LB_gsout_rt(gs1,s2,t21):2
- s3950:  S1 :: muLB_gstore_rt(gs1,s2,t21):1 SOS1_LB_gstore_rt(gs1,s2,t21):2
- s3951:  S1 :: muLB_pres_rt(ng101,s2,t22):1 SOS1_LB_pres_rt(ng101,s2,t22):2
- s3952:  S1 :: muLB_gshed(ng101,s2,t22):1 SOS1_LB_gshed(ng101,s2,t22):2
- s3953:  S1 :: muLB_pres_rt(ng102,s2,t22):1 SOS1_LB_pres_rt(ng102,s2,t22):2
- s3954:  S1 :: muLB_gshed(ng102,s2,t22):1 SOS1_LB_gshed(ng102,s2,t22):2
- s3955:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t22):1
+ s3370:  S1 :: muLB_gprodUp(gw1,s2,t21):1 SOS1_LB_gprodUp(gw1,s2,t21):2
+ s3371:  S1 :: muLB_gprodDn(gw1,s2,t21):1 SOS1_LB_gprodDn(gw1,s2,t21):2
+ s3372:  S1 :: muLB_gsin_rt(gs1,s2,t21):1 SOS1_LB_gsin_rt(gs1,s2,t21):2
+ s3373:  S1 :: muLB_gsout_rt(gs1,s2,t21):1 SOS1_LB_gsout_rt(gs1,s2,t21):2
+ s3374:  S1 :: muLB_gstore_rt(gs1,s2,t21):1 SOS1_LB_gstore_rt(gs1,s2,t21):2
+ s3375:  S1 :: muLB_pres_rt(ng101,s2,t22):1 SOS1_LB_pres_rt(ng101,s2,t22):2
+ s3376:  S1 :: muLB_gshed(ng101,s2,t22):1 SOS1_LB_gshed(ng101,s2,t22):2
+ s3377:  S1 :: muLB_pres_rt(ng102,s2,t22):1 SOS1_LB_pres_rt(ng102,s2,t22):2
+ s3378:  S1 :: muLB_gshed(ng102,s2,t22):1 SOS1_LB_gshed(ng102,s2,t22):2
+ s3379:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t22):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t22):2
- s3956:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t22):1
+ s3380:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t22):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t22):2
- s3957:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t22):1
+ s3381:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t22):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t22):2
- s3958:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t22):1
+ s3382:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t22):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t22):2
- s3959:  S1 :: muLB_gprodUp(gw1,s2,t22):1 SOS1_LB_gprodUp(gw1,s2,t22):2
- s3960:  S1 :: muLB_gprodDn(gw1,s2,t22):1 SOS1_LB_gprodDn(gw1,s2,t22):2
- s3961:  S1 :: muLB_gsin_rt(gs1,s2,t22):1 SOS1_LB_gsin_rt(gs1,s2,t22):2
- s3962:  S1 :: muLB_gsout_rt(gs1,s2,t22):1 SOS1_LB_gsout_rt(gs1,s2,t22):2
- s3963:  S1 :: muLB_gstore_rt(gs1,s2,t22):1 SOS1_LB_gstore_rt(gs1,s2,t22):2
- s3964:  S1 :: muLB_pres_rt(ng101,s2,t23):1 SOS1_LB_pres_rt(ng101,s2,t23):2
- s3965:  S1 :: muLB_gshed(ng101,s2,t23):1 SOS1_LB_gshed(ng101,s2,t23):2
- s3966:  S1 :: muLB_pres_rt(ng102,s2,t23):1 SOS1_LB_pres_rt(ng102,s2,t23):2
- s3967:  S1 :: muLB_gshed(ng102,s2,t23):1 SOS1_LB_gshed(ng102,s2,t23):2
- s3968:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t23):1
+ s3383:  S1 :: muLB_gprodUp(gw1,s2,t22):1 SOS1_LB_gprodUp(gw1,s2,t22):2
+ s3384:  S1 :: muLB_gprodDn(gw1,s2,t22):1 SOS1_LB_gprodDn(gw1,s2,t22):2
+ s3385:  S1 :: muLB_gsin_rt(gs1,s2,t22):1 SOS1_LB_gsin_rt(gs1,s2,t22):2
+ s3386:  S1 :: muLB_gsout_rt(gs1,s2,t22):1 SOS1_LB_gsout_rt(gs1,s2,t22):2
+ s3387:  S1 :: muLB_gstore_rt(gs1,s2,t22):1 SOS1_LB_gstore_rt(gs1,s2,t22):2
+ s3388:  S1 :: muLB_pres_rt(ng101,s2,t23):1 SOS1_LB_pres_rt(ng101,s2,t23):2
+ s3389:  S1 :: muLB_gshed(ng101,s2,t23):1 SOS1_LB_gshed(ng101,s2,t23):2
+ s3390:  S1 :: muLB_pres_rt(ng102,s2,t23):1 SOS1_LB_pres_rt(ng102,s2,t23):2
+ s3391:  S1 :: muLB_gshed(ng102,s2,t23):1 SOS1_LB_gshed(ng102,s2,t23):2
+ s3392:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t23):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t23):2
- s3969:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t23):1
+ s3393:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t23):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t23):2
- s3970:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t23):1
+ s3394:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t23):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t23):2
- s3971:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t23):1
+ s3395:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t23):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t23):2
- s3972:  S1 :: muLB_gprodUp(gw1,s2,t23):1 SOS1_LB_gprodUp(gw1,s2,t23):2
- s3973:  S1 :: muLB_gprodDn(gw1,s2,t23):1 SOS1_LB_gprodDn(gw1,s2,t23):2
- s3974:  S1 :: muLB_gsin_rt(gs1,s2,t23):1 SOS1_LB_gsin_rt(gs1,s2,t23):2
- s3975:  S1 :: muLB_gsout_rt(gs1,s2,t23):1 SOS1_LB_gsout_rt(gs1,s2,t23):2
- s3976:  S1 :: muLB_gstore_rt(gs1,s2,t23):1 SOS1_LB_gstore_rt(gs1,s2,t23):2
- s3977:  S1 :: muLB_pres_rt(ng101,s2,t24):1 SOS1_LB_pres_rt(ng101,s2,t24):2
- s3978:  S1 :: muLB_gshed(ng101,s2,t24):1 SOS1_LB_gshed(ng101,s2,t24):2
- s3979:  S1 :: muLB_pres_rt(ng102,s2,t24):1 SOS1_LB_pres_rt(ng102,s2,t24):2
- s3980:  S1 :: muLB_gshed(ng102,s2,t24):1 SOS1_LB_gshed(ng102,s2,t24):2
- s3981:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t24):1
+ s3396:  S1 :: muLB_gprodUp(gw1,s2,t23):1 SOS1_LB_gprodUp(gw1,s2,t23):2
+ s3397:  S1 :: muLB_gprodDn(gw1,s2,t23):1 SOS1_LB_gprodDn(gw1,s2,t23):2
+ s3398:  S1 :: muLB_gsin_rt(gs1,s2,t23):1 SOS1_LB_gsin_rt(gs1,s2,t23):2
+ s3399:  S1 :: muLB_gsout_rt(gs1,s2,t23):1 SOS1_LB_gsout_rt(gs1,s2,t23):2
+ s3400:  S1 :: muLB_gstore_rt(gs1,s2,t23):1 SOS1_LB_gstore_rt(gs1,s2,t23):2
+ s3401:  S1 :: muLB_pres_rt(ng101,s2,t24):1 SOS1_LB_pres_rt(ng101,s2,t24):2
+ s3402:  S1 :: muLB_gshed(ng101,s2,t24):1 SOS1_LB_gshed(ng101,s2,t24):2
+ s3403:  S1 :: muLB_pres_rt(ng102,s2,t24):1 SOS1_LB_pres_rt(ng102,s2,t24):2
+ s3404:  S1 :: muLB_gshed(ng102,s2,t24):1 SOS1_LB_gshed(ng102,s2,t24):2
+ s3405:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t24):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t24):2
- s3982:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t24):1
+ s3406:  S1 :: muLB_lpack_rt(('ng101','ng102'),s2,t24):1
      SOS1_LB_lpack_rt(('ng101','ng102'),s2,t24):2
- s3983:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t24):1
+ s3407:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t24):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t24):2
- s3984:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t24):1
+ s3408:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t24):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t24):2
- s3985:  S1 :: muLB_gprodUp(gw1,s2,t24):1 SOS1_LB_gprodUp(gw1,s2,t24):2
- s3986:  S1 :: muLB_gprodDn(gw1,s2,t24):1 SOS1_LB_gprodDn(gw1,s2,t24):2
- s3987:  S1 :: muLB_gsin_rt(gs1,s2,t24):1 SOS1_LB_gsin_rt(gs1,s2,t24):2
- s3988:  S1 :: muLB_gsout_rt(gs1,s2,t24):1 SOS1_LB_gsout_rt(gs1,s2,t24):2
- s3989:  S1 :: muLB_gstore_rt(gs1,s2,t24):1 SOS1_LB_gstore_rt(gs1,s2,t24):2
+ s3409:  S1 :: muLB_gprodUp(gw1,s2,t24):1 SOS1_LB_gprodUp(gw1,s2,t24):2
+ s3410:  S1 :: muLB_gprodDn(gw1,s2,t24):1 SOS1_LB_gprodDn(gw1,s2,t24):2
+ s3411:  S1 :: muLB_gsin_rt(gs1,s2,t24):1 SOS1_LB_gsin_rt(gs1,s2,t24):2
+ s3412:  S1 :: muLB_gsout_rt(gs1,s2,t24):1 SOS1_LB_gsout_rt(gs1,s2,t24):2
+ s3413:  S1 :: muLB_gstore_rt(gs1,s2,t24):1 SOS1_LB_gstore_rt(gs1,s2,t24):2
 End

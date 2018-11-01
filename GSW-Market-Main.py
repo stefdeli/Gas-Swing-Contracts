@@ -513,7 +513,10 @@ if mGRT_COMP.model.Status==2:
 else:
     mGRT_COMP.model.computeIIS()
     mGRT_COMP.model.write('LPModels/mGRT_COMP.ilp')
-       
+
+
+
+
 
 # Compare Variables Results
 def Compare_models(mPrimal,mComp):
@@ -648,18 +651,83 @@ Check_Dual_Objective(mERT,mERT_COMP)
 
 
 
-print('Check SEDA')
-Var_Compare,Con_Compare = Compare_models(mSEDA,mSEDA_COMP)
 
-for u_name in mSEDA.variables.usc.keys():
-    u_var=mSEDA.variables.usc[u_name]
-    u_var.VType='C'
-    u_var.LB=0.0
-    u_var.UB=0.0
-mSEDA.model.update()
-mSEDA.optimize()
+##############################################################################
+##############################################################################
+mSEDA.fixedmodel=mSEDA.model.fixed()
+mSEDA.fixedmodel.optimize()
 
 
+mSEDA.fixedmodel.getVarByName()
+
+Var_Compare=pd.DataFrame()
+
+for var_name in mSEDA.variables.primal.keys():
+    if mSEDA.model.getVarByName(var_name).VType=='B':
+        continue
+    
+        
+    var_primal=mSEDA.fixedmodel.getVarByName(var_name)
+    
+    PrimalValue =var_primal.x
+    PrimalLB    =var_primal.LB
+    PrimalUB    =var_primal.UB
+    PrimalDual  =var_primal.rc
+    
+    
+    if var_name in set(mSEDA_COMP.variables.primal.keys()):
+        
+        COMPValue = mSEDA_COMP.model.getVarByName(var_name).x
+        COMPLB    = mSEDA_COMP.model.getVarByName('muLB_'+var_name).x
+        
+        try:
+            COMPUB    = mSEDA_COMP.model.getVarByName('muUB_'+var_name).x
+            print('Upperbound for {0}'.format(var_name))
+            COMPDUAL = COMPLB-COMPUB
+        except:        
+            COMPUB =[]
+            COMPDUAL=COMPLB
+            
+    else:
+        COMPValue=COMPLB=COMPUB=COMPDUAL=np.nan
+        
+    Var_Compare=Var_Compare.append(pd.DataFrame([[PrimalValue,COMPValue,PrimalDual,COMPDUAL,COMPLB,COMPUB,PrimalUB,PrimalLB]],
+                                                columns=['PrimalValue','COMPValue','PrimalDual','COMPDual','COMPLB','COMPUB','UB','LB'],index=[var_name]))
+
+
+
+
+
+Obj=0.0
+Obj_e=0.0
+Obj_l=0.0
+Obj_g=0.0
+
+PrimalConstraints=mSEDA.constraints.keys()
+
+PrimalConstraints=mSEDA.fixedmodel.getConstrs()
+
+for c in PrimalConstraints:
+    conSense=c.Sense
+    conRHS  =c.RHS
+    con_name=c.getAttr('ConstrName')
+    # Get dual from COMP problem
+    try:
+        if conSense=='=':
+            COMP_Dual= -1.0* mSEDA_COMP.model.getVarByName('lambda_'+con_name).x
+            Obj_e=Obj_e+COMP_Dual*conRHS
+        elif conSense=='<':
+            COMP_Dual= -1.0* mSEDA_COMP.model.getVarByName('mu_'+con_name).x
+            Obj_l=Obj_l+COMP_Dual*conRHS
+        elif conSense=='>':
+            COMP_Dual= mSEDA_COMP.model.getVarByName('mu_'+con_name).x
+            Obj_g=Obj_g+COMP_Dual*conRHS
+    except:
+        COMP_Dual=0.0
+        
+    Obj=Obj+COMP_Dual*conRHS  
+    
+    
 ##Problems=Problems.drop(columns=['PrimalValue','COMPValue'])
 #    # Check for duals due to constraints
 #    con_UB=[]
