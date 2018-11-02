@@ -78,12 +78,13 @@ def Add_Obj(model,COMP):
  
 # Compare Results
 def Compare(model,COMP):
-    df_results=pd.DataFrame()
+    df=pd.DataFrame()
     for var in COMP.model.getVars():
         orig=var.x
         new=model.getVarByName(var.VarName).x
-        df_results=df_results.append(pd.DataFrame([[orig, new]],columns=['orig','new'],index=[var.VarName]))
-    return df_results    
+        df=df.append(pd.DataFrame([[orig, new]],columns=['orig','new'],index=[var.VarName]))
+    print('Largest Error is {0}'.format((df.orig-df.new).abs().max()))
+    return df    
 
 
 
@@ -104,7 +105,32 @@ mGRT_COMP.model.optimize()
 
 
 
-#---
+#--- Independent
+model_SEDA=gb.Model()
+Add_Vars(model_SEDA,mSEDA_COMP)
+Add_Constrs(model_SEDA,mSEDA_COMP)
+Add_Obj(model_SEDA,mSEDA_COMP)
+model_SEDA.optimize()
+
+model_GDA=gb.Model()
+Add_Vars(model_GDA,mGDA_COMP)
+Add_Constrs(model_GDA,mGDA_COMP)
+Add_Obj(model_GDA,mGDA_COMP)
+model_GDA.optimize()
+
+model_GRT=gb.Model()
+Add_Vars(model_GRT,mGRT_COMP)
+Add_Constrs(model_GRT,mGRT_COMP)
+Add_Obj(model_GRT,mGRT_COMP)
+model_GRT.optimize()
+
+
+df_mSEDA=Compare(model_SEDA,mSEDA_COMP) 
+df_mGDA=Compare(model_GDA,mGDA_COMP) 
+df_mGRT=Compare(model_GRT,mGRT_COMP) 
+
+#--- All together
+
 model=gb.Model()
 
 Add_Vars(model,mSEDA_COMP)
@@ -119,8 +145,7 @@ Add_Obj(model,mSEDA_COMP)
 Add_Obj(model,mGDA_COMP)
 Add_Obj(model,mGRT_COMP)
 
-model.write('out.lp')
-    
+   
 model.optimize()
 
     
@@ -130,7 +155,7 @@ df_mSEDA=Compare(model,mSEDA_COMP)
 df_mGRT=Compare(model,mGRT_COMP)
 df_mGDA=Compare(model,mGDA_COMP)
     
-
+## CHECK FOR DUAL DEGENERACY
 
 
 
