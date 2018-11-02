@@ -517,6 +517,8 @@ else:
 
 
 
+
+
 # Compare Variables Results
 def Compare_models(mPrimal,mComp):
     
@@ -725,6 +727,7 @@ for c in PrimalConstraints:
     Obj=Obj+COMP_Dual*conRHS  
 
 Error=mSEDA.model.ObjVal-Obj   
+
     
 ##Problems=Problems.drop(columns=['PrimalValue','COMPValue'])
 #    # Check for duals due to constraints
