@@ -916,7 +916,7 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
                         + gb.quicksum(( qin_sr[pl][t]['k0']  - var.qin_sr_rt[pl,s,t] )   for pl in self.gdata.nodetooutpplines[gn]) \
                         + gb.quicksum(( var.gsout_rt[gs,s,t] - gsout[gs][t]['k0'] + gsin[gs][t]['k0'] - var.gsin_rt[gs,s,t]) for gs in self.gdata.Map_Gn2Gs[gn]) \
                         - gb.quicksum(Rgfpp[gen][t,s]*(HR[gen]) for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn]) \
-                        + var.gshed[gn,s,t] # Load SHedding
+                        + var.gshed_rt[gn,s,t] # Load SHedding
 
                         
                 rhs = np.float64(0.0)  

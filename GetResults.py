@@ -150,9 +150,7 @@ def _results_gasRT(self, f2d):
     
     r.lpack_rt = pd.DataFrame([[var.lpack_rt[pl,s,t].x for pl in self.gdata.pplineorder] for t in time for s in scenarios], index=index, columns=self.gdata.pplineorder)
     r.gprodUp = pd.DataFrame([[var.gprodUp[gw,s,t].x for gw in self.gdata.wells] for t in time for s in scenarios], index=index, columns=self.gdata.wells)
-    r.gprodDn = pd.DataFrame([[var.gprodDn[gw,s,t].x for gw in self.gdata.wells] for t in time for s in scenarios], index=index, columns=self.gdata.wells)    
-    r.gshed = pd.DataFrame([[var.gshed[gn,s,t].x for gn in self.gdata.gnodes] for t in time for s in scenarios], index=index, columns=self.gdata.gnodes)
-    
+    r.gprodDn = pd.DataFrame([[var.gprodDn[gw,s,t].x for gw in self.gdata.wells] for t in time for s in scenarios], index=index, columns=self.gdata.wells)        
     r.pr_rt = pd.DataFrame([[var.pr_rt[ng,k,t].x for ng in self.gdata.gnodeorder] for t in time for k in scenarios], index=index, columns=self.gdata.gnodeorder)
     
     r.gflow_sr_rt = pd.DataFrame([[var.gflow_sr_rt[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in scenarios], index=index, columns=self.gdata.pplineorder)

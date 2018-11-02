@@ -494,7 +494,6 @@ if mGRT.model.Status==2:
     dispatchGasRT = expando()
     dispatchGasRT.gprodUp = mGRT.results.gprodUp
     dispatchGasRT.gprodDn = mGRT.results.gprodDn
-    dispatchGasRT.gshed = mGRT.results.gshed
 else:
     mGRT.model.computeIIS()
     mGRT.model.write('LPModels/mGRT.ilp')
@@ -657,8 +656,6 @@ Check_Dual_Objective(mERT,mERT_COMP)
 mSEDA.fixedmodel=mSEDA.model.fixed()
 mSEDA.fixedmodel.optimize()
 
-
-mSEDA.fixedmodel.getVarByName()
 
 Var_Compare=pd.DataFrame()
 

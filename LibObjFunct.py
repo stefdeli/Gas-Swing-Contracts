@@ -159,7 +159,7 @@ def _build_objective_gasRT(self):
 
     m.setObjective(gb.quicksum(scenarioprob[s] * (
                    gb.quicksum(Cost[w][t]*(defaults.RESERVES_UP_PREMIUM*var.gprodUp[gw,s,t] - defaults.RESERVES_DN_PREMIUM*var.gprodDn[gw,s,t] ) for gw in wells for t in time) 
-                   +gb.quicksum(defaults.VOLL * var.gshed[gn,s,t] for gn in gnodes for t in time) 
+                   +gb.quicksum(defaults.VOLL * var.gshed_rt[gn,s,t] for gn in gnodes for t in time) 
                    +gb.quicksum( self.gdata.EPS*(var.pr_rt[pl[0],s,t]-var.pr_rt[pl[1],s,t]) for t in time for pl in pipes)
                    ) for s in scenarios),    
                    gb.GRB.MINIMIZE) 
