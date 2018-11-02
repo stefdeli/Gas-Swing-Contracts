@@ -218,8 +218,3 @@ def _load_SCinfo(self):
             
 
 
-
-
-
-
-
