@@ -1435,581 +1435,581 @@ Subject To
  SOS1_LB_Wspill(w1,s2,t24): - Wspill(w1,s2,t24) + SOS1_LB_Wspill(w1,s2,t24)
    = 0
  SOS1_LB_Lshed(s2,t24): - Lshed(s2,t24) + SOS1_LB_Lshed(s2,t24) = 0
- dLag/RUp(g1,s1,t1): - lambda_Power_Balance_RT(s1,t1)
+ dLag/RUp(g1,s1,t1): lambda_Power_Balance_RT(s1,t1)
    + mu_RegUp_max_RT(g1,s1,t1) - muLB_RUp(g1,s1,t1) = -44
- dLag/RDn(g1,s1,t1): lambda_Power_Balance_RT(s1,t1)
+ dLag/RDn(g1,s1,t1): - lambda_Power_Balance_RT(s1,t1)
    + mu_RegDown_max_RT(g1,s1,t1) - muLB_RDn(g1,s1,t1) = 38
- dLag/RUpSC(g1,s1,t1): - lambda_Power_Balance_RT(s1,t1)
+ dLag/RUpSC(g1,s1,t1): lambda_Power_Balance_RT(s1,t1)
    + mu_RegUpSC_max_RT(g1,s1,t1) - muLB_RUpSC(g1,s1,t1) = 0
- dLag/RDnSC(g1,s1,t1): lambda_Power_Balance_RT(s1,t1)
+ dLag/RDnSC(g1,s1,t1): - lambda_Power_Balance_RT(s1,t1)
    + mu_RegDnSC_max_RT(g1,s1,t1) - muLB_RDnSC(g1,s1,t1) = 0
- dLag/Wspill(w1,s1,t1): lambda_Power_Balance_RT(s1,t1)
+ dLag/Wspill(w1,s1,t1): - lambda_Power_Balance_RT(s1,t1)
    + mu_Max_wind_spill_RT(w1,s1,t1) - muLB_Wspill(w1,s1,t1) = 0
- dLag/Lshed(s1,t1): - lambda_Power_Balance_RT(s1,t1)
+ dLag/Lshed(s1,t1): lambda_Power_Balance_RT(s1,t1)
    + mu_Max_load_shed_RT(s1,t1) - muLB_Lshed(s1,t1) = -5000
- dLag/RUp(g1,s1,t2): - lambda_Power_Balance_RT(s1,t2)
+ dLag/RUp(g1,s1,t2): lambda_Power_Balance_RT(s1,t2)
    + mu_RegUp_max_RT(g1,s1,t2) - muLB_RUp(g1,s1,t2) = -44
- dLag/RDn(g1,s1,t2): lambda_Power_Balance_RT(s1,t2)
+ dLag/RDn(g1,s1,t2): - lambda_Power_Balance_RT(s1,t2)
    + mu_RegDown_max_RT(g1,s1,t2) - muLB_RDn(g1,s1,t2) = 38
- dLag/RUpSC(g1,s1,t2): - lambda_Power_Balance_RT(s1,t2)
+ dLag/RUpSC(g1,s1,t2): lambda_Power_Balance_RT(s1,t2)
    + mu_RegUpSC_max_RT(g1,s1,t2) - muLB_RUpSC(g1,s1,t2) = 0
- dLag/RDnSC(g1,s1,t2): lambda_Power_Balance_RT(s1,t2)
+ dLag/RDnSC(g1,s1,t2): - lambda_Power_Balance_RT(s1,t2)
    + mu_RegDnSC_max_RT(g1,s1,t2) - muLB_RDnSC(g1,s1,t2) = 0
- dLag/Wspill(w1,s1,t2): lambda_Power_Balance_RT(s1,t2)
+ dLag/Wspill(w1,s1,t2): - lambda_Power_Balance_RT(s1,t2)
    + mu_Max_wind_spill_RT(w1,s1,t2) - muLB_Wspill(w1,s1,t2) = 0
- dLag/Lshed(s1,t2): - lambda_Power_Balance_RT(s1,t2)
+ dLag/Lshed(s1,t2): lambda_Power_Balance_RT(s1,t2)
    + mu_Max_load_shed_RT(s1,t2) - muLB_Lshed(s1,t2) = -5000
- dLag/RUp(g1,s1,t3): - lambda_Power_Balance_RT(s1,t3)
+ dLag/RUp(g1,s1,t3): lambda_Power_Balance_RT(s1,t3)
    + mu_RegUp_max_RT(g1,s1,t3) - muLB_RUp(g1,s1,t3) = -44
- dLag/RDn(g1,s1,t3): lambda_Power_Balance_RT(s1,t3)
+ dLag/RDn(g1,s1,t3): - lambda_Power_Balance_RT(s1,t3)
    + mu_RegDown_max_RT(g1,s1,t3) - muLB_RDn(g1,s1,t3) = 38
- dLag/RUpSC(g1,s1,t3): - lambda_Power_Balance_RT(s1,t3)
+ dLag/RUpSC(g1,s1,t3): lambda_Power_Balance_RT(s1,t3)
    + mu_RegUpSC_max_RT(g1,s1,t3) - muLB_RUpSC(g1,s1,t3) = 0
- dLag/RDnSC(g1,s1,t3): lambda_Power_Balance_RT(s1,t3)
+ dLag/RDnSC(g1,s1,t3): - lambda_Power_Balance_RT(s1,t3)
    + mu_RegDnSC_max_RT(g1,s1,t3) - muLB_RDnSC(g1,s1,t3) = 0
- dLag/Wspill(w1,s1,t3): lambda_Power_Balance_RT(s1,t3)
+ dLag/Wspill(w1,s1,t3): - lambda_Power_Balance_RT(s1,t3)
    + mu_Max_wind_spill_RT(w1,s1,t3) - muLB_Wspill(w1,s1,t3) = 0
- dLag/Lshed(s1,t3): - lambda_Power_Balance_RT(s1,t3)
+ dLag/Lshed(s1,t3): lambda_Power_Balance_RT(s1,t3)
    + mu_Max_load_shed_RT(s1,t3) - muLB_Lshed(s1,t3) = -5000
- dLag/RUp(g1,s1,t4): - lambda_Power_Balance_RT(s1,t4)
+ dLag/RUp(g1,s1,t4): lambda_Power_Balance_RT(s1,t4)
    + mu_RegUp_max_RT(g1,s1,t4) - muLB_RUp(g1,s1,t4) = -44
- dLag/RDn(g1,s1,t4): lambda_Power_Balance_RT(s1,t4)
+ dLag/RDn(g1,s1,t4): - lambda_Power_Balance_RT(s1,t4)
    + mu_RegDown_max_RT(g1,s1,t4) - muLB_RDn(g1,s1,t4) = 38
- dLag/RUpSC(g1,s1,t4): - lambda_Power_Balance_RT(s1,t4)
+ dLag/RUpSC(g1,s1,t4): lambda_Power_Balance_RT(s1,t4)
    + mu_RegUpSC_max_RT(g1,s1,t4) - muLB_RUpSC(g1,s1,t4) = 0
- dLag/RDnSC(g1,s1,t4): lambda_Power_Balance_RT(s1,t4)
+ dLag/RDnSC(g1,s1,t4): - lambda_Power_Balance_RT(s1,t4)
    + mu_RegDnSC_max_RT(g1,s1,t4) - muLB_RDnSC(g1,s1,t4) = 0
- dLag/Wspill(w1,s1,t4): lambda_Power_Balance_RT(s1,t4)
+ dLag/Wspill(w1,s1,t4): - lambda_Power_Balance_RT(s1,t4)
    + mu_Max_wind_spill_RT(w1,s1,t4) - muLB_Wspill(w1,s1,t4) = 0
- dLag/Lshed(s1,t4): - lambda_Power_Balance_RT(s1,t4)
+ dLag/Lshed(s1,t4): lambda_Power_Balance_RT(s1,t4)
    + mu_Max_load_shed_RT(s1,t4) - muLB_Lshed(s1,t4) = -5000
- dLag/RUp(g1,s1,t5): - lambda_Power_Balance_RT(s1,t5)
+ dLag/RUp(g1,s1,t5): lambda_Power_Balance_RT(s1,t5)
    + mu_RegUp_max_RT(g1,s1,t5) - muLB_RUp(g1,s1,t5) = -44
- dLag/RDn(g1,s1,t5): lambda_Power_Balance_RT(s1,t5)
+ dLag/RDn(g1,s1,t5): - lambda_Power_Balance_RT(s1,t5)
    + mu_RegDown_max_RT(g1,s1,t5) - muLB_RDn(g1,s1,t5) = 38
- dLag/RUpSC(g1,s1,t5): - lambda_Power_Balance_RT(s1,t5)
+ dLag/RUpSC(g1,s1,t5): lambda_Power_Balance_RT(s1,t5)
    + mu_RegUpSC_max_RT(g1,s1,t5) - muLB_RUpSC(g1,s1,t5) = 0
- dLag/RDnSC(g1,s1,t5): lambda_Power_Balance_RT(s1,t5)
+ dLag/RDnSC(g1,s1,t5): - lambda_Power_Balance_RT(s1,t5)
    + mu_RegDnSC_max_RT(g1,s1,t5) - muLB_RDnSC(g1,s1,t5) = 0
- dLag/Wspill(w1,s1,t5): lambda_Power_Balance_RT(s1,t5)
+ dLag/Wspill(w1,s1,t5): - lambda_Power_Balance_RT(s1,t5)
    + mu_Max_wind_spill_RT(w1,s1,t5) - muLB_Wspill(w1,s1,t5) = 0
- dLag/Lshed(s1,t5): - lambda_Power_Balance_RT(s1,t5)
+ dLag/Lshed(s1,t5): lambda_Power_Balance_RT(s1,t5)
    + mu_Max_load_shed_RT(s1,t5) - muLB_Lshed(s1,t5) = -5000
- dLag/RUp(g1,s1,t6): - lambda_Power_Balance_RT(s1,t6)
+ dLag/RUp(g1,s1,t6): lambda_Power_Balance_RT(s1,t6)
    + mu_RegUp_max_RT(g1,s1,t6) - muLB_RUp(g1,s1,t6) = -44
- dLag/RDn(g1,s1,t6): lambda_Power_Balance_RT(s1,t6)
+ dLag/RDn(g1,s1,t6): - lambda_Power_Balance_RT(s1,t6)
    + mu_RegDown_max_RT(g1,s1,t6) - muLB_RDn(g1,s1,t6) = 38
- dLag/RUpSC(g1,s1,t6): - lambda_Power_Balance_RT(s1,t6)
+ dLag/RUpSC(g1,s1,t6): lambda_Power_Balance_RT(s1,t6)
    + mu_RegUpSC_max_RT(g1,s1,t6) - muLB_RUpSC(g1,s1,t6) = 0
- dLag/RDnSC(g1,s1,t6): lambda_Power_Balance_RT(s1,t6)
+ dLag/RDnSC(g1,s1,t6): - lambda_Power_Balance_RT(s1,t6)
    + mu_RegDnSC_max_RT(g1,s1,t6) - muLB_RDnSC(g1,s1,t6) = 0
- dLag/Wspill(w1,s1,t6): lambda_Power_Balance_RT(s1,t6)
+ dLag/Wspill(w1,s1,t6): - lambda_Power_Balance_RT(s1,t6)
    + mu_Max_wind_spill_RT(w1,s1,t6) - muLB_Wspill(w1,s1,t6) = 0
- dLag/Lshed(s1,t6): - lambda_Power_Balance_RT(s1,t6)
+ dLag/Lshed(s1,t6): lambda_Power_Balance_RT(s1,t6)
    + mu_Max_load_shed_RT(s1,t6) - muLB_Lshed(s1,t6) = -5000
- dLag/RUp(g1,s1,t7): - lambda_Power_Balance_RT(s1,t7)
+ dLag/RUp(g1,s1,t7): lambda_Power_Balance_RT(s1,t7)
    + mu_RegUp_max_RT(g1,s1,t7) - muLB_RUp(g1,s1,t7) = -44
- dLag/RDn(g1,s1,t7): lambda_Power_Balance_RT(s1,t7)
+ dLag/RDn(g1,s1,t7): - lambda_Power_Balance_RT(s1,t7)
    + mu_RegDown_max_RT(g1,s1,t7) - muLB_RDn(g1,s1,t7) = 38
- dLag/RUpSC(g1,s1,t7): - lambda_Power_Balance_RT(s1,t7)
+ dLag/RUpSC(g1,s1,t7): lambda_Power_Balance_RT(s1,t7)
    + mu_RegUpSC_max_RT(g1,s1,t7) - muLB_RUpSC(g1,s1,t7) = 0
- dLag/RDnSC(g1,s1,t7): lambda_Power_Balance_RT(s1,t7)
+ dLag/RDnSC(g1,s1,t7): - lambda_Power_Balance_RT(s1,t7)
    + mu_RegDnSC_max_RT(g1,s1,t7) - muLB_RDnSC(g1,s1,t7) = 0
- dLag/Wspill(w1,s1,t7): lambda_Power_Balance_RT(s1,t7)
+ dLag/Wspill(w1,s1,t7): - lambda_Power_Balance_RT(s1,t7)
    + mu_Max_wind_spill_RT(w1,s1,t7) - muLB_Wspill(w1,s1,t7) = 0
- dLag/Lshed(s1,t7): - lambda_Power_Balance_RT(s1,t7)
+ dLag/Lshed(s1,t7): lambda_Power_Balance_RT(s1,t7)
    + mu_Max_load_shed_RT(s1,t7) - muLB_Lshed(s1,t7) = -5000
- dLag/RUp(g1,s1,t8): - lambda_Power_Balance_RT(s1,t8)
+ dLag/RUp(g1,s1,t8): lambda_Power_Balance_RT(s1,t8)
    + mu_RegUp_max_RT(g1,s1,t8) - muLB_RUp(g1,s1,t8) = -44
- dLag/RDn(g1,s1,t8): lambda_Power_Balance_RT(s1,t8)
+ dLag/RDn(g1,s1,t8): - lambda_Power_Balance_RT(s1,t8)
    + mu_RegDown_max_RT(g1,s1,t8) - muLB_RDn(g1,s1,t8) = 38
- dLag/RUpSC(g1,s1,t8): - lambda_Power_Balance_RT(s1,t8)
+ dLag/RUpSC(g1,s1,t8): lambda_Power_Balance_RT(s1,t8)
    + mu_RegUpSC_max_RT(g1,s1,t8) - muLB_RUpSC(g1,s1,t8) = 0
- dLag/RDnSC(g1,s1,t8): lambda_Power_Balance_RT(s1,t8)
+ dLag/RDnSC(g1,s1,t8): - lambda_Power_Balance_RT(s1,t8)
    + mu_RegDnSC_max_RT(g1,s1,t8) - muLB_RDnSC(g1,s1,t8) = 0
- dLag/Wspill(w1,s1,t8): lambda_Power_Balance_RT(s1,t8)
+ dLag/Wspill(w1,s1,t8): - lambda_Power_Balance_RT(s1,t8)
    + mu_Max_wind_spill_RT(w1,s1,t8) - muLB_Wspill(w1,s1,t8) = 0
- dLag/Lshed(s1,t8): - lambda_Power_Balance_RT(s1,t8)
+ dLag/Lshed(s1,t8): lambda_Power_Balance_RT(s1,t8)
    + mu_Max_load_shed_RT(s1,t8) - muLB_Lshed(s1,t8) = -5000
- dLag/RUp(g1,s1,t9): - lambda_Power_Balance_RT(s1,t9)
+ dLag/RUp(g1,s1,t9): lambda_Power_Balance_RT(s1,t9)
    + mu_RegUp_max_RT(g1,s1,t9) - muLB_RUp(g1,s1,t9) = -44
- dLag/RDn(g1,s1,t9): lambda_Power_Balance_RT(s1,t9)
+ dLag/RDn(g1,s1,t9): - lambda_Power_Balance_RT(s1,t9)
    + mu_RegDown_max_RT(g1,s1,t9) - muLB_RDn(g1,s1,t9) = 38
- dLag/RUpSC(g1,s1,t9): - lambda_Power_Balance_RT(s1,t9)
+ dLag/RUpSC(g1,s1,t9): lambda_Power_Balance_RT(s1,t9)
    + mu_RegUpSC_max_RT(g1,s1,t9) - muLB_RUpSC(g1,s1,t9) = 0
- dLag/RDnSC(g1,s1,t9): lambda_Power_Balance_RT(s1,t9)
+ dLag/RDnSC(g1,s1,t9): - lambda_Power_Balance_RT(s1,t9)
    + mu_RegDnSC_max_RT(g1,s1,t9) - muLB_RDnSC(g1,s1,t9) = 0
- dLag/Wspill(w1,s1,t9): lambda_Power_Balance_RT(s1,t9)
+ dLag/Wspill(w1,s1,t9): - lambda_Power_Balance_RT(s1,t9)
    + mu_Max_wind_spill_RT(w1,s1,t9) - muLB_Wspill(w1,s1,t9) = 0
- dLag/Lshed(s1,t9): - lambda_Power_Balance_RT(s1,t9)
+ dLag/Lshed(s1,t9): lambda_Power_Balance_RT(s1,t9)
    + mu_Max_load_shed_RT(s1,t9) - muLB_Lshed(s1,t9) = -5000
- dLag/RUp(g1,s1,t10): - lambda_Power_Balance_RT(s1,t10)
+ dLag/RUp(g1,s1,t10): lambda_Power_Balance_RT(s1,t10)
    + mu_RegUp_max_RT(g1,s1,t10) - muLB_RUp(g1,s1,t10) = -44
- dLag/RDn(g1,s1,t10): lambda_Power_Balance_RT(s1,t10)
+ dLag/RDn(g1,s1,t10): - lambda_Power_Balance_RT(s1,t10)
    + mu_RegDown_max_RT(g1,s1,t10) - muLB_RDn(g1,s1,t10) = 38
- dLag/RUpSC(g1,s1,t10): - lambda_Power_Balance_RT(s1,t10)
+ dLag/RUpSC(g1,s1,t10): lambda_Power_Balance_RT(s1,t10)
    + mu_RegUpSC_max_RT(g1,s1,t10) - muLB_RUpSC(g1,s1,t10) = 0
- dLag/RDnSC(g1,s1,t10): lambda_Power_Balance_RT(s1,t10)
+ dLag/RDnSC(g1,s1,t10): - lambda_Power_Balance_RT(s1,t10)
    + mu_RegDnSC_max_RT(g1,s1,t10) - muLB_RDnSC(g1,s1,t10) = 0
- dLag/Wspill(w1,s1,t10): lambda_Power_Balance_RT(s1,t10)
+ dLag/Wspill(w1,s1,t10): - lambda_Power_Balance_RT(s1,t10)
    + mu_Max_wind_spill_RT(w1,s1,t10) - muLB_Wspill(w1,s1,t10) = 0
- dLag/Lshed(s1,t10): - lambda_Power_Balance_RT(s1,t10)
+ dLag/Lshed(s1,t10): lambda_Power_Balance_RT(s1,t10)
    + mu_Max_load_shed_RT(s1,t10) - muLB_Lshed(s1,t10) = -5000
- dLag/RUp(g1,s1,t11): - lambda_Power_Balance_RT(s1,t11)
+ dLag/RUp(g1,s1,t11): lambda_Power_Balance_RT(s1,t11)
    + mu_RegUp_max_RT(g1,s1,t11) - muLB_RUp(g1,s1,t11) = -44
- dLag/RDn(g1,s1,t11): lambda_Power_Balance_RT(s1,t11)
+ dLag/RDn(g1,s1,t11): - lambda_Power_Balance_RT(s1,t11)
    + mu_RegDown_max_RT(g1,s1,t11) - muLB_RDn(g1,s1,t11) = 38
- dLag/RUpSC(g1,s1,t11): - lambda_Power_Balance_RT(s1,t11)
+ dLag/RUpSC(g1,s1,t11): lambda_Power_Balance_RT(s1,t11)
    + mu_RegUpSC_max_RT(g1,s1,t11) - muLB_RUpSC(g1,s1,t11) = 0
- dLag/RDnSC(g1,s1,t11): lambda_Power_Balance_RT(s1,t11)
+ dLag/RDnSC(g1,s1,t11): - lambda_Power_Balance_RT(s1,t11)
    + mu_RegDnSC_max_RT(g1,s1,t11) - muLB_RDnSC(g1,s1,t11) = 0
- dLag/Wspill(w1,s1,t11): lambda_Power_Balance_RT(s1,t11)
+ dLag/Wspill(w1,s1,t11): - lambda_Power_Balance_RT(s1,t11)
    + mu_Max_wind_spill_RT(w1,s1,t11) - muLB_Wspill(w1,s1,t11) = 0
- dLag/Lshed(s1,t11): - lambda_Power_Balance_RT(s1,t11)
+ dLag/Lshed(s1,t11): lambda_Power_Balance_RT(s1,t11)
    + mu_Max_load_shed_RT(s1,t11) - muLB_Lshed(s1,t11) = -5000
- dLag/RUp(g1,s1,t12): - lambda_Power_Balance_RT(s1,t12)
+ dLag/RUp(g1,s1,t12): lambda_Power_Balance_RT(s1,t12)
    + mu_RegUp_max_RT(g1,s1,t12) - muLB_RUp(g1,s1,t12) = -44
- dLag/RDn(g1,s1,t12): lambda_Power_Balance_RT(s1,t12)
+ dLag/RDn(g1,s1,t12): - lambda_Power_Balance_RT(s1,t12)
    + mu_RegDown_max_RT(g1,s1,t12) - muLB_RDn(g1,s1,t12) = 38
- dLag/RUpSC(g1,s1,t12): - lambda_Power_Balance_RT(s1,t12)
+ dLag/RUpSC(g1,s1,t12): lambda_Power_Balance_RT(s1,t12)
    + mu_RegUpSC_max_RT(g1,s1,t12) - muLB_RUpSC(g1,s1,t12) = 0
- dLag/RDnSC(g1,s1,t12): lambda_Power_Balance_RT(s1,t12)
+ dLag/RDnSC(g1,s1,t12): - lambda_Power_Balance_RT(s1,t12)
    + mu_RegDnSC_max_RT(g1,s1,t12) - muLB_RDnSC(g1,s1,t12) = 0
- dLag/Wspill(w1,s1,t12): lambda_Power_Balance_RT(s1,t12)
+ dLag/Wspill(w1,s1,t12): - lambda_Power_Balance_RT(s1,t12)
    + mu_Max_wind_spill_RT(w1,s1,t12) - muLB_Wspill(w1,s1,t12) = 0
- dLag/Lshed(s1,t12): - lambda_Power_Balance_RT(s1,t12)
+ dLag/Lshed(s1,t12): lambda_Power_Balance_RT(s1,t12)
    + mu_Max_load_shed_RT(s1,t12) - muLB_Lshed(s1,t12) = -5000
- dLag/RUp(g1,s1,t13): - lambda_Power_Balance_RT(s1,t13)
+ dLag/RUp(g1,s1,t13): lambda_Power_Balance_RT(s1,t13)
    + mu_RegUp_max_RT(g1,s1,t13) - muLB_RUp(g1,s1,t13) = -44
- dLag/RDn(g1,s1,t13): lambda_Power_Balance_RT(s1,t13)
+ dLag/RDn(g1,s1,t13): - lambda_Power_Balance_RT(s1,t13)
    + mu_RegDown_max_RT(g1,s1,t13) - muLB_RDn(g1,s1,t13) = 38
- dLag/RUpSC(g1,s1,t13): - lambda_Power_Balance_RT(s1,t13)
+ dLag/RUpSC(g1,s1,t13): lambda_Power_Balance_RT(s1,t13)
    + mu_RegUpSC_max_RT(g1,s1,t13) - muLB_RUpSC(g1,s1,t13) = 0
- dLag/RDnSC(g1,s1,t13): lambda_Power_Balance_RT(s1,t13)
+ dLag/RDnSC(g1,s1,t13): - lambda_Power_Balance_RT(s1,t13)
    + mu_RegDnSC_max_RT(g1,s1,t13) - muLB_RDnSC(g1,s1,t13) = 0
- dLag/Wspill(w1,s1,t13): lambda_Power_Balance_RT(s1,t13)
+ dLag/Wspill(w1,s1,t13): - lambda_Power_Balance_RT(s1,t13)
    + mu_Max_wind_spill_RT(w1,s1,t13) - muLB_Wspill(w1,s1,t13) = 0
- dLag/Lshed(s1,t13): - lambda_Power_Balance_RT(s1,t13)
+ dLag/Lshed(s1,t13): lambda_Power_Balance_RT(s1,t13)
    + mu_Max_load_shed_RT(s1,t13) - muLB_Lshed(s1,t13) = -5000
- dLag/RUp(g1,s1,t14): - lambda_Power_Balance_RT(s1,t14)
+ dLag/RUp(g1,s1,t14): lambda_Power_Balance_RT(s1,t14)
    + mu_RegUp_max_RT(g1,s1,t14) - muLB_RUp(g1,s1,t14) = -44
- dLag/RDn(g1,s1,t14): lambda_Power_Balance_RT(s1,t14)
+ dLag/RDn(g1,s1,t14): - lambda_Power_Balance_RT(s1,t14)
    + mu_RegDown_max_RT(g1,s1,t14) - muLB_RDn(g1,s1,t14) = 38
- dLag/RUpSC(g1,s1,t14): - lambda_Power_Balance_RT(s1,t14)
+ dLag/RUpSC(g1,s1,t14): lambda_Power_Balance_RT(s1,t14)
    + mu_RegUpSC_max_RT(g1,s1,t14) - muLB_RUpSC(g1,s1,t14) = 0
- dLag/RDnSC(g1,s1,t14): lambda_Power_Balance_RT(s1,t14)
+ dLag/RDnSC(g1,s1,t14): - lambda_Power_Balance_RT(s1,t14)
    + mu_RegDnSC_max_RT(g1,s1,t14) - muLB_RDnSC(g1,s1,t14) = 0
- dLag/Wspill(w1,s1,t14): lambda_Power_Balance_RT(s1,t14)
+ dLag/Wspill(w1,s1,t14): - lambda_Power_Balance_RT(s1,t14)
    + mu_Max_wind_spill_RT(w1,s1,t14) - muLB_Wspill(w1,s1,t14) = 0
- dLag/Lshed(s1,t14): - lambda_Power_Balance_RT(s1,t14)
+ dLag/Lshed(s1,t14): lambda_Power_Balance_RT(s1,t14)
    + mu_Max_load_shed_RT(s1,t14) - muLB_Lshed(s1,t14) = -5000
- dLag/RUp(g1,s1,t15): - lambda_Power_Balance_RT(s1,t15)
+ dLag/RUp(g1,s1,t15): lambda_Power_Balance_RT(s1,t15)
    + mu_RegUp_max_RT(g1,s1,t15) - muLB_RUp(g1,s1,t15) = -44
- dLag/RDn(g1,s1,t15): lambda_Power_Balance_RT(s1,t15)
+ dLag/RDn(g1,s1,t15): - lambda_Power_Balance_RT(s1,t15)
    + mu_RegDown_max_RT(g1,s1,t15) - muLB_RDn(g1,s1,t15) = 38
- dLag/RUpSC(g1,s1,t15): - lambda_Power_Balance_RT(s1,t15)
+ dLag/RUpSC(g1,s1,t15): lambda_Power_Balance_RT(s1,t15)
    + mu_RegUpSC_max_RT(g1,s1,t15) - muLB_RUpSC(g1,s1,t15) = 0
- dLag/RDnSC(g1,s1,t15): lambda_Power_Balance_RT(s1,t15)
+ dLag/RDnSC(g1,s1,t15): - lambda_Power_Balance_RT(s1,t15)
    + mu_RegDnSC_max_RT(g1,s1,t15) - muLB_RDnSC(g1,s1,t15) = 0
- dLag/Wspill(w1,s1,t15): lambda_Power_Balance_RT(s1,t15)
+ dLag/Wspill(w1,s1,t15): - lambda_Power_Balance_RT(s1,t15)
    + mu_Max_wind_spill_RT(w1,s1,t15) - muLB_Wspill(w1,s1,t15) = 0
- dLag/Lshed(s1,t15): - lambda_Power_Balance_RT(s1,t15)
+ dLag/Lshed(s1,t15): lambda_Power_Balance_RT(s1,t15)
    + mu_Max_load_shed_RT(s1,t15) - muLB_Lshed(s1,t15) = -5000
- dLag/RUp(g1,s1,t16): - lambda_Power_Balance_RT(s1,t16)
+ dLag/RUp(g1,s1,t16): lambda_Power_Balance_RT(s1,t16)
    + mu_RegUp_max_RT(g1,s1,t16) - muLB_RUp(g1,s1,t16) = -44
- dLag/RDn(g1,s1,t16): lambda_Power_Balance_RT(s1,t16)
+ dLag/RDn(g1,s1,t16): - lambda_Power_Balance_RT(s1,t16)
    + mu_RegDown_max_RT(g1,s1,t16) - muLB_RDn(g1,s1,t16) = 38
- dLag/RUpSC(g1,s1,t16): - lambda_Power_Balance_RT(s1,t16)
+ dLag/RUpSC(g1,s1,t16): lambda_Power_Balance_RT(s1,t16)
    + mu_RegUpSC_max_RT(g1,s1,t16) - muLB_RUpSC(g1,s1,t16) = 0
- dLag/RDnSC(g1,s1,t16): lambda_Power_Balance_RT(s1,t16)
+ dLag/RDnSC(g1,s1,t16): - lambda_Power_Balance_RT(s1,t16)
    + mu_RegDnSC_max_RT(g1,s1,t16) - muLB_RDnSC(g1,s1,t16) = 0
- dLag/Wspill(w1,s1,t16): lambda_Power_Balance_RT(s1,t16)
+ dLag/Wspill(w1,s1,t16): - lambda_Power_Balance_RT(s1,t16)
    + mu_Max_wind_spill_RT(w1,s1,t16) - muLB_Wspill(w1,s1,t16) = 0
- dLag/Lshed(s1,t16): - lambda_Power_Balance_RT(s1,t16)
+ dLag/Lshed(s1,t16): lambda_Power_Balance_RT(s1,t16)
    + mu_Max_load_shed_RT(s1,t16) - muLB_Lshed(s1,t16) = -5000
- dLag/RUp(g1,s1,t17): - lambda_Power_Balance_RT(s1,t17)
+ dLag/RUp(g1,s1,t17): lambda_Power_Balance_RT(s1,t17)
    + mu_RegUp_max_RT(g1,s1,t17) - muLB_RUp(g1,s1,t17) = -44
- dLag/RDn(g1,s1,t17): lambda_Power_Balance_RT(s1,t17)
+ dLag/RDn(g1,s1,t17): - lambda_Power_Balance_RT(s1,t17)
    + mu_RegDown_max_RT(g1,s1,t17) - muLB_RDn(g1,s1,t17) = 38
- dLag/RUpSC(g1,s1,t17): - lambda_Power_Balance_RT(s1,t17)
+ dLag/RUpSC(g1,s1,t17): lambda_Power_Balance_RT(s1,t17)
    + mu_RegUpSC_max_RT(g1,s1,t17) - muLB_RUpSC(g1,s1,t17) = 0
- dLag/RDnSC(g1,s1,t17): lambda_Power_Balance_RT(s1,t17)
+ dLag/RDnSC(g1,s1,t17): - lambda_Power_Balance_RT(s1,t17)
    + mu_RegDnSC_max_RT(g1,s1,t17) - muLB_RDnSC(g1,s1,t17) = 0
- dLag/Wspill(w1,s1,t17): lambda_Power_Balance_RT(s1,t17)
+ dLag/Wspill(w1,s1,t17): - lambda_Power_Balance_RT(s1,t17)
    + mu_Max_wind_spill_RT(w1,s1,t17) - muLB_Wspill(w1,s1,t17) = 0
- dLag/Lshed(s1,t17): - lambda_Power_Balance_RT(s1,t17)
+ dLag/Lshed(s1,t17): lambda_Power_Balance_RT(s1,t17)
    + mu_Max_load_shed_RT(s1,t17) - muLB_Lshed(s1,t17) = -5000
- dLag/RUp(g1,s1,t18): - lambda_Power_Balance_RT(s1,t18)
+ dLag/RUp(g1,s1,t18): lambda_Power_Balance_RT(s1,t18)
    + mu_RegUp_max_RT(g1,s1,t18) - muLB_RUp(g1,s1,t18) = -44
- dLag/RDn(g1,s1,t18): lambda_Power_Balance_RT(s1,t18)
+ dLag/RDn(g1,s1,t18): - lambda_Power_Balance_RT(s1,t18)
    + mu_RegDown_max_RT(g1,s1,t18) - muLB_RDn(g1,s1,t18) = 38
- dLag/RUpSC(g1,s1,t18): - lambda_Power_Balance_RT(s1,t18)
+ dLag/RUpSC(g1,s1,t18): lambda_Power_Balance_RT(s1,t18)
    + mu_RegUpSC_max_RT(g1,s1,t18) - muLB_RUpSC(g1,s1,t18) = 0
- dLag/RDnSC(g1,s1,t18): lambda_Power_Balance_RT(s1,t18)
+ dLag/RDnSC(g1,s1,t18): - lambda_Power_Balance_RT(s1,t18)
    + mu_RegDnSC_max_RT(g1,s1,t18) - muLB_RDnSC(g1,s1,t18) = 0
- dLag/Wspill(w1,s1,t18): lambda_Power_Balance_RT(s1,t18)
+ dLag/Wspill(w1,s1,t18): - lambda_Power_Balance_RT(s1,t18)
    + mu_Max_wind_spill_RT(w1,s1,t18) - muLB_Wspill(w1,s1,t18) = 0
- dLag/Lshed(s1,t18): - lambda_Power_Balance_RT(s1,t18)
+ dLag/Lshed(s1,t18): lambda_Power_Balance_RT(s1,t18)
    + mu_Max_load_shed_RT(s1,t18) - muLB_Lshed(s1,t18) = -5000
- dLag/RUp(g1,s1,t19): - lambda_Power_Balance_RT(s1,t19)
+ dLag/RUp(g1,s1,t19): lambda_Power_Balance_RT(s1,t19)
    + mu_RegUp_max_RT(g1,s1,t19) - muLB_RUp(g1,s1,t19) = -44
- dLag/RDn(g1,s1,t19): lambda_Power_Balance_RT(s1,t19)
+ dLag/RDn(g1,s1,t19): - lambda_Power_Balance_RT(s1,t19)
    + mu_RegDown_max_RT(g1,s1,t19) - muLB_RDn(g1,s1,t19) = 38
- dLag/RUpSC(g1,s1,t19): - lambda_Power_Balance_RT(s1,t19)
+ dLag/RUpSC(g1,s1,t19): lambda_Power_Balance_RT(s1,t19)
    + mu_RegUpSC_max_RT(g1,s1,t19) - muLB_RUpSC(g1,s1,t19) = 0
- dLag/RDnSC(g1,s1,t19): lambda_Power_Balance_RT(s1,t19)
+ dLag/RDnSC(g1,s1,t19): - lambda_Power_Balance_RT(s1,t19)
    + mu_RegDnSC_max_RT(g1,s1,t19) - muLB_RDnSC(g1,s1,t19) = 0
- dLag/Wspill(w1,s1,t19): lambda_Power_Balance_RT(s1,t19)
+ dLag/Wspill(w1,s1,t19): - lambda_Power_Balance_RT(s1,t19)
    + mu_Max_wind_spill_RT(w1,s1,t19) - muLB_Wspill(w1,s1,t19) = 0
- dLag/Lshed(s1,t19): - lambda_Power_Balance_RT(s1,t19)
+ dLag/Lshed(s1,t19): lambda_Power_Balance_RT(s1,t19)
    + mu_Max_load_shed_RT(s1,t19) - muLB_Lshed(s1,t19) = -5000
- dLag/RUp(g1,s1,t20): - lambda_Power_Balance_RT(s1,t20)
+ dLag/RUp(g1,s1,t20): lambda_Power_Balance_RT(s1,t20)
    + mu_RegUp_max_RT(g1,s1,t20) - muLB_RUp(g1,s1,t20) = -44
- dLag/RDn(g1,s1,t20): lambda_Power_Balance_RT(s1,t20)
+ dLag/RDn(g1,s1,t20): - lambda_Power_Balance_RT(s1,t20)
    + mu_RegDown_max_RT(g1,s1,t20) - muLB_RDn(g1,s1,t20) = 38
- dLag/RUpSC(g1,s1,t20): - lambda_Power_Balance_RT(s1,t20)
+ dLag/RUpSC(g1,s1,t20): lambda_Power_Balance_RT(s1,t20)
    + mu_RegUpSC_max_RT(g1,s1,t20) - muLB_RUpSC(g1,s1,t20) = 0
- dLag/RDnSC(g1,s1,t20): lambda_Power_Balance_RT(s1,t20)
+ dLag/RDnSC(g1,s1,t20): - lambda_Power_Balance_RT(s1,t20)
    + mu_RegDnSC_max_RT(g1,s1,t20) - muLB_RDnSC(g1,s1,t20) = 0
- dLag/Wspill(w1,s1,t20): lambda_Power_Balance_RT(s1,t20)
+ dLag/Wspill(w1,s1,t20): - lambda_Power_Balance_RT(s1,t20)
    + mu_Max_wind_spill_RT(w1,s1,t20) - muLB_Wspill(w1,s1,t20) = 0
- dLag/Lshed(s1,t20): - lambda_Power_Balance_RT(s1,t20)
+ dLag/Lshed(s1,t20): lambda_Power_Balance_RT(s1,t20)
    + mu_Max_load_shed_RT(s1,t20) - muLB_Lshed(s1,t20) = -5000
- dLag/RUp(g1,s1,t21): - lambda_Power_Balance_RT(s1,t21)
+ dLag/RUp(g1,s1,t21): lambda_Power_Balance_RT(s1,t21)
    + mu_RegUp_max_RT(g1,s1,t21) - muLB_RUp(g1,s1,t21) = -44
- dLag/RDn(g1,s1,t21): lambda_Power_Balance_RT(s1,t21)
+ dLag/RDn(g1,s1,t21): - lambda_Power_Balance_RT(s1,t21)
    + mu_RegDown_max_RT(g1,s1,t21) - muLB_RDn(g1,s1,t21) = 38
- dLag/RUpSC(g1,s1,t21): - lambda_Power_Balance_RT(s1,t21)
+ dLag/RUpSC(g1,s1,t21): lambda_Power_Balance_RT(s1,t21)
    + mu_RegUpSC_max_RT(g1,s1,t21) - muLB_RUpSC(g1,s1,t21) = 0
- dLag/RDnSC(g1,s1,t21): lambda_Power_Balance_RT(s1,t21)
+ dLag/RDnSC(g1,s1,t21): - lambda_Power_Balance_RT(s1,t21)
    + mu_RegDnSC_max_RT(g1,s1,t21) - muLB_RDnSC(g1,s1,t21) = 0
- dLag/Wspill(w1,s1,t21): lambda_Power_Balance_RT(s1,t21)
+ dLag/Wspill(w1,s1,t21): - lambda_Power_Balance_RT(s1,t21)
    + mu_Max_wind_spill_RT(w1,s1,t21) - muLB_Wspill(w1,s1,t21) = 0
- dLag/Lshed(s1,t21): - lambda_Power_Balance_RT(s1,t21)
+ dLag/Lshed(s1,t21): lambda_Power_Balance_RT(s1,t21)
    + mu_Max_load_shed_RT(s1,t21) - muLB_Lshed(s1,t21) = -5000
- dLag/RUp(g1,s1,t22): - lambda_Power_Balance_RT(s1,t22)
+ dLag/RUp(g1,s1,t22): lambda_Power_Balance_RT(s1,t22)
    + mu_RegUp_max_RT(g1,s1,t22) - muLB_RUp(g1,s1,t22) = -44
- dLag/RDn(g1,s1,t22): lambda_Power_Balance_RT(s1,t22)
+ dLag/RDn(g1,s1,t22): - lambda_Power_Balance_RT(s1,t22)
    + mu_RegDown_max_RT(g1,s1,t22) - muLB_RDn(g1,s1,t22) = 38
- dLag/RUpSC(g1,s1,t22): - lambda_Power_Balance_RT(s1,t22)
+ dLag/RUpSC(g1,s1,t22): lambda_Power_Balance_RT(s1,t22)
    + mu_RegUpSC_max_RT(g1,s1,t22) - muLB_RUpSC(g1,s1,t22) = 0
- dLag/RDnSC(g1,s1,t22): lambda_Power_Balance_RT(s1,t22)
+ dLag/RDnSC(g1,s1,t22): - lambda_Power_Balance_RT(s1,t22)
    + mu_RegDnSC_max_RT(g1,s1,t22) - muLB_RDnSC(g1,s1,t22) = 0
- dLag/Wspill(w1,s1,t22): lambda_Power_Balance_RT(s1,t22)
+ dLag/Wspill(w1,s1,t22): - lambda_Power_Balance_RT(s1,t22)
    + mu_Max_wind_spill_RT(w1,s1,t22) - muLB_Wspill(w1,s1,t22) = 0
- dLag/Lshed(s1,t22): - lambda_Power_Balance_RT(s1,t22)
+ dLag/Lshed(s1,t22): lambda_Power_Balance_RT(s1,t22)
    + mu_Max_load_shed_RT(s1,t22) - muLB_Lshed(s1,t22) = -5000
- dLag/RUp(g1,s1,t23): - lambda_Power_Balance_RT(s1,t23)
+ dLag/RUp(g1,s1,t23): lambda_Power_Balance_RT(s1,t23)
    + mu_RegUp_max_RT(g1,s1,t23) - muLB_RUp(g1,s1,t23) = -44
- dLag/RDn(g1,s1,t23): lambda_Power_Balance_RT(s1,t23)
+ dLag/RDn(g1,s1,t23): - lambda_Power_Balance_RT(s1,t23)
    + mu_RegDown_max_RT(g1,s1,t23) - muLB_RDn(g1,s1,t23) = 38
- dLag/RUpSC(g1,s1,t23): - lambda_Power_Balance_RT(s1,t23)
+ dLag/RUpSC(g1,s1,t23): lambda_Power_Balance_RT(s1,t23)
    + mu_RegUpSC_max_RT(g1,s1,t23) - muLB_RUpSC(g1,s1,t23) = 0
- dLag/RDnSC(g1,s1,t23): lambda_Power_Balance_RT(s1,t23)
+ dLag/RDnSC(g1,s1,t23): - lambda_Power_Balance_RT(s1,t23)
    + mu_RegDnSC_max_RT(g1,s1,t23) - muLB_RDnSC(g1,s1,t23) = 0
- dLag/Wspill(w1,s1,t23): lambda_Power_Balance_RT(s1,t23)
+ dLag/Wspill(w1,s1,t23): - lambda_Power_Balance_RT(s1,t23)
    + mu_Max_wind_spill_RT(w1,s1,t23) - muLB_Wspill(w1,s1,t23) = 0
- dLag/Lshed(s1,t23): - lambda_Power_Balance_RT(s1,t23)
+ dLag/Lshed(s1,t23): lambda_Power_Balance_RT(s1,t23)
    + mu_Max_load_shed_RT(s1,t23) - muLB_Lshed(s1,t23) = -5000
- dLag/RUp(g1,s1,t24): - lambda_Power_Balance_RT(s1,t24)
+ dLag/RUp(g1,s1,t24): lambda_Power_Balance_RT(s1,t24)
    + mu_RegUp_max_RT(g1,s1,t24) - muLB_RUp(g1,s1,t24) = -44
- dLag/RDn(g1,s1,t24): lambda_Power_Balance_RT(s1,t24)
+ dLag/RDn(g1,s1,t24): - lambda_Power_Balance_RT(s1,t24)
    + mu_RegDown_max_RT(g1,s1,t24) - muLB_RDn(g1,s1,t24) = 38
- dLag/RUpSC(g1,s1,t24): - lambda_Power_Balance_RT(s1,t24)
+ dLag/RUpSC(g1,s1,t24): lambda_Power_Balance_RT(s1,t24)
    + mu_RegUpSC_max_RT(g1,s1,t24) - muLB_RUpSC(g1,s1,t24) = 0
- dLag/RDnSC(g1,s1,t24): lambda_Power_Balance_RT(s1,t24)
+ dLag/RDnSC(g1,s1,t24): - lambda_Power_Balance_RT(s1,t24)
    + mu_RegDnSC_max_RT(g1,s1,t24) - muLB_RDnSC(g1,s1,t24) = 0
- dLag/Wspill(w1,s1,t24): lambda_Power_Balance_RT(s1,t24)
+ dLag/Wspill(w1,s1,t24): - lambda_Power_Balance_RT(s1,t24)
    + mu_Max_wind_spill_RT(w1,s1,t24) - muLB_Wspill(w1,s1,t24) = 0
- dLag/Lshed(s1,t24): - lambda_Power_Balance_RT(s1,t24)
+ dLag/Lshed(s1,t24): lambda_Power_Balance_RT(s1,t24)
    + mu_Max_load_shed_RT(s1,t24) - muLB_Lshed(s1,t24) = -5000
- dLag/RUp(g1,s2,t1): - lambda_Power_Balance_RT(s2,t1)
+ dLag/RUp(g1,s2,t1): lambda_Power_Balance_RT(s2,t1)
    + mu_RegUp_max_RT(g1,s2,t1) - muLB_RUp(g1,s2,t1) = -44
- dLag/RDn(g1,s2,t1): lambda_Power_Balance_RT(s2,t1)
+ dLag/RDn(g1,s2,t1): - lambda_Power_Balance_RT(s2,t1)
    + mu_RegDown_max_RT(g1,s2,t1) - muLB_RDn(g1,s2,t1) = 38
- dLag/RUpSC(g1,s2,t1): - lambda_Power_Balance_RT(s2,t1)
+ dLag/RUpSC(g1,s2,t1): lambda_Power_Balance_RT(s2,t1)
    + mu_RegUpSC_max_RT(g1,s2,t1) - muLB_RUpSC(g1,s2,t1) = 0
- dLag/RDnSC(g1,s2,t1): lambda_Power_Balance_RT(s2,t1)
+ dLag/RDnSC(g1,s2,t1): - lambda_Power_Balance_RT(s2,t1)
    + mu_RegDnSC_max_RT(g1,s2,t1) - muLB_RDnSC(g1,s2,t1) = 0
- dLag/Wspill(w1,s2,t1): lambda_Power_Balance_RT(s2,t1)
+ dLag/Wspill(w1,s2,t1): - lambda_Power_Balance_RT(s2,t1)
    + mu_Max_wind_spill_RT(w1,s2,t1) - muLB_Wspill(w1,s2,t1) = 0
- dLag/Lshed(s2,t1): - lambda_Power_Balance_RT(s2,t1)
+ dLag/Lshed(s2,t1): lambda_Power_Balance_RT(s2,t1)
    + mu_Max_load_shed_RT(s2,t1) - muLB_Lshed(s2,t1) = -5000
- dLag/RUp(g1,s2,t2): - lambda_Power_Balance_RT(s2,t2)
+ dLag/RUp(g1,s2,t2): lambda_Power_Balance_RT(s2,t2)
    + mu_RegUp_max_RT(g1,s2,t2) - muLB_RUp(g1,s2,t2) = -44
- dLag/RDn(g1,s2,t2): lambda_Power_Balance_RT(s2,t2)
+ dLag/RDn(g1,s2,t2): - lambda_Power_Balance_RT(s2,t2)
    + mu_RegDown_max_RT(g1,s2,t2) - muLB_RDn(g1,s2,t2) = 38
- dLag/RUpSC(g1,s2,t2): - lambda_Power_Balance_RT(s2,t2)
+ dLag/RUpSC(g1,s2,t2): lambda_Power_Balance_RT(s2,t2)
    + mu_RegUpSC_max_RT(g1,s2,t2) - muLB_RUpSC(g1,s2,t2) = 0
- dLag/RDnSC(g1,s2,t2): lambda_Power_Balance_RT(s2,t2)
+ dLag/RDnSC(g1,s2,t2): - lambda_Power_Balance_RT(s2,t2)
    + mu_RegDnSC_max_RT(g1,s2,t2) - muLB_RDnSC(g1,s2,t2) = 0
- dLag/Wspill(w1,s2,t2): lambda_Power_Balance_RT(s2,t2)
+ dLag/Wspill(w1,s2,t2): - lambda_Power_Balance_RT(s2,t2)
    + mu_Max_wind_spill_RT(w1,s2,t2) - muLB_Wspill(w1,s2,t2) = 0
- dLag/Lshed(s2,t2): - lambda_Power_Balance_RT(s2,t2)
+ dLag/Lshed(s2,t2): lambda_Power_Balance_RT(s2,t2)
    + mu_Max_load_shed_RT(s2,t2) - muLB_Lshed(s2,t2) = -5000
- dLag/RUp(g1,s2,t3): - lambda_Power_Balance_RT(s2,t3)
+ dLag/RUp(g1,s2,t3): lambda_Power_Balance_RT(s2,t3)
    + mu_RegUp_max_RT(g1,s2,t3) - muLB_RUp(g1,s2,t3) = -44
- dLag/RDn(g1,s2,t3): lambda_Power_Balance_RT(s2,t3)
+ dLag/RDn(g1,s2,t3): - lambda_Power_Balance_RT(s2,t3)
    + mu_RegDown_max_RT(g1,s2,t3) - muLB_RDn(g1,s2,t3) = 38
- dLag/RUpSC(g1,s2,t3): - lambda_Power_Balance_RT(s2,t3)
+ dLag/RUpSC(g1,s2,t3): lambda_Power_Balance_RT(s2,t3)
    + mu_RegUpSC_max_RT(g1,s2,t3) - muLB_RUpSC(g1,s2,t3) = 0
- dLag/RDnSC(g1,s2,t3): lambda_Power_Balance_RT(s2,t3)
+ dLag/RDnSC(g1,s2,t3): - lambda_Power_Balance_RT(s2,t3)
    + mu_RegDnSC_max_RT(g1,s2,t3) - muLB_RDnSC(g1,s2,t3) = 0
- dLag/Wspill(w1,s2,t3): lambda_Power_Balance_RT(s2,t3)
+ dLag/Wspill(w1,s2,t3): - lambda_Power_Balance_RT(s2,t3)
    + mu_Max_wind_spill_RT(w1,s2,t3) - muLB_Wspill(w1,s2,t3) = 0
- dLag/Lshed(s2,t3): - lambda_Power_Balance_RT(s2,t3)
+ dLag/Lshed(s2,t3): lambda_Power_Balance_RT(s2,t3)
    + mu_Max_load_shed_RT(s2,t3) - muLB_Lshed(s2,t3) = -5000
- dLag/RUp(g1,s2,t4): - lambda_Power_Balance_RT(s2,t4)
+ dLag/RUp(g1,s2,t4): lambda_Power_Balance_RT(s2,t4)
    + mu_RegUp_max_RT(g1,s2,t4) - muLB_RUp(g1,s2,t4) = -44
- dLag/RDn(g1,s2,t4): lambda_Power_Balance_RT(s2,t4)
+ dLag/RDn(g1,s2,t4): - lambda_Power_Balance_RT(s2,t4)
    + mu_RegDown_max_RT(g1,s2,t4) - muLB_RDn(g1,s2,t4) = 38
- dLag/RUpSC(g1,s2,t4): - lambda_Power_Balance_RT(s2,t4)
+ dLag/RUpSC(g1,s2,t4): lambda_Power_Balance_RT(s2,t4)
    + mu_RegUpSC_max_RT(g1,s2,t4) - muLB_RUpSC(g1,s2,t4) = 0
- dLag/RDnSC(g1,s2,t4): lambda_Power_Balance_RT(s2,t4)
+ dLag/RDnSC(g1,s2,t4): - lambda_Power_Balance_RT(s2,t4)
    + mu_RegDnSC_max_RT(g1,s2,t4) - muLB_RDnSC(g1,s2,t4) = 0
- dLag/Wspill(w1,s2,t4): lambda_Power_Balance_RT(s2,t4)
+ dLag/Wspill(w1,s2,t4): - lambda_Power_Balance_RT(s2,t4)
    + mu_Max_wind_spill_RT(w1,s2,t4) - muLB_Wspill(w1,s2,t4) = 0
- dLag/Lshed(s2,t4): - lambda_Power_Balance_RT(s2,t4)
+ dLag/Lshed(s2,t4): lambda_Power_Balance_RT(s2,t4)
    + mu_Max_load_shed_RT(s2,t4) - muLB_Lshed(s2,t4) = -5000
- dLag/RUp(g1,s2,t5): - lambda_Power_Balance_RT(s2,t5)
+ dLag/RUp(g1,s2,t5): lambda_Power_Balance_RT(s2,t5)
    + mu_RegUp_max_RT(g1,s2,t5) - muLB_RUp(g1,s2,t5) = -44
- dLag/RDn(g1,s2,t5): lambda_Power_Balance_RT(s2,t5)
+ dLag/RDn(g1,s2,t5): - lambda_Power_Balance_RT(s2,t5)
    + mu_RegDown_max_RT(g1,s2,t5) - muLB_RDn(g1,s2,t5) = 38
- dLag/RUpSC(g1,s2,t5): - lambda_Power_Balance_RT(s2,t5)
+ dLag/RUpSC(g1,s2,t5): lambda_Power_Balance_RT(s2,t5)
    + mu_RegUpSC_max_RT(g1,s2,t5) - muLB_RUpSC(g1,s2,t5) = 0
- dLag/RDnSC(g1,s2,t5): lambda_Power_Balance_RT(s2,t5)
+ dLag/RDnSC(g1,s2,t5): - lambda_Power_Balance_RT(s2,t5)
    + mu_RegDnSC_max_RT(g1,s2,t5) - muLB_RDnSC(g1,s2,t5) = 0
- dLag/Wspill(w1,s2,t5): lambda_Power_Balance_RT(s2,t5)
+ dLag/Wspill(w1,s2,t5): - lambda_Power_Balance_RT(s2,t5)
    + mu_Max_wind_spill_RT(w1,s2,t5) - muLB_Wspill(w1,s2,t5) = 0
- dLag/Lshed(s2,t5): - lambda_Power_Balance_RT(s2,t5)
+ dLag/Lshed(s2,t5): lambda_Power_Balance_RT(s2,t5)
    + mu_Max_load_shed_RT(s2,t5) - muLB_Lshed(s2,t5) = -5000
- dLag/RUp(g1,s2,t6): - lambda_Power_Balance_RT(s2,t6)
+ dLag/RUp(g1,s2,t6): lambda_Power_Balance_RT(s2,t6)
    + mu_RegUp_max_RT(g1,s2,t6) - muLB_RUp(g1,s2,t6) = -44
- dLag/RDn(g1,s2,t6): lambda_Power_Balance_RT(s2,t6)
+ dLag/RDn(g1,s2,t6): - lambda_Power_Balance_RT(s2,t6)
    + mu_RegDown_max_RT(g1,s2,t6) - muLB_RDn(g1,s2,t6) = 38
- dLag/RUpSC(g1,s2,t6): - lambda_Power_Balance_RT(s2,t6)
+ dLag/RUpSC(g1,s2,t6): lambda_Power_Balance_RT(s2,t6)
    + mu_RegUpSC_max_RT(g1,s2,t6) - muLB_RUpSC(g1,s2,t6) = 0
- dLag/RDnSC(g1,s2,t6): lambda_Power_Balance_RT(s2,t6)
+ dLag/RDnSC(g1,s2,t6): - lambda_Power_Balance_RT(s2,t6)
    + mu_RegDnSC_max_RT(g1,s2,t6) - muLB_RDnSC(g1,s2,t6) = 0
- dLag/Wspill(w1,s2,t6): lambda_Power_Balance_RT(s2,t6)
+ dLag/Wspill(w1,s2,t6): - lambda_Power_Balance_RT(s2,t6)
    + mu_Max_wind_spill_RT(w1,s2,t6) - muLB_Wspill(w1,s2,t6) = 0
- dLag/Lshed(s2,t6): - lambda_Power_Balance_RT(s2,t6)
+ dLag/Lshed(s2,t6): lambda_Power_Balance_RT(s2,t6)
    + mu_Max_load_shed_RT(s2,t6) - muLB_Lshed(s2,t6) = -5000
- dLag/RUp(g1,s2,t7): - lambda_Power_Balance_RT(s2,t7)
+ dLag/RUp(g1,s2,t7): lambda_Power_Balance_RT(s2,t7)
    + mu_RegUp_max_RT(g1,s2,t7) - muLB_RUp(g1,s2,t7) = -44
- dLag/RDn(g1,s2,t7): lambda_Power_Balance_RT(s2,t7)
+ dLag/RDn(g1,s2,t7): - lambda_Power_Balance_RT(s2,t7)
    + mu_RegDown_max_RT(g1,s2,t7) - muLB_RDn(g1,s2,t7) = 38
- dLag/RUpSC(g1,s2,t7): - lambda_Power_Balance_RT(s2,t7)
+ dLag/RUpSC(g1,s2,t7): lambda_Power_Balance_RT(s2,t7)
    + mu_RegUpSC_max_RT(g1,s2,t7) - muLB_RUpSC(g1,s2,t7) = 0
- dLag/RDnSC(g1,s2,t7): lambda_Power_Balance_RT(s2,t7)
+ dLag/RDnSC(g1,s2,t7): - lambda_Power_Balance_RT(s2,t7)
    + mu_RegDnSC_max_RT(g1,s2,t7) - muLB_RDnSC(g1,s2,t7) = 0
- dLag/Wspill(w1,s2,t7): lambda_Power_Balance_RT(s2,t7)
+ dLag/Wspill(w1,s2,t7): - lambda_Power_Balance_RT(s2,t7)
    + mu_Max_wind_spill_RT(w1,s2,t7) - muLB_Wspill(w1,s2,t7) = 0
- dLag/Lshed(s2,t7): - lambda_Power_Balance_RT(s2,t7)
+ dLag/Lshed(s2,t7): lambda_Power_Balance_RT(s2,t7)
    + mu_Max_load_shed_RT(s2,t7) - muLB_Lshed(s2,t7) = -5000
- dLag/RUp(g1,s2,t8): - lambda_Power_Balance_RT(s2,t8)
+ dLag/RUp(g1,s2,t8): lambda_Power_Balance_RT(s2,t8)
    + mu_RegUp_max_RT(g1,s2,t8) - muLB_RUp(g1,s2,t8) = -44
- dLag/RDn(g1,s2,t8): lambda_Power_Balance_RT(s2,t8)
+ dLag/RDn(g1,s2,t8): - lambda_Power_Balance_RT(s2,t8)
    + mu_RegDown_max_RT(g1,s2,t8) - muLB_RDn(g1,s2,t8) = 38
- dLag/RUpSC(g1,s2,t8): - lambda_Power_Balance_RT(s2,t8)
+ dLag/RUpSC(g1,s2,t8): lambda_Power_Balance_RT(s2,t8)
    + mu_RegUpSC_max_RT(g1,s2,t8) - muLB_RUpSC(g1,s2,t8) = 0
- dLag/RDnSC(g1,s2,t8): lambda_Power_Balance_RT(s2,t8)
+ dLag/RDnSC(g1,s2,t8): - lambda_Power_Balance_RT(s2,t8)
    + mu_RegDnSC_max_RT(g1,s2,t8) - muLB_RDnSC(g1,s2,t8) = 0
- dLag/Wspill(w1,s2,t8): lambda_Power_Balance_RT(s2,t8)
+ dLag/Wspill(w1,s2,t8): - lambda_Power_Balance_RT(s2,t8)
    + mu_Max_wind_spill_RT(w1,s2,t8) - muLB_Wspill(w1,s2,t8) = 0
- dLag/Lshed(s2,t8): - lambda_Power_Balance_RT(s2,t8)
+ dLag/Lshed(s2,t8): lambda_Power_Balance_RT(s2,t8)
    + mu_Max_load_shed_RT(s2,t8) - muLB_Lshed(s2,t8) = -5000
- dLag/RUp(g1,s2,t9): - lambda_Power_Balance_RT(s2,t9)
+ dLag/RUp(g1,s2,t9): lambda_Power_Balance_RT(s2,t9)
    + mu_RegUp_max_RT(g1,s2,t9) - muLB_RUp(g1,s2,t9) = -44
- dLag/RDn(g1,s2,t9): lambda_Power_Balance_RT(s2,t9)
+ dLag/RDn(g1,s2,t9): - lambda_Power_Balance_RT(s2,t9)
    + mu_RegDown_max_RT(g1,s2,t9) - muLB_RDn(g1,s2,t9) = 38
- dLag/RUpSC(g1,s2,t9): - lambda_Power_Balance_RT(s2,t9)
+ dLag/RUpSC(g1,s2,t9): lambda_Power_Balance_RT(s2,t9)
    + mu_RegUpSC_max_RT(g1,s2,t9) - muLB_RUpSC(g1,s2,t9) = 0
- dLag/RDnSC(g1,s2,t9): lambda_Power_Balance_RT(s2,t9)
+ dLag/RDnSC(g1,s2,t9): - lambda_Power_Balance_RT(s2,t9)
    + mu_RegDnSC_max_RT(g1,s2,t9) - muLB_RDnSC(g1,s2,t9) = 0
- dLag/Wspill(w1,s2,t9): lambda_Power_Balance_RT(s2,t9)
+ dLag/Wspill(w1,s2,t9): - lambda_Power_Balance_RT(s2,t9)
    + mu_Max_wind_spill_RT(w1,s2,t9) - muLB_Wspill(w1,s2,t9) = 0
- dLag/Lshed(s2,t9): - lambda_Power_Balance_RT(s2,t9)
+ dLag/Lshed(s2,t9): lambda_Power_Balance_RT(s2,t9)
    + mu_Max_load_shed_RT(s2,t9) - muLB_Lshed(s2,t9) = -5000
- dLag/RUp(g1,s2,t10): - lambda_Power_Balance_RT(s2,t10)
+ dLag/RUp(g1,s2,t10): lambda_Power_Balance_RT(s2,t10)
    + mu_RegUp_max_RT(g1,s2,t10) - muLB_RUp(g1,s2,t10) = -44
- dLag/RDn(g1,s2,t10): lambda_Power_Balance_RT(s2,t10)
+ dLag/RDn(g1,s2,t10): - lambda_Power_Balance_RT(s2,t10)
    + mu_RegDown_max_RT(g1,s2,t10) - muLB_RDn(g1,s2,t10) = 38
- dLag/RUpSC(g1,s2,t10): - lambda_Power_Balance_RT(s2,t10)
+ dLag/RUpSC(g1,s2,t10): lambda_Power_Balance_RT(s2,t10)
    + mu_RegUpSC_max_RT(g1,s2,t10) - muLB_RUpSC(g1,s2,t10) = 0
- dLag/RDnSC(g1,s2,t10): lambda_Power_Balance_RT(s2,t10)
+ dLag/RDnSC(g1,s2,t10): - lambda_Power_Balance_RT(s2,t10)
    + mu_RegDnSC_max_RT(g1,s2,t10) - muLB_RDnSC(g1,s2,t10) = 0
- dLag/Wspill(w1,s2,t10): lambda_Power_Balance_RT(s2,t10)
+ dLag/Wspill(w1,s2,t10): - lambda_Power_Balance_RT(s2,t10)
    + mu_Max_wind_spill_RT(w1,s2,t10) - muLB_Wspill(w1,s2,t10) = 0
- dLag/Lshed(s2,t10): - lambda_Power_Balance_RT(s2,t10)
+ dLag/Lshed(s2,t10): lambda_Power_Balance_RT(s2,t10)
    + mu_Max_load_shed_RT(s2,t10) - muLB_Lshed(s2,t10) = -5000
- dLag/RUp(g1,s2,t11): - lambda_Power_Balance_RT(s2,t11)
+ dLag/RUp(g1,s2,t11): lambda_Power_Balance_RT(s2,t11)
    + mu_RegUp_max_RT(g1,s2,t11) - muLB_RUp(g1,s2,t11) = -44
- dLag/RDn(g1,s2,t11): lambda_Power_Balance_RT(s2,t11)
+ dLag/RDn(g1,s2,t11): - lambda_Power_Balance_RT(s2,t11)
    + mu_RegDown_max_RT(g1,s2,t11) - muLB_RDn(g1,s2,t11) = 38
- dLag/RUpSC(g1,s2,t11): - lambda_Power_Balance_RT(s2,t11)
+ dLag/RUpSC(g1,s2,t11): lambda_Power_Balance_RT(s2,t11)
    + mu_RegUpSC_max_RT(g1,s2,t11) - muLB_RUpSC(g1,s2,t11) = 0
- dLag/RDnSC(g1,s2,t11): lambda_Power_Balance_RT(s2,t11)
+ dLag/RDnSC(g1,s2,t11): - lambda_Power_Balance_RT(s2,t11)
    + mu_RegDnSC_max_RT(g1,s2,t11) - muLB_RDnSC(g1,s2,t11) = 0
- dLag/Wspill(w1,s2,t11): lambda_Power_Balance_RT(s2,t11)
+ dLag/Wspill(w1,s2,t11): - lambda_Power_Balance_RT(s2,t11)
    + mu_Max_wind_spill_RT(w1,s2,t11) - muLB_Wspill(w1,s2,t11) = 0
- dLag/Lshed(s2,t11): - lambda_Power_Balance_RT(s2,t11)
+ dLag/Lshed(s2,t11): lambda_Power_Balance_RT(s2,t11)
    + mu_Max_load_shed_RT(s2,t11) - muLB_Lshed(s2,t11) = -5000
- dLag/RUp(g1,s2,t12): - lambda_Power_Balance_RT(s2,t12)
+ dLag/RUp(g1,s2,t12): lambda_Power_Balance_RT(s2,t12)
    + mu_RegUp_max_RT(g1,s2,t12) - muLB_RUp(g1,s2,t12) = -44
- dLag/RDn(g1,s2,t12): lambda_Power_Balance_RT(s2,t12)
+ dLag/RDn(g1,s2,t12): - lambda_Power_Balance_RT(s2,t12)
    + mu_RegDown_max_RT(g1,s2,t12) - muLB_RDn(g1,s2,t12) = 38
- dLag/RUpSC(g1,s2,t12): - lambda_Power_Balance_RT(s2,t12)
+ dLag/RUpSC(g1,s2,t12): lambda_Power_Balance_RT(s2,t12)
    + mu_RegUpSC_max_RT(g1,s2,t12) - muLB_RUpSC(g1,s2,t12) = 0
- dLag/RDnSC(g1,s2,t12): lambda_Power_Balance_RT(s2,t12)
+ dLag/RDnSC(g1,s2,t12): - lambda_Power_Balance_RT(s2,t12)
    + mu_RegDnSC_max_RT(g1,s2,t12) - muLB_RDnSC(g1,s2,t12) = 0
- dLag/Wspill(w1,s2,t12): lambda_Power_Balance_RT(s2,t12)
+ dLag/Wspill(w1,s2,t12): - lambda_Power_Balance_RT(s2,t12)
    + mu_Max_wind_spill_RT(w1,s2,t12) - muLB_Wspill(w1,s2,t12) = 0
- dLag/Lshed(s2,t12): - lambda_Power_Balance_RT(s2,t12)
+ dLag/Lshed(s2,t12): lambda_Power_Balance_RT(s2,t12)
    + mu_Max_load_shed_RT(s2,t12) - muLB_Lshed(s2,t12) = -5000
- dLag/RUp(g1,s2,t13): - lambda_Power_Balance_RT(s2,t13)
+ dLag/RUp(g1,s2,t13): lambda_Power_Balance_RT(s2,t13)
    + mu_RegUp_max_RT(g1,s2,t13) - muLB_RUp(g1,s2,t13) = -44
- dLag/RDn(g1,s2,t13): lambda_Power_Balance_RT(s2,t13)
+ dLag/RDn(g1,s2,t13): - lambda_Power_Balance_RT(s2,t13)
    + mu_RegDown_max_RT(g1,s2,t13) - muLB_RDn(g1,s2,t13) = 38
- dLag/RUpSC(g1,s2,t13): - lambda_Power_Balance_RT(s2,t13)
+ dLag/RUpSC(g1,s2,t13): lambda_Power_Balance_RT(s2,t13)
    + mu_RegUpSC_max_RT(g1,s2,t13) - muLB_RUpSC(g1,s2,t13) = 0
- dLag/RDnSC(g1,s2,t13): lambda_Power_Balance_RT(s2,t13)
+ dLag/RDnSC(g1,s2,t13): - lambda_Power_Balance_RT(s2,t13)
    + mu_RegDnSC_max_RT(g1,s2,t13) - muLB_RDnSC(g1,s2,t13) = 0
- dLag/Wspill(w1,s2,t13): lambda_Power_Balance_RT(s2,t13)
+ dLag/Wspill(w1,s2,t13): - lambda_Power_Balance_RT(s2,t13)
    + mu_Max_wind_spill_RT(w1,s2,t13) - muLB_Wspill(w1,s2,t13) = 0
- dLag/Lshed(s2,t13): - lambda_Power_Balance_RT(s2,t13)
+ dLag/Lshed(s2,t13): lambda_Power_Balance_RT(s2,t13)
    + mu_Max_load_shed_RT(s2,t13) - muLB_Lshed(s2,t13) = -5000
- dLag/RUp(g1,s2,t14): - lambda_Power_Balance_RT(s2,t14)
+ dLag/RUp(g1,s2,t14): lambda_Power_Balance_RT(s2,t14)
    + mu_RegUp_max_RT(g1,s2,t14) - muLB_RUp(g1,s2,t14) = -44
- dLag/RDn(g1,s2,t14): lambda_Power_Balance_RT(s2,t14)
+ dLag/RDn(g1,s2,t14): - lambda_Power_Balance_RT(s2,t14)
    + mu_RegDown_max_RT(g1,s2,t14) - muLB_RDn(g1,s2,t14) = 38
- dLag/RUpSC(g1,s2,t14): - lambda_Power_Balance_RT(s2,t14)
+ dLag/RUpSC(g1,s2,t14): lambda_Power_Balance_RT(s2,t14)
    + mu_RegUpSC_max_RT(g1,s2,t14) - muLB_RUpSC(g1,s2,t14) = 0
- dLag/RDnSC(g1,s2,t14): lambda_Power_Balance_RT(s2,t14)
+ dLag/RDnSC(g1,s2,t14): - lambda_Power_Balance_RT(s2,t14)
    + mu_RegDnSC_max_RT(g1,s2,t14) - muLB_RDnSC(g1,s2,t14) = 0
- dLag/Wspill(w1,s2,t14): lambda_Power_Balance_RT(s2,t14)
+ dLag/Wspill(w1,s2,t14): - lambda_Power_Balance_RT(s2,t14)
    + mu_Max_wind_spill_RT(w1,s2,t14) - muLB_Wspill(w1,s2,t14) = 0
- dLag/Lshed(s2,t14): - lambda_Power_Balance_RT(s2,t14)
+ dLag/Lshed(s2,t14): lambda_Power_Balance_RT(s2,t14)
    + mu_Max_load_shed_RT(s2,t14) - muLB_Lshed(s2,t14) = -5000
- dLag/RUp(g1,s2,t15): - lambda_Power_Balance_RT(s2,t15)
+ dLag/RUp(g1,s2,t15): lambda_Power_Balance_RT(s2,t15)
    + mu_RegUp_max_RT(g1,s2,t15) - muLB_RUp(g1,s2,t15) = -44
- dLag/RDn(g1,s2,t15): lambda_Power_Balance_RT(s2,t15)
+ dLag/RDn(g1,s2,t15): - lambda_Power_Balance_RT(s2,t15)
    + mu_RegDown_max_RT(g1,s2,t15) - muLB_RDn(g1,s2,t15) = 38
- dLag/RUpSC(g1,s2,t15): - lambda_Power_Balance_RT(s2,t15)
+ dLag/RUpSC(g1,s2,t15): lambda_Power_Balance_RT(s2,t15)
    + mu_RegUpSC_max_RT(g1,s2,t15) - muLB_RUpSC(g1,s2,t15) = 0
- dLag/RDnSC(g1,s2,t15): lambda_Power_Balance_RT(s2,t15)
+ dLag/RDnSC(g1,s2,t15): - lambda_Power_Balance_RT(s2,t15)
    + mu_RegDnSC_max_RT(g1,s2,t15) - muLB_RDnSC(g1,s2,t15) = 0
- dLag/Wspill(w1,s2,t15): lambda_Power_Balance_RT(s2,t15)
+ dLag/Wspill(w1,s2,t15): - lambda_Power_Balance_RT(s2,t15)
    + mu_Max_wind_spill_RT(w1,s2,t15) - muLB_Wspill(w1,s2,t15) = 0
- dLag/Lshed(s2,t15): - lambda_Power_Balance_RT(s2,t15)
+ dLag/Lshed(s2,t15): lambda_Power_Balance_RT(s2,t15)
    + mu_Max_load_shed_RT(s2,t15) - muLB_Lshed(s2,t15) = -5000
- dLag/RUp(g1,s2,t16): - lambda_Power_Balance_RT(s2,t16)
+ dLag/RUp(g1,s2,t16): lambda_Power_Balance_RT(s2,t16)
    + mu_RegUp_max_RT(g1,s2,t16) - muLB_RUp(g1,s2,t16) = -44
- dLag/RDn(g1,s2,t16): lambda_Power_Balance_RT(s2,t16)
+ dLag/RDn(g1,s2,t16): - lambda_Power_Balance_RT(s2,t16)
    + mu_RegDown_max_RT(g1,s2,t16) - muLB_RDn(g1,s2,t16) = 38
- dLag/RUpSC(g1,s2,t16): - lambda_Power_Balance_RT(s2,t16)
+ dLag/RUpSC(g1,s2,t16): lambda_Power_Balance_RT(s2,t16)
    + mu_RegUpSC_max_RT(g1,s2,t16) - muLB_RUpSC(g1,s2,t16) = 0
- dLag/RDnSC(g1,s2,t16): lambda_Power_Balance_RT(s2,t16)
+ dLag/RDnSC(g1,s2,t16): - lambda_Power_Balance_RT(s2,t16)
    + mu_RegDnSC_max_RT(g1,s2,t16) - muLB_RDnSC(g1,s2,t16) = 0
- dLag/Wspill(w1,s2,t16): lambda_Power_Balance_RT(s2,t16)
+ dLag/Wspill(w1,s2,t16): - lambda_Power_Balance_RT(s2,t16)
    + mu_Max_wind_spill_RT(w1,s2,t16) - muLB_Wspill(w1,s2,t16) = 0
- dLag/Lshed(s2,t16): - lambda_Power_Balance_RT(s2,t16)
+ dLag/Lshed(s2,t16): lambda_Power_Balance_RT(s2,t16)
    + mu_Max_load_shed_RT(s2,t16) - muLB_Lshed(s2,t16) = -5000
- dLag/RUp(g1,s2,t17): - lambda_Power_Balance_RT(s2,t17)
+ dLag/RUp(g1,s2,t17): lambda_Power_Balance_RT(s2,t17)
    + mu_RegUp_max_RT(g1,s2,t17) - muLB_RUp(g1,s2,t17) = -44
- dLag/RDn(g1,s2,t17): lambda_Power_Balance_RT(s2,t17)
+ dLag/RDn(g1,s2,t17): - lambda_Power_Balance_RT(s2,t17)
    + mu_RegDown_max_RT(g1,s2,t17) - muLB_RDn(g1,s2,t17) = 38
- dLag/RUpSC(g1,s2,t17): - lambda_Power_Balance_RT(s2,t17)
+ dLag/RUpSC(g1,s2,t17): lambda_Power_Balance_RT(s2,t17)
    + mu_RegUpSC_max_RT(g1,s2,t17) - muLB_RUpSC(g1,s2,t17) = 0
- dLag/RDnSC(g1,s2,t17): lambda_Power_Balance_RT(s2,t17)
+ dLag/RDnSC(g1,s2,t17): - lambda_Power_Balance_RT(s2,t17)
    + mu_RegDnSC_max_RT(g1,s2,t17) - muLB_RDnSC(g1,s2,t17) = 0
- dLag/Wspill(w1,s2,t17): lambda_Power_Balance_RT(s2,t17)
+ dLag/Wspill(w1,s2,t17): - lambda_Power_Balance_RT(s2,t17)
    + mu_Max_wind_spill_RT(w1,s2,t17) - muLB_Wspill(w1,s2,t17) = 0
- dLag/Lshed(s2,t17): - lambda_Power_Balance_RT(s2,t17)
+ dLag/Lshed(s2,t17): lambda_Power_Balance_RT(s2,t17)
    + mu_Max_load_shed_RT(s2,t17) - muLB_Lshed(s2,t17) = -5000
- dLag/RUp(g1,s2,t18): - lambda_Power_Balance_RT(s2,t18)
+ dLag/RUp(g1,s2,t18): lambda_Power_Balance_RT(s2,t18)
    + mu_RegUp_max_RT(g1,s2,t18) - muLB_RUp(g1,s2,t18) = -44
- dLag/RDn(g1,s2,t18): lambda_Power_Balance_RT(s2,t18)
+ dLag/RDn(g1,s2,t18): - lambda_Power_Balance_RT(s2,t18)
    + mu_RegDown_max_RT(g1,s2,t18) - muLB_RDn(g1,s2,t18) = 38
- dLag/RUpSC(g1,s2,t18): - lambda_Power_Balance_RT(s2,t18)
+ dLag/RUpSC(g1,s2,t18): lambda_Power_Balance_RT(s2,t18)
    + mu_RegUpSC_max_RT(g1,s2,t18) - muLB_RUpSC(g1,s2,t18) = 0
- dLag/RDnSC(g1,s2,t18): lambda_Power_Balance_RT(s2,t18)
+ dLag/RDnSC(g1,s2,t18): - lambda_Power_Balance_RT(s2,t18)
    + mu_RegDnSC_max_RT(g1,s2,t18) - muLB_RDnSC(g1,s2,t18) = 0
- dLag/Wspill(w1,s2,t18): lambda_Power_Balance_RT(s2,t18)
+ dLag/Wspill(w1,s2,t18): - lambda_Power_Balance_RT(s2,t18)
    + mu_Max_wind_spill_RT(w1,s2,t18) - muLB_Wspill(w1,s2,t18) = 0
- dLag/Lshed(s2,t18): - lambda_Power_Balance_RT(s2,t18)
+ dLag/Lshed(s2,t18): lambda_Power_Balance_RT(s2,t18)
    + mu_Max_load_shed_RT(s2,t18) - muLB_Lshed(s2,t18) = -5000
- dLag/RUp(g1,s2,t19): - lambda_Power_Balance_RT(s2,t19)
+ dLag/RUp(g1,s2,t19): lambda_Power_Balance_RT(s2,t19)
    + mu_RegUp_max_RT(g1,s2,t19) - muLB_RUp(g1,s2,t19) = -44
- dLag/RDn(g1,s2,t19): lambda_Power_Balance_RT(s2,t19)
+ dLag/RDn(g1,s2,t19): - lambda_Power_Balance_RT(s2,t19)
    + mu_RegDown_max_RT(g1,s2,t19) - muLB_RDn(g1,s2,t19) = 38
- dLag/RUpSC(g1,s2,t19): - lambda_Power_Balance_RT(s2,t19)
+ dLag/RUpSC(g1,s2,t19): lambda_Power_Balance_RT(s2,t19)
    + mu_RegUpSC_max_RT(g1,s2,t19) - muLB_RUpSC(g1,s2,t19) = 0
- dLag/RDnSC(g1,s2,t19): lambda_Power_Balance_RT(s2,t19)
+ dLag/RDnSC(g1,s2,t19): - lambda_Power_Balance_RT(s2,t19)
    + mu_RegDnSC_max_RT(g1,s2,t19) - muLB_RDnSC(g1,s2,t19) = 0
- dLag/Wspill(w1,s2,t19): lambda_Power_Balance_RT(s2,t19)
+ dLag/Wspill(w1,s2,t19): - lambda_Power_Balance_RT(s2,t19)
    + mu_Max_wind_spill_RT(w1,s2,t19) - muLB_Wspill(w1,s2,t19) = 0
- dLag/Lshed(s2,t19): - lambda_Power_Balance_RT(s2,t19)
+ dLag/Lshed(s2,t19): lambda_Power_Balance_RT(s2,t19)
    + mu_Max_load_shed_RT(s2,t19) - muLB_Lshed(s2,t19) = -5000
- dLag/RUp(g1,s2,t20): - lambda_Power_Balance_RT(s2,t20)
+ dLag/RUp(g1,s2,t20): lambda_Power_Balance_RT(s2,t20)
    + mu_RegUp_max_RT(g1,s2,t20) - muLB_RUp(g1,s2,t20) = -44
- dLag/RDn(g1,s2,t20): lambda_Power_Balance_RT(s2,t20)
+ dLag/RDn(g1,s2,t20): - lambda_Power_Balance_RT(s2,t20)
    + mu_RegDown_max_RT(g1,s2,t20) - muLB_RDn(g1,s2,t20) = 38
- dLag/RUpSC(g1,s2,t20): - lambda_Power_Balance_RT(s2,t20)
+ dLag/RUpSC(g1,s2,t20): lambda_Power_Balance_RT(s2,t20)
    + mu_RegUpSC_max_RT(g1,s2,t20) - muLB_RUpSC(g1,s2,t20) = 0
- dLag/RDnSC(g1,s2,t20): lambda_Power_Balance_RT(s2,t20)
+ dLag/RDnSC(g1,s2,t20): - lambda_Power_Balance_RT(s2,t20)
    + mu_RegDnSC_max_RT(g1,s2,t20) - muLB_RDnSC(g1,s2,t20) = 0
- dLag/Wspill(w1,s2,t20): lambda_Power_Balance_RT(s2,t20)
+ dLag/Wspill(w1,s2,t20): - lambda_Power_Balance_RT(s2,t20)
    + mu_Max_wind_spill_RT(w1,s2,t20) - muLB_Wspill(w1,s2,t20) = 0
- dLag/Lshed(s2,t20): - lambda_Power_Balance_RT(s2,t20)
+ dLag/Lshed(s2,t20): lambda_Power_Balance_RT(s2,t20)
    + mu_Max_load_shed_RT(s2,t20) - muLB_Lshed(s2,t20) = -5000
- dLag/RUp(g1,s2,t21): - lambda_Power_Balance_RT(s2,t21)
+ dLag/RUp(g1,s2,t21): lambda_Power_Balance_RT(s2,t21)
    + mu_RegUp_max_RT(g1,s2,t21) - muLB_RUp(g1,s2,t21) = -44
- dLag/RDn(g1,s2,t21): lambda_Power_Balance_RT(s2,t21)
+ dLag/RDn(g1,s2,t21): - lambda_Power_Balance_RT(s2,t21)
    + mu_RegDown_max_RT(g1,s2,t21) - muLB_RDn(g1,s2,t21) = 38
- dLag/RUpSC(g1,s2,t21): - lambda_Power_Balance_RT(s2,t21)
+ dLag/RUpSC(g1,s2,t21): lambda_Power_Balance_RT(s2,t21)
    + mu_RegUpSC_max_RT(g1,s2,t21) - muLB_RUpSC(g1,s2,t21) = 0
- dLag/RDnSC(g1,s2,t21): lambda_Power_Balance_RT(s2,t21)
+ dLag/RDnSC(g1,s2,t21): - lambda_Power_Balance_RT(s2,t21)
    + mu_RegDnSC_max_RT(g1,s2,t21) - muLB_RDnSC(g1,s2,t21) = 0
- dLag/Wspill(w1,s2,t21): lambda_Power_Balance_RT(s2,t21)
+ dLag/Wspill(w1,s2,t21): - lambda_Power_Balance_RT(s2,t21)
    + mu_Max_wind_spill_RT(w1,s2,t21) - muLB_Wspill(w1,s2,t21) = 0
- dLag/Lshed(s2,t21): - lambda_Power_Balance_RT(s2,t21)
+ dLag/Lshed(s2,t21): lambda_Power_Balance_RT(s2,t21)
    + mu_Max_load_shed_RT(s2,t21) - muLB_Lshed(s2,t21) = -5000
- dLag/RUp(g1,s2,t22): - lambda_Power_Balance_RT(s2,t22)
+ dLag/RUp(g1,s2,t22): lambda_Power_Balance_RT(s2,t22)
    + mu_RegUp_max_RT(g1,s2,t22) - muLB_RUp(g1,s2,t22) = -44
- dLag/RDn(g1,s2,t22): lambda_Power_Balance_RT(s2,t22)
+ dLag/RDn(g1,s2,t22): - lambda_Power_Balance_RT(s2,t22)
    + mu_RegDown_max_RT(g1,s2,t22) - muLB_RDn(g1,s2,t22) = 38
- dLag/RUpSC(g1,s2,t22): - lambda_Power_Balance_RT(s2,t22)
+ dLag/RUpSC(g1,s2,t22): lambda_Power_Balance_RT(s2,t22)
    + mu_RegUpSC_max_RT(g1,s2,t22) - muLB_RUpSC(g1,s2,t22) = 0
- dLag/RDnSC(g1,s2,t22): lambda_Power_Balance_RT(s2,t22)
+ dLag/RDnSC(g1,s2,t22): - lambda_Power_Balance_RT(s2,t22)
    + mu_RegDnSC_max_RT(g1,s2,t22) - muLB_RDnSC(g1,s2,t22) = 0
- dLag/Wspill(w1,s2,t22): lambda_Power_Balance_RT(s2,t22)
+ dLag/Wspill(w1,s2,t22): - lambda_Power_Balance_RT(s2,t22)
    + mu_Max_wind_spill_RT(w1,s2,t22) - muLB_Wspill(w1,s2,t22) = 0
- dLag/Lshed(s2,t22): - lambda_Power_Balance_RT(s2,t22)
+ dLag/Lshed(s2,t22): lambda_Power_Balance_RT(s2,t22)
    + mu_Max_load_shed_RT(s2,t22) - muLB_Lshed(s2,t22) = -5000
- dLag/RUp(g1,s2,t23): - lambda_Power_Balance_RT(s2,t23)
+ dLag/RUp(g1,s2,t23): lambda_Power_Balance_RT(s2,t23)
    + mu_RegUp_max_RT(g1,s2,t23) - muLB_RUp(g1,s2,t23) = -44
- dLag/RDn(g1,s2,t23): lambda_Power_Balance_RT(s2,t23)
+ dLag/RDn(g1,s2,t23): - lambda_Power_Balance_RT(s2,t23)
    + mu_RegDown_max_RT(g1,s2,t23) - muLB_RDn(g1,s2,t23) = 38
- dLag/RUpSC(g1,s2,t23): - lambda_Power_Balance_RT(s2,t23)
+ dLag/RUpSC(g1,s2,t23): lambda_Power_Balance_RT(s2,t23)
    + mu_RegUpSC_max_RT(g1,s2,t23) - muLB_RUpSC(g1,s2,t23) = 0
- dLag/RDnSC(g1,s2,t23): lambda_Power_Balance_RT(s2,t23)
+ dLag/RDnSC(g1,s2,t23): - lambda_Power_Balance_RT(s2,t23)
    + mu_RegDnSC_max_RT(g1,s2,t23) - muLB_RDnSC(g1,s2,t23) = 0
- dLag/Wspill(w1,s2,t23): lambda_Power_Balance_RT(s2,t23)
+ dLag/Wspill(w1,s2,t23): - lambda_Power_Balance_RT(s2,t23)
    + mu_Max_wind_spill_RT(w1,s2,t23) - muLB_Wspill(w1,s2,t23) = 0
- dLag/Lshed(s2,t23): - lambda_Power_Balance_RT(s2,t23)
+ dLag/Lshed(s2,t23): lambda_Power_Balance_RT(s2,t23)
    + mu_Max_load_shed_RT(s2,t23) - muLB_Lshed(s2,t23) = -5000
- dLag/RUp(g1,s2,t24): - lambda_Power_Balance_RT(s2,t24)
+ dLag/RUp(g1,s2,t24): lambda_Power_Balance_RT(s2,t24)
    + mu_RegUp_max_RT(g1,s2,t24) - muLB_RUp(g1,s2,t24) = -44
- dLag/RDn(g1,s2,t24): lambda_Power_Balance_RT(s2,t24)
+ dLag/RDn(g1,s2,t24): - lambda_Power_Balance_RT(s2,t24)
    + mu_RegDown_max_RT(g1,s2,t24) - muLB_RDn(g1,s2,t24) = 38
- dLag/RUpSC(g1,s2,t24): - lambda_Power_Balance_RT(s2,t24)
+ dLag/RUpSC(g1,s2,t24): lambda_Power_Balance_RT(s2,t24)
    + mu_RegUpSC_max_RT(g1,s2,t24) - muLB_RUpSC(g1,s2,t24) = 0
- dLag/RDnSC(g1,s2,t24): lambda_Power_Balance_RT(s2,t24)
+ dLag/RDnSC(g1,s2,t24): - lambda_Power_Balance_RT(s2,t24)
    + mu_RegDnSC_max_RT(g1,s2,t24) - muLB_RDnSC(g1,s2,t24) = 0
- dLag/Wspill(w1,s2,t24): lambda_Power_Balance_RT(s2,t24)
+ dLag/Wspill(w1,s2,t24): - lambda_Power_Balance_RT(s2,t24)
    + mu_Max_wind_spill_RT(w1,s2,t24) - muLB_Wspill(w1,s2,t24) = 0
- dLag/Lshed(s2,t24): - lambda_Power_Balance_RT(s2,t24)
+ dLag/Lshed(s2,t24): lambda_Power_Balance_RT(s2,t24)
    + mu_Max_load_shed_RT(s2,t24) - muLB_Lshed(s2,t24) = -5000
 Bounds
  lambda_Power_Balance_RT(s1,t1) free

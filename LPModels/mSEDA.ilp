@@ -1,0 +1,12 @@
+\ Model _copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ dLag/RDn(g1,ss1,t24): - lambda_Power_Balance_RT(ss1,t24)
+   - mu_RegDown_max_RT(g1,ss1,t24) - muLB_RDn(g1,ss1,t24) = 19
+ dLag/RUpSC(g1,ss1,t24): lambda_Power_Balance_RT(ss1,t24)
+   - mu_RegUpSC_max_RT(g1,ss1,t24) - muLB_RUpSC(g1,ss1,t24) = 0
+Bounds
+ lambda_Power_Balance_RT(ss1,t24) free
+End

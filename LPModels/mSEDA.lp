@@ -151,49 +151,49 @@ Minimize
    + 12.1 RUp(g1,ss5,t23) - 10.45 RDn(g1,ss5,t23) + 1250 Lshed(ss5,t23)
    + 12.1 RUp(g1,ss5,t24) - 10.45 RDn(g1,ss5,t24) + 1250 Lshed(ss5,t24)
 Subject To
- PowerBalance(t1): - Pgen(g1,t1) - PgenSC(g1,t1) - WindDA(w1,t1) = -50
- PowerBalance(t2): - Pgen(g1,t2) - PgenSC(g1,t2) - WindDA(w1,t2)
-   = -51.29409523
- PowerBalance(t3): - Pgen(g1,t3) - PgenSC(g1,t3) - WindDA(w1,t3) = -52.5
- PowerBalance(t4): - Pgen(g1,t4) - PgenSC(g1,t4) - WindDA(w1,t4)
-   = -53.53553391
- PowerBalance(t5): - Pgen(g1,t5) - PgenSC(g1,t5) - WindDA(w1,t5)
-   = -54.33012702
- PowerBalance(t6): - Pgen(g1,t6) - PgenSC(g1,t6) - WindDA(w1,t6)
-   = -54.82962913
- PowerBalance(t7): - Pgen(g1,t7) - PgenSC(g1,t7) - WindDA(w1,t7) = -55
- PowerBalance(t8): - Pgen(g1,t8) - PgenSC(g1,t8) - WindDA(w1,t8)
-   = -54.82962913
- PowerBalance(t9): - Pgen(g1,t9) - PgenSC(g1,t9) - WindDA(w1,t9)
-   = -54.33012702
- PowerBalance(t10): - Pgen(g1,t10) - PgenSC(g1,t10) - WindDA(w1,t10)
-   = -53.53553391
- PowerBalance(t11): - Pgen(g1,t11) - PgenSC(g1,t11) - WindDA(w1,t11)
-   = -52.5
- PowerBalance(t12): - Pgen(g1,t12) - PgenSC(g1,t12) - WindDA(w1,t12)
-   = -51.29409523
- PowerBalance(t13): - Pgen(g1,t13) - PgenSC(g1,t13) - WindDA(w1,t13) = -50
- PowerBalance(t14): - Pgen(g1,t14) - PgenSC(g1,t14) - WindDA(w1,t14)
-   = -48.70590477
- PowerBalance(t15): - Pgen(g1,t15) - PgenSC(g1,t15) - WindDA(w1,t15)
-   = -47.5
- PowerBalance(t16): - Pgen(g1,t16) - PgenSC(g1,t16) - WindDA(w1,t16)
-   = -46.46446609
- PowerBalance(t17): - Pgen(g1,t17) - PgenSC(g1,t17) - WindDA(w1,t17)
-   = -45.66987298
- PowerBalance(t18): - Pgen(g1,t18) - PgenSC(g1,t18) - WindDA(w1,t18)
-   = -45.17037087
- PowerBalance(t19): - Pgen(g1,t19) - PgenSC(g1,t19) - WindDA(w1,t19) = -45
- PowerBalance(t20): - Pgen(g1,t20) - PgenSC(g1,t20) - WindDA(w1,t20)
-   = -45.17037087
- PowerBalance(t21): - Pgen(g1,t21) - PgenSC(g1,t21) - WindDA(w1,t21)
-   = -45.66987298
- PowerBalance(t22): - Pgen(g1,t22) - PgenSC(g1,t22) - WindDA(w1,t22)
-   = -46.46446609
- PowerBalance(t23): - Pgen(g1,t23) - PgenSC(g1,t23) - WindDA(w1,t23)
-   = -47.5
- PowerBalance(t24): - Pgen(g1,t24) - PgenSC(g1,t24) - WindDA(w1,t24)
-   = -48.70590477
+ PowerBalance_DA(t1): Pgen(g1,t1) + PgenSC(g1,t1) + WindDA(w1,t1) = 50
+ PowerBalance_DA(t2): Pgen(g1,t2) + PgenSC(g1,t2) + WindDA(w1,t2)
+   = 51.29409523
+ PowerBalance_DA(t3): Pgen(g1,t3) + PgenSC(g1,t3) + WindDA(w1,t3) = 52.5
+ PowerBalance_DA(t4): Pgen(g1,t4) + PgenSC(g1,t4) + WindDA(w1,t4)
+   = 53.53553391
+ PowerBalance_DA(t5): Pgen(g1,t5) + PgenSC(g1,t5) + WindDA(w1,t5)
+   = 54.33012702
+ PowerBalance_DA(t6): Pgen(g1,t6) + PgenSC(g1,t6) + WindDA(w1,t6)
+   = 54.82962913
+ PowerBalance_DA(t7): Pgen(g1,t7) + PgenSC(g1,t7) + WindDA(w1,t7) = 55
+ PowerBalance_DA(t8): Pgen(g1,t8) + PgenSC(g1,t8) + WindDA(w1,t8)
+   = 54.82962913
+ PowerBalance_DA(t9): Pgen(g1,t9) + PgenSC(g1,t9) + WindDA(w1,t9)
+   = 54.33012702
+ PowerBalance_DA(t10): Pgen(g1,t10) + PgenSC(g1,t10) + WindDA(w1,t10)
+   = 53.53553391
+ PowerBalance_DA(t11): Pgen(g1,t11) + PgenSC(g1,t11) + WindDA(w1,t11)
+   = 52.5
+ PowerBalance_DA(t12): Pgen(g1,t12) + PgenSC(g1,t12) + WindDA(w1,t12)
+   = 51.29409523
+ PowerBalance_DA(t13): Pgen(g1,t13) + PgenSC(g1,t13) + WindDA(w1,t13) = 50
+ PowerBalance_DA(t14): Pgen(g1,t14) + PgenSC(g1,t14) + WindDA(w1,t14)
+   = 48.70590477
+ PowerBalance_DA(t15): Pgen(g1,t15) + PgenSC(g1,t15) + WindDA(w1,t15)
+   = 47.5
+ PowerBalance_DA(t16): Pgen(g1,t16) + PgenSC(g1,t16) + WindDA(w1,t16)
+   = 46.46446609
+ PowerBalance_DA(t17): Pgen(g1,t17) + PgenSC(g1,t17) + WindDA(w1,t17)
+   = 45.66987298
+ PowerBalance_DA(t18): Pgen(g1,t18) + PgenSC(g1,t18) + WindDA(w1,t18)
+   = 45.17037087
+ PowerBalance_DA(t19): Pgen(g1,t19) + PgenSC(g1,t19) + WindDA(w1,t19) = 45
+ PowerBalance_DA(t20): Pgen(g1,t20) + PgenSC(g1,t20) + WindDA(w1,t20)
+   = 45.17037087
+ PowerBalance_DA(t21): Pgen(g1,t21) + PgenSC(g1,t21) + WindDA(w1,t21)
+   = 45.66987298
+ PowerBalance_DA(t22): Pgen(g1,t22) + PgenSC(g1,t22) + WindDA(w1,t22)
+   = 46.46446609
+ PowerBalance_DA(t23): Pgen(g1,t23) + PgenSC(g1,t23) + WindDA(w1,t23)
+   = 47.5
+ PowerBalance_DA(t24): Pgen(g1,t24) + PgenSC(g1,t24) + WindDA(w1,t24)
+   = 48.70590477
  Pmax_DA_GFPP(g1,t1): Pgen(g1,t1) + PgenSC(g1,t1) + RCup(g1,t1)
    + RCupSC(g1,t1) <= 152
  Pmax_DA_GFPP(g1,t2): Pgen(g1,t2) + PgenSC(g1,t2) + RCup(g1,t2)

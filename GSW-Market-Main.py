@@ -632,7 +632,7 @@ def Check_Dual_Objective(mPrimal,mComp):
         
         Obj=Obj+COMP_Dual*conRHS
 
-    print('Equaltity Constraint Contribution={0}'.format(Obj_e))
+    print('Equality Constraint Contribution={0}'.format(Obj_e))
     print('"Less than" Constraint Contribution={0}'.format(Obj_l))
     print('"Greater than" Constraint Contribution={0}'.format(Obj_g))
     
@@ -728,45 +728,30 @@ for c in PrimalConstraints:
 
 Error=mSEDA.model.ObjVal-Obj   
 
-    
-##Problems=Problems.drop(columns=['PrimalValue','COMPValue'])
-#    # Check for duals due to constraints
-#    con_UB=[]
-#    con_LB=[]
-#    con_EQ=[]
-#    
-#    for c in PrimalConstraints:
-#        conSense=c.Sense
-#        conDual = c.Pi
-#        conRHS  =c.RHS
-#        conRow=mGRT.model.getRow(c)
-#        no_var_in_constraint=conRow.size()
-#        vars_in_constraint=[]
-#        coeff_of_vars=[]
-#        for j in range(conRow.size()):
-#            vars_in_constraint.append(conRow.getVar(j))
-#            coeff_of_vars.append(conRow.getCoeff(j))
-#            
-#        # Check if variable is only one in constraint
-#        if var in set(vars_in_constraint):
-#            if no_var_in_constraint==1:
-#                # Need to consider coefficient but assume always 1.0 for now...
-#                if c.Sense == '<':
-#                    con_UB.append(conDual)
-#                elif c.Sense == '>':
-#                    con_LB.append(conDual)
-#                else:
-#                    con_EQ.append(conDual)
-            
 
-            
+Gas_DA_Prices=pd.DataFrame([[con.ConstrName, con.Pi ] for con in mGDA.model.getConstrs() ],columns=['Name','Value'])
+
+Gas_DA_Prices=Gas_DA_Prices[Gas_DA_Prices.Name.str.contains('gas_balance_da')]
+
+Gas_DA_Prices=Gas_DA_Prices[Gas_DA_Prices.Name.str.contains('k0')]
+ 
+
+Gas_DA_Prices.Name=Gas_DA_Prices.Name.str.replace('gas_balance_da\(','')
+Gas_DA_Prices.Name=Gas_DA_Prices.Name.str.replace('\)','')
+Gas_DA_Prices.Name=Gas_DA_Prices.Name.str.replace('k0,','')
+       
+Gas_DA_Prices['ID'],Gas_DA_Prices['Time']=Gas_DA_Prices['Name'].str.split(',').str
+
+Gas_DA_Prices=Gas_DA_Prices.drop(['Name'],axis=1)
+
+time_dict={t : int(t[1:]) for t in set(Gas_DA_Prices.Time.tolist())}
+time_dict_reverse={v : k for k,v in time_dict.items()}
+
+Gas_DA_Prices.Time=Gas_DA_Prices.Time.replace(time_dict)
         
-
-        
-        
-    
+Gas_DA_Prices=Gas_DA_Prices.pivot(index='Time',columns='ID')   
             
+Gas_DA_Prices.index=Gas_DA_Prices.index.map(time_dict_reverse)
 
-
-
+Gas_DA_Prices.columns=Gas_DA_Prices.columns.droplevel()
 

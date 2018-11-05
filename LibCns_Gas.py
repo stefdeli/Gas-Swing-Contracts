@@ -541,7 +541,7 @@ def _build_constraints_gasDA(self):
         for k in sclim:
             for gn in gnodes:
                 for t in time:
-                    name='gas_balance({0},{1},{2})'.format(gn,k,t)              
+                    name='gas_balance_da({0},{1},{2})'.format(gn,k,t)              
                     lhs=gb.quicksum(var.gprod[gw,k,t] for gw in self.gdata.Map_Gn2Gp[gn]) +\
                             gb.quicksum(var.qout_sr[pl,k,t] - var.qin_rs[pl,k,t] for pl in self.gdata.nodetoinpplines[gn]) +\
                             gb.quicksum(var.qout_rs[pl,k,t] - var.qin_sr[pl,k,t] for pl in self.gdata.nodetooutpplines[gn])+\
@@ -560,7 +560,7 @@ def _build_constraints_gasDA(self):
         for t in time:
             for gn in gnodes:
                 for k in sclim:
-                    name='gas_balance({0},{1},{2})'.format(gn,k,t)               
+                    name='gas_balance_da({0},{1},{2})'.format(gn,k,t)               
                     lhs=   gb.quicksum(var.gprod[gw,k,t] for gw in self.gdata.Map_Gn2Gp[gn]) \
                             + gb.quicksum(var.qout_sr[pl,k,t] for pl in self.gdata.nodetoinpplines[gn])\
                             - gb.quicksum(var.qin_sr[pl,k,t] for pl in self.gdata.nodetooutpplines[gn]) \
@@ -909,7 +909,7 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
         for gn in gnodes:
             for t in time:
                 
-                name='gas_balance({0},{1},{2})'.format(gn,s,t)
+                name='gas_balance_rt({0},{1},{2})'.format(gn,s,t)
                 
                 lhs=      gb.quicksum(( var.gprodUp[gw,s,t]  - var.gprodDn[gw,s,t]) for gw in self.gdata.Map_Gn2Gp[gn])  \
                         - gb.quicksum(( qout_sr[pl][t]['k0'] - var.qout_sr_rt[pl,s,t]) for pl in self.gdata.nodetoinpplines[gn]) \

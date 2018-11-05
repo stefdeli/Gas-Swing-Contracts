@@ -128,11 +128,11 @@ def _complementarity_model(self):
         count=count+1
         
         self.cStat[var] = m.addConstr(    
-              obj_coeffs[var] +
-              gb.quicksum(coeff(A_Eq, constr, var)*self.duals.lambdas[constr] for constr in self.duals.lambdas_idx)+ 
-              gb.quicksum(coeff(A_ineqLE, constr, var)*self.duals.mus[constr] for constr in self.duals.mus_idx) -
-              gb.quicksum(coeff(A_ineqGE, constr, var)*self.duals.mus[constr] for constr in self.duals.mus_idx) +
-              (self.duals.musUB[var] if var in PrVarUB else 0) - (self.duals.musLB[var] if var in PrVarLB else 0), 
+              obj_coeffs[var] 
+              - gb.quicksum(coeff(A_Eq, constr, var)*self.duals.lambdas[constr] for constr in self.duals.lambdas_idx)
+              + gb.quicksum(coeff(A_ineqLE, constr, var)*self.duals.mus[constr] for constr in self.duals.mus_idx) 
+              - gb.quicksum(coeff(A_ineqGE, constr, var)*self.duals.mus[constr] for constr in self.duals.mus_idx) 
+              + (self.duals.musUB[var] if var in PrVarUB else 0) - (self.duals.musLB[var] if var in PrVarLB else 0), 
               gb.GRB.EQUAL, 0,  name = 'dLag/' + var)
     print('\n') # Skip to next line for remaining print   
     m.update()    

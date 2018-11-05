@@ -105,12 +105,12 @@ def _build_constraints_elecDA(self):
 
     #--- Power balance
     for t in time:
-        name='PowerBalance({0})'.format(t)
+        name='PowerBalance_DA({0})'.format(t)
         lhs =      gb.quicksum(var.WindDA[wf,t] for wf in windfarms) \
                 +  gb.quicksum(var.Pgen[gen,t] for gen in generators)\
                 + gb.quicksum(var.PgenSC[gen,t] for gen in gfpp)
         rhs =  + self.edata.sysload[t]
-        add_constraint(self,-lhs,'==',-rhs,name)
+        add_constraint(self,lhs,'==',rhs,name)
 
     #--- Maximum Capacity limits
     for t in time:
