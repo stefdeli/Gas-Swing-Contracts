@@ -34,8 +34,10 @@ class StochElecDA():
     Stochastic electricity system day-ahead scheduling
     '''
     
-    def __init__(self,comp=False):
+    def __init__(self,comp=False,bilevel=False):
         '''
+        comp - building a complementarity model?
+        bilevel - building a bilevel model?
         '''        
         self.edata = expando()
         self.variables = expando()
@@ -43,7 +45,8 @@ class StochElecDA():
         self.constraints = {}
         self.results = expando()
 
-        self._load_ElecData()
+        self._load_ElecData(bilevel)
+        
         if comp==False:
             self._build_model()
         elif comp==True:
@@ -53,14 +56,15 @@ class StochElecDA():
         self.model.setParam( 'OutputFlag', defaults.GUROBI_OUTPUT )
         self.model.optimize()
     
-    def _load_ElecData(self):     
+    def _load_ElecData(self,bilevel):     
         ElecData_Load._load_network(self)  
         ElecData_Load._load_generator_data(self)
         ElecData_Load._load_wind_data(self)         
         ElecData_Load._load_initial_data(self)
-        ElecData_Load._combine_wind_gprt_scenarios(self)
         ElecData_Load._load_SCinfo(self)
         
+        
+        ElecData_Load._combine_wind_gprt_scenarios(self,bilevel)
         
     def get_results(self):           
         GetResults._results_StochD(self)
@@ -110,7 +114,7 @@ class StochElecDA():
         self.model.update()
 
 
-mSEDA = StochElecDA()
+mSEDA = StochElecDA(bilevel=True)
 mSEDA.optimize()
 mSEDA.model.write('LPModels/mSEDA.lp')
 
@@ -138,7 +142,7 @@ else:
     mSEDA.model.write('LPModels/mSEDA.ilp')
     
 
-mSEDA_COMP = StochElecDA(comp=True)
+mSEDA_COMP = StochElecDA(comp=True,bilevel=True)
 mSEDA_COMP.optimize()
 mSEDA_COMP.model.write('LPModels/mSEDA_COMP.lp')
 
@@ -288,7 +292,7 @@ class ElecRT():
     Real-time electricity system dispatch
     '''
     
-    def __init__(self,dispatchElecDA,comp=False):
+    def __init__(self,dispatchElecDA,comp=False,bilevel=False):
         '''
         '''        
         self.edata = expando()
@@ -297,7 +301,7 @@ class ElecRT():
         self.constraints = {}
         self.results = expando()
 
-        self._load_ElecData()
+        self._load_ElecData(bilevel)
         if comp==False:
             self._build_model(dispatchElecDA)
         elif comp==True:
@@ -308,13 +312,13 @@ class ElecRT():
         self.model.setParam( 'OutputFlag', defaults.GUROBI_OUTPUT )
         self.model.optimize()
     
-    def _load_ElecData(self):     
+    def _load_ElecData(self,bilevel):     
         ElecData_Load._load_network(self)  
         ElecData_Load._load_generator_data(self)
         ElecData_Load._load_wind_data(self)         
         ElecData_Load._load_initial_data(self)
         
-        ElecData_Load._combine_wind_gprt_scenarios(self)
+        ElecData_Load._combine_wind_gprt_scenarios(self,bilevel)
         
         ElecData_Load._load_SCinfo(self)
         
@@ -359,7 +363,7 @@ class ElecRT():
 #        self.model.update()
         
 
-mERT = ElecRT(dispatchElecDA)
+mERT = ElecRT(dispatchElecDA,bilevel=True)
 mERT.optimize()
 mERT.model.write('LPModels/mERT.lp')
 
@@ -387,7 +391,7 @@ else:
     mERT.model.write('LPModels/mERT.ilp')
     
     
-mERT_COMP = ElecRT(dispatchElecDA,comp=True)
+mERT_COMP = ElecRT(dispatchElecDA,comp=True,bilevel=True)
 mERT_COMP.optimize()
 mERT_COMP.model.write('LPModels/mERT_COMP.lp')
 

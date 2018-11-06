@@ -48,6 +48,7 @@ Minimize
    - pres(ng102,k0,t22) - pres(ng102,k1,t22) - pres(ng102,k2,t22)
    - pres(ng102,k0,t23) - pres(ng102,k1,t23) - pres(ng102,k2,t23)
    - pres(ng102,k0,t24) - pres(ng102,k1,t24) - pres(ng102,k2,t24)
+   + 3 gprod(gw1,k0,t1) + 3 gprod(gw1,k1,t1) + 3 gprod(gw1,k2,t1)
    + 4 gprod(gw1,k0,t2) + 4 gprod(gw1,k1,t2) + 4 gprod(gw1,k2,t2)
    + 5 gprod(gw1,k0,t3) + 5 gprod(gw1,k1,t3) + 5 gprod(gw1,k2,t3)
    + 6 gprod(gw1,k0,t4) + 6 gprod(gw1,k1,t4) + 6 gprod(gw1,k2,t4)

@@ -174,18 +174,31 @@ def load_wind_scenarios(self):
     
     return twindscen
 
-def _combine_wind_gprt_scenarios(self):
-    
+def _combine_wind_gprt_scenarios(self,bilevel):
     gpprob = self.edata.GasPriceRT_prob.probability.to_dict()
-    wsprob = self.edata.windscenprob
+    wsprob = self.edata.windscenprob    
     
-    wgp_scen  = list('ss{0}'.format(x) for x in range(len(gpprob.keys())*len(wsprob.keys())))
-    
-    
-    # Combination of wind power & gas price scenarios
-    self.edata.scen_wgp = {b: list(a) + [gpprob[a[0]]*wsprob[a[1]]] for a, b in zip(product(gpprob, wsprob), wgp_scen) }
-    
-    self.edata.scenarios = self.edata.scen_wgp.keys()
+    if bilevel==False:
+
+        
+        
+        wgp_scen  = list('ss{0}'.format(x) for x in range(len(gpprob.keys())*len(wsprob.keys())))
+        
+        
+        # Combination of wind power & gas price scenarios
+        self.edata.scen_wgp = {b: list(a) + [gpprob[a[0]]*wsprob[a[1]]] for a, b in zip(product(gpprob, wsprob), wgp_scen) }
+        
+        self.edata.scenarios = self.edata.scen_wgp.keys()
+    if bilevel==True: # gas price will be known
+        wsprob =self.edata.windscenprob
+        wgp_scen  = list(self.edata.windscenprob.keys())
+        
+        gpprob = {next(iter(gpprob)) : 1} # Get first gas price with probability 1
+        
+        self.edata.scen_wgp = {b: list(a) + [gpprob[a[0]]*wsprob[a[1]]] for a, b in zip(product(gpprob, wsprob), wgp_scen) }
+        self.edata.scenarios = self.edata.scen_wgp.keys()
+        
+        
 
 def _load_SCinfo(self):
     

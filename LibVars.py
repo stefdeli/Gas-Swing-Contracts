@@ -418,10 +418,11 @@ def _build_variables_elecRT(self,mtype):
             Temp =  m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)
             var.Lshed[s,t]=Temp
             primal[name]=Temp
-        
+            
+    m.update()
             
 def _build_dummy_objective_var(self):    
     m = self.model    
     self.variables.z = {}
     self.variables.z =  m.addVar(lb=0, name='z')
-        
+    m.update()   

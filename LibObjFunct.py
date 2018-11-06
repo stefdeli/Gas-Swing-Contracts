@@ -39,13 +39,15 @@ def _build_objective_StochElecDA(self):
     P_up=defaults.RESERVES_UP_PREMIUM
     P_dn=defaults.RESERVES_DN_PREMIUM
     
+    
+    
     # !NB Re-dispatch cost = Day-ahead energy cost (No premium)
     m.setObjective(    
     # Day-ahead energy cost
     # Non Gas Generators      
     gb.quicksum(gendata.lincost[gen]*var.Pgen[gen,t] for gen in nongfpp for t in time) +   
     # Gas Generators = Nodal Gas Price  * HR * Power Output
-    gb.quicksum( gaspriceda[t][Map_Eg2Gn[gen]] *HR[gen]*var.Pgen[gen,t] for gen in gfpp for t in time) +      
+    gb.quicksum( gaspriceda[t][Map_Eg2Gn[gen][0]]*HR[gen]*var.Pgen[gen,t] for gen in gfpp for t in time) +      
     # Gas Generators with Contracts 
     gb.quicksum(SCdata.lambdaC[sc,gen]*HR[gen]*var.PgenSC[gen,t] for gen in gfpp for sc in swingcontr for t in time) +      
     # Real-time redispatch cost
@@ -54,7 +56,7 @@ def _build_objective_StochElecDA(self):
     # Non Gas Generators
     gb.quicksum(gendata.lincost[gen]*(P_up*var.RUp[gen,s,t]-P_dn*var.RDn[gen,s,t]) for gen in nongfpp for t in time) +
     # Gas Generators 
-    gb.quicksum(gaspriceRT[t][Map_Eg2Gn[gen]][scengprt[s]]*HR[gen]*(P_up*var.RUp[gen,s,t]-P_dn*var.RDn[gen,s,t]) for gen in gfpp for t in time) +
+    gb.quicksum(gaspriceRT[t][Map_Eg2Gn[gen][0]][scengprt[s]]*HR[gen]*(P_up*var.RUp[gen,s,t]-P_dn*var.RDn[gen,s,t]) for gen in gfpp for t in time) +
     # Gas Generators with Contracts
     gb.quicksum(SCdata.lambdaC[sc,gen]*HR[gen]*(P_up*var.RUpSC[gen,s,t]-P_dn*var.RDnSC[gen,s,t]) for gen in gfpp for sc in swingcontr for t in time) +
     # Load Shedding Penalty
@@ -124,7 +126,7 @@ def _build_objective_ElecRT(self):
     # Non Gas Generators                                                                                              
     gb.quicksum(gendata.lincost[gen]*(var.RUp[gen,s,t]-var.RDn[gen,s,t]) for gen in nongfpp for t in time) +
     # Gas Generators (No Contract)
-    gb.quicksum(gaspriceRT[t][Map_Eg2Gn[gen]]['spm']*HR[gen]*(defaults.RESERVES_UP_PREMIUM*var.RUp[gen,s,t]-defaults.RESERVES_DN_PREMIUM*var.RDn[gen,s,t]) for gen in gfpp for t in time) +
+    gb.quicksum(gaspriceRT[t][Map_Eg2Gn[gen][0]]['spm']*HR[gen]*(defaults.RESERVES_UP_PREMIUM*var.RUp[gen,s,t]-defaults.RESERVES_DN_PREMIUM*var.RDn[gen,s,t]) for gen in gfpp for t in time) +
     # Gas Generators with Contracts
     gb.quicksum(SCdata.lambdaC[sc,gen]*HR[gen]*(defaults.RESERVES_UP_PREMIUM*var.RUpSC[gen,s,t]-defaults.RESERVES_DN_PREMIUM*var.RDnSC[gen,s,t]) for gen in gfpp for sc in swingcontr for t in time) +
     # Load Shedding Penalty
