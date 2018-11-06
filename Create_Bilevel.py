@@ -202,7 +202,11 @@ Add_Vars(BLmodel,mGDA_COMP)
 Add_Vars(BLmodel,mGRT_COMP)   
 
 # Add contract pricce for every gas node with generator
-GasGenNodes= set(list(BLmodel.edata.Map_Eg2Gn.values()))
+gas_nodes = list(BLmodel.edata.Map_Eg2Gn.values())
+# result may be list of lists, so flatted
+flat_list = [item for sublist in gas_nodes for item in sublist]
+
+GasGenNodes=set(flat_list)
 for node in GasGenNodes:
     name='ContractPrice({0})'.format(node)
     BLmodel.model.addVar(lb=0.0,name=name)
@@ -221,7 +225,7 @@ Add_Obj(BLmodel,mGRT_COMP)
 
 # Use nodal gas price for generator gas price  (DA)
 for gen in BLmodel.edata.gfpp:
-    gas_node=BLmodel.edata.Map_Eg2Gn[gen]
+    gas_node=BLmodel.edata.Map_Eg2Gn[gen][0]
     HR = BLmodel.edata.generatorinfo.HR[gen]
     con_name='dLag/Pgen({0},{1})'
     var_name='lambda_gas_balance_da({0},k0,{1})'
@@ -246,7 +250,7 @@ for gen in BLmodel.edata.gfpp:
         
 # Use contract price for generator gas price  (DA)
 for gen in BLmodel.edata.gfpp:
-    gas_node=BLmodel.edata.Map_Eg2Gn[gen]
+    gas_node=BLmodel.edata.Map_Eg2Gn[gen][0] # Only one
     HR = BLmodel.edata.generatorinfo.HR[gen]
     con_name='dLag/PgenSC({0},{1})'
     var_name='ContractPrice({0})'
@@ -271,7 +275,7 @@ for gen in BLmodel.edata.gfpp:
 
 # Use nodal gas price for generator UP REGULATION gas price  (RT)
 for gen in BLmodel.edata.gfpp:
-    gas_node=BLmodel.edata.Map_Eg2Gn[gen]
+    gas_node=BLmodel.edata.Map_Eg2Gn[gen][0]
     HR = BLmodel.edata.generatorinfo.HR[gen]
     for t in BLmodel.edata.time:
         for scenario in BLmodel.edata.scen_wgp:
@@ -292,7 +296,7 @@ for gen in BLmodel.edata.gfpp:
 
 # Use nodal gas price for generator UP REGULATION gas price  (RT)
 for gen in BLmodel.edata.gfpp:
-    gas_node=BLmodel.edata.Map_Eg2Gn[gen]
+    gas_node=BLmodel.edata.Map_Eg2Gn[gen][0]
     HR = BLmodel.edata.generatorinfo.HR[gen]
     for t in BLmodel.edata.time:
         for scenario in BLmodel.edata.scen_wgp:
@@ -313,7 +317,7 @@ for gen in BLmodel.edata.gfpp:
 
 # Use contract for generator UP REGULATION gas price  (RT)
 for gen in BLmodel.edata.gfpp:
-    gas_node=BLmodel.edata.Map_Eg2Gn[gen]
+    gas_node=BLmodel.edata.Map_Eg2Gn[gen][0]
     HR = BLmodel.edata.generatorinfo.HR[gen]
     for t in BLmodel.edata.time:
         for scenario in BLmodel.edata.scen_wgp:
@@ -334,7 +338,7 @@ for gen in BLmodel.edata.gfpp:
 
 # Use nodal gas price for generator UP REGULATION gas price  (RT)
 for gen in BLmodel.edata.gfpp:
-    gas_node=BLmodel.edata.Map_Eg2Gn[gen]
+    gas_node=BLmodel.edata.Map_Eg2Gn[gen][0]
     HR = BLmodel.edata.generatorinfo.HR[gen]
     for t in BLmodel.edata.time:
         for scenario in BLmodel.edata.scen_wgp:
@@ -386,44 +390,144 @@ for gas_node in BLmodel.edata.Map_Gn2Eg:
                 
             GasLoad=BLmodel.gdata.gasload[gas_node][t]
             BLmodel.model.remove(con)
-            BLmodel.model.addConstr(new_con==GasLoad,name=con_name.format(gen,t))
+            BLmodel.model.addConstr(new_con==GasLoad,name=con_name)
             BLmodel.model.update()   
 
             
         
         
-    con_name='gas_balance_da({0},{1},{2})'
-
-
-
+# Gas well production
+for gw in BLmodel.gdata.wells:
+    for s in BLmodel.edata.windscen_index:
+        for t in BLmodel.edata.time:
+            con_name_up = 'gprodUp_max({0},{1},{2})'.format(gw,s,t)
+            con_name_up_SOS = 'SOS1_gprodUp_max({0},{1},{2})'.format(gw,s,t)
+            con_name_dn = 'gprodDn_max({0},{1},{2})'.format(gw,s,t)
+            con_name_dn_SOS = 'SOS1_gprodDn_max({0},{1},{2})'.format(gw,s,t)
+            var_name     = 'gprod({0},k0,{2})'.format(gw,s,t)
+            var = BLmodel.model.getVarByName(var_name)
+            Gwell_max    = BLmodel.gdata.wellsinfo.MaxProd[gw]
+            
+            # Upper Limit
+            con=BLmodel.model.getConstrByName(con_name_up)
+            con_row=BLmodel.model.getRow(con)
+            new_con=0.0
+            for i in range(con_row.size()):
+                new_con=new_con+con_row.getVar(i)*con_row.getCoeff(i)
+            BLmodel.model.remove(con)
+            BLmodel.model.addConstr(new_con<=Gwell_max-var,name=con_name_up)
+            BLmodel.model.update()  
+            
+            conSOS=BLmodel.model.getConstrByName(con_name_up_SOS)
+            con_rowSOS=BLmodel.model.getRow(conSOS)
+            new_conSOS=0.0
+            for i in range(con_rowSOS.size()):
+                new_conSOS=new_conSOS+con_rowSOS.getVar(i)*con_rowSOS.getCoeff(i)
+            new_conSOS=new_conSOS+var
+            BLmodel.model.remove(conSOS)
+            BLmodel.model.addConstr(new_conSOS==Gwell_max,name=con_name_up_SOS)
+            BLmodel.model.update()  
+            
+            
+            
+            # lower Limit
+            con=BLmodel.model.getConstrByName(con_name_dn)
+            con_row=BLmodel.model.getRow(con)
+            new_con=0.0
+            for i in range(con_row.size()):
+                new_con=new_con+con_row.getVar(i)*con_row.getCoeff(i)
+            BLmodel.model.remove(con)
+            BLmodel.model.addConstr(new_con<=var,name=con_name_dn)
+            BLmodel.model.update()  
+            
+            conSOS=BLmodel.model.getConstrByName(con_name_dn_SOS)
+            con_rowSOS=BLmodel.model.getRow(conSOS)
+            new_conSOS=0.0
+            for i in range(con_rowSOS.size()):
+                new_conSOS=new_conSOS+con_rowSOS.getVar(i)*con_rowSOS.getCoeff(i)
+            new_conSOS=new_conSOS-var
+            BLmodel.model.remove(conSOS)
+            BLmodel.model.addConstr(new_conSOS==0.0,name=con_name_dn_SOS)
+            BLmodel.model.update()  
+            
+            
+for gn in BLmodel.gdata.gnodes:
+    for s in BLmodel.edata.windscen_index:
+        for t in BLmodel.edata.time:
+            con_name='gas_balance_rt({0},{1},{2})'.format(gn,s,t)
+            con = BLmodel.model.getConstrByName(con_name)
+            con_row=BLmodel.model.getRow(con)
+            new_con=0.0
+            for i in range(con_row.size()):
+                var=con_row.getVar(i)
+                coeff=con_row.getCoeff(i)
+                new_con=new_con+var*coeff
+                               
+                if var.VarName[0:4]=='qout':    
+                # Find  qout da
+                    qout_name=var.VarName
+                    qout_name=qout_name.replace('_rt','')
+                    qout_name=qout_name.replace(','+s+',',',k0,')
+                    qout_var=BLmodel.model.getVarByName(qout_name)
+                    new_con=new_con-qout_var
+                if var.VarName[0:3]=='qin':    
+                # Find  qout da
+                    qin_name=var.VarName
+                    qin_name=qin_name.replace('_rt','')
+                    qin_name=qin_name.replace(','+s+',',',k0,')
+                    qin_var=BLmodel.model.getVarByName(qin_name)
+                    new_con=new_con+qin_var
+                    
+            if gen in BLmodel.gdata.Map_Gn2Eg[gn]:
+                for gen in BLmodel.edata.Map_Gn2Eg[gn]:
+                    HR = BLmodel.edata.generatorinfo.HR[gen]
+                    my_dict={'s1':'ss0','s2':'ss1'}
+                    ss=my_dict[s]
+                    var_RUp   = BLmodel.model.getVarByName('RUp({0},{1},{2})'.format(gen,ss,t))
+                    var_RUpSC = BLmodel.model.getVarByName('RUpSC({0},{1},{2})'.format(gen,ss,t))
+                    var_RDn   = BLmodel.model.getVarByName('RDn({0},{1},{2})'.format(gen,ss,t))
+                    var_RDnSC = BLmodel.model.getVarByName('RDnSC({0},{1},{2})'.format(gen,ss,t))
+                
+                new_con=new_con-HR*(var_RUp+var_RUpSC-var_RDn-var_RDnSC)
+                
+            BLmodel.model.remove(con)
+            BLmodel.model.addConstr(new_con==0.0,name=con_name)
+            BLmodel.model.update() 
+            
+            
 
 # change objective
-name='ContractPrice({0})'.format('ng102')
-var=BLmodel.model.getVarByName(name)
-BLmodel.model.setObjective(var,gb.GRB.MINIMIZE)        
- #
+#name='ContractPrice({0})'.format('ng102')
+#var=BLmodel.model.getVarByName(name)
+#BLmodel.model.setObjective(var,gb.GRB.MINIMIZE)        
+# #
  
 BLmodel.model.Params.DegenMoves=-1
-BLmodel.model.Params.Heuristic=0.9
-BLmodel.model.Params.timelimit = 30.0
-BLmodel.model.Params.MIPFocus=3
+BLmodel.model.Params.Heuristics=0.05
+BLmodel.model.Params.timelimit = 100.0
+BLmodel.model.Params.MIPFocus=1
 BLmodel.model.optimize() 
 BLmodel.model.reset()
 
 
-df=pd.DataFrame([[var.VarName,var.x] for var in model_GDA.model.getVars() ],columns=['Name','Value'])
-Q1=df[df.Name.str.contains('gas_balan',regex=True)]
-Q1[Q1.Name.str.contains('k0')]
-
-
-df=pd.DataFrame([[var.VarName,var.x] for var in model_GRT.model.getVars() ],columns=['Name','Value'])
-Q1=df[df.Name.str.contains('lambda_gas_balan',regex=True)]
-
-df=pd.DataFrame([con.ConstrName for con in BLmodel.model.getConstrs() ],columns=['Name'])
-df[df.Name.str.contains('gas_balance_da')]
-
-df=pd.DataFrame([var.VarName for var in BLmodel.model.getVars() ],columns=['Name'])
-df[df.Name.str.contains('gen')]
+#df=pd.DataFrame([[var.VarName,var.x] for var in model_GDA.model.getVars() ],columns=['Name','Value'])
+#Q1=df[df.Name.str.contains('Rup',regex=True)]
+#Q1[Q1.Name.str.contains('k0')]
+#
+#
+#df=pd.DataFrame([[var.VarName,var.x] for var in model_GRT.model.getVars() ],columns=['Name','Value'])
+#Q1=df[df.Name.str.contains('lambda_gas_balan',regex=True)]
+#
+#df=pd.DataFrame([[con.ConstrName,con] for con in model_GRT.model.getConstrs() ],columns=['Name','Value'])
+#Q1=df[df.Name.str.contains('gprodUp_max',regex=True)]
+#
+#
+#
+#df=pd.DataFrame([con.ConstrName for con in BLmodel.model.getConstrs() ],columns=['Name'])
+#df[df.Name.str.contains('gas_balance_da')]
+#
+#df=pd.DataFrame([var.VarName for var in BLmodel.model.getVars() ],columns=['Name'])
+#df[df.Name.str.contains('RUpSC')]
 
 
 #
@@ -477,48 +581,48 @@ df[df.Name.str.contains('gen')]
 
 
 
-
-
-
-
-for t in range(1,24):
-    var=mGDA_COMP.model.getVarByName('lambda_gas_balance_da(ng102,k0,t{0})'.format(t)).x
-    con=mGDA.model.getConstrByName('gas_balance_da(ng102,k0,t{0})'.format(t)).Pi
-    
-    print(var)
-    print(con)
-    
-for t in range(1,24):
-    var=mGRT_COMP.model.getVarByName('lambda_gas_balance_rt(ng102,s1,t{0})'.format(t)).x
-    con=mGRT.model.getConstrByName('gas_balance_rt(ng102,s1,t{0})'.format(t)).Pi
-    
-    print(var)
-    print(con)
-
-# Original Problem
-    
-gen='g1'
-    
-m=mSEDA.model.fixed()
-m.optimize()
-
-
-Primal_Pgen = m.getVarByName('Pgen(g1,t1)')
-Primal_lambda_bal=m.getConstrByName('PowerBalance_DA(t1)').Pi
-Primal_Pmax_DA_GFPP_mu=m.getConstrByName('Pmax_DA_GFPP(g1,t1)').Pi
-Primal_Pmin_DA_GFPP_mu=m.getConstrByName('Pmin_DA_GFPP(g1,t1)').Pi
-
-Cost= 8 * 10 #(HR x gas price) = 80
-
-# Comp Problem
-
-m=mSEDA_COMP.model
-m.optimize()
-COMP_lambda_bal = m.getVarByName('lambda_PowerBalance_DA(t1)').x
-COMP_Pmax_DA_GFPP_mu=m.getVarByName('mu_Pmax_DA_GFPP(g1,t1)').x
-COMP_Pmin_DA_GFPP_mu=m.getVarByName('mu_Pmin_DA_GFPP(g1,t1)').x
-Cost= 8 * 10 #(HR x gas price) = 80
-
+#
+#
+#
+#
+#for t in range(1,24):
+#    var=mGDA_COMP.model.getVarByName('lambda_gas_balance_da(ng102,k0,t{0})'.format(t)).x
+#    con=mGDA.model.getConstrByName('gas_balance_da(ng102,k0,t{0})'.format(t)).Pi
+#    
+#    print(var)
+#    print(con)
+#    
+#for t in range(1,24):
+#    var=mGRT_COMP.model.getVarByName('lambda_gas_balance_rt(ng102,s1,t{0})'.format(t)).x
+#    con=mGRT.model.getConstrByName('gas_balance_rt(ng102,s1,t{0})'.format(t)).Pi
+#    
+#    print(var)
+#    print(con)
+#
+## Original Problem
+#    
+#gen='g1'
+#    
+#m=mSEDA.model.fixed()
+#m.optimize()
+#
+#
+#Primal_Pgen = m.getVarByName('Pgen(g1,t1)')
+#Primal_lambda_bal=m.getConstrByName('PowerBalance_DA(t1)').Pi
+#Primal_Pmax_DA_GFPP_mu=m.getConstrByName('Pmax_DA_GFPP(g1,t1)').Pi
+#Primal_Pmin_DA_GFPP_mu=m.getConstrByName('Pmin_DA_GFPP(g1,t1)').Pi
+#
+#Cost= 8 * 10 #(HR x gas price) = 80
+#
+## Comp Problem
+#
+#m=mSEDA_COMP.model
+#m.optimize()
+#COMP_lambda_bal = m.getVarByName('lambda_PowerBalance_DA(t1)').x
+#COMP_Pmax_DA_GFPP_mu=m.getVarByName('mu_Pmax_DA_GFPP(g1,t1)').x
+#COMP_Pmin_DA_GFPP_mu=m.getVarByName('mu_Pmin_DA_GFPP(g1,t1)').x
+#Cost= 8 * 10 #(HR x gas price) = 80
+#
 
 
 
