@@ -294,7 +294,7 @@ def _build_constraints_elecRT(self,mtype,dispatchElecDA):
         
     for s in scenarios:                
         for t in time:
-            name = 'Power_Balance_RT({0},{1})'.format(s,t)
+            name = 'PowerBalance_RT({0},{1})'.format(s,t)
 
             
             lhs =    gb.quicksum(var.RUp[g,s,t] - var.RDn[g,s,t] for g in generators)  \
@@ -303,7 +303,7 @@ def _build_constraints_elecRT(self,mtype,dispatchElecDA):
                       - gb.quicksum(var.Wspill[w,s,t] for w in windfarms)  \
                       + var.Lshed[s,t]
             rhs =  - sum(wscen[w][scenwind[s]][t]*wcap[w] for w in windfarms)
-            add_constraint(self,-lhs,'==',-rhs,name)
+            add_constraint(self,lhs,'==',rhs,name)
   
     
     #--- Up and down regulation no-SC

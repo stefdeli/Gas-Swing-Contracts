@@ -10,6 +10,7 @@ from collections import defaultdict
 import pandas as pd
 import gurobipy as gb
 import sys
+import time
 
 LAMBDA_CONSTANT_LOWER= -gb.GRB.INFINITY #gb.GRB.INFINITY
 LAMBDA_CONSTANT_UPPER= gb.GRB.INFINITY #gb.GRB.INFINITY          
@@ -48,6 +49,9 @@ def _complementarity_model(self):
                                 
     # Coefficients Equality constraints                   
     A_Eq = A[A['sense']=='='].set_index(['ConstrName', 'VarName']).coeff.to_dict() 
+    
+ 
+    
     # Coefficients Inequality constraints
     A_ineqLE = A[A['sense']=='<'].set_index(['ConstrName', 'VarName']).coeff.to_dict() 
     A_ineqGE = A[A['sense']=='>'].set_index(['ConstrName', 'VarName']).coeff.to_dict()     
@@ -121,8 +125,11 @@ def _complementarity_model(self):
     #--- Stationarity constraints
     self.cStat = defaultdict()
     count=1
-    for var in PrVarNames: 
-        
+       
+    
+    start_time = time.time()
+    for var in PrVarNames:
+                
         b = ("Adding Stationarity Constraints: " +str(count)+ "/" +str(len(PrVarNames)))
         sys.stdout.write('\r'+b)
         count=count+1
@@ -134,7 +141,10 @@ def _complementarity_model(self):
               - gb.quicksum(coeff(A_ineqGE, constr, var)*self.duals.mus[constr] for constr in self.duals.mus_idx) 
               + (self.duals.musUB[var] if var in PrVarUB else 0) - (self.duals.musLB[var] if var in PrVarLB else 0), 
               gb.GRB.EQUAL, 0,  name = 'dLag/' + var)
-    print('\n') # Skip to next line for remaining print   
+        
+    print('\n') # Skip to next line for remaining print 
+    print("This took "+ str(time.time() - start_time)+ " to run")
+    
     m.update()    
  
 

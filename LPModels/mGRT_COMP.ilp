@@ -3,6 +3,6 @@
 Minimize
  
 Subject To
- dLag/Pgen(g1,t1): = -80
+ dLag/pres_rt(ng101,s1,t1): = -0.5
 Bounds
 End

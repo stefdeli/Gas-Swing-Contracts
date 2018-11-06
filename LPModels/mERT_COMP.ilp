@@ -3,6 +3,6 @@
 Minimize
  
 Subject To
- dLag/Pgen(g1,t1): = -80
+ dLag/RUp(g1,s1,t1): = -44
 Bounds
 End

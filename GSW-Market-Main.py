@@ -620,7 +620,7 @@ def Check_Dual_Objective(mPrimal,mComp):
         # Get dual from COMP problem
         
         if conSense=='=':
-            COMP_Dual= -1.0* mComp.duals.lambdas[con_name].x
+            COMP_Dual= +1.0* mComp.duals.lambdas[con_name].x
             Obj_e=Obj_e+COMP_Dual*conRHS
         elif conSense=='<':
             COMP_Dual= -1.0* mComp.duals.mus[con_name].x
@@ -713,7 +713,7 @@ for c in PrimalConstraints:
     # Get dual from COMP problem
     try:
         if conSense=='=':
-            COMP_Dual= -1.0* mSEDA_COMP.model.getVarByName('lambda_'+con_name).x
+            COMP_Dual= +1.0* mSEDA_COMP.model.getVarByName('lambda_'+con_name).x
             Obj_e=Obj_e+COMP_Dual*conRHS
         elif conSense=='<':
             COMP_Dual= -1.0* mSEDA_COMP.model.getVarByName('mu_'+con_name).x
@@ -754,4 +754,67 @@ Gas_DA_Prices=Gas_DA_Prices.pivot(index='Time',columns='ID')
 Gas_DA_Prices.index=Gas_DA_Prices.index.map(time_dict_reverse)
 
 Gas_DA_Prices.columns=Gas_DA_Prices.columns.droplevel()
+
+
+
+
+#
+#
+#
+#
+#
+#def get_matrix_coo(m, dvars, constrs):    
+#    #Map variables objects to Gurobi Python indices 
+#    var_indices = {v: i for i, v in enumerate(dvars)} 
+#    
+#    for row_idx, constr in enumerate(constrs):
+#        for const_coeff, col_idx, var in get_expr_cos(m.getRow(constr), var_indices):                         
+#            yield row_idx, col_idx, const_coeff, constr.sense, constr.ConstrName, var.VarName
+#
+#
+#m = self.model    
+#
+## Retrieve model Primal variables, names, upper and lower bounds
+#PrimalVars = m.getVars()
+#PrVarNames = []
+#PrVarLB = []; PrVarUB = []
+#for PVar in PrimalVars:
+#    PrVarNames.append(PVar.VarName)
+#    if PVar.UB < 1e80:      # GRB.INF = 1e100
+#        PrVarUB.append(PVar.VarName)
+#    if PVar.LB > -1e80:
+#        PrVarLB.append(PVar.VarName)
+#            
+#
+## Retrieve model Primal constraints
+#PrimalConstrs = m.getConstrs()
+#
+## Retrieve objective function coefficients (order according 'Primal_vars')
+#obj_coeffs = dict(zip(PrVarNames, m.getAttr('Obj', PrimalVars)))
+#
+## Retrieve coefficients matrix 
+## Constraint index = row index
+## Variables index = column index
+#A = pd.DataFrame(get_matrix_coo(m, PrimalVars, PrimalConstrs), 
+#                   columns=['row_idx', 'col_idx', 'coeff', 'sense', 
+#                            'ConstrName', 'VarName'])
+#                            
+## Coefficients Equality constraints                   
+#A_Eq = A[A['sense']=='='].set_index(['ConstrName', 'VarName']).coeff.to_dict() 
+#
+# 
+#
+#
+
+
+
+
+
+
+
+
+
+
+
+
 

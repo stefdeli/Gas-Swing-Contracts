@@ -126,6 +126,7 @@ def _load_SCinfo(self):
     for gen, gn in origodict.iteritems():        
         self.gdata.Map_Gn2Eg[gn].append(gen)
         
+        
     ###########################################################################
         
     

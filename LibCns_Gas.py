@@ -549,7 +549,7 @@ def _build_constraints_gasDA(self):
                             
                     rhs=self.gdata.gasload[gn][t]+  gb.quicksum((Pgen[gen][t]+ \
                                          PgenSC[gen][t]+RSC[gen,k,t])*self.gdata.generatorinfo.HR[gen] for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn] )
-                    add_constraint(self,-lhs,'==',-rhs,name=name)
+                    add_constraint(self,lhs,'==',rhs,name=name)
                     
    
      
@@ -567,7 +567,7 @@ def _build_constraints_gasDA(self):
                             + gb.quicksum(var.gsout[gs,k,t] - var.gsin[gs,k,t] for gs in self.gdata.Map_Gn2Gs[gn])
                     rhs= self.gdata.gasload[gn][t] + gb.quicksum((Pgen[gen][t]+ \
                                          PgenSC[gen][t]+RSC[gen,k,t])*HR[gen] for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn] )
-                    add_constraint(self,-lhs,'==',-rhs,name=name)      
+                    add_constraint(self,lhs,'==',rhs,name=name)      
 
     m.update()
     
@@ -920,7 +920,7 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
 
                         
                 rhs = np.float64(0.0)  
-                add_constraint(self,-lhs,'==',-rhs,name)
+                add_constraint(self,lhs,'==',rhs,name)
 
  
     m.update()
