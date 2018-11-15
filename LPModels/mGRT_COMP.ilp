@@ -1,8 +1,0 @@
-\ Model _copy
-\ LP format - for model browsing. Use MPS format to capture full model detail.
-Minimize
- 
-Subject To
- dLag/pres_rt(ng101,s1,t1): = -0.5
-Bounds
-End

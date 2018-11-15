@@ -145,7 +145,7 @@ def add_constraint(self,lhs,sign_str,rhs,name):
 # Day-ahead market
 #==============================================================================
 
-def _build_constraints_gasDA(self):
+def _build_constraints_gasDA_WeymouthApprox(self):
     #--- Get Parameters
 
         
@@ -171,11 +171,9 @@ def _build_constraints_gasDA(self):
         for t in time:
             for k in sclim:
                 name="PresSlackMax({0},{1},{2})".format(gn,k,t)
-                self.constraints[name]= expando()
-                cc=self.constraints[name]
-                cc.lhs=var.pr[gn,k,t]
-                cc.rhs=self.gdata.gnodedf['PresMax'][gn]
-                cc.expr = m.addConstr(cc.lhs==cc.rhs,name=name)
+                lhs=var.pr[gn,k,t]
+                rhs=self.gdata.gnodedf['PresMax'][gn]                
+                add_constraint(self,lhs,'==',rhs,name)
                 
                      
     elif self.gdata.GasSlack=='FixOutput':
@@ -571,12 +569,167 @@ def _build_constraints_gasDA(self):
 
     m.update()
     
+def _build_constraints_gasDA_FlowBased(self):
+    #--- Get Parameters
+
+        
+    m = self.model
     
-#==============================================================================
-# Real-time market
-#==============================================================================
- 
-def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
+    var = self.variables
+    gnodes = self.gdata.gnodes
+    pplines = self.gdata.pplineorder
+    time = self.gdata.time
+    gndata = self.gdata.gnodedf
+    gstorage = self.gdata.gstorage     
+    gwells = self.gdata.wellsinfo.index.tolist()
+    bigM = self.gdata.bigM 
+    
+    sclim = self.gdata.sclim # Swing contract limits
+
+
+    #--- Nodal Gas Balance 
+
+    
+    ###########################################################################    
+    # Swing constracts can be defined per Gas Node - Here defined per GFPP
+    # ... we need the GFPP node mapping and efficiencies 
+    ###########################################################################    
+    
+    
+    Pgen = self.gdata.Pgen 
+    PgenSC = self.gdata.PgenSC 
+    RSC = self.gdata.RSC 
+    HR =  self.gdata.generatorinfo.HR
+        
+    # if bi-directional flow add in gas balance flow from Receiving to Sending end    
+    if self.gdata.flow2dir == True:
+        
+        for k in sclim:
+            for gn in gnodes:
+                for t in time:
+                    name='gas_balance_da({0},{1},{2})'.format(gn,k,t)              
+                    lhs=gb.quicksum(var.gprod[gw,k,t] for gw in self.gdata.Map_Gn2Gp[gn]) +\
+                            gb.quicksum(var.qout_sr[pl,k,t] - var.qin_rs[pl,k,t] for pl in self.gdata.nodetoinpplines[gn]) +\
+                            gb.quicksum(var.qout_rs[pl,k,t] - var.qin_sr[pl,k,t] for pl in self.gdata.nodetooutpplines[gn])+\
+                            gb.quicksum(var.gsout[gs,k,t] - var.gsin[gs,k,t] for gs in self.gdata.Map_Gn2Gs[gn])
+                            
+                    rhs=self.gdata.gasload[gn][t]+  gb.quicksum((Pgen[gen][t]+ \
+                                         PgenSC[gen][t]+RSC[gen,k,t])*self.gdata.generatorinfo.HR[gen] for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn] )
+                    add_constraint(self,lhs,'==',rhs,name=name)
+                    
+   
+     
+        
+        
+    elif self.gdata.flow2dir == False:
+        
+        for t in time:
+            for gn in gnodes:
+                for k in sclim:
+                    name='gas_balance_da({0},{1},{2})'.format(gn,k,t)               
+                    lhs=   gb.quicksum(var.gprod[gw,k,t] for gw in self.gdata.Map_Gn2Gp[gn]) \
+                            + gb.quicksum(var.qout_sr[pl,k,t] for pl in self.gdata.nodetoinpplines[gn])\
+                            - gb.quicksum(var.qin_sr[pl,k,t] for pl in self.gdata.nodetooutpplines[gn]) \
+                            + gb.quicksum(var.gsout[gs,k,t] - var.gsin[gs,k,t] for gs in self.gdata.Map_Gn2Gs[gn])
+                    rhs= self.gdata.gasload[gn][t] + gb.quicksum((Pgen[gen][t]+ \
+                                         PgenSC[gen][t]+RSC[gen,k,t])*HR[gen] for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn] )
+                    add_constraint(self,lhs,'==',rhs,name=name)    
+                    
+    #--- Gas well maximum production
+    for gw in gwells:
+        for k in sclim:
+            for t in time:
+                name="gprod_max({0},{1},{2})".format(gw,k,t)
+                self.constraints[name]= expando()
+                cc=self.constraints[name]
+                cc.lhs=var.gprod[gw,k,t]
+                cc.rhs=self.gdata.wellsinfo['MaxProd'][gw]
+                cc.expr=m.addConstr(cc.lhs<=cc.rhs,name=name)
+                
+                
+                
+    #--- Flows
+    
+    for pl in pplines:
+        ns, nr = pl
+        
+        for t in time: 
+            for k in sclim: 
+                
+                name='gflow_sr_io({0},{1},{2})'.format(pl,k,t).replace(" ","")
+                lhs= var.gflow_sr[pl,k,t]
+                rhs=(var.qin_sr[pl,k,t] + var.qout_sr[pl,k,t]) * 0.5
+                add_constraint(self,lhs,'==',rhs,name=name)
+                
+                name='gflow_sr_limit({0},{1},{2})'.format(pl,k,t).replace(" ","")
+                lhs=var.gflow_sr[pl,k,t]
+                rhs=self.gdata.pplinelimit[pl]
+                add_constraint(self,lhs,'<=',rhs,name)  
+                
+                name='Flow_Bal({0},{1},{2})'.format(pl,k,t).replace(" ","")
+                lhs= 0.0
+                rhs= var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t]
+                add_constraint(self,-lhs,'==',-rhs,name=name)
+                
+      
+    #--- Gas Storage
+    
+    
+    for gs in self.gdata.gstorage:
+        for k in sclim:
+            for t in time:
+           
+                name='gsinMax({0},{1},{2})'.format(gs,t,k)
+                lhs=var.gsin[gs,k,t]
+                rhs=self.gdata.gstorageinfo['MaxInFlow'][gs]
+                add_constraint(self,lhs,'<=',rhs,name)
+                
+                name='gsoutMax({0},{1},{2})'.format(gs,t,k)
+                lhs=var.gsout[gs,k,t]
+                rhs=self.gdata.gstorageinfo['MaxOutFlow'][gs]
+                add_constraint(self,lhs,'<=',rhs,name)
+                
+                
+                name='gstore_max({0},{1},{2})'.format(gs,t,k)
+                lhs=var.gstore[gs,k,t]
+                rhs=self.gdata.gstorageinfo['MaxStore'][gs]
+                add_constraint(self,lhs,'<=',rhs,name)
+                
+                name='gstore_min({0},{1},{2})'.format(gs,t,k)
+                lhs=var.gstore[gs,k,t]
+                rhs=self.gdata.gstorageinfo['MinStore'][gs]
+                add_constraint(self,lhs,'>=',rhs,name)
+            
+            for tpr, t in zip(time, time[1:]):
+                name='gstor_def({0},{1},{2})'.format(gs,k,t)
+                self.constraints[name]= expando()
+                cc=self.constraints[name]                
+                cc.lhs=var.gstore[gs,k,t]
+                cc.rhs=var.gstore[gs,k,tpr]+var.gsin[gs,k,t]-var.gsout[gs,k,t]
+                cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
+                
+            t = time[0]
+                        
+            name='gstor_def({0},{1},{2})'.format(gs,k,t)
+            self.constraints[name]= expando()
+            cc=self.constraints[name]                
+            cc.lhs=var.gstore[gs,k,t]
+            cc.rhs=self.gdata.gstorageinfo['IniStore'][gs]+var.gsin[gs,k,t]-var.gsout[gs,k,t]
+            cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
+
+        
+        k = 'k0' # Gas storage content defined for 'central case' k0        
+        
+        name='gs_end({0},{1})'.format(gs,k)
+        self.constraints[name]= expando()
+        cc=self.constraints[name]                
+        cc.lhs=var.gstore[gs, k, time[-1]]
+        cc.rhs=self.gdata.gstorageinfo['IniStore'][gs]
+        cc.expr=m.addConstr(cc.lhs>=cc.rhs,name=name)
+
+    m.update()
+        
+def _build_constraints_gasRT_WeymouthApprox(self,dispatchGasDA,dispatchElecRT):
     
     m = self.model
     
@@ -780,8 +933,7 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
     for pl in pplines:
             ns, nr = pl
         
-            for s in scenarios:
-        
+            for s in scenarios:        
                 for tpr, t in zip(time, time[1:]):
                     name='line_store_rt({0},{1},{2})'.format(pl,s,t).replace(" ","")
                     lhs=var.lpack_rt[pl,s,t] -var.lpack_rt[pl,s,tpr] - var.qin_sr_rt[pl,s,t] + var.qout_sr_rt[pl,s,t]
@@ -924,6 +1076,214 @@ def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
 
  
     m.update()
+    
+def _build_constraints_gasRT_FlowBased(self,dispatchGasDA,dispatchElecRT):
+    
+    m = self.model
+    
+    var = self.variables
+    gnodes = self.gdata.gnodes
+    pplines = self.gdata.pplineorder
+    time = self.gdata.time
+    gndata = self.gdata.gnodedf
+    gstorage = self.gdata.gstorage     
+    gwells = self.gdata.wellsinfo.index.tolist()
+    bigM = self.gdata.bigM 
+    
+    scenarios = self.gdata.scenarios
+    
+    gprod = dispatchGasDA.gprod
+    qin_sr = dispatchGasDA.qin_sr
+    qout_sr = dispatchGasDA.qout_sr
+    
+    
+     # Nodal Gas Balance : Real-time
+    
+    # Here modeled only for 'uni-directional' gas flow (from S to R)    
+        
+    ###########################################################################    
+    # Swing constracts can be defined per Gas Node - Here defined per GFPP
+    # ... we need the GFPP node mapping and efficiencies 
+    ###########################################################################    
+    
+   
+    # Up/down reserve deployment by GFPP     
+    RUp_gfpp = dispatchElecRT.RUpSC.add(dispatchElecRT.RUp.loc[:, self.gdata.gfpp]) 
+    RDn_gfpp = dispatchElecRT.RDnSC.add(dispatchElecRT.RDn.loc[:, self.gdata.gfpp]) 
+    
+    Rgfpp = RUp_gfpp - RDn_gfpp
+    
+    # Day-ahead gas flows
+    qin_sr = dispatchGasDA.qin_sr
+    qout_sr = dispatchGasDA.qout_sr
+    
+    HR=self.gdata.generatorinfo.HR
+    
+    # Day-ahead gas storage schedule
+    gsin = dispatchGasDA.gsin
+    gsout = dispatchGasDA.gsout
+    
+        
+    for s in scenarios:
+        for gn in gnodes:
+            for t in time:
+                
+                name='gas_balance_rt({0},{1},{2})'.format(gn,s,t)
+                
+                lhs=      gb.quicksum(( var.gprodUp[gw,s,t]  - var.gprodDn[gw,s,t]) for gw in self.gdata.Map_Gn2Gp[gn])  \
+                        - gb.quicksum(( qout_sr[pl][t]['k0'] - var.qout_sr_rt[pl,s,t]) for pl in self.gdata.nodetoinpplines[gn]) \
+                        + gb.quicksum(( qin_sr[pl][t]['k0']  - var.qin_sr_rt[pl,s,t] )   for pl in self.gdata.nodetooutpplines[gn]) \
+                        + gb.quicksum(( var.gsout_rt[gs,s,t] - gsout[gs][t]['k0'] + gsin[gs][t]['k0'] - var.gsin_rt[gs,s,t]) for gs in self.gdata.Map_Gn2Gs[gn]) \
+                        - gb.quicksum(Rgfpp[gen][t,s]*(HR[gen]) for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn]) \
+                        + var.gshed_rt[gn,s,t] # Load SHedding
+
+                        
+                rhs = np.float64(0.0)  
+                add_constraint(self,lhs,'==',rhs,name)    
+    
+    for pl in pplines:
+        ns, nr = pl
+        for t in time: 
+            for s in scenarios: 
+                
+                name='gflow_sr_io_rt({0},{1},{2})'.format(pl,s,t).replace(" ","")
+                lhs=var.gflow_sr_rt[pl,s,t]-(var.qin_sr_rt[pl,s,t] + var.qout_sr_rt[pl,s,t]) * 0.5
+                rhs=np.float64(0.0)
+                add_constraint(self,-lhs,'==',-rhs,name)  
+                
+                name='gflow_sr_limit_rt({0},{1},{2})'.format(pl,s,t).replace(" ","")
+                lhs=var.gflow_sr_rt[pl,s,t]
+                rhs=self.gdata.pplinelimit[pl]
+                add_constraint(self,lhs,'<=',rhs,name)  
+ 
+    # Gas well maximum production
+
+    for gw in gwells:
+        for s in scenarios:
+            for t in time:
+                
+                name="gprodUp_max({0},{1},{2})".format(gw,s,t)           
+                lhs= var.gprodUp[gw,s,t]
+                rhs=self.gdata.wellsinfo['MaxProd'][gw]-gprod[gw][t]['k0']
+                add_constraint(self,lhs,'<=',rhs,name)
+                    
+                name="gprodDn_max({0},{1},{2})".format(gw,s,t)
+                lhs= var.gprodDn[gw,s,t]
+                rhs=gprod[gw][t]['k0']
+                add_constraint(self,lhs,'<=',rhs,name)
+    
+
+                       
+
+    '''
+    NB! gflow_rs_io = {} # Gas flow (R to S) only if bi-directional flow. 
+    This needs to be included in the line-pack definition constraint
+    '''
+    
+    for pl in pplines:
+            ns, nr = pl
+        
+            for s in scenarios:        
+                for t in time:
+                    name='line_store_rt({0},{1},{2})'.format(pl,s,t).replace(" ","")
+                    lhs - var.qin_sr_rt[pl,s,t] + var.qout_sr_rt[pl,s,t]
+                    rhs= np.float64(0.0)
+                    add_constraint(self,-lhs,'==',-rhs,name)
+                      
+                   
+    #                                        
+    # Gas Storage
+    for gs in self.gdata.gstorage:
+        for t in time:
+            for s in scenarios:
+                
+                name='gsinMax_rt({0},{1},{2})'.format(gs,t,s)
+                lhs=var.gsin_rt[gs,s,t]
+                rhs=self.gdata.gstorageinfo['MaxInFlow'][gs]
+                add_constraint(self,lhs,'<=',rhs,name)
+                
+                name='gsoutMax_rt({0},{1},{2})'.format(gs,t,s)
+                lhs=var.gsout_rt[gs,s,t]
+                rhs=self.gdata.gstorageinfo['MaxOutFlow'][gs]
+                add_constraint(self,lhs,'<=',rhs,name)
+                
+                
+                name='gstore_max_rt({0},{1},{2})'.format(gs,t,s)
+                lhs=var.gstore_rt[gs,s,t]
+                rhs=self.gdata.gstorageinfo['MaxStore'][gs]
+                add_constraint(self,lhs,'<=',rhs,name)
+                
+                name='gstore_min_rt({0},{1},{2})'.format(gs,t,s)
+                lhs=var.gstore_rt[gs,s,t]
+                rhs=self.gdata.gstorageinfo['MinStore'][gs]
+                add_constraint(self,lhs,'>=',rhs,name)
+    
+    for gs in gstorage:
+        for s in scenarios:
+            for tpr, t in zip(time, time[1:]):
+                
+                name='gstor_def_rt({0},{1},{2})'.format(gs,s,t)
+                lhs=var.gstore_rt[gs,s,t]
+                rhs= var.gstore_rt[gs,s,tpr]+var.gsin_rt[gs,s,t]-var.gsout_rt[gs,s,t]
+                add_constraint(self,-lhs,'==',-rhs,name)
+        
+        
+            t = time[0]
+        
+            name='gstor_def_rt({0},{1},{2})'.format(gs,s,t)
+            lhs=var.gstore_rt[gs,s,t]
+            rhs= self.gdata.gstorageinfo['IniStore'][gs]+var.gsin_rt[gs,s,t]-var.gsout_rt[gs,s,t]
+            add_constraint(self,-lhs,'==',-rhs,name)
+            
+
+            # At end of time the linepack should be +/- 10% percent of the initial value
+            # Actual deviations stored in defaults.FINAL_LP_DEV
+
+            name='gstor_end({0},{1})'.format(gs,s)
+            lhs=var.gstore_rt[gs, s, time[-1]]
+            rhs= self.gdata.gstorageinfo['IniStore'][gs]
+            add_constraint(self,lhs,'>=',rhs,name)
+                     
+                                    
+    
+    
+    # Gas shedding
+    for s in scenarios:
+        for gn in gnodes:
+            for t in time:
+                name = 'gas_shed_rt({0},{1},{2})'.format(gn,s,t)
+                lhs= var.gshed_rt[gn,s,t]
+                rhs= self.gdata.gasload[gn][t]
+                add_constraint(self,lhs,'<=',rhs,name)
+               
+    
+
+
+ 
+    m.update()
+
+def _build_constraints_gasDA(self):
+    #--- Get Parameters
+    if defaults.GasNetwork=='FlowBased':
+        _build_constraints_gasDA_FlowBased(self)
+    elif defaults.GasNetwork=='WeymouthApprox':
+        _build_constraints_gasDA_WeymouthApprox(self)
+    else:
+        print('Choose how to model the gas network')
+
+
+#==============================================================================
+# Real-time market
+#==============================================================================
+ 
+def _build_constraints_gasRT(self,dispatchGasDA,dispatchElecRT):
+    if defaults.GasNetwork=='FlowBased':
+        _build_constraints_gasRT_FlowBased(self,dispatchGasDA,dispatchElecRT)
+    
+    elif defaults.GasNetwork=='WeymouthApprox':
+        _build_constraints_gasRT_WeymouthApprox(self,dispatchGasDA,dispatchElecRT)
+    else:
+        print('Choose how to model the gas network')
     
     
     

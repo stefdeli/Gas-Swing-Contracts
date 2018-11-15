@@ -359,7 +359,54 @@ def Add_Obj(BLmodel,COMP):
     BLmodel.model.update()
  
 
+def Get_Obj(BLmodel,COMP):
+    # Get the objective from COMP and write it for BLmodel
+    NewObj=0.0
+    
+    obj=COMP.model.getObjective()
+    for i in range(obj.size()):
+        var_old=obj.getVar(i)
+        coeff=obj.getCoeff(i)           
+        var_new=BLmodel.model.getVarByName(var_old.VarName)
+        NewObj=NewObj+coeff*var_new
+    return NewObj
+
+
+def Get_Dual_Obj(BLmodel,COMP):
+    # Get the dual objective from COMP and write it for BLmodel
+    NewObj=0.0
+    
+    for con in COMP.model.getConstrs():
+
+        conname=con.ConstrName
+        if conname[0:2]=='mu':
+            continue
+        elif conname[0:6]=='lambda':
+            continue
+        elif conname[0:4]=='SOS1':
+            continue
+        elif conname[0:4]=='dLag':
+            continue
+        
+        sense=con.Sense
+        RHS=con.RHS
+        
+        if sense=='=':
+            dual=BLmodel.model.getVarByName('lambda_'+conname)
+        else:
+            dual=BLmodel.model.getVarByName('mu_'+conname)
+    
+        if sense=='=':
+            NewObj=NewObj+dual*RHS
+        elif sense=='<':
+            NewObj=NewObj-dual*RHS
+        else:
+            NewObj=NewObj+dual*RHS
+
+    return NewObj
+
 def Compare(BLmodel,COMP):
+        
     df=pd.DataFrame([[var.VarName, 
                       var.x,
                       BLmodel.model.getVarByName(var.VarName).x,
@@ -441,51 +488,98 @@ mGDA.model.optimize()
 mGRT.model.optimize()
 
 
-#--- Recreate COMP models Independent
+#--- Recreate COMP models Independently
+
+#--- mSEDA
 model_SEDA=expando()
 model_SEDA.model=gb.Model()
 Add_Vars(model_SEDA,mSEDA_COMP)
 Add_Constrs(model_SEDA,mSEDA_COMP)
 Add_Obj(model_SEDA,mSEDA_COMP)
+model_SEDA.model.update()
 model_SEDA.model.optimize()
+
+#--- mGDA
 
 model_GDA=expando()
 model_GDA.model=gb.Model()
 Add_Vars(model_GDA,mGDA_COMP)
 Add_Constrs(model_GDA,mGDA_COMP)
 Add_Obj(model_GDA,mGDA_COMP)
+model_GDA.model.update()
 model_GDA.model.optimize()
+
+#--- mGRT
 
 model_GRT=expando()
 model_GRT.model=gb.Model()
 Add_Vars(model_GRT,mGRT_COMP)
 Add_Constrs(model_GRT,mGRT_COMP)
 Add_Obj(model_GRT,mGRT_COMP)
+model_GRT.model.update()
 model_GRT.model.optimize()
+
 
 
 df_mSEDA_only=Compare(model_SEDA,mSEDA_COMP) 
 df_mGDA_only=Compare(model_GDA,mGDA_COMP) 
 df_mGRT_only=Compare(model_GRT,mGRT_COMP) 
 
+
+
+model_SEDA.model.reset()
+Obj=Get_Obj(model_SEDA,mSEDA_COMP)
+Dualobj=Get_Dual_Obj(model_SEDA,model_SEDA)
+model_SEDA.model.setObjective(Obj,gb.GRB.MINIMIZE)
+model_SEDA.model.update()
+model_SEDA.model.optimize()
+model_SEDA.model.reset()
+model_SEDA.model.setObjective(Dualobj,gb.GRB.MAXIMIZE)
+model_SEDA.model.update()
+model_SEDA.model.optimize()
+model_SEDA.model.reset()
+
+model_GDA.model.reset()
+Obj=Get_Obj(model_GDA,mGDA_COMP)
+Dualobj=Get_Dual_Obj(model_GDA,model_GDA)
+model_GDA.model.setObjective(Obj,gb.GRB.MINIMIZE)
+model_GDA.model.update()
+model_GDA.model.optimize()
+model_GDA.model.reset()
+model_GDA.model.setObjective(Dualobj,gb.GRB.MAXIMIZE)
+model_GDA.model.update()
+model_GDA.model.optimize()
+model_GDA.model.reset()
+
+model_GRT.model.reset()
+Obj=Get_Obj(model_GRT,mGRT_COMP)
+Dualobj=Get_Dual_Obj(model_GRT,model_GRT)
+model_GRT.model.setObjective(Obj,gb.GRB.MINIMIZE)
+model_GRT.model.update()
+model_GRT.model.optimize()
+model_GRT.model.reset()
+model_GRT.model.setObjective(Dualobj,gb.GRB.MAXIMIZE)
+model_GRT.model.update()
+model_GRT.model.optimize()
+model_GRT.model.reset()
+
+
+
+COMP=model_SEDA
+NewObj=0.0
+Eq=0.0
+G=0.0
+L=0.0
+
+model_SEDA.model.setObjective(NewObj,gb.GRB.MAXIMIZE)
+ 
+
+
+
 #--- Bilevel Model (All subproblems together)
-
-
-
-        
+       
 f2d=False         
 BLmodel=Bilevel_Model(f2d)
-
-# Add contract pricce for every gas node with generator
-gas_nodes = list(BLmodel.edata.Map_Eg2Gn.values())
-# result may be list of lists, so flatted
-flat_list = [item for sublist in gas_nodes for item in sublist]
-
-GasGenNodes=set(flat_list)
-for node in GasGenNodes:
-    name='ContractPrice({0})'.format(node)
-    BLmodel.model.addVar(lb=0.0,name=name)
-    BLmodel.model.update()
 
 print('Adding Variables')
 Add_Vars(BLmodel,mSEDA_COMP)
@@ -497,12 +591,27 @@ Add_Constrs(BLmodel,mSEDA_COMP)
 Add_Constrs(BLmodel,mGDA_COMP)
 Add_Constrs(BLmodel,mGRT_COMP)
 
-
 print('Adding Objective')
+
 Add_Obj(BLmodel,mSEDA_COMP)
 Add_Obj(BLmodel,mGDA_COMP)
 Add_Obj(BLmodel,mGRT_COMP)
 
+BLmodel.model.optimize() 
+BLmodel.model.reset()
+
+# LINK PROBLEMS AND INTRODUCE NEW VARIABLE
+
+# Add contract pricce for every gas node with generator
+gas_nodes = list(BLmodel.edata.Map_Eg2Gn.values())
+# result may be list of lists, so flatted
+flat_list = [item for sublist in gas_nodes for item in sublist]
+
+GasGenNodes=set(flat_list)
+for node in GasGenNodes:
+    name='ContractPrice({0})'.format(node)
+    BLmodel.model.addVar(lb=0.0,name=name)
+    BLmodel.model.update()
    
 ADD_mSEDA_DA_Linking_Constraints(BLmodel)
 ADD_mSEDA_RT_Linking_Constraints(BLmodel)
@@ -512,30 +621,82 @@ ADD_mGRT_Linking_Constraints(BLmodel)
 print('Bilevel Model is built')
 BLmodel.model.write('BLmodel.lp')            
 
-# change objective
-#name='ContractPrice({0})'.format('ng102')
-#name='Pgen(g1,t1)'
-#var=BLmodel.model.getVarByName(name)
-#BLmodel.model.setObjective(var,gb.GRB.MINIMIZE)    
-    
-#obj=0.0
-#for var in BLmodel.model.getVars():
-#    obj=obj+var
-#BLmodel.model.setObjective(obj,gb.GRB.MINIMIZE)    
- 
 
-# 
+BLmodel.model.Params.timelimit = 25.0
+BLmodel.model.optimize() 
+BLmodel.model.reset()
+
+
+
 #BLmodel.model.Params.DegenMoves=-1
 #BLmodel.model.Params.Heuristics=0.05
-BLmodel.model.Params.timelimit = 25.0
+#BLmodel.model.Params.timelimit = 25.0
 #BLmodel.model.Params.MIPFocus=1
 #BLmodel.model.Params.StartNodeLimit=1e6
 #BLmodel.model.Params.Cuts=1
 #BLmodel.model.Params.Presolve=-1
 #BLmodel.model.Params.NodeMethod=2
-BLmodel.model.Params.MIPGap=0.5
+#BLmodel.model.Params.MIPGap=0.5
+#BLmodel.model.optimize() 
+#BLmodel.model.reset()
+
+
+Dualobj_mSEDA=Get_Dual_Obj(BLmodel,mSEDA_COMP)
+Dualobj_mGDA =Get_Dual_Obj(BLmodel,mGDA_COMP)
+Dualobj_mGRT=Get_Dual_Obj(BLmodel,mGRT_COMP)
+
+Obj_mSEDA=Get_Obj(BLmodel,mSEDA_COMP)
+Obj_mGDA =Get_Obj(BLmodel,mGDA_COMP)
+Obj_mGRT=Get_Obj(BLmodel,mGRT_COMP)
+
+
+#--- Non gas Generators Objective
+gendata = BLmodel.edata.generatorinfo
+scenarios = BLmodel.edata.scenarios
+scenarioprob={}    
+scenarioprob = {s: BLmodel.edata.scen_wgp[s][2] for s in BLmodel.edata.scen_wgp.keys()}    
+scengprt = {s: BLmodel.edata.scen_wgp[s][0] for s in BLmodel.edata.scen_wgp.keys()}
+P_up=defaults.RESERVES_UP_PREMIUM
+P_dn=defaults.RESERVES_DN_PREMIUM
+Non_Gas_obj=0.0
+for t in BLmodel.edata.time:
+    for s in scenarios:
+        var_name='Lshed({0},{1})'.format(s,t)
+        Lshed= BLmodel.model.getVarByName(var_name)
+        Non_Gas_obj=Non_Gas_obj+ scenarioprob[s]*defaults.VOLL * Lshed
+        
+    for gen in BLmodel.edata.nongfpp:
+        var_name='Pgen({0},{1})'.format(gen,t)
+        Pgen = BLmodel.model.getVarByName(var_name)
+        Non_Gas_obj=Non_Gas_obj+gendata.lincost[gen]*Pgen
+        
+        for s in scenarios:
+            RUp_name='RUp({0},{1},{2})'.format(gen,s,t)
+            RDn_name='RDn({0},{1},{2})'.format(gen,s,t)
+            
+            RUp = BLmodel.model.getVarByName(RUp_name)
+            RDn = BLmodel.model.getVarByName(RDn_name)
+            Temp=scenarioprob[s]*gendata.lincost[gen]*(P_up*RUp-P_dn*RDn)
+            Non_Gas_obj=Non_Gas_obj+Temp
+
+
+ # Min costs - Income
+Costs = Obj_mGDA + Obj_mGRT
+Income= -Dualobj_mSEDA - Non_Gas_obj
+ 
+BLmodel.model.setObjective(Costs-Income  ,gb.GRB.MAXIMIZE)
+BLmodel.model.Params.timelimit = 25.0
 BLmodel.model.optimize() 
-BLmodel.model.reset()
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -550,14 +711,14 @@ BLmodel.model.reset()
 #Q1[Q1.Name.str.contains('k0')]
 #
 #
-df=pd.DataFrame([[var.VarName,var.x] for var in model_GRT.model.getVars() ],columns=['Name','Value'])
-df[df.Name.str.contains('lambda_gas_balan',regex=True)]
+#df=pd.DataFrame([[var.VarName,var.x] for var in model_GRT.model.getVars() ],columns=['Name','Value'])
+#df[df.Name.str.contains('lambda_gas_balan',regex=True)]
 #
 #df=pd.DataFrame([[con.ConstrName,con] for con in model_GRT.model.getConstrs() ],columns=['Name','Value'])
 #Q1=df[df.Name.str.contains('gprodUp_max',regex=True)]
 #
-df=pd.DataFrame([[var.VarName,var.x] for var in model_GDA.model.getVars() ],columns=['Name','Value'])
-df[df.Name.str.contains('lambda_gas_balance_da\(ng102,k0',regex=True)]
+#df=pd.DataFrame([[var.VarName,var.x] for var in model_GDA.model.getVars() ],columns=['Name','Value'])
+#df[df.Name.str.contains('lambda_gas_balance_da\(ng102,k0',regex=True)]
 
 #
 #df=pd.DataFrame([con.ConstrName for con in BLmodel.model.getConstrs() ],columns=['Name'])

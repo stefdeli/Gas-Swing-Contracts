@@ -85,8 +85,13 @@ def _build_objective_gasDA(self):
         for t in time:
             Cost[w][t]=wdata.Cost[w]+int(t[1:])
     
+    if defaults.GasNetwork=='WeymouthApprox':
+        Pressure_Degeneracy=gb.quicksum( self.gdata.EPS*(var.pr[pl[0],k,t]-var.pr[pl[1],k,t]) for t in time for k in k_obj for pl in pipes)
+    else:
+        Pressure_Degeneracy=0.0
+    
     m.setObjective(gb.quicksum(Cost[gw][t]*var.gprod[gw,k,t] for gw in wells for k in k_obj for t in time)+
-                   gb.quicksum( self.gdata.EPS*(var.pr[pl[0],k,t]-var.pr[pl[1],k,t]) for t in time for k in k_obj for pl in pipes)+
+                   Pressure_Degeneracy+
                    gb.quicksum(gsdata.Cost[gs]*(var.gsin[gs,k,t]+var.gsout[gs,k,t]) for gs in gstorage for k in k_obj for t in time),                                      
                    gb.GRB.MINIMIZE) 
     
@@ -157,13 +162,16 @@ def _build_objective_gasRT(self):
     for w in wells:
         for t in time:
             Cost[w][t]=wdata.Cost[w]+int(t[1:])
-    
+            
+    if defaults.GasNetwork=='WeymouthApprox':
+        Pressure_Degeneracy=gb.quicksum( self.gdata.EPS*(var.pr_rt[pl[0],s,t] -var.pr_rt[pl[1],s,t]) for t in time for pl in pipes for s in scenarios)    
+    else:
+        Pressure_Degeneracy=0.0 
 
     m.setObjective(gb.quicksum(scenarioprob[s] * (
                    gb.quicksum(Cost[w][t]*(defaults.RESERVES_UP_PREMIUM*var.gprodUp[gw,s,t] - defaults.RESERVES_DN_PREMIUM*var.gprodDn[gw,s,t] ) for gw in wells for t in time) 
-                   +gb.quicksum(defaults.VOLL * var.gshed_rt[gn,s,t] for gn in gnodes for t in time) 
-                   +gb.quicksum( self.gdata.EPS*(var.pr_rt[pl[0],s,t]-var.pr_rt[pl[1],s,t]) for t in time for pl in pipes)
-                   ) for s in scenarios),    
+                   +gb.quicksum(defaults.VOLL * var.gshed_rt[gn,s,t] for gn in gnodes for t in time)) for s in scenarios) 
+                   +Pressure_Degeneracy,
                    gb.GRB.MINIMIZE) 
     
     # NB! Gas storage costs NOT included in the objective function

@@ -1,8 +1,0 @@
-\ Model _copy
-\ LP format - for model browsing. Use MPS format to capture full model detail.
-Minimize
- 
-Subject To
- dLag/Pgen(g1,t1): = -80
-Bounds
-End

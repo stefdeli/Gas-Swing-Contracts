@@ -6,6 +6,7 @@ Created on Fri Dec  8 13:42:43 2017
 
 import pandas as pd
 import numpy as np
+import defaults
 
     
 def _results_StochD(self):
@@ -82,11 +83,12 @@ def _results_gasDA(self, f2d):
     iterables = [self.gdata.time, self.gdata.sclim]
     index = pd.MultiIndex.from_product(iterables, names=['Time', 'Sclim'])
     
-    r.lpack = pd.DataFrame([[var.lpack[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=index, columns=self.gdata.pplineorder)
     r.gprod = pd.DataFrame([[var.gprod[gw,k,t].x for gw in self.gdata.wells] for t in time for k in sclim], index=index, columns=self.gdata.wells)
     r.gflow_sr = pd.DataFrame([[var.gflow_sr[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=index, columns=self.gdata.pplineorder)
     
-    r.pr = pd.DataFrame([[var.pr[ng,k,t].x for ng in self.gdata.gnodeorder] for t in time for k in sclim], index=index, columns=self.gdata.gnodeorder)
+    if defaults.GasNetwork=='WeymouthApprox':
+        r.pr = pd.DataFrame([[var.pr[ng,k,t].x for ng in self.gdata.gnodeorder] for t in time for k in sclim], index=index, columns=self.gdata.gnodeorder)
+        r.lpack = pd.DataFrame([[var.lpack[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=index, columns=self.gdata.pplineorder)
     
     
     r.qin_sr = pd.DataFrame([[var.qin_sr[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=index, columns=self.gdata.pplineorder)    
@@ -148,10 +150,12 @@ def _results_gasRT(self, f2d):
     iterables = [self.gdata.time, scenarios]
     index = pd.MultiIndex.from_product(iterables, names=['Time', 'Scenarios'])
     
-    r.lpack_rt = pd.DataFrame([[var.lpack_rt[pl,s,t].x for pl in self.gdata.pplineorder] for t in time for s in scenarios], index=index, columns=self.gdata.pplineorder)
     r.gprodUp = pd.DataFrame([[var.gprodUp[gw,s,t].x for gw in self.gdata.wells] for t in time for s in scenarios], index=index, columns=self.gdata.wells)
     r.gprodDn = pd.DataFrame([[var.gprodDn[gw,s,t].x for gw in self.gdata.wells] for t in time for s in scenarios], index=index, columns=self.gdata.wells)        
-    r.pr_rt = pd.DataFrame([[var.pr_rt[ng,k,t].x for ng in self.gdata.gnodeorder] for t in time for k in scenarios], index=index, columns=self.gdata.gnodeorder)
+
+    if defaults.GasNetwork=='WeymouthApprox':
+        r.lpack_rt = pd.DataFrame([[var.lpack_rt[pl,s,t].x for pl in self.gdata.pplineorder] for t in time for s in scenarios], index=index, columns=self.gdata.pplineorder)
+        r.pr_rt = pd.DataFrame([[var.pr_rt[ng,k,t].x for ng in self.gdata.gnodeorder] for t in time for k in scenarios], index=index, columns=self.gdata.gnodeorder)
     
     r.gflow_sr_rt = pd.DataFrame([[var.gflow_sr_rt[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in scenarios], index=index, columns=self.gdata.pplineorder)
     r.qin_sr_rt = pd.DataFrame([[var.qin_sr_rt[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in scenarios], index=index, columns=self.gdata.pplineorder)    

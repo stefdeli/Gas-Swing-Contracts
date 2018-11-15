@@ -445,7 +445,9 @@ class GasRT():
         GasData_Load._load_gas_storage(self)
         GasData_Load._load_scenarios(self,dispatchElecRT)
         
-        GasData_Load._load_SCinfo(self)          
+        GasData_Load._load_SCinfo(self)   
+        
+
       
     def _build_model(self,dispatchGasDA,dispatchElecRT):
         self.model = gb.Model()

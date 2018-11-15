@@ -6,7 +6,7 @@ Created on Thu Dec  7 16:58:17 2017
 """
 
 import gurobipy as gb
-
+import defaults
 #==============================================================================
 # Gas system variables
 #==============================================================================
@@ -25,17 +25,29 @@ def _build_variables_gasDA(self):
         
         var=self.variables
         sclim = self.gdata.sclim # Swing contract limits
-    
+        
+        if defaults.GasNetwork=='WeymouthApprox':
         # Nodal Pressures
-        var.pr = {}
-        for gn in gnodes:
-            for t in time:
-                for k in sclim:
-                    name='pres({0},{1},{2})'.format(gn,k,t)
-                    Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)
-                    var.pr[gn,k,t] = Temp
-                    primal[name]         = Temp
-                
+            var.pr = {}
+            for gn in gnodes:
+                for t in time:
+                    for k in sclim:
+                        name='pres({0},{1},{2})'.format(gn,k,t)
+                        Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)
+                        var.pr[gn,k,t] = Temp
+                        primal[name]         = Temp
+            
+            var.lpack = {}
+            
+            for pl in pplines:
+                for t in time:
+                    for k in sclim:
+                        
+                        name='lpack({0},{1},{2})'.format(pl,k,t).replace(" ","")
+                        Temp= m.addVar(lb=0.0, name=name )
+                        var.lpack[pl,k,t] = Temp
+                        primal[name]=Temp
+                    
         # Gas Flow
         var.gflow_sr = {} # Gas flow from sending to receiving end                  
         for pl in pplines:
@@ -64,19 +76,14 @@ def _build_variables_gasDA(self):
                             primal[name]  = Temp
                             
         # Linepack
-        var.lpack = {}
+
         var.qin_sr = {}         
         var.qout_sr = {}
         
         for pl in pplines:
             for t in time:
                 for k in sclim:
-                    
-                    name='lpack({0},{1},{2})'.format(pl,k,t).replace(" ","")
-                    Temp= m.addVar(lb=0.0, name=name )
-                    var.lpack[pl,k,t] = Temp
-                    primal[name]=Temp
-                    
+                                       
                     name='qin_sr({0},{1},{2})'.format(pl,k,t).replace(" ","")
                     Temp= m.addVar(lb=0.0, name=name)  
                     var.qin_sr[pl,k,t] = Temp
@@ -184,30 +191,37 @@ def _build_variables_gasRT(self,mtype,dispatchElecRT):
     
     for s in scenarios:
         for t in time:
-        
-            for gn in gnodes:
-                name='pres_rt({0},{1},{2})'.format(gn,s,t)
-                Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)
-                var.pr_rt[gn,s,t] = Temp
-                primal[name]=Temp
+            if defaults.GasNetwork=='WeymouthApprox':
                 
+                for gn in gnodes:
+                    name='pres_rt({0},{1},{2})'.format(gn,s,t)
+                    Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)
+                    var.pr_rt[gn,s,t] = Temp
+                    primal[name]=Temp
+                for pl in pplines:               
+                    name='lpack_rt({0},{1},{2})'.format(pl,s,t).replace(" ","")
+                    Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY,name=name)
+                    var.lpack_rt[pl,s,t] =Temp 
+                    primal[name]=Temp
+                    
+            
+            for gn in gnodes:  
                 name='gshed({0},{1},{2})'.format(gn,s,t)
                 Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)
                 var.gshed_rt[gn,s,t] =Temp
                 primal[name]=Temp
                 
                 
-            for pl in pplines:
+
                 
+                
+            for pl in pplines:
                 name='gflow_sr_rt({0},{1},{2})'.format(pl,s,t).replace(" ","")
                 Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)    
                 var.gflow_sr_rt[pl,s,t] =Temp 
                 primal[name]=Temp
                 
-                name='lpack_rt({0},{1},{2})'.format(pl,s,t).replace(" ","")
-                Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY,name=name)
-                var.lpack_rt[pl,s,t] =Temp 
-                primal[name]=Temp
+
                 
                 name='qin_sr_rt({0},{1},{2})'.format(pl,s,t).replace(" ","")
                 Temp= m.addVar(lb=0.0,ub=gb.GRB.INFINITY,  name=name)        

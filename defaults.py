@@ -54,4 +54,9 @@ RESERVES_DN_PREMIUM = 0.95
 # Remove equality constraints and replace lhs==rhs with lhs<=rhs and lhs>=rhs
 REMOVE_EQUALITY=False
 
-GUROBI_OUTPUT=False
+# show the Gurobi output:True of False
+GUROBI_OUTPUT=True
+
+# HOw should the gas network be modelled: FlowBased or WeymouthApprox
+GasNetwork='FlowBased'
+#GasNetwork='WeymouthApprox'
