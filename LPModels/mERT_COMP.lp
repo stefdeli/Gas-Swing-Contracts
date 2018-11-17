@@ -51,329 +51,331 @@ Minimize
 Subject To
  PowerBalance_RT(s1,t1): RUp(g1,s1,t1) - RDn(g1,s1,t1) + RUpSC(g1,s1,t1)
    - RDnSC(g1,s1,t1) - Wspill(w1,s1,t1) + Lshed(s1,t1)
-   = -9.680761980000003
+   = -9.680761979999994
  PowerBalance_RT(s1,t2): RUp(g1,s1,t2) - RDn(g1,s1,t2) + RUpSC(g1,s1,t2)
    - RDnSC(g1,s1,t2) - Wspill(w1,s1,t2) + Lshed(s1,t2)
-   = -9.904225260000004
+   = -4.952112629999999
  PowerBalance_RT(s1,t3): RUp(g1,s1,t3) - RDn(g1,s1,t3) + RUpSC(g1,s1,t3)
-   - RDnSC(g1,s1,t3) - Wspill(w1,s1,t3) + Lshed(s1,t3) = -10.34934216
+   - RDnSC(g1,s1,t3) - Wspill(w1,s1,t3) + Lshed(s1,t3)
+   = -5.174671079999996
  PowerBalance_RT(s1,t4): RUp(g1,s1,t4) - RDn(g1,s1,t4) + RUpSC(g1,s1,t4)
    - RDnSC(g1,s1,t4) - Wspill(w1,s1,t4) + Lshed(s1,t4)
-   = -9.887749590000002
+   = -9.887749589999993
  PowerBalance_RT(s1,t5): RUp(g1,s1,t5) - RDn(g1,s1,t5) + RUpSC(g1,s1,t5)
-   - RDnSC(g1,s1,t5) - Wspill(w1,s1,t5) + Lshed(s1,t5) = -10.03755486
+   - RDnSC(g1,s1,t5) - Wspill(w1,s1,t5) + Lshed(s1,t5)
+   = -5.018777429999997
  PowerBalance_RT(s1,t6): RUp(g1,s1,t6) - RDn(g1,s1,t6) + RUpSC(g1,s1,t6)
    - RDnSC(g1,s1,t6) - Wspill(w1,s1,t6) + Lshed(s1,t6)
-   = -9.084459510000002
+   = -4.542229754999996
  PowerBalance_RT(s1,t7): RUp(g1,s1,t7) - RDn(g1,s1,t7) + RUpSC(g1,s1,t7)
    - RDnSC(g1,s1,t7) - Wspill(w1,s1,t7) + Lshed(s1,t7)
-   = -8.297329170000001
+   = -4.148664584999995
  PowerBalance_RT(s1,t8): RUp(g1,s1,t8) - RDn(g1,s1,t8) + RUpSC(g1,s1,t8)
    - RDnSC(g1,s1,t8) - Wspill(w1,s1,t8) + Lshed(s1,t8)
-   = -6.673404719999999
+   = -3.336702359999997
  PowerBalance_RT(s1,t9): RUp(g1,s1,t9) - RDn(g1,s1,t9) + RUpSC(g1,s1,t9)
    - RDnSC(g1,s1,t9) - Wspill(w1,s1,t9) + Lshed(s1,t9)
-   = -5.238191820000003
+   = -2.619095909999999
  PowerBalance_RT(s1,t10): RUp(g1,s1,t10) - RDn(g1,s1,t10)
    + RUpSC(g1,s1,t10) - RDnSC(g1,s1,t10) - Wspill(w1,s1,t10)
-   + Lshed(s1,t10) = -3.874596150000003
+   + Lshed(s1,t10) = -1.937298075
  PowerBalance_RT(s1,t11): RUp(g1,s1,t11) - RDn(g1,s1,t11)
    + RUpSC(g1,s1,t11) - RDnSC(g1,s1,t11) - Wspill(w1,s1,t11)
-   + Lshed(s1,t11) = -2.982078359999997
+   + Lshed(s1,t11) = -1.491039179999999
  PowerBalance_RT(s1,t12): RUp(g1,s1,t12) - RDn(g1,s1,t12)
    + RUpSC(g1,s1,t12) - RDnSC(g1,s1,t12) - Wspill(w1,s1,t12)
-   + Lshed(s1,t12) = -2.665096740000002
+   + Lshed(s1,t12) = -2.665096739999993
  PowerBalance_RT(s1,t13): RUp(g1,s1,t13) - RDn(g1,s1,t13)
    + RUpSC(g1,s1,t13) - RDnSC(g1,s1,t13) - Wspill(w1,s1,t13)
-   + Lshed(s1,t13) = -2.730935159999998
+   + Lshed(s1,t13) = -1.365467579999999
  PowerBalance_RT(s1,t14): RUp(g1,s1,t14) - RDn(g1,s1,t14)
    + RUpSC(g1,s1,t14) - RDnSC(g1,s1,t14) - Wspill(w1,s1,t14)
-   + Lshed(s1,t14) = -3.502337909999998
+   + Lshed(s1,t14) = -1.751168954999999
  PowerBalance_RT(s1,t15): RUp(g1,s1,t15) - RDn(g1,s1,t15)
    + RUpSC(g1,s1,t15) - RDnSC(g1,s1,t15) - Wspill(w1,s1,t15)
-   + Lshed(s1,t15) = -3.981028050000001
+   + Lshed(s1,t15) = -1.990514025
  PowerBalance_RT(s1,t16): RUp(g1,s1,t16) - RDn(g1,s1,t16)
    + RUpSC(g1,s1,t16) - RDnSC(g1,s1,t16) - Wspill(w1,s1,t16)
-   + Lshed(s1,t16) = -3.85869564
+   + Lshed(s1,t16) = -1.929347819999999
  PowerBalance_RT(s1,t17): RUp(g1,s1,t17) - RDn(g1,s1,t17)
    + RUpSC(g1,s1,t17) - RDnSC(g1,s1,t17) - Wspill(w1,s1,t17)
-   + Lshed(s1,t17) = -3.236329140000002
+   + Lshed(s1,t17) = -3.236329139999993
  PowerBalance_RT(s1,t18): RUp(g1,s1,t18) - RDn(g1,s1,t18)
    + RUpSC(g1,s1,t18) - RDnSC(g1,s1,t18) - Wspill(w1,s1,t18)
-   + Lshed(s1,t18) = -3.035806169999996
+   + Lshed(s1,t18) = -3.035806169999993
  PowerBalance_RT(s1,t19): RUp(g1,s1,t19) - RDn(g1,s1,t19)
    + RUpSC(g1,s1,t19) - RDnSC(g1,s1,t19) - Wspill(w1,s1,t19)
-   + Lshed(s1,t19) = -2.888256510000002
+   + Lshed(s1,t19) = -1.444128254999998
  PowerBalance_RT(s1,t20): RUp(g1,s1,t20) - RDn(g1,s1,t20)
    + RUpSC(g1,s1,t20) - RDnSC(g1,s1,t20) - Wspill(w1,s1,t20)
-   + Lshed(s1,t20) = -2.717600999999998
+   + Lshed(s1,t20) = -2.717600999999992
  PowerBalance_RT(s1,t21): RUp(g1,s1,t21) - RDn(g1,s1,t21)
    + RUpSC(g1,s1,t21) - RDnSC(g1,s1,t21) - Wspill(w1,s1,t21)
-   + Lshed(s1,t21) = -2.42519778
+   + Lshed(s1,t21) = -1.212598889999999
  PowerBalance_RT(s1,t22): RUp(g1,s1,t22) - RDn(g1,s1,t22)
    + RUpSC(g1,s1,t22) - RDnSC(g1,s1,t22) - Wspill(w1,s1,t22)
-   + Lshed(s1,t22) = -2.247163949999999
+   + Lshed(s1,t22) = -2.247163949999994
  PowerBalance_RT(s1,t23): RUp(g1,s1,t23) - RDn(g1,s1,t23)
    + RUpSC(g1,s1,t23) - RDnSC(g1,s1,t23) - Wspill(w1,s1,t23)
-   + Lshed(s1,t23) = -1.94173392
+   + Lshed(s1,t23) = -1.941733919999995
  PowerBalance_RT(s1,t24): RUp(g1,s1,t24) - RDn(g1,s1,t24)
    + RUpSC(g1,s1,t24) - RDnSC(g1,s1,t24) - Wspill(w1,s1,t24)
-   + Lshed(s1,t24) = -1.253875589999998
+   + Lshed(s1,t24) = -0.6269377949999992
  PowerBalance_RT(s2,t1): RUp(g1,s2,t1) - RDn(g1,s2,t1) + RUpSC(g1,s2,t1)
-   - RDnSC(g1,s2,t1) - Wspill(w1,s2,t1) + Lshed(s2,t1) = -3.55271e-15
+   - RDnSC(g1,s2,t1) - Wspill(w1,s2,t1) + Lshed(s2,t1) = 5.32907e-15
  PowerBalance_RT(s2,t2): RUp(g1,s2,t2) - RDn(g1,s2,t2) + RUpSC(g1,s2,t2)
-   - RDnSC(g1,s2,t2) - Wspill(w1,s2,t2) + Lshed(s2,t2) = -3.55271e-15
+   - RDnSC(g1,s2,t2) - Wspill(w1,s2,t2) + Lshed(s2,t2) = 4.952112630000002
  PowerBalance_RT(s2,t3): RUp(g1,s2,t3) - RDn(g1,s2,t3) + RUpSC(g1,s2,t3)
-   - RDnSC(g1,s2,t3) - Wspill(w1,s2,t3) + Lshed(s2,t3) = 1.77636e-15
+   - RDnSC(g1,s2,t3) - Wspill(w1,s2,t3) + Lshed(s2,t3) = 5.174671080000005
  PowerBalance_RT(s2,t4): RUp(g1,s2,t4) - RDn(g1,s2,t4) + RUpSC(g1,s2,t4)
-   - RDnSC(g1,s2,t4) - Wspill(w1,s2,t4) + Lshed(s2,t4) = 0
+   - RDnSC(g1,s2,t4) - Wspill(w1,s2,t4) + Lshed(s2,t4) = 8.88178e-15
  PowerBalance_RT(s2,t5): RUp(g1,s2,t5) - RDn(g1,s2,t5) + RUpSC(g1,s2,t5)
-   - RDnSC(g1,s2,t5) - Wspill(w1,s2,t5) + Lshed(s2,t5) = 1.77636e-15
+   - RDnSC(g1,s2,t5) - Wspill(w1,s2,t5) + Lshed(s2,t5) = 5.018777430000002
  PowerBalance_RT(s2,t6): RUp(g1,s2,t6) - RDn(g1,s2,t6) + RUpSC(g1,s2,t6)
-   - RDnSC(g1,s2,t6) - Wspill(w1,s2,t6) + Lshed(s2,t6) = -1.77636e-15
+   - RDnSC(g1,s2,t6) - Wspill(w1,s2,t6) + Lshed(s2,t6) = 4.542229755000005
  PowerBalance_RT(s2,t7): RUp(g1,s2,t7) - RDn(g1,s2,t7) + RUpSC(g1,s2,t7)
-   - RDnSC(g1,s2,t7) - Wspill(w1,s2,t7) + Lshed(s2,t7) = -1.77636e-15
+   - RDnSC(g1,s2,t7) - Wspill(w1,s2,t7) + Lshed(s2,t7) = 4.148664585000004
  PowerBalance_RT(s2,t8): RUp(g1,s2,t8) - RDn(g1,s2,t8) + RUpSC(g1,s2,t8)
-   - RDnSC(g1,s2,t8) - Wspill(w1,s2,t8) + Lshed(s2,t8) = 8.88178e-16
+   - RDnSC(g1,s2,t8) - Wspill(w1,s2,t8) + Lshed(s2,t8) = 3.336702360000003
  PowerBalance_RT(s2,t9): RUp(g1,s2,t9) - RDn(g1,s2,t9) + RUpSC(g1,s2,t9)
-   - RDnSC(g1,s2,t9) - Wspill(w1,s2,t9) + Lshed(s2,t9) = -2.66454e-15
+   - RDnSC(g1,s2,t9) - Wspill(w1,s2,t9) + Lshed(s2,t9) = 2.619095910000001
  PowerBalance_RT(s2,t10): RUp(g1,s2,t10) - RDn(g1,s2,t10)
    + RUpSC(g1,s2,t10) - RDnSC(g1,s2,t10) - Wspill(w1,s2,t10)
-   + Lshed(s2,t10) = -2.22045e-15
+   + Lshed(s2,t10) = 1.937298075000001
  PowerBalance_RT(s2,t11): RUp(g1,s2,t11) - RDn(g1,s2,t11)
    + RUpSC(g1,s2,t11) - RDnSC(g1,s2,t11) - Wspill(w1,s2,t11)
-   + Lshed(s2,t11) = 3.10862e-15
+   + Lshed(s2,t11) = 1.491039180000001
  PowerBalance_RT(s2,t12): RUp(g1,s2,t12) - RDn(g1,s2,t12)
    + RUpSC(g1,s2,t12) - RDnSC(g1,s2,t12) - Wspill(w1,s2,t12)
-   + Lshed(s2,t12) = -2.22045e-15
+   + Lshed(s2,t12) = 6.66134e-15
  PowerBalance_RT(s2,t13): RUp(g1,s2,t13) - RDn(g1,s2,t13)
    + RUpSC(g1,s2,t13) - RDnSC(g1,s2,t13) - Wspill(w1,s2,t13)
-   + Lshed(s2,t13) = 1.77636e-15
+   + Lshed(s2,t13) = 1.365467580000001
  PowerBalance_RT(s2,t14): RUp(g1,s2,t14) - RDn(g1,s2,t14)
    + RUpSC(g1,s2,t14) - RDnSC(g1,s2,t14) - Wspill(w1,s2,t14)
-   + Lshed(s2,t14) = 1.77636e-15
+   + Lshed(s2,t14) = 1.751168955000001
  PowerBalance_RT(s2,t15): RUp(g1,s2,t15) - RDn(g1,s2,t15)
    + RUpSC(g1,s2,t15) - RDnSC(g1,s2,t15) - Wspill(w1,s2,t15)
-   + Lshed(s2,t15) = -8.88178e-16
+   + Lshed(s2,t15) = 1.990514025
  PowerBalance_RT(s2,t16): RUp(g1,s2,t16) - RDn(g1,s2,t16)
    + RUpSC(g1,s2,t16) - RDnSC(g1,s2,t16) - Wspill(w1,s2,t16)
-   + Lshed(s2,t16) = 4.44089e-16
+   + Lshed(s2,t16) = 1.929347820000001
  PowerBalance_RT(s2,t17): RUp(g1,s2,t17) - RDn(g1,s2,t17)
    + RUpSC(g1,s2,t17) - RDnSC(g1,s2,t17) - Wspill(w1,s2,t17)
-   + Lshed(s2,t17) = -2.22045e-15
+   + Lshed(s2,t17) = 6.66134e-15
  PowerBalance_RT(s2,t18): RUp(g1,s2,t18) - RDn(g1,s2,t18)
    + RUpSC(g1,s2,t18) - RDnSC(g1,s2,t18) - Wspill(w1,s2,t18)
-   + Lshed(s2,t18) = 3.10862e-15
+   + Lshed(s2,t18) = 6.66134e-15
  PowerBalance_RT(s2,t19): RUp(g1,s2,t19) - RDn(g1,s2,t19)
    + RUpSC(g1,s2,t19) - RDnSC(g1,s2,t19) - Wspill(w1,s2,t19)
-   + Lshed(s2,t19) = -1.77636e-15
+   + Lshed(s2,t19) = 1.444128255000002
  PowerBalance_RT(s2,t20): RUp(g1,s2,t20) - RDn(g1,s2,t20)
    + RUpSC(g1,s2,t20) - RDnSC(g1,s2,t20) - Wspill(w1,s2,t20)
-   + Lshed(s2,t20) = 2.22045e-15
+   + Lshed(s2,t20) = 7.54952e-15
  PowerBalance_RT(s2,t21): RUp(g1,s2,t21) - RDn(g1,s2,t21)
    + RUpSC(g1,s2,t21) - RDnSC(g1,s2,t21) - Wspill(w1,s2,t21)
-   + Lshed(s2,t21) = 0
+   + Lshed(s2,t21) = 1.212598890000001
  PowerBalance_RT(s2,t22): RUp(g1,s2,t22) - RDn(g1,s2,t22)
    + RUpSC(g1,s2,t22) - RDnSC(g1,s2,t22) - Wspill(w1,s2,t22)
-   + Lshed(s2,t22) = 8.88178e-16
+   + Lshed(s2,t22) = 6.21725e-15
  PowerBalance_RT(s2,t23): RUp(g1,s2,t23) - RDn(g1,s2,t23)
    + RUpSC(g1,s2,t23) - RDnSC(g1,s2,t23) - Wspill(w1,s2,t23)
-   + Lshed(s2,t23) = -2.22045e-16
+   + Lshed(s2,t23) = 5.10703e-15
  PowerBalance_RT(s2,t24): RUp(g1,s2,t24) - RDn(g1,s2,t24)
    + RUpSC(g1,s2,t24) - RDnSC(g1,s2,t24) - Wspill(w1,s2,t24)
-   + Lshed(s2,t24) = 2.22045e-15
+   + Lshed(s2,t24) = 0.6269377950000006
  RegUp_max_RT(g1,s1,t1): RUp(g1,s1,t1) <= 111.68076201
- RegDown_max_RT(g1,s1,t1): RDn(g1,s1,t1) <= 40.31923799000001
+ RegDown_max_RT(g1,s1,t1): RDn(g1,s1,t1) <= 40.31923799
  RegUp_max_RT(g1,s1,t2): RUp(g1,s1,t2) <= 110.61013003
- RegDown_max_RT(g1,s1,t2): RDn(g1,s1,t2) <= 41.38986997000001
+ RegDown_max_RT(g1,s1,t2): RDn(g1,s1,t2) <= 36.43775734000001
  RegUp_max_RT(g1,s1,t3): RUp(g1,s1,t3) <= 109.84934219
- RegDown_max_RT(g1,s1,t3): RDn(g1,s1,t3) <= 42.15065781
+ RegDown_max_RT(g1,s1,t3): RDn(g1,s1,t3) <= 36.97598673
  RegUp_max_RT(g1,s1,t4): RUp(g1,s1,t4) <= 108.35221571
- RegDown_max_RT(g1,s1,t4): RDn(g1,s1,t4) <= 43.64778429
+ RegDown_max_RT(g1,s1,t4): RDn(g1,s1,t4) <= 43.64778428999999
  RegUp_max_RT(g1,s1,t5): RUp(g1,s1,t5) <= 107.70742787
- RegDown_max_RT(g1,s1,t5): RDn(g1,s1,t5) <= 44.29257213
+ RegDown_max_RT(g1,s1,t5): RDn(g1,s1,t5) <= 39.2737947
  RegUp_max_RT(g1,s1,t6): RUp(g1,s1,t6) <= 106.25483041
- RegDown_max_RT(g1,s1,t6): RDn(g1,s1,t6) <= 45.74516959
+ RegDown_max_RT(g1,s1,t6): RDn(g1,s1,t6) <= 35.74516959
  RegUp_max_RT(g1,s1,t7): RUp(g1,s1,t7) <= 105.29732917
- RegDown_max_RT(g1,s1,t7): RDn(g1,s1,t7) <= 46.70267083
+ RegDown_max_RT(g1,s1,t7): RDn(g1,s1,t7) <= 36.70267083
  RegUp_max_RT(g1,s1,t8): RUp(g1,s1,t8) <= 103.84377559
- RegDown_max_RT(g1,s1,t8): RDn(g1,s1,t8) <= 48.15622441
+ RegDown_max_RT(g1,s1,t8): RDn(g1,s1,t8) <= 38.15622441
  RegUp_max_RT(g1,s1,t9): RUp(g1,s1,t9) <= 102.9080648
- RegDown_max_RT(g1,s1,t9): RDn(g1,s1,t9) <= 49.0919352
+ RegDown_max_RT(g1,s1,t9): RDn(g1,s1,t9) <= 39.0919352
  RegUp_max_RT(g1,s1,t10): RUp(g1,s1,t10) <= 102.33906227
- RegDown_max_RT(g1,s1,t10): RDn(g1,s1,t10) <= 49.66093773
+ RegDown_max_RT(g1,s1,t10): RDn(g1,s1,t10) <= 39.66093773
  RegUp_max_RT(g1,s1,t11): RUp(g1,s1,t11) <= 102.48207836
- RegDown_max_RT(g1,s1,t11): RDn(g1,s1,t11) <= 49.51792164
+ RegDown_max_RT(g1,s1,t11): RDn(g1,s1,t11) <= 39.51792164
  RegUp_max_RT(g1,s1,t12): RUp(g1,s1,t12) <= 103.37100154
- RegDown_max_RT(g1,s1,t12): RDn(g1,s1,t12) <= 48.62899846000001
+ RegDown_max_RT(g1,s1,t12): RDn(g1,s1,t12) <= 38.62899846
  RegUp_max_RT(g1,s1,t13): RUp(g1,s1,t13) <= 104.73093516
- RegDown_max_RT(g1,s1,t13): RDn(g1,s1,t13) <= 47.26906484
+ RegDown_max_RT(g1,s1,t13): RDn(g1,s1,t13) <= 37.26906484
  RegUp_max_RT(g1,s1,t14): RUp(g1,s1,t14) <= 106.79643314
- RegDown_max_RT(g1,s1,t14): RDn(g1,s1,t14) <= 45.20356686
+ RegDown_max_RT(g1,s1,t14): RDn(g1,s1,t14) <= 35.20356686
  RegUp_max_RT(g1,s1,t15): RUp(g1,s1,t15) <= 108.48102805
- RegDown_max_RT(g1,s1,t15): RDn(g1,s1,t15) <= 43.51897195
+ RegDown_max_RT(g1,s1,t15): RDn(g1,s1,t15) <= 33.51897194999999
  RegUp_max_RT(g1,s1,t16): RUp(g1,s1,t16) <= 109.39422955
- RegDown_max_RT(g1,s1,t16): RDn(g1,s1,t16) <= 42.60577045
+ RegDown_max_RT(g1,s1,t16): RDn(g1,s1,t16) <= 32.60577045000001
  RegUp_max_RT(g1,s1,t17): RUp(g1,s1,t17) <= 109.56645619
- RegDown_max_RT(g1,s1,t17): RDn(g1,s1,t17) <= 42.43354381
+ RegDown_max_RT(g1,s1,t17): RDn(g1,s1,t17) <= 32.43354381
  RegUp_max_RT(g1,s1,t18): RUp(g1,s1,t18) <= 109.86543533
- RegDown_max_RT(g1,s1,t18): RDn(g1,s1,t18) <= 42.13456467
+ RegDown_max_RT(g1,s1,t18): RDn(g1,s1,t18) <= 32.13456466999999
  RegUp_max_RT(g1,s1,t19): RUp(g1,s1,t19) <= 109.88825651
- RegDown_max_RT(g1,s1,t19): RDn(g1,s1,t19) <= 42.11174349
+ RegDown_max_RT(g1,s1,t19): RDn(g1,s1,t19) <= 32.11174349
  RegUp_max_RT(g1,s1,t20): RUp(g1,s1,t20) <= 109.54723013
- RegDown_max_RT(g1,s1,t20): RDn(g1,s1,t20) <= 42.45276987
+ RegDown_max_RT(g1,s1,t20): RDn(g1,s1,t20) <= 32.45276986999999
  RegUp_max_RT(g1,s1,t21): RUp(g1,s1,t21) <= 108.75532483
- RegDown_max_RT(g1,s1,t21): RDn(g1,s1,t21) <= 43.24467517
+ RegDown_max_RT(g1,s1,t21): RDn(g1,s1,t21) <= 33.24467517
  RegUp_max_RT(g1,s1,t22): RUp(g1,s1,t22) <= 107.78269786
- RegDown_max_RT(g1,s1,t22): RDn(g1,s1,t22) <= 44.21730214
+ RegDown_max_RT(g1,s1,t22): RDn(g1,s1,t22) <= 34.21730213999999
  RegUp_max_RT(g1,s1,t23): RUp(g1,s1,t23) <= 106.44173395
- RegDown_max_RT(g1,s1,t23): RDn(g1,s1,t23) <= 45.55826605
+ RegDown_max_RT(g1,s1,t23): RDn(g1,s1,t23) <= 35.55826604999999
  RegUp_max_RT(g1,s1,t24): RUp(g1,s1,t24) <= 104.54797085
- RegDown_max_RT(g1,s1,t24): RDn(g1,s1,t24) <= 47.45202914999999
+ RegDown_max_RT(g1,s1,t24): RDn(g1,s1,t24) <= 37.45202914999999
  RegUp_max_RT(g1,s2,t1): RUp(g1,s2,t1) <= 111.68076201
- RegDown_max_RT(g1,s2,t1): RDn(g1,s2,t1) <= 40.31923799000001
+ RegDown_max_RT(g1,s2,t1): RDn(g1,s2,t1) <= 40.31923799
  RegUp_max_RT(g1,s2,t2): RUp(g1,s2,t2) <= 110.61013003
- RegDown_max_RT(g1,s2,t2): RDn(g1,s2,t2) <= 41.38986997000001
+ RegDown_max_RT(g1,s2,t2): RDn(g1,s2,t2) <= 36.43775734000001
  RegUp_max_RT(g1,s2,t3): RUp(g1,s2,t3) <= 109.84934219
- RegDown_max_RT(g1,s2,t3): RDn(g1,s2,t3) <= 42.15065781
+ RegDown_max_RT(g1,s2,t3): RDn(g1,s2,t3) <= 36.97598673
  RegUp_max_RT(g1,s2,t4): RUp(g1,s2,t4) <= 108.35221571
- RegDown_max_RT(g1,s2,t4): RDn(g1,s2,t4) <= 43.64778429
+ RegDown_max_RT(g1,s2,t4): RDn(g1,s2,t4) <= 43.64778428999999
  RegUp_max_RT(g1,s2,t5): RUp(g1,s2,t5) <= 107.70742787
- RegDown_max_RT(g1,s2,t5): RDn(g1,s2,t5) <= 44.29257213
+ RegDown_max_RT(g1,s2,t5): RDn(g1,s2,t5) <= 39.2737947
  RegUp_max_RT(g1,s2,t6): RUp(g1,s2,t6) <= 106.25483041
- RegDown_max_RT(g1,s2,t6): RDn(g1,s2,t6) <= 45.74516959
+ RegDown_max_RT(g1,s2,t6): RDn(g1,s2,t6) <= 35.74516959
  RegUp_max_RT(g1,s2,t7): RUp(g1,s2,t7) <= 105.29732917
- RegDown_max_RT(g1,s2,t7): RDn(g1,s2,t7) <= 46.70267083
+ RegDown_max_RT(g1,s2,t7): RDn(g1,s2,t7) <= 36.70267083
  RegUp_max_RT(g1,s2,t8): RUp(g1,s2,t8) <= 103.84377559
- RegDown_max_RT(g1,s2,t8): RDn(g1,s2,t8) <= 48.15622441
+ RegDown_max_RT(g1,s2,t8): RDn(g1,s2,t8) <= 38.15622441
  RegUp_max_RT(g1,s2,t9): RUp(g1,s2,t9) <= 102.9080648
- RegDown_max_RT(g1,s2,t9): RDn(g1,s2,t9) <= 49.0919352
+ RegDown_max_RT(g1,s2,t9): RDn(g1,s2,t9) <= 39.0919352
  RegUp_max_RT(g1,s2,t10): RUp(g1,s2,t10) <= 102.33906227
- RegDown_max_RT(g1,s2,t10): RDn(g1,s2,t10) <= 49.66093773
+ RegDown_max_RT(g1,s2,t10): RDn(g1,s2,t10) <= 39.66093773
  RegUp_max_RT(g1,s2,t11): RUp(g1,s2,t11) <= 102.48207836
- RegDown_max_RT(g1,s2,t11): RDn(g1,s2,t11) <= 49.51792164
+ RegDown_max_RT(g1,s2,t11): RDn(g1,s2,t11) <= 39.51792164
  RegUp_max_RT(g1,s2,t12): RUp(g1,s2,t12) <= 103.37100154
- RegDown_max_RT(g1,s2,t12): RDn(g1,s2,t12) <= 48.62899846000001
+ RegDown_max_RT(g1,s2,t12): RDn(g1,s2,t12) <= 38.62899846
  RegUp_max_RT(g1,s2,t13): RUp(g1,s2,t13) <= 104.73093516
- RegDown_max_RT(g1,s2,t13): RDn(g1,s2,t13) <= 47.26906484
+ RegDown_max_RT(g1,s2,t13): RDn(g1,s2,t13) <= 37.26906484
  RegUp_max_RT(g1,s2,t14): RUp(g1,s2,t14) <= 106.79643314
- RegDown_max_RT(g1,s2,t14): RDn(g1,s2,t14) <= 45.20356686
+ RegDown_max_RT(g1,s2,t14): RDn(g1,s2,t14) <= 35.20356686
  RegUp_max_RT(g1,s2,t15): RUp(g1,s2,t15) <= 108.48102805
- RegDown_max_RT(g1,s2,t15): RDn(g1,s2,t15) <= 43.51897195
+ RegDown_max_RT(g1,s2,t15): RDn(g1,s2,t15) <= 33.51897194999999
  RegUp_max_RT(g1,s2,t16): RUp(g1,s2,t16) <= 109.39422955
- RegDown_max_RT(g1,s2,t16): RDn(g1,s2,t16) <= 42.60577045
+ RegDown_max_RT(g1,s2,t16): RDn(g1,s2,t16) <= 32.60577045000001
  RegUp_max_RT(g1,s2,t17): RUp(g1,s2,t17) <= 109.56645619
- RegDown_max_RT(g1,s2,t17): RDn(g1,s2,t17) <= 42.43354381
+ RegDown_max_RT(g1,s2,t17): RDn(g1,s2,t17) <= 32.43354381
  RegUp_max_RT(g1,s2,t18): RUp(g1,s2,t18) <= 109.86543533
- RegDown_max_RT(g1,s2,t18): RDn(g1,s2,t18) <= 42.13456467
+ RegDown_max_RT(g1,s2,t18): RDn(g1,s2,t18) <= 32.13456466999999
  RegUp_max_RT(g1,s2,t19): RUp(g1,s2,t19) <= 109.88825651
- RegDown_max_RT(g1,s2,t19): RDn(g1,s2,t19) <= 42.11174349
+ RegDown_max_RT(g1,s2,t19): RDn(g1,s2,t19) <= 32.11174349
  RegUp_max_RT(g1,s2,t20): RUp(g1,s2,t20) <= 109.54723013
- RegDown_max_RT(g1,s2,t20): RDn(g1,s2,t20) <= 42.45276987
+ RegDown_max_RT(g1,s2,t20): RDn(g1,s2,t20) <= 32.45276986999999
  RegUp_max_RT(g1,s2,t21): RUp(g1,s2,t21) <= 108.75532483
- RegDown_max_RT(g1,s2,t21): RDn(g1,s2,t21) <= 43.24467517
+ RegDown_max_RT(g1,s2,t21): RDn(g1,s2,t21) <= 33.24467517
  RegUp_max_RT(g1,s2,t22): RUp(g1,s2,t22) <= 107.78269786
- RegDown_max_RT(g1,s2,t22): RDn(g1,s2,t22) <= 44.21730214
+ RegDown_max_RT(g1,s2,t22): RDn(g1,s2,t22) <= 34.21730213999999
  RegUp_max_RT(g1,s2,t23): RUp(g1,s2,t23) <= 106.44173395
- RegDown_max_RT(g1,s2,t23): RDn(g1,s2,t23) <= 45.55826605
+ RegDown_max_RT(g1,s2,t23): RDn(g1,s2,t23) <= 35.55826604999999
  RegUp_max_RT(g1,s2,t24): RUp(g1,s2,t24) <= 104.54797085
- RegDown_max_RT(g1,s2,t24): RDn(g1,s2,t24) <= 47.45202914999999
+ RegDown_max_RT(g1,s2,t24): RDn(g1,s2,t24) <= 37.45202914999999
  RegUpSC_max_RT(g1,s1,t1): RUpSC(g1,s1,t1) <= 0
  RegDnSC_max_RT(g1,s1,t1): RDnSC(g1,s1,t1) <= 0
- RegUpSC_max_RT(g1,s1,t2): RUpSC(g1,s1,t2) <= 0
+ RegUpSC_max_RT(g1,s1,t2): RUpSC(g1,s1,t2) <= 4.952112630000002
  RegDnSC_max_RT(g1,s1,t2): RDnSC(g1,s1,t2) <= 0
- RegUpSC_max_RT(g1,s1,t3): RUpSC(g1,s1,t3) <= 0
+ RegUpSC_max_RT(g1,s1,t3): RUpSC(g1,s1,t3) <= 5.174671080000005
  RegDnSC_max_RT(g1,s1,t3): RDnSC(g1,s1,t3) <= 0
  RegUpSC_max_RT(g1,s1,t4): RUpSC(g1,s1,t4) <= 0
  RegDnSC_max_RT(g1,s1,t4): RDnSC(g1,s1,t4) <= 0
- RegUpSC_max_RT(g1,s1,t5): RUpSC(g1,s1,t5) <= 0
+ RegUpSC_max_RT(g1,s1,t5): RUpSC(g1,s1,t5) <= 5.018777430000002
  RegDnSC_max_RT(g1,s1,t5): RDnSC(g1,s1,t5) <= 0
- RegUpSC_max_RT(g1,s1,t6): RUpSC(g1,s1,t6) <= 0
- RegDnSC_max_RT(g1,s1,t6): RDnSC(g1,s1,t6) <= 0
- RegUpSC_max_RT(g1,s1,t7): RUpSC(g1,s1,t7) <= 0
- RegDnSC_max_RT(g1,s1,t7): RDnSC(g1,s1,t7) <= 0
- RegUpSC_max_RT(g1,s1,t8): RUpSC(g1,s1,t8) <= 0
- RegDnSC_max_RT(g1,s1,t8): RDnSC(g1,s1,t8) <= 0
- RegUpSC_max_RT(g1,s1,t9): RUpSC(g1,s1,t9) <= 0
- RegDnSC_max_RT(g1,s1,t9): RDnSC(g1,s1,t9) <= 0
- RegUpSC_max_RT(g1,s1,t10): RUpSC(g1,s1,t10) <= 0
- RegDnSC_max_RT(g1,s1,t10): RDnSC(g1,s1,t10) <= 0
- RegUpSC_max_RT(g1,s1,t11): RUpSC(g1,s1,t11) <= 0
- RegDnSC_max_RT(g1,s1,t11): RDnSC(g1,s1,t11) <= 0
+ RegUpSC_max_RT(g1,s1,t6): RUpSC(g1,s1,t6) <= 4.542229755000005
+ RegDnSC_max_RT(g1,s1,t6): RDnSC(g1,s1,t6) <= 5.457770244999995
+ RegUpSC_max_RT(g1,s1,t7): RUpSC(g1,s1,t7) <= 4.148664585000004
+ RegDnSC_max_RT(g1,s1,t7): RDnSC(g1,s1,t7) <= 5.851335414999996
+ RegUpSC_max_RT(g1,s1,t8): RUpSC(g1,s1,t8) <= 3.336702360000003
+ RegDnSC_max_RT(g1,s1,t8): RDnSC(g1,s1,t8) <= 6.663297639999997
+ RegUpSC_max_RT(g1,s1,t9): RUpSC(g1,s1,t9) <= 2.619095910000001
+ RegDnSC_max_RT(g1,s1,t9): RDnSC(g1,s1,t9) <= 7.380904089999999
+ RegUpSC_max_RT(g1,s1,t10): RUpSC(g1,s1,t10) <= 1.937298075000001
+ RegDnSC_max_RT(g1,s1,t10): RDnSC(g1,s1,t10) <= 8.062701924999999
+ RegUpSC_max_RT(g1,s1,t11): RUpSC(g1,s1,t11) <= 1.491039180000001
+ RegDnSC_max_RT(g1,s1,t11): RDnSC(g1,s1,t11) <= 8.508960819999999
  RegUpSC_max_RT(g1,s1,t12): RUpSC(g1,s1,t12) <= 0
- RegDnSC_max_RT(g1,s1,t12): RDnSC(g1,s1,t12) <= 0
- RegUpSC_max_RT(g1,s1,t13): RUpSC(g1,s1,t13) <= 0
- RegDnSC_max_RT(g1,s1,t13): RDnSC(g1,s1,t13) <= 0
- RegUpSC_max_RT(g1,s1,t14): RUpSC(g1,s1,t14) <= 0
- RegDnSC_max_RT(g1,s1,t14): RDnSC(g1,s1,t14) <= 0
- RegUpSC_max_RT(g1,s1,t15): RUpSC(g1,s1,t15) <= 0
- RegDnSC_max_RT(g1,s1,t15): RDnSC(g1,s1,t15) <= 0
- RegUpSC_max_RT(g1,s1,t16): RUpSC(g1,s1,t16) <= 0
- RegDnSC_max_RT(g1,s1,t16): RDnSC(g1,s1,t16) <= 0
+ RegDnSC_max_RT(g1,s1,t12): RDnSC(g1,s1,t12) <= 10
+ RegUpSC_max_RT(g1,s1,t13): RUpSC(g1,s1,t13) <= 1.365467580000001
+ RegDnSC_max_RT(g1,s1,t13): RDnSC(g1,s1,t13) <= 8.634532419999999
+ RegUpSC_max_RT(g1,s1,t14): RUpSC(g1,s1,t14) <= 1.751168955000001
+ RegDnSC_max_RT(g1,s1,t14): RDnSC(g1,s1,t14) <= 8.248831044999999
+ RegUpSC_max_RT(g1,s1,t15): RUpSC(g1,s1,t15) <= 1.990514025
+ RegDnSC_max_RT(g1,s1,t15): RDnSC(g1,s1,t15) <= 8.009485975000001
+ RegUpSC_max_RT(g1,s1,t16): RUpSC(g1,s1,t16) <= 1.92934782
+ RegDnSC_max_RT(g1,s1,t16): RDnSC(g1,s1,t16) <= 8.07065218
  RegUpSC_max_RT(g1,s1,t17): RUpSC(g1,s1,t17) <= 0
- RegDnSC_max_RT(g1,s1,t17): RDnSC(g1,s1,t17) <= 0
+ RegDnSC_max_RT(g1,s1,t17): RDnSC(g1,s1,t17) <= 10
  RegUpSC_max_RT(g1,s1,t18): RUpSC(g1,s1,t18) <= 0
- RegDnSC_max_RT(g1,s1,t18): RDnSC(g1,s1,t18) <= 0
- RegUpSC_max_RT(g1,s1,t19): RUpSC(g1,s1,t19) <= 0
- RegDnSC_max_RT(g1,s1,t19): RDnSC(g1,s1,t19) <= 0
+ RegDnSC_max_RT(g1,s1,t18): RDnSC(g1,s1,t18) <= 10
+ RegUpSC_max_RT(g1,s1,t19): RUpSC(g1,s1,t19) <= 1.444128255000003
+ RegDnSC_max_RT(g1,s1,t19): RDnSC(g1,s1,t19) <= 8.555871744999998
  RegUpSC_max_RT(g1,s1,t20): RUpSC(g1,s1,t20) <= 0
- RegDnSC_max_RT(g1,s1,t20): RDnSC(g1,s1,t20) <= 0
- RegUpSC_max_RT(g1,s1,t21): RUpSC(g1,s1,t21) <= 0
- RegDnSC_max_RT(g1,s1,t21): RDnSC(g1,s1,t21) <= 0
+ RegDnSC_max_RT(g1,s1,t20): RDnSC(g1,s1,t20) <= 10
+ RegUpSC_max_RT(g1,s1,t21): RUpSC(g1,s1,t21) <= 1.212598890000001
+ RegDnSC_max_RT(g1,s1,t21): RDnSC(g1,s1,t21) <= 8.787401109999999
  RegUpSC_max_RT(g1,s1,t22): RUpSC(g1,s1,t22) <= 0
- RegDnSC_max_RT(g1,s1,t22): RDnSC(g1,s1,t22) <= 0
+ RegDnSC_max_RT(g1,s1,t22): RDnSC(g1,s1,t22) <= 10
  RegUpSC_max_RT(g1,s1,t23): RUpSC(g1,s1,t23) <= 0
- RegDnSC_max_RT(g1,s1,t23): RDnSC(g1,s1,t23) <= 0
- RegUpSC_max_RT(g1,s1,t24): RUpSC(g1,s1,t24) <= 0
- RegDnSC_max_RT(g1,s1,t24): RDnSC(g1,s1,t24) <= 0
+ RegDnSC_max_RT(g1,s1,t23): RDnSC(g1,s1,t23) <= 10
+ RegUpSC_max_RT(g1,s1,t24): RUpSC(g1,s1,t24) <= 0.6269377949999999
+ RegDnSC_max_RT(g1,s1,t24): RDnSC(g1,s1,t24) <= 9.373062205
  RegUpSC_max_RT(g1,s2,t1): RUpSC(g1,s2,t1) <= 0
  RegDnSC_max_RT(g1,s2,t1): RDnSC(g1,s2,t1) <= 0
- RegUpSC_max_RT(g1,s2,t2): RUpSC(g1,s2,t2) <= 0
+ RegUpSC_max_RT(g1,s2,t2): RUpSC(g1,s2,t2) <= 4.952112630000002
  RegDnSC_max_RT(g1,s2,t2): RDnSC(g1,s2,t2) <= 0
- RegUpSC_max_RT(g1,s2,t3): RUpSC(g1,s2,t3) <= 0
+ RegUpSC_max_RT(g1,s2,t3): RUpSC(g1,s2,t3) <= 5.174671080000005
  RegDnSC_max_RT(g1,s2,t3): RDnSC(g1,s2,t3) <= 0
  RegUpSC_max_RT(g1,s2,t4): RUpSC(g1,s2,t4) <= 0
  RegDnSC_max_RT(g1,s2,t4): RDnSC(g1,s2,t4) <= 0
- RegUpSC_max_RT(g1,s2,t5): RUpSC(g1,s2,t5) <= 0
+ RegUpSC_max_RT(g1,s2,t5): RUpSC(g1,s2,t5) <= 5.018777430000002
  RegDnSC_max_RT(g1,s2,t5): RDnSC(g1,s2,t5) <= 0
- RegUpSC_max_RT(g1,s2,t6): RUpSC(g1,s2,t6) <= 0
- RegDnSC_max_RT(g1,s2,t6): RDnSC(g1,s2,t6) <= 0
- RegUpSC_max_RT(g1,s2,t7): RUpSC(g1,s2,t7) <= 0
- RegDnSC_max_RT(g1,s2,t7): RDnSC(g1,s2,t7) <= 0
- RegUpSC_max_RT(g1,s2,t8): RUpSC(g1,s2,t8) <= 0
- RegDnSC_max_RT(g1,s2,t8): RDnSC(g1,s2,t8) <= 0
- RegUpSC_max_RT(g1,s2,t9): RUpSC(g1,s2,t9) <= 0
- RegDnSC_max_RT(g1,s2,t9): RDnSC(g1,s2,t9) <= 0
- RegUpSC_max_RT(g1,s2,t10): RUpSC(g1,s2,t10) <= 0
- RegDnSC_max_RT(g1,s2,t10): RDnSC(g1,s2,t10) <= 0
- RegUpSC_max_RT(g1,s2,t11): RUpSC(g1,s2,t11) <= 0
- RegDnSC_max_RT(g1,s2,t11): RDnSC(g1,s2,t11) <= 0
+ RegUpSC_max_RT(g1,s2,t6): RUpSC(g1,s2,t6) <= 4.542229755000005
+ RegDnSC_max_RT(g1,s2,t6): RDnSC(g1,s2,t6) <= 5.457770244999995
+ RegUpSC_max_RT(g1,s2,t7): RUpSC(g1,s2,t7) <= 4.148664585000004
+ RegDnSC_max_RT(g1,s2,t7): RDnSC(g1,s2,t7) <= 5.851335414999996
+ RegUpSC_max_RT(g1,s2,t8): RUpSC(g1,s2,t8) <= 3.336702360000003
+ RegDnSC_max_RT(g1,s2,t8): RDnSC(g1,s2,t8) <= 6.663297639999997
+ RegUpSC_max_RT(g1,s2,t9): RUpSC(g1,s2,t9) <= 2.619095910000001
+ RegDnSC_max_RT(g1,s2,t9): RDnSC(g1,s2,t9) <= 7.380904089999999
+ RegUpSC_max_RT(g1,s2,t10): RUpSC(g1,s2,t10) <= 1.937298075000001
+ RegDnSC_max_RT(g1,s2,t10): RDnSC(g1,s2,t10) <= 8.062701924999999
+ RegUpSC_max_RT(g1,s2,t11): RUpSC(g1,s2,t11) <= 1.491039180000001
+ RegDnSC_max_RT(g1,s2,t11): RDnSC(g1,s2,t11) <= 8.508960819999999
  RegUpSC_max_RT(g1,s2,t12): RUpSC(g1,s2,t12) <= 0
- RegDnSC_max_RT(g1,s2,t12): RDnSC(g1,s2,t12) <= 0
- RegUpSC_max_RT(g1,s2,t13): RUpSC(g1,s2,t13) <= 0
- RegDnSC_max_RT(g1,s2,t13): RDnSC(g1,s2,t13) <= 0
- RegUpSC_max_RT(g1,s2,t14): RUpSC(g1,s2,t14) <= 0
- RegDnSC_max_RT(g1,s2,t14): RDnSC(g1,s2,t14) <= 0
- RegUpSC_max_RT(g1,s2,t15): RUpSC(g1,s2,t15) <= 0
- RegDnSC_max_RT(g1,s2,t15): RDnSC(g1,s2,t15) <= 0
- RegUpSC_max_RT(g1,s2,t16): RUpSC(g1,s2,t16) <= 0
- RegDnSC_max_RT(g1,s2,t16): RDnSC(g1,s2,t16) <= 0
+ RegDnSC_max_RT(g1,s2,t12): RDnSC(g1,s2,t12) <= 10
+ RegUpSC_max_RT(g1,s2,t13): RUpSC(g1,s2,t13) <= 1.365467580000001
+ RegDnSC_max_RT(g1,s2,t13): RDnSC(g1,s2,t13) <= 8.634532419999999
+ RegUpSC_max_RT(g1,s2,t14): RUpSC(g1,s2,t14) <= 1.751168955000001
+ RegDnSC_max_RT(g1,s2,t14): RDnSC(g1,s2,t14) <= 8.248831044999999
+ RegUpSC_max_RT(g1,s2,t15): RUpSC(g1,s2,t15) <= 1.990514025
+ RegDnSC_max_RT(g1,s2,t15): RDnSC(g1,s2,t15) <= 8.009485975000001
+ RegUpSC_max_RT(g1,s2,t16): RUpSC(g1,s2,t16) <= 1.92934782
+ RegDnSC_max_RT(g1,s2,t16): RDnSC(g1,s2,t16) <= 8.07065218
  RegUpSC_max_RT(g1,s2,t17): RUpSC(g1,s2,t17) <= 0
- RegDnSC_max_RT(g1,s2,t17): RDnSC(g1,s2,t17) <= 0
+ RegDnSC_max_RT(g1,s2,t17): RDnSC(g1,s2,t17) <= 10
  RegUpSC_max_RT(g1,s2,t18): RUpSC(g1,s2,t18) <= 0
- RegDnSC_max_RT(g1,s2,t18): RDnSC(g1,s2,t18) <= 0
- RegUpSC_max_RT(g1,s2,t19): RUpSC(g1,s2,t19) <= 0
- RegDnSC_max_RT(g1,s2,t19): RDnSC(g1,s2,t19) <= 0
+ RegDnSC_max_RT(g1,s2,t18): RDnSC(g1,s2,t18) <= 10
+ RegUpSC_max_RT(g1,s2,t19): RUpSC(g1,s2,t19) <= 1.444128255000003
+ RegDnSC_max_RT(g1,s2,t19): RDnSC(g1,s2,t19) <= 8.555871744999998
  RegUpSC_max_RT(g1,s2,t20): RUpSC(g1,s2,t20) <= 0
- RegDnSC_max_RT(g1,s2,t20): RDnSC(g1,s2,t20) <= 0
- RegUpSC_max_RT(g1,s2,t21): RUpSC(g1,s2,t21) <= 0
- RegDnSC_max_RT(g1,s2,t21): RDnSC(g1,s2,t21) <= 0
+ RegDnSC_max_RT(g1,s2,t20): RDnSC(g1,s2,t20) <= 10
+ RegUpSC_max_RT(g1,s2,t21): RUpSC(g1,s2,t21) <= 1.212598890000001
+ RegDnSC_max_RT(g1,s2,t21): RDnSC(g1,s2,t21) <= 8.787401109999999
  RegUpSC_max_RT(g1,s2,t22): RUpSC(g1,s2,t22) <= 0
- RegDnSC_max_RT(g1,s2,t22): RDnSC(g1,s2,t22) <= 0
+ RegDnSC_max_RT(g1,s2,t22): RDnSC(g1,s2,t22) <= 10
  RegUpSC_max_RT(g1,s2,t23): RUpSC(g1,s2,t23) <= 0
- RegDnSC_max_RT(g1,s2,t23): RDnSC(g1,s2,t23) <= 0
- RegUpSC_max_RT(g1,s2,t24): RUpSC(g1,s2,t24) <= 0
- RegDnSC_max_RT(g1,s2,t24): RDnSC(g1,s2,t24) <= 0
+ RegDnSC_max_RT(g1,s2,t23): RDnSC(g1,s2,t23) <= 10
+ RegUpSC_max_RT(g1,s2,t24): RUpSC(g1,s2,t24) <= 0.6269377949999999
+ RegDnSC_max_RT(g1,s2,t24): RDnSC(g1,s2,t24) <= 9.373062205
  Max_load_shed_RT(s1,t1): Lshed(s1,t1) <= 50
  Max_load_shed_RT(s1,t2): Lshed(s1,t2) <= 51.29409523
  Max_load_shed_RT(s1,t3): Lshed(s1,t3) <= 52.5
@@ -473,205 +475,205 @@ Subject To
  SOS1_RegUp_max_RT(g1,s1,t1): RUp(g1,s1,t1) + SOS1_RegUp_max_RT(g1,s1,t1)
    = 111.68076201
  SOS1_RegDown_max_RT(g1,s1,t1): RDn(g1,s1,t1)
-   + SOS1_RegDown_max_RT(g1,s1,t1) = 40.31923799000001
+   + SOS1_RegDown_max_RT(g1,s1,t1) = 40.31923799
  SOS1_RegUp_max_RT(g1,s1,t2): RUp(g1,s1,t2) + SOS1_RegUp_max_RT(g1,s1,t2)
    = 110.61013003
  SOS1_RegDown_max_RT(g1,s1,t2): RDn(g1,s1,t2)
-   + SOS1_RegDown_max_RT(g1,s1,t2) = 41.38986997000001
+   + SOS1_RegDown_max_RT(g1,s1,t2) = 36.43775734000001
  SOS1_RegUp_max_RT(g1,s1,t3): RUp(g1,s1,t3) + SOS1_RegUp_max_RT(g1,s1,t3)
    = 109.84934219
  SOS1_RegDown_max_RT(g1,s1,t3): RDn(g1,s1,t3)
-   + SOS1_RegDown_max_RT(g1,s1,t3) = 42.15065781
+   + SOS1_RegDown_max_RT(g1,s1,t3) = 36.97598673
  SOS1_RegUp_max_RT(g1,s1,t4): RUp(g1,s1,t4) + SOS1_RegUp_max_RT(g1,s1,t4)
    = 108.35221571
  SOS1_RegDown_max_RT(g1,s1,t4): RDn(g1,s1,t4)
-   + SOS1_RegDown_max_RT(g1,s1,t4) = 43.64778429
+   + SOS1_RegDown_max_RT(g1,s1,t4) = 43.64778428999999
  SOS1_RegUp_max_RT(g1,s1,t5): RUp(g1,s1,t5) + SOS1_RegUp_max_RT(g1,s1,t5)
    = 107.70742787
  SOS1_RegDown_max_RT(g1,s1,t5): RDn(g1,s1,t5)
-   + SOS1_RegDown_max_RT(g1,s1,t5) = 44.29257213
+   + SOS1_RegDown_max_RT(g1,s1,t5) = 39.2737947
  SOS1_RegUp_max_RT(g1,s1,t6): RUp(g1,s1,t6) + SOS1_RegUp_max_RT(g1,s1,t6)
    = 106.25483041
  SOS1_RegDown_max_RT(g1,s1,t6): RDn(g1,s1,t6)
-   + SOS1_RegDown_max_RT(g1,s1,t6) = 45.74516959
+   + SOS1_RegDown_max_RT(g1,s1,t6) = 35.74516959
  SOS1_RegUp_max_RT(g1,s1,t7): RUp(g1,s1,t7) + SOS1_RegUp_max_RT(g1,s1,t7)
    = 105.29732917
  SOS1_RegDown_max_RT(g1,s1,t7): RDn(g1,s1,t7)
-   + SOS1_RegDown_max_RT(g1,s1,t7) = 46.70267083
+   + SOS1_RegDown_max_RT(g1,s1,t7) = 36.70267083
  SOS1_RegUp_max_RT(g1,s1,t8): RUp(g1,s1,t8) + SOS1_RegUp_max_RT(g1,s1,t8)
    = 103.84377559
  SOS1_RegDown_max_RT(g1,s1,t8): RDn(g1,s1,t8)
-   + SOS1_RegDown_max_RT(g1,s1,t8) = 48.15622441
+   + SOS1_RegDown_max_RT(g1,s1,t8) = 38.15622441
  SOS1_RegUp_max_RT(g1,s1,t9): RUp(g1,s1,t9) + SOS1_RegUp_max_RT(g1,s1,t9)
    = 102.9080648
  SOS1_RegDown_max_RT(g1,s1,t9): RDn(g1,s1,t9)
-   + SOS1_RegDown_max_RT(g1,s1,t9) = 49.0919352
+   + SOS1_RegDown_max_RT(g1,s1,t9) = 39.0919352
  SOS1_RegUp_max_RT(g1,s1,t10): RUp(g1,s1,t10)
    + SOS1_RegUp_max_RT(g1,s1,t10) = 102.33906227
  SOS1_RegDown_max_RT(g1,s1,t10): RDn(g1,s1,t10)
-   + SOS1_RegDown_max_RT(g1,s1,t10) = 49.66093773
+   + SOS1_RegDown_max_RT(g1,s1,t10) = 39.66093773
  SOS1_RegUp_max_RT(g1,s1,t11): RUp(g1,s1,t11)
    + SOS1_RegUp_max_RT(g1,s1,t11) = 102.48207836
  SOS1_RegDown_max_RT(g1,s1,t11): RDn(g1,s1,t11)
-   + SOS1_RegDown_max_RT(g1,s1,t11) = 49.51792164
+   + SOS1_RegDown_max_RT(g1,s1,t11) = 39.51792164
  SOS1_RegUp_max_RT(g1,s1,t12): RUp(g1,s1,t12)
    + SOS1_RegUp_max_RT(g1,s1,t12) = 103.37100154
  SOS1_RegDown_max_RT(g1,s1,t12): RDn(g1,s1,t12)
-   + SOS1_RegDown_max_RT(g1,s1,t12) = 48.62899846000001
+   + SOS1_RegDown_max_RT(g1,s1,t12) = 38.62899846
  SOS1_RegUp_max_RT(g1,s1,t13): RUp(g1,s1,t13)
    + SOS1_RegUp_max_RT(g1,s1,t13) = 104.73093516
  SOS1_RegDown_max_RT(g1,s1,t13): RDn(g1,s1,t13)
-   + SOS1_RegDown_max_RT(g1,s1,t13) = 47.26906484
+   + SOS1_RegDown_max_RT(g1,s1,t13) = 37.26906484
  SOS1_RegUp_max_RT(g1,s1,t14): RUp(g1,s1,t14)
    + SOS1_RegUp_max_RT(g1,s1,t14) = 106.79643314
  SOS1_RegDown_max_RT(g1,s1,t14): RDn(g1,s1,t14)
-   + SOS1_RegDown_max_RT(g1,s1,t14) = 45.20356686
+   + SOS1_RegDown_max_RT(g1,s1,t14) = 35.20356686
  SOS1_RegUp_max_RT(g1,s1,t15): RUp(g1,s1,t15)
    + SOS1_RegUp_max_RT(g1,s1,t15) = 108.48102805
  SOS1_RegDown_max_RT(g1,s1,t15): RDn(g1,s1,t15)
-   + SOS1_RegDown_max_RT(g1,s1,t15) = 43.51897195
+   + SOS1_RegDown_max_RT(g1,s1,t15) = 33.51897194999999
  SOS1_RegUp_max_RT(g1,s1,t16): RUp(g1,s1,t16)
    + SOS1_RegUp_max_RT(g1,s1,t16) = 109.39422955
  SOS1_RegDown_max_RT(g1,s1,t16): RDn(g1,s1,t16)
-   + SOS1_RegDown_max_RT(g1,s1,t16) = 42.60577045
+   + SOS1_RegDown_max_RT(g1,s1,t16) = 32.60577045000001
  SOS1_RegUp_max_RT(g1,s1,t17): RUp(g1,s1,t17)
    + SOS1_RegUp_max_RT(g1,s1,t17) = 109.56645619
  SOS1_RegDown_max_RT(g1,s1,t17): RDn(g1,s1,t17)
-   + SOS1_RegDown_max_RT(g1,s1,t17) = 42.43354381
+   + SOS1_RegDown_max_RT(g1,s1,t17) = 32.43354381
  SOS1_RegUp_max_RT(g1,s1,t18): RUp(g1,s1,t18)
    + SOS1_RegUp_max_RT(g1,s1,t18) = 109.86543533
  SOS1_RegDown_max_RT(g1,s1,t18): RDn(g1,s1,t18)
-   + SOS1_RegDown_max_RT(g1,s1,t18) = 42.13456467
+   + SOS1_RegDown_max_RT(g1,s1,t18) = 32.13456466999999
  SOS1_RegUp_max_RT(g1,s1,t19): RUp(g1,s1,t19)
    + SOS1_RegUp_max_RT(g1,s1,t19) = 109.88825651
  SOS1_RegDown_max_RT(g1,s1,t19): RDn(g1,s1,t19)
-   + SOS1_RegDown_max_RT(g1,s1,t19) = 42.11174349
+   + SOS1_RegDown_max_RT(g1,s1,t19) = 32.11174349
  SOS1_RegUp_max_RT(g1,s1,t20): RUp(g1,s1,t20)
    + SOS1_RegUp_max_RT(g1,s1,t20) = 109.54723013
  SOS1_RegDown_max_RT(g1,s1,t20): RDn(g1,s1,t20)
-   + SOS1_RegDown_max_RT(g1,s1,t20) = 42.45276987
+   + SOS1_RegDown_max_RT(g1,s1,t20) = 32.45276986999999
  SOS1_RegUp_max_RT(g1,s1,t21): RUp(g1,s1,t21)
    + SOS1_RegUp_max_RT(g1,s1,t21) = 108.75532483
  SOS1_RegDown_max_RT(g1,s1,t21): RDn(g1,s1,t21)
-   + SOS1_RegDown_max_RT(g1,s1,t21) = 43.24467517
+   + SOS1_RegDown_max_RT(g1,s1,t21) = 33.24467517
  SOS1_RegUp_max_RT(g1,s1,t22): RUp(g1,s1,t22)
    + SOS1_RegUp_max_RT(g1,s1,t22) = 107.78269786
  SOS1_RegDown_max_RT(g1,s1,t22): RDn(g1,s1,t22)
-   + SOS1_RegDown_max_RT(g1,s1,t22) = 44.21730214
+   + SOS1_RegDown_max_RT(g1,s1,t22) = 34.21730213999999
  SOS1_RegUp_max_RT(g1,s1,t23): RUp(g1,s1,t23)
    + SOS1_RegUp_max_RT(g1,s1,t23) = 106.44173395
  SOS1_RegDown_max_RT(g1,s1,t23): RDn(g1,s1,t23)
-   + SOS1_RegDown_max_RT(g1,s1,t23) = 45.55826605
+   + SOS1_RegDown_max_RT(g1,s1,t23) = 35.55826604999999
  SOS1_RegUp_max_RT(g1,s1,t24): RUp(g1,s1,t24)
    + SOS1_RegUp_max_RT(g1,s1,t24) = 104.54797085
  SOS1_RegDown_max_RT(g1,s1,t24): RDn(g1,s1,t24)
-   + SOS1_RegDown_max_RT(g1,s1,t24) = 47.45202914999999
+   + SOS1_RegDown_max_RT(g1,s1,t24) = 37.45202914999999
  SOS1_RegUp_max_RT(g1,s2,t1): RUp(g1,s2,t1) + SOS1_RegUp_max_RT(g1,s2,t1)
    = 111.68076201
  SOS1_RegDown_max_RT(g1,s2,t1): RDn(g1,s2,t1)
-   + SOS1_RegDown_max_RT(g1,s2,t1) = 40.31923799000001
+   + SOS1_RegDown_max_RT(g1,s2,t1) = 40.31923799
  SOS1_RegUp_max_RT(g1,s2,t2): RUp(g1,s2,t2) + SOS1_RegUp_max_RT(g1,s2,t2)
    = 110.61013003
  SOS1_RegDown_max_RT(g1,s2,t2): RDn(g1,s2,t2)
-   + SOS1_RegDown_max_RT(g1,s2,t2) = 41.38986997000001
+   + SOS1_RegDown_max_RT(g1,s2,t2) = 36.43775734000001
  SOS1_RegUp_max_RT(g1,s2,t3): RUp(g1,s2,t3) + SOS1_RegUp_max_RT(g1,s2,t3)
    = 109.84934219
  SOS1_RegDown_max_RT(g1,s2,t3): RDn(g1,s2,t3)
-   + SOS1_RegDown_max_RT(g1,s2,t3) = 42.15065781
+   + SOS1_RegDown_max_RT(g1,s2,t3) = 36.97598673
  SOS1_RegUp_max_RT(g1,s2,t4): RUp(g1,s2,t4) + SOS1_RegUp_max_RT(g1,s2,t4)
    = 108.35221571
  SOS1_RegDown_max_RT(g1,s2,t4): RDn(g1,s2,t4)
-   + SOS1_RegDown_max_RT(g1,s2,t4) = 43.64778429
+   + SOS1_RegDown_max_RT(g1,s2,t4) = 43.64778428999999
  SOS1_RegUp_max_RT(g1,s2,t5): RUp(g1,s2,t5) + SOS1_RegUp_max_RT(g1,s2,t5)
    = 107.70742787
  SOS1_RegDown_max_RT(g1,s2,t5): RDn(g1,s2,t5)
-   + SOS1_RegDown_max_RT(g1,s2,t5) = 44.29257213
+   + SOS1_RegDown_max_RT(g1,s2,t5) = 39.2737947
  SOS1_RegUp_max_RT(g1,s2,t6): RUp(g1,s2,t6) + SOS1_RegUp_max_RT(g1,s2,t6)
    = 106.25483041
  SOS1_RegDown_max_RT(g1,s2,t6): RDn(g1,s2,t6)
-   + SOS1_RegDown_max_RT(g1,s2,t6) = 45.74516959
+   + SOS1_RegDown_max_RT(g1,s2,t6) = 35.74516959
  SOS1_RegUp_max_RT(g1,s2,t7): RUp(g1,s2,t7) + SOS1_RegUp_max_RT(g1,s2,t7)
    = 105.29732917
  SOS1_RegDown_max_RT(g1,s2,t7): RDn(g1,s2,t7)
-   + SOS1_RegDown_max_RT(g1,s2,t7) = 46.70267083
+   + SOS1_RegDown_max_RT(g1,s2,t7) = 36.70267083
  SOS1_RegUp_max_RT(g1,s2,t8): RUp(g1,s2,t8) + SOS1_RegUp_max_RT(g1,s2,t8)
    = 103.84377559
  SOS1_RegDown_max_RT(g1,s2,t8): RDn(g1,s2,t8)
-   + SOS1_RegDown_max_RT(g1,s2,t8) = 48.15622441
+   + SOS1_RegDown_max_RT(g1,s2,t8) = 38.15622441
  SOS1_RegUp_max_RT(g1,s2,t9): RUp(g1,s2,t9) + SOS1_RegUp_max_RT(g1,s2,t9)
    = 102.9080648
  SOS1_RegDown_max_RT(g1,s2,t9): RDn(g1,s2,t9)
-   + SOS1_RegDown_max_RT(g1,s2,t9) = 49.0919352
+   + SOS1_RegDown_max_RT(g1,s2,t9) = 39.0919352
  SOS1_RegUp_max_RT(g1,s2,t10): RUp(g1,s2,t10)
    + SOS1_RegUp_max_RT(g1,s2,t10) = 102.33906227
  SOS1_RegDown_max_RT(g1,s2,t10): RDn(g1,s2,t10)
-   + SOS1_RegDown_max_RT(g1,s2,t10) = 49.66093773
+   + SOS1_RegDown_max_RT(g1,s2,t10) = 39.66093773
  SOS1_RegUp_max_RT(g1,s2,t11): RUp(g1,s2,t11)
    + SOS1_RegUp_max_RT(g1,s2,t11) = 102.48207836
  SOS1_RegDown_max_RT(g1,s2,t11): RDn(g1,s2,t11)
-   + SOS1_RegDown_max_RT(g1,s2,t11) = 49.51792164
+   + SOS1_RegDown_max_RT(g1,s2,t11) = 39.51792164
  SOS1_RegUp_max_RT(g1,s2,t12): RUp(g1,s2,t12)
    + SOS1_RegUp_max_RT(g1,s2,t12) = 103.37100154
  SOS1_RegDown_max_RT(g1,s2,t12): RDn(g1,s2,t12)
-   + SOS1_RegDown_max_RT(g1,s2,t12) = 48.62899846000001
+   + SOS1_RegDown_max_RT(g1,s2,t12) = 38.62899846
  SOS1_RegUp_max_RT(g1,s2,t13): RUp(g1,s2,t13)
    + SOS1_RegUp_max_RT(g1,s2,t13) = 104.73093516
  SOS1_RegDown_max_RT(g1,s2,t13): RDn(g1,s2,t13)
-   + SOS1_RegDown_max_RT(g1,s2,t13) = 47.26906484
+   + SOS1_RegDown_max_RT(g1,s2,t13) = 37.26906484
  SOS1_RegUp_max_RT(g1,s2,t14): RUp(g1,s2,t14)
    + SOS1_RegUp_max_RT(g1,s2,t14) = 106.79643314
  SOS1_RegDown_max_RT(g1,s2,t14): RDn(g1,s2,t14)
-   + SOS1_RegDown_max_RT(g1,s2,t14) = 45.20356686
+   + SOS1_RegDown_max_RT(g1,s2,t14) = 35.20356686
  SOS1_RegUp_max_RT(g1,s2,t15): RUp(g1,s2,t15)
    + SOS1_RegUp_max_RT(g1,s2,t15) = 108.48102805
  SOS1_RegDown_max_RT(g1,s2,t15): RDn(g1,s2,t15)
-   + SOS1_RegDown_max_RT(g1,s2,t15) = 43.51897195
+   + SOS1_RegDown_max_RT(g1,s2,t15) = 33.51897194999999
  SOS1_RegUp_max_RT(g1,s2,t16): RUp(g1,s2,t16)
    + SOS1_RegUp_max_RT(g1,s2,t16) = 109.39422955
  SOS1_RegDown_max_RT(g1,s2,t16): RDn(g1,s2,t16)
-   + SOS1_RegDown_max_RT(g1,s2,t16) = 42.60577045
+   + SOS1_RegDown_max_RT(g1,s2,t16) = 32.60577045000001
  SOS1_RegUp_max_RT(g1,s2,t17): RUp(g1,s2,t17)
    + SOS1_RegUp_max_RT(g1,s2,t17) = 109.56645619
  SOS1_RegDown_max_RT(g1,s2,t17): RDn(g1,s2,t17)
-   + SOS1_RegDown_max_RT(g1,s2,t17) = 42.43354381
+   + SOS1_RegDown_max_RT(g1,s2,t17) = 32.43354381
  SOS1_RegUp_max_RT(g1,s2,t18): RUp(g1,s2,t18)
    + SOS1_RegUp_max_RT(g1,s2,t18) = 109.86543533
  SOS1_RegDown_max_RT(g1,s2,t18): RDn(g1,s2,t18)
-   + SOS1_RegDown_max_RT(g1,s2,t18) = 42.13456467
+   + SOS1_RegDown_max_RT(g1,s2,t18) = 32.13456466999999
  SOS1_RegUp_max_RT(g1,s2,t19): RUp(g1,s2,t19)
    + SOS1_RegUp_max_RT(g1,s2,t19) = 109.88825651
  SOS1_RegDown_max_RT(g1,s2,t19): RDn(g1,s2,t19)
-   + SOS1_RegDown_max_RT(g1,s2,t19) = 42.11174349
+   + SOS1_RegDown_max_RT(g1,s2,t19) = 32.11174349
  SOS1_RegUp_max_RT(g1,s2,t20): RUp(g1,s2,t20)
    + SOS1_RegUp_max_RT(g1,s2,t20) = 109.54723013
  SOS1_RegDown_max_RT(g1,s2,t20): RDn(g1,s2,t20)
-   + SOS1_RegDown_max_RT(g1,s2,t20) = 42.45276987
+   + SOS1_RegDown_max_RT(g1,s2,t20) = 32.45276986999999
  SOS1_RegUp_max_RT(g1,s2,t21): RUp(g1,s2,t21)
    + SOS1_RegUp_max_RT(g1,s2,t21) = 108.75532483
  SOS1_RegDown_max_RT(g1,s2,t21): RDn(g1,s2,t21)
-   + SOS1_RegDown_max_RT(g1,s2,t21) = 43.24467517
+   + SOS1_RegDown_max_RT(g1,s2,t21) = 33.24467517
  SOS1_RegUp_max_RT(g1,s2,t22): RUp(g1,s2,t22)
    + SOS1_RegUp_max_RT(g1,s2,t22) = 107.78269786
  SOS1_RegDown_max_RT(g1,s2,t22): RDn(g1,s2,t22)
-   + SOS1_RegDown_max_RT(g1,s2,t22) = 44.21730214
+   + SOS1_RegDown_max_RT(g1,s2,t22) = 34.21730213999999
  SOS1_RegUp_max_RT(g1,s2,t23): RUp(g1,s2,t23)
    + SOS1_RegUp_max_RT(g1,s2,t23) = 106.44173395
  SOS1_RegDown_max_RT(g1,s2,t23): RDn(g1,s2,t23)
-   + SOS1_RegDown_max_RT(g1,s2,t23) = 45.55826605
+   + SOS1_RegDown_max_RT(g1,s2,t23) = 35.55826604999999
  SOS1_RegUp_max_RT(g1,s2,t24): RUp(g1,s2,t24)
    + SOS1_RegUp_max_RT(g1,s2,t24) = 104.54797085
  SOS1_RegDown_max_RT(g1,s2,t24): RDn(g1,s2,t24)
-   + SOS1_RegDown_max_RT(g1,s2,t24) = 47.45202914999999
+   + SOS1_RegDown_max_RT(g1,s2,t24) = 37.45202914999999
  SOS1_RegUpSC_max_RT(g1,s1,t1): RUpSC(g1,s1,t1)
    + SOS1_RegUpSC_max_RT(g1,s1,t1) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t1): RDnSC(g1,s1,t1)
    + SOS1_RegDnSC_max_RT(g1,s1,t1) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t2): RUpSC(g1,s1,t2)
-   + SOS1_RegUpSC_max_RT(g1,s1,t2) = 0
+   + SOS1_RegUpSC_max_RT(g1,s1,t2) = 4.952112630000002
  SOS1_RegDnSC_max_RT(g1,s1,t2): RDnSC(g1,s1,t2)
    + SOS1_RegDnSC_max_RT(g1,s1,t2) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t3): RUpSC(g1,s1,t3)
-   + SOS1_RegUpSC_max_RT(g1,s1,t3) = 0
+   + SOS1_RegUpSC_max_RT(g1,s1,t3) = 5.174671080000005
  SOS1_RegDnSC_max_RT(g1,s1,t3): RDnSC(g1,s1,t3)
    + SOS1_RegDnSC_max_RT(g1,s1,t3) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t4): RUpSC(g1,s1,t4)
@@ -679,95 +681,95 @@ Subject To
  SOS1_RegDnSC_max_RT(g1,s1,t4): RDnSC(g1,s1,t4)
    + SOS1_RegDnSC_max_RT(g1,s1,t4) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t5): RUpSC(g1,s1,t5)
-   + SOS1_RegUpSC_max_RT(g1,s1,t5) = 0
+   + SOS1_RegUpSC_max_RT(g1,s1,t5) = 5.018777430000002
  SOS1_RegDnSC_max_RT(g1,s1,t5): RDnSC(g1,s1,t5)
    + SOS1_RegDnSC_max_RT(g1,s1,t5) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t6): RUpSC(g1,s1,t6)
-   + SOS1_RegUpSC_max_RT(g1,s1,t6) = 0
+   + SOS1_RegUpSC_max_RT(g1,s1,t6) = 4.542229755000005
  SOS1_RegDnSC_max_RT(g1,s1,t6): RDnSC(g1,s1,t6)
-   + SOS1_RegDnSC_max_RT(g1,s1,t6) = 0
+   + SOS1_RegDnSC_max_RT(g1,s1,t6) = 5.457770244999995
  SOS1_RegUpSC_max_RT(g1,s1,t7): RUpSC(g1,s1,t7)
-   + SOS1_RegUpSC_max_RT(g1,s1,t7) = 0
+   + SOS1_RegUpSC_max_RT(g1,s1,t7) = 4.148664585000004
  SOS1_RegDnSC_max_RT(g1,s1,t7): RDnSC(g1,s1,t7)
-   + SOS1_RegDnSC_max_RT(g1,s1,t7) = 0
+   + SOS1_RegDnSC_max_RT(g1,s1,t7) = 5.851335414999996
  SOS1_RegUpSC_max_RT(g1,s1,t8): RUpSC(g1,s1,t8)
-   + SOS1_RegUpSC_max_RT(g1,s1,t8) = 0
+   + SOS1_RegUpSC_max_RT(g1,s1,t8) = 3.336702360000003
  SOS1_RegDnSC_max_RT(g1,s1,t8): RDnSC(g1,s1,t8)
-   + SOS1_RegDnSC_max_RT(g1,s1,t8) = 0
+   + SOS1_RegDnSC_max_RT(g1,s1,t8) = 6.663297639999997
  SOS1_RegUpSC_max_RT(g1,s1,t9): RUpSC(g1,s1,t9)
-   + SOS1_RegUpSC_max_RT(g1,s1,t9) = 0
+   + SOS1_RegUpSC_max_RT(g1,s1,t9) = 2.619095910000001
  SOS1_RegDnSC_max_RT(g1,s1,t9): RDnSC(g1,s1,t9)
-   + SOS1_RegDnSC_max_RT(g1,s1,t9) = 0
+   + SOS1_RegDnSC_max_RT(g1,s1,t9) = 7.380904089999999
  SOS1_RegUpSC_max_RT(g1,s1,t10): RUpSC(g1,s1,t10)
-   + SOS1_RegUpSC_max_RT(g1,s1,t10) = 0
+   + SOS1_RegUpSC_max_RT(g1,s1,t10) = 1.937298075000001
  SOS1_RegDnSC_max_RT(g1,s1,t10): RDnSC(g1,s1,t10)
-   + SOS1_RegDnSC_max_RT(g1,s1,t10) = 0
+   + SOS1_RegDnSC_max_RT(g1,s1,t10) = 8.062701924999999
  SOS1_RegUpSC_max_RT(g1,s1,t11): RUpSC(g1,s1,t11)
-   + SOS1_RegUpSC_max_RT(g1,s1,t11) = 0
+   + SOS1_RegUpSC_max_RT(g1,s1,t11) = 1.491039180000001
  SOS1_RegDnSC_max_RT(g1,s1,t11): RDnSC(g1,s1,t11)
-   + SOS1_RegDnSC_max_RT(g1,s1,t11) = 0
+   + SOS1_RegDnSC_max_RT(g1,s1,t11) = 8.508960819999999
  SOS1_RegUpSC_max_RT(g1,s1,t12): RUpSC(g1,s1,t12)
    + SOS1_RegUpSC_max_RT(g1,s1,t12) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t12): RDnSC(g1,s1,t12)
-   + SOS1_RegDnSC_max_RT(g1,s1,t12) = 0
+   + SOS1_RegDnSC_max_RT(g1,s1,t12) = 10
  SOS1_RegUpSC_max_RT(g1,s1,t13): RUpSC(g1,s1,t13)
-   + SOS1_RegUpSC_max_RT(g1,s1,t13) = 0
+   + SOS1_RegUpSC_max_RT(g1,s1,t13) = 1.365467580000001
  SOS1_RegDnSC_max_RT(g1,s1,t13): RDnSC(g1,s1,t13)
-   + SOS1_RegDnSC_max_RT(g1,s1,t13) = 0
+   + SOS1_RegDnSC_max_RT(g1,s1,t13) = 8.634532419999999
  SOS1_RegUpSC_max_RT(g1,s1,t14): RUpSC(g1,s1,t14)
-   + SOS1_RegUpSC_max_RT(g1,s1,t14) = 0
+   + SOS1_RegUpSC_max_RT(g1,s1,t14) = 1.751168955000001
  SOS1_RegDnSC_max_RT(g1,s1,t14): RDnSC(g1,s1,t14)
-   + SOS1_RegDnSC_max_RT(g1,s1,t14) = 0
+   + SOS1_RegDnSC_max_RT(g1,s1,t14) = 8.248831044999999
  SOS1_RegUpSC_max_RT(g1,s1,t15): RUpSC(g1,s1,t15)
-   + SOS1_RegUpSC_max_RT(g1,s1,t15) = 0
+   + SOS1_RegUpSC_max_RT(g1,s1,t15) = 1.990514025
  SOS1_RegDnSC_max_RT(g1,s1,t15): RDnSC(g1,s1,t15)
-   + SOS1_RegDnSC_max_RT(g1,s1,t15) = 0
+   + SOS1_RegDnSC_max_RT(g1,s1,t15) = 8.009485975000001
  SOS1_RegUpSC_max_RT(g1,s1,t16): RUpSC(g1,s1,t16)
-   + SOS1_RegUpSC_max_RT(g1,s1,t16) = 0
+   + SOS1_RegUpSC_max_RT(g1,s1,t16) = 1.92934782
  SOS1_RegDnSC_max_RT(g1,s1,t16): RDnSC(g1,s1,t16)
-   + SOS1_RegDnSC_max_RT(g1,s1,t16) = 0
+   + SOS1_RegDnSC_max_RT(g1,s1,t16) = 8.07065218
  SOS1_RegUpSC_max_RT(g1,s1,t17): RUpSC(g1,s1,t17)
    + SOS1_RegUpSC_max_RT(g1,s1,t17) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t17): RDnSC(g1,s1,t17)
-   + SOS1_RegDnSC_max_RT(g1,s1,t17) = 0
+   + SOS1_RegDnSC_max_RT(g1,s1,t17) = 10
  SOS1_RegUpSC_max_RT(g1,s1,t18): RUpSC(g1,s1,t18)
    + SOS1_RegUpSC_max_RT(g1,s1,t18) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t18): RDnSC(g1,s1,t18)
-   + SOS1_RegDnSC_max_RT(g1,s1,t18) = 0
+   + SOS1_RegDnSC_max_RT(g1,s1,t18) = 10
  SOS1_RegUpSC_max_RT(g1,s1,t19): RUpSC(g1,s1,t19)
-   + SOS1_RegUpSC_max_RT(g1,s1,t19) = 0
+   + SOS1_RegUpSC_max_RT(g1,s1,t19) = 1.444128255000003
  SOS1_RegDnSC_max_RT(g1,s1,t19): RDnSC(g1,s1,t19)
-   + SOS1_RegDnSC_max_RT(g1,s1,t19) = 0
+   + SOS1_RegDnSC_max_RT(g1,s1,t19) = 8.555871744999998
  SOS1_RegUpSC_max_RT(g1,s1,t20): RUpSC(g1,s1,t20)
    + SOS1_RegUpSC_max_RT(g1,s1,t20) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t20): RDnSC(g1,s1,t20)
-   + SOS1_RegDnSC_max_RT(g1,s1,t20) = 0
+   + SOS1_RegDnSC_max_RT(g1,s1,t20) = 10
  SOS1_RegUpSC_max_RT(g1,s1,t21): RUpSC(g1,s1,t21)
-   + SOS1_RegUpSC_max_RT(g1,s1,t21) = 0
+   + SOS1_RegUpSC_max_RT(g1,s1,t21) = 1.212598890000001
  SOS1_RegDnSC_max_RT(g1,s1,t21): RDnSC(g1,s1,t21)
-   + SOS1_RegDnSC_max_RT(g1,s1,t21) = 0
+   + SOS1_RegDnSC_max_RT(g1,s1,t21) = 8.787401109999999
  SOS1_RegUpSC_max_RT(g1,s1,t22): RUpSC(g1,s1,t22)
    + SOS1_RegUpSC_max_RT(g1,s1,t22) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t22): RDnSC(g1,s1,t22)
-   + SOS1_RegDnSC_max_RT(g1,s1,t22) = 0
+   + SOS1_RegDnSC_max_RT(g1,s1,t22) = 10
  SOS1_RegUpSC_max_RT(g1,s1,t23): RUpSC(g1,s1,t23)
    + SOS1_RegUpSC_max_RT(g1,s1,t23) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t23): RDnSC(g1,s1,t23)
-   + SOS1_RegDnSC_max_RT(g1,s1,t23) = 0
+   + SOS1_RegDnSC_max_RT(g1,s1,t23) = 10
  SOS1_RegUpSC_max_RT(g1,s1,t24): RUpSC(g1,s1,t24)
-   + SOS1_RegUpSC_max_RT(g1,s1,t24) = 0
+   + SOS1_RegUpSC_max_RT(g1,s1,t24) = 0.6269377949999999
  SOS1_RegDnSC_max_RT(g1,s1,t24): RDnSC(g1,s1,t24)
-   + SOS1_RegDnSC_max_RT(g1,s1,t24) = 0
+   + SOS1_RegDnSC_max_RT(g1,s1,t24) = 9.373062205
  SOS1_RegUpSC_max_RT(g1,s2,t1): RUpSC(g1,s2,t1)
    + SOS1_RegUpSC_max_RT(g1,s2,t1) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t1): RDnSC(g1,s2,t1)
    + SOS1_RegDnSC_max_RT(g1,s2,t1) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t2): RUpSC(g1,s2,t2)
-   + SOS1_RegUpSC_max_RT(g1,s2,t2) = 0
+   + SOS1_RegUpSC_max_RT(g1,s2,t2) = 4.952112630000002
  SOS1_RegDnSC_max_RT(g1,s2,t2): RDnSC(g1,s2,t2)
    + SOS1_RegDnSC_max_RT(g1,s2,t2) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t3): RUpSC(g1,s2,t3)
-   + SOS1_RegUpSC_max_RT(g1,s2,t3) = 0
+   + SOS1_RegUpSC_max_RT(g1,s2,t3) = 5.174671080000005
  SOS1_RegDnSC_max_RT(g1,s2,t3): RDnSC(g1,s2,t3)
    + SOS1_RegDnSC_max_RT(g1,s2,t3) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t4): RUpSC(g1,s2,t4)
@@ -775,85 +777,85 @@ Subject To
  SOS1_RegDnSC_max_RT(g1,s2,t4): RDnSC(g1,s2,t4)
    + SOS1_RegDnSC_max_RT(g1,s2,t4) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t5): RUpSC(g1,s2,t5)
-   + SOS1_RegUpSC_max_RT(g1,s2,t5) = 0
+   + SOS1_RegUpSC_max_RT(g1,s2,t5) = 5.018777430000002
  SOS1_RegDnSC_max_RT(g1,s2,t5): RDnSC(g1,s2,t5)
    + SOS1_RegDnSC_max_RT(g1,s2,t5) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t6): RUpSC(g1,s2,t6)
-   + SOS1_RegUpSC_max_RT(g1,s2,t6) = 0
+   + SOS1_RegUpSC_max_RT(g1,s2,t6) = 4.542229755000005
  SOS1_RegDnSC_max_RT(g1,s2,t6): RDnSC(g1,s2,t6)
-   + SOS1_RegDnSC_max_RT(g1,s2,t6) = 0
+   + SOS1_RegDnSC_max_RT(g1,s2,t6) = 5.457770244999995
  SOS1_RegUpSC_max_RT(g1,s2,t7): RUpSC(g1,s2,t7)
-   + SOS1_RegUpSC_max_RT(g1,s2,t7) = 0
+   + SOS1_RegUpSC_max_RT(g1,s2,t7) = 4.148664585000004
  SOS1_RegDnSC_max_RT(g1,s2,t7): RDnSC(g1,s2,t7)
-   + SOS1_RegDnSC_max_RT(g1,s2,t7) = 0
+   + SOS1_RegDnSC_max_RT(g1,s2,t7) = 5.851335414999996
  SOS1_RegUpSC_max_RT(g1,s2,t8): RUpSC(g1,s2,t8)
-   + SOS1_RegUpSC_max_RT(g1,s2,t8) = 0
+   + SOS1_RegUpSC_max_RT(g1,s2,t8) = 3.336702360000003
  SOS1_RegDnSC_max_RT(g1,s2,t8): RDnSC(g1,s2,t8)
-   + SOS1_RegDnSC_max_RT(g1,s2,t8) = 0
+   + SOS1_RegDnSC_max_RT(g1,s2,t8) = 6.663297639999997
  SOS1_RegUpSC_max_RT(g1,s2,t9): RUpSC(g1,s2,t9)
-   + SOS1_RegUpSC_max_RT(g1,s2,t9) = 0
+   + SOS1_RegUpSC_max_RT(g1,s2,t9) = 2.619095910000001
  SOS1_RegDnSC_max_RT(g1,s2,t9): RDnSC(g1,s2,t9)
-   + SOS1_RegDnSC_max_RT(g1,s2,t9) = 0
+   + SOS1_RegDnSC_max_RT(g1,s2,t9) = 7.380904089999999
  SOS1_RegUpSC_max_RT(g1,s2,t10): RUpSC(g1,s2,t10)
-   + SOS1_RegUpSC_max_RT(g1,s2,t10) = 0
+   + SOS1_RegUpSC_max_RT(g1,s2,t10) = 1.937298075000001
  SOS1_RegDnSC_max_RT(g1,s2,t10): RDnSC(g1,s2,t10)
-   + SOS1_RegDnSC_max_RT(g1,s2,t10) = 0
+   + SOS1_RegDnSC_max_RT(g1,s2,t10) = 8.062701924999999
  SOS1_RegUpSC_max_RT(g1,s2,t11): RUpSC(g1,s2,t11)
-   + SOS1_RegUpSC_max_RT(g1,s2,t11) = 0
+   + SOS1_RegUpSC_max_RT(g1,s2,t11) = 1.491039180000001
  SOS1_RegDnSC_max_RT(g1,s2,t11): RDnSC(g1,s2,t11)
-   + SOS1_RegDnSC_max_RT(g1,s2,t11) = 0
+   + SOS1_RegDnSC_max_RT(g1,s2,t11) = 8.508960819999999
  SOS1_RegUpSC_max_RT(g1,s2,t12): RUpSC(g1,s2,t12)
    + SOS1_RegUpSC_max_RT(g1,s2,t12) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t12): RDnSC(g1,s2,t12)
-   + SOS1_RegDnSC_max_RT(g1,s2,t12) = 0
+   + SOS1_RegDnSC_max_RT(g1,s2,t12) = 10
  SOS1_RegUpSC_max_RT(g1,s2,t13): RUpSC(g1,s2,t13)
-   + SOS1_RegUpSC_max_RT(g1,s2,t13) = 0
+   + SOS1_RegUpSC_max_RT(g1,s2,t13) = 1.365467580000001
  SOS1_RegDnSC_max_RT(g1,s2,t13): RDnSC(g1,s2,t13)
-   + SOS1_RegDnSC_max_RT(g1,s2,t13) = 0
+   + SOS1_RegDnSC_max_RT(g1,s2,t13) = 8.634532419999999
  SOS1_RegUpSC_max_RT(g1,s2,t14): RUpSC(g1,s2,t14)
-   + SOS1_RegUpSC_max_RT(g1,s2,t14) = 0
+   + SOS1_RegUpSC_max_RT(g1,s2,t14) = 1.751168955000001
  SOS1_RegDnSC_max_RT(g1,s2,t14): RDnSC(g1,s2,t14)
-   + SOS1_RegDnSC_max_RT(g1,s2,t14) = 0
+   + SOS1_RegDnSC_max_RT(g1,s2,t14) = 8.248831044999999
  SOS1_RegUpSC_max_RT(g1,s2,t15): RUpSC(g1,s2,t15)
-   + SOS1_RegUpSC_max_RT(g1,s2,t15) = 0
+   + SOS1_RegUpSC_max_RT(g1,s2,t15) = 1.990514025
  SOS1_RegDnSC_max_RT(g1,s2,t15): RDnSC(g1,s2,t15)
-   + SOS1_RegDnSC_max_RT(g1,s2,t15) = 0
+   + SOS1_RegDnSC_max_RT(g1,s2,t15) = 8.009485975000001
  SOS1_RegUpSC_max_RT(g1,s2,t16): RUpSC(g1,s2,t16)
-   + SOS1_RegUpSC_max_RT(g1,s2,t16) = 0
+   + SOS1_RegUpSC_max_RT(g1,s2,t16) = 1.92934782
  SOS1_RegDnSC_max_RT(g1,s2,t16): RDnSC(g1,s2,t16)
-   + SOS1_RegDnSC_max_RT(g1,s2,t16) = 0
+   + SOS1_RegDnSC_max_RT(g1,s2,t16) = 8.07065218
  SOS1_RegUpSC_max_RT(g1,s2,t17): RUpSC(g1,s2,t17)
    + SOS1_RegUpSC_max_RT(g1,s2,t17) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t17): RDnSC(g1,s2,t17)
-   + SOS1_RegDnSC_max_RT(g1,s2,t17) = 0
+   + SOS1_RegDnSC_max_RT(g1,s2,t17) = 10
  SOS1_RegUpSC_max_RT(g1,s2,t18): RUpSC(g1,s2,t18)
    + SOS1_RegUpSC_max_RT(g1,s2,t18) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t18): RDnSC(g1,s2,t18)
-   + SOS1_RegDnSC_max_RT(g1,s2,t18) = 0
+   + SOS1_RegDnSC_max_RT(g1,s2,t18) = 10
  SOS1_RegUpSC_max_RT(g1,s2,t19): RUpSC(g1,s2,t19)
-   + SOS1_RegUpSC_max_RT(g1,s2,t19) = 0
+   + SOS1_RegUpSC_max_RT(g1,s2,t19) = 1.444128255000003
  SOS1_RegDnSC_max_RT(g1,s2,t19): RDnSC(g1,s2,t19)
-   + SOS1_RegDnSC_max_RT(g1,s2,t19) = 0
+   + SOS1_RegDnSC_max_RT(g1,s2,t19) = 8.555871744999998
  SOS1_RegUpSC_max_RT(g1,s2,t20): RUpSC(g1,s2,t20)
    + SOS1_RegUpSC_max_RT(g1,s2,t20) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t20): RDnSC(g1,s2,t20)
-   + SOS1_RegDnSC_max_RT(g1,s2,t20) = 0
+   + SOS1_RegDnSC_max_RT(g1,s2,t20) = 10
  SOS1_RegUpSC_max_RT(g1,s2,t21): RUpSC(g1,s2,t21)
-   + SOS1_RegUpSC_max_RT(g1,s2,t21) = 0
+   + SOS1_RegUpSC_max_RT(g1,s2,t21) = 1.212598890000001
  SOS1_RegDnSC_max_RT(g1,s2,t21): RDnSC(g1,s2,t21)
-   + SOS1_RegDnSC_max_RT(g1,s2,t21) = 0
+   + SOS1_RegDnSC_max_RT(g1,s2,t21) = 8.787401109999999
  SOS1_RegUpSC_max_RT(g1,s2,t22): RUpSC(g1,s2,t22)
    + SOS1_RegUpSC_max_RT(g1,s2,t22) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t22): RDnSC(g1,s2,t22)
-   + SOS1_RegDnSC_max_RT(g1,s2,t22) = 0
+   + SOS1_RegDnSC_max_RT(g1,s2,t22) = 10
  SOS1_RegUpSC_max_RT(g1,s2,t23): RUpSC(g1,s2,t23)
    + SOS1_RegUpSC_max_RT(g1,s2,t23) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t23): RDnSC(g1,s2,t23)
-   + SOS1_RegDnSC_max_RT(g1,s2,t23) = 0
+   + SOS1_RegDnSC_max_RT(g1,s2,t23) = 10
  SOS1_RegUpSC_max_RT(g1,s2,t24): RUpSC(g1,s2,t24)
-   + SOS1_RegUpSC_max_RT(g1,s2,t24) = 0
+   + SOS1_RegUpSC_max_RT(g1,s2,t24) = 0.6269377949999999
  SOS1_RegDnSC_max_RT(g1,s2,t24): RDnSC(g1,s2,t24)
-   + SOS1_RegDnSC_max_RT(g1,s2,t24) = 0
+   + SOS1_RegDnSC_max_RT(g1,s2,t24) = 9.373062205
  SOS1_Max_load_shed_RT(s1,t1): Lshed(s1,t1) + SOS1_Max_load_shed_RT(s1,t1)
    = 50
  SOS1_Max_load_shed_RT(s1,t2): Lshed(s1,t2) + SOS1_Max_load_shed_RT(s1,t2)

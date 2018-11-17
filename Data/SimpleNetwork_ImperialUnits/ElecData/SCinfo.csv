@@ -1,2 +1,2 @@
 SC_ID,GasNode,ElecNode,ts,te,PcMin,PcMax,RcD,RcU,lambdaC,AlphaC
-sc1,ng102,ne101,1,24,0,0,-999,-999,0,-999
+sc1,ng102,ne101,1,24,0,10,-999,-999,0,-999

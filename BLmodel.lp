@@ -386,101 +386,101 @@ Subject To
  Wind_Max_DA(w1,t22): WindDA(w1,t22) <= 3.370745925
  Wind_Max_DA(w1,t23): WindDA(w1,t23) <= 2.91260091
  Wind_Max_DA(w1,t24): WindDA(w1,t24) <= 1.880813415
- PgenSCmax(g1,t1): PgenSC(g1,t1) <= 0
+ PgenSCmax(g1,t1): PgenSC(g1,t1) <= 10
  PgenSCmin(g1,t1): - PgenSC(g1,t1) <= 0
- RCupSCmax(g1,t1): PgenSC(g1,t1) + RCupSC(g1,t1) <= 0
+ RCupSCmax(g1,t1): PgenSC(g1,t1) + RCupSC(g1,t1) <= 10
  RCdnSCmin(g1,t1): - PgenSC(g1,t1) + RCdnSC(g1,t1) <= 0
- PgenSCmax(g1,t2): PgenSC(g1,t2) <= 0
+ PgenSCmax(g1,t2): PgenSC(g1,t2) <= 10
  PgenSCmin(g1,t2): - PgenSC(g1,t2) <= 0
- RCupSCmax(g1,t2): PgenSC(g1,t2) + RCupSC(g1,t2) <= 0
+ RCupSCmax(g1,t2): PgenSC(g1,t2) + RCupSC(g1,t2) <= 10
  RCdnSCmin(g1,t2): - PgenSC(g1,t2) + RCdnSC(g1,t2) <= 0
- PgenSCmax(g1,t3): PgenSC(g1,t3) <= 0
+ PgenSCmax(g1,t3): PgenSC(g1,t3) <= 10
  PgenSCmin(g1,t3): - PgenSC(g1,t3) <= 0
- RCupSCmax(g1,t3): PgenSC(g1,t3) + RCupSC(g1,t3) <= 0
+ RCupSCmax(g1,t3): PgenSC(g1,t3) + RCupSC(g1,t3) <= 10
  RCdnSCmin(g1,t3): - PgenSC(g1,t3) + RCdnSC(g1,t3) <= 0
- PgenSCmax(g1,t4): PgenSC(g1,t4) <= 0
+ PgenSCmax(g1,t4): PgenSC(g1,t4) <= 10
  PgenSCmin(g1,t4): - PgenSC(g1,t4) <= 0
- RCupSCmax(g1,t4): PgenSC(g1,t4) + RCupSC(g1,t4) <= 0
+ RCupSCmax(g1,t4): PgenSC(g1,t4) + RCupSC(g1,t4) <= 10
  RCdnSCmin(g1,t4): - PgenSC(g1,t4) + RCdnSC(g1,t4) <= 0
- PgenSCmax(g1,t5): PgenSC(g1,t5) <= 0
+ PgenSCmax(g1,t5): PgenSC(g1,t5) <= 10
  PgenSCmin(g1,t5): - PgenSC(g1,t5) <= 0
- RCupSCmax(g1,t5): PgenSC(g1,t5) + RCupSC(g1,t5) <= 0
+ RCupSCmax(g1,t5): PgenSC(g1,t5) + RCupSC(g1,t5) <= 10
  RCdnSCmin(g1,t5): - PgenSC(g1,t5) + RCdnSC(g1,t5) <= 0
- PgenSCmax(g1,t6): PgenSC(g1,t6) <= 0
+ PgenSCmax(g1,t6): PgenSC(g1,t6) <= 10
  PgenSCmin(g1,t6): - PgenSC(g1,t6) <= 0
- RCupSCmax(g1,t6): PgenSC(g1,t6) + RCupSC(g1,t6) <= 0
+ RCupSCmax(g1,t6): PgenSC(g1,t6) + RCupSC(g1,t6) <= 10
  RCdnSCmin(g1,t6): - PgenSC(g1,t6) + RCdnSC(g1,t6) <= 0
- PgenSCmax(g1,t7): PgenSC(g1,t7) <= 0
+ PgenSCmax(g1,t7): PgenSC(g1,t7) <= 10
  PgenSCmin(g1,t7): - PgenSC(g1,t7) <= 0
- RCupSCmax(g1,t7): PgenSC(g1,t7) + RCupSC(g1,t7) <= 0
+ RCupSCmax(g1,t7): PgenSC(g1,t7) + RCupSC(g1,t7) <= 10
  RCdnSCmin(g1,t7): - PgenSC(g1,t7) + RCdnSC(g1,t7) <= 0
- PgenSCmax(g1,t8): PgenSC(g1,t8) <= 0
+ PgenSCmax(g1,t8): PgenSC(g1,t8) <= 10
  PgenSCmin(g1,t8): - PgenSC(g1,t8) <= 0
- RCupSCmax(g1,t8): PgenSC(g1,t8) + RCupSC(g1,t8) <= 0
+ RCupSCmax(g1,t8): PgenSC(g1,t8) + RCupSC(g1,t8) <= 10
  RCdnSCmin(g1,t8): - PgenSC(g1,t8) + RCdnSC(g1,t8) <= 0
- PgenSCmax(g1,t9): PgenSC(g1,t9) <= 0
+ PgenSCmax(g1,t9): PgenSC(g1,t9) <= 10
  PgenSCmin(g1,t9): - PgenSC(g1,t9) <= 0
- RCupSCmax(g1,t9): PgenSC(g1,t9) + RCupSC(g1,t9) <= 0
+ RCupSCmax(g1,t9): PgenSC(g1,t9) + RCupSC(g1,t9) <= 10
  RCdnSCmin(g1,t9): - PgenSC(g1,t9) + RCdnSC(g1,t9) <= 0
- PgenSCmax(g1,t10): PgenSC(g1,t10) <= 0
+ PgenSCmax(g1,t10): PgenSC(g1,t10) <= 10
  PgenSCmin(g1,t10): - PgenSC(g1,t10) <= 0
- RCupSCmax(g1,t10): PgenSC(g1,t10) + RCupSC(g1,t10) <= 0
+ RCupSCmax(g1,t10): PgenSC(g1,t10) + RCupSC(g1,t10) <= 10
  RCdnSCmin(g1,t10): - PgenSC(g1,t10) + RCdnSC(g1,t10) <= 0
- PgenSCmax(g1,t11): PgenSC(g1,t11) <= 0
+ PgenSCmax(g1,t11): PgenSC(g1,t11) <= 10
  PgenSCmin(g1,t11): - PgenSC(g1,t11) <= 0
- RCupSCmax(g1,t11): PgenSC(g1,t11) + RCupSC(g1,t11) <= 0
+ RCupSCmax(g1,t11): PgenSC(g1,t11) + RCupSC(g1,t11) <= 10
  RCdnSCmin(g1,t11): - PgenSC(g1,t11) + RCdnSC(g1,t11) <= 0
- PgenSCmax(g1,t12): PgenSC(g1,t12) <= 0
+ PgenSCmax(g1,t12): PgenSC(g1,t12) <= 10
  PgenSCmin(g1,t12): - PgenSC(g1,t12) <= 0
- RCupSCmax(g1,t12): PgenSC(g1,t12) + RCupSC(g1,t12) <= 0
+ RCupSCmax(g1,t12): PgenSC(g1,t12) + RCupSC(g1,t12) <= 10
  RCdnSCmin(g1,t12): - PgenSC(g1,t12) + RCdnSC(g1,t12) <= 0
- PgenSCmax(g1,t13): PgenSC(g1,t13) <= 0
+ PgenSCmax(g1,t13): PgenSC(g1,t13) <= 10
  PgenSCmin(g1,t13): - PgenSC(g1,t13) <= 0
- RCupSCmax(g1,t13): PgenSC(g1,t13) + RCupSC(g1,t13) <= 0
+ RCupSCmax(g1,t13): PgenSC(g1,t13) + RCupSC(g1,t13) <= 10
  RCdnSCmin(g1,t13): - PgenSC(g1,t13) + RCdnSC(g1,t13) <= 0
- PgenSCmax(g1,t14): PgenSC(g1,t14) <= 0
+ PgenSCmax(g1,t14): PgenSC(g1,t14) <= 10
  PgenSCmin(g1,t14): - PgenSC(g1,t14) <= 0
- RCupSCmax(g1,t14): PgenSC(g1,t14) + RCupSC(g1,t14) <= 0
+ RCupSCmax(g1,t14): PgenSC(g1,t14) + RCupSC(g1,t14) <= 10
  RCdnSCmin(g1,t14): - PgenSC(g1,t14) + RCdnSC(g1,t14) <= 0
- PgenSCmax(g1,t15): PgenSC(g1,t15) <= 0
+ PgenSCmax(g1,t15): PgenSC(g1,t15) <= 10
  PgenSCmin(g1,t15): - PgenSC(g1,t15) <= 0
- RCupSCmax(g1,t15): PgenSC(g1,t15) + RCupSC(g1,t15) <= 0
+ RCupSCmax(g1,t15): PgenSC(g1,t15) + RCupSC(g1,t15) <= 10
  RCdnSCmin(g1,t15): - PgenSC(g1,t15) + RCdnSC(g1,t15) <= 0
- PgenSCmax(g1,t16): PgenSC(g1,t16) <= 0
+ PgenSCmax(g1,t16): PgenSC(g1,t16) <= 10
  PgenSCmin(g1,t16): - PgenSC(g1,t16) <= 0
- RCupSCmax(g1,t16): PgenSC(g1,t16) + RCupSC(g1,t16) <= 0
+ RCupSCmax(g1,t16): PgenSC(g1,t16) + RCupSC(g1,t16) <= 10
  RCdnSCmin(g1,t16): - PgenSC(g1,t16) + RCdnSC(g1,t16) <= 0
- PgenSCmax(g1,t17): PgenSC(g1,t17) <= 0
+ PgenSCmax(g1,t17): PgenSC(g1,t17) <= 10
  PgenSCmin(g1,t17): - PgenSC(g1,t17) <= 0
- RCupSCmax(g1,t17): PgenSC(g1,t17) + RCupSC(g1,t17) <= 0
+ RCupSCmax(g1,t17): PgenSC(g1,t17) + RCupSC(g1,t17) <= 10
  RCdnSCmin(g1,t17): - PgenSC(g1,t17) + RCdnSC(g1,t17) <= 0
- PgenSCmax(g1,t18): PgenSC(g1,t18) <= 0
+ PgenSCmax(g1,t18): PgenSC(g1,t18) <= 10
  PgenSCmin(g1,t18): - PgenSC(g1,t18) <= 0
- RCupSCmax(g1,t18): PgenSC(g1,t18) + RCupSC(g1,t18) <= 0
+ RCupSCmax(g1,t18): PgenSC(g1,t18) + RCupSC(g1,t18) <= 10
  RCdnSCmin(g1,t18): - PgenSC(g1,t18) + RCdnSC(g1,t18) <= 0
- PgenSCmax(g1,t19): PgenSC(g1,t19) <= 0
+ PgenSCmax(g1,t19): PgenSC(g1,t19) <= 10
  PgenSCmin(g1,t19): - PgenSC(g1,t19) <= 0
- RCupSCmax(g1,t19): PgenSC(g1,t19) + RCupSC(g1,t19) <= 0
+ RCupSCmax(g1,t19): PgenSC(g1,t19) + RCupSC(g1,t19) <= 10
  RCdnSCmin(g1,t19): - PgenSC(g1,t19) + RCdnSC(g1,t19) <= 0
- PgenSCmax(g1,t20): PgenSC(g1,t20) <= 0
+ PgenSCmax(g1,t20): PgenSC(g1,t20) <= 10
  PgenSCmin(g1,t20): - PgenSC(g1,t20) <= 0
- RCupSCmax(g1,t20): PgenSC(g1,t20) + RCupSC(g1,t20) <= 0
+ RCupSCmax(g1,t20): PgenSC(g1,t20) + RCupSC(g1,t20) <= 10
  RCdnSCmin(g1,t20): - PgenSC(g1,t20) + RCdnSC(g1,t20) <= 0
- PgenSCmax(g1,t21): PgenSC(g1,t21) <= 0
+ PgenSCmax(g1,t21): PgenSC(g1,t21) <= 10
  PgenSCmin(g1,t21): - PgenSC(g1,t21) <= 0
- RCupSCmax(g1,t21): PgenSC(g1,t21) + RCupSC(g1,t21) <= 0
+ RCupSCmax(g1,t21): PgenSC(g1,t21) + RCupSC(g1,t21) <= 10
  RCdnSCmin(g1,t21): - PgenSC(g1,t21) + RCdnSC(g1,t21) <= 0
- PgenSCmax(g1,t22): PgenSC(g1,t22) <= 0
+ PgenSCmax(g1,t22): PgenSC(g1,t22) <= 10
  PgenSCmin(g1,t22): - PgenSC(g1,t22) <= 0
- RCupSCmax(g1,t22): PgenSC(g1,t22) + RCupSC(g1,t22) <= 0
+ RCupSCmax(g1,t22): PgenSC(g1,t22) + RCupSC(g1,t22) <= 10
  RCdnSCmin(g1,t22): - PgenSC(g1,t22) + RCdnSC(g1,t22) <= 0
- PgenSCmax(g1,t23): PgenSC(g1,t23) <= 0
+ PgenSCmax(g1,t23): PgenSC(g1,t23) <= 10
  PgenSCmin(g1,t23): - PgenSC(g1,t23) <= 0
- RCupSCmax(g1,t23): PgenSC(g1,t23) + RCupSC(g1,t23) <= 0
+ RCupSCmax(g1,t23): PgenSC(g1,t23) + RCupSC(g1,t23) <= 10
  RCdnSCmin(g1,t23): - PgenSC(g1,t23) + RCdnSC(g1,t23) <= 0
- PgenSCmax(g1,t24): PgenSC(g1,t24) <= 0
+ PgenSCmax(g1,t24): PgenSC(g1,t24) <= 10
  PgenSCmin(g1,t24): - PgenSC(g1,t24) <= 0
- RCupSCmax(g1,t24): PgenSC(g1,t24) + RCupSC(g1,t24) <= 0
+ RCupSCmax(g1,t24): PgenSC(g1,t24) + RCupSC(g1,t24) <= 10
  RCdnSCmin(g1,t24): - PgenSC(g1,t24) + RCdnSC(g1,t24) <= 0
  PowerBalance_RT(s1,t1): RUp(g1,s1,t1) - RDn(g1,s1,t1) + Lshed(s1,t1)
    - WindDA(w1,t1) + RUpSC(g1,s1,t1) - RDnSC(g1,s1,t1) - Wspill(w1,s1,t1)
@@ -1058,148 +1058,148 @@ Subject To
    = 2.91260091
  SOS1_Wind_Max_DA(w1,t24): WindDA(w1,t24) + SOS1_Wind_Max_DA(w1,t24)
    = 1.880813415
- SOS1_PgenSCmax(g1,t1): PgenSC(g1,t1) + SOS1_PgenSCmax(g1,t1) = 0
+ SOS1_PgenSCmax(g1,t1): PgenSC(g1,t1) + SOS1_PgenSCmax(g1,t1) = 10
  SOS1_PgenSCmin(g1,t1): - PgenSC(g1,t1) + SOS1_PgenSCmin(g1,t1) = 0
  SOS1_RCupSCmax(g1,t1): PgenSC(g1,t1) + RCupSC(g1,t1)
-   + SOS1_RCupSCmax(g1,t1) = 0
+   + SOS1_RCupSCmax(g1,t1) = 10
  SOS1_RCdnSCmin(g1,t1): - PgenSC(g1,t1) + RCdnSC(g1,t1)
    + SOS1_RCdnSCmin(g1,t1) = 0
- SOS1_PgenSCmax(g1,t2): PgenSC(g1,t2) + SOS1_PgenSCmax(g1,t2) = 0
+ SOS1_PgenSCmax(g1,t2): PgenSC(g1,t2) + SOS1_PgenSCmax(g1,t2) = 10
  SOS1_PgenSCmin(g1,t2): - PgenSC(g1,t2) + SOS1_PgenSCmin(g1,t2) = 0
  SOS1_RCupSCmax(g1,t2): PgenSC(g1,t2) + RCupSC(g1,t2)
-   + SOS1_RCupSCmax(g1,t2) = 0
+   + SOS1_RCupSCmax(g1,t2) = 10
  SOS1_RCdnSCmin(g1,t2): - PgenSC(g1,t2) + RCdnSC(g1,t2)
    + SOS1_RCdnSCmin(g1,t2) = 0
- SOS1_PgenSCmax(g1,t3): PgenSC(g1,t3) + SOS1_PgenSCmax(g1,t3) = 0
+ SOS1_PgenSCmax(g1,t3): PgenSC(g1,t3) + SOS1_PgenSCmax(g1,t3) = 10
  SOS1_PgenSCmin(g1,t3): - PgenSC(g1,t3) + SOS1_PgenSCmin(g1,t3) = 0
  SOS1_RCupSCmax(g1,t3): PgenSC(g1,t3) + RCupSC(g1,t3)
-   + SOS1_RCupSCmax(g1,t3) = 0
+   + SOS1_RCupSCmax(g1,t3) = 10
  SOS1_RCdnSCmin(g1,t3): - PgenSC(g1,t3) + RCdnSC(g1,t3)
    + SOS1_RCdnSCmin(g1,t3) = 0
- SOS1_PgenSCmax(g1,t4): PgenSC(g1,t4) + SOS1_PgenSCmax(g1,t4) = 0
+ SOS1_PgenSCmax(g1,t4): PgenSC(g1,t4) + SOS1_PgenSCmax(g1,t4) = 10
  SOS1_PgenSCmin(g1,t4): - PgenSC(g1,t4) + SOS1_PgenSCmin(g1,t4) = 0
  SOS1_RCupSCmax(g1,t4): PgenSC(g1,t4) + RCupSC(g1,t4)
-   + SOS1_RCupSCmax(g1,t4) = 0
+   + SOS1_RCupSCmax(g1,t4) = 10
  SOS1_RCdnSCmin(g1,t4): - PgenSC(g1,t4) + RCdnSC(g1,t4)
    + SOS1_RCdnSCmin(g1,t4) = 0
- SOS1_PgenSCmax(g1,t5): PgenSC(g1,t5) + SOS1_PgenSCmax(g1,t5) = 0
+ SOS1_PgenSCmax(g1,t5): PgenSC(g1,t5) + SOS1_PgenSCmax(g1,t5) = 10
  SOS1_PgenSCmin(g1,t5): - PgenSC(g1,t5) + SOS1_PgenSCmin(g1,t5) = 0
  SOS1_RCupSCmax(g1,t5): PgenSC(g1,t5) + RCupSC(g1,t5)
-   + SOS1_RCupSCmax(g1,t5) = 0
+   + SOS1_RCupSCmax(g1,t5) = 10
  SOS1_RCdnSCmin(g1,t5): - PgenSC(g1,t5) + RCdnSC(g1,t5)
    + SOS1_RCdnSCmin(g1,t5) = 0
- SOS1_PgenSCmax(g1,t6): PgenSC(g1,t6) + SOS1_PgenSCmax(g1,t6) = 0
+ SOS1_PgenSCmax(g1,t6): PgenSC(g1,t6) + SOS1_PgenSCmax(g1,t6) = 10
  SOS1_PgenSCmin(g1,t6): - PgenSC(g1,t6) + SOS1_PgenSCmin(g1,t6) = 0
  SOS1_RCupSCmax(g1,t6): PgenSC(g1,t6) + RCupSC(g1,t6)
-   + SOS1_RCupSCmax(g1,t6) = 0
+   + SOS1_RCupSCmax(g1,t6) = 10
  SOS1_RCdnSCmin(g1,t6): - PgenSC(g1,t6) + RCdnSC(g1,t6)
    + SOS1_RCdnSCmin(g1,t6) = 0
- SOS1_PgenSCmax(g1,t7): PgenSC(g1,t7) + SOS1_PgenSCmax(g1,t7) = 0
+ SOS1_PgenSCmax(g1,t7): PgenSC(g1,t7) + SOS1_PgenSCmax(g1,t7) = 10
  SOS1_PgenSCmin(g1,t7): - PgenSC(g1,t7) + SOS1_PgenSCmin(g1,t7) = 0
  SOS1_RCupSCmax(g1,t7): PgenSC(g1,t7) + RCupSC(g1,t7)
-   + SOS1_RCupSCmax(g1,t7) = 0
+   + SOS1_RCupSCmax(g1,t7) = 10
  SOS1_RCdnSCmin(g1,t7): - PgenSC(g1,t7) + RCdnSC(g1,t7)
    + SOS1_RCdnSCmin(g1,t7) = 0
- SOS1_PgenSCmax(g1,t8): PgenSC(g1,t8) + SOS1_PgenSCmax(g1,t8) = 0
+ SOS1_PgenSCmax(g1,t8): PgenSC(g1,t8) + SOS1_PgenSCmax(g1,t8) = 10
  SOS1_PgenSCmin(g1,t8): - PgenSC(g1,t8) + SOS1_PgenSCmin(g1,t8) = 0
  SOS1_RCupSCmax(g1,t8): PgenSC(g1,t8) + RCupSC(g1,t8)
-   + SOS1_RCupSCmax(g1,t8) = 0
+   + SOS1_RCupSCmax(g1,t8) = 10
  SOS1_RCdnSCmin(g1,t8): - PgenSC(g1,t8) + RCdnSC(g1,t8)
    + SOS1_RCdnSCmin(g1,t8) = 0
- SOS1_PgenSCmax(g1,t9): PgenSC(g1,t9) + SOS1_PgenSCmax(g1,t9) = 0
+ SOS1_PgenSCmax(g1,t9): PgenSC(g1,t9) + SOS1_PgenSCmax(g1,t9) = 10
  SOS1_PgenSCmin(g1,t9): - PgenSC(g1,t9) + SOS1_PgenSCmin(g1,t9) = 0
  SOS1_RCupSCmax(g1,t9): PgenSC(g1,t9) + RCupSC(g1,t9)
-   + SOS1_RCupSCmax(g1,t9) = 0
+   + SOS1_RCupSCmax(g1,t9) = 10
  SOS1_RCdnSCmin(g1,t9): - PgenSC(g1,t9) + RCdnSC(g1,t9)
    + SOS1_RCdnSCmin(g1,t9) = 0
- SOS1_PgenSCmax(g1,t10): PgenSC(g1,t10) + SOS1_PgenSCmax(g1,t10) = 0
+ SOS1_PgenSCmax(g1,t10): PgenSC(g1,t10) + SOS1_PgenSCmax(g1,t10) = 10
  SOS1_PgenSCmin(g1,t10): - PgenSC(g1,t10) + SOS1_PgenSCmin(g1,t10) = 0
  SOS1_RCupSCmax(g1,t10): PgenSC(g1,t10) + RCupSC(g1,t10)
-   + SOS1_RCupSCmax(g1,t10) = 0
+   + SOS1_RCupSCmax(g1,t10) = 10
  SOS1_RCdnSCmin(g1,t10): - PgenSC(g1,t10) + RCdnSC(g1,t10)
    + SOS1_RCdnSCmin(g1,t10) = 0
- SOS1_PgenSCmax(g1,t11): PgenSC(g1,t11) + SOS1_PgenSCmax(g1,t11) = 0
+ SOS1_PgenSCmax(g1,t11): PgenSC(g1,t11) + SOS1_PgenSCmax(g1,t11) = 10
  SOS1_PgenSCmin(g1,t11): - PgenSC(g1,t11) + SOS1_PgenSCmin(g1,t11) = 0
  SOS1_RCupSCmax(g1,t11): PgenSC(g1,t11) + RCupSC(g1,t11)
-   + SOS1_RCupSCmax(g1,t11) = 0
+   + SOS1_RCupSCmax(g1,t11) = 10
  SOS1_RCdnSCmin(g1,t11): - PgenSC(g1,t11) + RCdnSC(g1,t11)
    + SOS1_RCdnSCmin(g1,t11) = 0
- SOS1_PgenSCmax(g1,t12): PgenSC(g1,t12) + SOS1_PgenSCmax(g1,t12) = 0
+ SOS1_PgenSCmax(g1,t12): PgenSC(g1,t12) + SOS1_PgenSCmax(g1,t12) = 10
  SOS1_PgenSCmin(g1,t12): - PgenSC(g1,t12) + SOS1_PgenSCmin(g1,t12) = 0
  SOS1_RCupSCmax(g1,t12): PgenSC(g1,t12) + RCupSC(g1,t12)
-   + SOS1_RCupSCmax(g1,t12) = 0
+   + SOS1_RCupSCmax(g1,t12) = 10
  SOS1_RCdnSCmin(g1,t12): - PgenSC(g1,t12) + RCdnSC(g1,t12)
    + SOS1_RCdnSCmin(g1,t12) = 0
- SOS1_PgenSCmax(g1,t13): PgenSC(g1,t13) + SOS1_PgenSCmax(g1,t13) = 0
+ SOS1_PgenSCmax(g1,t13): PgenSC(g1,t13) + SOS1_PgenSCmax(g1,t13) = 10
  SOS1_PgenSCmin(g1,t13): - PgenSC(g1,t13) + SOS1_PgenSCmin(g1,t13) = 0
  SOS1_RCupSCmax(g1,t13): PgenSC(g1,t13) + RCupSC(g1,t13)
-   + SOS1_RCupSCmax(g1,t13) = 0
+   + SOS1_RCupSCmax(g1,t13) = 10
  SOS1_RCdnSCmin(g1,t13): - PgenSC(g1,t13) + RCdnSC(g1,t13)
    + SOS1_RCdnSCmin(g1,t13) = 0
- SOS1_PgenSCmax(g1,t14): PgenSC(g1,t14) + SOS1_PgenSCmax(g1,t14) = 0
+ SOS1_PgenSCmax(g1,t14): PgenSC(g1,t14) + SOS1_PgenSCmax(g1,t14) = 10
  SOS1_PgenSCmin(g1,t14): - PgenSC(g1,t14) + SOS1_PgenSCmin(g1,t14) = 0
  SOS1_RCupSCmax(g1,t14): PgenSC(g1,t14) + RCupSC(g1,t14)
-   + SOS1_RCupSCmax(g1,t14) = 0
+   + SOS1_RCupSCmax(g1,t14) = 10
  SOS1_RCdnSCmin(g1,t14): - PgenSC(g1,t14) + RCdnSC(g1,t14)
    + SOS1_RCdnSCmin(g1,t14) = 0
- SOS1_PgenSCmax(g1,t15): PgenSC(g1,t15) + SOS1_PgenSCmax(g1,t15) = 0
+ SOS1_PgenSCmax(g1,t15): PgenSC(g1,t15) + SOS1_PgenSCmax(g1,t15) = 10
  SOS1_PgenSCmin(g1,t15): - PgenSC(g1,t15) + SOS1_PgenSCmin(g1,t15) = 0
  SOS1_RCupSCmax(g1,t15): PgenSC(g1,t15) + RCupSC(g1,t15)
-   + SOS1_RCupSCmax(g1,t15) = 0
+   + SOS1_RCupSCmax(g1,t15) = 10
  SOS1_RCdnSCmin(g1,t15): - PgenSC(g1,t15) + RCdnSC(g1,t15)
    + SOS1_RCdnSCmin(g1,t15) = 0
- SOS1_PgenSCmax(g1,t16): PgenSC(g1,t16) + SOS1_PgenSCmax(g1,t16) = 0
+ SOS1_PgenSCmax(g1,t16): PgenSC(g1,t16) + SOS1_PgenSCmax(g1,t16) = 10
  SOS1_PgenSCmin(g1,t16): - PgenSC(g1,t16) + SOS1_PgenSCmin(g1,t16) = 0
  SOS1_RCupSCmax(g1,t16): PgenSC(g1,t16) + RCupSC(g1,t16)
-   + SOS1_RCupSCmax(g1,t16) = 0
+   + SOS1_RCupSCmax(g1,t16) = 10
  SOS1_RCdnSCmin(g1,t16): - PgenSC(g1,t16) + RCdnSC(g1,t16)
    + SOS1_RCdnSCmin(g1,t16) = 0
- SOS1_PgenSCmax(g1,t17): PgenSC(g1,t17) + SOS1_PgenSCmax(g1,t17) = 0
+ SOS1_PgenSCmax(g1,t17): PgenSC(g1,t17) + SOS1_PgenSCmax(g1,t17) = 10
  SOS1_PgenSCmin(g1,t17): - PgenSC(g1,t17) + SOS1_PgenSCmin(g1,t17) = 0
  SOS1_RCupSCmax(g1,t17): PgenSC(g1,t17) + RCupSC(g1,t17)
-   + SOS1_RCupSCmax(g1,t17) = 0
+   + SOS1_RCupSCmax(g1,t17) = 10
  SOS1_RCdnSCmin(g1,t17): - PgenSC(g1,t17) + RCdnSC(g1,t17)
    + SOS1_RCdnSCmin(g1,t17) = 0
- SOS1_PgenSCmax(g1,t18): PgenSC(g1,t18) + SOS1_PgenSCmax(g1,t18) = 0
+ SOS1_PgenSCmax(g1,t18): PgenSC(g1,t18) + SOS1_PgenSCmax(g1,t18) = 10
  SOS1_PgenSCmin(g1,t18): - PgenSC(g1,t18) + SOS1_PgenSCmin(g1,t18) = 0
  SOS1_RCupSCmax(g1,t18): PgenSC(g1,t18) + RCupSC(g1,t18)
-   + SOS1_RCupSCmax(g1,t18) = 0
+   + SOS1_RCupSCmax(g1,t18) = 10
  SOS1_RCdnSCmin(g1,t18): - PgenSC(g1,t18) + RCdnSC(g1,t18)
    + SOS1_RCdnSCmin(g1,t18) = 0
- SOS1_PgenSCmax(g1,t19): PgenSC(g1,t19) + SOS1_PgenSCmax(g1,t19) = 0
+ SOS1_PgenSCmax(g1,t19): PgenSC(g1,t19) + SOS1_PgenSCmax(g1,t19) = 10
  SOS1_PgenSCmin(g1,t19): - PgenSC(g1,t19) + SOS1_PgenSCmin(g1,t19) = 0
  SOS1_RCupSCmax(g1,t19): PgenSC(g1,t19) + RCupSC(g1,t19)
-   + SOS1_RCupSCmax(g1,t19) = 0
+   + SOS1_RCupSCmax(g1,t19) = 10
  SOS1_RCdnSCmin(g1,t19): - PgenSC(g1,t19) + RCdnSC(g1,t19)
    + SOS1_RCdnSCmin(g1,t19) = 0
- SOS1_PgenSCmax(g1,t20): PgenSC(g1,t20) + SOS1_PgenSCmax(g1,t20) = 0
+ SOS1_PgenSCmax(g1,t20): PgenSC(g1,t20) + SOS1_PgenSCmax(g1,t20) = 10
  SOS1_PgenSCmin(g1,t20): - PgenSC(g1,t20) + SOS1_PgenSCmin(g1,t20) = 0
  SOS1_RCupSCmax(g1,t20): PgenSC(g1,t20) + RCupSC(g1,t20)
-   + SOS1_RCupSCmax(g1,t20) = 0
+   + SOS1_RCupSCmax(g1,t20) = 10
  SOS1_RCdnSCmin(g1,t20): - PgenSC(g1,t20) + RCdnSC(g1,t20)
    + SOS1_RCdnSCmin(g1,t20) = 0
- SOS1_PgenSCmax(g1,t21): PgenSC(g1,t21) + SOS1_PgenSCmax(g1,t21) = 0
+ SOS1_PgenSCmax(g1,t21): PgenSC(g1,t21) + SOS1_PgenSCmax(g1,t21) = 10
  SOS1_PgenSCmin(g1,t21): - PgenSC(g1,t21) + SOS1_PgenSCmin(g1,t21) = 0
  SOS1_RCupSCmax(g1,t21): PgenSC(g1,t21) + RCupSC(g1,t21)
-   + SOS1_RCupSCmax(g1,t21) = 0
+   + SOS1_RCupSCmax(g1,t21) = 10
  SOS1_RCdnSCmin(g1,t21): - PgenSC(g1,t21) + RCdnSC(g1,t21)
    + SOS1_RCdnSCmin(g1,t21) = 0
- SOS1_PgenSCmax(g1,t22): PgenSC(g1,t22) + SOS1_PgenSCmax(g1,t22) = 0
+ SOS1_PgenSCmax(g1,t22): PgenSC(g1,t22) + SOS1_PgenSCmax(g1,t22) = 10
  SOS1_PgenSCmin(g1,t22): - PgenSC(g1,t22) + SOS1_PgenSCmin(g1,t22) = 0
  SOS1_RCupSCmax(g1,t22): PgenSC(g1,t22) + RCupSC(g1,t22)
-   + SOS1_RCupSCmax(g1,t22) = 0
+   + SOS1_RCupSCmax(g1,t22) = 10
  SOS1_RCdnSCmin(g1,t22): - PgenSC(g1,t22) + RCdnSC(g1,t22)
    + SOS1_RCdnSCmin(g1,t22) = 0
- SOS1_PgenSCmax(g1,t23): PgenSC(g1,t23) + SOS1_PgenSCmax(g1,t23) = 0
+ SOS1_PgenSCmax(g1,t23): PgenSC(g1,t23) + SOS1_PgenSCmax(g1,t23) = 10
  SOS1_PgenSCmin(g1,t23): - PgenSC(g1,t23) + SOS1_PgenSCmin(g1,t23) = 0
  SOS1_RCupSCmax(g1,t23): PgenSC(g1,t23) + RCupSC(g1,t23)
-   + SOS1_RCupSCmax(g1,t23) = 0
+   + SOS1_RCupSCmax(g1,t23) = 10
  SOS1_RCdnSCmin(g1,t23): - PgenSC(g1,t23) + RCdnSC(g1,t23)
    + SOS1_RCdnSCmin(g1,t23) = 0
- SOS1_PgenSCmax(g1,t24): PgenSC(g1,t24) + SOS1_PgenSCmax(g1,t24) = 0
+ SOS1_PgenSCmax(g1,t24): PgenSC(g1,t24) + SOS1_PgenSCmax(g1,t24) = 10
  SOS1_PgenSCmin(g1,t24): - PgenSC(g1,t24) + SOS1_PgenSCmin(g1,t24) = 0
  SOS1_RCupSCmax(g1,t24): PgenSC(g1,t24) + RCupSC(g1,t24)
-   + SOS1_RCupSCmax(g1,t24) = 0
+   + SOS1_RCupSCmax(g1,t24) = 10
  SOS1_RCdnSCmin(g1,t24): - PgenSC(g1,t24) + RCdnSC(g1,t24)
    + SOS1_RCdnSCmin(g1,t24) = 0
  SOS1_RegUp_max_RT(g1,s1,t1): RUp(g1,s1,t1) - RCup(g1,t1)
@@ -12633,168 +12633,168 @@ Subject To
    - gsin(gs1,t1,k0) + gsout(gs1,t1,k0) + qout_sr(('ng101','ng102'),k0,t1)
    = 2100
  gas_balance_da(ng102,k1,t1): - 8 Pgen(g1,t1) - gsin(gs1,t1,k1)
-   + gsout(gs1,t1,k1) + qout_sr(('ng101','ng102'),k1,t1) = 2100
+   + gsout(gs1,t1,k1) + qout_sr(('ng101','ng102'),k1,t1) = 2180
  gas_balance_da(ng102,k2,t1): - 8 Pgen(g1,t1) - gsin(gs1,t1,k2)
    + gsout(gs1,t1,k2) + qout_sr(('ng101','ng102'),k2,t1) = 2100
  gas_balance_da(ng102,k0,t2): - 8 Pgen(g1,t2) - 8 PgenSC(g1,t2)
    - gsin(gs1,t2,k0) + gsout(gs1,t2,k0) + qout_sr(('ng101','ng102'),k0,t2)
    = 2010
  gas_balance_da(ng102,k1,t2): - 8 Pgen(g1,t2) - gsin(gs1,t2,k1)
-   + gsout(gs1,t2,k1) + qout_sr(('ng101','ng102'),k1,t2) = 2010
+   + gsout(gs1,t2,k1) + qout_sr(('ng101','ng102'),k1,t2) = 2090
  gas_balance_da(ng102,k2,t2): - 8 Pgen(g1,t2) - gsin(gs1,t2,k2)
    + gsout(gs1,t2,k2) + qout_sr(('ng101','ng102'),k2,t2) = 2010
  gas_balance_da(ng102,k0,t3): - 8 Pgen(g1,t3) - 8 PgenSC(g1,t3)
    - gsin(gs1,t3,k0) + gsout(gs1,t3,k0) + qout_sr(('ng101','ng102'),k0,t3)
    = 1920
  gas_balance_da(ng102,k1,t3): - 8 Pgen(g1,t3) - gsin(gs1,t3,k1)
-   + gsout(gs1,t3,k1) + qout_sr(('ng101','ng102'),k1,t3) = 1920
+   + gsout(gs1,t3,k1) + qout_sr(('ng101','ng102'),k1,t3) = 2000
  gas_balance_da(ng102,k2,t3): - 8 Pgen(g1,t3) - gsin(gs1,t3,k2)
    + gsout(gs1,t3,k2) + qout_sr(('ng101','ng102'),k2,t3) = 1920
  gas_balance_da(ng102,k0,t4): - 8 Pgen(g1,t4) - 8 PgenSC(g1,t4)
    - gsin(gs1,t4,k0) + gsout(gs1,t4,k0) + qout_sr(('ng101','ng102'),k0,t4)
    = 1950
  gas_balance_da(ng102,k1,t4): - 8 Pgen(g1,t4) - gsin(gs1,t4,k1)
-   + gsout(gs1,t4,k1) + qout_sr(('ng101','ng102'),k1,t4) = 1950
+   + gsout(gs1,t4,k1) + qout_sr(('ng101','ng102'),k1,t4) = 2030
  gas_balance_da(ng102,k2,t4): - 8 Pgen(g1,t4) - gsin(gs1,t4,k2)
    + gsout(gs1,t4,k2) + qout_sr(('ng101','ng102'),k2,t4) = 1950
  gas_balance_da(ng102,k0,t5): - 8 Pgen(g1,t5) - 8 PgenSC(g1,t5)
    - gsin(gs1,t5,k0) + gsout(gs1,t5,k0) + qout_sr(('ng101','ng102'),k0,t5)
    = 1980
  gas_balance_da(ng102,k1,t5): - 8 Pgen(g1,t5) - gsin(gs1,t5,k1)
-   + gsout(gs1,t5,k1) + qout_sr(('ng101','ng102'),k1,t5) = 1980
+   + gsout(gs1,t5,k1) + qout_sr(('ng101','ng102'),k1,t5) = 2060
  gas_balance_da(ng102,k2,t5): - 8 Pgen(g1,t5) - gsin(gs1,t5,k2)
    + gsout(gs1,t5,k2) + qout_sr(('ng101','ng102'),k2,t5) = 1980
  gas_balance_da(ng102,k0,t6): - 8 Pgen(g1,t6) - 8 PgenSC(g1,t6)
    - gsin(gs1,t6,k0) + gsout(gs1,t6,k0) + qout_sr(('ng101','ng102'),k0,t6)
    = 2010
  gas_balance_da(ng102,k1,t6): - 8 Pgen(g1,t6) - gsin(gs1,t6,k1)
-   + gsout(gs1,t6,k1) + qout_sr(('ng101','ng102'),k1,t6) = 2010
+   + gsout(gs1,t6,k1) + qout_sr(('ng101','ng102'),k1,t6) = 2090
  gas_balance_da(ng102,k2,t6): - 8 Pgen(g1,t6) - gsin(gs1,t6,k2)
    + gsout(gs1,t6,k2) + qout_sr(('ng101','ng102'),k2,t6) = 2010
  gas_balance_da(ng102,k0,t7): - 8 Pgen(g1,t7) - 8 PgenSC(g1,t7)
    - gsin(gs1,t7,k0) + gsout(gs1,t7,k0) + qout_sr(('ng101','ng102'),k0,t7)
    = 2325
  gas_balance_da(ng102,k1,t7): - 8 Pgen(g1,t7) - gsin(gs1,t7,k1)
-   + gsout(gs1,t7,k1) + qout_sr(('ng101','ng102'),k1,t7) = 2325
+   + gsout(gs1,t7,k1) + qout_sr(('ng101','ng102'),k1,t7) = 2405
  gas_balance_da(ng102,k2,t7): - 8 Pgen(g1,t7) - gsin(gs1,t7,k2)
    + gsout(gs1,t7,k2) + qout_sr(('ng101','ng102'),k2,t7) = 2325
  gas_balance_da(ng102,k0,t8): - 8 Pgen(g1,t8) - 8 PgenSC(g1,t8)
    - gsin(gs1,t8,k0) + gsout(gs1,t8,k0) + qout_sr(('ng101','ng102'),k0,t8)
    = 2340
  gas_balance_da(ng102,k1,t8): - 8 Pgen(g1,t8) - gsin(gs1,t8,k1)
-   + gsout(gs1,t8,k1) + qout_sr(('ng101','ng102'),k1,t8) = 2340
+   + gsout(gs1,t8,k1) + qout_sr(('ng101','ng102'),k1,t8) = 2420
  gas_balance_da(ng102,k2,t8): - 8 Pgen(g1,t8) - gsin(gs1,t8,k2)
    + gsout(gs1,t8,k2) + qout_sr(('ng101','ng102'),k2,t8) = 2340
  gas_balance_da(ng102,k0,t9): - 8 Pgen(g1,t9) - 8 PgenSC(g1,t9)
    - gsin(gs1,t9,k0) + gsout(gs1,t9,k0) + qout_sr(('ng101','ng102'),k0,t9)
    = 2565
  gas_balance_da(ng102,k1,t9): - 8 Pgen(g1,t9) - gsin(gs1,t9,k1)
-   + gsout(gs1,t9,k1) + qout_sr(('ng101','ng102'),k1,t9) = 2565
+   + gsout(gs1,t9,k1) + qout_sr(('ng101','ng102'),k1,t9) = 2645
  gas_balance_da(ng102,k2,t9): - 8 Pgen(g1,t9) - gsin(gs1,t9,k2)
    + gsout(gs1,t9,k2) + qout_sr(('ng101','ng102'),k2,t9) = 2565
  gas_balance_da(ng102,k0,t10): - 8 Pgen(g1,t10) - 8 PgenSC(g1,t10)
    - gsin(gs1,t10,k0) + gsout(gs1,t10,k0)
    + qout_sr(('ng101','ng102'),k0,t10) = 2610
  gas_balance_da(ng102,k1,t10): - 8 Pgen(g1,t10) - gsin(gs1,t10,k1)
-   + gsout(gs1,t10,k1) + qout_sr(('ng101','ng102'),k1,t10) = 2610
+   + gsout(gs1,t10,k1) + qout_sr(('ng101','ng102'),k1,t10) = 2690
  gas_balance_da(ng102,k2,t10): - 8 Pgen(g1,t10) - gsin(gs1,t10,k2)
    + gsout(gs1,t10,k2) + qout_sr(('ng101','ng102'),k2,t10) = 2610
  gas_balance_da(ng102,k0,t11): - 8 Pgen(g1,t11) - 8 PgenSC(g1,t11)
    - gsin(gs1,t11,k0) + gsout(gs1,t11,k0)
    + qout_sr(('ng101','ng102'),k0,t11) = 2610
  gas_balance_da(ng102,k1,t11): - 8 Pgen(g1,t11) - gsin(gs1,t11,k1)
-   + gsout(gs1,t11,k1) + qout_sr(('ng101','ng102'),k1,t11) = 2610
+   + gsout(gs1,t11,k1) + qout_sr(('ng101','ng102'),k1,t11) = 2690
  gas_balance_da(ng102,k2,t11): - 8 Pgen(g1,t11) - gsin(gs1,t11,k2)
    + gsout(gs1,t11,k2) + qout_sr(('ng101','ng102'),k2,t11) = 2610
  gas_balance_da(ng102,k0,t12): - 8 Pgen(g1,t12) - 8 PgenSC(g1,t12)
    - gsin(gs1,t12,k0) + gsout(gs1,t12,k0)
    + qout_sr(('ng101','ng102'),k0,t12) = 2565
  gas_balance_da(ng102,k1,t12): - 8 Pgen(g1,t12) - gsin(gs1,t12,k1)
-   + gsout(gs1,t12,k1) + qout_sr(('ng101','ng102'),k1,t12) = 2565
+   + gsout(gs1,t12,k1) + qout_sr(('ng101','ng102'),k1,t12) = 2645
  gas_balance_da(ng102,k2,t12): - 8 Pgen(g1,t12) - gsin(gs1,t12,k2)
    + gsout(gs1,t12,k2) + qout_sr(('ng101','ng102'),k2,t12) = 2565
  gas_balance_da(ng102,k0,t13): - 8 Pgen(g1,t13) - 8 PgenSC(g1,t13)
    - gsin(gs1,t13,k0) + gsout(gs1,t13,k0)
    + qout_sr(('ng101','ng102'),k0,t13) = 2565
  gas_balance_da(ng102,k1,t13): - 8 Pgen(g1,t13) - gsin(gs1,t13,k1)
-   + gsout(gs1,t13,k1) + qout_sr(('ng101','ng102'),k1,t13) = 2565
+   + gsout(gs1,t13,k1) + qout_sr(('ng101','ng102'),k1,t13) = 2645
  gas_balance_da(ng102,k2,t13): - 8 Pgen(g1,t13) - gsin(gs1,t13,k2)
    + gsout(gs1,t13,k2) + qout_sr(('ng101','ng102'),k2,t13) = 2565
  gas_balance_da(ng102,k0,t14): - 8 Pgen(g1,t14) - 8 PgenSC(g1,t14)
    - gsin(gs1,t14,k0) + gsout(gs1,t14,k0)
    + qout_sr(('ng101','ng102'),k0,t14) = 2565
  gas_balance_da(ng102,k1,t14): - 8 Pgen(g1,t14) - gsin(gs1,t14,k1)
-   + gsout(gs1,t14,k1) + qout_sr(('ng101','ng102'),k1,t14) = 2565
+   + gsout(gs1,t14,k1) + qout_sr(('ng101','ng102'),k1,t14) = 2645
  gas_balance_da(ng102,k2,t14): - 8 Pgen(g1,t14) - gsin(gs1,t14,k2)
    + gsout(gs1,t14,k2) + qout_sr(('ng101','ng102'),k2,t14) = 2565
  gas_balance_da(ng102,k0,t15): - 8 Pgen(g1,t15) - 8 PgenSC(g1,t15)
    - gsin(gs1,t15,k0) + gsout(gs1,t15,k0)
    + qout_sr(('ng101','ng102'),k0,t15) = 2520
  gas_balance_da(ng102,k1,t15): - 8 Pgen(g1,t15) - gsin(gs1,t15,k1)
-   + gsout(gs1,t15,k1) + qout_sr(('ng101','ng102'),k1,t15) = 2520
+   + gsout(gs1,t15,k1) + qout_sr(('ng101','ng102'),k1,t15) = 2600
  gas_balance_da(ng102,k2,t15): - 8 Pgen(g1,t15) - gsin(gs1,t15,k2)
    + gsout(gs1,t15,k2) + qout_sr(('ng101','ng102'),k2,t15) = 2520
  gas_balance_da(ng102,k0,t16): - 8 Pgen(g1,t16) - 8 PgenSC(g1,t16)
    - gsin(gs1,t16,k0) + gsout(gs1,t16,k0)
    + qout_sr(('ng101','ng102'),k0,t16) = 2565
  gas_balance_da(ng102,k1,t16): - 8 Pgen(g1,t16) - gsin(gs1,t16,k1)
-   + gsout(gs1,t16,k1) + qout_sr(('ng101','ng102'),k1,t16) = 2565
+   + gsout(gs1,t16,k1) + qout_sr(('ng101','ng102'),k1,t16) = 2645
  gas_balance_da(ng102,k2,t16): - 8 Pgen(g1,t16) - gsin(gs1,t16,k2)
    + gsout(gs1,t16,k2) + qout_sr(('ng101','ng102'),k2,t16) = 2565
  gas_balance_da(ng102,k0,t17): - 8 Pgen(g1,t17) - 8 PgenSC(g1,t17)
    - gsin(gs1,t17,k0) + gsout(gs1,t17,k0)
    + qout_sr(('ng101','ng102'),k0,t17) = 2700
  gas_balance_da(ng102,k1,t17): - 8 Pgen(g1,t17) - gsin(gs1,t17,k1)
-   + gsout(gs1,t17,k1) + qout_sr(('ng101','ng102'),k1,t17) = 2700
+   + gsout(gs1,t17,k1) + qout_sr(('ng101','ng102'),k1,t17) = 2780
  gas_balance_da(ng102,k2,t17): - 8 Pgen(g1,t17) - gsin(gs1,t17,k2)
    + gsout(gs1,t17,k2) + qout_sr(('ng101','ng102'),k2,t17) = 2700
  gas_balance_da(ng102,k0,t18): - 8 Pgen(g1,t18) - 8 PgenSC(g1,t18)
    - gsin(gs1,t18,k0) + gsout(gs1,t18,k0)
    + qout_sr(('ng101','ng102'),k0,t18) = 2700
  gas_balance_da(ng102,k1,t18): - 8 Pgen(g1,t18) - gsin(gs1,t18,k1)
-   + gsout(gs1,t18,k1) + qout_sr(('ng101','ng102'),k1,t18) = 2700
+   + gsout(gs1,t18,k1) + qout_sr(('ng101','ng102'),k1,t18) = 2780
  gas_balance_da(ng102,k2,t18): - 8 Pgen(g1,t18) - gsin(gs1,t18,k2)
    + gsout(gs1,t18,k2) + qout_sr(('ng101','ng102'),k2,t18) = 2700
  gas_balance_da(ng102,k0,t19): - 8 Pgen(g1,t19) - 8 PgenSC(g1,t19)
    - gsin(gs1,t19,k0) + gsout(gs1,t19,k0)
    + qout_sr(('ng101','ng102'),k0,t19) = 2700
  gas_balance_da(ng102,k1,t19): - 8 Pgen(g1,t19) - gsin(gs1,t19,k1)
-   + gsout(gs1,t19,k1) + qout_sr(('ng101','ng102'),k1,t19) = 2700
+   + gsout(gs1,t19,k1) + qout_sr(('ng101','ng102'),k1,t19) = 2780
  gas_balance_da(ng102,k2,t19): - 8 Pgen(g1,t19) - gsin(gs1,t19,k2)
    + gsout(gs1,t19,k2) + qout_sr(('ng101','ng102'),k2,t19) = 2700
  gas_balance_da(ng102,k0,t20): - 8 Pgen(g1,t20) - 8 PgenSC(g1,t20)
    - gsin(gs1,t20,k0) + gsout(gs1,t20,k0)
    + qout_sr(('ng101','ng102'),k0,t20) = 2610
  gas_balance_da(ng102,k1,t20): - 8 Pgen(g1,t20) - gsin(gs1,t20,k1)
-   + gsout(gs1,t20,k1) + qout_sr(('ng101','ng102'),k1,t20) = 2610
+   + gsout(gs1,t20,k1) + qout_sr(('ng101','ng102'),k1,t20) = 2690
  gas_balance_da(ng102,k2,t20): - 8 Pgen(g1,t20) - gsin(gs1,t20,k2)
    + gsout(gs1,t20,k2) + qout_sr(('ng101','ng102'),k2,t20) = 2610
  gas_balance_da(ng102,k0,t21): - 8 Pgen(g1,t21) - 8 PgenSC(g1,t21)
    - gsin(gs1,t21,k0) + gsout(gs1,t21,k0)
    + qout_sr(('ng101','ng102'),k0,t21) = 2475
  gas_balance_da(ng102,k1,t21): - 8 Pgen(g1,t21) - gsin(gs1,t21,k1)
-   + gsout(gs1,t21,k1) + qout_sr(('ng101','ng102'),k1,t21) = 2475
+   + gsout(gs1,t21,k1) + qout_sr(('ng101','ng102'),k1,t21) = 2555
  gas_balance_da(ng102,k2,t21): - 8 Pgen(g1,t21) - gsin(gs1,t21,k2)
    + gsout(gs1,t21,k2) + qout_sr(('ng101','ng102'),k2,t21) = 2475
  gas_balance_da(ng102,k0,t22): - 8 Pgen(g1,t22) - 8 PgenSC(g1,t22)
    - gsin(gs1,t22,k0) + gsout(gs1,t22,k0)
    + qout_sr(('ng101','ng102'),k0,t22) = 2250
  gas_balance_da(ng102,k1,t22): - 8 Pgen(g1,t22) - gsin(gs1,t22,k1)
-   + gsout(gs1,t22,k1) + qout_sr(('ng101','ng102'),k1,t22) = 2250
+   + gsout(gs1,t22,k1) + qout_sr(('ng101','ng102'),k1,t22) = 2330
  gas_balance_da(ng102,k2,t22): - 8 Pgen(g1,t22) - gsin(gs1,t22,k2)
    + gsout(gs1,t22,k2) + qout_sr(('ng101','ng102'),k2,t22) = 2250
  gas_balance_da(ng102,k0,t23): - 8 Pgen(g1,t23) - 8 PgenSC(g1,t23)
    - gsin(gs1,t23,k0) + gsout(gs1,t23,k0)
    + qout_sr(('ng101','ng102'),k0,t23) = 1980
  gas_balance_da(ng102,k1,t23): - 8 Pgen(g1,t23) - gsin(gs1,t23,k1)
-   + gsout(gs1,t23,k1) + qout_sr(('ng101','ng102'),k1,t23) = 1980
+   + gsout(gs1,t23,k1) + qout_sr(('ng101','ng102'),k1,t23) = 2060
  gas_balance_da(ng102,k2,t23): - 8 Pgen(g1,t23) - gsin(gs1,t23,k2)
    + gsout(gs1,t23,k2) + qout_sr(('ng101','ng102'),k2,t23) = 1980
  gas_balance_da(ng102,k0,t24): - 8 Pgen(g1,t24) - 8 PgenSC(g1,t24)
    - gsin(gs1,t24,k0) + gsout(gs1,t24,k0)
    + qout_sr(('ng101','ng102'),k0,t24) = 2010
  gas_balance_da(ng102,k1,t24): - 8 Pgen(g1,t24) - gsin(gs1,t24,k1)
-   + gsout(gs1,t24,k1) + qout_sr(('ng101','ng102'),k1,t24) = 2010
+   + gsout(gs1,t24,k1) + qout_sr(('ng101','ng102'),k1,t24) = 2090
  gas_balance_da(ng102,k2,t24): - 8 Pgen(g1,t24) - gsin(gs1,t24,k2)
    + gsout(gs1,t24,k2) + qout_sr(('ng101','ng102'),k2,t24) = 2010
  gprodUp_max(gw1,s1,t1): gprod(gw1,k0,t1) + gprodUp(gw1,s1,t1) <= 100000

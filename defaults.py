@@ -33,6 +33,9 @@ windfarms_file = filepath_elec + '/windfarms.csv'
 eload_file = filepath_elec + '/elec_load.csv'
 
 SCdata = filepath_elec + '/SCinfo.csv'
+# Contracts that need the price to be decided
+SCdata_NoPrice = filepath_elec + '/SCinfo_NoPrice.csv'
+
 
 GasPriceDA_file = filepath_elec + '/GasPriceDA.csv'
 GasPriceScenRT_file = filepath_elec + '/GasPriceScenRT.csv'

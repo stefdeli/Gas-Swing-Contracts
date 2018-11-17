@@ -102,49 +102,49 @@ Subject To
    - gprodDn(gw1,s1,t1) = -2422.55390392
  gas_balance_rt(ng101,s1,t2): gshed(ng101,s1,t2)
    - qin_sr_rt(('ng101','ng102'),s1,t2) + gprodUp(gw1,s1,t2)
-   - gprodDn(gw1,s1,t2) = -2341.11895976
+   - gprodDn(gw1,s1,t2) = -2301.50205872
  gas_balance_rt(ng101,s1,t3): gshed(ng101,s1,t3)
    - qin_sr_rt(('ng101','ng102'),s1,t3) + gprodUp(gw1,s1,t3)
-   - gprodDn(gw1,s1,t3) = -2257.20526248
+   - gprodDn(gw1,s1,t3) = -2215.80789384
  gas_balance_rt(ng101,s1,t4): gshed(ng101,s1,t4)
    - qin_sr_rt(('ng101','ng102'),s1,t4) + gprodUp(gw1,s1,t4)
    - gprodDn(gw1,s1,t4) = -2299.18227432
  gas_balance_rt(ng101,s1,t5): gshed(ng101,s1,t5)
    - qin_sr_rt(('ng101','ng102'),s1,t5) + gprodUp(gw1,s1,t5)
-   - gprodDn(gw1,s1,t5) = -2334.34057704
+   - gprodDn(gw1,s1,t5) = -2294.1903576
  gas_balance_rt(ng101,s1,t6): gshed(ng101,s1,t6)
    - qin_sr_rt(('ng101','ng102'),s1,t6) + gprodUp(gw1,s1,t6)
-   - gprodDn(gw1,s1,t6) = -2375.96135672
+   - gprodDn(gw1,s1,t6) = -2339.62351868
  gas_balance_rt(ng101,s1,t7): gshed(ng101,s1,t7)
    - qin_sr_rt(('ng101','ng102'),s1,t7) + gprodUp(gw1,s1,t7)
-   - gprodDn(gw1,s1,t7) = -2698.62136664
+   - gprodDn(gw1,s1,t7) = -2665.43204996
  gas_balance_rt(ng101,s1,t8): gshed(ng101,s1,t8)
    - qin_sr_rt(('ng101','ng102'),s1,t8) + gprodUp(gw1,s1,t8)
-   - gprodDn(gw1,s1,t8) = -2725.24979528
+   - gprodDn(gw1,s1,t8) = -2698.5561764
  gas_balance_rt(ng101,s1,t9): gshed(ng101,s1,t9)
    - qin_sr_rt(('ng101','ng102'),s1,t9) + gprodUp(gw1,s1,t9)
-   - gprodDn(gw1,s1,t9) = -2957.7354816
+   - gprodDn(gw1,s1,t9) = -2936.78271432
  gas_balance_rt(ng101,s1,t10): gshed(ng101,s1,t10)
    - qin_sr_rt(('ng101','ng102'),s1,t10) + gprodUp(gw1,s1,t10)
-   - gprodDn(gw1,s1,t10) = -3007.28750184
+   - gprodDn(gw1,s1,t10) = -2991.78911724
  gas_balance_rt(ng101,s1,t11): gshed(ng101,s1,t11)
    - qin_sr_rt(('ng101','ng102'),s1,t11) + gprodUp(gw1,s1,t11)
-   - gprodDn(gw1,s1,t11) = -3006.14337312
+   - gprodDn(gw1,s1,t11) = -2994.21505968
  gas_balance_rt(ng101,s1,t12): gshed(ng101,s1,t12)
    - qin_sr_rt(('ng101','ng102'),s1,t12) + gprodUp(gw1,s1,t12)
    - gprodDn(gw1,s1,t12) = -2954.03198768
  gas_balance_rt(ng101,s1,t13): gshed(ng101,s1,t13)
    - qin_sr_rt(('ng101','ng102'),s1,t13) + gprodUp(gw1,s1,t13)
-   - gprodDn(gw1,s1,t13) = -2943.15251872
+   - gprodDn(gw1,s1,t13) = -2932.22877808
  gas_balance_rt(ng101,s1,t14): gshed(ng101,s1,t14)
    - qin_sr_rt(('ng101','ng102'),s1,t14) + gprodUp(gw1,s1,t14)
-   - gprodDn(gw1,s1,t14) = -2926.62853488
+   - gprodDn(gw1,s1,t14) = -2912.61918324
  gas_balance_rt(ng101,s1,t15): gshed(ng101,s1,t15)
    - qin_sr_rt(('ng101','ng102'),s1,t15) + gprodUp(gw1,s1,t15)
-   - gprodDn(gw1,s1,t15) = -2868.1517756
+   - gprodDn(gw1,s1,t15) = -2852.2276634
  gas_balance_rt(ng101,s1,t16): gshed(ng101,s1,t16)
    - qin_sr_rt(('ng101','ng102'),s1,t16) + gprodUp(gw1,s1,t16)
-   - gprodDn(gw1,s1,t16) = -2905.8461636
+   - gprodDn(gw1,s1,t16) = -2890.41138104
  gas_balance_rt(ng101,s1,t17): gshed(ng101,s1,t17)
    - qin_sr_rt(('ng101','ng102'),s1,t17) + gprodUp(gw1,s1,t17)
    - gprodDn(gw1,s1,t17) = -3039.46835048
@@ -153,13 +153,13 @@ Subject To
    - gprodDn(gw1,s1,t18) = -3037.07651736
  gas_balance_rt(ng101,s1,t19): gshed(ng101,s1,t19)
    - qin_sr_rt(('ng101','ng102'),s1,t19) + gprodUp(gw1,s1,t19)
-   - gprodDn(gw1,s1,t19) = -3036.89394792
+   - gprodDn(gw1,s1,t19) = -3025.34092188
  gas_balance_rt(ng101,s1,t20): gshed(ng101,s1,t20)
    - qin_sr_rt(('ng101','ng102'),s1,t20) + gprodUp(gw1,s1,t20)
    - gprodDn(gw1,s1,t20) = -2949.62215896
  gas_balance_rt(ng101,s1,t21): gshed(ng101,s1,t21)
    - qin_sr_rt(('ng101','ng102'),s1,t21) + gprodUp(gw1,s1,t21)
-   - gprodDn(gw1,s1,t21) = -2820.95740136
+   - gprodDn(gw1,s1,t21) = -2811.25661024
  gas_balance_rt(ng101,s1,t22): gshed(ng101,s1,t22)
    - qin_sr_rt(('ng101','ng102'),s1,t22) + gprodUp(gw1,s1,t22)
    - gprodDn(gw1,s1,t22) = -2603.73841712
@@ -168,7 +168,7 @@ Subject To
    - gprodDn(gw1,s1,t23) = -2344.4661284
  gas_balance_rt(ng101,s1,t24): gshed(ng101,s1,t24)
    - qin_sr_rt(('ng101','ng102'),s1,t24) + gprodUp(gw1,s1,t24)
-   - gprodDn(gw1,s1,t24) = -2389.6162332
+   - gprodDn(gw1,s1,t24) = -2384.60073084
  gas_balance_rt(ng102,s1,t1): gshed(ng102,s1,t1)
    + qout_sr_rt(('ng101','ng102'),s1,t1) - gsin_rt(gs1,s1,t1)
    + gsout_rt(gs1,s1,t1) = 2345.10780808
@@ -246,49 +246,49 @@ Subject To
    - gprodDn(gw1,s2,t1) = -2422.55390392
  gas_balance_rt(ng101,s2,t2): gshed(ng101,s2,t2)
    - qin_sr_rt(('ng101','ng102'),s2,t2) + gprodUp(gw1,s2,t2)
-   - gprodDn(gw1,s2,t2) = -2341.11895976
+   - gprodDn(gw1,s2,t2) = -2301.50205872
  gas_balance_rt(ng101,s2,t3): gshed(ng101,s2,t3)
    - qin_sr_rt(('ng101','ng102'),s2,t3) + gprodUp(gw1,s2,t3)
-   - gprodDn(gw1,s2,t3) = -2257.20526248
+   - gprodDn(gw1,s2,t3) = -2215.80789384
  gas_balance_rt(ng101,s2,t4): gshed(ng101,s2,t4)
    - qin_sr_rt(('ng101','ng102'),s2,t4) + gprodUp(gw1,s2,t4)
    - gprodDn(gw1,s2,t4) = -2299.18227432
  gas_balance_rt(ng101,s2,t5): gshed(ng101,s2,t5)
    - qin_sr_rt(('ng101','ng102'),s2,t5) + gprodUp(gw1,s2,t5)
-   - gprodDn(gw1,s2,t5) = -2334.34057704
+   - gprodDn(gw1,s2,t5) = -2294.1903576
  gas_balance_rt(ng101,s2,t6): gshed(ng101,s2,t6)
    - qin_sr_rt(('ng101','ng102'),s2,t6) + gprodUp(gw1,s2,t6)
-   - gprodDn(gw1,s2,t6) = -2375.96135672
+   - gprodDn(gw1,s2,t6) = -2339.62351868
  gas_balance_rt(ng101,s2,t7): gshed(ng101,s2,t7)
    - qin_sr_rt(('ng101','ng102'),s2,t7) + gprodUp(gw1,s2,t7)
-   - gprodDn(gw1,s2,t7) = -2698.62136664
+   - gprodDn(gw1,s2,t7) = -2665.43204996
  gas_balance_rt(ng101,s2,t8): gshed(ng101,s2,t8)
    - qin_sr_rt(('ng101','ng102'),s2,t8) + gprodUp(gw1,s2,t8)
-   - gprodDn(gw1,s2,t8) = -2725.24979528
+   - gprodDn(gw1,s2,t8) = -2698.5561764
  gas_balance_rt(ng101,s2,t9): gshed(ng101,s2,t9)
    - qin_sr_rt(('ng101','ng102'),s2,t9) + gprodUp(gw1,s2,t9)
-   - gprodDn(gw1,s2,t9) = -2957.7354816
+   - gprodDn(gw1,s2,t9) = -2936.78271432
  gas_balance_rt(ng101,s2,t10): gshed(ng101,s2,t10)
    - qin_sr_rt(('ng101','ng102'),s2,t10) + gprodUp(gw1,s2,t10)
-   - gprodDn(gw1,s2,t10) = -3007.28750184
+   - gprodDn(gw1,s2,t10) = -2991.78911724
  gas_balance_rt(ng101,s2,t11): gshed(ng101,s2,t11)
    - qin_sr_rt(('ng101','ng102'),s2,t11) + gprodUp(gw1,s2,t11)
-   - gprodDn(gw1,s2,t11) = -3006.14337312
+   - gprodDn(gw1,s2,t11) = -2994.21505968
  gas_balance_rt(ng101,s2,t12): gshed(ng101,s2,t12)
    - qin_sr_rt(('ng101','ng102'),s2,t12) + gprodUp(gw1,s2,t12)
    - gprodDn(gw1,s2,t12) = -2954.03198768
  gas_balance_rt(ng101,s2,t13): gshed(ng101,s2,t13)
    - qin_sr_rt(('ng101','ng102'),s2,t13) + gprodUp(gw1,s2,t13)
-   - gprodDn(gw1,s2,t13) = -2943.15251872
+   - gprodDn(gw1,s2,t13) = -2932.22877808
  gas_balance_rt(ng101,s2,t14): gshed(ng101,s2,t14)
    - qin_sr_rt(('ng101','ng102'),s2,t14) + gprodUp(gw1,s2,t14)
-   - gprodDn(gw1,s2,t14) = -2926.62853488
+   - gprodDn(gw1,s2,t14) = -2912.61918324
  gas_balance_rt(ng101,s2,t15): gshed(ng101,s2,t15)
    - qin_sr_rt(('ng101','ng102'),s2,t15) + gprodUp(gw1,s2,t15)
-   - gprodDn(gw1,s2,t15) = -2868.1517756
+   - gprodDn(gw1,s2,t15) = -2852.2276634
  gas_balance_rt(ng101,s2,t16): gshed(ng101,s2,t16)
    - qin_sr_rt(('ng101','ng102'),s2,t16) + gprodUp(gw1,s2,t16)
-   - gprodDn(gw1,s2,t16) = -2905.8461636
+   - gprodDn(gw1,s2,t16) = -2890.41138104
  gas_balance_rt(ng101,s2,t17): gshed(ng101,s2,t17)
    - qin_sr_rt(('ng101','ng102'),s2,t17) + gprodUp(gw1,s2,t17)
    - gprodDn(gw1,s2,t17) = -3039.46835048
@@ -297,13 +297,13 @@ Subject To
    - gprodDn(gw1,s2,t18) = -3037.07651736
  gas_balance_rt(ng101,s2,t19): gshed(ng101,s2,t19)
    - qin_sr_rt(('ng101','ng102'),s2,t19) + gprodUp(gw1,s2,t19)
-   - gprodDn(gw1,s2,t19) = -3036.89394792
+   - gprodDn(gw1,s2,t19) = -3025.34092188
  gas_balance_rt(ng101,s2,t20): gshed(ng101,s2,t20)
    - qin_sr_rt(('ng101','ng102'),s2,t20) + gprodUp(gw1,s2,t20)
    - gprodDn(gw1,s2,t20) = -2949.62215896
  gas_balance_rt(ng101,s2,t21): gshed(ng101,s2,t21)
    - qin_sr_rt(('ng101','ng102'),s2,t21) + gprodUp(gw1,s2,t21)
-   - gprodDn(gw1,s2,t21) = -2820.95740136
+   - gprodDn(gw1,s2,t21) = -2811.25661024
  gas_balance_rt(ng101,s2,t22): gshed(ng101,s2,t22)
    - qin_sr_rt(('ng101','ng102'),s2,t22) + gprodUp(gw1,s2,t22)
    - gprodDn(gw1,s2,t22) = -2603.73841712
@@ -312,7 +312,7 @@ Subject To
    - gprodDn(gw1,s2,t23) = -2344.4661284
  gas_balance_rt(ng101,s2,t24): gshed(ng101,s2,t24)
    - qin_sr_rt(('ng101','ng102'),s2,t24) + gprodUp(gw1,s2,t24)
-   - gprodDn(gw1,s2,t24) = -2389.6162332
+   - gprodDn(gw1,s2,t24) = -2384.60073084
  gas_balance_rt(ng102,s2,t1): gshed(ng102,s2,t1)
    + qout_sr_rt(('ng101','ng102'),s2,t1) - gsin_rt(gs1,s2,t1)
    + gsout_rt(gs1,s2,t1) = 2422.55390392
@@ -675,100 +675,100 @@ Subject To
    gflow_sr_rt(('ng101','ng102'),s2,t24) <= 4000
  gprodUp_max(gw1,s1,t1): gprodUp(gw1,s1,t1) <= 97577.44609608001
  gprodDn_max(gw1,s1,t1): gprodDn(gw1,s1,t1) <= 2422.55390392
- gprodUp_max(gw1,s1,t2): gprodUp(gw1,s1,t2) <= 97658.88104024
- gprodDn_max(gw1,s1,t2): gprodDn(gw1,s1,t2) <= 2341.11895976
- gprodUp_max(gw1,s1,t3): gprodUp(gw1,s1,t3) <= 97742.79473752
- gprodDn_max(gw1,s1,t3): gprodDn(gw1,s1,t3) <= 2257.20526248
+ gprodUp_max(gw1,s1,t2): gprodUp(gw1,s1,t2) <= 97698.49794128
+ gprodDn_max(gw1,s1,t2): gprodDn(gw1,s1,t2) <= 2301.50205872
+ gprodUp_max(gw1,s1,t3): gprodUp(gw1,s1,t3) <= 97784.19210616
+ gprodDn_max(gw1,s1,t3): gprodDn(gw1,s1,t3) <= 2215.80789384
  gprodUp_max(gw1,s1,t4): gprodUp(gw1,s1,t4) <= 97700.81772568
  gprodDn_max(gw1,s1,t4): gprodDn(gw1,s1,t4) <= 2299.18227432
- gprodUp_max(gw1,s1,t5): gprodUp(gw1,s1,t5) <= 97665.65942296
- gprodDn_max(gw1,s1,t5): gprodDn(gw1,s1,t5) <= 2334.34057704
- gprodUp_max(gw1,s1,t6): gprodUp(gw1,s1,t6) <= 97624.03864328
- gprodDn_max(gw1,s1,t6): gprodDn(gw1,s1,t6) <= 2375.96135672
- gprodUp_max(gw1,s1,t7): gprodUp(gw1,s1,t7) <= 97301.37863336
- gprodDn_max(gw1,s1,t7): gprodDn(gw1,s1,t7) <= 2698.62136664
- gprodUp_max(gw1,s1,t8): gprodUp(gw1,s1,t8) <= 97274.75020472
- gprodDn_max(gw1,s1,t8): gprodDn(gw1,s1,t8) <= 2725.24979528
- gprodUp_max(gw1,s1,t9): gprodUp(gw1,s1,t9) <= 97042.2645184
- gprodDn_max(gw1,s1,t9): gprodDn(gw1,s1,t9) <= 2957.7354816
- gprodUp_max(gw1,s1,t10): gprodUp(gw1,s1,t10) <= 96992.71249816001
- gprodDn_max(gw1,s1,t10): gprodDn(gw1,s1,t10) <= 3007.28750184
- gprodUp_max(gw1,s1,t11): gprodUp(gw1,s1,t11) <= 96993.85662688001
- gprodDn_max(gw1,s1,t11): gprodDn(gw1,s1,t11) <= 3006.14337312
+ gprodUp_max(gw1,s1,t5): gprodUp(gw1,s1,t5) <= 97705.8096424
+ gprodDn_max(gw1,s1,t5): gprodDn(gw1,s1,t5) <= 2294.1903576
+ gprodUp_max(gw1,s1,t6): gprodUp(gw1,s1,t6) <= 97660.37648132
+ gprodDn_max(gw1,s1,t6): gprodDn(gw1,s1,t6) <= 2339.62351868
+ gprodUp_max(gw1,s1,t7): gprodUp(gw1,s1,t7) <= 97334.56795004
+ gprodDn_max(gw1,s1,t7): gprodDn(gw1,s1,t7) <= 2665.43204996
+ gprodUp_max(gw1,s1,t8): gprodUp(gw1,s1,t8) <= 97301.4438236
+ gprodDn_max(gw1,s1,t8): gprodDn(gw1,s1,t8) <= 2698.5561764
+ gprodUp_max(gw1,s1,t9): gprodUp(gw1,s1,t9) <= 97063.21728568
+ gprodDn_max(gw1,s1,t9): gprodDn(gw1,s1,t9) <= 2936.78271432
+ gprodUp_max(gw1,s1,t10): gprodUp(gw1,s1,t10) <= 97008.21088276
+ gprodDn_max(gw1,s1,t10): gprodDn(gw1,s1,t10) <= 2991.78911724
+ gprodUp_max(gw1,s1,t11): gprodUp(gw1,s1,t11) <= 97005.78494031999
+ gprodDn_max(gw1,s1,t11): gprodDn(gw1,s1,t11) <= 2994.21505968
  gprodUp_max(gw1,s1,t12): gprodUp(gw1,s1,t12) <= 97045.96801231999
  gprodDn_max(gw1,s1,t12): gprodDn(gw1,s1,t12) <= 2954.03198768
- gprodUp_max(gw1,s1,t13): gprodUp(gw1,s1,t13) <= 97056.84748128
- gprodDn_max(gw1,s1,t13): gprodDn(gw1,s1,t13) <= 2943.15251872
- gprodUp_max(gw1,s1,t14): gprodUp(gw1,s1,t14) <= 97073.37146512
- gprodDn_max(gw1,s1,t14): gprodDn(gw1,s1,t14) <= 2926.62853488
- gprodUp_max(gw1,s1,t15): gprodUp(gw1,s1,t15) <= 97131.8482244
- gprodDn_max(gw1,s1,t15): gprodDn(gw1,s1,t15) <= 2868.1517756
- gprodUp_max(gw1,s1,t16): gprodUp(gw1,s1,t16) <= 97094.1538364
- gprodDn_max(gw1,s1,t16): gprodDn(gw1,s1,t16) <= 2905.8461636
+ gprodUp_max(gw1,s1,t13): gprodUp(gw1,s1,t13) <= 97067.77122192
+ gprodDn_max(gw1,s1,t13): gprodDn(gw1,s1,t13) <= 2932.22877808
+ gprodUp_max(gw1,s1,t14): gprodUp(gw1,s1,t14) <= 97087.38081676001
+ gprodDn_max(gw1,s1,t14): gprodDn(gw1,s1,t14) <= 2912.61918324
+ gprodUp_max(gw1,s1,t15): gprodUp(gw1,s1,t15) <= 97147.7723366
+ gprodDn_max(gw1,s1,t15): gprodDn(gw1,s1,t15) <= 2852.2276634
+ gprodUp_max(gw1,s1,t16): gprodUp(gw1,s1,t16) <= 97109.58861896
+ gprodDn_max(gw1,s1,t16): gprodDn(gw1,s1,t16) <= 2890.41138104
  gprodUp_max(gw1,s1,t17): gprodUp(gw1,s1,t17) <= 96960.53164952
  gprodDn_max(gw1,s1,t17): gprodDn(gw1,s1,t17) <= 3039.46835048
  gprodUp_max(gw1,s1,t18): gprodUp(gw1,s1,t18) <= 96962.92348264001
  gprodDn_max(gw1,s1,t18): gprodDn(gw1,s1,t18) <= 3037.07651736
- gprodUp_max(gw1,s1,t19): gprodUp(gw1,s1,t19) <= 96963.10605208
- gprodDn_max(gw1,s1,t19): gprodDn(gw1,s1,t19) <= 3036.89394792
+ gprodUp_max(gw1,s1,t19): gprodUp(gw1,s1,t19) <= 96974.65907812001
+ gprodDn_max(gw1,s1,t19): gprodDn(gw1,s1,t19) <= 3025.34092188
  gprodUp_max(gw1,s1,t20): gprodUp(gw1,s1,t20) <= 97050.37784104
  gprodDn_max(gw1,s1,t20): gprodDn(gw1,s1,t20) <= 2949.62215896
- gprodUp_max(gw1,s1,t21): gprodUp(gw1,s1,t21) <= 97179.04259863999
- gprodDn_max(gw1,s1,t21): gprodDn(gw1,s1,t21) <= 2820.95740136
+ gprodUp_max(gw1,s1,t21): gprodUp(gw1,s1,t21) <= 97188.74338976
+ gprodDn_max(gw1,s1,t21): gprodDn(gw1,s1,t21) <= 2811.25661024
  gprodUp_max(gw1,s1,t22): gprodUp(gw1,s1,t22) <= 97396.26158288
  gprodDn_max(gw1,s1,t22): gprodDn(gw1,s1,t22) <= 2603.73841712
  gprodUp_max(gw1,s1,t23): gprodUp(gw1,s1,t23) <= 97655.5338716
  gprodDn_max(gw1,s1,t23): gprodDn(gw1,s1,t23) <= 2344.4661284
- gprodUp_max(gw1,s1,t24): gprodUp(gw1,s1,t24) <= 97610.38376680001
- gprodDn_max(gw1,s1,t24): gprodDn(gw1,s1,t24) <= 2389.6162332
+ gprodUp_max(gw1,s1,t24): gprodUp(gw1,s1,t24) <= 97615.39926916
+ gprodDn_max(gw1,s1,t24): gprodDn(gw1,s1,t24) <= 2384.60073084
  gprodUp_max(gw1,s2,t1): gprodUp(gw1,s2,t1) <= 97577.44609608001
  gprodDn_max(gw1,s2,t1): gprodDn(gw1,s2,t1) <= 2422.55390392
- gprodUp_max(gw1,s2,t2): gprodUp(gw1,s2,t2) <= 97658.88104024
- gprodDn_max(gw1,s2,t2): gprodDn(gw1,s2,t2) <= 2341.11895976
- gprodUp_max(gw1,s2,t3): gprodUp(gw1,s2,t3) <= 97742.79473752
- gprodDn_max(gw1,s2,t3): gprodDn(gw1,s2,t3) <= 2257.20526248
+ gprodUp_max(gw1,s2,t2): gprodUp(gw1,s2,t2) <= 97698.49794128
+ gprodDn_max(gw1,s2,t2): gprodDn(gw1,s2,t2) <= 2301.50205872
+ gprodUp_max(gw1,s2,t3): gprodUp(gw1,s2,t3) <= 97784.19210616
+ gprodDn_max(gw1,s2,t3): gprodDn(gw1,s2,t3) <= 2215.80789384
  gprodUp_max(gw1,s2,t4): gprodUp(gw1,s2,t4) <= 97700.81772568
  gprodDn_max(gw1,s2,t4): gprodDn(gw1,s2,t4) <= 2299.18227432
- gprodUp_max(gw1,s2,t5): gprodUp(gw1,s2,t5) <= 97665.65942296
- gprodDn_max(gw1,s2,t5): gprodDn(gw1,s2,t5) <= 2334.34057704
- gprodUp_max(gw1,s2,t6): gprodUp(gw1,s2,t6) <= 97624.03864328
- gprodDn_max(gw1,s2,t6): gprodDn(gw1,s2,t6) <= 2375.96135672
- gprodUp_max(gw1,s2,t7): gprodUp(gw1,s2,t7) <= 97301.37863336
- gprodDn_max(gw1,s2,t7): gprodDn(gw1,s2,t7) <= 2698.62136664
- gprodUp_max(gw1,s2,t8): gprodUp(gw1,s2,t8) <= 97274.75020472
- gprodDn_max(gw1,s2,t8): gprodDn(gw1,s2,t8) <= 2725.24979528
- gprodUp_max(gw1,s2,t9): gprodUp(gw1,s2,t9) <= 97042.2645184
- gprodDn_max(gw1,s2,t9): gprodDn(gw1,s2,t9) <= 2957.7354816
- gprodUp_max(gw1,s2,t10): gprodUp(gw1,s2,t10) <= 96992.71249816001
- gprodDn_max(gw1,s2,t10): gprodDn(gw1,s2,t10) <= 3007.28750184
- gprodUp_max(gw1,s2,t11): gprodUp(gw1,s2,t11) <= 96993.85662688001
- gprodDn_max(gw1,s2,t11): gprodDn(gw1,s2,t11) <= 3006.14337312
+ gprodUp_max(gw1,s2,t5): gprodUp(gw1,s2,t5) <= 97705.8096424
+ gprodDn_max(gw1,s2,t5): gprodDn(gw1,s2,t5) <= 2294.1903576
+ gprodUp_max(gw1,s2,t6): gprodUp(gw1,s2,t6) <= 97660.37648132
+ gprodDn_max(gw1,s2,t6): gprodDn(gw1,s2,t6) <= 2339.62351868
+ gprodUp_max(gw1,s2,t7): gprodUp(gw1,s2,t7) <= 97334.56795004
+ gprodDn_max(gw1,s2,t7): gprodDn(gw1,s2,t7) <= 2665.43204996
+ gprodUp_max(gw1,s2,t8): gprodUp(gw1,s2,t8) <= 97301.4438236
+ gprodDn_max(gw1,s2,t8): gprodDn(gw1,s2,t8) <= 2698.5561764
+ gprodUp_max(gw1,s2,t9): gprodUp(gw1,s2,t9) <= 97063.21728568
+ gprodDn_max(gw1,s2,t9): gprodDn(gw1,s2,t9) <= 2936.78271432
+ gprodUp_max(gw1,s2,t10): gprodUp(gw1,s2,t10) <= 97008.21088276
+ gprodDn_max(gw1,s2,t10): gprodDn(gw1,s2,t10) <= 2991.78911724
+ gprodUp_max(gw1,s2,t11): gprodUp(gw1,s2,t11) <= 97005.78494031999
+ gprodDn_max(gw1,s2,t11): gprodDn(gw1,s2,t11) <= 2994.21505968
  gprodUp_max(gw1,s2,t12): gprodUp(gw1,s2,t12) <= 97045.96801231999
  gprodDn_max(gw1,s2,t12): gprodDn(gw1,s2,t12) <= 2954.03198768
- gprodUp_max(gw1,s2,t13): gprodUp(gw1,s2,t13) <= 97056.84748128
- gprodDn_max(gw1,s2,t13): gprodDn(gw1,s2,t13) <= 2943.15251872
- gprodUp_max(gw1,s2,t14): gprodUp(gw1,s2,t14) <= 97073.37146512
- gprodDn_max(gw1,s2,t14): gprodDn(gw1,s2,t14) <= 2926.62853488
- gprodUp_max(gw1,s2,t15): gprodUp(gw1,s2,t15) <= 97131.8482244
- gprodDn_max(gw1,s2,t15): gprodDn(gw1,s2,t15) <= 2868.1517756
- gprodUp_max(gw1,s2,t16): gprodUp(gw1,s2,t16) <= 97094.1538364
- gprodDn_max(gw1,s2,t16): gprodDn(gw1,s2,t16) <= 2905.8461636
+ gprodUp_max(gw1,s2,t13): gprodUp(gw1,s2,t13) <= 97067.77122192
+ gprodDn_max(gw1,s2,t13): gprodDn(gw1,s2,t13) <= 2932.22877808
+ gprodUp_max(gw1,s2,t14): gprodUp(gw1,s2,t14) <= 97087.38081676001
+ gprodDn_max(gw1,s2,t14): gprodDn(gw1,s2,t14) <= 2912.61918324
+ gprodUp_max(gw1,s2,t15): gprodUp(gw1,s2,t15) <= 97147.7723366
+ gprodDn_max(gw1,s2,t15): gprodDn(gw1,s2,t15) <= 2852.2276634
+ gprodUp_max(gw1,s2,t16): gprodUp(gw1,s2,t16) <= 97109.58861896
+ gprodDn_max(gw1,s2,t16): gprodDn(gw1,s2,t16) <= 2890.41138104
  gprodUp_max(gw1,s2,t17): gprodUp(gw1,s2,t17) <= 96960.53164952
  gprodDn_max(gw1,s2,t17): gprodDn(gw1,s2,t17) <= 3039.46835048
  gprodUp_max(gw1,s2,t18): gprodUp(gw1,s2,t18) <= 96962.92348264001
  gprodDn_max(gw1,s2,t18): gprodDn(gw1,s2,t18) <= 3037.07651736
- gprodUp_max(gw1,s2,t19): gprodUp(gw1,s2,t19) <= 96963.10605208
- gprodDn_max(gw1,s2,t19): gprodDn(gw1,s2,t19) <= 3036.89394792
+ gprodUp_max(gw1,s2,t19): gprodUp(gw1,s2,t19) <= 96974.65907812001
+ gprodDn_max(gw1,s2,t19): gprodDn(gw1,s2,t19) <= 3025.34092188
  gprodUp_max(gw1,s2,t20): gprodUp(gw1,s2,t20) <= 97050.37784104
  gprodDn_max(gw1,s2,t20): gprodDn(gw1,s2,t20) <= 2949.62215896
- gprodUp_max(gw1,s2,t21): gprodUp(gw1,s2,t21) <= 97179.04259863999
- gprodDn_max(gw1,s2,t21): gprodDn(gw1,s2,t21) <= 2820.95740136
+ gprodUp_max(gw1,s2,t21): gprodUp(gw1,s2,t21) <= 97188.74338976
+ gprodDn_max(gw1,s2,t21): gprodDn(gw1,s2,t21) <= 2811.25661024
  gprodUp_max(gw1,s2,t22): gprodUp(gw1,s2,t22) <= 97396.26158288
  gprodDn_max(gw1,s2,t22): gprodDn(gw1,s2,t22) <= 2603.73841712
  gprodUp_max(gw1,s2,t23): gprodUp(gw1,s2,t23) <= 97655.5338716
  gprodDn_max(gw1,s2,t23): gprodDn(gw1,s2,t23) <= 2344.4661284
- gprodUp_max(gw1,s2,t24): gprodUp(gw1,s2,t24) <= 97610.38376680001
- gprodDn_max(gw1,s2,t24): gprodDn(gw1,s2,t24) <= 2389.6162332
+ gprodUp_max(gw1,s2,t24): gprodUp(gw1,s2,t24) <= 97615.39926916
+ gprodDn_max(gw1,s2,t24): gprodDn(gw1,s2,t24) <= 2384.60073084
  line_store_rt(('ng101','ng102'),s1,t1): - gprodDn(gw1,s2,t24) = 0
  line_store_rt(('ng101','ng102'),s1,t2): - gprodDn(gw1,s2,t24) = 0
  line_store_rt(('ng101','ng102'),s1,t3): - gprodDn(gw1,s2,t24) = 0

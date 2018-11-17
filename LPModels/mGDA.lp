@@ -84,7 +84,7 @@ Subject To
  gas_balance_da(ng102,k1,t1): qout_sr(('ng101','ng102'),k1,t1)
    - gsin(gs1,t1,k1) + gsout(gs1,t1,k1) = 2422.55390392
  gas_balance_da(ng102,k2,t1): qout_sr(('ng101','ng102'),k2,t1)
-   - gsin(gs1,t1,k2) + gsout(gs1,t1,k2) = 2422.55390392
+   - gsin(gs1,t1,k2) + gsout(gs1,t1,k2) = 2342.55390392
  gas_balance_da(ng101,k0,t2): - qin_sr(('ng101','ng102'),k0,t2)
    + gprod(gw1,k0,t2) = 0
  gas_balance_da(ng101,k1,t2): - qin_sr(('ng101','ng102'),k1,t2)
@@ -92,11 +92,11 @@ Subject To
  gas_balance_da(ng101,k2,t2): - qin_sr(('ng101','ng102'),k2,t2)
    + gprod(gw1,k2,t2) = 0
  gas_balance_da(ng102,k0,t2): qout_sr(('ng101','ng102'),k0,t2)
-   - gsin(gs1,t2,k0) + gsout(gs1,t2,k0) = 2341.11895976
+   - gsin(gs1,t2,k0) + gsout(gs1,t2,k0) = 2301.50205872
  gas_balance_da(ng102,k1,t2): qout_sr(('ng101','ng102'),k1,t2)
    - gsin(gs1,t2,k1) + gsout(gs1,t2,k1) = 2341.11895976
  gas_balance_da(ng102,k2,t2): qout_sr(('ng101','ng102'),k2,t2)
-   - gsin(gs1,t2,k2) + gsout(gs1,t2,k2) = 2341.11895976
+   - gsin(gs1,t2,k2) + gsout(gs1,t2,k2) = 2261.11895976
  gas_balance_da(ng101,k0,t3): - qin_sr(('ng101','ng102'),k0,t3)
    + gprod(gw1,k0,t3) = 0
  gas_balance_da(ng101,k1,t3): - qin_sr(('ng101','ng102'),k1,t3)
@@ -104,11 +104,11 @@ Subject To
  gas_balance_da(ng101,k2,t3): - qin_sr(('ng101','ng102'),k2,t3)
    + gprod(gw1,k2,t3) = 0
  gas_balance_da(ng102,k0,t3): qout_sr(('ng101','ng102'),k0,t3)
-   - gsin(gs1,t3,k0) + gsout(gs1,t3,k0) = 2257.20526248
+   - gsin(gs1,t3,k0) + gsout(gs1,t3,k0) = 2215.80789384
  gas_balance_da(ng102,k1,t3): qout_sr(('ng101','ng102'),k1,t3)
    - gsin(gs1,t3,k1) + gsout(gs1,t3,k1) = 2257.20526248
  gas_balance_da(ng102,k2,t3): qout_sr(('ng101','ng102'),k2,t3)
-   - gsin(gs1,t3,k2) + gsout(gs1,t3,k2) = 2257.20526248
+   - gsin(gs1,t3,k2) + gsout(gs1,t3,k2) = 2177.20526248
  gas_balance_da(ng101,k0,t4): - qin_sr(('ng101','ng102'),k0,t4)
    + gprod(gw1,k0,t4) = 0
  gas_balance_da(ng101,k1,t4): - qin_sr(('ng101','ng102'),k1,t4)
@@ -120,7 +120,7 @@ Subject To
  gas_balance_da(ng102,k1,t4): qout_sr(('ng101','ng102'),k1,t4)
    - gsin(gs1,t4,k1) + gsout(gs1,t4,k1) = 2299.18227432
  gas_balance_da(ng102,k2,t4): qout_sr(('ng101','ng102'),k2,t4)
-   - gsin(gs1,t4,k2) + gsout(gs1,t4,k2) = 2299.18227432
+   - gsin(gs1,t4,k2) + gsout(gs1,t4,k2) = 2219.18227432
  gas_balance_da(ng101,k0,t5): - qin_sr(('ng101','ng102'),k0,t5)
    + gprod(gw1,k0,t5) = 0
  gas_balance_da(ng101,k1,t5): - qin_sr(('ng101','ng102'),k1,t5)
@@ -128,11 +128,11 @@ Subject To
  gas_balance_da(ng101,k2,t5): - qin_sr(('ng101','ng102'),k2,t5)
    + gprod(gw1,k2,t5) = 0
  gas_balance_da(ng102,k0,t5): qout_sr(('ng101','ng102'),k0,t5)
-   - gsin(gs1,t5,k0) + gsout(gs1,t5,k0) = 2334.34057704
+   - gsin(gs1,t5,k0) + gsout(gs1,t5,k0) = 2294.1903576
  gas_balance_da(ng102,k1,t5): qout_sr(('ng101','ng102'),k1,t5)
    - gsin(gs1,t5,k1) + gsout(gs1,t5,k1) = 2334.34057704
  gas_balance_da(ng102,k2,t5): qout_sr(('ng101','ng102'),k2,t5)
-   - gsin(gs1,t5,k2) + gsout(gs1,t5,k2) = 2334.34057704
+   - gsin(gs1,t5,k2) + gsout(gs1,t5,k2) = 2254.34057704
  gas_balance_da(ng101,k0,t6): - qin_sr(('ng101','ng102'),k0,t6)
    + gprod(gw1,k0,t6) = 0
  gas_balance_da(ng101,k1,t6): - qin_sr(('ng101','ng102'),k1,t6)
@@ -140,11 +140,11 @@ Subject To
  gas_balance_da(ng101,k2,t6): - qin_sr(('ng101','ng102'),k2,t6)
    + gprod(gw1,k2,t6) = 0
  gas_balance_da(ng102,k0,t6): qout_sr(('ng101','ng102'),k0,t6)
-   - gsin(gs1,t6,k0) + gsout(gs1,t6,k0) = 2375.96135672
+   - gsin(gs1,t6,k0) + gsout(gs1,t6,k0) = 2339.62351868
  gas_balance_da(ng102,k1,t6): qout_sr(('ng101','ng102'),k1,t6)
    - gsin(gs1,t6,k1) + gsout(gs1,t6,k1) = 2375.96135672
  gas_balance_da(ng102,k2,t6): qout_sr(('ng101','ng102'),k2,t6)
-   - gsin(gs1,t6,k2) + gsout(gs1,t6,k2) = 2375.96135672
+   - gsin(gs1,t6,k2) + gsout(gs1,t6,k2) = 2295.96135672
  gas_balance_da(ng101,k0,t7): - qin_sr(('ng101','ng102'),k0,t7)
    + gprod(gw1,k0,t7) = 0
  gas_balance_da(ng101,k1,t7): - qin_sr(('ng101','ng102'),k1,t7)
@@ -152,11 +152,11 @@ Subject To
  gas_balance_da(ng101,k2,t7): - qin_sr(('ng101','ng102'),k2,t7)
    + gprod(gw1,k2,t7) = 0
  gas_balance_da(ng102,k0,t7): qout_sr(('ng101','ng102'),k0,t7)
-   - gsin(gs1,t7,k0) + gsout(gs1,t7,k0) = 2698.62136664
+   - gsin(gs1,t7,k0) + gsout(gs1,t7,k0) = 2665.43204996
  gas_balance_da(ng102,k1,t7): qout_sr(('ng101','ng102'),k1,t7)
    - gsin(gs1,t7,k1) + gsout(gs1,t7,k1) = 2698.62136664
  gas_balance_da(ng102,k2,t7): qout_sr(('ng101','ng102'),k2,t7)
-   - gsin(gs1,t7,k2) + gsout(gs1,t7,k2) = 2698.62136664
+   - gsin(gs1,t7,k2) + gsout(gs1,t7,k2) = 2618.62136664
  gas_balance_da(ng101,k0,t8): - qin_sr(('ng101','ng102'),k0,t8)
    + gprod(gw1,k0,t8) = 0
  gas_balance_da(ng101,k1,t8): - qin_sr(('ng101','ng102'),k1,t8)
@@ -164,11 +164,11 @@ Subject To
  gas_balance_da(ng101,k2,t8): - qin_sr(('ng101','ng102'),k2,t8)
    + gprod(gw1,k2,t8) = 0
  gas_balance_da(ng102,k0,t8): qout_sr(('ng101','ng102'),k0,t8)
-   - gsin(gs1,t8,k0) + gsout(gs1,t8,k0) = 2725.24979528
+   - gsin(gs1,t8,k0) + gsout(gs1,t8,k0) = 2698.5561764
  gas_balance_da(ng102,k1,t8): qout_sr(('ng101','ng102'),k1,t8)
    - gsin(gs1,t8,k1) + gsout(gs1,t8,k1) = 2725.24979528
  gas_balance_da(ng102,k2,t8): qout_sr(('ng101','ng102'),k2,t8)
-   - gsin(gs1,t8,k2) + gsout(gs1,t8,k2) = 2725.24979528
+   - gsin(gs1,t8,k2) + gsout(gs1,t8,k2) = 2645.24979528
  gas_balance_da(ng101,k0,t9): - qin_sr(('ng101','ng102'),k0,t9)
    + gprod(gw1,k0,t9) = 0
  gas_balance_da(ng101,k1,t9): - qin_sr(('ng101','ng102'),k1,t9)
@@ -176,11 +176,11 @@ Subject To
  gas_balance_da(ng101,k2,t9): - qin_sr(('ng101','ng102'),k2,t9)
    + gprod(gw1,k2,t9) = 0
  gas_balance_da(ng102,k0,t9): qout_sr(('ng101','ng102'),k0,t9)
-   - gsin(gs1,t9,k0) + gsout(gs1,t9,k0) = 2957.7354816
+   - gsin(gs1,t9,k0) + gsout(gs1,t9,k0) = 2936.78271432
  gas_balance_da(ng102,k1,t9): qout_sr(('ng101','ng102'),k1,t9)
    - gsin(gs1,t9,k1) + gsout(gs1,t9,k1) = 2957.7354816
  gas_balance_da(ng102,k2,t9): qout_sr(('ng101','ng102'),k2,t9)
-   - gsin(gs1,t9,k2) + gsout(gs1,t9,k2) = 2957.7354816
+   - gsin(gs1,t9,k2) + gsout(gs1,t9,k2) = 2877.7354816
  gas_balance_da(ng101,k0,t10): - qin_sr(('ng101','ng102'),k0,t10)
    + gprod(gw1,k0,t10) = 0
  gas_balance_da(ng101,k1,t10): - qin_sr(('ng101','ng102'),k1,t10)
@@ -188,11 +188,11 @@ Subject To
  gas_balance_da(ng101,k2,t10): - qin_sr(('ng101','ng102'),k2,t10)
    + gprod(gw1,k2,t10) = 0
  gas_balance_da(ng102,k0,t10): qout_sr(('ng101','ng102'),k0,t10)
-   - gsin(gs1,t10,k0) + gsout(gs1,t10,k0) = 3007.28750184
+   - gsin(gs1,t10,k0) + gsout(gs1,t10,k0) = 2991.78911724
  gas_balance_da(ng102,k1,t10): qout_sr(('ng101','ng102'),k1,t10)
    - gsin(gs1,t10,k1) + gsout(gs1,t10,k1) = 3007.28750184
  gas_balance_da(ng102,k2,t10): qout_sr(('ng101','ng102'),k2,t10)
-   - gsin(gs1,t10,k2) + gsout(gs1,t10,k2) = 3007.28750184
+   - gsin(gs1,t10,k2) + gsout(gs1,t10,k2) = 2927.28750184
  gas_balance_da(ng101,k0,t11): - qin_sr(('ng101','ng102'),k0,t11)
    + gprod(gw1,k0,t11) = 0
  gas_balance_da(ng101,k1,t11): - qin_sr(('ng101','ng102'),k1,t11)
@@ -200,11 +200,11 @@ Subject To
  gas_balance_da(ng101,k2,t11): - qin_sr(('ng101','ng102'),k2,t11)
    + gprod(gw1,k2,t11) = 0
  gas_balance_da(ng102,k0,t11): qout_sr(('ng101','ng102'),k0,t11)
-   - gsin(gs1,t11,k0) + gsout(gs1,t11,k0) = 3006.14337312
+   - gsin(gs1,t11,k0) + gsout(gs1,t11,k0) = 2994.21505968
  gas_balance_da(ng102,k1,t11): qout_sr(('ng101','ng102'),k1,t11)
    - gsin(gs1,t11,k1) + gsout(gs1,t11,k1) = 3006.14337312
  gas_balance_da(ng102,k2,t11): qout_sr(('ng101','ng102'),k2,t11)
-   - gsin(gs1,t11,k2) + gsout(gs1,t11,k2) = 3006.14337312
+   - gsin(gs1,t11,k2) + gsout(gs1,t11,k2) = 2926.14337312
  gas_balance_da(ng101,k0,t12): - qin_sr(('ng101','ng102'),k0,t12)
    + gprod(gw1,k0,t12) = 0
  gas_balance_da(ng101,k1,t12): - qin_sr(('ng101','ng102'),k1,t12)
@@ -216,7 +216,7 @@ Subject To
  gas_balance_da(ng102,k1,t12): qout_sr(('ng101','ng102'),k1,t12)
    - gsin(gs1,t12,k1) + gsout(gs1,t12,k1) = 2954.03198768
  gas_balance_da(ng102,k2,t12): qout_sr(('ng101','ng102'),k2,t12)
-   - gsin(gs1,t12,k2) + gsout(gs1,t12,k2) = 2954.03198768
+   - gsin(gs1,t12,k2) + gsout(gs1,t12,k2) = 2874.03198768
  gas_balance_da(ng101,k0,t13): - qin_sr(('ng101','ng102'),k0,t13)
    + gprod(gw1,k0,t13) = 0
  gas_balance_da(ng101,k1,t13): - qin_sr(('ng101','ng102'),k1,t13)
@@ -224,11 +224,11 @@ Subject To
  gas_balance_da(ng101,k2,t13): - qin_sr(('ng101','ng102'),k2,t13)
    + gprod(gw1,k2,t13) = 0
  gas_balance_da(ng102,k0,t13): qout_sr(('ng101','ng102'),k0,t13)
-   - gsin(gs1,t13,k0) + gsout(gs1,t13,k0) = 2943.15251872
+   - gsin(gs1,t13,k0) + gsout(gs1,t13,k0) = 2932.22877808
  gas_balance_da(ng102,k1,t13): qout_sr(('ng101','ng102'),k1,t13)
    - gsin(gs1,t13,k1) + gsout(gs1,t13,k1) = 2943.15251872
  gas_balance_da(ng102,k2,t13): qout_sr(('ng101','ng102'),k2,t13)
-   - gsin(gs1,t13,k2) + gsout(gs1,t13,k2) = 2943.15251872
+   - gsin(gs1,t13,k2) + gsout(gs1,t13,k2) = 2863.15251872
  gas_balance_da(ng101,k0,t14): - qin_sr(('ng101','ng102'),k0,t14)
    + gprod(gw1,k0,t14) = 0
  gas_balance_da(ng101,k1,t14): - qin_sr(('ng101','ng102'),k1,t14)
@@ -236,11 +236,11 @@ Subject To
  gas_balance_da(ng101,k2,t14): - qin_sr(('ng101','ng102'),k2,t14)
    + gprod(gw1,k2,t14) = 0
  gas_balance_da(ng102,k0,t14): qout_sr(('ng101','ng102'),k0,t14)
-   - gsin(gs1,t14,k0) + gsout(gs1,t14,k0) = 2926.62853488
+   - gsin(gs1,t14,k0) + gsout(gs1,t14,k0) = 2912.61918324
  gas_balance_da(ng102,k1,t14): qout_sr(('ng101','ng102'),k1,t14)
    - gsin(gs1,t14,k1) + gsout(gs1,t14,k1) = 2926.62853488
  gas_balance_da(ng102,k2,t14): qout_sr(('ng101','ng102'),k2,t14)
-   - gsin(gs1,t14,k2) + gsout(gs1,t14,k2) = 2926.62853488
+   - gsin(gs1,t14,k2) + gsout(gs1,t14,k2) = 2846.62853488
  gas_balance_da(ng101,k0,t15): - qin_sr(('ng101','ng102'),k0,t15)
    + gprod(gw1,k0,t15) = 0
  gas_balance_da(ng101,k1,t15): - qin_sr(('ng101','ng102'),k1,t15)
@@ -248,11 +248,11 @@ Subject To
  gas_balance_da(ng101,k2,t15): - qin_sr(('ng101','ng102'),k2,t15)
    + gprod(gw1,k2,t15) = 0
  gas_balance_da(ng102,k0,t15): qout_sr(('ng101','ng102'),k0,t15)
-   - gsin(gs1,t15,k0) + gsout(gs1,t15,k0) = 2868.1517756
+   - gsin(gs1,t15,k0) + gsout(gs1,t15,k0) = 2852.2276634
  gas_balance_da(ng102,k1,t15): qout_sr(('ng101','ng102'),k1,t15)
    - gsin(gs1,t15,k1) + gsout(gs1,t15,k1) = 2868.1517756
  gas_balance_da(ng102,k2,t15): qout_sr(('ng101','ng102'),k2,t15)
-   - gsin(gs1,t15,k2) + gsout(gs1,t15,k2) = 2868.1517756
+   - gsin(gs1,t15,k2) + gsout(gs1,t15,k2) = 2788.1517756
  gas_balance_da(ng101,k0,t16): - qin_sr(('ng101','ng102'),k0,t16)
    + gprod(gw1,k0,t16) = 0
  gas_balance_da(ng101,k1,t16): - qin_sr(('ng101','ng102'),k1,t16)
@@ -260,11 +260,11 @@ Subject To
  gas_balance_da(ng101,k2,t16): - qin_sr(('ng101','ng102'),k2,t16)
    + gprod(gw1,k2,t16) = 0
  gas_balance_da(ng102,k0,t16): qout_sr(('ng101','ng102'),k0,t16)
-   - gsin(gs1,t16,k0) + gsout(gs1,t16,k0) = 2905.8461636
+   - gsin(gs1,t16,k0) + gsout(gs1,t16,k0) = 2890.41138104
  gas_balance_da(ng102,k1,t16): qout_sr(('ng101','ng102'),k1,t16)
    - gsin(gs1,t16,k1) + gsout(gs1,t16,k1) = 2905.8461636
  gas_balance_da(ng102,k2,t16): qout_sr(('ng101','ng102'),k2,t16)
-   - gsin(gs1,t16,k2) + gsout(gs1,t16,k2) = 2905.8461636
+   - gsin(gs1,t16,k2) + gsout(gs1,t16,k2) = 2825.8461636
  gas_balance_da(ng101,k0,t17): - qin_sr(('ng101','ng102'),k0,t17)
    + gprod(gw1,k0,t17) = 0
  gas_balance_da(ng101,k1,t17): - qin_sr(('ng101','ng102'),k1,t17)
@@ -276,7 +276,7 @@ Subject To
  gas_balance_da(ng102,k1,t17): qout_sr(('ng101','ng102'),k1,t17)
    - gsin(gs1,t17,k1) + gsout(gs1,t17,k1) = 3039.46835048
  gas_balance_da(ng102,k2,t17): qout_sr(('ng101','ng102'),k2,t17)
-   - gsin(gs1,t17,k2) + gsout(gs1,t17,k2) = 3039.46835048
+   - gsin(gs1,t17,k2) + gsout(gs1,t17,k2) = 2959.46835048
  gas_balance_da(ng101,k0,t18): - qin_sr(('ng101','ng102'),k0,t18)
    + gprod(gw1,k0,t18) = 0
  gas_balance_da(ng101,k1,t18): - qin_sr(('ng101','ng102'),k1,t18)
@@ -288,7 +288,7 @@ Subject To
  gas_balance_da(ng102,k1,t18): qout_sr(('ng101','ng102'),k1,t18)
    - gsin(gs1,t18,k1) + gsout(gs1,t18,k1) = 3037.07651736
  gas_balance_da(ng102,k2,t18): qout_sr(('ng101','ng102'),k2,t18)
-   - gsin(gs1,t18,k2) + gsout(gs1,t18,k2) = 3037.07651736
+   - gsin(gs1,t18,k2) + gsout(gs1,t18,k2) = 2957.07651736
  gas_balance_da(ng101,k0,t19): - qin_sr(('ng101','ng102'),k0,t19)
    + gprod(gw1,k0,t19) = 0
  gas_balance_da(ng101,k1,t19): - qin_sr(('ng101','ng102'),k1,t19)
@@ -296,11 +296,11 @@ Subject To
  gas_balance_da(ng101,k2,t19): - qin_sr(('ng101','ng102'),k2,t19)
    + gprod(gw1,k2,t19) = 0
  gas_balance_da(ng102,k0,t19): qout_sr(('ng101','ng102'),k0,t19)
-   - gsin(gs1,t19,k0) + gsout(gs1,t19,k0) = 3036.89394792
+   - gsin(gs1,t19,k0) + gsout(gs1,t19,k0) = 3025.34092188
  gas_balance_da(ng102,k1,t19): qout_sr(('ng101','ng102'),k1,t19)
    - gsin(gs1,t19,k1) + gsout(gs1,t19,k1) = 3036.89394792
  gas_balance_da(ng102,k2,t19): qout_sr(('ng101','ng102'),k2,t19)
-   - gsin(gs1,t19,k2) + gsout(gs1,t19,k2) = 3036.89394792
+   - gsin(gs1,t19,k2) + gsout(gs1,t19,k2) = 2956.89394792
  gas_balance_da(ng101,k0,t20): - qin_sr(('ng101','ng102'),k0,t20)
    + gprod(gw1,k0,t20) = 0
  gas_balance_da(ng101,k1,t20): - qin_sr(('ng101','ng102'),k1,t20)
@@ -312,7 +312,7 @@ Subject To
  gas_balance_da(ng102,k1,t20): qout_sr(('ng101','ng102'),k1,t20)
    - gsin(gs1,t20,k1) + gsout(gs1,t20,k1) = 2949.62215896
  gas_balance_da(ng102,k2,t20): qout_sr(('ng101','ng102'),k2,t20)
-   - gsin(gs1,t20,k2) + gsout(gs1,t20,k2) = 2949.62215896
+   - gsin(gs1,t20,k2) + gsout(gs1,t20,k2) = 2869.62215896
  gas_balance_da(ng101,k0,t21): - qin_sr(('ng101','ng102'),k0,t21)
    + gprod(gw1,k0,t21) = 0
  gas_balance_da(ng101,k1,t21): - qin_sr(('ng101','ng102'),k1,t21)
@@ -320,11 +320,11 @@ Subject To
  gas_balance_da(ng101,k2,t21): - qin_sr(('ng101','ng102'),k2,t21)
    + gprod(gw1,k2,t21) = 0
  gas_balance_da(ng102,k0,t21): qout_sr(('ng101','ng102'),k0,t21)
-   - gsin(gs1,t21,k0) + gsout(gs1,t21,k0) = 2820.95740136
+   - gsin(gs1,t21,k0) + gsout(gs1,t21,k0) = 2811.25661024
  gas_balance_da(ng102,k1,t21): qout_sr(('ng101','ng102'),k1,t21)
    - gsin(gs1,t21,k1) + gsout(gs1,t21,k1) = 2820.95740136
  gas_balance_da(ng102,k2,t21): qout_sr(('ng101','ng102'),k2,t21)
-   - gsin(gs1,t21,k2) + gsout(gs1,t21,k2) = 2820.95740136
+   - gsin(gs1,t21,k2) + gsout(gs1,t21,k2) = 2740.95740136
  gas_balance_da(ng101,k0,t22): - qin_sr(('ng101','ng102'),k0,t22)
    + gprod(gw1,k0,t22) = 0
  gas_balance_da(ng101,k1,t22): - qin_sr(('ng101','ng102'),k1,t22)
@@ -336,7 +336,7 @@ Subject To
  gas_balance_da(ng102,k1,t22): qout_sr(('ng101','ng102'),k1,t22)
    - gsin(gs1,t22,k1) + gsout(gs1,t22,k1) = 2603.73841712
  gas_balance_da(ng102,k2,t22): qout_sr(('ng101','ng102'),k2,t22)
-   - gsin(gs1,t22,k2) + gsout(gs1,t22,k2) = 2603.73841712
+   - gsin(gs1,t22,k2) + gsout(gs1,t22,k2) = 2523.73841712
  gas_balance_da(ng101,k0,t23): - qin_sr(('ng101','ng102'),k0,t23)
    + gprod(gw1,k0,t23) = 0
  gas_balance_da(ng101,k1,t23): - qin_sr(('ng101','ng102'),k1,t23)
@@ -348,7 +348,7 @@ Subject To
  gas_balance_da(ng102,k1,t23): qout_sr(('ng101','ng102'),k1,t23)
    - gsin(gs1,t23,k1) + gsout(gs1,t23,k1) = 2344.4661284
  gas_balance_da(ng102,k2,t23): qout_sr(('ng101','ng102'),k2,t23)
-   - gsin(gs1,t23,k2) + gsout(gs1,t23,k2) = 2344.4661284
+   - gsin(gs1,t23,k2) + gsout(gs1,t23,k2) = 2264.4661284
  gas_balance_da(ng101,k0,t24): - qin_sr(('ng101','ng102'),k0,t24)
    + gprod(gw1,k0,t24) = 0
  gas_balance_da(ng101,k1,t24): - qin_sr(('ng101','ng102'),k1,t24)
@@ -356,11 +356,11 @@ Subject To
  gas_balance_da(ng101,k2,t24): - qin_sr(('ng101','ng102'),k2,t24)
    + gprod(gw1,k2,t24) = 0
  gas_balance_da(ng102,k0,t24): qout_sr(('ng101','ng102'),k0,t24)
-   - gsin(gs1,t24,k0) + gsout(gs1,t24,k0) = 2389.6162332
+   - gsin(gs1,t24,k0) + gsout(gs1,t24,k0) = 2384.60073084
  gas_balance_da(ng102,k1,t24): qout_sr(('ng101','ng102'),k1,t24)
    - gsin(gs1,t24,k1) + gsout(gs1,t24,k1) = 2389.6162332
  gas_balance_da(ng102,k2,t24): qout_sr(('ng101','ng102'),k2,t24)
-   - gsin(gs1,t24,k2) + gsout(gs1,t24,k2) = 2389.6162332
+   - gsin(gs1,t24,k2) + gsout(gs1,t24,k2) = 2309.6162332
  gprod_max(gw1,k0,t1): gprod(gw1,k0,t1) <= 100000
  gprod_max(gw1,k0,t2): gprod(gw1,k0,t2) <= 100000
  gprod_max(gw1,k0,t3): gprod(gw1,k0,t3) <= 100000

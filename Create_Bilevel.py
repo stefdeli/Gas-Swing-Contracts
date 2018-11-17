@@ -5,7 +5,7 @@ Created on Fri Nov  2 16:22:00 2018
 @author: omalleyc
 """
 
-
+from collections import defaultdict
 import GasData_Load, ElecData_Load
 import LibVars
 import LibCns_Elec, LibCns_Gas
@@ -25,6 +25,87 @@ import defaults
 # Stochastic Day-ahead Electricity dispatch
 class expando(object):
     pass
+
+
+def Get_LHS_Constraint(con_row):
+    new_con=0.0
+    for i in range(con_row.size()):
+        new_con=new_con+con_row.getVar(i)*con_row.getCoeff(i)
+    return new_con
+
+def Change_ContractParameters(BLmodel,SCdata,SCP):
+    # only one contract at a time
+    sc = SCdata.index.get_level_values(0).tolist()[0]
+    
+    for gen in SCdata.loc[sc].index.tolist():
+        for t in BLmodel.edata.time:
+            con_name =  'PgenSCmax({0},{1})'.format(gen,t)
+            con = BLmodel.model.getConstrByName(con_name)
+            con_row=BLmodel.model.getRow(con)
+            new_con=Get_LHS_Constraint(con_row)
+            rhs= SCP[(sc,gen),t] * SCdata.PcMax[sc,gen]
+            BLmodel.model.remove(con)
+            BLmodel.model.addConstr(new_con<=rhs,name=con_name)
+
+            
+            # Add SOS1
+            conSOS= BLmodel.model.getConstrByName('SOS1_'+con_name)
+            con_row=BLmodel.model.getRow(conSOS)
+            new_con=Get_LHS_Constraint(con_row)
+            rhs= SCP[(sc,gen),t] * SCdata.PcMax[sc,gen]
+            BLmodel.model.remove(conSOS)
+            BLmodel.model.addConstr(new_con==rhs,name='SOS1_'+con_name)
+                   
+            con_name =  'PgenSCmin({0},{1})'.format(gen,t)
+            con = BLmodel.model.getConstrByName(con_name)
+            con_row=BLmodel.model.getRow(con)
+            new_con=Get_LHS_Constraint(con_row)
+            rhs=  - SCP[(sc,gen),t] * SCdata.PcMin[sc,gen]
+            BLmodel.model.remove(con)
+            BLmodel.model.addConstr(new_con<=rhs,name=con_name)
+    
+            # Add SOS1
+            conSOS= BLmodel.model.getConstrByName('SOS1_'+con_name)
+            con_row=BLmodel.model.getRow(conSOS)
+            new_con=Get_LHS_Constraint(con_row)
+            rhs= - SCP[(sc,gen),t] * SCdata.PcMin[sc,gen]
+            BLmodel.model.remove(conSOS)
+            BLmodel.model.addConstr(new_con==rhs,name='SOS1_'+con_name)
+    
+    
+            con_name =  'RCupSCmax({0},{1})'.format(gen,t)
+            con = BLmodel.model.getConstrByName(con_name)
+            con_row=BLmodel.model.getRow(con)
+            new_con=Get_LHS_Constraint(con_row)
+            rhs=   SCP[(sc,gen),t] * SCdata.PcMax[sc,gen]
+            BLmodel.model.remove(con)
+            BLmodel.model.addConstr(new_con<=rhs,name=con_name)
+    
+            # Add SOS1
+            conSOS= BLmodel.model.getConstrByName('SOS1_'+con_name)
+            con_row=BLmodel.model.getRow(conSOS)
+            new_con=Get_LHS_Constraint(con_row)
+            rhs= SCP[(sc,gen),t] * SCdata.PcMax[sc,gen]
+            BLmodel.model.remove(conSOS)
+            BLmodel.model.addConstr(new_con==rhs,name='SOS1_'+con_name)
+    
+          
+            con_name = 'RCdnSCmin({0},{1})'.format(gen,t)
+            con = BLmodel.model.getConstrByName(con_name)
+            con_row=BLmodel.model.getRow(con)
+            new_con=Get_LHS_Constraint(con_row)
+            rhs=  - SCP[(sc,gen),t] * SCdata.PcMin[sc,gen]
+            BLmodel.model.remove(con)
+            BLmodel.model.addConstr(new_con<=rhs,name=con_name)
+    
+            conSOS= BLmodel.model.getConstrByName('SOS1_'+con_name)
+            con_row=BLmodel.model.getRow(conSOS)
+            new_con=Get_LHS_Constraint(con_row)
+            rhs=  - SCP[(sc,gen),t] * SCdata.PcMin[sc,gen]
+            BLmodel.model.remove(conSOS)
+            BLmodel.model.addConstr(new_con==rhs,name='SOS1_'+con_name)
+  
+    BLmodel.model.update()
 
 
 def ADD_mGRT_Linking_Constraints(BLmodel):      
@@ -658,17 +739,17 @@ scenarioprob = {s: BLmodel.edata.scen_wgp[s][2] for s in BLmodel.edata.scen_wgp.
 scengprt = {s: BLmodel.edata.scen_wgp[s][0] for s in BLmodel.edata.scen_wgp.keys()}
 P_up=defaults.RESERVES_UP_PREMIUM
 P_dn=defaults.RESERVES_DN_PREMIUM
-Non_Gas_obj=0.0
+Non_Gas_gencost=0.0
 for t in BLmodel.edata.time:
     for s in scenarios:
         var_name='Lshed({0},{1})'.format(s,t)
         Lshed= BLmodel.model.getVarByName(var_name)
-        Non_Gas_obj=Non_Gas_obj+ scenarioprob[s]*defaults.VOLL * Lshed
+        Non_Gas_gencost=Non_Gas_gencost+ scenarioprob[s]*defaults.VOLL * Lshed
         
     for gen in BLmodel.edata.nongfpp:
         var_name='Pgen({0},{1})'.format(gen,t)
         Pgen = BLmodel.model.getVarByName(var_name)
-        Non_Gas_obj=Non_Gas_obj+gendata.lincost[gen]*Pgen
+        Non_Gas_gencost=Non_Gas_gencost+gendata.lincost[gen]*Pgen
         
         for s in scenarios:
             RUp_name='RUp({0},{1},{2})'.format(gen,s,t)
@@ -677,33 +758,178 @@ for t in BLmodel.edata.time:
             RUp = BLmodel.model.getVarByName(RUp_name)
             RDn = BLmodel.model.getVarByName(RDn_name)
             Temp=scenarioprob[s]*gendata.lincost[gen]*(P_up*RUp-P_dn*RDn)
-            Non_Gas_obj=Non_Gas_obj+Temp
+            Non_Gas_gencost=Non_Gas_gencost+Temp
 
+Non_gen_Income=0.0
+for t in BLmodel.edata.time:
+    for gn in BLmodel.gdata.gnodes:
+        name = 'lambda_gas_balance_da({0},k0,{1})'.format(gn,t)
+        GasPrice = BLmodel.model.getVarByName(name)
+        Demand= BLmodel.gdata.gasload['ng101']['t1']
+        Non_gen_Income=Non_gen_Income+Demand*GasPrice
+        
 
- # Min costs - Income
-Costs = Obj_mGDA + Obj_mGRT
-Income= -Dualobj_mSEDA - Non_Gas_obj
+ # Min. Costs - Income
+ # Costs = DA Gas Production
+ #       + RT Gas Production
+ #
+ #Income = Non Gen_Income (From normal gas load)
+ #       + Gen_Income
+ #
+ # mSEDA_Obj = Gen_Income + Non_Gas_gencost
+ # mSEDA_Obj = mSEDA_DualObj
+ # Gen_Income = mSEDA_DualObj - Non_Gas_gencost
  
-BLmodel.model.setObjective(Costs-Income  ,gb.GRB.MAXIMIZE)
-BLmodel.model.Params.timelimit = 25.0
+Obj =  Obj_mGDA +Obj_mGRT -Non_gen_Income - (Dualobj_mSEDA-Non_Gas_gencost)
+
+BLmodel.model.setObjective(Obj  ,gb.GRB.MINIMIZE)
+BLmodel.model.Params.timelimit = 50.0
+BLmodel.model.Params.MIPGap=0.5
+BLmodel.model.Params.MIPFocus = 3
 BLmodel.model.optimize() 
 
 
-
-
-
-
-
-
-
-
-
-
+ContractPrice=BLmodel.model.getVarByName('ContractPrice(ng102)')
 
 
 #--- Change the Contract Parameters
 
 
+# 
+       
+All_SCdata = pd.read_csv(defaults.SCdata_NoPrice)
+
+Sc2Gen = list()
+for sc in All_SCdata.GasNode:        
+    Sc2Gen.append( BLmodel.edata.Map_Gn2Eg[sc])
+    
+        
+All_SCdata['GFPP']=pd.DataFrame(Sc2Gen)         
+All_SCdata.set_index(['SC_ID','GFPP'], inplace=True) 
+
+for contract in All_SCdata.index.get_level_values(0).tolist():
+    SCdata = All_SCdata.iloc[All_SCdata.index.get_level_values(0) == contract]
+    
+    SCP = defaultdict(list)
+   
+    for sc in SCdata.index:
+        for t in BLmodel.edata.time:
+            tt = BLmodel.edata.time.index(t)+1            
+            SCP[sc,t] = 1.0 if (tt >= SCdata.ts[sc] and tt<= SCdata.te[sc]) else 0.0
+       
+    Change_ContractParameters(BLmodel,SCdata,SCP)
+    
+    BLmodel.model.resetParams()
+    BLmodel.model.Params.timelimit = 100.0
+    BLmodel.model.Params.MIPGapAbs=0.5
+    BLmodel.model.Params.MIPFocus = 1
+    BLmodel.model.optimize() 
+
+    Result = {}#defaultdict(dict)    
+    if BLmodel.model.status==2:
+        
+        GasGenNodes=set(flat_list)
+        for node in GasGenNodes:
+            name='ContractPrice({0})'.format(node)
+            var=BLmodel.model.getVarByName(name)
+            Result[node]=var.x
+    else:
+        print('Contract {0}  failed'.format(contract))
+        for node in GasGenNodes:
+            Result[node]=np.nan
+            
+        
+    for g in SCdata.index.get_level_values(1).tolist():
+        GasNode=All_SCdata.loc[(contract,g)]['GasNode']
+        All_SCdata.lambdaC[(contract,g)]=Result[GasNode]
+        All_SCdata.time[(contract,g)]=BLmodel.model.Runtime
+        All_SCdata.MIPGap[(contract,g)]=BLmodel.model.MIPGap
+    
+All_SCdata.to_csv(defaults.SCdata_NoPrice.replace('.csv','')+'_Complete_MIPFOCUS1.csv')    
+        
+        
+for contract in All_SCdata.index.get_level_values(0).tolist():
+    SCdata = All_SCdata.iloc[All_SCdata.index.get_level_values(0) == contract]
+    
+    SCP = defaultdict(list)
+   
+    for sc in SCdata.index:
+        for t in BLmodel.edata.time:
+            tt = BLmodel.edata.time.index(t)+1            
+            SCP[sc,t] = 1.0 if (tt >= SCdata.ts[sc] and tt<= SCdata.te[sc]) else 0.0
+       
+    Change_ContractParameters(BLmodel,SCdata,SCP)
+    
+    BLmodel.model.resetParams()
+    BLmodel.model.Params.timelimit = 100.0
+    BLmodel.model.Params.MIPGapAbs=0.5
+    BLmodel.model.Params.MIPFocus = 2
+    BLmodel.model.optimize() 
+    
+    Result = {}#defaultdict(dict)    
+    if BLmodel.model.status==2:
+        GasGenNodes=set(flat_list)
+        for node in GasGenNodes:
+            name='ContractPrice({0})'.format(node)
+            var=BLmodel.model.getVarByName(name)
+            Result[node]=var.x
+    else:
+        print('Contract {0}  failed'.format(contract))
+        for node in GasGenNodes:
+            Result[node]=np.nan
+            
+        
+    for g in SCdata.index.get_level_values(1).tolist():
+        GasNode=All_SCdata.loc[(contract,g)]['GasNode']
+        All_SCdata.lambdaC[(contract,g)]=Result[GasNode]
+        All_SCdata.time[(contract,g)]=BLmodel.model.Runtime
+        All_SCdata.MIPGap[(contract,g)]=BLmodel.model.MIPGap
+    
+All_SCdata.to_csv(defaults.SCdata_NoPrice.replace('.csv','')+'_Complete_MIPFOCUS2.csv')    
+        
+
+for contract in All_SCdata.index.get_level_values(0).tolist():
+    SCdata = All_SCdata.iloc[All_SCdata.index.get_level_values(0) == contract]
+    
+    SCP = defaultdict(list)
+   
+    for sc in SCdata.index:
+        for t in BLmodel.edata.time:
+            tt = BLmodel.edata.time.index(t)+1            
+            SCP[sc,t] = 1.0 if (tt >= SCdata.ts[sc] and tt<= SCdata.te[sc]) else 0.0
+       
+    Change_ContractParameters(BLmodel,SCdata,SCP)
+    
+    BLmodel.model.resetParams()
+    BLmodel.model.Params.timelimit = 100.0
+    BLmodel.model.Params.MIPGapAbs=0.5
+    BLmodel.model.Params.MIPFocus = 3
+    BLmodel.model.optimize() 
+    
+    Result = {}#defaultdict(dict)    
+    if BLmodel.model.status==2:
+
+        GasGenNodes=set(flat_list)
+        for node in GasGenNodes:
+            name='ContractPrice({0})'.format(node)
+            var=BLmodel.model.getVarByName(name)
+            Result[node]=var.x
+    else:
+        print('Contract {0}  failed'.format(contract))
+        for node in GasGenNodes:
+            Result[node]=np.nan
+            
+        
+    for g in SCdata.index.get_level_values(1).tolist():
+        GasNode=All_SCdata.loc[(contract,g)]['GasNode']
+        All_SCdata.lambdaC[(contract,g)]=Result[GasNode]
+        All_SCdata.time[(contract,g)]=BLmodel.model.Runtime
+        All_SCdata.MIPGap[(contract,g)]=BLmodel.model.MIPGap
+    
+All_SCdata.to_csv(defaults.SCdata_NoPrice.replace('.csv','')+'_Complete_MIPFOCUS3.csv')    
+        
+
+    
 
 
 #df=pd.DataFrame([[var.VarName,var.x] for var in model_GDA.model.getVars() ],columns=['Name','Value'])
