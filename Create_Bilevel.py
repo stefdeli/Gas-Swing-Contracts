@@ -389,6 +389,7 @@ def Add_Vars(BLmodel,COMP):
         LB=var.LB
         value=var.x
         BLmodel.model.addVar(lb=LB, ub=UB, name=name)
+    
     BLmodel.model.update()
     
     for var in COMP.model.getVars():

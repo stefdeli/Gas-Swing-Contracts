@@ -61,5 +61,5 @@ REMOVE_EQUALITY=False
 GUROBI_OUTPUT=True
 
 # HOw should the gas network be modelled: FlowBased or WeymouthApprox
-GasNetwork='FlowBased'
-#GasNetwork='WeymouthApprox'
+#GasNetwork='FlowBased'
+GasNetwork='WeymouthApprox'
