@@ -78,6 +78,7 @@ def _results_gasDA(self, f2d):
     var = self.variables
     time = self.gdata.time
     sclim = self.gdata.sclim
+    m     = self.model
      
     
     iterables = [self.gdata.time, self.gdata.sclim]
@@ -104,7 +105,9 @@ def _results_gasDA(self, f2d):
         r.qout_rs = pd.DataFrame([[var.qout_rs[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in sclim], index=index, columns=self.gdata.pplineorder)
         
 #    r.costGas = np.dot(r.gprod,np.array(self.gdata.wellsinfo.Cost)).sum()
-        
+    if self.comp==False:
+        con_name='gas_balance_da({0},{1},{2})'        
+        r.lambda_Flow_Bal =pd.DataFrame([[ m.getConstrByName(con_name.format(ng,k,t)).Pi for ng in self.gdata.gnodeorder] for t in time for k in sclim], index=index, columns=self.gdata.gnodeorder)
         
 def _results_elecRT(self):
      
@@ -145,6 +148,7 @@ def _results_gasRT(self, f2d):
     var = self.variables
     time = self.gdata.time
     scenarios = self.gdata.scenarios
+    m = self.model
      
     
     iterables = [self.gdata.time, scenarios]
@@ -153,6 +157,9 @@ def _results_gasRT(self, f2d):
     r.gprodUp = pd.DataFrame([[var.gprodUp[gw,s,t].x for gw in self.gdata.wells] for t in time for s in scenarios], index=index, columns=self.gdata.wells)
     r.gprodDn = pd.DataFrame([[var.gprodDn[gw,s,t].x for gw in self.gdata.wells] for t in time for s in scenarios], index=index, columns=self.gdata.wells)        
 
+    r.gshed_rt = pd.DataFrame([[var.gshed_rt[ng,k,t].x for ng in self.gdata.gnodeorder] for t in time for k in scenarios], index=index, columns=self.gdata.gnodeorder)
+    
+
     if defaults.GasNetwork=='WeymouthApprox':
         r.lpack_rt = pd.DataFrame([[var.lpack_rt[pl,s,t].x for pl in self.gdata.pplineorder] for t in time for s in scenarios], index=index, columns=self.gdata.pplineorder)
         r.pr_rt = pd.DataFrame([[var.pr_rt[ng,k,t].x for ng in self.gdata.gnodeorder] for t in time for k in scenarios], index=index, columns=self.gdata.gnodeorder)
@@ -160,7 +167,11 @@ def _results_gasRT(self, f2d):
     r.gflow_sr_rt = pd.DataFrame([[var.gflow_sr_rt[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in scenarios], index=index, columns=self.gdata.pplineorder)
     r.qin_sr_rt = pd.DataFrame([[var.qin_sr_rt[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in scenarios], index=index, columns=self.gdata.pplineorder)    
     r.qout_sr_rt = pd.DataFrame([[var.qout_sr_rt[pl,k,t].x for pl in self.gdata.pplineorder] for t in time for k in scenarios], index=index, columns=self.gdata.pplineorder)  
-    
+
+    if self.comp==False:
+        con_name='gas_balance_rt({0},{1},{2})'        
+        r.lambda_Flow_Bal =pd.DataFrame([[ m.getConstrByName(con_name.format(ng,k,t)).Pi for ng in self.gdata.gnodeorder] for t in time for k in scenarios], index=index, columns=self.gdata.gnodeorder)
+            
     
 def _results_duals(self):
     

@@ -43,7 +43,7 @@ GasPriceScenRTprob_file = filepath_elec + '/GasPriceScenRT_prob.csv'
 
 VOLL = 10000 # Value of Lost Load
 
-EPS = 1e-0 # Pressure difference weight in gas objective
+EPS = 0e-1 # Pressure difference weight in gas objective
 GasSlack = 'None'# 'None', 'FixInput', 'FixOutput', 'ConstantOutput'
 
 
@@ -51,7 +51,7 @@ GasSlack = 'None'# 'None', 'FixInput', 'FixOutput', 'ConstantOutput'
 FINAL_LP_DEV=0.1 # 0.1 = 10%
 
 # Premium for deployment of reserves 
-RESERVES_UP_PREMIUM = 1.1
+RESERVES_UP_PREMIUM = 1.05
 RESERVES_DN_PREMIUM = 0.95
 
 # Remove equality constraints and replace lhs==rhs with lhs<=rhs and lhs>=rhs
@@ -61,5 +61,5 @@ REMOVE_EQUALITY=False
 GUROBI_OUTPUT=True
 
 # HOw should the gas network be modelled: FlowBased or WeymouthApprox
-#GasNetwork='FlowBased'
-GasNetwork='WeymouthApprox'
+GasNetwork='FlowBased'
+#GasNetwork='WeymouthApprox'

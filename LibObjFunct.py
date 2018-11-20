@@ -76,15 +76,14 @@ def _build_objective_gasDA(self):
     gsdata = self.gdata.gstorageinfo
     gstorage = self.gdata.gstorage
     
-    k_obj = ['k0','k1','k2'] # Optimize for 'central case' k0
-    
-    print('\n\n Objective function altered to remove degeneracy\n\n')
+    k_obj = ['k0'] # Optimize for 'central case' k0
             
     Cost=pd.DataFrame(index=time,columns=wells)
+    #print('\n\n Objective function altered to remove degeneracy\n\n')
     for w in wells:
         for t in time:
-            Cost[w][t]=wdata.Cost[w]+int(t[1:])
-    
+            Cost[w][t]=wdata.Cost[w]
+            
     if defaults.GasNetwork=='WeymouthApprox':
         Pressure_Degeneracy=gb.quicksum( self.gdata.EPS*(var.pr[pl[0],k,t]-var.pr[pl[1],k,t]) for t in time for k in k_obj for pl in pipes)
     else:
@@ -156,12 +155,11 @@ def _build_objective_gasRT(self):
     gnodes = self.gdata.gnodes
     pipes = self.gdata.pplineorder
     
-    print('\n\n Objective function altered to remove degeneracy\n\n')
             
     Cost=pd.DataFrame(index=time,columns=wells)
     for w in wells:
         for t in time:
-            Cost[w][t]=wdata.Cost[w]+int(t[1:])
+            Cost[w][t]=wdata.Cost[w]
             
     if defaults.GasNetwork=='WeymouthApprox':
         Pressure_Degeneracy=gb.quicksum( self.gdata.EPS*(var.pr_rt[pl[0],s,t] -var.pr_rt[pl[1],s,t]) for t in time for pl in pipes for s in scenarios)    

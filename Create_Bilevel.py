@@ -542,7 +542,7 @@ class Bilevel_Model():
 
 
 #--- Load Existing Models ( and resolve)
-folder='LPModels/'
+folder=defaults.folder+'/LPModels/'
 
 #--- Comp models
 mSEDA_COMP=expando()
@@ -646,15 +646,6 @@ model_GRT.model.optimize()
 model_GRT.model.reset()
 
 
-
-COMP=model_SEDA
-NewObj=0.0
-Eq=0.0
-G=0.0
-L=0.0
-
-model_SEDA.model.setObjective(NewObj,gb.GRB.MAXIMIZE)
- 
 
 
 
@@ -807,87 +798,7 @@ for sc in All_SCdata.GasNode:
         
 All_SCdata['GFPP']=pd.DataFrame(Sc2Gen)         
 All_SCdata.set_index(['SC_ID','GFPP'], inplace=True) 
-
-for contract in All_SCdata.index.get_level_values(0).tolist():
-    SCdata = All_SCdata.iloc[All_SCdata.index.get_level_values(0) == contract]
     
-    SCP = defaultdict(list)
-   
-    for sc in SCdata.index:
-        for t in BLmodel.edata.time:
-            tt = BLmodel.edata.time.index(t)+1            
-            SCP[sc,t] = 1.0 if (tt >= SCdata.ts[sc] and tt<= SCdata.te[sc]) else 0.0
-       
-    Change_ContractParameters(BLmodel,SCdata,SCP)
-    
-    BLmodel.model.resetParams()
-    BLmodel.model.Params.timelimit = 100.0
-    BLmodel.model.Params.MIPGapAbs=0.5
-    BLmodel.model.Params.MIPFocus = 1
-    BLmodel.model.optimize() 
-
-    Result = {}#defaultdict(dict)    
-    if BLmodel.model.status==2:
-        
-        GasGenNodes=set(flat_list)
-        for node in GasGenNodes:
-            name='ContractPrice({0})'.format(node)
-            var=BLmodel.model.getVarByName(name)
-            Result[node]=var.x
-    else:
-        print('Contract {0}  failed'.format(contract))
-        for node in GasGenNodes:
-            Result[node]=np.nan
-            
-        
-    for g in SCdata.index.get_level_values(1).tolist():
-        GasNode=All_SCdata.loc[(contract,g)]['GasNode']
-        All_SCdata.lambdaC[(contract,g)]=Result[GasNode]
-        All_SCdata.time[(contract,g)]=BLmodel.model.Runtime
-        All_SCdata.MIPGap[(contract,g)]=BLmodel.model.MIPGap
-    
-All_SCdata.to_csv(defaults.SCdata_NoPrice.replace('.csv','')+'_Complete_MIPFOCUS1.csv')    
-        
-        
-for contract in All_SCdata.index.get_level_values(0).tolist():
-    SCdata = All_SCdata.iloc[All_SCdata.index.get_level_values(0) == contract]
-    
-    SCP = defaultdict(list)
-   
-    for sc in SCdata.index:
-        for t in BLmodel.edata.time:
-            tt = BLmodel.edata.time.index(t)+1            
-            SCP[sc,t] = 1.0 if (tt >= SCdata.ts[sc] and tt<= SCdata.te[sc]) else 0.0
-       
-    Change_ContractParameters(BLmodel,SCdata,SCP)
-    
-    BLmodel.model.resetParams()
-    BLmodel.model.Params.timelimit = 100.0
-    BLmodel.model.Params.MIPGapAbs=0.5
-    BLmodel.model.Params.MIPFocus = 2
-    BLmodel.model.optimize() 
-    
-    Result = {}#defaultdict(dict)    
-    if BLmodel.model.status==2:
-        GasGenNodes=set(flat_list)
-        for node in GasGenNodes:
-            name='ContractPrice({0})'.format(node)
-            var=BLmodel.model.getVarByName(name)
-            Result[node]=var.x
-    else:
-        print('Contract {0}  failed'.format(contract))
-        for node in GasGenNodes:
-            Result[node]=np.nan
-            
-        
-    for g in SCdata.index.get_level_values(1).tolist():
-        GasNode=All_SCdata.loc[(contract,g)]['GasNode']
-        All_SCdata.lambdaC[(contract,g)]=Result[GasNode]
-        All_SCdata.time[(contract,g)]=BLmodel.model.Runtime
-        All_SCdata.MIPGap[(contract,g)]=BLmodel.model.MIPGap
-    
-All_SCdata.to_csv(defaults.SCdata_NoPrice.replace('.csv','')+'_Complete_MIPFOCUS2.csv')    
-        
 
 for contract in All_SCdata.index.get_level_values(0).tolist():
     SCdata = All_SCdata.iloc[All_SCdata.index.get_level_values(0) == contract]
@@ -926,10 +837,10 @@ for contract in All_SCdata.index.get_level_values(0).tolist():
         All_SCdata.lambdaC[(contract,g)]=Result[GasNode]
         All_SCdata.time[(contract,g)]=BLmodel.model.Runtime
         All_SCdata.MIPGap[(contract,g)]=BLmodel.model.MIPGap
-    
-All_SCdata.to_csv(defaults.SCdata_NoPrice.replace('.csv','')+'_Complete_MIPFOCUS3.csv')    
-        
 
+All_SCdata=All_SCdata.drop(['GFPP'],axis=1)    
+All_SCdata.to_csv(defaults.SCdata_NoPrice.replace('.csv','')+'_Complete.csv')    
+        
     
 
 

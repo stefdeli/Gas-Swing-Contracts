@@ -1186,9 +1186,9 @@ def _build_constraints_gasRT_FlowBased(self,dispatchGasDA,dispatchElecRT):
             for s in scenarios:        
                 for t in time:
                     name='line_store_rt({0},{1},{2})'.format(pl,s,t).replace(" ","")
-                    lhs - var.qin_sr_rt[pl,s,t] + var.qout_sr_rt[pl,s,t]
+                    lhs = - var.qin_sr_rt[pl,s,t] + var.qout_sr_rt[pl,s,t]
                     rhs= np.float64(0.0)
-                    add_constraint(self,-lhs,'==',-rhs,name)
+                    add_constraint(self,lhs,'==',rhs,name)
                       
                    
     #                                        
