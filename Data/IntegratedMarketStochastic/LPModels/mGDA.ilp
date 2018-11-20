@@ -1,0 +1,19 @@
+\ Model _copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ gas_balance_da(ng106,k1,t19): qout_sr(('ng105','ng106'),k1,t19)
+   - qin_sr(('ng106','ng108'),k1,t19) = 3780
+ gflow_sr_io(('ng105','ng106'),k1,t19): gflow_sr(('ng105','ng106'),k1,t19)
+   - 0.5 qin_sr(('ng105','ng106'),k1,t19)
+   - 0.5 qout_sr(('ng105','ng106'),k1,t19) = 0
+ gflow_sr_limit(('ng105','ng106'),k1,t19):
+   gflow_sr(('ng105','ng106'),k1,t19) <= 278
+ Flow_Bal(('ng105','ng106'),k1,t19): qin_sr(('ng105','ng106'),k1,t19)
+   - qout_sr(('ng105','ng106'),k1,t19) = 0
+Bounds
+ gflow_sr(('ng105','ng106'),k1,t19) free
+ qin_sr(('ng105','ng106'),k1,t19) free
+ qout_sr(('ng105','ng106'),k1,t19) free
+End

@@ -26,6 +26,18 @@ def _build_variables_gasDA(self):
         var=self.variables
         sclim = self.gdata.sclim # Swing contract limits
         
+        
+        var.gas_shed = {}
+        for gn in gnodes:
+            for t in time:
+                for k in sclim:
+                    name='gshed_da({0},{1},{2})'.format(gn,k,t)
+                    Temp= m.addVar(lb=0.0, ub=gb.GRB.INFINITY, name=name)
+                    var.gas_shed[gn,k,t] = Temp
+                    primal[name]         = Temp
+                        
+                        
+        
         if defaults.GasNetwork=='WeymouthApprox':
         # Nodal Pressures
             var.pr = {}

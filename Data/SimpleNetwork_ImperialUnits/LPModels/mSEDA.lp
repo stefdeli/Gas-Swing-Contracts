@@ -6,275 +6,150 @@ Minimize
    + 16 Pgen(g1,t13) + 16 Pgen(g1,t14) + 16 Pgen(g1,t15) + 16 Pgen(g1,t16)
    + 16 Pgen(g1,t17) + 16 Pgen(g1,t18) + 16 Pgen(g1,t19) + 16 Pgen(g1,t20)
    + 16 Pgen(g1,t21) + 16 Pgen(g1,t22) + 16 Pgen(g1,t23) + 16 Pgen(g1,t24)
-   + 312 PgenSC(g1,t1) + 312 PgenSC(g1,t2) + 312 PgenSC(g1,t3)
-   + 312 PgenSC(g1,t4) + 312 PgenSC(g1,t5) + 312 PgenSC(g1,t6)
-   + 312 PgenSC(g1,t7) + 312 PgenSC(g1,t8) + 312 PgenSC(g1,t9)
-   + 312 PgenSC(g1,t10) + 312 PgenSC(g1,t11) + 312 PgenSC(g1,t12)
-   + 312 PgenSC(g1,t13) + 312 PgenSC(g1,t14) + 312 PgenSC(g1,t15)
-   + 312 PgenSC(g1,t16) + 312 PgenSC(g1,t17) + 312 PgenSC(g1,t18)
-   + 312 PgenSC(g1,t19) + 312 PgenSC(g1,t20) + 312 PgenSC(g1,t21)
-   + 312 PgenSC(g1,t22) + 312 PgenSC(g1,t23) + 312 PgenSC(g1,t24)
-   + 4.2 RUp(g1,ss0,t1) - 3.8 RDn(g1,ss0,t1) + 81.9 RUpSC(g1,ss0,t1)
-   - 74.1 RDnSC(g1,ss0,t1) + 2500 Lshed(ss0,t1) + 4.2 RUp(g1,ss0,t2)
-   - 3.8 RDn(g1,ss0,t2) + 81.9 RUpSC(g1,ss0,t2) - 74.1 RDnSC(g1,ss0,t2)
-   + 2500 Lshed(ss0,t2) + 4.2 RUp(g1,ss0,t3) - 3.8 RDn(g1,ss0,t3)
-   + 81.9 RUpSC(g1,ss0,t3) - 74.1 RDnSC(g1,ss0,t3) + 2500 Lshed(ss0,t3)
-   + 4.2 RUp(g1,ss0,t4) - 3.8 RDn(g1,ss0,t4) + 81.9 RUpSC(g1,ss0,t4)
-   - 74.1 RDnSC(g1,ss0,t4) + 2500 Lshed(ss0,t4) + 4.2 RUp(g1,ss0,t5)
-   - 3.8 RDn(g1,ss0,t5) + 81.9 RUpSC(g1,ss0,t5) - 74.1 RDnSC(g1,ss0,t5)
-   + 2500 Lshed(ss0,t5) + 4.2 RUp(g1,ss0,t6) - 3.8 RDn(g1,ss0,t6)
-   + 81.9 RUpSC(g1,ss0,t6) - 74.1 RDnSC(g1,ss0,t6) + 2500 Lshed(ss0,t6)
-   + 4.2 RUp(g1,ss0,t7) - 3.8 RDn(g1,ss0,t7) + 81.9 RUpSC(g1,ss0,t7)
-   - 74.1 RDnSC(g1,ss0,t7) + 2500 Lshed(ss0,t7) + 4.2 RUp(g1,ss0,t8)
-   - 3.8 RDn(g1,ss0,t8) + 81.9 RUpSC(g1,ss0,t8) - 74.1 RDnSC(g1,ss0,t8)
-   + 2500 Lshed(ss0,t8) + 4.2 RUp(g1,ss0,t9) - 3.8 RDn(g1,ss0,t9)
-   + 81.9 RUpSC(g1,ss0,t9) - 74.1 RDnSC(g1,ss0,t9) + 2500 Lshed(ss0,t9)
-   + 4.2 RUp(g1,ss0,t10) - 3.8 RDn(g1,ss0,t10) + 81.9 RUpSC(g1,ss0,t10)
-   - 74.1 RDnSC(g1,ss0,t10) + 2500 Lshed(ss0,t10) + 4.2 RUp(g1,ss0,t11)
-   - 3.8 RDn(g1,ss0,t11) + 81.9 RUpSC(g1,ss0,t11) - 74.1 RDnSC(g1,ss0,t11)
-   + 2500 Lshed(ss0,t11) + 4.2 RUp(g1,ss0,t12) - 3.8 RDn(g1,ss0,t12)
-   + 81.9 RUpSC(g1,ss0,t12) - 74.1 RDnSC(g1,ss0,t12) + 2500 Lshed(ss0,t12)
-   + 4.2 RUp(g1,ss0,t13) - 3.8 RDn(g1,ss0,t13) + 81.9 RUpSC(g1,ss0,t13)
-   - 74.1 RDnSC(g1,ss0,t13) + 2500 Lshed(ss0,t13) + 4.2 RUp(g1,ss0,t14)
-   - 3.8 RDn(g1,ss0,t14) + 81.9 RUpSC(g1,ss0,t14) - 74.1 RDnSC(g1,ss0,t14)
-   + 2500 Lshed(ss0,t14) + 4.2 RUp(g1,ss0,t15) - 3.8 RDn(g1,ss0,t15)
-   + 81.9 RUpSC(g1,ss0,t15) - 74.1 RDnSC(g1,ss0,t15) + 2500 Lshed(ss0,t15)
-   + 4.2 RUp(g1,ss0,t16) - 3.8 RDn(g1,ss0,t16) + 81.9 RUpSC(g1,ss0,t16)
-   - 74.1 RDnSC(g1,ss0,t16) + 2500 Lshed(ss0,t16) + 4.2 RUp(g1,ss0,t17)
-   - 3.8 RDn(g1,ss0,t17) + 81.9 RUpSC(g1,ss0,t17) - 74.1 RDnSC(g1,ss0,t17)
-   + 2500 Lshed(ss0,t17) + 4.2 RUp(g1,ss0,t18) - 3.8 RDn(g1,ss0,t18)
-   + 81.9 RUpSC(g1,ss0,t18) - 74.1 RDnSC(g1,ss0,t18) + 2500 Lshed(ss0,t18)
-   + 4.2 RUp(g1,ss0,t19) - 3.8 RDn(g1,ss0,t19) + 81.9 RUpSC(g1,ss0,t19)
-   - 74.1 RDnSC(g1,ss0,t19) + 2500 Lshed(ss0,t19) + 4.2 RUp(g1,ss0,t20)
-   - 3.8 RDn(g1,ss0,t20) + 81.9 RUpSC(g1,ss0,t20) - 74.1 RDnSC(g1,ss0,t20)
-   + 2500 Lshed(ss0,t20) + 4.2 RUp(g1,ss0,t21) - 3.8 RDn(g1,ss0,t21)
-   + 81.9 RUpSC(g1,ss0,t21) - 74.1 RDnSC(g1,ss0,t21) + 2500 Lshed(ss0,t21)
-   + 4.2 RUp(g1,ss0,t22) - 3.8 RDn(g1,ss0,t22) + 81.9 RUpSC(g1,ss0,t22)
-   - 74.1 RDnSC(g1,ss0,t22) + 2500 Lshed(ss0,t22) + 4.2 RUp(g1,ss0,t23)
-   - 3.8 RDn(g1,ss0,t23) + 81.9 RUpSC(g1,ss0,t23) - 74.1 RDnSC(g1,ss0,t23)
-   + 2500 Lshed(ss0,t23) + 4.2 RUp(g1,ss0,t24) - 3.8 RDn(g1,ss0,t24)
-   + 81.9 RUpSC(g1,ss0,t24) - 74.1 RDnSC(g1,ss0,t24) + 2500 Lshed(ss0,t24)
-   + 4.2 RUp(g1,ss1,t1) - 3.8 RDn(g1,ss1,t1) + 81.9 RUpSC(g1,ss1,t1)
-   - 74.1 RDnSC(g1,ss1,t1) + 2500 Lshed(ss1,t1) + 4.2 RUp(g1,ss1,t2)
-   - 3.8 RDn(g1,ss1,t2) + 81.9 RUpSC(g1,ss1,t2) - 74.1 RDnSC(g1,ss1,t2)
-   + 2500 Lshed(ss1,t2) + 4.2 RUp(g1,ss1,t3) - 3.8 RDn(g1,ss1,t3)
-   + 81.9 RUpSC(g1,ss1,t3) - 74.1 RDnSC(g1,ss1,t3) + 2500 Lshed(ss1,t3)
-   + 4.2 RUp(g1,ss1,t4) - 3.8 RDn(g1,ss1,t4) + 81.9 RUpSC(g1,ss1,t4)
-   - 74.1 RDnSC(g1,ss1,t4) + 2500 Lshed(ss1,t4) + 4.2 RUp(g1,ss1,t5)
-   - 3.8 RDn(g1,ss1,t5) + 81.9 RUpSC(g1,ss1,t5) - 74.1 RDnSC(g1,ss1,t5)
-   + 2500 Lshed(ss1,t5) + 4.2 RUp(g1,ss1,t6) - 3.8 RDn(g1,ss1,t6)
-   + 81.9 RUpSC(g1,ss1,t6) - 74.1 RDnSC(g1,ss1,t6) + 2500 Lshed(ss1,t6)
-   + 4.2 RUp(g1,ss1,t7) - 3.8 RDn(g1,ss1,t7) + 81.9 RUpSC(g1,ss1,t7)
-   - 74.1 RDnSC(g1,ss1,t7) + 2500 Lshed(ss1,t7) + 4.2 RUp(g1,ss1,t8)
-   - 3.8 RDn(g1,ss1,t8) + 81.9 RUpSC(g1,ss1,t8) - 74.1 RDnSC(g1,ss1,t8)
-   + 2500 Lshed(ss1,t8) + 4.2 RUp(g1,ss1,t9) - 3.8 RDn(g1,ss1,t9)
-   + 81.9 RUpSC(g1,ss1,t9) - 74.1 RDnSC(g1,ss1,t9) + 2500 Lshed(ss1,t9)
-   + 4.2 RUp(g1,ss1,t10) - 3.8 RDn(g1,ss1,t10) + 81.9 RUpSC(g1,ss1,t10)
-   - 74.1 RDnSC(g1,ss1,t10) + 2500 Lshed(ss1,t10) + 4.2 RUp(g1,ss1,t11)
-   - 3.8 RDn(g1,ss1,t11) + 81.9 RUpSC(g1,ss1,t11) - 74.1 RDnSC(g1,ss1,t11)
-   + 2500 Lshed(ss1,t11) + 4.2 RUp(g1,ss1,t12) - 3.8 RDn(g1,ss1,t12)
-   + 81.9 RUpSC(g1,ss1,t12) - 74.1 RDnSC(g1,ss1,t12) + 2500 Lshed(ss1,t12)
-   + 4.2 RUp(g1,ss1,t13) - 3.8 RDn(g1,ss1,t13) + 81.9 RUpSC(g1,ss1,t13)
-   - 74.1 RDnSC(g1,ss1,t13) + 2500 Lshed(ss1,t13) + 4.2 RUp(g1,ss1,t14)
-   - 3.8 RDn(g1,ss1,t14) + 81.9 RUpSC(g1,ss1,t14) - 74.1 RDnSC(g1,ss1,t14)
-   + 2500 Lshed(ss1,t14) + 4.2 RUp(g1,ss1,t15) - 3.8 RDn(g1,ss1,t15)
-   + 81.9 RUpSC(g1,ss1,t15) - 74.1 RDnSC(g1,ss1,t15) + 2500 Lshed(ss1,t15)
-   + 4.2 RUp(g1,ss1,t16) - 3.8 RDn(g1,ss1,t16) + 81.9 RUpSC(g1,ss1,t16)
-   - 74.1 RDnSC(g1,ss1,t16) + 2500 Lshed(ss1,t16) + 4.2 RUp(g1,ss1,t17)
-   - 3.8 RDn(g1,ss1,t17) + 81.9 RUpSC(g1,ss1,t17) - 74.1 RDnSC(g1,ss1,t17)
-   + 2500 Lshed(ss1,t17) + 4.2 RUp(g1,ss1,t18) - 3.8 RDn(g1,ss1,t18)
-   + 81.9 RUpSC(g1,ss1,t18) - 74.1 RDnSC(g1,ss1,t18) + 2500 Lshed(ss1,t18)
-   + 4.2 RUp(g1,ss1,t19) - 3.8 RDn(g1,ss1,t19) + 81.9 RUpSC(g1,ss1,t19)
-   - 74.1 RDnSC(g1,ss1,t19) + 2500 Lshed(ss1,t19) + 4.2 RUp(g1,ss1,t20)
-   - 3.8 RDn(g1,ss1,t20) + 81.9 RUpSC(g1,ss1,t20) - 74.1 RDnSC(g1,ss1,t20)
-   + 2500 Lshed(ss1,t20) + 4.2 RUp(g1,ss1,t21) - 3.8 RDn(g1,ss1,t21)
-   + 81.9 RUpSC(g1,ss1,t21) - 74.1 RDnSC(g1,ss1,t21) + 2500 Lshed(ss1,t21)
-   + 4.2 RUp(g1,ss1,t22) - 3.8 RDn(g1,ss1,t22) + 81.9 RUpSC(g1,ss1,t22)
-   - 74.1 RDnSC(g1,ss1,t22) + 2500 Lshed(ss1,t22) + 4.2 RUp(g1,ss1,t23)
-   - 3.8 RDn(g1,ss1,t23) + 81.9 RUpSC(g1,ss1,t23) - 74.1 RDnSC(g1,ss1,t23)
-   + 2500 Lshed(ss1,t23) + 4.2 RUp(g1,ss1,t24) - 3.8 RDn(g1,ss1,t24)
-   + 81.9 RUpSC(g1,ss1,t24) - 74.1 RDnSC(g1,ss1,t24) + 2500 Lshed(ss1,t24)
-   + 1.995 RUp(g1,ss2,t1) - 1.805 RDn(g1,ss2,t1) + 40.95 RUpSC(g1,ss2,t1)
-   - 37.05 RDnSC(g1,ss2,t1) + 1250 Lshed(ss2,t1) + 1.995 RUp(g1,ss2,t2)
-   - 1.805 RDn(g1,ss2,t2) + 40.95 RUpSC(g1,ss2,t2) - 37.05 RDnSC(g1,ss2,t2)
-   + 1250 Lshed(ss2,t2) + 1.995 RUp(g1,ss2,t3) - 1.805 RDn(g1,ss2,t3)
-   + 40.95 RUpSC(g1,ss2,t3) - 37.05 RDnSC(g1,ss2,t3) + 1250 Lshed(ss2,t3)
-   + 1.995 RUp(g1,ss2,t4) - 1.805 RDn(g1,ss2,t4) + 40.95 RUpSC(g1,ss2,t4)
-   - 37.05 RDnSC(g1,ss2,t4) + 1250 Lshed(ss2,t4) + 1.995 RUp(g1,ss2,t5)
-   - 1.805 RDn(g1,ss2,t5) + 40.95 RUpSC(g1,ss2,t5) - 37.05 RDnSC(g1,ss2,t5)
-   + 1250 Lshed(ss2,t5) + 1.995 RUp(g1,ss2,t6) - 1.805 RDn(g1,ss2,t6)
-   + 40.95 RUpSC(g1,ss2,t6) - 37.05 RDnSC(g1,ss2,t6) + 1250 Lshed(ss2,t6)
-   + 1.995 RUp(g1,ss2,t7) - 1.805 RDn(g1,ss2,t7) + 40.95 RUpSC(g1,ss2,t7)
-   - 37.05 RDnSC(g1,ss2,t7) + 1250 Lshed(ss2,t7) + 1.995 RUp(g1,ss2,t8)
-   - 1.805 RDn(g1,ss2,t8) + 40.95 RUpSC(g1,ss2,t8) - 37.05 RDnSC(g1,ss2,t8)
-   + 1250 Lshed(ss2,t8) + 1.995 RUp(g1,ss2,t9) - 1.805 RDn(g1,ss2,t9)
-   + 40.95 RUpSC(g1,ss2,t9) - 37.05 RDnSC(g1,ss2,t9) + 1250 Lshed(ss2,t9)
-   + 1.995 RUp(g1,ss2,t10) - 1.805 RDn(g1,ss2,t10)
-   + 40.95 RUpSC(g1,ss2,t10) - 37.05 RDnSC(g1,ss2,t10)
-   + 1250 Lshed(ss2,t10) + 1.995 RUp(g1,ss2,t11) - 1.805 RDn(g1,ss2,t11)
-   + 40.95 RUpSC(g1,ss2,t11) - 37.05 RDnSC(g1,ss2,t11)
-   + 1250 Lshed(ss2,t11) + 1.995 RUp(g1,ss2,t12) - 1.805 RDn(g1,ss2,t12)
-   + 40.95 RUpSC(g1,ss2,t12) - 37.05 RDnSC(g1,ss2,t12)
-   + 1250 Lshed(ss2,t12) + 1.995 RUp(g1,ss2,t13) - 1.805 RDn(g1,ss2,t13)
-   + 40.95 RUpSC(g1,ss2,t13) - 37.05 RDnSC(g1,ss2,t13)
-   + 1250 Lshed(ss2,t13) + 1.995 RUp(g1,ss2,t14) - 1.805 RDn(g1,ss2,t14)
-   + 40.95 RUpSC(g1,ss2,t14) - 37.05 RDnSC(g1,ss2,t14)
-   + 1250 Lshed(ss2,t14) + 1.995 RUp(g1,ss2,t15) - 1.805 RDn(g1,ss2,t15)
-   + 40.95 RUpSC(g1,ss2,t15) - 37.05 RDnSC(g1,ss2,t15)
-   + 1250 Lshed(ss2,t15) + 1.995 RUp(g1,ss2,t16) - 1.805 RDn(g1,ss2,t16)
-   + 40.95 RUpSC(g1,ss2,t16) - 37.05 RDnSC(g1,ss2,t16)
-   + 1250 Lshed(ss2,t16) + 1.995 RUp(g1,ss2,t17) - 1.805 RDn(g1,ss2,t17)
-   + 40.95 RUpSC(g1,ss2,t17) - 37.05 RDnSC(g1,ss2,t17)
-   + 1250 Lshed(ss2,t17) + 1.995 RUp(g1,ss2,t18) - 1.805 RDn(g1,ss2,t18)
-   + 40.95 RUpSC(g1,ss2,t18) - 37.05 RDnSC(g1,ss2,t18)
-   + 1250 Lshed(ss2,t18) + 1.995 RUp(g1,ss2,t19) - 1.805 RDn(g1,ss2,t19)
-   + 40.95 RUpSC(g1,ss2,t19) - 37.05 RDnSC(g1,ss2,t19)
-   + 1250 Lshed(ss2,t19) + 1.995 RUp(g1,ss2,t20) - 1.805 RDn(g1,ss2,t20)
-   + 40.95 RUpSC(g1,ss2,t20) - 37.05 RDnSC(g1,ss2,t20)
-   + 1250 Lshed(ss2,t20) + 1.995 RUp(g1,ss2,t21) - 1.805 RDn(g1,ss2,t21)
-   + 40.95 RUpSC(g1,ss2,t21) - 37.05 RDnSC(g1,ss2,t21)
-   + 1250 Lshed(ss2,t21) + 1.995 RUp(g1,ss2,t22) - 1.805 RDn(g1,ss2,t22)
-   + 40.95 RUpSC(g1,ss2,t22) - 37.05 RDnSC(g1,ss2,t22)
-   + 1250 Lshed(ss2,t22) + 1.995 RUp(g1,ss2,t23) - 1.805 RDn(g1,ss2,t23)
-   + 40.95 RUpSC(g1,ss2,t23) - 37.05 RDnSC(g1,ss2,t23)
-   + 1250 Lshed(ss2,t23) + 1.995 RUp(g1,ss2,t24) - 1.805 RDn(g1,ss2,t24)
-   + 40.95 RUpSC(g1,ss2,t24) - 37.05 RDnSC(g1,ss2,t24)
-   + 1250 Lshed(ss2,t24) + 1.995 RUp(g1,ss3,t1) - 1.805 RDn(g1,ss3,t1)
-   + 40.95 RUpSC(g1,ss3,t1) - 37.05 RDnSC(g1,ss3,t1) + 1250 Lshed(ss3,t1)
-   + 1.995 RUp(g1,ss3,t2) - 1.805 RDn(g1,ss3,t2) + 40.95 RUpSC(g1,ss3,t2)
-   - 37.05 RDnSC(g1,ss3,t2) + 1250 Lshed(ss3,t2) + 1.995 RUp(g1,ss3,t3)
-   - 1.805 RDn(g1,ss3,t3) + 40.95 RUpSC(g1,ss3,t3) - 37.05 RDnSC(g1,ss3,t3)
-   + 1250 Lshed(ss3,t3) + 1.995 RUp(g1,ss3,t4) - 1.805 RDn(g1,ss3,t4)
-   + 40.95 RUpSC(g1,ss3,t4) - 37.05 RDnSC(g1,ss3,t4) + 1250 Lshed(ss3,t4)
-   + 1.995 RUp(g1,ss3,t5) - 1.805 RDn(g1,ss3,t5) + 40.95 RUpSC(g1,ss3,t5)
-   - 37.05 RDnSC(g1,ss3,t5) + 1250 Lshed(ss3,t5) + 1.995 RUp(g1,ss3,t6)
-   - 1.805 RDn(g1,ss3,t6) + 40.95 RUpSC(g1,ss3,t6) - 37.05 RDnSC(g1,ss3,t6)
-   + 1250 Lshed(ss3,t6) + 1.995 RUp(g1,ss3,t7) - 1.805 RDn(g1,ss3,t7)
-   + 40.95 RUpSC(g1,ss3,t7) - 37.05 RDnSC(g1,ss3,t7) + 1250 Lshed(ss3,t7)
-   + 1.995 RUp(g1,ss3,t8) - 1.805 RDn(g1,ss3,t8) + 40.95 RUpSC(g1,ss3,t8)
-   - 37.05 RDnSC(g1,ss3,t8) + 1250 Lshed(ss3,t8) + 1.995 RUp(g1,ss3,t9)
-   - 1.805 RDn(g1,ss3,t9) + 40.95 RUpSC(g1,ss3,t9) - 37.05 RDnSC(g1,ss3,t9)
-   + 1250 Lshed(ss3,t9) + 1.995 RUp(g1,ss3,t10) - 1.805 RDn(g1,ss3,t10)
-   + 40.95 RUpSC(g1,ss3,t10) - 37.05 RDnSC(g1,ss3,t10)
-   + 1250 Lshed(ss3,t10) + 1.995 RUp(g1,ss3,t11) - 1.805 RDn(g1,ss3,t11)
-   + 40.95 RUpSC(g1,ss3,t11) - 37.05 RDnSC(g1,ss3,t11)
-   + 1250 Lshed(ss3,t11) + 1.995 RUp(g1,ss3,t12) - 1.805 RDn(g1,ss3,t12)
-   + 40.95 RUpSC(g1,ss3,t12) - 37.05 RDnSC(g1,ss3,t12)
-   + 1250 Lshed(ss3,t12) + 1.995 RUp(g1,ss3,t13) - 1.805 RDn(g1,ss3,t13)
-   + 40.95 RUpSC(g1,ss3,t13) - 37.05 RDnSC(g1,ss3,t13)
-   + 1250 Lshed(ss3,t13) + 1.995 RUp(g1,ss3,t14) - 1.805 RDn(g1,ss3,t14)
-   + 40.95 RUpSC(g1,ss3,t14) - 37.05 RDnSC(g1,ss3,t14)
-   + 1250 Lshed(ss3,t14) + 1.995 RUp(g1,ss3,t15) - 1.805 RDn(g1,ss3,t15)
-   + 40.95 RUpSC(g1,ss3,t15) - 37.05 RDnSC(g1,ss3,t15)
-   + 1250 Lshed(ss3,t15) + 1.995 RUp(g1,ss3,t16) - 1.805 RDn(g1,ss3,t16)
-   + 40.95 RUpSC(g1,ss3,t16) - 37.05 RDnSC(g1,ss3,t16)
-   + 1250 Lshed(ss3,t16) + 1.995 RUp(g1,ss3,t17) - 1.805 RDn(g1,ss3,t17)
-   + 40.95 RUpSC(g1,ss3,t17) - 37.05 RDnSC(g1,ss3,t17)
-   + 1250 Lshed(ss3,t17) + 1.995 RUp(g1,ss3,t18) - 1.805 RDn(g1,ss3,t18)
-   + 40.95 RUpSC(g1,ss3,t18) - 37.05 RDnSC(g1,ss3,t18)
-   + 1250 Lshed(ss3,t18) + 1.995 RUp(g1,ss3,t19) - 1.805 RDn(g1,ss3,t19)
-   + 40.95 RUpSC(g1,ss3,t19) - 37.05 RDnSC(g1,ss3,t19)
-   + 1250 Lshed(ss3,t19) + 1.995 RUp(g1,ss3,t20) - 1.805 RDn(g1,ss3,t20)
-   + 40.95 RUpSC(g1,ss3,t20) - 37.05 RDnSC(g1,ss3,t20)
-   + 1250 Lshed(ss3,t20) + 1.995 RUp(g1,ss3,t21) - 1.805 RDn(g1,ss3,t21)
-   + 40.95 RUpSC(g1,ss3,t21) - 37.05 RDnSC(g1,ss3,t21)
-   + 1250 Lshed(ss3,t21) + 1.995 RUp(g1,ss3,t22) - 1.805 RDn(g1,ss3,t22)
-   + 40.95 RUpSC(g1,ss3,t22) - 37.05 RDnSC(g1,ss3,t22)
-   + 1250 Lshed(ss3,t22) + 1.995 RUp(g1,ss3,t23) - 1.805 RDn(g1,ss3,t23)
-   + 40.95 RUpSC(g1,ss3,t23) - 37.05 RDnSC(g1,ss3,t23)
-   + 1250 Lshed(ss3,t23) + 1.995 RUp(g1,ss3,t24) - 1.805 RDn(g1,ss3,t24)
-   + 40.95 RUpSC(g1,ss3,t24) - 37.05 RDnSC(g1,ss3,t24)
-   + 1250 Lshed(ss3,t24) + 2.205 RUp(g1,ss4,t1) - 1.995 RDn(g1,ss4,t1)
-   + 40.95 RUpSC(g1,ss4,t1) - 37.05 RDnSC(g1,ss4,t1) + 1250 Lshed(ss4,t1)
-   + 2.205 RUp(g1,ss4,t2) - 1.995 RDn(g1,ss4,t2) + 40.95 RUpSC(g1,ss4,t2)
-   - 37.05 RDnSC(g1,ss4,t2) + 1250 Lshed(ss4,t2) + 2.205 RUp(g1,ss4,t3)
-   - 1.995 RDn(g1,ss4,t3) + 40.95 RUpSC(g1,ss4,t3) - 37.05 RDnSC(g1,ss4,t3)
-   + 1250 Lshed(ss4,t3) + 2.205 RUp(g1,ss4,t4) - 1.995 RDn(g1,ss4,t4)
-   + 40.95 RUpSC(g1,ss4,t4) - 37.05 RDnSC(g1,ss4,t4) + 1250 Lshed(ss4,t4)
-   + 2.205 RUp(g1,ss4,t5) - 1.995 RDn(g1,ss4,t5) + 40.95 RUpSC(g1,ss4,t5)
-   - 37.05 RDnSC(g1,ss4,t5) + 1250 Lshed(ss4,t5) + 2.205 RUp(g1,ss4,t6)
-   - 1.995 RDn(g1,ss4,t6) + 40.95 RUpSC(g1,ss4,t6) - 37.05 RDnSC(g1,ss4,t6)
-   + 1250 Lshed(ss4,t6) + 2.205 RUp(g1,ss4,t7) - 1.995 RDn(g1,ss4,t7)
-   + 40.95 RUpSC(g1,ss4,t7) - 37.05 RDnSC(g1,ss4,t7) + 1250 Lshed(ss4,t7)
-   + 2.205 RUp(g1,ss4,t8) - 1.995 RDn(g1,ss4,t8) + 40.95 RUpSC(g1,ss4,t8)
-   - 37.05 RDnSC(g1,ss4,t8) + 1250 Lshed(ss4,t8) + 2.205 RUp(g1,ss4,t9)
-   - 1.995 RDn(g1,ss4,t9) + 40.95 RUpSC(g1,ss4,t9) - 37.05 RDnSC(g1,ss4,t9)
-   + 1250 Lshed(ss4,t9) + 2.205 RUp(g1,ss4,t10) - 1.995 RDn(g1,ss4,t10)
-   + 40.95 RUpSC(g1,ss4,t10) - 37.05 RDnSC(g1,ss4,t10)
-   + 1250 Lshed(ss4,t10) + 2.205 RUp(g1,ss4,t11) - 1.995 RDn(g1,ss4,t11)
-   + 40.95 RUpSC(g1,ss4,t11) - 37.05 RDnSC(g1,ss4,t11)
-   + 1250 Lshed(ss4,t11) + 2.205 RUp(g1,ss4,t12) - 1.995 RDn(g1,ss4,t12)
-   + 40.95 RUpSC(g1,ss4,t12) - 37.05 RDnSC(g1,ss4,t12)
-   + 1250 Lshed(ss4,t12) + 2.205 RUp(g1,ss4,t13) - 1.995 RDn(g1,ss4,t13)
-   + 40.95 RUpSC(g1,ss4,t13) - 37.05 RDnSC(g1,ss4,t13)
-   + 1250 Lshed(ss4,t13) + 2.205 RUp(g1,ss4,t14) - 1.995 RDn(g1,ss4,t14)
-   + 40.95 RUpSC(g1,ss4,t14) - 37.05 RDnSC(g1,ss4,t14)
-   + 1250 Lshed(ss4,t14) + 2.205 RUp(g1,ss4,t15) - 1.995 RDn(g1,ss4,t15)
-   + 40.95 RUpSC(g1,ss4,t15) - 37.05 RDnSC(g1,ss4,t15)
-   + 1250 Lshed(ss4,t15) + 2.205 RUp(g1,ss4,t16) - 1.995 RDn(g1,ss4,t16)
-   + 40.95 RUpSC(g1,ss4,t16) - 37.05 RDnSC(g1,ss4,t16)
-   + 1250 Lshed(ss4,t16) + 2.205 RUp(g1,ss4,t17) - 1.995 RDn(g1,ss4,t17)
-   + 40.95 RUpSC(g1,ss4,t17) - 37.05 RDnSC(g1,ss4,t17)
-   + 1250 Lshed(ss4,t17) + 2.205 RUp(g1,ss4,t18) - 1.995 RDn(g1,ss4,t18)
-   + 40.95 RUpSC(g1,ss4,t18) - 37.05 RDnSC(g1,ss4,t18)
-   + 1250 Lshed(ss4,t18) + 2.205 RUp(g1,ss4,t19) - 1.995 RDn(g1,ss4,t19)
-   + 40.95 RUpSC(g1,ss4,t19) - 37.05 RDnSC(g1,ss4,t19)
-   + 1250 Lshed(ss4,t19) + 2.205 RUp(g1,ss4,t20) - 1.995 RDn(g1,ss4,t20)
-   + 40.95 RUpSC(g1,ss4,t20) - 37.05 RDnSC(g1,ss4,t20)
-   + 1250 Lshed(ss4,t20) + 2.205 RUp(g1,ss4,t21) - 1.995 RDn(g1,ss4,t21)
-   + 40.95 RUpSC(g1,ss4,t21) - 37.05 RDnSC(g1,ss4,t21)
-   + 1250 Lshed(ss4,t21) + 2.205 RUp(g1,ss4,t22) - 1.995 RDn(g1,ss4,t22)
-   + 40.95 RUpSC(g1,ss4,t22) - 37.05 RDnSC(g1,ss4,t22)
-   + 1250 Lshed(ss4,t22) + 2.205 RUp(g1,ss4,t23) - 1.995 RDn(g1,ss4,t23)
-   + 40.95 RUpSC(g1,ss4,t23) - 37.05 RDnSC(g1,ss4,t23)
-   + 1250 Lshed(ss4,t23) + 2.205 RUp(g1,ss4,t24) - 1.995 RDn(g1,ss4,t24)
-   + 40.95 RUpSC(g1,ss4,t24) - 37.05 RDnSC(g1,ss4,t24)
-   + 1250 Lshed(ss4,t24) + 2.205 RUp(g1,ss5,t1) - 1.995 RDn(g1,ss5,t1)
-   + 40.95 RUpSC(g1,ss5,t1) - 37.05 RDnSC(g1,ss5,t1) + 1250 Lshed(ss5,t1)
-   + 2.205 RUp(g1,ss5,t2) - 1.995 RDn(g1,ss5,t2) + 40.95 RUpSC(g1,ss5,t2)
-   - 37.05 RDnSC(g1,ss5,t2) + 1250 Lshed(ss5,t2) + 2.205 RUp(g1,ss5,t3)
-   - 1.995 RDn(g1,ss5,t3) + 40.95 RUpSC(g1,ss5,t3) - 37.05 RDnSC(g1,ss5,t3)
-   + 1250 Lshed(ss5,t3) + 2.205 RUp(g1,ss5,t4) - 1.995 RDn(g1,ss5,t4)
-   + 40.95 RUpSC(g1,ss5,t4) - 37.05 RDnSC(g1,ss5,t4) + 1250 Lshed(ss5,t4)
-   + 2.205 RUp(g1,ss5,t5) - 1.995 RDn(g1,ss5,t5) + 40.95 RUpSC(g1,ss5,t5)
-   - 37.05 RDnSC(g1,ss5,t5) + 1250 Lshed(ss5,t5) + 2.205 RUp(g1,ss5,t6)
-   - 1.995 RDn(g1,ss5,t6) + 40.95 RUpSC(g1,ss5,t6) - 37.05 RDnSC(g1,ss5,t6)
-   + 1250 Lshed(ss5,t6) + 2.205 RUp(g1,ss5,t7) - 1.995 RDn(g1,ss5,t7)
-   + 40.95 RUpSC(g1,ss5,t7) - 37.05 RDnSC(g1,ss5,t7) + 1250 Lshed(ss5,t7)
-   + 2.205 RUp(g1,ss5,t8) - 1.995 RDn(g1,ss5,t8) + 40.95 RUpSC(g1,ss5,t8)
-   - 37.05 RDnSC(g1,ss5,t8) + 1250 Lshed(ss5,t8) + 2.205 RUp(g1,ss5,t9)
-   - 1.995 RDn(g1,ss5,t9) + 40.95 RUpSC(g1,ss5,t9) - 37.05 RDnSC(g1,ss5,t9)
-   + 1250 Lshed(ss5,t9) + 2.205 RUp(g1,ss5,t10) - 1.995 RDn(g1,ss5,t10)
-   + 40.95 RUpSC(g1,ss5,t10) - 37.05 RDnSC(g1,ss5,t10)
-   + 1250 Lshed(ss5,t10) + 2.205 RUp(g1,ss5,t11) - 1.995 RDn(g1,ss5,t11)
-   + 40.95 RUpSC(g1,ss5,t11) - 37.05 RDnSC(g1,ss5,t11)
-   + 1250 Lshed(ss5,t11) + 2.205 RUp(g1,ss5,t12) - 1.995 RDn(g1,ss5,t12)
-   + 40.95 RUpSC(g1,ss5,t12) - 37.05 RDnSC(g1,ss5,t12)
-   + 1250 Lshed(ss5,t12) + 2.205 RUp(g1,ss5,t13) - 1.995 RDn(g1,ss5,t13)
-   + 40.95 RUpSC(g1,ss5,t13) - 37.05 RDnSC(g1,ss5,t13)
-   + 1250 Lshed(ss5,t13) + 2.205 RUp(g1,ss5,t14) - 1.995 RDn(g1,ss5,t14)
-   + 40.95 RUpSC(g1,ss5,t14) - 37.05 RDnSC(g1,ss5,t14)
-   + 1250 Lshed(ss5,t14) + 2.205 RUp(g1,ss5,t15) - 1.995 RDn(g1,ss5,t15)
-   + 40.95 RUpSC(g1,ss5,t15) - 37.05 RDnSC(g1,ss5,t15)
-   + 1250 Lshed(ss5,t15) + 2.205 RUp(g1,ss5,t16) - 1.995 RDn(g1,ss5,t16)
-   + 40.95 RUpSC(g1,ss5,t16) - 37.05 RDnSC(g1,ss5,t16)
-   + 1250 Lshed(ss5,t16) + 2.205 RUp(g1,ss5,t17) - 1.995 RDn(g1,ss5,t17)
-   + 40.95 RUpSC(g1,ss5,t17) - 37.05 RDnSC(g1,ss5,t17)
-   + 1250 Lshed(ss5,t17) + 2.205 RUp(g1,ss5,t18) - 1.995 RDn(g1,ss5,t18)
-   + 40.95 RUpSC(g1,ss5,t18) - 37.05 RDnSC(g1,ss5,t18)
-   + 1250 Lshed(ss5,t18) + 2.205 RUp(g1,ss5,t19) - 1.995 RDn(g1,ss5,t19)
-   + 40.95 RUpSC(g1,ss5,t19) - 37.05 RDnSC(g1,ss5,t19)
-   + 1250 Lshed(ss5,t19) + 2.205 RUp(g1,ss5,t20) - 1.995 RDn(g1,ss5,t20)
-   + 40.95 RUpSC(g1,ss5,t20) - 37.05 RDnSC(g1,ss5,t20)
-   + 1250 Lshed(ss5,t20) + 2.205 RUp(g1,ss5,t21) - 1.995 RDn(g1,ss5,t21)
-   + 40.95 RUpSC(g1,ss5,t21) - 37.05 RDnSC(g1,ss5,t21)
-   + 1250 Lshed(ss5,t21) + 2.205 RUp(g1,ss5,t22) - 1.995 RDn(g1,ss5,t22)
-   + 40.95 RUpSC(g1,ss5,t22) - 37.05 RDnSC(g1,ss5,t22)
-   + 1250 Lshed(ss5,t22) + 2.205 RUp(g1,ss5,t23) - 1.995 RDn(g1,ss5,t23)
-   + 40.95 RUpSC(g1,ss5,t23) - 37.05 RDnSC(g1,ss5,t23)
-   + 1250 Lshed(ss5,t23) + 2.205 RUp(g1,ss5,t24) - 1.995 RDn(g1,ss5,t24)
-   + 40.95 RUpSC(g1,ss5,t24) - 37.05 RDnSC(g1,ss5,t24)
-   + 1250 Lshed(ss5,t24)
+   + 4.2 RUp(g1,ss0,t1) - 3.8 RDn(g1,ss0,t1) + 2500 Lshed(ss0,t1)
+   + 4.2 RUp(g1,ss0,t2) - 3.8 RDn(g1,ss0,t2) + 2500 Lshed(ss0,t2)
+   + 4.2 RUp(g1,ss0,t3) - 3.8 RDn(g1,ss0,t3) + 2500 Lshed(ss0,t3)
+   + 4.2 RUp(g1,ss0,t4) - 3.8 RDn(g1,ss0,t4) + 2500 Lshed(ss0,t4)
+   + 4.2 RUp(g1,ss0,t5) - 3.8 RDn(g1,ss0,t5) + 2500 Lshed(ss0,t5)
+   + 4.2 RUp(g1,ss0,t6) - 3.8 RDn(g1,ss0,t6) + 2500 Lshed(ss0,t6)
+   + 4.2 RUp(g1,ss0,t7) - 3.8 RDn(g1,ss0,t7) + 2500 Lshed(ss0,t7)
+   + 4.2 RUp(g1,ss0,t8) - 3.8 RDn(g1,ss0,t8) + 2500 Lshed(ss0,t8)
+   + 4.2 RUp(g1,ss0,t9) - 3.8 RDn(g1,ss0,t9) + 2500 Lshed(ss0,t9)
+   + 4.2 RUp(g1,ss0,t10) - 3.8 RDn(g1,ss0,t10) + 2500 Lshed(ss0,t10)
+   + 4.2 RUp(g1,ss0,t11) - 3.8 RDn(g1,ss0,t11) + 2500 Lshed(ss0,t11)
+   + 4.2 RUp(g1,ss0,t12) - 3.8 RDn(g1,ss0,t12) + 2500 Lshed(ss0,t12)
+   + 4.2 RUp(g1,ss0,t13) - 3.8 RDn(g1,ss0,t13) + 2500 Lshed(ss0,t13)
+   + 4.2 RUp(g1,ss0,t14) - 3.8 RDn(g1,ss0,t14) + 2500 Lshed(ss0,t14)
+   + 4.2 RUp(g1,ss0,t15) - 3.8 RDn(g1,ss0,t15) + 2500 Lshed(ss0,t15)
+   + 4.2 RUp(g1,ss0,t16) - 3.8 RDn(g1,ss0,t16) + 2500 Lshed(ss0,t16)
+   + 4.2 RUp(g1,ss0,t17) - 3.8 RDn(g1,ss0,t17) + 2500 Lshed(ss0,t17)
+   + 4.2 RUp(g1,ss0,t18) - 3.8 RDn(g1,ss0,t18) + 2500 Lshed(ss0,t18)
+   + 4.2 RUp(g1,ss0,t19) - 3.8 RDn(g1,ss0,t19) + 2500 Lshed(ss0,t19)
+   + 4.2 RUp(g1,ss0,t20) - 3.8 RDn(g1,ss0,t20) + 2500 Lshed(ss0,t20)
+   + 4.2 RUp(g1,ss0,t21) - 3.8 RDn(g1,ss0,t21) + 2500 Lshed(ss0,t21)
+   + 4.2 RUp(g1,ss0,t22) - 3.8 RDn(g1,ss0,t22) + 2500 Lshed(ss0,t22)
+   + 4.2 RUp(g1,ss0,t23) - 3.8 RDn(g1,ss0,t23) + 2500 Lshed(ss0,t23)
+   + 4.2 RUp(g1,ss0,t24) - 3.8 RDn(g1,ss0,t24) + 2500 Lshed(ss0,t24)
+   + 4.2 RUp(g1,ss1,t1) - 3.8 RDn(g1,ss1,t1) + 2500 Lshed(ss1,t1)
+   + 4.2 RUp(g1,ss1,t2) - 3.8 RDn(g1,ss1,t2) + 2500 Lshed(ss1,t2)
+   + 4.2 RUp(g1,ss1,t3) - 3.8 RDn(g1,ss1,t3) + 2500 Lshed(ss1,t3)
+   + 4.2 RUp(g1,ss1,t4) - 3.8 RDn(g1,ss1,t4) + 2500 Lshed(ss1,t4)
+   + 4.2 RUp(g1,ss1,t5) - 3.8 RDn(g1,ss1,t5) + 2500 Lshed(ss1,t5)
+   + 4.2 RUp(g1,ss1,t6) - 3.8 RDn(g1,ss1,t6) + 2500 Lshed(ss1,t6)
+   + 4.2 RUp(g1,ss1,t7) - 3.8 RDn(g1,ss1,t7) + 2500 Lshed(ss1,t7)
+   + 4.2 RUp(g1,ss1,t8) - 3.8 RDn(g1,ss1,t8) + 2500 Lshed(ss1,t8)
+   + 4.2 RUp(g1,ss1,t9) - 3.8 RDn(g1,ss1,t9) + 2500 Lshed(ss1,t9)
+   + 4.2 RUp(g1,ss1,t10) - 3.8 RDn(g1,ss1,t10) + 2500 Lshed(ss1,t10)
+   + 4.2 RUp(g1,ss1,t11) - 3.8 RDn(g1,ss1,t11) + 2500 Lshed(ss1,t11)
+   + 4.2 RUp(g1,ss1,t12) - 3.8 RDn(g1,ss1,t12) + 2500 Lshed(ss1,t12)
+   + 4.2 RUp(g1,ss1,t13) - 3.8 RDn(g1,ss1,t13) + 2500 Lshed(ss1,t13)
+   + 4.2 RUp(g1,ss1,t14) - 3.8 RDn(g1,ss1,t14) + 2500 Lshed(ss1,t14)
+   + 4.2 RUp(g1,ss1,t15) - 3.8 RDn(g1,ss1,t15) + 2500 Lshed(ss1,t15)
+   + 4.2 RUp(g1,ss1,t16) - 3.8 RDn(g1,ss1,t16) + 2500 Lshed(ss1,t16)
+   + 4.2 RUp(g1,ss1,t17) - 3.8 RDn(g1,ss1,t17) + 2500 Lshed(ss1,t17)
+   + 4.2 RUp(g1,ss1,t18) - 3.8 RDn(g1,ss1,t18) + 2500 Lshed(ss1,t18)
+   + 4.2 RUp(g1,ss1,t19) - 3.8 RDn(g1,ss1,t19) + 2500 Lshed(ss1,t19)
+   + 4.2 RUp(g1,ss1,t20) - 3.8 RDn(g1,ss1,t20) + 2500 Lshed(ss1,t20)
+   + 4.2 RUp(g1,ss1,t21) - 3.8 RDn(g1,ss1,t21) + 2500 Lshed(ss1,t21)
+   + 4.2 RUp(g1,ss1,t22) - 3.8 RDn(g1,ss1,t22) + 2500 Lshed(ss1,t22)
+   + 4.2 RUp(g1,ss1,t23) - 3.8 RDn(g1,ss1,t23) + 2500 Lshed(ss1,t23)
+   + 4.2 RUp(g1,ss1,t24) - 3.8 RDn(g1,ss1,t24) + 2500 Lshed(ss1,t24)
+   + 1.995 RUp(g1,ss2,t1) - 1.805 RDn(g1,ss2,t1) + 1250 Lshed(ss2,t1)
+   + 1.995 RUp(g1,ss2,t2) - 1.805 RDn(g1,ss2,t2) + 1250 Lshed(ss2,t2)
+   + 1.995 RUp(g1,ss2,t3) - 1.805 RDn(g1,ss2,t3) + 1250 Lshed(ss2,t3)
+   + 1.995 RUp(g1,ss2,t4) - 1.805 RDn(g1,ss2,t4) + 1250 Lshed(ss2,t4)
+   + 1.995 RUp(g1,ss2,t5) - 1.805 RDn(g1,ss2,t5) + 1250 Lshed(ss2,t5)
+   + 1.995 RUp(g1,ss2,t6) - 1.805 RDn(g1,ss2,t6) + 1250 Lshed(ss2,t6)
+   + 1.995 RUp(g1,ss2,t7) - 1.805 RDn(g1,ss2,t7) + 1250 Lshed(ss2,t7)
+   + 1.995 RUp(g1,ss2,t8) - 1.805 RDn(g1,ss2,t8) + 1250 Lshed(ss2,t8)
+   + 1.995 RUp(g1,ss2,t9) - 1.805 RDn(g1,ss2,t9) + 1250 Lshed(ss2,t9)
+   + 1.995 RUp(g1,ss2,t10) - 1.805 RDn(g1,ss2,t10) + 1250 Lshed(ss2,t10)
+   + 1.995 RUp(g1,ss2,t11) - 1.805 RDn(g1,ss2,t11) + 1250 Lshed(ss2,t11)
+   + 1.995 RUp(g1,ss2,t12) - 1.805 RDn(g1,ss2,t12) + 1250 Lshed(ss2,t12)
+   + 1.995 RUp(g1,ss2,t13) - 1.805 RDn(g1,ss2,t13) + 1250 Lshed(ss2,t13)
+   + 1.995 RUp(g1,ss2,t14) - 1.805 RDn(g1,ss2,t14) + 1250 Lshed(ss2,t14)
+   + 1.995 RUp(g1,ss2,t15) - 1.805 RDn(g1,ss2,t15) + 1250 Lshed(ss2,t15)
+   + 1.995 RUp(g1,ss2,t16) - 1.805 RDn(g1,ss2,t16) + 1250 Lshed(ss2,t16)
+   + 1.995 RUp(g1,ss2,t17) - 1.805 RDn(g1,ss2,t17) + 1250 Lshed(ss2,t17)
+   + 1.995 RUp(g1,ss2,t18) - 1.805 RDn(g1,ss2,t18) + 1250 Lshed(ss2,t18)
+   + 1.995 RUp(g1,ss2,t19) - 1.805 RDn(g1,ss2,t19) + 1250 Lshed(ss2,t19)
+   + 1.995 RUp(g1,ss2,t20) - 1.805 RDn(g1,ss2,t20) + 1250 Lshed(ss2,t20)
+   + 1.995 RUp(g1,ss2,t21) - 1.805 RDn(g1,ss2,t21) + 1250 Lshed(ss2,t21)
+   + 1.995 RUp(g1,ss2,t22) - 1.805 RDn(g1,ss2,t22) + 1250 Lshed(ss2,t22)
+   + 1.995 RUp(g1,ss2,t23) - 1.805 RDn(g1,ss2,t23) + 1250 Lshed(ss2,t23)
+   + 1.995 RUp(g1,ss2,t24) - 1.805 RDn(g1,ss2,t24) + 1250 Lshed(ss2,t24)
+   + 1.995 RUp(g1,ss3,t1) - 1.805 RDn(g1,ss3,t1) + 1250 Lshed(ss3,t1)
+   + 1.995 RUp(g1,ss3,t2) - 1.805 RDn(g1,ss3,t2) + 1250 Lshed(ss3,t2)
+   + 1.995 RUp(g1,ss3,t3) - 1.805 RDn(g1,ss3,t3) + 1250 Lshed(ss3,t3)
+   + 1.995 RUp(g1,ss3,t4) - 1.805 RDn(g1,ss3,t4) + 1250 Lshed(ss3,t4)
+   + 1.995 RUp(g1,ss3,t5) - 1.805 RDn(g1,ss3,t5) + 1250 Lshed(ss3,t5)
+   + 1.995 RUp(g1,ss3,t6) - 1.805 RDn(g1,ss3,t6) + 1250 Lshed(ss3,t6)
+   + 1.995 RUp(g1,ss3,t7) - 1.805 RDn(g1,ss3,t7) + 1250 Lshed(ss3,t7)
+   + 1.995 RUp(g1,ss3,t8) - 1.805 RDn(g1,ss3,t8) + 1250 Lshed(ss3,t8)
+   + 1.995 RUp(g1,ss3,t9) - 1.805 RDn(g1,ss3,t9) + 1250 Lshed(ss3,t9)
+   + 1.995 RUp(g1,ss3,t10) - 1.805 RDn(g1,ss3,t10) + 1250 Lshed(ss3,t10)
+   + 1.995 RUp(g1,ss3,t11) - 1.805 RDn(g1,ss3,t11) + 1250 Lshed(ss3,t11)
+   + 1.995 RUp(g1,ss3,t12) - 1.805 RDn(g1,ss3,t12) + 1250 Lshed(ss3,t12)
+   + 1.995 RUp(g1,ss3,t13) - 1.805 RDn(g1,ss3,t13) + 1250 Lshed(ss3,t13)
+   + 1.995 RUp(g1,ss3,t14) - 1.805 RDn(g1,ss3,t14) + 1250 Lshed(ss3,t14)
+   + 1.995 RUp(g1,ss3,t15) - 1.805 RDn(g1,ss3,t15) + 1250 Lshed(ss3,t15)
+   + 1.995 RUp(g1,ss3,t16) - 1.805 RDn(g1,ss3,t16) + 1250 Lshed(ss3,t16)
+   + 1.995 RUp(g1,ss3,t17) - 1.805 RDn(g1,ss3,t17) + 1250 Lshed(ss3,t17)
+   + 1.995 RUp(g1,ss3,t18) - 1.805 RDn(g1,ss3,t18) + 1250 Lshed(ss3,t18)
+   + 1.995 RUp(g1,ss3,t19) - 1.805 RDn(g1,ss3,t19) + 1250 Lshed(ss3,t19)
+   + 1.995 RUp(g1,ss3,t20) - 1.805 RDn(g1,ss3,t20) + 1250 Lshed(ss3,t20)
+   + 1.995 RUp(g1,ss3,t21) - 1.805 RDn(g1,ss3,t21) + 1250 Lshed(ss3,t21)
+   + 1.995 RUp(g1,ss3,t22) - 1.805 RDn(g1,ss3,t22) + 1250 Lshed(ss3,t22)
+   + 1.995 RUp(g1,ss3,t23) - 1.805 RDn(g1,ss3,t23) + 1250 Lshed(ss3,t23)
+   + 1.995 RUp(g1,ss3,t24) - 1.805 RDn(g1,ss3,t24) + 1250 Lshed(ss3,t24)
+   + 2.205 RUp(g1,ss4,t1) - 1.995 RDn(g1,ss4,t1) + 1250 Lshed(ss4,t1)
+   + 2.205 RUp(g1,ss4,t2) - 1.995 RDn(g1,ss4,t2) + 1250 Lshed(ss4,t2)
+   + 2.205 RUp(g1,ss4,t3) - 1.995 RDn(g1,ss4,t3) + 1250 Lshed(ss4,t3)
+   + 2.205 RUp(g1,ss4,t4) - 1.995 RDn(g1,ss4,t4) + 1250 Lshed(ss4,t4)
+   + 2.205 RUp(g1,ss4,t5) - 1.995 RDn(g1,ss4,t5) + 1250 Lshed(ss4,t5)
+   + 2.205 RUp(g1,ss4,t6) - 1.995 RDn(g1,ss4,t6) + 1250 Lshed(ss4,t6)
+   + 2.205 RUp(g1,ss4,t7) - 1.995 RDn(g1,ss4,t7) + 1250 Lshed(ss4,t7)
+   + 2.205 RUp(g1,ss4,t8) - 1.995 RDn(g1,ss4,t8) + 1250 Lshed(ss4,t8)
+   + 2.205 RUp(g1,ss4,t9) - 1.995 RDn(g1,ss4,t9) + 1250 Lshed(ss4,t9)
+   + 2.205 RUp(g1,ss4,t10) - 1.995 RDn(g1,ss4,t10) + 1250 Lshed(ss4,t10)
+   + 2.205 RUp(g1,ss4,t11) - 1.995 RDn(g1,ss4,t11) + 1250 Lshed(ss4,t11)
+   + 2.205 RUp(g1,ss4,t12) - 1.995 RDn(g1,ss4,t12) + 1250 Lshed(ss4,t12)
+   + 2.205 RUp(g1,ss4,t13) - 1.995 RDn(g1,ss4,t13) + 1250 Lshed(ss4,t13)
+   + 2.205 RUp(g1,ss4,t14) - 1.995 RDn(g1,ss4,t14) + 1250 Lshed(ss4,t14)
+   + 2.205 RUp(g1,ss4,t15) - 1.995 RDn(g1,ss4,t15) + 1250 Lshed(ss4,t15)
+   + 2.205 RUp(g1,ss4,t16) - 1.995 RDn(g1,ss4,t16) + 1250 Lshed(ss4,t16)
+   + 2.205 RUp(g1,ss4,t17) - 1.995 RDn(g1,ss4,t17) + 1250 Lshed(ss4,t17)
+   + 2.205 RUp(g1,ss4,t18) - 1.995 RDn(g1,ss4,t18) + 1250 Lshed(ss4,t18)
+   + 2.205 RUp(g1,ss4,t19) - 1.995 RDn(g1,ss4,t19) + 1250 Lshed(ss4,t19)
+   + 2.205 RUp(g1,ss4,t20) - 1.995 RDn(g1,ss4,t20) + 1250 Lshed(ss4,t20)
+   + 2.205 RUp(g1,ss4,t21) - 1.995 RDn(g1,ss4,t21) + 1250 Lshed(ss4,t21)
+   + 2.205 RUp(g1,ss4,t22) - 1.995 RDn(g1,ss4,t22) + 1250 Lshed(ss4,t22)
+   + 2.205 RUp(g1,ss4,t23) - 1.995 RDn(g1,ss4,t23) + 1250 Lshed(ss4,t23)
+   + 2.205 RUp(g1,ss4,t24) - 1.995 RDn(g1,ss4,t24) + 1250 Lshed(ss4,t24)
+   + 2.205 RUp(g1,ss5,t1) - 1.995 RDn(g1,ss5,t1) + 1250 Lshed(ss5,t1)
+   + 2.205 RUp(g1,ss5,t2) - 1.995 RDn(g1,ss5,t2) + 1250 Lshed(ss5,t2)
+   + 2.205 RUp(g1,ss5,t3) - 1.995 RDn(g1,ss5,t3) + 1250 Lshed(ss5,t3)
+   + 2.205 RUp(g1,ss5,t4) - 1.995 RDn(g1,ss5,t4) + 1250 Lshed(ss5,t4)
+   + 2.205 RUp(g1,ss5,t5) - 1.995 RDn(g1,ss5,t5) + 1250 Lshed(ss5,t5)
+   + 2.205 RUp(g1,ss5,t6) - 1.995 RDn(g1,ss5,t6) + 1250 Lshed(ss5,t6)
+   + 2.205 RUp(g1,ss5,t7) - 1.995 RDn(g1,ss5,t7) + 1250 Lshed(ss5,t7)
+   + 2.205 RUp(g1,ss5,t8) - 1.995 RDn(g1,ss5,t8) + 1250 Lshed(ss5,t8)
+   + 2.205 RUp(g1,ss5,t9) - 1.995 RDn(g1,ss5,t9) + 1250 Lshed(ss5,t9)
+   + 2.205 RUp(g1,ss5,t10) - 1.995 RDn(g1,ss5,t10) + 1250 Lshed(ss5,t10)
+   + 2.205 RUp(g1,ss5,t11) - 1.995 RDn(g1,ss5,t11) + 1250 Lshed(ss5,t11)
+   + 2.205 RUp(g1,ss5,t12) - 1.995 RDn(g1,ss5,t12) + 1250 Lshed(ss5,t12)
+   + 2.205 RUp(g1,ss5,t13) - 1.995 RDn(g1,ss5,t13) + 1250 Lshed(ss5,t13)
+   + 2.205 RUp(g1,ss5,t14) - 1.995 RDn(g1,ss5,t14) + 1250 Lshed(ss5,t14)
+   + 2.205 RUp(g1,ss5,t15) - 1.995 RDn(g1,ss5,t15) + 1250 Lshed(ss5,t15)
+   + 2.205 RUp(g1,ss5,t16) - 1.995 RDn(g1,ss5,t16) + 1250 Lshed(ss5,t16)
+   + 2.205 RUp(g1,ss5,t17) - 1.995 RDn(g1,ss5,t17) + 1250 Lshed(ss5,t17)
+   + 2.205 RUp(g1,ss5,t18) - 1.995 RDn(g1,ss5,t18) + 1250 Lshed(ss5,t18)
+   + 2.205 RUp(g1,ss5,t19) - 1.995 RDn(g1,ss5,t19) + 1250 Lshed(ss5,t19)
+   + 2.205 RUp(g1,ss5,t20) - 1.995 RDn(g1,ss5,t20) + 1250 Lshed(ss5,t20)
+   + 2.205 RUp(g1,ss5,t21) - 1.995 RDn(g1,ss5,t21) + 1250 Lshed(ss5,t21)
+   + 2.205 RUp(g1,ss5,t22) - 1.995 RDn(g1,ss5,t22) + 1250 Lshed(ss5,t22)
+   + 2.205 RUp(g1,ss5,t23) - 1.995 RDn(g1,ss5,t23) + 1250 Lshed(ss5,t23)
+   + 2.205 RUp(g1,ss5,t24) - 1.995 RDn(g1,ss5,t24) + 1250 Lshed(ss5,t24)
 Subject To
  PowerBalance_DA(t1): Pgen(g1,t1) + PgenSC(g1,t1) + WindDA(w1,t1) = 50
  PowerBalance_DA(t2): Pgen(g1,t2) + PgenSC(g1,t2) + WindDA(w1,t2)
@@ -463,101 +338,101 @@ Subject To
  SW_Active(g1t22): u(sc1) <= 1
  SW_Active(g1t23): u(sc1) <= 1
  SW_Active(g1t24): u(sc1) <= 1
- PgenSCmax(g1,t1): - 10 u(sc1) + PgenSC(g1,t1) <= 0
+ PgenSCmax(g1,t1): - 100 u(sc1) + PgenSC(g1,t1) <= 0
  PgenSCmin(g1,t1): - PgenSC(g1,t1) <= 0
- RCupSCmax(g1,t1): - 10 u(sc1) + PgenSC(g1,t1) + RCupSC(g1,t1) <= 0
+ RCupSCmax(g1,t1): - 100 u(sc1) + PgenSC(g1,t1) + RCupSC(g1,t1) <= 0
  RCdnSCmin(g1,t1): - PgenSC(g1,t1) + RCdnSC(g1,t1) <= 0
- PgenSCmax(g1,t2): - 10 u(sc1) + PgenSC(g1,t2) <= 0
+ PgenSCmax(g1,t2): - 100 u(sc1) + PgenSC(g1,t2) <= 0
  PgenSCmin(g1,t2): - PgenSC(g1,t2) <= 0
- RCupSCmax(g1,t2): - 10 u(sc1) + PgenSC(g1,t2) + RCupSC(g1,t2) <= 0
+ RCupSCmax(g1,t2): - 100 u(sc1) + PgenSC(g1,t2) + RCupSC(g1,t2) <= 0
  RCdnSCmin(g1,t2): - PgenSC(g1,t2) + RCdnSC(g1,t2) <= 0
- PgenSCmax(g1,t3): - 10 u(sc1) + PgenSC(g1,t3) <= 0
+ PgenSCmax(g1,t3): - 100 u(sc1) + PgenSC(g1,t3) <= 0
  PgenSCmin(g1,t3): - PgenSC(g1,t3) <= 0
- RCupSCmax(g1,t3): - 10 u(sc1) + PgenSC(g1,t3) + RCupSC(g1,t3) <= 0
+ RCupSCmax(g1,t3): - 100 u(sc1) + PgenSC(g1,t3) + RCupSC(g1,t3) <= 0
  RCdnSCmin(g1,t3): - PgenSC(g1,t3) + RCdnSC(g1,t3) <= 0
- PgenSCmax(g1,t4): - 10 u(sc1) + PgenSC(g1,t4) <= 0
+ PgenSCmax(g1,t4): - 100 u(sc1) + PgenSC(g1,t4) <= 0
  PgenSCmin(g1,t4): - PgenSC(g1,t4) <= 0
- RCupSCmax(g1,t4): - 10 u(sc1) + PgenSC(g1,t4) + RCupSC(g1,t4) <= 0
+ RCupSCmax(g1,t4): - 100 u(sc1) + PgenSC(g1,t4) + RCupSC(g1,t4) <= 0
  RCdnSCmin(g1,t4): - PgenSC(g1,t4) + RCdnSC(g1,t4) <= 0
- PgenSCmax(g1,t5): - 10 u(sc1) + PgenSC(g1,t5) <= 0
+ PgenSCmax(g1,t5): - 100 u(sc1) + PgenSC(g1,t5) <= 0
  PgenSCmin(g1,t5): - PgenSC(g1,t5) <= 0
- RCupSCmax(g1,t5): - 10 u(sc1) + PgenSC(g1,t5) + RCupSC(g1,t5) <= 0
+ RCupSCmax(g1,t5): - 100 u(sc1) + PgenSC(g1,t5) + RCupSC(g1,t5) <= 0
  RCdnSCmin(g1,t5): - PgenSC(g1,t5) + RCdnSC(g1,t5) <= 0
- PgenSCmax(g1,t6): - 10 u(sc1) + PgenSC(g1,t6) <= 0
+ PgenSCmax(g1,t6): - 100 u(sc1) + PgenSC(g1,t6) <= 0
  PgenSCmin(g1,t6): - PgenSC(g1,t6) <= 0
- RCupSCmax(g1,t6): - 10 u(sc1) + PgenSC(g1,t6) + RCupSC(g1,t6) <= 0
+ RCupSCmax(g1,t6): - 100 u(sc1) + PgenSC(g1,t6) + RCupSC(g1,t6) <= 0
  RCdnSCmin(g1,t6): - PgenSC(g1,t6) + RCdnSC(g1,t6) <= 0
- PgenSCmax(g1,t7): - 10 u(sc1) + PgenSC(g1,t7) <= 0
+ PgenSCmax(g1,t7): - 100 u(sc1) + PgenSC(g1,t7) <= 0
  PgenSCmin(g1,t7): - PgenSC(g1,t7) <= 0
- RCupSCmax(g1,t7): - 10 u(sc1) + PgenSC(g1,t7) + RCupSC(g1,t7) <= 0
+ RCupSCmax(g1,t7): - 100 u(sc1) + PgenSC(g1,t7) + RCupSC(g1,t7) <= 0
  RCdnSCmin(g1,t7): - PgenSC(g1,t7) + RCdnSC(g1,t7) <= 0
- PgenSCmax(g1,t8): - 10 u(sc1) + PgenSC(g1,t8) <= 0
+ PgenSCmax(g1,t8): - 100 u(sc1) + PgenSC(g1,t8) <= 0
  PgenSCmin(g1,t8): - PgenSC(g1,t8) <= 0
- RCupSCmax(g1,t8): - 10 u(sc1) + PgenSC(g1,t8) + RCupSC(g1,t8) <= 0
+ RCupSCmax(g1,t8): - 100 u(sc1) + PgenSC(g1,t8) + RCupSC(g1,t8) <= 0
  RCdnSCmin(g1,t8): - PgenSC(g1,t8) + RCdnSC(g1,t8) <= 0
- PgenSCmax(g1,t9): - 10 u(sc1) + PgenSC(g1,t9) <= 0
+ PgenSCmax(g1,t9): - 100 u(sc1) + PgenSC(g1,t9) <= 0
  PgenSCmin(g1,t9): - PgenSC(g1,t9) <= 0
- RCupSCmax(g1,t9): - 10 u(sc1) + PgenSC(g1,t9) + RCupSC(g1,t9) <= 0
+ RCupSCmax(g1,t9): - 100 u(sc1) + PgenSC(g1,t9) + RCupSC(g1,t9) <= 0
  RCdnSCmin(g1,t9): - PgenSC(g1,t9) + RCdnSC(g1,t9) <= 0
- PgenSCmax(g1,t10): - 10 u(sc1) + PgenSC(g1,t10) <= 0
+ PgenSCmax(g1,t10): - 100 u(sc1) + PgenSC(g1,t10) <= 0
  PgenSCmin(g1,t10): - PgenSC(g1,t10) <= 0
- RCupSCmax(g1,t10): - 10 u(sc1) + PgenSC(g1,t10) + RCupSC(g1,t10) <= 0
+ RCupSCmax(g1,t10): - 100 u(sc1) + PgenSC(g1,t10) + RCupSC(g1,t10) <= 0
  RCdnSCmin(g1,t10): - PgenSC(g1,t10) + RCdnSC(g1,t10) <= 0
- PgenSCmax(g1,t11): - 10 u(sc1) + PgenSC(g1,t11) <= 0
+ PgenSCmax(g1,t11): - 100 u(sc1) + PgenSC(g1,t11) <= 0
  PgenSCmin(g1,t11): - PgenSC(g1,t11) <= 0
- RCupSCmax(g1,t11): - 10 u(sc1) + PgenSC(g1,t11) + RCupSC(g1,t11) <= 0
+ RCupSCmax(g1,t11): - 100 u(sc1) + PgenSC(g1,t11) + RCupSC(g1,t11) <= 0
  RCdnSCmin(g1,t11): - PgenSC(g1,t11) + RCdnSC(g1,t11) <= 0
- PgenSCmax(g1,t12): - 10 u(sc1) + PgenSC(g1,t12) <= 0
+ PgenSCmax(g1,t12): - 100 u(sc1) + PgenSC(g1,t12) <= 0
  PgenSCmin(g1,t12): - PgenSC(g1,t12) <= 0
- RCupSCmax(g1,t12): - 10 u(sc1) + PgenSC(g1,t12) + RCupSC(g1,t12) <= 0
+ RCupSCmax(g1,t12): - 100 u(sc1) + PgenSC(g1,t12) + RCupSC(g1,t12) <= 0
  RCdnSCmin(g1,t12): - PgenSC(g1,t12) + RCdnSC(g1,t12) <= 0
- PgenSCmax(g1,t13): - 10 u(sc1) + PgenSC(g1,t13) <= 0
+ PgenSCmax(g1,t13): - 100 u(sc1) + PgenSC(g1,t13) <= 0
  PgenSCmin(g1,t13): - PgenSC(g1,t13) <= 0
- RCupSCmax(g1,t13): - 10 u(sc1) + PgenSC(g1,t13) + RCupSC(g1,t13) <= 0
+ RCupSCmax(g1,t13): - 100 u(sc1) + PgenSC(g1,t13) + RCupSC(g1,t13) <= 0
  RCdnSCmin(g1,t13): - PgenSC(g1,t13) + RCdnSC(g1,t13) <= 0
- PgenSCmax(g1,t14): - 10 u(sc1) + PgenSC(g1,t14) <= 0
+ PgenSCmax(g1,t14): - 100 u(sc1) + PgenSC(g1,t14) <= 0
  PgenSCmin(g1,t14): - PgenSC(g1,t14) <= 0
- RCupSCmax(g1,t14): - 10 u(sc1) + PgenSC(g1,t14) + RCupSC(g1,t14) <= 0
+ RCupSCmax(g1,t14): - 100 u(sc1) + PgenSC(g1,t14) + RCupSC(g1,t14) <= 0
  RCdnSCmin(g1,t14): - PgenSC(g1,t14) + RCdnSC(g1,t14) <= 0
- PgenSCmax(g1,t15): - 10 u(sc1) + PgenSC(g1,t15) <= 0
+ PgenSCmax(g1,t15): - 100 u(sc1) + PgenSC(g1,t15) <= 0
  PgenSCmin(g1,t15): - PgenSC(g1,t15) <= 0
- RCupSCmax(g1,t15): - 10 u(sc1) + PgenSC(g1,t15) + RCupSC(g1,t15) <= 0
+ RCupSCmax(g1,t15): - 100 u(sc1) + PgenSC(g1,t15) + RCupSC(g1,t15) <= 0
  RCdnSCmin(g1,t15): - PgenSC(g1,t15) + RCdnSC(g1,t15) <= 0
- PgenSCmax(g1,t16): - 10 u(sc1) + PgenSC(g1,t16) <= 0
+ PgenSCmax(g1,t16): - 100 u(sc1) + PgenSC(g1,t16) <= 0
  PgenSCmin(g1,t16): - PgenSC(g1,t16) <= 0
- RCupSCmax(g1,t16): - 10 u(sc1) + PgenSC(g1,t16) + RCupSC(g1,t16) <= 0
+ RCupSCmax(g1,t16): - 100 u(sc1) + PgenSC(g1,t16) + RCupSC(g1,t16) <= 0
  RCdnSCmin(g1,t16): - PgenSC(g1,t16) + RCdnSC(g1,t16) <= 0
- PgenSCmax(g1,t17): - 10 u(sc1) + PgenSC(g1,t17) <= 0
+ PgenSCmax(g1,t17): - 100 u(sc1) + PgenSC(g1,t17) <= 0
  PgenSCmin(g1,t17): - PgenSC(g1,t17) <= 0
- RCupSCmax(g1,t17): - 10 u(sc1) + PgenSC(g1,t17) + RCupSC(g1,t17) <= 0
+ RCupSCmax(g1,t17): - 100 u(sc1) + PgenSC(g1,t17) + RCupSC(g1,t17) <= 0
  RCdnSCmin(g1,t17): - PgenSC(g1,t17) + RCdnSC(g1,t17) <= 0
- PgenSCmax(g1,t18): - 10 u(sc1) + PgenSC(g1,t18) <= 0
+ PgenSCmax(g1,t18): - 100 u(sc1) + PgenSC(g1,t18) <= 0
  PgenSCmin(g1,t18): - PgenSC(g1,t18) <= 0
- RCupSCmax(g1,t18): - 10 u(sc1) + PgenSC(g1,t18) + RCupSC(g1,t18) <= 0
+ RCupSCmax(g1,t18): - 100 u(sc1) + PgenSC(g1,t18) + RCupSC(g1,t18) <= 0
  RCdnSCmin(g1,t18): - PgenSC(g1,t18) + RCdnSC(g1,t18) <= 0
- PgenSCmax(g1,t19): - 10 u(sc1) + PgenSC(g1,t19) <= 0
+ PgenSCmax(g1,t19): - 100 u(sc1) + PgenSC(g1,t19) <= 0
  PgenSCmin(g1,t19): - PgenSC(g1,t19) <= 0
- RCupSCmax(g1,t19): - 10 u(sc1) + PgenSC(g1,t19) + RCupSC(g1,t19) <= 0
+ RCupSCmax(g1,t19): - 100 u(sc1) + PgenSC(g1,t19) + RCupSC(g1,t19) <= 0
  RCdnSCmin(g1,t19): - PgenSC(g1,t19) + RCdnSC(g1,t19) <= 0
- PgenSCmax(g1,t20): - 10 u(sc1) + PgenSC(g1,t20) <= 0
+ PgenSCmax(g1,t20): - 100 u(sc1) + PgenSC(g1,t20) <= 0
  PgenSCmin(g1,t20): - PgenSC(g1,t20) <= 0
- RCupSCmax(g1,t20): - 10 u(sc1) + PgenSC(g1,t20) + RCupSC(g1,t20) <= 0
+ RCupSCmax(g1,t20): - 100 u(sc1) + PgenSC(g1,t20) + RCupSC(g1,t20) <= 0
  RCdnSCmin(g1,t20): - PgenSC(g1,t20) + RCdnSC(g1,t20) <= 0
- PgenSCmax(g1,t21): - 10 u(sc1) + PgenSC(g1,t21) <= 0
+ PgenSCmax(g1,t21): - 100 u(sc1) + PgenSC(g1,t21) <= 0
  PgenSCmin(g1,t21): - PgenSC(g1,t21) <= 0
- RCupSCmax(g1,t21): - 10 u(sc1) + PgenSC(g1,t21) + RCupSC(g1,t21) <= 0
+ RCupSCmax(g1,t21): - 100 u(sc1) + PgenSC(g1,t21) + RCupSC(g1,t21) <= 0
  RCdnSCmin(g1,t21): - PgenSC(g1,t21) + RCdnSC(g1,t21) <= 0
- PgenSCmax(g1,t22): - 10 u(sc1) + PgenSC(g1,t22) <= 0
+ PgenSCmax(g1,t22): - 100 u(sc1) + PgenSC(g1,t22) <= 0
  PgenSCmin(g1,t22): - PgenSC(g1,t22) <= 0
- RCupSCmax(g1,t22): - 10 u(sc1) + PgenSC(g1,t22) + RCupSC(g1,t22) <= 0
+ RCupSCmax(g1,t22): - 100 u(sc1) + PgenSC(g1,t22) + RCupSC(g1,t22) <= 0
  RCdnSCmin(g1,t22): - PgenSC(g1,t22) + RCdnSC(g1,t22) <= 0
- PgenSCmax(g1,t23): - 10 u(sc1) + PgenSC(g1,t23) <= 0
+ PgenSCmax(g1,t23): - 100 u(sc1) + PgenSC(g1,t23) <= 0
  PgenSCmin(g1,t23): - PgenSC(g1,t23) <= 0
- RCupSCmax(g1,t23): - 10 u(sc1) + PgenSC(g1,t23) + RCupSC(g1,t23) <= 0
+ RCupSCmax(g1,t23): - 100 u(sc1) + PgenSC(g1,t23) + RCupSC(g1,t23) <= 0
  RCdnSCmin(g1,t23): - PgenSC(g1,t23) + RCdnSC(g1,t23) <= 0
- PgenSCmax(g1,t24): - 10 u(sc1) + PgenSC(g1,t24) <= 0
+ PgenSCmax(g1,t24): - 100 u(sc1) + PgenSC(g1,t24) <= 0
  PgenSCmin(g1,t24): - PgenSC(g1,t24) <= 0
- RCupSCmax(g1,t24): - 10 u(sc1) + PgenSC(g1,t24) + RCupSC(g1,t24) <= 0
+ RCupSCmax(g1,t24): - 100 u(sc1) + PgenSC(g1,t24) + RCupSC(g1,t24) <= 0
  RCdnSCmin(g1,t24): - PgenSC(g1,t24) + RCdnSC(g1,t24) <= 0
  PowerBalance_RT(ss0,t1): - WindDA(w1,t1) + RUp(g1,ss0,t1) - RDn(g1,ss0,t1)
    + RUpSC(g1,ss0,t1) - RDnSC(g1,ss0,t1) - Wspill(w1,ss0,t1)

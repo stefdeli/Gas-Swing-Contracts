@@ -162,7 +162,17 @@ def _build_constraints_gasDA_WeymouthApprox(self):
     
     sclim = self.gdata.sclim # Swing contract limits
     
-    
+
+
+
+        
+    for gn in gnodes:
+        for t in time:
+            for k in sclim:
+                name='gshed_da_max({0},{1},{2})'.format(gn,k,t)
+                lhs = var.gas_shed[gn,k,t]
+                rhs = self.gdata.gasload[gn][t]
+                add_constraint(self,lhs,'<=',rhs,name)  
 
 
     
@@ -543,7 +553,7 @@ def _build_constraints_gasDA_WeymouthApprox(self):
                     lhs=gb.quicksum(var.gprod[gw,k,t] for gw in self.gdata.Map_Gn2Gp[gn]) +\
                             gb.quicksum(var.qout_sr[pl,k,t] - var.qin_rs[pl,k,t] for pl in self.gdata.nodetoinpplines[gn]) +\
                             gb.quicksum(var.qout_rs[pl,k,t] - var.qin_sr[pl,k,t] for pl in self.gdata.nodetooutpplines[gn])+\
-                            gb.quicksum(var.gsout[gs,k,t] - var.gsin[gs,k,t] for gs in self.gdata.Map_Gn2Gs[gn])
+                            gb.quicksum(var.gsout[gs,k,t] - var.gsin[gs,k,t] for gs in self.gdata.Map_Gn2Gs[gn]) +var.gas_shed[gn,k,t]
                             
                     rhs=self.gdata.gasload[gn][t]+  gb.quicksum((Pgen[gen][t]+ \
                                          PgenSC[gen][t]+RSC[gen,k,t])*self.gdata.generatorinfo.HR[gen] for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn] )
@@ -562,7 +572,8 @@ def _build_constraints_gasDA_WeymouthApprox(self):
                     lhs=   gb.quicksum(var.gprod[gw,k,t] for gw in self.gdata.Map_Gn2Gp[gn]) \
                             + gb.quicksum(var.qout_sr[pl,k,t] for pl in self.gdata.nodetoinpplines[gn])\
                             - gb.quicksum(var.qin_sr[pl,k,t] for pl in self.gdata.nodetooutpplines[gn]) \
-                            + gb.quicksum(var.gsout[gs,k,t] - var.gsin[gs,k,t] for gs in self.gdata.Map_Gn2Gs[gn])
+                            + gb.quicksum(var.gsout[gs,k,t] - var.gsin[gs,k,t] for gs in self.gdata.Map_Gn2Gs[gn])\
+                            + var.gas_shed[gn,k,t]
                     rhs= self.gdata.gasload[gn][t] + gb.quicksum((Pgen[gen][t]+ \
                                          PgenSC[gen][t]+RSC[gen,k,t])*HR[gen] for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn] )
                     add_constraint(self,lhs,'==',rhs,name=name)      
@@ -586,7 +597,13 @@ def _build_constraints_gasDA_FlowBased(self):
     
     sclim = self.gdata.sclim # Swing contract limits
 
-
+    for gn in gnodes:
+        for t in time:
+            for k in sclim:
+                name='gshed_da_max({0},{1},{2})'.format(gn,k,t)
+                lhs = var.gas_shed[gn,k,t]
+                rhs = self.gdata.gasload[gn][t]
+                add_constraint(self,lhs,'<=',rhs,name) 
     #--- Nodal Gas Balance 
 
     
@@ -611,7 +628,7 @@ def _build_constraints_gasDA_FlowBased(self):
                     lhs=gb.quicksum(var.gprod[gw,k,t] for gw in self.gdata.Map_Gn2Gp[gn]) +\
                             gb.quicksum(var.qout_sr[pl,k,t] - var.qin_rs[pl,k,t] for pl in self.gdata.nodetoinpplines[gn]) +\
                             gb.quicksum(var.qout_rs[pl,k,t] - var.qin_sr[pl,k,t] for pl in self.gdata.nodetooutpplines[gn])+\
-                            gb.quicksum(var.gsout[gs,k,t] - var.gsin[gs,k,t] for gs in self.gdata.Map_Gn2Gs[gn])
+                            gb.quicksum(var.gsout[gs,k,t] - var.gsin[gs,k,t] for gs in self.gdata.Map_Gn2Gs[gn])+var.gas_shed[gn,k,t]
                             
                     rhs=self.gdata.gasload[gn][t]+  gb.quicksum((Pgen[gen][t]+ \
                                          PgenSC[gen][t]+RSC[gen,k,t])*self.gdata.generatorinfo.HR[gen] for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn] )
@@ -669,7 +686,7 @@ def _build_constraints_gasDA_FlowBased(self):
                 name='Flow_Bal({0},{1},{2})'.format(pl,k,t).replace(" ","")
                 lhs= 0.0
                 rhs= var.qin_sr[pl,k,t] - var.qout_sr[pl,k,t]
-                add_constraint(self,-lhs,'==',-rhs,name=name)
+                add_constraint(self,lhs,'==',rhs,name=name)
                 
       
     #--- Gas Storage

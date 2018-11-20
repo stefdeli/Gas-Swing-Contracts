@@ -1,0 +1,187 @@
+\ Model _copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ gas_balance_da(ng104,k1,t19): qout_sr(('ng102','ng104'),k1,t19)
+   - qin_sr(('ng104','ng105'),k1,t19) - qin_sr(('ng104','ng107'),k1,t19)
+   = 0
+ gas_balance_da(ng105,k1,t19): qout_sr(('ng103','ng105'),k1,t19)
+   + qout_sr(('ng104','ng105'),k1,t19) - qin_sr(('ng105','ng106'),k1,t19)
+   = 2700
+ gas_balance_da(ng106,k1,t19): qout_sr(('ng105','ng106'),k1,t19)
+   - qin_sr(('ng106','ng108'),k1,t19) = 3780
+ gas_balance_da(ng107,k1,t19): qout_sr(('ng104','ng107'),k1,t19)
+   - qin_sr(('ng107','ng108'),k1,t19) - gsin(gs1,t19,k1)
+   + gsout(gs1,t19,k1) = 2700
+ gas_balance_da(ng108,k1,t19): qout_sr(('ng106','ng108'),k1,t19)
+   + qout_sr(('ng107','ng108'),k1,t19) - qin_sr(('ng108','ng109'),k1,t19)
+   = 0
+ gas_balance_da(ng104,k1,t20): qout_sr(('ng102','ng104'),k1,t20)
+   - qin_sr(('ng104','ng105'),k1,t20) - qin_sr(('ng104','ng107'),k1,t20)
+   = 0
+ gas_balance_da(ng105,k1,t20): qout_sr(('ng103','ng105'),k1,t20)
+   + qout_sr(('ng104','ng105'),k1,t20) - qin_sr(('ng105','ng106'),k1,t20)
+   = 2610
+ gas_balance_da(ng106,k1,t20): qout_sr(('ng105','ng106'),k1,t20)
+   - qin_sr(('ng106','ng108'),k1,t20) = 3654
+ gas_balance_da(ng107,k1,t20): qout_sr(('ng104','ng107'),k1,t20)
+   - qin_sr(('ng107','ng108'),k1,t20) - gsin(gs1,t20,k1)
+   + gsout(gs1,t20,k1) = 2610
+ gas_balance_da(ng108,k1,t20): qout_sr(('ng106','ng108'),k1,t20)
+   + qout_sr(('ng107','ng108'),k1,t20) - qin_sr(('ng108','ng109'),k1,t20)
+   = 0
+ gas_balance_da(ng104,k1,t21): qout_sr(('ng102','ng104'),k1,t21)
+   - qin_sr(('ng104','ng105'),k1,t21) - qin_sr(('ng104','ng107'),k1,t21)
+   = 0
+ gas_balance_da(ng105,k1,t21): qout_sr(('ng103','ng105'),k1,t21)
+   + qout_sr(('ng104','ng105'),k1,t21) - qin_sr(('ng105','ng106'),k1,t21)
+   = 2475
+ gas_balance_da(ng106,k1,t21): qout_sr(('ng105','ng106'),k1,t21)
+   - qin_sr(('ng106','ng108'),k1,t21) = 3465
+ gas_balance_da(ng107,k1,t21): qout_sr(('ng104','ng107'),k1,t21)
+   - qin_sr(('ng107','ng108'),k1,t21) - gsin(gs1,t21,k1)
+   + gsout(gs1,t21,k1) = 2776.0769538
+ gas_balance_da(ng108,k1,t21): qout_sr(('ng106','ng108'),k1,t21)
+   + qout_sr(('ng107','ng108'),k1,t21) - qin_sr(('ng108','ng109'),k1,t21)
+   = 0
+ gflow_sr_io(('ng102','ng104'),k1,t19): gflow_sr(('ng102','ng104'),k1,t19)
+   - 0.5 qin_sr(('ng102','ng104'),k1,t19)
+   - 0.5 qout_sr(('ng102','ng104'),k1,t19) = 0
+ gflow_sr_limit(('ng102','ng104'),k1,t19):
+   gflow_sr(('ng102','ng104'),k1,t19) <= 278
+ Flow_Bal(('ng102','ng104'),k1,t19): qin_sr(('ng102','ng104'),k1,t19)
+   - qout_sr(('ng102','ng104'),k1,t19) = 0
+ gflow_sr_io(('ng102','ng104'),k1,t20): gflow_sr(('ng102','ng104'),k1,t20)
+   - 0.5 qin_sr(('ng102','ng104'),k1,t20)
+   - 0.5 qout_sr(('ng102','ng104'),k1,t20) = 0
+ gflow_sr_limit(('ng102','ng104'),k1,t20):
+   gflow_sr(('ng102','ng104'),k1,t20) <= 278
+ Flow_Bal(('ng102','ng104'),k1,t20): qin_sr(('ng102','ng104'),k1,t20)
+   - qout_sr(('ng102','ng104'),k1,t20) = 0
+ gflow_sr_io(('ng102','ng104'),k1,t21): gflow_sr(('ng102','ng104'),k1,t21)
+   - 0.5 qin_sr(('ng102','ng104'),k1,t21)
+   - 0.5 qout_sr(('ng102','ng104'),k1,t21) = 0
+ gflow_sr_limit(('ng102','ng104'),k1,t21):
+   gflow_sr(('ng102','ng104'),k1,t21) <= 278
+ Flow_Bal(('ng102','ng104'),k1,t21): qin_sr(('ng102','ng104'),k1,t21)
+   - qout_sr(('ng102','ng104'),k1,t21) = 0
+ gflow_sr_io(('ng103','ng105'),k1,t19): gflow_sr(('ng103','ng105'),k1,t19)
+   - 0.5 qin_sr(('ng103','ng105'),k1,t19)
+   - 0.5 qout_sr(('ng103','ng105'),k1,t19) = 0
+ Flow_Bal(('ng103','ng105'),k1,t19): qin_sr(('ng103','ng105'),k1,t19)
+   - qout_sr(('ng103','ng105'),k1,t19) = 0
+ gflow_sr_io(('ng103','ng105'),k1,t20): gflow_sr(('ng103','ng105'),k1,t20)
+   - 0.5 qin_sr(('ng103','ng105'),k1,t20)
+   - 0.5 qout_sr(('ng103','ng105'),k1,t20) = 0
+ gflow_sr_limit(('ng103','ng105'),k1,t20):
+   gflow_sr(('ng103','ng105'),k1,t20) <= 278
+ Flow_Bal(('ng103','ng105'),k1,t20): qin_sr(('ng103','ng105'),k1,t20)
+   - qout_sr(('ng103','ng105'),k1,t20) = 0
+ gflow_sr_io(('ng103','ng105'),k1,t21): gflow_sr(('ng103','ng105'),k1,t21)
+   - 0.5 qin_sr(('ng103','ng105'),k1,t21)
+   - 0.5 qout_sr(('ng103','ng105'),k1,t21) = 0
+ gflow_sr_limit(('ng103','ng105'),k1,t21):
+   gflow_sr(('ng103','ng105'),k1,t21) <= 278
+ Flow_Bal(('ng103','ng105'),k1,t21): qin_sr(('ng103','ng105'),k1,t21)
+   - qout_sr(('ng103','ng105'),k1,t21) = 0
+ Flow_Bal(('ng104','ng105'),k1,t19): qin_sr(('ng104','ng105'),k1,t19)
+   - qout_sr(('ng104','ng105'),k1,t19) = 0
+ Flow_Bal(('ng104','ng105'),k1,t20): qin_sr(('ng104','ng105'),k1,t20)
+   - qout_sr(('ng104','ng105'),k1,t20) = 0
+ Flow_Bal(('ng104','ng105'),k1,t21): qin_sr(('ng104','ng105'),k1,t21)
+   - qout_sr(('ng104','ng105'),k1,t21) = 0
+ Flow_Bal(('ng105','ng106'),k1,t19): qin_sr(('ng105','ng106'),k1,t19)
+   - qout_sr(('ng105','ng106'),k1,t19) = 0
+ Flow_Bal(('ng105','ng106'),k1,t20): qin_sr(('ng105','ng106'),k1,t20)
+   - qout_sr(('ng105','ng106'),k1,t20) = 0
+ Flow_Bal(('ng105','ng106'),k1,t21): qin_sr(('ng105','ng106'),k1,t21)
+   - qout_sr(('ng105','ng106'),k1,t21) = 0
+ Flow_Bal(('ng104','ng107'),k1,t19): qin_sr(('ng104','ng107'),k1,t19)
+   - qout_sr(('ng104','ng107'),k1,t19) = 0
+ Flow_Bal(('ng104','ng107'),k1,t20): qin_sr(('ng104','ng107'),k1,t20)
+   - qout_sr(('ng104','ng107'),k1,t20) = 0
+ Flow_Bal(('ng104','ng107'),k1,t21): qin_sr(('ng104','ng107'),k1,t21)
+   - qout_sr(('ng104','ng107'),k1,t21) = 0
+ Flow_Bal(('ng106','ng108'),k1,t19): qin_sr(('ng106','ng108'),k1,t19)
+   - qout_sr(('ng106','ng108'),k1,t19) = 0
+ Flow_Bal(('ng106','ng108'),k1,t20): qin_sr(('ng106','ng108'),k1,t20)
+   - qout_sr(('ng106','ng108'),k1,t20) = 0
+ Flow_Bal(('ng106','ng108'),k1,t21): qin_sr(('ng106','ng108'),k1,t21)
+   - qout_sr(('ng106','ng108'),k1,t21) = 0
+ Flow_Bal(('ng107','ng108'),k1,t19): qin_sr(('ng107','ng108'),k1,t19)
+   - qout_sr(('ng107','ng108'),k1,t19) = 0
+ Flow_Bal(('ng107','ng108'),k1,t20): qin_sr(('ng107','ng108'),k1,t20)
+   - qout_sr(('ng107','ng108'),k1,t20) = 0
+ Flow_Bal(('ng107','ng108'),k1,t21): qin_sr(('ng107','ng108'),k1,t21)
+   - qout_sr(('ng107','ng108'),k1,t21) = 0
+ gstor_def(gs1,k1,t19): - gstore(gs1,t18,k1) - gsin(gs1,t19,k1)
+   + gsout(gs1,t19,k1) + gstore(gs1,t19,k1) = 0
+ gstor_def(gs1,k1,t20): - gstore(gs1,t19,k1) - gsin(gs1,t20,k1)
+   + gsout(gs1,t20,k1) + gstore(gs1,t20,k1) = 0
+ gstor_def(gs1,k1,t21): - gstore(gs1,t20,k1) - gsin(gs1,t21,k1)
+   + gsout(gs1,t21,k1) + gstore(gs1,t21,k1) = 0
+ SOS1_gflow_sr_limit(('ng103','ng105'),k1,t19):
+   gflow_sr(('ng103','ng105'),k1,t19)
+   + SOS1_gflow_sr_limit(('ng103','ng105'),k1,t19) = 278
+ SOS1_gstore_max(gs1,t18,k1): gstore(gs1,t18,k1)
+   + SOS1_gstore_max(gs1,t18,k1) = 2000
+Bounds
+ gflow_sr(('ng102','ng104'),k1,t19) free
+ gflow_sr(('ng102','ng104'),k1,t20) free
+ gflow_sr(('ng102','ng104'),k1,t21) free
+ gflow_sr(('ng103','ng105'),k1,t19) free
+ gflow_sr(('ng103','ng105'),k1,t20) free
+ gflow_sr(('ng103','ng105'),k1,t21) free
+ qin_sr(('ng102','ng104'),k1,t19) free
+ qout_sr(('ng102','ng104'),k1,t19) free
+ qin_sr(('ng102','ng104'),k1,t20) free
+ qout_sr(('ng102','ng104'),k1,t20) free
+ qin_sr(('ng102','ng104'),k1,t21) free
+ qout_sr(('ng102','ng104'),k1,t21) free
+ qin_sr(('ng103','ng105'),k1,t19) free
+ qout_sr(('ng103','ng105'),k1,t19) free
+ qin_sr(('ng103','ng105'),k1,t20) free
+ qout_sr(('ng103','ng105'),k1,t20) free
+ qin_sr(('ng103','ng105'),k1,t21) free
+ qout_sr(('ng103','ng105'),k1,t21) free
+ qin_sr(('ng104','ng105'),k1,t19) free
+ qout_sr(('ng104','ng105'),k1,t19) free
+ qin_sr(('ng104','ng105'),k1,t20) free
+ qout_sr(('ng104','ng105'),k1,t20) free
+ qin_sr(('ng104','ng105'),k1,t21) free
+ qout_sr(('ng104','ng105'),k1,t21) free
+ qin_sr(('ng105','ng106'),k1,t19) free
+ qout_sr(('ng105','ng106'),k1,t19) free
+ qin_sr(('ng105','ng106'),k1,t20) free
+ qout_sr(('ng105','ng106'),k1,t20) free
+ qin_sr(('ng105','ng106'),k1,t21) free
+ qout_sr(('ng105','ng106'),k1,t21) free
+ qin_sr(('ng104','ng107'),k1,t19) free
+ qout_sr(('ng104','ng107'),k1,t19) free
+ qin_sr(('ng104','ng107'),k1,t20) free
+ qout_sr(('ng104','ng107'),k1,t20) free
+ qin_sr(('ng104','ng107'),k1,t21) free
+ qout_sr(('ng104','ng107'),k1,t21) free
+ qin_sr(('ng106','ng108'),k1,t19) free
+ qout_sr(('ng106','ng108'),k1,t19) free
+ qin_sr(('ng106','ng108'),k1,t20) free
+ qout_sr(('ng106','ng108'),k1,t20) free
+ qin_sr(('ng106','ng108'),k1,t21) free
+ qout_sr(('ng106','ng108'),k1,t21) free
+ qin_sr(('ng107','ng108'),k1,t19) free
+ qout_sr(('ng107','ng108'),k1,t19) free
+ qin_sr(('ng107','ng108'),k1,t20) free
+ qout_sr(('ng107','ng108'),k1,t20) free
+ qin_sr(('ng107','ng108'),k1,t21) free
+ qout_sr(('ng107','ng108'),k1,t21) free
+ gstore(gs1,t18,k1) free
+ gsin(gs1,t19,k1) free
+ gsout(gs1,t19,k1) free
+ gstore(gs1,t19,k1) free
+ gsin(gs1,t20,k1) free
+ gsout(gs1,t20,k1) free
+ gstore(gs1,t20,k1) free
+ gsin(gs1,t21,k1) free
+ gsout(gs1,t21,k1) free
+End

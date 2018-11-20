@@ -1,0 +1,141 @@
+\ Model _copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ gas_balance_da(ng101,k1,t9): - qin_sr(('ng101','ng102'),k1,t9)
+   + gprod(gw1,k1,t9) + gprod(gw2,k1,t9) + gprod(gw3,k1,t9) = 0
+ gas_balance_da(ng102,k1,t9): qout_sr(('ng101','ng102'),k1,t9)
+   - gsin(gs1,t9,k1) + gsout(gs1,t9,k1) = 3736.78271432
+ gas_balance_da(ng101,k1,t10): - qin_sr(('ng101','ng102'),k1,t10)
+   + gprod(gw1,k1,t10) + gprod(gw2,k1,t10) + gprod(gw3,k1,t10) = 0
+ gas_balance_da(ng102,k1,t10): qout_sr(('ng101','ng102'),k1,t10)
+   - gsin(gs1,t10,k1) + gsout(gs1,t10,k1) = 3791.78911724
+ gas_balance_da(ng101,k1,t11): - qin_sr(('ng101','ng102'),k1,t11)
+   + gprod(gw1,k1,t11) + gprod(gw2,k1,t11) + gprod(gw3,k1,t11) = 0
+ gas_balance_da(ng102,k1,t11): qout_sr(('ng101','ng102'),k1,t11)
+   - gsin(gs1,t11,k1) + gsout(gs1,t11,k1) = 3794.21505968
+ gas_balance_da(ng101,k1,t12): - qin_sr(('ng101','ng102'),k1,t12)
+   + gprod(gw1,k1,t12) + gprod(gw2,k1,t12) + gprod(gw3,k1,t12) = 0
+ gas_balance_da(ng102,k1,t12): qout_sr(('ng101','ng102'),k1,t12)
+   - gsin(gs1,t12,k1) + gsout(gs1,t12,k1) = 3743.37160072
+ gas_balance_da(ng101,k1,t13): - qin_sr(('ng101','ng102'),k1,t13)
+   + gprod(gw1,k1,t13) + gprod(gw2,k1,t13) + gprod(gw3,k1,t13) = 0
+ gas_balance_da(ng102,k1,t13): qout_sr(('ng101','ng102'),k1,t13)
+   - gsin(gs1,t13,k1) + gsout(gs1,t13,k1) = 3732.22877808
+ gas_balance_da(ng101,k1,t14): - qin_sr(('ng101','ng102'),k1,t14)
+   + gprod(gw1,k1,t14) + gprod(gw2,k1,t14) + gprod(gw3,k1,t14) = 0
+ gas_balance_da(ng102,k1,t14): qout_sr(('ng101','ng102'),k1,t14)
+   - gsin(gs1,t14,k1) + gsout(gs1,t14,k1) = 3712.61918324
+ gas_balance_da(ng101,k1,t15): - qin_sr(('ng101','ng102'),k1,t15)
+   + gprod(gw1,k1,t15) + gprod(gw2,k1,t15) + gprod(gw3,k1,t15) = 0
+ gas_balance_da(ng102,k1,t15): qout_sr(('ng101','ng102'),k1,t15)
+   - gsin(gs1,t15,k1) + gsout(gs1,t15,k1) = 3652.2276634
+ gprod_max(gw1,k1,t9): gprod(gw1,k1,t9) <= 2230
+ gprod_max(gw1,k1,t10): gprod(gw1,k1,t10) <= 2230
+ gprod_max(gw1,k1,t11): gprod(gw1,k1,t11) <= 2230
+ gprod_max(gw1,k1,t12): gprod(gw1,k1,t12) <= 2230
+ gprod_max(gw1,k1,t13): gprod(gw1,k1,t13) <= 2230
+ gprod_max(gw1,k1,t14): gprod(gw1,k1,t14) <= 2230
+ gprod_max(gw1,k1,t15): gprod(gw1,k1,t15) <= 2230
+ gprod_max(gw2,k1,t9): gprod(gw2,k1,t9) <= 370
+ gprod_max(gw2,k1,t10): gprod(gw2,k1,t10) <= 370
+ gprod_max(gw2,k1,t11): gprod(gw2,k1,t11) <= 370
+ gprod_max(gw2,k1,t12): gprod(gw2,k1,t12) <= 370
+ gprod_max(gw2,k1,t13): gprod(gw2,k1,t13) <= 370
+ gprod_max(gw2,k1,t14): gprod(gw2,k1,t14) <= 370
+ gprod_max(gw2,k1,t15): gprod(gw2,k1,t15) <= 370
+ gprod_max(gw3,k1,t9): gprod(gw3,k1,t9) <= 500
+ gprod_max(gw3,k1,t10): gprod(gw3,k1,t10) <= 500
+ gprod_max(gw3,k1,t11): gprod(gw3,k1,t11) <= 500
+ gprod_max(gw3,k1,t12): gprod(gw3,k1,t12) <= 500
+ gprod_max(gw3,k1,t13): gprod(gw3,k1,t13) <= 500
+ gprod_max(gw3,k1,t14): gprod(gw3,k1,t14) <= 500
+ gprod_max(gw3,k1,t15): gprod(gw3,k1,t15) <= 500
+ Flow_Bal(('ng101','ng102'),k1,t9): qin_sr(('ng101','ng102'),k1,t9)
+   - qout_sr(('ng101','ng102'),k1,t9) = 0
+ Flow_Bal(('ng101','ng102'),k1,t10): qin_sr(('ng101','ng102'),k1,t10)
+   - qout_sr(('ng101','ng102'),k1,t10) = 0
+ Flow_Bal(('ng101','ng102'),k1,t11): qin_sr(('ng101','ng102'),k1,t11)
+   - qout_sr(('ng101','ng102'),k1,t11) = 0
+ Flow_Bal(('ng101','ng102'),k1,t12): qin_sr(('ng101','ng102'),k1,t12)
+   - qout_sr(('ng101','ng102'),k1,t12) = 0
+ Flow_Bal(('ng101','ng102'),k1,t13): qin_sr(('ng101','ng102'),k1,t13)
+   - qout_sr(('ng101','ng102'),k1,t13) = 0
+ Flow_Bal(('ng101','ng102'),k1,t14): qin_sr(('ng101','ng102'),k1,t14)
+   - qout_sr(('ng101','ng102'),k1,t14) = 0
+ Flow_Bal(('ng101','ng102'),k1,t15): qin_sr(('ng101','ng102'),k1,t15)
+   - qout_sr(('ng101','ng102'),k1,t15) = 0
+ gstore_max(gs1,t8,k1): gstore(gs1,t8,k1) <= 0
+ gstor_def(gs1,k1,t9): - gstore(gs1,t8,k1) - gsin(gs1,t9,k1)
+   + gsout(gs1,t9,k1) + gstore(gs1,t9,k1) = 0
+ gstor_def(gs1,k1,t10): - gstore(gs1,t9,k1) - gsin(gs1,t10,k1)
+   + gsout(gs1,t10,k1) + gstore(gs1,t10,k1) = 0
+ gstor_def(gs1,k1,t11): - gstore(gs1,t10,k1) - gsin(gs1,t11,k1)
+   + gsout(gs1,t11,k1) + gstore(gs1,t11,k1) = 0
+ gstor_def(gs1,k1,t12): - gstore(gs1,t11,k1) - gsin(gs1,t12,k1)
+   + gsout(gs1,t12,k1) + gstore(gs1,t12,k1) = 0
+ gstor_def(gs1,k1,t13): - gstore(gs1,t12,k1) - gsin(gs1,t13,k1)
+   + gsout(gs1,t13,k1) + gstore(gs1,t13,k1) = 0
+ gstor_def(gs1,k1,t14): - gstore(gs1,t13,k1) - gsin(gs1,t14,k1)
+   + gsout(gs1,t14,k1) + gstore(gs1,t14,k1) = 0
+ gstor_def(gs1,k1,t15): - gstore(gs1,t14,k1) - gsin(gs1,t15,k1)
+   + gsout(gs1,t15,k1) + gstore(gs1,t15,k1) = 0
+Bounds
+ qin_sr(('ng101','ng102'),k1,t9) free
+ qout_sr(('ng101','ng102'),k1,t9) free
+ qin_sr(('ng101','ng102'),k1,t10) free
+ qout_sr(('ng101','ng102'),k1,t10) free
+ qin_sr(('ng101','ng102'),k1,t11) free
+ qout_sr(('ng101','ng102'),k1,t11) free
+ qin_sr(('ng101','ng102'),k1,t12) free
+ qout_sr(('ng101','ng102'),k1,t12) free
+ qin_sr(('ng101','ng102'),k1,t13) free
+ qout_sr(('ng101','ng102'),k1,t13) free
+ qin_sr(('ng101','ng102'),k1,t14) free
+ qout_sr(('ng101','ng102'),k1,t14) free
+ qin_sr(('ng101','ng102'),k1,t15) free
+ qout_sr(('ng101','ng102'),k1,t15) free
+ gprod(gw1,k1,t9) free
+ gprod(gw1,k1,t10) free
+ gprod(gw1,k1,t11) free
+ gprod(gw1,k1,t12) free
+ gprod(gw1,k1,t13) free
+ gprod(gw1,k1,t14) free
+ gprod(gw1,k1,t15) free
+ gprod(gw2,k1,t9) free
+ gprod(gw2,k1,t10) free
+ gprod(gw2,k1,t11) free
+ gprod(gw2,k1,t12) free
+ gprod(gw2,k1,t13) free
+ gprod(gw2,k1,t14) free
+ gprod(gw2,k1,t15) free
+ gprod(gw3,k1,t9) free
+ gprod(gw3,k1,t10) free
+ gprod(gw3,k1,t11) free
+ gprod(gw3,k1,t12) free
+ gprod(gw3,k1,t13) free
+ gprod(gw3,k1,t14) free
+ gprod(gw3,k1,t15) free
+ gstore(gs1,t8,k1) free
+ gsin(gs1,t9,k1) free
+ gsout(gs1,t9,k1) free
+ gstore(gs1,t9,k1) free
+ gsin(gs1,t10,k1) free
+ gsout(gs1,t10,k1) free
+ gstore(gs1,t10,k1) free
+ gsin(gs1,t11,k1) free
+ gsout(gs1,t11,k1) free
+ gstore(gs1,t11,k1) free
+ gsin(gs1,t12,k1) free
+ gsout(gs1,t12,k1) free
+ gstore(gs1,t12,k1) free
+ gsin(gs1,t13,k1) free
+ gsout(gs1,t13,k1) free
+ gstore(gs1,t13,k1) free
+ gsin(gs1,t14,k1) free
+ gsout(gs1,t14,k1) free
+ gstore(gs1,t14,k1) free
+ gsin(gs1,t15,k1) free
+ gsout(gs1,t15,k1) free
+End

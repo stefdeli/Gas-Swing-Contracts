@@ -75,8 +75,10 @@ def _build_objective_gasDA(self):
     pipes = self.gdata.pplineorder
     gsdata = self.gdata.gstorageinfo
     gstorage = self.gdata.gstorage
+    gnodes = self.gdata.gnodes
     
     k_obj = ['k0'] # Optimize for 'central case' k0
+    k_all=  ['k0','k1','k2']
             
     Cost=pd.DataFrame(index=time,columns=wells)
     #print('\n\n Objective function altered to remove degeneracy\n\n')
@@ -90,7 +92,8 @@ def _build_objective_gasDA(self):
         Pressure_Degeneracy=0.0
     
     m.setObjective(gb.quicksum(Cost[gw][t]*var.gprod[gw,k,t] for gw in wells for k in k_obj for t in time)+
-                   Pressure_Degeneracy+
+                   Pressure_Degeneracy +
+                   gb.quicksum(defaults.VOLL*var.gas_shed[gn,k,t] for gn in gnodes for t in time for k in k_all) +
                    gb.quicksum(gsdata.Cost[gs]*(var.gsin[gs,k,t]+var.gsout[gs,k,t]) for gs in gstorage for k in k_obj for t in time),                                      
                    gb.GRB.MINIMIZE) 
     

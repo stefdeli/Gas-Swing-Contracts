@@ -58,7 +58,7 @@ RESERVES_DN_PREMIUM = 0.95
 REMOVE_EQUALITY=False
 
 # show the Gurobi output:True of False
-GUROBI_OUTPUT=True
+GUROBI_OUTPUT=False
 
 # HOw should the gas network be modelled: FlowBased or WeymouthApprox
 GasNetwork='FlowBased'
