@@ -1,376 +1,413 @@
 \ LP format - for model browsing. Use MPS format to capture full model detail.
 Minimize
-  8.4 RUp(g1,s1,t1) - 7.6 RDn(g1,s1,t1) + 5000 Lshed(s1,t1)
-   + 8.4 RUp(g1,s1,t2) - 7.6 RDn(g1,s1,t2) + 5000 Lshed(s1,t2)
-   + 8.4 RUp(g1,s1,t3) - 7.6 RDn(g1,s1,t3) + 5000 Lshed(s1,t3)
-   + 8.4 RUp(g1,s1,t4) - 7.6 RDn(g1,s1,t4) + 5000 Lshed(s1,t4)
-   + 8.4 RUp(g1,s1,t5) - 7.6 RDn(g1,s1,t5) + 5000 Lshed(s1,t5)
-   + 8.4 RUp(g1,s1,t6) - 7.6 RDn(g1,s1,t6) + 5000 Lshed(s1,t6)
-   + 8.4 RUp(g1,s1,t7) - 7.6 RDn(g1,s1,t7) + 5000 Lshed(s1,t7)
-   + 8.4 RUp(g1,s1,t8) - 7.6 RDn(g1,s1,t8) + 5000 Lshed(s1,t8)
-   + 8.4 RUp(g1,s1,t9) - 7.6 RDn(g1,s1,t9) + 5000 Lshed(s1,t9)
-   + 8.4 RUp(g1,s1,t10) - 7.6 RDn(g1,s1,t10) + 5000 Lshed(s1,t10)
-   + 8.4 RUp(g1,s1,t11) - 7.6 RDn(g1,s1,t11) + 5000 Lshed(s1,t11)
-   + 8.4 RUp(g1,s1,t12) - 7.6 RDn(g1,s1,t12) + 5000 Lshed(s1,t12)
-   + 8.4 RUp(g1,s1,t13) - 7.6 RDn(g1,s1,t13) + 5000 Lshed(s1,t13)
-   + 8.4 RUp(g1,s1,t14) - 7.6 RDn(g1,s1,t14) + 5000 Lshed(s1,t14)
-   + 8.4 RUp(g1,s1,t15) - 7.6 RDn(g1,s1,t15) + 5000 Lshed(s1,t15)
-   + 8.4 RUp(g1,s1,t16) - 7.6 RDn(g1,s1,t16) + 5000 Lshed(s1,t16)
-   + 8.4 RUp(g1,s1,t17) - 7.6 RDn(g1,s1,t17) + 5000 Lshed(s1,t17)
-   + 8.4 RUp(g1,s1,t18) - 7.6 RDn(g1,s1,t18) + 5000 Lshed(s1,t18)
-   + 8.4 RUp(g1,s1,t19) - 7.6 RDn(g1,s1,t19) + 5000 Lshed(s1,t19)
-   + 8.4 RUp(g1,s1,t20) - 7.6 RDn(g1,s1,t20) + 5000 Lshed(s1,t20)
-   + 8.4 RUp(g1,s1,t21) - 7.6 RDn(g1,s1,t21) + 5000 Lshed(s1,t21)
-   + 8.4 RUp(g1,s1,t22) - 7.6 RDn(g1,s1,t22) + 5000 Lshed(s1,t22)
-   + 8.4 RUp(g1,s1,t23) - 7.6 RDn(g1,s1,t23) + 5000 Lshed(s1,t23)
-   + 8.4 RUp(g1,s1,t24) - 7.6 RDn(g1,s1,t24) + 5000 Lshed(s1,t24)
-   + 8.4 RUp(g1,s2,t1) - 7.6 RDn(g1,s2,t1) + 5000 Lshed(s2,t1)
-   + 8.4 RUp(g1,s2,t2) - 7.6 RDn(g1,s2,t2) + 5000 Lshed(s2,t2)
-   + 8.4 RUp(g1,s2,t3) - 7.6 RDn(g1,s2,t3) + 5000 Lshed(s2,t3)
-   + 8.4 RUp(g1,s2,t4) - 7.6 RDn(g1,s2,t4) + 5000 Lshed(s2,t4)
-   + 8.4 RUp(g1,s2,t5) - 7.6 RDn(g1,s2,t5) + 5000 Lshed(s2,t5)
-   + 8.4 RUp(g1,s2,t6) - 7.6 RDn(g1,s2,t6) + 5000 Lshed(s2,t6)
-   + 8.4 RUp(g1,s2,t7) - 7.6 RDn(g1,s2,t7) + 5000 Lshed(s2,t7)
-   + 8.4 RUp(g1,s2,t8) - 7.6 RDn(g1,s2,t8) + 5000 Lshed(s2,t8)
-   + 8.4 RUp(g1,s2,t9) - 7.6 RDn(g1,s2,t9) + 5000 Lshed(s2,t9)
-   + 8.4 RUp(g1,s2,t10) - 7.6 RDn(g1,s2,t10) + 5000 Lshed(s2,t10)
-   + 8.4 RUp(g1,s2,t11) - 7.6 RDn(g1,s2,t11) + 5000 Lshed(s2,t11)
-   + 8.4 RUp(g1,s2,t12) - 7.6 RDn(g1,s2,t12) + 5000 Lshed(s2,t12)
-   + 8.4 RUp(g1,s2,t13) - 7.6 RDn(g1,s2,t13) + 5000 Lshed(s2,t13)
-   + 8.4 RUp(g1,s2,t14) - 7.6 RDn(g1,s2,t14) + 5000 Lshed(s2,t14)
-   + 8.4 RUp(g1,s2,t15) - 7.6 RDn(g1,s2,t15) + 5000 Lshed(s2,t15)
-   + 8.4 RUp(g1,s2,t16) - 7.6 RDn(g1,s2,t16) + 5000 Lshed(s2,t16)
-   + 8.4 RUp(g1,s2,t17) - 7.6 RDn(g1,s2,t17) + 5000 Lshed(s2,t17)
-   + 8.4 RUp(g1,s2,t18) - 7.6 RDn(g1,s2,t18) + 5000 Lshed(s2,t18)
-   + 8.4 RUp(g1,s2,t19) - 7.6 RDn(g1,s2,t19) + 5000 Lshed(s2,t19)
-   + 8.4 RUp(g1,s2,t20) - 7.6 RDn(g1,s2,t20) + 5000 Lshed(s2,t20)
-   + 8.4 RUp(g1,s2,t21) - 7.6 RDn(g1,s2,t21) + 5000 Lshed(s2,t21)
-   + 8.4 RUp(g1,s2,t22) - 7.6 RDn(g1,s2,t22) + 5000 Lshed(s2,t22)
-   + 8.4 RUp(g1,s2,t23) - 7.6 RDn(g1,s2,t23) + 5000 Lshed(s2,t23)
-   + 8.4 RUp(g1,s2,t24) - 7.6 RDn(g1,s2,t24) + 5000 Lshed(s2,t24)
+  8.4 RUp(g1,s1,t1) - 7.6 RDn(g1,s1,t1) + 12.6 RUpSC(g1,s1,t1)
+   - 11.4 RDnSC(g1,s1,t1) + 5000 Lshed(s1,t1) + 8.4 RUp(g1,s1,t2)
+   - 7.6 RDn(g1,s1,t2) + 12.6 RUpSC(g1,s1,t2) - 11.4 RDnSC(g1,s1,t2)
+   + 5000 Lshed(s1,t2) + 8.4 RUp(g1,s1,t3) - 7.6 RDn(g1,s1,t3)
+   + 12.6 RUpSC(g1,s1,t3) - 11.4 RDnSC(g1,s1,t3) + 5000 Lshed(s1,t3)
+   + 8.4 RUp(g1,s1,t4) - 7.6 RDn(g1,s1,t4) + 12.6 RUpSC(g1,s1,t4)
+   - 11.4 RDnSC(g1,s1,t4) + 5000 Lshed(s1,t4) + 8.4 RUp(g1,s1,t5)
+   - 7.6 RDn(g1,s1,t5) + 12.6 RUpSC(g1,s1,t5) - 11.4 RDnSC(g1,s1,t5)
+   + 5000 Lshed(s1,t5) + 8.4 RUp(g1,s1,t6) - 7.6 RDn(g1,s1,t6)
+   + 12.6 RUpSC(g1,s1,t6) - 11.4 RDnSC(g1,s1,t6) + 5000 Lshed(s1,t6)
+   + 8.4 RUp(g1,s1,t7) - 7.6 RDn(g1,s1,t7) + 12.6 RUpSC(g1,s1,t7)
+   - 11.4 RDnSC(g1,s1,t7) + 5000 Lshed(s1,t7) + 8.4 RUp(g1,s1,t8)
+   - 7.6 RDn(g1,s1,t8) + 12.6 RUpSC(g1,s1,t8) - 11.4 RDnSC(g1,s1,t8)
+   + 5000 Lshed(s1,t8) + 8.4 RUp(g1,s1,t9) - 7.6 RDn(g1,s1,t9)
+   + 12.6 RUpSC(g1,s1,t9) - 11.4 RDnSC(g1,s1,t9) + 5000 Lshed(s1,t9)
+   + 8.4 RUp(g1,s1,t10) - 7.6 RDn(g1,s1,t10) + 12.6 RUpSC(g1,s1,t10)
+   - 11.4 RDnSC(g1,s1,t10) + 5000 Lshed(s1,t10) + 8.4 RUp(g1,s1,t11)
+   - 7.6 RDn(g1,s1,t11) + 12.6 RUpSC(g1,s1,t11) - 11.4 RDnSC(g1,s1,t11)
+   + 5000 Lshed(s1,t11) + 8.4 RUp(g1,s1,t12) - 7.6 RDn(g1,s1,t12)
+   + 12.6 RUpSC(g1,s1,t12) - 11.4 RDnSC(g1,s1,t12) + 5000 Lshed(s1,t12)
+   + 8.4 RUp(g1,s1,t13) - 7.6 RDn(g1,s1,t13) + 12.6 RUpSC(g1,s1,t13)
+   - 11.4 RDnSC(g1,s1,t13) + 5000 Lshed(s1,t13) + 8.4 RUp(g1,s1,t14)
+   - 7.6 RDn(g1,s1,t14) + 12.6 RUpSC(g1,s1,t14) - 11.4 RDnSC(g1,s1,t14)
+   + 5000 Lshed(s1,t14) + 8.4 RUp(g1,s1,t15) - 7.6 RDn(g1,s1,t15)
+   + 12.6 RUpSC(g1,s1,t15) - 11.4 RDnSC(g1,s1,t15) + 5000 Lshed(s1,t15)
+   + 8.4 RUp(g1,s1,t16) - 7.6 RDn(g1,s1,t16) + 12.6 RUpSC(g1,s1,t16)
+   - 11.4 RDnSC(g1,s1,t16) + 5000 Lshed(s1,t16) + 8.4 RUp(g1,s1,t17)
+   - 7.6 RDn(g1,s1,t17) + 12.6 RUpSC(g1,s1,t17) - 11.4 RDnSC(g1,s1,t17)
+   + 5000 Lshed(s1,t17) + 8.4 RUp(g1,s1,t18) - 7.6 RDn(g1,s1,t18)
+   + 12.6 RUpSC(g1,s1,t18) - 11.4 RDnSC(g1,s1,t18) + 5000 Lshed(s1,t18)
+   + 8.4 RUp(g1,s1,t19) - 7.6 RDn(g1,s1,t19) + 12.6 RUpSC(g1,s1,t19)
+   - 11.4 RDnSC(g1,s1,t19) + 5000 Lshed(s1,t19) + 8.4 RUp(g1,s1,t20)
+   - 7.6 RDn(g1,s1,t20) + 12.6 RUpSC(g1,s1,t20) - 11.4 RDnSC(g1,s1,t20)
+   + 5000 Lshed(s1,t20) + 8.4 RUp(g1,s1,t21) - 7.6 RDn(g1,s1,t21)
+   + 12.6 RUpSC(g1,s1,t21) - 11.4 RDnSC(g1,s1,t21) + 5000 Lshed(s1,t21)
+   + 8.4 RUp(g1,s1,t22) - 7.6 RDn(g1,s1,t22) + 12.6 RUpSC(g1,s1,t22)
+   - 11.4 RDnSC(g1,s1,t22) + 5000 Lshed(s1,t22) + 8.4 RUp(g1,s1,t23)
+   - 7.6 RDn(g1,s1,t23) + 12.6 RUpSC(g1,s1,t23) - 11.4 RDnSC(g1,s1,t23)
+   + 5000 Lshed(s1,t23) + 8.4 RUp(g1,s1,t24) - 7.6 RDn(g1,s1,t24)
+   + 12.6 RUpSC(g1,s1,t24) - 11.4 RDnSC(g1,s1,t24) + 5000 Lshed(s1,t24)
+   + 8.4 RUp(g1,s2,t1) - 7.6 RDn(g1,s2,t1) + 12.6 RUpSC(g1,s2,t1)
+   - 11.4 RDnSC(g1,s2,t1) + 5000 Lshed(s2,t1) + 8.4 RUp(g1,s2,t2)
+   - 7.6 RDn(g1,s2,t2) + 12.6 RUpSC(g1,s2,t2) - 11.4 RDnSC(g1,s2,t2)
+   + 5000 Lshed(s2,t2) + 8.4 RUp(g1,s2,t3) - 7.6 RDn(g1,s2,t3)
+   + 12.6 RUpSC(g1,s2,t3) - 11.4 RDnSC(g1,s2,t3) + 5000 Lshed(s2,t3)
+   + 8.4 RUp(g1,s2,t4) - 7.6 RDn(g1,s2,t4) + 12.6 RUpSC(g1,s2,t4)
+   - 11.4 RDnSC(g1,s2,t4) + 5000 Lshed(s2,t4) + 8.4 RUp(g1,s2,t5)
+   - 7.6 RDn(g1,s2,t5) + 12.6 RUpSC(g1,s2,t5) - 11.4 RDnSC(g1,s2,t5)
+   + 5000 Lshed(s2,t5) + 8.4 RUp(g1,s2,t6) - 7.6 RDn(g1,s2,t6)
+   + 12.6 RUpSC(g1,s2,t6) - 11.4 RDnSC(g1,s2,t6) + 5000 Lshed(s2,t6)
+   + 8.4 RUp(g1,s2,t7) - 7.6 RDn(g1,s2,t7) + 12.6 RUpSC(g1,s2,t7)
+   - 11.4 RDnSC(g1,s2,t7) + 5000 Lshed(s2,t7) + 8.4 RUp(g1,s2,t8)
+   - 7.6 RDn(g1,s2,t8) + 12.6 RUpSC(g1,s2,t8) - 11.4 RDnSC(g1,s2,t8)
+   + 5000 Lshed(s2,t8) + 8.4 RUp(g1,s2,t9) - 7.6 RDn(g1,s2,t9)
+   + 12.6 RUpSC(g1,s2,t9) - 11.4 RDnSC(g1,s2,t9) + 5000 Lshed(s2,t9)
+   + 8.4 RUp(g1,s2,t10) - 7.6 RDn(g1,s2,t10) + 12.6 RUpSC(g1,s2,t10)
+   - 11.4 RDnSC(g1,s2,t10) + 5000 Lshed(s2,t10) + 8.4 RUp(g1,s2,t11)
+   - 7.6 RDn(g1,s2,t11) + 12.6 RUpSC(g1,s2,t11) - 11.4 RDnSC(g1,s2,t11)
+   + 5000 Lshed(s2,t11) + 8.4 RUp(g1,s2,t12) - 7.6 RDn(g1,s2,t12)
+   + 12.6 RUpSC(g1,s2,t12) - 11.4 RDnSC(g1,s2,t12) + 5000 Lshed(s2,t12)
+   + 8.4 RUp(g1,s2,t13) - 7.6 RDn(g1,s2,t13) + 12.6 RUpSC(g1,s2,t13)
+   - 11.4 RDnSC(g1,s2,t13) + 5000 Lshed(s2,t13) + 8.4 RUp(g1,s2,t14)
+   - 7.6 RDn(g1,s2,t14) + 12.6 RUpSC(g1,s2,t14) - 11.4 RDnSC(g1,s2,t14)
+   + 5000 Lshed(s2,t14) + 8.4 RUp(g1,s2,t15) - 7.6 RDn(g1,s2,t15)
+   + 12.6 RUpSC(g1,s2,t15) - 11.4 RDnSC(g1,s2,t15) + 5000 Lshed(s2,t15)
+   + 8.4 RUp(g1,s2,t16) - 7.6 RDn(g1,s2,t16) + 12.6 RUpSC(g1,s2,t16)
+   - 11.4 RDnSC(g1,s2,t16) + 5000 Lshed(s2,t16) + 8.4 RUp(g1,s2,t17)
+   - 7.6 RDn(g1,s2,t17) + 12.6 RUpSC(g1,s2,t17) - 11.4 RDnSC(g1,s2,t17)
+   + 5000 Lshed(s2,t17) + 8.4 RUp(g1,s2,t18) - 7.6 RDn(g1,s2,t18)
+   + 12.6 RUpSC(g1,s2,t18) - 11.4 RDnSC(g1,s2,t18) + 5000 Lshed(s2,t18)
+   + 8.4 RUp(g1,s2,t19) - 7.6 RDn(g1,s2,t19) + 12.6 RUpSC(g1,s2,t19)
+   - 11.4 RDnSC(g1,s2,t19) + 5000 Lshed(s2,t19) + 8.4 RUp(g1,s2,t20)
+   - 7.6 RDn(g1,s2,t20) + 12.6 RUpSC(g1,s2,t20) - 11.4 RDnSC(g1,s2,t20)
+   + 5000 Lshed(s2,t20) + 8.4 RUp(g1,s2,t21) - 7.6 RDn(g1,s2,t21)
+   + 12.6 RUpSC(g1,s2,t21) - 11.4 RDnSC(g1,s2,t21) + 5000 Lshed(s2,t21)
+   + 8.4 RUp(g1,s2,t22) - 7.6 RDn(g1,s2,t22) + 12.6 RUpSC(g1,s2,t22)
+   - 11.4 RDnSC(g1,s2,t22) + 5000 Lshed(s2,t22) + 8.4 RUp(g1,s2,t23)
+   - 7.6 RDn(g1,s2,t23) + 12.6 RUpSC(g1,s2,t23) - 11.4 RDnSC(g1,s2,t23)
+   + 5000 Lshed(s2,t23) + 8.4 RUp(g1,s2,t24) - 7.6 RDn(g1,s2,t24)
+   + 12.6 RUpSC(g1,s2,t24) - 11.4 RDnSC(g1,s2,t24) + 5000 Lshed(s2,t24)
 Subject To
  PowerBalance_RT(s1,t1): RUp(g1,s1,t1) - RDn(g1,s1,t1) + RUpSC(g1,s1,t1)
-   - RDnSC(g1,s1,t1) - Wspill(w1,s1,t1) + Lshed(s1,t1) = -19.36152399
+   - RDnSC(g1,s1,t1) - Wspill(w1,s1,t1) + Lshed(s1,t1)
+   = 0.9976439100000043
  PowerBalance_RT(s1,t2): RUp(g1,s1,t2) - RDn(g1,s1,t2) + RUpSC(g1,s1,t2)
-   - RDnSC(g1,s1,t2) - Wspill(w1,s1,t2) + Lshed(s1,t2) = -19.80845052
+   - RDnSC(g1,s1,t2) - Wspill(w1,s1,t2) + Lshed(s1,t2)
+   = -0.1315735049999969
  PowerBalance_RT(s1,t3): RUp(g1,s1,t3) - RDn(g1,s1,t3) + RUpSC(g1,s1,t3)
-   - RDnSC(g1,s1,t3) - Wspill(w1,s1,t3) + Lshed(s1,t3) = -20.69868435
+   - RDnSC(g1,s1,t3) - Wspill(w1,s1,t3) + Lshed(s1,t3)
+   = -1.556227244999997
  PowerBalance_RT(s1,t4): RUp(g1,s1,t4) - RDn(g1,s1,t4) + RUpSC(g1,s1,t4)
-   - RDnSC(g1,s1,t4) - Wspill(w1,s1,t4) + Lshed(s1,t4) = -19.77549921
+   - RDnSC(g1,s1,t4) - Wspill(w1,s1,t4) + Lshed(s1,t4)
+   = -3.860157224999997
  PowerBalance_RT(s1,t5): RUp(g1,s1,t5) - RDn(g1,s1,t5) + RUpSC(g1,s1,t5)
-   - RDnSC(g1,s1,t5) - Wspill(w1,s1,t5) + Lshed(s1,t5) = -20.07510975
+   - RDnSC(g1,s1,t5) - Wspill(w1,s1,t5) + Lshed(s1,t5)
+   = -5.952728204999998
  PowerBalance_RT(s1,t6): RUp(g1,s1,t6) - RDn(g1,s1,t6) + RUpSC(g1,s1,t6)
-   - RDnSC(g1,s1,t6) - Wspill(w1,s1,t6) + Lshed(s1,t6) = -18.16891905
+   - RDnSC(g1,s1,t6) - Wspill(w1,s1,t6) + Lshed(s1,t6)
+   = -7.094473754999997
  PowerBalance_RT(s1,t7): RUp(g1,s1,t7) - RDn(g1,s1,t7) + RUpSC(g1,s1,t7)
-   - RDnSC(g1,s1,t7) - Wspill(w1,s1,t7) + Lshed(s1,t7) = -16.59465834
+   - RDnSC(g1,s1,t7) - Wspill(w1,s1,t7) + Lshed(s1,t7)
+   = -5.137621259999998
  PowerBalance_RT(s1,t8): RUp(g1,s1,t8) - RDn(g1,s1,t8) + RUpSC(g1,s1,t8)
-   - RDnSC(g1,s1,t8) - Wspill(w1,s1,t8) + Lshed(s1,t8) = -13.34680944
+   - RDnSC(g1,s1,t8) - Wspill(w1,s1,t8) + Lshed(s1,t8)
+   = -3.142303334999998
  PowerBalance_RT(s1,t9): RUp(g1,s1,t9) - RDn(g1,s1,t9) + RUpSC(g1,s1,t9)
-   - RDnSC(g1,s1,t9) - Wspill(w1,s1,t9) + Lshed(s1,t9) = -10.47638364
+   - RDnSC(g1,s1,t9) - Wspill(w1,s1,t9) + Lshed(s1,t9)
+   = -2.154611249999999
  PowerBalance_RT(s1,t10): RUp(g1,s1,t10) - RDn(g1,s1,t10)
    + RUpSC(g1,s1,t10) - RDnSC(g1,s1,t10) - Wspill(w1,s1,t10)
-   + Lshed(s1,t10) = -7.749192330000001
+   + Lshed(s1,t10) = -1.951492469999998
  PowerBalance_RT(s1,t11): RUp(g1,s1,t11) - RDn(g1,s1,t11)
    + RUpSC(g1,s1,t11) - RDnSC(g1,s1,t11) - Wspill(w1,s1,t11)
-   + Lshed(s1,t11) = -5.964156719999999
+   + Lshed(s1,t11) = -2.983184504999999
  PowerBalance_RT(s1,t12): RUp(g1,s1,t12) - RDn(g1,s1,t12)
    + RUpSC(g1,s1,t12) - RDnSC(g1,s1,t12) - Wspill(w1,s1,t12)
-   + Lshed(s1,t12) = -5.33019351
+   + Lshed(s1,t12) = -3.130044614999997
  PowerBalance_RT(s1,t13): RUp(g1,s1,t13) - RDn(g1,s1,t13)
    + RUpSC(g1,s1,t13) - RDnSC(g1,s1,t13) - Wspill(w1,s1,t13)
-   + Lshed(s1,t13) = -5.461870319999999
+   + Lshed(s1,t13) = -6.498970649999997
  PowerBalance_RT(s1,t14): RUp(g1,s1,t14) - RDn(g1,s1,t14)
    + RUpSC(g1,s1,t14) - RDnSC(g1,s1,t14) - Wspill(w1,s1,t14)
-   + Lshed(s1,t14) = -7.004675819999999
+   + Lshed(s1,t14) = -13.27316202
  PowerBalance_RT(s1,t15): RUp(g1,s1,t15) - RDn(g1,s1,t15)
    + RUpSC(g1,s1,t15) - RDnSC(g1,s1,t15) - Wspill(w1,s1,t15)
-   + Lshed(s1,t15) = -7.9620561
+   + Lshed(s1,t15) = -12.90769581
  PowerBalance_RT(s1,t16): RUp(g1,s1,t16) - RDn(g1,s1,t16)
    + RUpSC(g1,s1,t16) - RDnSC(g1,s1,t16) - Wspill(w1,s1,t16)
-   + Lshed(s1,t16) = -7.71739128
+   + Lshed(s1,t16) = -17.45472933
  PowerBalance_RT(s1,t17): RUp(g1,s1,t17) - RDn(g1,s1,t17)
    + RUpSC(g1,s1,t17) - RDnSC(g1,s1,t17) - Wspill(w1,s1,t17)
-   + Lshed(s1,t17) = -6.47265831
+   + Lshed(s1,t17) = -14.77555875
  PowerBalance_RT(s1,t18): RUp(g1,s1,t18) - RDn(g1,s1,t18)
    + RUpSC(g1,s1,t18) - RDnSC(g1,s1,t18) - Wspill(w1,s1,t18)
-   + Lshed(s1,t18) = -6.07161237
+   + Lshed(s1,t18) = -14.0011092
  PowerBalance_RT(s1,t19): RUp(g1,s1,t19) - RDn(g1,s1,t19)
    + RUpSC(g1,s1,t19) - RDnSC(g1,s1,t19) - Wspill(w1,s1,t19)
-   + Lshed(s1,t19) = -5.776513019999999
+   + Lshed(s1,t19) = -17.45001798
  PowerBalance_RT(s1,t20): RUp(g1,s1,t20) - RDn(g1,s1,t20)
    + RUpSC(g1,s1,t20) - RDnSC(g1,s1,t20) - Wspill(w1,s1,t20)
-   + Lshed(s1,t20) = -5.435201999999999
+   + Lshed(s1,t20) = -17.03274768
  PowerBalance_RT(s1,t21): RUp(g1,s1,t21) - RDn(g1,s1,t21)
    + RUpSC(g1,s1,t21) - RDnSC(g1,s1,t21) - Wspill(w1,s1,t21)
-   + Lshed(s1,t21) = -4.850395590000001
+   + Lshed(s1,t21) = -16.93776768
  PowerBalance_RT(s1,t22): RUp(g1,s1,t22) - RDn(g1,s1,t22)
    + RUpSC(g1,s1,t22) - RDnSC(g1,s1,t22) - Wspill(w1,s1,t22)
-   + Lshed(s1,t22) = -4.4943279
+   + Lshed(s1,t22) = -16.67082684
  PowerBalance_RT(s1,t23): RUp(g1,s1,t23) - RDn(g1,s1,t23)
    + RUpSC(g1,s1,t23) - RDnSC(g1,s1,t23) - Wspill(w1,s1,t23)
-   + Lshed(s1,t23) = -3.88346787
+   + Lshed(s1,t23) = -15.06487779
  PowerBalance_RT(s1,t24): RUp(g1,s1,t24) - RDn(g1,s1,t24)
    + RUpSC(g1,s1,t24) - RDnSC(g1,s1,t24) - Wspill(w1,s1,t24)
-   + Lshed(s1,t24) = -2.50775121
+   + Lshed(s1,t24) = -7.539684014999995
  PowerBalance_RT(s2,t1): RUp(g1,s2,t1) - RDn(g1,s2,t1) + RUpSC(g1,s2,t1)
    - RDnSC(g1,s2,t1) - Wspill(w1,s2,t1) + Lshed(s2,t1)
-   = -9.680762009999999
+   = -0.9976439099999954
  PowerBalance_RT(s2,t2): RUp(g1,s2,t2) - RDn(g1,s2,t2) + RUpSC(g1,s2,t2)
-   - RDnSC(g1,s2,t2) - Wspill(w1,s2,t2) + Lshed(s2,t2)
-   = -9.904225260000001
+   - RDnSC(g1,s2,t2) - Wspill(w1,s2,t2) + Lshed(s2,t2) = 0.131573505000004
  PowerBalance_RT(s2,t3): RUp(g1,s2,t3) - RDn(g1,s2,t3) + RUpSC(g1,s2,t3)
-   - RDnSC(g1,s2,t3) - Wspill(w1,s2,t3) + Lshed(s2,t3) = -10.34934219
+   - RDnSC(g1,s2,t3) - Wspill(w1,s2,t3) + Lshed(s2,t3) = 1.556227245000002
  PowerBalance_RT(s2,t4): RUp(g1,s2,t4) - RDn(g1,s2,t4) + RUpSC(g1,s2,t4)
-   - RDnSC(g1,s2,t4) - Wspill(w1,s2,t4) + Lshed(s2,t4)
-   = -9.887749620000001
+   - RDnSC(g1,s2,t4) - Wspill(w1,s2,t4) + Lshed(s2,t4) = 3.860157225000001
  PowerBalance_RT(s2,t5): RUp(g1,s2,t5) - RDn(g1,s2,t5) + RUpSC(g1,s2,t5)
-   - RDnSC(g1,s2,t5) - Wspill(w1,s2,t5) + Lshed(s2,t5) = -10.03755489
+   - RDnSC(g1,s2,t5) - Wspill(w1,s2,t5) + Lshed(s2,t5) = 5.952728205000001
  PowerBalance_RT(s2,t6): RUp(g1,s2,t6) - RDn(g1,s2,t6) + RUpSC(g1,s2,t6)
-   - RDnSC(g1,s2,t6) - Wspill(w1,s2,t6) + Lshed(s2,t6)
-   = -9.084459539999999
+   - RDnSC(g1,s2,t6) - Wspill(w1,s2,t6) + Lshed(s2,t6) = 7.094473755000003
  PowerBalance_RT(s2,t7): RUp(g1,s2,t7) - RDn(g1,s2,t7) + RUpSC(g1,s2,t7)
-   - RDnSC(g1,s2,t7) - Wspill(w1,s2,t7) + Lshed(s2,t7)
-   = -8.297329169999999
+   - RDnSC(g1,s2,t7) - Wspill(w1,s2,t7) + Lshed(s2,t7) = 5.137621260000002
  PowerBalance_RT(s2,t8): RUp(g1,s2,t8) - RDn(g1,s2,t8) + RUpSC(g1,s2,t8)
-   - RDnSC(g1,s2,t8) - Wspill(w1,s2,t8) + Lshed(s2,t8) = -6.67340472
+   - RDnSC(g1,s2,t8) - Wspill(w1,s2,t8) + Lshed(s2,t8) = 3.142303335000002
  PowerBalance_RT(s2,t9): RUp(g1,s2,t9) - RDn(g1,s2,t9) + RUpSC(g1,s2,t9)
-   - RDnSC(g1,s2,t9) - Wspill(w1,s2,t9) + Lshed(s2,t9) = -5.23819182
+   - RDnSC(g1,s2,t9) - Wspill(w1,s2,t9) + Lshed(s2,t9) = 2.15461125
  PowerBalance_RT(s2,t10): RUp(g1,s2,t10) - RDn(g1,s2,t10)
    + RUpSC(g1,s2,t10) - RDnSC(g1,s2,t10) - Wspill(w1,s2,t10)
-   + Lshed(s2,t10) = -3.87459618
+   + Lshed(s2,t10) = 1.951492470000003
  PowerBalance_RT(s2,t11): RUp(g1,s2,t11) - RDn(g1,s2,t11)
    + RUpSC(g1,s2,t11) - RDnSC(g1,s2,t11) - Wspill(w1,s2,t11)
-   + Lshed(s2,t11) = -2.98207836
+   + Lshed(s2,t11) = 2.983184505000001
  PowerBalance_RT(s2,t12): RUp(g1,s2,t12) - RDn(g1,s2,t12)
    + RUpSC(g1,s2,t12) - RDnSC(g1,s2,t12) - Wspill(w1,s2,t12)
-   + Lshed(s2,t12) = -2.66509677
+   + Lshed(s2,t12) = 3.130044615000001
  PowerBalance_RT(s2,t13): RUp(g1,s2,t13) - RDn(g1,s2,t13)
    + RUpSC(g1,s2,t13) - RDnSC(g1,s2,t13) - Wspill(w1,s2,t13)
-   + Lshed(s2,t13) = -2.73093516
+   + Lshed(s2,t13) = 6.49897065
  PowerBalance_RT(s2,t14): RUp(g1,s2,t14) - RDn(g1,s2,t14)
    + RUpSC(g1,s2,t14) - RDnSC(g1,s2,t14) - Wspill(w1,s2,t14)
-   + Lshed(s2,t14) = -3.50233791
+   + Lshed(s2,t14) = 0
  PowerBalance_RT(s2,t15): RUp(g1,s2,t15) - RDn(g1,s2,t15)
    + RUpSC(g1,s2,t15) - RDnSC(g1,s2,t15) - Wspill(w1,s2,t15)
-   + Lshed(s2,t15) = -3.98102805
+   + Lshed(s2,t15) = 0
  PowerBalance_RT(s2,t16): RUp(g1,s2,t16) - RDn(g1,s2,t16)
    + RUpSC(g1,s2,t16) - RDnSC(g1,s2,t16) - Wspill(w1,s2,t16)
-   + Lshed(s2,t16) = -3.85869564
+   + Lshed(s2,t16) = 0
  PowerBalance_RT(s2,t17): RUp(g1,s2,t17) - RDn(g1,s2,t17)
    + RUpSC(g1,s2,t17) - RDnSC(g1,s2,t17) - Wspill(w1,s2,t17)
-   + Lshed(s2,t17) = -3.23632917
+   + Lshed(s2,t17) = 0
  PowerBalance_RT(s2,t18): RUp(g1,s2,t18) - RDn(g1,s2,t18)
    + RUpSC(g1,s2,t18) - RDnSC(g1,s2,t18) - Wspill(w1,s2,t18)
-   + Lshed(s2,t18) = -3.0358062
+   + Lshed(s2,t18) = 0
  PowerBalance_RT(s2,t19): RUp(g1,s2,t19) - RDn(g1,s2,t19)
    + RUpSC(g1,s2,t19) - RDnSC(g1,s2,t19) - Wspill(w1,s2,t19)
-   + Lshed(s2,t19) = -2.88825651
+   + Lshed(s2,t19) = 0
  PowerBalance_RT(s2,t20): RUp(g1,s2,t20) - RDn(g1,s2,t20)
    + RUpSC(g1,s2,t20) - RDnSC(g1,s2,t20) - Wspill(w1,s2,t20)
-   + Lshed(s2,t20) = -2.717601
+   + Lshed(s2,t20) = 0
  PowerBalance_RT(s2,t21): RUp(g1,s2,t21) - RDn(g1,s2,t21)
    + RUpSC(g1,s2,t21) - RDnSC(g1,s2,t21) - Wspill(w1,s2,t21)
-   + Lshed(s2,t21) = -2.42519781
+   + Lshed(s2,t21) = 0
  PowerBalance_RT(s2,t22): RUp(g1,s2,t22) - RDn(g1,s2,t22)
    + RUpSC(g1,s2,t22) - RDnSC(g1,s2,t22) - Wspill(w1,s2,t22)
-   + Lshed(s2,t22) = -2.24716395
+   + Lshed(s2,t22) = 0
  PowerBalance_RT(s2,t23): RUp(g1,s2,t23) - RDn(g1,s2,t23)
    + RUpSC(g1,s2,t23) - RDnSC(g1,s2,t23) - Wspill(w1,s2,t23)
-   + Lshed(s2,t23) = -1.94173395
+   + Lshed(s2,t23) = 0
  PowerBalance_RT(s2,t24): RUp(g1,s2,t24) - RDn(g1,s2,t24)
    + RUpSC(g1,s2,t24) - RDnSC(g1,s2,t24) - Wspill(w1,s2,t24)
-   + Lshed(s2,t24) = -1.25387562
- RegUp_max_RT(g1,s1,t1): RUp(g1,s1,t1) <= 61.68076200999987
- RegDown_max_RT(g1,s1,t1): RDn(g1,s1,t1) <= 50
- RegUp_max_RT(g1,s1,t2): RUp(g1,s1,t2) <= 59.31603479999986
- RegDown_max_RT(g1,s1,t2): RDn(g1,s1,t2) <= 51.29409523000002
- RegUp_max_RT(g1,s1,t3): RUp(g1,s1,t3) <= 57.34934218999987
- RegDown_max_RT(g1,s1,t3): RDn(g1,s1,t3) <= 52.5
- RegUp_max_RT(g1,s1,t4): RUp(g1,s1,t4) <= 54.81668179999987
- RegDown_max_RT(g1,s1,t4): RDn(g1,s1,t4) <= 53.53553391000001
- RegUp_max_RT(g1,s1,t5): RUp(g1,s1,t5) <= 53.37730084999988
- RegDown_max_RT(g1,s1,t5): RDn(g1,s1,t5) <= 54.33012702000001
- RegUp_max_RT(g1,s1,t6): RUp(g1,s1,t6) <= 52
- RegDown_max_RT(g1,s1,t6): RDn(g1,s1,t6) <= 54.82962913000002
- RegUp_max_RT(g1,s1,t7): RUp(g1,s1,t7) <= 52
- RegDown_max_RT(g1,s1,t7): RDn(g1,s1,t7) <= 55
- RegUp_max_RT(g1,s1,t8): RUp(g1,s1,t8) <= 52
- RegDown_max_RT(g1,s1,t8): RDn(g1,s1,t8) <= 54.82962913000002
- RegUp_max_RT(g1,s1,t9): RUp(g1,s1,t9) <= 52
- RegDown_max_RT(g1,s1,t9): RDn(g1,s1,t9) <= 54.33012702000001
- RegUp_max_RT(g1,s1,t10): RUp(g1,s1,t10) <= 52
- RegDown_max_RT(g1,s1,t10): RDn(g1,s1,t10) <= 53.53553391000001
- RegUp_max_RT(g1,s1,t11): RUp(g1,s1,t11) <= 52
- RegDown_max_RT(g1,s1,t11): RDn(g1,s1,t11) <= 52.5
- RegUp_max_RT(g1,s1,t12): RUp(g1,s1,t12) <= 52.07690630999986
- RegDown_max_RT(g1,s1,t12): RDn(g1,s1,t12) <= 51.29409523000002
- RegUp_max_RT(g1,s1,t13): RUp(g1,s1,t13) <= 54.73093515999987
- RegDown_max_RT(g1,s1,t13): RDn(g1,s1,t13) <= 50
- RegUp_max_RT(g1,s1,t14): RUp(g1,s1,t14) <= 58.09052836999988
- RegDown_max_RT(g1,s1,t14): RDn(g1,s1,t14) <= 48.70590477000001
- RegUp_max_RT(g1,s1,t15): RUp(g1,s1,t15) <= 60.98102804999993
- RegDown_max_RT(g1,s1,t15): RDn(g1,s1,t15) <= 47.5
- RegUp_max_RT(g1,s1,t16): RUp(g1,s1,t16) <= 62.92976345999993
- RegDown_max_RT(g1,s1,t16): RDn(g1,s1,t16) <= 46.46446609000001
- RegUp_max_RT(g1,s1,t17): RUp(g1,s1,t17) <= 63.89658320999993
- RegDown_max_RT(g1,s1,t17): RDn(g1,s1,t17) <= 45.66987298000001
- RegUp_max_RT(g1,s1,t18): RUp(g1,s1,t18) <= 64.69506445999994
- RegDown_max_RT(g1,s1,t18): RDn(g1,s1,t18) <= 45.17037087000001
- RegUp_max_RT(g1,s1,t19): RUp(g1,s1,t19) <= 64.88825650999993
- RegDown_max_RT(g1,s1,t19): RDn(g1,s1,t19) <= 45
- RegUp_max_RT(g1,s1,t20): RUp(g1,s1,t20) <= 64.37685925999995
- RegDown_max_RT(g1,s1,t20): RDn(g1,s1,t20) <= 45.17037087000001
- RegUp_max_RT(g1,s1,t21): RUp(g1,s1,t21) <= 63.08545184999994
- RegDown_max_RT(g1,s1,t21): RDn(g1,s1,t21) <= 45.66987298000001
- RegUp_max_RT(g1,s1,t22): RUp(g1,s1,t22) <= 61.31823176999992
- RegDown_max_RT(g1,s1,t22): RDn(g1,s1,t22) <= 46.46446609000001
- RegUp_max_RT(g1,s1,t23): RUp(g1,s1,t23) <= 58.94173394999992
- RegDown_max_RT(g1,s1,t23): RDn(g1,s1,t23) <= 47.5
- RegUp_max_RT(g1,s1,t24): RUp(g1,s1,t24) <= 55.84206607999997
- RegDown_max_RT(g1,s1,t24): RDn(g1,s1,t24) <= 48.70590477000001
- RegUp_max_RT(g1,s2,t1): RUp(g1,s2,t1) <= 61.68076200999987
- RegDown_max_RT(g1,s2,t1): RDn(g1,s2,t1) <= 50
- RegUp_max_RT(g1,s2,t2): RUp(g1,s2,t2) <= 59.31603479999986
- RegDown_max_RT(g1,s2,t2): RDn(g1,s2,t2) <= 51.29409523000002
- RegUp_max_RT(g1,s2,t3): RUp(g1,s2,t3) <= 57.34934218999987
- RegDown_max_RT(g1,s2,t3): RDn(g1,s2,t3) <= 52.5
- RegUp_max_RT(g1,s2,t4): RUp(g1,s2,t4) <= 54.81668179999987
- RegDown_max_RT(g1,s2,t4): RDn(g1,s2,t4) <= 53.53553391000001
- RegUp_max_RT(g1,s2,t5): RUp(g1,s2,t5) <= 53.37730084999988
- RegDown_max_RT(g1,s2,t5): RDn(g1,s2,t5) <= 54.33012702000001
- RegUp_max_RT(g1,s2,t6): RUp(g1,s2,t6) <= 52
- RegDown_max_RT(g1,s2,t6): RDn(g1,s2,t6) <= 54.82962913000002
- RegUp_max_RT(g1,s2,t7): RUp(g1,s2,t7) <= 52
- RegDown_max_RT(g1,s2,t7): RDn(g1,s2,t7) <= 55
- RegUp_max_RT(g1,s2,t8): RUp(g1,s2,t8) <= 52
- RegDown_max_RT(g1,s2,t8): RDn(g1,s2,t8) <= 54.82962913000002
- RegUp_max_RT(g1,s2,t9): RUp(g1,s2,t9) <= 52
- RegDown_max_RT(g1,s2,t9): RDn(g1,s2,t9) <= 54.33012702000001
- RegUp_max_RT(g1,s2,t10): RUp(g1,s2,t10) <= 52
- RegDown_max_RT(g1,s2,t10): RDn(g1,s2,t10) <= 53.53553391000001
- RegUp_max_RT(g1,s2,t11): RUp(g1,s2,t11) <= 52
- RegDown_max_RT(g1,s2,t11): RDn(g1,s2,t11) <= 52.5
- RegUp_max_RT(g1,s2,t12): RUp(g1,s2,t12) <= 52.07690630999986
- RegDown_max_RT(g1,s2,t12): RDn(g1,s2,t12) <= 51.29409523000002
- RegUp_max_RT(g1,s2,t13): RUp(g1,s2,t13) <= 54.73093515999987
- RegDown_max_RT(g1,s2,t13): RDn(g1,s2,t13) <= 50
- RegUp_max_RT(g1,s2,t14): RUp(g1,s2,t14) <= 58.09052836999988
- RegDown_max_RT(g1,s2,t14): RDn(g1,s2,t14) <= 48.70590477000001
- RegUp_max_RT(g1,s2,t15): RUp(g1,s2,t15) <= 60.98102804999993
- RegDown_max_RT(g1,s2,t15): RDn(g1,s2,t15) <= 47.5
- RegUp_max_RT(g1,s2,t16): RUp(g1,s2,t16) <= 62.92976345999993
- RegDown_max_RT(g1,s2,t16): RDn(g1,s2,t16) <= 46.46446609000001
- RegUp_max_RT(g1,s2,t17): RUp(g1,s2,t17) <= 63.89658320999993
- RegDown_max_RT(g1,s2,t17): RDn(g1,s2,t17) <= 45.66987298000001
- RegUp_max_RT(g1,s2,t18): RUp(g1,s2,t18) <= 64.69506445999994
- RegDown_max_RT(g1,s2,t18): RDn(g1,s2,t18) <= 45.17037087000001
- RegUp_max_RT(g1,s2,t19): RUp(g1,s2,t19) <= 64.88825650999993
- RegDown_max_RT(g1,s2,t19): RDn(g1,s2,t19) <= 45
- RegUp_max_RT(g1,s2,t20): RUp(g1,s2,t20) <= 64.37685925999995
- RegDown_max_RT(g1,s2,t20): RDn(g1,s2,t20) <= 45.17037087000001
- RegUp_max_RT(g1,s2,t21): RUp(g1,s2,t21) <= 63.08545184999994
- RegDown_max_RT(g1,s2,t21): RDn(g1,s2,t21) <= 45.66987298000001
- RegUp_max_RT(g1,s2,t22): RUp(g1,s2,t22) <= 61.31823176999992
- RegDown_max_RT(g1,s2,t22): RDn(g1,s2,t22) <= 46.46446609000001
- RegUp_max_RT(g1,s2,t23): RUp(g1,s2,t23) <= 58.94173394999992
- RegDown_max_RT(g1,s2,t23): RDn(g1,s2,t23) <= 47.5
- RegUp_max_RT(g1,s2,t24): RUp(g1,s2,t24) <= 55.84206607999997
- RegDown_max_RT(g1,s2,t24): RDn(g1,s2,t24) <= 48.70590477000001
- RegUpSC_max_RT(g1,s1,t1): RUpSC(g1,s1,t1) <= 40.31923799000012
+   + Lshed(s2,t24) = 7.539684015000002
+ RegUp_max_RT(g1,s1,t1): RUp(g1,s1,t1) <= 24.64288219000001
+ RegDown_max_RT(g1,s1,t1): RDn(g1,s1,t1) <= 35.35711780999999
+ RegUp_max_RT(g1,s1,t2): RUp(g1,s1,t2) <= 22.706431295
+ RegDown_max_RT(g1,s1,t2): RDn(g1,s1,t2) <= 37.293568705
+ RegUp_max_RT(g1,s1,t3): RUp(g1,s1,t3) <= 15.515046975
+ RegDown_max_RT(g1,s1,t3): RDn(g1,s1,t3) <= 44.484953025
+ RegUp_max_RT(g1,s1,t4): RUp(g1,s1,t4) <= 12.849260535
+ RegDown_max_RT(g1,s1,t4): RDn(g1,s1,t4) <= 47.15073946499999
+ RegUp_max_RT(g1,s1,t5): RUp(g1,s1,t5) <= 13.088265225
+ RegDown_max_RT(g1,s1,t5): RDn(g1,s1,t5) <= 46.911734775
+ RegUp_max_RT(g1,s1,t6): RUp(g1,s1,t6) <= 14.052156215
+ RegDown_max_RT(g1,s1,t6): RDn(g1,s1,t6) <= 45.947843785
+ RegUp_max_RT(g1,s1,t7): RUp(g1,s1,t7) <= 12.95995847
+ RegDown_max_RT(g1,s1,t7): RDn(g1,s1,t7) <= 47.04004153
+ RegUp_max_RT(g1,s1,t8): RUp(g1,s1,t8) <= 11.376331265
+ RegDown_max_RT(g1,s1,t8): RDn(g1,s1,t8) <= 48.623668735
+ RegUp_max_RT(g1,s1,t9): RUp(g1,s1,t9) <= 11.54778972
+ RegDown_max_RT(g1,s1,t9): RDn(g1,s1,t9) <= 48.45221028
+ RegUp_max_RT(g1,s1,t10): RUp(g1,s1,t10) <= 14.29350291
+ RegDown_max_RT(g1,s1,t10): RDn(g1,s1,t10) <= 45.70649709
+ RegUp_max_RT(g1,s1,t11): RUp(g1,s1,t11) <= 17.753729715
+ RegDown_max_RT(g1,s1,t11): RDn(g1,s1,t11) <= 42.246270285
+ RegUp_max_RT(g1,s1,t12): RUp(g1,s1,t12) <= 20.367043445
+ RegDown_max_RT(g1,s1,t12): RDn(g1,s1,t12) <= 39.632956555
+ RegUp_max_RT(g1,s1,t13): RUp(g1,s1,t13) <= 26.17232308
+ RegDown_max_RT(g1,s1,t13): RDn(g1,s1,t13) <= 33.82767692
+ RegUp_max_RT(g1,s1,t14): RUp(g1,s1,t14) <= 21.27470784000001
+ RegDown_max_RT(g1,s1,t14): RDn(g1,s1,t14) <= 38.72529216
+ RegUp_max_RT(g1,s1,t15): RUp(g1,s1,t15) <= 23.67659936
+ RegDown_max_RT(g1,s1,t15): RDn(g1,s1,t15) <= 36.32340064
+ RegUp_max_RT(g1,s1,t16): RUp(g1,s1,t16) <= 21.75302969
+ RegDown_max_RT(g1,s1,t16): RDn(g1,s1,t16) <= 38.24697031
+ RegUp_max_RT(g1,s1,t17): RUp(g1,s1,t17) <= 26.5174973
+ RegDown_max_RT(g1,s1,t17): RDn(g1,s1,t17) <= 33.4825027
+ RegUp_max_RT(g1,s1,t18): RUp(g1,s1,t18) <= 28.6755783
+ RegDown_max_RT(g1,s1,t18): RDn(g1,s1,t18) <= 31.3244217
+ RegUp_max_RT(g1,s1,t19): RUp(g1,s1,t19) <= 25.52609511
+ RegDown_max_RT(g1,s1,t19): RDn(g1,s1,t19) <= 34.47390489
+ RegUp_max_RT(g1,s1,t20): RUp(g1,s1,t20) <= 24.44621097
+ RegDown_max_RT(g1,s1,t20): RDn(g1,s1,t20) <= 35.55378903
+ RegUp_max_RT(g1,s1,t21): RUp(g1,s1,t21) <= 24.41045447
+ RegDown_max_RT(g1,s1,t21): RDn(g1,s1,t21) <= 35.58954553
+ RegUp_max_RT(g1,s1,t22): RUp(g1,s1,t22) <= 25.1876795
+ RegDown_max_RT(g1,s1,t22): RDn(g1,s1,t22) <= 34.8123205
+ RegUp_max_RT(g1,s1,t23): RUp(g1,s1,t23) <= 26.31197936
+ RegDown_max_RT(g1,s1,t23): RDn(g1,s1,t23) <= 33.68802064
+ RegUp_max_RT(g1,s1,t24): RUp(g1,s1,t24) <= 32.39796547500001
+ RegDown_max_RT(g1,s1,t24): RDn(g1,s1,t24) <= 27.60203452499999
+ RegUp_max_RT(g1,s2,t1): RUp(g1,s2,t1) <= 24.64288219000001
+ RegDown_max_RT(g1,s2,t1): RDn(g1,s2,t1) <= 35.35711780999999
+ RegUp_max_RT(g1,s2,t2): RUp(g1,s2,t2) <= 22.706431295
+ RegDown_max_RT(g1,s2,t2): RDn(g1,s2,t2) <= 37.293568705
+ RegUp_max_RT(g1,s2,t3): RUp(g1,s2,t3) <= 15.515046975
+ RegDown_max_RT(g1,s2,t3): RDn(g1,s2,t3) <= 44.484953025
+ RegUp_max_RT(g1,s2,t4): RUp(g1,s2,t4) <= 12.849260535
+ RegDown_max_RT(g1,s2,t4): RDn(g1,s2,t4) <= 47.15073946499999
+ RegUp_max_RT(g1,s2,t5): RUp(g1,s2,t5) <= 13.088265225
+ RegDown_max_RT(g1,s2,t5): RDn(g1,s2,t5) <= 46.911734775
+ RegUp_max_RT(g1,s2,t6): RUp(g1,s2,t6) <= 14.052156215
+ RegDown_max_RT(g1,s2,t6): RDn(g1,s2,t6) <= 45.947843785
+ RegUp_max_RT(g1,s2,t7): RUp(g1,s2,t7) <= 12.95995847
+ RegDown_max_RT(g1,s2,t7): RDn(g1,s2,t7) <= 47.04004153
+ RegUp_max_RT(g1,s2,t8): RUp(g1,s2,t8) <= 11.376331265
+ RegDown_max_RT(g1,s2,t8): RDn(g1,s2,t8) <= 48.623668735
+ RegUp_max_RT(g1,s2,t9): RUp(g1,s2,t9) <= 11.54778972
+ RegDown_max_RT(g1,s2,t9): RDn(g1,s2,t9) <= 48.45221028
+ RegUp_max_RT(g1,s2,t10): RUp(g1,s2,t10) <= 14.29350291
+ RegDown_max_RT(g1,s2,t10): RDn(g1,s2,t10) <= 45.70649709
+ RegUp_max_RT(g1,s2,t11): RUp(g1,s2,t11) <= 17.753729715
+ RegDown_max_RT(g1,s2,t11): RDn(g1,s2,t11) <= 42.246270285
+ RegUp_max_RT(g1,s2,t12): RUp(g1,s2,t12) <= 20.367043445
+ RegDown_max_RT(g1,s2,t12): RDn(g1,s2,t12) <= 39.632956555
+ RegUp_max_RT(g1,s2,t13): RUp(g1,s2,t13) <= 26.17232308
+ RegDown_max_RT(g1,s2,t13): RDn(g1,s2,t13) <= 33.82767692
+ RegUp_max_RT(g1,s2,t14): RUp(g1,s2,t14) <= 21.27470784000001
+ RegDown_max_RT(g1,s2,t14): RDn(g1,s2,t14) <= 38.72529216
+ RegUp_max_RT(g1,s2,t15): RUp(g1,s2,t15) <= 23.67659936
+ RegDown_max_RT(g1,s2,t15): RDn(g1,s2,t15) <= 36.32340064
+ RegUp_max_RT(g1,s2,t16): RUp(g1,s2,t16) <= 21.75302969
+ RegDown_max_RT(g1,s2,t16): RDn(g1,s2,t16) <= 38.24697031
+ RegUp_max_RT(g1,s2,t17): RUp(g1,s2,t17) <= 26.5174973
+ RegDown_max_RT(g1,s2,t17): RDn(g1,s2,t17) <= 33.4825027
+ RegUp_max_RT(g1,s2,t18): RUp(g1,s2,t18) <= 28.6755783
+ RegDown_max_RT(g1,s2,t18): RDn(g1,s2,t18) <= 31.3244217
+ RegUp_max_RT(g1,s2,t19): RUp(g1,s2,t19) <= 25.52609511
+ RegDown_max_RT(g1,s2,t19): RDn(g1,s2,t19) <= 34.47390489
+ RegUp_max_RT(g1,s2,t20): RUp(g1,s2,t20) <= 24.44621097
+ RegDown_max_RT(g1,s2,t20): RDn(g1,s2,t20) <= 35.55378903
+ RegUp_max_RT(g1,s2,t21): RUp(g1,s2,t21) <= 24.41045447
+ RegDown_max_RT(g1,s2,t21): RDn(g1,s2,t21) <= 35.58954553
+ RegUp_max_RT(g1,s2,t22): RUp(g1,s2,t22) <= 25.1876795
+ RegDown_max_RT(g1,s2,t22): RDn(g1,s2,t22) <= 34.8123205
+ RegUp_max_RT(g1,s2,t23): RUp(g1,s2,t23) <= 26.31197936
+ RegDown_max_RT(g1,s2,t23): RDn(g1,s2,t23) <= 33.68802064
+ RegUp_max_RT(g1,s2,t24): RUp(g1,s2,t24) <= 32.39796547500001
+ RegDown_max_RT(g1,s2,t24): RDn(g1,s2,t24) <= 27.60203452499999
+ RegUpSC_max_RT(g1,s1,t1): RUpSC(g1,s1,t1) <= 0
  RegDnSC_max_RT(g1,s1,t1): RDnSC(g1,s1,t1) <= 0
- RegUpSC_max_RT(g1,s1,t2): RUpSC(g1,s1,t2) <= 41.38986997000012
+ RegUpSC_max_RT(g1,s1,t2): RUpSC(g1,s1,t2) <= 0
  RegDnSC_max_RT(g1,s1,t2): RDnSC(g1,s1,t2) <= 0
- RegUpSC_max_RT(g1,s1,t3): RUpSC(g1,s1,t3) <= 42.15065781000011
+ RegUpSC_max_RT(g1,s1,t3): RUpSC(g1,s1,t3) <= 0
  RegDnSC_max_RT(g1,s1,t3): RDnSC(g1,s1,t3) <= 0
- RegUpSC_max_RT(g1,s1,t4): RUpSC(g1,s1,t4) <= 43.64778429000011
+ RegUpSC_max_RT(g1,s1,t4): RUpSC(g1,s1,t4) <= 0
  RegDnSC_max_RT(g1,s1,t4): RDnSC(g1,s1,t4) <= 0
- RegUpSC_max_RT(g1,s1,t5): RUpSC(g1,s1,t5) <= 44.29257213000011
+ RegUpSC_max_RT(g1,s1,t5): RUpSC(g1,s1,t5) <= 0
  RegDnSC_max_RT(g1,s1,t5): RDnSC(g1,s1,t5) <= 0
- RegUpSC_max_RT(g1,s1,t6): RUpSC(g1,s1,t6) <= 45.17037086999999
+ RegUpSC_max_RT(g1,s1,t6): RUpSC(g1,s1,t6) <= 0
  RegDnSC_max_RT(g1,s1,t6): RDnSC(g1,s1,t6) <= 0
- RegUpSC_max_RT(g1,s1,t7): RUpSC(g1,s1,t7) <= 45
+ RegUpSC_max_RT(g1,s1,t7): RUpSC(g1,s1,t7) <= 0
  RegDnSC_max_RT(g1,s1,t7): RDnSC(g1,s1,t7) <= 0
- RegUpSC_max_RT(g1,s1,t8): RUpSC(g1,s1,t8) <= 45.17037086999999
+ RegUpSC_max_RT(g1,s1,t8): RUpSC(g1,s1,t8) <= 0
  RegDnSC_max_RT(g1,s1,t8): RDnSC(g1,s1,t8) <= 0
- RegUpSC_max_RT(g1,s1,t9): RUpSC(g1,s1,t9) <= 45.66987297999999
+ RegUpSC_max_RT(g1,s1,t9): RUpSC(g1,s1,t9) <= 0
  RegDnSC_max_RT(g1,s1,t9): RDnSC(g1,s1,t9) <= 0
- RegUpSC_max_RT(g1,s1,t10): RUpSC(g1,s1,t10) <= 46.46446608999999
+ RegUpSC_max_RT(g1,s1,t10): RUpSC(g1,s1,t10) <= 0
  RegDnSC_max_RT(g1,s1,t10): RDnSC(g1,s1,t10) <= 0
- RegUpSC_max_RT(g1,s1,t11): RUpSC(g1,s1,t11) <= 47.5
+ RegUpSC_max_RT(g1,s1,t11): RUpSC(g1,s1,t11) <= 0
  RegDnSC_max_RT(g1,s1,t11): RDnSC(g1,s1,t11) <= 0
- RegUpSC_max_RT(g1,s1,t12): RUpSC(g1,s1,t12) <= 48.62899846000012
+ RegUpSC_max_RT(g1,s1,t12): RUpSC(g1,s1,t12) <= 0
  RegDnSC_max_RT(g1,s1,t12): RDnSC(g1,s1,t12) <= 0
- RegUpSC_max_RT(g1,s1,t13): RUpSC(g1,s1,t13) <= 47.26906484000011
+ RegUpSC_max_RT(g1,s1,t13): RUpSC(g1,s1,t13) <= 0
  RegDnSC_max_RT(g1,s1,t13): RDnSC(g1,s1,t13) <= 0
- RegUpSC_max_RT(g1,s1,t14): RUpSC(g1,s1,t14) <= 45.20356686000011
+ RegUpSC_max_RT(g1,s1,t14): RUpSC(g1,s1,t14) <= 0
  RegDnSC_max_RT(g1,s1,t14): RDnSC(g1,s1,t14) <= 0
- RegUpSC_max_RT(g1,s1,t15): RUpSC(g1,s1,t15) <= 43.51897195000007
+ RegUpSC_max_RT(g1,s1,t15): RUpSC(g1,s1,t15) <= 0
  RegDnSC_max_RT(g1,s1,t15): RDnSC(g1,s1,t15) <= 0
- RegUpSC_max_RT(g1,s1,t16): RUpSC(g1,s1,t16) <= 42.60577045000007
+ RegUpSC_max_RT(g1,s1,t16): RUpSC(g1,s1,t16) <= 0
  RegDnSC_max_RT(g1,s1,t16): RDnSC(g1,s1,t16) <= 0
- RegUpSC_max_RT(g1,s1,t17): RUpSC(g1,s1,t17) <= 42.43354381000005
+ RegUpSC_max_RT(g1,s1,t17): RUpSC(g1,s1,t17) <= 0
  RegDnSC_max_RT(g1,s1,t17): RDnSC(g1,s1,t17) <= 0
- RegUpSC_max_RT(g1,s1,t18): RUpSC(g1,s1,t18) <= 42.13456467000006
+ RegUpSC_max_RT(g1,s1,t18): RUpSC(g1,s1,t18) <= 0
  RegDnSC_max_RT(g1,s1,t18): RDnSC(g1,s1,t18) <= 0
- RegUpSC_max_RT(g1,s1,t19): RUpSC(g1,s1,t19) <= 42.11174349000007
+ RegUpSC_max_RT(g1,s1,t19): RUpSC(g1,s1,t19) <= 0
  RegDnSC_max_RT(g1,s1,t19): RDnSC(g1,s1,t19) <= 0
- RegUpSC_max_RT(g1,s1,t20): RUpSC(g1,s1,t20) <= 42.45276987000006
+ RegUpSC_max_RT(g1,s1,t20): RUpSC(g1,s1,t20) <= 0
  RegDnSC_max_RT(g1,s1,t20): RDnSC(g1,s1,t20) <= 0
- RegUpSC_max_RT(g1,s1,t21): RUpSC(g1,s1,t21) <= 43.24467517000005
+ RegUpSC_max_RT(g1,s1,t21): RUpSC(g1,s1,t21) <= 0
  RegDnSC_max_RT(g1,s1,t21): RDnSC(g1,s1,t21) <= 0
- RegUpSC_max_RT(g1,s1,t22): RUpSC(g1,s1,t22) <= 44.21730214000007
+ RegUpSC_max_RT(g1,s1,t22): RUpSC(g1,s1,t22) <= 0
  RegDnSC_max_RT(g1,s1,t22): RDnSC(g1,s1,t22) <= 0
- RegUpSC_max_RT(g1,s1,t23): RUpSC(g1,s1,t23) <= 45.55826605000006
+ RegUpSC_max_RT(g1,s1,t23): RUpSC(g1,s1,t23) <= 0
  RegDnSC_max_RT(g1,s1,t23): RDnSC(g1,s1,t23) <= 0
- RegUpSC_max_RT(g1,s1,t24): RUpSC(g1,s1,t24) <= 47.45202915000001
+ RegUpSC_max_RT(g1,s1,t24): RUpSC(g1,s1,t24) <= 0
  RegDnSC_max_RT(g1,s1,t24): RDnSC(g1,s1,t24) <= 0
- RegUpSC_max_RT(g1,s2,t1): RUpSC(g1,s2,t1) <= 40.31923799000012
+ RegUpSC_max_RT(g1,s2,t1): RUpSC(g1,s2,t1) <= 0
  RegDnSC_max_RT(g1,s2,t1): RDnSC(g1,s2,t1) <= 0
- RegUpSC_max_RT(g1,s2,t2): RUpSC(g1,s2,t2) <= 41.38986997000012
+ RegUpSC_max_RT(g1,s2,t2): RUpSC(g1,s2,t2) <= 0
  RegDnSC_max_RT(g1,s2,t2): RDnSC(g1,s2,t2) <= 0
- RegUpSC_max_RT(g1,s2,t3): RUpSC(g1,s2,t3) <= 42.15065781000011
+ RegUpSC_max_RT(g1,s2,t3): RUpSC(g1,s2,t3) <= 0
  RegDnSC_max_RT(g1,s2,t3): RDnSC(g1,s2,t3) <= 0
- RegUpSC_max_RT(g1,s2,t4): RUpSC(g1,s2,t4) <= 43.64778429000011
+ RegUpSC_max_RT(g1,s2,t4): RUpSC(g1,s2,t4) <= 0
  RegDnSC_max_RT(g1,s2,t4): RDnSC(g1,s2,t4) <= 0
- RegUpSC_max_RT(g1,s2,t5): RUpSC(g1,s2,t5) <= 44.29257213000011
+ RegUpSC_max_RT(g1,s2,t5): RUpSC(g1,s2,t5) <= 0
  RegDnSC_max_RT(g1,s2,t5): RDnSC(g1,s2,t5) <= 0
- RegUpSC_max_RT(g1,s2,t6): RUpSC(g1,s2,t6) <= 45.17037086999999
+ RegUpSC_max_RT(g1,s2,t6): RUpSC(g1,s2,t6) <= 0
  RegDnSC_max_RT(g1,s2,t6): RDnSC(g1,s2,t6) <= 0
- RegUpSC_max_RT(g1,s2,t7): RUpSC(g1,s2,t7) <= 45
+ RegUpSC_max_RT(g1,s2,t7): RUpSC(g1,s2,t7) <= 0
  RegDnSC_max_RT(g1,s2,t7): RDnSC(g1,s2,t7) <= 0
- RegUpSC_max_RT(g1,s2,t8): RUpSC(g1,s2,t8) <= 45.17037086999999
+ RegUpSC_max_RT(g1,s2,t8): RUpSC(g1,s2,t8) <= 0
  RegDnSC_max_RT(g1,s2,t8): RDnSC(g1,s2,t8) <= 0
- RegUpSC_max_RT(g1,s2,t9): RUpSC(g1,s2,t9) <= 45.66987297999999
+ RegUpSC_max_RT(g1,s2,t9): RUpSC(g1,s2,t9) <= 0
  RegDnSC_max_RT(g1,s2,t9): RDnSC(g1,s2,t9) <= 0
- RegUpSC_max_RT(g1,s2,t10): RUpSC(g1,s2,t10) <= 46.46446608999999
+ RegUpSC_max_RT(g1,s2,t10): RUpSC(g1,s2,t10) <= 0
  RegDnSC_max_RT(g1,s2,t10): RDnSC(g1,s2,t10) <= 0
- RegUpSC_max_RT(g1,s2,t11): RUpSC(g1,s2,t11) <= 47.5
+ RegUpSC_max_RT(g1,s2,t11): RUpSC(g1,s2,t11) <= 0
  RegDnSC_max_RT(g1,s2,t11): RDnSC(g1,s2,t11) <= 0
- RegUpSC_max_RT(g1,s2,t12): RUpSC(g1,s2,t12) <= 48.62899846000012
+ RegUpSC_max_RT(g1,s2,t12): RUpSC(g1,s2,t12) <= 0
  RegDnSC_max_RT(g1,s2,t12): RDnSC(g1,s2,t12) <= 0
- RegUpSC_max_RT(g1,s2,t13): RUpSC(g1,s2,t13) <= 47.26906484000011
+ RegUpSC_max_RT(g1,s2,t13): RUpSC(g1,s2,t13) <= 0
  RegDnSC_max_RT(g1,s2,t13): RDnSC(g1,s2,t13) <= 0
- RegUpSC_max_RT(g1,s2,t14): RUpSC(g1,s2,t14) <= 45.20356686000011
+ RegUpSC_max_RT(g1,s2,t14): RUpSC(g1,s2,t14) <= 0
  RegDnSC_max_RT(g1,s2,t14): RDnSC(g1,s2,t14) <= 0
- RegUpSC_max_RT(g1,s2,t15): RUpSC(g1,s2,t15) <= 43.51897195000007
+ RegUpSC_max_RT(g1,s2,t15): RUpSC(g1,s2,t15) <= 0
  RegDnSC_max_RT(g1,s2,t15): RDnSC(g1,s2,t15) <= 0
- RegUpSC_max_RT(g1,s2,t16): RUpSC(g1,s2,t16) <= 42.60577045000007
+ RegUpSC_max_RT(g1,s2,t16): RUpSC(g1,s2,t16) <= 0
  RegDnSC_max_RT(g1,s2,t16): RDnSC(g1,s2,t16) <= 0
- RegUpSC_max_RT(g1,s2,t17): RUpSC(g1,s2,t17) <= 42.43354381000005
+ RegUpSC_max_RT(g1,s2,t17): RUpSC(g1,s2,t17) <= 0
  RegDnSC_max_RT(g1,s2,t17): RDnSC(g1,s2,t17) <= 0
- RegUpSC_max_RT(g1,s2,t18): RUpSC(g1,s2,t18) <= 42.13456467000006
+ RegUpSC_max_RT(g1,s2,t18): RUpSC(g1,s2,t18) <= 0
  RegDnSC_max_RT(g1,s2,t18): RDnSC(g1,s2,t18) <= 0
- RegUpSC_max_RT(g1,s2,t19): RUpSC(g1,s2,t19) <= 42.11174349000007
+ RegUpSC_max_RT(g1,s2,t19): RUpSC(g1,s2,t19) <= 0
  RegDnSC_max_RT(g1,s2,t19): RDnSC(g1,s2,t19) <= 0
- RegUpSC_max_RT(g1,s2,t20): RUpSC(g1,s2,t20) <= 42.45276987000006
+ RegUpSC_max_RT(g1,s2,t20): RUpSC(g1,s2,t20) <= 0
  RegDnSC_max_RT(g1,s2,t20): RDnSC(g1,s2,t20) <= 0
- RegUpSC_max_RT(g1,s2,t21): RUpSC(g1,s2,t21) <= 43.24467517000005
+ RegUpSC_max_RT(g1,s2,t21): RUpSC(g1,s2,t21) <= 0
  RegDnSC_max_RT(g1,s2,t21): RDnSC(g1,s2,t21) <= 0
- RegUpSC_max_RT(g1,s2,t22): RUpSC(g1,s2,t22) <= 44.21730214000007
+ RegUpSC_max_RT(g1,s2,t22): RUpSC(g1,s2,t22) <= 0
  RegDnSC_max_RT(g1,s2,t22): RDnSC(g1,s2,t22) <= 0
- RegUpSC_max_RT(g1,s2,t23): RUpSC(g1,s2,t23) <= 45.55826605000006
+ RegUpSC_max_RT(g1,s2,t23): RUpSC(g1,s2,t23) <= 0
  RegDnSC_max_RT(g1,s2,t23): RDnSC(g1,s2,t23) <= 0
- RegUpSC_max_RT(g1,s2,t24): RUpSC(g1,s2,t24) <= 47.45202915000001
+ RegUpSC_max_RT(g1,s2,t24): RUpSC(g1,s2,t24) <= 0
  RegDnSC_max_RT(g1,s2,t24): RDnSC(g1,s2,t24) <= 0
  Max_load_shed_RT(s1,t1): Lshed(s1,t1) <= 50
  Max_load_shed_RT(s1,t2): Lshed(s1,t2) <= 51.29409523
@@ -420,436 +457,436 @@ Subject To
  Max_load_shed_RT(s2,t22): Lshed(s2,t22) <= 46.46446609
  Max_load_shed_RT(s2,t23): Lshed(s2,t23) <= 47.5
  Max_load_shed_RT(s2,t24): Lshed(s2,t24) <= 48.70590477
- Max_wind_spill_RT(w1,s1,t1): Wspill(w1,s1,t1) <= 19.36152399
- Max_wind_spill_RT(w1,s1,t2): Wspill(w1,s1,t2) <= 19.80845052
- Max_wind_spill_RT(w1,s1,t3): Wspill(w1,s1,t3) <= 20.69868435
- Max_wind_spill_RT(w1,s1,t4): Wspill(w1,s1,t4) <= 19.77549921
- Max_wind_spill_RT(w1,s1,t5): Wspill(w1,s1,t5) <= 20.07510975
- Max_wind_spill_RT(w1,s1,t6): Wspill(w1,s1,t6) <= 18.16891905
- Max_wind_spill_RT(w1,s1,t7): Wspill(w1,s1,t7) <= 16.59465834
- Max_wind_spill_RT(w1,s1,t8): Wspill(w1,s1,t8) <= 13.34680944
- Max_wind_spill_RT(w1,s1,t9): Wspill(w1,s1,t9) <= 10.47638364
- Max_wind_spill_RT(w1,s1,t10): Wspill(w1,s1,t10) <= 7.749192330000001
- Max_wind_spill_RT(w1,s1,t11): Wspill(w1,s1,t11) <= 5.964156719999999
- Max_wind_spill_RT(w1,s1,t12): Wspill(w1,s1,t12) <= 5.33019351
- Max_wind_spill_RT(w1,s1,t13): Wspill(w1,s1,t13) <= 5.461870319999999
- Max_wind_spill_RT(w1,s1,t14): Wspill(w1,s1,t14) <= 7.004675819999999
- Max_wind_spill_RT(w1,s1,t15): Wspill(w1,s1,t15) <= 7.9620561
- Max_wind_spill_RT(w1,s1,t16): Wspill(w1,s1,t16) <= 7.71739128
- Max_wind_spill_RT(w1,s1,t17): Wspill(w1,s1,t17) <= 6.47265831
- Max_wind_spill_RT(w1,s1,t18): Wspill(w1,s1,t18) <= 6.07161237
- Max_wind_spill_RT(w1,s1,t19): Wspill(w1,s1,t19) <= 5.776513019999999
- Max_wind_spill_RT(w1,s1,t20): Wspill(w1,s1,t20) <= 5.435201999999999
- Max_wind_spill_RT(w1,s1,t21): Wspill(w1,s1,t21) <= 4.850395590000001
- Max_wind_spill_RT(w1,s1,t22): Wspill(w1,s1,t22) <= 4.4943279
- Max_wind_spill_RT(w1,s1,t23): Wspill(w1,s1,t23) <= 3.88346787
- Max_wind_spill_RT(w1,s1,t24): Wspill(w1,s1,t24) <= 2.50775121
- Max_wind_spill_RT(w1,s2,t1): Wspill(w1,s2,t1) <= 9.680762009999999
- Max_wind_spill_RT(w1,s2,t2): Wspill(w1,s2,t2) <= 9.904225260000001
- Max_wind_spill_RT(w1,s2,t3): Wspill(w1,s2,t3) <= 10.34934219
- Max_wind_spill_RT(w1,s2,t4): Wspill(w1,s2,t4) <= 9.887749620000001
- Max_wind_spill_RT(w1,s2,t5): Wspill(w1,s2,t5) <= 10.03755489
- Max_wind_spill_RT(w1,s2,t6): Wspill(w1,s2,t6) <= 9.084459539999999
- Max_wind_spill_RT(w1,s2,t7): Wspill(w1,s2,t7) <= 8.297329169999999
- Max_wind_spill_RT(w1,s2,t8): Wspill(w1,s2,t8) <= 6.67340472
- Max_wind_spill_RT(w1,s2,t9): Wspill(w1,s2,t9) <= 5.23819182
- Max_wind_spill_RT(w1,s2,t10): Wspill(w1,s2,t10) <= 3.87459618
- Max_wind_spill_RT(w1,s2,t11): Wspill(w1,s2,t11) <= 2.98207836
- Max_wind_spill_RT(w1,s2,t12): Wspill(w1,s2,t12) <= 2.66509677
- Max_wind_spill_RT(w1,s2,t13): Wspill(w1,s2,t13) <= 2.73093516
- Max_wind_spill_RT(w1,s2,t14): Wspill(w1,s2,t14) <= 3.50233791
- Max_wind_spill_RT(w1,s2,t15): Wspill(w1,s2,t15) <= 3.98102805
- Max_wind_spill_RT(w1,s2,t16): Wspill(w1,s2,t16) <= 3.85869564
- Max_wind_spill_RT(w1,s2,t17): Wspill(w1,s2,t17) <= 3.23632917
- Max_wind_spill_RT(w1,s2,t18): Wspill(w1,s2,t18) <= 3.0358062
- Max_wind_spill_RT(w1,s2,t19): Wspill(w1,s2,t19) <= 2.88825651
- Max_wind_spill_RT(w1,s2,t20): Wspill(w1,s2,t20) <= 2.717601
- Max_wind_spill_RT(w1,s2,t21): Wspill(w1,s2,t21) <= 2.42519781
- Max_wind_spill_RT(w1,s2,t22): Wspill(w1,s2,t22) <= 2.24716395
- Max_wind_spill_RT(w1,s2,t23): Wspill(w1,s2,t23) <= 1.94173395
- Max_wind_spill_RT(w1,s2,t24): Wspill(w1,s2,t24) <= 1.25387562
+ Max_wind_spill_RT(w1,s1,t1): Wspill(w1,s1,t1) <= 13.64523828
+ Max_wind_spill_RT(w1,s1,t2): Wspill(w1,s1,t2) <= 14.13210003
+ Max_wind_spill_RT(w1,s1,t3): Wspill(w1,s1,t3) <= 9.571274219999999
+ Max_wind_spill_RT(w1,s1,t4): Wspill(w1,s1,t4) <= 10.24495167
+ Max_wind_spill_RT(w1,s1,t5): Wspill(w1,s1,t5) <= 13.37112045
+ Max_wind_spill_RT(w1,s1,t6): Wspill(w1,s1,t6) <= 15.9762591
+ Max_wind_spill_RT(w1,s1,t7): Wspill(w1,s1,t7) <= 13.09757973
+ Max_wind_spill_RT(w1,s1,t8): Wspill(w1,s1,t8) <= 9.348263729999999
+ Max_wind_spill_RT(w1,s1,t9): Wspill(w1,s1,t9) <= 8.03252799
+ Max_wind_spill_RT(w1,s1,t10): Wspill(w1,s1,t10) <= 9.780529290000001
+ Max_wind_spill_RT(w1,s1,t11): Wspill(w1,s1,t11) <= 13.23691422
+ Max_wind_spill_RT(w1,s1,t12): Wspill(w1,s1,t12) <= 14.79118329
+ Max_wind_spill_RT(w1,s1,t13): Wspill(w1,s1,t13) <= 22.67129373
+ Max_wind_spill_RT(w1,s1,t14): Wspill(w1,s1,t14) <= 23.25377463
+ Max_wind_spill_RT(w1,s1,t15): Wspill(w1,s1,t15) <= 24.08429517
+ Max_wind_spill_RT(w1,s1,t16): Wspill(w1,s1,t16) <= 25.67222511
+ Max_wind_spill_RT(w1,s1,t17): Wspill(w1,s1,t17) <= 26.96292903
+ Max_wind_spill_RT(w1,s1,t18): Wspill(w1,s1,t18) <= 27.84705837
+ Max_wind_spill_RT(w1,s1,t19): Wspill(w1,s1,t19) <= 27.97611309
+ Max_wind_spill_RT(w1,s1,t20): Wspill(w1,s1,t20) <= 26.64932952
+ Max_wind_spill_RT(w1,s1,t21): Wspill(w1,s1,t21) <= 27.01809513
+ Max_wind_spill_RT(w1,s1,t22): Wspill(w1,s1,t22) <= 28.32297243
+ Max_wind_spill_RT(w1,s1,t23): Wspill(w1,s1,t23) <= 28.87685715
+ Max_wind_spill_RT(w1,s1,t24): Wspill(w1,s1,t24) <= 28.64355426
+ Max_wind_spill_RT(w1,s2,t1): Wspill(w1,s2,t1) <= 15.6405261
+ Max_wind_spill_RT(w1,s2,t2): Wspill(w1,s2,t2) <= 13.86895302
+ Max_wind_spill_RT(w1,s2,t3): Wspill(w1,s2,t3) <= 6.45881973
+ Max_wind_spill_RT(w1,s2,t4): Wspill(w1,s2,t4) <= 2.52463722
+ Max_wind_spill_RT(w1,s2,t5): Wspill(w1,s2,t5) <= 1.46566404
+ Max_wind_spill_RT(w1,s2,t6): Wspill(w1,s2,t6) <= 1.78731159
+ Max_wind_spill_RT(w1,s2,t7): Wspill(w1,s2,t7) <= 2.82233721
+ Max_wind_spill_RT(w1,s2,t8): Wspill(w1,s2,t8) <= 3.06365706
+ Max_wind_spill_RT(w1,s2,t9): Wspill(w1,s2,t9) <= 3.72330549
+ Max_wind_spill_RT(w1,s2,t10): Wspill(w1,s2,t10) <= 5.87754435
+ Max_wind_spill_RT(w1,s2,t11): Wspill(w1,s2,t11) <= 7.27054521
+ Max_wind_spill_RT(w1,s2,t12): Wspill(w1,s2,t12) <= 8.531094060000001
+ Max_wind_spill_RT(w1,s2,t13): Wspill(w1,s2,t13) <= 9.673352430000001
+ Max_wind_spill_RT(w1,s2,t14): Wspill(w1,s2,t14) <= 9.98061261
+ Max_wind_spill_RT(w1,s2,t15): Wspill(w1,s2,t15) <= 11.17659936
+ Max_wind_spill_RT(w1,s2,t16): Wspill(w1,s2,t16) <= 8.21749578
+ Max_wind_spill_RT(w1,s2,t17): Wspill(w1,s2,t17) <= 12.18737028
+ Max_wind_spill_RT(w1,s2,t18): Wspill(w1,s2,t18) <= 13.84594917
+ Max_wind_spill_RT(w1,s2,t19): Wspill(w1,s2,t19) <= 10.52609511
+ Max_wind_spill_RT(w1,s2,t20): Wspill(w1,s2,t20) <= 9.61658184
+ Max_wind_spill_RT(w1,s2,t21): Wspill(w1,s2,t21) <= 10.08032745
+ Max_wind_spill_RT(w1,s2,t22): Wspill(w1,s2,t22) <= 11.65214559
+ Max_wind_spill_RT(w1,s2,t23): Wspill(w1,s2,t23) <= 13.81197936
+ Max_wind_spill_RT(w1,s2,t24): Wspill(w1,s2,t24) <= 13.56418623
  SOS1_RegUp_max_RT(g1,s1,t1): RUp(g1,s1,t1) + SOS1_RegUp_max_RT(g1,s1,t1)
-   = 61.68076200999987
+   = 24.64288219000001
  SOS1_RegDown_max_RT(g1,s1,t1): RDn(g1,s1,t1)
-   + SOS1_RegDown_max_RT(g1,s1,t1) = 50
+   + SOS1_RegDown_max_RT(g1,s1,t1) = 35.35711780999999
  SOS1_RegUp_max_RT(g1,s1,t2): RUp(g1,s1,t2) + SOS1_RegUp_max_RT(g1,s1,t2)
-   = 59.31603479999986
+   = 22.706431295
  SOS1_RegDown_max_RT(g1,s1,t2): RDn(g1,s1,t2)
-   + SOS1_RegDown_max_RT(g1,s1,t2) = 51.29409523000002
+   + SOS1_RegDown_max_RT(g1,s1,t2) = 37.293568705
  SOS1_RegUp_max_RT(g1,s1,t3): RUp(g1,s1,t3) + SOS1_RegUp_max_RT(g1,s1,t3)
-   = 57.34934218999987
+   = 15.515046975
  SOS1_RegDown_max_RT(g1,s1,t3): RDn(g1,s1,t3)
-   + SOS1_RegDown_max_RT(g1,s1,t3) = 52.5
+   + SOS1_RegDown_max_RT(g1,s1,t3) = 44.484953025
  SOS1_RegUp_max_RT(g1,s1,t4): RUp(g1,s1,t4) + SOS1_RegUp_max_RT(g1,s1,t4)
-   = 54.81668179999987
+   = 12.849260535
  SOS1_RegDown_max_RT(g1,s1,t4): RDn(g1,s1,t4)
-   + SOS1_RegDown_max_RT(g1,s1,t4) = 53.53553391000001
+   + SOS1_RegDown_max_RT(g1,s1,t4) = 47.15073946499999
  SOS1_RegUp_max_RT(g1,s1,t5): RUp(g1,s1,t5) + SOS1_RegUp_max_RT(g1,s1,t5)
-   = 53.37730084999988
+   = 13.088265225
  SOS1_RegDown_max_RT(g1,s1,t5): RDn(g1,s1,t5)
-   + SOS1_RegDown_max_RT(g1,s1,t5) = 54.33012702000001
+   + SOS1_RegDown_max_RT(g1,s1,t5) = 46.911734775
  SOS1_RegUp_max_RT(g1,s1,t6): RUp(g1,s1,t6) + SOS1_RegUp_max_RT(g1,s1,t6)
-   = 52
+   = 14.052156215
  SOS1_RegDown_max_RT(g1,s1,t6): RDn(g1,s1,t6)
-   + SOS1_RegDown_max_RT(g1,s1,t6) = 54.82962913000002
+   + SOS1_RegDown_max_RT(g1,s1,t6) = 45.947843785
  SOS1_RegUp_max_RT(g1,s1,t7): RUp(g1,s1,t7) + SOS1_RegUp_max_RT(g1,s1,t7)
-   = 52
+   = 12.95995847
  SOS1_RegDown_max_RT(g1,s1,t7): RDn(g1,s1,t7)
-   + SOS1_RegDown_max_RT(g1,s1,t7) = 55
+   + SOS1_RegDown_max_RT(g1,s1,t7) = 47.04004153
  SOS1_RegUp_max_RT(g1,s1,t8): RUp(g1,s1,t8) + SOS1_RegUp_max_RT(g1,s1,t8)
-   = 52
+   = 11.376331265
  SOS1_RegDown_max_RT(g1,s1,t8): RDn(g1,s1,t8)
-   + SOS1_RegDown_max_RT(g1,s1,t8) = 54.82962913000002
+   + SOS1_RegDown_max_RT(g1,s1,t8) = 48.623668735
  SOS1_RegUp_max_RT(g1,s1,t9): RUp(g1,s1,t9) + SOS1_RegUp_max_RT(g1,s1,t9)
-   = 52
+   = 11.54778972
  SOS1_RegDown_max_RT(g1,s1,t9): RDn(g1,s1,t9)
-   + SOS1_RegDown_max_RT(g1,s1,t9) = 54.33012702000001
+   + SOS1_RegDown_max_RT(g1,s1,t9) = 48.45221028
  SOS1_RegUp_max_RT(g1,s1,t10): RUp(g1,s1,t10)
-   + SOS1_RegUp_max_RT(g1,s1,t10) = 52
+   + SOS1_RegUp_max_RT(g1,s1,t10) = 14.29350291
  SOS1_RegDown_max_RT(g1,s1,t10): RDn(g1,s1,t10)
-   + SOS1_RegDown_max_RT(g1,s1,t10) = 53.53553391000001
+   + SOS1_RegDown_max_RT(g1,s1,t10) = 45.70649709
  SOS1_RegUp_max_RT(g1,s1,t11): RUp(g1,s1,t11)
-   + SOS1_RegUp_max_RT(g1,s1,t11) = 52
+   + SOS1_RegUp_max_RT(g1,s1,t11) = 17.753729715
  SOS1_RegDown_max_RT(g1,s1,t11): RDn(g1,s1,t11)
-   + SOS1_RegDown_max_RT(g1,s1,t11) = 52.5
+   + SOS1_RegDown_max_RT(g1,s1,t11) = 42.246270285
  SOS1_RegUp_max_RT(g1,s1,t12): RUp(g1,s1,t12)
-   + SOS1_RegUp_max_RT(g1,s1,t12) = 52.07690630999986
+   + SOS1_RegUp_max_RT(g1,s1,t12) = 20.367043445
  SOS1_RegDown_max_RT(g1,s1,t12): RDn(g1,s1,t12)
-   + SOS1_RegDown_max_RT(g1,s1,t12) = 51.29409523000002
+   + SOS1_RegDown_max_RT(g1,s1,t12) = 39.632956555
  SOS1_RegUp_max_RT(g1,s1,t13): RUp(g1,s1,t13)
-   + SOS1_RegUp_max_RT(g1,s1,t13) = 54.73093515999987
+   + SOS1_RegUp_max_RT(g1,s1,t13) = 26.17232308
  SOS1_RegDown_max_RT(g1,s1,t13): RDn(g1,s1,t13)
-   + SOS1_RegDown_max_RT(g1,s1,t13) = 50
+   + SOS1_RegDown_max_RT(g1,s1,t13) = 33.82767692
  SOS1_RegUp_max_RT(g1,s1,t14): RUp(g1,s1,t14)
-   + SOS1_RegUp_max_RT(g1,s1,t14) = 58.09052836999988
+   + SOS1_RegUp_max_RT(g1,s1,t14) = 21.27470784000001
  SOS1_RegDown_max_RT(g1,s1,t14): RDn(g1,s1,t14)
-   + SOS1_RegDown_max_RT(g1,s1,t14) = 48.70590477000001
+   + SOS1_RegDown_max_RT(g1,s1,t14) = 38.72529216
  SOS1_RegUp_max_RT(g1,s1,t15): RUp(g1,s1,t15)
-   + SOS1_RegUp_max_RT(g1,s1,t15) = 60.98102804999993
+   + SOS1_RegUp_max_RT(g1,s1,t15) = 23.67659936
  SOS1_RegDown_max_RT(g1,s1,t15): RDn(g1,s1,t15)
-   + SOS1_RegDown_max_RT(g1,s1,t15) = 47.5
+   + SOS1_RegDown_max_RT(g1,s1,t15) = 36.32340064
  SOS1_RegUp_max_RT(g1,s1,t16): RUp(g1,s1,t16)
-   + SOS1_RegUp_max_RT(g1,s1,t16) = 62.92976345999993
+   + SOS1_RegUp_max_RT(g1,s1,t16) = 21.75302969
  SOS1_RegDown_max_RT(g1,s1,t16): RDn(g1,s1,t16)
-   + SOS1_RegDown_max_RT(g1,s1,t16) = 46.46446609000001
+   + SOS1_RegDown_max_RT(g1,s1,t16) = 38.24697031
  SOS1_RegUp_max_RT(g1,s1,t17): RUp(g1,s1,t17)
-   + SOS1_RegUp_max_RT(g1,s1,t17) = 63.89658320999993
+   + SOS1_RegUp_max_RT(g1,s1,t17) = 26.5174973
  SOS1_RegDown_max_RT(g1,s1,t17): RDn(g1,s1,t17)
-   + SOS1_RegDown_max_RT(g1,s1,t17) = 45.66987298000001
+   + SOS1_RegDown_max_RT(g1,s1,t17) = 33.4825027
  SOS1_RegUp_max_RT(g1,s1,t18): RUp(g1,s1,t18)
-   + SOS1_RegUp_max_RT(g1,s1,t18) = 64.69506445999994
+   + SOS1_RegUp_max_RT(g1,s1,t18) = 28.6755783
  SOS1_RegDown_max_RT(g1,s1,t18): RDn(g1,s1,t18)
-   + SOS1_RegDown_max_RT(g1,s1,t18) = 45.17037087000001
+   + SOS1_RegDown_max_RT(g1,s1,t18) = 31.3244217
  SOS1_RegUp_max_RT(g1,s1,t19): RUp(g1,s1,t19)
-   + SOS1_RegUp_max_RT(g1,s1,t19) = 64.88825650999993
+   + SOS1_RegUp_max_RT(g1,s1,t19) = 25.52609511
  SOS1_RegDown_max_RT(g1,s1,t19): RDn(g1,s1,t19)
-   + SOS1_RegDown_max_RT(g1,s1,t19) = 45
+   + SOS1_RegDown_max_RT(g1,s1,t19) = 34.47390489
  SOS1_RegUp_max_RT(g1,s1,t20): RUp(g1,s1,t20)
-   + SOS1_RegUp_max_RT(g1,s1,t20) = 64.37685925999995
+   + SOS1_RegUp_max_RT(g1,s1,t20) = 24.44621097
  SOS1_RegDown_max_RT(g1,s1,t20): RDn(g1,s1,t20)
-   + SOS1_RegDown_max_RT(g1,s1,t20) = 45.17037087000001
+   + SOS1_RegDown_max_RT(g1,s1,t20) = 35.55378903
  SOS1_RegUp_max_RT(g1,s1,t21): RUp(g1,s1,t21)
-   + SOS1_RegUp_max_RT(g1,s1,t21) = 63.08545184999994
+   + SOS1_RegUp_max_RT(g1,s1,t21) = 24.41045447
  SOS1_RegDown_max_RT(g1,s1,t21): RDn(g1,s1,t21)
-   + SOS1_RegDown_max_RT(g1,s1,t21) = 45.66987298000001
+   + SOS1_RegDown_max_RT(g1,s1,t21) = 35.58954553
  SOS1_RegUp_max_RT(g1,s1,t22): RUp(g1,s1,t22)
-   + SOS1_RegUp_max_RT(g1,s1,t22) = 61.31823176999992
+   + SOS1_RegUp_max_RT(g1,s1,t22) = 25.1876795
  SOS1_RegDown_max_RT(g1,s1,t22): RDn(g1,s1,t22)
-   + SOS1_RegDown_max_RT(g1,s1,t22) = 46.46446609000001
+   + SOS1_RegDown_max_RT(g1,s1,t22) = 34.8123205
  SOS1_RegUp_max_RT(g1,s1,t23): RUp(g1,s1,t23)
-   + SOS1_RegUp_max_RT(g1,s1,t23) = 58.94173394999992
+   + SOS1_RegUp_max_RT(g1,s1,t23) = 26.31197936
  SOS1_RegDown_max_RT(g1,s1,t23): RDn(g1,s1,t23)
-   + SOS1_RegDown_max_RT(g1,s1,t23) = 47.5
+   + SOS1_RegDown_max_RT(g1,s1,t23) = 33.68802064
  SOS1_RegUp_max_RT(g1,s1,t24): RUp(g1,s1,t24)
-   + SOS1_RegUp_max_RT(g1,s1,t24) = 55.84206607999997
+   + SOS1_RegUp_max_RT(g1,s1,t24) = 32.39796547500001
  SOS1_RegDown_max_RT(g1,s1,t24): RDn(g1,s1,t24)
-   + SOS1_RegDown_max_RT(g1,s1,t24) = 48.70590477000001
+   + SOS1_RegDown_max_RT(g1,s1,t24) = 27.60203452499999
  SOS1_RegUp_max_RT(g1,s2,t1): RUp(g1,s2,t1) + SOS1_RegUp_max_RT(g1,s2,t1)
-   = 61.68076200999987
+   = 24.64288219000001
  SOS1_RegDown_max_RT(g1,s2,t1): RDn(g1,s2,t1)
-   + SOS1_RegDown_max_RT(g1,s2,t1) = 50
+   + SOS1_RegDown_max_RT(g1,s2,t1) = 35.35711780999999
  SOS1_RegUp_max_RT(g1,s2,t2): RUp(g1,s2,t2) + SOS1_RegUp_max_RT(g1,s2,t2)
-   = 59.31603479999986
+   = 22.706431295
  SOS1_RegDown_max_RT(g1,s2,t2): RDn(g1,s2,t2)
-   + SOS1_RegDown_max_RT(g1,s2,t2) = 51.29409523000002
+   + SOS1_RegDown_max_RT(g1,s2,t2) = 37.293568705
  SOS1_RegUp_max_RT(g1,s2,t3): RUp(g1,s2,t3) + SOS1_RegUp_max_RT(g1,s2,t3)
-   = 57.34934218999987
+   = 15.515046975
  SOS1_RegDown_max_RT(g1,s2,t3): RDn(g1,s2,t3)
-   + SOS1_RegDown_max_RT(g1,s2,t3) = 52.5
+   + SOS1_RegDown_max_RT(g1,s2,t3) = 44.484953025
  SOS1_RegUp_max_RT(g1,s2,t4): RUp(g1,s2,t4) + SOS1_RegUp_max_RT(g1,s2,t4)
-   = 54.81668179999987
+   = 12.849260535
  SOS1_RegDown_max_RT(g1,s2,t4): RDn(g1,s2,t4)
-   + SOS1_RegDown_max_RT(g1,s2,t4) = 53.53553391000001
+   + SOS1_RegDown_max_RT(g1,s2,t4) = 47.15073946499999
  SOS1_RegUp_max_RT(g1,s2,t5): RUp(g1,s2,t5) + SOS1_RegUp_max_RT(g1,s2,t5)
-   = 53.37730084999988
+   = 13.088265225
  SOS1_RegDown_max_RT(g1,s2,t5): RDn(g1,s2,t5)
-   + SOS1_RegDown_max_RT(g1,s2,t5) = 54.33012702000001
+   + SOS1_RegDown_max_RT(g1,s2,t5) = 46.911734775
  SOS1_RegUp_max_RT(g1,s2,t6): RUp(g1,s2,t6) + SOS1_RegUp_max_RT(g1,s2,t6)
-   = 52
+   = 14.052156215
  SOS1_RegDown_max_RT(g1,s2,t6): RDn(g1,s2,t6)
-   + SOS1_RegDown_max_RT(g1,s2,t6) = 54.82962913000002
+   + SOS1_RegDown_max_RT(g1,s2,t6) = 45.947843785
  SOS1_RegUp_max_RT(g1,s2,t7): RUp(g1,s2,t7) + SOS1_RegUp_max_RT(g1,s2,t7)
-   = 52
+   = 12.95995847
  SOS1_RegDown_max_RT(g1,s2,t7): RDn(g1,s2,t7)
-   + SOS1_RegDown_max_RT(g1,s2,t7) = 55
+   + SOS1_RegDown_max_RT(g1,s2,t7) = 47.04004153
  SOS1_RegUp_max_RT(g1,s2,t8): RUp(g1,s2,t8) + SOS1_RegUp_max_RT(g1,s2,t8)
-   = 52
+   = 11.376331265
  SOS1_RegDown_max_RT(g1,s2,t8): RDn(g1,s2,t8)
-   + SOS1_RegDown_max_RT(g1,s2,t8) = 54.82962913000002
+   + SOS1_RegDown_max_RT(g1,s2,t8) = 48.623668735
  SOS1_RegUp_max_RT(g1,s2,t9): RUp(g1,s2,t9) + SOS1_RegUp_max_RT(g1,s2,t9)
-   = 52
+   = 11.54778972
  SOS1_RegDown_max_RT(g1,s2,t9): RDn(g1,s2,t9)
-   + SOS1_RegDown_max_RT(g1,s2,t9) = 54.33012702000001
+   + SOS1_RegDown_max_RT(g1,s2,t9) = 48.45221028
  SOS1_RegUp_max_RT(g1,s2,t10): RUp(g1,s2,t10)
-   + SOS1_RegUp_max_RT(g1,s2,t10) = 52
+   + SOS1_RegUp_max_RT(g1,s2,t10) = 14.29350291
  SOS1_RegDown_max_RT(g1,s2,t10): RDn(g1,s2,t10)
-   + SOS1_RegDown_max_RT(g1,s2,t10) = 53.53553391000001
+   + SOS1_RegDown_max_RT(g1,s2,t10) = 45.70649709
  SOS1_RegUp_max_RT(g1,s2,t11): RUp(g1,s2,t11)
-   + SOS1_RegUp_max_RT(g1,s2,t11) = 52
+   + SOS1_RegUp_max_RT(g1,s2,t11) = 17.753729715
  SOS1_RegDown_max_RT(g1,s2,t11): RDn(g1,s2,t11)
-   + SOS1_RegDown_max_RT(g1,s2,t11) = 52.5
+   + SOS1_RegDown_max_RT(g1,s2,t11) = 42.246270285
  SOS1_RegUp_max_RT(g1,s2,t12): RUp(g1,s2,t12)
-   + SOS1_RegUp_max_RT(g1,s2,t12) = 52.07690630999986
+   + SOS1_RegUp_max_RT(g1,s2,t12) = 20.367043445
  SOS1_RegDown_max_RT(g1,s2,t12): RDn(g1,s2,t12)
-   + SOS1_RegDown_max_RT(g1,s2,t12) = 51.29409523000002
+   + SOS1_RegDown_max_RT(g1,s2,t12) = 39.632956555
  SOS1_RegUp_max_RT(g1,s2,t13): RUp(g1,s2,t13)
-   + SOS1_RegUp_max_RT(g1,s2,t13) = 54.73093515999987
+   + SOS1_RegUp_max_RT(g1,s2,t13) = 26.17232308
  SOS1_RegDown_max_RT(g1,s2,t13): RDn(g1,s2,t13)
-   + SOS1_RegDown_max_RT(g1,s2,t13) = 50
+   + SOS1_RegDown_max_RT(g1,s2,t13) = 33.82767692
  SOS1_RegUp_max_RT(g1,s2,t14): RUp(g1,s2,t14)
-   + SOS1_RegUp_max_RT(g1,s2,t14) = 58.09052836999988
+   + SOS1_RegUp_max_RT(g1,s2,t14) = 21.27470784000001
  SOS1_RegDown_max_RT(g1,s2,t14): RDn(g1,s2,t14)
-   + SOS1_RegDown_max_RT(g1,s2,t14) = 48.70590477000001
+   + SOS1_RegDown_max_RT(g1,s2,t14) = 38.72529216
  SOS1_RegUp_max_RT(g1,s2,t15): RUp(g1,s2,t15)
-   + SOS1_RegUp_max_RT(g1,s2,t15) = 60.98102804999993
+   + SOS1_RegUp_max_RT(g1,s2,t15) = 23.67659936
  SOS1_RegDown_max_RT(g1,s2,t15): RDn(g1,s2,t15)
-   + SOS1_RegDown_max_RT(g1,s2,t15) = 47.5
+   + SOS1_RegDown_max_RT(g1,s2,t15) = 36.32340064
  SOS1_RegUp_max_RT(g1,s2,t16): RUp(g1,s2,t16)
-   + SOS1_RegUp_max_RT(g1,s2,t16) = 62.92976345999993
+   + SOS1_RegUp_max_RT(g1,s2,t16) = 21.75302969
  SOS1_RegDown_max_RT(g1,s2,t16): RDn(g1,s2,t16)
-   + SOS1_RegDown_max_RT(g1,s2,t16) = 46.46446609000001
+   + SOS1_RegDown_max_RT(g1,s2,t16) = 38.24697031
  SOS1_RegUp_max_RT(g1,s2,t17): RUp(g1,s2,t17)
-   + SOS1_RegUp_max_RT(g1,s2,t17) = 63.89658320999993
+   + SOS1_RegUp_max_RT(g1,s2,t17) = 26.5174973
  SOS1_RegDown_max_RT(g1,s2,t17): RDn(g1,s2,t17)
-   + SOS1_RegDown_max_RT(g1,s2,t17) = 45.66987298000001
+   + SOS1_RegDown_max_RT(g1,s2,t17) = 33.4825027
  SOS1_RegUp_max_RT(g1,s2,t18): RUp(g1,s2,t18)
-   + SOS1_RegUp_max_RT(g1,s2,t18) = 64.69506445999994
+   + SOS1_RegUp_max_RT(g1,s2,t18) = 28.6755783
  SOS1_RegDown_max_RT(g1,s2,t18): RDn(g1,s2,t18)
-   + SOS1_RegDown_max_RT(g1,s2,t18) = 45.17037087000001
+   + SOS1_RegDown_max_RT(g1,s2,t18) = 31.3244217
  SOS1_RegUp_max_RT(g1,s2,t19): RUp(g1,s2,t19)
-   + SOS1_RegUp_max_RT(g1,s2,t19) = 64.88825650999993
+   + SOS1_RegUp_max_RT(g1,s2,t19) = 25.52609511
  SOS1_RegDown_max_RT(g1,s2,t19): RDn(g1,s2,t19)
-   + SOS1_RegDown_max_RT(g1,s2,t19) = 45
+   + SOS1_RegDown_max_RT(g1,s2,t19) = 34.47390489
  SOS1_RegUp_max_RT(g1,s2,t20): RUp(g1,s2,t20)
-   + SOS1_RegUp_max_RT(g1,s2,t20) = 64.37685925999995
+   + SOS1_RegUp_max_RT(g1,s2,t20) = 24.44621097
  SOS1_RegDown_max_RT(g1,s2,t20): RDn(g1,s2,t20)
-   + SOS1_RegDown_max_RT(g1,s2,t20) = 45.17037087000001
+   + SOS1_RegDown_max_RT(g1,s2,t20) = 35.55378903
  SOS1_RegUp_max_RT(g1,s2,t21): RUp(g1,s2,t21)
-   + SOS1_RegUp_max_RT(g1,s2,t21) = 63.08545184999994
+   + SOS1_RegUp_max_RT(g1,s2,t21) = 24.41045447
  SOS1_RegDown_max_RT(g1,s2,t21): RDn(g1,s2,t21)
-   + SOS1_RegDown_max_RT(g1,s2,t21) = 45.66987298000001
+   + SOS1_RegDown_max_RT(g1,s2,t21) = 35.58954553
  SOS1_RegUp_max_RT(g1,s2,t22): RUp(g1,s2,t22)
-   + SOS1_RegUp_max_RT(g1,s2,t22) = 61.31823176999992
+   + SOS1_RegUp_max_RT(g1,s2,t22) = 25.1876795
  SOS1_RegDown_max_RT(g1,s2,t22): RDn(g1,s2,t22)
-   + SOS1_RegDown_max_RT(g1,s2,t22) = 46.46446609000001
+   + SOS1_RegDown_max_RT(g1,s2,t22) = 34.8123205
  SOS1_RegUp_max_RT(g1,s2,t23): RUp(g1,s2,t23)
-   + SOS1_RegUp_max_RT(g1,s2,t23) = 58.94173394999992
+   + SOS1_RegUp_max_RT(g1,s2,t23) = 26.31197936
  SOS1_RegDown_max_RT(g1,s2,t23): RDn(g1,s2,t23)
-   + SOS1_RegDown_max_RT(g1,s2,t23) = 47.5
+   + SOS1_RegDown_max_RT(g1,s2,t23) = 33.68802064
  SOS1_RegUp_max_RT(g1,s2,t24): RUp(g1,s2,t24)
-   + SOS1_RegUp_max_RT(g1,s2,t24) = 55.84206607999997
+   + SOS1_RegUp_max_RT(g1,s2,t24) = 32.39796547500001
  SOS1_RegDown_max_RT(g1,s2,t24): RDn(g1,s2,t24)
-   + SOS1_RegDown_max_RT(g1,s2,t24) = 48.70590477000001
+   + SOS1_RegDown_max_RT(g1,s2,t24) = 27.60203452499999
  SOS1_RegUpSC_max_RT(g1,s1,t1): RUpSC(g1,s1,t1)
-   + SOS1_RegUpSC_max_RT(g1,s1,t1) = 40.31923799000012
+   + SOS1_RegUpSC_max_RT(g1,s1,t1) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t1): RDnSC(g1,s1,t1)
    + SOS1_RegDnSC_max_RT(g1,s1,t1) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t2): RUpSC(g1,s1,t2)
-   + SOS1_RegUpSC_max_RT(g1,s1,t2) = 41.38986997000012
+   + SOS1_RegUpSC_max_RT(g1,s1,t2) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t2): RDnSC(g1,s1,t2)
    + SOS1_RegDnSC_max_RT(g1,s1,t2) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t3): RUpSC(g1,s1,t3)
-   + SOS1_RegUpSC_max_RT(g1,s1,t3) = 42.15065781000011
+   + SOS1_RegUpSC_max_RT(g1,s1,t3) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t3): RDnSC(g1,s1,t3)
    + SOS1_RegDnSC_max_RT(g1,s1,t3) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t4): RUpSC(g1,s1,t4)
-   + SOS1_RegUpSC_max_RT(g1,s1,t4) = 43.64778429000011
+   + SOS1_RegUpSC_max_RT(g1,s1,t4) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t4): RDnSC(g1,s1,t4)
    + SOS1_RegDnSC_max_RT(g1,s1,t4) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t5): RUpSC(g1,s1,t5)
-   + SOS1_RegUpSC_max_RT(g1,s1,t5) = 44.29257213000011
+   + SOS1_RegUpSC_max_RT(g1,s1,t5) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t5): RDnSC(g1,s1,t5)
    + SOS1_RegDnSC_max_RT(g1,s1,t5) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t6): RUpSC(g1,s1,t6)
-   + SOS1_RegUpSC_max_RT(g1,s1,t6) = 45.17037086999999
+   + SOS1_RegUpSC_max_RT(g1,s1,t6) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t6): RDnSC(g1,s1,t6)
    + SOS1_RegDnSC_max_RT(g1,s1,t6) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t7): RUpSC(g1,s1,t7)
-   + SOS1_RegUpSC_max_RT(g1,s1,t7) = 45
+   + SOS1_RegUpSC_max_RT(g1,s1,t7) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t7): RDnSC(g1,s1,t7)
    + SOS1_RegDnSC_max_RT(g1,s1,t7) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t8): RUpSC(g1,s1,t8)
-   + SOS1_RegUpSC_max_RT(g1,s1,t8) = 45.17037086999999
+   + SOS1_RegUpSC_max_RT(g1,s1,t8) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t8): RDnSC(g1,s1,t8)
    + SOS1_RegDnSC_max_RT(g1,s1,t8) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t9): RUpSC(g1,s1,t9)
-   + SOS1_RegUpSC_max_RT(g1,s1,t9) = 45.66987297999999
+   + SOS1_RegUpSC_max_RT(g1,s1,t9) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t9): RDnSC(g1,s1,t9)
    + SOS1_RegDnSC_max_RT(g1,s1,t9) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t10): RUpSC(g1,s1,t10)
-   + SOS1_RegUpSC_max_RT(g1,s1,t10) = 46.46446608999999
+   + SOS1_RegUpSC_max_RT(g1,s1,t10) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t10): RDnSC(g1,s1,t10)
    + SOS1_RegDnSC_max_RT(g1,s1,t10) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t11): RUpSC(g1,s1,t11)
-   + SOS1_RegUpSC_max_RT(g1,s1,t11) = 47.5
+   + SOS1_RegUpSC_max_RT(g1,s1,t11) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t11): RDnSC(g1,s1,t11)
    + SOS1_RegDnSC_max_RT(g1,s1,t11) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t12): RUpSC(g1,s1,t12)
-   + SOS1_RegUpSC_max_RT(g1,s1,t12) = 48.62899846000012
+   + SOS1_RegUpSC_max_RT(g1,s1,t12) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t12): RDnSC(g1,s1,t12)
    + SOS1_RegDnSC_max_RT(g1,s1,t12) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t13): RUpSC(g1,s1,t13)
-   + SOS1_RegUpSC_max_RT(g1,s1,t13) = 47.26906484000011
+   + SOS1_RegUpSC_max_RT(g1,s1,t13) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t13): RDnSC(g1,s1,t13)
    + SOS1_RegDnSC_max_RT(g1,s1,t13) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t14): RUpSC(g1,s1,t14)
-   + SOS1_RegUpSC_max_RT(g1,s1,t14) = 45.20356686000011
+   + SOS1_RegUpSC_max_RT(g1,s1,t14) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t14): RDnSC(g1,s1,t14)
    + SOS1_RegDnSC_max_RT(g1,s1,t14) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t15): RUpSC(g1,s1,t15)
-   + SOS1_RegUpSC_max_RT(g1,s1,t15) = 43.51897195000007
+   + SOS1_RegUpSC_max_RT(g1,s1,t15) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t15): RDnSC(g1,s1,t15)
    + SOS1_RegDnSC_max_RT(g1,s1,t15) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t16): RUpSC(g1,s1,t16)
-   + SOS1_RegUpSC_max_RT(g1,s1,t16) = 42.60577045000007
+   + SOS1_RegUpSC_max_RT(g1,s1,t16) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t16): RDnSC(g1,s1,t16)
    + SOS1_RegDnSC_max_RT(g1,s1,t16) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t17): RUpSC(g1,s1,t17)
-   + SOS1_RegUpSC_max_RT(g1,s1,t17) = 42.43354381000005
+   + SOS1_RegUpSC_max_RT(g1,s1,t17) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t17): RDnSC(g1,s1,t17)
    + SOS1_RegDnSC_max_RT(g1,s1,t17) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t18): RUpSC(g1,s1,t18)
-   + SOS1_RegUpSC_max_RT(g1,s1,t18) = 42.13456467000006
+   + SOS1_RegUpSC_max_RT(g1,s1,t18) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t18): RDnSC(g1,s1,t18)
    + SOS1_RegDnSC_max_RT(g1,s1,t18) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t19): RUpSC(g1,s1,t19)
-   + SOS1_RegUpSC_max_RT(g1,s1,t19) = 42.11174349000007
+   + SOS1_RegUpSC_max_RT(g1,s1,t19) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t19): RDnSC(g1,s1,t19)
    + SOS1_RegDnSC_max_RT(g1,s1,t19) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t20): RUpSC(g1,s1,t20)
-   + SOS1_RegUpSC_max_RT(g1,s1,t20) = 42.45276987000006
+   + SOS1_RegUpSC_max_RT(g1,s1,t20) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t20): RDnSC(g1,s1,t20)
    + SOS1_RegDnSC_max_RT(g1,s1,t20) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t21): RUpSC(g1,s1,t21)
-   + SOS1_RegUpSC_max_RT(g1,s1,t21) = 43.24467517000005
+   + SOS1_RegUpSC_max_RT(g1,s1,t21) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t21): RDnSC(g1,s1,t21)
    + SOS1_RegDnSC_max_RT(g1,s1,t21) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t22): RUpSC(g1,s1,t22)
-   + SOS1_RegUpSC_max_RT(g1,s1,t22) = 44.21730214000007
+   + SOS1_RegUpSC_max_RT(g1,s1,t22) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t22): RDnSC(g1,s1,t22)
    + SOS1_RegDnSC_max_RT(g1,s1,t22) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t23): RUpSC(g1,s1,t23)
-   + SOS1_RegUpSC_max_RT(g1,s1,t23) = 45.55826605000006
+   + SOS1_RegUpSC_max_RT(g1,s1,t23) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t23): RDnSC(g1,s1,t23)
    + SOS1_RegDnSC_max_RT(g1,s1,t23) = 0
  SOS1_RegUpSC_max_RT(g1,s1,t24): RUpSC(g1,s1,t24)
-   + SOS1_RegUpSC_max_RT(g1,s1,t24) = 47.45202915000001
+   + SOS1_RegUpSC_max_RT(g1,s1,t24) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t24): RDnSC(g1,s1,t24)
    + SOS1_RegDnSC_max_RT(g1,s1,t24) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t1): RUpSC(g1,s2,t1)
-   + SOS1_RegUpSC_max_RT(g1,s2,t1) = 40.31923799000012
+   + SOS1_RegUpSC_max_RT(g1,s2,t1) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t1): RDnSC(g1,s2,t1)
    + SOS1_RegDnSC_max_RT(g1,s2,t1) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t2): RUpSC(g1,s2,t2)
-   + SOS1_RegUpSC_max_RT(g1,s2,t2) = 41.38986997000012
+   + SOS1_RegUpSC_max_RT(g1,s2,t2) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t2): RDnSC(g1,s2,t2)
    + SOS1_RegDnSC_max_RT(g1,s2,t2) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t3): RUpSC(g1,s2,t3)
-   + SOS1_RegUpSC_max_RT(g1,s2,t3) = 42.15065781000011
+   + SOS1_RegUpSC_max_RT(g1,s2,t3) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t3): RDnSC(g1,s2,t3)
    + SOS1_RegDnSC_max_RT(g1,s2,t3) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t4): RUpSC(g1,s2,t4)
-   + SOS1_RegUpSC_max_RT(g1,s2,t4) = 43.64778429000011
+   + SOS1_RegUpSC_max_RT(g1,s2,t4) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t4): RDnSC(g1,s2,t4)
    + SOS1_RegDnSC_max_RT(g1,s2,t4) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t5): RUpSC(g1,s2,t5)
-   + SOS1_RegUpSC_max_RT(g1,s2,t5) = 44.29257213000011
+   + SOS1_RegUpSC_max_RT(g1,s2,t5) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t5): RDnSC(g1,s2,t5)
    + SOS1_RegDnSC_max_RT(g1,s2,t5) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t6): RUpSC(g1,s2,t6)
-   + SOS1_RegUpSC_max_RT(g1,s2,t6) = 45.17037086999999
+   + SOS1_RegUpSC_max_RT(g1,s2,t6) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t6): RDnSC(g1,s2,t6)
    + SOS1_RegDnSC_max_RT(g1,s2,t6) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t7): RUpSC(g1,s2,t7)
-   + SOS1_RegUpSC_max_RT(g1,s2,t7) = 45
+   + SOS1_RegUpSC_max_RT(g1,s2,t7) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t7): RDnSC(g1,s2,t7)
    + SOS1_RegDnSC_max_RT(g1,s2,t7) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t8): RUpSC(g1,s2,t8)
-   + SOS1_RegUpSC_max_RT(g1,s2,t8) = 45.17037086999999
+   + SOS1_RegUpSC_max_RT(g1,s2,t8) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t8): RDnSC(g1,s2,t8)
    + SOS1_RegDnSC_max_RT(g1,s2,t8) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t9): RUpSC(g1,s2,t9)
-   + SOS1_RegUpSC_max_RT(g1,s2,t9) = 45.66987297999999
+   + SOS1_RegUpSC_max_RT(g1,s2,t9) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t9): RDnSC(g1,s2,t9)
    + SOS1_RegDnSC_max_RT(g1,s2,t9) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t10): RUpSC(g1,s2,t10)
-   + SOS1_RegUpSC_max_RT(g1,s2,t10) = 46.46446608999999
+   + SOS1_RegUpSC_max_RT(g1,s2,t10) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t10): RDnSC(g1,s2,t10)
    + SOS1_RegDnSC_max_RT(g1,s2,t10) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t11): RUpSC(g1,s2,t11)
-   + SOS1_RegUpSC_max_RT(g1,s2,t11) = 47.5
+   + SOS1_RegUpSC_max_RT(g1,s2,t11) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t11): RDnSC(g1,s2,t11)
    + SOS1_RegDnSC_max_RT(g1,s2,t11) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t12): RUpSC(g1,s2,t12)
-   + SOS1_RegUpSC_max_RT(g1,s2,t12) = 48.62899846000012
+   + SOS1_RegUpSC_max_RT(g1,s2,t12) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t12): RDnSC(g1,s2,t12)
    + SOS1_RegDnSC_max_RT(g1,s2,t12) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t13): RUpSC(g1,s2,t13)
-   + SOS1_RegUpSC_max_RT(g1,s2,t13) = 47.26906484000011
+   + SOS1_RegUpSC_max_RT(g1,s2,t13) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t13): RDnSC(g1,s2,t13)
    + SOS1_RegDnSC_max_RT(g1,s2,t13) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t14): RUpSC(g1,s2,t14)
-   + SOS1_RegUpSC_max_RT(g1,s2,t14) = 45.20356686000011
+   + SOS1_RegUpSC_max_RT(g1,s2,t14) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t14): RDnSC(g1,s2,t14)
    + SOS1_RegDnSC_max_RT(g1,s2,t14) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t15): RUpSC(g1,s2,t15)
-   + SOS1_RegUpSC_max_RT(g1,s2,t15) = 43.51897195000007
+   + SOS1_RegUpSC_max_RT(g1,s2,t15) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t15): RDnSC(g1,s2,t15)
    + SOS1_RegDnSC_max_RT(g1,s2,t15) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t16): RUpSC(g1,s2,t16)
-   + SOS1_RegUpSC_max_RT(g1,s2,t16) = 42.60577045000007
+   + SOS1_RegUpSC_max_RT(g1,s2,t16) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t16): RDnSC(g1,s2,t16)
    + SOS1_RegDnSC_max_RT(g1,s2,t16) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t17): RUpSC(g1,s2,t17)
-   + SOS1_RegUpSC_max_RT(g1,s2,t17) = 42.43354381000005
+   + SOS1_RegUpSC_max_RT(g1,s2,t17) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t17): RDnSC(g1,s2,t17)
    + SOS1_RegDnSC_max_RT(g1,s2,t17) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t18): RUpSC(g1,s2,t18)
-   + SOS1_RegUpSC_max_RT(g1,s2,t18) = 42.13456467000006
+   + SOS1_RegUpSC_max_RT(g1,s2,t18) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t18): RDnSC(g1,s2,t18)
    + SOS1_RegDnSC_max_RT(g1,s2,t18) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t19): RUpSC(g1,s2,t19)
-   + SOS1_RegUpSC_max_RT(g1,s2,t19) = 42.11174349000007
+   + SOS1_RegUpSC_max_RT(g1,s2,t19) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t19): RDnSC(g1,s2,t19)
    + SOS1_RegDnSC_max_RT(g1,s2,t19) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t20): RUpSC(g1,s2,t20)
-   + SOS1_RegUpSC_max_RT(g1,s2,t20) = 42.45276987000006
+   + SOS1_RegUpSC_max_RT(g1,s2,t20) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t20): RDnSC(g1,s2,t20)
    + SOS1_RegDnSC_max_RT(g1,s2,t20) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t21): RUpSC(g1,s2,t21)
-   + SOS1_RegUpSC_max_RT(g1,s2,t21) = 43.24467517000005
+   + SOS1_RegUpSC_max_RT(g1,s2,t21) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t21): RDnSC(g1,s2,t21)
    + SOS1_RegDnSC_max_RT(g1,s2,t21) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t22): RUpSC(g1,s2,t22)
-   + SOS1_RegUpSC_max_RT(g1,s2,t22) = 44.21730214000007
+   + SOS1_RegUpSC_max_RT(g1,s2,t22) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t22): RDnSC(g1,s2,t22)
    + SOS1_RegDnSC_max_RT(g1,s2,t22) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t23): RUpSC(g1,s2,t23)
-   + SOS1_RegUpSC_max_RT(g1,s2,t23) = 45.55826605000006
+   + SOS1_RegUpSC_max_RT(g1,s2,t23) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t23): RDnSC(g1,s2,t23)
    + SOS1_RegDnSC_max_RT(g1,s2,t23) = 0
  SOS1_RegUpSC_max_RT(g1,s2,t24): RUpSC(g1,s2,t24)
-   + SOS1_RegUpSC_max_RT(g1,s2,t24) = 47.45202915000001
+   + SOS1_RegUpSC_max_RT(g1,s2,t24) = 0
  SOS1_RegDnSC_max_RT(g1,s2,t24): RDnSC(g1,s2,t24)
    + SOS1_RegDnSC_max_RT(g1,s2,t24) = 0
  SOS1_Max_load_shed_RT(s1,t1): Lshed(s1,t1) + SOS1_Max_load_shed_RT(s1,t1)
@@ -949,101 +986,101 @@ Subject To
  SOS1_Max_load_shed_RT(s2,t24): Lshed(s2,t24)
    + SOS1_Max_load_shed_RT(s2,t24) = 48.70590477
  SOS1_Max_wind_spill_RT(w1,s1,t1): Wspill(w1,s1,t1)
-   + SOS1_Max_wind_spill_RT(w1,s1,t1) = 19.36152399
+   + SOS1_Max_wind_spill_RT(w1,s1,t1) = 13.64523828
  SOS1_Max_wind_spill_RT(w1,s1,t2): Wspill(w1,s1,t2)
-   + SOS1_Max_wind_spill_RT(w1,s1,t2) = 19.80845052
+   + SOS1_Max_wind_spill_RT(w1,s1,t2) = 14.13210003
  SOS1_Max_wind_spill_RT(w1,s1,t3): Wspill(w1,s1,t3)
-   + SOS1_Max_wind_spill_RT(w1,s1,t3) = 20.69868435
+   + SOS1_Max_wind_spill_RT(w1,s1,t3) = 9.571274219999999
  SOS1_Max_wind_spill_RT(w1,s1,t4): Wspill(w1,s1,t4)
-   + SOS1_Max_wind_spill_RT(w1,s1,t4) = 19.77549921
+   + SOS1_Max_wind_spill_RT(w1,s1,t4) = 10.24495167
  SOS1_Max_wind_spill_RT(w1,s1,t5): Wspill(w1,s1,t5)
-   + SOS1_Max_wind_spill_RT(w1,s1,t5) = 20.07510975
+   + SOS1_Max_wind_spill_RT(w1,s1,t5) = 13.37112045
  SOS1_Max_wind_spill_RT(w1,s1,t6): Wspill(w1,s1,t6)
-   + SOS1_Max_wind_spill_RT(w1,s1,t6) = 18.16891905
+   + SOS1_Max_wind_spill_RT(w1,s1,t6) = 15.9762591
  SOS1_Max_wind_spill_RT(w1,s1,t7): Wspill(w1,s1,t7)
-   + SOS1_Max_wind_spill_RT(w1,s1,t7) = 16.59465834
+   + SOS1_Max_wind_spill_RT(w1,s1,t7) = 13.09757973
  SOS1_Max_wind_spill_RT(w1,s1,t8): Wspill(w1,s1,t8)
-   + SOS1_Max_wind_spill_RT(w1,s1,t8) = 13.34680944
+   + SOS1_Max_wind_spill_RT(w1,s1,t8) = 9.348263729999999
  SOS1_Max_wind_spill_RT(w1,s1,t9): Wspill(w1,s1,t9)
-   + SOS1_Max_wind_spill_RT(w1,s1,t9) = 10.47638364
+   + SOS1_Max_wind_spill_RT(w1,s1,t9) = 8.03252799
  SOS1_Max_wind_spill_RT(w1,s1,t10): Wspill(w1,s1,t10)
-   + SOS1_Max_wind_spill_RT(w1,s1,t10) = 7.749192330000001
+   + SOS1_Max_wind_spill_RT(w1,s1,t10) = 9.780529290000001
  SOS1_Max_wind_spill_RT(w1,s1,t11): Wspill(w1,s1,t11)
-   + SOS1_Max_wind_spill_RT(w1,s1,t11) = 5.964156719999999
+   + SOS1_Max_wind_spill_RT(w1,s1,t11) = 13.23691422
  SOS1_Max_wind_spill_RT(w1,s1,t12): Wspill(w1,s1,t12)
-   + SOS1_Max_wind_spill_RT(w1,s1,t12) = 5.33019351
+   + SOS1_Max_wind_spill_RT(w1,s1,t12) = 14.79118329
  SOS1_Max_wind_spill_RT(w1,s1,t13): Wspill(w1,s1,t13)
-   + SOS1_Max_wind_spill_RT(w1,s1,t13) = 5.461870319999999
+   + SOS1_Max_wind_spill_RT(w1,s1,t13) = 22.67129373
  SOS1_Max_wind_spill_RT(w1,s1,t14): Wspill(w1,s1,t14)
-   + SOS1_Max_wind_spill_RT(w1,s1,t14) = 7.004675819999999
+   + SOS1_Max_wind_spill_RT(w1,s1,t14) = 23.25377463
  SOS1_Max_wind_spill_RT(w1,s1,t15): Wspill(w1,s1,t15)
-   + SOS1_Max_wind_spill_RT(w1,s1,t15) = 7.9620561
+   + SOS1_Max_wind_spill_RT(w1,s1,t15) = 24.08429517
  SOS1_Max_wind_spill_RT(w1,s1,t16): Wspill(w1,s1,t16)
-   + SOS1_Max_wind_spill_RT(w1,s1,t16) = 7.71739128
+   + SOS1_Max_wind_spill_RT(w1,s1,t16) = 25.67222511
  SOS1_Max_wind_spill_RT(w1,s1,t17): Wspill(w1,s1,t17)
-   + SOS1_Max_wind_spill_RT(w1,s1,t17) = 6.47265831
+   + SOS1_Max_wind_spill_RT(w1,s1,t17) = 26.96292903
  SOS1_Max_wind_spill_RT(w1,s1,t18): Wspill(w1,s1,t18)
-   + SOS1_Max_wind_spill_RT(w1,s1,t18) = 6.07161237
+   + SOS1_Max_wind_spill_RT(w1,s1,t18) = 27.84705837
  SOS1_Max_wind_spill_RT(w1,s1,t19): Wspill(w1,s1,t19)
-   + SOS1_Max_wind_spill_RT(w1,s1,t19) = 5.776513019999999
+   + SOS1_Max_wind_spill_RT(w1,s1,t19) = 27.97611309
  SOS1_Max_wind_spill_RT(w1,s1,t20): Wspill(w1,s1,t20)
-   + SOS1_Max_wind_spill_RT(w1,s1,t20) = 5.435201999999999
+   + SOS1_Max_wind_spill_RT(w1,s1,t20) = 26.64932952
  SOS1_Max_wind_spill_RT(w1,s1,t21): Wspill(w1,s1,t21)
-   + SOS1_Max_wind_spill_RT(w1,s1,t21) = 4.850395590000001
+   + SOS1_Max_wind_spill_RT(w1,s1,t21) = 27.01809513
  SOS1_Max_wind_spill_RT(w1,s1,t22): Wspill(w1,s1,t22)
-   + SOS1_Max_wind_spill_RT(w1,s1,t22) = 4.4943279
+   + SOS1_Max_wind_spill_RT(w1,s1,t22) = 28.32297243
  SOS1_Max_wind_spill_RT(w1,s1,t23): Wspill(w1,s1,t23)
-   + SOS1_Max_wind_spill_RT(w1,s1,t23) = 3.88346787
+   + SOS1_Max_wind_spill_RT(w1,s1,t23) = 28.87685715
  SOS1_Max_wind_spill_RT(w1,s1,t24): Wspill(w1,s1,t24)
-   + SOS1_Max_wind_spill_RT(w1,s1,t24) = 2.50775121
+   + SOS1_Max_wind_spill_RT(w1,s1,t24) = 28.64355426
  SOS1_Max_wind_spill_RT(w1,s2,t1): Wspill(w1,s2,t1)
-   + SOS1_Max_wind_spill_RT(w1,s2,t1) = 9.680762009999999
+   + SOS1_Max_wind_spill_RT(w1,s2,t1) = 15.6405261
  SOS1_Max_wind_spill_RT(w1,s2,t2): Wspill(w1,s2,t2)
-   + SOS1_Max_wind_spill_RT(w1,s2,t2) = 9.904225260000001
+   + SOS1_Max_wind_spill_RT(w1,s2,t2) = 13.86895302
  SOS1_Max_wind_spill_RT(w1,s2,t3): Wspill(w1,s2,t3)
-   + SOS1_Max_wind_spill_RT(w1,s2,t3) = 10.34934219
+   + SOS1_Max_wind_spill_RT(w1,s2,t3) = 6.45881973
  SOS1_Max_wind_spill_RT(w1,s2,t4): Wspill(w1,s2,t4)
-   + SOS1_Max_wind_spill_RT(w1,s2,t4) = 9.887749620000001
+   + SOS1_Max_wind_spill_RT(w1,s2,t4) = 2.52463722
  SOS1_Max_wind_spill_RT(w1,s2,t5): Wspill(w1,s2,t5)
-   + SOS1_Max_wind_spill_RT(w1,s2,t5) = 10.03755489
+   + SOS1_Max_wind_spill_RT(w1,s2,t5) = 1.46566404
  SOS1_Max_wind_spill_RT(w1,s2,t6): Wspill(w1,s2,t6)
-   + SOS1_Max_wind_spill_RT(w1,s2,t6) = 9.084459539999999
+   + SOS1_Max_wind_spill_RT(w1,s2,t6) = 1.78731159
  SOS1_Max_wind_spill_RT(w1,s2,t7): Wspill(w1,s2,t7)
-   + SOS1_Max_wind_spill_RT(w1,s2,t7) = 8.297329169999999
+   + SOS1_Max_wind_spill_RT(w1,s2,t7) = 2.82233721
  SOS1_Max_wind_spill_RT(w1,s2,t8): Wspill(w1,s2,t8)
-   + SOS1_Max_wind_spill_RT(w1,s2,t8) = 6.67340472
+   + SOS1_Max_wind_spill_RT(w1,s2,t8) = 3.06365706
  SOS1_Max_wind_spill_RT(w1,s2,t9): Wspill(w1,s2,t9)
-   + SOS1_Max_wind_spill_RT(w1,s2,t9) = 5.23819182
+   + SOS1_Max_wind_spill_RT(w1,s2,t9) = 3.72330549
  SOS1_Max_wind_spill_RT(w1,s2,t10): Wspill(w1,s2,t10)
-   + SOS1_Max_wind_spill_RT(w1,s2,t10) = 3.87459618
+   + SOS1_Max_wind_spill_RT(w1,s2,t10) = 5.87754435
  SOS1_Max_wind_spill_RT(w1,s2,t11): Wspill(w1,s2,t11)
-   + SOS1_Max_wind_spill_RT(w1,s2,t11) = 2.98207836
+   + SOS1_Max_wind_spill_RT(w1,s2,t11) = 7.27054521
  SOS1_Max_wind_spill_RT(w1,s2,t12): Wspill(w1,s2,t12)
-   + SOS1_Max_wind_spill_RT(w1,s2,t12) = 2.66509677
+   + SOS1_Max_wind_spill_RT(w1,s2,t12) = 8.531094060000001
  SOS1_Max_wind_spill_RT(w1,s2,t13): Wspill(w1,s2,t13)
-   + SOS1_Max_wind_spill_RT(w1,s2,t13) = 2.73093516
+   + SOS1_Max_wind_spill_RT(w1,s2,t13) = 9.673352430000001
  SOS1_Max_wind_spill_RT(w1,s2,t14): Wspill(w1,s2,t14)
-   + SOS1_Max_wind_spill_RT(w1,s2,t14) = 3.50233791
+   + SOS1_Max_wind_spill_RT(w1,s2,t14) = 9.98061261
  SOS1_Max_wind_spill_RT(w1,s2,t15): Wspill(w1,s2,t15)
-   + SOS1_Max_wind_spill_RT(w1,s2,t15) = 3.98102805
+   + SOS1_Max_wind_spill_RT(w1,s2,t15) = 11.17659936
  SOS1_Max_wind_spill_RT(w1,s2,t16): Wspill(w1,s2,t16)
-   + SOS1_Max_wind_spill_RT(w1,s2,t16) = 3.85869564
+   + SOS1_Max_wind_spill_RT(w1,s2,t16) = 8.21749578
  SOS1_Max_wind_spill_RT(w1,s2,t17): Wspill(w1,s2,t17)
-   + SOS1_Max_wind_spill_RT(w1,s2,t17) = 3.23632917
+   + SOS1_Max_wind_spill_RT(w1,s2,t17) = 12.18737028
  SOS1_Max_wind_spill_RT(w1,s2,t18): Wspill(w1,s2,t18)
-   + SOS1_Max_wind_spill_RT(w1,s2,t18) = 3.0358062
+   + SOS1_Max_wind_spill_RT(w1,s2,t18) = 13.84594917
  SOS1_Max_wind_spill_RT(w1,s2,t19): Wspill(w1,s2,t19)
-   + SOS1_Max_wind_spill_RT(w1,s2,t19) = 2.88825651
+   + SOS1_Max_wind_spill_RT(w1,s2,t19) = 10.52609511
  SOS1_Max_wind_spill_RT(w1,s2,t20): Wspill(w1,s2,t20)
-   + SOS1_Max_wind_spill_RT(w1,s2,t20) = 2.717601
+   + SOS1_Max_wind_spill_RT(w1,s2,t20) = 9.61658184
  SOS1_Max_wind_spill_RT(w1,s2,t21): Wspill(w1,s2,t21)
-   + SOS1_Max_wind_spill_RT(w1,s2,t21) = 2.42519781
+   + SOS1_Max_wind_spill_RT(w1,s2,t21) = 10.08032745
  SOS1_Max_wind_spill_RT(w1,s2,t22): Wspill(w1,s2,t22)
-   + SOS1_Max_wind_spill_RT(w1,s2,t22) = 2.24716395
+   + SOS1_Max_wind_spill_RT(w1,s2,t22) = 11.65214559
  SOS1_Max_wind_spill_RT(w1,s2,t23): Wspill(w1,s2,t23)
-   + SOS1_Max_wind_spill_RT(w1,s2,t23) = 1.94173395
+   + SOS1_Max_wind_spill_RT(w1,s2,t23) = 13.81197936
  SOS1_Max_wind_spill_RT(w1,s2,t24): Wspill(w1,s2,t24)
-   + SOS1_Max_wind_spill_RT(w1,s2,t24) = 1.25387562
+   + SOS1_Max_wind_spill_RT(w1,s2,t24) = 13.56418623
  SOS1_LB_RUp(g1,s1,t1): - RUp(g1,s1,t1) + SOS1_LB_RUp(g1,s1,t1) = 0
  SOS1_LB_RDn(g1,s1,t1): - RDn(g1,s1,t1) + SOS1_LB_RDn(g1,s1,t1) = 0
  SOS1_LB_RUpSC(g1,s1,t1): - RUpSC(g1,s1,t1) + SOS1_LB_RUpSC(g1,s1,t1) = 0
@@ -1445,9 +1482,9 @@ Subject To
  dLag/RDn(g1,s1,t1): lambda_PowerBalance_RT(s1,t1)
    + mu_RegDown_max_RT(g1,s1,t1) - muLB_RDn(g1,s1,t1) = 7.6
  dLag/RUpSC(g1,s1,t1): - lambda_PowerBalance_RT(s1,t1)
-   + mu_RegUpSC_max_RT(g1,s1,t1) - muLB_RUpSC(g1,s1,t1) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t1) - muLB_RUpSC(g1,s1,t1) = -12.6
  dLag/RDnSC(g1,s1,t1): lambda_PowerBalance_RT(s1,t1)
-   + mu_RegDnSC_max_RT(g1,s1,t1) - muLB_RDnSC(g1,s1,t1) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t1) - muLB_RDnSC(g1,s1,t1) = 11.4
  dLag/Wspill(w1,s1,t1): lambda_PowerBalance_RT(s1,t1)
    + mu_Max_wind_spill_RT(w1,s1,t1) - muLB_Wspill(w1,s1,t1) = 0
  dLag/Lshed(s1,t1): - lambda_PowerBalance_RT(s1,t1)
@@ -1457,9 +1494,9 @@ Subject To
  dLag/RDn(g1,s1,t2): lambda_PowerBalance_RT(s1,t2)
    + mu_RegDown_max_RT(g1,s1,t2) - muLB_RDn(g1,s1,t2) = 7.6
  dLag/RUpSC(g1,s1,t2): - lambda_PowerBalance_RT(s1,t2)
-   + mu_RegUpSC_max_RT(g1,s1,t2) - muLB_RUpSC(g1,s1,t2) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t2) - muLB_RUpSC(g1,s1,t2) = -12.6
  dLag/RDnSC(g1,s1,t2): lambda_PowerBalance_RT(s1,t2)
-   + mu_RegDnSC_max_RT(g1,s1,t2) - muLB_RDnSC(g1,s1,t2) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t2) - muLB_RDnSC(g1,s1,t2) = 11.4
  dLag/Wspill(w1,s1,t2): lambda_PowerBalance_RT(s1,t2)
    + mu_Max_wind_spill_RT(w1,s1,t2) - muLB_Wspill(w1,s1,t2) = 0
  dLag/Lshed(s1,t2): - lambda_PowerBalance_RT(s1,t2)
@@ -1469,9 +1506,9 @@ Subject To
  dLag/RDn(g1,s1,t3): lambda_PowerBalance_RT(s1,t3)
    + mu_RegDown_max_RT(g1,s1,t3) - muLB_RDn(g1,s1,t3) = 7.6
  dLag/RUpSC(g1,s1,t3): - lambda_PowerBalance_RT(s1,t3)
-   + mu_RegUpSC_max_RT(g1,s1,t3) - muLB_RUpSC(g1,s1,t3) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t3) - muLB_RUpSC(g1,s1,t3) = -12.6
  dLag/RDnSC(g1,s1,t3): lambda_PowerBalance_RT(s1,t3)
-   + mu_RegDnSC_max_RT(g1,s1,t3) - muLB_RDnSC(g1,s1,t3) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t3) - muLB_RDnSC(g1,s1,t3) = 11.4
  dLag/Wspill(w1,s1,t3): lambda_PowerBalance_RT(s1,t3)
    + mu_Max_wind_spill_RT(w1,s1,t3) - muLB_Wspill(w1,s1,t3) = 0
  dLag/Lshed(s1,t3): - lambda_PowerBalance_RT(s1,t3)
@@ -1481,9 +1518,9 @@ Subject To
  dLag/RDn(g1,s1,t4): lambda_PowerBalance_RT(s1,t4)
    + mu_RegDown_max_RT(g1,s1,t4) - muLB_RDn(g1,s1,t4) = 7.6
  dLag/RUpSC(g1,s1,t4): - lambda_PowerBalance_RT(s1,t4)
-   + mu_RegUpSC_max_RT(g1,s1,t4) - muLB_RUpSC(g1,s1,t4) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t4) - muLB_RUpSC(g1,s1,t4) = -12.6
  dLag/RDnSC(g1,s1,t4): lambda_PowerBalance_RT(s1,t4)
-   + mu_RegDnSC_max_RT(g1,s1,t4) - muLB_RDnSC(g1,s1,t4) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t4) - muLB_RDnSC(g1,s1,t4) = 11.4
  dLag/Wspill(w1,s1,t4): lambda_PowerBalance_RT(s1,t4)
    + mu_Max_wind_spill_RT(w1,s1,t4) - muLB_Wspill(w1,s1,t4) = 0
  dLag/Lshed(s1,t4): - lambda_PowerBalance_RT(s1,t4)
@@ -1493,9 +1530,9 @@ Subject To
  dLag/RDn(g1,s1,t5): lambda_PowerBalance_RT(s1,t5)
    + mu_RegDown_max_RT(g1,s1,t5) - muLB_RDn(g1,s1,t5) = 7.6
  dLag/RUpSC(g1,s1,t5): - lambda_PowerBalance_RT(s1,t5)
-   + mu_RegUpSC_max_RT(g1,s1,t5) - muLB_RUpSC(g1,s1,t5) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t5) - muLB_RUpSC(g1,s1,t5) = -12.6
  dLag/RDnSC(g1,s1,t5): lambda_PowerBalance_RT(s1,t5)
-   + mu_RegDnSC_max_RT(g1,s1,t5) - muLB_RDnSC(g1,s1,t5) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t5) - muLB_RDnSC(g1,s1,t5) = 11.4
  dLag/Wspill(w1,s1,t5): lambda_PowerBalance_RT(s1,t5)
    + mu_Max_wind_spill_RT(w1,s1,t5) - muLB_Wspill(w1,s1,t5) = 0
  dLag/Lshed(s1,t5): - lambda_PowerBalance_RT(s1,t5)
@@ -1505,9 +1542,9 @@ Subject To
  dLag/RDn(g1,s1,t6): lambda_PowerBalance_RT(s1,t6)
    + mu_RegDown_max_RT(g1,s1,t6) - muLB_RDn(g1,s1,t6) = 7.6
  dLag/RUpSC(g1,s1,t6): - lambda_PowerBalance_RT(s1,t6)
-   + mu_RegUpSC_max_RT(g1,s1,t6) - muLB_RUpSC(g1,s1,t6) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t6) - muLB_RUpSC(g1,s1,t6) = -12.6
  dLag/RDnSC(g1,s1,t6): lambda_PowerBalance_RT(s1,t6)
-   + mu_RegDnSC_max_RT(g1,s1,t6) - muLB_RDnSC(g1,s1,t6) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t6) - muLB_RDnSC(g1,s1,t6) = 11.4
  dLag/Wspill(w1,s1,t6): lambda_PowerBalance_RT(s1,t6)
    + mu_Max_wind_spill_RT(w1,s1,t6) - muLB_Wspill(w1,s1,t6) = 0
  dLag/Lshed(s1,t6): - lambda_PowerBalance_RT(s1,t6)
@@ -1517,9 +1554,9 @@ Subject To
  dLag/RDn(g1,s1,t7): lambda_PowerBalance_RT(s1,t7)
    + mu_RegDown_max_RT(g1,s1,t7) - muLB_RDn(g1,s1,t7) = 7.6
  dLag/RUpSC(g1,s1,t7): - lambda_PowerBalance_RT(s1,t7)
-   + mu_RegUpSC_max_RT(g1,s1,t7) - muLB_RUpSC(g1,s1,t7) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t7) - muLB_RUpSC(g1,s1,t7) = -12.6
  dLag/RDnSC(g1,s1,t7): lambda_PowerBalance_RT(s1,t7)
-   + mu_RegDnSC_max_RT(g1,s1,t7) - muLB_RDnSC(g1,s1,t7) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t7) - muLB_RDnSC(g1,s1,t7) = 11.4
  dLag/Wspill(w1,s1,t7): lambda_PowerBalance_RT(s1,t7)
    + mu_Max_wind_spill_RT(w1,s1,t7) - muLB_Wspill(w1,s1,t7) = 0
  dLag/Lshed(s1,t7): - lambda_PowerBalance_RT(s1,t7)
@@ -1529,9 +1566,9 @@ Subject To
  dLag/RDn(g1,s1,t8): lambda_PowerBalance_RT(s1,t8)
    + mu_RegDown_max_RT(g1,s1,t8) - muLB_RDn(g1,s1,t8) = 7.6
  dLag/RUpSC(g1,s1,t8): - lambda_PowerBalance_RT(s1,t8)
-   + mu_RegUpSC_max_RT(g1,s1,t8) - muLB_RUpSC(g1,s1,t8) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t8) - muLB_RUpSC(g1,s1,t8) = -12.6
  dLag/RDnSC(g1,s1,t8): lambda_PowerBalance_RT(s1,t8)
-   + mu_RegDnSC_max_RT(g1,s1,t8) - muLB_RDnSC(g1,s1,t8) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t8) - muLB_RDnSC(g1,s1,t8) = 11.4
  dLag/Wspill(w1,s1,t8): lambda_PowerBalance_RT(s1,t8)
    + mu_Max_wind_spill_RT(w1,s1,t8) - muLB_Wspill(w1,s1,t8) = 0
  dLag/Lshed(s1,t8): - lambda_PowerBalance_RT(s1,t8)
@@ -1541,9 +1578,9 @@ Subject To
  dLag/RDn(g1,s1,t9): lambda_PowerBalance_RT(s1,t9)
    + mu_RegDown_max_RT(g1,s1,t9) - muLB_RDn(g1,s1,t9) = 7.6
  dLag/RUpSC(g1,s1,t9): - lambda_PowerBalance_RT(s1,t9)
-   + mu_RegUpSC_max_RT(g1,s1,t9) - muLB_RUpSC(g1,s1,t9) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t9) - muLB_RUpSC(g1,s1,t9) = -12.6
  dLag/RDnSC(g1,s1,t9): lambda_PowerBalance_RT(s1,t9)
-   + mu_RegDnSC_max_RT(g1,s1,t9) - muLB_RDnSC(g1,s1,t9) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t9) - muLB_RDnSC(g1,s1,t9) = 11.4
  dLag/Wspill(w1,s1,t9): lambda_PowerBalance_RT(s1,t9)
    + mu_Max_wind_spill_RT(w1,s1,t9) - muLB_Wspill(w1,s1,t9) = 0
  dLag/Lshed(s1,t9): - lambda_PowerBalance_RT(s1,t9)
@@ -1553,9 +1590,9 @@ Subject To
  dLag/RDn(g1,s1,t10): lambda_PowerBalance_RT(s1,t10)
    + mu_RegDown_max_RT(g1,s1,t10) - muLB_RDn(g1,s1,t10) = 7.6
  dLag/RUpSC(g1,s1,t10): - lambda_PowerBalance_RT(s1,t10)
-   + mu_RegUpSC_max_RT(g1,s1,t10) - muLB_RUpSC(g1,s1,t10) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t10) - muLB_RUpSC(g1,s1,t10) = -12.6
  dLag/RDnSC(g1,s1,t10): lambda_PowerBalance_RT(s1,t10)
-   + mu_RegDnSC_max_RT(g1,s1,t10) - muLB_RDnSC(g1,s1,t10) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t10) - muLB_RDnSC(g1,s1,t10) = 11.4
  dLag/Wspill(w1,s1,t10): lambda_PowerBalance_RT(s1,t10)
    + mu_Max_wind_spill_RT(w1,s1,t10) - muLB_Wspill(w1,s1,t10) = 0
  dLag/Lshed(s1,t10): - lambda_PowerBalance_RT(s1,t10)
@@ -1565,9 +1602,9 @@ Subject To
  dLag/RDn(g1,s1,t11): lambda_PowerBalance_RT(s1,t11)
    + mu_RegDown_max_RT(g1,s1,t11) - muLB_RDn(g1,s1,t11) = 7.6
  dLag/RUpSC(g1,s1,t11): - lambda_PowerBalance_RT(s1,t11)
-   + mu_RegUpSC_max_RT(g1,s1,t11) - muLB_RUpSC(g1,s1,t11) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t11) - muLB_RUpSC(g1,s1,t11) = -12.6
  dLag/RDnSC(g1,s1,t11): lambda_PowerBalance_RT(s1,t11)
-   + mu_RegDnSC_max_RT(g1,s1,t11) - muLB_RDnSC(g1,s1,t11) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t11) - muLB_RDnSC(g1,s1,t11) = 11.4
  dLag/Wspill(w1,s1,t11): lambda_PowerBalance_RT(s1,t11)
    + mu_Max_wind_spill_RT(w1,s1,t11) - muLB_Wspill(w1,s1,t11) = 0
  dLag/Lshed(s1,t11): - lambda_PowerBalance_RT(s1,t11)
@@ -1577,9 +1614,9 @@ Subject To
  dLag/RDn(g1,s1,t12): lambda_PowerBalance_RT(s1,t12)
    + mu_RegDown_max_RT(g1,s1,t12) - muLB_RDn(g1,s1,t12) = 7.6
  dLag/RUpSC(g1,s1,t12): - lambda_PowerBalance_RT(s1,t12)
-   + mu_RegUpSC_max_RT(g1,s1,t12) - muLB_RUpSC(g1,s1,t12) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t12) - muLB_RUpSC(g1,s1,t12) = -12.6
  dLag/RDnSC(g1,s1,t12): lambda_PowerBalance_RT(s1,t12)
-   + mu_RegDnSC_max_RT(g1,s1,t12) - muLB_RDnSC(g1,s1,t12) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t12) - muLB_RDnSC(g1,s1,t12) = 11.4
  dLag/Wspill(w1,s1,t12): lambda_PowerBalance_RT(s1,t12)
    + mu_Max_wind_spill_RT(w1,s1,t12) - muLB_Wspill(w1,s1,t12) = 0
  dLag/Lshed(s1,t12): - lambda_PowerBalance_RT(s1,t12)
@@ -1589,9 +1626,9 @@ Subject To
  dLag/RDn(g1,s1,t13): lambda_PowerBalance_RT(s1,t13)
    + mu_RegDown_max_RT(g1,s1,t13) - muLB_RDn(g1,s1,t13) = 7.6
  dLag/RUpSC(g1,s1,t13): - lambda_PowerBalance_RT(s1,t13)
-   + mu_RegUpSC_max_RT(g1,s1,t13) - muLB_RUpSC(g1,s1,t13) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t13) - muLB_RUpSC(g1,s1,t13) = -12.6
  dLag/RDnSC(g1,s1,t13): lambda_PowerBalance_RT(s1,t13)
-   + mu_RegDnSC_max_RT(g1,s1,t13) - muLB_RDnSC(g1,s1,t13) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t13) - muLB_RDnSC(g1,s1,t13) = 11.4
  dLag/Wspill(w1,s1,t13): lambda_PowerBalance_RT(s1,t13)
    + mu_Max_wind_spill_RT(w1,s1,t13) - muLB_Wspill(w1,s1,t13) = 0
  dLag/Lshed(s1,t13): - lambda_PowerBalance_RT(s1,t13)
@@ -1601,9 +1638,9 @@ Subject To
  dLag/RDn(g1,s1,t14): lambda_PowerBalance_RT(s1,t14)
    + mu_RegDown_max_RT(g1,s1,t14) - muLB_RDn(g1,s1,t14) = 7.6
  dLag/RUpSC(g1,s1,t14): - lambda_PowerBalance_RT(s1,t14)
-   + mu_RegUpSC_max_RT(g1,s1,t14) - muLB_RUpSC(g1,s1,t14) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t14) - muLB_RUpSC(g1,s1,t14) = -12.6
  dLag/RDnSC(g1,s1,t14): lambda_PowerBalance_RT(s1,t14)
-   + mu_RegDnSC_max_RT(g1,s1,t14) - muLB_RDnSC(g1,s1,t14) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t14) - muLB_RDnSC(g1,s1,t14) = 11.4
  dLag/Wspill(w1,s1,t14): lambda_PowerBalance_RT(s1,t14)
    + mu_Max_wind_spill_RT(w1,s1,t14) - muLB_Wspill(w1,s1,t14) = 0
  dLag/Lshed(s1,t14): - lambda_PowerBalance_RT(s1,t14)
@@ -1613,9 +1650,9 @@ Subject To
  dLag/RDn(g1,s1,t15): lambda_PowerBalance_RT(s1,t15)
    + mu_RegDown_max_RT(g1,s1,t15) - muLB_RDn(g1,s1,t15) = 7.6
  dLag/RUpSC(g1,s1,t15): - lambda_PowerBalance_RT(s1,t15)
-   + mu_RegUpSC_max_RT(g1,s1,t15) - muLB_RUpSC(g1,s1,t15) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t15) - muLB_RUpSC(g1,s1,t15) = -12.6
  dLag/RDnSC(g1,s1,t15): lambda_PowerBalance_RT(s1,t15)
-   + mu_RegDnSC_max_RT(g1,s1,t15) - muLB_RDnSC(g1,s1,t15) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t15) - muLB_RDnSC(g1,s1,t15) = 11.4
  dLag/Wspill(w1,s1,t15): lambda_PowerBalance_RT(s1,t15)
    + mu_Max_wind_spill_RT(w1,s1,t15) - muLB_Wspill(w1,s1,t15) = 0
  dLag/Lshed(s1,t15): - lambda_PowerBalance_RT(s1,t15)
@@ -1625,9 +1662,9 @@ Subject To
  dLag/RDn(g1,s1,t16): lambda_PowerBalance_RT(s1,t16)
    + mu_RegDown_max_RT(g1,s1,t16) - muLB_RDn(g1,s1,t16) = 7.6
  dLag/RUpSC(g1,s1,t16): - lambda_PowerBalance_RT(s1,t16)
-   + mu_RegUpSC_max_RT(g1,s1,t16) - muLB_RUpSC(g1,s1,t16) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t16) - muLB_RUpSC(g1,s1,t16) = -12.6
  dLag/RDnSC(g1,s1,t16): lambda_PowerBalance_RT(s1,t16)
-   + mu_RegDnSC_max_RT(g1,s1,t16) - muLB_RDnSC(g1,s1,t16) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t16) - muLB_RDnSC(g1,s1,t16) = 11.4
  dLag/Wspill(w1,s1,t16): lambda_PowerBalance_RT(s1,t16)
    + mu_Max_wind_spill_RT(w1,s1,t16) - muLB_Wspill(w1,s1,t16) = 0
  dLag/Lshed(s1,t16): - lambda_PowerBalance_RT(s1,t16)
@@ -1637,9 +1674,9 @@ Subject To
  dLag/RDn(g1,s1,t17): lambda_PowerBalance_RT(s1,t17)
    + mu_RegDown_max_RT(g1,s1,t17) - muLB_RDn(g1,s1,t17) = 7.6
  dLag/RUpSC(g1,s1,t17): - lambda_PowerBalance_RT(s1,t17)
-   + mu_RegUpSC_max_RT(g1,s1,t17) - muLB_RUpSC(g1,s1,t17) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t17) - muLB_RUpSC(g1,s1,t17) = -12.6
  dLag/RDnSC(g1,s1,t17): lambda_PowerBalance_RT(s1,t17)
-   + mu_RegDnSC_max_RT(g1,s1,t17) - muLB_RDnSC(g1,s1,t17) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t17) - muLB_RDnSC(g1,s1,t17) = 11.4
  dLag/Wspill(w1,s1,t17): lambda_PowerBalance_RT(s1,t17)
    + mu_Max_wind_spill_RT(w1,s1,t17) - muLB_Wspill(w1,s1,t17) = 0
  dLag/Lshed(s1,t17): - lambda_PowerBalance_RT(s1,t17)
@@ -1649,9 +1686,9 @@ Subject To
  dLag/RDn(g1,s1,t18): lambda_PowerBalance_RT(s1,t18)
    + mu_RegDown_max_RT(g1,s1,t18) - muLB_RDn(g1,s1,t18) = 7.6
  dLag/RUpSC(g1,s1,t18): - lambda_PowerBalance_RT(s1,t18)
-   + mu_RegUpSC_max_RT(g1,s1,t18) - muLB_RUpSC(g1,s1,t18) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t18) - muLB_RUpSC(g1,s1,t18) = -12.6
  dLag/RDnSC(g1,s1,t18): lambda_PowerBalance_RT(s1,t18)
-   + mu_RegDnSC_max_RT(g1,s1,t18) - muLB_RDnSC(g1,s1,t18) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t18) - muLB_RDnSC(g1,s1,t18) = 11.4
  dLag/Wspill(w1,s1,t18): lambda_PowerBalance_RT(s1,t18)
    + mu_Max_wind_spill_RT(w1,s1,t18) - muLB_Wspill(w1,s1,t18) = 0
  dLag/Lshed(s1,t18): - lambda_PowerBalance_RT(s1,t18)
@@ -1661,9 +1698,9 @@ Subject To
  dLag/RDn(g1,s1,t19): lambda_PowerBalance_RT(s1,t19)
    + mu_RegDown_max_RT(g1,s1,t19) - muLB_RDn(g1,s1,t19) = 7.6
  dLag/RUpSC(g1,s1,t19): - lambda_PowerBalance_RT(s1,t19)
-   + mu_RegUpSC_max_RT(g1,s1,t19) - muLB_RUpSC(g1,s1,t19) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t19) - muLB_RUpSC(g1,s1,t19) = -12.6
  dLag/RDnSC(g1,s1,t19): lambda_PowerBalance_RT(s1,t19)
-   + mu_RegDnSC_max_RT(g1,s1,t19) - muLB_RDnSC(g1,s1,t19) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t19) - muLB_RDnSC(g1,s1,t19) = 11.4
  dLag/Wspill(w1,s1,t19): lambda_PowerBalance_RT(s1,t19)
    + mu_Max_wind_spill_RT(w1,s1,t19) - muLB_Wspill(w1,s1,t19) = 0
  dLag/Lshed(s1,t19): - lambda_PowerBalance_RT(s1,t19)
@@ -1673,9 +1710,9 @@ Subject To
  dLag/RDn(g1,s1,t20): lambda_PowerBalance_RT(s1,t20)
    + mu_RegDown_max_RT(g1,s1,t20) - muLB_RDn(g1,s1,t20) = 7.6
  dLag/RUpSC(g1,s1,t20): - lambda_PowerBalance_RT(s1,t20)
-   + mu_RegUpSC_max_RT(g1,s1,t20) - muLB_RUpSC(g1,s1,t20) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t20) - muLB_RUpSC(g1,s1,t20) = -12.6
  dLag/RDnSC(g1,s1,t20): lambda_PowerBalance_RT(s1,t20)
-   + mu_RegDnSC_max_RT(g1,s1,t20) - muLB_RDnSC(g1,s1,t20) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t20) - muLB_RDnSC(g1,s1,t20) = 11.4
  dLag/Wspill(w1,s1,t20): lambda_PowerBalance_RT(s1,t20)
    + mu_Max_wind_spill_RT(w1,s1,t20) - muLB_Wspill(w1,s1,t20) = 0
  dLag/Lshed(s1,t20): - lambda_PowerBalance_RT(s1,t20)
@@ -1685,9 +1722,9 @@ Subject To
  dLag/RDn(g1,s1,t21): lambda_PowerBalance_RT(s1,t21)
    + mu_RegDown_max_RT(g1,s1,t21) - muLB_RDn(g1,s1,t21) = 7.6
  dLag/RUpSC(g1,s1,t21): - lambda_PowerBalance_RT(s1,t21)
-   + mu_RegUpSC_max_RT(g1,s1,t21) - muLB_RUpSC(g1,s1,t21) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t21) - muLB_RUpSC(g1,s1,t21) = -12.6
  dLag/RDnSC(g1,s1,t21): lambda_PowerBalance_RT(s1,t21)
-   + mu_RegDnSC_max_RT(g1,s1,t21) - muLB_RDnSC(g1,s1,t21) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t21) - muLB_RDnSC(g1,s1,t21) = 11.4
  dLag/Wspill(w1,s1,t21): lambda_PowerBalance_RT(s1,t21)
    + mu_Max_wind_spill_RT(w1,s1,t21) - muLB_Wspill(w1,s1,t21) = 0
  dLag/Lshed(s1,t21): - lambda_PowerBalance_RT(s1,t21)
@@ -1697,9 +1734,9 @@ Subject To
  dLag/RDn(g1,s1,t22): lambda_PowerBalance_RT(s1,t22)
    + mu_RegDown_max_RT(g1,s1,t22) - muLB_RDn(g1,s1,t22) = 7.6
  dLag/RUpSC(g1,s1,t22): - lambda_PowerBalance_RT(s1,t22)
-   + mu_RegUpSC_max_RT(g1,s1,t22) - muLB_RUpSC(g1,s1,t22) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t22) - muLB_RUpSC(g1,s1,t22) = -12.6
  dLag/RDnSC(g1,s1,t22): lambda_PowerBalance_RT(s1,t22)
-   + mu_RegDnSC_max_RT(g1,s1,t22) - muLB_RDnSC(g1,s1,t22) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t22) - muLB_RDnSC(g1,s1,t22) = 11.4
  dLag/Wspill(w1,s1,t22): lambda_PowerBalance_RT(s1,t22)
    + mu_Max_wind_spill_RT(w1,s1,t22) - muLB_Wspill(w1,s1,t22) = 0
  dLag/Lshed(s1,t22): - lambda_PowerBalance_RT(s1,t22)
@@ -1709,9 +1746,9 @@ Subject To
  dLag/RDn(g1,s1,t23): lambda_PowerBalance_RT(s1,t23)
    + mu_RegDown_max_RT(g1,s1,t23) - muLB_RDn(g1,s1,t23) = 7.6
  dLag/RUpSC(g1,s1,t23): - lambda_PowerBalance_RT(s1,t23)
-   + mu_RegUpSC_max_RT(g1,s1,t23) - muLB_RUpSC(g1,s1,t23) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t23) - muLB_RUpSC(g1,s1,t23) = -12.6
  dLag/RDnSC(g1,s1,t23): lambda_PowerBalance_RT(s1,t23)
-   + mu_RegDnSC_max_RT(g1,s1,t23) - muLB_RDnSC(g1,s1,t23) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t23) - muLB_RDnSC(g1,s1,t23) = 11.4
  dLag/Wspill(w1,s1,t23): lambda_PowerBalance_RT(s1,t23)
    + mu_Max_wind_spill_RT(w1,s1,t23) - muLB_Wspill(w1,s1,t23) = 0
  dLag/Lshed(s1,t23): - lambda_PowerBalance_RT(s1,t23)
@@ -1721,9 +1758,9 @@ Subject To
  dLag/RDn(g1,s1,t24): lambda_PowerBalance_RT(s1,t24)
    + mu_RegDown_max_RT(g1,s1,t24) - muLB_RDn(g1,s1,t24) = 7.6
  dLag/RUpSC(g1,s1,t24): - lambda_PowerBalance_RT(s1,t24)
-   + mu_RegUpSC_max_RT(g1,s1,t24) - muLB_RUpSC(g1,s1,t24) = 0
+   + mu_RegUpSC_max_RT(g1,s1,t24) - muLB_RUpSC(g1,s1,t24) = -12.6
  dLag/RDnSC(g1,s1,t24): lambda_PowerBalance_RT(s1,t24)
-   + mu_RegDnSC_max_RT(g1,s1,t24) - muLB_RDnSC(g1,s1,t24) = 0
+   + mu_RegDnSC_max_RT(g1,s1,t24) - muLB_RDnSC(g1,s1,t24) = 11.4
  dLag/Wspill(w1,s1,t24): lambda_PowerBalance_RT(s1,t24)
    + mu_Max_wind_spill_RT(w1,s1,t24) - muLB_Wspill(w1,s1,t24) = 0
  dLag/Lshed(s1,t24): - lambda_PowerBalance_RT(s1,t24)
@@ -1733,9 +1770,9 @@ Subject To
  dLag/RDn(g1,s2,t1): lambda_PowerBalance_RT(s2,t1)
    + mu_RegDown_max_RT(g1,s2,t1) - muLB_RDn(g1,s2,t1) = 7.6
  dLag/RUpSC(g1,s2,t1): - lambda_PowerBalance_RT(s2,t1)
-   + mu_RegUpSC_max_RT(g1,s2,t1) - muLB_RUpSC(g1,s2,t1) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t1) - muLB_RUpSC(g1,s2,t1) = -12.6
  dLag/RDnSC(g1,s2,t1): lambda_PowerBalance_RT(s2,t1)
-   + mu_RegDnSC_max_RT(g1,s2,t1) - muLB_RDnSC(g1,s2,t1) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t1) - muLB_RDnSC(g1,s2,t1) = 11.4
  dLag/Wspill(w1,s2,t1): lambda_PowerBalance_RT(s2,t1)
    + mu_Max_wind_spill_RT(w1,s2,t1) - muLB_Wspill(w1,s2,t1) = 0
  dLag/Lshed(s2,t1): - lambda_PowerBalance_RT(s2,t1)
@@ -1745,9 +1782,9 @@ Subject To
  dLag/RDn(g1,s2,t2): lambda_PowerBalance_RT(s2,t2)
    + mu_RegDown_max_RT(g1,s2,t2) - muLB_RDn(g1,s2,t2) = 7.6
  dLag/RUpSC(g1,s2,t2): - lambda_PowerBalance_RT(s2,t2)
-   + mu_RegUpSC_max_RT(g1,s2,t2) - muLB_RUpSC(g1,s2,t2) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t2) - muLB_RUpSC(g1,s2,t2) = -12.6
  dLag/RDnSC(g1,s2,t2): lambda_PowerBalance_RT(s2,t2)
-   + mu_RegDnSC_max_RT(g1,s2,t2) - muLB_RDnSC(g1,s2,t2) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t2) - muLB_RDnSC(g1,s2,t2) = 11.4
  dLag/Wspill(w1,s2,t2): lambda_PowerBalance_RT(s2,t2)
    + mu_Max_wind_spill_RT(w1,s2,t2) - muLB_Wspill(w1,s2,t2) = 0
  dLag/Lshed(s2,t2): - lambda_PowerBalance_RT(s2,t2)
@@ -1757,9 +1794,9 @@ Subject To
  dLag/RDn(g1,s2,t3): lambda_PowerBalance_RT(s2,t3)
    + mu_RegDown_max_RT(g1,s2,t3) - muLB_RDn(g1,s2,t3) = 7.6
  dLag/RUpSC(g1,s2,t3): - lambda_PowerBalance_RT(s2,t3)
-   + mu_RegUpSC_max_RT(g1,s2,t3) - muLB_RUpSC(g1,s2,t3) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t3) - muLB_RUpSC(g1,s2,t3) = -12.6
  dLag/RDnSC(g1,s2,t3): lambda_PowerBalance_RT(s2,t3)
-   + mu_RegDnSC_max_RT(g1,s2,t3) - muLB_RDnSC(g1,s2,t3) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t3) - muLB_RDnSC(g1,s2,t3) = 11.4
  dLag/Wspill(w1,s2,t3): lambda_PowerBalance_RT(s2,t3)
    + mu_Max_wind_spill_RT(w1,s2,t3) - muLB_Wspill(w1,s2,t3) = 0
  dLag/Lshed(s2,t3): - lambda_PowerBalance_RT(s2,t3)
@@ -1769,9 +1806,9 @@ Subject To
  dLag/RDn(g1,s2,t4): lambda_PowerBalance_RT(s2,t4)
    + mu_RegDown_max_RT(g1,s2,t4) - muLB_RDn(g1,s2,t4) = 7.6
  dLag/RUpSC(g1,s2,t4): - lambda_PowerBalance_RT(s2,t4)
-   + mu_RegUpSC_max_RT(g1,s2,t4) - muLB_RUpSC(g1,s2,t4) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t4) - muLB_RUpSC(g1,s2,t4) = -12.6
  dLag/RDnSC(g1,s2,t4): lambda_PowerBalance_RT(s2,t4)
-   + mu_RegDnSC_max_RT(g1,s2,t4) - muLB_RDnSC(g1,s2,t4) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t4) - muLB_RDnSC(g1,s2,t4) = 11.4
  dLag/Wspill(w1,s2,t4): lambda_PowerBalance_RT(s2,t4)
    + mu_Max_wind_spill_RT(w1,s2,t4) - muLB_Wspill(w1,s2,t4) = 0
  dLag/Lshed(s2,t4): - lambda_PowerBalance_RT(s2,t4)
@@ -1781,9 +1818,9 @@ Subject To
  dLag/RDn(g1,s2,t5): lambda_PowerBalance_RT(s2,t5)
    + mu_RegDown_max_RT(g1,s2,t5) - muLB_RDn(g1,s2,t5) = 7.6
  dLag/RUpSC(g1,s2,t5): - lambda_PowerBalance_RT(s2,t5)
-   + mu_RegUpSC_max_RT(g1,s2,t5) - muLB_RUpSC(g1,s2,t5) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t5) - muLB_RUpSC(g1,s2,t5) = -12.6
  dLag/RDnSC(g1,s2,t5): lambda_PowerBalance_RT(s2,t5)
-   + mu_RegDnSC_max_RT(g1,s2,t5) - muLB_RDnSC(g1,s2,t5) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t5) - muLB_RDnSC(g1,s2,t5) = 11.4
  dLag/Wspill(w1,s2,t5): lambda_PowerBalance_RT(s2,t5)
    + mu_Max_wind_spill_RT(w1,s2,t5) - muLB_Wspill(w1,s2,t5) = 0
  dLag/Lshed(s2,t5): - lambda_PowerBalance_RT(s2,t5)
@@ -1793,9 +1830,9 @@ Subject To
  dLag/RDn(g1,s2,t6): lambda_PowerBalance_RT(s2,t6)
    + mu_RegDown_max_RT(g1,s2,t6) - muLB_RDn(g1,s2,t6) = 7.6
  dLag/RUpSC(g1,s2,t6): - lambda_PowerBalance_RT(s2,t6)
-   + mu_RegUpSC_max_RT(g1,s2,t6) - muLB_RUpSC(g1,s2,t6) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t6) - muLB_RUpSC(g1,s2,t6) = -12.6
  dLag/RDnSC(g1,s2,t6): lambda_PowerBalance_RT(s2,t6)
-   + mu_RegDnSC_max_RT(g1,s2,t6) - muLB_RDnSC(g1,s2,t6) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t6) - muLB_RDnSC(g1,s2,t6) = 11.4
  dLag/Wspill(w1,s2,t6): lambda_PowerBalance_RT(s2,t6)
    + mu_Max_wind_spill_RT(w1,s2,t6) - muLB_Wspill(w1,s2,t6) = 0
  dLag/Lshed(s2,t6): - lambda_PowerBalance_RT(s2,t6)
@@ -1805,9 +1842,9 @@ Subject To
  dLag/RDn(g1,s2,t7): lambda_PowerBalance_RT(s2,t7)
    + mu_RegDown_max_RT(g1,s2,t7) - muLB_RDn(g1,s2,t7) = 7.6
  dLag/RUpSC(g1,s2,t7): - lambda_PowerBalance_RT(s2,t7)
-   + mu_RegUpSC_max_RT(g1,s2,t7) - muLB_RUpSC(g1,s2,t7) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t7) - muLB_RUpSC(g1,s2,t7) = -12.6
  dLag/RDnSC(g1,s2,t7): lambda_PowerBalance_RT(s2,t7)
-   + mu_RegDnSC_max_RT(g1,s2,t7) - muLB_RDnSC(g1,s2,t7) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t7) - muLB_RDnSC(g1,s2,t7) = 11.4
  dLag/Wspill(w1,s2,t7): lambda_PowerBalance_RT(s2,t7)
    + mu_Max_wind_spill_RT(w1,s2,t7) - muLB_Wspill(w1,s2,t7) = 0
  dLag/Lshed(s2,t7): - lambda_PowerBalance_RT(s2,t7)
@@ -1817,9 +1854,9 @@ Subject To
  dLag/RDn(g1,s2,t8): lambda_PowerBalance_RT(s2,t8)
    + mu_RegDown_max_RT(g1,s2,t8) - muLB_RDn(g1,s2,t8) = 7.6
  dLag/RUpSC(g1,s2,t8): - lambda_PowerBalance_RT(s2,t8)
-   + mu_RegUpSC_max_RT(g1,s2,t8) - muLB_RUpSC(g1,s2,t8) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t8) - muLB_RUpSC(g1,s2,t8) = -12.6
  dLag/RDnSC(g1,s2,t8): lambda_PowerBalance_RT(s2,t8)
-   + mu_RegDnSC_max_RT(g1,s2,t8) - muLB_RDnSC(g1,s2,t8) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t8) - muLB_RDnSC(g1,s2,t8) = 11.4
  dLag/Wspill(w1,s2,t8): lambda_PowerBalance_RT(s2,t8)
    + mu_Max_wind_spill_RT(w1,s2,t8) - muLB_Wspill(w1,s2,t8) = 0
  dLag/Lshed(s2,t8): - lambda_PowerBalance_RT(s2,t8)
@@ -1829,9 +1866,9 @@ Subject To
  dLag/RDn(g1,s2,t9): lambda_PowerBalance_RT(s2,t9)
    + mu_RegDown_max_RT(g1,s2,t9) - muLB_RDn(g1,s2,t9) = 7.6
  dLag/RUpSC(g1,s2,t9): - lambda_PowerBalance_RT(s2,t9)
-   + mu_RegUpSC_max_RT(g1,s2,t9) - muLB_RUpSC(g1,s2,t9) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t9) - muLB_RUpSC(g1,s2,t9) = -12.6
  dLag/RDnSC(g1,s2,t9): lambda_PowerBalance_RT(s2,t9)
-   + mu_RegDnSC_max_RT(g1,s2,t9) - muLB_RDnSC(g1,s2,t9) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t9) - muLB_RDnSC(g1,s2,t9) = 11.4
  dLag/Wspill(w1,s2,t9): lambda_PowerBalance_RT(s2,t9)
    + mu_Max_wind_spill_RT(w1,s2,t9) - muLB_Wspill(w1,s2,t9) = 0
  dLag/Lshed(s2,t9): - lambda_PowerBalance_RT(s2,t9)
@@ -1841,9 +1878,9 @@ Subject To
  dLag/RDn(g1,s2,t10): lambda_PowerBalance_RT(s2,t10)
    + mu_RegDown_max_RT(g1,s2,t10) - muLB_RDn(g1,s2,t10) = 7.6
  dLag/RUpSC(g1,s2,t10): - lambda_PowerBalance_RT(s2,t10)
-   + mu_RegUpSC_max_RT(g1,s2,t10) - muLB_RUpSC(g1,s2,t10) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t10) - muLB_RUpSC(g1,s2,t10) = -12.6
  dLag/RDnSC(g1,s2,t10): lambda_PowerBalance_RT(s2,t10)
-   + mu_RegDnSC_max_RT(g1,s2,t10) - muLB_RDnSC(g1,s2,t10) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t10) - muLB_RDnSC(g1,s2,t10) = 11.4
  dLag/Wspill(w1,s2,t10): lambda_PowerBalance_RT(s2,t10)
    + mu_Max_wind_spill_RT(w1,s2,t10) - muLB_Wspill(w1,s2,t10) = 0
  dLag/Lshed(s2,t10): - lambda_PowerBalance_RT(s2,t10)
@@ -1853,9 +1890,9 @@ Subject To
  dLag/RDn(g1,s2,t11): lambda_PowerBalance_RT(s2,t11)
    + mu_RegDown_max_RT(g1,s2,t11) - muLB_RDn(g1,s2,t11) = 7.6
  dLag/RUpSC(g1,s2,t11): - lambda_PowerBalance_RT(s2,t11)
-   + mu_RegUpSC_max_RT(g1,s2,t11) - muLB_RUpSC(g1,s2,t11) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t11) - muLB_RUpSC(g1,s2,t11) = -12.6
  dLag/RDnSC(g1,s2,t11): lambda_PowerBalance_RT(s2,t11)
-   + mu_RegDnSC_max_RT(g1,s2,t11) - muLB_RDnSC(g1,s2,t11) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t11) - muLB_RDnSC(g1,s2,t11) = 11.4
  dLag/Wspill(w1,s2,t11): lambda_PowerBalance_RT(s2,t11)
    + mu_Max_wind_spill_RT(w1,s2,t11) - muLB_Wspill(w1,s2,t11) = 0
  dLag/Lshed(s2,t11): - lambda_PowerBalance_RT(s2,t11)
@@ -1865,9 +1902,9 @@ Subject To
  dLag/RDn(g1,s2,t12): lambda_PowerBalance_RT(s2,t12)
    + mu_RegDown_max_RT(g1,s2,t12) - muLB_RDn(g1,s2,t12) = 7.6
  dLag/RUpSC(g1,s2,t12): - lambda_PowerBalance_RT(s2,t12)
-   + mu_RegUpSC_max_RT(g1,s2,t12) - muLB_RUpSC(g1,s2,t12) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t12) - muLB_RUpSC(g1,s2,t12) = -12.6
  dLag/RDnSC(g1,s2,t12): lambda_PowerBalance_RT(s2,t12)
-   + mu_RegDnSC_max_RT(g1,s2,t12) - muLB_RDnSC(g1,s2,t12) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t12) - muLB_RDnSC(g1,s2,t12) = 11.4
  dLag/Wspill(w1,s2,t12): lambda_PowerBalance_RT(s2,t12)
    + mu_Max_wind_spill_RT(w1,s2,t12) - muLB_Wspill(w1,s2,t12) = 0
  dLag/Lshed(s2,t12): - lambda_PowerBalance_RT(s2,t12)
@@ -1877,9 +1914,9 @@ Subject To
  dLag/RDn(g1,s2,t13): lambda_PowerBalance_RT(s2,t13)
    + mu_RegDown_max_RT(g1,s2,t13) - muLB_RDn(g1,s2,t13) = 7.6
  dLag/RUpSC(g1,s2,t13): - lambda_PowerBalance_RT(s2,t13)
-   + mu_RegUpSC_max_RT(g1,s2,t13) - muLB_RUpSC(g1,s2,t13) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t13) - muLB_RUpSC(g1,s2,t13) = -12.6
  dLag/RDnSC(g1,s2,t13): lambda_PowerBalance_RT(s2,t13)
-   + mu_RegDnSC_max_RT(g1,s2,t13) - muLB_RDnSC(g1,s2,t13) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t13) - muLB_RDnSC(g1,s2,t13) = 11.4
  dLag/Wspill(w1,s2,t13): lambda_PowerBalance_RT(s2,t13)
    + mu_Max_wind_spill_RT(w1,s2,t13) - muLB_Wspill(w1,s2,t13) = 0
  dLag/Lshed(s2,t13): - lambda_PowerBalance_RT(s2,t13)
@@ -1889,9 +1926,9 @@ Subject To
  dLag/RDn(g1,s2,t14): lambda_PowerBalance_RT(s2,t14)
    + mu_RegDown_max_RT(g1,s2,t14) - muLB_RDn(g1,s2,t14) = 7.6
  dLag/RUpSC(g1,s2,t14): - lambda_PowerBalance_RT(s2,t14)
-   + mu_RegUpSC_max_RT(g1,s2,t14) - muLB_RUpSC(g1,s2,t14) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t14) - muLB_RUpSC(g1,s2,t14) = -12.6
  dLag/RDnSC(g1,s2,t14): lambda_PowerBalance_RT(s2,t14)
-   + mu_RegDnSC_max_RT(g1,s2,t14) - muLB_RDnSC(g1,s2,t14) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t14) - muLB_RDnSC(g1,s2,t14) = 11.4
  dLag/Wspill(w1,s2,t14): lambda_PowerBalance_RT(s2,t14)
    + mu_Max_wind_spill_RT(w1,s2,t14) - muLB_Wspill(w1,s2,t14) = 0
  dLag/Lshed(s2,t14): - lambda_PowerBalance_RT(s2,t14)
@@ -1901,9 +1938,9 @@ Subject To
  dLag/RDn(g1,s2,t15): lambda_PowerBalance_RT(s2,t15)
    + mu_RegDown_max_RT(g1,s2,t15) - muLB_RDn(g1,s2,t15) = 7.6
  dLag/RUpSC(g1,s2,t15): - lambda_PowerBalance_RT(s2,t15)
-   + mu_RegUpSC_max_RT(g1,s2,t15) - muLB_RUpSC(g1,s2,t15) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t15) - muLB_RUpSC(g1,s2,t15) = -12.6
  dLag/RDnSC(g1,s2,t15): lambda_PowerBalance_RT(s2,t15)
-   + mu_RegDnSC_max_RT(g1,s2,t15) - muLB_RDnSC(g1,s2,t15) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t15) - muLB_RDnSC(g1,s2,t15) = 11.4
  dLag/Wspill(w1,s2,t15): lambda_PowerBalance_RT(s2,t15)
    + mu_Max_wind_spill_RT(w1,s2,t15) - muLB_Wspill(w1,s2,t15) = 0
  dLag/Lshed(s2,t15): - lambda_PowerBalance_RT(s2,t15)
@@ -1913,9 +1950,9 @@ Subject To
  dLag/RDn(g1,s2,t16): lambda_PowerBalance_RT(s2,t16)
    + mu_RegDown_max_RT(g1,s2,t16) - muLB_RDn(g1,s2,t16) = 7.6
  dLag/RUpSC(g1,s2,t16): - lambda_PowerBalance_RT(s2,t16)
-   + mu_RegUpSC_max_RT(g1,s2,t16) - muLB_RUpSC(g1,s2,t16) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t16) - muLB_RUpSC(g1,s2,t16) = -12.6
  dLag/RDnSC(g1,s2,t16): lambda_PowerBalance_RT(s2,t16)
-   + mu_RegDnSC_max_RT(g1,s2,t16) - muLB_RDnSC(g1,s2,t16) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t16) - muLB_RDnSC(g1,s2,t16) = 11.4
  dLag/Wspill(w1,s2,t16): lambda_PowerBalance_RT(s2,t16)
    + mu_Max_wind_spill_RT(w1,s2,t16) - muLB_Wspill(w1,s2,t16) = 0
  dLag/Lshed(s2,t16): - lambda_PowerBalance_RT(s2,t16)
@@ -1925,9 +1962,9 @@ Subject To
  dLag/RDn(g1,s2,t17): lambda_PowerBalance_RT(s2,t17)
    + mu_RegDown_max_RT(g1,s2,t17) - muLB_RDn(g1,s2,t17) = 7.6
  dLag/RUpSC(g1,s2,t17): - lambda_PowerBalance_RT(s2,t17)
-   + mu_RegUpSC_max_RT(g1,s2,t17) - muLB_RUpSC(g1,s2,t17) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t17) - muLB_RUpSC(g1,s2,t17) = -12.6
  dLag/RDnSC(g1,s2,t17): lambda_PowerBalance_RT(s2,t17)
-   + mu_RegDnSC_max_RT(g1,s2,t17) - muLB_RDnSC(g1,s2,t17) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t17) - muLB_RDnSC(g1,s2,t17) = 11.4
  dLag/Wspill(w1,s2,t17): lambda_PowerBalance_RT(s2,t17)
    + mu_Max_wind_spill_RT(w1,s2,t17) - muLB_Wspill(w1,s2,t17) = 0
  dLag/Lshed(s2,t17): - lambda_PowerBalance_RT(s2,t17)
@@ -1937,9 +1974,9 @@ Subject To
  dLag/RDn(g1,s2,t18): lambda_PowerBalance_RT(s2,t18)
    + mu_RegDown_max_RT(g1,s2,t18) - muLB_RDn(g1,s2,t18) = 7.6
  dLag/RUpSC(g1,s2,t18): - lambda_PowerBalance_RT(s2,t18)
-   + mu_RegUpSC_max_RT(g1,s2,t18) - muLB_RUpSC(g1,s2,t18) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t18) - muLB_RUpSC(g1,s2,t18) = -12.6
  dLag/RDnSC(g1,s2,t18): lambda_PowerBalance_RT(s2,t18)
-   + mu_RegDnSC_max_RT(g1,s2,t18) - muLB_RDnSC(g1,s2,t18) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t18) - muLB_RDnSC(g1,s2,t18) = 11.4
  dLag/Wspill(w1,s2,t18): lambda_PowerBalance_RT(s2,t18)
    + mu_Max_wind_spill_RT(w1,s2,t18) - muLB_Wspill(w1,s2,t18) = 0
  dLag/Lshed(s2,t18): - lambda_PowerBalance_RT(s2,t18)
@@ -1949,9 +1986,9 @@ Subject To
  dLag/RDn(g1,s2,t19): lambda_PowerBalance_RT(s2,t19)
    + mu_RegDown_max_RT(g1,s2,t19) - muLB_RDn(g1,s2,t19) = 7.6
  dLag/RUpSC(g1,s2,t19): - lambda_PowerBalance_RT(s2,t19)
-   + mu_RegUpSC_max_RT(g1,s2,t19) - muLB_RUpSC(g1,s2,t19) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t19) - muLB_RUpSC(g1,s2,t19) = -12.6
  dLag/RDnSC(g1,s2,t19): lambda_PowerBalance_RT(s2,t19)
-   + mu_RegDnSC_max_RT(g1,s2,t19) - muLB_RDnSC(g1,s2,t19) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t19) - muLB_RDnSC(g1,s2,t19) = 11.4
  dLag/Wspill(w1,s2,t19): lambda_PowerBalance_RT(s2,t19)
    + mu_Max_wind_spill_RT(w1,s2,t19) - muLB_Wspill(w1,s2,t19) = 0
  dLag/Lshed(s2,t19): - lambda_PowerBalance_RT(s2,t19)
@@ -1961,9 +1998,9 @@ Subject To
  dLag/RDn(g1,s2,t20): lambda_PowerBalance_RT(s2,t20)
    + mu_RegDown_max_RT(g1,s2,t20) - muLB_RDn(g1,s2,t20) = 7.6
  dLag/RUpSC(g1,s2,t20): - lambda_PowerBalance_RT(s2,t20)
-   + mu_RegUpSC_max_RT(g1,s2,t20) - muLB_RUpSC(g1,s2,t20) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t20) - muLB_RUpSC(g1,s2,t20) = -12.6
  dLag/RDnSC(g1,s2,t20): lambda_PowerBalance_RT(s2,t20)
-   + mu_RegDnSC_max_RT(g1,s2,t20) - muLB_RDnSC(g1,s2,t20) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t20) - muLB_RDnSC(g1,s2,t20) = 11.4
  dLag/Wspill(w1,s2,t20): lambda_PowerBalance_RT(s2,t20)
    + mu_Max_wind_spill_RT(w1,s2,t20) - muLB_Wspill(w1,s2,t20) = 0
  dLag/Lshed(s2,t20): - lambda_PowerBalance_RT(s2,t20)
@@ -1973,9 +2010,9 @@ Subject To
  dLag/RDn(g1,s2,t21): lambda_PowerBalance_RT(s2,t21)
    + mu_RegDown_max_RT(g1,s2,t21) - muLB_RDn(g1,s2,t21) = 7.6
  dLag/RUpSC(g1,s2,t21): - lambda_PowerBalance_RT(s2,t21)
-   + mu_RegUpSC_max_RT(g1,s2,t21) - muLB_RUpSC(g1,s2,t21) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t21) - muLB_RUpSC(g1,s2,t21) = -12.6
  dLag/RDnSC(g1,s2,t21): lambda_PowerBalance_RT(s2,t21)
-   + mu_RegDnSC_max_RT(g1,s2,t21) - muLB_RDnSC(g1,s2,t21) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t21) - muLB_RDnSC(g1,s2,t21) = 11.4
  dLag/Wspill(w1,s2,t21): lambda_PowerBalance_RT(s2,t21)
    + mu_Max_wind_spill_RT(w1,s2,t21) - muLB_Wspill(w1,s2,t21) = 0
  dLag/Lshed(s2,t21): - lambda_PowerBalance_RT(s2,t21)
@@ -1985,9 +2022,9 @@ Subject To
  dLag/RDn(g1,s2,t22): lambda_PowerBalance_RT(s2,t22)
    + mu_RegDown_max_RT(g1,s2,t22) - muLB_RDn(g1,s2,t22) = 7.6
  dLag/RUpSC(g1,s2,t22): - lambda_PowerBalance_RT(s2,t22)
-   + mu_RegUpSC_max_RT(g1,s2,t22) - muLB_RUpSC(g1,s2,t22) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t22) - muLB_RUpSC(g1,s2,t22) = -12.6
  dLag/RDnSC(g1,s2,t22): lambda_PowerBalance_RT(s2,t22)
-   + mu_RegDnSC_max_RT(g1,s2,t22) - muLB_RDnSC(g1,s2,t22) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t22) - muLB_RDnSC(g1,s2,t22) = 11.4
  dLag/Wspill(w1,s2,t22): lambda_PowerBalance_RT(s2,t22)
    + mu_Max_wind_spill_RT(w1,s2,t22) - muLB_Wspill(w1,s2,t22) = 0
  dLag/Lshed(s2,t22): - lambda_PowerBalance_RT(s2,t22)
@@ -1997,9 +2034,9 @@ Subject To
  dLag/RDn(g1,s2,t23): lambda_PowerBalance_RT(s2,t23)
    + mu_RegDown_max_RT(g1,s2,t23) - muLB_RDn(g1,s2,t23) = 7.6
  dLag/RUpSC(g1,s2,t23): - lambda_PowerBalance_RT(s2,t23)
-   + mu_RegUpSC_max_RT(g1,s2,t23) - muLB_RUpSC(g1,s2,t23) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t23) - muLB_RUpSC(g1,s2,t23) = -12.6
  dLag/RDnSC(g1,s2,t23): lambda_PowerBalance_RT(s2,t23)
-   + mu_RegDnSC_max_RT(g1,s2,t23) - muLB_RDnSC(g1,s2,t23) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t23) - muLB_RDnSC(g1,s2,t23) = 11.4
  dLag/Wspill(w1,s2,t23): lambda_PowerBalance_RT(s2,t23)
    + mu_Max_wind_spill_RT(w1,s2,t23) - muLB_Wspill(w1,s2,t23) = 0
  dLag/Lshed(s2,t23): - lambda_PowerBalance_RT(s2,t23)
@@ -2009,9 +2046,9 @@ Subject To
  dLag/RDn(g1,s2,t24): lambda_PowerBalance_RT(s2,t24)
    + mu_RegDown_max_RT(g1,s2,t24) - muLB_RDn(g1,s2,t24) = 7.6
  dLag/RUpSC(g1,s2,t24): - lambda_PowerBalance_RT(s2,t24)
-   + mu_RegUpSC_max_RT(g1,s2,t24) - muLB_RUpSC(g1,s2,t24) = 0
+   + mu_RegUpSC_max_RT(g1,s2,t24) - muLB_RUpSC(g1,s2,t24) = -12.6
  dLag/RDnSC(g1,s2,t24): lambda_PowerBalance_RT(s2,t24)
-   + mu_RegDnSC_max_RT(g1,s2,t24) - muLB_RDnSC(g1,s2,t24) = 0
+   + mu_RegDnSC_max_RT(g1,s2,t24) - muLB_RDnSC(g1,s2,t24) = 11.4
  dLag/Wspill(w1,s2,t24): lambda_PowerBalance_RT(s2,t24)
    + mu_Max_wind_spill_RT(w1,s2,t24) - muLB_Wspill(w1,s2,t24) = 0
  dLag/Lshed(s2,t24): - lambda_PowerBalance_RT(s2,t24)

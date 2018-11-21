@@ -60,45 +60,9 @@ mGRT.optimize()
 
 mGRT_COMP = modelObjects.GasRT(dispatchGasDA,dispatchElecRT,f2d,comp=True)
 mGRT_COMP.optimize() 
+#
 
-
-Res=[]
-P=[]
-SC=[]
-for i in range(1):
-
-    SCdata=pd.read_csv(defaults.SCdata)
-    SCdata.lambdaC=i/10
-    SCdata.to_csv(defaults.SCdata,index=False)
-    
-    mSEDA = modelObjects.StochElecDA(bilevel=False)
-    dispatchElecDA=mSEDA.optimize()
-    
-    f2d = False
-    
-    mGDA = modelObjects.GasDA(dispatchElecDA,f2d)
-    dispatchGasDA=mGDA.optimize()
-    
-    mERT = modelObjects.ElecRT(dispatchElecDA,bilevel=True)
-    dispatchElecRT=mERT.optimize()
-    
-    mGRT = modelObjects.GasRT(dispatchGasDA,dispatchElecRT,f2d)
-    dispatchGasRT=mGRT.optimize()
-    
-    PSC=dispatchElecDA.PgenSC['g1'].sum()
-    Cost = mGDA.model.ObjVal
-    
-    P.append(PSC)
-    
-    DA_SC_Income   = dispatchElecDA.PgenSC['g1'].sum()*8 *i
-    RTUp_SC_Income = dispatchElecRT.RUpSC['g1'].sum() *8 *i *defaults.RESERVES_UP_PREMIUM  
-    RTDn_SC_Income = dispatchElecRT.RDnSC['g1'].sum() *8 *i *defaults.RESERVES_DN_PREMIUM
-    
-    SC.append(DA_SC_Income+RTUp_SC_Income-RTDn_SC_Income)
-    #Income = 
-
-    Res.append(mGDA.model.ObjVal+mGRT.model.ObjVal)
-
+#
 
 
 

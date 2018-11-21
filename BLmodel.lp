@@ -6,54 +6,94 @@ Minimize
    + 16 Pgen(g1,t13) + 16 Pgen(g1,t14) + 16 Pgen(g1,t15) + 16 Pgen(g1,t16)
    + 16 Pgen(g1,t17) + 16 Pgen(g1,t18) + 16 Pgen(g1,t19) + 16 Pgen(g1,t20)
    + 16 Pgen(g1,t21) + 16 Pgen(g1,t22) + 16 Pgen(g1,t23) + 16 Pgen(g1,t24)
-   + 8.4 RUp(g1,s1,t1) - 7.6 RDn(g1,s1,t1) + 5000 Lshed(s1,t1)
-   + 8.4 RUp(g1,s1,t2) - 7.6 RDn(g1,s1,t2) + 5000 Lshed(s1,t2)
-   + 8.4 RUp(g1,s1,t3) - 7.6 RDn(g1,s1,t3) + 5000 Lshed(s1,t3)
-   + 8.4 RUp(g1,s1,t4) - 7.6 RDn(g1,s1,t4) + 5000 Lshed(s1,t4)
-   + 8.4 RUp(g1,s1,t5) - 7.6 RDn(g1,s1,t5) + 5000 Lshed(s1,t5)
-   + 8.4 RUp(g1,s1,t6) - 7.6 RDn(g1,s1,t6) + 5000 Lshed(s1,t6)
-   + 8.4 RUp(g1,s1,t7) - 7.6 RDn(g1,s1,t7) + 5000 Lshed(s1,t7)
-   + 8.4 RUp(g1,s1,t8) - 7.6 RDn(g1,s1,t8) + 5000 Lshed(s1,t8)
-   + 8.4 RUp(g1,s1,t9) - 7.6 RDn(g1,s1,t9) + 5000 Lshed(s1,t9)
-   + 8.4 RUp(g1,s1,t10) - 7.6 RDn(g1,s1,t10) + 5000 Lshed(s1,t10)
-   + 8.4 RUp(g1,s1,t11) - 7.6 RDn(g1,s1,t11) + 5000 Lshed(s1,t11)
-   + 8.4 RUp(g1,s1,t12) - 7.6 RDn(g1,s1,t12) + 5000 Lshed(s1,t12)
-   + 8.4 RUp(g1,s1,t13) - 7.6 RDn(g1,s1,t13) + 5000 Lshed(s1,t13)
-   + 8.4 RUp(g1,s1,t14) - 7.6 RDn(g1,s1,t14) + 5000 Lshed(s1,t14)
-   + 8.4 RUp(g1,s1,t15) - 7.6 RDn(g1,s1,t15) + 5000 Lshed(s1,t15)
-   + 8.4 RUp(g1,s1,t16) - 7.6 RDn(g1,s1,t16) + 5000 Lshed(s1,t16)
-   + 8.4 RUp(g1,s1,t17) - 7.6 RDn(g1,s1,t17) + 5000 Lshed(s1,t17)
-   + 8.4 RUp(g1,s1,t18) - 7.6 RDn(g1,s1,t18) + 5000 Lshed(s1,t18)
-   + 8.4 RUp(g1,s1,t19) - 7.6 RDn(g1,s1,t19) + 5000 Lshed(s1,t19)
-   + 8.4 RUp(g1,s1,t20) - 7.6 RDn(g1,s1,t20) + 5000 Lshed(s1,t20)
-   + 8.4 RUp(g1,s1,t21) - 7.6 RDn(g1,s1,t21) + 5000 Lshed(s1,t21)
-   + 8.4 RUp(g1,s1,t22) - 7.6 RDn(g1,s1,t22) + 5000 Lshed(s1,t22)
-   + 8.4 RUp(g1,s1,t23) - 7.6 RDn(g1,s1,t23) + 5000 Lshed(s1,t23)
-   + 8.4 RUp(g1,s1,t24) - 7.6 RDn(g1,s1,t24) + 5000 Lshed(s1,t24)
-   + 8.4 RUp(g1,s2,t1) - 7.6 RDn(g1,s2,t1) + 5000 Lshed(s2,t1)
-   + 8.4 RUp(g1,s2,t2) - 7.6 RDn(g1,s2,t2) + 5000 Lshed(s2,t2)
-   + 8.4 RUp(g1,s2,t3) - 7.6 RDn(g1,s2,t3) + 5000 Lshed(s2,t3)
-   + 8.4 RUp(g1,s2,t4) - 7.6 RDn(g1,s2,t4) + 5000 Lshed(s2,t4)
-   + 8.4 RUp(g1,s2,t5) - 7.6 RDn(g1,s2,t5) + 5000 Lshed(s2,t5)
-   + 8.4 RUp(g1,s2,t6) - 7.6 RDn(g1,s2,t6) + 5000 Lshed(s2,t6)
-   + 8.4 RUp(g1,s2,t7) - 7.6 RDn(g1,s2,t7) + 5000 Lshed(s2,t7)
-   + 8.4 RUp(g1,s2,t8) - 7.6 RDn(g1,s2,t8) + 5000 Lshed(s2,t8)
-   + 8.4 RUp(g1,s2,t9) - 7.6 RDn(g1,s2,t9) + 5000 Lshed(s2,t9)
-   + 8.4 RUp(g1,s2,t10) - 7.6 RDn(g1,s2,t10) + 5000 Lshed(s2,t10)
-   + 8.4 RUp(g1,s2,t11) - 7.6 RDn(g1,s2,t11) + 5000 Lshed(s2,t11)
-   + 8.4 RUp(g1,s2,t12) - 7.6 RDn(g1,s2,t12) + 5000 Lshed(s2,t12)
-   + 8.4 RUp(g1,s2,t13) - 7.6 RDn(g1,s2,t13) + 5000 Lshed(s2,t13)
-   + 8.4 RUp(g1,s2,t14) - 7.6 RDn(g1,s2,t14) + 5000 Lshed(s2,t14)
-   + 8.4 RUp(g1,s2,t15) - 7.6 RDn(g1,s2,t15) + 5000 Lshed(s2,t15)
-   + 8.4 RUp(g1,s2,t16) - 7.6 RDn(g1,s2,t16) + 5000 Lshed(s2,t16)
-   + 8.4 RUp(g1,s2,t17) - 7.6 RDn(g1,s2,t17) + 5000 Lshed(s2,t17)
-   + 8.4 RUp(g1,s2,t18) - 7.6 RDn(g1,s2,t18) + 5000 Lshed(s2,t18)
-   + 8.4 RUp(g1,s2,t19) - 7.6 RDn(g1,s2,t19) + 5000 Lshed(s2,t19)
-   + 8.4 RUp(g1,s2,t20) - 7.6 RDn(g1,s2,t20) + 5000 Lshed(s2,t20)
-   + 8.4 RUp(g1,s2,t21) - 7.6 RDn(g1,s2,t21) + 5000 Lshed(s2,t21)
-   + 8.4 RUp(g1,s2,t22) - 7.6 RDn(g1,s2,t22) + 5000 Lshed(s2,t22)
-   + 8.4 RUp(g1,s2,t23) - 7.6 RDn(g1,s2,t23) + 5000 Lshed(s2,t23)
-   + 8.4 RUp(g1,s2,t24) - 7.6 RDn(g1,s2,t24) + 5000 Lshed(s2,t24)
+   + 24 PgenSC(g1,t1) + 24 PgenSC(g1,t2) + 24 PgenSC(g1,t3)
+   + 24 PgenSC(g1,t4) + 24 PgenSC(g1,t5) + 24 PgenSC(g1,t6)
+   + 24 PgenSC(g1,t7) + 24 PgenSC(g1,t8) + 24 PgenSC(g1,t9)
+   + 24 PgenSC(g1,t10) + 24 PgenSC(g1,t11) + 24 PgenSC(g1,t12)
+   + 24 PgenSC(g1,t13) + 24 PgenSC(g1,t14) + 24 PgenSC(g1,t15)
+   + 24 PgenSC(g1,t16) + 24 PgenSC(g1,t17) + 24 PgenSC(g1,t18)
+   + 24 PgenSC(g1,t19) + 24 PgenSC(g1,t20) + 24 PgenSC(g1,t21)
+   + 24 PgenSC(g1,t22) + 24 PgenSC(g1,t23) + 24 PgenSC(g1,t24)
+   + 8.4 RUp(g1,s1,t1) - 7.6 RDn(g1,s1,t1) + 12.6 RUpSC(g1,s1,t1)
+   - 11.4 RDnSC(g1,s1,t1) + 5000 Lshed(s1,t1) + 8.4 RUp(g1,s1,t2)
+   - 7.6 RDn(g1,s1,t2) + 12.6 RUpSC(g1,s1,t2) - 11.4 RDnSC(g1,s1,t2)
+   + 5000 Lshed(s1,t2) + 8.4 RUp(g1,s1,t3) - 7.6 RDn(g1,s1,t3)
+   + 12.6 RUpSC(g1,s1,t3) - 11.4 RDnSC(g1,s1,t3) + 5000 Lshed(s1,t3)
+   + 8.4 RUp(g1,s1,t4) - 7.6 RDn(g1,s1,t4) + 12.6 RUpSC(g1,s1,t4)
+   - 11.4 RDnSC(g1,s1,t4) + 5000 Lshed(s1,t4) + 8.4 RUp(g1,s1,t5)
+   - 7.6 RDn(g1,s1,t5) + 12.6 RUpSC(g1,s1,t5) - 11.4 RDnSC(g1,s1,t5)
+   + 5000 Lshed(s1,t5) + 8.4 RUp(g1,s1,t6) - 7.6 RDn(g1,s1,t6)
+   + 12.6 RUpSC(g1,s1,t6) - 11.4 RDnSC(g1,s1,t6) + 5000 Lshed(s1,t6)
+   + 8.4 RUp(g1,s1,t7) - 7.6 RDn(g1,s1,t7) + 12.6 RUpSC(g1,s1,t7)
+   - 11.4 RDnSC(g1,s1,t7) + 5000 Lshed(s1,t7) + 8.4 RUp(g1,s1,t8)
+   - 7.6 RDn(g1,s1,t8) + 12.6 RUpSC(g1,s1,t8) - 11.4 RDnSC(g1,s1,t8)
+   + 5000 Lshed(s1,t8) + 8.4 RUp(g1,s1,t9) - 7.6 RDn(g1,s1,t9)
+   + 12.6 RUpSC(g1,s1,t9) - 11.4 RDnSC(g1,s1,t9) + 5000 Lshed(s1,t9)
+   + 8.4 RUp(g1,s1,t10) - 7.6 RDn(g1,s1,t10) + 12.6 RUpSC(g1,s1,t10)
+   - 11.4 RDnSC(g1,s1,t10) + 5000 Lshed(s1,t10) + 8.4 RUp(g1,s1,t11)
+   - 7.6 RDn(g1,s1,t11) + 12.6 RUpSC(g1,s1,t11) - 11.4 RDnSC(g1,s1,t11)
+   + 5000 Lshed(s1,t11) + 8.4 RUp(g1,s1,t12) - 7.6 RDn(g1,s1,t12)
+   + 12.6 RUpSC(g1,s1,t12) - 11.4 RDnSC(g1,s1,t12) + 5000 Lshed(s1,t12)
+   + 8.4 RUp(g1,s1,t13) - 7.6 RDn(g1,s1,t13) + 12.6 RUpSC(g1,s1,t13)
+   - 11.4 RDnSC(g1,s1,t13) + 5000 Lshed(s1,t13) + 8.4 RUp(g1,s1,t14)
+   - 7.6 RDn(g1,s1,t14) + 12.6 RUpSC(g1,s1,t14) - 11.4 RDnSC(g1,s1,t14)
+   + 5000 Lshed(s1,t14) + 8.4 RUp(g1,s1,t15) - 7.6 RDn(g1,s1,t15)
+   + 12.6 RUpSC(g1,s1,t15) - 11.4 RDnSC(g1,s1,t15) + 5000 Lshed(s1,t15)
+   + 8.4 RUp(g1,s1,t16) - 7.6 RDn(g1,s1,t16) + 12.6 RUpSC(g1,s1,t16)
+   - 11.4 RDnSC(g1,s1,t16) + 5000 Lshed(s1,t16) + 8.4 RUp(g1,s1,t17)
+   - 7.6 RDn(g1,s1,t17) + 12.6 RUpSC(g1,s1,t17) - 11.4 RDnSC(g1,s1,t17)
+   + 5000 Lshed(s1,t17) + 8.4 RUp(g1,s1,t18) - 7.6 RDn(g1,s1,t18)
+   + 12.6 RUpSC(g1,s1,t18) - 11.4 RDnSC(g1,s1,t18) + 5000 Lshed(s1,t18)
+   + 8.4 RUp(g1,s1,t19) - 7.6 RDn(g1,s1,t19) + 12.6 RUpSC(g1,s1,t19)
+   - 11.4 RDnSC(g1,s1,t19) + 5000 Lshed(s1,t19) + 8.4 RUp(g1,s1,t20)
+   - 7.6 RDn(g1,s1,t20) + 12.6 RUpSC(g1,s1,t20) - 11.4 RDnSC(g1,s1,t20)
+   + 5000 Lshed(s1,t20) + 8.4 RUp(g1,s1,t21) - 7.6 RDn(g1,s1,t21)
+   + 12.6 RUpSC(g1,s1,t21) - 11.4 RDnSC(g1,s1,t21) + 5000 Lshed(s1,t21)
+   + 8.4 RUp(g1,s1,t22) - 7.6 RDn(g1,s1,t22) + 12.6 RUpSC(g1,s1,t22)
+   - 11.4 RDnSC(g1,s1,t22) + 5000 Lshed(s1,t22) + 8.4 RUp(g1,s1,t23)
+   - 7.6 RDn(g1,s1,t23) + 12.6 RUpSC(g1,s1,t23) - 11.4 RDnSC(g1,s1,t23)
+   + 5000 Lshed(s1,t23) + 8.4 RUp(g1,s1,t24) - 7.6 RDn(g1,s1,t24)
+   + 12.6 RUpSC(g1,s1,t24) - 11.4 RDnSC(g1,s1,t24) + 5000 Lshed(s1,t24)
+   + 8.4 RUp(g1,s2,t1) - 7.6 RDn(g1,s2,t1) + 12.6 RUpSC(g1,s2,t1)
+   - 11.4 RDnSC(g1,s2,t1) + 5000 Lshed(s2,t1) + 8.4 RUp(g1,s2,t2)
+   - 7.6 RDn(g1,s2,t2) + 12.6 RUpSC(g1,s2,t2) - 11.4 RDnSC(g1,s2,t2)
+   + 5000 Lshed(s2,t2) + 8.4 RUp(g1,s2,t3) - 7.6 RDn(g1,s2,t3)
+   + 12.6 RUpSC(g1,s2,t3) - 11.4 RDnSC(g1,s2,t3) + 5000 Lshed(s2,t3)
+   + 8.4 RUp(g1,s2,t4) - 7.6 RDn(g1,s2,t4) + 12.6 RUpSC(g1,s2,t4)
+   - 11.4 RDnSC(g1,s2,t4) + 5000 Lshed(s2,t4) + 8.4 RUp(g1,s2,t5)
+   - 7.6 RDn(g1,s2,t5) + 12.6 RUpSC(g1,s2,t5) - 11.4 RDnSC(g1,s2,t5)
+   + 5000 Lshed(s2,t5) + 8.4 RUp(g1,s2,t6) - 7.6 RDn(g1,s2,t6)
+   + 12.6 RUpSC(g1,s2,t6) - 11.4 RDnSC(g1,s2,t6) + 5000 Lshed(s2,t6)
+   + 8.4 RUp(g1,s2,t7) - 7.6 RDn(g1,s2,t7) + 12.6 RUpSC(g1,s2,t7)
+   - 11.4 RDnSC(g1,s2,t7) + 5000 Lshed(s2,t7) + 8.4 RUp(g1,s2,t8)
+   - 7.6 RDn(g1,s2,t8) + 12.6 RUpSC(g1,s2,t8) - 11.4 RDnSC(g1,s2,t8)
+   + 5000 Lshed(s2,t8) + 8.4 RUp(g1,s2,t9) - 7.6 RDn(g1,s2,t9)
+   + 12.6 RUpSC(g1,s2,t9) - 11.4 RDnSC(g1,s2,t9) + 5000 Lshed(s2,t9)
+   + 8.4 RUp(g1,s2,t10) - 7.6 RDn(g1,s2,t10) + 12.6 RUpSC(g1,s2,t10)
+   - 11.4 RDnSC(g1,s2,t10) + 5000 Lshed(s2,t10) + 8.4 RUp(g1,s2,t11)
+   - 7.6 RDn(g1,s2,t11) + 12.6 RUpSC(g1,s2,t11) - 11.4 RDnSC(g1,s2,t11)
+   + 5000 Lshed(s2,t11) + 8.4 RUp(g1,s2,t12) - 7.6 RDn(g1,s2,t12)
+   + 12.6 RUpSC(g1,s2,t12) - 11.4 RDnSC(g1,s2,t12) + 5000 Lshed(s2,t12)
+   + 8.4 RUp(g1,s2,t13) - 7.6 RDn(g1,s2,t13) + 12.6 RUpSC(g1,s2,t13)
+   - 11.4 RDnSC(g1,s2,t13) + 5000 Lshed(s2,t13) + 8.4 RUp(g1,s2,t14)
+   - 7.6 RDn(g1,s2,t14) + 12.6 RUpSC(g1,s2,t14) - 11.4 RDnSC(g1,s2,t14)
+   + 5000 Lshed(s2,t14) + 8.4 RUp(g1,s2,t15) - 7.6 RDn(g1,s2,t15)
+   + 12.6 RUpSC(g1,s2,t15) - 11.4 RDnSC(g1,s2,t15) + 5000 Lshed(s2,t15)
+   + 8.4 RUp(g1,s2,t16) - 7.6 RDn(g1,s2,t16) + 12.6 RUpSC(g1,s2,t16)
+   - 11.4 RDnSC(g1,s2,t16) + 5000 Lshed(s2,t16) + 8.4 RUp(g1,s2,t17)
+   - 7.6 RDn(g1,s2,t17) + 12.6 RUpSC(g1,s2,t17) - 11.4 RDnSC(g1,s2,t17)
+   + 5000 Lshed(s2,t17) + 8.4 RUp(g1,s2,t18) - 7.6 RDn(g1,s2,t18)
+   + 12.6 RUpSC(g1,s2,t18) - 11.4 RDnSC(g1,s2,t18) + 5000 Lshed(s2,t18)
+   + 8.4 RUp(g1,s2,t19) - 7.6 RDn(g1,s2,t19) + 12.6 RUpSC(g1,s2,t19)
+   - 11.4 RDnSC(g1,s2,t19) + 5000 Lshed(s2,t19) + 8.4 RUp(g1,s2,t20)
+   - 7.6 RDn(g1,s2,t20) + 12.6 RUpSC(g1,s2,t20) - 11.4 RDnSC(g1,s2,t20)
+   + 5000 Lshed(s2,t20) + 8.4 RUp(g1,s2,t21) - 7.6 RDn(g1,s2,t21)
+   + 12.6 RUpSC(g1,s2,t21) - 11.4 RDnSC(g1,s2,t21) + 5000 Lshed(s2,t21)
+   + 8.4 RUp(g1,s2,t22) - 7.6 RDn(g1,s2,t22) + 12.6 RUpSC(g1,s2,t22)
+   - 11.4 RDnSC(g1,s2,t22) + 5000 Lshed(s2,t22) + 8.4 RUp(g1,s2,t23)
+   - 7.6 RDn(g1,s2,t23) + 12.6 RUpSC(g1,s2,t23) - 11.4 RDnSC(g1,s2,t23)
+   + 5000 Lshed(s2,t23) + 8.4 RUp(g1,s2,t24) - 7.6 RDn(g1,s2,t24)
+   + 12.6 RUpSC(g1,s2,t24) - 11.4 RDnSC(g1,s2,t24) + 5000 Lshed(s2,t24)
    + 10000 gshed_da(ng101,k0,t1) + 10000 gshed_da(ng101,k1,t1)
    + 10000 gshed_da(ng101,k2,t1) + 10000 gshed_da(ng101,k0,t2)
    + 10000 gshed_da(ng101,k1,t2) + 10000 gshed_da(ng101,k2,t2)
@@ -142,6 +182,14 @@ Minimize
    + 3 gprod(gw2,k0,t16) + 3 gprod(gw2,k0,t17) + 3 gprod(gw2,k0,t18)
    + 3 gprod(gw2,k0,t19) + 3 gprod(gw2,k0,t20) + 3 gprod(gw2,k0,t21)
    + 3 gprod(gw2,k0,t22) + 3 gprod(gw2,k0,t23) + 3 gprod(gw2,k0,t24)
+   + 4 gprod(gw3,k0,t1) + 4 gprod(gw3,k0,t2) + 4 gprod(gw3,k0,t3)
+   + 4 gprod(gw3,k0,t4) + 4 gprod(gw3,k0,t5) + 4 gprod(gw3,k0,t6)
+   + 4 gprod(gw3,k0,t7) + 4 gprod(gw3,k0,t8) + 4 gprod(gw3,k0,t9)
+   + 4 gprod(gw3,k0,t10) + 4 gprod(gw3,k0,t11) + 4 gprod(gw3,k0,t12)
+   + 4 gprod(gw3,k0,t13) + 4 gprod(gw3,k0,t14) + 4 gprod(gw3,k0,t15)
+   + 4 gprod(gw3,k0,t16) + 4 gprod(gw3,k0,t17) + 4 gprod(gw3,k0,t18)
+   + 4 gprod(gw3,k0,t19) + 4 gprod(gw3,k0,t20) + 4 gprod(gw3,k0,t21)
+   + 4 gprod(gw3,k0,t22) + 4 gprod(gw3,k0,t23) + 4 gprod(gw3,k0,t24)
    + 2.1 gsin(gs1,t1,k0) + 2.1 gsout(gs1,t1,k0) + 2.1 gsin(gs1,t2,k0)
    + 2.1 gsout(gs1,t2,k0) + 2.1 gsin(gs1,t3,k0) + 2.1 gsout(gs1,t3,k0)
    + 2.1 gsin(gs1,t4,k0) + 2.1 gsout(gs1,t4,k0) + 2.1 gsin(gs1,t5,k0)
@@ -159,149 +207,197 @@ Minimize
    + 2.1 gsin(gs1,t22,k0) + 2.1 gsout(gs1,t22,k0) + 2.1 gsin(gs1,t23,k0)
    + 2.1 gsout(gs1,t23,k0) + 2.1 gsin(gs1,t24,k0) + 2.1 gsout(gs1,t24,k0)
    + 5000 gshed(ng101,s1,t1) + 5000 gshed(ng102,s1,t1)
-   + 1.575 gprodUp(gw1,s1,t1) - 1.425 gprodDn(gw1,s1,t1)
+   + 1.05 gprodUp(gw1,s1,t1) - 0.95 gprodDn(gw1,s1,t1)
    + 1.575 gprodUp(gw2,s1,t1) - 1.425 gprodDn(gw2,s1,t1)
+   + 2.1 gprodUp(gw3,s1,t1) - 1.9 gprodDn(gw3,s1,t1)
    + 5000 gshed(ng101,s1,t2) + 5000 gshed(ng102,s1,t2)
-   + 1.575 gprodUp(gw1,s1,t2) - 1.425 gprodDn(gw1,s1,t2)
+   + 1.05 gprodUp(gw1,s1,t2) - 0.95 gprodDn(gw1,s1,t2)
    + 1.575 gprodUp(gw2,s1,t2) - 1.425 gprodDn(gw2,s1,t2)
+   + 2.1 gprodUp(gw3,s1,t2) - 1.9 gprodDn(gw3,s1,t2)
    + 5000 gshed(ng101,s1,t3) + 5000 gshed(ng102,s1,t3)
-   + 1.575 gprodUp(gw1,s1,t3) - 1.425 gprodDn(gw1,s1,t3)
+   + 1.05 gprodUp(gw1,s1,t3) - 0.95 gprodDn(gw1,s1,t3)
    + 1.575 gprodUp(gw2,s1,t3) - 1.425 gprodDn(gw2,s1,t3)
+   + 2.1 gprodUp(gw3,s1,t3) - 1.9 gprodDn(gw3,s1,t3)
    + 5000 gshed(ng101,s1,t4) + 5000 gshed(ng102,s1,t4)
-   + 1.575 gprodUp(gw1,s1,t4) - 1.425 gprodDn(gw1,s1,t4)
+   + 1.05 gprodUp(gw1,s1,t4) - 0.95 gprodDn(gw1,s1,t4)
    + 1.575 gprodUp(gw2,s1,t4) - 1.425 gprodDn(gw2,s1,t4)
+   + 2.1 gprodUp(gw3,s1,t4) - 1.9 gprodDn(gw3,s1,t4)
    + 5000 gshed(ng101,s1,t5) + 5000 gshed(ng102,s1,t5)
-   + 1.575 gprodUp(gw1,s1,t5) - 1.425 gprodDn(gw1,s1,t5)
+   + 1.05 gprodUp(gw1,s1,t5) - 0.95 gprodDn(gw1,s1,t5)
    + 1.575 gprodUp(gw2,s1,t5) - 1.425 gprodDn(gw2,s1,t5)
+   + 2.1 gprodUp(gw3,s1,t5) - 1.9 gprodDn(gw3,s1,t5)
    + 5000 gshed(ng101,s1,t6) + 5000 gshed(ng102,s1,t6)
-   + 1.575 gprodUp(gw1,s1,t6) - 1.425 gprodDn(gw1,s1,t6)
+   + 1.05 gprodUp(gw1,s1,t6) - 0.95 gprodDn(gw1,s1,t6)
    + 1.575 gprodUp(gw2,s1,t6) - 1.425 gprodDn(gw2,s1,t6)
+   + 2.1 gprodUp(gw3,s1,t6) - 1.9 gprodDn(gw3,s1,t6)
    + 5000 gshed(ng101,s1,t7) + 5000 gshed(ng102,s1,t7)
-   + 1.575 gprodUp(gw1,s1,t7) - 1.425 gprodDn(gw1,s1,t7)
+   + 1.05 gprodUp(gw1,s1,t7) - 0.95 gprodDn(gw1,s1,t7)
    + 1.575 gprodUp(gw2,s1,t7) - 1.425 gprodDn(gw2,s1,t7)
+   + 2.1 gprodUp(gw3,s1,t7) - 1.9 gprodDn(gw3,s1,t7)
    + 5000 gshed(ng101,s1,t8) + 5000 gshed(ng102,s1,t8)
-   + 1.575 gprodUp(gw1,s1,t8) - 1.425 gprodDn(gw1,s1,t8)
+   + 1.05 gprodUp(gw1,s1,t8) - 0.95 gprodDn(gw1,s1,t8)
    + 1.575 gprodUp(gw2,s1,t8) - 1.425 gprodDn(gw2,s1,t8)
+   + 2.1 gprodUp(gw3,s1,t8) - 1.9 gprodDn(gw3,s1,t8)
    + 5000 gshed(ng101,s1,t9) + 5000 gshed(ng102,s1,t9)
-   + 1.575 gprodUp(gw1,s1,t9) - 1.425 gprodDn(gw1,s1,t9)
+   + 1.05 gprodUp(gw1,s1,t9) - 0.95 gprodDn(gw1,s1,t9)
    + 1.575 gprodUp(gw2,s1,t9) - 1.425 gprodDn(gw2,s1,t9)
+   + 2.1 gprodUp(gw3,s1,t9) - 1.9 gprodDn(gw3,s1,t9)
    + 5000 gshed(ng101,s1,t10) + 5000 gshed(ng102,s1,t10)
-   + 1.575 gprodUp(gw1,s1,t10) - 1.425 gprodDn(gw1,s1,t10)
+   + 1.05 gprodUp(gw1,s1,t10) - 0.95 gprodDn(gw1,s1,t10)
    + 1.575 gprodUp(gw2,s1,t10) - 1.425 gprodDn(gw2,s1,t10)
+   + 2.1 gprodUp(gw3,s1,t10) - 1.9 gprodDn(gw3,s1,t10)
    + 5000 gshed(ng101,s1,t11) + 5000 gshed(ng102,s1,t11)
-   + 1.575 gprodUp(gw1,s1,t11) - 1.425 gprodDn(gw1,s1,t11)
+   + 1.05 gprodUp(gw1,s1,t11) - 0.95 gprodDn(gw1,s1,t11)
    + 1.575 gprodUp(gw2,s1,t11) - 1.425 gprodDn(gw2,s1,t11)
+   + 2.1 gprodUp(gw3,s1,t11) - 1.9 gprodDn(gw3,s1,t11)
    + 5000 gshed(ng101,s1,t12) + 5000 gshed(ng102,s1,t12)
-   + 1.575 gprodUp(gw1,s1,t12) - 1.425 gprodDn(gw1,s1,t12)
+   + 1.05 gprodUp(gw1,s1,t12) - 0.95 gprodDn(gw1,s1,t12)
    + 1.575 gprodUp(gw2,s1,t12) - 1.425 gprodDn(gw2,s1,t12)
+   + 2.1 gprodUp(gw3,s1,t12) - 1.9 gprodDn(gw3,s1,t12)
    + 5000 gshed(ng101,s1,t13) + 5000 gshed(ng102,s1,t13)
-   + 1.575 gprodUp(gw1,s1,t13) - 1.425 gprodDn(gw1,s1,t13)
+   + 1.05 gprodUp(gw1,s1,t13) - 0.95 gprodDn(gw1,s1,t13)
    + 1.575 gprodUp(gw2,s1,t13) - 1.425 gprodDn(gw2,s1,t13)
+   + 2.1 gprodUp(gw3,s1,t13) - 1.9 gprodDn(gw3,s1,t13)
    + 5000 gshed(ng101,s1,t14) + 5000 gshed(ng102,s1,t14)
-   + 1.575 gprodUp(gw1,s1,t14) - 1.425 gprodDn(gw1,s1,t14)
+   + 1.05 gprodUp(gw1,s1,t14) - 0.95 gprodDn(gw1,s1,t14)
    + 1.575 gprodUp(gw2,s1,t14) - 1.425 gprodDn(gw2,s1,t14)
+   + 2.1 gprodUp(gw3,s1,t14) - 1.9 gprodDn(gw3,s1,t14)
    + 5000 gshed(ng101,s1,t15) + 5000 gshed(ng102,s1,t15)
-   + 1.575 gprodUp(gw1,s1,t15) - 1.425 gprodDn(gw1,s1,t15)
+   + 1.05 gprodUp(gw1,s1,t15) - 0.95 gprodDn(gw1,s1,t15)
    + 1.575 gprodUp(gw2,s1,t15) - 1.425 gprodDn(gw2,s1,t15)
+   + 2.1 gprodUp(gw3,s1,t15) - 1.9 gprodDn(gw3,s1,t15)
    + 5000 gshed(ng101,s1,t16) + 5000 gshed(ng102,s1,t16)
-   + 1.575 gprodUp(gw1,s1,t16) - 1.425 gprodDn(gw1,s1,t16)
+   + 1.05 gprodUp(gw1,s1,t16) - 0.95 gprodDn(gw1,s1,t16)
    + 1.575 gprodUp(gw2,s1,t16) - 1.425 gprodDn(gw2,s1,t16)
+   + 2.1 gprodUp(gw3,s1,t16) - 1.9 gprodDn(gw3,s1,t16)
    + 5000 gshed(ng101,s1,t17) + 5000 gshed(ng102,s1,t17)
-   + 1.575 gprodUp(gw1,s1,t17) - 1.425 gprodDn(gw1,s1,t17)
+   + 1.05 gprodUp(gw1,s1,t17) - 0.95 gprodDn(gw1,s1,t17)
    + 1.575 gprodUp(gw2,s1,t17) - 1.425 gprodDn(gw2,s1,t17)
+   + 2.1 gprodUp(gw3,s1,t17) - 1.9 gprodDn(gw3,s1,t17)
    + 5000 gshed(ng101,s1,t18) + 5000 gshed(ng102,s1,t18)
-   + 1.575 gprodUp(gw1,s1,t18) - 1.425 gprodDn(gw1,s1,t18)
+   + 1.05 gprodUp(gw1,s1,t18) - 0.95 gprodDn(gw1,s1,t18)
    + 1.575 gprodUp(gw2,s1,t18) - 1.425 gprodDn(gw2,s1,t18)
+   + 2.1 gprodUp(gw3,s1,t18) - 1.9 gprodDn(gw3,s1,t18)
    + 5000 gshed(ng101,s1,t19) + 5000 gshed(ng102,s1,t19)
-   + 1.575 gprodUp(gw1,s1,t19) - 1.425 gprodDn(gw1,s1,t19)
+   + 1.05 gprodUp(gw1,s1,t19) - 0.95 gprodDn(gw1,s1,t19)
    + 1.575 gprodUp(gw2,s1,t19) - 1.425 gprodDn(gw2,s1,t19)
+   + 2.1 gprodUp(gw3,s1,t19) - 1.9 gprodDn(gw3,s1,t19)
    + 5000 gshed(ng101,s1,t20) + 5000 gshed(ng102,s1,t20)
-   + 1.575 gprodUp(gw1,s1,t20) - 1.425 gprodDn(gw1,s1,t20)
+   + 1.05 gprodUp(gw1,s1,t20) - 0.95 gprodDn(gw1,s1,t20)
    + 1.575 gprodUp(gw2,s1,t20) - 1.425 gprodDn(gw2,s1,t20)
+   + 2.1 gprodUp(gw3,s1,t20) - 1.9 gprodDn(gw3,s1,t20)
    + 5000 gshed(ng101,s1,t21) + 5000 gshed(ng102,s1,t21)
-   + 1.575 gprodUp(gw1,s1,t21) - 1.425 gprodDn(gw1,s1,t21)
+   + 1.05 gprodUp(gw1,s1,t21) - 0.95 gprodDn(gw1,s1,t21)
    + 1.575 gprodUp(gw2,s1,t21) - 1.425 gprodDn(gw2,s1,t21)
+   + 2.1 gprodUp(gw3,s1,t21) - 1.9 gprodDn(gw3,s1,t21)
    + 5000 gshed(ng101,s1,t22) + 5000 gshed(ng102,s1,t22)
-   + 1.575 gprodUp(gw1,s1,t22) - 1.425 gprodDn(gw1,s1,t22)
+   + 1.05 gprodUp(gw1,s1,t22) - 0.95 gprodDn(gw1,s1,t22)
    + 1.575 gprodUp(gw2,s1,t22) - 1.425 gprodDn(gw2,s1,t22)
+   + 2.1 gprodUp(gw3,s1,t22) - 1.9 gprodDn(gw3,s1,t22)
    + 5000 gshed(ng101,s1,t23) + 5000 gshed(ng102,s1,t23)
-   + 1.575 gprodUp(gw1,s1,t23) - 1.425 gprodDn(gw1,s1,t23)
+   + 1.05 gprodUp(gw1,s1,t23) - 0.95 gprodDn(gw1,s1,t23)
    + 1.575 gprodUp(gw2,s1,t23) - 1.425 gprodDn(gw2,s1,t23)
+   + 2.1 gprodUp(gw3,s1,t23) - 1.9 gprodDn(gw3,s1,t23)
    + 5000 gshed(ng101,s1,t24) + 5000 gshed(ng102,s1,t24)
-   + 1.575 gprodUp(gw1,s1,t24) - 1.425 gprodDn(gw1,s1,t24)
+   + 1.05 gprodUp(gw1,s1,t24) - 0.95 gprodDn(gw1,s1,t24)
    + 1.575 gprodUp(gw2,s1,t24) - 1.425 gprodDn(gw2,s1,t24)
+   + 2.1 gprodUp(gw3,s1,t24) - 1.9 gprodDn(gw3,s1,t24)
    + 5000 gshed(ng101,s2,t1) + 5000 gshed(ng102,s2,t1)
-   + 1.575 gprodUp(gw1,s2,t1) - 1.425 gprodDn(gw1,s2,t1)
+   + 1.05 gprodUp(gw1,s2,t1) - 0.95 gprodDn(gw1,s2,t1)
    + 1.575 gprodUp(gw2,s2,t1) - 1.425 gprodDn(gw2,s2,t1)
+   + 2.1 gprodUp(gw3,s2,t1) - 1.9 gprodDn(gw3,s2,t1)
    + 5000 gshed(ng101,s2,t2) + 5000 gshed(ng102,s2,t2)
-   + 1.575 gprodUp(gw1,s2,t2) - 1.425 gprodDn(gw1,s2,t2)
+   + 1.05 gprodUp(gw1,s2,t2) - 0.95 gprodDn(gw1,s2,t2)
    + 1.575 gprodUp(gw2,s2,t2) - 1.425 gprodDn(gw2,s2,t2)
+   + 2.1 gprodUp(gw3,s2,t2) - 1.9 gprodDn(gw3,s2,t2)
    + 5000 gshed(ng101,s2,t3) + 5000 gshed(ng102,s2,t3)
-   + 1.575 gprodUp(gw1,s2,t3) - 1.425 gprodDn(gw1,s2,t3)
+   + 1.05 gprodUp(gw1,s2,t3) - 0.95 gprodDn(gw1,s2,t3)
    + 1.575 gprodUp(gw2,s2,t3) - 1.425 gprodDn(gw2,s2,t3)
+   + 2.1 gprodUp(gw3,s2,t3) - 1.9 gprodDn(gw3,s2,t3)
    + 5000 gshed(ng101,s2,t4) + 5000 gshed(ng102,s2,t4)
-   + 1.575 gprodUp(gw1,s2,t4) - 1.425 gprodDn(gw1,s2,t4)
+   + 1.05 gprodUp(gw1,s2,t4) - 0.95 gprodDn(gw1,s2,t4)
    + 1.575 gprodUp(gw2,s2,t4) - 1.425 gprodDn(gw2,s2,t4)
+   + 2.1 gprodUp(gw3,s2,t4) - 1.9 gprodDn(gw3,s2,t4)
    + 5000 gshed(ng101,s2,t5) + 5000 gshed(ng102,s2,t5)
-   + 1.575 gprodUp(gw1,s2,t5) - 1.425 gprodDn(gw1,s2,t5)
+   + 1.05 gprodUp(gw1,s2,t5) - 0.95 gprodDn(gw1,s2,t5)
    + 1.575 gprodUp(gw2,s2,t5) - 1.425 gprodDn(gw2,s2,t5)
+   + 2.1 gprodUp(gw3,s2,t5) - 1.9 gprodDn(gw3,s2,t5)
    + 5000 gshed(ng101,s2,t6) + 5000 gshed(ng102,s2,t6)
-   + 1.575 gprodUp(gw1,s2,t6) - 1.425 gprodDn(gw1,s2,t6)
+   + 1.05 gprodUp(gw1,s2,t6) - 0.95 gprodDn(gw1,s2,t6)
    + 1.575 gprodUp(gw2,s2,t6) - 1.425 gprodDn(gw2,s2,t6)
+   + 2.1 gprodUp(gw3,s2,t6) - 1.9 gprodDn(gw3,s2,t6)
    + 5000 gshed(ng101,s2,t7) + 5000 gshed(ng102,s2,t7)
-   + 1.575 gprodUp(gw1,s2,t7) - 1.425 gprodDn(gw1,s2,t7)
+   + 1.05 gprodUp(gw1,s2,t7) - 0.95 gprodDn(gw1,s2,t7)
    + 1.575 gprodUp(gw2,s2,t7) - 1.425 gprodDn(gw2,s2,t7)
+   + 2.1 gprodUp(gw3,s2,t7) - 1.9 gprodDn(gw3,s2,t7)
    + 5000 gshed(ng101,s2,t8) + 5000 gshed(ng102,s2,t8)
-   + 1.575 gprodUp(gw1,s2,t8) - 1.425 gprodDn(gw1,s2,t8)
+   + 1.05 gprodUp(gw1,s2,t8) - 0.95 gprodDn(gw1,s2,t8)
    + 1.575 gprodUp(gw2,s2,t8) - 1.425 gprodDn(gw2,s2,t8)
+   + 2.1 gprodUp(gw3,s2,t8) - 1.9 gprodDn(gw3,s2,t8)
    + 5000 gshed(ng101,s2,t9) + 5000 gshed(ng102,s2,t9)
-   + 1.575 gprodUp(gw1,s2,t9) - 1.425 gprodDn(gw1,s2,t9)
+   + 1.05 gprodUp(gw1,s2,t9) - 0.95 gprodDn(gw1,s2,t9)
    + 1.575 gprodUp(gw2,s2,t9) - 1.425 gprodDn(gw2,s2,t9)
+   + 2.1 gprodUp(gw3,s2,t9) - 1.9 gprodDn(gw3,s2,t9)
    + 5000 gshed(ng101,s2,t10) + 5000 gshed(ng102,s2,t10)
-   + 1.575 gprodUp(gw1,s2,t10) - 1.425 gprodDn(gw1,s2,t10)
+   + 1.05 gprodUp(gw1,s2,t10) - 0.95 gprodDn(gw1,s2,t10)
    + 1.575 gprodUp(gw2,s2,t10) - 1.425 gprodDn(gw2,s2,t10)
+   + 2.1 gprodUp(gw3,s2,t10) - 1.9 gprodDn(gw3,s2,t10)
    + 5000 gshed(ng101,s2,t11) + 5000 gshed(ng102,s2,t11)
-   + 1.575 gprodUp(gw1,s2,t11) - 1.425 gprodDn(gw1,s2,t11)
+   + 1.05 gprodUp(gw1,s2,t11) - 0.95 gprodDn(gw1,s2,t11)
    + 1.575 gprodUp(gw2,s2,t11) - 1.425 gprodDn(gw2,s2,t11)
+   + 2.1 gprodUp(gw3,s2,t11) - 1.9 gprodDn(gw3,s2,t11)
    + 5000 gshed(ng101,s2,t12) + 5000 gshed(ng102,s2,t12)
-   + 1.575 gprodUp(gw1,s2,t12) - 1.425 gprodDn(gw1,s2,t12)
+   + 1.05 gprodUp(gw1,s2,t12) - 0.95 gprodDn(gw1,s2,t12)
    + 1.575 gprodUp(gw2,s2,t12) - 1.425 gprodDn(gw2,s2,t12)
+   + 2.1 gprodUp(gw3,s2,t12) - 1.9 gprodDn(gw3,s2,t12)
    + 5000 gshed(ng101,s2,t13) + 5000 gshed(ng102,s2,t13)
-   + 1.575 gprodUp(gw1,s2,t13) - 1.425 gprodDn(gw1,s2,t13)
+   + 1.05 gprodUp(gw1,s2,t13) - 0.95 gprodDn(gw1,s2,t13)
    + 1.575 gprodUp(gw2,s2,t13) - 1.425 gprodDn(gw2,s2,t13)
+   + 2.1 gprodUp(gw3,s2,t13) - 1.9 gprodDn(gw3,s2,t13)
    + 5000 gshed(ng101,s2,t14) + 5000 gshed(ng102,s2,t14)
-   + 1.575 gprodUp(gw1,s2,t14) - 1.425 gprodDn(gw1,s2,t14)
+   + 1.05 gprodUp(gw1,s2,t14) - 0.95 gprodDn(gw1,s2,t14)
    + 1.575 gprodUp(gw2,s2,t14) - 1.425 gprodDn(gw2,s2,t14)
+   + 2.1 gprodUp(gw3,s2,t14) - 1.9 gprodDn(gw3,s2,t14)
    + 5000 gshed(ng101,s2,t15) + 5000 gshed(ng102,s2,t15)
-   + 1.575 gprodUp(gw1,s2,t15) - 1.425 gprodDn(gw1,s2,t15)
+   + 1.05 gprodUp(gw1,s2,t15) - 0.95 gprodDn(gw1,s2,t15)
    + 1.575 gprodUp(gw2,s2,t15) - 1.425 gprodDn(gw2,s2,t15)
+   + 2.1 gprodUp(gw3,s2,t15) - 1.9 gprodDn(gw3,s2,t15)
    + 5000 gshed(ng101,s2,t16) + 5000 gshed(ng102,s2,t16)
-   + 1.575 gprodUp(gw1,s2,t16) - 1.425 gprodDn(gw1,s2,t16)
+   + 1.05 gprodUp(gw1,s2,t16) - 0.95 gprodDn(gw1,s2,t16)
    + 1.575 gprodUp(gw2,s2,t16) - 1.425 gprodDn(gw2,s2,t16)
+   + 2.1 gprodUp(gw3,s2,t16) - 1.9 gprodDn(gw3,s2,t16)
    + 5000 gshed(ng101,s2,t17) + 5000 gshed(ng102,s2,t17)
-   + 1.575 gprodUp(gw1,s2,t17) - 1.425 gprodDn(gw1,s2,t17)
+   + 1.05 gprodUp(gw1,s2,t17) - 0.95 gprodDn(gw1,s2,t17)
    + 1.575 gprodUp(gw2,s2,t17) - 1.425 gprodDn(gw2,s2,t17)
+   + 2.1 gprodUp(gw3,s2,t17) - 1.9 gprodDn(gw3,s2,t17)
    + 5000 gshed(ng101,s2,t18) + 5000 gshed(ng102,s2,t18)
-   + 1.575 gprodUp(gw1,s2,t18) - 1.425 gprodDn(gw1,s2,t18)
+   + 1.05 gprodUp(gw1,s2,t18) - 0.95 gprodDn(gw1,s2,t18)
    + 1.575 gprodUp(gw2,s2,t18) - 1.425 gprodDn(gw2,s2,t18)
+   + 2.1 gprodUp(gw3,s2,t18) - 1.9 gprodDn(gw3,s2,t18)
    + 5000 gshed(ng101,s2,t19) + 5000 gshed(ng102,s2,t19)
-   + 1.575 gprodUp(gw1,s2,t19) - 1.425 gprodDn(gw1,s2,t19)
+   + 1.05 gprodUp(gw1,s2,t19) - 0.95 gprodDn(gw1,s2,t19)
    + 1.575 gprodUp(gw2,s2,t19) - 1.425 gprodDn(gw2,s2,t19)
+   + 2.1 gprodUp(gw3,s2,t19) - 1.9 gprodDn(gw3,s2,t19)
    + 5000 gshed(ng101,s2,t20) + 5000 gshed(ng102,s2,t20)
-   + 1.575 gprodUp(gw1,s2,t20) - 1.425 gprodDn(gw1,s2,t20)
+   + 1.05 gprodUp(gw1,s2,t20) - 0.95 gprodDn(gw1,s2,t20)
    + 1.575 gprodUp(gw2,s2,t20) - 1.425 gprodDn(gw2,s2,t20)
+   + 2.1 gprodUp(gw3,s2,t20) - 1.9 gprodDn(gw3,s2,t20)
    + 5000 gshed(ng101,s2,t21) + 5000 gshed(ng102,s2,t21)
-   + 1.575 gprodUp(gw1,s2,t21) - 1.425 gprodDn(gw1,s2,t21)
+   + 1.05 gprodUp(gw1,s2,t21) - 0.95 gprodDn(gw1,s2,t21)
    + 1.575 gprodUp(gw2,s2,t21) - 1.425 gprodDn(gw2,s2,t21)
+   + 2.1 gprodUp(gw3,s2,t21) - 1.9 gprodDn(gw3,s2,t21)
    + 5000 gshed(ng101,s2,t22) + 5000 gshed(ng102,s2,t22)
-   + 1.575 gprodUp(gw1,s2,t22) - 1.425 gprodDn(gw1,s2,t22)
+   + 1.05 gprodUp(gw1,s2,t22) - 0.95 gprodDn(gw1,s2,t22)
    + 1.575 gprodUp(gw2,s2,t22) - 1.425 gprodDn(gw2,s2,t22)
+   + 2.1 gprodUp(gw3,s2,t22) - 1.9 gprodDn(gw3,s2,t22)
    + 5000 gshed(ng101,s2,t23) + 5000 gshed(ng102,s2,t23)
-   + 1.575 gprodUp(gw1,s2,t23) - 1.425 gprodDn(gw1,s2,t23)
+   + 1.05 gprodUp(gw1,s2,t23) - 0.95 gprodDn(gw1,s2,t23)
    + 1.575 gprodUp(gw2,s2,t23) - 1.425 gprodDn(gw2,s2,t23)
+   + 2.1 gprodUp(gw3,s2,t23) - 1.9 gprodDn(gw3,s2,t23)
    + 5000 gshed(ng101,s2,t24) + 5000 gshed(ng102,s2,t24)
-   + 1.575 gprodUp(gw1,s2,t24) - 1.425 gprodDn(gw1,s2,t24)
+   + 1.05 gprodUp(gw1,s2,t24) - 0.95 gprodDn(gw1,s2,t24)
    + 1.575 gprodUp(gw2,s2,t24) - 1.425 gprodDn(gw2,s2,t24)
+   + 2.1 gprodUp(gw3,s2,t24) - 1.9 gprodDn(gw3,s2,t24)
 Subject To
  PowerBalance_DA(t1): Pgen(g1,t1) + PgenSC(g1,t1) + WindDA(w1,t1) = 50
  PowerBalance_DA(t2): Pgen(g1,t2) + PgenSC(g1,t2) + WindDA(w1,t2)
@@ -347,53 +443,53 @@ Subject To
  PowerBalance_DA(t24): Pgen(g1,t24) + PgenSC(g1,t24) + WindDA(w1,t24)
    = 48.70590477
  Pmax_DA_GFPP(g1,t1): Pgen(g1,t1) + PgenSC(g1,t1) + RCup(g1,t1)
-   + RCupSC(g1,t1) <= 152
+   + RCupSC(g1,t1) <= 60
  Pmax_DA_GFPP(g1,t2): Pgen(g1,t2) + PgenSC(g1,t2) + RCup(g1,t2)
-   + RCupSC(g1,t2) <= 152
+   + RCupSC(g1,t2) <= 60
  Pmax_DA_GFPP(g1,t3): Pgen(g1,t3) + PgenSC(g1,t3) + RCup(g1,t3)
-   + RCupSC(g1,t3) <= 152
+   + RCupSC(g1,t3) <= 60
  Pmax_DA_GFPP(g1,t4): Pgen(g1,t4) + PgenSC(g1,t4) + RCup(g1,t4)
-   + RCupSC(g1,t4) <= 152
+   + RCupSC(g1,t4) <= 60
  Pmax_DA_GFPP(g1,t5): Pgen(g1,t5) + PgenSC(g1,t5) + RCup(g1,t5)
-   + RCupSC(g1,t5) <= 152
+   + RCupSC(g1,t5) <= 60
  Pmax_DA_GFPP(g1,t6): Pgen(g1,t6) + PgenSC(g1,t6) + RCup(g1,t6)
-   + RCupSC(g1,t6) <= 152
+   + RCupSC(g1,t6) <= 60
  Pmax_DA_GFPP(g1,t7): Pgen(g1,t7) + PgenSC(g1,t7) + RCup(g1,t7)
-   + RCupSC(g1,t7) <= 152
+   + RCupSC(g1,t7) <= 60
  Pmax_DA_GFPP(g1,t8): Pgen(g1,t8) + PgenSC(g1,t8) + RCup(g1,t8)
-   + RCupSC(g1,t8) <= 152
+   + RCupSC(g1,t8) <= 60
  Pmax_DA_GFPP(g1,t9): Pgen(g1,t9) + PgenSC(g1,t9) + RCup(g1,t9)
-   + RCupSC(g1,t9) <= 152
+   + RCupSC(g1,t9) <= 60
  Pmax_DA_GFPP(g1,t10): Pgen(g1,t10) + PgenSC(g1,t10) + RCup(g1,t10)
-   + RCupSC(g1,t10) <= 152
+   + RCupSC(g1,t10) <= 60
  Pmax_DA_GFPP(g1,t11): Pgen(g1,t11) + PgenSC(g1,t11) + RCup(g1,t11)
-   + RCupSC(g1,t11) <= 152
+   + RCupSC(g1,t11) <= 60
  Pmax_DA_GFPP(g1,t12): Pgen(g1,t12) + PgenSC(g1,t12) + RCup(g1,t12)
-   + RCupSC(g1,t12) <= 152
+   + RCupSC(g1,t12) <= 60
  Pmax_DA_GFPP(g1,t13): Pgen(g1,t13) + PgenSC(g1,t13) + RCup(g1,t13)
-   + RCupSC(g1,t13) <= 152
+   + RCupSC(g1,t13) <= 60
  Pmax_DA_GFPP(g1,t14): Pgen(g1,t14) + PgenSC(g1,t14) + RCup(g1,t14)
-   + RCupSC(g1,t14) <= 152
+   + RCupSC(g1,t14) <= 60
  Pmax_DA_GFPP(g1,t15): Pgen(g1,t15) + PgenSC(g1,t15) + RCup(g1,t15)
-   + RCupSC(g1,t15) <= 152
+   + RCupSC(g1,t15) <= 60
  Pmax_DA_GFPP(g1,t16): Pgen(g1,t16) + PgenSC(g1,t16) + RCup(g1,t16)
-   + RCupSC(g1,t16) <= 152
+   + RCupSC(g1,t16) <= 60
  Pmax_DA_GFPP(g1,t17): Pgen(g1,t17) + PgenSC(g1,t17) + RCup(g1,t17)
-   + RCupSC(g1,t17) <= 152
+   + RCupSC(g1,t17) <= 60
  Pmax_DA_GFPP(g1,t18): Pgen(g1,t18) + PgenSC(g1,t18) + RCup(g1,t18)
-   + RCupSC(g1,t18) <= 152
+   + RCupSC(g1,t18) <= 60
  Pmax_DA_GFPP(g1,t19): Pgen(g1,t19) + PgenSC(g1,t19) + RCup(g1,t19)
-   + RCupSC(g1,t19) <= 152
+   + RCupSC(g1,t19) <= 60
  Pmax_DA_GFPP(g1,t20): Pgen(g1,t20) + PgenSC(g1,t20) + RCup(g1,t20)
-   + RCupSC(g1,t20) <= 152
+   + RCupSC(g1,t20) <= 60
  Pmax_DA_GFPP(g1,t21): Pgen(g1,t21) + PgenSC(g1,t21) + RCup(g1,t21)
-   + RCupSC(g1,t21) <= 152
+   + RCupSC(g1,t21) <= 60
  Pmax_DA_GFPP(g1,t22): Pgen(g1,t22) + PgenSC(g1,t22) + RCup(g1,t22)
-   + RCupSC(g1,t22) <= 152
+   + RCupSC(g1,t22) <= 60
  Pmax_DA_GFPP(g1,t23): Pgen(g1,t23) + PgenSC(g1,t23) + RCup(g1,t23)
-   + RCupSC(g1,t23) <= 152
+   + RCupSC(g1,t23) <= 60
  Pmax_DA_GFPP(g1,t24): Pgen(g1,t24) + PgenSC(g1,t24) + RCup(g1,t24)
-   + RCupSC(g1,t24) <= 152
+   + RCupSC(g1,t24) <= 60
  Pmin_DA_GFPP(g1,t1): - Pgen(g1,t1) - PgenSC(g1,t1) + RCdn(g1,t1)
    + RCdnSC(g1,t1) <= 0
  Pmin_DA_GFPP(g1,t2): - Pgen(g1,t2) - PgenSC(g1,t2) + RCdn(g1,t2)
@@ -442,270 +538,270 @@ Subject To
    + RCdnSC(g1,t23) <= 0
  Pmin_DA_GFPP(g1,t24): - Pgen(g1,t24) - PgenSC(g1,t24) + RCdn(g1,t24)
    + RCdnSC(g1,t24) <= 0
- Wind_Max_DA(w1,t1): WindDA(w1,t1) <= 14.521143
- Wind_Max_DA(w1,t2): WindDA(w1,t2) <= 14.85633789
- Wind_Max_DA(w1,t3): WindDA(w1,t3) <= 15.52401327
- Wind_Max_DA(w1,t4): WindDA(w1,t4) <= 14.831624415
- Wind_Max_DA(w1,t5): WindDA(w1,t5) <= 15.05633232
- Wind_Max_DA(w1,t6): WindDA(w1,t6) <= 13.626689295
- Wind_Max_DA(w1,t7): WindDA(w1,t7) <= 12.445993755
- Wind_Max_DA(w1,t8): WindDA(w1,t8) <= 10.01010708
- Wind_Max_DA(w1,t9): WindDA(w1,t9) <= 7.85728773
- Wind_Max_DA(w1,t10): WindDA(w1,t10) <= 5.811894255
- Wind_Max_DA(w1,t11): WindDA(w1,t11) <= 4.47311754
- Wind_Max_DA(w1,t12): WindDA(w1,t12) <= 3.99764514
- Wind_Max_DA(w1,t13): WindDA(w1,t13) <= 4.096402739999999
- Wind_Max_DA(w1,t14): WindDA(w1,t14) <= 5.253506864999999
- Wind_Max_DA(w1,t15): WindDA(w1,t15) <= 5.971542074999999
- Wind_Max_DA(w1,t16): WindDA(w1,t16) <= 5.78804346
- Wind_Max_DA(w1,t17): WindDA(w1,t17) <= 4.85449374
- Wind_Max_DA(w1,t18): WindDA(w1,t18) <= 4.553709285
- Wind_Max_DA(w1,t19): WindDA(w1,t19) <= 4.332384765000001
- Wind_Max_DA(w1,t20): WindDA(w1,t20) <= 4.076401499999999
- Wind_Max_DA(w1,t21): WindDA(w1,t21) <= 3.6377967
- Wind_Max_DA(w1,t22): WindDA(w1,t22) <= 3.370745925
- Wind_Max_DA(w1,t23): WindDA(w1,t23) <= 2.91260091
- Wind_Max_DA(w1,t24): WindDA(w1,t24) <= 1.880813415
- PgenSCmax(g1,t1): PgenSC(g1,t1) <= 100
+ Wind_Max_DA(w1,t1): WindDA(w1,t1) <= 14.64288219
+ Wind_Max_DA(w1,t2): WindDA(w1,t2) <= 14.000526525
+ Wind_Max_DA(w1,t3): WindDA(w1,t3) <= 8.015046975000001
+ Wind_Max_DA(w1,t4): WindDA(w1,t4) <= 6.384794445
+ Wind_Max_DA(w1,t5): WindDA(w1,t5) <= 7.418392245
+ Wind_Max_DA(w1,t6): WindDA(w1,t6) <= 8.881785345000001
+ Wind_Max_DA(w1,t7): WindDA(w1,t7) <= 7.95995847
+ Wind_Max_DA(w1,t8): WindDA(w1,t8) <= 6.205960395
+ Wind_Max_DA(w1,t9): WindDA(w1,t9) <= 5.87791674
+ Wind_Max_DA(w1,t10): WindDA(w1,t10) <= 7.829036820000001
+ Wind_Max_DA(w1,t11): WindDA(w1,t11) <= 10.253729715
+ Wind_Max_DA(w1,t12): WindDA(w1,t12) <= 11.661138675
+ Wind_Max_DA(w1,t13): WindDA(w1,t13) <= 16.17232308
+ Wind_Max_DA(w1,t14): WindDA(w1,t14) <= 16.61719362
+ Wind_Max_DA(w1,t15): WindDA(w1,t15) <= 17.630447265
+ Wind_Max_DA(w1,t16): WindDA(w1,t16) <= 16.944860445
+ Wind_Max_DA(w1,t17): WindDA(w1,t17) <= 19.575149655
+ Wind_Max_DA(w1,t18): WindDA(w1,t18) <= 20.84650377
+ Wind_Max_DA(w1,t19): WindDA(w1,t19) <= 19.2511041
+ Wind_Max_DA(w1,t20): WindDA(w1,t20) <= 18.13295568
+ Wind_Max_DA(w1,t21): WindDA(w1,t21) <= 18.54921129
+ Wind_Max_DA(w1,t22): WindDA(w1,t22) <= 19.98755901
+ Wind_Max_DA(w1,t23): WindDA(w1,t23) <= 21.344418255
+ Wind_Max_DA(w1,t24): WindDA(w1,t24) <= 21.103870245
+ PgenSCmax(g1,t1): PgenSC(g1,t1) <= 10
  PgenSCmin(g1,t1): - PgenSC(g1,t1) <= 0
- RCupSCmax(g1,t1): PgenSC(g1,t1) + RCupSC(g1,t1) <= 100
+ RCupSCmax(g1,t1): PgenSC(g1,t1) + RCupSC(g1,t1) <= 10
  RCdnSCmin(g1,t1): - PgenSC(g1,t1) + RCdnSC(g1,t1) <= 0
- PgenSCmax(g1,t2): PgenSC(g1,t2) <= 100
+ PgenSCmax(g1,t2): PgenSC(g1,t2) <= 10
  PgenSCmin(g1,t2): - PgenSC(g1,t2) <= 0
- RCupSCmax(g1,t2): PgenSC(g1,t2) + RCupSC(g1,t2) <= 100
+ RCupSCmax(g1,t2): PgenSC(g1,t2) + RCupSC(g1,t2) <= 10
  RCdnSCmin(g1,t2): - PgenSC(g1,t2) + RCdnSC(g1,t2) <= 0
- PgenSCmax(g1,t3): PgenSC(g1,t3) <= 100
+ PgenSCmax(g1,t3): PgenSC(g1,t3) <= 10
  PgenSCmin(g1,t3): - PgenSC(g1,t3) <= 0
- RCupSCmax(g1,t3): PgenSC(g1,t3) + RCupSC(g1,t3) <= 100
+ RCupSCmax(g1,t3): PgenSC(g1,t3) + RCupSC(g1,t3) <= 10
  RCdnSCmin(g1,t3): - PgenSC(g1,t3) + RCdnSC(g1,t3) <= 0
- PgenSCmax(g1,t4): PgenSC(g1,t4) <= 100
+ PgenSCmax(g1,t4): PgenSC(g1,t4) <= 10
  PgenSCmin(g1,t4): - PgenSC(g1,t4) <= 0
- RCupSCmax(g1,t4): PgenSC(g1,t4) + RCupSC(g1,t4) <= 100
+ RCupSCmax(g1,t4): PgenSC(g1,t4) + RCupSC(g1,t4) <= 10
  RCdnSCmin(g1,t4): - PgenSC(g1,t4) + RCdnSC(g1,t4) <= 0
- PgenSCmax(g1,t5): PgenSC(g1,t5) <= 100
+ PgenSCmax(g1,t5): PgenSC(g1,t5) <= 10
  PgenSCmin(g1,t5): - PgenSC(g1,t5) <= 0
- RCupSCmax(g1,t5): PgenSC(g1,t5) + RCupSC(g1,t5) <= 100
+ RCupSCmax(g1,t5): PgenSC(g1,t5) + RCupSC(g1,t5) <= 10
  RCdnSCmin(g1,t5): - PgenSC(g1,t5) + RCdnSC(g1,t5) <= 0
- PgenSCmax(g1,t6): PgenSC(g1,t6) <= 100
+ PgenSCmax(g1,t6): PgenSC(g1,t6) <= 10
  PgenSCmin(g1,t6): - PgenSC(g1,t6) <= 0
- RCupSCmax(g1,t6): PgenSC(g1,t6) + RCupSC(g1,t6) <= 100
+ RCupSCmax(g1,t6): PgenSC(g1,t6) + RCupSC(g1,t6) <= 10
  RCdnSCmin(g1,t6): - PgenSC(g1,t6) + RCdnSC(g1,t6) <= 0
- PgenSCmax(g1,t7): PgenSC(g1,t7) <= 100
+ PgenSCmax(g1,t7): PgenSC(g1,t7) <= 10
  PgenSCmin(g1,t7): - PgenSC(g1,t7) <= 0
- RCupSCmax(g1,t7): PgenSC(g1,t7) + RCupSC(g1,t7) <= 100
+ RCupSCmax(g1,t7): PgenSC(g1,t7) + RCupSC(g1,t7) <= 10
  RCdnSCmin(g1,t7): - PgenSC(g1,t7) + RCdnSC(g1,t7) <= 0
- PgenSCmax(g1,t8): PgenSC(g1,t8) <= 100
+ PgenSCmax(g1,t8): PgenSC(g1,t8) <= 10
  PgenSCmin(g1,t8): - PgenSC(g1,t8) <= 0
- RCupSCmax(g1,t8): PgenSC(g1,t8) + RCupSC(g1,t8) <= 100
+ RCupSCmax(g1,t8): PgenSC(g1,t8) + RCupSC(g1,t8) <= 10
  RCdnSCmin(g1,t8): - PgenSC(g1,t8) + RCdnSC(g1,t8) <= 0
- PgenSCmax(g1,t9): PgenSC(g1,t9) <= 100
+ PgenSCmax(g1,t9): PgenSC(g1,t9) <= 10
  PgenSCmin(g1,t9): - PgenSC(g1,t9) <= 0
- RCupSCmax(g1,t9): PgenSC(g1,t9) + RCupSC(g1,t9) <= 100
+ RCupSCmax(g1,t9): PgenSC(g1,t9) + RCupSC(g1,t9) <= 10
  RCdnSCmin(g1,t9): - PgenSC(g1,t9) + RCdnSC(g1,t9) <= 0
- PgenSCmax(g1,t10): PgenSC(g1,t10) <= 100
+ PgenSCmax(g1,t10): PgenSC(g1,t10) <= 10
  PgenSCmin(g1,t10): - PgenSC(g1,t10) <= 0
- RCupSCmax(g1,t10): PgenSC(g1,t10) + RCupSC(g1,t10) <= 100
+ RCupSCmax(g1,t10): PgenSC(g1,t10) + RCupSC(g1,t10) <= 10
  RCdnSCmin(g1,t10): - PgenSC(g1,t10) + RCdnSC(g1,t10) <= 0
- PgenSCmax(g1,t11): PgenSC(g1,t11) <= 100
+ PgenSCmax(g1,t11): PgenSC(g1,t11) <= 10
  PgenSCmin(g1,t11): - PgenSC(g1,t11) <= 0
- RCupSCmax(g1,t11): PgenSC(g1,t11) + RCupSC(g1,t11) <= 100
+ RCupSCmax(g1,t11): PgenSC(g1,t11) + RCupSC(g1,t11) <= 10
  RCdnSCmin(g1,t11): - PgenSC(g1,t11) + RCdnSC(g1,t11) <= 0
- PgenSCmax(g1,t12): PgenSC(g1,t12) <= 100
+ PgenSCmax(g1,t12): PgenSC(g1,t12) <= 10
  PgenSCmin(g1,t12): - PgenSC(g1,t12) <= 0
- RCupSCmax(g1,t12): PgenSC(g1,t12) + RCupSC(g1,t12) <= 100
+ RCupSCmax(g1,t12): PgenSC(g1,t12) + RCupSC(g1,t12) <= 10
  RCdnSCmin(g1,t12): - PgenSC(g1,t12) + RCdnSC(g1,t12) <= 0
- PgenSCmax(g1,t13): PgenSC(g1,t13) <= 100
+ PgenSCmax(g1,t13): PgenSC(g1,t13) <= 10
  PgenSCmin(g1,t13): - PgenSC(g1,t13) <= 0
- RCupSCmax(g1,t13): PgenSC(g1,t13) + RCupSC(g1,t13) <= 100
+ RCupSCmax(g1,t13): PgenSC(g1,t13) + RCupSC(g1,t13) <= 10
  RCdnSCmin(g1,t13): - PgenSC(g1,t13) + RCdnSC(g1,t13) <= 0
- PgenSCmax(g1,t14): PgenSC(g1,t14) <= 100
+ PgenSCmax(g1,t14): PgenSC(g1,t14) <= 10
  PgenSCmin(g1,t14): - PgenSC(g1,t14) <= 0
- RCupSCmax(g1,t14): PgenSC(g1,t14) + RCupSC(g1,t14) <= 100
+ RCupSCmax(g1,t14): PgenSC(g1,t14) + RCupSC(g1,t14) <= 10
  RCdnSCmin(g1,t14): - PgenSC(g1,t14) + RCdnSC(g1,t14) <= 0
- PgenSCmax(g1,t15): PgenSC(g1,t15) <= 100
+ PgenSCmax(g1,t15): PgenSC(g1,t15) <= 10
  PgenSCmin(g1,t15): - PgenSC(g1,t15) <= 0
- RCupSCmax(g1,t15): PgenSC(g1,t15) + RCupSC(g1,t15) <= 100
+ RCupSCmax(g1,t15): PgenSC(g1,t15) + RCupSC(g1,t15) <= 10
  RCdnSCmin(g1,t15): - PgenSC(g1,t15) + RCdnSC(g1,t15) <= 0
- PgenSCmax(g1,t16): PgenSC(g1,t16) <= 100
+ PgenSCmax(g1,t16): PgenSC(g1,t16) <= 10
  PgenSCmin(g1,t16): - PgenSC(g1,t16) <= 0
- RCupSCmax(g1,t16): PgenSC(g1,t16) + RCupSC(g1,t16) <= 100
+ RCupSCmax(g1,t16): PgenSC(g1,t16) + RCupSC(g1,t16) <= 10
  RCdnSCmin(g1,t16): - PgenSC(g1,t16) + RCdnSC(g1,t16) <= 0
- PgenSCmax(g1,t17): PgenSC(g1,t17) <= 100
+ PgenSCmax(g1,t17): PgenSC(g1,t17) <= 10
  PgenSCmin(g1,t17): - PgenSC(g1,t17) <= 0
- RCupSCmax(g1,t17): PgenSC(g1,t17) + RCupSC(g1,t17) <= 100
+ RCupSCmax(g1,t17): PgenSC(g1,t17) + RCupSC(g1,t17) <= 10
  RCdnSCmin(g1,t17): - PgenSC(g1,t17) + RCdnSC(g1,t17) <= 0
- PgenSCmax(g1,t18): PgenSC(g1,t18) <= 100
+ PgenSCmax(g1,t18): PgenSC(g1,t18) <= 10
  PgenSCmin(g1,t18): - PgenSC(g1,t18) <= 0
- RCupSCmax(g1,t18): PgenSC(g1,t18) + RCupSC(g1,t18) <= 100
+ RCupSCmax(g1,t18): PgenSC(g1,t18) + RCupSC(g1,t18) <= 10
  RCdnSCmin(g1,t18): - PgenSC(g1,t18) + RCdnSC(g1,t18) <= 0
- PgenSCmax(g1,t19): PgenSC(g1,t19) <= 100
+ PgenSCmax(g1,t19): PgenSC(g1,t19) <= 10
  PgenSCmin(g1,t19): - PgenSC(g1,t19) <= 0
- RCupSCmax(g1,t19): PgenSC(g1,t19) + RCupSC(g1,t19) <= 100
+ RCupSCmax(g1,t19): PgenSC(g1,t19) + RCupSC(g1,t19) <= 10
  RCdnSCmin(g1,t19): - PgenSC(g1,t19) + RCdnSC(g1,t19) <= 0
- PgenSCmax(g1,t20): PgenSC(g1,t20) <= 100
+ PgenSCmax(g1,t20): PgenSC(g1,t20) <= 10
  PgenSCmin(g1,t20): - PgenSC(g1,t20) <= 0
- RCupSCmax(g1,t20): PgenSC(g1,t20) + RCupSC(g1,t20) <= 100
+ RCupSCmax(g1,t20): PgenSC(g1,t20) + RCupSC(g1,t20) <= 10
  RCdnSCmin(g1,t20): - PgenSC(g1,t20) + RCdnSC(g1,t20) <= 0
- PgenSCmax(g1,t21): PgenSC(g1,t21) <= 100
+ PgenSCmax(g1,t21): PgenSC(g1,t21) <= 10
  PgenSCmin(g1,t21): - PgenSC(g1,t21) <= 0
- RCupSCmax(g1,t21): PgenSC(g1,t21) + RCupSC(g1,t21) <= 100
+ RCupSCmax(g1,t21): PgenSC(g1,t21) + RCupSC(g1,t21) <= 10
  RCdnSCmin(g1,t21): - PgenSC(g1,t21) + RCdnSC(g1,t21) <= 0
- PgenSCmax(g1,t22): PgenSC(g1,t22) <= 100
+ PgenSCmax(g1,t22): PgenSC(g1,t22) <= 10
  PgenSCmin(g1,t22): - PgenSC(g1,t22) <= 0
- RCupSCmax(g1,t22): PgenSC(g1,t22) + RCupSC(g1,t22) <= 100
+ RCupSCmax(g1,t22): PgenSC(g1,t22) + RCupSC(g1,t22) <= 10
  RCdnSCmin(g1,t22): - PgenSC(g1,t22) + RCdnSC(g1,t22) <= 0
- PgenSCmax(g1,t23): PgenSC(g1,t23) <= 100
+ PgenSCmax(g1,t23): PgenSC(g1,t23) <= 10
  PgenSCmin(g1,t23): - PgenSC(g1,t23) <= 0
- RCupSCmax(g1,t23): PgenSC(g1,t23) + RCupSC(g1,t23) <= 100
+ RCupSCmax(g1,t23): PgenSC(g1,t23) + RCupSC(g1,t23) <= 10
  RCdnSCmin(g1,t23): - PgenSC(g1,t23) + RCdnSC(g1,t23) <= 0
- PgenSCmax(g1,t24): PgenSC(g1,t24) <= 100
+ PgenSCmax(g1,t24): PgenSC(g1,t24) <= 10
  PgenSCmin(g1,t24): - PgenSC(g1,t24) <= 0
- RCupSCmax(g1,t24): PgenSC(g1,t24) + RCupSC(g1,t24) <= 100
+ RCupSCmax(g1,t24): PgenSC(g1,t24) + RCupSC(g1,t24) <= 10
  RCdnSCmin(g1,t24): - PgenSC(g1,t24) + RCdnSC(g1,t24) <= 0
- PowerBalance_RT(s1,t1): RUp(g1,s1,t1) - RDn(g1,s1,t1) + Lshed(s1,t1)
-   - WindDA(w1,t1) + RUpSC(g1,s1,t1) - RDnSC(g1,s1,t1) - Wspill(w1,s1,t1)
-   = -19.36152399
- PowerBalance_RT(s1,t2): RUp(g1,s1,t2) - RDn(g1,s1,t2) + Lshed(s1,t2)
-   - WindDA(w1,t2) + RUpSC(g1,s1,t2) - RDnSC(g1,s1,t2) - Wspill(w1,s1,t2)
-   = -19.80845052
- PowerBalance_RT(s1,t3): RUp(g1,s1,t3) - RDn(g1,s1,t3) + Lshed(s1,t3)
-   - WindDA(w1,t3) + RUpSC(g1,s1,t3) - RDnSC(g1,s1,t3) - Wspill(w1,s1,t3)
-   = -20.69868435
- PowerBalance_RT(s1,t4): RUp(g1,s1,t4) - RDn(g1,s1,t4) + Lshed(s1,t4)
-   - WindDA(w1,t4) + RUpSC(g1,s1,t4) - RDnSC(g1,s1,t4) - Wspill(w1,s1,t4)
-   = -19.77549921
- PowerBalance_RT(s1,t5): RUp(g1,s1,t5) - RDn(g1,s1,t5) + Lshed(s1,t5)
-   - WindDA(w1,t5) + RUpSC(g1,s1,t5) - RDnSC(g1,s1,t5) - Wspill(w1,s1,t5)
-   = -20.07510975
- PowerBalance_RT(s1,t6): RUp(g1,s1,t6) - RDn(g1,s1,t6) + Lshed(s1,t6)
-   - WindDA(w1,t6) + RUpSC(g1,s1,t6) - RDnSC(g1,s1,t6) - Wspill(w1,s1,t6)
-   = -18.16891905
- PowerBalance_RT(s1,t7): RUp(g1,s1,t7) - RDn(g1,s1,t7) + Lshed(s1,t7)
-   - WindDA(w1,t7) + RUpSC(g1,s1,t7) - RDnSC(g1,s1,t7) - Wspill(w1,s1,t7)
-   = -16.59465834
- PowerBalance_RT(s1,t8): RUp(g1,s1,t8) - RDn(g1,s1,t8) + Lshed(s1,t8)
-   - WindDA(w1,t8) + RUpSC(g1,s1,t8) - RDnSC(g1,s1,t8) - Wspill(w1,s1,t8)
-   = -13.34680944
- PowerBalance_RT(s1,t9): RUp(g1,s1,t9) - RDn(g1,s1,t9) + Lshed(s1,t9)
-   - WindDA(w1,t9) + RUpSC(g1,s1,t9) - RDnSC(g1,s1,t9) - Wspill(w1,s1,t9)
-   = -10.47638364
- PowerBalance_RT(s1,t10): RUp(g1,s1,t10) - RDn(g1,s1,t10) + Lshed(s1,t10)
-   - WindDA(w1,t10) + RUpSC(g1,s1,t10) - RDnSC(g1,s1,t10)
-   - Wspill(w1,s1,t10) = -7.749192330000001
- PowerBalance_RT(s1,t11): RUp(g1,s1,t11) - RDn(g1,s1,t11) + Lshed(s1,t11)
-   - WindDA(w1,t11) + RUpSC(g1,s1,t11) - RDnSC(g1,s1,t11)
-   - Wspill(w1,s1,t11) = -5.964156719999999
- PowerBalance_RT(s1,t12): RUp(g1,s1,t12) - RDn(g1,s1,t12) + Lshed(s1,t12)
-   - WindDA(w1,t12) + RUpSC(g1,s1,t12) - RDnSC(g1,s1,t12)
-   - Wspill(w1,s1,t12) = -5.33019351
- PowerBalance_RT(s1,t13): RUp(g1,s1,t13) - RDn(g1,s1,t13) + Lshed(s1,t13)
-   - WindDA(w1,t13) + RUpSC(g1,s1,t13) - RDnSC(g1,s1,t13)
-   - Wspill(w1,s1,t13) = -5.461870319999999
- PowerBalance_RT(s1,t14): RUp(g1,s1,t14) - RDn(g1,s1,t14) + Lshed(s1,t14)
-   - WindDA(w1,t14) + RUpSC(g1,s1,t14) - RDnSC(g1,s1,t14)
-   - Wspill(w1,s1,t14) = -7.004675819999999
- PowerBalance_RT(s1,t15): RUp(g1,s1,t15) - RDn(g1,s1,t15) + Lshed(s1,t15)
-   - WindDA(w1,t15) + RUpSC(g1,s1,t15) - RDnSC(g1,s1,t15)
-   - Wspill(w1,s1,t15) = -7.9620561
- PowerBalance_RT(s1,t16): RUp(g1,s1,t16) - RDn(g1,s1,t16) + Lshed(s1,t16)
-   - WindDA(w1,t16) + RUpSC(g1,s1,t16) - RDnSC(g1,s1,t16)
-   - Wspill(w1,s1,t16) = -7.71739128
- PowerBalance_RT(s1,t17): RUp(g1,s1,t17) - RDn(g1,s1,t17) + Lshed(s1,t17)
-   - WindDA(w1,t17) + RUpSC(g1,s1,t17) - RDnSC(g1,s1,t17)
-   - Wspill(w1,s1,t17) = -6.47265831
- PowerBalance_RT(s1,t18): RUp(g1,s1,t18) - RDn(g1,s1,t18) + Lshed(s1,t18)
-   - WindDA(w1,t18) + RUpSC(g1,s1,t18) - RDnSC(g1,s1,t18)
-   - Wspill(w1,s1,t18) = -6.07161237
- PowerBalance_RT(s1,t19): RUp(g1,s1,t19) - RDn(g1,s1,t19) + Lshed(s1,t19)
-   - WindDA(w1,t19) + RUpSC(g1,s1,t19) - RDnSC(g1,s1,t19)
-   - Wspill(w1,s1,t19) = -5.776513019999999
- PowerBalance_RT(s1,t20): RUp(g1,s1,t20) - RDn(g1,s1,t20) + Lshed(s1,t20)
-   - WindDA(w1,t20) + RUpSC(g1,s1,t20) - RDnSC(g1,s1,t20)
-   - Wspill(w1,s1,t20) = -5.435201999999999
- PowerBalance_RT(s1,t21): RUp(g1,s1,t21) - RDn(g1,s1,t21) + Lshed(s1,t21)
-   - WindDA(w1,t21) + RUpSC(g1,s1,t21) - RDnSC(g1,s1,t21)
-   - Wspill(w1,s1,t21) = -4.850395590000001
- PowerBalance_RT(s1,t22): RUp(g1,s1,t22) - RDn(g1,s1,t22) + Lshed(s1,t22)
-   - WindDA(w1,t22) + RUpSC(g1,s1,t22) - RDnSC(g1,s1,t22)
-   - Wspill(w1,s1,t22) = -4.4943279
- PowerBalance_RT(s1,t23): RUp(g1,s1,t23) - RDn(g1,s1,t23) + Lshed(s1,t23)
-   - WindDA(w1,t23) + RUpSC(g1,s1,t23) - RDnSC(g1,s1,t23)
-   - Wspill(w1,s1,t23) = -3.88346787
- PowerBalance_RT(s1,t24): RUp(g1,s1,t24) - RDn(g1,s1,t24) + Lshed(s1,t24)
-   - WindDA(w1,t24) + RUpSC(g1,s1,t24) - RDnSC(g1,s1,t24)
-   - Wspill(w1,s1,t24) = -2.50775121
- PowerBalance_RT(s2,t1): RUp(g1,s2,t1) - RDn(g1,s2,t1) + Lshed(s2,t1)
-   - WindDA(w1,t1) + RUpSC(g1,s2,t1) - RDnSC(g1,s2,t1) - Wspill(w1,s2,t1)
-   = -9.680762009999999
- PowerBalance_RT(s2,t2): RUp(g1,s2,t2) - RDn(g1,s2,t2) + Lshed(s2,t2)
-   - WindDA(w1,t2) + RUpSC(g1,s2,t2) - RDnSC(g1,s2,t2) - Wspill(w1,s2,t2)
-   = -9.904225260000001
- PowerBalance_RT(s2,t3): RUp(g1,s2,t3) - RDn(g1,s2,t3) + Lshed(s2,t3)
-   - WindDA(w1,t3) + RUpSC(g1,s2,t3) - RDnSC(g1,s2,t3) - Wspill(w1,s2,t3)
-   = -10.34934219
- PowerBalance_RT(s2,t4): RUp(g1,s2,t4) - RDn(g1,s2,t4) + Lshed(s2,t4)
-   - WindDA(w1,t4) + RUpSC(g1,s2,t4) - RDnSC(g1,s2,t4) - Wspill(w1,s2,t4)
-   = -9.887749620000001
- PowerBalance_RT(s2,t5): RUp(g1,s2,t5) - RDn(g1,s2,t5) + Lshed(s2,t5)
-   - WindDA(w1,t5) + RUpSC(g1,s2,t5) - RDnSC(g1,s2,t5) - Wspill(w1,s2,t5)
-   = -10.03755489
- PowerBalance_RT(s2,t6): RUp(g1,s2,t6) - RDn(g1,s2,t6) + Lshed(s2,t6)
-   - WindDA(w1,t6) + RUpSC(g1,s2,t6) - RDnSC(g1,s2,t6) - Wspill(w1,s2,t6)
-   = -9.084459539999999
- PowerBalance_RT(s2,t7): RUp(g1,s2,t7) - RDn(g1,s2,t7) + Lshed(s2,t7)
-   - WindDA(w1,t7) + RUpSC(g1,s2,t7) - RDnSC(g1,s2,t7) - Wspill(w1,s2,t7)
-   = -8.297329169999999
- PowerBalance_RT(s2,t8): RUp(g1,s2,t8) - RDn(g1,s2,t8) + Lshed(s2,t8)
-   - WindDA(w1,t8) + RUpSC(g1,s2,t8) - RDnSC(g1,s2,t8) - Wspill(w1,s2,t8)
-   = -6.67340472
- PowerBalance_RT(s2,t9): RUp(g1,s2,t9) - RDn(g1,s2,t9) + Lshed(s2,t9)
-   - WindDA(w1,t9) + RUpSC(g1,s2,t9) - RDnSC(g1,s2,t9) - Wspill(w1,s2,t9)
-   = -5.23819182
- PowerBalance_RT(s2,t10): RUp(g1,s2,t10) - RDn(g1,s2,t10) + Lshed(s2,t10)
-   - WindDA(w1,t10) + RUpSC(g1,s2,t10) - RDnSC(g1,s2,t10)
-   - Wspill(w1,s2,t10) = -3.87459618
- PowerBalance_RT(s2,t11): RUp(g1,s2,t11) - RDn(g1,s2,t11) + Lshed(s2,t11)
-   - WindDA(w1,t11) + RUpSC(g1,s2,t11) - RDnSC(g1,s2,t11)
-   - Wspill(w1,s2,t11) = -2.98207836
- PowerBalance_RT(s2,t12): RUp(g1,s2,t12) - RDn(g1,s2,t12) + Lshed(s2,t12)
-   - WindDA(w1,t12) + RUpSC(g1,s2,t12) - RDnSC(g1,s2,t12)
-   - Wspill(w1,s2,t12) = -2.66509677
- PowerBalance_RT(s2,t13): RUp(g1,s2,t13) - RDn(g1,s2,t13) + Lshed(s2,t13)
-   - WindDA(w1,t13) + RUpSC(g1,s2,t13) - RDnSC(g1,s2,t13)
-   - Wspill(w1,s2,t13) = -2.73093516
- PowerBalance_RT(s2,t14): RUp(g1,s2,t14) - RDn(g1,s2,t14) + Lshed(s2,t14)
-   - WindDA(w1,t14) + RUpSC(g1,s2,t14) - RDnSC(g1,s2,t14)
-   - Wspill(w1,s2,t14) = -3.50233791
- PowerBalance_RT(s2,t15): RUp(g1,s2,t15) - RDn(g1,s2,t15) + Lshed(s2,t15)
-   - WindDA(w1,t15) + RUpSC(g1,s2,t15) - RDnSC(g1,s2,t15)
-   - Wspill(w1,s2,t15) = -3.98102805
- PowerBalance_RT(s2,t16): RUp(g1,s2,t16) - RDn(g1,s2,t16) + Lshed(s2,t16)
-   - WindDA(w1,t16) + RUpSC(g1,s2,t16) - RDnSC(g1,s2,t16)
-   - Wspill(w1,s2,t16) = -3.85869564
- PowerBalance_RT(s2,t17): RUp(g1,s2,t17) - RDn(g1,s2,t17) + Lshed(s2,t17)
-   - WindDA(w1,t17) + RUpSC(g1,s2,t17) - RDnSC(g1,s2,t17)
-   - Wspill(w1,s2,t17) = -3.23632917
- PowerBalance_RT(s2,t18): RUp(g1,s2,t18) - RDn(g1,s2,t18) + Lshed(s2,t18)
-   - WindDA(w1,t18) + RUpSC(g1,s2,t18) - RDnSC(g1,s2,t18)
-   - Wspill(w1,s2,t18) = -3.0358062
- PowerBalance_RT(s2,t19): RUp(g1,s2,t19) - RDn(g1,s2,t19) + Lshed(s2,t19)
-   - WindDA(w1,t19) + RUpSC(g1,s2,t19) - RDnSC(g1,s2,t19)
-   - Wspill(w1,s2,t19) = -2.88825651
- PowerBalance_RT(s2,t20): RUp(g1,s2,t20) - RDn(g1,s2,t20) + Lshed(s2,t20)
-   - WindDA(w1,t20) + RUpSC(g1,s2,t20) - RDnSC(g1,s2,t20)
-   - Wspill(w1,s2,t20) = -2.717601
- PowerBalance_RT(s2,t21): RUp(g1,s2,t21) - RDn(g1,s2,t21) + Lshed(s2,t21)
-   - WindDA(w1,t21) + RUpSC(g1,s2,t21) - RDnSC(g1,s2,t21)
-   - Wspill(w1,s2,t21) = -2.42519781
- PowerBalance_RT(s2,t22): RUp(g1,s2,t22) - RDn(g1,s2,t22) + Lshed(s2,t22)
-   - WindDA(w1,t22) + RUpSC(g1,s2,t22) - RDnSC(g1,s2,t22)
-   - Wspill(w1,s2,t22) = -2.24716395
- PowerBalance_RT(s2,t23): RUp(g1,s2,t23) - RDn(g1,s2,t23) + Lshed(s2,t23)
-   - WindDA(w1,t23) + RUpSC(g1,s2,t23) - RDnSC(g1,s2,t23)
-   - Wspill(w1,s2,t23) = -1.94173395
- PowerBalance_RT(s2,t24): RUp(g1,s2,t24) - RDn(g1,s2,t24) + Lshed(s2,t24)
-   - WindDA(w1,t24) + RUpSC(g1,s2,t24) - RDnSC(g1,s2,t24)
-   - Wspill(w1,s2,t24) = -1.25387562
+ PowerBalance_RT(s1,t1): RUp(g1,s1,t1) - RDn(g1,s1,t1) + RUpSC(g1,s1,t1)
+   - RDnSC(g1,s1,t1) + Lshed(s1,t1) - WindDA(w1,t1) - Wspill(w1,s1,t1)
+   = -13.64523828
+ PowerBalance_RT(s1,t2): RUp(g1,s1,t2) - RDn(g1,s1,t2) + RUpSC(g1,s1,t2)
+   - RDnSC(g1,s1,t2) + Lshed(s1,t2) - WindDA(w1,t2) - Wspill(w1,s1,t2)
+   = -14.13210003
+ PowerBalance_RT(s1,t3): RUp(g1,s1,t3) - RDn(g1,s1,t3) + RUpSC(g1,s1,t3)
+   - RDnSC(g1,s1,t3) + Lshed(s1,t3) - WindDA(w1,t3) - Wspill(w1,s1,t3)
+   = -9.571274219999999
+ PowerBalance_RT(s1,t4): RUp(g1,s1,t4) - RDn(g1,s1,t4) + RUpSC(g1,s1,t4)
+   - RDnSC(g1,s1,t4) + Lshed(s1,t4) - WindDA(w1,t4) - Wspill(w1,s1,t4)
+   = -10.24495167
+ PowerBalance_RT(s1,t5): RUp(g1,s1,t5) - RDn(g1,s1,t5) + RUpSC(g1,s1,t5)
+   - RDnSC(g1,s1,t5) + Lshed(s1,t5) - WindDA(w1,t5) - Wspill(w1,s1,t5)
+   = -13.37112045
+ PowerBalance_RT(s1,t6): RUp(g1,s1,t6) - RDn(g1,s1,t6) + RUpSC(g1,s1,t6)
+   - RDnSC(g1,s1,t6) + Lshed(s1,t6) - WindDA(w1,t6) - Wspill(w1,s1,t6)
+   = -15.9762591
+ PowerBalance_RT(s1,t7): RUp(g1,s1,t7) - RDn(g1,s1,t7) + RUpSC(g1,s1,t7)
+   - RDnSC(g1,s1,t7) + Lshed(s1,t7) - WindDA(w1,t7) - Wspill(w1,s1,t7)
+   = -13.09757973
+ PowerBalance_RT(s1,t8): RUp(g1,s1,t8) - RDn(g1,s1,t8) + RUpSC(g1,s1,t8)
+   - RDnSC(g1,s1,t8) + Lshed(s1,t8) - WindDA(w1,t8) - Wspill(w1,s1,t8)
+   = -9.348263729999999
+ PowerBalance_RT(s1,t9): RUp(g1,s1,t9) - RDn(g1,s1,t9) + RUpSC(g1,s1,t9)
+   - RDnSC(g1,s1,t9) + Lshed(s1,t9) - WindDA(w1,t9) - Wspill(w1,s1,t9)
+   = -8.03252799
+ PowerBalance_RT(s1,t10): RUp(g1,s1,t10) - RDn(g1,s1,t10)
+   + RUpSC(g1,s1,t10) - RDnSC(g1,s1,t10) + Lshed(s1,t10) - WindDA(w1,t10)
+   - Wspill(w1,s1,t10) = -9.780529290000001
+ PowerBalance_RT(s1,t11): RUp(g1,s1,t11) - RDn(g1,s1,t11)
+   + RUpSC(g1,s1,t11) - RDnSC(g1,s1,t11) + Lshed(s1,t11) - WindDA(w1,t11)
+   - Wspill(w1,s1,t11) = -13.23691422
+ PowerBalance_RT(s1,t12): RUp(g1,s1,t12) - RDn(g1,s1,t12)
+   + RUpSC(g1,s1,t12) - RDnSC(g1,s1,t12) + Lshed(s1,t12) - WindDA(w1,t12)
+   - Wspill(w1,s1,t12) = -14.79118329
+ PowerBalance_RT(s1,t13): RUp(g1,s1,t13) - RDn(g1,s1,t13)
+   + RUpSC(g1,s1,t13) - RDnSC(g1,s1,t13) + Lshed(s1,t13) - WindDA(w1,t13)
+   - Wspill(w1,s1,t13) = -22.67129373
+ PowerBalance_RT(s1,t14): RUp(g1,s1,t14) - RDn(g1,s1,t14)
+   + RUpSC(g1,s1,t14) - RDnSC(g1,s1,t14) + Lshed(s1,t14) - WindDA(w1,t14)
+   - Wspill(w1,s1,t14) = -23.25377463
+ PowerBalance_RT(s1,t15): RUp(g1,s1,t15) - RDn(g1,s1,t15)
+   + RUpSC(g1,s1,t15) - RDnSC(g1,s1,t15) + Lshed(s1,t15) - WindDA(w1,t15)
+   - Wspill(w1,s1,t15) = -24.08429517
+ PowerBalance_RT(s1,t16): RUp(g1,s1,t16) - RDn(g1,s1,t16)
+   + RUpSC(g1,s1,t16) - RDnSC(g1,s1,t16) + Lshed(s1,t16) - WindDA(w1,t16)
+   - Wspill(w1,s1,t16) = -25.67222511
+ PowerBalance_RT(s1,t17): RUp(g1,s1,t17) - RDn(g1,s1,t17)
+   + RUpSC(g1,s1,t17) - RDnSC(g1,s1,t17) + Lshed(s1,t17) - WindDA(w1,t17)
+   - Wspill(w1,s1,t17) = -26.96292903
+ PowerBalance_RT(s1,t18): RUp(g1,s1,t18) - RDn(g1,s1,t18)
+   + RUpSC(g1,s1,t18) - RDnSC(g1,s1,t18) + Lshed(s1,t18) - WindDA(w1,t18)
+   - Wspill(w1,s1,t18) = -27.84705837
+ PowerBalance_RT(s1,t19): RUp(g1,s1,t19) - RDn(g1,s1,t19)
+   + RUpSC(g1,s1,t19) - RDnSC(g1,s1,t19) + Lshed(s1,t19) - WindDA(w1,t19)
+   - Wspill(w1,s1,t19) = -27.97611309
+ PowerBalance_RT(s1,t20): RUp(g1,s1,t20) - RDn(g1,s1,t20)
+   + RUpSC(g1,s1,t20) - RDnSC(g1,s1,t20) + Lshed(s1,t20) - WindDA(w1,t20)
+   - Wspill(w1,s1,t20) = -26.64932952
+ PowerBalance_RT(s1,t21): RUp(g1,s1,t21) - RDn(g1,s1,t21)
+   + RUpSC(g1,s1,t21) - RDnSC(g1,s1,t21) + Lshed(s1,t21) - WindDA(w1,t21)
+   - Wspill(w1,s1,t21) = -27.01809513
+ PowerBalance_RT(s1,t22): RUp(g1,s1,t22) - RDn(g1,s1,t22)
+   + RUpSC(g1,s1,t22) - RDnSC(g1,s1,t22) + Lshed(s1,t22) - WindDA(w1,t22)
+   - Wspill(w1,s1,t22) = -28.32297243
+ PowerBalance_RT(s1,t23): RUp(g1,s1,t23) - RDn(g1,s1,t23)
+   + RUpSC(g1,s1,t23) - RDnSC(g1,s1,t23) + Lshed(s1,t23) - WindDA(w1,t23)
+   - Wspill(w1,s1,t23) = -28.87685715
+ PowerBalance_RT(s1,t24): RUp(g1,s1,t24) - RDn(g1,s1,t24)
+   + RUpSC(g1,s1,t24) - RDnSC(g1,s1,t24) + Lshed(s1,t24) - WindDA(w1,t24)
+   - Wspill(w1,s1,t24) = -28.64355426
+ PowerBalance_RT(s2,t1): RUp(g1,s2,t1) - RDn(g1,s2,t1) + RUpSC(g1,s2,t1)
+   - RDnSC(g1,s2,t1) + Lshed(s2,t1) - WindDA(w1,t1) - Wspill(w1,s2,t1)
+   = -15.6405261
+ PowerBalance_RT(s2,t2): RUp(g1,s2,t2) - RDn(g1,s2,t2) + RUpSC(g1,s2,t2)
+   - RDnSC(g1,s2,t2) + Lshed(s2,t2) - WindDA(w1,t2) - Wspill(w1,s2,t2)
+   = -13.86895302
+ PowerBalance_RT(s2,t3): RUp(g1,s2,t3) - RDn(g1,s2,t3) + RUpSC(g1,s2,t3)
+   - RDnSC(g1,s2,t3) + Lshed(s2,t3) - WindDA(w1,t3) - Wspill(w1,s2,t3)
+   = -6.45881973
+ PowerBalance_RT(s2,t4): RUp(g1,s2,t4) - RDn(g1,s2,t4) + RUpSC(g1,s2,t4)
+   - RDnSC(g1,s2,t4) + Lshed(s2,t4) - WindDA(w1,t4) - Wspill(w1,s2,t4)
+   = -2.52463722
+ PowerBalance_RT(s2,t5): RUp(g1,s2,t5) - RDn(g1,s2,t5) + RUpSC(g1,s2,t5)
+   - RDnSC(g1,s2,t5) + Lshed(s2,t5) - WindDA(w1,t5) - Wspill(w1,s2,t5)
+   = -1.46566404
+ PowerBalance_RT(s2,t6): RUp(g1,s2,t6) - RDn(g1,s2,t6) + RUpSC(g1,s2,t6)
+   - RDnSC(g1,s2,t6) + Lshed(s2,t6) - WindDA(w1,t6) - Wspill(w1,s2,t6)
+   = -1.78731159
+ PowerBalance_RT(s2,t7): RUp(g1,s2,t7) - RDn(g1,s2,t7) + RUpSC(g1,s2,t7)
+   - RDnSC(g1,s2,t7) + Lshed(s2,t7) - WindDA(w1,t7) - Wspill(w1,s2,t7)
+   = -2.82233721
+ PowerBalance_RT(s2,t8): RUp(g1,s2,t8) - RDn(g1,s2,t8) + RUpSC(g1,s2,t8)
+   - RDnSC(g1,s2,t8) + Lshed(s2,t8) - WindDA(w1,t8) - Wspill(w1,s2,t8)
+   = -3.06365706
+ PowerBalance_RT(s2,t9): RUp(g1,s2,t9) - RDn(g1,s2,t9) + RUpSC(g1,s2,t9)
+   - RDnSC(g1,s2,t9) + Lshed(s2,t9) - WindDA(w1,t9) - Wspill(w1,s2,t9)
+   = -3.72330549
+ PowerBalance_RT(s2,t10): RUp(g1,s2,t10) - RDn(g1,s2,t10)
+   + RUpSC(g1,s2,t10) - RDnSC(g1,s2,t10) + Lshed(s2,t10) - WindDA(w1,t10)
+   - Wspill(w1,s2,t10) = -5.87754435
+ PowerBalance_RT(s2,t11): RUp(g1,s2,t11) - RDn(g1,s2,t11)
+   + RUpSC(g1,s2,t11) - RDnSC(g1,s2,t11) + Lshed(s2,t11) - WindDA(w1,t11)
+   - Wspill(w1,s2,t11) = -7.27054521
+ PowerBalance_RT(s2,t12): RUp(g1,s2,t12) - RDn(g1,s2,t12)
+   + RUpSC(g1,s2,t12) - RDnSC(g1,s2,t12) + Lshed(s2,t12) - WindDA(w1,t12)
+   - Wspill(w1,s2,t12) = -8.531094060000001
+ PowerBalance_RT(s2,t13): RUp(g1,s2,t13) - RDn(g1,s2,t13)
+   + RUpSC(g1,s2,t13) - RDnSC(g1,s2,t13) + Lshed(s2,t13) - WindDA(w1,t13)
+   - Wspill(w1,s2,t13) = -9.673352430000001
+ PowerBalance_RT(s2,t14): RUp(g1,s2,t14) - RDn(g1,s2,t14)
+   + RUpSC(g1,s2,t14) - RDnSC(g1,s2,t14) + Lshed(s2,t14) - WindDA(w1,t14)
+   - Wspill(w1,s2,t14) = -9.98061261
+ PowerBalance_RT(s2,t15): RUp(g1,s2,t15) - RDn(g1,s2,t15)
+   + RUpSC(g1,s2,t15) - RDnSC(g1,s2,t15) + Lshed(s2,t15) - WindDA(w1,t15)
+   - Wspill(w1,s2,t15) = -11.17659936
+ PowerBalance_RT(s2,t16): RUp(g1,s2,t16) - RDn(g1,s2,t16)
+   + RUpSC(g1,s2,t16) - RDnSC(g1,s2,t16) + Lshed(s2,t16) - WindDA(w1,t16)
+   - Wspill(w1,s2,t16) = -8.21749578
+ PowerBalance_RT(s2,t17): RUp(g1,s2,t17) - RDn(g1,s2,t17)
+   + RUpSC(g1,s2,t17) - RDnSC(g1,s2,t17) + Lshed(s2,t17) - WindDA(w1,t17)
+   - Wspill(w1,s2,t17) = -12.18737028
+ PowerBalance_RT(s2,t18): RUp(g1,s2,t18) - RDn(g1,s2,t18)
+   + RUpSC(g1,s2,t18) - RDnSC(g1,s2,t18) + Lshed(s2,t18) - WindDA(w1,t18)
+   - Wspill(w1,s2,t18) = -13.84594917
+ PowerBalance_RT(s2,t19): RUp(g1,s2,t19) - RDn(g1,s2,t19)
+   + RUpSC(g1,s2,t19) - RDnSC(g1,s2,t19) + Lshed(s2,t19) - WindDA(w1,t19)
+   - Wspill(w1,s2,t19) = -10.52609511
+ PowerBalance_RT(s2,t20): RUp(g1,s2,t20) - RDn(g1,s2,t20)
+   + RUpSC(g1,s2,t20) - RDnSC(g1,s2,t20) + Lshed(s2,t20) - WindDA(w1,t20)
+   - Wspill(w1,s2,t20) = -9.61658184
+ PowerBalance_RT(s2,t21): RUp(g1,s2,t21) - RDn(g1,s2,t21)
+   + RUpSC(g1,s2,t21) - RDnSC(g1,s2,t21) + Lshed(s2,t21) - WindDA(w1,t21)
+   - Wspill(w1,s2,t21) = -10.08032745
+ PowerBalance_RT(s2,t22): RUp(g1,s2,t22) - RDn(g1,s2,t22)
+   + RUpSC(g1,s2,t22) - RDnSC(g1,s2,t22) + Lshed(s2,t22) - WindDA(w1,t22)
+   - Wspill(w1,s2,t22) = -11.65214559
+ PowerBalance_RT(s2,t23): RUp(g1,s2,t23) - RDn(g1,s2,t23)
+   + RUpSC(g1,s2,t23) - RDnSC(g1,s2,t23) + Lshed(s2,t23) - WindDA(w1,t23)
+   - Wspill(w1,s2,t23) = -13.81197936
+ PowerBalance_RT(s2,t24): RUp(g1,s2,t24) - RDn(g1,s2,t24)
+   + RUpSC(g1,s2,t24) - RDnSC(g1,s2,t24) + Lshed(s2,t24) - WindDA(w1,t24)
+   - Wspill(w1,s2,t24) = -13.56418623
  RegUp_max_RT(g1,s1,t1): RUp(g1,s1,t1) - RCup(g1,t1) <= 0
  RegDown_max_RT(g1,s1,t1): RDn(g1,s1,t1) - RCdn(g1,t1) <= 0
  RegUp_max_RT(g1,s1,t2): RUp(g1,s1,t2) - RCup(g1,t2) <= 0
@@ -802,102 +898,102 @@ Subject To
  RegDown_max_RT(g1,s2,t23): RDn(g1,s2,t23) - RCdn(g1,t23) <= 0
  RegUp_max_RT(g1,s2,t24): RUp(g1,s2,t24) - RCup(g1,t24) <= 0
  RegDown_max_RT(g1,s2,t24): RDn(g1,s2,t24) - RCdn(g1,t24) <= 0
- RegUpSC_max_RT(g1,s1,t1): - RCupSC(g1,t1) + RUpSC(g1,s1,t1) <= 0
- RegDnSC_max_RT(g1,s1,t1): - RCdnSC(g1,t1) + RDnSC(g1,s1,t1) <= 0
- RegUpSC_max_RT(g1,s1,t2): - RCupSC(g1,t2) + RUpSC(g1,s1,t2) <= 0
- RegDnSC_max_RT(g1,s1,t2): - RCdnSC(g1,t2) + RDnSC(g1,s1,t2) <= 0
- RegUpSC_max_RT(g1,s1,t3): - RCupSC(g1,t3) + RUpSC(g1,s1,t3) <= 0
- RegDnSC_max_RT(g1,s1,t3): - RCdnSC(g1,t3) + RDnSC(g1,s1,t3) <= 0
- RegUpSC_max_RT(g1,s1,t4): - RCupSC(g1,t4) + RUpSC(g1,s1,t4) <= 0
- RegDnSC_max_RT(g1,s1,t4): - RCdnSC(g1,t4) + RDnSC(g1,s1,t4) <= 0
- RegUpSC_max_RT(g1,s1,t5): - RCupSC(g1,t5) + RUpSC(g1,s1,t5) <= 0
- RegDnSC_max_RT(g1,s1,t5): - RCdnSC(g1,t5) + RDnSC(g1,s1,t5) <= 0
- RegUpSC_max_RT(g1,s1,t6): - RCupSC(g1,t6) + RUpSC(g1,s1,t6) <= 0
- RegDnSC_max_RT(g1,s1,t6): - RCdnSC(g1,t6) + RDnSC(g1,s1,t6) <= 0
- RegUpSC_max_RT(g1,s1,t7): - RCupSC(g1,t7) + RUpSC(g1,s1,t7) <= 0
- RegDnSC_max_RT(g1,s1,t7): - RCdnSC(g1,t7) + RDnSC(g1,s1,t7) <= 0
- RegUpSC_max_RT(g1,s1,t8): - RCupSC(g1,t8) + RUpSC(g1,s1,t8) <= 0
- RegDnSC_max_RT(g1,s1,t8): - RCdnSC(g1,t8) + RDnSC(g1,s1,t8) <= 0
- RegUpSC_max_RT(g1,s1,t9): - RCupSC(g1,t9) + RUpSC(g1,s1,t9) <= 0
- RegDnSC_max_RT(g1,s1,t9): - RCdnSC(g1,t9) + RDnSC(g1,s1,t9) <= 0
- RegUpSC_max_RT(g1,s1,t10): - RCupSC(g1,t10) + RUpSC(g1,s1,t10) <= 0
- RegDnSC_max_RT(g1,s1,t10): - RCdnSC(g1,t10) + RDnSC(g1,s1,t10) <= 0
- RegUpSC_max_RT(g1,s1,t11): - RCupSC(g1,t11) + RUpSC(g1,s1,t11) <= 0
- RegDnSC_max_RT(g1,s1,t11): - RCdnSC(g1,t11) + RDnSC(g1,s1,t11) <= 0
- RegUpSC_max_RT(g1,s1,t12): - RCupSC(g1,t12) + RUpSC(g1,s1,t12) <= 0
- RegDnSC_max_RT(g1,s1,t12): - RCdnSC(g1,t12) + RDnSC(g1,s1,t12) <= 0
- RegUpSC_max_RT(g1,s1,t13): - RCupSC(g1,t13) + RUpSC(g1,s1,t13) <= 0
- RegDnSC_max_RT(g1,s1,t13): - RCdnSC(g1,t13) + RDnSC(g1,s1,t13) <= 0
- RegUpSC_max_RT(g1,s1,t14): - RCupSC(g1,t14) + RUpSC(g1,s1,t14) <= 0
- RegDnSC_max_RT(g1,s1,t14): - RCdnSC(g1,t14) + RDnSC(g1,s1,t14) <= 0
- RegUpSC_max_RT(g1,s1,t15): - RCupSC(g1,t15) + RUpSC(g1,s1,t15) <= 0
- RegDnSC_max_RT(g1,s1,t15): - RCdnSC(g1,t15) + RDnSC(g1,s1,t15) <= 0
- RegUpSC_max_RT(g1,s1,t16): - RCupSC(g1,t16) + RUpSC(g1,s1,t16) <= 0
- RegDnSC_max_RT(g1,s1,t16): - RCdnSC(g1,t16) + RDnSC(g1,s1,t16) <= 0
- RegUpSC_max_RT(g1,s1,t17): - RCupSC(g1,t17) + RUpSC(g1,s1,t17) <= 0
- RegDnSC_max_RT(g1,s1,t17): - RCdnSC(g1,t17) + RDnSC(g1,s1,t17) <= 0
- RegUpSC_max_RT(g1,s1,t18): - RCupSC(g1,t18) + RUpSC(g1,s1,t18) <= 0
- RegDnSC_max_RT(g1,s1,t18): - RCdnSC(g1,t18) + RDnSC(g1,s1,t18) <= 0
- RegUpSC_max_RT(g1,s1,t19): - RCupSC(g1,t19) + RUpSC(g1,s1,t19) <= 0
- RegDnSC_max_RT(g1,s1,t19): - RCdnSC(g1,t19) + RDnSC(g1,s1,t19) <= 0
- RegUpSC_max_RT(g1,s1,t20): - RCupSC(g1,t20) + RUpSC(g1,s1,t20) <= 0
- RegDnSC_max_RT(g1,s1,t20): - RCdnSC(g1,t20) + RDnSC(g1,s1,t20) <= 0
- RegUpSC_max_RT(g1,s1,t21): - RCupSC(g1,t21) + RUpSC(g1,s1,t21) <= 0
- RegDnSC_max_RT(g1,s1,t21): - RCdnSC(g1,t21) + RDnSC(g1,s1,t21) <= 0
- RegUpSC_max_RT(g1,s1,t22): - RCupSC(g1,t22) + RUpSC(g1,s1,t22) <= 0
- RegDnSC_max_RT(g1,s1,t22): - RCdnSC(g1,t22) + RDnSC(g1,s1,t22) <= 0
- RegUpSC_max_RT(g1,s1,t23): - RCupSC(g1,t23) + RUpSC(g1,s1,t23) <= 0
- RegDnSC_max_RT(g1,s1,t23): - RCdnSC(g1,t23) + RDnSC(g1,s1,t23) <= 0
- RegUpSC_max_RT(g1,s1,t24): - RCupSC(g1,t24) + RUpSC(g1,s1,t24) <= 0
- RegDnSC_max_RT(g1,s1,t24): - RCdnSC(g1,t24) + RDnSC(g1,s1,t24) <= 0
- RegUpSC_max_RT(g1,s2,t1): - RCupSC(g1,t1) + RUpSC(g1,s2,t1) <= 0
- RegDnSC_max_RT(g1,s2,t1): - RCdnSC(g1,t1) + RDnSC(g1,s2,t1) <= 0
- RegUpSC_max_RT(g1,s2,t2): - RCupSC(g1,t2) + RUpSC(g1,s2,t2) <= 0
- RegDnSC_max_RT(g1,s2,t2): - RCdnSC(g1,t2) + RDnSC(g1,s2,t2) <= 0
- RegUpSC_max_RT(g1,s2,t3): - RCupSC(g1,t3) + RUpSC(g1,s2,t3) <= 0
- RegDnSC_max_RT(g1,s2,t3): - RCdnSC(g1,t3) + RDnSC(g1,s2,t3) <= 0
- RegUpSC_max_RT(g1,s2,t4): - RCupSC(g1,t4) + RUpSC(g1,s2,t4) <= 0
- RegDnSC_max_RT(g1,s2,t4): - RCdnSC(g1,t4) + RDnSC(g1,s2,t4) <= 0
- RegUpSC_max_RT(g1,s2,t5): - RCupSC(g1,t5) + RUpSC(g1,s2,t5) <= 0
- RegDnSC_max_RT(g1,s2,t5): - RCdnSC(g1,t5) + RDnSC(g1,s2,t5) <= 0
- RegUpSC_max_RT(g1,s2,t6): - RCupSC(g1,t6) + RUpSC(g1,s2,t6) <= 0
- RegDnSC_max_RT(g1,s2,t6): - RCdnSC(g1,t6) + RDnSC(g1,s2,t6) <= 0
- RegUpSC_max_RT(g1,s2,t7): - RCupSC(g1,t7) + RUpSC(g1,s2,t7) <= 0
- RegDnSC_max_RT(g1,s2,t7): - RCdnSC(g1,t7) + RDnSC(g1,s2,t7) <= 0
- RegUpSC_max_RT(g1,s2,t8): - RCupSC(g1,t8) + RUpSC(g1,s2,t8) <= 0
- RegDnSC_max_RT(g1,s2,t8): - RCdnSC(g1,t8) + RDnSC(g1,s2,t8) <= 0
- RegUpSC_max_RT(g1,s2,t9): - RCupSC(g1,t9) + RUpSC(g1,s2,t9) <= 0
- RegDnSC_max_RT(g1,s2,t9): - RCdnSC(g1,t9) + RDnSC(g1,s2,t9) <= 0
- RegUpSC_max_RT(g1,s2,t10): - RCupSC(g1,t10) + RUpSC(g1,s2,t10) <= 0
- RegDnSC_max_RT(g1,s2,t10): - RCdnSC(g1,t10) + RDnSC(g1,s2,t10) <= 0
- RegUpSC_max_RT(g1,s2,t11): - RCupSC(g1,t11) + RUpSC(g1,s2,t11) <= 0
- RegDnSC_max_RT(g1,s2,t11): - RCdnSC(g1,t11) + RDnSC(g1,s2,t11) <= 0
- RegUpSC_max_RT(g1,s2,t12): - RCupSC(g1,t12) + RUpSC(g1,s2,t12) <= 0
- RegDnSC_max_RT(g1,s2,t12): - RCdnSC(g1,t12) + RDnSC(g1,s2,t12) <= 0
- RegUpSC_max_RT(g1,s2,t13): - RCupSC(g1,t13) + RUpSC(g1,s2,t13) <= 0
- RegDnSC_max_RT(g1,s2,t13): - RCdnSC(g1,t13) + RDnSC(g1,s2,t13) <= 0
- RegUpSC_max_RT(g1,s2,t14): - RCupSC(g1,t14) + RUpSC(g1,s2,t14) <= 0
- RegDnSC_max_RT(g1,s2,t14): - RCdnSC(g1,t14) + RDnSC(g1,s2,t14) <= 0
- RegUpSC_max_RT(g1,s2,t15): - RCupSC(g1,t15) + RUpSC(g1,s2,t15) <= 0
- RegDnSC_max_RT(g1,s2,t15): - RCdnSC(g1,t15) + RDnSC(g1,s2,t15) <= 0
- RegUpSC_max_RT(g1,s2,t16): - RCupSC(g1,t16) + RUpSC(g1,s2,t16) <= 0
- RegDnSC_max_RT(g1,s2,t16): - RCdnSC(g1,t16) + RDnSC(g1,s2,t16) <= 0
- RegUpSC_max_RT(g1,s2,t17): - RCupSC(g1,t17) + RUpSC(g1,s2,t17) <= 0
- RegDnSC_max_RT(g1,s2,t17): - RCdnSC(g1,t17) + RDnSC(g1,s2,t17) <= 0
- RegUpSC_max_RT(g1,s2,t18): - RCupSC(g1,t18) + RUpSC(g1,s2,t18) <= 0
- RegDnSC_max_RT(g1,s2,t18): - RCdnSC(g1,t18) + RDnSC(g1,s2,t18) <= 0
- RegUpSC_max_RT(g1,s2,t19): - RCupSC(g1,t19) + RUpSC(g1,s2,t19) <= 0
- RegDnSC_max_RT(g1,s2,t19): - RCdnSC(g1,t19) + RDnSC(g1,s2,t19) <= 0
- RegUpSC_max_RT(g1,s2,t20): - RCupSC(g1,t20) + RUpSC(g1,s2,t20) <= 0
- RegDnSC_max_RT(g1,s2,t20): - RCdnSC(g1,t20) + RDnSC(g1,s2,t20) <= 0
- RegUpSC_max_RT(g1,s2,t21): - RCupSC(g1,t21) + RUpSC(g1,s2,t21) <= 0
- RegDnSC_max_RT(g1,s2,t21): - RCdnSC(g1,t21) + RDnSC(g1,s2,t21) <= 0
- RegUpSC_max_RT(g1,s2,t22): - RCupSC(g1,t22) + RUpSC(g1,s2,t22) <= 0
- RegDnSC_max_RT(g1,s2,t22): - RCdnSC(g1,t22) + RDnSC(g1,s2,t22) <= 0
- RegUpSC_max_RT(g1,s2,t23): - RCupSC(g1,t23) + RUpSC(g1,s2,t23) <= 0
- RegDnSC_max_RT(g1,s2,t23): - RCdnSC(g1,t23) + RDnSC(g1,s2,t23) <= 0
- RegUpSC_max_RT(g1,s2,t24): - RCupSC(g1,t24) + RUpSC(g1,s2,t24) <= 0
- RegDnSC_max_RT(g1,s2,t24): - RCdnSC(g1,t24) + RDnSC(g1,s2,t24) <= 0
+ RegUpSC_max_RT(g1,s1,t1): RUpSC(g1,s1,t1) - RCupSC(g1,t1) <= 0
+ RegDnSC_max_RT(g1,s1,t1): RDnSC(g1,s1,t1) - RCdnSC(g1,t1) <= 0
+ RegUpSC_max_RT(g1,s1,t2): RUpSC(g1,s1,t2) - RCupSC(g1,t2) <= 0
+ RegDnSC_max_RT(g1,s1,t2): RDnSC(g1,s1,t2) - RCdnSC(g1,t2) <= 0
+ RegUpSC_max_RT(g1,s1,t3): RUpSC(g1,s1,t3) - RCupSC(g1,t3) <= 0
+ RegDnSC_max_RT(g1,s1,t3): RDnSC(g1,s1,t3) - RCdnSC(g1,t3) <= 0
+ RegUpSC_max_RT(g1,s1,t4): RUpSC(g1,s1,t4) - RCupSC(g1,t4) <= 0
+ RegDnSC_max_RT(g1,s1,t4): RDnSC(g1,s1,t4) - RCdnSC(g1,t4) <= 0
+ RegUpSC_max_RT(g1,s1,t5): RUpSC(g1,s1,t5) - RCupSC(g1,t5) <= 0
+ RegDnSC_max_RT(g1,s1,t5): RDnSC(g1,s1,t5) - RCdnSC(g1,t5) <= 0
+ RegUpSC_max_RT(g1,s1,t6): RUpSC(g1,s1,t6) - RCupSC(g1,t6) <= 0
+ RegDnSC_max_RT(g1,s1,t6): RDnSC(g1,s1,t6) - RCdnSC(g1,t6) <= 0
+ RegUpSC_max_RT(g1,s1,t7): RUpSC(g1,s1,t7) - RCupSC(g1,t7) <= 0
+ RegDnSC_max_RT(g1,s1,t7): RDnSC(g1,s1,t7) - RCdnSC(g1,t7) <= 0
+ RegUpSC_max_RT(g1,s1,t8): RUpSC(g1,s1,t8) - RCupSC(g1,t8) <= 0
+ RegDnSC_max_RT(g1,s1,t8): RDnSC(g1,s1,t8) - RCdnSC(g1,t8) <= 0
+ RegUpSC_max_RT(g1,s1,t9): RUpSC(g1,s1,t9) - RCupSC(g1,t9) <= 0
+ RegDnSC_max_RT(g1,s1,t9): RDnSC(g1,s1,t9) - RCdnSC(g1,t9) <= 0
+ RegUpSC_max_RT(g1,s1,t10): RUpSC(g1,s1,t10) - RCupSC(g1,t10) <= 0
+ RegDnSC_max_RT(g1,s1,t10): RDnSC(g1,s1,t10) - RCdnSC(g1,t10) <= 0
+ RegUpSC_max_RT(g1,s1,t11): RUpSC(g1,s1,t11) - RCupSC(g1,t11) <= 0
+ RegDnSC_max_RT(g1,s1,t11): RDnSC(g1,s1,t11) - RCdnSC(g1,t11) <= 0
+ RegUpSC_max_RT(g1,s1,t12): RUpSC(g1,s1,t12) - RCupSC(g1,t12) <= 0
+ RegDnSC_max_RT(g1,s1,t12): RDnSC(g1,s1,t12) - RCdnSC(g1,t12) <= 0
+ RegUpSC_max_RT(g1,s1,t13): RUpSC(g1,s1,t13) - RCupSC(g1,t13) <= 0
+ RegDnSC_max_RT(g1,s1,t13): RDnSC(g1,s1,t13) - RCdnSC(g1,t13) <= 0
+ RegUpSC_max_RT(g1,s1,t14): RUpSC(g1,s1,t14) - RCupSC(g1,t14) <= 0
+ RegDnSC_max_RT(g1,s1,t14): RDnSC(g1,s1,t14) - RCdnSC(g1,t14) <= 0
+ RegUpSC_max_RT(g1,s1,t15): RUpSC(g1,s1,t15) - RCupSC(g1,t15) <= 0
+ RegDnSC_max_RT(g1,s1,t15): RDnSC(g1,s1,t15) - RCdnSC(g1,t15) <= 0
+ RegUpSC_max_RT(g1,s1,t16): RUpSC(g1,s1,t16) - RCupSC(g1,t16) <= 0
+ RegDnSC_max_RT(g1,s1,t16): RDnSC(g1,s1,t16) - RCdnSC(g1,t16) <= 0
+ RegUpSC_max_RT(g1,s1,t17): RUpSC(g1,s1,t17) - RCupSC(g1,t17) <= 0
+ RegDnSC_max_RT(g1,s1,t17): RDnSC(g1,s1,t17) - RCdnSC(g1,t17) <= 0
+ RegUpSC_max_RT(g1,s1,t18): RUpSC(g1,s1,t18) - RCupSC(g1,t18) <= 0
+ RegDnSC_max_RT(g1,s1,t18): RDnSC(g1,s1,t18) - RCdnSC(g1,t18) <= 0
+ RegUpSC_max_RT(g1,s1,t19): RUpSC(g1,s1,t19) - RCupSC(g1,t19) <= 0
+ RegDnSC_max_RT(g1,s1,t19): RDnSC(g1,s1,t19) - RCdnSC(g1,t19) <= 0
+ RegUpSC_max_RT(g1,s1,t20): RUpSC(g1,s1,t20) - RCupSC(g1,t20) <= 0
+ RegDnSC_max_RT(g1,s1,t20): RDnSC(g1,s1,t20) - RCdnSC(g1,t20) <= 0
+ RegUpSC_max_RT(g1,s1,t21): RUpSC(g1,s1,t21) - RCupSC(g1,t21) <= 0
+ RegDnSC_max_RT(g1,s1,t21): RDnSC(g1,s1,t21) - RCdnSC(g1,t21) <= 0
+ RegUpSC_max_RT(g1,s1,t22): RUpSC(g1,s1,t22) - RCupSC(g1,t22) <= 0
+ RegDnSC_max_RT(g1,s1,t22): RDnSC(g1,s1,t22) - RCdnSC(g1,t22) <= 0
+ RegUpSC_max_RT(g1,s1,t23): RUpSC(g1,s1,t23) - RCupSC(g1,t23) <= 0
+ RegDnSC_max_RT(g1,s1,t23): RDnSC(g1,s1,t23) - RCdnSC(g1,t23) <= 0
+ RegUpSC_max_RT(g1,s1,t24): RUpSC(g1,s1,t24) - RCupSC(g1,t24) <= 0
+ RegDnSC_max_RT(g1,s1,t24): RDnSC(g1,s1,t24) - RCdnSC(g1,t24) <= 0
+ RegUpSC_max_RT(g1,s2,t1): RUpSC(g1,s2,t1) - RCupSC(g1,t1) <= 0
+ RegDnSC_max_RT(g1,s2,t1): RDnSC(g1,s2,t1) - RCdnSC(g1,t1) <= 0
+ RegUpSC_max_RT(g1,s2,t2): RUpSC(g1,s2,t2) - RCupSC(g1,t2) <= 0
+ RegDnSC_max_RT(g1,s2,t2): RDnSC(g1,s2,t2) - RCdnSC(g1,t2) <= 0
+ RegUpSC_max_RT(g1,s2,t3): RUpSC(g1,s2,t3) - RCupSC(g1,t3) <= 0
+ RegDnSC_max_RT(g1,s2,t3): RDnSC(g1,s2,t3) - RCdnSC(g1,t3) <= 0
+ RegUpSC_max_RT(g1,s2,t4): RUpSC(g1,s2,t4) - RCupSC(g1,t4) <= 0
+ RegDnSC_max_RT(g1,s2,t4): RDnSC(g1,s2,t4) - RCdnSC(g1,t4) <= 0
+ RegUpSC_max_RT(g1,s2,t5): RUpSC(g1,s2,t5) - RCupSC(g1,t5) <= 0
+ RegDnSC_max_RT(g1,s2,t5): RDnSC(g1,s2,t5) - RCdnSC(g1,t5) <= 0
+ RegUpSC_max_RT(g1,s2,t6): RUpSC(g1,s2,t6) - RCupSC(g1,t6) <= 0
+ RegDnSC_max_RT(g1,s2,t6): RDnSC(g1,s2,t6) - RCdnSC(g1,t6) <= 0
+ RegUpSC_max_RT(g1,s2,t7): RUpSC(g1,s2,t7) - RCupSC(g1,t7) <= 0
+ RegDnSC_max_RT(g1,s2,t7): RDnSC(g1,s2,t7) - RCdnSC(g1,t7) <= 0
+ RegUpSC_max_RT(g1,s2,t8): RUpSC(g1,s2,t8) - RCupSC(g1,t8) <= 0
+ RegDnSC_max_RT(g1,s2,t8): RDnSC(g1,s2,t8) - RCdnSC(g1,t8) <= 0
+ RegUpSC_max_RT(g1,s2,t9): RUpSC(g1,s2,t9) - RCupSC(g1,t9) <= 0
+ RegDnSC_max_RT(g1,s2,t9): RDnSC(g1,s2,t9) - RCdnSC(g1,t9) <= 0
+ RegUpSC_max_RT(g1,s2,t10): RUpSC(g1,s2,t10) - RCupSC(g1,t10) <= 0
+ RegDnSC_max_RT(g1,s2,t10): RDnSC(g1,s2,t10) - RCdnSC(g1,t10) <= 0
+ RegUpSC_max_RT(g1,s2,t11): RUpSC(g1,s2,t11) - RCupSC(g1,t11) <= 0
+ RegDnSC_max_RT(g1,s2,t11): RDnSC(g1,s2,t11) - RCdnSC(g1,t11) <= 0
+ RegUpSC_max_RT(g1,s2,t12): RUpSC(g1,s2,t12) - RCupSC(g1,t12) <= 0
+ RegDnSC_max_RT(g1,s2,t12): RDnSC(g1,s2,t12) - RCdnSC(g1,t12) <= 0
+ RegUpSC_max_RT(g1,s2,t13): RUpSC(g1,s2,t13) - RCupSC(g1,t13) <= 0
+ RegDnSC_max_RT(g1,s2,t13): RDnSC(g1,s2,t13) - RCdnSC(g1,t13) <= 0
+ RegUpSC_max_RT(g1,s2,t14): RUpSC(g1,s2,t14) - RCupSC(g1,t14) <= 0
+ RegDnSC_max_RT(g1,s2,t14): RDnSC(g1,s2,t14) - RCdnSC(g1,t14) <= 0
+ RegUpSC_max_RT(g1,s2,t15): RUpSC(g1,s2,t15) - RCupSC(g1,t15) <= 0
+ RegDnSC_max_RT(g1,s2,t15): RDnSC(g1,s2,t15) - RCdnSC(g1,t15) <= 0
+ RegUpSC_max_RT(g1,s2,t16): RUpSC(g1,s2,t16) - RCupSC(g1,t16) <= 0
+ RegDnSC_max_RT(g1,s2,t16): RDnSC(g1,s2,t16) - RCdnSC(g1,t16) <= 0
+ RegUpSC_max_RT(g1,s2,t17): RUpSC(g1,s2,t17) - RCupSC(g1,t17) <= 0
+ RegDnSC_max_RT(g1,s2,t17): RDnSC(g1,s2,t17) - RCdnSC(g1,t17) <= 0
+ RegUpSC_max_RT(g1,s2,t18): RUpSC(g1,s2,t18) - RCupSC(g1,t18) <= 0
+ RegDnSC_max_RT(g1,s2,t18): RDnSC(g1,s2,t18) - RCdnSC(g1,t18) <= 0
+ RegUpSC_max_RT(g1,s2,t19): RUpSC(g1,s2,t19) - RCupSC(g1,t19) <= 0
+ RegDnSC_max_RT(g1,s2,t19): RDnSC(g1,s2,t19) - RCdnSC(g1,t19) <= 0
+ RegUpSC_max_RT(g1,s2,t20): RUpSC(g1,s2,t20) - RCupSC(g1,t20) <= 0
+ RegDnSC_max_RT(g1,s2,t20): RDnSC(g1,s2,t20) - RCdnSC(g1,t20) <= 0
+ RegUpSC_max_RT(g1,s2,t21): RUpSC(g1,s2,t21) - RCupSC(g1,t21) <= 0
+ RegDnSC_max_RT(g1,s2,t21): RDnSC(g1,s2,t21) - RCdnSC(g1,t21) <= 0
+ RegUpSC_max_RT(g1,s2,t22): RUpSC(g1,s2,t22) - RCupSC(g1,t22) <= 0
+ RegDnSC_max_RT(g1,s2,t22): RDnSC(g1,s2,t22) - RCdnSC(g1,t22) <= 0
+ RegUpSC_max_RT(g1,s2,t23): RUpSC(g1,s2,t23) - RCupSC(g1,t23) <= 0
+ RegDnSC_max_RT(g1,s2,t23): RDnSC(g1,s2,t23) - RCdnSC(g1,t23) <= 0
+ RegUpSC_max_RT(g1,s2,t24): RUpSC(g1,s2,t24) - RCupSC(g1,t24) <= 0
+ RegDnSC_max_RT(g1,s2,t24): RDnSC(g1,s2,t24) - RCdnSC(g1,t24) <= 0
  Max_load_shed_RT(s1,t1): Lshed(s1,t1) <= 50
  Max_load_shed_RT(s1,t2): Lshed(s1,t2) <= 51.29409523
  Max_load_shed_RT(s1,t3): Lshed(s1,t3) <= 52.5
@@ -946,102 +1042,102 @@ Subject To
  Max_load_shed_RT(s2,t22): Lshed(s2,t22) <= 46.46446609
  Max_load_shed_RT(s2,t23): Lshed(s2,t23) <= 47.5
  Max_load_shed_RT(s2,t24): Lshed(s2,t24) <= 48.70590477
- Max_wind_spill_RT(w1,s1,t1): Wspill(w1,s1,t1) <= 19.36152399
- Max_wind_spill_RT(w1,s1,t2): Wspill(w1,s1,t2) <= 19.80845052
- Max_wind_spill_RT(w1,s1,t3): Wspill(w1,s1,t3) <= 20.69868435
- Max_wind_spill_RT(w1,s1,t4): Wspill(w1,s1,t4) <= 19.77549921
- Max_wind_spill_RT(w1,s1,t5): Wspill(w1,s1,t5) <= 20.07510975
- Max_wind_spill_RT(w1,s1,t6): Wspill(w1,s1,t6) <= 18.16891905
- Max_wind_spill_RT(w1,s1,t7): Wspill(w1,s1,t7) <= 16.59465834
- Max_wind_spill_RT(w1,s1,t8): Wspill(w1,s1,t8) <= 13.34680944
- Max_wind_spill_RT(w1,s1,t9): Wspill(w1,s1,t9) <= 10.47638364
- Max_wind_spill_RT(w1,s1,t10): Wspill(w1,s1,t10) <= 7.749192330000001
- Max_wind_spill_RT(w1,s1,t11): Wspill(w1,s1,t11) <= 5.964156719999999
- Max_wind_spill_RT(w1,s1,t12): Wspill(w1,s1,t12) <= 5.33019351
- Max_wind_spill_RT(w1,s1,t13): Wspill(w1,s1,t13) <= 5.461870319999999
- Max_wind_spill_RT(w1,s1,t14): Wspill(w1,s1,t14) <= 7.004675819999999
- Max_wind_spill_RT(w1,s1,t15): Wspill(w1,s1,t15) <= 7.9620561
- Max_wind_spill_RT(w1,s1,t16): Wspill(w1,s1,t16) <= 7.71739128
- Max_wind_spill_RT(w1,s1,t17): Wspill(w1,s1,t17) <= 6.47265831
- Max_wind_spill_RT(w1,s1,t18): Wspill(w1,s1,t18) <= 6.07161237
- Max_wind_spill_RT(w1,s1,t19): Wspill(w1,s1,t19) <= 5.776513019999999
- Max_wind_spill_RT(w1,s1,t20): Wspill(w1,s1,t20) <= 5.435201999999999
- Max_wind_spill_RT(w1,s1,t21): Wspill(w1,s1,t21) <= 4.850395590000001
- Max_wind_spill_RT(w1,s1,t22): Wspill(w1,s1,t22) <= 4.4943279
- Max_wind_spill_RT(w1,s1,t23): Wspill(w1,s1,t23) <= 3.88346787
- Max_wind_spill_RT(w1,s1,t24): Wspill(w1,s1,t24) <= 2.50775121
- Max_wind_spill_RT(w1,s2,t1): Wspill(w1,s2,t1) <= 9.680762009999999
- Max_wind_spill_RT(w1,s2,t2): Wspill(w1,s2,t2) <= 9.904225260000001
- Max_wind_spill_RT(w1,s2,t3): Wspill(w1,s2,t3) <= 10.34934219
- Max_wind_spill_RT(w1,s2,t4): Wspill(w1,s2,t4) <= 9.887749620000001
- Max_wind_spill_RT(w1,s2,t5): Wspill(w1,s2,t5) <= 10.03755489
- Max_wind_spill_RT(w1,s2,t6): Wspill(w1,s2,t6) <= 9.084459539999999
- Max_wind_spill_RT(w1,s2,t7): Wspill(w1,s2,t7) <= 8.297329169999999
- Max_wind_spill_RT(w1,s2,t8): Wspill(w1,s2,t8) <= 6.67340472
- Max_wind_spill_RT(w1,s2,t9): Wspill(w1,s2,t9) <= 5.23819182
- Max_wind_spill_RT(w1,s2,t10): Wspill(w1,s2,t10) <= 3.87459618
- Max_wind_spill_RT(w1,s2,t11): Wspill(w1,s2,t11) <= 2.98207836
- Max_wind_spill_RT(w1,s2,t12): Wspill(w1,s2,t12) <= 2.66509677
- Max_wind_spill_RT(w1,s2,t13): Wspill(w1,s2,t13) <= 2.73093516
- Max_wind_spill_RT(w1,s2,t14): Wspill(w1,s2,t14) <= 3.50233791
- Max_wind_spill_RT(w1,s2,t15): Wspill(w1,s2,t15) <= 3.98102805
- Max_wind_spill_RT(w1,s2,t16): Wspill(w1,s2,t16) <= 3.85869564
- Max_wind_spill_RT(w1,s2,t17): Wspill(w1,s2,t17) <= 3.23632917
- Max_wind_spill_RT(w1,s2,t18): Wspill(w1,s2,t18) <= 3.0358062
- Max_wind_spill_RT(w1,s2,t19): Wspill(w1,s2,t19) <= 2.88825651
- Max_wind_spill_RT(w1,s2,t20): Wspill(w1,s2,t20) <= 2.717601
- Max_wind_spill_RT(w1,s2,t21): Wspill(w1,s2,t21) <= 2.42519781
- Max_wind_spill_RT(w1,s2,t22): Wspill(w1,s2,t22) <= 2.24716395
- Max_wind_spill_RT(w1,s2,t23): Wspill(w1,s2,t23) <= 1.94173395
- Max_wind_spill_RT(w1,s2,t24): Wspill(w1,s2,t24) <= 1.25387562
+ Max_wind_spill_RT(w1,s1,t1): Wspill(w1,s1,t1) <= 13.64523828
+ Max_wind_spill_RT(w1,s1,t2): Wspill(w1,s1,t2) <= 14.13210003
+ Max_wind_spill_RT(w1,s1,t3): Wspill(w1,s1,t3) <= 9.571274219999999
+ Max_wind_spill_RT(w1,s1,t4): Wspill(w1,s1,t4) <= 10.24495167
+ Max_wind_spill_RT(w1,s1,t5): Wspill(w1,s1,t5) <= 13.37112045
+ Max_wind_spill_RT(w1,s1,t6): Wspill(w1,s1,t6) <= 15.9762591
+ Max_wind_spill_RT(w1,s1,t7): Wspill(w1,s1,t7) <= 13.09757973
+ Max_wind_spill_RT(w1,s1,t8): Wspill(w1,s1,t8) <= 9.348263729999999
+ Max_wind_spill_RT(w1,s1,t9): Wspill(w1,s1,t9) <= 8.03252799
+ Max_wind_spill_RT(w1,s1,t10): Wspill(w1,s1,t10) <= 9.780529290000001
+ Max_wind_spill_RT(w1,s1,t11): Wspill(w1,s1,t11) <= 13.23691422
+ Max_wind_spill_RT(w1,s1,t12): Wspill(w1,s1,t12) <= 14.79118329
+ Max_wind_spill_RT(w1,s1,t13): Wspill(w1,s1,t13) <= 22.67129373
+ Max_wind_spill_RT(w1,s1,t14): Wspill(w1,s1,t14) <= 23.25377463
+ Max_wind_spill_RT(w1,s1,t15): Wspill(w1,s1,t15) <= 24.08429517
+ Max_wind_spill_RT(w1,s1,t16): Wspill(w1,s1,t16) <= 25.67222511
+ Max_wind_spill_RT(w1,s1,t17): Wspill(w1,s1,t17) <= 26.96292903
+ Max_wind_spill_RT(w1,s1,t18): Wspill(w1,s1,t18) <= 27.84705837
+ Max_wind_spill_RT(w1,s1,t19): Wspill(w1,s1,t19) <= 27.97611309
+ Max_wind_spill_RT(w1,s1,t20): Wspill(w1,s1,t20) <= 26.64932952
+ Max_wind_spill_RT(w1,s1,t21): Wspill(w1,s1,t21) <= 27.01809513
+ Max_wind_spill_RT(w1,s1,t22): Wspill(w1,s1,t22) <= 28.32297243
+ Max_wind_spill_RT(w1,s1,t23): Wspill(w1,s1,t23) <= 28.87685715
+ Max_wind_spill_RT(w1,s1,t24): Wspill(w1,s1,t24) <= 28.64355426
+ Max_wind_spill_RT(w1,s2,t1): Wspill(w1,s2,t1) <= 15.6405261
+ Max_wind_spill_RT(w1,s2,t2): Wspill(w1,s2,t2) <= 13.86895302
+ Max_wind_spill_RT(w1,s2,t3): Wspill(w1,s2,t3) <= 6.45881973
+ Max_wind_spill_RT(w1,s2,t4): Wspill(w1,s2,t4) <= 2.52463722
+ Max_wind_spill_RT(w1,s2,t5): Wspill(w1,s2,t5) <= 1.46566404
+ Max_wind_spill_RT(w1,s2,t6): Wspill(w1,s2,t6) <= 1.78731159
+ Max_wind_spill_RT(w1,s2,t7): Wspill(w1,s2,t7) <= 2.82233721
+ Max_wind_spill_RT(w1,s2,t8): Wspill(w1,s2,t8) <= 3.06365706
+ Max_wind_spill_RT(w1,s2,t9): Wspill(w1,s2,t9) <= 3.72330549
+ Max_wind_spill_RT(w1,s2,t10): Wspill(w1,s2,t10) <= 5.87754435
+ Max_wind_spill_RT(w1,s2,t11): Wspill(w1,s2,t11) <= 7.27054521
+ Max_wind_spill_RT(w1,s2,t12): Wspill(w1,s2,t12) <= 8.531094060000001
+ Max_wind_spill_RT(w1,s2,t13): Wspill(w1,s2,t13) <= 9.673352430000001
+ Max_wind_spill_RT(w1,s2,t14): Wspill(w1,s2,t14) <= 9.98061261
+ Max_wind_spill_RT(w1,s2,t15): Wspill(w1,s2,t15) <= 11.17659936
+ Max_wind_spill_RT(w1,s2,t16): Wspill(w1,s2,t16) <= 8.21749578
+ Max_wind_spill_RT(w1,s2,t17): Wspill(w1,s2,t17) <= 12.18737028
+ Max_wind_spill_RT(w1,s2,t18): Wspill(w1,s2,t18) <= 13.84594917
+ Max_wind_spill_RT(w1,s2,t19): Wspill(w1,s2,t19) <= 10.52609511
+ Max_wind_spill_RT(w1,s2,t20): Wspill(w1,s2,t20) <= 9.61658184
+ Max_wind_spill_RT(w1,s2,t21): Wspill(w1,s2,t21) <= 10.08032745
+ Max_wind_spill_RT(w1,s2,t22): Wspill(w1,s2,t22) <= 11.65214559
+ Max_wind_spill_RT(w1,s2,t23): Wspill(w1,s2,t23) <= 13.81197936
+ Max_wind_spill_RT(w1,s2,t24): Wspill(w1,s2,t24) <= 13.56418623
  SOS1_Pmax_DA_GFPP(g1,t1): Pgen(g1,t1) + PgenSC(g1,t1) + RCup(g1,t1)
-   + RCupSC(g1,t1) + SOS1_Pmax_DA_GFPP(g1,t1) = 152
+   + RCupSC(g1,t1) + SOS1_Pmax_DA_GFPP(g1,t1) = 60
  SOS1_Pmax_DA_GFPP(g1,t2): Pgen(g1,t2) + PgenSC(g1,t2) + RCup(g1,t2)
-   + RCupSC(g1,t2) + SOS1_Pmax_DA_GFPP(g1,t2) = 152
+   + RCupSC(g1,t2) + SOS1_Pmax_DA_GFPP(g1,t2) = 60
  SOS1_Pmax_DA_GFPP(g1,t3): Pgen(g1,t3) + PgenSC(g1,t3) + RCup(g1,t3)
-   + RCupSC(g1,t3) + SOS1_Pmax_DA_GFPP(g1,t3) = 152
+   + RCupSC(g1,t3) + SOS1_Pmax_DA_GFPP(g1,t3) = 60
  SOS1_Pmax_DA_GFPP(g1,t4): Pgen(g1,t4) + PgenSC(g1,t4) + RCup(g1,t4)
-   + RCupSC(g1,t4) + SOS1_Pmax_DA_GFPP(g1,t4) = 152
+   + RCupSC(g1,t4) + SOS1_Pmax_DA_GFPP(g1,t4) = 60
  SOS1_Pmax_DA_GFPP(g1,t5): Pgen(g1,t5) + PgenSC(g1,t5) + RCup(g1,t5)
-   + RCupSC(g1,t5) + SOS1_Pmax_DA_GFPP(g1,t5) = 152
+   + RCupSC(g1,t5) + SOS1_Pmax_DA_GFPP(g1,t5) = 60
  SOS1_Pmax_DA_GFPP(g1,t6): Pgen(g1,t6) + PgenSC(g1,t6) + RCup(g1,t6)
-   + RCupSC(g1,t6) + SOS1_Pmax_DA_GFPP(g1,t6) = 152
+   + RCupSC(g1,t6) + SOS1_Pmax_DA_GFPP(g1,t6) = 60
  SOS1_Pmax_DA_GFPP(g1,t7): Pgen(g1,t7) + PgenSC(g1,t7) + RCup(g1,t7)
-   + RCupSC(g1,t7) + SOS1_Pmax_DA_GFPP(g1,t7) = 152
+   + RCupSC(g1,t7) + SOS1_Pmax_DA_GFPP(g1,t7) = 60
  SOS1_Pmax_DA_GFPP(g1,t8): Pgen(g1,t8) + PgenSC(g1,t8) + RCup(g1,t8)
-   + RCupSC(g1,t8) + SOS1_Pmax_DA_GFPP(g1,t8) = 152
+   + RCupSC(g1,t8) + SOS1_Pmax_DA_GFPP(g1,t8) = 60
  SOS1_Pmax_DA_GFPP(g1,t9): Pgen(g1,t9) + PgenSC(g1,t9) + RCup(g1,t9)
-   + RCupSC(g1,t9) + SOS1_Pmax_DA_GFPP(g1,t9) = 152
+   + RCupSC(g1,t9) + SOS1_Pmax_DA_GFPP(g1,t9) = 60
  SOS1_Pmax_DA_GFPP(g1,t10): Pgen(g1,t10) + PgenSC(g1,t10) + RCup(g1,t10)
-   + RCupSC(g1,t10) + SOS1_Pmax_DA_GFPP(g1,t10) = 152
+   + RCupSC(g1,t10) + SOS1_Pmax_DA_GFPP(g1,t10) = 60
  SOS1_Pmax_DA_GFPP(g1,t11): Pgen(g1,t11) + PgenSC(g1,t11) + RCup(g1,t11)
-   + RCupSC(g1,t11) + SOS1_Pmax_DA_GFPP(g1,t11) = 152
+   + RCupSC(g1,t11) + SOS1_Pmax_DA_GFPP(g1,t11) = 60
  SOS1_Pmax_DA_GFPP(g1,t12): Pgen(g1,t12) + PgenSC(g1,t12) + RCup(g1,t12)
-   + RCupSC(g1,t12) + SOS1_Pmax_DA_GFPP(g1,t12) = 152
+   + RCupSC(g1,t12) + SOS1_Pmax_DA_GFPP(g1,t12) = 60
  SOS1_Pmax_DA_GFPP(g1,t13): Pgen(g1,t13) + PgenSC(g1,t13) + RCup(g1,t13)
-   + RCupSC(g1,t13) + SOS1_Pmax_DA_GFPP(g1,t13) = 152
+   + RCupSC(g1,t13) + SOS1_Pmax_DA_GFPP(g1,t13) = 60
  SOS1_Pmax_DA_GFPP(g1,t14): Pgen(g1,t14) + PgenSC(g1,t14) + RCup(g1,t14)
-   + RCupSC(g1,t14) + SOS1_Pmax_DA_GFPP(g1,t14) = 152
+   + RCupSC(g1,t14) + SOS1_Pmax_DA_GFPP(g1,t14) = 60
  SOS1_Pmax_DA_GFPP(g1,t15): Pgen(g1,t15) + PgenSC(g1,t15) + RCup(g1,t15)
-   + RCupSC(g1,t15) + SOS1_Pmax_DA_GFPP(g1,t15) = 152
+   + RCupSC(g1,t15) + SOS1_Pmax_DA_GFPP(g1,t15) = 60
  SOS1_Pmax_DA_GFPP(g1,t16): Pgen(g1,t16) + PgenSC(g1,t16) + RCup(g1,t16)
-   + RCupSC(g1,t16) + SOS1_Pmax_DA_GFPP(g1,t16) = 152
+   + RCupSC(g1,t16) + SOS1_Pmax_DA_GFPP(g1,t16) = 60
  SOS1_Pmax_DA_GFPP(g1,t17): Pgen(g1,t17) + PgenSC(g1,t17) + RCup(g1,t17)
-   + RCupSC(g1,t17) + SOS1_Pmax_DA_GFPP(g1,t17) = 152
+   + RCupSC(g1,t17) + SOS1_Pmax_DA_GFPP(g1,t17) = 60
  SOS1_Pmax_DA_GFPP(g1,t18): Pgen(g1,t18) + PgenSC(g1,t18) + RCup(g1,t18)
-   + RCupSC(g1,t18) + SOS1_Pmax_DA_GFPP(g1,t18) = 152
+   + RCupSC(g1,t18) + SOS1_Pmax_DA_GFPP(g1,t18) = 60
  SOS1_Pmax_DA_GFPP(g1,t19): Pgen(g1,t19) + PgenSC(g1,t19) + RCup(g1,t19)
-   + RCupSC(g1,t19) + SOS1_Pmax_DA_GFPP(g1,t19) = 152
+   + RCupSC(g1,t19) + SOS1_Pmax_DA_GFPP(g1,t19) = 60
  SOS1_Pmax_DA_GFPP(g1,t20): Pgen(g1,t20) + PgenSC(g1,t20) + RCup(g1,t20)
-   + RCupSC(g1,t20) + SOS1_Pmax_DA_GFPP(g1,t20) = 152
+   + RCupSC(g1,t20) + SOS1_Pmax_DA_GFPP(g1,t20) = 60
  SOS1_Pmax_DA_GFPP(g1,t21): Pgen(g1,t21) + PgenSC(g1,t21) + RCup(g1,t21)
-   + RCupSC(g1,t21) + SOS1_Pmax_DA_GFPP(g1,t21) = 152
+   + RCupSC(g1,t21) + SOS1_Pmax_DA_GFPP(g1,t21) = 60
  SOS1_Pmax_DA_GFPP(g1,t22): Pgen(g1,t22) + PgenSC(g1,t22) + RCup(g1,t22)
-   + RCupSC(g1,t22) + SOS1_Pmax_DA_GFPP(g1,t22) = 152
+   + RCupSC(g1,t22) + SOS1_Pmax_DA_GFPP(g1,t22) = 60
  SOS1_Pmax_DA_GFPP(g1,t23): Pgen(g1,t23) + PgenSC(g1,t23) + RCup(g1,t23)
-   + RCupSC(g1,t23) + SOS1_Pmax_DA_GFPP(g1,t23) = 152
+   + RCupSC(g1,t23) + SOS1_Pmax_DA_GFPP(g1,t23) = 60
  SOS1_Pmax_DA_GFPP(g1,t24): Pgen(g1,t24) + PgenSC(g1,t24) + RCup(g1,t24)
-   + RCupSC(g1,t24) + SOS1_Pmax_DA_GFPP(g1,t24) = 152
+   + RCupSC(g1,t24) + SOS1_Pmax_DA_GFPP(g1,t24) = 60
  SOS1_Pmin_DA_GFPP(g1,t1): - Pgen(g1,t1) - PgenSC(g1,t1) + RCdn(g1,t1)
    + RCdnSC(g1,t1) + SOS1_Pmin_DA_GFPP(g1,t1) = 0
  SOS1_Pmin_DA_GFPP(g1,t2): - Pgen(g1,t2) - PgenSC(g1,t2) + RCdn(g1,t2)
@@ -1091,195 +1187,195 @@ Subject To
  SOS1_Pmin_DA_GFPP(g1,t24): - Pgen(g1,t24) - PgenSC(g1,t24) + RCdn(g1,t24)
    + RCdnSC(g1,t24) + SOS1_Pmin_DA_GFPP(g1,t24) = 0
  SOS1_Wind_Max_DA(w1,t1): WindDA(w1,t1) + SOS1_Wind_Max_DA(w1,t1)
-   = 14.521143
+   = 14.64288219
  SOS1_Wind_Max_DA(w1,t2): WindDA(w1,t2) + SOS1_Wind_Max_DA(w1,t2)
-   = 14.85633789
+   = 14.000526525
  SOS1_Wind_Max_DA(w1,t3): WindDA(w1,t3) + SOS1_Wind_Max_DA(w1,t3)
-   = 15.52401327
+   = 8.015046975000001
  SOS1_Wind_Max_DA(w1,t4): WindDA(w1,t4) + SOS1_Wind_Max_DA(w1,t4)
-   = 14.831624415
+   = 6.384794445
  SOS1_Wind_Max_DA(w1,t5): WindDA(w1,t5) + SOS1_Wind_Max_DA(w1,t5)
-   = 15.05633232
+   = 7.418392245
  SOS1_Wind_Max_DA(w1,t6): WindDA(w1,t6) + SOS1_Wind_Max_DA(w1,t6)
-   = 13.626689295
+   = 8.881785345000001
  SOS1_Wind_Max_DA(w1,t7): WindDA(w1,t7) + SOS1_Wind_Max_DA(w1,t7)
-   = 12.445993755
+   = 7.95995847
  SOS1_Wind_Max_DA(w1,t8): WindDA(w1,t8) + SOS1_Wind_Max_DA(w1,t8)
-   = 10.01010708
+   = 6.205960395
  SOS1_Wind_Max_DA(w1,t9): WindDA(w1,t9) + SOS1_Wind_Max_DA(w1,t9)
-   = 7.85728773
+   = 5.87791674
  SOS1_Wind_Max_DA(w1,t10): WindDA(w1,t10) + SOS1_Wind_Max_DA(w1,t10)
-   = 5.811894255
+   = 7.829036820000001
  SOS1_Wind_Max_DA(w1,t11): WindDA(w1,t11) + SOS1_Wind_Max_DA(w1,t11)
-   = 4.47311754
+   = 10.253729715
  SOS1_Wind_Max_DA(w1,t12): WindDA(w1,t12) + SOS1_Wind_Max_DA(w1,t12)
-   = 3.99764514
+   = 11.661138675
  SOS1_Wind_Max_DA(w1,t13): WindDA(w1,t13) + SOS1_Wind_Max_DA(w1,t13)
-   = 4.096402739999999
+   = 16.17232308
  SOS1_Wind_Max_DA(w1,t14): WindDA(w1,t14) + SOS1_Wind_Max_DA(w1,t14)
-   = 5.253506864999999
+   = 16.61719362
  SOS1_Wind_Max_DA(w1,t15): WindDA(w1,t15) + SOS1_Wind_Max_DA(w1,t15)
-   = 5.971542074999999
+   = 17.630447265
  SOS1_Wind_Max_DA(w1,t16): WindDA(w1,t16) + SOS1_Wind_Max_DA(w1,t16)
-   = 5.78804346
+   = 16.944860445
  SOS1_Wind_Max_DA(w1,t17): WindDA(w1,t17) + SOS1_Wind_Max_DA(w1,t17)
-   = 4.85449374
+   = 19.575149655
  SOS1_Wind_Max_DA(w1,t18): WindDA(w1,t18) + SOS1_Wind_Max_DA(w1,t18)
-   = 4.553709285
+   = 20.84650377
  SOS1_Wind_Max_DA(w1,t19): WindDA(w1,t19) + SOS1_Wind_Max_DA(w1,t19)
-   = 4.332384765000001
+   = 19.2511041
  SOS1_Wind_Max_DA(w1,t20): WindDA(w1,t20) + SOS1_Wind_Max_DA(w1,t20)
-   = 4.076401499999999
+   = 18.13295568
  SOS1_Wind_Max_DA(w1,t21): WindDA(w1,t21) + SOS1_Wind_Max_DA(w1,t21)
-   = 3.6377967
+   = 18.54921129
  SOS1_Wind_Max_DA(w1,t22): WindDA(w1,t22) + SOS1_Wind_Max_DA(w1,t22)
-   = 3.370745925
+   = 19.98755901
  SOS1_Wind_Max_DA(w1,t23): WindDA(w1,t23) + SOS1_Wind_Max_DA(w1,t23)
-   = 2.91260091
+   = 21.344418255
  SOS1_Wind_Max_DA(w1,t24): WindDA(w1,t24) + SOS1_Wind_Max_DA(w1,t24)
-   = 1.880813415
- SOS1_PgenSCmax(g1,t1): PgenSC(g1,t1) + SOS1_PgenSCmax(g1,t1) = 100
+   = 21.103870245
+ SOS1_PgenSCmax(g1,t1): PgenSC(g1,t1) + SOS1_PgenSCmax(g1,t1) = 10
  SOS1_PgenSCmin(g1,t1): - PgenSC(g1,t1) + SOS1_PgenSCmin(g1,t1) = 0
  SOS1_RCupSCmax(g1,t1): PgenSC(g1,t1) + RCupSC(g1,t1)
-   + SOS1_RCupSCmax(g1,t1) = 100
+   + SOS1_RCupSCmax(g1,t1) = 10
  SOS1_RCdnSCmin(g1,t1): - PgenSC(g1,t1) + RCdnSC(g1,t1)
    + SOS1_RCdnSCmin(g1,t1) = 0
- SOS1_PgenSCmax(g1,t2): PgenSC(g1,t2) + SOS1_PgenSCmax(g1,t2) = 100
+ SOS1_PgenSCmax(g1,t2): PgenSC(g1,t2) + SOS1_PgenSCmax(g1,t2) = 10
  SOS1_PgenSCmin(g1,t2): - PgenSC(g1,t2) + SOS1_PgenSCmin(g1,t2) = 0
  SOS1_RCupSCmax(g1,t2): PgenSC(g1,t2) + RCupSC(g1,t2)
-   + SOS1_RCupSCmax(g1,t2) = 100
+   + SOS1_RCupSCmax(g1,t2) = 10
  SOS1_RCdnSCmin(g1,t2): - PgenSC(g1,t2) + RCdnSC(g1,t2)
    + SOS1_RCdnSCmin(g1,t2) = 0
- SOS1_PgenSCmax(g1,t3): PgenSC(g1,t3) + SOS1_PgenSCmax(g1,t3) = 100
+ SOS1_PgenSCmax(g1,t3): PgenSC(g1,t3) + SOS1_PgenSCmax(g1,t3) = 10
  SOS1_PgenSCmin(g1,t3): - PgenSC(g1,t3) + SOS1_PgenSCmin(g1,t3) = 0
  SOS1_RCupSCmax(g1,t3): PgenSC(g1,t3) + RCupSC(g1,t3)
-   + SOS1_RCupSCmax(g1,t3) = 100
+   + SOS1_RCupSCmax(g1,t3) = 10
  SOS1_RCdnSCmin(g1,t3): - PgenSC(g1,t3) + RCdnSC(g1,t3)
    + SOS1_RCdnSCmin(g1,t3) = 0
- SOS1_PgenSCmax(g1,t4): PgenSC(g1,t4) + SOS1_PgenSCmax(g1,t4) = 100
+ SOS1_PgenSCmax(g1,t4): PgenSC(g1,t4) + SOS1_PgenSCmax(g1,t4) = 10
  SOS1_PgenSCmin(g1,t4): - PgenSC(g1,t4) + SOS1_PgenSCmin(g1,t4) = 0
  SOS1_RCupSCmax(g1,t4): PgenSC(g1,t4) + RCupSC(g1,t4)
-   + SOS1_RCupSCmax(g1,t4) = 100
+   + SOS1_RCupSCmax(g1,t4) = 10
  SOS1_RCdnSCmin(g1,t4): - PgenSC(g1,t4) + RCdnSC(g1,t4)
    + SOS1_RCdnSCmin(g1,t4) = 0
- SOS1_PgenSCmax(g1,t5): PgenSC(g1,t5) + SOS1_PgenSCmax(g1,t5) = 100
+ SOS1_PgenSCmax(g1,t5): PgenSC(g1,t5) + SOS1_PgenSCmax(g1,t5) = 10
  SOS1_PgenSCmin(g1,t5): - PgenSC(g1,t5) + SOS1_PgenSCmin(g1,t5) = 0
  SOS1_RCupSCmax(g1,t5): PgenSC(g1,t5) + RCupSC(g1,t5)
-   + SOS1_RCupSCmax(g1,t5) = 100
+   + SOS1_RCupSCmax(g1,t5) = 10
  SOS1_RCdnSCmin(g1,t5): - PgenSC(g1,t5) + RCdnSC(g1,t5)
    + SOS1_RCdnSCmin(g1,t5) = 0
- SOS1_PgenSCmax(g1,t6): PgenSC(g1,t6) + SOS1_PgenSCmax(g1,t6) = 100
+ SOS1_PgenSCmax(g1,t6): PgenSC(g1,t6) + SOS1_PgenSCmax(g1,t6) = 10
  SOS1_PgenSCmin(g1,t6): - PgenSC(g1,t6) + SOS1_PgenSCmin(g1,t6) = 0
  SOS1_RCupSCmax(g1,t6): PgenSC(g1,t6) + RCupSC(g1,t6)
-   + SOS1_RCupSCmax(g1,t6) = 100
+   + SOS1_RCupSCmax(g1,t6) = 10
  SOS1_RCdnSCmin(g1,t6): - PgenSC(g1,t6) + RCdnSC(g1,t6)
    + SOS1_RCdnSCmin(g1,t6) = 0
- SOS1_PgenSCmax(g1,t7): PgenSC(g1,t7) + SOS1_PgenSCmax(g1,t7) = 100
+ SOS1_PgenSCmax(g1,t7): PgenSC(g1,t7) + SOS1_PgenSCmax(g1,t7) = 10
  SOS1_PgenSCmin(g1,t7): - PgenSC(g1,t7) + SOS1_PgenSCmin(g1,t7) = 0
  SOS1_RCupSCmax(g1,t7): PgenSC(g1,t7) + RCupSC(g1,t7)
-   + SOS1_RCupSCmax(g1,t7) = 100
+   + SOS1_RCupSCmax(g1,t7) = 10
  SOS1_RCdnSCmin(g1,t7): - PgenSC(g1,t7) + RCdnSC(g1,t7)
    + SOS1_RCdnSCmin(g1,t7) = 0
- SOS1_PgenSCmax(g1,t8): PgenSC(g1,t8) + SOS1_PgenSCmax(g1,t8) = 100
+ SOS1_PgenSCmax(g1,t8): PgenSC(g1,t8) + SOS1_PgenSCmax(g1,t8) = 10
  SOS1_PgenSCmin(g1,t8): - PgenSC(g1,t8) + SOS1_PgenSCmin(g1,t8) = 0
  SOS1_RCupSCmax(g1,t8): PgenSC(g1,t8) + RCupSC(g1,t8)
-   + SOS1_RCupSCmax(g1,t8) = 100
+   + SOS1_RCupSCmax(g1,t8) = 10
  SOS1_RCdnSCmin(g1,t8): - PgenSC(g1,t8) + RCdnSC(g1,t8)
    + SOS1_RCdnSCmin(g1,t8) = 0
- SOS1_PgenSCmax(g1,t9): PgenSC(g1,t9) + SOS1_PgenSCmax(g1,t9) = 100
+ SOS1_PgenSCmax(g1,t9): PgenSC(g1,t9) + SOS1_PgenSCmax(g1,t9) = 10
  SOS1_PgenSCmin(g1,t9): - PgenSC(g1,t9) + SOS1_PgenSCmin(g1,t9) = 0
  SOS1_RCupSCmax(g1,t9): PgenSC(g1,t9) + RCupSC(g1,t9)
-   + SOS1_RCupSCmax(g1,t9) = 100
+   + SOS1_RCupSCmax(g1,t9) = 10
  SOS1_RCdnSCmin(g1,t9): - PgenSC(g1,t9) + RCdnSC(g1,t9)
    + SOS1_RCdnSCmin(g1,t9) = 0
- SOS1_PgenSCmax(g1,t10): PgenSC(g1,t10) + SOS1_PgenSCmax(g1,t10) = 100
+ SOS1_PgenSCmax(g1,t10): PgenSC(g1,t10) + SOS1_PgenSCmax(g1,t10) = 10
  SOS1_PgenSCmin(g1,t10): - PgenSC(g1,t10) + SOS1_PgenSCmin(g1,t10) = 0
  SOS1_RCupSCmax(g1,t10): PgenSC(g1,t10) + RCupSC(g1,t10)
-   + SOS1_RCupSCmax(g1,t10) = 100
+   + SOS1_RCupSCmax(g1,t10) = 10
  SOS1_RCdnSCmin(g1,t10): - PgenSC(g1,t10) + RCdnSC(g1,t10)
    + SOS1_RCdnSCmin(g1,t10) = 0
- SOS1_PgenSCmax(g1,t11): PgenSC(g1,t11) + SOS1_PgenSCmax(g1,t11) = 100
+ SOS1_PgenSCmax(g1,t11): PgenSC(g1,t11) + SOS1_PgenSCmax(g1,t11) = 10
  SOS1_PgenSCmin(g1,t11): - PgenSC(g1,t11) + SOS1_PgenSCmin(g1,t11) = 0
  SOS1_RCupSCmax(g1,t11): PgenSC(g1,t11) + RCupSC(g1,t11)
-   + SOS1_RCupSCmax(g1,t11) = 100
+   + SOS1_RCupSCmax(g1,t11) = 10
  SOS1_RCdnSCmin(g1,t11): - PgenSC(g1,t11) + RCdnSC(g1,t11)
    + SOS1_RCdnSCmin(g1,t11) = 0
- SOS1_PgenSCmax(g1,t12): PgenSC(g1,t12) + SOS1_PgenSCmax(g1,t12) = 100
+ SOS1_PgenSCmax(g1,t12): PgenSC(g1,t12) + SOS1_PgenSCmax(g1,t12) = 10
  SOS1_PgenSCmin(g1,t12): - PgenSC(g1,t12) + SOS1_PgenSCmin(g1,t12) = 0
  SOS1_RCupSCmax(g1,t12): PgenSC(g1,t12) + RCupSC(g1,t12)
-   + SOS1_RCupSCmax(g1,t12) = 100
+   + SOS1_RCupSCmax(g1,t12) = 10
  SOS1_RCdnSCmin(g1,t12): - PgenSC(g1,t12) + RCdnSC(g1,t12)
    + SOS1_RCdnSCmin(g1,t12) = 0
- SOS1_PgenSCmax(g1,t13): PgenSC(g1,t13) + SOS1_PgenSCmax(g1,t13) = 100
+ SOS1_PgenSCmax(g1,t13): PgenSC(g1,t13) + SOS1_PgenSCmax(g1,t13) = 10
  SOS1_PgenSCmin(g1,t13): - PgenSC(g1,t13) + SOS1_PgenSCmin(g1,t13) = 0
  SOS1_RCupSCmax(g1,t13): PgenSC(g1,t13) + RCupSC(g1,t13)
-   + SOS1_RCupSCmax(g1,t13) = 100
+   + SOS1_RCupSCmax(g1,t13) = 10
  SOS1_RCdnSCmin(g1,t13): - PgenSC(g1,t13) + RCdnSC(g1,t13)
    + SOS1_RCdnSCmin(g1,t13) = 0
- SOS1_PgenSCmax(g1,t14): PgenSC(g1,t14) + SOS1_PgenSCmax(g1,t14) = 100
+ SOS1_PgenSCmax(g1,t14): PgenSC(g1,t14) + SOS1_PgenSCmax(g1,t14) = 10
  SOS1_PgenSCmin(g1,t14): - PgenSC(g1,t14) + SOS1_PgenSCmin(g1,t14) = 0
  SOS1_RCupSCmax(g1,t14): PgenSC(g1,t14) + RCupSC(g1,t14)
-   + SOS1_RCupSCmax(g1,t14) = 100
+   + SOS1_RCupSCmax(g1,t14) = 10
  SOS1_RCdnSCmin(g1,t14): - PgenSC(g1,t14) + RCdnSC(g1,t14)
    + SOS1_RCdnSCmin(g1,t14) = 0
- SOS1_PgenSCmax(g1,t15): PgenSC(g1,t15) + SOS1_PgenSCmax(g1,t15) = 100
+ SOS1_PgenSCmax(g1,t15): PgenSC(g1,t15) + SOS1_PgenSCmax(g1,t15) = 10
  SOS1_PgenSCmin(g1,t15): - PgenSC(g1,t15) + SOS1_PgenSCmin(g1,t15) = 0
  SOS1_RCupSCmax(g1,t15): PgenSC(g1,t15) + RCupSC(g1,t15)
-   + SOS1_RCupSCmax(g1,t15) = 100
+   + SOS1_RCupSCmax(g1,t15) = 10
  SOS1_RCdnSCmin(g1,t15): - PgenSC(g1,t15) + RCdnSC(g1,t15)
    + SOS1_RCdnSCmin(g1,t15) = 0
- SOS1_PgenSCmax(g1,t16): PgenSC(g1,t16) + SOS1_PgenSCmax(g1,t16) = 100
+ SOS1_PgenSCmax(g1,t16): PgenSC(g1,t16) + SOS1_PgenSCmax(g1,t16) = 10
  SOS1_PgenSCmin(g1,t16): - PgenSC(g1,t16) + SOS1_PgenSCmin(g1,t16) = 0
  SOS1_RCupSCmax(g1,t16): PgenSC(g1,t16) + RCupSC(g1,t16)
-   + SOS1_RCupSCmax(g1,t16) = 100
+   + SOS1_RCupSCmax(g1,t16) = 10
  SOS1_RCdnSCmin(g1,t16): - PgenSC(g1,t16) + RCdnSC(g1,t16)
    + SOS1_RCdnSCmin(g1,t16) = 0
- SOS1_PgenSCmax(g1,t17): PgenSC(g1,t17) + SOS1_PgenSCmax(g1,t17) = 100
+ SOS1_PgenSCmax(g1,t17): PgenSC(g1,t17) + SOS1_PgenSCmax(g1,t17) = 10
  SOS1_PgenSCmin(g1,t17): - PgenSC(g1,t17) + SOS1_PgenSCmin(g1,t17) = 0
  SOS1_RCupSCmax(g1,t17): PgenSC(g1,t17) + RCupSC(g1,t17)
-   + SOS1_RCupSCmax(g1,t17) = 100
+   + SOS1_RCupSCmax(g1,t17) = 10
  SOS1_RCdnSCmin(g1,t17): - PgenSC(g1,t17) + RCdnSC(g1,t17)
    + SOS1_RCdnSCmin(g1,t17) = 0
- SOS1_PgenSCmax(g1,t18): PgenSC(g1,t18) + SOS1_PgenSCmax(g1,t18) = 100
+ SOS1_PgenSCmax(g1,t18): PgenSC(g1,t18) + SOS1_PgenSCmax(g1,t18) = 10
  SOS1_PgenSCmin(g1,t18): - PgenSC(g1,t18) + SOS1_PgenSCmin(g1,t18) = 0
  SOS1_RCupSCmax(g1,t18): PgenSC(g1,t18) + RCupSC(g1,t18)
-   + SOS1_RCupSCmax(g1,t18) = 100
+   + SOS1_RCupSCmax(g1,t18) = 10
  SOS1_RCdnSCmin(g1,t18): - PgenSC(g1,t18) + RCdnSC(g1,t18)
    + SOS1_RCdnSCmin(g1,t18) = 0
- SOS1_PgenSCmax(g1,t19): PgenSC(g1,t19) + SOS1_PgenSCmax(g1,t19) = 100
+ SOS1_PgenSCmax(g1,t19): PgenSC(g1,t19) + SOS1_PgenSCmax(g1,t19) = 10
  SOS1_PgenSCmin(g1,t19): - PgenSC(g1,t19) + SOS1_PgenSCmin(g1,t19) = 0
  SOS1_RCupSCmax(g1,t19): PgenSC(g1,t19) + RCupSC(g1,t19)
-   + SOS1_RCupSCmax(g1,t19) = 100
+   + SOS1_RCupSCmax(g1,t19) = 10
  SOS1_RCdnSCmin(g1,t19): - PgenSC(g1,t19) + RCdnSC(g1,t19)
    + SOS1_RCdnSCmin(g1,t19) = 0
- SOS1_PgenSCmax(g1,t20): PgenSC(g1,t20) + SOS1_PgenSCmax(g1,t20) = 100
+ SOS1_PgenSCmax(g1,t20): PgenSC(g1,t20) + SOS1_PgenSCmax(g1,t20) = 10
  SOS1_PgenSCmin(g1,t20): - PgenSC(g1,t20) + SOS1_PgenSCmin(g1,t20) = 0
  SOS1_RCupSCmax(g1,t20): PgenSC(g1,t20) + RCupSC(g1,t20)
-   + SOS1_RCupSCmax(g1,t20) = 100
+   + SOS1_RCupSCmax(g1,t20) = 10
  SOS1_RCdnSCmin(g1,t20): - PgenSC(g1,t20) + RCdnSC(g1,t20)
    + SOS1_RCdnSCmin(g1,t20) = 0
- SOS1_PgenSCmax(g1,t21): PgenSC(g1,t21) + SOS1_PgenSCmax(g1,t21) = 100
+ SOS1_PgenSCmax(g1,t21): PgenSC(g1,t21) + SOS1_PgenSCmax(g1,t21) = 10
  SOS1_PgenSCmin(g1,t21): - PgenSC(g1,t21) + SOS1_PgenSCmin(g1,t21) = 0
  SOS1_RCupSCmax(g1,t21): PgenSC(g1,t21) + RCupSC(g1,t21)
-   + SOS1_RCupSCmax(g1,t21) = 100
+   + SOS1_RCupSCmax(g1,t21) = 10
  SOS1_RCdnSCmin(g1,t21): - PgenSC(g1,t21) + RCdnSC(g1,t21)
    + SOS1_RCdnSCmin(g1,t21) = 0
- SOS1_PgenSCmax(g1,t22): PgenSC(g1,t22) + SOS1_PgenSCmax(g1,t22) = 100
+ SOS1_PgenSCmax(g1,t22): PgenSC(g1,t22) + SOS1_PgenSCmax(g1,t22) = 10
  SOS1_PgenSCmin(g1,t22): - PgenSC(g1,t22) + SOS1_PgenSCmin(g1,t22) = 0
  SOS1_RCupSCmax(g1,t22): PgenSC(g1,t22) + RCupSC(g1,t22)
-   + SOS1_RCupSCmax(g1,t22) = 100
+   + SOS1_RCupSCmax(g1,t22) = 10
  SOS1_RCdnSCmin(g1,t22): - PgenSC(g1,t22) + RCdnSC(g1,t22)
    + SOS1_RCdnSCmin(g1,t22) = 0
- SOS1_PgenSCmax(g1,t23): PgenSC(g1,t23) + SOS1_PgenSCmax(g1,t23) = 100
+ SOS1_PgenSCmax(g1,t23): PgenSC(g1,t23) + SOS1_PgenSCmax(g1,t23) = 10
  SOS1_PgenSCmin(g1,t23): - PgenSC(g1,t23) + SOS1_PgenSCmin(g1,t23) = 0
  SOS1_RCupSCmax(g1,t23): PgenSC(g1,t23) + RCupSC(g1,t23)
-   + SOS1_RCupSCmax(g1,t23) = 100
+   + SOS1_RCupSCmax(g1,t23) = 10
  SOS1_RCdnSCmin(g1,t23): - PgenSC(g1,t23) + RCdnSC(g1,t23)
    + SOS1_RCdnSCmin(g1,t23) = 0
- SOS1_PgenSCmax(g1,t24): PgenSC(g1,t24) + SOS1_PgenSCmax(g1,t24) = 100
+ SOS1_PgenSCmax(g1,t24): PgenSC(g1,t24) + SOS1_PgenSCmax(g1,t24) = 10
  SOS1_PgenSCmin(g1,t24): - PgenSC(g1,t24) + SOS1_PgenSCmin(g1,t24) = 0
  SOS1_RCupSCmax(g1,t24): PgenSC(g1,t24) + RCupSC(g1,t24)
-   + SOS1_RCupSCmax(g1,t24) = 100
+   + SOS1_RCupSCmax(g1,t24) = 10
  SOS1_RCdnSCmin(g1,t24): - PgenSC(g1,t24) + RCdnSC(g1,t24)
    + SOS1_RCdnSCmin(g1,t24) = 0
  SOS1_RegUp_max_RT(g1,s1,t1): RUp(g1,s1,t1) - RCup(g1,t1)
@@ -1474,197 +1570,197 @@ Subject To
    + SOS1_RegUp_max_RT(g1,s2,t24) = 0
  SOS1_RegDown_max_RT(g1,s2,t24): RDn(g1,s2,t24) - RCdn(g1,t24)
    + SOS1_RegDown_max_RT(g1,s2,t24) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t1): - RCupSC(g1,t1) + RUpSC(g1,s1,t1)
+ SOS1_RegUpSC_max_RT(g1,s1,t1): RUpSC(g1,s1,t1) - RCupSC(g1,t1)
    + SOS1_RegUpSC_max_RT(g1,s1,t1) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t1): - RCdnSC(g1,t1) + RDnSC(g1,s1,t1)
+ SOS1_RegDnSC_max_RT(g1,s1,t1): RDnSC(g1,s1,t1) - RCdnSC(g1,t1)
    + SOS1_RegDnSC_max_RT(g1,s1,t1) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t2): - RCupSC(g1,t2) + RUpSC(g1,s1,t2)
+ SOS1_RegUpSC_max_RT(g1,s1,t2): RUpSC(g1,s1,t2) - RCupSC(g1,t2)
    + SOS1_RegUpSC_max_RT(g1,s1,t2) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t2): - RCdnSC(g1,t2) + RDnSC(g1,s1,t2)
+ SOS1_RegDnSC_max_RT(g1,s1,t2): RDnSC(g1,s1,t2) - RCdnSC(g1,t2)
    + SOS1_RegDnSC_max_RT(g1,s1,t2) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t3): - RCupSC(g1,t3) + RUpSC(g1,s1,t3)
+ SOS1_RegUpSC_max_RT(g1,s1,t3): RUpSC(g1,s1,t3) - RCupSC(g1,t3)
    + SOS1_RegUpSC_max_RT(g1,s1,t3) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t3): - RCdnSC(g1,t3) + RDnSC(g1,s1,t3)
+ SOS1_RegDnSC_max_RT(g1,s1,t3): RDnSC(g1,s1,t3) - RCdnSC(g1,t3)
    + SOS1_RegDnSC_max_RT(g1,s1,t3) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t4): - RCupSC(g1,t4) + RUpSC(g1,s1,t4)
+ SOS1_RegUpSC_max_RT(g1,s1,t4): RUpSC(g1,s1,t4) - RCupSC(g1,t4)
    + SOS1_RegUpSC_max_RT(g1,s1,t4) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t4): - RCdnSC(g1,t4) + RDnSC(g1,s1,t4)
+ SOS1_RegDnSC_max_RT(g1,s1,t4): RDnSC(g1,s1,t4) - RCdnSC(g1,t4)
    + SOS1_RegDnSC_max_RT(g1,s1,t4) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t5): - RCupSC(g1,t5) + RUpSC(g1,s1,t5)
+ SOS1_RegUpSC_max_RT(g1,s1,t5): RUpSC(g1,s1,t5) - RCupSC(g1,t5)
    + SOS1_RegUpSC_max_RT(g1,s1,t5) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t5): - RCdnSC(g1,t5) + RDnSC(g1,s1,t5)
+ SOS1_RegDnSC_max_RT(g1,s1,t5): RDnSC(g1,s1,t5) - RCdnSC(g1,t5)
    + SOS1_RegDnSC_max_RT(g1,s1,t5) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t6): - RCupSC(g1,t6) + RUpSC(g1,s1,t6)
+ SOS1_RegUpSC_max_RT(g1,s1,t6): RUpSC(g1,s1,t6) - RCupSC(g1,t6)
    + SOS1_RegUpSC_max_RT(g1,s1,t6) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t6): - RCdnSC(g1,t6) + RDnSC(g1,s1,t6)
+ SOS1_RegDnSC_max_RT(g1,s1,t6): RDnSC(g1,s1,t6) - RCdnSC(g1,t6)
    + SOS1_RegDnSC_max_RT(g1,s1,t6) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t7): - RCupSC(g1,t7) + RUpSC(g1,s1,t7)
+ SOS1_RegUpSC_max_RT(g1,s1,t7): RUpSC(g1,s1,t7) - RCupSC(g1,t7)
    + SOS1_RegUpSC_max_RT(g1,s1,t7) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t7): - RCdnSC(g1,t7) + RDnSC(g1,s1,t7)
+ SOS1_RegDnSC_max_RT(g1,s1,t7): RDnSC(g1,s1,t7) - RCdnSC(g1,t7)
    + SOS1_RegDnSC_max_RT(g1,s1,t7) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t8): - RCupSC(g1,t8) + RUpSC(g1,s1,t8)
+ SOS1_RegUpSC_max_RT(g1,s1,t8): RUpSC(g1,s1,t8) - RCupSC(g1,t8)
    + SOS1_RegUpSC_max_RT(g1,s1,t8) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t8): - RCdnSC(g1,t8) + RDnSC(g1,s1,t8)
+ SOS1_RegDnSC_max_RT(g1,s1,t8): RDnSC(g1,s1,t8) - RCdnSC(g1,t8)
    + SOS1_RegDnSC_max_RT(g1,s1,t8) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t9): - RCupSC(g1,t9) + RUpSC(g1,s1,t9)
+ SOS1_RegUpSC_max_RT(g1,s1,t9): RUpSC(g1,s1,t9) - RCupSC(g1,t9)
    + SOS1_RegUpSC_max_RT(g1,s1,t9) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t9): - RCdnSC(g1,t9) + RDnSC(g1,s1,t9)
+ SOS1_RegDnSC_max_RT(g1,s1,t9): RDnSC(g1,s1,t9) - RCdnSC(g1,t9)
    + SOS1_RegDnSC_max_RT(g1,s1,t9) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t10): - RCupSC(g1,t10) + RUpSC(g1,s1,t10)
+ SOS1_RegUpSC_max_RT(g1,s1,t10): RUpSC(g1,s1,t10) - RCupSC(g1,t10)
    + SOS1_RegUpSC_max_RT(g1,s1,t10) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t10): - RCdnSC(g1,t10) + RDnSC(g1,s1,t10)
+ SOS1_RegDnSC_max_RT(g1,s1,t10): RDnSC(g1,s1,t10) - RCdnSC(g1,t10)
    + SOS1_RegDnSC_max_RT(g1,s1,t10) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t11): - RCupSC(g1,t11) + RUpSC(g1,s1,t11)
+ SOS1_RegUpSC_max_RT(g1,s1,t11): RUpSC(g1,s1,t11) - RCupSC(g1,t11)
    + SOS1_RegUpSC_max_RT(g1,s1,t11) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t11): - RCdnSC(g1,t11) + RDnSC(g1,s1,t11)
+ SOS1_RegDnSC_max_RT(g1,s1,t11): RDnSC(g1,s1,t11) - RCdnSC(g1,t11)
    + SOS1_RegDnSC_max_RT(g1,s1,t11) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t12): - RCupSC(g1,t12) + RUpSC(g1,s1,t12)
+ SOS1_RegUpSC_max_RT(g1,s1,t12): RUpSC(g1,s1,t12) - RCupSC(g1,t12)
    + SOS1_RegUpSC_max_RT(g1,s1,t12) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t12): - RCdnSC(g1,t12) + RDnSC(g1,s1,t12)
+ SOS1_RegDnSC_max_RT(g1,s1,t12): RDnSC(g1,s1,t12) - RCdnSC(g1,t12)
    + SOS1_RegDnSC_max_RT(g1,s1,t12) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t13): - RCupSC(g1,t13) + RUpSC(g1,s1,t13)
+ SOS1_RegUpSC_max_RT(g1,s1,t13): RUpSC(g1,s1,t13) - RCupSC(g1,t13)
    + SOS1_RegUpSC_max_RT(g1,s1,t13) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t13): - RCdnSC(g1,t13) + RDnSC(g1,s1,t13)
+ SOS1_RegDnSC_max_RT(g1,s1,t13): RDnSC(g1,s1,t13) - RCdnSC(g1,t13)
    + SOS1_RegDnSC_max_RT(g1,s1,t13) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t14): - RCupSC(g1,t14) + RUpSC(g1,s1,t14)
+ SOS1_RegUpSC_max_RT(g1,s1,t14): RUpSC(g1,s1,t14) - RCupSC(g1,t14)
    + SOS1_RegUpSC_max_RT(g1,s1,t14) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t14): - RCdnSC(g1,t14) + RDnSC(g1,s1,t14)
+ SOS1_RegDnSC_max_RT(g1,s1,t14): RDnSC(g1,s1,t14) - RCdnSC(g1,t14)
    + SOS1_RegDnSC_max_RT(g1,s1,t14) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t15): - RCupSC(g1,t15) + RUpSC(g1,s1,t15)
+ SOS1_RegUpSC_max_RT(g1,s1,t15): RUpSC(g1,s1,t15) - RCupSC(g1,t15)
    + SOS1_RegUpSC_max_RT(g1,s1,t15) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t15): - RCdnSC(g1,t15) + RDnSC(g1,s1,t15)
+ SOS1_RegDnSC_max_RT(g1,s1,t15): RDnSC(g1,s1,t15) - RCdnSC(g1,t15)
    + SOS1_RegDnSC_max_RT(g1,s1,t15) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t16): - RCupSC(g1,t16) + RUpSC(g1,s1,t16)
+ SOS1_RegUpSC_max_RT(g1,s1,t16): RUpSC(g1,s1,t16) - RCupSC(g1,t16)
    + SOS1_RegUpSC_max_RT(g1,s1,t16) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t16): - RCdnSC(g1,t16) + RDnSC(g1,s1,t16)
+ SOS1_RegDnSC_max_RT(g1,s1,t16): RDnSC(g1,s1,t16) - RCdnSC(g1,t16)
    + SOS1_RegDnSC_max_RT(g1,s1,t16) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t17): - RCupSC(g1,t17) + RUpSC(g1,s1,t17)
+ SOS1_RegUpSC_max_RT(g1,s1,t17): RUpSC(g1,s1,t17) - RCupSC(g1,t17)
    + SOS1_RegUpSC_max_RT(g1,s1,t17) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t17): - RCdnSC(g1,t17) + RDnSC(g1,s1,t17)
+ SOS1_RegDnSC_max_RT(g1,s1,t17): RDnSC(g1,s1,t17) - RCdnSC(g1,t17)
    + SOS1_RegDnSC_max_RT(g1,s1,t17) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t18): - RCupSC(g1,t18) + RUpSC(g1,s1,t18)
+ SOS1_RegUpSC_max_RT(g1,s1,t18): RUpSC(g1,s1,t18) - RCupSC(g1,t18)
    + SOS1_RegUpSC_max_RT(g1,s1,t18) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t18): - RCdnSC(g1,t18) + RDnSC(g1,s1,t18)
+ SOS1_RegDnSC_max_RT(g1,s1,t18): RDnSC(g1,s1,t18) - RCdnSC(g1,t18)
    + SOS1_RegDnSC_max_RT(g1,s1,t18) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t19): - RCupSC(g1,t19) + RUpSC(g1,s1,t19)
+ SOS1_RegUpSC_max_RT(g1,s1,t19): RUpSC(g1,s1,t19) - RCupSC(g1,t19)
    + SOS1_RegUpSC_max_RT(g1,s1,t19) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t19): - RCdnSC(g1,t19) + RDnSC(g1,s1,t19)
+ SOS1_RegDnSC_max_RT(g1,s1,t19): RDnSC(g1,s1,t19) - RCdnSC(g1,t19)
    + SOS1_RegDnSC_max_RT(g1,s1,t19) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t20): - RCupSC(g1,t20) + RUpSC(g1,s1,t20)
+ SOS1_RegUpSC_max_RT(g1,s1,t20): RUpSC(g1,s1,t20) - RCupSC(g1,t20)
    + SOS1_RegUpSC_max_RT(g1,s1,t20) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t20): - RCdnSC(g1,t20) + RDnSC(g1,s1,t20)
+ SOS1_RegDnSC_max_RT(g1,s1,t20): RDnSC(g1,s1,t20) - RCdnSC(g1,t20)
    + SOS1_RegDnSC_max_RT(g1,s1,t20) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t21): - RCupSC(g1,t21) + RUpSC(g1,s1,t21)
+ SOS1_RegUpSC_max_RT(g1,s1,t21): RUpSC(g1,s1,t21) - RCupSC(g1,t21)
    + SOS1_RegUpSC_max_RT(g1,s1,t21) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t21): - RCdnSC(g1,t21) + RDnSC(g1,s1,t21)
+ SOS1_RegDnSC_max_RT(g1,s1,t21): RDnSC(g1,s1,t21) - RCdnSC(g1,t21)
    + SOS1_RegDnSC_max_RT(g1,s1,t21) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t22): - RCupSC(g1,t22) + RUpSC(g1,s1,t22)
+ SOS1_RegUpSC_max_RT(g1,s1,t22): RUpSC(g1,s1,t22) - RCupSC(g1,t22)
    + SOS1_RegUpSC_max_RT(g1,s1,t22) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t22): - RCdnSC(g1,t22) + RDnSC(g1,s1,t22)
+ SOS1_RegDnSC_max_RT(g1,s1,t22): RDnSC(g1,s1,t22) - RCdnSC(g1,t22)
    + SOS1_RegDnSC_max_RT(g1,s1,t22) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t23): - RCupSC(g1,t23) + RUpSC(g1,s1,t23)
+ SOS1_RegUpSC_max_RT(g1,s1,t23): RUpSC(g1,s1,t23) - RCupSC(g1,t23)
    + SOS1_RegUpSC_max_RT(g1,s1,t23) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t23): - RCdnSC(g1,t23) + RDnSC(g1,s1,t23)
+ SOS1_RegDnSC_max_RT(g1,s1,t23): RDnSC(g1,s1,t23) - RCdnSC(g1,t23)
    + SOS1_RegDnSC_max_RT(g1,s1,t23) = 0
- SOS1_RegUpSC_max_RT(g1,s1,t24): - RCupSC(g1,t24) + RUpSC(g1,s1,t24)
+ SOS1_RegUpSC_max_RT(g1,s1,t24): RUpSC(g1,s1,t24) - RCupSC(g1,t24)
    + SOS1_RegUpSC_max_RT(g1,s1,t24) = 0
- SOS1_RegDnSC_max_RT(g1,s1,t24): - RCdnSC(g1,t24) + RDnSC(g1,s1,t24)
+ SOS1_RegDnSC_max_RT(g1,s1,t24): RDnSC(g1,s1,t24) - RCdnSC(g1,t24)
    + SOS1_RegDnSC_max_RT(g1,s1,t24) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t1): - RCupSC(g1,t1) + RUpSC(g1,s2,t1)
+ SOS1_RegUpSC_max_RT(g1,s2,t1): RUpSC(g1,s2,t1) - RCupSC(g1,t1)
    + SOS1_RegUpSC_max_RT(g1,s2,t1) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t1): - RCdnSC(g1,t1) + RDnSC(g1,s2,t1)
+ SOS1_RegDnSC_max_RT(g1,s2,t1): RDnSC(g1,s2,t1) - RCdnSC(g1,t1)
    + SOS1_RegDnSC_max_RT(g1,s2,t1) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t2): - RCupSC(g1,t2) + RUpSC(g1,s2,t2)
+ SOS1_RegUpSC_max_RT(g1,s2,t2): RUpSC(g1,s2,t2) - RCupSC(g1,t2)
    + SOS1_RegUpSC_max_RT(g1,s2,t2) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t2): - RCdnSC(g1,t2) + RDnSC(g1,s2,t2)
+ SOS1_RegDnSC_max_RT(g1,s2,t2): RDnSC(g1,s2,t2) - RCdnSC(g1,t2)
    + SOS1_RegDnSC_max_RT(g1,s2,t2) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t3): - RCupSC(g1,t3) + RUpSC(g1,s2,t3)
+ SOS1_RegUpSC_max_RT(g1,s2,t3): RUpSC(g1,s2,t3) - RCupSC(g1,t3)
    + SOS1_RegUpSC_max_RT(g1,s2,t3) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t3): - RCdnSC(g1,t3) + RDnSC(g1,s2,t3)
+ SOS1_RegDnSC_max_RT(g1,s2,t3): RDnSC(g1,s2,t3) - RCdnSC(g1,t3)
    + SOS1_RegDnSC_max_RT(g1,s2,t3) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t4): - RCupSC(g1,t4) + RUpSC(g1,s2,t4)
+ SOS1_RegUpSC_max_RT(g1,s2,t4): RUpSC(g1,s2,t4) - RCupSC(g1,t4)
    + SOS1_RegUpSC_max_RT(g1,s2,t4) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t4): - RCdnSC(g1,t4) + RDnSC(g1,s2,t4)
+ SOS1_RegDnSC_max_RT(g1,s2,t4): RDnSC(g1,s2,t4) - RCdnSC(g1,t4)
    + SOS1_RegDnSC_max_RT(g1,s2,t4) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t5): - RCupSC(g1,t5) + RUpSC(g1,s2,t5)
+ SOS1_RegUpSC_max_RT(g1,s2,t5): RUpSC(g1,s2,t5) - RCupSC(g1,t5)
    + SOS1_RegUpSC_max_RT(g1,s2,t5) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t5): - RCdnSC(g1,t5) + RDnSC(g1,s2,t5)
+ SOS1_RegDnSC_max_RT(g1,s2,t5): RDnSC(g1,s2,t5) - RCdnSC(g1,t5)
    + SOS1_RegDnSC_max_RT(g1,s2,t5) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t6): - RCupSC(g1,t6) + RUpSC(g1,s2,t6)
+ SOS1_RegUpSC_max_RT(g1,s2,t6): RUpSC(g1,s2,t6) - RCupSC(g1,t6)
    + SOS1_RegUpSC_max_RT(g1,s2,t6) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t6): - RCdnSC(g1,t6) + RDnSC(g1,s2,t6)
+ SOS1_RegDnSC_max_RT(g1,s2,t6): RDnSC(g1,s2,t6) - RCdnSC(g1,t6)
    + SOS1_RegDnSC_max_RT(g1,s2,t6) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t7): - RCupSC(g1,t7) + RUpSC(g1,s2,t7)
+ SOS1_RegUpSC_max_RT(g1,s2,t7): RUpSC(g1,s2,t7) - RCupSC(g1,t7)
    + SOS1_RegUpSC_max_RT(g1,s2,t7) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t7): - RCdnSC(g1,t7) + RDnSC(g1,s2,t7)
+ SOS1_RegDnSC_max_RT(g1,s2,t7): RDnSC(g1,s2,t7) - RCdnSC(g1,t7)
    + SOS1_RegDnSC_max_RT(g1,s2,t7) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t8): - RCupSC(g1,t8) + RUpSC(g1,s2,t8)
+ SOS1_RegUpSC_max_RT(g1,s2,t8): RUpSC(g1,s2,t8) - RCupSC(g1,t8)
    + SOS1_RegUpSC_max_RT(g1,s2,t8) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t8): - RCdnSC(g1,t8) + RDnSC(g1,s2,t8)
+ SOS1_RegDnSC_max_RT(g1,s2,t8): RDnSC(g1,s2,t8) - RCdnSC(g1,t8)
    + SOS1_RegDnSC_max_RT(g1,s2,t8) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t9): - RCupSC(g1,t9) + RUpSC(g1,s2,t9)
+ SOS1_RegUpSC_max_RT(g1,s2,t9): RUpSC(g1,s2,t9) - RCupSC(g1,t9)
    + SOS1_RegUpSC_max_RT(g1,s2,t9) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t9): - RCdnSC(g1,t9) + RDnSC(g1,s2,t9)
+ SOS1_RegDnSC_max_RT(g1,s2,t9): RDnSC(g1,s2,t9) - RCdnSC(g1,t9)
    + SOS1_RegDnSC_max_RT(g1,s2,t9) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t10): - RCupSC(g1,t10) + RUpSC(g1,s2,t10)
+ SOS1_RegUpSC_max_RT(g1,s2,t10): RUpSC(g1,s2,t10) - RCupSC(g1,t10)
    + SOS1_RegUpSC_max_RT(g1,s2,t10) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t10): - RCdnSC(g1,t10) + RDnSC(g1,s2,t10)
+ SOS1_RegDnSC_max_RT(g1,s2,t10): RDnSC(g1,s2,t10) - RCdnSC(g1,t10)
    + SOS1_RegDnSC_max_RT(g1,s2,t10) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t11): - RCupSC(g1,t11) + RUpSC(g1,s2,t11)
+ SOS1_RegUpSC_max_RT(g1,s2,t11): RUpSC(g1,s2,t11) - RCupSC(g1,t11)
    + SOS1_RegUpSC_max_RT(g1,s2,t11) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t11): - RCdnSC(g1,t11) + RDnSC(g1,s2,t11)
+ SOS1_RegDnSC_max_RT(g1,s2,t11): RDnSC(g1,s2,t11) - RCdnSC(g1,t11)
    + SOS1_RegDnSC_max_RT(g1,s2,t11) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t12): - RCupSC(g1,t12) + RUpSC(g1,s2,t12)
+ SOS1_RegUpSC_max_RT(g1,s2,t12): RUpSC(g1,s2,t12) - RCupSC(g1,t12)
    + SOS1_RegUpSC_max_RT(g1,s2,t12) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t12): - RCdnSC(g1,t12) + RDnSC(g1,s2,t12)
+ SOS1_RegDnSC_max_RT(g1,s2,t12): RDnSC(g1,s2,t12) - RCdnSC(g1,t12)
    + SOS1_RegDnSC_max_RT(g1,s2,t12) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t13): - RCupSC(g1,t13) + RUpSC(g1,s2,t13)
+ SOS1_RegUpSC_max_RT(g1,s2,t13): RUpSC(g1,s2,t13) - RCupSC(g1,t13)
    + SOS1_RegUpSC_max_RT(g1,s2,t13) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t13): - RCdnSC(g1,t13) + RDnSC(g1,s2,t13)
+ SOS1_RegDnSC_max_RT(g1,s2,t13): RDnSC(g1,s2,t13) - RCdnSC(g1,t13)
    + SOS1_RegDnSC_max_RT(g1,s2,t13) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t14): - RCupSC(g1,t14) + RUpSC(g1,s2,t14)
+ SOS1_RegUpSC_max_RT(g1,s2,t14): RUpSC(g1,s2,t14) - RCupSC(g1,t14)
    + SOS1_RegUpSC_max_RT(g1,s2,t14) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t14): - RCdnSC(g1,t14) + RDnSC(g1,s2,t14)
+ SOS1_RegDnSC_max_RT(g1,s2,t14): RDnSC(g1,s2,t14) - RCdnSC(g1,t14)
    + SOS1_RegDnSC_max_RT(g1,s2,t14) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t15): - RCupSC(g1,t15) + RUpSC(g1,s2,t15)
+ SOS1_RegUpSC_max_RT(g1,s2,t15): RUpSC(g1,s2,t15) - RCupSC(g1,t15)
    + SOS1_RegUpSC_max_RT(g1,s2,t15) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t15): - RCdnSC(g1,t15) + RDnSC(g1,s2,t15)
+ SOS1_RegDnSC_max_RT(g1,s2,t15): RDnSC(g1,s2,t15) - RCdnSC(g1,t15)
    + SOS1_RegDnSC_max_RT(g1,s2,t15) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t16): - RCupSC(g1,t16) + RUpSC(g1,s2,t16)
+ SOS1_RegUpSC_max_RT(g1,s2,t16): RUpSC(g1,s2,t16) - RCupSC(g1,t16)
    + SOS1_RegUpSC_max_RT(g1,s2,t16) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t16): - RCdnSC(g1,t16) + RDnSC(g1,s2,t16)
+ SOS1_RegDnSC_max_RT(g1,s2,t16): RDnSC(g1,s2,t16) - RCdnSC(g1,t16)
    + SOS1_RegDnSC_max_RT(g1,s2,t16) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t17): - RCupSC(g1,t17) + RUpSC(g1,s2,t17)
+ SOS1_RegUpSC_max_RT(g1,s2,t17): RUpSC(g1,s2,t17) - RCupSC(g1,t17)
    + SOS1_RegUpSC_max_RT(g1,s2,t17) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t17): - RCdnSC(g1,t17) + RDnSC(g1,s2,t17)
+ SOS1_RegDnSC_max_RT(g1,s2,t17): RDnSC(g1,s2,t17) - RCdnSC(g1,t17)
    + SOS1_RegDnSC_max_RT(g1,s2,t17) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t18): - RCupSC(g1,t18) + RUpSC(g1,s2,t18)
+ SOS1_RegUpSC_max_RT(g1,s2,t18): RUpSC(g1,s2,t18) - RCupSC(g1,t18)
    + SOS1_RegUpSC_max_RT(g1,s2,t18) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t18): - RCdnSC(g1,t18) + RDnSC(g1,s2,t18)
+ SOS1_RegDnSC_max_RT(g1,s2,t18): RDnSC(g1,s2,t18) - RCdnSC(g1,t18)
    + SOS1_RegDnSC_max_RT(g1,s2,t18) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t19): - RCupSC(g1,t19) + RUpSC(g1,s2,t19)
+ SOS1_RegUpSC_max_RT(g1,s2,t19): RUpSC(g1,s2,t19) - RCupSC(g1,t19)
    + SOS1_RegUpSC_max_RT(g1,s2,t19) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t19): - RCdnSC(g1,t19) + RDnSC(g1,s2,t19)
+ SOS1_RegDnSC_max_RT(g1,s2,t19): RDnSC(g1,s2,t19) - RCdnSC(g1,t19)
    + SOS1_RegDnSC_max_RT(g1,s2,t19) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t20): - RCupSC(g1,t20) + RUpSC(g1,s2,t20)
+ SOS1_RegUpSC_max_RT(g1,s2,t20): RUpSC(g1,s2,t20) - RCupSC(g1,t20)
    + SOS1_RegUpSC_max_RT(g1,s2,t20) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t20): - RCdnSC(g1,t20) + RDnSC(g1,s2,t20)
+ SOS1_RegDnSC_max_RT(g1,s2,t20): RDnSC(g1,s2,t20) - RCdnSC(g1,t20)
    + SOS1_RegDnSC_max_RT(g1,s2,t20) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t21): - RCupSC(g1,t21) + RUpSC(g1,s2,t21)
+ SOS1_RegUpSC_max_RT(g1,s2,t21): RUpSC(g1,s2,t21) - RCupSC(g1,t21)
    + SOS1_RegUpSC_max_RT(g1,s2,t21) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t21): - RCdnSC(g1,t21) + RDnSC(g1,s2,t21)
+ SOS1_RegDnSC_max_RT(g1,s2,t21): RDnSC(g1,s2,t21) - RCdnSC(g1,t21)
    + SOS1_RegDnSC_max_RT(g1,s2,t21) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t22): - RCupSC(g1,t22) + RUpSC(g1,s2,t22)
+ SOS1_RegUpSC_max_RT(g1,s2,t22): RUpSC(g1,s2,t22) - RCupSC(g1,t22)
    + SOS1_RegUpSC_max_RT(g1,s2,t22) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t22): - RCdnSC(g1,t22) + RDnSC(g1,s2,t22)
+ SOS1_RegDnSC_max_RT(g1,s2,t22): RDnSC(g1,s2,t22) - RCdnSC(g1,t22)
    + SOS1_RegDnSC_max_RT(g1,s2,t22) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t23): - RCupSC(g1,t23) + RUpSC(g1,s2,t23)
+ SOS1_RegUpSC_max_RT(g1,s2,t23): RUpSC(g1,s2,t23) - RCupSC(g1,t23)
    + SOS1_RegUpSC_max_RT(g1,s2,t23) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t23): - RCdnSC(g1,t23) + RDnSC(g1,s2,t23)
+ SOS1_RegDnSC_max_RT(g1,s2,t23): RDnSC(g1,s2,t23) - RCdnSC(g1,t23)
    + SOS1_RegDnSC_max_RT(g1,s2,t23) = 0
- SOS1_RegUpSC_max_RT(g1,s2,t24): - RCupSC(g1,t24) + RUpSC(g1,s2,t24)
+ SOS1_RegUpSC_max_RT(g1,s2,t24): RUpSC(g1,s2,t24) - RCupSC(g1,t24)
    + SOS1_RegUpSC_max_RT(g1,s2,t24) = 0
- SOS1_RegDnSC_max_RT(g1,s2,t24): - RCdnSC(g1,t24) + RDnSC(g1,s2,t24)
+ SOS1_RegDnSC_max_RT(g1,s2,t24): RDnSC(g1,s2,t24) - RCdnSC(g1,t24)
    + SOS1_RegDnSC_max_RT(g1,s2,t24) = 0
  SOS1_Max_load_shed_RT(s1,t1): Lshed(s1,t1) + SOS1_Max_load_shed_RT(s1,t1)
    = 50
@@ -1763,101 +1859,101 @@ Subject To
  SOS1_Max_load_shed_RT(s2,t24): Lshed(s2,t24)
    + SOS1_Max_load_shed_RT(s2,t24) = 48.70590477
  SOS1_Max_wind_spill_RT(w1,s1,t1): Wspill(w1,s1,t1)
-   + SOS1_Max_wind_spill_RT(w1,s1,t1) = 19.36152399
+   + SOS1_Max_wind_spill_RT(w1,s1,t1) = 13.64523828
  SOS1_Max_wind_spill_RT(w1,s1,t2): Wspill(w1,s1,t2)
-   + SOS1_Max_wind_spill_RT(w1,s1,t2) = 19.80845052
+   + SOS1_Max_wind_spill_RT(w1,s1,t2) = 14.13210003
  SOS1_Max_wind_spill_RT(w1,s1,t3): Wspill(w1,s1,t3)
-   + SOS1_Max_wind_spill_RT(w1,s1,t3) = 20.69868435
+   + SOS1_Max_wind_spill_RT(w1,s1,t3) = 9.571274219999999
  SOS1_Max_wind_spill_RT(w1,s1,t4): Wspill(w1,s1,t4)
-   + SOS1_Max_wind_spill_RT(w1,s1,t4) = 19.77549921
+   + SOS1_Max_wind_spill_RT(w1,s1,t4) = 10.24495167
  SOS1_Max_wind_spill_RT(w1,s1,t5): Wspill(w1,s1,t5)
-   + SOS1_Max_wind_spill_RT(w1,s1,t5) = 20.07510975
+   + SOS1_Max_wind_spill_RT(w1,s1,t5) = 13.37112045
  SOS1_Max_wind_spill_RT(w1,s1,t6): Wspill(w1,s1,t6)
-   + SOS1_Max_wind_spill_RT(w1,s1,t6) = 18.16891905
+   + SOS1_Max_wind_spill_RT(w1,s1,t6) = 15.9762591
  SOS1_Max_wind_spill_RT(w1,s1,t7): Wspill(w1,s1,t7)
-   + SOS1_Max_wind_spill_RT(w1,s1,t7) = 16.59465834
+   + SOS1_Max_wind_spill_RT(w1,s1,t7) = 13.09757973
  SOS1_Max_wind_spill_RT(w1,s1,t8): Wspill(w1,s1,t8)
-   + SOS1_Max_wind_spill_RT(w1,s1,t8) = 13.34680944
+   + SOS1_Max_wind_spill_RT(w1,s1,t8) = 9.348263729999999
  SOS1_Max_wind_spill_RT(w1,s1,t9): Wspill(w1,s1,t9)
-   + SOS1_Max_wind_spill_RT(w1,s1,t9) = 10.47638364
+   + SOS1_Max_wind_spill_RT(w1,s1,t9) = 8.03252799
  SOS1_Max_wind_spill_RT(w1,s1,t10): Wspill(w1,s1,t10)
-   + SOS1_Max_wind_spill_RT(w1,s1,t10) = 7.749192330000001
+   + SOS1_Max_wind_spill_RT(w1,s1,t10) = 9.780529290000001
  SOS1_Max_wind_spill_RT(w1,s1,t11): Wspill(w1,s1,t11)
-   + SOS1_Max_wind_spill_RT(w1,s1,t11) = 5.964156719999999
+   + SOS1_Max_wind_spill_RT(w1,s1,t11) = 13.23691422
  SOS1_Max_wind_spill_RT(w1,s1,t12): Wspill(w1,s1,t12)
-   + SOS1_Max_wind_spill_RT(w1,s1,t12) = 5.33019351
+   + SOS1_Max_wind_spill_RT(w1,s1,t12) = 14.79118329
  SOS1_Max_wind_spill_RT(w1,s1,t13): Wspill(w1,s1,t13)
-   + SOS1_Max_wind_spill_RT(w1,s1,t13) = 5.461870319999999
+   + SOS1_Max_wind_spill_RT(w1,s1,t13) = 22.67129373
  SOS1_Max_wind_spill_RT(w1,s1,t14): Wspill(w1,s1,t14)
-   + SOS1_Max_wind_spill_RT(w1,s1,t14) = 7.004675819999999
+   + SOS1_Max_wind_spill_RT(w1,s1,t14) = 23.25377463
  SOS1_Max_wind_spill_RT(w1,s1,t15): Wspill(w1,s1,t15)
-   + SOS1_Max_wind_spill_RT(w1,s1,t15) = 7.9620561
+   + SOS1_Max_wind_spill_RT(w1,s1,t15) = 24.08429517
  SOS1_Max_wind_spill_RT(w1,s1,t16): Wspill(w1,s1,t16)
-   + SOS1_Max_wind_spill_RT(w1,s1,t16) = 7.71739128
+   + SOS1_Max_wind_spill_RT(w1,s1,t16) = 25.67222511
  SOS1_Max_wind_spill_RT(w1,s1,t17): Wspill(w1,s1,t17)
-   + SOS1_Max_wind_spill_RT(w1,s1,t17) = 6.47265831
+   + SOS1_Max_wind_spill_RT(w1,s1,t17) = 26.96292903
  SOS1_Max_wind_spill_RT(w1,s1,t18): Wspill(w1,s1,t18)
-   + SOS1_Max_wind_spill_RT(w1,s1,t18) = 6.07161237
+   + SOS1_Max_wind_spill_RT(w1,s1,t18) = 27.84705837
  SOS1_Max_wind_spill_RT(w1,s1,t19): Wspill(w1,s1,t19)
-   + SOS1_Max_wind_spill_RT(w1,s1,t19) = 5.776513019999999
+   + SOS1_Max_wind_spill_RT(w1,s1,t19) = 27.97611309
  SOS1_Max_wind_spill_RT(w1,s1,t20): Wspill(w1,s1,t20)
-   + SOS1_Max_wind_spill_RT(w1,s1,t20) = 5.435201999999999
+   + SOS1_Max_wind_spill_RT(w1,s1,t20) = 26.64932952
  SOS1_Max_wind_spill_RT(w1,s1,t21): Wspill(w1,s1,t21)
-   + SOS1_Max_wind_spill_RT(w1,s1,t21) = 4.850395590000001
+   + SOS1_Max_wind_spill_RT(w1,s1,t21) = 27.01809513
  SOS1_Max_wind_spill_RT(w1,s1,t22): Wspill(w1,s1,t22)
-   + SOS1_Max_wind_spill_RT(w1,s1,t22) = 4.4943279
+   + SOS1_Max_wind_spill_RT(w1,s1,t22) = 28.32297243
  SOS1_Max_wind_spill_RT(w1,s1,t23): Wspill(w1,s1,t23)
-   + SOS1_Max_wind_spill_RT(w1,s1,t23) = 3.88346787
+   + SOS1_Max_wind_spill_RT(w1,s1,t23) = 28.87685715
  SOS1_Max_wind_spill_RT(w1,s1,t24): Wspill(w1,s1,t24)
-   + SOS1_Max_wind_spill_RT(w1,s1,t24) = 2.50775121
+   + SOS1_Max_wind_spill_RT(w1,s1,t24) = 28.64355426
  SOS1_Max_wind_spill_RT(w1,s2,t1): Wspill(w1,s2,t1)
-   + SOS1_Max_wind_spill_RT(w1,s2,t1) = 9.680762009999999
+   + SOS1_Max_wind_spill_RT(w1,s2,t1) = 15.6405261
  SOS1_Max_wind_spill_RT(w1,s2,t2): Wspill(w1,s2,t2)
-   + SOS1_Max_wind_spill_RT(w1,s2,t2) = 9.904225260000001
+   + SOS1_Max_wind_spill_RT(w1,s2,t2) = 13.86895302
  SOS1_Max_wind_spill_RT(w1,s2,t3): Wspill(w1,s2,t3)
-   + SOS1_Max_wind_spill_RT(w1,s2,t3) = 10.34934219
+   + SOS1_Max_wind_spill_RT(w1,s2,t3) = 6.45881973
  SOS1_Max_wind_spill_RT(w1,s2,t4): Wspill(w1,s2,t4)
-   + SOS1_Max_wind_spill_RT(w1,s2,t4) = 9.887749620000001
+   + SOS1_Max_wind_spill_RT(w1,s2,t4) = 2.52463722
  SOS1_Max_wind_spill_RT(w1,s2,t5): Wspill(w1,s2,t5)
-   + SOS1_Max_wind_spill_RT(w1,s2,t5) = 10.03755489
+   + SOS1_Max_wind_spill_RT(w1,s2,t5) = 1.46566404
  SOS1_Max_wind_spill_RT(w1,s2,t6): Wspill(w1,s2,t6)
-   + SOS1_Max_wind_spill_RT(w1,s2,t6) = 9.084459539999999
+   + SOS1_Max_wind_spill_RT(w1,s2,t6) = 1.78731159
  SOS1_Max_wind_spill_RT(w1,s2,t7): Wspill(w1,s2,t7)
-   + SOS1_Max_wind_spill_RT(w1,s2,t7) = 8.297329169999999
+   + SOS1_Max_wind_spill_RT(w1,s2,t7) = 2.82233721
  SOS1_Max_wind_spill_RT(w1,s2,t8): Wspill(w1,s2,t8)
-   + SOS1_Max_wind_spill_RT(w1,s2,t8) = 6.67340472
+   + SOS1_Max_wind_spill_RT(w1,s2,t8) = 3.06365706
  SOS1_Max_wind_spill_RT(w1,s2,t9): Wspill(w1,s2,t9)
-   + SOS1_Max_wind_spill_RT(w1,s2,t9) = 5.23819182
+   + SOS1_Max_wind_spill_RT(w1,s2,t9) = 3.72330549
  SOS1_Max_wind_spill_RT(w1,s2,t10): Wspill(w1,s2,t10)
-   + SOS1_Max_wind_spill_RT(w1,s2,t10) = 3.87459618
+   + SOS1_Max_wind_spill_RT(w1,s2,t10) = 5.87754435
  SOS1_Max_wind_spill_RT(w1,s2,t11): Wspill(w1,s2,t11)
-   + SOS1_Max_wind_spill_RT(w1,s2,t11) = 2.98207836
+   + SOS1_Max_wind_spill_RT(w1,s2,t11) = 7.27054521
  SOS1_Max_wind_spill_RT(w1,s2,t12): Wspill(w1,s2,t12)
-   + SOS1_Max_wind_spill_RT(w1,s2,t12) = 2.66509677
+   + SOS1_Max_wind_spill_RT(w1,s2,t12) = 8.531094060000001
  SOS1_Max_wind_spill_RT(w1,s2,t13): Wspill(w1,s2,t13)
-   + SOS1_Max_wind_spill_RT(w1,s2,t13) = 2.73093516
+   + SOS1_Max_wind_spill_RT(w1,s2,t13) = 9.673352430000001
  SOS1_Max_wind_spill_RT(w1,s2,t14): Wspill(w1,s2,t14)
-   + SOS1_Max_wind_spill_RT(w1,s2,t14) = 3.50233791
+   + SOS1_Max_wind_spill_RT(w1,s2,t14) = 9.98061261
  SOS1_Max_wind_spill_RT(w1,s2,t15): Wspill(w1,s2,t15)
-   + SOS1_Max_wind_spill_RT(w1,s2,t15) = 3.98102805
+   + SOS1_Max_wind_spill_RT(w1,s2,t15) = 11.17659936
  SOS1_Max_wind_spill_RT(w1,s2,t16): Wspill(w1,s2,t16)
-   + SOS1_Max_wind_spill_RT(w1,s2,t16) = 3.85869564
+   + SOS1_Max_wind_spill_RT(w1,s2,t16) = 8.21749578
  SOS1_Max_wind_spill_RT(w1,s2,t17): Wspill(w1,s2,t17)
-   + SOS1_Max_wind_spill_RT(w1,s2,t17) = 3.23632917
+   + SOS1_Max_wind_spill_RT(w1,s2,t17) = 12.18737028
  SOS1_Max_wind_spill_RT(w1,s2,t18): Wspill(w1,s2,t18)
-   + SOS1_Max_wind_spill_RT(w1,s2,t18) = 3.0358062
+   + SOS1_Max_wind_spill_RT(w1,s2,t18) = 13.84594917
  SOS1_Max_wind_spill_RT(w1,s2,t19): Wspill(w1,s2,t19)
-   + SOS1_Max_wind_spill_RT(w1,s2,t19) = 2.88825651
+   + SOS1_Max_wind_spill_RT(w1,s2,t19) = 10.52609511
  SOS1_Max_wind_spill_RT(w1,s2,t20): Wspill(w1,s2,t20)
-   + SOS1_Max_wind_spill_RT(w1,s2,t20) = 2.717601
+   + SOS1_Max_wind_spill_RT(w1,s2,t20) = 9.61658184
  SOS1_Max_wind_spill_RT(w1,s2,t21): Wspill(w1,s2,t21)
-   + SOS1_Max_wind_spill_RT(w1,s2,t21) = 2.42519781
+   + SOS1_Max_wind_spill_RT(w1,s2,t21) = 10.08032745
  SOS1_Max_wind_spill_RT(w1,s2,t22): Wspill(w1,s2,t22)
-   + SOS1_Max_wind_spill_RT(w1,s2,t22) = 2.24716395
+   + SOS1_Max_wind_spill_RT(w1,s2,t22) = 11.65214559
  SOS1_Max_wind_spill_RT(w1,s2,t23): Wspill(w1,s2,t23)
-   + SOS1_Max_wind_spill_RT(w1,s2,t23) = 1.94173395
+   + SOS1_Max_wind_spill_RT(w1,s2,t23) = 13.81197936
  SOS1_Max_wind_spill_RT(w1,s2,t24): Wspill(w1,s2,t24)
-   + SOS1_Max_wind_spill_RT(w1,s2,t24) = 1.25387562
+   + SOS1_Max_wind_spill_RT(w1,s2,t24) = 13.56418623
  SOS1_LB_Pgen(g1,t1): - Pgen(g1,t1) + SOS1_LB_Pgen(g1,t1) = 0
  SOS1_LB_Pgen(g1,t2): - Pgen(g1,t2) + SOS1_LB_Pgen(g1,t2) = 0
  SOS1_LB_Pgen(g1,t3): - Pgen(g1,t3) + SOS1_LB_Pgen(g1,t3) = 0
@@ -2998,366 +3094,438 @@ Subject To
  gshed_da_max(ng101,k0,t24): gshed_da(ng101,k0,t24) <= 0
  gshed_da_max(ng101,k1,t24): gshed_da(ng101,k1,t24) <= 0
  gshed_da_max(ng101,k2,t24): gshed_da(ng101,k2,t24) <= 0
- gshed_da_max(ng102,k0,t1): gshed_da(ng102,k0,t1) <= 2100
- gshed_da_max(ng102,k1,t1): gshed_da(ng102,k1,t1) <= 2100
- gshed_da_max(ng102,k2,t1): gshed_da(ng102,k2,t1) <= 2100
- gshed_da_max(ng102,k0,t2): gshed_da(ng102,k0,t2) <= 2010
- gshed_da_max(ng102,k1,t2): gshed_da(ng102,k1,t2) <= 2010
- gshed_da_max(ng102,k2,t2): gshed_da(ng102,k2,t2) <= 2010
- gshed_da_max(ng102,k0,t3): gshed_da(ng102,k0,t3) <= 1920
- gshed_da_max(ng102,k1,t3): gshed_da(ng102,k1,t3) <= 1920
- gshed_da_max(ng102,k2,t3): gshed_da(ng102,k2,t3) <= 1920
- gshed_da_max(ng102,k0,t4): gshed_da(ng102,k0,t4) <= 1950
- gshed_da_max(ng102,k1,t4): gshed_da(ng102,k1,t4) <= 1950
- gshed_da_max(ng102,k2,t4): gshed_da(ng102,k2,t4) <= 1950
- gshed_da_max(ng102,k0,t5): gshed_da(ng102,k0,t5) <= 1980
- gshed_da_max(ng102,k1,t5): gshed_da(ng102,k1,t5) <= 1980
- gshed_da_max(ng102,k2,t5): gshed_da(ng102,k2,t5) <= 1980
- gshed_da_max(ng102,k0,t6): gshed_da(ng102,k0,t6) <= 2010
- gshed_da_max(ng102,k1,t6): gshed_da(ng102,k1,t6) <= 2010
- gshed_da_max(ng102,k2,t6): gshed_da(ng102,k2,t6) <= 2010
- gshed_da_max(ng102,k0,t7): gshed_da(ng102,k0,t7) <= 2325
- gshed_da_max(ng102,k1,t7): gshed_da(ng102,k1,t7) <= 2325
- gshed_da_max(ng102,k2,t7): gshed_da(ng102,k2,t7) <= 2325
- gshed_da_max(ng102,k0,t8): gshed_da(ng102,k0,t8) <= 2340
- gshed_da_max(ng102,k1,t8): gshed_da(ng102,k1,t8) <= 2340
- gshed_da_max(ng102,k2,t8): gshed_da(ng102,k2,t8) <= 2340
- gshed_da_max(ng102,k0,t9): gshed_da(ng102,k0,t9) <= 2565
- gshed_da_max(ng102,k1,t9): gshed_da(ng102,k1,t9) <= 2565
- gshed_da_max(ng102,k2,t9): gshed_da(ng102,k2,t9) <= 2565
- gshed_da_max(ng102,k0,t10): gshed_da(ng102,k0,t10) <= 2610
- gshed_da_max(ng102,k1,t10): gshed_da(ng102,k1,t10) <= 2610
- gshed_da_max(ng102,k2,t10): gshed_da(ng102,k2,t10) <= 2610
- gshed_da_max(ng102,k0,t11): gshed_da(ng102,k0,t11) <= 2610
- gshed_da_max(ng102,k1,t11): gshed_da(ng102,k1,t11) <= 2610
- gshed_da_max(ng102,k2,t11): gshed_da(ng102,k2,t11) <= 2610
- gshed_da_max(ng102,k0,t12): gshed_da(ng102,k0,t12) <= 2565
- gshed_da_max(ng102,k1,t12): gshed_da(ng102,k1,t12) <= 2565
- gshed_da_max(ng102,k2,t12): gshed_da(ng102,k2,t12) <= 2565
- gshed_da_max(ng102,k0,t13): gshed_da(ng102,k0,t13) <= 2565
- gshed_da_max(ng102,k1,t13): gshed_da(ng102,k1,t13) <= 2565
- gshed_da_max(ng102,k2,t13): gshed_da(ng102,k2,t13) <= 2565
- gshed_da_max(ng102,k0,t14): gshed_da(ng102,k0,t14) <= 2565
- gshed_da_max(ng102,k1,t14): gshed_da(ng102,k1,t14) <= 2565
- gshed_da_max(ng102,k2,t14): gshed_da(ng102,k2,t14) <= 2565
- gshed_da_max(ng102,k0,t15): gshed_da(ng102,k0,t15) <= 2520
- gshed_da_max(ng102,k1,t15): gshed_da(ng102,k1,t15) <= 2520
- gshed_da_max(ng102,k2,t15): gshed_da(ng102,k2,t15) <= 2520
- gshed_da_max(ng102,k0,t16): gshed_da(ng102,k0,t16) <= 2565
- gshed_da_max(ng102,k1,t16): gshed_da(ng102,k1,t16) <= 2565
- gshed_da_max(ng102,k2,t16): gshed_da(ng102,k2,t16) <= 2565
- gshed_da_max(ng102,k0,t17): gshed_da(ng102,k0,t17) <= 2700
- gshed_da_max(ng102,k1,t17): gshed_da(ng102,k1,t17) <= 2700
- gshed_da_max(ng102,k2,t17): gshed_da(ng102,k2,t17) <= 2700
- gshed_da_max(ng102,k0,t18): gshed_da(ng102,k0,t18) <= 2700
- gshed_da_max(ng102,k1,t18): gshed_da(ng102,k1,t18) <= 2700
- gshed_da_max(ng102,k2,t18): gshed_da(ng102,k2,t18) <= 2700
- gshed_da_max(ng102,k0,t19): gshed_da(ng102,k0,t19) <= 2700
- gshed_da_max(ng102,k1,t19): gshed_da(ng102,k1,t19) <= 2700
- gshed_da_max(ng102,k2,t19): gshed_da(ng102,k2,t19) <= 2700
- gshed_da_max(ng102,k0,t20): gshed_da(ng102,k0,t20) <= 2610
- gshed_da_max(ng102,k1,t20): gshed_da(ng102,k1,t20) <= 2610
- gshed_da_max(ng102,k2,t20): gshed_da(ng102,k2,t20) <= 2610
- gshed_da_max(ng102,k0,t21): gshed_da(ng102,k0,t21) <= 2475
- gshed_da_max(ng102,k1,t21): gshed_da(ng102,k1,t21) <= 2475
- gshed_da_max(ng102,k2,t21): gshed_da(ng102,k2,t21) <= 2475
- gshed_da_max(ng102,k0,t22): gshed_da(ng102,k0,t22) <= 2250
- gshed_da_max(ng102,k1,t22): gshed_da(ng102,k1,t22) <= 2250
- gshed_da_max(ng102,k2,t22): gshed_da(ng102,k2,t22) <= 2250
- gshed_da_max(ng102,k0,t23): gshed_da(ng102,k0,t23) <= 1980
- gshed_da_max(ng102,k1,t23): gshed_da(ng102,k1,t23) <= 1980
- gshed_da_max(ng102,k2,t23): gshed_da(ng102,k2,t23) <= 1980
- gshed_da_max(ng102,k0,t24): gshed_da(ng102,k0,t24) <= 2010
- gshed_da_max(ng102,k1,t24): gshed_da(ng102,k1,t24) <= 2010
- gshed_da_max(ng102,k2,t24): gshed_da(ng102,k2,t24) <= 2010
+ gshed_da_max(ng102,k0,t1): gshed_da(ng102,k0,t1) <= 0
+ gshed_da_max(ng102,k1,t1): gshed_da(ng102,k1,t1) <= 0
+ gshed_da_max(ng102,k2,t1): gshed_da(ng102,k2,t1) <= 0
+ gshed_da_max(ng102,k0,t2): gshed_da(ng102,k0,t2) <= 0
+ gshed_da_max(ng102,k1,t2): gshed_da(ng102,k1,t2) <= 0
+ gshed_da_max(ng102,k2,t2): gshed_da(ng102,k2,t2) <= 0
+ gshed_da_max(ng102,k0,t3): gshed_da(ng102,k0,t3) <= 0
+ gshed_da_max(ng102,k1,t3): gshed_da(ng102,k1,t3) <= 0
+ gshed_da_max(ng102,k2,t3): gshed_da(ng102,k2,t3) <= 0
+ gshed_da_max(ng102,k0,t4): gshed_da(ng102,k0,t4) <= 0
+ gshed_da_max(ng102,k1,t4): gshed_da(ng102,k1,t4) <= 0
+ gshed_da_max(ng102,k2,t4): gshed_da(ng102,k2,t4) <= 0
+ gshed_da_max(ng102,k0,t5): gshed_da(ng102,k0,t5) <= 0
+ gshed_da_max(ng102,k1,t5): gshed_da(ng102,k1,t5) <= 0
+ gshed_da_max(ng102,k2,t5): gshed_da(ng102,k2,t5) <= 0
+ gshed_da_max(ng102,k0,t6): gshed_da(ng102,k0,t6) <= 0
+ gshed_da_max(ng102,k1,t6): gshed_da(ng102,k1,t6) <= 0
+ gshed_da_max(ng102,k2,t6): gshed_da(ng102,k2,t6) <= 0
+ gshed_da_max(ng102,k0,t7): gshed_da(ng102,k0,t7) <= 0
+ gshed_da_max(ng102,k1,t7): gshed_da(ng102,k1,t7) <= 0
+ gshed_da_max(ng102,k2,t7): gshed_da(ng102,k2,t7) <= 0
+ gshed_da_max(ng102,k0,t8): gshed_da(ng102,k0,t8) <= 0
+ gshed_da_max(ng102,k1,t8): gshed_da(ng102,k1,t8) <= 0
+ gshed_da_max(ng102,k2,t8): gshed_da(ng102,k2,t8) <= 0
+ gshed_da_max(ng102,k0,t9): gshed_da(ng102,k0,t9) <= 0
+ gshed_da_max(ng102,k1,t9): gshed_da(ng102,k1,t9) <= 0
+ gshed_da_max(ng102,k2,t9): gshed_da(ng102,k2,t9) <= 0
+ gshed_da_max(ng102,k0,t10): gshed_da(ng102,k0,t10) <= 0
+ gshed_da_max(ng102,k1,t10): gshed_da(ng102,k1,t10) <= 0
+ gshed_da_max(ng102,k2,t10): gshed_da(ng102,k2,t10) <= 0
+ gshed_da_max(ng102,k0,t11): gshed_da(ng102,k0,t11) <= 0
+ gshed_da_max(ng102,k1,t11): gshed_da(ng102,k1,t11) <= 0
+ gshed_da_max(ng102,k2,t11): gshed_da(ng102,k2,t11) <= 0
+ gshed_da_max(ng102,k0,t12): gshed_da(ng102,k0,t12) <= 0
+ gshed_da_max(ng102,k1,t12): gshed_da(ng102,k1,t12) <= 0
+ gshed_da_max(ng102,k2,t12): gshed_da(ng102,k2,t12) <= 0
+ gshed_da_max(ng102,k0,t13): gshed_da(ng102,k0,t13) <= 0
+ gshed_da_max(ng102,k1,t13): gshed_da(ng102,k1,t13) <= 0
+ gshed_da_max(ng102,k2,t13): gshed_da(ng102,k2,t13) <= 0
+ gshed_da_max(ng102,k0,t14): gshed_da(ng102,k0,t14) <= 0
+ gshed_da_max(ng102,k1,t14): gshed_da(ng102,k1,t14) <= 0
+ gshed_da_max(ng102,k2,t14): gshed_da(ng102,k2,t14) <= 0
+ gshed_da_max(ng102,k0,t15): gshed_da(ng102,k0,t15) <= 0
+ gshed_da_max(ng102,k1,t15): gshed_da(ng102,k1,t15) <= 0
+ gshed_da_max(ng102,k2,t15): gshed_da(ng102,k2,t15) <= 0
+ gshed_da_max(ng102,k0,t16): gshed_da(ng102,k0,t16) <= 0
+ gshed_da_max(ng102,k1,t16): gshed_da(ng102,k1,t16) <= 0
+ gshed_da_max(ng102,k2,t16): gshed_da(ng102,k2,t16) <= 0
+ gshed_da_max(ng102,k0,t17): gshed_da(ng102,k0,t17) <= 0
+ gshed_da_max(ng102,k1,t17): gshed_da(ng102,k1,t17) <= 0
+ gshed_da_max(ng102,k2,t17): gshed_da(ng102,k2,t17) <= 0
+ gshed_da_max(ng102,k0,t18): gshed_da(ng102,k0,t18) <= 0
+ gshed_da_max(ng102,k1,t18): gshed_da(ng102,k1,t18) <= 0
+ gshed_da_max(ng102,k2,t18): gshed_da(ng102,k2,t18) <= 0
+ gshed_da_max(ng102,k0,t19): gshed_da(ng102,k0,t19) <= 0
+ gshed_da_max(ng102,k1,t19): gshed_da(ng102,k1,t19) <= 0
+ gshed_da_max(ng102,k2,t19): gshed_da(ng102,k2,t19) <= 0
+ gshed_da_max(ng102,k0,t20): gshed_da(ng102,k0,t20) <= 0
+ gshed_da_max(ng102,k1,t20): gshed_da(ng102,k1,t20) <= 0
+ gshed_da_max(ng102,k2,t20): gshed_da(ng102,k2,t20) <= 0
+ gshed_da_max(ng102,k0,t21): gshed_da(ng102,k0,t21) <= 0
+ gshed_da_max(ng102,k1,t21): gshed_da(ng102,k1,t21) <= 0
+ gshed_da_max(ng102,k2,t21): gshed_da(ng102,k2,t21) <= 0
+ gshed_da_max(ng102,k0,t22): gshed_da(ng102,k0,t22) <= 0
+ gshed_da_max(ng102,k1,t22): gshed_da(ng102,k1,t22) <= 0
+ gshed_da_max(ng102,k2,t22): gshed_da(ng102,k2,t22) <= 0
+ gshed_da_max(ng102,k0,t23): gshed_da(ng102,k0,t23) <= 0
+ gshed_da_max(ng102,k1,t23): gshed_da(ng102,k1,t23) <= 0
+ gshed_da_max(ng102,k2,t23): gshed_da(ng102,k2,t23) <= 0
+ gshed_da_max(ng102,k0,t24): gshed_da(ng102,k0,t24) <= 0
+ gshed_da_max(ng102,k1,t24): gshed_da(ng102,k1,t24) <= 0
+ gshed_da_max(ng102,k2,t24): gshed_da(ng102,k2,t24) <= 0
  gas_balance_da(ng101,k0,t1): gprod(gw1,k0,t1) + gprod(gw2,k0,t1)
-   - qin_sr(('ng101','ng102'),k0,t1) = 0
+   + gprod(gw3,k0,t1) - qin_sr(('ng101','ng102'),k0,t1) = 0
  gas_balance_da(ng101,k1,t1): - qin_sr(('ng101','ng102'),k1,t1)
-   + gprod(gw1,k1,t1) + gprod(gw2,k1,t1) = 0
+   + gprod(gw1,k1,t1) + gprod(gw2,k1,t1) + gprod(gw3,k1,t1) = 0
  gas_balance_da(ng101,k2,t1): - qin_sr(('ng101','ng102'),k2,t1)
-   + gprod(gw1,k2,t1) + gprod(gw2,k2,t1) = 0
+   + gprod(gw1,k2,t1) + gprod(gw2,k2,t1) + gprod(gw3,k2,t1) = 0
  gas_balance_da(ng101,k0,t2): gprod(gw1,k0,t2) + gprod(gw2,k0,t2)
-   - qin_sr(('ng101','ng102'),k0,t2) = 0
+   + gprod(gw3,k0,t2) - qin_sr(('ng101','ng102'),k0,t2) = 0
  gas_balance_da(ng101,k1,t2): - qin_sr(('ng101','ng102'),k1,t2)
-   + gprod(gw1,k1,t2) + gprod(gw2,k1,t2) = 0
+   + gprod(gw1,k1,t2) + gprod(gw2,k1,t2) + gprod(gw3,k1,t2) = 0
  gas_balance_da(ng101,k2,t2): - qin_sr(('ng101','ng102'),k2,t2)
-   + gprod(gw1,k2,t2) + gprod(gw2,k2,t2) = 0
+   + gprod(gw1,k2,t2) + gprod(gw2,k2,t2) + gprod(gw3,k2,t2) = 0
  gas_balance_da(ng101,k0,t3): gprod(gw1,k0,t3) + gprod(gw2,k0,t3)
-   - qin_sr(('ng101','ng102'),k0,t3) = 0
+   + gprod(gw3,k0,t3) - qin_sr(('ng101','ng102'),k0,t3) = 0
  gas_balance_da(ng101,k1,t3): - qin_sr(('ng101','ng102'),k1,t3)
-   + gprod(gw1,k1,t3) + gprod(gw2,k1,t3) = 0
+   + gprod(gw1,k1,t3) + gprod(gw2,k1,t3) + gprod(gw3,k1,t3) = 0
  gas_balance_da(ng101,k2,t3): - qin_sr(('ng101','ng102'),k2,t3)
-   + gprod(gw1,k2,t3) + gprod(gw2,k2,t3) = 0
+   + gprod(gw1,k2,t3) + gprod(gw2,k2,t3) + gprod(gw3,k2,t3) = 0
  gas_balance_da(ng101,k0,t4): gprod(gw1,k0,t4) + gprod(gw2,k0,t4)
-   - qin_sr(('ng101','ng102'),k0,t4) = 0
+   + gprod(gw3,k0,t4) - qin_sr(('ng101','ng102'),k0,t4) = 0
  gas_balance_da(ng101,k1,t4): - qin_sr(('ng101','ng102'),k1,t4)
-   + gprod(gw1,k1,t4) + gprod(gw2,k1,t4) = 0
+   + gprod(gw1,k1,t4) + gprod(gw2,k1,t4) + gprod(gw3,k1,t4) = 0
  gas_balance_da(ng101,k2,t4): - qin_sr(('ng101','ng102'),k2,t4)
-   + gprod(gw1,k2,t4) + gprod(gw2,k2,t4) = 0
+   + gprod(gw1,k2,t4) + gprod(gw2,k2,t4) + gprod(gw3,k2,t4) = 0
  gas_balance_da(ng101,k0,t5): gprod(gw1,k0,t5) + gprod(gw2,k0,t5)
-   - qin_sr(('ng101','ng102'),k0,t5) = 0
+   + gprod(gw3,k0,t5) - qin_sr(('ng101','ng102'),k0,t5) = 0
  gas_balance_da(ng101,k1,t5): - qin_sr(('ng101','ng102'),k1,t5)
-   + gprod(gw1,k1,t5) + gprod(gw2,k1,t5) = 0
+   + gprod(gw1,k1,t5) + gprod(gw2,k1,t5) + gprod(gw3,k1,t5) = 0
  gas_balance_da(ng101,k2,t5): - qin_sr(('ng101','ng102'),k2,t5)
-   + gprod(gw1,k2,t5) + gprod(gw2,k2,t5) = 0
+   + gprod(gw1,k2,t5) + gprod(gw2,k2,t5) + gprod(gw3,k2,t5) = 0
  gas_balance_da(ng101,k0,t6): gprod(gw1,k0,t6) + gprod(gw2,k0,t6)
-   - qin_sr(('ng101','ng102'),k0,t6) = 0
+   + gprod(gw3,k0,t6) - qin_sr(('ng101','ng102'),k0,t6) = 0
  gas_balance_da(ng101,k1,t6): - qin_sr(('ng101','ng102'),k1,t6)
-   + gprod(gw1,k1,t6) + gprod(gw2,k1,t6) = 0
+   + gprod(gw1,k1,t6) + gprod(gw2,k1,t6) + gprod(gw3,k1,t6) = 0
  gas_balance_da(ng101,k2,t6): - qin_sr(('ng101','ng102'),k2,t6)
-   + gprod(gw1,k2,t6) + gprod(gw2,k2,t6) = 0
+   + gprod(gw1,k2,t6) + gprod(gw2,k2,t6) + gprod(gw3,k2,t6) = 0
  gas_balance_da(ng101,k0,t7): gprod(gw1,k0,t7) + gprod(gw2,k0,t7)
-   - qin_sr(('ng101','ng102'),k0,t7) = 0
+   + gprod(gw3,k0,t7) - qin_sr(('ng101','ng102'),k0,t7) = 0
  gas_balance_da(ng101,k1,t7): - qin_sr(('ng101','ng102'),k1,t7)
-   + gprod(gw1,k1,t7) + gprod(gw2,k1,t7) = 0
+   + gprod(gw1,k1,t7) + gprod(gw2,k1,t7) + gprod(gw3,k1,t7) = 0
  gas_balance_da(ng101,k2,t7): - qin_sr(('ng101','ng102'),k2,t7)
-   + gprod(gw1,k2,t7) + gprod(gw2,k2,t7) = 0
+   + gprod(gw1,k2,t7) + gprod(gw2,k2,t7) + gprod(gw3,k2,t7) = 0
  gas_balance_da(ng101,k0,t8): gprod(gw1,k0,t8) + gprod(gw2,k0,t8)
-   - qin_sr(('ng101','ng102'),k0,t8) = 0
+   + gprod(gw3,k0,t8) - qin_sr(('ng101','ng102'),k0,t8) = 0
  gas_balance_da(ng101,k1,t8): - qin_sr(('ng101','ng102'),k1,t8)
-   + gprod(gw1,k1,t8) + gprod(gw2,k1,t8) = 0
+   + gprod(gw1,k1,t8) + gprod(gw2,k1,t8) + gprod(gw3,k1,t8) = 0
  gas_balance_da(ng101,k2,t8): - qin_sr(('ng101','ng102'),k2,t8)
-   + gprod(gw1,k2,t8) + gprod(gw2,k2,t8) = 0
+   + gprod(gw1,k2,t8) + gprod(gw2,k2,t8) + gprod(gw3,k2,t8) = 0
  gas_balance_da(ng101,k0,t9): gprod(gw1,k0,t9) + gprod(gw2,k0,t9)
-   - qin_sr(('ng101','ng102'),k0,t9) = 0
+   + gprod(gw3,k0,t9) - qin_sr(('ng101','ng102'),k0,t9) = 0
  gas_balance_da(ng101,k1,t9): - qin_sr(('ng101','ng102'),k1,t9)
-   + gprod(gw1,k1,t9) + gprod(gw2,k1,t9) = 0
+   + gprod(gw1,k1,t9) + gprod(gw2,k1,t9) + gprod(gw3,k1,t9) = 0
  gas_balance_da(ng101,k2,t9): - qin_sr(('ng101','ng102'),k2,t9)
-   + gprod(gw1,k2,t9) + gprod(gw2,k2,t9) = 0
+   + gprod(gw1,k2,t9) + gprod(gw2,k2,t9) + gprod(gw3,k2,t9) = 0
  gas_balance_da(ng101,k0,t10): gprod(gw1,k0,t10) + gprod(gw2,k0,t10)
-   - qin_sr(('ng101','ng102'),k0,t10) = 0
+   + gprod(gw3,k0,t10) - qin_sr(('ng101','ng102'),k0,t10) = 0
  gas_balance_da(ng101,k1,t10): - qin_sr(('ng101','ng102'),k1,t10)
-   + gprod(gw1,k1,t10) + gprod(gw2,k1,t10) = 0
+   + gprod(gw1,k1,t10) + gprod(gw2,k1,t10) + gprod(gw3,k1,t10) = 0
  gas_balance_da(ng101,k2,t10): - qin_sr(('ng101','ng102'),k2,t10)
-   + gprod(gw1,k2,t10) + gprod(gw2,k2,t10) = 0
+   + gprod(gw1,k2,t10) + gprod(gw2,k2,t10) + gprod(gw3,k2,t10) = 0
  gas_balance_da(ng101,k0,t11): gprod(gw1,k0,t11) + gprod(gw2,k0,t11)
-   - qin_sr(('ng101','ng102'),k0,t11) = 0
+   + gprod(gw3,k0,t11) - qin_sr(('ng101','ng102'),k0,t11) = 0
  gas_balance_da(ng101,k1,t11): - qin_sr(('ng101','ng102'),k1,t11)
-   + gprod(gw1,k1,t11) + gprod(gw2,k1,t11) = 0
+   + gprod(gw1,k1,t11) + gprod(gw2,k1,t11) + gprod(gw3,k1,t11) = 0
  gas_balance_da(ng101,k2,t11): - qin_sr(('ng101','ng102'),k2,t11)
-   + gprod(gw1,k2,t11) + gprod(gw2,k2,t11) = 0
+   + gprod(gw1,k2,t11) + gprod(gw2,k2,t11) + gprod(gw3,k2,t11) = 0
  gas_balance_da(ng101,k0,t12): gprod(gw1,k0,t12) + gprod(gw2,k0,t12)
-   - qin_sr(('ng101','ng102'),k0,t12) = 0
+   + gprod(gw3,k0,t12) - qin_sr(('ng101','ng102'),k0,t12) = 0
  gas_balance_da(ng101,k1,t12): - qin_sr(('ng101','ng102'),k1,t12)
-   + gprod(gw1,k1,t12) + gprod(gw2,k1,t12) = 0
+   + gprod(gw1,k1,t12) + gprod(gw2,k1,t12) + gprod(gw3,k1,t12) = 0
  gas_balance_da(ng101,k2,t12): - qin_sr(('ng101','ng102'),k2,t12)
-   + gprod(gw1,k2,t12) + gprod(gw2,k2,t12) = 0
+   + gprod(gw1,k2,t12) + gprod(gw2,k2,t12) + gprod(gw3,k2,t12) = 0
  gas_balance_da(ng101,k0,t13): gprod(gw1,k0,t13) + gprod(gw2,k0,t13)
-   - qin_sr(('ng101','ng102'),k0,t13) = 0
+   + gprod(gw3,k0,t13) - qin_sr(('ng101','ng102'),k0,t13) = 0
  gas_balance_da(ng101,k1,t13): - qin_sr(('ng101','ng102'),k1,t13)
-   + gprod(gw1,k1,t13) + gprod(gw2,k1,t13) = 0
+   + gprod(gw1,k1,t13) + gprod(gw2,k1,t13) + gprod(gw3,k1,t13) = 0
  gas_balance_da(ng101,k2,t13): - qin_sr(('ng101','ng102'),k2,t13)
-   + gprod(gw1,k2,t13) + gprod(gw2,k2,t13) = 0
+   + gprod(gw1,k2,t13) + gprod(gw2,k2,t13) + gprod(gw3,k2,t13) = 0
  gas_balance_da(ng101,k0,t14): gprod(gw1,k0,t14) + gprod(gw2,k0,t14)
-   - qin_sr(('ng101','ng102'),k0,t14) = 0
+   + gprod(gw3,k0,t14) - qin_sr(('ng101','ng102'),k0,t14) = 0
  gas_balance_da(ng101,k1,t14): - qin_sr(('ng101','ng102'),k1,t14)
-   + gprod(gw1,k1,t14) + gprod(gw2,k1,t14) = 0
+   + gprod(gw1,k1,t14) + gprod(gw2,k1,t14) + gprod(gw3,k1,t14) = 0
  gas_balance_da(ng101,k2,t14): - qin_sr(('ng101','ng102'),k2,t14)
-   + gprod(gw1,k2,t14) + gprod(gw2,k2,t14) = 0
+   + gprod(gw1,k2,t14) + gprod(gw2,k2,t14) + gprod(gw3,k2,t14) = 0
  gas_balance_da(ng101,k0,t15): gprod(gw1,k0,t15) + gprod(gw2,k0,t15)
-   - qin_sr(('ng101','ng102'),k0,t15) = 0
+   + gprod(gw3,k0,t15) - qin_sr(('ng101','ng102'),k0,t15) = 0
  gas_balance_da(ng101,k1,t15): - qin_sr(('ng101','ng102'),k1,t15)
-   + gprod(gw1,k1,t15) + gprod(gw2,k1,t15) = 0
+   + gprod(gw1,k1,t15) + gprod(gw2,k1,t15) + gprod(gw3,k1,t15) = 0
  gas_balance_da(ng101,k2,t15): - qin_sr(('ng101','ng102'),k2,t15)
-   + gprod(gw1,k2,t15) + gprod(gw2,k2,t15) = 0
+   + gprod(gw1,k2,t15) + gprod(gw2,k2,t15) + gprod(gw3,k2,t15) = 0
  gas_balance_da(ng101,k0,t16): gprod(gw1,k0,t16) + gprod(gw2,k0,t16)
-   - qin_sr(('ng101','ng102'),k0,t16) = 0
+   + gprod(gw3,k0,t16) - qin_sr(('ng101','ng102'),k0,t16) = 0
  gas_balance_da(ng101,k1,t16): - qin_sr(('ng101','ng102'),k1,t16)
-   + gprod(gw1,k1,t16) + gprod(gw2,k1,t16) = 0
+   + gprod(gw1,k1,t16) + gprod(gw2,k1,t16) + gprod(gw3,k1,t16) = 0
  gas_balance_da(ng101,k2,t16): - qin_sr(('ng101','ng102'),k2,t16)
-   + gprod(gw1,k2,t16) + gprod(gw2,k2,t16) = 0
+   + gprod(gw1,k2,t16) + gprod(gw2,k2,t16) + gprod(gw3,k2,t16) = 0
  gas_balance_da(ng101,k0,t17): gprod(gw1,k0,t17) + gprod(gw2,k0,t17)
-   - qin_sr(('ng101','ng102'),k0,t17) = 0
+   + gprod(gw3,k0,t17) - qin_sr(('ng101','ng102'),k0,t17) = 0
  gas_balance_da(ng101,k1,t17): - qin_sr(('ng101','ng102'),k1,t17)
-   + gprod(gw1,k1,t17) + gprod(gw2,k1,t17) = 0
+   + gprod(gw1,k1,t17) + gprod(gw2,k1,t17) + gprod(gw3,k1,t17) = 0
  gas_balance_da(ng101,k2,t17): - qin_sr(('ng101','ng102'),k2,t17)
-   + gprod(gw1,k2,t17) + gprod(gw2,k2,t17) = 0
+   + gprod(gw1,k2,t17) + gprod(gw2,k2,t17) + gprod(gw3,k2,t17) = 0
  gas_balance_da(ng101,k0,t18): gprod(gw1,k0,t18) + gprod(gw2,k0,t18)
-   - qin_sr(('ng101','ng102'),k0,t18) = 0
+   + gprod(gw3,k0,t18) - qin_sr(('ng101','ng102'),k0,t18) = 0
  gas_balance_da(ng101,k1,t18): - qin_sr(('ng101','ng102'),k1,t18)
-   + gprod(gw1,k1,t18) + gprod(gw2,k1,t18) = 0
+   + gprod(gw1,k1,t18) + gprod(gw2,k1,t18) + gprod(gw3,k1,t18) = 0
  gas_balance_da(ng101,k2,t18): - qin_sr(('ng101','ng102'),k2,t18)
-   + gprod(gw1,k2,t18) + gprod(gw2,k2,t18) = 0
+   + gprod(gw1,k2,t18) + gprod(gw2,k2,t18) + gprod(gw3,k2,t18) = 0
  gas_balance_da(ng101,k0,t19): gprod(gw1,k0,t19) + gprod(gw2,k0,t19)
-   - qin_sr(('ng101','ng102'),k0,t19) = 0
+   + gprod(gw3,k0,t19) - qin_sr(('ng101','ng102'),k0,t19) = 0
  gas_balance_da(ng101,k1,t19): - qin_sr(('ng101','ng102'),k1,t19)
-   + gprod(gw1,k1,t19) + gprod(gw2,k1,t19) = 0
+   + gprod(gw1,k1,t19) + gprod(gw2,k1,t19) + gprod(gw3,k1,t19) = 0
  gas_balance_da(ng101,k2,t19): - qin_sr(('ng101','ng102'),k2,t19)
-   + gprod(gw1,k2,t19) + gprod(gw2,k2,t19) = 0
+   + gprod(gw1,k2,t19) + gprod(gw2,k2,t19) + gprod(gw3,k2,t19) = 0
  gas_balance_da(ng101,k0,t20): gprod(gw1,k0,t20) + gprod(gw2,k0,t20)
-   - qin_sr(('ng101','ng102'),k0,t20) = 0
+   + gprod(gw3,k0,t20) - qin_sr(('ng101','ng102'),k0,t20) = 0
  gas_balance_da(ng101,k1,t20): - qin_sr(('ng101','ng102'),k1,t20)
-   + gprod(gw1,k1,t20) + gprod(gw2,k1,t20) = 0
+   + gprod(gw1,k1,t20) + gprod(gw2,k1,t20) + gprod(gw3,k1,t20) = 0
  gas_balance_da(ng101,k2,t20): - qin_sr(('ng101','ng102'),k2,t20)
-   + gprod(gw1,k2,t20) + gprod(gw2,k2,t20) = 0
+   + gprod(gw1,k2,t20) + gprod(gw2,k2,t20) + gprod(gw3,k2,t20) = 0
  gas_balance_da(ng101,k0,t21): gprod(gw1,k0,t21) + gprod(gw2,k0,t21)
-   - qin_sr(('ng101','ng102'),k0,t21) = 0
+   + gprod(gw3,k0,t21) - qin_sr(('ng101','ng102'),k0,t21) = 0
  gas_balance_da(ng101,k1,t21): - qin_sr(('ng101','ng102'),k1,t21)
-   + gprod(gw1,k1,t21) + gprod(gw2,k1,t21) = 0
+   + gprod(gw1,k1,t21) + gprod(gw2,k1,t21) + gprod(gw3,k1,t21) = 0
  gas_balance_da(ng101,k2,t21): - qin_sr(('ng101','ng102'),k2,t21)
-   + gprod(gw1,k2,t21) + gprod(gw2,k2,t21) = 0
+   + gprod(gw1,k2,t21) + gprod(gw2,k2,t21) + gprod(gw3,k2,t21) = 0
  gas_balance_da(ng101,k0,t22): gprod(gw1,k0,t22) + gprod(gw2,k0,t22)
-   - qin_sr(('ng101','ng102'),k0,t22) = 0
+   + gprod(gw3,k0,t22) - qin_sr(('ng101','ng102'),k0,t22) = 0
  gas_balance_da(ng101,k1,t22): - qin_sr(('ng101','ng102'),k1,t22)
-   + gprod(gw1,k1,t22) + gprod(gw2,k1,t22) = 0
+   + gprod(gw1,k1,t22) + gprod(gw2,k1,t22) + gprod(gw3,k1,t22) = 0
  gas_balance_da(ng101,k2,t22): - qin_sr(('ng101','ng102'),k2,t22)
-   + gprod(gw1,k2,t22) + gprod(gw2,k2,t22) = 0
+   + gprod(gw1,k2,t22) + gprod(gw2,k2,t22) + gprod(gw3,k2,t22) = 0
  gas_balance_da(ng101,k0,t23): gprod(gw1,k0,t23) + gprod(gw2,k0,t23)
-   - qin_sr(('ng101','ng102'),k0,t23) = 0
+   + gprod(gw3,k0,t23) - qin_sr(('ng101','ng102'),k0,t23) = 0
  gas_balance_da(ng101,k1,t23): - qin_sr(('ng101','ng102'),k1,t23)
-   + gprod(gw1,k1,t23) + gprod(gw2,k1,t23) = 0
+   + gprod(gw1,k1,t23) + gprod(gw2,k1,t23) + gprod(gw3,k1,t23) = 0
  gas_balance_da(ng101,k2,t23): - qin_sr(('ng101','ng102'),k2,t23)
-   + gprod(gw1,k2,t23) + gprod(gw2,k2,t23) = 0
+   + gprod(gw1,k2,t23) + gprod(gw2,k2,t23) + gprod(gw3,k2,t23) = 0
  gas_balance_da(ng101,k0,t24): gprod(gw1,k0,t24) + gprod(gw2,k0,t24)
-   - qin_sr(('ng101','ng102'),k0,t24) = 0
+   + gprod(gw3,k0,t24) - qin_sr(('ng101','ng102'),k0,t24) = 0
  gas_balance_da(ng101,k1,t24): - qin_sr(('ng101','ng102'),k1,t24)
-   + gprod(gw1,k1,t24) + gprod(gw2,k1,t24) = 0
+   + gprod(gw1,k1,t24) + gprod(gw2,k1,t24) + gprod(gw3,k1,t24) = 0
  gas_balance_da(ng101,k2,t24): - qin_sr(('ng101','ng102'),k2,t24)
-   + gprod(gw1,k2,t24) + gprod(gw2,k2,t24) = 0
- gprod_max(gw1,k0,t1): gprod(gw1,k0,t1) <= 5230
- gprod_max(gw1,k0,t2): gprod(gw1,k0,t2) <= 5230
- gprod_max(gw1,k0,t3): gprod(gw1,k0,t3) <= 5230
- gprod_max(gw1,k0,t4): gprod(gw1,k0,t4) <= 5230
- gprod_max(gw1,k0,t5): gprod(gw1,k0,t5) <= 5230
- gprod_max(gw1,k0,t6): gprod(gw1,k0,t6) <= 5230
- gprod_max(gw1,k0,t7): gprod(gw1,k0,t7) <= 5230
- gprod_max(gw1,k0,t8): gprod(gw1,k0,t8) <= 5230
- gprod_max(gw1,k0,t9): gprod(gw1,k0,t9) <= 5230
- gprod_max(gw1,k0,t10): gprod(gw1,k0,t10) <= 5230
- gprod_max(gw1,k0,t11): gprod(gw1,k0,t11) <= 5230
- gprod_max(gw1,k0,t12): gprod(gw1,k0,t12) <= 5230
- gprod_max(gw1,k0,t13): gprod(gw1,k0,t13) <= 5230
- gprod_max(gw1,k0,t14): gprod(gw1,k0,t14) <= 5230
- gprod_max(gw1,k0,t15): gprod(gw1,k0,t15) <= 5230
- gprod_max(gw1,k0,t16): gprod(gw1,k0,t16) <= 5230
- gprod_max(gw1,k0,t17): gprod(gw1,k0,t17) <= 5230
- gprod_max(gw1,k0,t18): gprod(gw1,k0,t18) <= 5230
- gprod_max(gw1,k0,t19): gprod(gw1,k0,t19) <= 5230
- gprod_max(gw1,k0,t20): gprod(gw1,k0,t20) <= 5230
- gprod_max(gw1,k0,t21): gprod(gw1,k0,t21) <= 5230
- gprod_max(gw1,k0,t22): gprod(gw1,k0,t22) <= 5230
- gprod_max(gw1,k0,t23): gprod(gw1,k0,t23) <= 5230
- gprod_max(gw1,k0,t24): gprod(gw1,k0,t24) <= 5230
- gprod_max(gw1,k1,t1): gprod(gw1,k1,t1) <= 5230
- gprod_max(gw1,k1,t2): gprod(gw1,k1,t2) <= 5230
- gprod_max(gw1,k1,t3): gprod(gw1,k1,t3) <= 5230
- gprod_max(gw1,k1,t4): gprod(gw1,k1,t4) <= 5230
- gprod_max(gw1,k1,t5): gprod(gw1,k1,t5) <= 5230
- gprod_max(gw1,k1,t6): gprod(gw1,k1,t6) <= 5230
- gprod_max(gw1,k1,t7): gprod(gw1,k1,t7) <= 5230
- gprod_max(gw1,k1,t8): gprod(gw1,k1,t8) <= 5230
- gprod_max(gw1,k1,t9): gprod(gw1,k1,t9) <= 5230
- gprod_max(gw1,k1,t10): gprod(gw1,k1,t10) <= 5230
- gprod_max(gw1,k1,t11): gprod(gw1,k1,t11) <= 5230
- gprod_max(gw1,k1,t12): gprod(gw1,k1,t12) <= 5230
- gprod_max(gw1,k1,t13): gprod(gw1,k1,t13) <= 5230
- gprod_max(gw1,k1,t14): gprod(gw1,k1,t14) <= 5230
- gprod_max(gw1,k1,t15): gprod(gw1,k1,t15) <= 5230
- gprod_max(gw1,k1,t16): gprod(gw1,k1,t16) <= 5230
- gprod_max(gw1,k1,t17): gprod(gw1,k1,t17) <= 5230
- gprod_max(gw1,k1,t18): gprod(gw1,k1,t18) <= 5230
- gprod_max(gw1,k1,t19): gprod(gw1,k1,t19) <= 5230
- gprod_max(gw1,k1,t20): gprod(gw1,k1,t20) <= 5230
- gprod_max(gw1,k1,t21): gprod(gw1,k1,t21) <= 5230
- gprod_max(gw1,k1,t22): gprod(gw1,k1,t22) <= 5230
- gprod_max(gw1,k1,t23): gprod(gw1,k1,t23) <= 5230
- gprod_max(gw1,k1,t24): gprod(gw1,k1,t24) <= 5230
- gprod_max(gw1,k2,t1): gprod(gw1,k2,t1) <= 5230
- gprod_max(gw1,k2,t2): gprod(gw1,k2,t2) <= 5230
- gprod_max(gw1,k2,t3): gprod(gw1,k2,t3) <= 5230
- gprod_max(gw1,k2,t4): gprod(gw1,k2,t4) <= 5230
- gprod_max(gw1,k2,t5): gprod(gw1,k2,t5) <= 5230
- gprod_max(gw1,k2,t6): gprod(gw1,k2,t6) <= 5230
- gprod_max(gw1,k2,t7): gprod(gw1,k2,t7) <= 5230
- gprod_max(gw1,k2,t8): gprod(gw1,k2,t8) <= 5230
- gprod_max(gw1,k2,t9): gprod(gw1,k2,t9) <= 5230
- gprod_max(gw1,k2,t10): gprod(gw1,k2,t10) <= 5230
- gprod_max(gw1,k2,t11): gprod(gw1,k2,t11) <= 5230
- gprod_max(gw1,k2,t12): gprod(gw1,k2,t12) <= 5230
- gprod_max(gw1,k2,t13): gprod(gw1,k2,t13) <= 5230
- gprod_max(gw1,k2,t14): gprod(gw1,k2,t14) <= 5230
- gprod_max(gw1,k2,t15): gprod(gw1,k2,t15) <= 5230
- gprod_max(gw1,k2,t16): gprod(gw1,k2,t16) <= 5230
- gprod_max(gw1,k2,t17): gprod(gw1,k2,t17) <= 5230
- gprod_max(gw1,k2,t18): gprod(gw1,k2,t18) <= 5230
- gprod_max(gw1,k2,t19): gprod(gw1,k2,t19) <= 5230
- gprod_max(gw1,k2,t20): gprod(gw1,k2,t20) <= 5230
- gprod_max(gw1,k2,t21): gprod(gw1,k2,t21) <= 5230
- gprod_max(gw1,k2,t22): gprod(gw1,k2,t22) <= 5230
- gprod_max(gw1,k2,t23): gprod(gw1,k2,t23) <= 5230
- gprod_max(gw1,k2,t24): gprod(gw1,k2,t24) <= 5230
- gprod_max(gw2,k0,t1): gprod(gw2,k0,t1) <= 370
- gprod_max(gw2,k0,t2): gprod(gw2,k0,t2) <= 370
- gprod_max(gw2,k0,t3): gprod(gw2,k0,t3) <= 370
- gprod_max(gw2,k0,t4): gprod(gw2,k0,t4) <= 370
- gprod_max(gw2,k0,t5): gprod(gw2,k0,t5) <= 370
- gprod_max(gw2,k0,t6): gprod(gw2,k0,t6) <= 370
- gprod_max(gw2,k0,t7): gprod(gw2,k0,t7) <= 370
- gprod_max(gw2,k0,t8): gprod(gw2,k0,t8) <= 370
- gprod_max(gw2,k0,t9): gprod(gw2,k0,t9) <= 370
- gprod_max(gw2,k0,t10): gprod(gw2,k0,t10) <= 370
- gprod_max(gw2,k0,t11): gprod(gw2,k0,t11) <= 370
- gprod_max(gw2,k0,t12): gprod(gw2,k0,t12) <= 370
- gprod_max(gw2,k0,t13): gprod(gw2,k0,t13) <= 370
- gprod_max(gw2,k0,t14): gprod(gw2,k0,t14) <= 370
- gprod_max(gw2,k0,t15): gprod(gw2,k0,t15) <= 370
- gprod_max(gw2,k0,t16): gprod(gw2,k0,t16) <= 370
- gprod_max(gw2,k0,t17): gprod(gw2,k0,t17) <= 370
- gprod_max(gw2,k0,t18): gprod(gw2,k0,t18) <= 370
- gprod_max(gw2,k0,t19): gprod(gw2,k0,t19) <= 370
- gprod_max(gw2,k0,t20): gprod(gw2,k0,t20) <= 370
- gprod_max(gw2,k0,t21): gprod(gw2,k0,t21) <= 370
- gprod_max(gw2,k0,t22): gprod(gw2,k0,t22) <= 370
- gprod_max(gw2,k0,t23): gprod(gw2,k0,t23) <= 370
- gprod_max(gw2,k0,t24): gprod(gw2,k0,t24) <= 370
- gprod_max(gw2,k1,t1): gprod(gw2,k1,t1) <= 370
- gprod_max(gw2,k1,t2): gprod(gw2,k1,t2) <= 370
- gprod_max(gw2,k1,t3): gprod(gw2,k1,t3) <= 370
- gprod_max(gw2,k1,t4): gprod(gw2,k1,t4) <= 370
- gprod_max(gw2,k1,t5): gprod(gw2,k1,t5) <= 370
- gprod_max(gw2,k1,t6): gprod(gw2,k1,t6) <= 370
- gprod_max(gw2,k1,t7): gprod(gw2,k1,t7) <= 370
- gprod_max(gw2,k1,t8): gprod(gw2,k1,t8) <= 370
- gprod_max(gw2,k1,t9): gprod(gw2,k1,t9) <= 370
- gprod_max(gw2,k1,t10): gprod(gw2,k1,t10) <= 370
- gprod_max(gw2,k1,t11): gprod(gw2,k1,t11) <= 370
- gprod_max(gw2,k1,t12): gprod(gw2,k1,t12) <= 370
- gprod_max(gw2,k1,t13): gprod(gw2,k1,t13) <= 370
- gprod_max(gw2,k1,t14): gprod(gw2,k1,t14) <= 370
- gprod_max(gw2,k1,t15): gprod(gw2,k1,t15) <= 370
- gprod_max(gw2,k1,t16): gprod(gw2,k1,t16) <= 370
- gprod_max(gw2,k1,t17): gprod(gw2,k1,t17) <= 370
- gprod_max(gw2,k1,t18): gprod(gw2,k1,t18) <= 370
- gprod_max(gw2,k1,t19): gprod(gw2,k1,t19) <= 370
- gprod_max(gw2,k1,t20): gprod(gw2,k1,t20) <= 370
- gprod_max(gw2,k1,t21): gprod(gw2,k1,t21) <= 370
- gprod_max(gw2,k1,t22): gprod(gw2,k1,t22) <= 370
- gprod_max(gw2,k1,t23): gprod(gw2,k1,t23) <= 370
- gprod_max(gw2,k1,t24): gprod(gw2,k1,t24) <= 370
- gprod_max(gw2,k2,t1): gprod(gw2,k2,t1) <= 370
- gprod_max(gw2,k2,t2): gprod(gw2,k2,t2) <= 370
- gprod_max(gw2,k2,t3): gprod(gw2,k2,t3) <= 370
- gprod_max(gw2,k2,t4): gprod(gw2,k2,t4) <= 370
- gprod_max(gw2,k2,t5): gprod(gw2,k2,t5) <= 370
- gprod_max(gw2,k2,t6): gprod(gw2,k2,t6) <= 370
- gprod_max(gw2,k2,t7): gprod(gw2,k2,t7) <= 370
- gprod_max(gw2,k2,t8): gprod(gw2,k2,t8) <= 370
- gprod_max(gw2,k2,t9): gprod(gw2,k2,t9) <= 370
- gprod_max(gw2,k2,t10): gprod(gw2,k2,t10) <= 370
- gprod_max(gw2,k2,t11): gprod(gw2,k2,t11) <= 370
- gprod_max(gw2,k2,t12): gprod(gw2,k2,t12) <= 370
- gprod_max(gw2,k2,t13): gprod(gw2,k2,t13) <= 370
- gprod_max(gw2,k2,t14): gprod(gw2,k2,t14) <= 370
- gprod_max(gw2,k2,t15): gprod(gw2,k2,t15) <= 370
- gprod_max(gw2,k2,t16): gprod(gw2,k2,t16) <= 370
- gprod_max(gw2,k2,t17): gprod(gw2,k2,t17) <= 370
- gprod_max(gw2,k2,t18): gprod(gw2,k2,t18) <= 370
- gprod_max(gw2,k2,t19): gprod(gw2,k2,t19) <= 370
- gprod_max(gw2,k2,t20): gprod(gw2,k2,t20) <= 370
- gprod_max(gw2,k2,t21): gprod(gw2,k2,t21) <= 370
- gprod_max(gw2,k2,t22): gprod(gw2,k2,t22) <= 370
- gprod_max(gw2,k2,t23): gprod(gw2,k2,t23) <= 370
- gprod_max(gw2,k2,t24): gprod(gw2,k2,t24) <= 370
+   + gprod(gw1,k2,t24) + gprod(gw2,k2,t24) + gprod(gw3,k2,t24) = 0
+ gprod_max(gw1,k0,t1): gprod(gw1,k0,t1) <= 250
+ gprod_max(gw1,k0,t2): gprod(gw1,k0,t2) <= 250
+ gprod_max(gw1,k0,t3): gprod(gw1,k0,t3) <= 250
+ gprod_max(gw1,k0,t4): gprod(gw1,k0,t4) <= 250
+ gprod_max(gw1,k0,t5): gprod(gw1,k0,t5) <= 250
+ gprod_max(gw1,k0,t6): gprod(gw1,k0,t6) <= 250
+ gprod_max(gw1,k0,t7): gprod(gw1,k0,t7) <= 250
+ gprod_max(gw1,k0,t8): gprod(gw1,k0,t8) <= 250
+ gprod_max(gw1,k0,t9): gprod(gw1,k0,t9) <= 250
+ gprod_max(gw1,k0,t10): gprod(gw1,k0,t10) <= 250
+ gprod_max(gw1,k0,t11): gprod(gw1,k0,t11) <= 250
+ gprod_max(gw1,k0,t12): gprod(gw1,k0,t12) <= 250
+ gprod_max(gw1,k0,t13): gprod(gw1,k0,t13) <= 250
+ gprod_max(gw1,k0,t14): gprod(gw1,k0,t14) <= 250
+ gprod_max(gw1,k0,t15): gprod(gw1,k0,t15) <= 250
+ gprod_max(gw1,k0,t16): gprod(gw1,k0,t16) <= 250
+ gprod_max(gw1,k0,t17): gprod(gw1,k0,t17) <= 250
+ gprod_max(gw1,k0,t18): gprod(gw1,k0,t18) <= 250
+ gprod_max(gw1,k0,t19): gprod(gw1,k0,t19) <= 250
+ gprod_max(gw1,k0,t20): gprod(gw1,k0,t20) <= 250
+ gprod_max(gw1,k0,t21): gprod(gw1,k0,t21) <= 250
+ gprod_max(gw1,k0,t22): gprod(gw1,k0,t22) <= 250
+ gprod_max(gw1,k0,t23): gprod(gw1,k0,t23) <= 250
+ gprod_max(gw1,k0,t24): gprod(gw1,k0,t24) <= 250
+ gprod_max(gw1,k1,t1): gprod(gw1,k1,t1) <= 250
+ gprod_max(gw1,k1,t2): gprod(gw1,k1,t2) <= 250
+ gprod_max(gw1,k1,t3): gprod(gw1,k1,t3) <= 250
+ gprod_max(gw1,k1,t4): gprod(gw1,k1,t4) <= 250
+ gprod_max(gw1,k1,t5): gprod(gw1,k1,t5) <= 250
+ gprod_max(gw1,k1,t6): gprod(gw1,k1,t6) <= 250
+ gprod_max(gw1,k1,t7): gprod(gw1,k1,t7) <= 250
+ gprod_max(gw1,k1,t8): gprod(gw1,k1,t8) <= 250
+ gprod_max(gw1,k1,t9): gprod(gw1,k1,t9) <= 250
+ gprod_max(gw1,k1,t10): gprod(gw1,k1,t10) <= 250
+ gprod_max(gw1,k1,t11): gprod(gw1,k1,t11) <= 250
+ gprod_max(gw1,k1,t12): gprod(gw1,k1,t12) <= 250
+ gprod_max(gw1,k1,t13): gprod(gw1,k1,t13) <= 250
+ gprod_max(gw1,k1,t14): gprod(gw1,k1,t14) <= 250
+ gprod_max(gw1,k1,t15): gprod(gw1,k1,t15) <= 250
+ gprod_max(gw1,k1,t16): gprod(gw1,k1,t16) <= 250
+ gprod_max(gw1,k1,t17): gprod(gw1,k1,t17) <= 250
+ gprod_max(gw1,k1,t18): gprod(gw1,k1,t18) <= 250
+ gprod_max(gw1,k1,t19): gprod(gw1,k1,t19) <= 250
+ gprod_max(gw1,k1,t20): gprod(gw1,k1,t20) <= 250
+ gprod_max(gw1,k1,t21): gprod(gw1,k1,t21) <= 250
+ gprod_max(gw1,k1,t22): gprod(gw1,k1,t22) <= 250
+ gprod_max(gw1,k1,t23): gprod(gw1,k1,t23) <= 250
+ gprod_max(gw1,k1,t24): gprod(gw1,k1,t24) <= 250
+ gprod_max(gw1,k2,t1): gprod(gw1,k2,t1) <= 250
+ gprod_max(gw1,k2,t2): gprod(gw1,k2,t2) <= 250
+ gprod_max(gw1,k2,t3): gprod(gw1,k2,t3) <= 250
+ gprod_max(gw1,k2,t4): gprod(gw1,k2,t4) <= 250
+ gprod_max(gw1,k2,t5): gprod(gw1,k2,t5) <= 250
+ gprod_max(gw1,k2,t6): gprod(gw1,k2,t6) <= 250
+ gprod_max(gw1,k2,t7): gprod(gw1,k2,t7) <= 250
+ gprod_max(gw1,k2,t8): gprod(gw1,k2,t8) <= 250
+ gprod_max(gw1,k2,t9): gprod(gw1,k2,t9) <= 250
+ gprod_max(gw1,k2,t10): gprod(gw1,k2,t10) <= 250
+ gprod_max(gw1,k2,t11): gprod(gw1,k2,t11) <= 250
+ gprod_max(gw1,k2,t12): gprod(gw1,k2,t12) <= 250
+ gprod_max(gw1,k2,t13): gprod(gw1,k2,t13) <= 250
+ gprod_max(gw1,k2,t14): gprod(gw1,k2,t14) <= 250
+ gprod_max(gw1,k2,t15): gprod(gw1,k2,t15) <= 250
+ gprod_max(gw1,k2,t16): gprod(gw1,k2,t16) <= 250
+ gprod_max(gw1,k2,t17): gprod(gw1,k2,t17) <= 250
+ gprod_max(gw1,k2,t18): gprod(gw1,k2,t18) <= 250
+ gprod_max(gw1,k2,t19): gprod(gw1,k2,t19) <= 250
+ gprod_max(gw1,k2,t20): gprod(gw1,k2,t20) <= 250
+ gprod_max(gw1,k2,t21): gprod(gw1,k2,t21) <= 250
+ gprod_max(gw1,k2,t22): gprod(gw1,k2,t22) <= 250
+ gprod_max(gw1,k2,t23): gprod(gw1,k2,t23) <= 250
+ gprod_max(gw1,k2,t24): gprod(gw1,k2,t24) <= 250
+ gprod_max(gw2,k0,t1): gprod(gw2,k0,t1) <= 100
+ gprod_max(gw2,k0,t2): gprod(gw2,k0,t2) <= 100
+ gprod_max(gw2,k0,t3): gprod(gw2,k0,t3) <= 100
+ gprod_max(gw2,k0,t4): gprod(gw2,k0,t4) <= 100
+ gprod_max(gw2,k0,t5): gprod(gw2,k0,t5) <= 100
+ gprod_max(gw2,k0,t6): gprod(gw2,k0,t6) <= 100
+ gprod_max(gw2,k0,t7): gprod(gw2,k0,t7) <= 100
+ gprod_max(gw2,k0,t8): gprod(gw2,k0,t8) <= 100
+ gprod_max(gw2,k0,t9): gprod(gw2,k0,t9) <= 100
+ gprod_max(gw2,k0,t10): gprod(gw2,k0,t10) <= 100
+ gprod_max(gw2,k0,t11): gprod(gw2,k0,t11) <= 100
+ gprod_max(gw2,k0,t12): gprod(gw2,k0,t12) <= 100
+ gprod_max(gw2,k0,t13): gprod(gw2,k0,t13) <= 100
+ gprod_max(gw2,k0,t14): gprod(gw2,k0,t14) <= 100
+ gprod_max(gw2,k0,t15): gprod(gw2,k0,t15) <= 100
+ gprod_max(gw2,k0,t16): gprod(gw2,k0,t16) <= 100
+ gprod_max(gw2,k0,t17): gprod(gw2,k0,t17) <= 100
+ gprod_max(gw2,k0,t18): gprod(gw2,k0,t18) <= 100
+ gprod_max(gw2,k0,t19): gprod(gw2,k0,t19) <= 100
+ gprod_max(gw2,k0,t20): gprod(gw2,k0,t20) <= 100
+ gprod_max(gw2,k0,t21): gprod(gw2,k0,t21) <= 100
+ gprod_max(gw2,k0,t22): gprod(gw2,k0,t22) <= 100
+ gprod_max(gw2,k0,t23): gprod(gw2,k0,t23) <= 100
+ gprod_max(gw2,k0,t24): gprod(gw2,k0,t24) <= 100
+ gprod_max(gw2,k1,t1): gprod(gw2,k1,t1) <= 100
+ gprod_max(gw2,k1,t2): gprod(gw2,k1,t2) <= 100
+ gprod_max(gw2,k1,t3): gprod(gw2,k1,t3) <= 100
+ gprod_max(gw2,k1,t4): gprod(gw2,k1,t4) <= 100
+ gprod_max(gw2,k1,t5): gprod(gw2,k1,t5) <= 100
+ gprod_max(gw2,k1,t6): gprod(gw2,k1,t6) <= 100
+ gprod_max(gw2,k1,t7): gprod(gw2,k1,t7) <= 100
+ gprod_max(gw2,k1,t8): gprod(gw2,k1,t8) <= 100
+ gprod_max(gw2,k1,t9): gprod(gw2,k1,t9) <= 100
+ gprod_max(gw2,k1,t10): gprod(gw2,k1,t10) <= 100
+ gprod_max(gw2,k1,t11): gprod(gw2,k1,t11) <= 100
+ gprod_max(gw2,k1,t12): gprod(gw2,k1,t12) <= 100
+ gprod_max(gw2,k1,t13): gprod(gw2,k1,t13) <= 100
+ gprod_max(gw2,k1,t14): gprod(gw2,k1,t14) <= 100
+ gprod_max(gw2,k1,t15): gprod(gw2,k1,t15) <= 100
+ gprod_max(gw2,k1,t16): gprod(gw2,k1,t16) <= 100
+ gprod_max(gw2,k1,t17): gprod(gw2,k1,t17) <= 100
+ gprod_max(gw2,k1,t18): gprod(gw2,k1,t18) <= 100
+ gprod_max(gw2,k1,t19): gprod(gw2,k1,t19) <= 100
+ gprod_max(gw2,k1,t20): gprod(gw2,k1,t20) <= 100
+ gprod_max(gw2,k1,t21): gprod(gw2,k1,t21) <= 100
+ gprod_max(gw2,k1,t22): gprod(gw2,k1,t22) <= 100
+ gprod_max(gw2,k1,t23): gprod(gw2,k1,t23) <= 100
+ gprod_max(gw2,k1,t24): gprod(gw2,k1,t24) <= 100
+ gprod_max(gw2,k2,t1): gprod(gw2,k2,t1) <= 100
+ gprod_max(gw2,k2,t2): gprod(gw2,k2,t2) <= 100
+ gprod_max(gw2,k2,t3): gprod(gw2,k2,t3) <= 100
+ gprod_max(gw2,k2,t4): gprod(gw2,k2,t4) <= 100
+ gprod_max(gw2,k2,t5): gprod(gw2,k2,t5) <= 100
+ gprod_max(gw2,k2,t6): gprod(gw2,k2,t6) <= 100
+ gprod_max(gw2,k2,t7): gprod(gw2,k2,t7) <= 100
+ gprod_max(gw2,k2,t8): gprod(gw2,k2,t8) <= 100
+ gprod_max(gw2,k2,t9): gprod(gw2,k2,t9) <= 100
+ gprod_max(gw2,k2,t10): gprod(gw2,k2,t10) <= 100
+ gprod_max(gw2,k2,t11): gprod(gw2,k2,t11) <= 100
+ gprod_max(gw2,k2,t12): gprod(gw2,k2,t12) <= 100
+ gprod_max(gw2,k2,t13): gprod(gw2,k2,t13) <= 100
+ gprod_max(gw2,k2,t14): gprod(gw2,k2,t14) <= 100
+ gprod_max(gw2,k2,t15): gprod(gw2,k2,t15) <= 100
+ gprod_max(gw2,k2,t16): gprod(gw2,k2,t16) <= 100
+ gprod_max(gw2,k2,t17): gprod(gw2,k2,t17) <= 100
+ gprod_max(gw2,k2,t18): gprod(gw2,k2,t18) <= 100
+ gprod_max(gw2,k2,t19): gprod(gw2,k2,t19) <= 100
+ gprod_max(gw2,k2,t20): gprod(gw2,k2,t20) <= 100
+ gprod_max(gw2,k2,t21): gprod(gw2,k2,t21) <= 100
+ gprod_max(gw2,k2,t22): gprod(gw2,k2,t22) <= 100
+ gprod_max(gw2,k2,t23): gprod(gw2,k2,t23) <= 100
+ gprod_max(gw2,k2,t24): gprod(gw2,k2,t24) <= 100
+ gprod_max(gw3,k0,t1): gprod(gw3,k0,t1) <= 2000
+ gprod_max(gw3,k0,t2): gprod(gw3,k0,t2) <= 2000
+ gprod_max(gw3,k0,t3): gprod(gw3,k0,t3) <= 2000
+ gprod_max(gw3,k0,t4): gprod(gw3,k0,t4) <= 2000
+ gprod_max(gw3,k0,t5): gprod(gw3,k0,t5) <= 2000
+ gprod_max(gw3,k0,t6): gprod(gw3,k0,t6) <= 2000
+ gprod_max(gw3,k0,t7): gprod(gw3,k0,t7) <= 2000
+ gprod_max(gw3,k0,t8): gprod(gw3,k0,t8) <= 2000
+ gprod_max(gw3,k0,t9): gprod(gw3,k0,t9) <= 2000
+ gprod_max(gw3,k0,t10): gprod(gw3,k0,t10) <= 2000
+ gprod_max(gw3,k0,t11): gprod(gw3,k0,t11) <= 2000
+ gprod_max(gw3,k0,t12): gprod(gw3,k0,t12) <= 2000
+ gprod_max(gw3,k0,t13): gprod(gw3,k0,t13) <= 2000
+ gprod_max(gw3,k0,t14): gprod(gw3,k0,t14) <= 2000
+ gprod_max(gw3,k0,t15): gprod(gw3,k0,t15) <= 2000
+ gprod_max(gw3,k0,t16): gprod(gw3,k0,t16) <= 2000
+ gprod_max(gw3,k0,t17): gprod(gw3,k0,t17) <= 2000
+ gprod_max(gw3,k0,t18): gprod(gw3,k0,t18) <= 2000
+ gprod_max(gw3,k0,t19): gprod(gw3,k0,t19) <= 2000
+ gprod_max(gw3,k0,t20): gprod(gw3,k0,t20) <= 2000
+ gprod_max(gw3,k0,t21): gprod(gw3,k0,t21) <= 2000
+ gprod_max(gw3,k0,t22): gprod(gw3,k0,t22) <= 2000
+ gprod_max(gw3,k0,t23): gprod(gw3,k0,t23) <= 2000
+ gprod_max(gw3,k0,t24): gprod(gw3,k0,t24) <= 2000
+ gprod_max(gw3,k1,t1): gprod(gw3,k1,t1) <= 2000
+ gprod_max(gw3,k1,t2): gprod(gw3,k1,t2) <= 2000
+ gprod_max(gw3,k1,t3): gprod(gw3,k1,t3) <= 2000
+ gprod_max(gw3,k1,t4): gprod(gw3,k1,t4) <= 2000
+ gprod_max(gw3,k1,t5): gprod(gw3,k1,t5) <= 2000
+ gprod_max(gw3,k1,t6): gprod(gw3,k1,t6) <= 2000
+ gprod_max(gw3,k1,t7): gprod(gw3,k1,t7) <= 2000
+ gprod_max(gw3,k1,t8): gprod(gw3,k1,t8) <= 2000
+ gprod_max(gw3,k1,t9): gprod(gw3,k1,t9) <= 2000
+ gprod_max(gw3,k1,t10): gprod(gw3,k1,t10) <= 2000
+ gprod_max(gw3,k1,t11): gprod(gw3,k1,t11) <= 2000
+ gprod_max(gw3,k1,t12): gprod(gw3,k1,t12) <= 2000
+ gprod_max(gw3,k1,t13): gprod(gw3,k1,t13) <= 2000
+ gprod_max(gw3,k1,t14): gprod(gw3,k1,t14) <= 2000
+ gprod_max(gw3,k1,t15): gprod(gw3,k1,t15) <= 2000
+ gprod_max(gw3,k1,t16): gprod(gw3,k1,t16) <= 2000
+ gprod_max(gw3,k1,t17): gprod(gw3,k1,t17) <= 2000
+ gprod_max(gw3,k1,t18): gprod(gw3,k1,t18) <= 2000
+ gprod_max(gw3,k1,t19): gprod(gw3,k1,t19) <= 2000
+ gprod_max(gw3,k1,t20): gprod(gw3,k1,t20) <= 2000
+ gprod_max(gw3,k1,t21): gprod(gw3,k1,t21) <= 2000
+ gprod_max(gw3,k1,t22): gprod(gw3,k1,t22) <= 2000
+ gprod_max(gw3,k1,t23): gprod(gw3,k1,t23) <= 2000
+ gprod_max(gw3,k1,t24): gprod(gw3,k1,t24) <= 2000
+ gprod_max(gw3,k2,t1): gprod(gw3,k2,t1) <= 2000
+ gprod_max(gw3,k2,t2): gprod(gw3,k2,t2) <= 2000
+ gprod_max(gw3,k2,t3): gprod(gw3,k2,t3) <= 2000
+ gprod_max(gw3,k2,t4): gprod(gw3,k2,t4) <= 2000
+ gprod_max(gw3,k2,t5): gprod(gw3,k2,t5) <= 2000
+ gprod_max(gw3,k2,t6): gprod(gw3,k2,t6) <= 2000
+ gprod_max(gw3,k2,t7): gprod(gw3,k2,t7) <= 2000
+ gprod_max(gw3,k2,t8): gprod(gw3,k2,t8) <= 2000
+ gprod_max(gw3,k2,t9): gprod(gw3,k2,t9) <= 2000
+ gprod_max(gw3,k2,t10): gprod(gw3,k2,t10) <= 2000
+ gprod_max(gw3,k2,t11): gprod(gw3,k2,t11) <= 2000
+ gprod_max(gw3,k2,t12): gprod(gw3,k2,t12) <= 2000
+ gprod_max(gw3,k2,t13): gprod(gw3,k2,t13) <= 2000
+ gprod_max(gw3,k2,t14): gprod(gw3,k2,t14) <= 2000
+ gprod_max(gw3,k2,t15): gprod(gw3,k2,t15) <= 2000
+ gprod_max(gw3,k2,t16): gprod(gw3,k2,t16) <= 2000
+ gprod_max(gw3,k2,t17): gprod(gw3,k2,t17) <= 2000
+ gprod_max(gw3,k2,t18): gprod(gw3,k2,t18) <= 2000
+ gprod_max(gw3,k2,t19): gprod(gw3,k2,t19) <= 2000
+ gprod_max(gw3,k2,t20): gprod(gw3,k2,t20) <= 2000
+ gprod_max(gw3,k2,t21): gprod(gw3,k2,t21) <= 2000
+ gprod_max(gw3,k2,t22): gprod(gw3,k2,t22) <= 2000
+ gprod_max(gw3,k2,t23): gprod(gw3,k2,t23) <= 2000
+ gprod_max(gw3,k2,t24): gprod(gw3,k2,t24) <= 2000
  gflow_sr_io(('ng101','ng102'),k0,t1):
    - 0.5 qin_sr(('ng101','ng102'),k0,t1)
    - 0.5 qout_sr(('ng101','ng102'),k0,t1)
@@ -4512,437 +4680,581 @@ Subject To
  SOS1_gshed_da_max(ng101,k2,t24): gshed_da(ng101,k2,t24)
    + SOS1_gshed_da_max(ng101,k2,t24) = 0
  SOS1_gshed_da_max(ng102,k0,t1): gshed_da(ng102,k0,t1)
-   + SOS1_gshed_da_max(ng102,k0,t1) = 2100
+   + SOS1_gshed_da_max(ng102,k0,t1) = 0
  SOS1_gshed_da_max(ng102,k1,t1): gshed_da(ng102,k1,t1)
-   + SOS1_gshed_da_max(ng102,k1,t1) = 2100
+   + SOS1_gshed_da_max(ng102,k1,t1) = 0
  SOS1_gshed_da_max(ng102,k2,t1): gshed_da(ng102,k2,t1)
-   + SOS1_gshed_da_max(ng102,k2,t1) = 2100
+   + SOS1_gshed_da_max(ng102,k2,t1) = 0
  SOS1_gshed_da_max(ng102,k0,t2): gshed_da(ng102,k0,t2)
-   + SOS1_gshed_da_max(ng102,k0,t2) = 2010
+   + SOS1_gshed_da_max(ng102,k0,t2) = 0
  SOS1_gshed_da_max(ng102,k1,t2): gshed_da(ng102,k1,t2)
-   + SOS1_gshed_da_max(ng102,k1,t2) = 2010
+   + SOS1_gshed_da_max(ng102,k1,t2) = 0
  SOS1_gshed_da_max(ng102,k2,t2): gshed_da(ng102,k2,t2)
-   + SOS1_gshed_da_max(ng102,k2,t2) = 2010
+   + SOS1_gshed_da_max(ng102,k2,t2) = 0
  SOS1_gshed_da_max(ng102,k0,t3): gshed_da(ng102,k0,t3)
-   + SOS1_gshed_da_max(ng102,k0,t3) = 1920
+   + SOS1_gshed_da_max(ng102,k0,t3) = 0
  SOS1_gshed_da_max(ng102,k1,t3): gshed_da(ng102,k1,t3)
-   + SOS1_gshed_da_max(ng102,k1,t3) = 1920
+   + SOS1_gshed_da_max(ng102,k1,t3) = 0
  SOS1_gshed_da_max(ng102,k2,t3): gshed_da(ng102,k2,t3)
-   + SOS1_gshed_da_max(ng102,k2,t3) = 1920
+   + SOS1_gshed_da_max(ng102,k2,t3) = 0
  SOS1_gshed_da_max(ng102,k0,t4): gshed_da(ng102,k0,t4)
-   + SOS1_gshed_da_max(ng102,k0,t4) = 1950
+   + SOS1_gshed_da_max(ng102,k0,t4) = 0
  SOS1_gshed_da_max(ng102,k1,t4): gshed_da(ng102,k1,t4)
-   + SOS1_gshed_da_max(ng102,k1,t4) = 1950
+   + SOS1_gshed_da_max(ng102,k1,t4) = 0
  SOS1_gshed_da_max(ng102,k2,t4): gshed_da(ng102,k2,t4)
-   + SOS1_gshed_da_max(ng102,k2,t4) = 1950
+   + SOS1_gshed_da_max(ng102,k2,t4) = 0
  SOS1_gshed_da_max(ng102,k0,t5): gshed_da(ng102,k0,t5)
-   + SOS1_gshed_da_max(ng102,k0,t5) = 1980
+   + SOS1_gshed_da_max(ng102,k0,t5) = 0
  SOS1_gshed_da_max(ng102,k1,t5): gshed_da(ng102,k1,t5)
-   + SOS1_gshed_da_max(ng102,k1,t5) = 1980
+   + SOS1_gshed_da_max(ng102,k1,t5) = 0
  SOS1_gshed_da_max(ng102,k2,t5): gshed_da(ng102,k2,t5)
-   + SOS1_gshed_da_max(ng102,k2,t5) = 1980
+   + SOS1_gshed_da_max(ng102,k2,t5) = 0
  SOS1_gshed_da_max(ng102,k0,t6): gshed_da(ng102,k0,t6)
-   + SOS1_gshed_da_max(ng102,k0,t6) = 2010
+   + SOS1_gshed_da_max(ng102,k0,t6) = 0
  SOS1_gshed_da_max(ng102,k1,t6): gshed_da(ng102,k1,t6)
-   + SOS1_gshed_da_max(ng102,k1,t6) = 2010
+   + SOS1_gshed_da_max(ng102,k1,t6) = 0
  SOS1_gshed_da_max(ng102,k2,t6): gshed_da(ng102,k2,t6)
-   + SOS1_gshed_da_max(ng102,k2,t6) = 2010
+   + SOS1_gshed_da_max(ng102,k2,t6) = 0
  SOS1_gshed_da_max(ng102,k0,t7): gshed_da(ng102,k0,t7)
-   + SOS1_gshed_da_max(ng102,k0,t7) = 2325
+   + SOS1_gshed_da_max(ng102,k0,t7) = 0
  SOS1_gshed_da_max(ng102,k1,t7): gshed_da(ng102,k1,t7)
-   + SOS1_gshed_da_max(ng102,k1,t7) = 2325
+   + SOS1_gshed_da_max(ng102,k1,t7) = 0
  SOS1_gshed_da_max(ng102,k2,t7): gshed_da(ng102,k2,t7)
-   + SOS1_gshed_da_max(ng102,k2,t7) = 2325
+   + SOS1_gshed_da_max(ng102,k2,t7) = 0
  SOS1_gshed_da_max(ng102,k0,t8): gshed_da(ng102,k0,t8)
-   + SOS1_gshed_da_max(ng102,k0,t8) = 2340
+   + SOS1_gshed_da_max(ng102,k0,t8) = 0
  SOS1_gshed_da_max(ng102,k1,t8): gshed_da(ng102,k1,t8)
-   + SOS1_gshed_da_max(ng102,k1,t8) = 2340
+   + SOS1_gshed_da_max(ng102,k1,t8) = 0
  SOS1_gshed_da_max(ng102,k2,t8): gshed_da(ng102,k2,t8)
-   + SOS1_gshed_da_max(ng102,k2,t8) = 2340
+   + SOS1_gshed_da_max(ng102,k2,t8) = 0
  SOS1_gshed_da_max(ng102,k0,t9): gshed_da(ng102,k0,t9)
-   + SOS1_gshed_da_max(ng102,k0,t9) = 2565
+   + SOS1_gshed_da_max(ng102,k0,t9) = 0
  SOS1_gshed_da_max(ng102,k1,t9): gshed_da(ng102,k1,t9)
-   + SOS1_gshed_da_max(ng102,k1,t9) = 2565
+   + SOS1_gshed_da_max(ng102,k1,t9) = 0
  SOS1_gshed_da_max(ng102,k2,t9): gshed_da(ng102,k2,t9)
-   + SOS1_gshed_da_max(ng102,k2,t9) = 2565
+   + SOS1_gshed_da_max(ng102,k2,t9) = 0
  SOS1_gshed_da_max(ng102,k0,t10): gshed_da(ng102,k0,t10)
-   + SOS1_gshed_da_max(ng102,k0,t10) = 2610
+   + SOS1_gshed_da_max(ng102,k0,t10) = 0
  SOS1_gshed_da_max(ng102,k1,t10): gshed_da(ng102,k1,t10)
-   + SOS1_gshed_da_max(ng102,k1,t10) = 2610
+   + SOS1_gshed_da_max(ng102,k1,t10) = 0
  SOS1_gshed_da_max(ng102,k2,t10): gshed_da(ng102,k2,t10)
-   + SOS1_gshed_da_max(ng102,k2,t10) = 2610
+   + SOS1_gshed_da_max(ng102,k2,t10) = 0
  SOS1_gshed_da_max(ng102,k0,t11): gshed_da(ng102,k0,t11)
-   + SOS1_gshed_da_max(ng102,k0,t11) = 2610
+   + SOS1_gshed_da_max(ng102,k0,t11) = 0
  SOS1_gshed_da_max(ng102,k1,t11): gshed_da(ng102,k1,t11)
-   + SOS1_gshed_da_max(ng102,k1,t11) = 2610
+   + SOS1_gshed_da_max(ng102,k1,t11) = 0
  SOS1_gshed_da_max(ng102,k2,t11): gshed_da(ng102,k2,t11)
-   + SOS1_gshed_da_max(ng102,k2,t11) = 2610
+   + SOS1_gshed_da_max(ng102,k2,t11) = 0
  SOS1_gshed_da_max(ng102,k0,t12): gshed_da(ng102,k0,t12)
-   + SOS1_gshed_da_max(ng102,k0,t12) = 2565
+   + SOS1_gshed_da_max(ng102,k0,t12) = 0
  SOS1_gshed_da_max(ng102,k1,t12): gshed_da(ng102,k1,t12)
-   + SOS1_gshed_da_max(ng102,k1,t12) = 2565
+   + SOS1_gshed_da_max(ng102,k1,t12) = 0
  SOS1_gshed_da_max(ng102,k2,t12): gshed_da(ng102,k2,t12)
-   + SOS1_gshed_da_max(ng102,k2,t12) = 2565
+   + SOS1_gshed_da_max(ng102,k2,t12) = 0
  SOS1_gshed_da_max(ng102,k0,t13): gshed_da(ng102,k0,t13)
-   + SOS1_gshed_da_max(ng102,k0,t13) = 2565
+   + SOS1_gshed_da_max(ng102,k0,t13) = 0
  SOS1_gshed_da_max(ng102,k1,t13): gshed_da(ng102,k1,t13)
-   + SOS1_gshed_da_max(ng102,k1,t13) = 2565
+   + SOS1_gshed_da_max(ng102,k1,t13) = 0
  SOS1_gshed_da_max(ng102,k2,t13): gshed_da(ng102,k2,t13)
-   + SOS1_gshed_da_max(ng102,k2,t13) = 2565
+   + SOS1_gshed_da_max(ng102,k2,t13) = 0
  SOS1_gshed_da_max(ng102,k0,t14): gshed_da(ng102,k0,t14)
-   + SOS1_gshed_da_max(ng102,k0,t14) = 2565
+   + SOS1_gshed_da_max(ng102,k0,t14) = 0
  SOS1_gshed_da_max(ng102,k1,t14): gshed_da(ng102,k1,t14)
-   + SOS1_gshed_da_max(ng102,k1,t14) = 2565
+   + SOS1_gshed_da_max(ng102,k1,t14) = 0
  SOS1_gshed_da_max(ng102,k2,t14): gshed_da(ng102,k2,t14)
-   + SOS1_gshed_da_max(ng102,k2,t14) = 2565
+   + SOS1_gshed_da_max(ng102,k2,t14) = 0
  SOS1_gshed_da_max(ng102,k0,t15): gshed_da(ng102,k0,t15)
-   + SOS1_gshed_da_max(ng102,k0,t15) = 2520
+   + SOS1_gshed_da_max(ng102,k0,t15) = 0
  SOS1_gshed_da_max(ng102,k1,t15): gshed_da(ng102,k1,t15)
-   + SOS1_gshed_da_max(ng102,k1,t15) = 2520
+   + SOS1_gshed_da_max(ng102,k1,t15) = 0
  SOS1_gshed_da_max(ng102,k2,t15): gshed_da(ng102,k2,t15)
-   + SOS1_gshed_da_max(ng102,k2,t15) = 2520
+   + SOS1_gshed_da_max(ng102,k2,t15) = 0
  SOS1_gshed_da_max(ng102,k0,t16): gshed_da(ng102,k0,t16)
-   + SOS1_gshed_da_max(ng102,k0,t16) = 2565
+   + SOS1_gshed_da_max(ng102,k0,t16) = 0
  SOS1_gshed_da_max(ng102,k1,t16): gshed_da(ng102,k1,t16)
-   + SOS1_gshed_da_max(ng102,k1,t16) = 2565
+   + SOS1_gshed_da_max(ng102,k1,t16) = 0
  SOS1_gshed_da_max(ng102,k2,t16): gshed_da(ng102,k2,t16)
-   + SOS1_gshed_da_max(ng102,k2,t16) = 2565
+   + SOS1_gshed_da_max(ng102,k2,t16) = 0
  SOS1_gshed_da_max(ng102,k0,t17): gshed_da(ng102,k0,t17)
-   + SOS1_gshed_da_max(ng102,k0,t17) = 2700
+   + SOS1_gshed_da_max(ng102,k0,t17) = 0
  SOS1_gshed_da_max(ng102,k1,t17): gshed_da(ng102,k1,t17)
-   + SOS1_gshed_da_max(ng102,k1,t17) = 2700
+   + SOS1_gshed_da_max(ng102,k1,t17) = 0
  SOS1_gshed_da_max(ng102,k2,t17): gshed_da(ng102,k2,t17)
-   + SOS1_gshed_da_max(ng102,k2,t17) = 2700
+   + SOS1_gshed_da_max(ng102,k2,t17) = 0
  SOS1_gshed_da_max(ng102,k0,t18): gshed_da(ng102,k0,t18)
-   + SOS1_gshed_da_max(ng102,k0,t18) = 2700
+   + SOS1_gshed_da_max(ng102,k0,t18) = 0
  SOS1_gshed_da_max(ng102,k1,t18): gshed_da(ng102,k1,t18)
-   + SOS1_gshed_da_max(ng102,k1,t18) = 2700
+   + SOS1_gshed_da_max(ng102,k1,t18) = 0
  SOS1_gshed_da_max(ng102,k2,t18): gshed_da(ng102,k2,t18)
-   + SOS1_gshed_da_max(ng102,k2,t18) = 2700
+   + SOS1_gshed_da_max(ng102,k2,t18) = 0
  SOS1_gshed_da_max(ng102,k0,t19): gshed_da(ng102,k0,t19)
-   + SOS1_gshed_da_max(ng102,k0,t19) = 2700
+   + SOS1_gshed_da_max(ng102,k0,t19) = 0
  SOS1_gshed_da_max(ng102,k1,t19): gshed_da(ng102,k1,t19)
-   + SOS1_gshed_da_max(ng102,k1,t19) = 2700
+   + SOS1_gshed_da_max(ng102,k1,t19) = 0
  SOS1_gshed_da_max(ng102,k2,t19): gshed_da(ng102,k2,t19)
-   + SOS1_gshed_da_max(ng102,k2,t19) = 2700
+   + SOS1_gshed_da_max(ng102,k2,t19) = 0
  SOS1_gshed_da_max(ng102,k0,t20): gshed_da(ng102,k0,t20)
-   + SOS1_gshed_da_max(ng102,k0,t20) = 2610
+   + SOS1_gshed_da_max(ng102,k0,t20) = 0
  SOS1_gshed_da_max(ng102,k1,t20): gshed_da(ng102,k1,t20)
-   + SOS1_gshed_da_max(ng102,k1,t20) = 2610
+   + SOS1_gshed_da_max(ng102,k1,t20) = 0
  SOS1_gshed_da_max(ng102,k2,t20): gshed_da(ng102,k2,t20)
-   + SOS1_gshed_da_max(ng102,k2,t20) = 2610
+   + SOS1_gshed_da_max(ng102,k2,t20) = 0
  SOS1_gshed_da_max(ng102,k0,t21): gshed_da(ng102,k0,t21)
-   + SOS1_gshed_da_max(ng102,k0,t21) = 2475
+   + SOS1_gshed_da_max(ng102,k0,t21) = 0
  SOS1_gshed_da_max(ng102,k1,t21): gshed_da(ng102,k1,t21)
-   + SOS1_gshed_da_max(ng102,k1,t21) = 2475
+   + SOS1_gshed_da_max(ng102,k1,t21) = 0
  SOS1_gshed_da_max(ng102,k2,t21): gshed_da(ng102,k2,t21)
-   + SOS1_gshed_da_max(ng102,k2,t21) = 2475
+   + SOS1_gshed_da_max(ng102,k2,t21) = 0
  SOS1_gshed_da_max(ng102,k0,t22): gshed_da(ng102,k0,t22)
-   + SOS1_gshed_da_max(ng102,k0,t22) = 2250
+   + SOS1_gshed_da_max(ng102,k0,t22) = 0
  SOS1_gshed_da_max(ng102,k1,t22): gshed_da(ng102,k1,t22)
-   + SOS1_gshed_da_max(ng102,k1,t22) = 2250
+   + SOS1_gshed_da_max(ng102,k1,t22) = 0
  SOS1_gshed_da_max(ng102,k2,t22): gshed_da(ng102,k2,t22)
-   + SOS1_gshed_da_max(ng102,k2,t22) = 2250
+   + SOS1_gshed_da_max(ng102,k2,t22) = 0
  SOS1_gshed_da_max(ng102,k0,t23): gshed_da(ng102,k0,t23)
-   + SOS1_gshed_da_max(ng102,k0,t23) = 1980
+   + SOS1_gshed_da_max(ng102,k0,t23) = 0
  SOS1_gshed_da_max(ng102,k1,t23): gshed_da(ng102,k1,t23)
-   + SOS1_gshed_da_max(ng102,k1,t23) = 1980
+   + SOS1_gshed_da_max(ng102,k1,t23) = 0
  SOS1_gshed_da_max(ng102,k2,t23): gshed_da(ng102,k2,t23)
-   + SOS1_gshed_da_max(ng102,k2,t23) = 1980
+   + SOS1_gshed_da_max(ng102,k2,t23) = 0
  SOS1_gshed_da_max(ng102,k0,t24): gshed_da(ng102,k0,t24)
-   + SOS1_gshed_da_max(ng102,k0,t24) = 2010
+   + SOS1_gshed_da_max(ng102,k0,t24) = 0
  SOS1_gshed_da_max(ng102,k1,t24): gshed_da(ng102,k1,t24)
-   + SOS1_gshed_da_max(ng102,k1,t24) = 2010
+   + SOS1_gshed_da_max(ng102,k1,t24) = 0
  SOS1_gshed_da_max(ng102,k2,t24): gshed_da(ng102,k2,t24)
-   + SOS1_gshed_da_max(ng102,k2,t24) = 2010
+   + SOS1_gshed_da_max(ng102,k2,t24) = 0
  SOS1_gprod_max(gw1,k0,t1): gprod(gw1,k0,t1) + SOS1_gprod_max(gw1,k0,t1)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t2): gprod(gw1,k0,t2) + SOS1_gprod_max(gw1,k0,t2)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t3): gprod(gw1,k0,t3) + SOS1_gprod_max(gw1,k0,t3)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t4): gprod(gw1,k0,t4) + SOS1_gprod_max(gw1,k0,t4)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t5): gprod(gw1,k0,t5) + SOS1_gprod_max(gw1,k0,t5)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t6): gprod(gw1,k0,t6) + SOS1_gprod_max(gw1,k0,t6)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t7): gprod(gw1,k0,t7) + SOS1_gprod_max(gw1,k0,t7)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t8): gprod(gw1,k0,t8) + SOS1_gprod_max(gw1,k0,t8)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t9): gprod(gw1,k0,t9) + SOS1_gprod_max(gw1,k0,t9)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t10): gprod(gw1,k0,t10) + SOS1_gprod_max(gw1,k0,t10)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t11): gprod(gw1,k0,t11) + SOS1_gprod_max(gw1,k0,t11)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t12): gprod(gw1,k0,t12) + SOS1_gprod_max(gw1,k0,t12)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t13): gprod(gw1,k0,t13) + SOS1_gprod_max(gw1,k0,t13)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t14): gprod(gw1,k0,t14) + SOS1_gprod_max(gw1,k0,t14)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t15): gprod(gw1,k0,t15) + SOS1_gprod_max(gw1,k0,t15)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t16): gprod(gw1,k0,t16) + SOS1_gprod_max(gw1,k0,t16)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t17): gprod(gw1,k0,t17) + SOS1_gprod_max(gw1,k0,t17)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t18): gprod(gw1,k0,t18) + SOS1_gprod_max(gw1,k0,t18)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t19): gprod(gw1,k0,t19) + SOS1_gprod_max(gw1,k0,t19)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t20): gprod(gw1,k0,t20) + SOS1_gprod_max(gw1,k0,t20)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t21): gprod(gw1,k0,t21) + SOS1_gprod_max(gw1,k0,t21)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t22): gprod(gw1,k0,t22) + SOS1_gprod_max(gw1,k0,t22)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t23): gprod(gw1,k0,t23) + SOS1_gprod_max(gw1,k0,t23)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k0,t24): gprod(gw1,k0,t24) + SOS1_gprod_max(gw1,k0,t24)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t1): gprod(gw1,k1,t1) + SOS1_gprod_max(gw1,k1,t1)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t2): gprod(gw1,k1,t2) + SOS1_gprod_max(gw1,k1,t2)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t3): gprod(gw1,k1,t3) + SOS1_gprod_max(gw1,k1,t3)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t4): gprod(gw1,k1,t4) + SOS1_gprod_max(gw1,k1,t4)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t5): gprod(gw1,k1,t5) + SOS1_gprod_max(gw1,k1,t5)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t6): gprod(gw1,k1,t6) + SOS1_gprod_max(gw1,k1,t6)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t7): gprod(gw1,k1,t7) + SOS1_gprod_max(gw1,k1,t7)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t8): gprod(gw1,k1,t8) + SOS1_gprod_max(gw1,k1,t8)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t9): gprod(gw1,k1,t9) + SOS1_gprod_max(gw1,k1,t9)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t10): gprod(gw1,k1,t10) + SOS1_gprod_max(gw1,k1,t10)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t11): gprod(gw1,k1,t11) + SOS1_gprod_max(gw1,k1,t11)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t12): gprod(gw1,k1,t12) + SOS1_gprod_max(gw1,k1,t12)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t13): gprod(gw1,k1,t13) + SOS1_gprod_max(gw1,k1,t13)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t14): gprod(gw1,k1,t14) + SOS1_gprod_max(gw1,k1,t14)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t15): gprod(gw1,k1,t15) + SOS1_gprod_max(gw1,k1,t15)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t16): gprod(gw1,k1,t16) + SOS1_gprod_max(gw1,k1,t16)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t17): gprod(gw1,k1,t17) + SOS1_gprod_max(gw1,k1,t17)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t18): gprod(gw1,k1,t18) + SOS1_gprod_max(gw1,k1,t18)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t19): gprod(gw1,k1,t19) + SOS1_gprod_max(gw1,k1,t19)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t20): gprod(gw1,k1,t20) + SOS1_gprod_max(gw1,k1,t20)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t21): gprod(gw1,k1,t21) + SOS1_gprod_max(gw1,k1,t21)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t22): gprod(gw1,k1,t22) + SOS1_gprod_max(gw1,k1,t22)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t23): gprod(gw1,k1,t23) + SOS1_gprod_max(gw1,k1,t23)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k1,t24): gprod(gw1,k1,t24) + SOS1_gprod_max(gw1,k1,t24)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t1): gprod(gw1,k2,t1) + SOS1_gprod_max(gw1,k2,t1)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t2): gprod(gw1,k2,t2) + SOS1_gprod_max(gw1,k2,t2)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t3): gprod(gw1,k2,t3) + SOS1_gprod_max(gw1,k2,t3)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t4): gprod(gw1,k2,t4) + SOS1_gprod_max(gw1,k2,t4)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t5): gprod(gw1,k2,t5) + SOS1_gprod_max(gw1,k2,t5)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t6): gprod(gw1,k2,t6) + SOS1_gprod_max(gw1,k2,t6)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t7): gprod(gw1,k2,t7) + SOS1_gprod_max(gw1,k2,t7)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t8): gprod(gw1,k2,t8) + SOS1_gprod_max(gw1,k2,t8)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t9): gprod(gw1,k2,t9) + SOS1_gprod_max(gw1,k2,t9)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t10): gprod(gw1,k2,t10) + SOS1_gprod_max(gw1,k2,t10)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t11): gprod(gw1,k2,t11) + SOS1_gprod_max(gw1,k2,t11)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t12): gprod(gw1,k2,t12) + SOS1_gprod_max(gw1,k2,t12)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t13): gprod(gw1,k2,t13) + SOS1_gprod_max(gw1,k2,t13)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t14): gprod(gw1,k2,t14) + SOS1_gprod_max(gw1,k2,t14)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t15): gprod(gw1,k2,t15) + SOS1_gprod_max(gw1,k2,t15)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t16): gprod(gw1,k2,t16) + SOS1_gprod_max(gw1,k2,t16)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t17): gprod(gw1,k2,t17) + SOS1_gprod_max(gw1,k2,t17)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t18): gprod(gw1,k2,t18) + SOS1_gprod_max(gw1,k2,t18)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t19): gprod(gw1,k2,t19) + SOS1_gprod_max(gw1,k2,t19)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t20): gprod(gw1,k2,t20) + SOS1_gprod_max(gw1,k2,t20)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t21): gprod(gw1,k2,t21) + SOS1_gprod_max(gw1,k2,t21)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t22): gprod(gw1,k2,t22) + SOS1_gprod_max(gw1,k2,t22)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t23): gprod(gw1,k2,t23) + SOS1_gprod_max(gw1,k2,t23)
-   = 5230
+   = 250
  SOS1_gprod_max(gw1,k2,t24): gprod(gw1,k2,t24) + SOS1_gprod_max(gw1,k2,t24)
-   = 5230
+   = 250
  SOS1_gprod_max(gw2,k0,t1): gprod(gw2,k0,t1) + SOS1_gprod_max(gw2,k0,t1)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t2): gprod(gw2,k0,t2) + SOS1_gprod_max(gw2,k0,t2)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t3): gprod(gw2,k0,t3) + SOS1_gprod_max(gw2,k0,t3)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t4): gprod(gw2,k0,t4) + SOS1_gprod_max(gw2,k0,t4)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t5): gprod(gw2,k0,t5) + SOS1_gprod_max(gw2,k0,t5)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t6): gprod(gw2,k0,t6) + SOS1_gprod_max(gw2,k0,t6)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t7): gprod(gw2,k0,t7) + SOS1_gprod_max(gw2,k0,t7)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t8): gprod(gw2,k0,t8) + SOS1_gprod_max(gw2,k0,t8)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t9): gprod(gw2,k0,t9) + SOS1_gprod_max(gw2,k0,t9)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t10): gprod(gw2,k0,t10) + SOS1_gprod_max(gw2,k0,t10)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t11): gprod(gw2,k0,t11) + SOS1_gprod_max(gw2,k0,t11)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t12): gprod(gw2,k0,t12) + SOS1_gprod_max(gw2,k0,t12)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t13): gprod(gw2,k0,t13) + SOS1_gprod_max(gw2,k0,t13)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t14): gprod(gw2,k0,t14) + SOS1_gprod_max(gw2,k0,t14)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t15): gprod(gw2,k0,t15) + SOS1_gprod_max(gw2,k0,t15)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t16): gprod(gw2,k0,t16) + SOS1_gprod_max(gw2,k0,t16)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t17): gprod(gw2,k0,t17) + SOS1_gprod_max(gw2,k0,t17)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t18): gprod(gw2,k0,t18) + SOS1_gprod_max(gw2,k0,t18)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t19): gprod(gw2,k0,t19) + SOS1_gprod_max(gw2,k0,t19)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t20): gprod(gw2,k0,t20) + SOS1_gprod_max(gw2,k0,t20)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t21): gprod(gw2,k0,t21) + SOS1_gprod_max(gw2,k0,t21)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t22): gprod(gw2,k0,t22) + SOS1_gprod_max(gw2,k0,t22)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t23): gprod(gw2,k0,t23) + SOS1_gprod_max(gw2,k0,t23)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k0,t24): gprod(gw2,k0,t24) + SOS1_gprod_max(gw2,k0,t24)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t1): gprod(gw2,k1,t1) + SOS1_gprod_max(gw2,k1,t1)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t2): gprod(gw2,k1,t2) + SOS1_gprod_max(gw2,k1,t2)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t3): gprod(gw2,k1,t3) + SOS1_gprod_max(gw2,k1,t3)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t4): gprod(gw2,k1,t4) + SOS1_gprod_max(gw2,k1,t4)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t5): gprod(gw2,k1,t5) + SOS1_gprod_max(gw2,k1,t5)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t6): gprod(gw2,k1,t6) + SOS1_gprod_max(gw2,k1,t6)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t7): gprod(gw2,k1,t7) + SOS1_gprod_max(gw2,k1,t7)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t8): gprod(gw2,k1,t8) + SOS1_gprod_max(gw2,k1,t8)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t9): gprod(gw2,k1,t9) + SOS1_gprod_max(gw2,k1,t9)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t10): gprod(gw2,k1,t10) + SOS1_gprod_max(gw2,k1,t10)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t11): gprod(gw2,k1,t11) + SOS1_gprod_max(gw2,k1,t11)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t12): gprod(gw2,k1,t12) + SOS1_gprod_max(gw2,k1,t12)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t13): gprod(gw2,k1,t13) + SOS1_gprod_max(gw2,k1,t13)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t14): gprod(gw2,k1,t14) + SOS1_gprod_max(gw2,k1,t14)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t15): gprod(gw2,k1,t15) + SOS1_gprod_max(gw2,k1,t15)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t16): gprod(gw2,k1,t16) + SOS1_gprod_max(gw2,k1,t16)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t17): gprod(gw2,k1,t17) + SOS1_gprod_max(gw2,k1,t17)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t18): gprod(gw2,k1,t18) + SOS1_gprod_max(gw2,k1,t18)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t19): gprod(gw2,k1,t19) + SOS1_gprod_max(gw2,k1,t19)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t20): gprod(gw2,k1,t20) + SOS1_gprod_max(gw2,k1,t20)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t21): gprod(gw2,k1,t21) + SOS1_gprod_max(gw2,k1,t21)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t22): gprod(gw2,k1,t22) + SOS1_gprod_max(gw2,k1,t22)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t23): gprod(gw2,k1,t23) + SOS1_gprod_max(gw2,k1,t23)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k1,t24): gprod(gw2,k1,t24) + SOS1_gprod_max(gw2,k1,t24)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t1): gprod(gw2,k2,t1) + SOS1_gprod_max(gw2,k2,t1)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t2): gprod(gw2,k2,t2) + SOS1_gprod_max(gw2,k2,t2)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t3): gprod(gw2,k2,t3) + SOS1_gprod_max(gw2,k2,t3)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t4): gprod(gw2,k2,t4) + SOS1_gprod_max(gw2,k2,t4)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t5): gprod(gw2,k2,t5) + SOS1_gprod_max(gw2,k2,t5)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t6): gprod(gw2,k2,t6) + SOS1_gprod_max(gw2,k2,t6)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t7): gprod(gw2,k2,t7) + SOS1_gprod_max(gw2,k2,t7)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t8): gprod(gw2,k2,t8) + SOS1_gprod_max(gw2,k2,t8)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t9): gprod(gw2,k2,t9) + SOS1_gprod_max(gw2,k2,t9)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t10): gprod(gw2,k2,t10) + SOS1_gprod_max(gw2,k2,t10)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t11): gprod(gw2,k2,t11) + SOS1_gprod_max(gw2,k2,t11)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t12): gprod(gw2,k2,t12) + SOS1_gprod_max(gw2,k2,t12)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t13): gprod(gw2,k2,t13) + SOS1_gprod_max(gw2,k2,t13)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t14): gprod(gw2,k2,t14) + SOS1_gprod_max(gw2,k2,t14)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t15): gprod(gw2,k2,t15) + SOS1_gprod_max(gw2,k2,t15)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t16): gprod(gw2,k2,t16) + SOS1_gprod_max(gw2,k2,t16)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t17): gprod(gw2,k2,t17) + SOS1_gprod_max(gw2,k2,t17)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t18): gprod(gw2,k2,t18) + SOS1_gprod_max(gw2,k2,t18)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t19): gprod(gw2,k2,t19) + SOS1_gprod_max(gw2,k2,t19)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t20): gprod(gw2,k2,t20) + SOS1_gprod_max(gw2,k2,t20)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t21): gprod(gw2,k2,t21) + SOS1_gprod_max(gw2,k2,t21)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t22): gprod(gw2,k2,t22) + SOS1_gprod_max(gw2,k2,t22)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t23): gprod(gw2,k2,t23) + SOS1_gprod_max(gw2,k2,t23)
-   = 370
+   = 100
  SOS1_gprod_max(gw2,k2,t24): gprod(gw2,k2,t24) + SOS1_gprod_max(gw2,k2,t24)
-   = 370
+   = 100
+ SOS1_gprod_max(gw3,k0,t1): gprod(gw3,k0,t1) + SOS1_gprod_max(gw3,k0,t1)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t2): gprod(gw3,k0,t2) + SOS1_gprod_max(gw3,k0,t2)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t3): gprod(gw3,k0,t3) + SOS1_gprod_max(gw3,k0,t3)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t4): gprod(gw3,k0,t4) + SOS1_gprod_max(gw3,k0,t4)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t5): gprod(gw3,k0,t5) + SOS1_gprod_max(gw3,k0,t5)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t6): gprod(gw3,k0,t6) + SOS1_gprod_max(gw3,k0,t6)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t7): gprod(gw3,k0,t7) + SOS1_gprod_max(gw3,k0,t7)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t8): gprod(gw3,k0,t8) + SOS1_gprod_max(gw3,k0,t8)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t9): gprod(gw3,k0,t9) + SOS1_gprod_max(gw3,k0,t9)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t10): gprod(gw3,k0,t10) + SOS1_gprod_max(gw3,k0,t10)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t11): gprod(gw3,k0,t11) + SOS1_gprod_max(gw3,k0,t11)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t12): gprod(gw3,k0,t12) + SOS1_gprod_max(gw3,k0,t12)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t13): gprod(gw3,k0,t13) + SOS1_gprod_max(gw3,k0,t13)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t14): gprod(gw3,k0,t14) + SOS1_gprod_max(gw3,k0,t14)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t15): gprod(gw3,k0,t15) + SOS1_gprod_max(gw3,k0,t15)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t16): gprod(gw3,k0,t16) + SOS1_gprod_max(gw3,k0,t16)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t17): gprod(gw3,k0,t17) + SOS1_gprod_max(gw3,k0,t17)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t18): gprod(gw3,k0,t18) + SOS1_gprod_max(gw3,k0,t18)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t19): gprod(gw3,k0,t19) + SOS1_gprod_max(gw3,k0,t19)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t20): gprod(gw3,k0,t20) + SOS1_gprod_max(gw3,k0,t20)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t21): gprod(gw3,k0,t21) + SOS1_gprod_max(gw3,k0,t21)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t22): gprod(gw3,k0,t22) + SOS1_gprod_max(gw3,k0,t22)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t23): gprod(gw3,k0,t23) + SOS1_gprod_max(gw3,k0,t23)
+   = 2000
+ SOS1_gprod_max(gw3,k0,t24): gprod(gw3,k0,t24) + SOS1_gprod_max(gw3,k0,t24)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t1): gprod(gw3,k1,t1) + SOS1_gprod_max(gw3,k1,t1)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t2): gprod(gw3,k1,t2) + SOS1_gprod_max(gw3,k1,t2)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t3): gprod(gw3,k1,t3) + SOS1_gprod_max(gw3,k1,t3)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t4): gprod(gw3,k1,t4) + SOS1_gprod_max(gw3,k1,t4)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t5): gprod(gw3,k1,t5) + SOS1_gprod_max(gw3,k1,t5)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t6): gprod(gw3,k1,t6) + SOS1_gprod_max(gw3,k1,t6)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t7): gprod(gw3,k1,t7) + SOS1_gprod_max(gw3,k1,t7)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t8): gprod(gw3,k1,t8) + SOS1_gprod_max(gw3,k1,t8)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t9): gprod(gw3,k1,t9) + SOS1_gprod_max(gw3,k1,t9)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t10): gprod(gw3,k1,t10) + SOS1_gprod_max(gw3,k1,t10)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t11): gprod(gw3,k1,t11) + SOS1_gprod_max(gw3,k1,t11)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t12): gprod(gw3,k1,t12) + SOS1_gprod_max(gw3,k1,t12)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t13): gprod(gw3,k1,t13) + SOS1_gprod_max(gw3,k1,t13)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t14): gprod(gw3,k1,t14) + SOS1_gprod_max(gw3,k1,t14)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t15): gprod(gw3,k1,t15) + SOS1_gprod_max(gw3,k1,t15)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t16): gprod(gw3,k1,t16) + SOS1_gprod_max(gw3,k1,t16)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t17): gprod(gw3,k1,t17) + SOS1_gprod_max(gw3,k1,t17)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t18): gprod(gw3,k1,t18) + SOS1_gprod_max(gw3,k1,t18)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t19): gprod(gw3,k1,t19) + SOS1_gprod_max(gw3,k1,t19)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t20): gprod(gw3,k1,t20) + SOS1_gprod_max(gw3,k1,t20)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t21): gprod(gw3,k1,t21) + SOS1_gprod_max(gw3,k1,t21)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t22): gprod(gw3,k1,t22) + SOS1_gprod_max(gw3,k1,t22)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t23): gprod(gw3,k1,t23) + SOS1_gprod_max(gw3,k1,t23)
+   = 2000
+ SOS1_gprod_max(gw3,k1,t24): gprod(gw3,k1,t24) + SOS1_gprod_max(gw3,k1,t24)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t1): gprod(gw3,k2,t1) + SOS1_gprod_max(gw3,k2,t1)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t2): gprod(gw3,k2,t2) + SOS1_gprod_max(gw3,k2,t2)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t3): gprod(gw3,k2,t3) + SOS1_gprod_max(gw3,k2,t3)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t4): gprod(gw3,k2,t4) + SOS1_gprod_max(gw3,k2,t4)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t5): gprod(gw3,k2,t5) + SOS1_gprod_max(gw3,k2,t5)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t6): gprod(gw3,k2,t6) + SOS1_gprod_max(gw3,k2,t6)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t7): gprod(gw3,k2,t7) + SOS1_gprod_max(gw3,k2,t7)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t8): gprod(gw3,k2,t8) + SOS1_gprod_max(gw3,k2,t8)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t9): gprod(gw3,k2,t9) + SOS1_gprod_max(gw3,k2,t9)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t10): gprod(gw3,k2,t10) + SOS1_gprod_max(gw3,k2,t10)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t11): gprod(gw3,k2,t11) + SOS1_gprod_max(gw3,k2,t11)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t12): gprod(gw3,k2,t12) + SOS1_gprod_max(gw3,k2,t12)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t13): gprod(gw3,k2,t13) + SOS1_gprod_max(gw3,k2,t13)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t14): gprod(gw3,k2,t14) + SOS1_gprod_max(gw3,k2,t14)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t15): gprod(gw3,k2,t15) + SOS1_gprod_max(gw3,k2,t15)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t16): gprod(gw3,k2,t16) + SOS1_gprod_max(gw3,k2,t16)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t17): gprod(gw3,k2,t17) + SOS1_gprod_max(gw3,k2,t17)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t18): gprod(gw3,k2,t18) + SOS1_gprod_max(gw3,k2,t18)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t19): gprod(gw3,k2,t19) + SOS1_gprod_max(gw3,k2,t19)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t20): gprod(gw3,k2,t20) + SOS1_gprod_max(gw3,k2,t20)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t21): gprod(gw3,k2,t21) + SOS1_gprod_max(gw3,k2,t21)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t22): gprod(gw3,k2,t22) + SOS1_gprod_max(gw3,k2,t22)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t23): gprod(gw3,k2,t23) + SOS1_gprod_max(gw3,k2,t23)
+   = 2000
+ SOS1_gprod_max(gw3,k2,t24): gprod(gw3,k2,t24) + SOS1_gprod_max(gw3,k2,t24)
+   = 2000
  SOS1_gflow_sr_limit(('ng101','ng102'),k0,t1):
    gflow_sr(('ng101','ng102'),k0,t1)
    + SOS1_gflow_sr_limit(('ng101','ng102'),k0,t1) = 4000
@@ -6833,6 +7145,150 @@ Subject To
  SOS1_LB_gprod(gw2,k1,t24): - gprod(gw2,k1,t24) + SOS1_LB_gprod(gw2,k1,t24)
    = 0
  SOS1_LB_gprod(gw2,k2,t24): - gprod(gw2,k2,t24) + SOS1_LB_gprod(gw2,k2,t24)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t1): - gprod(gw3,k0,t1) + SOS1_LB_gprod(gw3,k0,t1)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t1): - gprod(gw3,k1,t1) + SOS1_LB_gprod(gw3,k1,t1)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t1): - gprod(gw3,k2,t1) + SOS1_LB_gprod(gw3,k2,t1)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t2): - gprod(gw3,k0,t2) + SOS1_LB_gprod(gw3,k0,t2)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t2): - gprod(gw3,k1,t2) + SOS1_LB_gprod(gw3,k1,t2)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t2): - gprod(gw3,k2,t2) + SOS1_LB_gprod(gw3,k2,t2)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t3): - gprod(gw3,k0,t3) + SOS1_LB_gprod(gw3,k0,t3)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t3): - gprod(gw3,k1,t3) + SOS1_LB_gprod(gw3,k1,t3)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t3): - gprod(gw3,k2,t3) + SOS1_LB_gprod(gw3,k2,t3)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t4): - gprod(gw3,k0,t4) + SOS1_LB_gprod(gw3,k0,t4)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t4): - gprod(gw3,k1,t4) + SOS1_LB_gprod(gw3,k1,t4)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t4): - gprod(gw3,k2,t4) + SOS1_LB_gprod(gw3,k2,t4)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t5): - gprod(gw3,k0,t5) + SOS1_LB_gprod(gw3,k0,t5)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t5): - gprod(gw3,k1,t5) + SOS1_LB_gprod(gw3,k1,t5)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t5): - gprod(gw3,k2,t5) + SOS1_LB_gprod(gw3,k2,t5)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t6): - gprod(gw3,k0,t6) + SOS1_LB_gprod(gw3,k0,t6)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t6): - gprod(gw3,k1,t6) + SOS1_LB_gprod(gw3,k1,t6)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t6): - gprod(gw3,k2,t6) + SOS1_LB_gprod(gw3,k2,t6)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t7): - gprod(gw3,k0,t7) + SOS1_LB_gprod(gw3,k0,t7)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t7): - gprod(gw3,k1,t7) + SOS1_LB_gprod(gw3,k1,t7)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t7): - gprod(gw3,k2,t7) + SOS1_LB_gprod(gw3,k2,t7)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t8): - gprod(gw3,k0,t8) + SOS1_LB_gprod(gw3,k0,t8)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t8): - gprod(gw3,k1,t8) + SOS1_LB_gprod(gw3,k1,t8)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t8): - gprod(gw3,k2,t8) + SOS1_LB_gprod(gw3,k2,t8)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t9): - gprod(gw3,k0,t9) + SOS1_LB_gprod(gw3,k0,t9)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t9): - gprod(gw3,k1,t9) + SOS1_LB_gprod(gw3,k1,t9)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t9): - gprod(gw3,k2,t9) + SOS1_LB_gprod(gw3,k2,t9)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t10): - gprod(gw3,k0,t10) + SOS1_LB_gprod(gw3,k0,t10)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t10): - gprod(gw3,k1,t10) + SOS1_LB_gprod(gw3,k1,t10)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t10): - gprod(gw3,k2,t10) + SOS1_LB_gprod(gw3,k2,t10)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t11): - gprod(gw3,k0,t11) + SOS1_LB_gprod(gw3,k0,t11)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t11): - gprod(gw3,k1,t11) + SOS1_LB_gprod(gw3,k1,t11)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t11): - gprod(gw3,k2,t11) + SOS1_LB_gprod(gw3,k2,t11)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t12): - gprod(gw3,k0,t12) + SOS1_LB_gprod(gw3,k0,t12)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t12): - gprod(gw3,k1,t12) + SOS1_LB_gprod(gw3,k1,t12)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t12): - gprod(gw3,k2,t12) + SOS1_LB_gprod(gw3,k2,t12)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t13): - gprod(gw3,k0,t13) + SOS1_LB_gprod(gw3,k0,t13)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t13): - gprod(gw3,k1,t13) + SOS1_LB_gprod(gw3,k1,t13)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t13): - gprod(gw3,k2,t13) + SOS1_LB_gprod(gw3,k2,t13)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t14): - gprod(gw3,k0,t14) + SOS1_LB_gprod(gw3,k0,t14)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t14): - gprod(gw3,k1,t14) + SOS1_LB_gprod(gw3,k1,t14)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t14): - gprod(gw3,k2,t14) + SOS1_LB_gprod(gw3,k2,t14)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t15): - gprod(gw3,k0,t15) + SOS1_LB_gprod(gw3,k0,t15)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t15): - gprod(gw3,k1,t15) + SOS1_LB_gprod(gw3,k1,t15)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t15): - gprod(gw3,k2,t15) + SOS1_LB_gprod(gw3,k2,t15)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t16): - gprod(gw3,k0,t16) + SOS1_LB_gprod(gw3,k0,t16)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t16): - gprod(gw3,k1,t16) + SOS1_LB_gprod(gw3,k1,t16)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t16): - gprod(gw3,k2,t16) + SOS1_LB_gprod(gw3,k2,t16)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t17): - gprod(gw3,k0,t17) + SOS1_LB_gprod(gw3,k0,t17)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t17): - gprod(gw3,k1,t17) + SOS1_LB_gprod(gw3,k1,t17)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t17): - gprod(gw3,k2,t17) + SOS1_LB_gprod(gw3,k2,t17)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t18): - gprod(gw3,k0,t18) + SOS1_LB_gprod(gw3,k0,t18)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t18): - gprod(gw3,k1,t18) + SOS1_LB_gprod(gw3,k1,t18)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t18): - gprod(gw3,k2,t18) + SOS1_LB_gprod(gw3,k2,t18)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t19): - gprod(gw3,k0,t19) + SOS1_LB_gprod(gw3,k0,t19)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t19): - gprod(gw3,k1,t19) + SOS1_LB_gprod(gw3,k1,t19)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t19): - gprod(gw3,k2,t19) + SOS1_LB_gprod(gw3,k2,t19)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t20): - gprod(gw3,k0,t20) + SOS1_LB_gprod(gw3,k0,t20)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t20): - gprod(gw3,k1,t20) + SOS1_LB_gprod(gw3,k1,t20)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t20): - gprod(gw3,k2,t20) + SOS1_LB_gprod(gw3,k2,t20)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t21): - gprod(gw3,k0,t21) + SOS1_LB_gprod(gw3,k0,t21)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t21): - gprod(gw3,k1,t21) + SOS1_LB_gprod(gw3,k1,t21)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t21): - gprod(gw3,k2,t21) + SOS1_LB_gprod(gw3,k2,t21)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t22): - gprod(gw3,k0,t22) + SOS1_LB_gprod(gw3,k0,t22)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t22): - gprod(gw3,k1,t22) + SOS1_LB_gprod(gw3,k1,t22)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t22): - gprod(gw3,k2,t22) + SOS1_LB_gprod(gw3,k2,t22)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t23): - gprod(gw3,k0,t23) + SOS1_LB_gprod(gw3,k0,t23)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t23): - gprod(gw3,k1,t23) + SOS1_LB_gprod(gw3,k1,t23)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t23): - gprod(gw3,k2,t23) + SOS1_LB_gprod(gw3,k2,t23)
+   = 0
+ SOS1_LB_gprod(gw3,k0,t24): - gprod(gw3,k0,t24) + SOS1_LB_gprod(gw3,k0,t24)
+   = 0
+ SOS1_LB_gprod(gw3,k1,t24): - gprod(gw3,k1,t24) + SOS1_LB_gprod(gw3,k1,t24)
+   = 0
+ SOS1_LB_gprod(gw3,k2,t24): - gprod(gw3,k2,t24) + SOS1_LB_gprod(gw3,k2,t24)
    = 0
  SOS1_LB_gsin(gs1,t1,k0): - gsin(gs1,t1,k0) + SOS1_LB_gsin(gs1,t1,k0) = 0
  SOS1_LB_gsout(gs1,t1,k0): - gsout(gs1,t1,k0) + SOS1_LB_gsout(gs1,t1,k0)
@@ -8823,6 +9279,150 @@ Subject To
    + mu_gprod_max(gw2,k1,t24) - muLB_gprod(gw2,k1,t24) = 0
  dLag/gprod(gw2,k2,t24): - lambda_gas_balance_da(ng101,k2,t24)
    + mu_gprod_max(gw2,k2,t24) - muLB_gprod(gw2,k2,t24) = 0
+ dLag/gprod(gw3,k0,t1): - lambda_gas_balance_da(ng101,k0,t1)
+   + mu_gprod_max(gw3,k0,t1) - muLB_gprod(gw3,k0,t1) = -4
+ dLag/gprod(gw3,k1,t1): - lambda_gas_balance_da(ng101,k1,t1)
+   + mu_gprod_max(gw3,k1,t1) - muLB_gprod(gw3,k1,t1) = 0
+ dLag/gprod(gw3,k2,t1): - lambda_gas_balance_da(ng101,k2,t1)
+   + mu_gprod_max(gw3,k2,t1) - muLB_gprod(gw3,k2,t1) = 0
+ dLag/gprod(gw3,k0,t2): - lambda_gas_balance_da(ng101,k0,t2)
+   + mu_gprod_max(gw3,k0,t2) - muLB_gprod(gw3,k0,t2) = -4
+ dLag/gprod(gw3,k1,t2): - lambda_gas_balance_da(ng101,k1,t2)
+   + mu_gprod_max(gw3,k1,t2) - muLB_gprod(gw3,k1,t2) = 0
+ dLag/gprod(gw3,k2,t2): - lambda_gas_balance_da(ng101,k2,t2)
+   + mu_gprod_max(gw3,k2,t2) - muLB_gprod(gw3,k2,t2) = 0
+ dLag/gprod(gw3,k0,t3): - lambda_gas_balance_da(ng101,k0,t3)
+   + mu_gprod_max(gw3,k0,t3) - muLB_gprod(gw3,k0,t3) = -4
+ dLag/gprod(gw3,k1,t3): - lambda_gas_balance_da(ng101,k1,t3)
+   + mu_gprod_max(gw3,k1,t3) - muLB_gprod(gw3,k1,t3) = 0
+ dLag/gprod(gw3,k2,t3): - lambda_gas_balance_da(ng101,k2,t3)
+   + mu_gprod_max(gw3,k2,t3) - muLB_gprod(gw3,k2,t3) = 0
+ dLag/gprod(gw3,k0,t4): - lambda_gas_balance_da(ng101,k0,t4)
+   + mu_gprod_max(gw3,k0,t4) - muLB_gprod(gw3,k0,t4) = -4
+ dLag/gprod(gw3,k1,t4): - lambda_gas_balance_da(ng101,k1,t4)
+   + mu_gprod_max(gw3,k1,t4) - muLB_gprod(gw3,k1,t4) = 0
+ dLag/gprod(gw3,k2,t4): - lambda_gas_balance_da(ng101,k2,t4)
+   + mu_gprod_max(gw3,k2,t4) - muLB_gprod(gw3,k2,t4) = 0
+ dLag/gprod(gw3,k0,t5): - lambda_gas_balance_da(ng101,k0,t5)
+   + mu_gprod_max(gw3,k0,t5) - muLB_gprod(gw3,k0,t5) = -4
+ dLag/gprod(gw3,k1,t5): - lambda_gas_balance_da(ng101,k1,t5)
+   + mu_gprod_max(gw3,k1,t5) - muLB_gprod(gw3,k1,t5) = 0
+ dLag/gprod(gw3,k2,t5): - lambda_gas_balance_da(ng101,k2,t5)
+   + mu_gprod_max(gw3,k2,t5) - muLB_gprod(gw3,k2,t5) = 0
+ dLag/gprod(gw3,k0,t6): - lambda_gas_balance_da(ng101,k0,t6)
+   + mu_gprod_max(gw3,k0,t6) - muLB_gprod(gw3,k0,t6) = -4
+ dLag/gprod(gw3,k1,t6): - lambda_gas_balance_da(ng101,k1,t6)
+   + mu_gprod_max(gw3,k1,t6) - muLB_gprod(gw3,k1,t6) = 0
+ dLag/gprod(gw3,k2,t6): - lambda_gas_balance_da(ng101,k2,t6)
+   + mu_gprod_max(gw3,k2,t6) - muLB_gprod(gw3,k2,t6) = 0
+ dLag/gprod(gw3,k0,t7): - lambda_gas_balance_da(ng101,k0,t7)
+   + mu_gprod_max(gw3,k0,t7) - muLB_gprod(gw3,k0,t7) = -4
+ dLag/gprod(gw3,k1,t7): - lambda_gas_balance_da(ng101,k1,t7)
+   + mu_gprod_max(gw3,k1,t7) - muLB_gprod(gw3,k1,t7) = 0
+ dLag/gprod(gw3,k2,t7): - lambda_gas_balance_da(ng101,k2,t7)
+   + mu_gprod_max(gw3,k2,t7) - muLB_gprod(gw3,k2,t7) = 0
+ dLag/gprod(gw3,k0,t8): - lambda_gas_balance_da(ng101,k0,t8)
+   + mu_gprod_max(gw3,k0,t8) - muLB_gprod(gw3,k0,t8) = -4
+ dLag/gprod(gw3,k1,t8): - lambda_gas_balance_da(ng101,k1,t8)
+   + mu_gprod_max(gw3,k1,t8) - muLB_gprod(gw3,k1,t8) = 0
+ dLag/gprod(gw3,k2,t8): - lambda_gas_balance_da(ng101,k2,t8)
+   + mu_gprod_max(gw3,k2,t8) - muLB_gprod(gw3,k2,t8) = 0
+ dLag/gprod(gw3,k0,t9): - lambda_gas_balance_da(ng101,k0,t9)
+   + mu_gprod_max(gw3,k0,t9) - muLB_gprod(gw3,k0,t9) = -4
+ dLag/gprod(gw3,k1,t9): - lambda_gas_balance_da(ng101,k1,t9)
+   + mu_gprod_max(gw3,k1,t9) - muLB_gprod(gw3,k1,t9) = 0
+ dLag/gprod(gw3,k2,t9): - lambda_gas_balance_da(ng101,k2,t9)
+   + mu_gprod_max(gw3,k2,t9) - muLB_gprod(gw3,k2,t9) = 0
+ dLag/gprod(gw3,k0,t10): - lambda_gas_balance_da(ng101,k0,t10)
+   + mu_gprod_max(gw3,k0,t10) - muLB_gprod(gw3,k0,t10) = -4
+ dLag/gprod(gw3,k1,t10): - lambda_gas_balance_da(ng101,k1,t10)
+   + mu_gprod_max(gw3,k1,t10) - muLB_gprod(gw3,k1,t10) = 0
+ dLag/gprod(gw3,k2,t10): - lambda_gas_balance_da(ng101,k2,t10)
+   + mu_gprod_max(gw3,k2,t10) - muLB_gprod(gw3,k2,t10) = 0
+ dLag/gprod(gw3,k0,t11): - lambda_gas_balance_da(ng101,k0,t11)
+   + mu_gprod_max(gw3,k0,t11) - muLB_gprod(gw3,k0,t11) = -4
+ dLag/gprod(gw3,k1,t11): - lambda_gas_balance_da(ng101,k1,t11)
+   + mu_gprod_max(gw3,k1,t11) - muLB_gprod(gw3,k1,t11) = 0
+ dLag/gprod(gw3,k2,t11): - lambda_gas_balance_da(ng101,k2,t11)
+   + mu_gprod_max(gw3,k2,t11) - muLB_gprod(gw3,k2,t11) = 0
+ dLag/gprod(gw3,k0,t12): - lambda_gas_balance_da(ng101,k0,t12)
+   + mu_gprod_max(gw3,k0,t12) - muLB_gprod(gw3,k0,t12) = -4
+ dLag/gprod(gw3,k1,t12): - lambda_gas_balance_da(ng101,k1,t12)
+   + mu_gprod_max(gw3,k1,t12) - muLB_gprod(gw3,k1,t12) = 0
+ dLag/gprod(gw3,k2,t12): - lambda_gas_balance_da(ng101,k2,t12)
+   + mu_gprod_max(gw3,k2,t12) - muLB_gprod(gw3,k2,t12) = 0
+ dLag/gprod(gw3,k0,t13): - lambda_gas_balance_da(ng101,k0,t13)
+   + mu_gprod_max(gw3,k0,t13) - muLB_gprod(gw3,k0,t13) = -4
+ dLag/gprod(gw3,k1,t13): - lambda_gas_balance_da(ng101,k1,t13)
+   + mu_gprod_max(gw3,k1,t13) - muLB_gprod(gw3,k1,t13) = 0
+ dLag/gprod(gw3,k2,t13): - lambda_gas_balance_da(ng101,k2,t13)
+   + mu_gprod_max(gw3,k2,t13) - muLB_gprod(gw3,k2,t13) = 0
+ dLag/gprod(gw3,k0,t14): - lambda_gas_balance_da(ng101,k0,t14)
+   + mu_gprod_max(gw3,k0,t14) - muLB_gprod(gw3,k0,t14) = -4
+ dLag/gprod(gw3,k1,t14): - lambda_gas_balance_da(ng101,k1,t14)
+   + mu_gprod_max(gw3,k1,t14) - muLB_gprod(gw3,k1,t14) = 0
+ dLag/gprod(gw3,k2,t14): - lambda_gas_balance_da(ng101,k2,t14)
+   + mu_gprod_max(gw3,k2,t14) - muLB_gprod(gw3,k2,t14) = 0
+ dLag/gprod(gw3,k0,t15): - lambda_gas_balance_da(ng101,k0,t15)
+   + mu_gprod_max(gw3,k0,t15) - muLB_gprod(gw3,k0,t15) = -4
+ dLag/gprod(gw3,k1,t15): - lambda_gas_balance_da(ng101,k1,t15)
+   + mu_gprod_max(gw3,k1,t15) - muLB_gprod(gw3,k1,t15) = 0
+ dLag/gprod(gw3,k2,t15): - lambda_gas_balance_da(ng101,k2,t15)
+   + mu_gprod_max(gw3,k2,t15) - muLB_gprod(gw3,k2,t15) = 0
+ dLag/gprod(gw3,k0,t16): - lambda_gas_balance_da(ng101,k0,t16)
+   + mu_gprod_max(gw3,k0,t16) - muLB_gprod(gw3,k0,t16) = -4
+ dLag/gprod(gw3,k1,t16): - lambda_gas_balance_da(ng101,k1,t16)
+   + mu_gprod_max(gw3,k1,t16) - muLB_gprod(gw3,k1,t16) = 0
+ dLag/gprod(gw3,k2,t16): - lambda_gas_balance_da(ng101,k2,t16)
+   + mu_gprod_max(gw3,k2,t16) - muLB_gprod(gw3,k2,t16) = 0
+ dLag/gprod(gw3,k0,t17): - lambda_gas_balance_da(ng101,k0,t17)
+   + mu_gprod_max(gw3,k0,t17) - muLB_gprod(gw3,k0,t17) = -4
+ dLag/gprod(gw3,k1,t17): - lambda_gas_balance_da(ng101,k1,t17)
+   + mu_gprod_max(gw3,k1,t17) - muLB_gprod(gw3,k1,t17) = 0
+ dLag/gprod(gw3,k2,t17): - lambda_gas_balance_da(ng101,k2,t17)
+   + mu_gprod_max(gw3,k2,t17) - muLB_gprod(gw3,k2,t17) = 0
+ dLag/gprod(gw3,k0,t18): - lambda_gas_balance_da(ng101,k0,t18)
+   + mu_gprod_max(gw3,k0,t18) - muLB_gprod(gw3,k0,t18) = -4
+ dLag/gprod(gw3,k1,t18): - lambda_gas_balance_da(ng101,k1,t18)
+   + mu_gprod_max(gw3,k1,t18) - muLB_gprod(gw3,k1,t18) = 0
+ dLag/gprod(gw3,k2,t18): - lambda_gas_balance_da(ng101,k2,t18)
+   + mu_gprod_max(gw3,k2,t18) - muLB_gprod(gw3,k2,t18) = 0
+ dLag/gprod(gw3,k0,t19): - lambda_gas_balance_da(ng101,k0,t19)
+   + mu_gprod_max(gw3,k0,t19) - muLB_gprod(gw3,k0,t19) = -4
+ dLag/gprod(gw3,k1,t19): - lambda_gas_balance_da(ng101,k1,t19)
+   + mu_gprod_max(gw3,k1,t19) - muLB_gprod(gw3,k1,t19) = 0
+ dLag/gprod(gw3,k2,t19): - lambda_gas_balance_da(ng101,k2,t19)
+   + mu_gprod_max(gw3,k2,t19) - muLB_gprod(gw3,k2,t19) = 0
+ dLag/gprod(gw3,k0,t20): - lambda_gas_balance_da(ng101,k0,t20)
+   + mu_gprod_max(gw3,k0,t20) - muLB_gprod(gw3,k0,t20) = -4
+ dLag/gprod(gw3,k1,t20): - lambda_gas_balance_da(ng101,k1,t20)
+   + mu_gprod_max(gw3,k1,t20) - muLB_gprod(gw3,k1,t20) = 0
+ dLag/gprod(gw3,k2,t20): - lambda_gas_balance_da(ng101,k2,t20)
+   + mu_gprod_max(gw3,k2,t20) - muLB_gprod(gw3,k2,t20) = 0
+ dLag/gprod(gw3,k0,t21): - lambda_gas_balance_da(ng101,k0,t21)
+   + mu_gprod_max(gw3,k0,t21) - muLB_gprod(gw3,k0,t21) = -4
+ dLag/gprod(gw3,k1,t21): - lambda_gas_balance_da(ng101,k1,t21)
+   + mu_gprod_max(gw3,k1,t21) - muLB_gprod(gw3,k1,t21) = 0
+ dLag/gprod(gw3,k2,t21): - lambda_gas_balance_da(ng101,k2,t21)
+   + mu_gprod_max(gw3,k2,t21) - muLB_gprod(gw3,k2,t21) = 0
+ dLag/gprod(gw3,k0,t22): - lambda_gas_balance_da(ng101,k0,t22)
+   + mu_gprod_max(gw3,k0,t22) - muLB_gprod(gw3,k0,t22) = -4
+ dLag/gprod(gw3,k1,t22): - lambda_gas_balance_da(ng101,k1,t22)
+   + mu_gprod_max(gw3,k1,t22) - muLB_gprod(gw3,k1,t22) = 0
+ dLag/gprod(gw3,k2,t22): - lambda_gas_balance_da(ng101,k2,t22)
+   + mu_gprod_max(gw3,k2,t22) - muLB_gprod(gw3,k2,t22) = 0
+ dLag/gprod(gw3,k0,t23): - lambda_gas_balance_da(ng101,k0,t23)
+   + mu_gprod_max(gw3,k0,t23) - muLB_gprod(gw3,k0,t23) = -4
+ dLag/gprod(gw3,k1,t23): - lambda_gas_balance_da(ng101,k1,t23)
+   + mu_gprod_max(gw3,k1,t23) - muLB_gprod(gw3,k1,t23) = 0
+ dLag/gprod(gw3,k2,t23): - lambda_gas_balance_da(ng101,k2,t23)
+   + mu_gprod_max(gw3,k2,t23) - muLB_gprod(gw3,k2,t23) = 0
+ dLag/gprod(gw3,k0,t24): - lambda_gas_balance_da(ng101,k0,t24)
+   + mu_gprod_max(gw3,k0,t24) - muLB_gprod(gw3,k0,t24) = -4
+ dLag/gprod(gw3,k1,t24): - lambda_gas_balance_da(ng101,k1,t24)
+   + mu_gprod_max(gw3,k1,t24) - muLB_gprod(gw3,k1,t24) = 0
+ dLag/gprod(gw3,k2,t24): - lambda_gas_balance_da(ng101,k2,t24)
+   + mu_gprod_max(gw3,k2,t24) - muLB_gprod(gw3,k2,t24) = 0
  dLag/gsin(gs1,t1,k0): lambda_gas_balance_da(ng102,k0,t1)
    + mu_gsinMax(gs1,t1,k0) + lambda_gstor_def(gs1,k0,t1)
    - muLB_gsin(gs1,t1,k0) = -2.1
@@ -10217,30 +10817,30 @@ Subject To
  gas_shed_rt(ng101,s1,t22): gshed(ng101,s1,t22) <= 0
  gas_shed_rt(ng101,s1,t23): gshed(ng101,s1,t23) <= 0
  gas_shed_rt(ng101,s1,t24): gshed(ng101,s1,t24) <= 0
- gas_shed_rt(ng102,s1,t1): gshed(ng102,s1,t1) <= 2100
- gas_shed_rt(ng102,s1,t2): gshed(ng102,s1,t2) <= 2010
- gas_shed_rt(ng102,s1,t3): gshed(ng102,s1,t3) <= 1920
- gas_shed_rt(ng102,s1,t4): gshed(ng102,s1,t4) <= 1950
- gas_shed_rt(ng102,s1,t5): gshed(ng102,s1,t5) <= 1980
- gas_shed_rt(ng102,s1,t6): gshed(ng102,s1,t6) <= 2010
- gas_shed_rt(ng102,s1,t7): gshed(ng102,s1,t7) <= 2325
- gas_shed_rt(ng102,s1,t8): gshed(ng102,s1,t8) <= 2340
- gas_shed_rt(ng102,s1,t9): gshed(ng102,s1,t9) <= 2565
- gas_shed_rt(ng102,s1,t10): gshed(ng102,s1,t10) <= 2610
- gas_shed_rt(ng102,s1,t11): gshed(ng102,s1,t11) <= 2610
- gas_shed_rt(ng102,s1,t12): gshed(ng102,s1,t12) <= 2565
- gas_shed_rt(ng102,s1,t13): gshed(ng102,s1,t13) <= 2565
- gas_shed_rt(ng102,s1,t14): gshed(ng102,s1,t14) <= 2565
- gas_shed_rt(ng102,s1,t15): gshed(ng102,s1,t15) <= 2520
- gas_shed_rt(ng102,s1,t16): gshed(ng102,s1,t16) <= 2565
- gas_shed_rt(ng102,s1,t17): gshed(ng102,s1,t17) <= 2700
- gas_shed_rt(ng102,s1,t18): gshed(ng102,s1,t18) <= 2700
- gas_shed_rt(ng102,s1,t19): gshed(ng102,s1,t19) <= 2700
- gas_shed_rt(ng102,s1,t20): gshed(ng102,s1,t20) <= 2610
- gas_shed_rt(ng102,s1,t21): gshed(ng102,s1,t21) <= 2475
- gas_shed_rt(ng102,s1,t22): gshed(ng102,s1,t22) <= 2250
- gas_shed_rt(ng102,s1,t23): gshed(ng102,s1,t23) <= 1980
- gas_shed_rt(ng102,s1,t24): gshed(ng102,s1,t24) <= 2010
+ gas_shed_rt(ng102,s1,t1): gshed(ng102,s1,t1) <= 0
+ gas_shed_rt(ng102,s1,t2): gshed(ng102,s1,t2) <= 0
+ gas_shed_rt(ng102,s1,t3): gshed(ng102,s1,t3) <= 0
+ gas_shed_rt(ng102,s1,t4): gshed(ng102,s1,t4) <= 0
+ gas_shed_rt(ng102,s1,t5): gshed(ng102,s1,t5) <= 0
+ gas_shed_rt(ng102,s1,t6): gshed(ng102,s1,t6) <= 0
+ gas_shed_rt(ng102,s1,t7): gshed(ng102,s1,t7) <= 0
+ gas_shed_rt(ng102,s1,t8): gshed(ng102,s1,t8) <= 0
+ gas_shed_rt(ng102,s1,t9): gshed(ng102,s1,t9) <= 0
+ gas_shed_rt(ng102,s1,t10): gshed(ng102,s1,t10) <= 0
+ gas_shed_rt(ng102,s1,t11): gshed(ng102,s1,t11) <= 0
+ gas_shed_rt(ng102,s1,t12): gshed(ng102,s1,t12) <= 0
+ gas_shed_rt(ng102,s1,t13): gshed(ng102,s1,t13) <= 0
+ gas_shed_rt(ng102,s1,t14): gshed(ng102,s1,t14) <= 0
+ gas_shed_rt(ng102,s1,t15): gshed(ng102,s1,t15) <= 0
+ gas_shed_rt(ng102,s1,t16): gshed(ng102,s1,t16) <= 0
+ gas_shed_rt(ng102,s1,t17): gshed(ng102,s1,t17) <= 0
+ gas_shed_rt(ng102,s1,t18): gshed(ng102,s1,t18) <= 0
+ gas_shed_rt(ng102,s1,t19): gshed(ng102,s1,t19) <= 0
+ gas_shed_rt(ng102,s1,t20): gshed(ng102,s1,t20) <= 0
+ gas_shed_rt(ng102,s1,t21): gshed(ng102,s1,t21) <= 0
+ gas_shed_rt(ng102,s1,t22): gshed(ng102,s1,t22) <= 0
+ gas_shed_rt(ng102,s1,t23): gshed(ng102,s1,t23) <= 0
+ gas_shed_rt(ng102,s1,t24): gshed(ng102,s1,t24) <= 0
  gas_shed_rt(ng101,s2,t1): gshed(ng101,s2,t1) <= 0
  gas_shed_rt(ng101,s2,t2): gshed(ng101,s2,t2) <= 0
  gas_shed_rt(ng101,s2,t3): gshed(ng101,s2,t3) <= 0
@@ -10265,30 +10865,30 @@ Subject To
  gas_shed_rt(ng101,s2,t22): gshed(ng101,s2,t22) <= 0
  gas_shed_rt(ng101,s2,t23): gshed(ng101,s2,t23) <= 0
  gas_shed_rt(ng101,s2,t24): gshed(ng101,s2,t24) <= 0
- gas_shed_rt(ng102,s2,t1): gshed(ng102,s2,t1) <= 2100
- gas_shed_rt(ng102,s2,t2): gshed(ng102,s2,t2) <= 2010
- gas_shed_rt(ng102,s2,t3): gshed(ng102,s2,t3) <= 1920
- gas_shed_rt(ng102,s2,t4): gshed(ng102,s2,t4) <= 1950
- gas_shed_rt(ng102,s2,t5): gshed(ng102,s2,t5) <= 1980
- gas_shed_rt(ng102,s2,t6): gshed(ng102,s2,t6) <= 2010
- gas_shed_rt(ng102,s2,t7): gshed(ng102,s2,t7) <= 2325
- gas_shed_rt(ng102,s2,t8): gshed(ng102,s2,t8) <= 2340
- gas_shed_rt(ng102,s2,t9): gshed(ng102,s2,t9) <= 2565
- gas_shed_rt(ng102,s2,t10): gshed(ng102,s2,t10) <= 2610
- gas_shed_rt(ng102,s2,t11): gshed(ng102,s2,t11) <= 2610
- gas_shed_rt(ng102,s2,t12): gshed(ng102,s2,t12) <= 2565
- gas_shed_rt(ng102,s2,t13): gshed(ng102,s2,t13) <= 2565
- gas_shed_rt(ng102,s2,t14): gshed(ng102,s2,t14) <= 2565
- gas_shed_rt(ng102,s2,t15): gshed(ng102,s2,t15) <= 2520
- gas_shed_rt(ng102,s2,t16): gshed(ng102,s2,t16) <= 2565
- gas_shed_rt(ng102,s2,t17): gshed(ng102,s2,t17) <= 2700
- gas_shed_rt(ng102,s2,t18): gshed(ng102,s2,t18) <= 2700
- gas_shed_rt(ng102,s2,t19): gshed(ng102,s2,t19) <= 2700
- gas_shed_rt(ng102,s2,t20): gshed(ng102,s2,t20) <= 2610
- gas_shed_rt(ng102,s2,t21): gshed(ng102,s2,t21) <= 2475
- gas_shed_rt(ng102,s2,t22): gshed(ng102,s2,t22) <= 2250
- gas_shed_rt(ng102,s2,t23): gshed(ng102,s2,t23) <= 1980
- gas_shed_rt(ng102,s2,t24): gshed(ng102,s2,t24) <= 2010
+ gas_shed_rt(ng102,s2,t1): gshed(ng102,s2,t1) <= 0
+ gas_shed_rt(ng102,s2,t2): gshed(ng102,s2,t2) <= 0
+ gas_shed_rt(ng102,s2,t3): gshed(ng102,s2,t3) <= 0
+ gas_shed_rt(ng102,s2,t4): gshed(ng102,s2,t4) <= 0
+ gas_shed_rt(ng102,s2,t5): gshed(ng102,s2,t5) <= 0
+ gas_shed_rt(ng102,s2,t6): gshed(ng102,s2,t6) <= 0
+ gas_shed_rt(ng102,s2,t7): gshed(ng102,s2,t7) <= 0
+ gas_shed_rt(ng102,s2,t8): gshed(ng102,s2,t8) <= 0
+ gas_shed_rt(ng102,s2,t9): gshed(ng102,s2,t9) <= 0
+ gas_shed_rt(ng102,s2,t10): gshed(ng102,s2,t10) <= 0
+ gas_shed_rt(ng102,s2,t11): gshed(ng102,s2,t11) <= 0
+ gas_shed_rt(ng102,s2,t12): gshed(ng102,s2,t12) <= 0
+ gas_shed_rt(ng102,s2,t13): gshed(ng102,s2,t13) <= 0
+ gas_shed_rt(ng102,s2,t14): gshed(ng102,s2,t14) <= 0
+ gas_shed_rt(ng102,s2,t15): gshed(ng102,s2,t15) <= 0
+ gas_shed_rt(ng102,s2,t16): gshed(ng102,s2,t16) <= 0
+ gas_shed_rt(ng102,s2,t17): gshed(ng102,s2,t17) <= 0
+ gas_shed_rt(ng102,s2,t18): gshed(ng102,s2,t18) <= 0
+ gas_shed_rt(ng102,s2,t19): gshed(ng102,s2,t19) <= 0
+ gas_shed_rt(ng102,s2,t20): gshed(ng102,s2,t20) <= 0
+ gas_shed_rt(ng102,s2,t21): gshed(ng102,s2,t21) <= 0
+ gas_shed_rt(ng102,s2,t22): gshed(ng102,s2,t22) <= 0
+ gas_shed_rt(ng102,s2,t23): gshed(ng102,s2,t23) <= 0
+ gas_shed_rt(ng102,s2,t24): gshed(ng102,s2,t24) <= 0
  SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t1):
    gflow_sr_rt(('ng101','ng102'),s1,t1)
    + SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t1) = 4000
@@ -10870,53 +11470,53 @@ Subject To
  SOS1_gas_shed_rt(ng101,s1,t24): gshed(ng101,s1,t24)
    + SOS1_gas_shed_rt(ng101,s1,t24) = 0
  SOS1_gas_shed_rt(ng102,s1,t1): gshed(ng102,s1,t1)
-   + SOS1_gas_shed_rt(ng102,s1,t1) = 2100
+   + SOS1_gas_shed_rt(ng102,s1,t1) = 0
  SOS1_gas_shed_rt(ng102,s1,t2): gshed(ng102,s1,t2)
-   + SOS1_gas_shed_rt(ng102,s1,t2) = 2010
+   + SOS1_gas_shed_rt(ng102,s1,t2) = 0
  SOS1_gas_shed_rt(ng102,s1,t3): gshed(ng102,s1,t3)
-   + SOS1_gas_shed_rt(ng102,s1,t3) = 1920
+   + SOS1_gas_shed_rt(ng102,s1,t3) = 0
  SOS1_gas_shed_rt(ng102,s1,t4): gshed(ng102,s1,t4)
-   + SOS1_gas_shed_rt(ng102,s1,t4) = 1950
+   + SOS1_gas_shed_rt(ng102,s1,t4) = 0
  SOS1_gas_shed_rt(ng102,s1,t5): gshed(ng102,s1,t5)
-   + SOS1_gas_shed_rt(ng102,s1,t5) = 1980
+   + SOS1_gas_shed_rt(ng102,s1,t5) = 0
  SOS1_gas_shed_rt(ng102,s1,t6): gshed(ng102,s1,t6)
-   + SOS1_gas_shed_rt(ng102,s1,t6) = 2010
+   + SOS1_gas_shed_rt(ng102,s1,t6) = 0
  SOS1_gas_shed_rt(ng102,s1,t7): gshed(ng102,s1,t7)
-   + SOS1_gas_shed_rt(ng102,s1,t7) = 2325
+   + SOS1_gas_shed_rt(ng102,s1,t7) = 0
  SOS1_gas_shed_rt(ng102,s1,t8): gshed(ng102,s1,t8)
-   + SOS1_gas_shed_rt(ng102,s1,t8) = 2340
+   + SOS1_gas_shed_rt(ng102,s1,t8) = 0
  SOS1_gas_shed_rt(ng102,s1,t9): gshed(ng102,s1,t9)
-   + SOS1_gas_shed_rt(ng102,s1,t9) = 2565
+   + SOS1_gas_shed_rt(ng102,s1,t9) = 0
  SOS1_gas_shed_rt(ng102,s1,t10): gshed(ng102,s1,t10)
-   + SOS1_gas_shed_rt(ng102,s1,t10) = 2610
+   + SOS1_gas_shed_rt(ng102,s1,t10) = 0
  SOS1_gas_shed_rt(ng102,s1,t11): gshed(ng102,s1,t11)
-   + SOS1_gas_shed_rt(ng102,s1,t11) = 2610
+   + SOS1_gas_shed_rt(ng102,s1,t11) = 0
  SOS1_gas_shed_rt(ng102,s1,t12): gshed(ng102,s1,t12)
-   + SOS1_gas_shed_rt(ng102,s1,t12) = 2565
+   + SOS1_gas_shed_rt(ng102,s1,t12) = 0
  SOS1_gas_shed_rt(ng102,s1,t13): gshed(ng102,s1,t13)
-   + SOS1_gas_shed_rt(ng102,s1,t13) = 2565
+   + SOS1_gas_shed_rt(ng102,s1,t13) = 0
  SOS1_gas_shed_rt(ng102,s1,t14): gshed(ng102,s1,t14)
-   + SOS1_gas_shed_rt(ng102,s1,t14) = 2565
+   + SOS1_gas_shed_rt(ng102,s1,t14) = 0
  SOS1_gas_shed_rt(ng102,s1,t15): gshed(ng102,s1,t15)
-   + SOS1_gas_shed_rt(ng102,s1,t15) = 2520
+   + SOS1_gas_shed_rt(ng102,s1,t15) = 0
  SOS1_gas_shed_rt(ng102,s1,t16): gshed(ng102,s1,t16)
-   + SOS1_gas_shed_rt(ng102,s1,t16) = 2565
+   + SOS1_gas_shed_rt(ng102,s1,t16) = 0
  SOS1_gas_shed_rt(ng102,s1,t17): gshed(ng102,s1,t17)
-   + SOS1_gas_shed_rt(ng102,s1,t17) = 2700
+   + SOS1_gas_shed_rt(ng102,s1,t17) = 0
  SOS1_gas_shed_rt(ng102,s1,t18): gshed(ng102,s1,t18)
-   + SOS1_gas_shed_rt(ng102,s1,t18) = 2700
+   + SOS1_gas_shed_rt(ng102,s1,t18) = 0
  SOS1_gas_shed_rt(ng102,s1,t19): gshed(ng102,s1,t19)
-   + SOS1_gas_shed_rt(ng102,s1,t19) = 2700
+   + SOS1_gas_shed_rt(ng102,s1,t19) = 0
  SOS1_gas_shed_rt(ng102,s1,t20): gshed(ng102,s1,t20)
-   + SOS1_gas_shed_rt(ng102,s1,t20) = 2610
+   + SOS1_gas_shed_rt(ng102,s1,t20) = 0
  SOS1_gas_shed_rt(ng102,s1,t21): gshed(ng102,s1,t21)
-   + SOS1_gas_shed_rt(ng102,s1,t21) = 2475
+   + SOS1_gas_shed_rt(ng102,s1,t21) = 0
  SOS1_gas_shed_rt(ng102,s1,t22): gshed(ng102,s1,t22)
-   + SOS1_gas_shed_rt(ng102,s1,t22) = 2250
+   + SOS1_gas_shed_rt(ng102,s1,t22) = 0
  SOS1_gas_shed_rt(ng102,s1,t23): gshed(ng102,s1,t23)
-   + SOS1_gas_shed_rt(ng102,s1,t23) = 1980
+   + SOS1_gas_shed_rt(ng102,s1,t23) = 0
  SOS1_gas_shed_rt(ng102,s1,t24): gshed(ng102,s1,t24)
-   + SOS1_gas_shed_rt(ng102,s1,t24) = 2010
+   + SOS1_gas_shed_rt(ng102,s1,t24) = 0
  SOS1_gas_shed_rt(ng101,s2,t1): gshed(ng101,s2,t1)
    + SOS1_gas_shed_rt(ng101,s2,t1) = 0
  SOS1_gas_shed_rt(ng101,s2,t2): gshed(ng101,s2,t2)
@@ -10966,53 +11566,53 @@ Subject To
  SOS1_gas_shed_rt(ng101,s2,t24): gshed(ng101,s2,t24)
    + SOS1_gas_shed_rt(ng101,s2,t24) = 0
  SOS1_gas_shed_rt(ng102,s2,t1): gshed(ng102,s2,t1)
-   + SOS1_gas_shed_rt(ng102,s2,t1) = 2100
+   + SOS1_gas_shed_rt(ng102,s2,t1) = 0
  SOS1_gas_shed_rt(ng102,s2,t2): gshed(ng102,s2,t2)
-   + SOS1_gas_shed_rt(ng102,s2,t2) = 2010
+   + SOS1_gas_shed_rt(ng102,s2,t2) = 0
  SOS1_gas_shed_rt(ng102,s2,t3): gshed(ng102,s2,t3)
-   + SOS1_gas_shed_rt(ng102,s2,t3) = 1920
+   + SOS1_gas_shed_rt(ng102,s2,t3) = 0
  SOS1_gas_shed_rt(ng102,s2,t4): gshed(ng102,s2,t4)
-   + SOS1_gas_shed_rt(ng102,s2,t4) = 1950
+   + SOS1_gas_shed_rt(ng102,s2,t4) = 0
  SOS1_gas_shed_rt(ng102,s2,t5): gshed(ng102,s2,t5)
-   + SOS1_gas_shed_rt(ng102,s2,t5) = 1980
+   + SOS1_gas_shed_rt(ng102,s2,t5) = 0
  SOS1_gas_shed_rt(ng102,s2,t6): gshed(ng102,s2,t6)
-   + SOS1_gas_shed_rt(ng102,s2,t6) = 2010
+   + SOS1_gas_shed_rt(ng102,s2,t6) = 0
  SOS1_gas_shed_rt(ng102,s2,t7): gshed(ng102,s2,t7)
-   + SOS1_gas_shed_rt(ng102,s2,t7) = 2325
+   + SOS1_gas_shed_rt(ng102,s2,t7) = 0
  SOS1_gas_shed_rt(ng102,s2,t8): gshed(ng102,s2,t8)
-   + SOS1_gas_shed_rt(ng102,s2,t8) = 2340
+   + SOS1_gas_shed_rt(ng102,s2,t8) = 0
  SOS1_gas_shed_rt(ng102,s2,t9): gshed(ng102,s2,t9)
-   + SOS1_gas_shed_rt(ng102,s2,t9) = 2565
+   + SOS1_gas_shed_rt(ng102,s2,t9) = 0
  SOS1_gas_shed_rt(ng102,s2,t10): gshed(ng102,s2,t10)
-   + SOS1_gas_shed_rt(ng102,s2,t10) = 2610
+   + SOS1_gas_shed_rt(ng102,s2,t10) = 0
  SOS1_gas_shed_rt(ng102,s2,t11): gshed(ng102,s2,t11)
-   + SOS1_gas_shed_rt(ng102,s2,t11) = 2610
+   + SOS1_gas_shed_rt(ng102,s2,t11) = 0
  SOS1_gas_shed_rt(ng102,s2,t12): gshed(ng102,s2,t12)
-   + SOS1_gas_shed_rt(ng102,s2,t12) = 2565
+   + SOS1_gas_shed_rt(ng102,s2,t12) = 0
  SOS1_gas_shed_rt(ng102,s2,t13): gshed(ng102,s2,t13)
-   + SOS1_gas_shed_rt(ng102,s2,t13) = 2565
+   + SOS1_gas_shed_rt(ng102,s2,t13) = 0
  SOS1_gas_shed_rt(ng102,s2,t14): gshed(ng102,s2,t14)
-   + SOS1_gas_shed_rt(ng102,s2,t14) = 2565
+   + SOS1_gas_shed_rt(ng102,s2,t14) = 0
  SOS1_gas_shed_rt(ng102,s2,t15): gshed(ng102,s2,t15)
-   + SOS1_gas_shed_rt(ng102,s2,t15) = 2520
+   + SOS1_gas_shed_rt(ng102,s2,t15) = 0
  SOS1_gas_shed_rt(ng102,s2,t16): gshed(ng102,s2,t16)
-   + SOS1_gas_shed_rt(ng102,s2,t16) = 2565
+   + SOS1_gas_shed_rt(ng102,s2,t16) = 0
  SOS1_gas_shed_rt(ng102,s2,t17): gshed(ng102,s2,t17)
-   + SOS1_gas_shed_rt(ng102,s2,t17) = 2700
+   + SOS1_gas_shed_rt(ng102,s2,t17) = 0
  SOS1_gas_shed_rt(ng102,s2,t18): gshed(ng102,s2,t18)
-   + SOS1_gas_shed_rt(ng102,s2,t18) = 2700
+   + SOS1_gas_shed_rt(ng102,s2,t18) = 0
  SOS1_gas_shed_rt(ng102,s2,t19): gshed(ng102,s2,t19)
-   + SOS1_gas_shed_rt(ng102,s2,t19) = 2700
+   + SOS1_gas_shed_rt(ng102,s2,t19) = 0
  SOS1_gas_shed_rt(ng102,s2,t20): gshed(ng102,s2,t20)
-   + SOS1_gas_shed_rt(ng102,s2,t20) = 2610
+   + SOS1_gas_shed_rt(ng102,s2,t20) = 0
  SOS1_gas_shed_rt(ng102,s2,t21): gshed(ng102,s2,t21)
-   + SOS1_gas_shed_rt(ng102,s2,t21) = 2475
+   + SOS1_gas_shed_rt(ng102,s2,t21) = 0
  SOS1_gas_shed_rt(ng102,s2,t22): gshed(ng102,s2,t22)
-   + SOS1_gas_shed_rt(ng102,s2,t22) = 2250
+   + SOS1_gas_shed_rt(ng102,s2,t22) = 0
  SOS1_gas_shed_rt(ng102,s2,t23): gshed(ng102,s2,t23)
-   + SOS1_gas_shed_rt(ng102,s2,t23) = 1980
+   + SOS1_gas_shed_rt(ng102,s2,t23) = 0
  SOS1_gas_shed_rt(ng102,s2,t24): gshed(ng102,s2,t24)
-   + SOS1_gas_shed_rt(ng102,s2,t24) = 2010
+   + SOS1_gas_shed_rt(ng102,s2,t24) = 0
  SOS1_LB_gshed(ng101,s1,t1): - gshed(ng101,s1,t1)
    + SOS1_LB_gshed(ng101,s1,t1) = 0
  SOS1_LB_gshed(ng102,s1,t1): - gshed(ng102,s1,t1)
@@ -11034,6 +11634,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t1) = 0
  SOS1_LB_gprodDn(gw2,s1,t1): - gprodDn(gw2,s1,t1)
    + SOS1_LB_gprodDn(gw2,s1,t1) = 0
+ SOS1_LB_gprodUp(gw3,s1,t1): - gprodUp(gw3,s1,t1)
+   + SOS1_LB_gprodUp(gw3,s1,t1) = 0
+ SOS1_LB_gprodDn(gw3,s1,t1): - gprodDn(gw3,s1,t1)
+   + SOS1_LB_gprodDn(gw3,s1,t1) = 0
  SOS1_LB_gsin_rt(gs1,s1,t1): - gsin_rt(gs1,s1,t1)
    + SOS1_LB_gsin_rt(gs1,s1,t1) = 0
  SOS1_LB_gsout_rt(gs1,s1,t1): - gsout_rt(gs1,s1,t1)
@@ -11061,6 +11665,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t2) = 0
  SOS1_LB_gprodDn(gw2,s1,t2): - gprodDn(gw2,s1,t2)
    + SOS1_LB_gprodDn(gw2,s1,t2) = 0
+ SOS1_LB_gprodUp(gw3,s1,t2): - gprodUp(gw3,s1,t2)
+   + SOS1_LB_gprodUp(gw3,s1,t2) = 0
+ SOS1_LB_gprodDn(gw3,s1,t2): - gprodDn(gw3,s1,t2)
+   + SOS1_LB_gprodDn(gw3,s1,t2) = 0
  SOS1_LB_gsin_rt(gs1,s1,t2): - gsin_rt(gs1,s1,t2)
    + SOS1_LB_gsin_rt(gs1,s1,t2) = 0
  SOS1_LB_gsout_rt(gs1,s1,t2): - gsout_rt(gs1,s1,t2)
@@ -11088,6 +11696,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t3) = 0
  SOS1_LB_gprodDn(gw2,s1,t3): - gprodDn(gw2,s1,t3)
    + SOS1_LB_gprodDn(gw2,s1,t3) = 0
+ SOS1_LB_gprodUp(gw3,s1,t3): - gprodUp(gw3,s1,t3)
+   + SOS1_LB_gprodUp(gw3,s1,t3) = 0
+ SOS1_LB_gprodDn(gw3,s1,t3): - gprodDn(gw3,s1,t3)
+   + SOS1_LB_gprodDn(gw3,s1,t3) = 0
  SOS1_LB_gsin_rt(gs1,s1,t3): - gsin_rt(gs1,s1,t3)
    + SOS1_LB_gsin_rt(gs1,s1,t3) = 0
  SOS1_LB_gsout_rt(gs1,s1,t3): - gsout_rt(gs1,s1,t3)
@@ -11115,6 +11727,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t4) = 0
  SOS1_LB_gprodDn(gw2,s1,t4): - gprodDn(gw2,s1,t4)
    + SOS1_LB_gprodDn(gw2,s1,t4) = 0
+ SOS1_LB_gprodUp(gw3,s1,t4): - gprodUp(gw3,s1,t4)
+   + SOS1_LB_gprodUp(gw3,s1,t4) = 0
+ SOS1_LB_gprodDn(gw3,s1,t4): - gprodDn(gw3,s1,t4)
+   + SOS1_LB_gprodDn(gw3,s1,t4) = 0
  SOS1_LB_gsin_rt(gs1,s1,t4): - gsin_rt(gs1,s1,t4)
    + SOS1_LB_gsin_rt(gs1,s1,t4) = 0
  SOS1_LB_gsout_rt(gs1,s1,t4): - gsout_rt(gs1,s1,t4)
@@ -11142,6 +11758,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t5) = 0
  SOS1_LB_gprodDn(gw2,s1,t5): - gprodDn(gw2,s1,t5)
    + SOS1_LB_gprodDn(gw2,s1,t5) = 0
+ SOS1_LB_gprodUp(gw3,s1,t5): - gprodUp(gw3,s1,t5)
+   + SOS1_LB_gprodUp(gw3,s1,t5) = 0
+ SOS1_LB_gprodDn(gw3,s1,t5): - gprodDn(gw3,s1,t5)
+   + SOS1_LB_gprodDn(gw3,s1,t5) = 0
  SOS1_LB_gsin_rt(gs1,s1,t5): - gsin_rt(gs1,s1,t5)
    + SOS1_LB_gsin_rt(gs1,s1,t5) = 0
  SOS1_LB_gsout_rt(gs1,s1,t5): - gsout_rt(gs1,s1,t5)
@@ -11169,6 +11789,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t6) = 0
  SOS1_LB_gprodDn(gw2,s1,t6): - gprodDn(gw2,s1,t6)
    + SOS1_LB_gprodDn(gw2,s1,t6) = 0
+ SOS1_LB_gprodUp(gw3,s1,t6): - gprodUp(gw3,s1,t6)
+   + SOS1_LB_gprodUp(gw3,s1,t6) = 0
+ SOS1_LB_gprodDn(gw3,s1,t6): - gprodDn(gw3,s1,t6)
+   + SOS1_LB_gprodDn(gw3,s1,t6) = 0
  SOS1_LB_gsin_rt(gs1,s1,t6): - gsin_rt(gs1,s1,t6)
    + SOS1_LB_gsin_rt(gs1,s1,t6) = 0
  SOS1_LB_gsout_rt(gs1,s1,t6): - gsout_rt(gs1,s1,t6)
@@ -11196,6 +11820,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t7) = 0
  SOS1_LB_gprodDn(gw2,s1,t7): - gprodDn(gw2,s1,t7)
    + SOS1_LB_gprodDn(gw2,s1,t7) = 0
+ SOS1_LB_gprodUp(gw3,s1,t7): - gprodUp(gw3,s1,t7)
+   + SOS1_LB_gprodUp(gw3,s1,t7) = 0
+ SOS1_LB_gprodDn(gw3,s1,t7): - gprodDn(gw3,s1,t7)
+   + SOS1_LB_gprodDn(gw3,s1,t7) = 0
  SOS1_LB_gsin_rt(gs1,s1,t7): - gsin_rt(gs1,s1,t7)
    + SOS1_LB_gsin_rt(gs1,s1,t7) = 0
  SOS1_LB_gsout_rt(gs1,s1,t7): - gsout_rt(gs1,s1,t7)
@@ -11223,6 +11851,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t8) = 0
  SOS1_LB_gprodDn(gw2,s1,t8): - gprodDn(gw2,s1,t8)
    + SOS1_LB_gprodDn(gw2,s1,t8) = 0
+ SOS1_LB_gprodUp(gw3,s1,t8): - gprodUp(gw3,s1,t8)
+   + SOS1_LB_gprodUp(gw3,s1,t8) = 0
+ SOS1_LB_gprodDn(gw3,s1,t8): - gprodDn(gw3,s1,t8)
+   + SOS1_LB_gprodDn(gw3,s1,t8) = 0
  SOS1_LB_gsin_rt(gs1,s1,t8): - gsin_rt(gs1,s1,t8)
    + SOS1_LB_gsin_rt(gs1,s1,t8) = 0
  SOS1_LB_gsout_rt(gs1,s1,t8): - gsout_rt(gs1,s1,t8)
@@ -11250,6 +11882,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t9) = 0
  SOS1_LB_gprodDn(gw2,s1,t9): - gprodDn(gw2,s1,t9)
    + SOS1_LB_gprodDn(gw2,s1,t9) = 0
+ SOS1_LB_gprodUp(gw3,s1,t9): - gprodUp(gw3,s1,t9)
+   + SOS1_LB_gprodUp(gw3,s1,t9) = 0
+ SOS1_LB_gprodDn(gw3,s1,t9): - gprodDn(gw3,s1,t9)
+   + SOS1_LB_gprodDn(gw3,s1,t9) = 0
  SOS1_LB_gsin_rt(gs1,s1,t9): - gsin_rt(gs1,s1,t9)
    + SOS1_LB_gsin_rt(gs1,s1,t9) = 0
  SOS1_LB_gsout_rt(gs1,s1,t9): - gsout_rt(gs1,s1,t9)
@@ -11277,6 +11913,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t10) = 0
  SOS1_LB_gprodDn(gw2,s1,t10): - gprodDn(gw2,s1,t10)
    + SOS1_LB_gprodDn(gw2,s1,t10) = 0
+ SOS1_LB_gprodUp(gw3,s1,t10): - gprodUp(gw3,s1,t10)
+   + SOS1_LB_gprodUp(gw3,s1,t10) = 0
+ SOS1_LB_gprodDn(gw3,s1,t10): - gprodDn(gw3,s1,t10)
+   + SOS1_LB_gprodDn(gw3,s1,t10) = 0
  SOS1_LB_gsin_rt(gs1,s1,t10): - gsin_rt(gs1,s1,t10)
    + SOS1_LB_gsin_rt(gs1,s1,t10) = 0
  SOS1_LB_gsout_rt(gs1,s1,t10): - gsout_rt(gs1,s1,t10)
@@ -11304,6 +11944,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t11) = 0
  SOS1_LB_gprodDn(gw2,s1,t11): - gprodDn(gw2,s1,t11)
    + SOS1_LB_gprodDn(gw2,s1,t11) = 0
+ SOS1_LB_gprodUp(gw3,s1,t11): - gprodUp(gw3,s1,t11)
+   + SOS1_LB_gprodUp(gw3,s1,t11) = 0
+ SOS1_LB_gprodDn(gw3,s1,t11): - gprodDn(gw3,s1,t11)
+   + SOS1_LB_gprodDn(gw3,s1,t11) = 0
  SOS1_LB_gsin_rt(gs1,s1,t11): - gsin_rt(gs1,s1,t11)
    + SOS1_LB_gsin_rt(gs1,s1,t11) = 0
  SOS1_LB_gsout_rt(gs1,s1,t11): - gsout_rt(gs1,s1,t11)
@@ -11331,6 +11975,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t12) = 0
  SOS1_LB_gprodDn(gw2,s1,t12): - gprodDn(gw2,s1,t12)
    + SOS1_LB_gprodDn(gw2,s1,t12) = 0
+ SOS1_LB_gprodUp(gw3,s1,t12): - gprodUp(gw3,s1,t12)
+   + SOS1_LB_gprodUp(gw3,s1,t12) = 0
+ SOS1_LB_gprodDn(gw3,s1,t12): - gprodDn(gw3,s1,t12)
+   + SOS1_LB_gprodDn(gw3,s1,t12) = 0
  SOS1_LB_gsin_rt(gs1,s1,t12): - gsin_rt(gs1,s1,t12)
    + SOS1_LB_gsin_rt(gs1,s1,t12) = 0
  SOS1_LB_gsout_rt(gs1,s1,t12): - gsout_rt(gs1,s1,t12)
@@ -11358,6 +12006,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t13) = 0
  SOS1_LB_gprodDn(gw2,s1,t13): - gprodDn(gw2,s1,t13)
    + SOS1_LB_gprodDn(gw2,s1,t13) = 0
+ SOS1_LB_gprodUp(gw3,s1,t13): - gprodUp(gw3,s1,t13)
+   + SOS1_LB_gprodUp(gw3,s1,t13) = 0
+ SOS1_LB_gprodDn(gw3,s1,t13): - gprodDn(gw3,s1,t13)
+   + SOS1_LB_gprodDn(gw3,s1,t13) = 0
  SOS1_LB_gsin_rt(gs1,s1,t13): - gsin_rt(gs1,s1,t13)
    + SOS1_LB_gsin_rt(gs1,s1,t13) = 0
  SOS1_LB_gsout_rt(gs1,s1,t13): - gsout_rt(gs1,s1,t13)
@@ -11385,6 +12037,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t14) = 0
  SOS1_LB_gprodDn(gw2,s1,t14): - gprodDn(gw2,s1,t14)
    + SOS1_LB_gprodDn(gw2,s1,t14) = 0
+ SOS1_LB_gprodUp(gw3,s1,t14): - gprodUp(gw3,s1,t14)
+   + SOS1_LB_gprodUp(gw3,s1,t14) = 0
+ SOS1_LB_gprodDn(gw3,s1,t14): - gprodDn(gw3,s1,t14)
+   + SOS1_LB_gprodDn(gw3,s1,t14) = 0
  SOS1_LB_gsin_rt(gs1,s1,t14): - gsin_rt(gs1,s1,t14)
    + SOS1_LB_gsin_rt(gs1,s1,t14) = 0
  SOS1_LB_gsout_rt(gs1,s1,t14): - gsout_rt(gs1,s1,t14)
@@ -11412,6 +12068,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t15) = 0
  SOS1_LB_gprodDn(gw2,s1,t15): - gprodDn(gw2,s1,t15)
    + SOS1_LB_gprodDn(gw2,s1,t15) = 0
+ SOS1_LB_gprodUp(gw3,s1,t15): - gprodUp(gw3,s1,t15)
+   + SOS1_LB_gprodUp(gw3,s1,t15) = 0
+ SOS1_LB_gprodDn(gw3,s1,t15): - gprodDn(gw3,s1,t15)
+   + SOS1_LB_gprodDn(gw3,s1,t15) = 0
  SOS1_LB_gsin_rt(gs1,s1,t15): - gsin_rt(gs1,s1,t15)
    + SOS1_LB_gsin_rt(gs1,s1,t15) = 0
  SOS1_LB_gsout_rt(gs1,s1,t15): - gsout_rt(gs1,s1,t15)
@@ -11439,6 +12099,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t16) = 0
  SOS1_LB_gprodDn(gw2,s1,t16): - gprodDn(gw2,s1,t16)
    + SOS1_LB_gprodDn(gw2,s1,t16) = 0
+ SOS1_LB_gprodUp(gw3,s1,t16): - gprodUp(gw3,s1,t16)
+   + SOS1_LB_gprodUp(gw3,s1,t16) = 0
+ SOS1_LB_gprodDn(gw3,s1,t16): - gprodDn(gw3,s1,t16)
+   + SOS1_LB_gprodDn(gw3,s1,t16) = 0
  SOS1_LB_gsin_rt(gs1,s1,t16): - gsin_rt(gs1,s1,t16)
    + SOS1_LB_gsin_rt(gs1,s1,t16) = 0
  SOS1_LB_gsout_rt(gs1,s1,t16): - gsout_rt(gs1,s1,t16)
@@ -11466,6 +12130,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t17) = 0
  SOS1_LB_gprodDn(gw2,s1,t17): - gprodDn(gw2,s1,t17)
    + SOS1_LB_gprodDn(gw2,s1,t17) = 0
+ SOS1_LB_gprodUp(gw3,s1,t17): - gprodUp(gw3,s1,t17)
+   + SOS1_LB_gprodUp(gw3,s1,t17) = 0
+ SOS1_LB_gprodDn(gw3,s1,t17): - gprodDn(gw3,s1,t17)
+   + SOS1_LB_gprodDn(gw3,s1,t17) = 0
  SOS1_LB_gsin_rt(gs1,s1,t17): - gsin_rt(gs1,s1,t17)
    + SOS1_LB_gsin_rt(gs1,s1,t17) = 0
  SOS1_LB_gsout_rt(gs1,s1,t17): - gsout_rt(gs1,s1,t17)
@@ -11493,6 +12161,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t18) = 0
  SOS1_LB_gprodDn(gw2,s1,t18): - gprodDn(gw2,s1,t18)
    + SOS1_LB_gprodDn(gw2,s1,t18) = 0
+ SOS1_LB_gprodUp(gw3,s1,t18): - gprodUp(gw3,s1,t18)
+   + SOS1_LB_gprodUp(gw3,s1,t18) = 0
+ SOS1_LB_gprodDn(gw3,s1,t18): - gprodDn(gw3,s1,t18)
+   + SOS1_LB_gprodDn(gw3,s1,t18) = 0
  SOS1_LB_gsin_rt(gs1,s1,t18): - gsin_rt(gs1,s1,t18)
    + SOS1_LB_gsin_rt(gs1,s1,t18) = 0
  SOS1_LB_gsout_rt(gs1,s1,t18): - gsout_rt(gs1,s1,t18)
@@ -11520,6 +12192,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t19) = 0
  SOS1_LB_gprodDn(gw2,s1,t19): - gprodDn(gw2,s1,t19)
    + SOS1_LB_gprodDn(gw2,s1,t19) = 0
+ SOS1_LB_gprodUp(gw3,s1,t19): - gprodUp(gw3,s1,t19)
+   + SOS1_LB_gprodUp(gw3,s1,t19) = 0
+ SOS1_LB_gprodDn(gw3,s1,t19): - gprodDn(gw3,s1,t19)
+   + SOS1_LB_gprodDn(gw3,s1,t19) = 0
  SOS1_LB_gsin_rt(gs1,s1,t19): - gsin_rt(gs1,s1,t19)
    + SOS1_LB_gsin_rt(gs1,s1,t19) = 0
  SOS1_LB_gsout_rt(gs1,s1,t19): - gsout_rt(gs1,s1,t19)
@@ -11547,6 +12223,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t20) = 0
  SOS1_LB_gprodDn(gw2,s1,t20): - gprodDn(gw2,s1,t20)
    + SOS1_LB_gprodDn(gw2,s1,t20) = 0
+ SOS1_LB_gprodUp(gw3,s1,t20): - gprodUp(gw3,s1,t20)
+   + SOS1_LB_gprodUp(gw3,s1,t20) = 0
+ SOS1_LB_gprodDn(gw3,s1,t20): - gprodDn(gw3,s1,t20)
+   + SOS1_LB_gprodDn(gw3,s1,t20) = 0
  SOS1_LB_gsin_rt(gs1,s1,t20): - gsin_rt(gs1,s1,t20)
    + SOS1_LB_gsin_rt(gs1,s1,t20) = 0
  SOS1_LB_gsout_rt(gs1,s1,t20): - gsout_rt(gs1,s1,t20)
@@ -11574,6 +12254,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t21) = 0
  SOS1_LB_gprodDn(gw2,s1,t21): - gprodDn(gw2,s1,t21)
    + SOS1_LB_gprodDn(gw2,s1,t21) = 0
+ SOS1_LB_gprodUp(gw3,s1,t21): - gprodUp(gw3,s1,t21)
+   + SOS1_LB_gprodUp(gw3,s1,t21) = 0
+ SOS1_LB_gprodDn(gw3,s1,t21): - gprodDn(gw3,s1,t21)
+   + SOS1_LB_gprodDn(gw3,s1,t21) = 0
  SOS1_LB_gsin_rt(gs1,s1,t21): - gsin_rt(gs1,s1,t21)
    + SOS1_LB_gsin_rt(gs1,s1,t21) = 0
  SOS1_LB_gsout_rt(gs1,s1,t21): - gsout_rt(gs1,s1,t21)
@@ -11601,6 +12285,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t22) = 0
  SOS1_LB_gprodDn(gw2,s1,t22): - gprodDn(gw2,s1,t22)
    + SOS1_LB_gprodDn(gw2,s1,t22) = 0
+ SOS1_LB_gprodUp(gw3,s1,t22): - gprodUp(gw3,s1,t22)
+   + SOS1_LB_gprodUp(gw3,s1,t22) = 0
+ SOS1_LB_gprodDn(gw3,s1,t22): - gprodDn(gw3,s1,t22)
+   + SOS1_LB_gprodDn(gw3,s1,t22) = 0
  SOS1_LB_gsin_rt(gs1,s1,t22): - gsin_rt(gs1,s1,t22)
    + SOS1_LB_gsin_rt(gs1,s1,t22) = 0
  SOS1_LB_gsout_rt(gs1,s1,t22): - gsout_rt(gs1,s1,t22)
@@ -11628,6 +12316,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t23) = 0
  SOS1_LB_gprodDn(gw2,s1,t23): - gprodDn(gw2,s1,t23)
    + SOS1_LB_gprodDn(gw2,s1,t23) = 0
+ SOS1_LB_gprodUp(gw3,s1,t23): - gprodUp(gw3,s1,t23)
+   + SOS1_LB_gprodUp(gw3,s1,t23) = 0
+ SOS1_LB_gprodDn(gw3,s1,t23): - gprodDn(gw3,s1,t23)
+   + SOS1_LB_gprodDn(gw3,s1,t23) = 0
  SOS1_LB_gsin_rt(gs1,s1,t23): - gsin_rt(gs1,s1,t23)
    + SOS1_LB_gsin_rt(gs1,s1,t23) = 0
  SOS1_LB_gsout_rt(gs1,s1,t23): - gsout_rt(gs1,s1,t23)
@@ -11655,6 +12347,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s1,t24) = 0
  SOS1_LB_gprodDn(gw2,s1,t24): - gprodDn(gw2,s1,t24)
    + SOS1_LB_gprodDn(gw2,s1,t24) = 0
+ SOS1_LB_gprodUp(gw3,s1,t24): - gprodUp(gw3,s1,t24)
+   + SOS1_LB_gprodUp(gw3,s1,t24) = 0
+ SOS1_LB_gprodDn(gw3,s1,t24): - gprodDn(gw3,s1,t24)
+   + SOS1_LB_gprodDn(gw3,s1,t24) = 0
  SOS1_LB_gsin_rt(gs1,s1,t24): - gsin_rt(gs1,s1,t24)
    + SOS1_LB_gsin_rt(gs1,s1,t24) = 0
  SOS1_LB_gsout_rt(gs1,s1,t24): - gsout_rt(gs1,s1,t24)
@@ -11682,6 +12378,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t1) = 0
  SOS1_LB_gprodDn(gw2,s2,t1): - gprodDn(gw2,s2,t1)
    + SOS1_LB_gprodDn(gw2,s2,t1) = 0
+ SOS1_LB_gprodUp(gw3,s2,t1): - gprodUp(gw3,s2,t1)
+   + SOS1_LB_gprodUp(gw3,s2,t1) = 0
+ SOS1_LB_gprodDn(gw3,s2,t1): - gprodDn(gw3,s2,t1)
+   + SOS1_LB_gprodDn(gw3,s2,t1) = 0
  SOS1_LB_gsin_rt(gs1,s2,t1): - gsin_rt(gs1,s2,t1)
    + SOS1_LB_gsin_rt(gs1,s2,t1) = 0
  SOS1_LB_gsout_rt(gs1,s2,t1): - gsout_rt(gs1,s2,t1)
@@ -11709,6 +12409,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t2) = 0
  SOS1_LB_gprodDn(gw2,s2,t2): - gprodDn(gw2,s2,t2)
    + SOS1_LB_gprodDn(gw2,s2,t2) = 0
+ SOS1_LB_gprodUp(gw3,s2,t2): - gprodUp(gw3,s2,t2)
+   + SOS1_LB_gprodUp(gw3,s2,t2) = 0
+ SOS1_LB_gprodDn(gw3,s2,t2): - gprodDn(gw3,s2,t2)
+   + SOS1_LB_gprodDn(gw3,s2,t2) = 0
  SOS1_LB_gsin_rt(gs1,s2,t2): - gsin_rt(gs1,s2,t2)
    + SOS1_LB_gsin_rt(gs1,s2,t2) = 0
  SOS1_LB_gsout_rt(gs1,s2,t2): - gsout_rt(gs1,s2,t2)
@@ -11736,6 +12440,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t3) = 0
  SOS1_LB_gprodDn(gw2,s2,t3): - gprodDn(gw2,s2,t3)
    + SOS1_LB_gprodDn(gw2,s2,t3) = 0
+ SOS1_LB_gprodUp(gw3,s2,t3): - gprodUp(gw3,s2,t3)
+   + SOS1_LB_gprodUp(gw3,s2,t3) = 0
+ SOS1_LB_gprodDn(gw3,s2,t3): - gprodDn(gw3,s2,t3)
+   + SOS1_LB_gprodDn(gw3,s2,t3) = 0
  SOS1_LB_gsin_rt(gs1,s2,t3): - gsin_rt(gs1,s2,t3)
    + SOS1_LB_gsin_rt(gs1,s2,t3) = 0
  SOS1_LB_gsout_rt(gs1,s2,t3): - gsout_rt(gs1,s2,t3)
@@ -11763,6 +12471,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t4) = 0
  SOS1_LB_gprodDn(gw2,s2,t4): - gprodDn(gw2,s2,t4)
    + SOS1_LB_gprodDn(gw2,s2,t4) = 0
+ SOS1_LB_gprodUp(gw3,s2,t4): - gprodUp(gw3,s2,t4)
+   + SOS1_LB_gprodUp(gw3,s2,t4) = 0
+ SOS1_LB_gprodDn(gw3,s2,t4): - gprodDn(gw3,s2,t4)
+   + SOS1_LB_gprodDn(gw3,s2,t4) = 0
  SOS1_LB_gsin_rt(gs1,s2,t4): - gsin_rt(gs1,s2,t4)
    + SOS1_LB_gsin_rt(gs1,s2,t4) = 0
  SOS1_LB_gsout_rt(gs1,s2,t4): - gsout_rt(gs1,s2,t4)
@@ -11790,6 +12502,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t5) = 0
  SOS1_LB_gprodDn(gw2,s2,t5): - gprodDn(gw2,s2,t5)
    + SOS1_LB_gprodDn(gw2,s2,t5) = 0
+ SOS1_LB_gprodUp(gw3,s2,t5): - gprodUp(gw3,s2,t5)
+   + SOS1_LB_gprodUp(gw3,s2,t5) = 0
+ SOS1_LB_gprodDn(gw3,s2,t5): - gprodDn(gw3,s2,t5)
+   + SOS1_LB_gprodDn(gw3,s2,t5) = 0
  SOS1_LB_gsin_rt(gs1,s2,t5): - gsin_rt(gs1,s2,t5)
    + SOS1_LB_gsin_rt(gs1,s2,t5) = 0
  SOS1_LB_gsout_rt(gs1,s2,t5): - gsout_rt(gs1,s2,t5)
@@ -11817,6 +12533,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t6) = 0
  SOS1_LB_gprodDn(gw2,s2,t6): - gprodDn(gw2,s2,t6)
    + SOS1_LB_gprodDn(gw2,s2,t6) = 0
+ SOS1_LB_gprodUp(gw3,s2,t6): - gprodUp(gw3,s2,t6)
+   + SOS1_LB_gprodUp(gw3,s2,t6) = 0
+ SOS1_LB_gprodDn(gw3,s2,t6): - gprodDn(gw3,s2,t6)
+   + SOS1_LB_gprodDn(gw3,s2,t6) = 0
  SOS1_LB_gsin_rt(gs1,s2,t6): - gsin_rt(gs1,s2,t6)
    + SOS1_LB_gsin_rt(gs1,s2,t6) = 0
  SOS1_LB_gsout_rt(gs1,s2,t6): - gsout_rt(gs1,s2,t6)
@@ -11844,6 +12564,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t7) = 0
  SOS1_LB_gprodDn(gw2,s2,t7): - gprodDn(gw2,s2,t7)
    + SOS1_LB_gprodDn(gw2,s2,t7) = 0
+ SOS1_LB_gprodUp(gw3,s2,t7): - gprodUp(gw3,s2,t7)
+   + SOS1_LB_gprodUp(gw3,s2,t7) = 0
+ SOS1_LB_gprodDn(gw3,s2,t7): - gprodDn(gw3,s2,t7)
+   + SOS1_LB_gprodDn(gw3,s2,t7) = 0
  SOS1_LB_gsin_rt(gs1,s2,t7): - gsin_rt(gs1,s2,t7)
    + SOS1_LB_gsin_rt(gs1,s2,t7) = 0
  SOS1_LB_gsout_rt(gs1,s2,t7): - gsout_rt(gs1,s2,t7)
@@ -11871,6 +12595,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t8) = 0
  SOS1_LB_gprodDn(gw2,s2,t8): - gprodDn(gw2,s2,t8)
    + SOS1_LB_gprodDn(gw2,s2,t8) = 0
+ SOS1_LB_gprodUp(gw3,s2,t8): - gprodUp(gw3,s2,t8)
+   + SOS1_LB_gprodUp(gw3,s2,t8) = 0
+ SOS1_LB_gprodDn(gw3,s2,t8): - gprodDn(gw3,s2,t8)
+   + SOS1_LB_gprodDn(gw3,s2,t8) = 0
  SOS1_LB_gsin_rt(gs1,s2,t8): - gsin_rt(gs1,s2,t8)
    + SOS1_LB_gsin_rt(gs1,s2,t8) = 0
  SOS1_LB_gsout_rt(gs1,s2,t8): - gsout_rt(gs1,s2,t8)
@@ -11898,6 +12626,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t9) = 0
  SOS1_LB_gprodDn(gw2,s2,t9): - gprodDn(gw2,s2,t9)
    + SOS1_LB_gprodDn(gw2,s2,t9) = 0
+ SOS1_LB_gprodUp(gw3,s2,t9): - gprodUp(gw3,s2,t9)
+   + SOS1_LB_gprodUp(gw3,s2,t9) = 0
+ SOS1_LB_gprodDn(gw3,s2,t9): - gprodDn(gw3,s2,t9)
+   + SOS1_LB_gprodDn(gw3,s2,t9) = 0
  SOS1_LB_gsin_rt(gs1,s2,t9): - gsin_rt(gs1,s2,t9)
    + SOS1_LB_gsin_rt(gs1,s2,t9) = 0
  SOS1_LB_gsout_rt(gs1,s2,t9): - gsout_rt(gs1,s2,t9)
@@ -11925,6 +12657,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t10) = 0
  SOS1_LB_gprodDn(gw2,s2,t10): - gprodDn(gw2,s2,t10)
    + SOS1_LB_gprodDn(gw2,s2,t10) = 0
+ SOS1_LB_gprodUp(gw3,s2,t10): - gprodUp(gw3,s2,t10)
+   + SOS1_LB_gprodUp(gw3,s2,t10) = 0
+ SOS1_LB_gprodDn(gw3,s2,t10): - gprodDn(gw3,s2,t10)
+   + SOS1_LB_gprodDn(gw3,s2,t10) = 0
  SOS1_LB_gsin_rt(gs1,s2,t10): - gsin_rt(gs1,s2,t10)
    + SOS1_LB_gsin_rt(gs1,s2,t10) = 0
  SOS1_LB_gsout_rt(gs1,s2,t10): - gsout_rt(gs1,s2,t10)
@@ -11952,6 +12688,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t11) = 0
  SOS1_LB_gprodDn(gw2,s2,t11): - gprodDn(gw2,s2,t11)
    + SOS1_LB_gprodDn(gw2,s2,t11) = 0
+ SOS1_LB_gprodUp(gw3,s2,t11): - gprodUp(gw3,s2,t11)
+   + SOS1_LB_gprodUp(gw3,s2,t11) = 0
+ SOS1_LB_gprodDn(gw3,s2,t11): - gprodDn(gw3,s2,t11)
+   + SOS1_LB_gprodDn(gw3,s2,t11) = 0
  SOS1_LB_gsin_rt(gs1,s2,t11): - gsin_rt(gs1,s2,t11)
    + SOS1_LB_gsin_rt(gs1,s2,t11) = 0
  SOS1_LB_gsout_rt(gs1,s2,t11): - gsout_rt(gs1,s2,t11)
@@ -11979,6 +12719,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t12) = 0
  SOS1_LB_gprodDn(gw2,s2,t12): - gprodDn(gw2,s2,t12)
    + SOS1_LB_gprodDn(gw2,s2,t12) = 0
+ SOS1_LB_gprodUp(gw3,s2,t12): - gprodUp(gw3,s2,t12)
+   + SOS1_LB_gprodUp(gw3,s2,t12) = 0
+ SOS1_LB_gprodDn(gw3,s2,t12): - gprodDn(gw3,s2,t12)
+   + SOS1_LB_gprodDn(gw3,s2,t12) = 0
  SOS1_LB_gsin_rt(gs1,s2,t12): - gsin_rt(gs1,s2,t12)
    + SOS1_LB_gsin_rt(gs1,s2,t12) = 0
  SOS1_LB_gsout_rt(gs1,s2,t12): - gsout_rt(gs1,s2,t12)
@@ -12006,6 +12750,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t13) = 0
  SOS1_LB_gprodDn(gw2,s2,t13): - gprodDn(gw2,s2,t13)
    + SOS1_LB_gprodDn(gw2,s2,t13) = 0
+ SOS1_LB_gprodUp(gw3,s2,t13): - gprodUp(gw3,s2,t13)
+   + SOS1_LB_gprodUp(gw3,s2,t13) = 0
+ SOS1_LB_gprodDn(gw3,s2,t13): - gprodDn(gw3,s2,t13)
+   + SOS1_LB_gprodDn(gw3,s2,t13) = 0
  SOS1_LB_gsin_rt(gs1,s2,t13): - gsin_rt(gs1,s2,t13)
    + SOS1_LB_gsin_rt(gs1,s2,t13) = 0
  SOS1_LB_gsout_rt(gs1,s2,t13): - gsout_rt(gs1,s2,t13)
@@ -12033,6 +12781,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t14) = 0
  SOS1_LB_gprodDn(gw2,s2,t14): - gprodDn(gw2,s2,t14)
    + SOS1_LB_gprodDn(gw2,s2,t14) = 0
+ SOS1_LB_gprodUp(gw3,s2,t14): - gprodUp(gw3,s2,t14)
+   + SOS1_LB_gprodUp(gw3,s2,t14) = 0
+ SOS1_LB_gprodDn(gw3,s2,t14): - gprodDn(gw3,s2,t14)
+   + SOS1_LB_gprodDn(gw3,s2,t14) = 0
  SOS1_LB_gsin_rt(gs1,s2,t14): - gsin_rt(gs1,s2,t14)
    + SOS1_LB_gsin_rt(gs1,s2,t14) = 0
  SOS1_LB_gsout_rt(gs1,s2,t14): - gsout_rt(gs1,s2,t14)
@@ -12060,6 +12812,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t15) = 0
  SOS1_LB_gprodDn(gw2,s2,t15): - gprodDn(gw2,s2,t15)
    + SOS1_LB_gprodDn(gw2,s2,t15) = 0
+ SOS1_LB_gprodUp(gw3,s2,t15): - gprodUp(gw3,s2,t15)
+   + SOS1_LB_gprodUp(gw3,s2,t15) = 0
+ SOS1_LB_gprodDn(gw3,s2,t15): - gprodDn(gw3,s2,t15)
+   + SOS1_LB_gprodDn(gw3,s2,t15) = 0
  SOS1_LB_gsin_rt(gs1,s2,t15): - gsin_rt(gs1,s2,t15)
    + SOS1_LB_gsin_rt(gs1,s2,t15) = 0
  SOS1_LB_gsout_rt(gs1,s2,t15): - gsout_rt(gs1,s2,t15)
@@ -12087,6 +12843,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t16) = 0
  SOS1_LB_gprodDn(gw2,s2,t16): - gprodDn(gw2,s2,t16)
    + SOS1_LB_gprodDn(gw2,s2,t16) = 0
+ SOS1_LB_gprodUp(gw3,s2,t16): - gprodUp(gw3,s2,t16)
+   + SOS1_LB_gprodUp(gw3,s2,t16) = 0
+ SOS1_LB_gprodDn(gw3,s2,t16): - gprodDn(gw3,s2,t16)
+   + SOS1_LB_gprodDn(gw3,s2,t16) = 0
  SOS1_LB_gsin_rt(gs1,s2,t16): - gsin_rt(gs1,s2,t16)
    + SOS1_LB_gsin_rt(gs1,s2,t16) = 0
  SOS1_LB_gsout_rt(gs1,s2,t16): - gsout_rt(gs1,s2,t16)
@@ -12114,6 +12874,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t17) = 0
  SOS1_LB_gprodDn(gw2,s2,t17): - gprodDn(gw2,s2,t17)
    + SOS1_LB_gprodDn(gw2,s2,t17) = 0
+ SOS1_LB_gprodUp(gw3,s2,t17): - gprodUp(gw3,s2,t17)
+   + SOS1_LB_gprodUp(gw3,s2,t17) = 0
+ SOS1_LB_gprodDn(gw3,s2,t17): - gprodDn(gw3,s2,t17)
+   + SOS1_LB_gprodDn(gw3,s2,t17) = 0
  SOS1_LB_gsin_rt(gs1,s2,t17): - gsin_rt(gs1,s2,t17)
    + SOS1_LB_gsin_rt(gs1,s2,t17) = 0
  SOS1_LB_gsout_rt(gs1,s2,t17): - gsout_rt(gs1,s2,t17)
@@ -12141,6 +12905,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t18) = 0
  SOS1_LB_gprodDn(gw2,s2,t18): - gprodDn(gw2,s2,t18)
    + SOS1_LB_gprodDn(gw2,s2,t18) = 0
+ SOS1_LB_gprodUp(gw3,s2,t18): - gprodUp(gw3,s2,t18)
+   + SOS1_LB_gprodUp(gw3,s2,t18) = 0
+ SOS1_LB_gprodDn(gw3,s2,t18): - gprodDn(gw3,s2,t18)
+   + SOS1_LB_gprodDn(gw3,s2,t18) = 0
  SOS1_LB_gsin_rt(gs1,s2,t18): - gsin_rt(gs1,s2,t18)
    + SOS1_LB_gsin_rt(gs1,s2,t18) = 0
  SOS1_LB_gsout_rt(gs1,s2,t18): - gsout_rt(gs1,s2,t18)
@@ -12168,6 +12936,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t19) = 0
  SOS1_LB_gprodDn(gw2,s2,t19): - gprodDn(gw2,s2,t19)
    + SOS1_LB_gprodDn(gw2,s2,t19) = 0
+ SOS1_LB_gprodUp(gw3,s2,t19): - gprodUp(gw3,s2,t19)
+   + SOS1_LB_gprodUp(gw3,s2,t19) = 0
+ SOS1_LB_gprodDn(gw3,s2,t19): - gprodDn(gw3,s2,t19)
+   + SOS1_LB_gprodDn(gw3,s2,t19) = 0
  SOS1_LB_gsin_rt(gs1,s2,t19): - gsin_rt(gs1,s2,t19)
    + SOS1_LB_gsin_rt(gs1,s2,t19) = 0
  SOS1_LB_gsout_rt(gs1,s2,t19): - gsout_rt(gs1,s2,t19)
@@ -12195,6 +12967,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t20) = 0
  SOS1_LB_gprodDn(gw2,s2,t20): - gprodDn(gw2,s2,t20)
    + SOS1_LB_gprodDn(gw2,s2,t20) = 0
+ SOS1_LB_gprodUp(gw3,s2,t20): - gprodUp(gw3,s2,t20)
+   + SOS1_LB_gprodUp(gw3,s2,t20) = 0
+ SOS1_LB_gprodDn(gw3,s2,t20): - gprodDn(gw3,s2,t20)
+   + SOS1_LB_gprodDn(gw3,s2,t20) = 0
  SOS1_LB_gsin_rt(gs1,s2,t20): - gsin_rt(gs1,s2,t20)
    + SOS1_LB_gsin_rt(gs1,s2,t20) = 0
  SOS1_LB_gsout_rt(gs1,s2,t20): - gsout_rt(gs1,s2,t20)
@@ -12222,6 +12998,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t21) = 0
  SOS1_LB_gprodDn(gw2,s2,t21): - gprodDn(gw2,s2,t21)
    + SOS1_LB_gprodDn(gw2,s2,t21) = 0
+ SOS1_LB_gprodUp(gw3,s2,t21): - gprodUp(gw3,s2,t21)
+   + SOS1_LB_gprodUp(gw3,s2,t21) = 0
+ SOS1_LB_gprodDn(gw3,s2,t21): - gprodDn(gw3,s2,t21)
+   + SOS1_LB_gprodDn(gw3,s2,t21) = 0
  SOS1_LB_gsin_rt(gs1,s2,t21): - gsin_rt(gs1,s2,t21)
    + SOS1_LB_gsin_rt(gs1,s2,t21) = 0
  SOS1_LB_gsout_rt(gs1,s2,t21): - gsout_rt(gs1,s2,t21)
@@ -12249,6 +13029,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t22) = 0
  SOS1_LB_gprodDn(gw2,s2,t22): - gprodDn(gw2,s2,t22)
    + SOS1_LB_gprodDn(gw2,s2,t22) = 0
+ SOS1_LB_gprodUp(gw3,s2,t22): - gprodUp(gw3,s2,t22)
+   + SOS1_LB_gprodUp(gw3,s2,t22) = 0
+ SOS1_LB_gprodDn(gw3,s2,t22): - gprodDn(gw3,s2,t22)
+   + SOS1_LB_gprodDn(gw3,s2,t22) = 0
  SOS1_LB_gsin_rt(gs1,s2,t22): - gsin_rt(gs1,s2,t22)
    + SOS1_LB_gsin_rt(gs1,s2,t22) = 0
  SOS1_LB_gsout_rt(gs1,s2,t22): - gsout_rt(gs1,s2,t22)
@@ -12276,6 +13060,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t23) = 0
  SOS1_LB_gprodDn(gw2,s2,t23): - gprodDn(gw2,s2,t23)
    + SOS1_LB_gprodDn(gw2,s2,t23) = 0
+ SOS1_LB_gprodUp(gw3,s2,t23): - gprodUp(gw3,s2,t23)
+   + SOS1_LB_gprodUp(gw3,s2,t23) = 0
+ SOS1_LB_gprodDn(gw3,s2,t23): - gprodDn(gw3,s2,t23)
+   + SOS1_LB_gprodDn(gw3,s2,t23) = 0
  SOS1_LB_gsin_rt(gs1,s2,t23): - gsin_rt(gs1,s2,t23)
    + SOS1_LB_gsin_rt(gs1,s2,t23) = 0
  SOS1_LB_gsout_rt(gs1,s2,t23): - gsout_rt(gs1,s2,t23)
@@ -12303,6 +13091,10 @@ Subject To
    + SOS1_LB_gprodUp(gw2,s2,t24) = 0
  SOS1_LB_gprodDn(gw2,s2,t24): - gprodDn(gw2,s2,t24)
    + SOS1_LB_gprodDn(gw2,s2,t24) = 0
+ SOS1_LB_gprodUp(gw3,s2,t24): - gprodUp(gw3,s2,t24)
+   + SOS1_LB_gprodUp(gw3,s2,t24) = 0
+ SOS1_LB_gprodDn(gw3,s2,t24): - gprodDn(gw3,s2,t24)
+   + SOS1_LB_gprodDn(gw3,s2,t24) = 0
  SOS1_LB_gsin_rt(gs1,s2,t24): - gsin_rt(gs1,s2,t24)
    + SOS1_LB_gsin_rt(gs1,s2,t24) = 0
  SOS1_LB_gsout_rt(gs1,s2,t24): - gsout_rt(gs1,s2,t24)
@@ -12328,13 +13120,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t1)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t1) = 0
  dLag/gprodUp(gw1,s1,t1): - lambda_gas_balance_rt(ng101,s1,t1)
-   + mu_gprodUp_max(gw1,s1,t1) - muLB_gprodUp(gw1,s1,t1) = -1.575
+   + mu_gprodUp_max(gw1,s1,t1) - muLB_gprodUp(gw1,s1,t1) = -1.05
  dLag/gprodDn(gw1,s1,t1): lambda_gas_balance_rt(ng101,s1,t1)
-   + mu_gprodDn_max(gw1,s1,t1) - muLB_gprodDn(gw1,s1,t1) = 1.425
+   + mu_gprodDn_max(gw1,s1,t1) - muLB_gprodDn(gw1,s1,t1) = 0.95
  dLag/gprodUp(gw2,s1,t1): - lambda_gas_balance_rt(ng101,s1,t1)
    + mu_gprodUp_max(gw2,s1,t1) - muLB_gprodUp(gw2,s1,t1) = -1.575
  dLag/gprodDn(gw2,s1,t1): lambda_gas_balance_rt(ng101,s1,t1)
    + mu_gprodDn_max(gw2,s1,t1) - muLB_gprodDn(gw2,s1,t1) = 1.425
+ dLag/gprodUp(gw3,s1,t1): - lambda_gas_balance_rt(ng101,s1,t1)
+   + mu_gprodUp_max(gw3,s1,t1) - muLB_gprodUp(gw3,s1,t1) = -2.1
+ dLag/gprodDn(gw3,s1,t1): lambda_gas_balance_rt(ng101,s1,t1)
+   + mu_gprodDn_max(gw3,s1,t1) - muLB_gprodDn(gw3,s1,t1) = 1.9
  dLag/gsin_rt(gs1,s1,t1): lambda_gas_balance_rt(ng102,s1,t1)
    + mu_gsinMax_rt(gs1,t1,s1) - lambda_gstor_def_rt(gs1,s1,t1)
    - muLB_gsin_rt(gs1,s1,t1) = 0
@@ -12363,13 +13159,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t2)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t2) = 0
  dLag/gprodUp(gw1,s1,t2): - lambda_gas_balance_rt(ng101,s1,t2)
-   + mu_gprodUp_max(gw1,s1,t2) - muLB_gprodUp(gw1,s1,t2) = -1.575
+   + mu_gprodUp_max(gw1,s1,t2) - muLB_gprodUp(gw1,s1,t2) = -1.05
  dLag/gprodDn(gw1,s1,t2): lambda_gas_balance_rt(ng101,s1,t2)
-   + mu_gprodDn_max(gw1,s1,t2) - muLB_gprodDn(gw1,s1,t2) = 1.425
+   + mu_gprodDn_max(gw1,s1,t2) - muLB_gprodDn(gw1,s1,t2) = 0.95
  dLag/gprodUp(gw2,s1,t2): - lambda_gas_balance_rt(ng101,s1,t2)
    + mu_gprodUp_max(gw2,s1,t2) - muLB_gprodUp(gw2,s1,t2) = -1.575
  dLag/gprodDn(gw2,s1,t2): lambda_gas_balance_rt(ng101,s1,t2)
    + mu_gprodDn_max(gw2,s1,t2) - muLB_gprodDn(gw2,s1,t2) = 1.425
+ dLag/gprodUp(gw3,s1,t2): - lambda_gas_balance_rt(ng101,s1,t2)
+   + mu_gprodUp_max(gw3,s1,t2) - muLB_gprodUp(gw3,s1,t2) = -2.1
+ dLag/gprodDn(gw3,s1,t2): lambda_gas_balance_rt(ng101,s1,t2)
+   + mu_gprodDn_max(gw3,s1,t2) - muLB_gprodDn(gw3,s1,t2) = 1.9
  dLag/gsin_rt(gs1,s1,t2): - lambda_gstor_def_rt(gs1,s1,t2)
    + lambda_gas_balance_rt(ng102,s1,t2) + mu_gsinMax_rt(gs1,t2,s1)
    - muLB_gsin_rt(gs1,s1,t2) = 0
@@ -12398,13 +13198,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t3)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t3) = 0
  dLag/gprodUp(gw1,s1,t3): - lambda_gas_balance_rt(ng101,s1,t3)
-   + mu_gprodUp_max(gw1,s1,t3) - muLB_gprodUp(gw1,s1,t3) = -1.575
+   + mu_gprodUp_max(gw1,s1,t3) - muLB_gprodUp(gw1,s1,t3) = -1.05
  dLag/gprodDn(gw1,s1,t3): lambda_gas_balance_rt(ng101,s1,t3)
-   + mu_gprodDn_max(gw1,s1,t3) - muLB_gprodDn(gw1,s1,t3) = 1.425
+   + mu_gprodDn_max(gw1,s1,t3) - muLB_gprodDn(gw1,s1,t3) = 0.95
  dLag/gprodUp(gw2,s1,t3): - lambda_gas_balance_rt(ng101,s1,t3)
    + mu_gprodUp_max(gw2,s1,t3) - muLB_gprodUp(gw2,s1,t3) = -1.575
  dLag/gprodDn(gw2,s1,t3): lambda_gas_balance_rt(ng101,s1,t3)
    + mu_gprodDn_max(gw2,s1,t3) - muLB_gprodDn(gw2,s1,t3) = 1.425
+ dLag/gprodUp(gw3,s1,t3): - lambda_gas_balance_rt(ng101,s1,t3)
+   + mu_gprodUp_max(gw3,s1,t3) - muLB_gprodUp(gw3,s1,t3) = -2.1
+ dLag/gprodDn(gw3,s1,t3): lambda_gas_balance_rt(ng101,s1,t3)
+   + mu_gprodDn_max(gw3,s1,t3) - muLB_gprodDn(gw3,s1,t3) = 1.9
  dLag/gsin_rt(gs1,s1,t3): - lambda_gstor_def_rt(gs1,s1,t3)
    + lambda_gas_balance_rt(ng102,s1,t3) + mu_gsinMax_rt(gs1,t3,s1)
    - muLB_gsin_rt(gs1,s1,t3) = 0
@@ -12433,13 +13237,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t4)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t4) = 0
  dLag/gprodUp(gw1,s1,t4): - lambda_gas_balance_rt(ng101,s1,t4)
-   + mu_gprodUp_max(gw1,s1,t4) - muLB_gprodUp(gw1,s1,t4) = -1.575
+   + mu_gprodUp_max(gw1,s1,t4) - muLB_gprodUp(gw1,s1,t4) = -1.05
  dLag/gprodDn(gw1,s1,t4): lambda_gas_balance_rt(ng101,s1,t4)
-   + mu_gprodDn_max(gw1,s1,t4) - muLB_gprodDn(gw1,s1,t4) = 1.425
+   + mu_gprodDn_max(gw1,s1,t4) - muLB_gprodDn(gw1,s1,t4) = 0.95
  dLag/gprodUp(gw2,s1,t4): - lambda_gas_balance_rt(ng101,s1,t4)
    + mu_gprodUp_max(gw2,s1,t4) - muLB_gprodUp(gw2,s1,t4) = -1.575
  dLag/gprodDn(gw2,s1,t4): lambda_gas_balance_rt(ng101,s1,t4)
    + mu_gprodDn_max(gw2,s1,t4) - muLB_gprodDn(gw2,s1,t4) = 1.425
+ dLag/gprodUp(gw3,s1,t4): - lambda_gas_balance_rt(ng101,s1,t4)
+   + mu_gprodUp_max(gw3,s1,t4) - muLB_gprodUp(gw3,s1,t4) = -2.1
+ dLag/gprodDn(gw3,s1,t4): lambda_gas_balance_rt(ng101,s1,t4)
+   + mu_gprodDn_max(gw3,s1,t4) - muLB_gprodDn(gw3,s1,t4) = 1.9
  dLag/gsin_rt(gs1,s1,t4): - lambda_gstor_def_rt(gs1,s1,t4)
    + lambda_gas_balance_rt(ng102,s1,t4) + mu_gsinMax_rt(gs1,t4,s1)
    - muLB_gsin_rt(gs1,s1,t4) = 0
@@ -12468,13 +13276,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t5)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t5) = 0
  dLag/gprodUp(gw1,s1,t5): - lambda_gas_balance_rt(ng101,s1,t5)
-   + mu_gprodUp_max(gw1,s1,t5) - muLB_gprodUp(gw1,s1,t5) = -1.575
+   + mu_gprodUp_max(gw1,s1,t5) - muLB_gprodUp(gw1,s1,t5) = -1.05
  dLag/gprodDn(gw1,s1,t5): lambda_gas_balance_rt(ng101,s1,t5)
-   + mu_gprodDn_max(gw1,s1,t5) - muLB_gprodDn(gw1,s1,t5) = 1.425
+   + mu_gprodDn_max(gw1,s1,t5) - muLB_gprodDn(gw1,s1,t5) = 0.95
  dLag/gprodUp(gw2,s1,t5): - lambda_gas_balance_rt(ng101,s1,t5)
    + mu_gprodUp_max(gw2,s1,t5) - muLB_gprodUp(gw2,s1,t5) = -1.575
  dLag/gprodDn(gw2,s1,t5): lambda_gas_balance_rt(ng101,s1,t5)
    + mu_gprodDn_max(gw2,s1,t5) - muLB_gprodDn(gw2,s1,t5) = 1.425
+ dLag/gprodUp(gw3,s1,t5): - lambda_gas_balance_rt(ng101,s1,t5)
+   + mu_gprodUp_max(gw3,s1,t5) - muLB_gprodUp(gw3,s1,t5) = -2.1
+ dLag/gprodDn(gw3,s1,t5): lambda_gas_balance_rt(ng101,s1,t5)
+   + mu_gprodDn_max(gw3,s1,t5) - muLB_gprodDn(gw3,s1,t5) = 1.9
  dLag/gsin_rt(gs1,s1,t5): - lambda_gstor_def_rt(gs1,s1,t5)
    + lambda_gas_balance_rt(ng102,s1,t5) + mu_gsinMax_rt(gs1,t5,s1)
    - muLB_gsin_rt(gs1,s1,t5) = 0
@@ -12503,13 +13315,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t6)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t6) = 0
  dLag/gprodUp(gw1,s1,t6): - lambda_gas_balance_rt(ng101,s1,t6)
-   + mu_gprodUp_max(gw1,s1,t6) - muLB_gprodUp(gw1,s1,t6) = -1.575
+   + mu_gprodUp_max(gw1,s1,t6) - muLB_gprodUp(gw1,s1,t6) = -1.05
  dLag/gprodDn(gw1,s1,t6): lambda_gas_balance_rt(ng101,s1,t6)
-   + mu_gprodDn_max(gw1,s1,t6) - muLB_gprodDn(gw1,s1,t6) = 1.425
+   + mu_gprodDn_max(gw1,s1,t6) - muLB_gprodDn(gw1,s1,t6) = 0.95
  dLag/gprodUp(gw2,s1,t6): - lambda_gas_balance_rt(ng101,s1,t6)
    + mu_gprodUp_max(gw2,s1,t6) - muLB_gprodUp(gw2,s1,t6) = -1.575
  dLag/gprodDn(gw2,s1,t6): lambda_gas_balance_rt(ng101,s1,t6)
    + mu_gprodDn_max(gw2,s1,t6) - muLB_gprodDn(gw2,s1,t6) = 1.425
+ dLag/gprodUp(gw3,s1,t6): - lambda_gas_balance_rt(ng101,s1,t6)
+   + mu_gprodUp_max(gw3,s1,t6) - muLB_gprodUp(gw3,s1,t6) = -2.1
+ dLag/gprodDn(gw3,s1,t6): lambda_gas_balance_rt(ng101,s1,t6)
+   + mu_gprodDn_max(gw3,s1,t6) - muLB_gprodDn(gw3,s1,t6) = 1.9
  dLag/gsin_rt(gs1,s1,t6): - lambda_gstor_def_rt(gs1,s1,t6)
    + lambda_gas_balance_rt(ng102,s1,t6) + mu_gsinMax_rt(gs1,t6,s1)
    - muLB_gsin_rt(gs1,s1,t6) = 0
@@ -12538,13 +13354,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t7)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t7) = 0
  dLag/gprodUp(gw1,s1,t7): - lambda_gas_balance_rt(ng101,s1,t7)
-   + mu_gprodUp_max(gw1,s1,t7) - muLB_gprodUp(gw1,s1,t7) = -1.575
+   + mu_gprodUp_max(gw1,s1,t7) - muLB_gprodUp(gw1,s1,t7) = -1.05
  dLag/gprodDn(gw1,s1,t7): lambda_gas_balance_rt(ng101,s1,t7)
-   + mu_gprodDn_max(gw1,s1,t7) - muLB_gprodDn(gw1,s1,t7) = 1.425
+   + mu_gprodDn_max(gw1,s1,t7) - muLB_gprodDn(gw1,s1,t7) = 0.95
  dLag/gprodUp(gw2,s1,t7): - lambda_gas_balance_rt(ng101,s1,t7)
    + mu_gprodUp_max(gw2,s1,t7) - muLB_gprodUp(gw2,s1,t7) = -1.575
  dLag/gprodDn(gw2,s1,t7): lambda_gas_balance_rt(ng101,s1,t7)
    + mu_gprodDn_max(gw2,s1,t7) - muLB_gprodDn(gw2,s1,t7) = 1.425
+ dLag/gprodUp(gw3,s1,t7): - lambda_gas_balance_rt(ng101,s1,t7)
+   + mu_gprodUp_max(gw3,s1,t7) - muLB_gprodUp(gw3,s1,t7) = -2.1
+ dLag/gprodDn(gw3,s1,t7): lambda_gas_balance_rt(ng101,s1,t7)
+   + mu_gprodDn_max(gw3,s1,t7) - muLB_gprodDn(gw3,s1,t7) = 1.9
  dLag/gsin_rt(gs1,s1,t7): - lambda_gstor_def_rt(gs1,s1,t7)
    + lambda_gas_balance_rt(ng102,s1,t7) + mu_gsinMax_rt(gs1,t7,s1)
    - muLB_gsin_rt(gs1,s1,t7) = 0
@@ -12573,13 +13393,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t8)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t8) = 0
  dLag/gprodUp(gw1,s1,t8): - lambda_gas_balance_rt(ng101,s1,t8)
-   + mu_gprodUp_max(gw1,s1,t8) - muLB_gprodUp(gw1,s1,t8) = -1.575
+   + mu_gprodUp_max(gw1,s1,t8) - muLB_gprodUp(gw1,s1,t8) = -1.05
  dLag/gprodDn(gw1,s1,t8): lambda_gas_balance_rt(ng101,s1,t8)
-   + mu_gprodDn_max(gw1,s1,t8) - muLB_gprodDn(gw1,s1,t8) = 1.425
+   + mu_gprodDn_max(gw1,s1,t8) - muLB_gprodDn(gw1,s1,t8) = 0.95
  dLag/gprodUp(gw2,s1,t8): - lambda_gas_balance_rt(ng101,s1,t8)
    + mu_gprodUp_max(gw2,s1,t8) - muLB_gprodUp(gw2,s1,t8) = -1.575
  dLag/gprodDn(gw2,s1,t8): lambda_gas_balance_rt(ng101,s1,t8)
    + mu_gprodDn_max(gw2,s1,t8) - muLB_gprodDn(gw2,s1,t8) = 1.425
+ dLag/gprodUp(gw3,s1,t8): - lambda_gas_balance_rt(ng101,s1,t8)
+   + mu_gprodUp_max(gw3,s1,t8) - muLB_gprodUp(gw3,s1,t8) = -2.1
+ dLag/gprodDn(gw3,s1,t8): lambda_gas_balance_rt(ng101,s1,t8)
+   + mu_gprodDn_max(gw3,s1,t8) - muLB_gprodDn(gw3,s1,t8) = 1.9
  dLag/gsin_rt(gs1,s1,t8): - lambda_gstor_def_rt(gs1,s1,t8)
    + lambda_gas_balance_rt(ng102,s1,t8) + mu_gsinMax_rt(gs1,t8,s1)
    - muLB_gsin_rt(gs1,s1,t8) = 0
@@ -12608,13 +13432,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t9)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t9) = 0
  dLag/gprodUp(gw1,s1,t9): - lambda_gas_balance_rt(ng101,s1,t9)
-   + mu_gprodUp_max(gw1,s1,t9) - muLB_gprodUp(gw1,s1,t9) = -1.575
+   + mu_gprodUp_max(gw1,s1,t9) - muLB_gprodUp(gw1,s1,t9) = -1.05
  dLag/gprodDn(gw1,s1,t9): lambda_gas_balance_rt(ng101,s1,t9)
-   + mu_gprodDn_max(gw1,s1,t9) - muLB_gprodDn(gw1,s1,t9) = 1.425
+   + mu_gprodDn_max(gw1,s1,t9) - muLB_gprodDn(gw1,s1,t9) = 0.95
  dLag/gprodUp(gw2,s1,t9): - lambda_gas_balance_rt(ng101,s1,t9)
    + mu_gprodUp_max(gw2,s1,t9) - muLB_gprodUp(gw2,s1,t9) = -1.575
  dLag/gprodDn(gw2,s1,t9): lambda_gas_balance_rt(ng101,s1,t9)
    + mu_gprodDn_max(gw2,s1,t9) - muLB_gprodDn(gw2,s1,t9) = 1.425
+ dLag/gprodUp(gw3,s1,t9): - lambda_gas_balance_rt(ng101,s1,t9)
+   + mu_gprodUp_max(gw3,s1,t9) - muLB_gprodUp(gw3,s1,t9) = -2.1
+ dLag/gprodDn(gw3,s1,t9): lambda_gas_balance_rt(ng101,s1,t9)
+   + mu_gprodDn_max(gw3,s1,t9) - muLB_gprodDn(gw3,s1,t9) = 1.9
  dLag/gsin_rt(gs1,s1,t9): - lambda_gstor_def_rt(gs1,s1,t9)
    + lambda_gas_balance_rt(ng102,s1,t9) + mu_gsinMax_rt(gs1,t9,s1)
    - muLB_gsin_rt(gs1,s1,t9) = 0
@@ -12643,13 +13471,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t10)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t10) = 0
  dLag/gprodUp(gw1,s1,t10): - lambda_gas_balance_rt(ng101,s1,t10)
-   + mu_gprodUp_max(gw1,s1,t10) - muLB_gprodUp(gw1,s1,t10) = -1.575
+   + mu_gprodUp_max(gw1,s1,t10) - muLB_gprodUp(gw1,s1,t10) = -1.05
  dLag/gprodDn(gw1,s1,t10): lambda_gas_balance_rt(ng101,s1,t10)
-   + mu_gprodDn_max(gw1,s1,t10) - muLB_gprodDn(gw1,s1,t10) = 1.425
+   + mu_gprodDn_max(gw1,s1,t10) - muLB_gprodDn(gw1,s1,t10) = 0.95
  dLag/gprodUp(gw2,s1,t10): - lambda_gas_balance_rt(ng101,s1,t10)
    + mu_gprodUp_max(gw2,s1,t10) - muLB_gprodUp(gw2,s1,t10) = -1.575
  dLag/gprodDn(gw2,s1,t10): lambda_gas_balance_rt(ng101,s1,t10)
    + mu_gprodDn_max(gw2,s1,t10) - muLB_gprodDn(gw2,s1,t10) = 1.425
+ dLag/gprodUp(gw3,s1,t10): - lambda_gas_balance_rt(ng101,s1,t10)
+   + mu_gprodUp_max(gw3,s1,t10) - muLB_gprodUp(gw3,s1,t10) = -2.1
+ dLag/gprodDn(gw3,s1,t10): lambda_gas_balance_rt(ng101,s1,t10)
+   + mu_gprodDn_max(gw3,s1,t10) - muLB_gprodDn(gw3,s1,t10) = 1.9
  dLag/gsin_rt(gs1,s1,t10): - lambda_gstor_def_rt(gs1,s1,t10)
    + lambda_gas_balance_rt(ng102,s1,t10) + mu_gsinMax_rt(gs1,t10,s1)
    - muLB_gsin_rt(gs1,s1,t10) = 0
@@ -12678,13 +13510,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t11)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t11) = 0
  dLag/gprodUp(gw1,s1,t11): - lambda_gas_balance_rt(ng101,s1,t11)
-   + mu_gprodUp_max(gw1,s1,t11) - muLB_gprodUp(gw1,s1,t11) = -1.575
+   + mu_gprodUp_max(gw1,s1,t11) - muLB_gprodUp(gw1,s1,t11) = -1.05
  dLag/gprodDn(gw1,s1,t11): lambda_gas_balance_rt(ng101,s1,t11)
-   + mu_gprodDn_max(gw1,s1,t11) - muLB_gprodDn(gw1,s1,t11) = 1.425
+   + mu_gprodDn_max(gw1,s1,t11) - muLB_gprodDn(gw1,s1,t11) = 0.95
  dLag/gprodUp(gw2,s1,t11): - lambda_gas_balance_rt(ng101,s1,t11)
    + mu_gprodUp_max(gw2,s1,t11) - muLB_gprodUp(gw2,s1,t11) = -1.575
  dLag/gprodDn(gw2,s1,t11): lambda_gas_balance_rt(ng101,s1,t11)
    + mu_gprodDn_max(gw2,s1,t11) - muLB_gprodDn(gw2,s1,t11) = 1.425
+ dLag/gprodUp(gw3,s1,t11): - lambda_gas_balance_rt(ng101,s1,t11)
+   + mu_gprodUp_max(gw3,s1,t11) - muLB_gprodUp(gw3,s1,t11) = -2.1
+ dLag/gprodDn(gw3,s1,t11): lambda_gas_balance_rt(ng101,s1,t11)
+   + mu_gprodDn_max(gw3,s1,t11) - muLB_gprodDn(gw3,s1,t11) = 1.9
  dLag/gsin_rt(gs1,s1,t11): - lambda_gstor_def_rt(gs1,s1,t11)
    + lambda_gas_balance_rt(ng102,s1,t11) + mu_gsinMax_rt(gs1,t11,s1)
    - muLB_gsin_rt(gs1,s1,t11) = 0
@@ -12713,13 +13549,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t12)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t12) = 0
  dLag/gprodUp(gw1,s1,t12): - lambda_gas_balance_rt(ng101,s1,t12)
-   + mu_gprodUp_max(gw1,s1,t12) - muLB_gprodUp(gw1,s1,t12) = -1.575
+   + mu_gprodUp_max(gw1,s1,t12) - muLB_gprodUp(gw1,s1,t12) = -1.05
  dLag/gprodDn(gw1,s1,t12): lambda_gas_balance_rt(ng101,s1,t12)
-   + mu_gprodDn_max(gw1,s1,t12) - muLB_gprodDn(gw1,s1,t12) = 1.425
+   + mu_gprodDn_max(gw1,s1,t12) - muLB_gprodDn(gw1,s1,t12) = 0.95
  dLag/gprodUp(gw2,s1,t12): - lambda_gas_balance_rt(ng101,s1,t12)
    + mu_gprodUp_max(gw2,s1,t12) - muLB_gprodUp(gw2,s1,t12) = -1.575
  dLag/gprodDn(gw2,s1,t12): lambda_gas_balance_rt(ng101,s1,t12)
    + mu_gprodDn_max(gw2,s1,t12) - muLB_gprodDn(gw2,s1,t12) = 1.425
+ dLag/gprodUp(gw3,s1,t12): - lambda_gas_balance_rt(ng101,s1,t12)
+   + mu_gprodUp_max(gw3,s1,t12) - muLB_gprodUp(gw3,s1,t12) = -2.1
+ dLag/gprodDn(gw3,s1,t12): lambda_gas_balance_rt(ng101,s1,t12)
+   + mu_gprodDn_max(gw3,s1,t12) - muLB_gprodDn(gw3,s1,t12) = 1.9
  dLag/gsin_rt(gs1,s1,t12): - lambda_gstor_def_rt(gs1,s1,t12)
    + lambda_gas_balance_rt(ng102,s1,t12) + mu_gsinMax_rt(gs1,t12,s1)
    - muLB_gsin_rt(gs1,s1,t12) = 0
@@ -12748,13 +13588,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t13)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t13) = 0
  dLag/gprodUp(gw1,s1,t13): - lambda_gas_balance_rt(ng101,s1,t13)
-   + mu_gprodUp_max(gw1,s1,t13) - muLB_gprodUp(gw1,s1,t13) = -1.575
+   + mu_gprodUp_max(gw1,s1,t13) - muLB_gprodUp(gw1,s1,t13) = -1.05
  dLag/gprodDn(gw1,s1,t13): lambda_gas_balance_rt(ng101,s1,t13)
-   + mu_gprodDn_max(gw1,s1,t13) - muLB_gprodDn(gw1,s1,t13) = 1.425
+   + mu_gprodDn_max(gw1,s1,t13) - muLB_gprodDn(gw1,s1,t13) = 0.95
  dLag/gprodUp(gw2,s1,t13): - lambda_gas_balance_rt(ng101,s1,t13)
    + mu_gprodUp_max(gw2,s1,t13) - muLB_gprodUp(gw2,s1,t13) = -1.575
  dLag/gprodDn(gw2,s1,t13): lambda_gas_balance_rt(ng101,s1,t13)
    + mu_gprodDn_max(gw2,s1,t13) - muLB_gprodDn(gw2,s1,t13) = 1.425
+ dLag/gprodUp(gw3,s1,t13): - lambda_gas_balance_rt(ng101,s1,t13)
+   + mu_gprodUp_max(gw3,s1,t13) - muLB_gprodUp(gw3,s1,t13) = -2.1
+ dLag/gprodDn(gw3,s1,t13): lambda_gas_balance_rt(ng101,s1,t13)
+   + mu_gprodDn_max(gw3,s1,t13) - muLB_gprodDn(gw3,s1,t13) = 1.9
  dLag/gsin_rt(gs1,s1,t13): - lambda_gstor_def_rt(gs1,s1,t13)
    + lambda_gas_balance_rt(ng102,s1,t13) + mu_gsinMax_rt(gs1,t13,s1)
    - muLB_gsin_rt(gs1,s1,t13) = 0
@@ -12783,13 +13627,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t14)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t14) = 0
  dLag/gprodUp(gw1,s1,t14): - lambda_gas_balance_rt(ng101,s1,t14)
-   + mu_gprodUp_max(gw1,s1,t14) - muLB_gprodUp(gw1,s1,t14) = -1.575
+   + mu_gprodUp_max(gw1,s1,t14) - muLB_gprodUp(gw1,s1,t14) = -1.05
  dLag/gprodDn(gw1,s1,t14): lambda_gas_balance_rt(ng101,s1,t14)
-   + mu_gprodDn_max(gw1,s1,t14) - muLB_gprodDn(gw1,s1,t14) = 1.425
+   + mu_gprodDn_max(gw1,s1,t14) - muLB_gprodDn(gw1,s1,t14) = 0.95
  dLag/gprodUp(gw2,s1,t14): - lambda_gas_balance_rt(ng101,s1,t14)
    + mu_gprodUp_max(gw2,s1,t14) - muLB_gprodUp(gw2,s1,t14) = -1.575
  dLag/gprodDn(gw2,s1,t14): lambda_gas_balance_rt(ng101,s1,t14)
    + mu_gprodDn_max(gw2,s1,t14) - muLB_gprodDn(gw2,s1,t14) = 1.425
+ dLag/gprodUp(gw3,s1,t14): - lambda_gas_balance_rt(ng101,s1,t14)
+   + mu_gprodUp_max(gw3,s1,t14) - muLB_gprodUp(gw3,s1,t14) = -2.1
+ dLag/gprodDn(gw3,s1,t14): lambda_gas_balance_rt(ng101,s1,t14)
+   + mu_gprodDn_max(gw3,s1,t14) - muLB_gprodDn(gw3,s1,t14) = 1.9
  dLag/gsin_rt(gs1,s1,t14): - lambda_gstor_def_rt(gs1,s1,t14)
    + lambda_gas_balance_rt(ng102,s1,t14) + mu_gsinMax_rt(gs1,t14,s1)
    - muLB_gsin_rt(gs1,s1,t14) = 0
@@ -12818,13 +13666,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t15)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t15) = 0
  dLag/gprodUp(gw1,s1,t15): - lambda_gas_balance_rt(ng101,s1,t15)
-   + mu_gprodUp_max(gw1,s1,t15) - muLB_gprodUp(gw1,s1,t15) = -1.575
+   + mu_gprodUp_max(gw1,s1,t15) - muLB_gprodUp(gw1,s1,t15) = -1.05
  dLag/gprodDn(gw1,s1,t15): lambda_gas_balance_rt(ng101,s1,t15)
-   + mu_gprodDn_max(gw1,s1,t15) - muLB_gprodDn(gw1,s1,t15) = 1.425
+   + mu_gprodDn_max(gw1,s1,t15) - muLB_gprodDn(gw1,s1,t15) = 0.95
  dLag/gprodUp(gw2,s1,t15): - lambda_gas_balance_rt(ng101,s1,t15)
    + mu_gprodUp_max(gw2,s1,t15) - muLB_gprodUp(gw2,s1,t15) = -1.575
  dLag/gprodDn(gw2,s1,t15): lambda_gas_balance_rt(ng101,s1,t15)
    + mu_gprodDn_max(gw2,s1,t15) - muLB_gprodDn(gw2,s1,t15) = 1.425
+ dLag/gprodUp(gw3,s1,t15): - lambda_gas_balance_rt(ng101,s1,t15)
+   + mu_gprodUp_max(gw3,s1,t15) - muLB_gprodUp(gw3,s1,t15) = -2.1
+ dLag/gprodDn(gw3,s1,t15): lambda_gas_balance_rt(ng101,s1,t15)
+   + mu_gprodDn_max(gw3,s1,t15) - muLB_gprodDn(gw3,s1,t15) = 1.9
  dLag/gsin_rt(gs1,s1,t15): - lambda_gstor_def_rt(gs1,s1,t15)
    + lambda_gas_balance_rt(ng102,s1,t15) + mu_gsinMax_rt(gs1,t15,s1)
    - muLB_gsin_rt(gs1,s1,t15) = 0
@@ -12853,13 +13705,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t16)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t16) = 0
  dLag/gprodUp(gw1,s1,t16): - lambda_gas_balance_rt(ng101,s1,t16)
-   + mu_gprodUp_max(gw1,s1,t16) - muLB_gprodUp(gw1,s1,t16) = -1.575
+   + mu_gprodUp_max(gw1,s1,t16) - muLB_gprodUp(gw1,s1,t16) = -1.05
  dLag/gprodDn(gw1,s1,t16): lambda_gas_balance_rt(ng101,s1,t16)
-   + mu_gprodDn_max(gw1,s1,t16) - muLB_gprodDn(gw1,s1,t16) = 1.425
+   + mu_gprodDn_max(gw1,s1,t16) - muLB_gprodDn(gw1,s1,t16) = 0.95
  dLag/gprodUp(gw2,s1,t16): - lambda_gas_balance_rt(ng101,s1,t16)
    + mu_gprodUp_max(gw2,s1,t16) - muLB_gprodUp(gw2,s1,t16) = -1.575
  dLag/gprodDn(gw2,s1,t16): lambda_gas_balance_rt(ng101,s1,t16)
    + mu_gprodDn_max(gw2,s1,t16) - muLB_gprodDn(gw2,s1,t16) = 1.425
+ dLag/gprodUp(gw3,s1,t16): - lambda_gas_balance_rt(ng101,s1,t16)
+   + mu_gprodUp_max(gw3,s1,t16) - muLB_gprodUp(gw3,s1,t16) = -2.1
+ dLag/gprodDn(gw3,s1,t16): lambda_gas_balance_rt(ng101,s1,t16)
+   + mu_gprodDn_max(gw3,s1,t16) - muLB_gprodDn(gw3,s1,t16) = 1.9
  dLag/gsin_rt(gs1,s1,t16): - lambda_gstor_def_rt(gs1,s1,t16)
    + lambda_gas_balance_rt(ng102,s1,t16) + mu_gsinMax_rt(gs1,t16,s1)
    - muLB_gsin_rt(gs1,s1,t16) = 0
@@ -12888,13 +13744,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t17)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t17) = 0
  dLag/gprodUp(gw1,s1,t17): - lambda_gas_balance_rt(ng101,s1,t17)
-   + mu_gprodUp_max(gw1,s1,t17) - muLB_gprodUp(gw1,s1,t17) = -1.575
+   + mu_gprodUp_max(gw1,s1,t17) - muLB_gprodUp(gw1,s1,t17) = -1.05
  dLag/gprodDn(gw1,s1,t17): lambda_gas_balance_rt(ng101,s1,t17)
-   + mu_gprodDn_max(gw1,s1,t17) - muLB_gprodDn(gw1,s1,t17) = 1.425
+   + mu_gprodDn_max(gw1,s1,t17) - muLB_gprodDn(gw1,s1,t17) = 0.95
  dLag/gprodUp(gw2,s1,t17): - lambda_gas_balance_rt(ng101,s1,t17)
    + mu_gprodUp_max(gw2,s1,t17) - muLB_gprodUp(gw2,s1,t17) = -1.575
  dLag/gprodDn(gw2,s1,t17): lambda_gas_balance_rt(ng101,s1,t17)
    + mu_gprodDn_max(gw2,s1,t17) - muLB_gprodDn(gw2,s1,t17) = 1.425
+ dLag/gprodUp(gw3,s1,t17): - lambda_gas_balance_rt(ng101,s1,t17)
+   + mu_gprodUp_max(gw3,s1,t17) - muLB_gprodUp(gw3,s1,t17) = -2.1
+ dLag/gprodDn(gw3,s1,t17): lambda_gas_balance_rt(ng101,s1,t17)
+   + mu_gprodDn_max(gw3,s1,t17) - muLB_gprodDn(gw3,s1,t17) = 1.9
  dLag/gsin_rt(gs1,s1,t17): - lambda_gstor_def_rt(gs1,s1,t17)
    + lambda_gas_balance_rt(ng102,s1,t17) + mu_gsinMax_rt(gs1,t17,s1)
    - muLB_gsin_rt(gs1,s1,t17) = 0
@@ -12923,13 +13783,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t18)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t18) = 0
  dLag/gprodUp(gw1,s1,t18): - lambda_gas_balance_rt(ng101,s1,t18)
-   + mu_gprodUp_max(gw1,s1,t18) - muLB_gprodUp(gw1,s1,t18) = -1.575
+   + mu_gprodUp_max(gw1,s1,t18) - muLB_gprodUp(gw1,s1,t18) = -1.05
  dLag/gprodDn(gw1,s1,t18): lambda_gas_balance_rt(ng101,s1,t18)
-   + mu_gprodDn_max(gw1,s1,t18) - muLB_gprodDn(gw1,s1,t18) = 1.425
+   + mu_gprodDn_max(gw1,s1,t18) - muLB_gprodDn(gw1,s1,t18) = 0.95
  dLag/gprodUp(gw2,s1,t18): - lambda_gas_balance_rt(ng101,s1,t18)
    + mu_gprodUp_max(gw2,s1,t18) - muLB_gprodUp(gw2,s1,t18) = -1.575
  dLag/gprodDn(gw2,s1,t18): lambda_gas_balance_rt(ng101,s1,t18)
    + mu_gprodDn_max(gw2,s1,t18) - muLB_gprodDn(gw2,s1,t18) = 1.425
+ dLag/gprodUp(gw3,s1,t18): - lambda_gas_balance_rt(ng101,s1,t18)
+   + mu_gprodUp_max(gw3,s1,t18) - muLB_gprodUp(gw3,s1,t18) = -2.1
+ dLag/gprodDn(gw3,s1,t18): lambda_gas_balance_rt(ng101,s1,t18)
+   + mu_gprodDn_max(gw3,s1,t18) - muLB_gprodDn(gw3,s1,t18) = 1.9
  dLag/gsin_rt(gs1,s1,t18): - lambda_gstor_def_rt(gs1,s1,t18)
    + lambda_gas_balance_rt(ng102,s1,t18) + mu_gsinMax_rt(gs1,t18,s1)
    - muLB_gsin_rt(gs1,s1,t18) = 0
@@ -12958,13 +13822,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t19)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t19) = 0
  dLag/gprodUp(gw1,s1,t19): - lambda_gas_balance_rt(ng101,s1,t19)
-   + mu_gprodUp_max(gw1,s1,t19) - muLB_gprodUp(gw1,s1,t19) = -1.575
+   + mu_gprodUp_max(gw1,s1,t19) - muLB_gprodUp(gw1,s1,t19) = -1.05
  dLag/gprodDn(gw1,s1,t19): lambda_gas_balance_rt(ng101,s1,t19)
-   + mu_gprodDn_max(gw1,s1,t19) - muLB_gprodDn(gw1,s1,t19) = 1.425
+   + mu_gprodDn_max(gw1,s1,t19) - muLB_gprodDn(gw1,s1,t19) = 0.95
  dLag/gprodUp(gw2,s1,t19): - lambda_gas_balance_rt(ng101,s1,t19)
    + mu_gprodUp_max(gw2,s1,t19) - muLB_gprodUp(gw2,s1,t19) = -1.575
  dLag/gprodDn(gw2,s1,t19): lambda_gas_balance_rt(ng101,s1,t19)
    + mu_gprodDn_max(gw2,s1,t19) - muLB_gprodDn(gw2,s1,t19) = 1.425
+ dLag/gprodUp(gw3,s1,t19): - lambda_gas_balance_rt(ng101,s1,t19)
+   + mu_gprodUp_max(gw3,s1,t19) - muLB_gprodUp(gw3,s1,t19) = -2.1
+ dLag/gprodDn(gw3,s1,t19): lambda_gas_balance_rt(ng101,s1,t19)
+   + mu_gprodDn_max(gw3,s1,t19) - muLB_gprodDn(gw3,s1,t19) = 1.9
  dLag/gsin_rt(gs1,s1,t19): - lambda_gstor_def_rt(gs1,s1,t19)
    + lambda_gas_balance_rt(ng102,s1,t19) + mu_gsinMax_rt(gs1,t19,s1)
    - muLB_gsin_rt(gs1,s1,t19) = 0
@@ -12993,13 +13861,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t20)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t20) = 0
  dLag/gprodUp(gw1,s1,t20): - lambda_gas_balance_rt(ng101,s1,t20)
-   + mu_gprodUp_max(gw1,s1,t20) - muLB_gprodUp(gw1,s1,t20) = -1.575
+   + mu_gprodUp_max(gw1,s1,t20) - muLB_gprodUp(gw1,s1,t20) = -1.05
  dLag/gprodDn(gw1,s1,t20): lambda_gas_balance_rt(ng101,s1,t20)
-   + mu_gprodDn_max(gw1,s1,t20) - muLB_gprodDn(gw1,s1,t20) = 1.425
+   + mu_gprodDn_max(gw1,s1,t20) - muLB_gprodDn(gw1,s1,t20) = 0.95
  dLag/gprodUp(gw2,s1,t20): - lambda_gas_balance_rt(ng101,s1,t20)
    + mu_gprodUp_max(gw2,s1,t20) - muLB_gprodUp(gw2,s1,t20) = -1.575
  dLag/gprodDn(gw2,s1,t20): lambda_gas_balance_rt(ng101,s1,t20)
    + mu_gprodDn_max(gw2,s1,t20) - muLB_gprodDn(gw2,s1,t20) = 1.425
+ dLag/gprodUp(gw3,s1,t20): - lambda_gas_balance_rt(ng101,s1,t20)
+   + mu_gprodUp_max(gw3,s1,t20) - muLB_gprodUp(gw3,s1,t20) = -2.1
+ dLag/gprodDn(gw3,s1,t20): lambda_gas_balance_rt(ng101,s1,t20)
+   + mu_gprodDn_max(gw3,s1,t20) - muLB_gprodDn(gw3,s1,t20) = 1.9
  dLag/gsin_rt(gs1,s1,t20): - lambda_gstor_def_rt(gs1,s1,t20)
    + lambda_gas_balance_rt(ng102,s1,t20) + mu_gsinMax_rt(gs1,t20,s1)
    - muLB_gsin_rt(gs1,s1,t20) = 0
@@ -13028,13 +13900,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t21)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t21) = 0
  dLag/gprodUp(gw1,s1,t21): - lambda_gas_balance_rt(ng101,s1,t21)
-   + mu_gprodUp_max(gw1,s1,t21) - muLB_gprodUp(gw1,s1,t21) = -1.575
+   + mu_gprodUp_max(gw1,s1,t21) - muLB_gprodUp(gw1,s1,t21) = -1.05
  dLag/gprodDn(gw1,s1,t21): lambda_gas_balance_rt(ng101,s1,t21)
-   + mu_gprodDn_max(gw1,s1,t21) - muLB_gprodDn(gw1,s1,t21) = 1.425
+   + mu_gprodDn_max(gw1,s1,t21) - muLB_gprodDn(gw1,s1,t21) = 0.95
  dLag/gprodUp(gw2,s1,t21): - lambda_gas_balance_rt(ng101,s1,t21)
    + mu_gprodUp_max(gw2,s1,t21) - muLB_gprodUp(gw2,s1,t21) = -1.575
  dLag/gprodDn(gw2,s1,t21): lambda_gas_balance_rt(ng101,s1,t21)
    + mu_gprodDn_max(gw2,s1,t21) - muLB_gprodDn(gw2,s1,t21) = 1.425
+ dLag/gprodUp(gw3,s1,t21): - lambda_gas_balance_rt(ng101,s1,t21)
+   + mu_gprodUp_max(gw3,s1,t21) - muLB_gprodUp(gw3,s1,t21) = -2.1
+ dLag/gprodDn(gw3,s1,t21): lambda_gas_balance_rt(ng101,s1,t21)
+   + mu_gprodDn_max(gw3,s1,t21) - muLB_gprodDn(gw3,s1,t21) = 1.9
  dLag/gsin_rt(gs1,s1,t21): - lambda_gstor_def_rt(gs1,s1,t21)
    + lambda_gas_balance_rt(ng102,s1,t21) + mu_gsinMax_rt(gs1,t21,s1)
    - muLB_gsin_rt(gs1,s1,t21) = 0
@@ -13063,13 +13939,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t22)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t22) = 0
  dLag/gprodUp(gw1,s1,t22): - lambda_gas_balance_rt(ng101,s1,t22)
-   + mu_gprodUp_max(gw1,s1,t22) - muLB_gprodUp(gw1,s1,t22) = -1.575
+   + mu_gprodUp_max(gw1,s1,t22) - muLB_gprodUp(gw1,s1,t22) = -1.05
  dLag/gprodDn(gw1,s1,t22): lambda_gas_balance_rt(ng101,s1,t22)
-   + mu_gprodDn_max(gw1,s1,t22) - muLB_gprodDn(gw1,s1,t22) = 1.425
+   + mu_gprodDn_max(gw1,s1,t22) - muLB_gprodDn(gw1,s1,t22) = 0.95
  dLag/gprodUp(gw2,s1,t22): - lambda_gas_balance_rt(ng101,s1,t22)
    + mu_gprodUp_max(gw2,s1,t22) - muLB_gprodUp(gw2,s1,t22) = -1.575
  dLag/gprodDn(gw2,s1,t22): lambda_gas_balance_rt(ng101,s1,t22)
    + mu_gprodDn_max(gw2,s1,t22) - muLB_gprodDn(gw2,s1,t22) = 1.425
+ dLag/gprodUp(gw3,s1,t22): - lambda_gas_balance_rt(ng101,s1,t22)
+   + mu_gprodUp_max(gw3,s1,t22) - muLB_gprodUp(gw3,s1,t22) = -2.1
+ dLag/gprodDn(gw3,s1,t22): lambda_gas_balance_rt(ng101,s1,t22)
+   + mu_gprodDn_max(gw3,s1,t22) - muLB_gprodDn(gw3,s1,t22) = 1.9
  dLag/gsin_rt(gs1,s1,t22): - lambda_gstor_def_rt(gs1,s1,t22)
    + lambda_gas_balance_rt(ng102,s1,t22) + mu_gsinMax_rt(gs1,t22,s1)
    - muLB_gsin_rt(gs1,s1,t22) = 0
@@ -13098,13 +13978,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t23)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t23) = 0
  dLag/gprodUp(gw1,s1,t23): - lambda_gas_balance_rt(ng101,s1,t23)
-   + mu_gprodUp_max(gw1,s1,t23) - muLB_gprodUp(gw1,s1,t23) = -1.575
+   + mu_gprodUp_max(gw1,s1,t23) - muLB_gprodUp(gw1,s1,t23) = -1.05
  dLag/gprodDn(gw1,s1,t23): lambda_gas_balance_rt(ng101,s1,t23)
-   + mu_gprodDn_max(gw1,s1,t23) - muLB_gprodDn(gw1,s1,t23) = 1.425
+   + mu_gprodDn_max(gw1,s1,t23) - muLB_gprodDn(gw1,s1,t23) = 0.95
  dLag/gprodUp(gw2,s1,t23): - lambda_gas_balance_rt(ng101,s1,t23)
    + mu_gprodUp_max(gw2,s1,t23) - muLB_gprodUp(gw2,s1,t23) = -1.575
  dLag/gprodDn(gw2,s1,t23): lambda_gas_balance_rt(ng101,s1,t23)
    + mu_gprodDn_max(gw2,s1,t23) - muLB_gprodDn(gw2,s1,t23) = 1.425
+ dLag/gprodUp(gw3,s1,t23): - lambda_gas_balance_rt(ng101,s1,t23)
+   + mu_gprodUp_max(gw3,s1,t23) - muLB_gprodUp(gw3,s1,t23) = -2.1
+ dLag/gprodDn(gw3,s1,t23): lambda_gas_balance_rt(ng101,s1,t23)
+   + mu_gprodDn_max(gw3,s1,t23) - muLB_gprodDn(gw3,s1,t23) = 1.9
  dLag/gsin_rt(gs1,s1,t23): - lambda_gstor_def_rt(gs1,s1,t23)
    + lambda_gas_balance_rt(ng102,s1,t23) + mu_gsinMax_rt(gs1,t23,s1)
    - muLB_gsin_rt(gs1,s1,t23) = 0
@@ -13133,13 +14017,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s1,t24)
    - muLB_qout_sr_rt(('ng101','ng102'),s1,t24) = 0
  dLag/gprodUp(gw1,s1,t24): - lambda_gas_balance_rt(ng101,s1,t24)
-   + mu_gprodUp_max(gw1,s1,t24) - muLB_gprodUp(gw1,s1,t24) = -1.575
+   + mu_gprodUp_max(gw1,s1,t24) - muLB_gprodUp(gw1,s1,t24) = -1.05
  dLag/gprodDn(gw1,s1,t24): lambda_gas_balance_rt(ng101,s1,t24)
-   + mu_gprodDn_max(gw1,s1,t24) - muLB_gprodDn(gw1,s1,t24) = 1.425
+   + mu_gprodDn_max(gw1,s1,t24) - muLB_gprodDn(gw1,s1,t24) = 0.95
  dLag/gprodUp(gw2,s1,t24): - lambda_gas_balance_rt(ng101,s1,t24)
    + mu_gprodUp_max(gw2,s1,t24) - muLB_gprodUp(gw2,s1,t24) = -1.575
  dLag/gprodDn(gw2,s1,t24): lambda_gas_balance_rt(ng101,s1,t24)
    + mu_gprodDn_max(gw2,s1,t24) - muLB_gprodDn(gw2,s1,t24) = 1.425
+ dLag/gprodUp(gw3,s1,t24): - lambda_gas_balance_rt(ng101,s1,t24)
+   + mu_gprodUp_max(gw3,s1,t24) - muLB_gprodUp(gw3,s1,t24) = -2.1
+ dLag/gprodDn(gw3,s1,t24): lambda_gas_balance_rt(ng101,s1,t24)
+   + mu_gprodDn_max(gw3,s1,t24) - muLB_gprodDn(gw3,s1,t24) = 1.9
  dLag/gsin_rt(gs1,s1,t24): - lambda_gstor_def_rt(gs1,s1,t24)
    + lambda_gas_balance_rt(ng102,s1,t24) + mu_gsinMax_rt(gs1,t24,s1)
    - muLB_gsin_rt(gs1,s1,t24) = 0
@@ -13168,13 +14056,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t1)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t1) = 0
  dLag/gprodUp(gw1,s2,t1): - lambda_gas_balance_rt(ng101,s2,t1)
-   + mu_gprodUp_max(gw1,s2,t1) - muLB_gprodUp(gw1,s2,t1) = -1.575
+   + mu_gprodUp_max(gw1,s2,t1) - muLB_gprodUp(gw1,s2,t1) = -1.05
  dLag/gprodDn(gw1,s2,t1): lambda_gas_balance_rt(ng101,s2,t1)
-   + mu_gprodDn_max(gw1,s2,t1) - muLB_gprodDn(gw1,s2,t1) = 1.425
+   + mu_gprodDn_max(gw1,s2,t1) - muLB_gprodDn(gw1,s2,t1) = 0.95
  dLag/gprodUp(gw2,s2,t1): - lambda_gas_balance_rt(ng101,s2,t1)
    + mu_gprodUp_max(gw2,s2,t1) - muLB_gprodUp(gw2,s2,t1) = -1.575
  dLag/gprodDn(gw2,s2,t1): lambda_gas_balance_rt(ng101,s2,t1)
    + mu_gprodDn_max(gw2,s2,t1) - muLB_gprodDn(gw2,s2,t1) = 1.425
+ dLag/gprodUp(gw3,s2,t1): - lambda_gas_balance_rt(ng101,s2,t1)
+   + mu_gprodUp_max(gw3,s2,t1) - muLB_gprodUp(gw3,s2,t1) = -2.1
+ dLag/gprodDn(gw3,s2,t1): lambda_gas_balance_rt(ng101,s2,t1)
+   + mu_gprodDn_max(gw3,s2,t1) - muLB_gprodDn(gw3,s2,t1) = 1.9
  dLag/gsin_rt(gs1,s2,t1): lambda_gas_balance_rt(ng102,s2,t1)
    + mu_gsinMax_rt(gs1,t1,s2) - lambda_gstor_def_rt(gs1,s2,t1)
    - muLB_gsin_rt(gs1,s2,t1) = 0
@@ -13203,13 +14095,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t2)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t2) = 0
  dLag/gprodUp(gw1,s2,t2): - lambda_gas_balance_rt(ng101,s2,t2)
-   + mu_gprodUp_max(gw1,s2,t2) - muLB_gprodUp(gw1,s2,t2) = -1.575
+   + mu_gprodUp_max(gw1,s2,t2) - muLB_gprodUp(gw1,s2,t2) = -1.05
  dLag/gprodDn(gw1,s2,t2): lambda_gas_balance_rt(ng101,s2,t2)
-   + mu_gprodDn_max(gw1,s2,t2) - muLB_gprodDn(gw1,s2,t2) = 1.425
+   + mu_gprodDn_max(gw1,s2,t2) - muLB_gprodDn(gw1,s2,t2) = 0.95
  dLag/gprodUp(gw2,s2,t2): - lambda_gas_balance_rt(ng101,s2,t2)
    + mu_gprodUp_max(gw2,s2,t2) - muLB_gprodUp(gw2,s2,t2) = -1.575
  dLag/gprodDn(gw2,s2,t2): lambda_gas_balance_rt(ng101,s2,t2)
    + mu_gprodDn_max(gw2,s2,t2) - muLB_gprodDn(gw2,s2,t2) = 1.425
+ dLag/gprodUp(gw3,s2,t2): - lambda_gas_balance_rt(ng101,s2,t2)
+   + mu_gprodUp_max(gw3,s2,t2) - muLB_gprodUp(gw3,s2,t2) = -2.1
+ dLag/gprodDn(gw3,s2,t2): lambda_gas_balance_rt(ng101,s2,t2)
+   + mu_gprodDn_max(gw3,s2,t2) - muLB_gprodDn(gw3,s2,t2) = 1.9
  dLag/gsin_rt(gs1,s2,t2): - lambda_gstor_def_rt(gs1,s2,t2)
    + lambda_gas_balance_rt(ng102,s2,t2) + mu_gsinMax_rt(gs1,t2,s2)
    - muLB_gsin_rt(gs1,s2,t2) = 0
@@ -13238,13 +14134,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t3)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t3) = 0
  dLag/gprodUp(gw1,s2,t3): - lambda_gas_balance_rt(ng101,s2,t3)
-   + mu_gprodUp_max(gw1,s2,t3) - muLB_gprodUp(gw1,s2,t3) = -1.575
+   + mu_gprodUp_max(gw1,s2,t3) - muLB_gprodUp(gw1,s2,t3) = -1.05
  dLag/gprodDn(gw1,s2,t3): lambda_gas_balance_rt(ng101,s2,t3)
-   + mu_gprodDn_max(gw1,s2,t3) - muLB_gprodDn(gw1,s2,t3) = 1.425
+   + mu_gprodDn_max(gw1,s2,t3) - muLB_gprodDn(gw1,s2,t3) = 0.95
  dLag/gprodUp(gw2,s2,t3): - lambda_gas_balance_rt(ng101,s2,t3)
    + mu_gprodUp_max(gw2,s2,t3) - muLB_gprodUp(gw2,s2,t3) = -1.575
  dLag/gprodDn(gw2,s2,t3): lambda_gas_balance_rt(ng101,s2,t3)
    + mu_gprodDn_max(gw2,s2,t3) - muLB_gprodDn(gw2,s2,t3) = 1.425
+ dLag/gprodUp(gw3,s2,t3): - lambda_gas_balance_rt(ng101,s2,t3)
+   + mu_gprodUp_max(gw3,s2,t3) - muLB_gprodUp(gw3,s2,t3) = -2.1
+ dLag/gprodDn(gw3,s2,t3): lambda_gas_balance_rt(ng101,s2,t3)
+   + mu_gprodDn_max(gw3,s2,t3) - muLB_gprodDn(gw3,s2,t3) = 1.9
  dLag/gsin_rt(gs1,s2,t3): - lambda_gstor_def_rt(gs1,s2,t3)
    + lambda_gas_balance_rt(ng102,s2,t3) + mu_gsinMax_rt(gs1,t3,s2)
    - muLB_gsin_rt(gs1,s2,t3) = 0
@@ -13273,13 +14173,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t4)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t4) = 0
  dLag/gprodUp(gw1,s2,t4): - lambda_gas_balance_rt(ng101,s2,t4)
-   + mu_gprodUp_max(gw1,s2,t4) - muLB_gprodUp(gw1,s2,t4) = -1.575
+   + mu_gprodUp_max(gw1,s2,t4) - muLB_gprodUp(gw1,s2,t4) = -1.05
  dLag/gprodDn(gw1,s2,t4): lambda_gas_balance_rt(ng101,s2,t4)
-   + mu_gprodDn_max(gw1,s2,t4) - muLB_gprodDn(gw1,s2,t4) = 1.425
+   + mu_gprodDn_max(gw1,s2,t4) - muLB_gprodDn(gw1,s2,t4) = 0.95
  dLag/gprodUp(gw2,s2,t4): - lambda_gas_balance_rt(ng101,s2,t4)
    + mu_gprodUp_max(gw2,s2,t4) - muLB_gprodUp(gw2,s2,t4) = -1.575
  dLag/gprodDn(gw2,s2,t4): lambda_gas_balance_rt(ng101,s2,t4)
    + mu_gprodDn_max(gw2,s2,t4) - muLB_gprodDn(gw2,s2,t4) = 1.425
+ dLag/gprodUp(gw3,s2,t4): - lambda_gas_balance_rt(ng101,s2,t4)
+   + mu_gprodUp_max(gw3,s2,t4) - muLB_gprodUp(gw3,s2,t4) = -2.1
+ dLag/gprodDn(gw3,s2,t4): lambda_gas_balance_rt(ng101,s2,t4)
+   + mu_gprodDn_max(gw3,s2,t4) - muLB_gprodDn(gw3,s2,t4) = 1.9
  dLag/gsin_rt(gs1,s2,t4): - lambda_gstor_def_rt(gs1,s2,t4)
    + lambda_gas_balance_rt(ng102,s2,t4) + mu_gsinMax_rt(gs1,t4,s2)
    - muLB_gsin_rt(gs1,s2,t4) = 0
@@ -13308,13 +14212,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t5)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t5) = 0
  dLag/gprodUp(gw1,s2,t5): - lambda_gas_balance_rt(ng101,s2,t5)
-   + mu_gprodUp_max(gw1,s2,t5) - muLB_gprodUp(gw1,s2,t5) = -1.575
+   + mu_gprodUp_max(gw1,s2,t5) - muLB_gprodUp(gw1,s2,t5) = -1.05
  dLag/gprodDn(gw1,s2,t5): lambda_gas_balance_rt(ng101,s2,t5)
-   + mu_gprodDn_max(gw1,s2,t5) - muLB_gprodDn(gw1,s2,t5) = 1.425
+   + mu_gprodDn_max(gw1,s2,t5) - muLB_gprodDn(gw1,s2,t5) = 0.95
  dLag/gprodUp(gw2,s2,t5): - lambda_gas_balance_rt(ng101,s2,t5)
    + mu_gprodUp_max(gw2,s2,t5) - muLB_gprodUp(gw2,s2,t5) = -1.575
  dLag/gprodDn(gw2,s2,t5): lambda_gas_balance_rt(ng101,s2,t5)
    + mu_gprodDn_max(gw2,s2,t5) - muLB_gprodDn(gw2,s2,t5) = 1.425
+ dLag/gprodUp(gw3,s2,t5): - lambda_gas_balance_rt(ng101,s2,t5)
+   + mu_gprodUp_max(gw3,s2,t5) - muLB_gprodUp(gw3,s2,t5) = -2.1
+ dLag/gprodDn(gw3,s2,t5): lambda_gas_balance_rt(ng101,s2,t5)
+   + mu_gprodDn_max(gw3,s2,t5) - muLB_gprodDn(gw3,s2,t5) = 1.9
  dLag/gsin_rt(gs1,s2,t5): - lambda_gstor_def_rt(gs1,s2,t5)
    + lambda_gas_balance_rt(ng102,s2,t5) + mu_gsinMax_rt(gs1,t5,s2)
    - muLB_gsin_rt(gs1,s2,t5) = 0
@@ -13343,13 +14251,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t6)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t6) = 0
  dLag/gprodUp(gw1,s2,t6): - lambda_gas_balance_rt(ng101,s2,t6)
-   + mu_gprodUp_max(gw1,s2,t6) - muLB_gprodUp(gw1,s2,t6) = -1.575
+   + mu_gprodUp_max(gw1,s2,t6) - muLB_gprodUp(gw1,s2,t6) = -1.05
  dLag/gprodDn(gw1,s2,t6): lambda_gas_balance_rt(ng101,s2,t6)
-   + mu_gprodDn_max(gw1,s2,t6) - muLB_gprodDn(gw1,s2,t6) = 1.425
+   + mu_gprodDn_max(gw1,s2,t6) - muLB_gprodDn(gw1,s2,t6) = 0.95
  dLag/gprodUp(gw2,s2,t6): - lambda_gas_balance_rt(ng101,s2,t6)
    + mu_gprodUp_max(gw2,s2,t6) - muLB_gprodUp(gw2,s2,t6) = -1.575
  dLag/gprodDn(gw2,s2,t6): lambda_gas_balance_rt(ng101,s2,t6)
    + mu_gprodDn_max(gw2,s2,t6) - muLB_gprodDn(gw2,s2,t6) = 1.425
+ dLag/gprodUp(gw3,s2,t6): - lambda_gas_balance_rt(ng101,s2,t6)
+   + mu_gprodUp_max(gw3,s2,t6) - muLB_gprodUp(gw3,s2,t6) = -2.1
+ dLag/gprodDn(gw3,s2,t6): lambda_gas_balance_rt(ng101,s2,t6)
+   + mu_gprodDn_max(gw3,s2,t6) - muLB_gprodDn(gw3,s2,t6) = 1.9
  dLag/gsin_rt(gs1,s2,t6): - lambda_gstor_def_rt(gs1,s2,t6)
    + lambda_gas_balance_rt(ng102,s2,t6) + mu_gsinMax_rt(gs1,t6,s2)
    - muLB_gsin_rt(gs1,s2,t6) = 0
@@ -13378,13 +14290,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t7)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t7) = 0
  dLag/gprodUp(gw1,s2,t7): - lambda_gas_balance_rt(ng101,s2,t7)
-   + mu_gprodUp_max(gw1,s2,t7) - muLB_gprodUp(gw1,s2,t7) = -1.575
+   + mu_gprodUp_max(gw1,s2,t7) - muLB_gprodUp(gw1,s2,t7) = -1.05
  dLag/gprodDn(gw1,s2,t7): lambda_gas_balance_rt(ng101,s2,t7)
-   + mu_gprodDn_max(gw1,s2,t7) - muLB_gprodDn(gw1,s2,t7) = 1.425
+   + mu_gprodDn_max(gw1,s2,t7) - muLB_gprodDn(gw1,s2,t7) = 0.95
  dLag/gprodUp(gw2,s2,t7): - lambda_gas_balance_rt(ng101,s2,t7)
    + mu_gprodUp_max(gw2,s2,t7) - muLB_gprodUp(gw2,s2,t7) = -1.575
  dLag/gprodDn(gw2,s2,t7): lambda_gas_balance_rt(ng101,s2,t7)
    + mu_gprodDn_max(gw2,s2,t7) - muLB_gprodDn(gw2,s2,t7) = 1.425
+ dLag/gprodUp(gw3,s2,t7): - lambda_gas_balance_rt(ng101,s2,t7)
+   + mu_gprodUp_max(gw3,s2,t7) - muLB_gprodUp(gw3,s2,t7) = -2.1
+ dLag/gprodDn(gw3,s2,t7): lambda_gas_balance_rt(ng101,s2,t7)
+   + mu_gprodDn_max(gw3,s2,t7) - muLB_gprodDn(gw3,s2,t7) = 1.9
  dLag/gsin_rt(gs1,s2,t7): - lambda_gstor_def_rt(gs1,s2,t7)
    + lambda_gas_balance_rt(ng102,s2,t7) + mu_gsinMax_rt(gs1,t7,s2)
    - muLB_gsin_rt(gs1,s2,t7) = 0
@@ -13413,13 +14329,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t8)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t8) = 0
  dLag/gprodUp(gw1,s2,t8): - lambda_gas_balance_rt(ng101,s2,t8)
-   + mu_gprodUp_max(gw1,s2,t8) - muLB_gprodUp(gw1,s2,t8) = -1.575
+   + mu_gprodUp_max(gw1,s2,t8) - muLB_gprodUp(gw1,s2,t8) = -1.05
  dLag/gprodDn(gw1,s2,t8): lambda_gas_balance_rt(ng101,s2,t8)
-   + mu_gprodDn_max(gw1,s2,t8) - muLB_gprodDn(gw1,s2,t8) = 1.425
+   + mu_gprodDn_max(gw1,s2,t8) - muLB_gprodDn(gw1,s2,t8) = 0.95
  dLag/gprodUp(gw2,s2,t8): - lambda_gas_balance_rt(ng101,s2,t8)
    + mu_gprodUp_max(gw2,s2,t8) - muLB_gprodUp(gw2,s2,t8) = -1.575
  dLag/gprodDn(gw2,s2,t8): lambda_gas_balance_rt(ng101,s2,t8)
    + mu_gprodDn_max(gw2,s2,t8) - muLB_gprodDn(gw2,s2,t8) = 1.425
+ dLag/gprodUp(gw3,s2,t8): - lambda_gas_balance_rt(ng101,s2,t8)
+   + mu_gprodUp_max(gw3,s2,t8) - muLB_gprodUp(gw3,s2,t8) = -2.1
+ dLag/gprodDn(gw3,s2,t8): lambda_gas_balance_rt(ng101,s2,t8)
+   + mu_gprodDn_max(gw3,s2,t8) - muLB_gprodDn(gw3,s2,t8) = 1.9
  dLag/gsin_rt(gs1,s2,t8): - lambda_gstor_def_rt(gs1,s2,t8)
    + lambda_gas_balance_rt(ng102,s2,t8) + mu_gsinMax_rt(gs1,t8,s2)
    - muLB_gsin_rt(gs1,s2,t8) = 0
@@ -13448,13 +14368,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t9)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t9) = 0
  dLag/gprodUp(gw1,s2,t9): - lambda_gas_balance_rt(ng101,s2,t9)
-   + mu_gprodUp_max(gw1,s2,t9) - muLB_gprodUp(gw1,s2,t9) = -1.575
+   + mu_gprodUp_max(gw1,s2,t9) - muLB_gprodUp(gw1,s2,t9) = -1.05
  dLag/gprodDn(gw1,s2,t9): lambda_gas_balance_rt(ng101,s2,t9)
-   + mu_gprodDn_max(gw1,s2,t9) - muLB_gprodDn(gw1,s2,t9) = 1.425
+   + mu_gprodDn_max(gw1,s2,t9) - muLB_gprodDn(gw1,s2,t9) = 0.95
  dLag/gprodUp(gw2,s2,t9): - lambda_gas_balance_rt(ng101,s2,t9)
    + mu_gprodUp_max(gw2,s2,t9) - muLB_gprodUp(gw2,s2,t9) = -1.575
  dLag/gprodDn(gw2,s2,t9): lambda_gas_balance_rt(ng101,s2,t9)
    + mu_gprodDn_max(gw2,s2,t9) - muLB_gprodDn(gw2,s2,t9) = 1.425
+ dLag/gprodUp(gw3,s2,t9): - lambda_gas_balance_rt(ng101,s2,t9)
+   + mu_gprodUp_max(gw3,s2,t9) - muLB_gprodUp(gw3,s2,t9) = -2.1
+ dLag/gprodDn(gw3,s2,t9): lambda_gas_balance_rt(ng101,s2,t9)
+   + mu_gprodDn_max(gw3,s2,t9) - muLB_gprodDn(gw3,s2,t9) = 1.9
  dLag/gsin_rt(gs1,s2,t9): - lambda_gstor_def_rt(gs1,s2,t9)
    + lambda_gas_balance_rt(ng102,s2,t9) + mu_gsinMax_rt(gs1,t9,s2)
    - muLB_gsin_rt(gs1,s2,t9) = 0
@@ -13483,13 +14407,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t10)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t10) = 0
  dLag/gprodUp(gw1,s2,t10): - lambda_gas_balance_rt(ng101,s2,t10)
-   + mu_gprodUp_max(gw1,s2,t10) - muLB_gprodUp(gw1,s2,t10) = -1.575
+   + mu_gprodUp_max(gw1,s2,t10) - muLB_gprodUp(gw1,s2,t10) = -1.05
  dLag/gprodDn(gw1,s2,t10): lambda_gas_balance_rt(ng101,s2,t10)
-   + mu_gprodDn_max(gw1,s2,t10) - muLB_gprodDn(gw1,s2,t10) = 1.425
+   + mu_gprodDn_max(gw1,s2,t10) - muLB_gprodDn(gw1,s2,t10) = 0.95
  dLag/gprodUp(gw2,s2,t10): - lambda_gas_balance_rt(ng101,s2,t10)
    + mu_gprodUp_max(gw2,s2,t10) - muLB_gprodUp(gw2,s2,t10) = -1.575
  dLag/gprodDn(gw2,s2,t10): lambda_gas_balance_rt(ng101,s2,t10)
    + mu_gprodDn_max(gw2,s2,t10) - muLB_gprodDn(gw2,s2,t10) = 1.425
+ dLag/gprodUp(gw3,s2,t10): - lambda_gas_balance_rt(ng101,s2,t10)
+   + mu_gprodUp_max(gw3,s2,t10) - muLB_gprodUp(gw3,s2,t10) = -2.1
+ dLag/gprodDn(gw3,s2,t10): lambda_gas_balance_rt(ng101,s2,t10)
+   + mu_gprodDn_max(gw3,s2,t10) - muLB_gprodDn(gw3,s2,t10) = 1.9
  dLag/gsin_rt(gs1,s2,t10): - lambda_gstor_def_rt(gs1,s2,t10)
    + lambda_gas_balance_rt(ng102,s2,t10) + mu_gsinMax_rt(gs1,t10,s2)
    - muLB_gsin_rt(gs1,s2,t10) = 0
@@ -13518,13 +14446,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t11)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t11) = 0
  dLag/gprodUp(gw1,s2,t11): - lambda_gas_balance_rt(ng101,s2,t11)
-   + mu_gprodUp_max(gw1,s2,t11) - muLB_gprodUp(gw1,s2,t11) = -1.575
+   + mu_gprodUp_max(gw1,s2,t11) - muLB_gprodUp(gw1,s2,t11) = -1.05
  dLag/gprodDn(gw1,s2,t11): lambda_gas_balance_rt(ng101,s2,t11)
-   + mu_gprodDn_max(gw1,s2,t11) - muLB_gprodDn(gw1,s2,t11) = 1.425
+   + mu_gprodDn_max(gw1,s2,t11) - muLB_gprodDn(gw1,s2,t11) = 0.95
  dLag/gprodUp(gw2,s2,t11): - lambda_gas_balance_rt(ng101,s2,t11)
    + mu_gprodUp_max(gw2,s2,t11) - muLB_gprodUp(gw2,s2,t11) = -1.575
  dLag/gprodDn(gw2,s2,t11): lambda_gas_balance_rt(ng101,s2,t11)
    + mu_gprodDn_max(gw2,s2,t11) - muLB_gprodDn(gw2,s2,t11) = 1.425
+ dLag/gprodUp(gw3,s2,t11): - lambda_gas_balance_rt(ng101,s2,t11)
+   + mu_gprodUp_max(gw3,s2,t11) - muLB_gprodUp(gw3,s2,t11) = -2.1
+ dLag/gprodDn(gw3,s2,t11): lambda_gas_balance_rt(ng101,s2,t11)
+   + mu_gprodDn_max(gw3,s2,t11) - muLB_gprodDn(gw3,s2,t11) = 1.9
  dLag/gsin_rt(gs1,s2,t11): - lambda_gstor_def_rt(gs1,s2,t11)
    + lambda_gas_balance_rt(ng102,s2,t11) + mu_gsinMax_rt(gs1,t11,s2)
    - muLB_gsin_rt(gs1,s2,t11) = 0
@@ -13553,13 +14485,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t12)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t12) = 0
  dLag/gprodUp(gw1,s2,t12): - lambda_gas_balance_rt(ng101,s2,t12)
-   + mu_gprodUp_max(gw1,s2,t12) - muLB_gprodUp(gw1,s2,t12) = -1.575
+   + mu_gprodUp_max(gw1,s2,t12) - muLB_gprodUp(gw1,s2,t12) = -1.05
  dLag/gprodDn(gw1,s2,t12): lambda_gas_balance_rt(ng101,s2,t12)
-   + mu_gprodDn_max(gw1,s2,t12) - muLB_gprodDn(gw1,s2,t12) = 1.425
+   + mu_gprodDn_max(gw1,s2,t12) - muLB_gprodDn(gw1,s2,t12) = 0.95
  dLag/gprodUp(gw2,s2,t12): - lambda_gas_balance_rt(ng101,s2,t12)
    + mu_gprodUp_max(gw2,s2,t12) - muLB_gprodUp(gw2,s2,t12) = -1.575
  dLag/gprodDn(gw2,s2,t12): lambda_gas_balance_rt(ng101,s2,t12)
    + mu_gprodDn_max(gw2,s2,t12) - muLB_gprodDn(gw2,s2,t12) = 1.425
+ dLag/gprodUp(gw3,s2,t12): - lambda_gas_balance_rt(ng101,s2,t12)
+   + mu_gprodUp_max(gw3,s2,t12) - muLB_gprodUp(gw3,s2,t12) = -2.1
+ dLag/gprodDn(gw3,s2,t12): lambda_gas_balance_rt(ng101,s2,t12)
+   + mu_gprodDn_max(gw3,s2,t12) - muLB_gprodDn(gw3,s2,t12) = 1.9
  dLag/gsin_rt(gs1,s2,t12): - lambda_gstor_def_rt(gs1,s2,t12)
    + lambda_gas_balance_rt(ng102,s2,t12) + mu_gsinMax_rt(gs1,t12,s2)
    - muLB_gsin_rt(gs1,s2,t12) = 0
@@ -13588,13 +14524,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t13)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t13) = 0
  dLag/gprodUp(gw1,s2,t13): - lambda_gas_balance_rt(ng101,s2,t13)
-   + mu_gprodUp_max(gw1,s2,t13) - muLB_gprodUp(gw1,s2,t13) = -1.575
+   + mu_gprodUp_max(gw1,s2,t13) - muLB_gprodUp(gw1,s2,t13) = -1.05
  dLag/gprodDn(gw1,s2,t13): lambda_gas_balance_rt(ng101,s2,t13)
-   + mu_gprodDn_max(gw1,s2,t13) - muLB_gprodDn(gw1,s2,t13) = 1.425
+   + mu_gprodDn_max(gw1,s2,t13) - muLB_gprodDn(gw1,s2,t13) = 0.95
  dLag/gprodUp(gw2,s2,t13): - lambda_gas_balance_rt(ng101,s2,t13)
    + mu_gprodUp_max(gw2,s2,t13) - muLB_gprodUp(gw2,s2,t13) = -1.575
  dLag/gprodDn(gw2,s2,t13): lambda_gas_balance_rt(ng101,s2,t13)
    + mu_gprodDn_max(gw2,s2,t13) - muLB_gprodDn(gw2,s2,t13) = 1.425
+ dLag/gprodUp(gw3,s2,t13): - lambda_gas_balance_rt(ng101,s2,t13)
+   + mu_gprodUp_max(gw3,s2,t13) - muLB_gprodUp(gw3,s2,t13) = -2.1
+ dLag/gprodDn(gw3,s2,t13): lambda_gas_balance_rt(ng101,s2,t13)
+   + mu_gprodDn_max(gw3,s2,t13) - muLB_gprodDn(gw3,s2,t13) = 1.9
  dLag/gsin_rt(gs1,s2,t13): - lambda_gstor_def_rt(gs1,s2,t13)
    + lambda_gas_balance_rt(ng102,s2,t13) + mu_gsinMax_rt(gs1,t13,s2)
    - muLB_gsin_rt(gs1,s2,t13) = 0
@@ -13623,13 +14563,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t14)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t14) = 0
  dLag/gprodUp(gw1,s2,t14): - lambda_gas_balance_rt(ng101,s2,t14)
-   + mu_gprodUp_max(gw1,s2,t14) - muLB_gprodUp(gw1,s2,t14) = -1.575
+   + mu_gprodUp_max(gw1,s2,t14) - muLB_gprodUp(gw1,s2,t14) = -1.05
  dLag/gprodDn(gw1,s2,t14): lambda_gas_balance_rt(ng101,s2,t14)
-   + mu_gprodDn_max(gw1,s2,t14) - muLB_gprodDn(gw1,s2,t14) = 1.425
+   + mu_gprodDn_max(gw1,s2,t14) - muLB_gprodDn(gw1,s2,t14) = 0.95
  dLag/gprodUp(gw2,s2,t14): - lambda_gas_balance_rt(ng101,s2,t14)
    + mu_gprodUp_max(gw2,s2,t14) - muLB_gprodUp(gw2,s2,t14) = -1.575
  dLag/gprodDn(gw2,s2,t14): lambda_gas_balance_rt(ng101,s2,t14)
    + mu_gprodDn_max(gw2,s2,t14) - muLB_gprodDn(gw2,s2,t14) = 1.425
+ dLag/gprodUp(gw3,s2,t14): - lambda_gas_balance_rt(ng101,s2,t14)
+   + mu_gprodUp_max(gw3,s2,t14) - muLB_gprodUp(gw3,s2,t14) = -2.1
+ dLag/gprodDn(gw3,s2,t14): lambda_gas_balance_rt(ng101,s2,t14)
+   + mu_gprodDn_max(gw3,s2,t14) - muLB_gprodDn(gw3,s2,t14) = 1.9
  dLag/gsin_rt(gs1,s2,t14): - lambda_gstor_def_rt(gs1,s2,t14)
    + lambda_gas_balance_rt(ng102,s2,t14) + mu_gsinMax_rt(gs1,t14,s2)
    - muLB_gsin_rt(gs1,s2,t14) = 0
@@ -13658,13 +14602,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t15)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t15) = 0
  dLag/gprodUp(gw1,s2,t15): - lambda_gas_balance_rt(ng101,s2,t15)
-   + mu_gprodUp_max(gw1,s2,t15) - muLB_gprodUp(gw1,s2,t15) = -1.575
+   + mu_gprodUp_max(gw1,s2,t15) - muLB_gprodUp(gw1,s2,t15) = -1.05
  dLag/gprodDn(gw1,s2,t15): lambda_gas_balance_rt(ng101,s2,t15)
-   + mu_gprodDn_max(gw1,s2,t15) - muLB_gprodDn(gw1,s2,t15) = 1.425
+   + mu_gprodDn_max(gw1,s2,t15) - muLB_gprodDn(gw1,s2,t15) = 0.95
  dLag/gprodUp(gw2,s2,t15): - lambda_gas_balance_rt(ng101,s2,t15)
    + mu_gprodUp_max(gw2,s2,t15) - muLB_gprodUp(gw2,s2,t15) = -1.575
  dLag/gprodDn(gw2,s2,t15): lambda_gas_balance_rt(ng101,s2,t15)
    + mu_gprodDn_max(gw2,s2,t15) - muLB_gprodDn(gw2,s2,t15) = 1.425
+ dLag/gprodUp(gw3,s2,t15): - lambda_gas_balance_rt(ng101,s2,t15)
+   + mu_gprodUp_max(gw3,s2,t15) - muLB_gprodUp(gw3,s2,t15) = -2.1
+ dLag/gprodDn(gw3,s2,t15): lambda_gas_balance_rt(ng101,s2,t15)
+   + mu_gprodDn_max(gw3,s2,t15) - muLB_gprodDn(gw3,s2,t15) = 1.9
  dLag/gsin_rt(gs1,s2,t15): - lambda_gstor_def_rt(gs1,s2,t15)
    + lambda_gas_balance_rt(ng102,s2,t15) + mu_gsinMax_rt(gs1,t15,s2)
    - muLB_gsin_rt(gs1,s2,t15) = 0
@@ -13693,13 +14641,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t16)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t16) = 0
  dLag/gprodUp(gw1,s2,t16): - lambda_gas_balance_rt(ng101,s2,t16)
-   + mu_gprodUp_max(gw1,s2,t16) - muLB_gprodUp(gw1,s2,t16) = -1.575
+   + mu_gprodUp_max(gw1,s2,t16) - muLB_gprodUp(gw1,s2,t16) = -1.05
  dLag/gprodDn(gw1,s2,t16): lambda_gas_balance_rt(ng101,s2,t16)
-   + mu_gprodDn_max(gw1,s2,t16) - muLB_gprodDn(gw1,s2,t16) = 1.425
+   + mu_gprodDn_max(gw1,s2,t16) - muLB_gprodDn(gw1,s2,t16) = 0.95
  dLag/gprodUp(gw2,s2,t16): - lambda_gas_balance_rt(ng101,s2,t16)
    + mu_gprodUp_max(gw2,s2,t16) - muLB_gprodUp(gw2,s2,t16) = -1.575
  dLag/gprodDn(gw2,s2,t16): lambda_gas_balance_rt(ng101,s2,t16)
    + mu_gprodDn_max(gw2,s2,t16) - muLB_gprodDn(gw2,s2,t16) = 1.425
+ dLag/gprodUp(gw3,s2,t16): - lambda_gas_balance_rt(ng101,s2,t16)
+   + mu_gprodUp_max(gw3,s2,t16) - muLB_gprodUp(gw3,s2,t16) = -2.1
+ dLag/gprodDn(gw3,s2,t16): lambda_gas_balance_rt(ng101,s2,t16)
+   + mu_gprodDn_max(gw3,s2,t16) - muLB_gprodDn(gw3,s2,t16) = 1.9
  dLag/gsin_rt(gs1,s2,t16): - lambda_gstor_def_rt(gs1,s2,t16)
    + lambda_gas_balance_rt(ng102,s2,t16) + mu_gsinMax_rt(gs1,t16,s2)
    - muLB_gsin_rt(gs1,s2,t16) = 0
@@ -13728,13 +14680,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t17)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t17) = 0
  dLag/gprodUp(gw1,s2,t17): - lambda_gas_balance_rt(ng101,s2,t17)
-   + mu_gprodUp_max(gw1,s2,t17) - muLB_gprodUp(gw1,s2,t17) = -1.575
+   + mu_gprodUp_max(gw1,s2,t17) - muLB_gprodUp(gw1,s2,t17) = -1.05
  dLag/gprodDn(gw1,s2,t17): lambda_gas_balance_rt(ng101,s2,t17)
-   + mu_gprodDn_max(gw1,s2,t17) - muLB_gprodDn(gw1,s2,t17) = 1.425
+   + mu_gprodDn_max(gw1,s2,t17) - muLB_gprodDn(gw1,s2,t17) = 0.95
  dLag/gprodUp(gw2,s2,t17): - lambda_gas_balance_rt(ng101,s2,t17)
    + mu_gprodUp_max(gw2,s2,t17) - muLB_gprodUp(gw2,s2,t17) = -1.575
  dLag/gprodDn(gw2,s2,t17): lambda_gas_balance_rt(ng101,s2,t17)
    + mu_gprodDn_max(gw2,s2,t17) - muLB_gprodDn(gw2,s2,t17) = 1.425
+ dLag/gprodUp(gw3,s2,t17): - lambda_gas_balance_rt(ng101,s2,t17)
+   + mu_gprodUp_max(gw3,s2,t17) - muLB_gprodUp(gw3,s2,t17) = -2.1
+ dLag/gprodDn(gw3,s2,t17): lambda_gas_balance_rt(ng101,s2,t17)
+   + mu_gprodDn_max(gw3,s2,t17) - muLB_gprodDn(gw3,s2,t17) = 1.9
  dLag/gsin_rt(gs1,s2,t17): - lambda_gstor_def_rt(gs1,s2,t17)
    + lambda_gas_balance_rt(ng102,s2,t17) + mu_gsinMax_rt(gs1,t17,s2)
    - muLB_gsin_rt(gs1,s2,t17) = 0
@@ -13763,13 +14719,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t18)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t18) = 0
  dLag/gprodUp(gw1,s2,t18): - lambda_gas_balance_rt(ng101,s2,t18)
-   + mu_gprodUp_max(gw1,s2,t18) - muLB_gprodUp(gw1,s2,t18) = -1.575
+   + mu_gprodUp_max(gw1,s2,t18) - muLB_gprodUp(gw1,s2,t18) = -1.05
  dLag/gprodDn(gw1,s2,t18): lambda_gas_balance_rt(ng101,s2,t18)
-   + mu_gprodDn_max(gw1,s2,t18) - muLB_gprodDn(gw1,s2,t18) = 1.425
+   + mu_gprodDn_max(gw1,s2,t18) - muLB_gprodDn(gw1,s2,t18) = 0.95
  dLag/gprodUp(gw2,s2,t18): - lambda_gas_balance_rt(ng101,s2,t18)
    + mu_gprodUp_max(gw2,s2,t18) - muLB_gprodUp(gw2,s2,t18) = -1.575
  dLag/gprodDn(gw2,s2,t18): lambda_gas_balance_rt(ng101,s2,t18)
    + mu_gprodDn_max(gw2,s2,t18) - muLB_gprodDn(gw2,s2,t18) = 1.425
+ dLag/gprodUp(gw3,s2,t18): - lambda_gas_balance_rt(ng101,s2,t18)
+   + mu_gprodUp_max(gw3,s2,t18) - muLB_gprodUp(gw3,s2,t18) = -2.1
+ dLag/gprodDn(gw3,s2,t18): lambda_gas_balance_rt(ng101,s2,t18)
+   + mu_gprodDn_max(gw3,s2,t18) - muLB_gprodDn(gw3,s2,t18) = 1.9
  dLag/gsin_rt(gs1,s2,t18): - lambda_gstor_def_rt(gs1,s2,t18)
    + lambda_gas_balance_rt(ng102,s2,t18) + mu_gsinMax_rt(gs1,t18,s2)
    - muLB_gsin_rt(gs1,s2,t18) = 0
@@ -13798,13 +14758,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t19)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t19) = 0
  dLag/gprodUp(gw1,s2,t19): - lambda_gas_balance_rt(ng101,s2,t19)
-   + mu_gprodUp_max(gw1,s2,t19) - muLB_gprodUp(gw1,s2,t19) = -1.575
+   + mu_gprodUp_max(gw1,s2,t19) - muLB_gprodUp(gw1,s2,t19) = -1.05
  dLag/gprodDn(gw1,s2,t19): lambda_gas_balance_rt(ng101,s2,t19)
-   + mu_gprodDn_max(gw1,s2,t19) - muLB_gprodDn(gw1,s2,t19) = 1.425
+   + mu_gprodDn_max(gw1,s2,t19) - muLB_gprodDn(gw1,s2,t19) = 0.95
  dLag/gprodUp(gw2,s2,t19): - lambda_gas_balance_rt(ng101,s2,t19)
    + mu_gprodUp_max(gw2,s2,t19) - muLB_gprodUp(gw2,s2,t19) = -1.575
  dLag/gprodDn(gw2,s2,t19): lambda_gas_balance_rt(ng101,s2,t19)
    + mu_gprodDn_max(gw2,s2,t19) - muLB_gprodDn(gw2,s2,t19) = 1.425
+ dLag/gprodUp(gw3,s2,t19): - lambda_gas_balance_rt(ng101,s2,t19)
+   + mu_gprodUp_max(gw3,s2,t19) - muLB_gprodUp(gw3,s2,t19) = -2.1
+ dLag/gprodDn(gw3,s2,t19): lambda_gas_balance_rt(ng101,s2,t19)
+   + mu_gprodDn_max(gw3,s2,t19) - muLB_gprodDn(gw3,s2,t19) = 1.9
  dLag/gsin_rt(gs1,s2,t19): - lambda_gstor_def_rt(gs1,s2,t19)
    + lambda_gas_balance_rt(ng102,s2,t19) + mu_gsinMax_rt(gs1,t19,s2)
    - muLB_gsin_rt(gs1,s2,t19) = 0
@@ -13833,13 +14797,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t20)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t20) = 0
  dLag/gprodUp(gw1,s2,t20): - lambda_gas_balance_rt(ng101,s2,t20)
-   + mu_gprodUp_max(gw1,s2,t20) - muLB_gprodUp(gw1,s2,t20) = -1.575
+   + mu_gprodUp_max(gw1,s2,t20) - muLB_gprodUp(gw1,s2,t20) = -1.05
  dLag/gprodDn(gw1,s2,t20): lambda_gas_balance_rt(ng101,s2,t20)
-   + mu_gprodDn_max(gw1,s2,t20) - muLB_gprodDn(gw1,s2,t20) = 1.425
+   + mu_gprodDn_max(gw1,s2,t20) - muLB_gprodDn(gw1,s2,t20) = 0.95
  dLag/gprodUp(gw2,s2,t20): - lambda_gas_balance_rt(ng101,s2,t20)
    + mu_gprodUp_max(gw2,s2,t20) - muLB_gprodUp(gw2,s2,t20) = -1.575
  dLag/gprodDn(gw2,s2,t20): lambda_gas_balance_rt(ng101,s2,t20)
    + mu_gprodDn_max(gw2,s2,t20) - muLB_gprodDn(gw2,s2,t20) = 1.425
+ dLag/gprodUp(gw3,s2,t20): - lambda_gas_balance_rt(ng101,s2,t20)
+   + mu_gprodUp_max(gw3,s2,t20) - muLB_gprodUp(gw3,s2,t20) = -2.1
+ dLag/gprodDn(gw3,s2,t20): lambda_gas_balance_rt(ng101,s2,t20)
+   + mu_gprodDn_max(gw3,s2,t20) - muLB_gprodDn(gw3,s2,t20) = 1.9
  dLag/gsin_rt(gs1,s2,t20): - lambda_gstor_def_rt(gs1,s2,t20)
    + lambda_gas_balance_rt(ng102,s2,t20) + mu_gsinMax_rt(gs1,t20,s2)
    - muLB_gsin_rt(gs1,s2,t20) = 0
@@ -13868,13 +14836,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t21)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t21) = 0
  dLag/gprodUp(gw1,s2,t21): - lambda_gas_balance_rt(ng101,s2,t21)
-   + mu_gprodUp_max(gw1,s2,t21) - muLB_gprodUp(gw1,s2,t21) = -1.575
+   + mu_gprodUp_max(gw1,s2,t21) - muLB_gprodUp(gw1,s2,t21) = -1.05
  dLag/gprodDn(gw1,s2,t21): lambda_gas_balance_rt(ng101,s2,t21)
-   + mu_gprodDn_max(gw1,s2,t21) - muLB_gprodDn(gw1,s2,t21) = 1.425
+   + mu_gprodDn_max(gw1,s2,t21) - muLB_gprodDn(gw1,s2,t21) = 0.95
  dLag/gprodUp(gw2,s2,t21): - lambda_gas_balance_rt(ng101,s2,t21)
    + mu_gprodUp_max(gw2,s2,t21) - muLB_gprodUp(gw2,s2,t21) = -1.575
  dLag/gprodDn(gw2,s2,t21): lambda_gas_balance_rt(ng101,s2,t21)
    + mu_gprodDn_max(gw2,s2,t21) - muLB_gprodDn(gw2,s2,t21) = 1.425
+ dLag/gprodUp(gw3,s2,t21): - lambda_gas_balance_rt(ng101,s2,t21)
+   + mu_gprodUp_max(gw3,s2,t21) - muLB_gprodUp(gw3,s2,t21) = -2.1
+ dLag/gprodDn(gw3,s2,t21): lambda_gas_balance_rt(ng101,s2,t21)
+   + mu_gprodDn_max(gw3,s2,t21) - muLB_gprodDn(gw3,s2,t21) = 1.9
  dLag/gsin_rt(gs1,s2,t21): - lambda_gstor_def_rt(gs1,s2,t21)
    + lambda_gas_balance_rt(ng102,s2,t21) + mu_gsinMax_rt(gs1,t21,s2)
    - muLB_gsin_rt(gs1,s2,t21) = 0
@@ -13903,13 +14875,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t22)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t22) = 0
  dLag/gprodUp(gw1,s2,t22): - lambda_gas_balance_rt(ng101,s2,t22)
-   + mu_gprodUp_max(gw1,s2,t22) - muLB_gprodUp(gw1,s2,t22) = -1.575
+   + mu_gprodUp_max(gw1,s2,t22) - muLB_gprodUp(gw1,s2,t22) = -1.05
  dLag/gprodDn(gw1,s2,t22): lambda_gas_balance_rt(ng101,s2,t22)
-   + mu_gprodDn_max(gw1,s2,t22) - muLB_gprodDn(gw1,s2,t22) = 1.425
+   + mu_gprodDn_max(gw1,s2,t22) - muLB_gprodDn(gw1,s2,t22) = 0.95
  dLag/gprodUp(gw2,s2,t22): - lambda_gas_balance_rt(ng101,s2,t22)
    + mu_gprodUp_max(gw2,s2,t22) - muLB_gprodUp(gw2,s2,t22) = -1.575
  dLag/gprodDn(gw2,s2,t22): lambda_gas_balance_rt(ng101,s2,t22)
    + mu_gprodDn_max(gw2,s2,t22) - muLB_gprodDn(gw2,s2,t22) = 1.425
+ dLag/gprodUp(gw3,s2,t22): - lambda_gas_balance_rt(ng101,s2,t22)
+   + mu_gprodUp_max(gw3,s2,t22) - muLB_gprodUp(gw3,s2,t22) = -2.1
+ dLag/gprodDn(gw3,s2,t22): lambda_gas_balance_rt(ng101,s2,t22)
+   + mu_gprodDn_max(gw3,s2,t22) - muLB_gprodDn(gw3,s2,t22) = 1.9
  dLag/gsin_rt(gs1,s2,t22): - lambda_gstor_def_rt(gs1,s2,t22)
    + lambda_gas_balance_rt(ng102,s2,t22) + mu_gsinMax_rt(gs1,t22,s2)
    - muLB_gsin_rt(gs1,s2,t22) = 0
@@ -13938,13 +14914,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t23)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t23) = 0
  dLag/gprodUp(gw1,s2,t23): - lambda_gas_balance_rt(ng101,s2,t23)
-   + mu_gprodUp_max(gw1,s2,t23) - muLB_gprodUp(gw1,s2,t23) = -1.575
+   + mu_gprodUp_max(gw1,s2,t23) - muLB_gprodUp(gw1,s2,t23) = -1.05
  dLag/gprodDn(gw1,s2,t23): lambda_gas_balance_rt(ng101,s2,t23)
-   + mu_gprodDn_max(gw1,s2,t23) - muLB_gprodDn(gw1,s2,t23) = 1.425
+   + mu_gprodDn_max(gw1,s2,t23) - muLB_gprodDn(gw1,s2,t23) = 0.95
  dLag/gprodUp(gw2,s2,t23): - lambda_gas_balance_rt(ng101,s2,t23)
    + mu_gprodUp_max(gw2,s2,t23) - muLB_gprodUp(gw2,s2,t23) = -1.575
  dLag/gprodDn(gw2,s2,t23): lambda_gas_balance_rt(ng101,s2,t23)
    + mu_gprodDn_max(gw2,s2,t23) - muLB_gprodDn(gw2,s2,t23) = 1.425
+ dLag/gprodUp(gw3,s2,t23): - lambda_gas_balance_rt(ng101,s2,t23)
+   + mu_gprodUp_max(gw3,s2,t23) - muLB_gprodUp(gw3,s2,t23) = -2.1
+ dLag/gprodDn(gw3,s2,t23): lambda_gas_balance_rt(ng101,s2,t23)
+   + mu_gprodDn_max(gw3,s2,t23) - muLB_gprodDn(gw3,s2,t23) = 1.9
  dLag/gsin_rt(gs1,s2,t23): - lambda_gstor_def_rt(gs1,s2,t23)
    + lambda_gas_balance_rt(ng102,s2,t23) + mu_gsinMax_rt(gs1,t23,s2)
    - muLB_gsin_rt(gs1,s2,t23) = 0
@@ -13973,13 +14953,17 @@ Subject To
    - lambda_line_store_rt(('ng101','ng102'),s2,t24)
    - muLB_qout_sr_rt(('ng101','ng102'),s2,t24) = 0
  dLag/gprodUp(gw1,s2,t24): - lambda_gas_balance_rt(ng101,s2,t24)
-   + mu_gprodUp_max(gw1,s2,t24) - muLB_gprodUp(gw1,s2,t24) = -1.575
+   + mu_gprodUp_max(gw1,s2,t24) - muLB_gprodUp(gw1,s2,t24) = -1.05
  dLag/gprodDn(gw1,s2,t24): lambda_gas_balance_rt(ng101,s2,t24)
-   + mu_gprodDn_max(gw1,s2,t24) - muLB_gprodDn(gw1,s2,t24) = 1.425
+   + mu_gprodDn_max(gw1,s2,t24) - muLB_gprodDn(gw1,s2,t24) = 0.95
  dLag/gprodUp(gw2,s2,t24): - lambda_gas_balance_rt(ng101,s2,t24)
    + mu_gprodUp_max(gw2,s2,t24) - muLB_gprodUp(gw2,s2,t24) = -1.575
  dLag/gprodDn(gw2,s2,t24): lambda_gas_balance_rt(ng101,s2,t24)
    + mu_gprodDn_max(gw2,s2,t24) - muLB_gprodDn(gw2,s2,t24) = 1.425
+ dLag/gprodUp(gw3,s2,t24): - lambda_gas_balance_rt(ng101,s2,t24)
+   + mu_gprodUp_max(gw3,s2,t24) - muLB_gprodUp(gw3,s2,t24) = -2.1
+ dLag/gprodDn(gw3,s2,t24): lambda_gas_balance_rt(ng101,s2,t24)
+   + mu_gprodDn_max(gw3,s2,t24) - muLB_gprodDn(gw3,s2,t24) = 1.9
  dLag/gsin_rt(gs1,s2,t24): - lambda_gstor_def_rt(gs1,s2,t24)
    + lambda_gas_balance_rt(ng102,s2,t24) + mu_gsinMax_rt(gs1,t24,s2)
    - muLB_gsin_rt(gs1,s2,t24) = 0
@@ -14750,988 +15734,1276 @@ Subject To
    - 3.8 ContractPrice(ng102) = 0
  gas_balance_da(ng102,k0,t1): - 8 Pgen(g1,t1) - 8 PgenSC(g1,t1)
    - gsin(gs1,t1,k0) + gsout(gs1,t1,k0) + qout_sr(('ng101','ng102'),k0,t1)
-   = 2100
+   = 0
  gas_balance_da(ng102,k1,t1): - 8 Pgen(g1,t1)
    + qout_sr(('ng101','ng102'),k1,t1) - gsin(gs1,t1,k1) + gsout(gs1,t1,k1)
-   = 2900
+   = 80
  gas_balance_da(ng102,k2,t1): - 8 Pgen(g1,t1)
    + qout_sr(('ng101','ng102'),k2,t1) - gsin(gs1,t1,k2) + gsout(gs1,t1,k2)
-   = 2100
+   = 0
  gas_balance_da(ng102,k0,t2): - 8 Pgen(g1,t2) - 8 PgenSC(g1,t2)
    - gsin(gs1,t2,k0) + gsout(gs1,t2,k0) + qout_sr(('ng101','ng102'),k0,t2)
-   = 2010
+   = 0
  gas_balance_da(ng102,k1,t2): - 8 Pgen(g1,t2)
    + qout_sr(('ng101','ng102'),k1,t2) - gsin(gs1,t2,k1) + gsout(gs1,t2,k1)
-   = 2810
+   = 80
  gas_balance_da(ng102,k2,t2): - 8 Pgen(g1,t2)
    + qout_sr(('ng101','ng102'),k2,t2) - gsin(gs1,t2,k2) + gsout(gs1,t2,k2)
-   = 2010
+   = 0
  gas_balance_da(ng102,k0,t3): - 8 Pgen(g1,t3) - 8 PgenSC(g1,t3)
    - gsin(gs1,t3,k0) + gsout(gs1,t3,k0) + qout_sr(('ng101','ng102'),k0,t3)
-   = 1920
+   = 0
  gas_balance_da(ng102,k1,t3): - 8 Pgen(g1,t3)
    + qout_sr(('ng101','ng102'),k1,t3) - gsin(gs1,t3,k1) + gsout(gs1,t3,k1)
-   = 2720
+   = 80
  gas_balance_da(ng102,k2,t3): - 8 Pgen(g1,t3)
    + qout_sr(('ng101','ng102'),k2,t3) - gsin(gs1,t3,k2) + gsout(gs1,t3,k2)
-   = 1920
+   = 0
  gas_balance_da(ng102,k0,t4): - 8 Pgen(g1,t4) - 8 PgenSC(g1,t4)
    - gsin(gs1,t4,k0) + gsout(gs1,t4,k0) + qout_sr(('ng101','ng102'),k0,t4)
-   = 1950
+   = 0
  gas_balance_da(ng102,k1,t4): - 8 Pgen(g1,t4)
    + qout_sr(('ng101','ng102'),k1,t4) - gsin(gs1,t4,k1) + gsout(gs1,t4,k1)
-   = 2750
+   = 80
  gas_balance_da(ng102,k2,t4): - 8 Pgen(g1,t4)
    + qout_sr(('ng101','ng102'),k2,t4) - gsin(gs1,t4,k2) + gsout(gs1,t4,k2)
-   = 1950
+   = 0
  gas_balance_da(ng102,k0,t5): - 8 Pgen(g1,t5) - 8 PgenSC(g1,t5)
    - gsin(gs1,t5,k0) + gsout(gs1,t5,k0) + qout_sr(('ng101','ng102'),k0,t5)
-   = 1980
+   = 0
  gas_balance_da(ng102,k1,t5): - 8 Pgen(g1,t5)
    + qout_sr(('ng101','ng102'),k1,t5) - gsin(gs1,t5,k1) + gsout(gs1,t5,k1)
-   = 2780
+   = 80
  gas_balance_da(ng102,k2,t5): - 8 Pgen(g1,t5)
    + qout_sr(('ng101','ng102'),k2,t5) - gsin(gs1,t5,k2) + gsout(gs1,t5,k2)
-   = 1980
+   = 0
  gas_balance_da(ng102,k0,t6): - 8 Pgen(g1,t6) - 8 PgenSC(g1,t6)
    - gsin(gs1,t6,k0) + gsout(gs1,t6,k0) + qout_sr(('ng101','ng102'),k0,t6)
-   = 2010
+   = 0
  gas_balance_da(ng102,k1,t6): - 8 Pgen(g1,t6)
    + qout_sr(('ng101','ng102'),k1,t6) - gsin(gs1,t6,k1) + gsout(gs1,t6,k1)
-   = 2810
+   = 80
  gas_balance_da(ng102,k2,t6): - 8 Pgen(g1,t6)
    + qout_sr(('ng101','ng102'),k2,t6) - gsin(gs1,t6,k2) + gsout(gs1,t6,k2)
-   = 2010
+   = 0
  gas_balance_da(ng102,k0,t7): - 8 Pgen(g1,t7) - 8 PgenSC(g1,t7)
    - gsin(gs1,t7,k0) + gsout(gs1,t7,k0) + qout_sr(('ng101','ng102'),k0,t7)
-   = 2325
+   = 0
  gas_balance_da(ng102,k1,t7): - 8 Pgen(g1,t7)
    + qout_sr(('ng101','ng102'),k1,t7) - gsin(gs1,t7,k1) + gsout(gs1,t7,k1)
-   = 3125
+   = 80
  gas_balance_da(ng102,k2,t7): - 8 Pgen(g1,t7)
    + qout_sr(('ng101','ng102'),k2,t7) - gsin(gs1,t7,k2) + gsout(gs1,t7,k2)
-   = 2325
+   = 0
  gas_balance_da(ng102,k0,t8): - 8 Pgen(g1,t8) - 8 PgenSC(g1,t8)
    - gsin(gs1,t8,k0) + gsout(gs1,t8,k0) + qout_sr(('ng101','ng102'),k0,t8)
-   = 2340
+   = 0
  gas_balance_da(ng102,k1,t8): - 8 Pgen(g1,t8)
    + qout_sr(('ng101','ng102'),k1,t8) - gsin(gs1,t8,k1) + gsout(gs1,t8,k1)
-   = 3140
+   = 80
  gas_balance_da(ng102,k2,t8): - 8 Pgen(g1,t8)
    + qout_sr(('ng101','ng102'),k2,t8) - gsin(gs1,t8,k2) + gsout(gs1,t8,k2)
-   = 2340
+   = 0
  gas_balance_da(ng102,k0,t9): - 8 Pgen(g1,t9) - 8 PgenSC(g1,t9)
    - gsin(gs1,t9,k0) + gsout(gs1,t9,k0) + qout_sr(('ng101','ng102'),k0,t9)
-   = 2565
+   = 0
  gas_balance_da(ng102,k1,t9): - 8 Pgen(g1,t9)
    + qout_sr(('ng101','ng102'),k1,t9) - gsin(gs1,t9,k1) + gsout(gs1,t9,k1)
-   = 3365
+   = 80
  gas_balance_da(ng102,k2,t9): - 8 Pgen(g1,t9)
    + qout_sr(('ng101','ng102'),k2,t9) - gsin(gs1,t9,k2) + gsout(gs1,t9,k2)
-   = 2565
+   = 0
  gas_balance_da(ng102,k0,t10): - 8 Pgen(g1,t10) - 8 PgenSC(g1,t10)
    - gsin(gs1,t10,k0) + gsout(gs1,t10,k0)
-   + qout_sr(('ng101','ng102'),k0,t10) = 2610
+   + qout_sr(('ng101','ng102'),k0,t10) = 0
  gas_balance_da(ng102,k1,t10): - 8 Pgen(g1,t10)
    + qout_sr(('ng101','ng102'),k1,t10) - gsin(gs1,t10,k1)
-   + gsout(gs1,t10,k1) = 3410
+   + gsout(gs1,t10,k1) = 80
  gas_balance_da(ng102,k2,t10): - 8 Pgen(g1,t10)
    + qout_sr(('ng101','ng102'),k2,t10) - gsin(gs1,t10,k2)
-   + gsout(gs1,t10,k2) = 2610
+   + gsout(gs1,t10,k2) = 0
  gas_balance_da(ng102,k0,t11): - 8 Pgen(g1,t11) - 8 PgenSC(g1,t11)
    - gsin(gs1,t11,k0) + gsout(gs1,t11,k0)
-   + qout_sr(('ng101','ng102'),k0,t11) = 2610
+   + qout_sr(('ng101','ng102'),k0,t11) = 0
  gas_balance_da(ng102,k1,t11): - 8 Pgen(g1,t11)
    + qout_sr(('ng101','ng102'),k1,t11) - gsin(gs1,t11,k1)
-   + gsout(gs1,t11,k1) = 3410
+   + gsout(gs1,t11,k1) = 80
  gas_balance_da(ng102,k2,t11): - 8 Pgen(g1,t11)
    + qout_sr(('ng101','ng102'),k2,t11) - gsin(gs1,t11,k2)
-   + gsout(gs1,t11,k2) = 2610
+   + gsout(gs1,t11,k2) = 0
  gas_balance_da(ng102,k0,t12): - 8 Pgen(g1,t12) - 8 PgenSC(g1,t12)
    - gsin(gs1,t12,k0) + gsout(gs1,t12,k0)
-   + qout_sr(('ng101','ng102'),k0,t12) = 2565
+   + qout_sr(('ng101','ng102'),k0,t12) = 0
  gas_balance_da(ng102,k1,t12): - 8 Pgen(g1,t12)
    + qout_sr(('ng101','ng102'),k1,t12) - gsin(gs1,t12,k1)
-   + gsout(gs1,t12,k1) = 3365
+   + gsout(gs1,t12,k1) = 80
  gas_balance_da(ng102,k2,t12): - 8 Pgen(g1,t12)
    + qout_sr(('ng101','ng102'),k2,t12) - gsin(gs1,t12,k2)
-   + gsout(gs1,t12,k2) = 2565
+   + gsout(gs1,t12,k2) = 0
  gas_balance_da(ng102,k0,t13): - 8 Pgen(g1,t13) - 8 PgenSC(g1,t13)
    - gsin(gs1,t13,k0) + gsout(gs1,t13,k0)
-   + qout_sr(('ng101','ng102'),k0,t13) = 2565
+   + qout_sr(('ng101','ng102'),k0,t13) = 0
  gas_balance_da(ng102,k1,t13): - 8 Pgen(g1,t13)
    + qout_sr(('ng101','ng102'),k1,t13) - gsin(gs1,t13,k1)
-   + gsout(gs1,t13,k1) = 3365
+   + gsout(gs1,t13,k1) = 80
  gas_balance_da(ng102,k2,t13): - 8 Pgen(g1,t13)
    + qout_sr(('ng101','ng102'),k2,t13) - gsin(gs1,t13,k2)
-   + gsout(gs1,t13,k2) = 2565
+   + gsout(gs1,t13,k2) = 0
  gas_balance_da(ng102,k0,t14): - 8 Pgen(g1,t14) - 8 PgenSC(g1,t14)
    - gsin(gs1,t14,k0) + gsout(gs1,t14,k0)
-   + qout_sr(('ng101','ng102'),k0,t14) = 2565
+   + qout_sr(('ng101','ng102'),k0,t14) = 0
  gas_balance_da(ng102,k1,t14): - 8 Pgen(g1,t14)
    + qout_sr(('ng101','ng102'),k1,t14) - gsin(gs1,t14,k1)
-   + gsout(gs1,t14,k1) = 3365
+   + gsout(gs1,t14,k1) = 80
  gas_balance_da(ng102,k2,t14): - 8 Pgen(g1,t14)
    + qout_sr(('ng101','ng102'),k2,t14) - gsin(gs1,t14,k2)
-   + gsout(gs1,t14,k2) = 2565
+   + gsout(gs1,t14,k2) = 0
  gas_balance_da(ng102,k0,t15): - 8 Pgen(g1,t15) - 8 PgenSC(g1,t15)
    - gsin(gs1,t15,k0) + gsout(gs1,t15,k0)
-   + qout_sr(('ng101','ng102'),k0,t15) = 2520
+   + qout_sr(('ng101','ng102'),k0,t15) = 0
  gas_balance_da(ng102,k1,t15): - 8 Pgen(g1,t15)
    + qout_sr(('ng101','ng102'),k1,t15) - gsin(gs1,t15,k1)
-   + gsout(gs1,t15,k1) = 3320
+   + gsout(gs1,t15,k1) = 80
  gas_balance_da(ng102,k2,t15): - 8 Pgen(g1,t15)
    + qout_sr(('ng101','ng102'),k2,t15) - gsin(gs1,t15,k2)
-   + gsout(gs1,t15,k2) = 2520
+   + gsout(gs1,t15,k2) = 0
  gas_balance_da(ng102,k0,t16): - 8 Pgen(g1,t16) - 8 PgenSC(g1,t16)
    - gsin(gs1,t16,k0) + gsout(gs1,t16,k0)
-   + qout_sr(('ng101','ng102'),k0,t16) = 2565
+   + qout_sr(('ng101','ng102'),k0,t16) = 0
  gas_balance_da(ng102,k1,t16): - 8 Pgen(g1,t16)
    + qout_sr(('ng101','ng102'),k1,t16) - gsin(gs1,t16,k1)
-   + gsout(gs1,t16,k1) = 3365
+   + gsout(gs1,t16,k1) = 80
  gas_balance_da(ng102,k2,t16): - 8 Pgen(g1,t16)
    + qout_sr(('ng101','ng102'),k2,t16) - gsin(gs1,t16,k2)
-   + gsout(gs1,t16,k2) = 2565
+   + gsout(gs1,t16,k2) = 0
  gas_balance_da(ng102,k0,t17): - 8 Pgen(g1,t17) - 8 PgenSC(g1,t17)
    - gsin(gs1,t17,k0) + gsout(gs1,t17,k0)
-   + qout_sr(('ng101','ng102'),k0,t17) = 2700
+   + qout_sr(('ng101','ng102'),k0,t17) = 0
  gas_balance_da(ng102,k1,t17): - 8 Pgen(g1,t17)
    + qout_sr(('ng101','ng102'),k1,t17) - gsin(gs1,t17,k1)
-   + gsout(gs1,t17,k1) = 3500
+   + gsout(gs1,t17,k1) = 80
  gas_balance_da(ng102,k2,t17): - 8 Pgen(g1,t17)
    + qout_sr(('ng101','ng102'),k2,t17) - gsin(gs1,t17,k2)
-   + gsout(gs1,t17,k2) = 2700
+   + gsout(gs1,t17,k2) = 0
  gas_balance_da(ng102,k0,t18): - 8 Pgen(g1,t18) - 8 PgenSC(g1,t18)
    - gsin(gs1,t18,k0) + gsout(gs1,t18,k0)
-   + qout_sr(('ng101','ng102'),k0,t18) = 2700
+   + qout_sr(('ng101','ng102'),k0,t18) = 0
  gas_balance_da(ng102,k1,t18): - 8 Pgen(g1,t18)
    + qout_sr(('ng101','ng102'),k1,t18) - gsin(gs1,t18,k1)
-   + gsout(gs1,t18,k1) = 3500
+   + gsout(gs1,t18,k1) = 80
  gas_balance_da(ng102,k2,t18): - 8 Pgen(g1,t18)
    + qout_sr(('ng101','ng102'),k2,t18) - gsin(gs1,t18,k2)
-   + gsout(gs1,t18,k2) = 2700
+   + gsout(gs1,t18,k2) = 0
  gas_balance_da(ng102,k0,t19): - 8 Pgen(g1,t19) - 8 PgenSC(g1,t19)
    - gsin(gs1,t19,k0) + gsout(gs1,t19,k0)
-   + qout_sr(('ng101','ng102'),k0,t19) = 2700
+   + qout_sr(('ng101','ng102'),k0,t19) = 0
  gas_balance_da(ng102,k1,t19): - 8 Pgen(g1,t19)
    + qout_sr(('ng101','ng102'),k1,t19) - gsin(gs1,t19,k1)
-   + gsout(gs1,t19,k1) = 3500
+   + gsout(gs1,t19,k1) = 80
  gas_balance_da(ng102,k2,t19): - 8 Pgen(g1,t19)
    + qout_sr(('ng101','ng102'),k2,t19) - gsin(gs1,t19,k2)
-   + gsout(gs1,t19,k2) = 2700
+   + gsout(gs1,t19,k2) = 0
  gas_balance_da(ng102,k0,t20): - 8 Pgen(g1,t20) - 8 PgenSC(g1,t20)
    - gsin(gs1,t20,k0) + gsout(gs1,t20,k0)
-   + qout_sr(('ng101','ng102'),k0,t20) = 2610
+   + qout_sr(('ng101','ng102'),k0,t20) = 0
  gas_balance_da(ng102,k1,t20): - 8 Pgen(g1,t20)
    + qout_sr(('ng101','ng102'),k1,t20) - gsin(gs1,t20,k1)
-   + gsout(gs1,t20,k1) = 3410
+   + gsout(gs1,t20,k1) = 80
  gas_balance_da(ng102,k2,t20): - 8 Pgen(g1,t20)
    + qout_sr(('ng101','ng102'),k2,t20) - gsin(gs1,t20,k2)
-   + gsout(gs1,t20,k2) = 2610
+   + gsout(gs1,t20,k2) = 0
  gas_balance_da(ng102,k0,t21): - 8 Pgen(g1,t21) - 8 PgenSC(g1,t21)
    - gsin(gs1,t21,k0) + gsout(gs1,t21,k0)
-   + qout_sr(('ng101','ng102'),k0,t21) = 2475
+   + qout_sr(('ng101','ng102'),k0,t21) = 0
  gas_balance_da(ng102,k1,t21): - 8 Pgen(g1,t21)
    + qout_sr(('ng101','ng102'),k1,t21) - gsin(gs1,t21,k1)
-   + gsout(gs1,t21,k1) = 3275
+   + gsout(gs1,t21,k1) = 80
  gas_balance_da(ng102,k2,t21): - 8 Pgen(g1,t21)
    + qout_sr(('ng101','ng102'),k2,t21) - gsin(gs1,t21,k2)
-   + gsout(gs1,t21,k2) = 2475
+   + gsout(gs1,t21,k2) = 0
  gas_balance_da(ng102,k0,t22): - 8 Pgen(g1,t22) - 8 PgenSC(g1,t22)
    - gsin(gs1,t22,k0) + gsout(gs1,t22,k0)
-   + qout_sr(('ng101','ng102'),k0,t22) = 2250
+   + qout_sr(('ng101','ng102'),k0,t22) = 0
  gas_balance_da(ng102,k1,t22): - 8 Pgen(g1,t22)
    + qout_sr(('ng101','ng102'),k1,t22) - gsin(gs1,t22,k1)
-   + gsout(gs1,t22,k1) = 3050
+   + gsout(gs1,t22,k1) = 80
  gas_balance_da(ng102,k2,t22): - 8 Pgen(g1,t22)
    + qout_sr(('ng101','ng102'),k2,t22) - gsin(gs1,t22,k2)
-   + gsout(gs1,t22,k2) = 2250
+   + gsout(gs1,t22,k2) = 0
  gas_balance_da(ng102,k0,t23): - 8 Pgen(g1,t23) - 8 PgenSC(g1,t23)
    - gsin(gs1,t23,k0) + gsout(gs1,t23,k0)
-   + qout_sr(('ng101','ng102'),k0,t23) = 1980
+   + qout_sr(('ng101','ng102'),k0,t23) = 0
  gas_balance_da(ng102,k1,t23): - 8 Pgen(g1,t23)
    + qout_sr(('ng101','ng102'),k1,t23) - gsin(gs1,t23,k1)
-   + gsout(gs1,t23,k1) = 2780
+   + gsout(gs1,t23,k1) = 80
  gas_balance_da(ng102,k2,t23): - 8 Pgen(g1,t23)
    + qout_sr(('ng101','ng102'),k2,t23) - gsin(gs1,t23,k2)
-   + gsout(gs1,t23,k2) = 1980
+   + gsout(gs1,t23,k2) = 0
  gas_balance_da(ng102,k0,t24): - 8 Pgen(g1,t24) - 8 PgenSC(g1,t24)
    - gsin(gs1,t24,k0) + gsout(gs1,t24,k0)
-   + qout_sr(('ng101','ng102'),k0,t24) = 2010
+   + qout_sr(('ng101','ng102'),k0,t24) = 0
  gas_balance_da(ng102,k1,t24): - 8 Pgen(g1,t24)
    + qout_sr(('ng101','ng102'),k1,t24) - gsin(gs1,t24,k1)
-   + gsout(gs1,t24,k1) = 2810
+   + gsout(gs1,t24,k1) = 80
  gas_balance_da(ng102,k2,t24): - 8 Pgen(g1,t24)
    + qout_sr(('ng101','ng102'),k2,t24) - gsin(gs1,t24,k2)
-   + gsout(gs1,t24,k2) = 2010
- gprodUp_max(gw1,s1,t1): gprod(gw1,k0,t1) + gprodUp(gw1,s1,t1) <= 5230
+   + gsout(gs1,t24,k2) = 0
+ gprodUp_max(gw1,s1,t1): gprod(gw1,k0,t1) + gprodUp(gw1,s1,t1) <= 250
  SOS1_gprodUp_max(gw1,s1,t1): gprod(gw1,k0,t1) + gprodUp(gw1,s1,t1)
-   + SOS1_gprodUp_max(gw1,s1,t1) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t1) = 250
  gprodDn_max(gw1,s1,t1): - gprod(gw1,k0,t1) + gprodDn(gw1,s1,t1) <= 0
  SOS1_gprodDn_max(gw1,s1,t1): - gprod(gw1,k0,t1) + gprodDn(gw1,s1,t1)
    + SOS1_gprodDn_max(gw1,s1,t1) = 0
- gprodUp_max(gw1,s1,t2): gprod(gw1,k0,t2) + gprodUp(gw1,s1,t2) <= 5230
+ gprodUp_max(gw1,s1,t2): gprod(gw1,k0,t2) + gprodUp(gw1,s1,t2) <= 250
  SOS1_gprodUp_max(gw1,s1,t2): gprod(gw1,k0,t2) + gprodUp(gw1,s1,t2)
-   + SOS1_gprodUp_max(gw1,s1,t2) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t2) = 250
  gprodDn_max(gw1,s1,t2): - gprod(gw1,k0,t2) + gprodDn(gw1,s1,t2) <= 0
  SOS1_gprodDn_max(gw1,s1,t2): - gprod(gw1,k0,t2) + gprodDn(gw1,s1,t2)
    + SOS1_gprodDn_max(gw1,s1,t2) = 0
- gprodUp_max(gw1,s1,t3): gprod(gw1,k0,t3) + gprodUp(gw1,s1,t3) <= 5230
+ gprodUp_max(gw1,s1,t3): gprod(gw1,k0,t3) + gprodUp(gw1,s1,t3) <= 250
  SOS1_gprodUp_max(gw1,s1,t3): gprod(gw1,k0,t3) + gprodUp(gw1,s1,t3)
-   + SOS1_gprodUp_max(gw1,s1,t3) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t3) = 250
  gprodDn_max(gw1,s1,t3): - gprod(gw1,k0,t3) + gprodDn(gw1,s1,t3) <= 0
  SOS1_gprodDn_max(gw1,s1,t3): - gprod(gw1,k0,t3) + gprodDn(gw1,s1,t3)
    + SOS1_gprodDn_max(gw1,s1,t3) = 0
- gprodUp_max(gw1,s1,t4): gprod(gw1,k0,t4) + gprodUp(gw1,s1,t4) <= 5230
+ gprodUp_max(gw1,s1,t4): gprod(gw1,k0,t4) + gprodUp(gw1,s1,t4) <= 250
  SOS1_gprodUp_max(gw1,s1,t4): gprod(gw1,k0,t4) + gprodUp(gw1,s1,t4)
-   + SOS1_gprodUp_max(gw1,s1,t4) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t4) = 250
  gprodDn_max(gw1,s1,t4): - gprod(gw1,k0,t4) + gprodDn(gw1,s1,t4) <= 0
  SOS1_gprodDn_max(gw1,s1,t4): - gprod(gw1,k0,t4) + gprodDn(gw1,s1,t4)
    + SOS1_gprodDn_max(gw1,s1,t4) = 0
- gprodUp_max(gw1,s1,t5): gprod(gw1,k0,t5) + gprodUp(gw1,s1,t5) <= 5230
+ gprodUp_max(gw1,s1,t5): gprod(gw1,k0,t5) + gprodUp(gw1,s1,t5) <= 250
  SOS1_gprodUp_max(gw1,s1,t5): gprod(gw1,k0,t5) + gprodUp(gw1,s1,t5)
-   + SOS1_gprodUp_max(gw1,s1,t5) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t5) = 250
  gprodDn_max(gw1,s1,t5): - gprod(gw1,k0,t5) + gprodDn(gw1,s1,t5) <= 0
  SOS1_gprodDn_max(gw1,s1,t5): - gprod(gw1,k0,t5) + gprodDn(gw1,s1,t5)
    + SOS1_gprodDn_max(gw1,s1,t5) = 0
- gprodUp_max(gw1,s1,t6): gprod(gw1,k0,t6) + gprodUp(gw1,s1,t6) <= 5230
+ gprodUp_max(gw1,s1,t6): gprod(gw1,k0,t6) + gprodUp(gw1,s1,t6) <= 250
  SOS1_gprodUp_max(gw1,s1,t6): gprod(gw1,k0,t6) + gprodUp(gw1,s1,t6)
-   + SOS1_gprodUp_max(gw1,s1,t6) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t6) = 250
  gprodDn_max(gw1,s1,t6): - gprod(gw1,k0,t6) + gprodDn(gw1,s1,t6) <= 0
  SOS1_gprodDn_max(gw1,s1,t6): - gprod(gw1,k0,t6) + gprodDn(gw1,s1,t6)
    + SOS1_gprodDn_max(gw1,s1,t6) = 0
- gprodUp_max(gw1,s1,t7): gprod(gw1,k0,t7) + gprodUp(gw1,s1,t7) <= 5230
+ gprodUp_max(gw1,s1,t7): gprod(gw1,k0,t7) + gprodUp(gw1,s1,t7) <= 250
  SOS1_gprodUp_max(gw1,s1,t7): gprod(gw1,k0,t7) + gprodUp(gw1,s1,t7)
-   + SOS1_gprodUp_max(gw1,s1,t7) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t7) = 250
  gprodDn_max(gw1,s1,t7): - gprod(gw1,k0,t7) + gprodDn(gw1,s1,t7) <= 0
  SOS1_gprodDn_max(gw1,s1,t7): - gprod(gw1,k0,t7) + gprodDn(gw1,s1,t7)
    + SOS1_gprodDn_max(gw1,s1,t7) = 0
- gprodUp_max(gw1,s1,t8): gprod(gw1,k0,t8) + gprodUp(gw1,s1,t8) <= 5230
+ gprodUp_max(gw1,s1,t8): gprod(gw1,k0,t8) + gprodUp(gw1,s1,t8) <= 250
  SOS1_gprodUp_max(gw1,s1,t8): gprod(gw1,k0,t8) + gprodUp(gw1,s1,t8)
-   + SOS1_gprodUp_max(gw1,s1,t8) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t8) = 250
  gprodDn_max(gw1,s1,t8): - gprod(gw1,k0,t8) + gprodDn(gw1,s1,t8) <= 0
  SOS1_gprodDn_max(gw1,s1,t8): - gprod(gw1,k0,t8) + gprodDn(gw1,s1,t8)
    + SOS1_gprodDn_max(gw1,s1,t8) = 0
- gprodUp_max(gw1,s1,t9): gprod(gw1,k0,t9) + gprodUp(gw1,s1,t9) <= 5230
+ gprodUp_max(gw1,s1,t9): gprod(gw1,k0,t9) + gprodUp(gw1,s1,t9) <= 250
  SOS1_gprodUp_max(gw1,s1,t9): gprod(gw1,k0,t9) + gprodUp(gw1,s1,t9)
-   + SOS1_gprodUp_max(gw1,s1,t9) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t9) = 250
  gprodDn_max(gw1,s1,t9): - gprod(gw1,k0,t9) + gprodDn(gw1,s1,t9) <= 0
  SOS1_gprodDn_max(gw1,s1,t9): - gprod(gw1,k0,t9) + gprodDn(gw1,s1,t9)
    + SOS1_gprodDn_max(gw1,s1,t9) = 0
- gprodUp_max(gw1,s1,t10): gprod(gw1,k0,t10) + gprodUp(gw1,s1,t10) <= 5230
+ gprodUp_max(gw1,s1,t10): gprod(gw1,k0,t10) + gprodUp(gw1,s1,t10) <= 250
  SOS1_gprodUp_max(gw1,s1,t10): gprod(gw1,k0,t10) + gprodUp(gw1,s1,t10)
-   + SOS1_gprodUp_max(gw1,s1,t10) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t10) = 250
  gprodDn_max(gw1,s1,t10): - gprod(gw1,k0,t10) + gprodDn(gw1,s1,t10) <= 0
  SOS1_gprodDn_max(gw1,s1,t10): - gprod(gw1,k0,t10) + gprodDn(gw1,s1,t10)
    + SOS1_gprodDn_max(gw1,s1,t10) = 0
- gprodUp_max(gw1,s1,t11): gprod(gw1,k0,t11) + gprodUp(gw1,s1,t11) <= 5230
+ gprodUp_max(gw1,s1,t11): gprod(gw1,k0,t11) + gprodUp(gw1,s1,t11) <= 250
  SOS1_gprodUp_max(gw1,s1,t11): gprod(gw1,k0,t11) + gprodUp(gw1,s1,t11)
-   + SOS1_gprodUp_max(gw1,s1,t11) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t11) = 250
  gprodDn_max(gw1,s1,t11): - gprod(gw1,k0,t11) + gprodDn(gw1,s1,t11) <= 0
  SOS1_gprodDn_max(gw1,s1,t11): - gprod(gw1,k0,t11) + gprodDn(gw1,s1,t11)
    + SOS1_gprodDn_max(gw1,s1,t11) = 0
- gprodUp_max(gw1,s1,t12): gprod(gw1,k0,t12) + gprodUp(gw1,s1,t12) <= 5230
+ gprodUp_max(gw1,s1,t12): gprod(gw1,k0,t12) + gprodUp(gw1,s1,t12) <= 250
  SOS1_gprodUp_max(gw1,s1,t12): gprod(gw1,k0,t12) + gprodUp(gw1,s1,t12)
-   + SOS1_gprodUp_max(gw1,s1,t12) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t12) = 250
  gprodDn_max(gw1,s1,t12): - gprod(gw1,k0,t12) + gprodDn(gw1,s1,t12) <= 0
  SOS1_gprodDn_max(gw1,s1,t12): - gprod(gw1,k0,t12) + gprodDn(gw1,s1,t12)
    + SOS1_gprodDn_max(gw1,s1,t12) = 0
- gprodUp_max(gw1,s1,t13): gprod(gw1,k0,t13) + gprodUp(gw1,s1,t13) <= 5230
+ gprodUp_max(gw1,s1,t13): gprod(gw1,k0,t13) + gprodUp(gw1,s1,t13) <= 250
  SOS1_gprodUp_max(gw1,s1,t13): gprod(gw1,k0,t13) + gprodUp(gw1,s1,t13)
-   + SOS1_gprodUp_max(gw1,s1,t13) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t13) = 250
  gprodDn_max(gw1,s1,t13): - gprod(gw1,k0,t13) + gprodDn(gw1,s1,t13) <= 0
  SOS1_gprodDn_max(gw1,s1,t13): - gprod(gw1,k0,t13) + gprodDn(gw1,s1,t13)
    + SOS1_gprodDn_max(gw1,s1,t13) = 0
- gprodUp_max(gw1,s1,t14): gprod(gw1,k0,t14) + gprodUp(gw1,s1,t14) <= 5230
+ gprodUp_max(gw1,s1,t14): gprod(gw1,k0,t14) + gprodUp(gw1,s1,t14) <= 250
  SOS1_gprodUp_max(gw1,s1,t14): gprod(gw1,k0,t14) + gprodUp(gw1,s1,t14)
-   + SOS1_gprodUp_max(gw1,s1,t14) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t14) = 250
  gprodDn_max(gw1,s1,t14): - gprod(gw1,k0,t14) + gprodDn(gw1,s1,t14) <= 0
  SOS1_gprodDn_max(gw1,s1,t14): - gprod(gw1,k0,t14) + gprodDn(gw1,s1,t14)
    + SOS1_gprodDn_max(gw1,s1,t14) = 0
- gprodUp_max(gw1,s1,t15): gprod(gw1,k0,t15) + gprodUp(gw1,s1,t15) <= 5230
+ gprodUp_max(gw1,s1,t15): gprod(gw1,k0,t15) + gprodUp(gw1,s1,t15) <= 250
  SOS1_gprodUp_max(gw1,s1,t15): gprod(gw1,k0,t15) + gprodUp(gw1,s1,t15)
-   + SOS1_gprodUp_max(gw1,s1,t15) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t15) = 250
  gprodDn_max(gw1,s1,t15): - gprod(gw1,k0,t15) + gprodDn(gw1,s1,t15) <= 0
  SOS1_gprodDn_max(gw1,s1,t15): - gprod(gw1,k0,t15) + gprodDn(gw1,s1,t15)
    + SOS1_gprodDn_max(gw1,s1,t15) = 0
- gprodUp_max(gw1,s1,t16): gprod(gw1,k0,t16) + gprodUp(gw1,s1,t16) <= 5230
+ gprodUp_max(gw1,s1,t16): gprod(gw1,k0,t16) + gprodUp(gw1,s1,t16) <= 250
  SOS1_gprodUp_max(gw1,s1,t16): gprod(gw1,k0,t16) + gprodUp(gw1,s1,t16)
-   + SOS1_gprodUp_max(gw1,s1,t16) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t16) = 250
  gprodDn_max(gw1,s1,t16): - gprod(gw1,k0,t16) + gprodDn(gw1,s1,t16) <= 0
  SOS1_gprodDn_max(gw1,s1,t16): - gprod(gw1,k0,t16) + gprodDn(gw1,s1,t16)
    + SOS1_gprodDn_max(gw1,s1,t16) = 0
- gprodUp_max(gw1,s1,t17): gprod(gw1,k0,t17) + gprodUp(gw1,s1,t17) <= 5230
+ gprodUp_max(gw1,s1,t17): gprod(gw1,k0,t17) + gprodUp(gw1,s1,t17) <= 250
  SOS1_gprodUp_max(gw1,s1,t17): gprod(gw1,k0,t17) + gprodUp(gw1,s1,t17)
-   + SOS1_gprodUp_max(gw1,s1,t17) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t17) = 250
  gprodDn_max(gw1,s1,t17): - gprod(gw1,k0,t17) + gprodDn(gw1,s1,t17) <= 0
  SOS1_gprodDn_max(gw1,s1,t17): - gprod(gw1,k0,t17) + gprodDn(gw1,s1,t17)
    + SOS1_gprodDn_max(gw1,s1,t17) = 0
- gprodUp_max(gw1,s1,t18): gprod(gw1,k0,t18) + gprodUp(gw1,s1,t18) <= 5230
+ gprodUp_max(gw1,s1,t18): gprod(gw1,k0,t18) + gprodUp(gw1,s1,t18) <= 250
  SOS1_gprodUp_max(gw1,s1,t18): gprod(gw1,k0,t18) + gprodUp(gw1,s1,t18)
-   + SOS1_gprodUp_max(gw1,s1,t18) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t18) = 250
  gprodDn_max(gw1,s1,t18): - gprod(gw1,k0,t18) + gprodDn(gw1,s1,t18) <= 0
  SOS1_gprodDn_max(gw1,s1,t18): - gprod(gw1,k0,t18) + gprodDn(gw1,s1,t18)
    + SOS1_gprodDn_max(gw1,s1,t18) = 0
- gprodUp_max(gw1,s1,t19): gprod(gw1,k0,t19) + gprodUp(gw1,s1,t19) <= 5230
+ gprodUp_max(gw1,s1,t19): gprod(gw1,k0,t19) + gprodUp(gw1,s1,t19) <= 250
  SOS1_gprodUp_max(gw1,s1,t19): gprod(gw1,k0,t19) + gprodUp(gw1,s1,t19)
-   + SOS1_gprodUp_max(gw1,s1,t19) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t19) = 250
  gprodDn_max(gw1,s1,t19): - gprod(gw1,k0,t19) + gprodDn(gw1,s1,t19) <= 0
  SOS1_gprodDn_max(gw1,s1,t19): - gprod(gw1,k0,t19) + gprodDn(gw1,s1,t19)
    + SOS1_gprodDn_max(gw1,s1,t19) = 0
- gprodUp_max(gw1,s1,t20): gprod(gw1,k0,t20) + gprodUp(gw1,s1,t20) <= 5230
+ gprodUp_max(gw1,s1,t20): gprod(gw1,k0,t20) + gprodUp(gw1,s1,t20) <= 250
  SOS1_gprodUp_max(gw1,s1,t20): gprod(gw1,k0,t20) + gprodUp(gw1,s1,t20)
-   + SOS1_gprodUp_max(gw1,s1,t20) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t20) = 250
  gprodDn_max(gw1,s1,t20): - gprod(gw1,k0,t20) + gprodDn(gw1,s1,t20) <= 0
  SOS1_gprodDn_max(gw1,s1,t20): - gprod(gw1,k0,t20) + gprodDn(gw1,s1,t20)
    + SOS1_gprodDn_max(gw1,s1,t20) = 0
- gprodUp_max(gw1,s1,t21): gprod(gw1,k0,t21) + gprodUp(gw1,s1,t21) <= 5230
+ gprodUp_max(gw1,s1,t21): gprod(gw1,k0,t21) + gprodUp(gw1,s1,t21) <= 250
  SOS1_gprodUp_max(gw1,s1,t21): gprod(gw1,k0,t21) + gprodUp(gw1,s1,t21)
-   + SOS1_gprodUp_max(gw1,s1,t21) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t21) = 250
  gprodDn_max(gw1,s1,t21): - gprod(gw1,k0,t21) + gprodDn(gw1,s1,t21) <= 0
  SOS1_gprodDn_max(gw1,s1,t21): - gprod(gw1,k0,t21) + gprodDn(gw1,s1,t21)
    + SOS1_gprodDn_max(gw1,s1,t21) = 0
- gprodUp_max(gw1,s1,t22): gprod(gw1,k0,t22) + gprodUp(gw1,s1,t22) <= 5230
+ gprodUp_max(gw1,s1,t22): gprod(gw1,k0,t22) + gprodUp(gw1,s1,t22) <= 250
  SOS1_gprodUp_max(gw1,s1,t22): gprod(gw1,k0,t22) + gprodUp(gw1,s1,t22)
-   + SOS1_gprodUp_max(gw1,s1,t22) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t22) = 250
  gprodDn_max(gw1,s1,t22): - gprod(gw1,k0,t22) + gprodDn(gw1,s1,t22) <= 0
  SOS1_gprodDn_max(gw1,s1,t22): - gprod(gw1,k0,t22) + gprodDn(gw1,s1,t22)
    + SOS1_gprodDn_max(gw1,s1,t22) = 0
- gprodUp_max(gw1,s1,t23): gprod(gw1,k0,t23) + gprodUp(gw1,s1,t23) <= 5230
+ gprodUp_max(gw1,s1,t23): gprod(gw1,k0,t23) + gprodUp(gw1,s1,t23) <= 250
  SOS1_gprodUp_max(gw1,s1,t23): gprod(gw1,k0,t23) + gprodUp(gw1,s1,t23)
-   + SOS1_gprodUp_max(gw1,s1,t23) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t23) = 250
  gprodDn_max(gw1,s1,t23): - gprod(gw1,k0,t23) + gprodDn(gw1,s1,t23) <= 0
  SOS1_gprodDn_max(gw1,s1,t23): - gprod(gw1,k0,t23) + gprodDn(gw1,s1,t23)
    + SOS1_gprodDn_max(gw1,s1,t23) = 0
- gprodUp_max(gw1,s1,t24): gprod(gw1,k0,t24) + gprodUp(gw1,s1,t24) <= 5230
+ gprodUp_max(gw1,s1,t24): gprod(gw1,k0,t24) + gprodUp(gw1,s1,t24) <= 250
  SOS1_gprodUp_max(gw1,s1,t24): gprod(gw1,k0,t24) + gprodUp(gw1,s1,t24)
-   + SOS1_gprodUp_max(gw1,s1,t24) = 5230
+   + SOS1_gprodUp_max(gw1,s1,t24) = 250
  gprodDn_max(gw1,s1,t24): - gprod(gw1,k0,t24) + gprodDn(gw1,s1,t24) <= 0
  SOS1_gprodDn_max(gw1,s1,t24): - gprod(gw1,k0,t24) + gprodDn(gw1,s1,t24)
    + SOS1_gprodDn_max(gw1,s1,t24) = 0
- gprodUp_max(gw1,s2,t1): gprod(gw1,k0,t1) + gprodUp(gw1,s2,t1) <= 5230
+ gprodUp_max(gw1,s2,t1): gprod(gw1,k0,t1) + gprodUp(gw1,s2,t1) <= 250
  SOS1_gprodUp_max(gw1,s2,t1): gprod(gw1,k0,t1) + gprodUp(gw1,s2,t1)
-   + SOS1_gprodUp_max(gw1,s2,t1) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t1) = 250
  gprodDn_max(gw1,s2,t1): - gprod(gw1,k0,t1) + gprodDn(gw1,s2,t1) <= 0
  SOS1_gprodDn_max(gw1,s2,t1): - gprod(gw1,k0,t1) + gprodDn(gw1,s2,t1)
    + SOS1_gprodDn_max(gw1,s2,t1) = 0
- gprodUp_max(gw1,s2,t2): gprod(gw1,k0,t2) + gprodUp(gw1,s2,t2) <= 5230
+ gprodUp_max(gw1,s2,t2): gprod(gw1,k0,t2) + gprodUp(gw1,s2,t2) <= 250
  SOS1_gprodUp_max(gw1,s2,t2): gprod(gw1,k0,t2) + gprodUp(gw1,s2,t2)
-   + SOS1_gprodUp_max(gw1,s2,t2) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t2) = 250
  gprodDn_max(gw1,s2,t2): - gprod(gw1,k0,t2) + gprodDn(gw1,s2,t2) <= 0
  SOS1_gprodDn_max(gw1,s2,t2): - gprod(gw1,k0,t2) + gprodDn(gw1,s2,t2)
    + SOS1_gprodDn_max(gw1,s2,t2) = 0
- gprodUp_max(gw1,s2,t3): gprod(gw1,k0,t3) + gprodUp(gw1,s2,t3) <= 5230
+ gprodUp_max(gw1,s2,t3): gprod(gw1,k0,t3) + gprodUp(gw1,s2,t3) <= 250
  SOS1_gprodUp_max(gw1,s2,t3): gprod(gw1,k0,t3) + gprodUp(gw1,s2,t3)
-   + SOS1_gprodUp_max(gw1,s2,t3) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t3) = 250
  gprodDn_max(gw1,s2,t3): - gprod(gw1,k0,t3) + gprodDn(gw1,s2,t3) <= 0
  SOS1_gprodDn_max(gw1,s2,t3): - gprod(gw1,k0,t3) + gprodDn(gw1,s2,t3)
    + SOS1_gprodDn_max(gw1,s2,t3) = 0
- gprodUp_max(gw1,s2,t4): gprod(gw1,k0,t4) + gprodUp(gw1,s2,t4) <= 5230
+ gprodUp_max(gw1,s2,t4): gprod(gw1,k0,t4) + gprodUp(gw1,s2,t4) <= 250
  SOS1_gprodUp_max(gw1,s2,t4): gprod(gw1,k0,t4) + gprodUp(gw1,s2,t4)
-   + SOS1_gprodUp_max(gw1,s2,t4) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t4) = 250
  gprodDn_max(gw1,s2,t4): - gprod(gw1,k0,t4) + gprodDn(gw1,s2,t4) <= 0
  SOS1_gprodDn_max(gw1,s2,t4): - gprod(gw1,k0,t4) + gprodDn(gw1,s2,t4)
    + SOS1_gprodDn_max(gw1,s2,t4) = 0
- gprodUp_max(gw1,s2,t5): gprod(gw1,k0,t5) + gprodUp(gw1,s2,t5) <= 5230
+ gprodUp_max(gw1,s2,t5): gprod(gw1,k0,t5) + gprodUp(gw1,s2,t5) <= 250
  SOS1_gprodUp_max(gw1,s2,t5): gprod(gw1,k0,t5) + gprodUp(gw1,s2,t5)
-   + SOS1_gprodUp_max(gw1,s2,t5) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t5) = 250
  gprodDn_max(gw1,s2,t5): - gprod(gw1,k0,t5) + gprodDn(gw1,s2,t5) <= 0
  SOS1_gprodDn_max(gw1,s2,t5): - gprod(gw1,k0,t5) + gprodDn(gw1,s2,t5)
    + SOS1_gprodDn_max(gw1,s2,t5) = 0
- gprodUp_max(gw1,s2,t6): gprod(gw1,k0,t6) + gprodUp(gw1,s2,t6) <= 5230
+ gprodUp_max(gw1,s2,t6): gprod(gw1,k0,t6) + gprodUp(gw1,s2,t6) <= 250
  SOS1_gprodUp_max(gw1,s2,t6): gprod(gw1,k0,t6) + gprodUp(gw1,s2,t6)
-   + SOS1_gprodUp_max(gw1,s2,t6) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t6) = 250
  gprodDn_max(gw1,s2,t6): - gprod(gw1,k0,t6) + gprodDn(gw1,s2,t6) <= 0
  SOS1_gprodDn_max(gw1,s2,t6): - gprod(gw1,k0,t6) + gprodDn(gw1,s2,t6)
    + SOS1_gprodDn_max(gw1,s2,t6) = 0
- gprodUp_max(gw1,s2,t7): gprod(gw1,k0,t7) + gprodUp(gw1,s2,t7) <= 5230
+ gprodUp_max(gw1,s2,t7): gprod(gw1,k0,t7) + gprodUp(gw1,s2,t7) <= 250
  SOS1_gprodUp_max(gw1,s2,t7): gprod(gw1,k0,t7) + gprodUp(gw1,s2,t7)
-   + SOS1_gprodUp_max(gw1,s2,t7) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t7) = 250
  gprodDn_max(gw1,s2,t7): - gprod(gw1,k0,t7) + gprodDn(gw1,s2,t7) <= 0
  SOS1_gprodDn_max(gw1,s2,t7): - gprod(gw1,k0,t7) + gprodDn(gw1,s2,t7)
    + SOS1_gprodDn_max(gw1,s2,t7) = 0
- gprodUp_max(gw1,s2,t8): gprod(gw1,k0,t8) + gprodUp(gw1,s2,t8) <= 5230
+ gprodUp_max(gw1,s2,t8): gprod(gw1,k0,t8) + gprodUp(gw1,s2,t8) <= 250
  SOS1_gprodUp_max(gw1,s2,t8): gprod(gw1,k0,t8) + gprodUp(gw1,s2,t8)
-   + SOS1_gprodUp_max(gw1,s2,t8) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t8) = 250
  gprodDn_max(gw1,s2,t8): - gprod(gw1,k0,t8) + gprodDn(gw1,s2,t8) <= 0
  SOS1_gprodDn_max(gw1,s2,t8): - gprod(gw1,k0,t8) + gprodDn(gw1,s2,t8)
    + SOS1_gprodDn_max(gw1,s2,t8) = 0
- gprodUp_max(gw1,s2,t9): gprod(gw1,k0,t9) + gprodUp(gw1,s2,t9) <= 5230
+ gprodUp_max(gw1,s2,t9): gprod(gw1,k0,t9) + gprodUp(gw1,s2,t9) <= 250
  SOS1_gprodUp_max(gw1,s2,t9): gprod(gw1,k0,t9) + gprodUp(gw1,s2,t9)
-   + SOS1_gprodUp_max(gw1,s2,t9) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t9) = 250
  gprodDn_max(gw1,s2,t9): - gprod(gw1,k0,t9) + gprodDn(gw1,s2,t9) <= 0
  SOS1_gprodDn_max(gw1,s2,t9): - gprod(gw1,k0,t9) + gprodDn(gw1,s2,t9)
    + SOS1_gprodDn_max(gw1,s2,t9) = 0
- gprodUp_max(gw1,s2,t10): gprod(gw1,k0,t10) + gprodUp(gw1,s2,t10) <= 5230
+ gprodUp_max(gw1,s2,t10): gprod(gw1,k0,t10) + gprodUp(gw1,s2,t10) <= 250
  SOS1_gprodUp_max(gw1,s2,t10): gprod(gw1,k0,t10) + gprodUp(gw1,s2,t10)
-   + SOS1_gprodUp_max(gw1,s2,t10) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t10) = 250
  gprodDn_max(gw1,s2,t10): - gprod(gw1,k0,t10) + gprodDn(gw1,s2,t10) <= 0
  SOS1_gprodDn_max(gw1,s2,t10): - gprod(gw1,k0,t10) + gprodDn(gw1,s2,t10)
    + SOS1_gprodDn_max(gw1,s2,t10) = 0
- gprodUp_max(gw1,s2,t11): gprod(gw1,k0,t11) + gprodUp(gw1,s2,t11) <= 5230
+ gprodUp_max(gw1,s2,t11): gprod(gw1,k0,t11) + gprodUp(gw1,s2,t11) <= 250
  SOS1_gprodUp_max(gw1,s2,t11): gprod(gw1,k0,t11) + gprodUp(gw1,s2,t11)
-   + SOS1_gprodUp_max(gw1,s2,t11) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t11) = 250
  gprodDn_max(gw1,s2,t11): - gprod(gw1,k0,t11) + gprodDn(gw1,s2,t11) <= 0
  SOS1_gprodDn_max(gw1,s2,t11): - gprod(gw1,k0,t11) + gprodDn(gw1,s2,t11)
    + SOS1_gprodDn_max(gw1,s2,t11) = 0
- gprodUp_max(gw1,s2,t12): gprod(gw1,k0,t12) + gprodUp(gw1,s2,t12) <= 5230
+ gprodUp_max(gw1,s2,t12): gprod(gw1,k0,t12) + gprodUp(gw1,s2,t12) <= 250
  SOS1_gprodUp_max(gw1,s2,t12): gprod(gw1,k0,t12) + gprodUp(gw1,s2,t12)
-   + SOS1_gprodUp_max(gw1,s2,t12) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t12) = 250
  gprodDn_max(gw1,s2,t12): - gprod(gw1,k0,t12) + gprodDn(gw1,s2,t12) <= 0
  SOS1_gprodDn_max(gw1,s2,t12): - gprod(gw1,k0,t12) + gprodDn(gw1,s2,t12)
    + SOS1_gprodDn_max(gw1,s2,t12) = 0
- gprodUp_max(gw1,s2,t13): gprod(gw1,k0,t13) + gprodUp(gw1,s2,t13) <= 5230
+ gprodUp_max(gw1,s2,t13): gprod(gw1,k0,t13) + gprodUp(gw1,s2,t13) <= 250
  SOS1_gprodUp_max(gw1,s2,t13): gprod(gw1,k0,t13) + gprodUp(gw1,s2,t13)
-   + SOS1_gprodUp_max(gw1,s2,t13) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t13) = 250
  gprodDn_max(gw1,s2,t13): - gprod(gw1,k0,t13) + gprodDn(gw1,s2,t13) <= 0
  SOS1_gprodDn_max(gw1,s2,t13): - gprod(gw1,k0,t13) + gprodDn(gw1,s2,t13)
    + SOS1_gprodDn_max(gw1,s2,t13) = 0
- gprodUp_max(gw1,s2,t14): gprod(gw1,k0,t14) + gprodUp(gw1,s2,t14) <= 5230
+ gprodUp_max(gw1,s2,t14): gprod(gw1,k0,t14) + gprodUp(gw1,s2,t14) <= 250
  SOS1_gprodUp_max(gw1,s2,t14): gprod(gw1,k0,t14) + gprodUp(gw1,s2,t14)
-   + SOS1_gprodUp_max(gw1,s2,t14) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t14) = 250
  gprodDn_max(gw1,s2,t14): - gprod(gw1,k0,t14) + gprodDn(gw1,s2,t14) <= 0
  SOS1_gprodDn_max(gw1,s2,t14): - gprod(gw1,k0,t14) + gprodDn(gw1,s2,t14)
    + SOS1_gprodDn_max(gw1,s2,t14) = 0
- gprodUp_max(gw1,s2,t15): gprod(gw1,k0,t15) + gprodUp(gw1,s2,t15) <= 5230
+ gprodUp_max(gw1,s2,t15): gprod(gw1,k0,t15) + gprodUp(gw1,s2,t15) <= 250
  SOS1_gprodUp_max(gw1,s2,t15): gprod(gw1,k0,t15) + gprodUp(gw1,s2,t15)
-   + SOS1_gprodUp_max(gw1,s2,t15) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t15) = 250
  gprodDn_max(gw1,s2,t15): - gprod(gw1,k0,t15) + gprodDn(gw1,s2,t15) <= 0
  SOS1_gprodDn_max(gw1,s2,t15): - gprod(gw1,k0,t15) + gprodDn(gw1,s2,t15)
    + SOS1_gprodDn_max(gw1,s2,t15) = 0
- gprodUp_max(gw1,s2,t16): gprod(gw1,k0,t16) + gprodUp(gw1,s2,t16) <= 5230
+ gprodUp_max(gw1,s2,t16): gprod(gw1,k0,t16) + gprodUp(gw1,s2,t16) <= 250
  SOS1_gprodUp_max(gw1,s2,t16): gprod(gw1,k0,t16) + gprodUp(gw1,s2,t16)
-   + SOS1_gprodUp_max(gw1,s2,t16) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t16) = 250
  gprodDn_max(gw1,s2,t16): - gprod(gw1,k0,t16) + gprodDn(gw1,s2,t16) <= 0
  SOS1_gprodDn_max(gw1,s2,t16): - gprod(gw1,k0,t16) + gprodDn(gw1,s2,t16)
    + SOS1_gprodDn_max(gw1,s2,t16) = 0
- gprodUp_max(gw1,s2,t17): gprod(gw1,k0,t17) + gprodUp(gw1,s2,t17) <= 5230
+ gprodUp_max(gw1,s2,t17): gprod(gw1,k0,t17) + gprodUp(gw1,s2,t17) <= 250
  SOS1_gprodUp_max(gw1,s2,t17): gprod(gw1,k0,t17) + gprodUp(gw1,s2,t17)
-   + SOS1_gprodUp_max(gw1,s2,t17) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t17) = 250
  gprodDn_max(gw1,s2,t17): - gprod(gw1,k0,t17) + gprodDn(gw1,s2,t17) <= 0
  SOS1_gprodDn_max(gw1,s2,t17): - gprod(gw1,k0,t17) + gprodDn(gw1,s2,t17)
    + SOS1_gprodDn_max(gw1,s2,t17) = 0
- gprodUp_max(gw1,s2,t18): gprod(gw1,k0,t18) + gprodUp(gw1,s2,t18) <= 5230
+ gprodUp_max(gw1,s2,t18): gprod(gw1,k0,t18) + gprodUp(gw1,s2,t18) <= 250
  SOS1_gprodUp_max(gw1,s2,t18): gprod(gw1,k0,t18) + gprodUp(gw1,s2,t18)
-   + SOS1_gprodUp_max(gw1,s2,t18) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t18) = 250
  gprodDn_max(gw1,s2,t18): - gprod(gw1,k0,t18) + gprodDn(gw1,s2,t18) <= 0
  SOS1_gprodDn_max(gw1,s2,t18): - gprod(gw1,k0,t18) + gprodDn(gw1,s2,t18)
    + SOS1_gprodDn_max(gw1,s2,t18) = 0
- gprodUp_max(gw1,s2,t19): gprod(gw1,k0,t19) + gprodUp(gw1,s2,t19) <= 5230
+ gprodUp_max(gw1,s2,t19): gprod(gw1,k0,t19) + gprodUp(gw1,s2,t19) <= 250
  SOS1_gprodUp_max(gw1,s2,t19): gprod(gw1,k0,t19) + gprodUp(gw1,s2,t19)
-   + SOS1_gprodUp_max(gw1,s2,t19) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t19) = 250
  gprodDn_max(gw1,s2,t19): - gprod(gw1,k0,t19) + gprodDn(gw1,s2,t19) <= 0
  SOS1_gprodDn_max(gw1,s2,t19): - gprod(gw1,k0,t19) + gprodDn(gw1,s2,t19)
    + SOS1_gprodDn_max(gw1,s2,t19) = 0
- gprodUp_max(gw1,s2,t20): gprod(gw1,k0,t20) + gprodUp(gw1,s2,t20) <= 5230
+ gprodUp_max(gw1,s2,t20): gprod(gw1,k0,t20) + gprodUp(gw1,s2,t20) <= 250
  SOS1_gprodUp_max(gw1,s2,t20): gprod(gw1,k0,t20) + gprodUp(gw1,s2,t20)
-   + SOS1_gprodUp_max(gw1,s2,t20) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t20) = 250
  gprodDn_max(gw1,s2,t20): - gprod(gw1,k0,t20) + gprodDn(gw1,s2,t20) <= 0
  SOS1_gprodDn_max(gw1,s2,t20): - gprod(gw1,k0,t20) + gprodDn(gw1,s2,t20)
    + SOS1_gprodDn_max(gw1,s2,t20) = 0
- gprodUp_max(gw1,s2,t21): gprod(gw1,k0,t21) + gprodUp(gw1,s2,t21) <= 5230
+ gprodUp_max(gw1,s2,t21): gprod(gw1,k0,t21) + gprodUp(gw1,s2,t21) <= 250
  SOS1_gprodUp_max(gw1,s2,t21): gprod(gw1,k0,t21) + gprodUp(gw1,s2,t21)
-   + SOS1_gprodUp_max(gw1,s2,t21) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t21) = 250
  gprodDn_max(gw1,s2,t21): - gprod(gw1,k0,t21) + gprodDn(gw1,s2,t21) <= 0
  SOS1_gprodDn_max(gw1,s2,t21): - gprod(gw1,k0,t21) + gprodDn(gw1,s2,t21)
    + SOS1_gprodDn_max(gw1,s2,t21) = 0
- gprodUp_max(gw1,s2,t22): gprod(gw1,k0,t22) + gprodUp(gw1,s2,t22) <= 5230
+ gprodUp_max(gw1,s2,t22): gprod(gw1,k0,t22) + gprodUp(gw1,s2,t22) <= 250
  SOS1_gprodUp_max(gw1,s2,t22): gprod(gw1,k0,t22) + gprodUp(gw1,s2,t22)
-   + SOS1_gprodUp_max(gw1,s2,t22) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t22) = 250
  gprodDn_max(gw1,s2,t22): - gprod(gw1,k0,t22) + gprodDn(gw1,s2,t22) <= 0
  SOS1_gprodDn_max(gw1,s2,t22): - gprod(gw1,k0,t22) + gprodDn(gw1,s2,t22)
    + SOS1_gprodDn_max(gw1,s2,t22) = 0
- gprodUp_max(gw1,s2,t23): gprod(gw1,k0,t23) + gprodUp(gw1,s2,t23) <= 5230
+ gprodUp_max(gw1,s2,t23): gprod(gw1,k0,t23) + gprodUp(gw1,s2,t23) <= 250
  SOS1_gprodUp_max(gw1,s2,t23): gprod(gw1,k0,t23) + gprodUp(gw1,s2,t23)
-   + SOS1_gprodUp_max(gw1,s2,t23) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t23) = 250
  gprodDn_max(gw1,s2,t23): - gprod(gw1,k0,t23) + gprodDn(gw1,s2,t23) <= 0
  SOS1_gprodDn_max(gw1,s2,t23): - gprod(gw1,k0,t23) + gprodDn(gw1,s2,t23)
    + SOS1_gprodDn_max(gw1,s2,t23) = 0
- gprodUp_max(gw1,s2,t24): gprod(gw1,k0,t24) + gprodUp(gw1,s2,t24) <= 5230
+ gprodUp_max(gw1,s2,t24): gprod(gw1,k0,t24) + gprodUp(gw1,s2,t24) <= 250
  SOS1_gprodUp_max(gw1,s2,t24): gprod(gw1,k0,t24) + gprodUp(gw1,s2,t24)
-   + SOS1_gprodUp_max(gw1,s2,t24) = 5230
+   + SOS1_gprodUp_max(gw1,s2,t24) = 250
  gprodDn_max(gw1,s2,t24): - gprod(gw1,k0,t24) + gprodDn(gw1,s2,t24) <= 0
  SOS1_gprodDn_max(gw1,s2,t24): - gprod(gw1,k0,t24) + gprodDn(gw1,s2,t24)
    + SOS1_gprodDn_max(gw1,s2,t24) = 0
- gprodUp_max(gw2,s1,t1): gprod(gw2,k0,t1) + gprodUp(gw2,s1,t1) <= 370
+ gprodUp_max(gw2,s1,t1): gprod(gw2,k0,t1) + gprodUp(gw2,s1,t1) <= 100
  SOS1_gprodUp_max(gw2,s1,t1): gprod(gw2,k0,t1) + gprodUp(gw2,s1,t1)
-   + SOS1_gprodUp_max(gw2,s1,t1) = 370
+   + SOS1_gprodUp_max(gw2,s1,t1) = 100
  gprodDn_max(gw2,s1,t1): - gprod(gw2,k0,t1) + gprodDn(gw2,s1,t1) <= 0
  SOS1_gprodDn_max(gw2,s1,t1): - gprod(gw2,k0,t1) + gprodDn(gw2,s1,t1)
    + SOS1_gprodDn_max(gw2,s1,t1) = 0
- gprodUp_max(gw2,s1,t2): gprod(gw2,k0,t2) + gprodUp(gw2,s1,t2) <= 370
+ gprodUp_max(gw2,s1,t2): gprod(gw2,k0,t2) + gprodUp(gw2,s1,t2) <= 100
  SOS1_gprodUp_max(gw2,s1,t2): gprod(gw2,k0,t2) + gprodUp(gw2,s1,t2)
-   + SOS1_gprodUp_max(gw2,s1,t2) = 370
+   + SOS1_gprodUp_max(gw2,s1,t2) = 100
  gprodDn_max(gw2,s1,t2): - gprod(gw2,k0,t2) + gprodDn(gw2,s1,t2) <= 0
  SOS1_gprodDn_max(gw2,s1,t2): - gprod(gw2,k0,t2) + gprodDn(gw2,s1,t2)
    + SOS1_gprodDn_max(gw2,s1,t2) = 0
- gprodUp_max(gw2,s1,t3): gprod(gw2,k0,t3) + gprodUp(gw2,s1,t3) <= 370
+ gprodUp_max(gw2,s1,t3): gprod(gw2,k0,t3) + gprodUp(gw2,s1,t3) <= 100
  SOS1_gprodUp_max(gw2,s1,t3): gprod(gw2,k0,t3) + gprodUp(gw2,s1,t3)
-   + SOS1_gprodUp_max(gw2,s1,t3) = 370
+   + SOS1_gprodUp_max(gw2,s1,t3) = 100
  gprodDn_max(gw2,s1,t3): - gprod(gw2,k0,t3) + gprodDn(gw2,s1,t3) <= 0
  SOS1_gprodDn_max(gw2,s1,t3): - gprod(gw2,k0,t3) + gprodDn(gw2,s1,t3)
    + SOS1_gprodDn_max(gw2,s1,t3) = 0
- gprodUp_max(gw2,s1,t4): gprod(gw2,k0,t4) + gprodUp(gw2,s1,t4) <= 370
+ gprodUp_max(gw2,s1,t4): gprod(gw2,k0,t4) + gprodUp(gw2,s1,t4) <= 100
  SOS1_gprodUp_max(gw2,s1,t4): gprod(gw2,k0,t4) + gprodUp(gw2,s1,t4)
-   + SOS1_gprodUp_max(gw2,s1,t4) = 370
+   + SOS1_gprodUp_max(gw2,s1,t4) = 100
  gprodDn_max(gw2,s1,t4): - gprod(gw2,k0,t4) + gprodDn(gw2,s1,t4) <= 0
  SOS1_gprodDn_max(gw2,s1,t4): - gprod(gw2,k0,t4) + gprodDn(gw2,s1,t4)
    + SOS1_gprodDn_max(gw2,s1,t4) = 0
- gprodUp_max(gw2,s1,t5): gprod(gw2,k0,t5) + gprodUp(gw2,s1,t5) <= 370
+ gprodUp_max(gw2,s1,t5): gprod(gw2,k0,t5) + gprodUp(gw2,s1,t5) <= 100
  SOS1_gprodUp_max(gw2,s1,t5): gprod(gw2,k0,t5) + gprodUp(gw2,s1,t5)
-   + SOS1_gprodUp_max(gw2,s1,t5) = 370
+   + SOS1_gprodUp_max(gw2,s1,t5) = 100
  gprodDn_max(gw2,s1,t5): - gprod(gw2,k0,t5) + gprodDn(gw2,s1,t5) <= 0
  SOS1_gprodDn_max(gw2,s1,t5): - gprod(gw2,k0,t5) + gprodDn(gw2,s1,t5)
    + SOS1_gprodDn_max(gw2,s1,t5) = 0
- gprodUp_max(gw2,s1,t6): gprod(gw2,k0,t6) + gprodUp(gw2,s1,t6) <= 370
+ gprodUp_max(gw2,s1,t6): gprod(gw2,k0,t6) + gprodUp(gw2,s1,t6) <= 100
  SOS1_gprodUp_max(gw2,s1,t6): gprod(gw2,k0,t6) + gprodUp(gw2,s1,t6)
-   + SOS1_gprodUp_max(gw2,s1,t6) = 370
+   + SOS1_gprodUp_max(gw2,s1,t6) = 100
  gprodDn_max(gw2,s1,t6): - gprod(gw2,k0,t6) + gprodDn(gw2,s1,t6) <= 0
  SOS1_gprodDn_max(gw2,s1,t6): - gprod(gw2,k0,t6) + gprodDn(gw2,s1,t6)
    + SOS1_gprodDn_max(gw2,s1,t6) = 0
- gprodUp_max(gw2,s1,t7): gprod(gw2,k0,t7) + gprodUp(gw2,s1,t7) <= 370
+ gprodUp_max(gw2,s1,t7): gprod(gw2,k0,t7) + gprodUp(gw2,s1,t7) <= 100
  SOS1_gprodUp_max(gw2,s1,t7): gprod(gw2,k0,t7) + gprodUp(gw2,s1,t7)
-   + SOS1_gprodUp_max(gw2,s1,t7) = 370
+   + SOS1_gprodUp_max(gw2,s1,t7) = 100
  gprodDn_max(gw2,s1,t7): - gprod(gw2,k0,t7) + gprodDn(gw2,s1,t7) <= 0
  SOS1_gprodDn_max(gw2,s1,t7): - gprod(gw2,k0,t7) + gprodDn(gw2,s1,t7)
    + SOS1_gprodDn_max(gw2,s1,t7) = 0
- gprodUp_max(gw2,s1,t8): gprod(gw2,k0,t8) + gprodUp(gw2,s1,t8) <= 370
+ gprodUp_max(gw2,s1,t8): gprod(gw2,k0,t8) + gprodUp(gw2,s1,t8) <= 100
  SOS1_gprodUp_max(gw2,s1,t8): gprod(gw2,k0,t8) + gprodUp(gw2,s1,t8)
-   + SOS1_gprodUp_max(gw2,s1,t8) = 370
+   + SOS1_gprodUp_max(gw2,s1,t8) = 100
  gprodDn_max(gw2,s1,t8): - gprod(gw2,k0,t8) + gprodDn(gw2,s1,t8) <= 0
  SOS1_gprodDn_max(gw2,s1,t8): - gprod(gw2,k0,t8) + gprodDn(gw2,s1,t8)
    + SOS1_gprodDn_max(gw2,s1,t8) = 0
- gprodUp_max(gw2,s1,t9): gprod(gw2,k0,t9) + gprodUp(gw2,s1,t9) <= 370
+ gprodUp_max(gw2,s1,t9): gprod(gw2,k0,t9) + gprodUp(gw2,s1,t9) <= 100
  SOS1_gprodUp_max(gw2,s1,t9): gprod(gw2,k0,t9) + gprodUp(gw2,s1,t9)
-   + SOS1_gprodUp_max(gw2,s1,t9) = 370
+   + SOS1_gprodUp_max(gw2,s1,t9) = 100
  gprodDn_max(gw2,s1,t9): - gprod(gw2,k0,t9) + gprodDn(gw2,s1,t9) <= 0
  SOS1_gprodDn_max(gw2,s1,t9): - gprod(gw2,k0,t9) + gprodDn(gw2,s1,t9)
    + SOS1_gprodDn_max(gw2,s1,t9) = 0
- gprodUp_max(gw2,s1,t10): gprod(gw2,k0,t10) + gprodUp(gw2,s1,t10) <= 370
+ gprodUp_max(gw2,s1,t10): gprod(gw2,k0,t10) + gprodUp(gw2,s1,t10) <= 100
  SOS1_gprodUp_max(gw2,s1,t10): gprod(gw2,k0,t10) + gprodUp(gw2,s1,t10)
-   + SOS1_gprodUp_max(gw2,s1,t10) = 370
+   + SOS1_gprodUp_max(gw2,s1,t10) = 100
  gprodDn_max(gw2,s1,t10): - gprod(gw2,k0,t10) + gprodDn(gw2,s1,t10) <= 0
  SOS1_gprodDn_max(gw2,s1,t10): - gprod(gw2,k0,t10) + gprodDn(gw2,s1,t10)
    + SOS1_gprodDn_max(gw2,s1,t10) = 0
- gprodUp_max(gw2,s1,t11): gprod(gw2,k0,t11) + gprodUp(gw2,s1,t11) <= 370
+ gprodUp_max(gw2,s1,t11): gprod(gw2,k0,t11) + gprodUp(gw2,s1,t11) <= 100
  SOS1_gprodUp_max(gw2,s1,t11): gprod(gw2,k0,t11) + gprodUp(gw2,s1,t11)
-   + SOS1_gprodUp_max(gw2,s1,t11) = 370
+   + SOS1_gprodUp_max(gw2,s1,t11) = 100
  gprodDn_max(gw2,s1,t11): - gprod(gw2,k0,t11) + gprodDn(gw2,s1,t11) <= 0
  SOS1_gprodDn_max(gw2,s1,t11): - gprod(gw2,k0,t11) + gprodDn(gw2,s1,t11)
    + SOS1_gprodDn_max(gw2,s1,t11) = 0
- gprodUp_max(gw2,s1,t12): gprod(gw2,k0,t12) + gprodUp(gw2,s1,t12) <= 370
+ gprodUp_max(gw2,s1,t12): gprod(gw2,k0,t12) + gprodUp(gw2,s1,t12) <= 100
  SOS1_gprodUp_max(gw2,s1,t12): gprod(gw2,k0,t12) + gprodUp(gw2,s1,t12)
-   + SOS1_gprodUp_max(gw2,s1,t12) = 370
+   + SOS1_gprodUp_max(gw2,s1,t12) = 100
  gprodDn_max(gw2,s1,t12): - gprod(gw2,k0,t12) + gprodDn(gw2,s1,t12) <= 0
  SOS1_gprodDn_max(gw2,s1,t12): - gprod(gw2,k0,t12) + gprodDn(gw2,s1,t12)
    + SOS1_gprodDn_max(gw2,s1,t12) = 0
- gprodUp_max(gw2,s1,t13): gprod(gw2,k0,t13) + gprodUp(gw2,s1,t13) <= 370
+ gprodUp_max(gw2,s1,t13): gprod(gw2,k0,t13) + gprodUp(gw2,s1,t13) <= 100
  SOS1_gprodUp_max(gw2,s1,t13): gprod(gw2,k0,t13) + gprodUp(gw2,s1,t13)
-   + SOS1_gprodUp_max(gw2,s1,t13) = 370
+   + SOS1_gprodUp_max(gw2,s1,t13) = 100
  gprodDn_max(gw2,s1,t13): - gprod(gw2,k0,t13) + gprodDn(gw2,s1,t13) <= 0
  SOS1_gprodDn_max(gw2,s1,t13): - gprod(gw2,k0,t13) + gprodDn(gw2,s1,t13)
    + SOS1_gprodDn_max(gw2,s1,t13) = 0
- gprodUp_max(gw2,s1,t14): gprod(gw2,k0,t14) + gprodUp(gw2,s1,t14) <= 370
+ gprodUp_max(gw2,s1,t14): gprod(gw2,k0,t14) + gprodUp(gw2,s1,t14) <= 100
  SOS1_gprodUp_max(gw2,s1,t14): gprod(gw2,k0,t14) + gprodUp(gw2,s1,t14)
-   + SOS1_gprodUp_max(gw2,s1,t14) = 370
+   + SOS1_gprodUp_max(gw2,s1,t14) = 100
  gprodDn_max(gw2,s1,t14): - gprod(gw2,k0,t14) + gprodDn(gw2,s1,t14) <= 0
  SOS1_gprodDn_max(gw2,s1,t14): - gprod(gw2,k0,t14) + gprodDn(gw2,s1,t14)
    + SOS1_gprodDn_max(gw2,s1,t14) = 0
- gprodUp_max(gw2,s1,t15): gprod(gw2,k0,t15) + gprodUp(gw2,s1,t15) <= 370
+ gprodUp_max(gw2,s1,t15): gprod(gw2,k0,t15) + gprodUp(gw2,s1,t15) <= 100
  SOS1_gprodUp_max(gw2,s1,t15): gprod(gw2,k0,t15) + gprodUp(gw2,s1,t15)
-   + SOS1_gprodUp_max(gw2,s1,t15) = 370
+   + SOS1_gprodUp_max(gw2,s1,t15) = 100
  gprodDn_max(gw2,s1,t15): - gprod(gw2,k0,t15) + gprodDn(gw2,s1,t15) <= 0
  SOS1_gprodDn_max(gw2,s1,t15): - gprod(gw2,k0,t15) + gprodDn(gw2,s1,t15)
    + SOS1_gprodDn_max(gw2,s1,t15) = 0
- gprodUp_max(gw2,s1,t16): gprod(gw2,k0,t16) + gprodUp(gw2,s1,t16) <= 370
+ gprodUp_max(gw2,s1,t16): gprod(gw2,k0,t16) + gprodUp(gw2,s1,t16) <= 100
  SOS1_gprodUp_max(gw2,s1,t16): gprod(gw2,k0,t16) + gprodUp(gw2,s1,t16)
-   + SOS1_gprodUp_max(gw2,s1,t16) = 370
+   + SOS1_gprodUp_max(gw2,s1,t16) = 100
  gprodDn_max(gw2,s1,t16): - gprod(gw2,k0,t16) + gprodDn(gw2,s1,t16) <= 0
  SOS1_gprodDn_max(gw2,s1,t16): - gprod(gw2,k0,t16) + gprodDn(gw2,s1,t16)
    + SOS1_gprodDn_max(gw2,s1,t16) = 0
- gprodUp_max(gw2,s1,t17): gprod(gw2,k0,t17) + gprodUp(gw2,s1,t17) <= 370
+ gprodUp_max(gw2,s1,t17): gprod(gw2,k0,t17) + gprodUp(gw2,s1,t17) <= 100
  SOS1_gprodUp_max(gw2,s1,t17): gprod(gw2,k0,t17) + gprodUp(gw2,s1,t17)
-   + SOS1_gprodUp_max(gw2,s1,t17) = 370
+   + SOS1_gprodUp_max(gw2,s1,t17) = 100
  gprodDn_max(gw2,s1,t17): - gprod(gw2,k0,t17) + gprodDn(gw2,s1,t17) <= 0
  SOS1_gprodDn_max(gw2,s1,t17): - gprod(gw2,k0,t17) + gprodDn(gw2,s1,t17)
    + SOS1_gprodDn_max(gw2,s1,t17) = 0
- gprodUp_max(gw2,s1,t18): gprod(gw2,k0,t18) + gprodUp(gw2,s1,t18) <= 370
+ gprodUp_max(gw2,s1,t18): gprod(gw2,k0,t18) + gprodUp(gw2,s1,t18) <= 100
  SOS1_gprodUp_max(gw2,s1,t18): gprod(gw2,k0,t18) + gprodUp(gw2,s1,t18)
-   + SOS1_gprodUp_max(gw2,s1,t18) = 370
+   + SOS1_gprodUp_max(gw2,s1,t18) = 100
  gprodDn_max(gw2,s1,t18): - gprod(gw2,k0,t18) + gprodDn(gw2,s1,t18) <= 0
  SOS1_gprodDn_max(gw2,s1,t18): - gprod(gw2,k0,t18) + gprodDn(gw2,s1,t18)
    + SOS1_gprodDn_max(gw2,s1,t18) = 0
- gprodUp_max(gw2,s1,t19): gprod(gw2,k0,t19) + gprodUp(gw2,s1,t19) <= 370
+ gprodUp_max(gw2,s1,t19): gprod(gw2,k0,t19) + gprodUp(gw2,s1,t19) <= 100
  SOS1_gprodUp_max(gw2,s1,t19): gprod(gw2,k0,t19) + gprodUp(gw2,s1,t19)
-   + SOS1_gprodUp_max(gw2,s1,t19) = 370
+   + SOS1_gprodUp_max(gw2,s1,t19) = 100
  gprodDn_max(gw2,s1,t19): - gprod(gw2,k0,t19) + gprodDn(gw2,s1,t19) <= 0
  SOS1_gprodDn_max(gw2,s1,t19): - gprod(gw2,k0,t19) + gprodDn(gw2,s1,t19)
    + SOS1_gprodDn_max(gw2,s1,t19) = 0
- gprodUp_max(gw2,s1,t20): gprod(gw2,k0,t20) + gprodUp(gw2,s1,t20) <= 370
+ gprodUp_max(gw2,s1,t20): gprod(gw2,k0,t20) + gprodUp(gw2,s1,t20) <= 100
  SOS1_gprodUp_max(gw2,s1,t20): gprod(gw2,k0,t20) + gprodUp(gw2,s1,t20)
-   + SOS1_gprodUp_max(gw2,s1,t20) = 370
+   + SOS1_gprodUp_max(gw2,s1,t20) = 100
  gprodDn_max(gw2,s1,t20): - gprod(gw2,k0,t20) + gprodDn(gw2,s1,t20) <= 0
  SOS1_gprodDn_max(gw2,s1,t20): - gprod(gw2,k0,t20) + gprodDn(gw2,s1,t20)
    + SOS1_gprodDn_max(gw2,s1,t20) = 0
- gprodUp_max(gw2,s1,t21): gprod(gw2,k0,t21) + gprodUp(gw2,s1,t21) <= 370
+ gprodUp_max(gw2,s1,t21): gprod(gw2,k0,t21) + gprodUp(gw2,s1,t21) <= 100
  SOS1_gprodUp_max(gw2,s1,t21): gprod(gw2,k0,t21) + gprodUp(gw2,s1,t21)
-   + SOS1_gprodUp_max(gw2,s1,t21) = 370
+   + SOS1_gprodUp_max(gw2,s1,t21) = 100
  gprodDn_max(gw2,s1,t21): - gprod(gw2,k0,t21) + gprodDn(gw2,s1,t21) <= 0
  SOS1_gprodDn_max(gw2,s1,t21): - gprod(gw2,k0,t21) + gprodDn(gw2,s1,t21)
    + SOS1_gprodDn_max(gw2,s1,t21) = 0
- gprodUp_max(gw2,s1,t22): gprod(gw2,k0,t22) + gprodUp(gw2,s1,t22) <= 370
+ gprodUp_max(gw2,s1,t22): gprod(gw2,k0,t22) + gprodUp(gw2,s1,t22) <= 100
  SOS1_gprodUp_max(gw2,s1,t22): gprod(gw2,k0,t22) + gprodUp(gw2,s1,t22)
-   + SOS1_gprodUp_max(gw2,s1,t22) = 370
+   + SOS1_gprodUp_max(gw2,s1,t22) = 100
  gprodDn_max(gw2,s1,t22): - gprod(gw2,k0,t22) + gprodDn(gw2,s1,t22) <= 0
  SOS1_gprodDn_max(gw2,s1,t22): - gprod(gw2,k0,t22) + gprodDn(gw2,s1,t22)
    + SOS1_gprodDn_max(gw2,s1,t22) = 0
- gprodUp_max(gw2,s1,t23): gprod(gw2,k0,t23) + gprodUp(gw2,s1,t23) <= 370
+ gprodUp_max(gw2,s1,t23): gprod(gw2,k0,t23) + gprodUp(gw2,s1,t23) <= 100
  SOS1_gprodUp_max(gw2,s1,t23): gprod(gw2,k0,t23) + gprodUp(gw2,s1,t23)
-   + SOS1_gprodUp_max(gw2,s1,t23) = 370
+   + SOS1_gprodUp_max(gw2,s1,t23) = 100
  gprodDn_max(gw2,s1,t23): - gprod(gw2,k0,t23) + gprodDn(gw2,s1,t23) <= 0
  SOS1_gprodDn_max(gw2,s1,t23): - gprod(gw2,k0,t23) + gprodDn(gw2,s1,t23)
    + SOS1_gprodDn_max(gw2,s1,t23) = 0
- gprodUp_max(gw2,s1,t24): gprod(gw2,k0,t24) + gprodUp(gw2,s1,t24) <= 370
+ gprodUp_max(gw2,s1,t24): gprod(gw2,k0,t24) + gprodUp(gw2,s1,t24) <= 100
  SOS1_gprodUp_max(gw2,s1,t24): gprod(gw2,k0,t24) + gprodUp(gw2,s1,t24)
-   + SOS1_gprodUp_max(gw2,s1,t24) = 370
+   + SOS1_gprodUp_max(gw2,s1,t24) = 100
  gprodDn_max(gw2,s1,t24): - gprod(gw2,k0,t24) + gprodDn(gw2,s1,t24) <= 0
  SOS1_gprodDn_max(gw2,s1,t24): - gprod(gw2,k0,t24) + gprodDn(gw2,s1,t24)
    + SOS1_gprodDn_max(gw2,s1,t24) = 0
- gprodUp_max(gw2,s2,t1): gprod(gw2,k0,t1) + gprodUp(gw2,s2,t1) <= 370
+ gprodUp_max(gw2,s2,t1): gprod(gw2,k0,t1) + gprodUp(gw2,s2,t1) <= 100
  SOS1_gprodUp_max(gw2,s2,t1): gprod(gw2,k0,t1) + gprodUp(gw2,s2,t1)
-   + SOS1_gprodUp_max(gw2,s2,t1) = 370
+   + SOS1_gprodUp_max(gw2,s2,t1) = 100
  gprodDn_max(gw2,s2,t1): - gprod(gw2,k0,t1) + gprodDn(gw2,s2,t1) <= 0
  SOS1_gprodDn_max(gw2,s2,t1): - gprod(gw2,k0,t1) + gprodDn(gw2,s2,t1)
    + SOS1_gprodDn_max(gw2,s2,t1) = 0
- gprodUp_max(gw2,s2,t2): gprod(gw2,k0,t2) + gprodUp(gw2,s2,t2) <= 370
+ gprodUp_max(gw2,s2,t2): gprod(gw2,k0,t2) + gprodUp(gw2,s2,t2) <= 100
  SOS1_gprodUp_max(gw2,s2,t2): gprod(gw2,k0,t2) + gprodUp(gw2,s2,t2)
-   + SOS1_gprodUp_max(gw2,s2,t2) = 370
+   + SOS1_gprodUp_max(gw2,s2,t2) = 100
  gprodDn_max(gw2,s2,t2): - gprod(gw2,k0,t2) + gprodDn(gw2,s2,t2) <= 0
  SOS1_gprodDn_max(gw2,s2,t2): - gprod(gw2,k0,t2) + gprodDn(gw2,s2,t2)
    + SOS1_gprodDn_max(gw2,s2,t2) = 0
- gprodUp_max(gw2,s2,t3): gprod(gw2,k0,t3) + gprodUp(gw2,s2,t3) <= 370
+ gprodUp_max(gw2,s2,t3): gprod(gw2,k0,t3) + gprodUp(gw2,s2,t3) <= 100
  SOS1_gprodUp_max(gw2,s2,t3): gprod(gw2,k0,t3) + gprodUp(gw2,s2,t3)
-   + SOS1_gprodUp_max(gw2,s2,t3) = 370
+   + SOS1_gprodUp_max(gw2,s2,t3) = 100
  gprodDn_max(gw2,s2,t3): - gprod(gw2,k0,t3) + gprodDn(gw2,s2,t3) <= 0
  SOS1_gprodDn_max(gw2,s2,t3): - gprod(gw2,k0,t3) + gprodDn(gw2,s2,t3)
    + SOS1_gprodDn_max(gw2,s2,t3) = 0
- gprodUp_max(gw2,s2,t4): gprod(gw2,k0,t4) + gprodUp(gw2,s2,t4) <= 370
+ gprodUp_max(gw2,s2,t4): gprod(gw2,k0,t4) + gprodUp(gw2,s2,t4) <= 100
  SOS1_gprodUp_max(gw2,s2,t4): gprod(gw2,k0,t4) + gprodUp(gw2,s2,t4)
-   + SOS1_gprodUp_max(gw2,s2,t4) = 370
+   + SOS1_gprodUp_max(gw2,s2,t4) = 100
  gprodDn_max(gw2,s2,t4): - gprod(gw2,k0,t4) + gprodDn(gw2,s2,t4) <= 0
  SOS1_gprodDn_max(gw2,s2,t4): - gprod(gw2,k0,t4) + gprodDn(gw2,s2,t4)
    + SOS1_gprodDn_max(gw2,s2,t4) = 0
- gprodUp_max(gw2,s2,t5): gprod(gw2,k0,t5) + gprodUp(gw2,s2,t5) <= 370
+ gprodUp_max(gw2,s2,t5): gprod(gw2,k0,t5) + gprodUp(gw2,s2,t5) <= 100
  SOS1_gprodUp_max(gw2,s2,t5): gprod(gw2,k0,t5) + gprodUp(gw2,s2,t5)
-   + SOS1_gprodUp_max(gw2,s2,t5) = 370
+   + SOS1_gprodUp_max(gw2,s2,t5) = 100
  gprodDn_max(gw2,s2,t5): - gprod(gw2,k0,t5) + gprodDn(gw2,s2,t5) <= 0
  SOS1_gprodDn_max(gw2,s2,t5): - gprod(gw2,k0,t5) + gprodDn(gw2,s2,t5)
    + SOS1_gprodDn_max(gw2,s2,t5) = 0
- gprodUp_max(gw2,s2,t6): gprod(gw2,k0,t6) + gprodUp(gw2,s2,t6) <= 370
+ gprodUp_max(gw2,s2,t6): gprod(gw2,k0,t6) + gprodUp(gw2,s2,t6) <= 100
  SOS1_gprodUp_max(gw2,s2,t6): gprod(gw2,k0,t6) + gprodUp(gw2,s2,t6)
-   + SOS1_gprodUp_max(gw2,s2,t6) = 370
+   + SOS1_gprodUp_max(gw2,s2,t6) = 100
  gprodDn_max(gw2,s2,t6): - gprod(gw2,k0,t6) + gprodDn(gw2,s2,t6) <= 0
  SOS1_gprodDn_max(gw2,s2,t6): - gprod(gw2,k0,t6) + gprodDn(gw2,s2,t6)
    + SOS1_gprodDn_max(gw2,s2,t6) = 0
- gprodUp_max(gw2,s2,t7): gprod(gw2,k0,t7) + gprodUp(gw2,s2,t7) <= 370
+ gprodUp_max(gw2,s2,t7): gprod(gw2,k0,t7) + gprodUp(gw2,s2,t7) <= 100
  SOS1_gprodUp_max(gw2,s2,t7): gprod(gw2,k0,t7) + gprodUp(gw2,s2,t7)
-   + SOS1_gprodUp_max(gw2,s2,t7) = 370
+   + SOS1_gprodUp_max(gw2,s2,t7) = 100
  gprodDn_max(gw2,s2,t7): - gprod(gw2,k0,t7) + gprodDn(gw2,s2,t7) <= 0
  SOS1_gprodDn_max(gw2,s2,t7): - gprod(gw2,k0,t7) + gprodDn(gw2,s2,t7)
    + SOS1_gprodDn_max(gw2,s2,t7) = 0
- gprodUp_max(gw2,s2,t8): gprod(gw2,k0,t8) + gprodUp(gw2,s2,t8) <= 370
+ gprodUp_max(gw2,s2,t8): gprod(gw2,k0,t8) + gprodUp(gw2,s2,t8) <= 100
  SOS1_gprodUp_max(gw2,s2,t8): gprod(gw2,k0,t8) + gprodUp(gw2,s2,t8)
-   + SOS1_gprodUp_max(gw2,s2,t8) = 370
+   + SOS1_gprodUp_max(gw2,s2,t8) = 100
  gprodDn_max(gw2,s2,t8): - gprod(gw2,k0,t8) + gprodDn(gw2,s2,t8) <= 0
  SOS1_gprodDn_max(gw2,s2,t8): - gprod(gw2,k0,t8) + gprodDn(gw2,s2,t8)
    + SOS1_gprodDn_max(gw2,s2,t8) = 0
- gprodUp_max(gw2,s2,t9): gprod(gw2,k0,t9) + gprodUp(gw2,s2,t9) <= 370
+ gprodUp_max(gw2,s2,t9): gprod(gw2,k0,t9) + gprodUp(gw2,s2,t9) <= 100
  SOS1_gprodUp_max(gw2,s2,t9): gprod(gw2,k0,t9) + gprodUp(gw2,s2,t9)
-   + SOS1_gprodUp_max(gw2,s2,t9) = 370
+   + SOS1_gprodUp_max(gw2,s2,t9) = 100
  gprodDn_max(gw2,s2,t9): - gprod(gw2,k0,t9) + gprodDn(gw2,s2,t9) <= 0
  SOS1_gprodDn_max(gw2,s2,t9): - gprod(gw2,k0,t9) + gprodDn(gw2,s2,t9)
    + SOS1_gprodDn_max(gw2,s2,t9) = 0
- gprodUp_max(gw2,s2,t10): gprod(gw2,k0,t10) + gprodUp(gw2,s2,t10) <= 370
+ gprodUp_max(gw2,s2,t10): gprod(gw2,k0,t10) + gprodUp(gw2,s2,t10) <= 100
  SOS1_gprodUp_max(gw2,s2,t10): gprod(gw2,k0,t10) + gprodUp(gw2,s2,t10)
-   + SOS1_gprodUp_max(gw2,s2,t10) = 370
+   + SOS1_gprodUp_max(gw2,s2,t10) = 100
  gprodDn_max(gw2,s2,t10): - gprod(gw2,k0,t10) + gprodDn(gw2,s2,t10) <= 0
  SOS1_gprodDn_max(gw2,s2,t10): - gprod(gw2,k0,t10) + gprodDn(gw2,s2,t10)
    + SOS1_gprodDn_max(gw2,s2,t10) = 0
- gprodUp_max(gw2,s2,t11): gprod(gw2,k0,t11) + gprodUp(gw2,s2,t11) <= 370
+ gprodUp_max(gw2,s2,t11): gprod(gw2,k0,t11) + gprodUp(gw2,s2,t11) <= 100
  SOS1_gprodUp_max(gw2,s2,t11): gprod(gw2,k0,t11) + gprodUp(gw2,s2,t11)
-   + SOS1_gprodUp_max(gw2,s2,t11) = 370
+   + SOS1_gprodUp_max(gw2,s2,t11) = 100
  gprodDn_max(gw2,s2,t11): - gprod(gw2,k0,t11) + gprodDn(gw2,s2,t11) <= 0
  SOS1_gprodDn_max(gw2,s2,t11): - gprod(gw2,k0,t11) + gprodDn(gw2,s2,t11)
    + SOS1_gprodDn_max(gw2,s2,t11) = 0
- gprodUp_max(gw2,s2,t12): gprod(gw2,k0,t12) + gprodUp(gw2,s2,t12) <= 370
+ gprodUp_max(gw2,s2,t12): gprod(gw2,k0,t12) + gprodUp(gw2,s2,t12) <= 100
  SOS1_gprodUp_max(gw2,s2,t12): gprod(gw2,k0,t12) + gprodUp(gw2,s2,t12)
-   + SOS1_gprodUp_max(gw2,s2,t12) = 370
+   + SOS1_gprodUp_max(gw2,s2,t12) = 100
  gprodDn_max(gw2,s2,t12): - gprod(gw2,k0,t12) + gprodDn(gw2,s2,t12) <= 0
  SOS1_gprodDn_max(gw2,s2,t12): - gprod(gw2,k0,t12) + gprodDn(gw2,s2,t12)
    + SOS1_gprodDn_max(gw2,s2,t12) = 0
- gprodUp_max(gw2,s2,t13): gprod(gw2,k0,t13) + gprodUp(gw2,s2,t13) <= 370
+ gprodUp_max(gw2,s2,t13): gprod(gw2,k0,t13) + gprodUp(gw2,s2,t13) <= 100
  SOS1_gprodUp_max(gw2,s2,t13): gprod(gw2,k0,t13) + gprodUp(gw2,s2,t13)
-   + SOS1_gprodUp_max(gw2,s2,t13) = 370
+   + SOS1_gprodUp_max(gw2,s2,t13) = 100
  gprodDn_max(gw2,s2,t13): - gprod(gw2,k0,t13) + gprodDn(gw2,s2,t13) <= 0
  SOS1_gprodDn_max(gw2,s2,t13): - gprod(gw2,k0,t13) + gprodDn(gw2,s2,t13)
    + SOS1_gprodDn_max(gw2,s2,t13) = 0
- gprodUp_max(gw2,s2,t14): gprod(gw2,k0,t14) + gprodUp(gw2,s2,t14) <= 370
+ gprodUp_max(gw2,s2,t14): gprod(gw2,k0,t14) + gprodUp(gw2,s2,t14) <= 100
  SOS1_gprodUp_max(gw2,s2,t14): gprod(gw2,k0,t14) + gprodUp(gw2,s2,t14)
-   + SOS1_gprodUp_max(gw2,s2,t14) = 370
+   + SOS1_gprodUp_max(gw2,s2,t14) = 100
  gprodDn_max(gw2,s2,t14): - gprod(gw2,k0,t14) + gprodDn(gw2,s2,t14) <= 0
  SOS1_gprodDn_max(gw2,s2,t14): - gprod(gw2,k0,t14) + gprodDn(gw2,s2,t14)
    + SOS1_gprodDn_max(gw2,s2,t14) = 0
- gprodUp_max(gw2,s2,t15): gprod(gw2,k0,t15) + gprodUp(gw2,s2,t15) <= 370
+ gprodUp_max(gw2,s2,t15): gprod(gw2,k0,t15) + gprodUp(gw2,s2,t15) <= 100
  SOS1_gprodUp_max(gw2,s2,t15): gprod(gw2,k0,t15) + gprodUp(gw2,s2,t15)
-   + SOS1_gprodUp_max(gw2,s2,t15) = 370
+   + SOS1_gprodUp_max(gw2,s2,t15) = 100
  gprodDn_max(gw2,s2,t15): - gprod(gw2,k0,t15) + gprodDn(gw2,s2,t15) <= 0
  SOS1_gprodDn_max(gw2,s2,t15): - gprod(gw2,k0,t15) + gprodDn(gw2,s2,t15)
    + SOS1_gprodDn_max(gw2,s2,t15) = 0
- gprodUp_max(gw2,s2,t16): gprod(gw2,k0,t16) + gprodUp(gw2,s2,t16) <= 370
+ gprodUp_max(gw2,s2,t16): gprod(gw2,k0,t16) + gprodUp(gw2,s2,t16) <= 100
  SOS1_gprodUp_max(gw2,s2,t16): gprod(gw2,k0,t16) + gprodUp(gw2,s2,t16)
-   + SOS1_gprodUp_max(gw2,s2,t16) = 370
+   + SOS1_gprodUp_max(gw2,s2,t16) = 100
  gprodDn_max(gw2,s2,t16): - gprod(gw2,k0,t16) + gprodDn(gw2,s2,t16) <= 0
  SOS1_gprodDn_max(gw2,s2,t16): - gprod(gw2,k0,t16) + gprodDn(gw2,s2,t16)
    + SOS1_gprodDn_max(gw2,s2,t16) = 0
- gprodUp_max(gw2,s2,t17): gprod(gw2,k0,t17) + gprodUp(gw2,s2,t17) <= 370
+ gprodUp_max(gw2,s2,t17): gprod(gw2,k0,t17) + gprodUp(gw2,s2,t17) <= 100
  SOS1_gprodUp_max(gw2,s2,t17): gprod(gw2,k0,t17) + gprodUp(gw2,s2,t17)
-   + SOS1_gprodUp_max(gw2,s2,t17) = 370
+   + SOS1_gprodUp_max(gw2,s2,t17) = 100
  gprodDn_max(gw2,s2,t17): - gprod(gw2,k0,t17) + gprodDn(gw2,s2,t17) <= 0
  SOS1_gprodDn_max(gw2,s2,t17): - gprod(gw2,k0,t17) + gprodDn(gw2,s2,t17)
    + SOS1_gprodDn_max(gw2,s2,t17) = 0
- gprodUp_max(gw2,s2,t18): gprod(gw2,k0,t18) + gprodUp(gw2,s2,t18) <= 370
+ gprodUp_max(gw2,s2,t18): gprod(gw2,k0,t18) + gprodUp(gw2,s2,t18) <= 100
  SOS1_gprodUp_max(gw2,s2,t18): gprod(gw2,k0,t18) + gprodUp(gw2,s2,t18)
-   + SOS1_gprodUp_max(gw2,s2,t18) = 370
+   + SOS1_gprodUp_max(gw2,s2,t18) = 100
  gprodDn_max(gw2,s2,t18): - gprod(gw2,k0,t18) + gprodDn(gw2,s2,t18) <= 0
  SOS1_gprodDn_max(gw2,s2,t18): - gprod(gw2,k0,t18) + gprodDn(gw2,s2,t18)
    + SOS1_gprodDn_max(gw2,s2,t18) = 0
- gprodUp_max(gw2,s2,t19): gprod(gw2,k0,t19) + gprodUp(gw2,s2,t19) <= 370
+ gprodUp_max(gw2,s2,t19): gprod(gw2,k0,t19) + gprodUp(gw2,s2,t19) <= 100
  SOS1_gprodUp_max(gw2,s2,t19): gprod(gw2,k0,t19) + gprodUp(gw2,s2,t19)
-   + SOS1_gprodUp_max(gw2,s2,t19) = 370
+   + SOS1_gprodUp_max(gw2,s2,t19) = 100
  gprodDn_max(gw2,s2,t19): - gprod(gw2,k0,t19) + gprodDn(gw2,s2,t19) <= 0
  SOS1_gprodDn_max(gw2,s2,t19): - gprod(gw2,k0,t19) + gprodDn(gw2,s2,t19)
    + SOS1_gprodDn_max(gw2,s2,t19) = 0
- gprodUp_max(gw2,s2,t20): gprod(gw2,k0,t20) + gprodUp(gw2,s2,t20) <= 370
+ gprodUp_max(gw2,s2,t20): gprod(gw2,k0,t20) + gprodUp(gw2,s2,t20) <= 100
  SOS1_gprodUp_max(gw2,s2,t20): gprod(gw2,k0,t20) + gprodUp(gw2,s2,t20)
-   + SOS1_gprodUp_max(gw2,s2,t20) = 370
+   + SOS1_gprodUp_max(gw2,s2,t20) = 100
  gprodDn_max(gw2,s2,t20): - gprod(gw2,k0,t20) + gprodDn(gw2,s2,t20) <= 0
  SOS1_gprodDn_max(gw2,s2,t20): - gprod(gw2,k0,t20) + gprodDn(gw2,s2,t20)
    + SOS1_gprodDn_max(gw2,s2,t20) = 0
- gprodUp_max(gw2,s2,t21): gprod(gw2,k0,t21) + gprodUp(gw2,s2,t21) <= 370
+ gprodUp_max(gw2,s2,t21): gprod(gw2,k0,t21) + gprodUp(gw2,s2,t21) <= 100
  SOS1_gprodUp_max(gw2,s2,t21): gprod(gw2,k0,t21) + gprodUp(gw2,s2,t21)
-   + SOS1_gprodUp_max(gw2,s2,t21) = 370
+   + SOS1_gprodUp_max(gw2,s2,t21) = 100
  gprodDn_max(gw2,s2,t21): - gprod(gw2,k0,t21) + gprodDn(gw2,s2,t21) <= 0
  SOS1_gprodDn_max(gw2,s2,t21): - gprod(gw2,k0,t21) + gprodDn(gw2,s2,t21)
    + SOS1_gprodDn_max(gw2,s2,t21) = 0
- gprodUp_max(gw2,s2,t22): gprod(gw2,k0,t22) + gprodUp(gw2,s2,t22) <= 370
+ gprodUp_max(gw2,s2,t22): gprod(gw2,k0,t22) + gprodUp(gw2,s2,t22) <= 100
  SOS1_gprodUp_max(gw2,s2,t22): gprod(gw2,k0,t22) + gprodUp(gw2,s2,t22)
-   + SOS1_gprodUp_max(gw2,s2,t22) = 370
+   + SOS1_gprodUp_max(gw2,s2,t22) = 100
  gprodDn_max(gw2,s2,t22): - gprod(gw2,k0,t22) + gprodDn(gw2,s2,t22) <= 0
  SOS1_gprodDn_max(gw2,s2,t22): - gprod(gw2,k0,t22) + gprodDn(gw2,s2,t22)
    + SOS1_gprodDn_max(gw2,s2,t22) = 0
- gprodUp_max(gw2,s2,t23): gprod(gw2,k0,t23) + gprodUp(gw2,s2,t23) <= 370
+ gprodUp_max(gw2,s2,t23): gprod(gw2,k0,t23) + gprodUp(gw2,s2,t23) <= 100
  SOS1_gprodUp_max(gw2,s2,t23): gprod(gw2,k0,t23) + gprodUp(gw2,s2,t23)
-   + SOS1_gprodUp_max(gw2,s2,t23) = 370
+   + SOS1_gprodUp_max(gw2,s2,t23) = 100
  gprodDn_max(gw2,s2,t23): - gprod(gw2,k0,t23) + gprodDn(gw2,s2,t23) <= 0
  SOS1_gprodDn_max(gw2,s2,t23): - gprod(gw2,k0,t23) + gprodDn(gw2,s2,t23)
    + SOS1_gprodDn_max(gw2,s2,t23) = 0
- gprodUp_max(gw2,s2,t24): gprod(gw2,k0,t24) + gprodUp(gw2,s2,t24) <= 370
+ gprodUp_max(gw2,s2,t24): gprod(gw2,k0,t24) + gprodUp(gw2,s2,t24) <= 100
  SOS1_gprodUp_max(gw2,s2,t24): gprod(gw2,k0,t24) + gprodUp(gw2,s2,t24)
-   + SOS1_gprodUp_max(gw2,s2,t24) = 370
+   + SOS1_gprodUp_max(gw2,s2,t24) = 100
  gprodDn_max(gw2,s2,t24): - gprod(gw2,k0,t24) + gprodDn(gw2,s2,t24) <= 0
  SOS1_gprodDn_max(gw2,s2,t24): - gprod(gw2,k0,t24) + gprodDn(gw2,s2,t24)
    + SOS1_gprodDn_max(gw2,s2,t24) = 0
+ gprodUp_max(gw3,s1,t1): gprod(gw3,k0,t1) + gprodUp(gw3,s1,t1) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t1): gprod(gw3,k0,t1) + gprodUp(gw3,s1,t1)
+   + SOS1_gprodUp_max(gw3,s1,t1) = 2000
+ gprodDn_max(gw3,s1,t1): - gprod(gw3,k0,t1) + gprodDn(gw3,s1,t1) <= 0
+ SOS1_gprodDn_max(gw3,s1,t1): - gprod(gw3,k0,t1) + gprodDn(gw3,s1,t1)
+   + SOS1_gprodDn_max(gw3,s1,t1) = 0
+ gprodUp_max(gw3,s1,t2): gprod(gw3,k0,t2) + gprodUp(gw3,s1,t2) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t2): gprod(gw3,k0,t2) + gprodUp(gw3,s1,t2)
+   + SOS1_gprodUp_max(gw3,s1,t2) = 2000
+ gprodDn_max(gw3,s1,t2): - gprod(gw3,k0,t2) + gprodDn(gw3,s1,t2) <= 0
+ SOS1_gprodDn_max(gw3,s1,t2): - gprod(gw3,k0,t2) + gprodDn(gw3,s1,t2)
+   + SOS1_gprodDn_max(gw3,s1,t2) = 0
+ gprodUp_max(gw3,s1,t3): gprod(gw3,k0,t3) + gprodUp(gw3,s1,t3) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t3): gprod(gw3,k0,t3) + gprodUp(gw3,s1,t3)
+   + SOS1_gprodUp_max(gw3,s1,t3) = 2000
+ gprodDn_max(gw3,s1,t3): - gprod(gw3,k0,t3) + gprodDn(gw3,s1,t3) <= 0
+ SOS1_gprodDn_max(gw3,s1,t3): - gprod(gw3,k0,t3) + gprodDn(gw3,s1,t3)
+   + SOS1_gprodDn_max(gw3,s1,t3) = 0
+ gprodUp_max(gw3,s1,t4): gprod(gw3,k0,t4) + gprodUp(gw3,s1,t4) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t4): gprod(gw3,k0,t4) + gprodUp(gw3,s1,t4)
+   + SOS1_gprodUp_max(gw3,s1,t4) = 2000
+ gprodDn_max(gw3,s1,t4): - gprod(gw3,k0,t4) + gprodDn(gw3,s1,t4) <= 0
+ SOS1_gprodDn_max(gw3,s1,t4): - gprod(gw3,k0,t4) + gprodDn(gw3,s1,t4)
+   + SOS1_gprodDn_max(gw3,s1,t4) = 0
+ gprodUp_max(gw3,s1,t5): gprod(gw3,k0,t5) + gprodUp(gw3,s1,t5) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t5): gprod(gw3,k0,t5) + gprodUp(gw3,s1,t5)
+   + SOS1_gprodUp_max(gw3,s1,t5) = 2000
+ gprodDn_max(gw3,s1,t5): - gprod(gw3,k0,t5) + gprodDn(gw3,s1,t5) <= 0
+ SOS1_gprodDn_max(gw3,s1,t5): - gprod(gw3,k0,t5) + gprodDn(gw3,s1,t5)
+   + SOS1_gprodDn_max(gw3,s1,t5) = 0
+ gprodUp_max(gw3,s1,t6): gprod(gw3,k0,t6) + gprodUp(gw3,s1,t6) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t6): gprod(gw3,k0,t6) + gprodUp(gw3,s1,t6)
+   + SOS1_gprodUp_max(gw3,s1,t6) = 2000
+ gprodDn_max(gw3,s1,t6): - gprod(gw3,k0,t6) + gprodDn(gw3,s1,t6) <= 0
+ SOS1_gprodDn_max(gw3,s1,t6): - gprod(gw3,k0,t6) + gprodDn(gw3,s1,t6)
+   + SOS1_gprodDn_max(gw3,s1,t6) = 0
+ gprodUp_max(gw3,s1,t7): gprod(gw3,k0,t7) + gprodUp(gw3,s1,t7) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t7): gprod(gw3,k0,t7) + gprodUp(gw3,s1,t7)
+   + SOS1_gprodUp_max(gw3,s1,t7) = 2000
+ gprodDn_max(gw3,s1,t7): - gprod(gw3,k0,t7) + gprodDn(gw3,s1,t7) <= 0
+ SOS1_gprodDn_max(gw3,s1,t7): - gprod(gw3,k0,t7) + gprodDn(gw3,s1,t7)
+   + SOS1_gprodDn_max(gw3,s1,t7) = 0
+ gprodUp_max(gw3,s1,t8): gprod(gw3,k0,t8) + gprodUp(gw3,s1,t8) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t8): gprod(gw3,k0,t8) + gprodUp(gw3,s1,t8)
+   + SOS1_gprodUp_max(gw3,s1,t8) = 2000
+ gprodDn_max(gw3,s1,t8): - gprod(gw3,k0,t8) + gprodDn(gw3,s1,t8) <= 0
+ SOS1_gprodDn_max(gw3,s1,t8): - gprod(gw3,k0,t8) + gprodDn(gw3,s1,t8)
+   + SOS1_gprodDn_max(gw3,s1,t8) = 0
+ gprodUp_max(gw3,s1,t9): gprod(gw3,k0,t9) + gprodUp(gw3,s1,t9) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t9): gprod(gw3,k0,t9) + gprodUp(gw3,s1,t9)
+   + SOS1_gprodUp_max(gw3,s1,t9) = 2000
+ gprodDn_max(gw3,s1,t9): - gprod(gw3,k0,t9) + gprodDn(gw3,s1,t9) <= 0
+ SOS1_gprodDn_max(gw3,s1,t9): - gprod(gw3,k0,t9) + gprodDn(gw3,s1,t9)
+   + SOS1_gprodDn_max(gw3,s1,t9) = 0
+ gprodUp_max(gw3,s1,t10): gprod(gw3,k0,t10) + gprodUp(gw3,s1,t10) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t10): gprod(gw3,k0,t10) + gprodUp(gw3,s1,t10)
+   + SOS1_gprodUp_max(gw3,s1,t10) = 2000
+ gprodDn_max(gw3,s1,t10): - gprod(gw3,k0,t10) + gprodDn(gw3,s1,t10) <= 0
+ SOS1_gprodDn_max(gw3,s1,t10): - gprod(gw3,k0,t10) + gprodDn(gw3,s1,t10)
+   + SOS1_gprodDn_max(gw3,s1,t10) = 0
+ gprodUp_max(gw3,s1,t11): gprod(gw3,k0,t11) + gprodUp(gw3,s1,t11) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t11): gprod(gw3,k0,t11) + gprodUp(gw3,s1,t11)
+   + SOS1_gprodUp_max(gw3,s1,t11) = 2000
+ gprodDn_max(gw3,s1,t11): - gprod(gw3,k0,t11) + gprodDn(gw3,s1,t11) <= 0
+ SOS1_gprodDn_max(gw3,s1,t11): - gprod(gw3,k0,t11) + gprodDn(gw3,s1,t11)
+   + SOS1_gprodDn_max(gw3,s1,t11) = 0
+ gprodUp_max(gw3,s1,t12): gprod(gw3,k0,t12) + gprodUp(gw3,s1,t12) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t12): gprod(gw3,k0,t12) + gprodUp(gw3,s1,t12)
+   + SOS1_gprodUp_max(gw3,s1,t12) = 2000
+ gprodDn_max(gw3,s1,t12): - gprod(gw3,k0,t12) + gprodDn(gw3,s1,t12) <= 0
+ SOS1_gprodDn_max(gw3,s1,t12): - gprod(gw3,k0,t12) + gprodDn(gw3,s1,t12)
+   + SOS1_gprodDn_max(gw3,s1,t12) = 0
+ gprodUp_max(gw3,s1,t13): gprod(gw3,k0,t13) + gprodUp(gw3,s1,t13) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t13): gprod(gw3,k0,t13) + gprodUp(gw3,s1,t13)
+   + SOS1_gprodUp_max(gw3,s1,t13) = 2000
+ gprodDn_max(gw3,s1,t13): - gprod(gw3,k0,t13) + gprodDn(gw3,s1,t13) <= 0
+ SOS1_gprodDn_max(gw3,s1,t13): - gprod(gw3,k0,t13) + gprodDn(gw3,s1,t13)
+   + SOS1_gprodDn_max(gw3,s1,t13) = 0
+ gprodUp_max(gw3,s1,t14): gprod(gw3,k0,t14) + gprodUp(gw3,s1,t14) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t14): gprod(gw3,k0,t14) + gprodUp(gw3,s1,t14)
+   + SOS1_gprodUp_max(gw3,s1,t14) = 2000
+ gprodDn_max(gw3,s1,t14): - gprod(gw3,k0,t14) + gprodDn(gw3,s1,t14) <= 0
+ SOS1_gprodDn_max(gw3,s1,t14): - gprod(gw3,k0,t14) + gprodDn(gw3,s1,t14)
+   + SOS1_gprodDn_max(gw3,s1,t14) = 0
+ gprodUp_max(gw3,s1,t15): gprod(gw3,k0,t15) + gprodUp(gw3,s1,t15) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t15): gprod(gw3,k0,t15) + gprodUp(gw3,s1,t15)
+   + SOS1_gprodUp_max(gw3,s1,t15) = 2000
+ gprodDn_max(gw3,s1,t15): - gprod(gw3,k0,t15) + gprodDn(gw3,s1,t15) <= 0
+ SOS1_gprodDn_max(gw3,s1,t15): - gprod(gw3,k0,t15) + gprodDn(gw3,s1,t15)
+   + SOS1_gprodDn_max(gw3,s1,t15) = 0
+ gprodUp_max(gw3,s1,t16): gprod(gw3,k0,t16) + gprodUp(gw3,s1,t16) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t16): gprod(gw3,k0,t16) + gprodUp(gw3,s1,t16)
+   + SOS1_gprodUp_max(gw3,s1,t16) = 2000
+ gprodDn_max(gw3,s1,t16): - gprod(gw3,k0,t16) + gprodDn(gw3,s1,t16) <= 0
+ SOS1_gprodDn_max(gw3,s1,t16): - gprod(gw3,k0,t16) + gprodDn(gw3,s1,t16)
+   + SOS1_gprodDn_max(gw3,s1,t16) = 0
+ gprodUp_max(gw3,s1,t17): gprod(gw3,k0,t17) + gprodUp(gw3,s1,t17) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t17): gprod(gw3,k0,t17) + gprodUp(gw3,s1,t17)
+   + SOS1_gprodUp_max(gw3,s1,t17) = 2000
+ gprodDn_max(gw3,s1,t17): - gprod(gw3,k0,t17) + gprodDn(gw3,s1,t17) <= 0
+ SOS1_gprodDn_max(gw3,s1,t17): - gprod(gw3,k0,t17) + gprodDn(gw3,s1,t17)
+   + SOS1_gprodDn_max(gw3,s1,t17) = 0
+ gprodUp_max(gw3,s1,t18): gprod(gw3,k0,t18) + gprodUp(gw3,s1,t18) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t18): gprod(gw3,k0,t18) + gprodUp(gw3,s1,t18)
+   + SOS1_gprodUp_max(gw3,s1,t18) = 2000
+ gprodDn_max(gw3,s1,t18): - gprod(gw3,k0,t18) + gprodDn(gw3,s1,t18) <= 0
+ SOS1_gprodDn_max(gw3,s1,t18): - gprod(gw3,k0,t18) + gprodDn(gw3,s1,t18)
+   + SOS1_gprodDn_max(gw3,s1,t18) = 0
+ gprodUp_max(gw3,s1,t19): gprod(gw3,k0,t19) + gprodUp(gw3,s1,t19) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t19): gprod(gw3,k0,t19) + gprodUp(gw3,s1,t19)
+   + SOS1_gprodUp_max(gw3,s1,t19) = 2000
+ gprodDn_max(gw3,s1,t19): - gprod(gw3,k0,t19) + gprodDn(gw3,s1,t19) <= 0
+ SOS1_gprodDn_max(gw3,s1,t19): - gprod(gw3,k0,t19) + gprodDn(gw3,s1,t19)
+   + SOS1_gprodDn_max(gw3,s1,t19) = 0
+ gprodUp_max(gw3,s1,t20): gprod(gw3,k0,t20) + gprodUp(gw3,s1,t20) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t20): gprod(gw3,k0,t20) + gprodUp(gw3,s1,t20)
+   + SOS1_gprodUp_max(gw3,s1,t20) = 2000
+ gprodDn_max(gw3,s1,t20): - gprod(gw3,k0,t20) + gprodDn(gw3,s1,t20) <= 0
+ SOS1_gprodDn_max(gw3,s1,t20): - gprod(gw3,k0,t20) + gprodDn(gw3,s1,t20)
+   + SOS1_gprodDn_max(gw3,s1,t20) = 0
+ gprodUp_max(gw3,s1,t21): gprod(gw3,k0,t21) + gprodUp(gw3,s1,t21) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t21): gprod(gw3,k0,t21) + gprodUp(gw3,s1,t21)
+   + SOS1_gprodUp_max(gw3,s1,t21) = 2000
+ gprodDn_max(gw3,s1,t21): - gprod(gw3,k0,t21) + gprodDn(gw3,s1,t21) <= 0
+ SOS1_gprodDn_max(gw3,s1,t21): - gprod(gw3,k0,t21) + gprodDn(gw3,s1,t21)
+   + SOS1_gprodDn_max(gw3,s1,t21) = 0
+ gprodUp_max(gw3,s1,t22): gprod(gw3,k0,t22) + gprodUp(gw3,s1,t22) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t22): gprod(gw3,k0,t22) + gprodUp(gw3,s1,t22)
+   + SOS1_gprodUp_max(gw3,s1,t22) = 2000
+ gprodDn_max(gw3,s1,t22): - gprod(gw3,k0,t22) + gprodDn(gw3,s1,t22) <= 0
+ SOS1_gprodDn_max(gw3,s1,t22): - gprod(gw3,k0,t22) + gprodDn(gw3,s1,t22)
+   + SOS1_gprodDn_max(gw3,s1,t22) = 0
+ gprodUp_max(gw3,s1,t23): gprod(gw3,k0,t23) + gprodUp(gw3,s1,t23) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t23): gprod(gw3,k0,t23) + gprodUp(gw3,s1,t23)
+   + SOS1_gprodUp_max(gw3,s1,t23) = 2000
+ gprodDn_max(gw3,s1,t23): - gprod(gw3,k0,t23) + gprodDn(gw3,s1,t23) <= 0
+ SOS1_gprodDn_max(gw3,s1,t23): - gprod(gw3,k0,t23) + gprodDn(gw3,s1,t23)
+   + SOS1_gprodDn_max(gw3,s1,t23) = 0
+ gprodUp_max(gw3,s1,t24): gprod(gw3,k0,t24) + gprodUp(gw3,s1,t24) <= 2000
+ SOS1_gprodUp_max(gw3,s1,t24): gprod(gw3,k0,t24) + gprodUp(gw3,s1,t24)
+   + SOS1_gprodUp_max(gw3,s1,t24) = 2000
+ gprodDn_max(gw3,s1,t24): - gprod(gw3,k0,t24) + gprodDn(gw3,s1,t24) <= 0
+ SOS1_gprodDn_max(gw3,s1,t24): - gprod(gw3,k0,t24) + gprodDn(gw3,s1,t24)
+   + SOS1_gprodDn_max(gw3,s1,t24) = 0
+ gprodUp_max(gw3,s2,t1): gprod(gw3,k0,t1) + gprodUp(gw3,s2,t1) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t1): gprod(gw3,k0,t1) + gprodUp(gw3,s2,t1)
+   + SOS1_gprodUp_max(gw3,s2,t1) = 2000
+ gprodDn_max(gw3,s2,t1): - gprod(gw3,k0,t1) + gprodDn(gw3,s2,t1) <= 0
+ SOS1_gprodDn_max(gw3,s2,t1): - gprod(gw3,k0,t1) + gprodDn(gw3,s2,t1)
+   + SOS1_gprodDn_max(gw3,s2,t1) = 0
+ gprodUp_max(gw3,s2,t2): gprod(gw3,k0,t2) + gprodUp(gw3,s2,t2) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t2): gprod(gw3,k0,t2) + gprodUp(gw3,s2,t2)
+   + SOS1_gprodUp_max(gw3,s2,t2) = 2000
+ gprodDn_max(gw3,s2,t2): - gprod(gw3,k0,t2) + gprodDn(gw3,s2,t2) <= 0
+ SOS1_gprodDn_max(gw3,s2,t2): - gprod(gw3,k0,t2) + gprodDn(gw3,s2,t2)
+   + SOS1_gprodDn_max(gw3,s2,t2) = 0
+ gprodUp_max(gw3,s2,t3): gprod(gw3,k0,t3) + gprodUp(gw3,s2,t3) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t3): gprod(gw3,k0,t3) + gprodUp(gw3,s2,t3)
+   + SOS1_gprodUp_max(gw3,s2,t3) = 2000
+ gprodDn_max(gw3,s2,t3): - gprod(gw3,k0,t3) + gprodDn(gw3,s2,t3) <= 0
+ SOS1_gprodDn_max(gw3,s2,t3): - gprod(gw3,k0,t3) + gprodDn(gw3,s2,t3)
+   + SOS1_gprodDn_max(gw3,s2,t3) = 0
+ gprodUp_max(gw3,s2,t4): gprod(gw3,k0,t4) + gprodUp(gw3,s2,t4) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t4): gprod(gw3,k0,t4) + gprodUp(gw3,s2,t4)
+   + SOS1_gprodUp_max(gw3,s2,t4) = 2000
+ gprodDn_max(gw3,s2,t4): - gprod(gw3,k0,t4) + gprodDn(gw3,s2,t4) <= 0
+ SOS1_gprodDn_max(gw3,s2,t4): - gprod(gw3,k0,t4) + gprodDn(gw3,s2,t4)
+   + SOS1_gprodDn_max(gw3,s2,t4) = 0
+ gprodUp_max(gw3,s2,t5): gprod(gw3,k0,t5) + gprodUp(gw3,s2,t5) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t5): gprod(gw3,k0,t5) + gprodUp(gw3,s2,t5)
+   + SOS1_gprodUp_max(gw3,s2,t5) = 2000
+ gprodDn_max(gw3,s2,t5): - gprod(gw3,k0,t5) + gprodDn(gw3,s2,t5) <= 0
+ SOS1_gprodDn_max(gw3,s2,t5): - gprod(gw3,k0,t5) + gprodDn(gw3,s2,t5)
+   + SOS1_gprodDn_max(gw3,s2,t5) = 0
+ gprodUp_max(gw3,s2,t6): gprod(gw3,k0,t6) + gprodUp(gw3,s2,t6) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t6): gprod(gw3,k0,t6) + gprodUp(gw3,s2,t6)
+   + SOS1_gprodUp_max(gw3,s2,t6) = 2000
+ gprodDn_max(gw3,s2,t6): - gprod(gw3,k0,t6) + gprodDn(gw3,s2,t6) <= 0
+ SOS1_gprodDn_max(gw3,s2,t6): - gprod(gw3,k0,t6) + gprodDn(gw3,s2,t6)
+   + SOS1_gprodDn_max(gw3,s2,t6) = 0
+ gprodUp_max(gw3,s2,t7): gprod(gw3,k0,t7) + gprodUp(gw3,s2,t7) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t7): gprod(gw3,k0,t7) + gprodUp(gw3,s2,t7)
+   + SOS1_gprodUp_max(gw3,s2,t7) = 2000
+ gprodDn_max(gw3,s2,t7): - gprod(gw3,k0,t7) + gprodDn(gw3,s2,t7) <= 0
+ SOS1_gprodDn_max(gw3,s2,t7): - gprod(gw3,k0,t7) + gprodDn(gw3,s2,t7)
+   + SOS1_gprodDn_max(gw3,s2,t7) = 0
+ gprodUp_max(gw3,s2,t8): gprod(gw3,k0,t8) + gprodUp(gw3,s2,t8) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t8): gprod(gw3,k0,t8) + gprodUp(gw3,s2,t8)
+   + SOS1_gprodUp_max(gw3,s2,t8) = 2000
+ gprodDn_max(gw3,s2,t8): - gprod(gw3,k0,t8) + gprodDn(gw3,s2,t8) <= 0
+ SOS1_gprodDn_max(gw3,s2,t8): - gprod(gw3,k0,t8) + gprodDn(gw3,s2,t8)
+   + SOS1_gprodDn_max(gw3,s2,t8) = 0
+ gprodUp_max(gw3,s2,t9): gprod(gw3,k0,t9) + gprodUp(gw3,s2,t9) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t9): gprod(gw3,k0,t9) + gprodUp(gw3,s2,t9)
+   + SOS1_gprodUp_max(gw3,s2,t9) = 2000
+ gprodDn_max(gw3,s2,t9): - gprod(gw3,k0,t9) + gprodDn(gw3,s2,t9) <= 0
+ SOS1_gprodDn_max(gw3,s2,t9): - gprod(gw3,k0,t9) + gprodDn(gw3,s2,t9)
+   + SOS1_gprodDn_max(gw3,s2,t9) = 0
+ gprodUp_max(gw3,s2,t10): gprod(gw3,k0,t10) + gprodUp(gw3,s2,t10) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t10): gprod(gw3,k0,t10) + gprodUp(gw3,s2,t10)
+   + SOS1_gprodUp_max(gw3,s2,t10) = 2000
+ gprodDn_max(gw3,s2,t10): - gprod(gw3,k0,t10) + gprodDn(gw3,s2,t10) <= 0
+ SOS1_gprodDn_max(gw3,s2,t10): - gprod(gw3,k0,t10) + gprodDn(gw3,s2,t10)
+   + SOS1_gprodDn_max(gw3,s2,t10) = 0
+ gprodUp_max(gw3,s2,t11): gprod(gw3,k0,t11) + gprodUp(gw3,s2,t11) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t11): gprod(gw3,k0,t11) + gprodUp(gw3,s2,t11)
+   + SOS1_gprodUp_max(gw3,s2,t11) = 2000
+ gprodDn_max(gw3,s2,t11): - gprod(gw3,k0,t11) + gprodDn(gw3,s2,t11) <= 0
+ SOS1_gprodDn_max(gw3,s2,t11): - gprod(gw3,k0,t11) + gprodDn(gw3,s2,t11)
+   + SOS1_gprodDn_max(gw3,s2,t11) = 0
+ gprodUp_max(gw3,s2,t12): gprod(gw3,k0,t12) + gprodUp(gw3,s2,t12) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t12): gprod(gw3,k0,t12) + gprodUp(gw3,s2,t12)
+   + SOS1_gprodUp_max(gw3,s2,t12) = 2000
+ gprodDn_max(gw3,s2,t12): - gprod(gw3,k0,t12) + gprodDn(gw3,s2,t12) <= 0
+ SOS1_gprodDn_max(gw3,s2,t12): - gprod(gw3,k0,t12) + gprodDn(gw3,s2,t12)
+   + SOS1_gprodDn_max(gw3,s2,t12) = 0
+ gprodUp_max(gw3,s2,t13): gprod(gw3,k0,t13) + gprodUp(gw3,s2,t13) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t13): gprod(gw3,k0,t13) + gprodUp(gw3,s2,t13)
+   + SOS1_gprodUp_max(gw3,s2,t13) = 2000
+ gprodDn_max(gw3,s2,t13): - gprod(gw3,k0,t13) + gprodDn(gw3,s2,t13) <= 0
+ SOS1_gprodDn_max(gw3,s2,t13): - gprod(gw3,k0,t13) + gprodDn(gw3,s2,t13)
+   + SOS1_gprodDn_max(gw3,s2,t13) = 0
+ gprodUp_max(gw3,s2,t14): gprod(gw3,k0,t14) + gprodUp(gw3,s2,t14) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t14): gprod(gw3,k0,t14) + gprodUp(gw3,s2,t14)
+   + SOS1_gprodUp_max(gw3,s2,t14) = 2000
+ gprodDn_max(gw3,s2,t14): - gprod(gw3,k0,t14) + gprodDn(gw3,s2,t14) <= 0
+ SOS1_gprodDn_max(gw3,s2,t14): - gprod(gw3,k0,t14) + gprodDn(gw3,s2,t14)
+   + SOS1_gprodDn_max(gw3,s2,t14) = 0
+ gprodUp_max(gw3,s2,t15): gprod(gw3,k0,t15) + gprodUp(gw3,s2,t15) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t15): gprod(gw3,k0,t15) + gprodUp(gw3,s2,t15)
+   + SOS1_gprodUp_max(gw3,s2,t15) = 2000
+ gprodDn_max(gw3,s2,t15): - gprod(gw3,k0,t15) + gprodDn(gw3,s2,t15) <= 0
+ SOS1_gprodDn_max(gw3,s2,t15): - gprod(gw3,k0,t15) + gprodDn(gw3,s2,t15)
+   + SOS1_gprodDn_max(gw3,s2,t15) = 0
+ gprodUp_max(gw3,s2,t16): gprod(gw3,k0,t16) + gprodUp(gw3,s2,t16) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t16): gprod(gw3,k0,t16) + gprodUp(gw3,s2,t16)
+   + SOS1_gprodUp_max(gw3,s2,t16) = 2000
+ gprodDn_max(gw3,s2,t16): - gprod(gw3,k0,t16) + gprodDn(gw3,s2,t16) <= 0
+ SOS1_gprodDn_max(gw3,s2,t16): - gprod(gw3,k0,t16) + gprodDn(gw3,s2,t16)
+   + SOS1_gprodDn_max(gw3,s2,t16) = 0
+ gprodUp_max(gw3,s2,t17): gprod(gw3,k0,t17) + gprodUp(gw3,s2,t17) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t17): gprod(gw3,k0,t17) + gprodUp(gw3,s2,t17)
+   + SOS1_gprodUp_max(gw3,s2,t17) = 2000
+ gprodDn_max(gw3,s2,t17): - gprod(gw3,k0,t17) + gprodDn(gw3,s2,t17) <= 0
+ SOS1_gprodDn_max(gw3,s2,t17): - gprod(gw3,k0,t17) + gprodDn(gw3,s2,t17)
+   + SOS1_gprodDn_max(gw3,s2,t17) = 0
+ gprodUp_max(gw3,s2,t18): gprod(gw3,k0,t18) + gprodUp(gw3,s2,t18) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t18): gprod(gw3,k0,t18) + gprodUp(gw3,s2,t18)
+   + SOS1_gprodUp_max(gw3,s2,t18) = 2000
+ gprodDn_max(gw3,s2,t18): - gprod(gw3,k0,t18) + gprodDn(gw3,s2,t18) <= 0
+ SOS1_gprodDn_max(gw3,s2,t18): - gprod(gw3,k0,t18) + gprodDn(gw3,s2,t18)
+   + SOS1_gprodDn_max(gw3,s2,t18) = 0
+ gprodUp_max(gw3,s2,t19): gprod(gw3,k0,t19) + gprodUp(gw3,s2,t19) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t19): gprod(gw3,k0,t19) + gprodUp(gw3,s2,t19)
+   + SOS1_gprodUp_max(gw3,s2,t19) = 2000
+ gprodDn_max(gw3,s2,t19): - gprod(gw3,k0,t19) + gprodDn(gw3,s2,t19) <= 0
+ SOS1_gprodDn_max(gw3,s2,t19): - gprod(gw3,k0,t19) + gprodDn(gw3,s2,t19)
+   + SOS1_gprodDn_max(gw3,s2,t19) = 0
+ gprodUp_max(gw3,s2,t20): gprod(gw3,k0,t20) + gprodUp(gw3,s2,t20) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t20): gprod(gw3,k0,t20) + gprodUp(gw3,s2,t20)
+   + SOS1_gprodUp_max(gw3,s2,t20) = 2000
+ gprodDn_max(gw3,s2,t20): - gprod(gw3,k0,t20) + gprodDn(gw3,s2,t20) <= 0
+ SOS1_gprodDn_max(gw3,s2,t20): - gprod(gw3,k0,t20) + gprodDn(gw3,s2,t20)
+   + SOS1_gprodDn_max(gw3,s2,t20) = 0
+ gprodUp_max(gw3,s2,t21): gprod(gw3,k0,t21) + gprodUp(gw3,s2,t21) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t21): gprod(gw3,k0,t21) + gprodUp(gw3,s2,t21)
+   + SOS1_gprodUp_max(gw3,s2,t21) = 2000
+ gprodDn_max(gw3,s2,t21): - gprod(gw3,k0,t21) + gprodDn(gw3,s2,t21) <= 0
+ SOS1_gprodDn_max(gw3,s2,t21): - gprod(gw3,k0,t21) + gprodDn(gw3,s2,t21)
+   + SOS1_gprodDn_max(gw3,s2,t21) = 0
+ gprodUp_max(gw3,s2,t22): gprod(gw3,k0,t22) + gprodUp(gw3,s2,t22) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t22): gprod(gw3,k0,t22) + gprodUp(gw3,s2,t22)
+   + SOS1_gprodUp_max(gw3,s2,t22) = 2000
+ gprodDn_max(gw3,s2,t22): - gprod(gw3,k0,t22) + gprodDn(gw3,s2,t22) <= 0
+ SOS1_gprodDn_max(gw3,s2,t22): - gprod(gw3,k0,t22) + gprodDn(gw3,s2,t22)
+   + SOS1_gprodDn_max(gw3,s2,t22) = 0
+ gprodUp_max(gw3,s2,t23): gprod(gw3,k0,t23) + gprodUp(gw3,s2,t23) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t23): gprod(gw3,k0,t23) + gprodUp(gw3,s2,t23)
+   + SOS1_gprodUp_max(gw3,s2,t23) = 2000
+ gprodDn_max(gw3,s2,t23): - gprod(gw3,k0,t23) + gprodDn(gw3,s2,t23) <= 0
+ SOS1_gprodDn_max(gw3,s2,t23): - gprod(gw3,k0,t23) + gprodDn(gw3,s2,t23)
+   + SOS1_gprodDn_max(gw3,s2,t23) = 0
+ gprodUp_max(gw3,s2,t24): gprod(gw3,k0,t24) + gprodUp(gw3,s2,t24) <= 2000
+ SOS1_gprodUp_max(gw3,s2,t24): gprod(gw3,k0,t24) + gprodUp(gw3,s2,t24)
+   + SOS1_gprodUp_max(gw3,s2,t24) = 2000
+ gprodDn_max(gw3,s2,t24): - gprod(gw3,k0,t24) + gprodDn(gw3,s2,t24) <= 0
+ SOS1_gprodDn_max(gw3,s2,t24): - gprod(gw3,k0,t24) + gprodDn(gw3,s2,t24)
+   + SOS1_gprodDn_max(gw3,s2,t24) = 0
  gas_balance_rt(ng101,s1,t1): qin_sr(('ng101','ng102'),k0,t1)
    + gshed(ng101,s1,t1) + gprodUp(gw1,s1,t1) - gprodDn(gw1,s1,t1)
-   + gprodUp(gw2,s1,t1) - gprodDn(gw2,s1,t1)
-   - qin_sr_rt(('ng101','ng102'),s1,t1) = 0
+   + gprodUp(gw2,s1,t1) - gprodDn(gw2,s1,t1) + gprodUp(gw3,s1,t1)
+   - gprodDn(gw3,s1,t1) - qin_sr_rt(('ng101','ng102'),s1,t1) = 0
  gas_balance_rt(ng101,s1,t2): qin_sr(('ng101','ng102'),k0,t2)
    + gshed(ng101,s1,t2) + gprodUp(gw1,s1,t2) - gprodDn(gw1,s1,t2)
-   + gprodUp(gw2,s1,t2) - gprodDn(gw2,s1,t2)
-   - qin_sr_rt(('ng101','ng102'),s1,t2) = 0
+   + gprodUp(gw2,s1,t2) - gprodDn(gw2,s1,t2) + gprodUp(gw3,s1,t2)
+   - gprodDn(gw3,s1,t2) - qin_sr_rt(('ng101','ng102'),s1,t2) = 0
  gas_balance_rt(ng101,s1,t3): qin_sr(('ng101','ng102'),k0,t3)
    + gshed(ng101,s1,t3) + gprodUp(gw1,s1,t3) - gprodDn(gw1,s1,t3)
-   + gprodUp(gw2,s1,t3) - gprodDn(gw2,s1,t3)
-   - qin_sr_rt(('ng101','ng102'),s1,t3) = 0
+   + gprodUp(gw2,s1,t3) - gprodDn(gw2,s1,t3) + gprodUp(gw3,s1,t3)
+   - gprodDn(gw3,s1,t3) - qin_sr_rt(('ng101','ng102'),s1,t3) = 0
  gas_balance_rt(ng101,s1,t4): qin_sr(('ng101','ng102'),k0,t4)
    + gshed(ng101,s1,t4) + gprodUp(gw1,s1,t4) - gprodDn(gw1,s1,t4)
-   + gprodUp(gw2,s1,t4) - gprodDn(gw2,s1,t4)
-   - qin_sr_rt(('ng101','ng102'),s1,t4) = 0
+   + gprodUp(gw2,s1,t4) - gprodDn(gw2,s1,t4) + gprodUp(gw3,s1,t4)
+   - gprodDn(gw3,s1,t4) - qin_sr_rt(('ng101','ng102'),s1,t4) = 0
  gas_balance_rt(ng101,s1,t5): qin_sr(('ng101','ng102'),k0,t5)
    + gshed(ng101,s1,t5) + gprodUp(gw1,s1,t5) - gprodDn(gw1,s1,t5)
-   + gprodUp(gw2,s1,t5) - gprodDn(gw2,s1,t5)
-   - qin_sr_rt(('ng101','ng102'),s1,t5) = 0
+   + gprodUp(gw2,s1,t5) - gprodDn(gw2,s1,t5) + gprodUp(gw3,s1,t5)
+   - gprodDn(gw3,s1,t5) - qin_sr_rt(('ng101','ng102'),s1,t5) = 0
  gas_balance_rt(ng101,s1,t6): qin_sr(('ng101','ng102'),k0,t6)
    + gshed(ng101,s1,t6) + gprodUp(gw1,s1,t6) - gprodDn(gw1,s1,t6)
-   + gprodUp(gw2,s1,t6) - gprodDn(gw2,s1,t6)
-   - qin_sr_rt(('ng101','ng102'),s1,t6) = 0
+   + gprodUp(gw2,s1,t6) - gprodDn(gw2,s1,t6) + gprodUp(gw3,s1,t6)
+   - gprodDn(gw3,s1,t6) - qin_sr_rt(('ng101','ng102'),s1,t6) = 0
  gas_balance_rt(ng101,s1,t7): qin_sr(('ng101','ng102'),k0,t7)
    + gshed(ng101,s1,t7) + gprodUp(gw1,s1,t7) - gprodDn(gw1,s1,t7)
-   + gprodUp(gw2,s1,t7) - gprodDn(gw2,s1,t7)
-   - qin_sr_rt(('ng101','ng102'),s1,t7) = 0
+   + gprodUp(gw2,s1,t7) - gprodDn(gw2,s1,t7) + gprodUp(gw3,s1,t7)
+   - gprodDn(gw3,s1,t7) - qin_sr_rt(('ng101','ng102'),s1,t7) = 0
  gas_balance_rt(ng101,s1,t8): qin_sr(('ng101','ng102'),k0,t8)
    + gshed(ng101,s1,t8) + gprodUp(gw1,s1,t8) - gprodDn(gw1,s1,t8)
-   + gprodUp(gw2,s1,t8) - gprodDn(gw2,s1,t8)
-   - qin_sr_rt(('ng101','ng102'),s1,t8) = 0
+   + gprodUp(gw2,s1,t8) - gprodDn(gw2,s1,t8) + gprodUp(gw3,s1,t8)
+   - gprodDn(gw3,s1,t8) - qin_sr_rt(('ng101','ng102'),s1,t8) = 0
  gas_balance_rt(ng101,s1,t9): qin_sr(('ng101','ng102'),k0,t9)
    + gshed(ng101,s1,t9) + gprodUp(gw1,s1,t9) - gprodDn(gw1,s1,t9)
-   + gprodUp(gw2,s1,t9) - gprodDn(gw2,s1,t9)
-   - qin_sr_rt(('ng101','ng102'),s1,t9) = 0
+   + gprodUp(gw2,s1,t9) - gprodDn(gw2,s1,t9) + gprodUp(gw3,s1,t9)
+   - gprodDn(gw3,s1,t9) - qin_sr_rt(('ng101','ng102'),s1,t9) = 0
  gas_balance_rt(ng101,s1,t10): qin_sr(('ng101','ng102'),k0,t10)
    + gshed(ng101,s1,t10) + gprodUp(gw1,s1,t10) - gprodDn(gw1,s1,t10)
-   + gprodUp(gw2,s1,t10) - gprodDn(gw2,s1,t10)
-   - qin_sr_rt(('ng101','ng102'),s1,t10) = 0
+   + gprodUp(gw2,s1,t10) - gprodDn(gw2,s1,t10) + gprodUp(gw3,s1,t10)
+   - gprodDn(gw3,s1,t10) - qin_sr_rt(('ng101','ng102'),s1,t10) = 0
  gas_balance_rt(ng101,s1,t11): qin_sr(('ng101','ng102'),k0,t11)
    + gshed(ng101,s1,t11) + gprodUp(gw1,s1,t11) - gprodDn(gw1,s1,t11)
-   + gprodUp(gw2,s1,t11) - gprodDn(gw2,s1,t11)
-   - qin_sr_rt(('ng101','ng102'),s1,t11) = 0
+   + gprodUp(gw2,s1,t11) - gprodDn(gw2,s1,t11) + gprodUp(gw3,s1,t11)
+   - gprodDn(gw3,s1,t11) - qin_sr_rt(('ng101','ng102'),s1,t11) = 0
  gas_balance_rt(ng101,s1,t12): qin_sr(('ng101','ng102'),k0,t12)
    + gshed(ng101,s1,t12) + gprodUp(gw1,s1,t12) - gprodDn(gw1,s1,t12)
-   + gprodUp(gw2,s1,t12) - gprodDn(gw2,s1,t12)
-   - qin_sr_rt(('ng101','ng102'),s1,t12) = 0
+   + gprodUp(gw2,s1,t12) - gprodDn(gw2,s1,t12) + gprodUp(gw3,s1,t12)
+   - gprodDn(gw3,s1,t12) - qin_sr_rt(('ng101','ng102'),s1,t12) = 0
  gas_balance_rt(ng101,s1,t13): qin_sr(('ng101','ng102'),k0,t13)
    + gshed(ng101,s1,t13) + gprodUp(gw1,s1,t13) - gprodDn(gw1,s1,t13)
-   + gprodUp(gw2,s1,t13) - gprodDn(gw2,s1,t13)
-   - qin_sr_rt(('ng101','ng102'),s1,t13) = 0
+   + gprodUp(gw2,s1,t13) - gprodDn(gw2,s1,t13) + gprodUp(gw3,s1,t13)
+   - gprodDn(gw3,s1,t13) - qin_sr_rt(('ng101','ng102'),s1,t13) = 0
  gas_balance_rt(ng101,s1,t14): qin_sr(('ng101','ng102'),k0,t14)
    + gshed(ng101,s1,t14) + gprodUp(gw1,s1,t14) - gprodDn(gw1,s1,t14)
-   + gprodUp(gw2,s1,t14) - gprodDn(gw2,s1,t14)
-   - qin_sr_rt(('ng101','ng102'),s1,t14) = 0
+   + gprodUp(gw2,s1,t14) - gprodDn(gw2,s1,t14) + gprodUp(gw3,s1,t14)
+   - gprodDn(gw3,s1,t14) - qin_sr_rt(('ng101','ng102'),s1,t14) = 0
  gas_balance_rt(ng101,s1,t15): qin_sr(('ng101','ng102'),k0,t15)
    + gshed(ng101,s1,t15) + gprodUp(gw1,s1,t15) - gprodDn(gw1,s1,t15)
-   + gprodUp(gw2,s1,t15) - gprodDn(gw2,s1,t15)
-   - qin_sr_rt(('ng101','ng102'),s1,t15) = 0
+   + gprodUp(gw2,s1,t15) - gprodDn(gw2,s1,t15) + gprodUp(gw3,s1,t15)
+   - gprodDn(gw3,s1,t15) - qin_sr_rt(('ng101','ng102'),s1,t15) = 0
  gas_balance_rt(ng101,s1,t16): qin_sr(('ng101','ng102'),k0,t16)
    + gshed(ng101,s1,t16) + gprodUp(gw1,s1,t16) - gprodDn(gw1,s1,t16)
-   + gprodUp(gw2,s1,t16) - gprodDn(gw2,s1,t16)
-   - qin_sr_rt(('ng101','ng102'),s1,t16) = 0
+   + gprodUp(gw2,s1,t16) - gprodDn(gw2,s1,t16) + gprodUp(gw3,s1,t16)
+   - gprodDn(gw3,s1,t16) - qin_sr_rt(('ng101','ng102'),s1,t16) = 0
  gas_balance_rt(ng101,s1,t17): qin_sr(('ng101','ng102'),k0,t17)
    + gshed(ng101,s1,t17) + gprodUp(gw1,s1,t17) - gprodDn(gw1,s1,t17)
-   + gprodUp(gw2,s1,t17) - gprodDn(gw2,s1,t17)
-   - qin_sr_rt(('ng101','ng102'),s1,t17) = 0
+   + gprodUp(gw2,s1,t17) - gprodDn(gw2,s1,t17) + gprodUp(gw3,s1,t17)
+   - gprodDn(gw3,s1,t17) - qin_sr_rt(('ng101','ng102'),s1,t17) = 0
  gas_balance_rt(ng101,s1,t18): qin_sr(('ng101','ng102'),k0,t18)
    + gshed(ng101,s1,t18) + gprodUp(gw1,s1,t18) - gprodDn(gw1,s1,t18)
-   + gprodUp(gw2,s1,t18) - gprodDn(gw2,s1,t18)
-   - qin_sr_rt(('ng101','ng102'),s1,t18) = 0
+   + gprodUp(gw2,s1,t18) - gprodDn(gw2,s1,t18) + gprodUp(gw3,s1,t18)
+   - gprodDn(gw3,s1,t18) - qin_sr_rt(('ng101','ng102'),s1,t18) = 0
  gas_balance_rt(ng101,s1,t19): qin_sr(('ng101','ng102'),k0,t19)
    + gshed(ng101,s1,t19) + gprodUp(gw1,s1,t19) - gprodDn(gw1,s1,t19)
-   + gprodUp(gw2,s1,t19) - gprodDn(gw2,s1,t19)
-   - qin_sr_rt(('ng101','ng102'),s1,t19) = 0
+   + gprodUp(gw2,s1,t19) - gprodDn(gw2,s1,t19) + gprodUp(gw3,s1,t19)
+   - gprodDn(gw3,s1,t19) - qin_sr_rt(('ng101','ng102'),s1,t19) = 0
  gas_balance_rt(ng101,s1,t20): qin_sr(('ng101','ng102'),k0,t20)
    + gshed(ng101,s1,t20) + gprodUp(gw1,s1,t20) - gprodDn(gw1,s1,t20)
-   + gprodUp(gw2,s1,t20) - gprodDn(gw2,s1,t20)
-   - qin_sr_rt(('ng101','ng102'),s1,t20) = 0
+   + gprodUp(gw2,s1,t20) - gprodDn(gw2,s1,t20) + gprodUp(gw3,s1,t20)
+   - gprodDn(gw3,s1,t20) - qin_sr_rt(('ng101','ng102'),s1,t20) = 0
  gas_balance_rt(ng101,s1,t21): qin_sr(('ng101','ng102'),k0,t21)
    + gshed(ng101,s1,t21) + gprodUp(gw1,s1,t21) - gprodDn(gw1,s1,t21)
-   + gprodUp(gw2,s1,t21) - gprodDn(gw2,s1,t21)
-   - qin_sr_rt(('ng101','ng102'),s1,t21) = 0
+   + gprodUp(gw2,s1,t21) - gprodDn(gw2,s1,t21) + gprodUp(gw3,s1,t21)
+   - gprodDn(gw3,s1,t21) - qin_sr_rt(('ng101','ng102'),s1,t21) = 0
  gas_balance_rt(ng101,s1,t22): qin_sr(('ng101','ng102'),k0,t22)
    + gshed(ng101,s1,t22) + gprodUp(gw1,s1,t22) - gprodDn(gw1,s1,t22)
-   + gprodUp(gw2,s1,t22) - gprodDn(gw2,s1,t22)
-   - qin_sr_rt(('ng101','ng102'),s1,t22) = 0
+   + gprodUp(gw2,s1,t22) - gprodDn(gw2,s1,t22) + gprodUp(gw3,s1,t22)
+   - gprodDn(gw3,s1,t22) - qin_sr_rt(('ng101','ng102'),s1,t22) = 0
  gas_balance_rt(ng101,s1,t23): qin_sr(('ng101','ng102'),k0,t23)
    + gshed(ng101,s1,t23) + gprodUp(gw1,s1,t23) - gprodDn(gw1,s1,t23)
-   + gprodUp(gw2,s1,t23) - gprodDn(gw2,s1,t23)
-   - qin_sr_rt(('ng101','ng102'),s1,t23) = 0
+   + gprodUp(gw2,s1,t23) - gprodDn(gw2,s1,t23) + gprodUp(gw3,s1,t23)
+   - gprodDn(gw3,s1,t23) - qin_sr_rt(('ng101','ng102'),s1,t23) = 0
  gas_balance_rt(ng101,s1,t24): qin_sr(('ng101','ng102'),k0,t24)
    + gshed(ng101,s1,t24) + gprodUp(gw1,s1,t24) - gprodDn(gw1,s1,t24)
-   + gprodUp(gw2,s1,t24) - gprodDn(gw2,s1,t24)
-   - qin_sr_rt(('ng101','ng102'),s1,t24) = 0
+   + gprodUp(gw2,s1,t24) - gprodDn(gw2,s1,t24) + gprodUp(gw3,s1,t24)
+   - gprodDn(gw3,s1,t24) - qin_sr_rt(('ng101','ng102'),s1,t24) = 0
  gas_balance_rt(ng101,s2,t1): qin_sr(('ng101','ng102'),k0,t1)
    + gshed(ng101,s2,t1) + gprodUp(gw1,s2,t1) - gprodDn(gw1,s2,t1)
-   + gprodUp(gw2,s2,t1) - gprodDn(gw2,s2,t1)
-   - qin_sr_rt(('ng101','ng102'),s2,t1) = 0
+   + gprodUp(gw2,s2,t1) - gprodDn(gw2,s2,t1) + gprodUp(gw3,s2,t1)
+   - gprodDn(gw3,s2,t1) - qin_sr_rt(('ng101','ng102'),s2,t1) = 0
  gas_balance_rt(ng101,s2,t2): qin_sr(('ng101','ng102'),k0,t2)
    + gshed(ng101,s2,t2) + gprodUp(gw1,s2,t2) - gprodDn(gw1,s2,t2)
-   + gprodUp(gw2,s2,t2) - gprodDn(gw2,s2,t2)
-   - qin_sr_rt(('ng101','ng102'),s2,t2) = 0
+   + gprodUp(gw2,s2,t2) - gprodDn(gw2,s2,t2) + gprodUp(gw3,s2,t2)
+   - gprodDn(gw3,s2,t2) - qin_sr_rt(('ng101','ng102'),s2,t2) = 0
  gas_balance_rt(ng101,s2,t3): qin_sr(('ng101','ng102'),k0,t3)
    + gshed(ng101,s2,t3) + gprodUp(gw1,s2,t3) - gprodDn(gw1,s2,t3)
-   + gprodUp(gw2,s2,t3) - gprodDn(gw2,s2,t3)
-   - qin_sr_rt(('ng101','ng102'),s2,t3) = 0
+   + gprodUp(gw2,s2,t3) - gprodDn(gw2,s2,t3) + gprodUp(gw3,s2,t3)
+   - gprodDn(gw3,s2,t3) - qin_sr_rt(('ng101','ng102'),s2,t3) = 0
  gas_balance_rt(ng101,s2,t4): qin_sr(('ng101','ng102'),k0,t4)
    + gshed(ng101,s2,t4) + gprodUp(gw1,s2,t4) - gprodDn(gw1,s2,t4)
-   + gprodUp(gw2,s2,t4) - gprodDn(gw2,s2,t4)
-   - qin_sr_rt(('ng101','ng102'),s2,t4) = 0
+   + gprodUp(gw2,s2,t4) - gprodDn(gw2,s2,t4) + gprodUp(gw3,s2,t4)
+   - gprodDn(gw3,s2,t4) - qin_sr_rt(('ng101','ng102'),s2,t4) = 0
  gas_balance_rt(ng101,s2,t5): qin_sr(('ng101','ng102'),k0,t5)
    + gshed(ng101,s2,t5) + gprodUp(gw1,s2,t5) - gprodDn(gw1,s2,t5)
-   + gprodUp(gw2,s2,t5) - gprodDn(gw2,s2,t5)
-   - qin_sr_rt(('ng101','ng102'),s2,t5) = 0
+   + gprodUp(gw2,s2,t5) - gprodDn(gw2,s2,t5) + gprodUp(gw3,s2,t5)
+   - gprodDn(gw3,s2,t5) - qin_sr_rt(('ng101','ng102'),s2,t5) = 0
  gas_balance_rt(ng101,s2,t6): qin_sr(('ng101','ng102'),k0,t6)
    + gshed(ng101,s2,t6) + gprodUp(gw1,s2,t6) - gprodDn(gw1,s2,t6)
-   + gprodUp(gw2,s2,t6) - gprodDn(gw2,s2,t6)
-   - qin_sr_rt(('ng101','ng102'),s2,t6) = 0
+   + gprodUp(gw2,s2,t6) - gprodDn(gw2,s2,t6) + gprodUp(gw3,s2,t6)
+   - gprodDn(gw3,s2,t6) - qin_sr_rt(('ng101','ng102'),s2,t6) = 0
  gas_balance_rt(ng101,s2,t7): qin_sr(('ng101','ng102'),k0,t7)
    + gshed(ng101,s2,t7) + gprodUp(gw1,s2,t7) - gprodDn(gw1,s2,t7)
-   + gprodUp(gw2,s2,t7) - gprodDn(gw2,s2,t7)
-   - qin_sr_rt(('ng101','ng102'),s2,t7) = 0
+   + gprodUp(gw2,s2,t7) - gprodDn(gw2,s2,t7) + gprodUp(gw3,s2,t7)
+   - gprodDn(gw3,s2,t7) - qin_sr_rt(('ng101','ng102'),s2,t7) = 0
  gas_balance_rt(ng101,s2,t8): qin_sr(('ng101','ng102'),k0,t8)
    + gshed(ng101,s2,t8) + gprodUp(gw1,s2,t8) - gprodDn(gw1,s2,t8)
-   + gprodUp(gw2,s2,t8) - gprodDn(gw2,s2,t8)
-   - qin_sr_rt(('ng101','ng102'),s2,t8) = 0
+   + gprodUp(gw2,s2,t8) - gprodDn(gw2,s2,t8) + gprodUp(gw3,s2,t8)
+   - gprodDn(gw3,s2,t8) - qin_sr_rt(('ng101','ng102'),s2,t8) = 0
  gas_balance_rt(ng101,s2,t9): qin_sr(('ng101','ng102'),k0,t9)
    + gshed(ng101,s2,t9) + gprodUp(gw1,s2,t9) - gprodDn(gw1,s2,t9)
-   + gprodUp(gw2,s2,t9) - gprodDn(gw2,s2,t9)
-   - qin_sr_rt(('ng101','ng102'),s2,t9) = 0
+   + gprodUp(gw2,s2,t9) - gprodDn(gw2,s2,t9) + gprodUp(gw3,s2,t9)
+   - gprodDn(gw3,s2,t9) - qin_sr_rt(('ng101','ng102'),s2,t9) = 0
  gas_balance_rt(ng101,s2,t10): qin_sr(('ng101','ng102'),k0,t10)
    + gshed(ng101,s2,t10) + gprodUp(gw1,s2,t10) - gprodDn(gw1,s2,t10)
-   + gprodUp(gw2,s2,t10) - gprodDn(gw2,s2,t10)
-   - qin_sr_rt(('ng101','ng102'),s2,t10) = 0
+   + gprodUp(gw2,s2,t10) - gprodDn(gw2,s2,t10) + gprodUp(gw3,s2,t10)
+   - gprodDn(gw3,s2,t10) - qin_sr_rt(('ng101','ng102'),s2,t10) = 0
  gas_balance_rt(ng101,s2,t11): qin_sr(('ng101','ng102'),k0,t11)
    + gshed(ng101,s2,t11) + gprodUp(gw1,s2,t11) - gprodDn(gw1,s2,t11)
-   + gprodUp(gw2,s2,t11) - gprodDn(gw2,s2,t11)
-   - qin_sr_rt(('ng101','ng102'),s2,t11) = 0
+   + gprodUp(gw2,s2,t11) - gprodDn(gw2,s2,t11) + gprodUp(gw3,s2,t11)
+   - gprodDn(gw3,s2,t11) - qin_sr_rt(('ng101','ng102'),s2,t11) = 0
  gas_balance_rt(ng101,s2,t12): qin_sr(('ng101','ng102'),k0,t12)
    + gshed(ng101,s2,t12) + gprodUp(gw1,s2,t12) - gprodDn(gw1,s2,t12)
-   + gprodUp(gw2,s2,t12) - gprodDn(gw2,s2,t12)
-   - qin_sr_rt(('ng101','ng102'),s2,t12) = 0
+   + gprodUp(gw2,s2,t12) - gprodDn(gw2,s2,t12) + gprodUp(gw3,s2,t12)
+   - gprodDn(gw3,s2,t12) - qin_sr_rt(('ng101','ng102'),s2,t12) = 0
  gas_balance_rt(ng101,s2,t13): qin_sr(('ng101','ng102'),k0,t13)
    + gshed(ng101,s2,t13) + gprodUp(gw1,s2,t13) - gprodDn(gw1,s2,t13)
-   + gprodUp(gw2,s2,t13) - gprodDn(gw2,s2,t13)
-   - qin_sr_rt(('ng101','ng102'),s2,t13) = 0
+   + gprodUp(gw2,s2,t13) - gprodDn(gw2,s2,t13) + gprodUp(gw3,s2,t13)
+   - gprodDn(gw3,s2,t13) - qin_sr_rt(('ng101','ng102'),s2,t13) = 0
  gas_balance_rt(ng101,s2,t14): qin_sr(('ng101','ng102'),k0,t14)
    + gshed(ng101,s2,t14) + gprodUp(gw1,s2,t14) - gprodDn(gw1,s2,t14)
-   + gprodUp(gw2,s2,t14) - gprodDn(gw2,s2,t14)
-   - qin_sr_rt(('ng101','ng102'),s2,t14) = 0
+   + gprodUp(gw2,s2,t14) - gprodDn(gw2,s2,t14) + gprodUp(gw3,s2,t14)
+   - gprodDn(gw3,s2,t14) - qin_sr_rt(('ng101','ng102'),s2,t14) = 0
  gas_balance_rt(ng101,s2,t15): qin_sr(('ng101','ng102'),k0,t15)
    + gshed(ng101,s2,t15) + gprodUp(gw1,s2,t15) - gprodDn(gw1,s2,t15)
-   + gprodUp(gw2,s2,t15) - gprodDn(gw2,s2,t15)
-   - qin_sr_rt(('ng101','ng102'),s2,t15) = 0
+   + gprodUp(gw2,s2,t15) - gprodDn(gw2,s2,t15) + gprodUp(gw3,s2,t15)
+   - gprodDn(gw3,s2,t15) - qin_sr_rt(('ng101','ng102'),s2,t15) = 0
  gas_balance_rt(ng101,s2,t16): qin_sr(('ng101','ng102'),k0,t16)
    + gshed(ng101,s2,t16) + gprodUp(gw1,s2,t16) - gprodDn(gw1,s2,t16)
-   + gprodUp(gw2,s2,t16) - gprodDn(gw2,s2,t16)
-   - qin_sr_rt(('ng101','ng102'),s2,t16) = 0
+   + gprodUp(gw2,s2,t16) - gprodDn(gw2,s2,t16) + gprodUp(gw3,s2,t16)
+   - gprodDn(gw3,s2,t16) - qin_sr_rt(('ng101','ng102'),s2,t16) = 0
  gas_balance_rt(ng101,s2,t17): qin_sr(('ng101','ng102'),k0,t17)
    + gshed(ng101,s2,t17) + gprodUp(gw1,s2,t17) - gprodDn(gw1,s2,t17)
-   + gprodUp(gw2,s2,t17) - gprodDn(gw2,s2,t17)
-   - qin_sr_rt(('ng101','ng102'),s2,t17) = 0
+   + gprodUp(gw2,s2,t17) - gprodDn(gw2,s2,t17) + gprodUp(gw3,s2,t17)
+   - gprodDn(gw3,s2,t17) - qin_sr_rt(('ng101','ng102'),s2,t17) = 0
  gas_balance_rt(ng101,s2,t18): qin_sr(('ng101','ng102'),k0,t18)
    + gshed(ng101,s2,t18) + gprodUp(gw1,s2,t18) - gprodDn(gw1,s2,t18)
-   + gprodUp(gw2,s2,t18) - gprodDn(gw2,s2,t18)
-   - qin_sr_rt(('ng101','ng102'),s2,t18) = 0
+   + gprodUp(gw2,s2,t18) - gprodDn(gw2,s2,t18) + gprodUp(gw3,s2,t18)
+   - gprodDn(gw3,s2,t18) - qin_sr_rt(('ng101','ng102'),s2,t18) = 0
  gas_balance_rt(ng101,s2,t19): qin_sr(('ng101','ng102'),k0,t19)
    + gshed(ng101,s2,t19) + gprodUp(gw1,s2,t19) - gprodDn(gw1,s2,t19)
-   + gprodUp(gw2,s2,t19) - gprodDn(gw2,s2,t19)
-   - qin_sr_rt(('ng101','ng102'),s2,t19) = 0
+   + gprodUp(gw2,s2,t19) - gprodDn(gw2,s2,t19) + gprodUp(gw3,s2,t19)
+   - gprodDn(gw3,s2,t19) - qin_sr_rt(('ng101','ng102'),s2,t19) = 0
  gas_balance_rt(ng101,s2,t20): qin_sr(('ng101','ng102'),k0,t20)
    + gshed(ng101,s2,t20) + gprodUp(gw1,s2,t20) - gprodDn(gw1,s2,t20)
-   + gprodUp(gw2,s2,t20) - gprodDn(gw2,s2,t20)
-   - qin_sr_rt(('ng101','ng102'),s2,t20) = 0
+   + gprodUp(gw2,s2,t20) - gprodDn(gw2,s2,t20) + gprodUp(gw3,s2,t20)
+   - gprodDn(gw3,s2,t20) - qin_sr_rt(('ng101','ng102'),s2,t20) = 0
  gas_balance_rt(ng101,s2,t21): qin_sr(('ng101','ng102'),k0,t21)
    + gshed(ng101,s2,t21) + gprodUp(gw1,s2,t21) - gprodDn(gw1,s2,t21)
-   + gprodUp(gw2,s2,t21) - gprodDn(gw2,s2,t21)
-   - qin_sr_rt(('ng101','ng102'),s2,t21) = 0
+   + gprodUp(gw2,s2,t21) - gprodDn(gw2,s2,t21) + gprodUp(gw3,s2,t21)
+   - gprodDn(gw3,s2,t21) - qin_sr_rt(('ng101','ng102'),s2,t21) = 0
  gas_balance_rt(ng101,s2,t22): qin_sr(('ng101','ng102'),k0,t22)
    + gshed(ng101,s2,t22) + gprodUp(gw1,s2,t22) - gprodDn(gw1,s2,t22)
-   + gprodUp(gw2,s2,t22) - gprodDn(gw2,s2,t22)
-   - qin_sr_rt(('ng101','ng102'),s2,t22) = 0
+   + gprodUp(gw2,s2,t22) - gprodDn(gw2,s2,t22) + gprodUp(gw3,s2,t22)
+   - gprodDn(gw3,s2,t22) - qin_sr_rt(('ng101','ng102'),s2,t22) = 0
  gas_balance_rt(ng101,s2,t23): qin_sr(('ng101','ng102'),k0,t23)
    + gshed(ng101,s2,t23) + gprodUp(gw1,s2,t23) - gprodDn(gw1,s2,t23)
-   + gprodUp(gw2,s2,t23) - gprodDn(gw2,s2,t23)
-   - qin_sr_rt(('ng101','ng102'),s2,t23) = 0
+   + gprodUp(gw2,s2,t23) - gprodDn(gw2,s2,t23) + gprodUp(gw3,s2,t23)
+   - gprodDn(gw3,s2,t23) - qin_sr_rt(('ng101','ng102'),s2,t23) = 0
  gas_balance_rt(ng101,s2,t24): qin_sr(('ng101','ng102'),k0,t24)
    + gshed(ng101,s2,t24) + gprodUp(gw1,s2,t24) - gprodDn(gw1,s2,t24)
-   + gprodUp(gw2,s2,t24) - gprodDn(gw2,s2,t24)
-   - qin_sr_rt(('ng101','ng102'),s2,t24) = 0
+   + gprodUp(gw2,s2,t24) - gprodDn(gw2,s2,t24) + gprodUp(gw3,s2,t24)
+   - gprodDn(gw3,s2,t24) - qin_sr_rt(('ng101','ng102'),s2,t24) = 0
  gas_balance_rt(ng102,s1,t1): - 8 RUp(g1,s1,t1) + 8 RDn(g1,s1,t1)
    - 8 RUpSC(g1,s1,t1) + 8 RDnSC(g1,s1,t1)
    - qout_sr(('ng101','ng102'),k0,t1) + gshed(ng102,s1,t1)
@@ -18128,2953 +19400,3289 @@ SOS
  s1197:  S1 :: mu_gprod_max(gw2,k2,t22):1 SOS1_gprod_max(gw2,k2,t22):2
  s1198:  S1 :: mu_gprod_max(gw2,k2,t23):1 SOS1_gprod_max(gw2,k2,t23):2
  s1199:  S1 :: mu_gprod_max(gw2,k2,t24):1 SOS1_gprod_max(gw2,k2,t24):2
- s1200:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t1):1
+ s1200:  S1 :: mu_gprod_max(gw3,k0,t1):1 SOS1_gprod_max(gw3,k0,t1):2
+ s1201:  S1 :: mu_gprod_max(gw3,k0,t2):1 SOS1_gprod_max(gw3,k0,t2):2
+ s1202:  S1 :: mu_gprod_max(gw3,k0,t3):1 SOS1_gprod_max(gw3,k0,t3):2
+ s1203:  S1 :: mu_gprod_max(gw3,k0,t4):1 SOS1_gprod_max(gw3,k0,t4):2
+ s1204:  S1 :: mu_gprod_max(gw3,k0,t5):1 SOS1_gprod_max(gw3,k0,t5):2
+ s1205:  S1 :: mu_gprod_max(gw3,k0,t6):1 SOS1_gprod_max(gw3,k0,t6):2
+ s1206:  S1 :: mu_gprod_max(gw3,k0,t7):1 SOS1_gprod_max(gw3,k0,t7):2
+ s1207:  S1 :: mu_gprod_max(gw3,k0,t8):1 SOS1_gprod_max(gw3,k0,t8):2
+ s1208:  S1 :: mu_gprod_max(gw3,k0,t9):1 SOS1_gprod_max(gw3,k0,t9):2
+ s1209:  S1 :: mu_gprod_max(gw3,k0,t10):1 SOS1_gprod_max(gw3,k0,t10):2
+ s1210:  S1 :: mu_gprod_max(gw3,k0,t11):1 SOS1_gprod_max(gw3,k0,t11):2
+ s1211:  S1 :: mu_gprod_max(gw3,k0,t12):1 SOS1_gprod_max(gw3,k0,t12):2
+ s1212:  S1 :: mu_gprod_max(gw3,k0,t13):1 SOS1_gprod_max(gw3,k0,t13):2
+ s1213:  S1 :: mu_gprod_max(gw3,k0,t14):1 SOS1_gprod_max(gw3,k0,t14):2
+ s1214:  S1 :: mu_gprod_max(gw3,k0,t15):1 SOS1_gprod_max(gw3,k0,t15):2
+ s1215:  S1 :: mu_gprod_max(gw3,k0,t16):1 SOS1_gprod_max(gw3,k0,t16):2
+ s1216:  S1 :: mu_gprod_max(gw3,k0,t17):1 SOS1_gprod_max(gw3,k0,t17):2
+ s1217:  S1 :: mu_gprod_max(gw3,k0,t18):1 SOS1_gprod_max(gw3,k0,t18):2
+ s1218:  S1 :: mu_gprod_max(gw3,k0,t19):1 SOS1_gprod_max(gw3,k0,t19):2
+ s1219:  S1 :: mu_gprod_max(gw3,k0,t20):1 SOS1_gprod_max(gw3,k0,t20):2
+ s1220:  S1 :: mu_gprod_max(gw3,k0,t21):1 SOS1_gprod_max(gw3,k0,t21):2
+ s1221:  S1 :: mu_gprod_max(gw3,k0,t22):1 SOS1_gprod_max(gw3,k0,t22):2
+ s1222:  S1 :: mu_gprod_max(gw3,k0,t23):1 SOS1_gprod_max(gw3,k0,t23):2
+ s1223:  S1 :: mu_gprod_max(gw3,k0,t24):1 SOS1_gprod_max(gw3,k0,t24):2
+ s1224:  S1 :: mu_gprod_max(gw3,k1,t1):1 SOS1_gprod_max(gw3,k1,t1):2
+ s1225:  S1 :: mu_gprod_max(gw3,k1,t2):1 SOS1_gprod_max(gw3,k1,t2):2
+ s1226:  S1 :: mu_gprod_max(gw3,k1,t3):1 SOS1_gprod_max(gw3,k1,t3):2
+ s1227:  S1 :: mu_gprod_max(gw3,k1,t4):1 SOS1_gprod_max(gw3,k1,t4):2
+ s1228:  S1 :: mu_gprod_max(gw3,k1,t5):1 SOS1_gprod_max(gw3,k1,t5):2
+ s1229:  S1 :: mu_gprod_max(gw3,k1,t6):1 SOS1_gprod_max(gw3,k1,t6):2
+ s1230:  S1 :: mu_gprod_max(gw3,k1,t7):1 SOS1_gprod_max(gw3,k1,t7):2
+ s1231:  S1 :: mu_gprod_max(gw3,k1,t8):1 SOS1_gprod_max(gw3,k1,t8):2
+ s1232:  S1 :: mu_gprod_max(gw3,k1,t9):1 SOS1_gprod_max(gw3,k1,t9):2
+ s1233:  S1 :: mu_gprod_max(gw3,k1,t10):1 SOS1_gprod_max(gw3,k1,t10):2
+ s1234:  S1 :: mu_gprod_max(gw3,k1,t11):1 SOS1_gprod_max(gw3,k1,t11):2
+ s1235:  S1 :: mu_gprod_max(gw3,k1,t12):1 SOS1_gprod_max(gw3,k1,t12):2
+ s1236:  S1 :: mu_gprod_max(gw3,k1,t13):1 SOS1_gprod_max(gw3,k1,t13):2
+ s1237:  S1 :: mu_gprod_max(gw3,k1,t14):1 SOS1_gprod_max(gw3,k1,t14):2
+ s1238:  S1 :: mu_gprod_max(gw3,k1,t15):1 SOS1_gprod_max(gw3,k1,t15):2
+ s1239:  S1 :: mu_gprod_max(gw3,k1,t16):1 SOS1_gprod_max(gw3,k1,t16):2
+ s1240:  S1 :: mu_gprod_max(gw3,k1,t17):1 SOS1_gprod_max(gw3,k1,t17):2
+ s1241:  S1 :: mu_gprod_max(gw3,k1,t18):1 SOS1_gprod_max(gw3,k1,t18):2
+ s1242:  S1 :: mu_gprod_max(gw3,k1,t19):1 SOS1_gprod_max(gw3,k1,t19):2
+ s1243:  S1 :: mu_gprod_max(gw3,k1,t20):1 SOS1_gprod_max(gw3,k1,t20):2
+ s1244:  S1 :: mu_gprod_max(gw3,k1,t21):1 SOS1_gprod_max(gw3,k1,t21):2
+ s1245:  S1 :: mu_gprod_max(gw3,k1,t22):1 SOS1_gprod_max(gw3,k1,t22):2
+ s1246:  S1 :: mu_gprod_max(gw3,k1,t23):1 SOS1_gprod_max(gw3,k1,t23):2
+ s1247:  S1 :: mu_gprod_max(gw3,k1,t24):1 SOS1_gprod_max(gw3,k1,t24):2
+ s1248:  S1 :: mu_gprod_max(gw3,k2,t1):1 SOS1_gprod_max(gw3,k2,t1):2
+ s1249:  S1 :: mu_gprod_max(gw3,k2,t2):1 SOS1_gprod_max(gw3,k2,t2):2
+ s1250:  S1 :: mu_gprod_max(gw3,k2,t3):1 SOS1_gprod_max(gw3,k2,t3):2
+ s1251:  S1 :: mu_gprod_max(gw3,k2,t4):1 SOS1_gprod_max(gw3,k2,t4):2
+ s1252:  S1 :: mu_gprod_max(gw3,k2,t5):1 SOS1_gprod_max(gw3,k2,t5):2
+ s1253:  S1 :: mu_gprod_max(gw3,k2,t6):1 SOS1_gprod_max(gw3,k2,t6):2
+ s1254:  S1 :: mu_gprod_max(gw3,k2,t7):1 SOS1_gprod_max(gw3,k2,t7):2
+ s1255:  S1 :: mu_gprod_max(gw3,k2,t8):1 SOS1_gprod_max(gw3,k2,t8):2
+ s1256:  S1 :: mu_gprod_max(gw3,k2,t9):1 SOS1_gprod_max(gw3,k2,t9):2
+ s1257:  S1 :: mu_gprod_max(gw3,k2,t10):1 SOS1_gprod_max(gw3,k2,t10):2
+ s1258:  S1 :: mu_gprod_max(gw3,k2,t11):1 SOS1_gprod_max(gw3,k2,t11):2
+ s1259:  S1 :: mu_gprod_max(gw3,k2,t12):1 SOS1_gprod_max(gw3,k2,t12):2
+ s1260:  S1 :: mu_gprod_max(gw3,k2,t13):1 SOS1_gprod_max(gw3,k2,t13):2
+ s1261:  S1 :: mu_gprod_max(gw3,k2,t14):1 SOS1_gprod_max(gw3,k2,t14):2
+ s1262:  S1 :: mu_gprod_max(gw3,k2,t15):1 SOS1_gprod_max(gw3,k2,t15):2
+ s1263:  S1 :: mu_gprod_max(gw3,k2,t16):1 SOS1_gprod_max(gw3,k2,t16):2
+ s1264:  S1 :: mu_gprod_max(gw3,k2,t17):1 SOS1_gprod_max(gw3,k2,t17):2
+ s1265:  S1 :: mu_gprod_max(gw3,k2,t18):1 SOS1_gprod_max(gw3,k2,t18):2
+ s1266:  S1 :: mu_gprod_max(gw3,k2,t19):1 SOS1_gprod_max(gw3,k2,t19):2
+ s1267:  S1 :: mu_gprod_max(gw3,k2,t20):1 SOS1_gprod_max(gw3,k2,t20):2
+ s1268:  S1 :: mu_gprod_max(gw3,k2,t21):1 SOS1_gprod_max(gw3,k2,t21):2
+ s1269:  S1 :: mu_gprod_max(gw3,k2,t22):1 SOS1_gprod_max(gw3,k2,t22):2
+ s1270:  S1 :: mu_gprod_max(gw3,k2,t23):1 SOS1_gprod_max(gw3,k2,t23):2
+ s1271:  S1 :: mu_gprod_max(gw3,k2,t24):1 SOS1_gprod_max(gw3,k2,t24):2
+ s1272:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t1):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t1):2
- s1201:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t1):1
+ s1273:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t1):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t1):2
- s1202:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t1):1
+ s1274:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t1):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t1):2
- s1203:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t2):1
+ s1275:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t2):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t2):2
- s1204:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t2):1
+ s1276:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t2):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t2):2
- s1205:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t2):1
+ s1277:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t2):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t2):2
- s1206:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t3):1
+ s1278:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t3):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t3):2
- s1207:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t3):1
+ s1279:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t3):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t3):2
- s1208:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t3):1
+ s1280:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t3):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t3):2
- s1209:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t4):1
+ s1281:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t4):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t4):2
- s1210:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t4):1
+ s1282:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t4):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t4):2
- s1211:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t4):1
+ s1283:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t4):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t4):2
- s1212:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t5):1
+ s1284:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t5):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t5):2
- s1213:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t5):1
+ s1285:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t5):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t5):2
- s1214:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t5):1
+ s1286:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t5):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t5):2
- s1215:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t6):1
+ s1287:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t6):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t6):2
- s1216:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t6):1
+ s1288:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t6):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t6):2
- s1217:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t6):1
+ s1289:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t6):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t6):2
- s1218:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t7):1
+ s1290:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t7):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t7):2
- s1219:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t7):1
+ s1291:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t7):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t7):2
- s1220:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t7):1
+ s1292:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t7):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t7):2
- s1221:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t8):1
+ s1293:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t8):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t8):2
- s1222:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t8):1
+ s1294:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t8):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t8):2
- s1223:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t8):1
+ s1295:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t8):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t8):2
- s1224:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t9):1
+ s1296:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t9):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t9):2
- s1225:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t9):1
+ s1297:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t9):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t9):2
- s1226:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t9):1
+ s1298:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t9):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t9):2
- s1227:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t10):1
+ s1299:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t10):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t10):2
- s1228:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t10):1
+ s1300:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t10):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t10):2
- s1229:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t10):1
+ s1301:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t10):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t10):2
- s1230:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t11):1
+ s1302:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t11):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t11):2
- s1231:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t11):1
+ s1303:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t11):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t11):2
- s1232:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t11):1
+ s1304:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t11):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t11):2
- s1233:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t12):1
+ s1305:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t12):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t12):2
- s1234:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t12):1
+ s1306:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t12):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t12):2
- s1235:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t12):1
+ s1307:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t12):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t12):2
- s1236:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t13):1
+ s1308:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t13):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t13):2
- s1237:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t13):1
+ s1309:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t13):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t13):2
- s1238:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t13):1
+ s1310:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t13):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t13):2
- s1239:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t14):1
+ s1311:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t14):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t14):2
- s1240:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t14):1
+ s1312:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t14):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t14):2
- s1241:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t14):1
+ s1313:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t14):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t14):2
- s1242:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t15):1
+ s1314:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t15):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t15):2
- s1243:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t15):1
+ s1315:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t15):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t15):2
- s1244:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t15):1
+ s1316:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t15):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t15):2
- s1245:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t16):1
+ s1317:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t16):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t16):2
- s1246:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t16):1
+ s1318:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t16):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t16):2
- s1247:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t16):1
+ s1319:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t16):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t16):2
- s1248:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t17):1
+ s1320:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t17):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t17):2
- s1249:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t17):1
+ s1321:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t17):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t17):2
- s1250:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t17):1
+ s1322:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t17):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t17):2
- s1251:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t18):1
+ s1323:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t18):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t18):2
- s1252:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t18):1
+ s1324:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t18):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t18):2
- s1253:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t18):1
+ s1325:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t18):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t18):2
- s1254:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t19):1
+ s1326:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t19):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t19):2
- s1255:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t19):1
+ s1327:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t19):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t19):2
- s1256:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t19):1
+ s1328:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t19):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t19):2
- s1257:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t20):1
+ s1329:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t20):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t20):2
- s1258:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t20):1
+ s1330:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t20):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t20):2
- s1259:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t20):1
+ s1331:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t20):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t20):2
- s1260:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t21):1
+ s1332:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t21):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t21):2
- s1261:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t21):1
+ s1333:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t21):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t21):2
- s1262:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t21):1
+ s1334:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t21):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t21):2
- s1263:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t22):1
+ s1335:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t22):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t22):2
- s1264:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t22):1
+ s1336:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t22):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t22):2
- s1265:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t22):1
+ s1337:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t22):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t22):2
- s1266:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t23):1
+ s1338:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t23):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t23):2
- s1267:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t23):1
+ s1339:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t23):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t23):2
- s1268:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t23):1
+ s1340:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t23):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t23):2
- s1269:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t24):1
+ s1341:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k0,t24):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k0,t24):2
- s1270:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t24):1
+ s1342:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k1,t24):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k1,t24):2
- s1271:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t24):1
+ s1343:  S1 :: mu_gflow_sr_limit(('ng101','ng102'),k2,t24):1
      SOS1_gflow_sr_limit(('ng101','ng102'),k2,t24):2
- s1272:  S1 :: mu_gsinMax(gs1,t1,k0):1 SOS1_gsinMax(gs1,t1,k0):2
- s1273:  S1 :: mu_gsoutMax(gs1,t1,k0):1 SOS1_gsoutMax(gs1,t1,k0):2
- s1274:  S1 :: mu_gstore_max(gs1,t1,k0):1 SOS1_gstore_max(gs1,t1,k0):2
- s1275:  S1 :: mu_gstore_min(gs1,t1,k0):1 SOS1_gstore_min(gs1,t1,k0):2
- s1276:  S1 :: mu_gsinMax(gs1,t2,k0):1 SOS1_gsinMax(gs1,t2,k0):2
- s1277:  S1 :: mu_gsoutMax(gs1,t2,k0):1 SOS1_gsoutMax(gs1,t2,k0):2
- s1278:  S1 :: mu_gstore_max(gs1,t2,k0):1 SOS1_gstore_max(gs1,t2,k0):2
- s1279:  S1 :: mu_gstore_min(gs1,t2,k0):1 SOS1_gstore_min(gs1,t2,k0):2
- s1280:  S1 :: mu_gsinMax(gs1,t3,k0):1 SOS1_gsinMax(gs1,t3,k0):2
- s1281:  S1 :: mu_gsoutMax(gs1,t3,k0):1 SOS1_gsoutMax(gs1,t3,k0):2
- s1282:  S1 :: mu_gstore_max(gs1,t3,k0):1 SOS1_gstore_max(gs1,t3,k0):2
- s1283:  S1 :: mu_gstore_min(gs1,t3,k0):1 SOS1_gstore_min(gs1,t3,k0):2
- s1284:  S1 :: mu_gsinMax(gs1,t4,k0):1 SOS1_gsinMax(gs1,t4,k0):2
- s1285:  S1 :: mu_gsoutMax(gs1,t4,k0):1 SOS1_gsoutMax(gs1,t4,k0):2
- s1286:  S1 :: mu_gstore_max(gs1,t4,k0):1 SOS1_gstore_max(gs1,t4,k0):2
- s1287:  S1 :: mu_gstore_min(gs1,t4,k0):1 SOS1_gstore_min(gs1,t4,k0):2
- s1288:  S1 :: mu_gsinMax(gs1,t5,k0):1 SOS1_gsinMax(gs1,t5,k0):2
- s1289:  S1 :: mu_gsoutMax(gs1,t5,k0):1 SOS1_gsoutMax(gs1,t5,k0):2
- s1290:  S1 :: mu_gstore_max(gs1,t5,k0):1 SOS1_gstore_max(gs1,t5,k0):2
- s1291:  S1 :: mu_gstore_min(gs1,t5,k0):1 SOS1_gstore_min(gs1,t5,k0):2
- s1292:  S1 :: mu_gsinMax(gs1,t6,k0):1 SOS1_gsinMax(gs1,t6,k0):2
- s1293:  S1 :: mu_gsoutMax(gs1,t6,k0):1 SOS1_gsoutMax(gs1,t6,k0):2
- s1294:  S1 :: mu_gstore_max(gs1,t6,k0):1 SOS1_gstore_max(gs1,t6,k0):2
- s1295:  S1 :: mu_gstore_min(gs1,t6,k0):1 SOS1_gstore_min(gs1,t6,k0):2
- s1296:  S1 :: mu_gsinMax(gs1,t7,k0):1 SOS1_gsinMax(gs1,t7,k0):2
- s1297:  S1 :: mu_gsoutMax(gs1,t7,k0):1 SOS1_gsoutMax(gs1,t7,k0):2
- s1298:  S1 :: mu_gstore_max(gs1,t7,k0):1 SOS1_gstore_max(gs1,t7,k0):2
- s1299:  S1 :: mu_gstore_min(gs1,t7,k0):1 SOS1_gstore_min(gs1,t7,k0):2
- s1300:  S1 :: mu_gsinMax(gs1,t8,k0):1 SOS1_gsinMax(gs1,t8,k0):2
- s1301:  S1 :: mu_gsoutMax(gs1,t8,k0):1 SOS1_gsoutMax(gs1,t8,k0):2
- s1302:  S1 :: mu_gstore_max(gs1,t8,k0):1 SOS1_gstore_max(gs1,t8,k0):2
- s1303:  S1 :: mu_gstore_min(gs1,t8,k0):1 SOS1_gstore_min(gs1,t8,k0):2
- s1304:  S1 :: mu_gsinMax(gs1,t9,k0):1 SOS1_gsinMax(gs1,t9,k0):2
- s1305:  S1 :: mu_gsoutMax(gs1,t9,k0):1 SOS1_gsoutMax(gs1,t9,k0):2
- s1306:  S1 :: mu_gstore_max(gs1,t9,k0):1 SOS1_gstore_max(gs1,t9,k0):2
- s1307:  S1 :: mu_gstore_min(gs1,t9,k0):1 SOS1_gstore_min(gs1,t9,k0):2
- s1308:  S1 :: mu_gsinMax(gs1,t10,k0):1 SOS1_gsinMax(gs1,t10,k0):2
- s1309:  S1 :: mu_gsoutMax(gs1,t10,k0):1 SOS1_gsoutMax(gs1,t10,k0):2
- s1310:  S1 :: mu_gstore_max(gs1,t10,k0):1 SOS1_gstore_max(gs1,t10,k0):2
- s1311:  S1 :: mu_gstore_min(gs1,t10,k0):1 SOS1_gstore_min(gs1,t10,k0):2
- s1312:  S1 :: mu_gsinMax(gs1,t11,k0):1 SOS1_gsinMax(gs1,t11,k0):2
- s1313:  S1 :: mu_gsoutMax(gs1,t11,k0):1 SOS1_gsoutMax(gs1,t11,k0):2
- s1314:  S1 :: mu_gstore_max(gs1,t11,k0):1 SOS1_gstore_max(gs1,t11,k0):2
- s1315:  S1 :: mu_gstore_min(gs1,t11,k0):1 SOS1_gstore_min(gs1,t11,k0):2
- s1316:  S1 :: mu_gsinMax(gs1,t12,k0):1 SOS1_gsinMax(gs1,t12,k0):2
- s1317:  S1 :: mu_gsoutMax(gs1,t12,k0):1 SOS1_gsoutMax(gs1,t12,k0):2
- s1318:  S1 :: mu_gstore_max(gs1,t12,k0):1 SOS1_gstore_max(gs1,t12,k0):2
- s1319:  S1 :: mu_gstore_min(gs1,t12,k0):1 SOS1_gstore_min(gs1,t12,k0):2
- s1320:  S1 :: mu_gsinMax(gs1,t13,k0):1 SOS1_gsinMax(gs1,t13,k0):2
- s1321:  S1 :: mu_gsoutMax(gs1,t13,k0):1 SOS1_gsoutMax(gs1,t13,k0):2
- s1322:  S1 :: mu_gstore_max(gs1,t13,k0):1 SOS1_gstore_max(gs1,t13,k0):2
- s1323:  S1 :: mu_gstore_min(gs1,t13,k0):1 SOS1_gstore_min(gs1,t13,k0):2
- s1324:  S1 :: mu_gsinMax(gs1,t14,k0):1 SOS1_gsinMax(gs1,t14,k0):2
- s1325:  S1 :: mu_gsoutMax(gs1,t14,k0):1 SOS1_gsoutMax(gs1,t14,k0):2
- s1326:  S1 :: mu_gstore_max(gs1,t14,k0):1 SOS1_gstore_max(gs1,t14,k0):2
- s1327:  S1 :: mu_gstore_min(gs1,t14,k0):1 SOS1_gstore_min(gs1,t14,k0):2
- s1328:  S1 :: mu_gsinMax(gs1,t15,k0):1 SOS1_gsinMax(gs1,t15,k0):2
- s1329:  S1 :: mu_gsoutMax(gs1,t15,k0):1 SOS1_gsoutMax(gs1,t15,k0):2
- s1330:  S1 :: mu_gstore_max(gs1,t15,k0):1 SOS1_gstore_max(gs1,t15,k0):2
- s1331:  S1 :: mu_gstore_min(gs1,t15,k0):1 SOS1_gstore_min(gs1,t15,k0):2
- s1332:  S1 :: mu_gsinMax(gs1,t16,k0):1 SOS1_gsinMax(gs1,t16,k0):2
- s1333:  S1 :: mu_gsoutMax(gs1,t16,k0):1 SOS1_gsoutMax(gs1,t16,k0):2
- s1334:  S1 :: mu_gstore_max(gs1,t16,k0):1 SOS1_gstore_max(gs1,t16,k0):2
- s1335:  S1 :: mu_gstore_min(gs1,t16,k0):1 SOS1_gstore_min(gs1,t16,k0):2
- s1336:  S1 :: mu_gsinMax(gs1,t17,k0):1 SOS1_gsinMax(gs1,t17,k0):2
- s1337:  S1 :: mu_gsoutMax(gs1,t17,k0):1 SOS1_gsoutMax(gs1,t17,k0):2
- s1338:  S1 :: mu_gstore_max(gs1,t17,k0):1 SOS1_gstore_max(gs1,t17,k0):2
- s1339:  S1 :: mu_gstore_min(gs1,t17,k0):1 SOS1_gstore_min(gs1,t17,k0):2
- s1340:  S1 :: mu_gsinMax(gs1,t18,k0):1 SOS1_gsinMax(gs1,t18,k0):2
- s1341:  S1 :: mu_gsoutMax(gs1,t18,k0):1 SOS1_gsoutMax(gs1,t18,k0):2
- s1342:  S1 :: mu_gstore_max(gs1,t18,k0):1 SOS1_gstore_max(gs1,t18,k0):2
- s1343:  S1 :: mu_gstore_min(gs1,t18,k0):1 SOS1_gstore_min(gs1,t18,k0):2
- s1344:  S1 :: mu_gsinMax(gs1,t19,k0):1 SOS1_gsinMax(gs1,t19,k0):2
- s1345:  S1 :: mu_gsoutMax(gs1,t19,k0):1 SOS1_gsoutMax(gs1,t19,k0):2
- s1346:  S1 :: mu_gstore_max(gs1,t19,k0):1 SOS1_gstore_max(gs1,t19,k0):2
- s1347:  S1 :: mu_gstore_min(gs1,t19,k0):1 SOS1_gstore_min(gs1,t19,k0):2
- s1348:  S1 :: mu_gsinMax(gs1,t20,k0):1 SOS1_gsinMax(gs1,t20,k0):2
- s1349:  S1 :: mu_gsoutMax(gs1,t20,k0):1 SOS1_gsoutMax(gs1,t20,k0):2
- s1350:  S1 :: mu_gstore_max(gs1,t20,k0):1 SOS1_gstore_max(gs1,t20,k0):2
- s1351:  S1 :: mu_gstore_min(gs1,t20,k0):1 SOS1_gstore_min(gs1,t20,k0):2
- s1352:  S1 :: mu_gsinMax(gs1,t21,k0):1 SOS1_gsinMax(gs1,t21,k0):2
- s1353:  S1 :: mu_gsoutMax(gs1,t21,k0):1 SOS1_gsoutMax(gs1,t21,k0):2
- s1354:  S1 :: mu_gstore_max(gs1,t21,k0):1 SOS1_gstore_max(gs1,t21,k0):2
- s1355:  S1 :: mu_gstore_min(gs1,t21,k0):1 SOS1_gstore_min(gs1,t21,k0):2
- s1356:  S1 :: mu_gsinMax(gs1,t22,k0):1 SOS1_gsinMax(gs1,t22,k0):2
- s1357:  S1 :: mu_gsoutMax(gs1,t22,k0):1 SOS1_gsoutMax(gs1,t22,k0):2
- s1358:  S1 :: mu_gstore_max(gs1,t22,k0):1 SOS1_gstore_max(gs1,t22,k0):2
- s1359:  S1 :: mu_gstore_min(gs1,t22,k0):1 SOS1_gstore_min(gs1,t22,k0):2
- s1360:  S1 :: mu_gsinMax(gs1,t23,k0):1 SOS1_gsinMax(gs1,t23,k0):2
- s1361:  S1 :: mu_gsoutMax(gs1,t23,k0):1 SOS1_gsoutMax(gs1,t23,k0):2
- s1362:  S1 :: mu_gstore_max(gs1,t23,k0):1 SOS1_gstore_max(gs1,t23,k0):2
- s1363:  S1 :: mu_gstore_min(gs1,t23,k0):1 SOS1_gstore_min(gs1,t23,k0):2
- s1364:  S1 :: mu_gsinMax(gs1,t24,k0):1 SOS1_gsinMax(gs1,t24,k0):2
- s1365:  S1 :: mu_gsoutMax(gs1,t24,k0):1 SOS1_gsoutMax(gs1,t24,k0):2
- s1366:  S1 :: mu_gstore_max(gs1,t24,k0):1 SOS1_gstore_max(gs1,t24,k0):2
- s1367:  S1 :: mu_gstore_min(gs1,t24,k0):1 SOS1_gstore_min(gs1,t24,k0):2
- s1368:  S1 :: mu_gsinMax(gs1,t1,k1):1 SOS1_gsinMax(gs1,t1,k1):2
- s1369:  S1 :: mu_gsoutMax(gs1,t1,k1):1 SOS1_gsoutMax(gs1,t1,k1):2
- s1370:  S1 :: mu_gstore_max(gs1,t1,k1):1 SOS1_gstore_max(gs1,t1,k1):2
- s1371:  S1 :: mu_gstore_min(gs1,t1,k1):1 SOS1_gstore_min(gs1,t1,k1):2
- s1372:  S1 :: mu_gsinMax(gs1,t2,k1):1 SOS1_gsinMax(gs1,t2,k1):2
- s1373:  S1 :: mu_gsoutMax(gs1,t2,k1):1 SOS1_gsoutMax(gs1,t2,k1):2
- s1374:  S1 :: mu_gstore_max(gs1,t2,k1):1 SOS1_gstore_max(gs1,t2,k1):2
- s1375:  S1 :: mu_gstore_min(gs1,t2,k1):1 SOS1_gstore_min(gs1,t2,k1):2
- s1376:  S1 :: mu_gsinMax(gs1,t3,k1):1 SOS1_gsinMax(gs1,t3,k1):2
- s1377:  S1 :: mu_gsoutMax(gs1,t3,k1):1 SOS1_gsoutMax(gs1,t3,k1):2
- s1378:  S1 :: mu_gstore_max(gs1,t3,k1):1 SOS1_gstore_max(gs1,t3,k1):2
- s1379:  S1 :: mu_gstore_min(gs1,t3,k1):1 SOS1_gstore_min(gs1,t3,k1):2
- s1380:  S1 :: mu_gsinMax(gs1,t4,k1):1 SOS1_gsinMax(gs1,t4,k1):2
- s1381:  S1 :: mu_gsoutMax(gs1,t4,k1):1 SOS1_gsoutMax(gs1,t4,k1):2
- s1382:  S1 :: mu_gstore_max(gs1,t4,k1):1 SOS1_gstore_max(gs1,t4,k1):2
- s1383:  S1 :: mu_gstore_min(gs1,t4,k1):1 SOS1_gstore_min(gs1,t4,k1):2
- s1384:  S1 :: mu_gsinMax(gs1,t5,k1):1 SOS1_gsinMax(gs1,t5,k1):2
- s1385:  S1 :: mu_gsoutMax(gs1,t5,k1):1 SOS1_gsoutMax(gs1,t5,k1):2
- s1386:  S1 :: mu_gstore_max(gs1,t5,k1):1 SOS1_gstore_max(gs1,t5,k1):2
- s1387:  S1 :: mu_gstore_min(gs1,t5,k1):1 SOS1_gstore_min(gs1,t5,k1):2
- s1388:  S1 :: mu_gsinMax(gs1,t6,k1):1 SOS1_gsinMax(gs1,t6,k1):2
- s1389:  S1 :: mu_gsoutMax(gs1,t6,k1):1 SOS1_gsoutMax(gs1,t6,k1):2
- s1390:  S1 :: mu_gstore_max(gs1,t6,k1):1 SOS1_gstore_max(gs1,t6,k1):2
- s1391:  S1 :: mu_gstore_min(gs1,t6,k1):1 SOS1_gstore_min(gs1,t6,k1):2
- s1392:  S1 :: mu_gsinMax(gs1,t7,k1):1 SOS1_gsinMax(gs1,t7,k1):2
- s1393:  S1 :: mu_gsoutMax(gs1,t7,k1):1 SOS1_gsoutMax(gs1,t7,k1):2
- s1394:  S1 :: mu_gstore_max(gs1,t7,k1):1 SOS1_gstore_max(gs1,t7,k1):2
- s1395:  S1 :: mu_gstore_min(gs1,t7,k1):1 SOS1_gstore_min(gs1,t7,k1):2
- s1396:  S1 :: mu_gsinMax(gs1,t8,k1):1 SOS1_gsinMax(gs1,t8,k1):2
- s1397:  S1 :: mu_gsoutMax(gs1,t8,k1):1 SOS1_gsoutMax(gs1,t8,k1):2
- s1398:  S1 :: mu_gstore_max(gs1,t8,k1):1 SOS1_gstore_max(gs1,t8,k1):2
- s1399:  S1 :: mu_gstore_min(gs1,t8,k1):1 SOS1_gstore_min(gs1,t8,k1):2
- s1400:  S1 :: mu_gsinMax(gs1,t9,k1):1 SOS1_gsinMax(gs1,t9,k1):2
- s1401:  S1 :: mu_gsoutMax(gs1,t9,k1):1 SOS1_gsoutMax(gs1,t9,k1):2
- s1402:  S1 :: mu_gstore_max(gs1,t9,k1):1 SOS1_gstore_max(gs1,t9,k1):2
- s1403:  S1 :: mu_gstore_min(gs1,t9,k1):1 SOS1_gstore_min(gs1,t9,k1):2
- s1404:  S1 :: mu_gsinMax(gs1,t10,k1):1 SOS1_gsinMax(gs1,t10,k1):2
- s1405:  S1 :: mu_gsoutMax(gs1,t10,k1):1 SOS1_gsoutMax(gs1,t10,k1):2
- s1406:  S1 :: mu_gstore_max(gs1,t10,k1):1 SOS1_gstore_max(gs1,t10,k1):2
- s1407:  S1 :: mu_gstore_min(gs1,t10,k1):1 SOS1_gstore_min(gs1,t10,k1):2
- s1408:  S1 :: mu_gsinMax(gs1,t11,k1):1 SOS1_gsinMax(gs1,t11,k1):2
- s1409:  S1 :: mu_gsoutMax(gs1,t11,k1):1 SOS1_gsoutMax(gs1,t11,k1):2
- s1410:  S1 :: mu_gstore_max(gs1,t11,k1):1 SOS1_gstore_max(gs1,t11,k1):2
- s1411:  S1 :: mu_gstore_min(gs1,t11,k1):1 SOS1_gstore_min(gs1,t11,k1):2
- s1412:  S1 :: mu_gsinMax(gs1,t12,k1):1 SOS1_gsinMax(gs1,t12,k1):2
- s1413:  S1 :: mu_gsoutMax(gs1,t12,k1):1 SOS1_gsoutMax(gs1,t12,k1):2
- s1414:  S1 :: mu_gstore_max(gs1,t12,k1):1 SOS1_gstore_max(gs1,t12,k1):2
- s1415:  S1 :: mu_gstore_min(gs1,t12,k1):1 SOS1_gstore_min(gs1,t12,k1):2
- s1416:  S1 :: mu_gsinMax(gs1,t13,k1):1 SOS1_gsinMax(gs1,t13,k1):2
- s1417:  S1 :: mu_gsoutMax(gs1,t13,k1):1 SOS1_gsoutMax(gs1,t13,k1):2
- s1418:  S1 :: mu_gstore_max(gs1,t13,k1):1 SOS1_gstore_max(gs1,t13,k1):2
- s1419:  S1 :: mu_gstore_min(gs1,t13,k1):1 SOS1_gstore_min(gs1,t13,k1):2
- s1420:  S1 :: mu_gsinMax(gs1,t14,k1):1 SOS1_gsinMax(gs1,t14,k1):2
- s1421:  S1 :: mu_gsoutMax(gs1,t14,k1):1 SOS1_gsoutMax(gs1,t14,k1):2
- s1422:  S1 :: mu_gstore_max(gs1,t14,k1):1 SOS1_gstore_max(gs1,t14,k1):2
- s1423:  S1 :: mu_gstore_min(gs1,t14,k1):1 SOS1_gstore_min(gs1,t14,k1):2
- s1424:  S1 :: mu_gsinMax(gs1,t15,k1):1 SOS1_gsinMax(gs1,t15,k1):2
- s1425:  S1 :: mu_gsoutMax(gs1,t15,k1):1 SOS1_gsoutMax(gs1,t15,k1):2
- s1426:  S1 :: mu_gstore_max(gs1,t15,k1):1 SOS1_gstore_max(gs1,t15,k1):2
- s1427:  S1 :: mu_gstore_min(gs1,t15,k1):1 SOS1_gstore_min(gs1,t15,k1):2
- s1428:  S1 :: mu_gsinMax(gs1,t16,k1):1 SOS1_gsinMax(gs1,t16,k1):2
- s1429:  S1 :: mu_gsoutMax(gs1,t16,k1):1 SOS1_gsoutMax(gs1,t16,k1):2
- s1430:  S1 :: mu_gstore_max(gs1,t16,k1):1 SOS1_gstore_max(gs1,t16,k1):2
- s1431:  S1 :: mu_gstore_min(gs1,t16,k1):1 SOS1_gstore_min(gs1,t16,k1):2
- s1432:  S1 :: mu_gsinMax(gs1,t17,k1):1 SOS1_gsinMax(gs1,t17,k1):2
- s1433:  S1 :: mu_gsoutMax(gs1,t17,k1):1 SOS1_gsoutMax(gs1,t17,k1):2
- s1434:  S1 :: mu_gstore_max(gs1,t17,k1):1 SOS1_gstore_max(gs1,t17,k1):2
- s1435:  S1 :: mu_gstore_min(gs1,t17,k1):1 SOS1_gstore_min(gs1,t17,k1):2
- s1436:  S1 :: mu_gsinMax(gs1,t18,k1):1 SOS1_gsinMax(gs1,t18,k1):2
- s1437:  S1 :: mu_gsoutMax(gs1,t18,k1):1 SOS1_gsoutMax(gs1,t18,k1):2
- s1438:  S1 :: mu_gstore_max(gs1,t18,k1):1 SOS1_gstore_max(gs1,t18,k1):2
- s1439:  S1 :: mu_gstore_min(gs1,t18,k1):1 SOS1_gstore_min(gs1,t18,k1):2
- s1440:  S1 :: mu_gsinMax(gs1,t19,k1):1 SOS1_gsinMax(gs1,t19,k1):2
- s1441:  S1 :: mu_gsoutMax(gs1,t19,k1):1 SOS1_gsoutMax(gs1,t19,k1):2
- s1442:  S1 :: mu_gstore_max(gs1,t19,k1):1 SOS1_gstore_max(gs1,t19,k1):2
- s1443:  S1 :: mu_gstore_min(gs1,t19,k1):1 SOS1_gstore_min(gs1,t19,k1):2
- s1444:  S1 :: mu_gsinMax(gs1,t20,k1):1 SOS1_gsinMax(gs1,t20,k1):2
- s1445:  S1 :: mu_gsoutMax(gs1,t20,k1):1 SOS1_gsoutMax(gs1,t20,k1):2
- s1446:  S1 :: mu_gstore_max(gs1,t20,k1):1 SOS1_gstore_max(gs1,t20,k1):2
- s1447:  S1 :: mu_gstore_min(gs1,t20,k1):1 SOS1_gstore_min(gs1,t20,k1):2
- s1448:  S1 :: mu_gsinMax(gs1,t21,k1):1 SOS1_gsinMax(gs1,t21,k1):2
- s1449:  S1 :: mu_gsoutMax(gs1,t21,k1):1 SOS1_gsoutMax(gs1,t21,k1):2
- s1450:  S1 :: mu_gstore_max(gs1,t21,k1):1 SOS1_gstore_max(gs1,t21,k1):2
- s1451:  S1 :: mu_gstore_min(gs1,t21,k1):1 SOS1_gstore_min(gs1,t21,k1):2
- s1452:  S1 :: mu_gsinMax(gs1,t22,k1):1 SOS1_gsinMax(gs1,t22,k1):2
- s1453:  S1 :: mu_gsoutMax(gs1,t22,k1):1 SOS1_gsoutMax(gs1,t22,k1):2
- s1454:  S1 :: mu_gstore_max(gs1,t22,k1):1 SOS1_gstore_max(gs1,t22,k1):2
- s1455:  S1 :: mu_gstore_min(gs1,t22,k1):1 SOS1_gstore_min(gs1,t22,k1):2
- s1456:  S1 :: mu_gsinMax(gs1,t23,k1):1 SOS1_gsinMax(gs1,t23,k1):2
- s1457:  S1 :: mu_gsoutMax(gs1,t23,k1):1 SOS1_gsoutMax(gs1,t23,k1):2
- s1458:  S1 :: mu_gstore_max(gs1,t23,k1):1 SOS1_gstore_max(gs1,t23,k1):2
- s1459:  S1 :: mu_gstore_min(gs1,t23,k1):1 SOS1_gstore_min(gs1,t23,k1):2
- s1460:  S1 :: mu_gsinMax(gs1,t24,k1):1 SOS1_gsinMax(gs1,t24,k1):2
- s1461:  S1 :: mu_gsoutMax(gs1,t24,k1):1 SOS1_gsoutMax(gs1,t24,k1):2
- s1462:  S1 :: mu_gstore_max(gs1,t24,k1):1 SOS1_gstore_max(gs1,t24,k1):2
- s1463:  S1 :: mu_gstore_min(gs1,t24,k1):1 SOS1_gstore_min(gs1,t24,k1):2
- s1464:  S1 :: mu_gsinMax(gs1,t1,k2):1 SOS1_gsinMax(gs1,t1,k2):2
- s1465:  S1 :: mu_gsoutMax(gs1,t1,k2):1 SOS1_gsoutMax(gs1,t1,k2):2
- s1466:  S1 :: mu_gstore_max(gs1,t1,k2):1 SOS1_gstore_max(gs1,t1,k2):2
- s1467:  S1 :: mu_gstore_min(gs1,t1,k2):1 SOS1_gstore_min(gs1,t1,k2):2
- s1468:  S1 :: mu_gsinMax(gs1,t2,k2):1 SOS1_gsinMax(gs1,t2,k2):2
- s1469:  S1 :: mu_gsoutMax(gs1,t2,k2):1 SOS1_gsoutMax(gs1,t2,k2):2
- s1470:  S1 :: mu_gstore_max(gs1,t2,k2):1 SOS1_gstore_max(gs1,t2,k2):2
- s1471:  S1 :: mu_gstore_min(gs1,t2,k2):1 SOS1_gstore_min(gs1,t2,k2):2
- s1472:  S1 :: mu_gsinMax(gs1,t3,k2):1 SOS1_gsinMax(gs1,t3,k2):2
- s1473:  S1 :: mu_gsoutMax(gs1,t3,k2):1 SOS1_gsoutMax(gs1,t3,k2):2
- s1474:  S1 :: mu_gstore_max(gs1,t3,k2):1 SOS1_gstore_max(gs1,t3,k2):2
- s1475:  S1 :: mu_gstore_min(gs1,t3,k2):1 SOS1_gstore_min(gs1,t3,k2):2
- s1476:  S1 :: mu_gsinMax(gs1,t4,k2):1 SOS1_gsinMax(gs1,t4,k2):2
- s1477:  S1 :: mu_gsoutMax(gs1,t4,k2):1 SOS1_gsoutMax(gs1,t4,k2):2
- s1478:  S1 :: mu_gstore_max(gs1,t4,k2):1 SOS1_gstore_max(gs1,t4,k2):2
- s1479:  S1 :: mu_gstore_min(gs1,t4,k2):1 SOS1_gstore_min(gs1,t4,k2):2
- s1480:  S1 :: mu_gsinMax(gs1,t5,k2):1 SOS1_gsinMax(gs1,t5,k2):2
- s1481:  S1 :: mu_gsoutMax(gs1,t5,k2):1 SOS1_gsoutMax(gs1,t5,k2):2
- s1482:  S1 :: mu_gstore_max(gs1,t5,k2):1 SOS1_gstore_max(gs1,t5,k2):2
- s1483:  S1 :: mu_gstore_min(gs1,t5,k2):1 SOS1_gstore_min(gs1,t5,k2):2
- s1484:  S1 :: mu_gsinMax(gs1,t6,k2):1 SOS1_gsinMax(gs1,t6,k2):2
- s1485:  S1 :: mu_gsoutMax(gs1,t6,k2):1 SOS1_gsoutMax(gs1,t6,k2):2
- s1486:  S1 :: mu_gstore_max(gs1,t6,k2):1 SOS1_gstore_max(gs1,t6,k2):2
- s1487:  S1 :: mu_gstore_min(gs1,t6,k2):1 SOS1_gstore_min(gs1,t6,k2):2
- s1488:  S1 :: mu_gsinMax(gs1,t7,k2):1 SOS1_gsinMax(gs1,t7,k2):2
- s1489:  S1 :: mu_gsoutMax(gs1,t7,k2):1 SOS1_gsoutMax(gs1,t7,k2):2
- s1490:  S1 :: mu_gstore_max(gs1,t7,k2):1 SOS1_gstore_max(gs1,t7,k2):2
- s1491:  S1 :: mu_gstore_min(gs1,t7,k2):1 SOS1_gstore_min(gs1,t7,k2):2
- s1492:  S1 :: mu_gsinMax(gs1,t8,k2):1 SOS1_gsinMax(gs1,t8,k2):2
- s1493:  S1 :: mu_gsoutMax(gs1,t8,k2):1 SOS1_gsoutMax(gs1,t8,k2):2
- s1494:  S1 :: mu_gstore_max(gs1,t8,k2):1 SOS1_gstore_max(gs1,t8,k2):2
- s1495:  S1 :: mu_gstore_min(gs1,t8,k2):1 SOS1_gstore_min(gs1,t8,k2):2
- s1496:  S1 :: mu_gsinMax(gs1,t9,k2):1 SOS1_gsinMax(gs1,t9,k2):2
- s1497:  S1 :: mu_gsoutMax(gs1,t9,k2):1 SOS1_gsoutMax(gs1,t9,k2):2
- s1498:  S1 :: mu_gstore_max(gs1,t9,k2):1 SOS1_gstore_max(gs1,t9,k2):2
- s1499:  S1 :: mu_gstore_min(gs1,t9,k2):1 SOS1_gstore_min(gs1,t9,k2):2
- s1500:  S1 :: mu_gsinMax(gs1,t10,k2):1 SOS1_gsinMax(gs1,t10,k2):2
- s1501:  S1 :: mu_gsoutMax(gs1,t10,k2):1 SOS1_gsoutMax(gs1,t10,k2):2
- s1502:  S1 :: mu_gstore_max(gs1,t10,k2):1 SOS1_gstore_max(gs1,t10,k2):2
- s1503:  S1 :: mu_gstore_min(gs1,t10,k2):1 SOS1_gstore_min(gs1,t10,k2):2
- s1504:  S1 :: mu_gsinMax(gs1,t11,k2):1 SOS1_gsinMax(gs1,t11,k2):2
- s1505:  S1 :: mu_gsoutMax(gs1,t11,k2):1 SOS1_gsoutMax(gs1,t11,k2):2
- s1506:  S1 :: mu_gstore_max(gs1,t11,k2):1 SOS1_gstore_max(gs1,t11,k2):2
- s1507:  S1 :: mu_gstore_min(gs1,t11,k2):1 SOS1_gstore_min(gs1,t11,k2):2
- s1508:  S1 :: mu_gsinMax(gs1,t12,k2):1 SOS1_gsinMax(gs1,t12,k2):2
- s1509:  S1 :: mu_gsoutMax(gs1,t12,k2):1 SOS1_gsoutMax(gs1,t12,k2):2
- s1510:  S1 :: mu_gstore_max(gs1,t12,k2):1 SOS1_gstore_max(gs1,t12,k2):2
- s1511:  S1 :: mu_gstore_min(gs1,t12,k2):1 SOS1_gstore_min(gs1,t12,k2):2
- s1512:  S1 :: mu_gsinMax(gs1,t13,k2):1 SOS1_gsinMax(gs1,t13,k2):2
- s1513:  S1 :: mu_gsoutMax(gs1,t13,k2):1 SOS1_gsoutMax(gs1,t13,k2):2
- s1514:  S1 :: mu_gstore_max(gs1,t13,k2):1 SOS1_gstore_max(gs1,t13,k2):2
- s1515:  S1 :: mu_gstore_min(gs1,t13,k2):1 SOS1_gstore_min(gs1,t13,k2):2
- s1516:  S1 :: mu_gsinMax(gs1,t14,k2):1 SOS1_gsinMax(gs1,t14,k2):2
- s1517:  S1 :: mu_gsoutMax(gs1,t14,k2):1 SOS1_gsoutMax(gs1,t14,k2):2
- s1518:  S1 :: mu_gstore_max(gs1,t14,k2):1 SOS1_gstore_max(gs1,t14,k2):2
- s1519:  S1 :: mu_gstore_min(gs1,t14,k2):1 SOS1_gstore_min(gs1,t14,k2):2
- s1520:  S1 :: mu_gsinMax(gs1,t15,k2):1 SOS1_gsinMax(gs1,t15,k2):2
- s1521:  S1 :: mu_gsoutMax(gs1,t15,k2):1 SOS1_gsoutMax(gs1,t15,k2):2
- s1522:  S1 :: mu_gstore_max(gs1,t15,k2):1 SOS1_gstore_max(gs1,t15,k2):2
- s1523:  S1 :: mu_gstore_min(gs1,t15,k2):1 SOS1_gstore_min(gs1,t15,k2):2
- s1524:  S1 :: mu_gsinMax(gs1,t16,k2):1 SOS1_gsinMax(gs1,t16,k2):2
- s1525:  S1 :: mu_gsoutMax(gs1,t16,k2):1 SOS1_gsoutMax(gs1,t16,k2):2
- s1526:  S1 :: mu_gstore_max(gs1,t16,k2):1 SOS1_gstore_max(gs1,t16,k2):2
- s1527:  S1 :: mu_gstore_min(gs1,t16,k2):1 SOS1_gstore_min(gs1,t16,k2):2
- s1528:  S1 :: mu_gsinMax(gs1,t17,k2):1 SOS1_gsinMax(gs1,t17,k2):2
- s1529:  S1 :: mu_gsoutMax(gs1,t17,k2):1 SOS1_gsoutMax(gs1,t17,k2):2
- s1530:  S1 :: mu_gstore_max(gs1,t17,k2):1 SOS1_gstore_max(gs1,t17,k2):2
- s1531:  S1 :: mu_gstore_min(gs1,t17,k2):1 SOS1_gstore_min(gs1,t17,k2):2
- s1532:  S1 :: mu_gsinMax(gs1,t18,k2):1 SOS1_gsinMax(gs1,t18,k2):2
- s1533:  S1 :: mu_gsoutMax(gs1,t18,k2):1 SOS1_gsoutMax(gs1,t18,k2):2
- s1534:  S1 :: mu_gstore_max(gs1,t18,k2):1 SOS1_gstore_max(gs1,t18,k2):2
- s1535:  S1 :: mu_gstore_min(gs1,t18,k2):1 SOS1_gstore_min(gs1,t18,k2):2
- s1536:  S1 :: mu_gsinMax(gs1,t19,k2):1 SOS1_gsinMax(gs1,t19,k2):2
- s1537:  S1 :: mu_gsoutMax(gs1,t19,k2):1 SOS1_gsoutMax(gs1,t19,k2):2
- s1538:  S1 :: mu_gstore_max(gs1,t19,k2):1 SOS1_gstore_max(gs1,t19,k2):2
- s1539:  S1 :: mu_gstore_min(gs1,t19,k2):1 SOS1_gstore_min(gs1,t19,k2):2
- s1540:  S1 :: mu_gsinMax(gs1,t20,k2):1 SOS1_gsinMax(gs1,t20,k2):2
- s1541:  S1 :: mu_gsoutMax(gs1,t20,k2):1 SOS1_gsoutMax(gs1,t20,k2):2
- s1542:  S1 :: mu_gstore_max(gs1,t20,k2):1 SOS1_gstore_max(gs1,t20,k2):2
- s1543:  S1 :: mu_gstore_min(gs1,t20,k2):1 SOS1_gstore_min(gs1,t20,k2):2
- s1544:  S1 :: mu_gsinMax(gs1,t21,k2):1 SOS1_gsinMax(gs1,t21,k2):2
- s1545:  S1 :: mu_gsoutMax(gs1,t21,k2):1 SOS1_gsoutMax(gs1,t21,k2):2
- s1546:  S1 :: mu_gstore_max(gs1,t21,k2):1 SOS1_gstore_max(gs1,t21,k2):2
- s1547:  S1 :: mu_gstore_min(gs1,t21,k2):1 SOS1_gstore_min(gs1,t21,k2):2
- s1548:  S1 :: mu_gsinMax(gs1,t22,k2):1 SOS1_gsinMax(gs1,t22,k2):2
- s1549:  S1 :: mu_gsoutMax(gs1,t22,k2):1 SOS1_gsoutMax(gs1,t22,k2):2
- s1550:  S1 :: mu_gstore_max(gs1,t22,k2):1 SOS1_gstore_max(gs1,t22,k2):2
- s1551:  S1 :: mu_gstore_min(gs1,t22,k2):1 SOS1_gstore_min(gs1,t22,k2):2
- s1552:  S1 :: mu_gsinMax(gs1,t23,k2):1 SOS1_gsinMax(gs1,t23,k2):2
- s1553:  S1 :: mu_gsoutMax(gs1,t23,k2):1 SOS1_gsoutMax(gs1,t23,k2):2
- s1554:  S1 :: mu_gstore_max(gs1,t23,k2):1 SOS1_gstore_max(gs1,t23,k2):2
- s1555:  S1 :: mu_gstore_min(gs1,t23,k2):1 SOS1_gstore_min(gs1,t23,k2):2
- s1556:  S1 :: mu_gsinMax(gs1,t24,k2):1 SOS1_gsinMax(gs1,t24,k2):2
- s1557:  S1 :: mu_gsoutMax(gs1,t24,k2):1 SOS1_gsoutMax(gs1,t24,k2):2
- s1558:  S1 :: mu_gstore_max(gs1,t24,k2):1 SOS1_gstore_max(gs1,t24,k2):2
- s1559:  S1 :: mu_gstore_min(gs1,t24,k2):1 SOS1_gstore_min(gs1,t24,k2):2
- s1560:  S1 :: mu_gs_end(gs1,k0):1 SOS1_gs_end(gs1,k0):2
- s1561:  S1 :: muLB_gshed_da(ng101,k0,t1):1 SOS1_LB_gshed_da(ng101,k0,t1):2
- s1562:  S1 :: muLB_gshed_da(ng101,k1,t1):1 SOS1_LB_gshed_da(ng101,k1,t1):2
- s1563:  S1 :: muLB_gshed_da(ng101,k2,t1):1 SOS1_LB_gshed_da(ng101,k2,t1):2
- s1564:  S1 :: muLB_gshed_da(ng101,k0,t2):1 SOS1_LB_gshed_da(ng101,k0,t2):2
- s1565:  S1 :: muLB_gshed_da(ng101,k1,t2):1 SOS1_LB_gshed_da(ng101,k1,t2):2
- s1566:  S1 :: muLB_gshed_da(ng101,k2,t2):1 SOS1_LB_gshed_da(ng101,k2,t2):2
- s1567:  S1 :: muLB_gshed_da(ng101,k0,t3):1 SOS1_LB_gshed_da(ng101,k0,t3):2
- s1568:  S1 :: muLB_gshed_da(ng101,k1,t3):1 SOS1_LB_gshed_da(ng101,k1,t3):2
- s1569:  S1 :: muLB_gshed_da(ng101,k2,t3):1 SOS1_LB_gshed_da(ng101,k2,t3):2
- s1570:  S1 :: muLB_gshed_da(ng101,k0,t4):1 SOS1_LB_gshed_da(ng101,k0,t4):2
- s1571:  S1 :: muLB_gshed_da(ng101,k1,t4):1 SOS1_LB_gshed_da(ng101,k1,t4):2
- s1572:  S1 :: muLB_gshed_da(ng101,k2,t4):1 SOS1_LB_gshed_da(ng101,k2,t4):2
- s1573:  S1 :: muLB_gshed_da(ng101,k0,t5):1 SOS1_LB_gshed_da(ng101,k0,t5):2
- s1574:  S1 :: muLB_gshed_da(ng101,k1,t5):1 SOS1_LB_gshed_da(ng101,k1,t5):2
- s1575:  S1 :: muLB_gshed_da(ng101,k2,t5):1 SOS1_LB_gshed_da(ng101,k2,t5):2
- s1576:  S1 :: muLB_gshed_da(ng101,k0,t6):1 SOS1_LB_gshed_da(ng101,k0,t6):2
- s1577:  S1 :: muLB_gshed_da(ng101,k1,t6):1 SOS1_LB_gshed_da(ng101,k1,t6):2
- s1578:  S1 :: muLB_gshed_da(ng101,k2,t6):1 SOS1_LB_gshed_da(ng101,k2,t6):2
- s1579:  S1 :: muLB_gshed_da(ng101,k0,t7):1 SOS1_LB_gshed_da(ng101,k0,t7):2
- s1580:  S1 :: muLB_gshed_da(ng101,k1,t7):1 SOS1_LB_gshed_da(ng101,k1,t7):2
- s1581:  S1 :: muLB_gshed_da(ng101,k2,t7):1 SOS1_LB_gshed_da(ng101,k2,t7):2
- s1582:  S1 :: muLB_gshed_da(ng101,k0,t8):1 SOS1_LB_gshed_da(ng101,k0,t8):2
- s1583:  S1 :: muLB_gshed_da(ng101,k1,t8):1 SOS1_LB_gshed_da(ng101,k1,t8):2
- s1584:  S1 :: muLB_gshed_da(ng101,k2,t8):1 SOS1_LB_gshed_da(ng101,k2,t8):2
- s1585:  S1 :: muLB_gshed_da(ng101,k0,t9):1 SOS1_LB_gshed_da(ng101,k0,t9):2
- s1586:  S1 :: muLB_gshed_da(ng101,k1,t9):1 SOS1_LB_gshed_da(ng101,k1,t9):2
- s1587:  S1 :: muLB_gshed_da(ng101,k2,t9):1 SOS1_LB_gshed_da(ng101,k2,t9):2
- s1588:  S1 :: muLB_gshed_da(ng101,k0,t10):1
+ s1344:  S1 :: mu_gsinMax(gs1,t1,k0):1 SOS1_gsinMax(gs1,t1,k0):2
+ s1345:  S1 :: mu_gsoutMax(gs1,t1,k0):1 SOS1_gsoutMax(gs1,t1,k0):2
+ s1346:  S1 :: mu_gstore_max(gs1,t1,k0):1 SOS1_gstore_max(gs1,t1,k0):2
+ s1347:  S1 :: mu_gstore_min(gs1,t1,k0):1 SOS1_gstore_min(gs1,t1,k0):2
+ s1348:  S1 :: mu_gsinMax(gs1,t2,k0):1 SOS1_gsinMax(gs1,t2,k0):2
+ s1349:  S1 :: mu_gsoutMax(gs1,t2,k0):1 SOS1_gsoutMax(gs1,t2,k0):2
+ s1350:  S1 :: mu_gstore_max(gs1,t2,k0):1 SOS1_gstore_max(gs1,t2,k0):2
+ s1351:  S1 :: mu_gstore_min(gs1,t2,k0):1 SOS1_gstore_min(gs1,t2,k0):2
+ s1352:  S1 :: mu_gsinMax(gs1,t3,k0):1 SOS1_gsinMax(gs1,t3,k0):2
+ s1353:  S1 :: mu_gsoutMax(gs1,t3,k0):1 SOS1_gsoutMax(gs1,t3,k0):2
+ s1354:  S1 :: mu_gstore_max(gs1,t3,k0):1 SOS1_gstore_max(gs1,t3,k0):2
+ s1355:  S1 :: mu_gstore_min(gs1,t3,k0):1 SOS1_gstore_min(gs1,t3,k0):2
+ s1356:  S1 :: mu_gsinMax(gs1,t4,k0):1 SOS1_gsinMax(gs1,t4,k0):2
+ s1357:  S1 :: mu_gsoutMax(gs1,t4,k0):1 SOS1_gsoutMax(gs1,t4,k0):2
+ s1358:  S1 :: mu_gstore_max(gs1,t4,k0):1 SOS1_gstore_max(gs1,t4,k0):2
+ s1359:  S1 :: mu_gstore_min(gs1,t4,k0):1 SOS1_gstore_min(gs1,t4,k0):2
+ s1360:  S1 :: mu_gsinMax(gs1,t5,k0):1 SOS1_gsinMax(gs1,t5,k0):2
+ s1361:  S1 :: mu_gsoutMax(gs1,t5,k0):1 SOS1_gsoutMax(gs1,t5,k0):2
+ s1362:  S1 :: mu_gstore_max(gs1,t5,k0):1 SOS1_gstore_max(gs1,t5,k0):2
+ s1363:  S1 :: mu_gstore_min(gs1,t5,k0):1 SOS1_gstore_min(gs1,t5,k0):2
+ s1364:  S1 :: mu_gsinMax(gs1,t6,k0):1 SOS1_gsinMax(gs1,t6,k0):2
+ s1365:  S1 :: mu_gsoutMax(gs1,t6,k0):1 SOS1_gsoutMax(gs1,t6,k0):2
+ s1366:  S1 :: mu_gstore_max(gs1,t6,k0):1 SOS1_gstore_max(gs1,t6,k0):2
+ s1367:  S1 :: mu_gstore_min(gs1,t6,k0):1 SOS1_gstore_min(gs1,t6,k0):2
+ s1368:  S1 :: mu_gsinMax(gs1,t7,k0):1 SOS1_gsinMax(gs1,t7,k0):2
+ s1369:  S1 :: mu_gsoutMax(gs1,t7,k0):1 SOS1_gsoutMax(gs1,t7,k0):2
+ s1370:  S1 :: mu_gstore_max(gs1,t7,k0):1 SOS1_gstore_max(gs1,t7,k0):2
+ s1371:  S1 :: mu_gstore_min(gs1,t7,k0):1 SOS1_gstore_min(gs1,t7,k0):2
+ s1372:  S1 :: mu_gsinMax(gs1,t8,k0):1 SOS1_gsinMax(gs1,t8,k0):2
+ s1373:  S1 :: mu_gsoutMax(gs1,t8,k0):1 SOS1_gsoutMax(gs1,t8,k0):2
+ s1374:  S1 :: mu_gstore_max(gs1,t8,k0):1 SOS1_gstore_max(gs1,t8,k0):2
+ s1375:  S1 :: mu_gstore_min(gs1,t8,k0):1 SOS1_gstore_min(gs1,t8,k0):2
+ s1376:  S1 :: mu_gsinMax(gs1,t9,k0):1 SOS1_gsinMax(gs1,t9,k0):2
+ s1377:  S1 :: mu_gsoutMax(gs1,t9,k0):1 SOS1_gsoutMax(gs1,t9,k0):2
+ s1378:  S1 :: mu_gstore_max(gs1,t9,k0):1 SOS1_gstore_max(gs1,t9,k0):2
+ s1379:  S1 :: mu_gstore_min(gs1,t9,k0):1 SOS1_gstore_min(gs1,t9,k0):2
+ s1380:  S1 :: mu_gsinMax(gs1,t10,k0):1 SOS1_gsinMax(gs1,t10,k0):2
+ s1381:  S1 :: mu_gsoutMax(gs1,t10,k0):1 SOS1_gsoutMax(gs1,t10,k0):2
+ s1382:  S1 :: mu_gstore_max(gs1,t10,k0):1 SOS1_gstore_max(gs1,t10,k0):2
+ s1383:  S1 :: mu_gstore_min(gs1,t10,k0):1 SOS1_gstore_min(gs1,t10,k0):2
+ s1384:  S1 :: mu_gsinMax(gs1,t11,k0):1 SOS1_gsinMax(gs1,t11,k0):2
+ s1385:  S1 :: mu_gsoutMax(gs1,t11,k0):1 SOS1_gsoutMax(gs1,t11,k0):2
+ s1386:  S1 :: mu_gstore_max(gs1,t11,k0):1 SOS1_gstore_max(gs1,t11,k0):2
+ s1387:  S1 :: mu_gstore_min(gs1,t11,k0):1 SOS1_gstore_min(gs1,t11,k0):2
+ s1388:  S1 :: mu_gsinMax(gs1,t12,k0):1 SOS1_gsinMax(gs1,t12,k0):2
+ s1389:  S1 :: mu_gsoutMax(gs1,t12,k0):1 SOS1_gsoutMax(gs1,t12,k0):2
+ s1390:  S1 :: mu_gstore_max(gs1,t12,k0):1 SOS1_gstore_max(gs1,t12,k0):2
+ s1391:  S1 :: mu_gstore_min(gs1,t12,k0):1 SOS1_gstore_min(gs1,t12,k0):2
+ s1392:  S1 :: mu_gsinMax(gs1,t13,k0):1 SOS1_gsinMax(gs1,t13,k0):2
+ s1393:  S1 :: mu_gsoutMax(gs1,t13,k0):1 SOS1_gsoutMax(gs1,t13,k0):2
+ s1394:  S1 :: mu_gstore_max(gs1,t13,k0):1 SOS1_gstore_max(gs1,t13,k0):2
+ s1395:  S1 :: mu_gstore_min(gs1,t13,k0):1 SOS1_gstore_min(gs1,t13,k0):2
+ s1396:  S1 :: mu_gsinMax(gs1,t14,k0):1 SOS1_gsinMax(gs1,t14,k0):2
+ s1397:  S1 :: mu_gsoutMax(gs1,t14,k0):1 SOS1_gsoutMax(gs1,t14,k0):2
+ s1398:  S1 :: mu_gstore_max(gs1,t14,k0):1 SOS1_gstore_max(gs1,t14,k0):2
+ s1399:  S1 :: mu_gstore_min(gs1,t14,k0):1 SOS1_gstore_min(gs1,t14,k0):2
+ s1400:  S1 :: mu_gsinMax(gs1,t15,k0):1 SOS1_gsinMax(gs1,t15,k0):2
+ s1401:  S1 :: mu_gsoutMax(gs1,t15,k0):1 SOS1_gsoutMax(gs1,t15,k0):2
+ s1402:  S1 :: mu_gstore_max(gs1,t15,k0):1 SOS1_gstore_max(gs1,t15,k0):2
+ s1403:  S1 :: mu_gstore_min(gs1,t15,k0):1 SOS1_gstore_min(gs1,t15,k0):2
+ s1404:  S1 :: mu_gsinMax(gs1,t16,k0):1 SOS1_gsinMax(gs1,t16,k0):2
+ s1405:  S1 :: mu_gsoutMax(gs1,t16,k0):1 SOS1_gsoutMax(gs1,t16,k0):2
+ s1406:  S1 :: mu_gstore_max(gs1,t16,k0):1 SOS1_gstore_max(gs1,t16,k0):2
+ s1407:  S1 :: mu_gstore_min(gs1,t16,k0):1 SOS1_gstore_min(gs1,t16,k0):2
+ s1408:  S1 :: mu_gsinMax(gs1,t17,k0):1 SOS1_gsinMax(gs1,t17,k0):2
+ s1409:  S1 :: mu_gsoutMax(gs1,t17,k0):1 SOS1_gsoutMax(gs1,t17,k0):2
+ s1410:  S1 :: mu_gstore_max(gs1,t17,k0):1 SOS1_gstore_max(gs1,t17,k0):2
+ s1411:  S1 :: mu_gstore_min(gs1,t17,k0):1 SOS1_gstore_min(gs1,t17,k0):2
+ s1412:  S1 :: mu_gsinMax(gs1,t18,k0):1 SOS1_gsinMax(gs1,t18,k0):2
+ s1413:  S1 :: mu_gsoutMax(gs1,t18,k0):1 SOS1_gsoutMax(gs1,t18,k0):2
+ s1414:  S1 :: mu_gstore_max(gs1,t18,k0):1 SOS1_gstore_max(gs1,t18,k0):2
+ s1415:  S1 :: mu_gstore_min(gs1,t18,k0):1 SOS1_gstore_min(gs1,t18,k0):2
+ s1416:  S1 :: mu_gsinMax(gs1,t19,k0):1 SOS1_gsinMax(gs1,t19,k0):2
+ s1417:  S1 :: mu_gsoutMax(gs1,t19,k0):1 SOS1_gsoutMax(gs1,t19,k0):2
+ s1418:  S1 :: mu_gstore_max(gs1,t19,k0):1 SOS1_gstore_max(gs1,t19,k0):2
+ s1419:  S1 :: mu_gstore_min(gs1,t19,k0):1 SOS1_gstore_min(gs1,t19,k0):2
+ s1420:  S1 :: mu_gsinMax(gs1,t20,k0):1 SOS1_gsinMax(gs1,t20,k0):2
+ s1421:  S1 :: mu_gsoutMax(gs1,t20,k0):1 SOS1_gsoutMax(gs1,t20,k0):2
+ s1422:  S1 :: mu_gstore_max(gs1,t20,k0):1 SOS1_gstore_max(gs1,t20,k0):2
+ s1423:  S1 :: mu_gstore_min(gs1,t20,k0):1 SOS1_gstore_min(gs1,t20,k0):2
+ s1424:  S1 :: mu_gsinMax(gs1,t21,k0):1 SOS1_gsinMax(gs1,t21,k0):2
+ s1425:  S1 :: mu_gsoutMax(gs1,t21,k0):1 SOS1_gsoutMax(gs1,t21,k0):2
+ s1426:  S1 :: mu_gstore_max(gs1,t21,k0):1 SOS1_gstore_max(gs1,t21,k0):2
+ s1427:  S1 :: mu_gstore_min(gs1,t21,k0):1 SOS1_gstore_min(gs1,t21,k0):2
+ s1428:  S1 :: mu_gsinMax(gs1,t22,k0):1 SOS1_gsinMax(gs1,t22,k0):2
+ s1429:  S1 :: mu_gsoutMax(gs1,t22,k0):1 SOS1_gsoutMax(gs1,t22,k0):2
+ s1430:  S1 :: mu_gstore_max(gs1,t22,k0):1 SOS1_gstore_max(gs1,t22,k0):2
+ s1431:  S1 :: mu_gstore_min(gs1,t22,k0):1 SOS1_gstore_min(gs1,t22,k0):2
+ s1432:  S1 :: mu_gsinMax(gs1,t23,k0):1 SOS1_gsinMax(gs1,t23,k0):2
+ s1433:  S1 :: mu_gsoutMax(gs1,t23,k0):1 SOS1_gsoutMax(gs1,t23,k0):2
+ s1434:  S1 :: mu_gstore_max(gs1,t23,k0):1 SOS1_gstore_max(gs1,t23,k0):2
+ s1435:  S1 :: mu_gstore_min(gs1,t23,k0):1 SOS1_gstore_min(gs1,t23,k0):2
+ s1436:  S1 :: mu_gsinMax(gs1,t24,k0):1 SOS1_gsinMax(gs1,t24,k0):2
+ s1437:  S1 :: mu_gsoutMax(gs1,t24,k0):1 SOS1_gsoutMax(gs1,t24,k0):2
+ s1438:  S1 :: mu_gstore_max(gs1,t24,k0):1 SOS1_gstore_max(gs1,t24,k0):2
+ s1439:  S1 :: mu_gstore_min(gs1,t24,k0):1 SOS1_gstore_min(gs1,t24,k0):2
+ s1440:  S1 :: mu_gsinMax(gs1,t1,k1):1 SOS1_gsinMax(gs1,t1,k1):2
+ s1441:  S1 :: mu_gsoutMax(gs1,t1,k1):1 SOS1_gsoutMax(gs1,t1,k1):2
+ s1442:  S1 :: mu_gstore_max(gs1,t1,k1):1 SOS1_gstore_max(gs1,t1,k1):2
+ s1443:  S1 :: mu_gstore_min(gs1,t1,k1):1 SOS1_gstore_min(gs1,t1,k1):2
+ s1444:  S1 :: mu_gsinMax(gs1,t2,k1):1 SOS1_gsinMax(gs1,t2,k1):2
+ s1445:  S1 :: mu_gsoutMax(gs1,t2,k1):1 SOS1_gsoutMax(gs1,t2,k1):2
+ s1446:  S1 :: mu_gstore_max(gs1,t2,k1):1 SOS1_gstore_max(gs1,t2,k1):2
+ s1447:  S1 :: mu_gstore_min(gs1,t2,k1):1 SOS1_gstore_min(gs1,t2,k1):2
+ s1448:  S1 :: mu_gsinMax(gs1,t3,k1):1 SOS1_gsinMax(gs1,t3,k1):2
+ s1449:  S1 :: mu_gsoutMax(gs1,t3,k1):1 SOS1_gsoutMax(gs1,t3,k1):2
+ s1450:  S1 :: mu_gstore_max(gs1,t3,k1):1 SOS1_gstore_max(gs1,t3,k1):2
+ s1451:  S1 :: mu_gstore_min(gs1,t3,k1):1 SOS1_gstore_min(gs1,t3,k1):2
+ s1452:  S1 :: mu_gsinMax(gs1,t4,k1):1 SOS1_gsinMax(gs1,t4,k1):2
+ s1453:  S1 :: mu_gsoutMax(gs1,t4,k1):1 SOS1_gsoutMax(gs1,t4,k1):2
+ s1454:  S1 :: mu_gstore_max(gs1,t4,k1):1 SOS1_gstore_max(gs1,t4,k1):2
+ s1455:  S1 :: mu_gstore_min(gs1,t4,k1):1 SOS1_gstore_min(gs1,t4,k1):2
+ s1456:  S1 :: mu_gsinMax(gs1,t5,k1):1 SOS1_gsinMax(gs1,t5,k1):2
+ s1457:  S1 :: mu_gsoutMax(gs1,t5,k1):1 SOS1_gsoutMax(gs1,t5,k1):2
+ s1458:  S1 :: mu_gstore_max(gs1,t5,k1):1 SOS1_gstore_max(gs1,t5,k1):2
+ s1459:  S1 :: mu_gstore_min(gs1,t5,k1):1 SOS1_gstore_min(gs1,t5,k1):2
+ s1460:  S1 :: mu_gsinMax(gs1,t6,k1):1 SOS1_gsinMax(gs1,t6,k1):2
+ s1461:  S1 :: mu_gsoutMax(gs1,t6,k1):1 SOS1_gsoutMax(gs1,t6,k1):2
+ s1462:  S1 :: mu_gstore_max(gs1,t6,k1):1 SOS1_gstore_max(gs1,t6,k1):2
+ s1463:  S1 :: mu_gstore_min(gs1,t6,k1):1 SOS1_gstore_min(gs1,t6,k1):2
+ s1464:  S1 :: mu_gsinMax(gs1,t7,k1):1 SOS1_gsinMax(gs1,t7,k1):2
+ s1465:  S1 :: mu_gsoutMax(gs1,t7,k1):1 SOS1_gsoutMax(gs1,t7,k1):2
+ s1466:  S1 :: mu_gstore_max(gs1,t7,k1):1 SOS1_gstore_max(gs1,t7,k1):2
+ s1467:  S1 :: mu_gstore_min(gs1,t7,k1):1 SOS1_gstore_min(gs1,t7,k1):2
+ s1468:  S1 :: mu_gsinMax(gs1,t8,k1):1 SOS1_gsinMax(gs1,t8,k1):2
+ s1469:  S1 :: mu_gsoutMax(gs1,t8,k1):1 SOS1_gsoutMax(gs1,t8,k1):2
+ s1470:  S1 :: mu_gstore_max(gs1,t8,k1):1 SOS1_gstore_max(gs1,t8,k1):2
+ s1471:  S1 :: mu_gstore_min(gs1,t8,k1):1 SOS1_gstore_min(gs1,t8,k1):2
+ s1472:  S1 :: mu_gsinMax(gs1,t9,k1):1 SOS1_gsinMax(gs1,t9,k1):2
+ s1473:  S1 :: mu_gsoutMax(gs1,t9,k1):1 SOS1_gsoutMax(gs1,t9,k1):2
+ s1474:  S1 :: mu_gstore_max(gs1,t9,k1):1 SOS1_gstore_max(gs1,t9,k1):2
+ s1475:  S1 :: mu_gstore_min(gs1,t9,k1):1 SOS1_gstore_min(gs1,t9,k1):2
+ s1476:  S1 :: mu_gsinMax(gs1,t10,k1):1 SOS1_gsinMax(gs1,t10,k1):2
+ s1477:  S1 :: mu_gsoutMax(gs1,t10,k1):1 SOS1_gsoutMax(gs1,t10,k1):2
+ s1478:  S1 :: mu_gstore_max(gs1,t10,k1):1 SOS1_gstore_max(gs1,t10,k1):2
+ s1479:  S1 :: mu_gstore_min(gs1,t10,k1):1 SOS1_gstore_min(gs1,t10,k1):2
+ s1480:  S1 :: mu_gsinMax(gs1,t11,k1):1 SOS1_gsinMax(gs1,t11,k1):2
+ s1481:  S1 :: mu_gsoutMax(gs1,t11,k1):1 SOS1_gsoutMax(gs1,t11,k1):2
+ s1482:  S1 :: mu_gstore_max(gs1,t11,k1):1 SOS1_gstore_max(gs1,t11,k1):2
+ s1483:  S1 :: mu_gstore_min(gs1,t11,k1):1 SOS1_gstore_min(gs1,t11,k1):2
+ s1484:  S1 :: mu_gsinMax(gs1,t12,k1):1 SOS1_gsinMax(gs1,t12,k1):2
+ s1485:  S1 :: mu_gsoutMax(gs1,t12,k1):1 SOS1_gsoutMax(gs1,t12,k1):2
+ s1486:  S1 :: mu_gstore_max(gs1,t12,k1):1 SOS1_gstore_max(gs1,t12,k1):2
+ s1487:  S1 :: mu_gstore_min(gs1,t12,k1):1 SOS1_gstore_min(gs1,t12,k1):2
+ s1488:  S1 :: mu_gsinMax(gs1,t13,k1):1 SOS1_gsinMax(gs1,t13,k1):2
+ s1489:  S1 :: mu_gsoutMax(gs1,t13,k1):1 SOS1_gsoutMax(gs1,t13,k1):2
+ s1490:  S1 :: mu_gstore_max(gs1,t13,k1):1 SOS1_gstore_max(gs1,t13,k1):2
+ s1491:  S1 :: mu_gstore_min(gs1,t13,k1):1 SOS1_gstore_min(gs1,t13,k1):2
+ s1492:  S1 :: mu_gsinMax(gs1,t14,k1):1 SOS1_gsinMax(gs1,t14,k1):2
+ s1493:  S1 :: mu_gsoutMax(gs1,t14,k1):1 SOS1_gsoutMax(gs1,t14,k1):2
+ s1494:  S1 :: mu_gstore_max(gs1,t14,k1):1 SOS1_gstore_max(gs1,t14,k1):2
+ s1495:  S1 :: mu_gstore_min(gs1,t14,k1):1 SOS1_gstore_min(gs1,t14,k1):2
+ s1496:  S1 :: mu_gsinMax(gs1,t15,k1):1 SOS1_gsinMax(gs1,t15,k1):2
+ s1497:  S1 :: mu_gsoutMax(gs1,t15,k1):1 SOS1_gsoutMax(gs1,t15,k1):2
+ s1498:  S1 :: mu_gstore_max(gs1,t15,k1):1 SOS1_gstore_max(gs1,t15,k1):2
+ s1499:  S1 :: mu_gstore_min(gs1,t15,k1):1 SOS1_gstore_min(gs1,t15,k1):2
+ s1500:  S1 :: mu_gsinMax(gs1,t16,k1):1 SOS1_gsinMax(gs1,t16,k1):2
+ s1501:  S1 :: mu_gsoutMax(gs1,t16,k1):1 SOS1_gsoutMax(gs1,t16,k1):2
+ s1502:  S1 :: mu_gstore_max(gs1,t16,k1):1 SOS1_gstore_max(gs1,t16,k1):2
+ s1503:  S1 :: mu_gstore_min(gs1,t16,k1):1 SOS1_gstore_min(gs1,t16,k1):2
+ s1504:  S1 :: mu_gsinMax(gs1,t17,k1):1 SOS1_gsinMax(gs1,t17,k1):2
+ s1505:  S1 :: mu_gsoutMax(gs1,t17,k1):1 SOS1_gsoutMax(gs1,t17,k1):2
+ s1506:  S1 :: mu_gstore_max(gs1,t17,k1):1 SOS1_gstore_max(gs1,t17,k1):2
+ s1507:  S1 :: mu_gstore_min(gs1,t17,k1):1 SOS1_gstore_min(gs1,t17,k1):2
+ s1508:  S1 :: mu_gsinMax(gs1,t18,k1):1 SOS1_gsinMax(gs1,t18,k1):2
+ s1509:  S1 :: mu_gsoutMax(gs1,t18,k1):1 SOS1_gsoutMax(gs1,t18,k1):2
+ s1510:  S1 :: mu_gstore_max(gs1,t18,k1):1 SOS1_gstore_max(gs1,t18,k1):2
+ s1511:  S1 :: mu_gstore_min(gs1,t18,k1):1 SOS1_gstore_min(gs1,t18,k1):2
+ s1512:  S1 :: mu_gsinMax(gs1,t19,k1):1 SOS1_gsinMax(gs1,t19,k1):2
+ s1513:  S1 :: mu_gsoutMax(gs1,t19,k1):1 SOS1_gsoutMax(gs1,t19,k1):2
+ s1514:  S1 :: mu_gstore_max(gs1,t19,k1):1 SOS1_gstore_max(gs1,t19,k1):2
+ s1515:  S1 :: mu_gstore_min(gs1,t19,k1):1 SOS1_gstore_min(gs1,t19,k1):2
+ s1516:  S1 :: mu_gsinMax(gs1,t20,k1):1 SOS1_gsinMax(gs1,t20,k1):2
+ s1517:  S1 :: mu_gsoutMax(gs1,t20,k1):1 SOS1_gsoutMax(gs1,t20,k1):2
+ s1518:  S1 :: mu_gstore_max(gs1,t20,k1):1 SOS1_gstore_max(gs1,t20,k1):2
+ s1519:  S1 :: mu_gstore_min(gs1,t20,k1):1 SOS1_gstore_min(gs1,t20,k1):2
+ s1520:  S1 :: mu_gsinMax(gs1,t21,k1):1 SOS1_gsinMax(gs1,t21,k1):2
+ s1521:  S1 :: mu_gsoutMax(gs1,t21,k1):1 SOS1_gsoutMax(gs1,t21,k1):2
+ s1522:  S1 :: mu_gstore_max(gs1,t21,k1):1 SOS1_gstore_max(gs1,t21,k1):2
+ s1523:  S1 :: mu_gstore_min(gs1,t21,k1):1 SOS1_gstore_min(gs1,t21,k1):2
+ s1524:  S1 :: mu_gsinMax(gs1,t22,k1):1 SOS1_gsinMax(gs1,t22,k1):2
+ s1525:  S1 :: mu_gsoutMax(gs1,t22,k1):1 SOS1_gsoutMax(gs1,t22,k1):2
+ s1526:  S1 :: mu_gstore_max(gs1,t22,k1):1 SOS1_gstore_max(gs1,t22,k1):2
+ s1527:  S1 :: mu_gstore_min(gs1,t22,k1):1 SOS1_gstore_min(gs1,t22,k1):2
+ s1528:  S1 :: mu_gsinMax(gs1,t23,k1):1 SOS1_gsinMax(gs1,t23,k1):2
+ s1529:  S1 :: mu_gsoutMax(gs1,t23,k1):1 SOS1_gsoutMax(gs1,t23,k1):2
+ s1530:  S1 :: mu_gstore_max(gs1,t23,k1):1 SOS1_gstore_max(gs1,t23,k1):2
+ s1531:  S1 :: mu_gstore_min(gs1,t23,k1):1 SOS1_gstore_min(gs1,t23,k1):2
+ s1532:  S1 :: mu_gsinMax(gs1,t24,k1):1 SOS1_gsinMax(gs1,t24,k1):2
+ s1533:  S1 :: mu_gsoutMax(gs1,t24,k1):1 SOS1_gsoutMax(gs1,t24,k1):2
+ s1534:  S1 :: mu_gstore_max(gs1,t24,k1):1 SOS1_gstore_max(gs1,t24,k1):2
+ s1535:  S1 :: mu_gstore_min(gs1,t24,k1):1 SOS1_gstore_min(gs1,t24,k1):2
+ s1536:  S1 :: mu_gsinMax(gs1,t1,k2):1 SOS1_gsinMax(gs1,t1,k2):2
+ s1537:  S1 :: mu_gsoutMax(gs1,t1,k2):1 SOS1_gsoutMax(gs1,t1,k2):2
+ s1538:  S1 :: mu_gstore_max(gs1,t1,k2):1 SOS1_gstore_max(gs1,t1,k2):2
+ s1539:  S1 :: mu_gstore_min(gs1,t1,k2):1 SOS1_gstore_min(gs1,t1,k2):2
+ s1540:  S1 :: mu_gsinMax(gs1,t2,k2):1 SOS1_gsinMax(gs1,t2,k2):2
+ s1541:  S1 :: mu_gsoutMax(gs1,t2,k2):1 SOS1_gsoutMax(gs1,t2,k2):2
+ s1542:  S1 :: mu_gstore_max(gs1,t2,k2):1 SOS1_gstore_max(gs1,t2,k2):2
+ s1543:  S1 :: mu_gstore_min(gs1,t2,k2):1 SOS1_gstore_min(gs1,t2,k2):2
+ s1544:  S1 :: mu_gsinMax(gs1,t3,k2):1 SOS1_gsinMax(gs1,t3,k2):2
+ s1545:  S1 :: mu_gsoutMax(gs1,t3,k2):1 SOS1_gsoutMax(gs1,t3,k2):2
+ s1546:  S1 :: mu_gstore_max(gs1,t3,k2):1 SOS1_gstore_max(gs1,t3,k2):2
+ s1547:  S1 :: mu_gstore_min(gs1,t3,k2):1 SOS1_gstore_min(gs1,t3,k2):2
+ s1548:  S1 :: mu_gsinMax(gs1,t4,k2):1 SOS1_gsinMax(gs1,t4,k2):2
+ s1549:  S1 :: mu_gsoutMax(gs1,t4,k2):1 SOS1_gsoutMax(gs1,t4,k2):2
+ s1550:  S1 :: mu_gstore_max(gs1,t4,k2):1 SOS1_gstore_max(gs1,t4,k2):2
+ s1551:  S1 :: mu_gstore_min(gs1,t4,k2):1 SOS1_gstore_min(gs1,t4,k2):2
+ s1552:  S1 :: mu_gsinMax(gs1,t5,k2):1 SOS1_gsinMax(gs1,t5,k2):2
+ s1553:  S1 :: mu_gsoutMax(gs1,t5,k2):1 SOS1_gsoutMax(gs1,t5,k2):2
+ s1554:  S1 :: mu_gstore_max(gs1,t5,k2):1 SOS1_gstore_max(gs1,t5,k2):2
+ s1555:  S1 :: mu_gstore_min(gs1,t5,k2):1 SOS1_gstore_min(gs1,t5,k2):2
+ s1556:  S1 :: mu_gsinMax(gs1,t6,k2):1 SOS1_gsinMax(gs1,t6,k2):2
+ s1557:  S1 :: mu_gsoutMax(gs1,t6,k2):1 SOS1_gsoutMax(gs1,t6,k2):2
+ s1558:  S1 :: mu_gstore_max(gs1,t6,k2):1 SOS1_gstore_max(gs1,t6,k2):2
+ s1559:  S1 :: mu_gstore_min(gs1,t6,k2):1 SOS1_gstore_min(gs1,t6,k2):2
+ s1560:  S1 :: mu_gsinMax(gs1,t7,k2):1 SOS1_gsinMax(gs1,t7,k2):2
+ s1561:  S1 :: mu_gsoutMax(gs1,t7,k2):1 SOS1_gsoutMax(gs1,t7,k2):2
+ s1562:  S1 :: mu_gstore_max(gs1,t7,k2):1 SOS1_gstore_max(gs1,t7,k2):2
+ s1563:  S1 :: mu_gstore_min(gs1,t7,k2):1 SOS1_gstore_min(gs1,t7,k2):2
+ s1564:  S1 :: mu_gsinMax(gs1,t8,k2):1 SOS1_gsinMax(gs1,t8,k2):2
+ s1565:  S1 :: mu_gsoutMax(gs1,t8,k2):1 SOS1_gsoutMax(gs1,t8,k2):2
+ s1566:  S1 :: mu_gstore_max(gs1,t8,k2):1 SOS1_gstore_max(gs1,t8,k2):2
+ s1567:  S1 :: mu_gstore_min(gs1,t8,k2):1 SOS1_gstore_min(gs1,t8,k2):2
+ s1568:  S1 :: mu_gsinMax(gs1,t9,k2):1 SOS1_gsinMax(gs1,t9,k2):2
+ s1569:  S1 :: mu_gsoutMax(gs1,t9,k2):1 SOS1_gsoutMax(gs1,t9,k2):2
+ s1570:  S1 :: mu_gstore_max(gs1,t9,k2):1 SOS1_gstore_max(gs1,t9,k2):2
+ s1571:  S1 :: mu_gstore_min(gs1,t9,k2):1 SOS1_gstore_min(gs1,t9,k2):2
+ s1572:  S1 :: mu_gsinMax(gs1,t10,k2):1 SOS1_gsinMax(gs1,t10,k2):2
+ s1573:  S1 :: mu_gsoutMax(gs1,t10,k2):1 SOS1_gsoutMax(gs1,t10,k2):2
+ s1574:  S1 :: mu_gstore_max(gs1,t10,k2):1 SOS1_gstore_max(gs1,t10,k2):2
+ s1575:  S1 :: mu_gstore_min(gs1,t10,k2):1 SOS1_gstore_min(gs1,t10,k2):2
+ s1576:  S1 :: mu_gsinMax(gs1,t11,k2):1 SOS1_gsinMax(gs1,t11,k2):2
+ s1577:  S1 :: mu_gsoutMax(gs1,t11,k2):1 SOS1_gsoutMax(gs1,t11,k2):2
+ s1578:  S1 :: mu_gstore_max(gs1,t11,k2):1 SOS1_gstore_max(gs1,t11,k2):2
+ s1579:  S1 :: mu_gstore_min(gs1,t11,k2):1 SOS1_gstore_min(gs1,t11,k2):2
+ s1580:  S1 :: mu_gsinMax(gs1,t12,k2):1 SOS1_gsinMax(gs1,t12,k2):2
+ s1581:  S1 :: mu_gsoutMax(gs1,t12,k2):1 SOS1_gsoutMax(gs1,t12,k2):2
+ s1582:  S1 :: mu_gstore_max(gs1,t12,k2):1 SOS1_gstore_max(gs1,t12,k2):2
+ s1583:  S1 :: mu_gstore_min(gs1,t12,k2):1 SOS1_gstore_min(gs1,t12,k2):2
+ s1584:  S1 :: mu_gsinMax(gs1,t13,k2):1 SOS1_gsinMax(gs1,t13,k2):2
+ s1585:  S1 :: mu_gsoutMax(gs1,t13,k2):1 SOS1_gsoutMax(gs1,t13,k2):2
+ s1586:  S1 :: mu_gstore_max(gs1,t13,k2):1 SOS1_gstore_max(gs1,t13,k2):2
+ s1587:  S1 :: mu_gstore_min(gs1,t13,k2):1 SOS1_gstore_min(gs1,t13,k2):2
+ s1588:  S1 :: mu_gsinMax(gs1,t14,k2):1 SOS1_gsinMax(gs1,t14,k2):2
+ s1589:  S1 :: mu_gsoutMax(gs1,t14,k2):1 SOS1_gsoutMax(gs1,t14,k2):2
+ s1590:  S1 :: mu_gstore_max(gs1,t14,k2):1 SOS1_gstore_max(gs1,t14,k2):2
+ s1591:  S1 :: mu_gstore_min(gs1,t14,k2):1 SOS1_gstore_min(gs1,t14,k2):2
+ s1592:  S1 :: mu_gsinMax(gs1,t15,k2):1 SOS1_gsinMax(gs1,t15,k2):2
+ s1593:  S1 :: mu_gsoutMax(gs1,t15,k2):1 SOS1_gsoutMax(gs1,t15,k2):2
+ s1594:  S1 :: mu_gstore_max(gs1,t15,k2):1 SOS1_gstore_max(gs1,t15,k2):2
+ s1595:  S1 :: mu_gstore_min(gs1,t15,k2):1 SOS1_gstore_min(gs1,t15,k2):2
+ s1596:  S1 :: mu_gsinMax(gs1,t16,k2):1 SOS1_gsinMax(gs1,t16,k2):2
+ s1597:  S1 :: mu_gsoutMax(gs1,t16,k2):1 SOS1_gsoutMax(gs1,t16,k2):2
+ s1598:  S1 :: mu_gstore_max(gs1,t16,k2):1 SOS1_gstore_max(gs1,t16,k2):2
+ s1599:  S1 :: mu_gstore_min(gs1,t16,k2):1 SOS1_gstore_min(gs1,t16,k2):2
+ s1600:  S1 :: mu_gsinMax(gs1,t17,k2):1 SOS1_gsinMax(gs1,t17,k2):2
+ s1601:  S1 :: mu_gsoutMax(gs1,t17,k2):1 SOS1_gsoutMax(gs1,t17,k2):2
+ s1602:  S1 :: mu_gstore_max(gs1,t17,k2):1 SOS1_gstore_max(gs1,t17,k2):2
+ s1603:  S1 :: mu_gstore_min(gs1,t17,k2):1 SOS1_gstore_min(gs1,t17,k2):2
+ s1604:  S1 :: mu_gsinMax(gs1,t18,k2):1 SOS1_gsinMax(gs1,t18,k2):2
+ s1605:  S1 :: mu_gsoutMax(gs1,t18,k2):1 SOS1_gsoutMax(gs1,t18,k2):2
+ s1606:  S1 :: mu_gstore_max(gs1,t18,k2):1 SOS1_gstore_max(gs1,t18,k2):2
+ s1607:  S1 :: mu_gstore_min(gs1,t18,k2):1 SOS1_gstore_min(gs1,t18,k2):2
+ s1608:  S1 :: mu_gsinMax(gs1,t19,k2):1 SOS1_gsinMax(gs1,t19,k2):2
+ s1609:  S1 :: mu_gsoutMax(gs1,t19,k2):1 SOS1_gsoutMax(gs1,t19,k2):2
+ s1610:  S1 :: mu_gstore_max(gs1,t19,k2):1 SOS1_gstore_max(gs1,t19,k2):2
+ s1611:  S1 :: mu_gstore_min(gs1,t19,k2):1 SOS1_gstore_min(gs1,t19,k2):2
+ s1612:  S1 :: mu_gsinMax(gs1,t20,k2):1 SOS1_gsinMax(gs1,t20,k2):2
+ s1613:  S1 :: mu_gsoutMax(gs1,t20,k2):1 SOS1_gsoutMax(gs1,t20,k2):2
+ s1614:  S1 :: mu_gstore_max(gs1,t20,k2):1 SOS1_gstore_max(gs1,t20,k2):2
+ s1615:  S1 :: mu_gstore_min(gs1,t20,k2):1 SOS1_gstore_min(gs1,t20,k2):2
+ s1616:  S1 :: mu_gsinMax(gs1,t21,k2):1 SOS1_gsinMax(gs1,t21,k2):2
+ s1617:  S1 :: mu_gsoutMax(gs1,t21,k2):1 SOS1_gsoutMax(gs1,t21,k2):2
+ s1618:  S1 :: mu_gstore_max(gs1,t21,k2):1 SOS1_gstore_max(gs1,t21,k2):2
+ s1619:  S1 :: mu_gstore_min(gs1,t21,k2):1 SOS1_gstore_min(gs1,t21,k2):2
+ s1620:  S1 :: mu_gsinMax(gs1,t22,k2):1 SOS1_gsinMax(gs1,t22,k2):2
+ s1621:  S1 :: mu_gsoutMax(gs1,t22,k2):1 SOS1_gsoutMax(gs1,t22,k2):2
+ s1622:  S1 :: mu_gstore_max(gs1,t22,k2):1 SOS1_gstore_max(gs1,t22,k2):2
+ s1623:  S1 :: mu_gstore_min(gs1,t22,k2):1 SOS1_gstore_min(gs1,t22,k2):2
+ s1624:  S1 :: mu_gsinMax(gs1,t23,k2):1 SOS1_gsinMax(gs1,t23,k2):2
+ s1625:  S1 :: mu_gsoutMax(gs1,t23,k2):1 SOS1_gsoutMax(gs1,t23,k2):2
+ s1626:  S1 :: mu_gstore_max(gs1,t23,k2):1 SOS1_gstore_max(gs1,t23,k2):2
+ s1627:  S1 :: mu_gstore_min(gs1,t23,k2):1 SOS1_gstore_min(gs1,t23,k2):2
+ s1628:  S1 :: mu_gsinMax(gs1,t24,k2):1 SOS1_gsinMax(gs1,t24,k2):2
+ s1629:  S1 :: mu_gsoutMax(gs1,t24,k2):1 SOS1_gsoutMax(gs1,t24,k2):2
+ s1630:  S1 :: mu_gstore_max(gs1,t24,k2):1 SOS1_gstore_max(gs1,t24,k2):2
+ s1631:  S1 :: mu_gstore_min(gs1,t24,k2):1 SOS1_gstore_min(gs1,t24,k2):2
+ s1632:  S1 :: mu_gs_end(gs1,k0):1 SOS1_gs_end(gs1,k0):2
+ s1633:  S1 :: muLB_gshed_da(ng101,k0,t1):1 SOS1_LB_gshed_da(ng101,k0,t1):2
+ s1634:  S1 :: muLB_gshed_da(ng101,k1,t1):1 SOS1_LB_gshed_da(ng101,k1,t1):2
+ s1635:  S1 :: muLB_gshed_da(ng101,k2,t1):1 SOS1_LB_gshed_da(ng101,k2,t1):2
+ s1636:  S1 :: muLB_gshed_da(ng101,k0,t2):1 SOS1_LB_gshed_da(ng101,k0,t2):2
+ s1637:  S1 :: muLB_gshed_da(ng101,k1,t2):1 SOS1_LB_gshed_da(ng101,k1,t2):2
+ s1638:  S1 :: muLB_gshed_da(ng101,k2,t2):1 SOS1_LB_gshed_da(ng101,k2,t2):2
+ s1639:  S1 :: muLB_gshed_da(ng101,k0,t3):1 SOS1_LB_gshed_da(ng101,k0,t3):2
+ s1640:  S1 :: muLB_gshed_da(ng101,k1,t3):1 SOS1_LB_gshed_da(ng101,k1,t3):2
+ s1641:  S1 :: muLB_gshed_da(ng101,k2,t3):1 SOS1_LB_gshed_da(ng101,k2,t3):2
+ s1642:  S1 :: muLB_gshed_da(ng101,k0,t4):1 SOS1_LB_gshed_da(ng101,k0,t4):2
+ s1643:  S1 :: muLB_gshed_da(ng101,k1,t4):1 SOS1_LB_gshed_da(ng101,k1,t4):2
+ s1644:  S1 :: muLB_gshed_da(ng101,k2,t4):1 SOS1_LB_gshed_da(ng101,k2,t4):2
+ s1645:  S1 :: muLB_gshed_da(ng101,k0,t5):1 SOS1_LB_gshed_da(ng101,k0,t5):2
+ s1646:  S1 :: muLB_gshed_da(ng101,k1,t5):1 SOS1_LB_gshed_da(ng101,k1,t5):2
+ s1647:  S1 :: muLB_gshed_da(ng101,k2,t5):1 SOS1_LB_gshed_da(ng101,k2,t5):2
+ s1648:  S1 :: muLB_gshed_da(ng101,k0,t6):1 SOS1_LB_gshed_da(ng101,k0,t6):2
+ s1649:  S1 :: muLB_gshed_da(ng101,k1,t6):1 SOS1_LB_gshed_da(ng101,k1,t6):2
+ s1650:  S1 :: muLB_gshed_da(ng101,k2,t6):1 SOS1_LB_gshed_da(ng101,k2,t6):2
+ s1651:  S1 :: muLB_gshed_da(ng101,k0,t7):1 SOS1_LB_gshed_da(ng101,k0,t7):2
+ s1652:  S1 :: muLB_gshed_da(ng101,k1,t7):1 SOS1_LB_gshed_da(ng101,k1,t7):2
+ s1653:  S1 :: muLB_gshed_da(ng101,k2,t7):1 SOS1_LB_gshed_da(ng101,k2,t7):2
+ s1654:  S1 :: muLB_gshed_da(ng101,k0,t8):1 SOS1_LB_gshed_da(ng101,k0,t8):2
+ s1655:  S1 :: muLB_gshed_da(ng101,k1,t8):1 SOS1_LB_gshed_da(ng101,k1,t8):2
+ s1656:  S1 :: muLB_gshed_da(ng101,k2,t8):1 SOS1_LB_gshed_da(ng101,k2,t8):2
+ s1657:  S1 :: muLB_gshed_da(ng101,k0,t9):1 SOS1_LB_gshed_da(ng101,k0,t9):2
+ s1658:  S1 :: muLB_gshed_da(ng101,k1,t9):1 SOS1_LB_gshed_da(ng101,k1,t9):2
+ s1659:  S1 :: muLB_gshed_da(ng101,k2,t9):1 SOS1_LB_gshed_da(ng101,k2,t9):2
+ s1660:  S1 :: muLB_gshed_da(ng101,k0,t10):1
      SOS1_LB_gshed_da(ng101,k0,t10):2
- s1589:  S1 :: muLB_gshed_da(ng101,k1,t10):1
+ s1661:  S1 :: muLB_gshed_da(ng101,k1,t10):1
      SOS1_LB_gshed_da(ng101,k1,t10):2
- s1590:  S1 :: muLB_gshed_da(ng101,k2,t10):1
+ s1662:  S1 :: muLB_gshed_da(ng101,k2,t10):1
      SOS1_LB_gshed_da(ng101,k2,t10):2
- s1591:  S1 :: muLB_gshed_da(ng101,k0,t11):1
+ s1663:  S1 :: muLB_gshed_da(ng101,k0,t11):1
      SOS1_LB_gshed_da(ng101,k0,t11):2
- s1592:  S1 :: muLB_gshed_da(ng101,k1,t11):1
+ s1664:  S1 :: muLB_gshed_da(ng101,k1,t11):1
      SOS1_LB_gshed_da(ng101,k1,t11):2
- s1593:  S1 :: muLB_gshed_da(ng101,k2,t11):1
+ s1665:  S1 :: muLB_gshed_da(ng101,k2,t11):1
      SOS1_LB_gshed_da(ng101,k2,t11):2
- s1594:  S1 :: muLB_gshed_da(ng101,k0,t12):1
+ s1666:  S1 :: muLB_gshed_da(ng101,k0,t12):1
      SOS1_LB_gshed_da(ng101,k0,t12):2
- s1595:  S1 :: muLB_gshed_da(ng101,k1,t12):1
+ s1667:  S1 :: muLB_gshed_da(ng101,k1,t12):1
      SOS1_LB_gshed_da(ng101,k1,t12):2
- s1596:  S1 :: muLB_gshed_da(ng101,k2,t12):1
+ s1668:  S1 :: muLB_gshed_da(ng101,k2,t12):1
      SOS1_LB_gshed_da(ng101,k2,t12):2
- s1597:  S1 :: muLB_gshed_da(ng101,k0,t13):1
+ s1669:  S1 :: muLB_gshed_da(ng101,k0,t13):1
      SOS1_LB_gshed_da(ng101,k0,t13):2
- s1598:  S1 :: muLB_gshed_da(ng101,k1,t13):1
+ s1670:  S1 :: muLB_gshed_da(ng101,k1,t13):1
      SOS1_LB_gshed_da(ng101,k1,t13):2
- s1599:  S1 :: muLB_gshed_da(ng101,k2,t13):1
+ s1671:  S1 :: muLB_gshed_da(ng101,k2,t13):1
      SOS1_LB_gshed_da(ng101,k2,t13):2
- s1600:  S1 :: muLB_gshed_da(ng101,k0,t14):1
+ s1672:  S1 :: muLB_gshed_da(ng101,k0,t14):1
      SOS1_LB_gshed_da(ng101,k0,t14):2
- s1601:  S1 :: muLB_gshed_da(ng101,k1,t14):1
+ s1673:  S1 :: muLB_gshed_da(ng101,k1,t14):1
      SOS1_LB_gshed_da(ng101,k1,t14):2
- s1602:  S1 :: muLB_gshed_da(ng101,k2,t14):1
+ s1674:  S1 :: muLB_gshed_da(ng101,k2,t14):1
      SOS1_LB_gshed_da(ng101,k2,t14):2
- s1603:  S1 :: muLB_gshed_da(ng101,k0,t15):1
+ s1675:  S1 :: muLB_gshed_da(ng101,k0,t15):1
      SOS1_LB_gshed_da(ng101,k0,t15):2
- s1604:  S1 :: muLB_gshed_da(ng101,k1,t15):1
+ s1676:  S1 :: muLB_gshed_da(ng101,k1,t15):1
      SOS1_LB_gshed_da(ng101,k1,t15):2
- s1605:  S1 :: muLB_gshed_da(ng101,k2,t15):1
+ s1677:  S1 :: muLB_gshed_da(ng101,k2,t15):1
      SOS1_LB_gshed_da(ng101,k2,t15):2
- s1606:  S1 :: muLB_gshed_da(ng101,k0,t16):1
+ s1678:  S1 :: muLB_gshed_da(ng101,k0,t16):1
      SOS1_LB_gshed_da(ng101,k0,t16):2
- s1607:  S1 :: muLB_gshed_da(ng101,k1,t16):1
+ s1679:  S1 :: muLB_gshed_da(ng101,k1,t16):1
      SOS1_LB_gshed_da(ng101,k1,t16):2
- s1608:  S1 :: muLB_gshed_da(ng101,k2,t16):1
+ s1680:  S1 :: muLB_gshed_da(ng101,k2,t16):1
      SOS1_LB_gshed_da(ng101,k2,t16):2
- s1609:  S1 :: muLB_gshed_da(ng101,k0,t17):1
+ s1681:  S1 :: muLB_gshed_da(ng101,k0,t17):1
      SOS1_LB_gshed_da(ng101,k0,t17):2
- s1610:  S1 :: muLB_gshed_da(ng101,k1,t17):1
+ s1682:  S1 :: muLB_gshed_da(ng101,k1,t17):1
      SOS1_LB_gshed_da(ng101,k1,t17):2
- s1611:  S1 :: muLB_gshed_da(ng101,k2,t17):1
+ s1683:  S1 :: muLB_gshed_da(ng101,k2,t17):1
      SOS1_LB_gshed_da(ng101,k2,t17):2
- s1612:  S1 :: muLB_gshed_da(ng101,k0,t18):1
+ s1684:  S1 :: muLB_gshed_da(ng101,k0,t18):1
      SOS1_LB_gshed_da(ng101,k0,t18):2
- s1613:  S1 :: muLB_gshed_da(ng101,k1,t18):1
+ s1685:  S1 :: muLB_gshed_da(ng101,k1,t18):1
      SOS1_LB_gshed_da(ng101,k1,t18):2
- s1614:  S1 :: muLB_gshed_da(ng101,k2,t18):1
+ s1686:  S1 :: muLB_gshed_da(ng101,k2,t18):1
      SOS1_LB_gshed_da(ng101,k2,t18):2
- s1615:  S1 :: muLB_gshed_da(ng101,k0,t19):1
+ s1687:  S1 :: muLB_gshed_da(ng101,k0,t19):1
      SOS1_LB_gshed_da(ng101,k0,t19):2
- s1616:  S1 :: muLB_gshed_da(ng101,k1,t19):1
+ s1688:  S1 :: muLB_gshed_da(ng101,k1,t19):1
      SOS1_LB_gshed_da(ng101,k1,t19):2
- s1617:  S1 :: muLB_gshed_da(ng101,k2,t19):1
+ s1689:  S1 :: muLB_gshed_da(ng101,k2,t19):1
      SOS1_LB_gshed_da(ng101,k2,t19):2
- s1618:  S1 :: muLB_gshed_da(ng101,k0,t20):1
+ s1690:  S1 :: muLB_gshed_da(ng101,k0,t20):1
      SOS1_LB_gshed_da(ng101,k0,t20):2
- s1619:  S1 :: muLB_gshed_da(ng101,k1,t20):1
+ s1691:  S1 :: muLB_gshed_da(ng101,k1,t20):1
      SOS1_LB_gshed_da(ng101,k1,t20):2
- s1620:  S1 :: muLB_gshed_da(ng101,k2,t20):1
+ s1692:  S1 :: muLB_gshed_da(ng101,k2,t20):1
      SOS1_LB_gshed_da(ng101,k2,t20):2
- s1621:  S1 :: muLB_gshed_da(ng101,k0,t21):1
+ s1693:  S1 :: muLB_gshed_da(ng101,k0,t21):1
      SOS1_LB_gshed_da(ng101,k0,t21):2
- s1622:  S1 :: muLB_gshed_da(ng101,k1,t21):1
+ s1694:  S1 :: muLB_gshed_da(ng101,k1,t21):1
      SOS1_LB_gshed_da(ng101,k1,t21):2
- s1623:  S1 :: muLB_gshed_da(ng101,k2,t21):1
+ s1695:  S1 :: muLB_gshed_da(ng101,k2,t21):1
      SOS1_LB_gshed_da(ng101,k2,t21):2
- s1624:  S1 :: muLB_gshed_da(ng101,k0,t22):1
+ s1696:  S1 :: muLB_gshed_da(ng101,k0,t22):1
      SOS1_LB_gshed_da(ng101,k0,t22):2
- s1625:  S1 :: muLB_gshed_da(ng101,k1,t22):1
+ s1697:  S1 :: muLB_gshed_da(ng101,k1,t22):1
      SOS1_LB_gshed_da(ng101,k1,t22):2
- s1626:  S1 :: muLB_gshed_da(ng101,k2,t22):1
+ s1698:  S1 :: muLB_gshed_da(ng101,k2,t22):1
      SOS1_LB_gshed_da(ng101,k2,t22):2
- s1627:  S1 :: muLB_gshed_da(ng101,k0,t23):1
+ s1699:  S1 :: muLB_gshed_da(ng101,k0,t23):1
      SOS1_LB_gshed_da(ng101,k0,t23):2
- s1628:  S1 :: muLB_gshed_da(ng101,k1,t23):1
+ s1700:  S1 :: muLB_gshed_da(ng101,k1,t23):1
      SOS1_LB_gshed_da(ng101,k1,t23):2
- s1629:  S1 :: muLB_gshed_da(ng101,k2,t23):1
+ s1701:  S1 :: muLB_gshed_da(ng101,k2,t23):1
      SOS1_LB_gshed_da(ng101,k2,t23):2
- s1630:  S1 :: muLB_gshed_da(ng101,k0,t24):1
+ s1702:  S1 :: muLB_gshed_da(ng101,k0,t24):1
      SOS1_LB_gshed_da(ng101,k0,t24):2
- s1631:  S1 :: muLB_gshed_da(ng101,k1,t24):1
+ s1703:  S1 :: muLB_gshed_da(ng101,k1,t24):1
      SOS1_LB_gshed_da(ng101,k1,t24):2
- s1632:  S1 :: muLB_gshed_da(ng101,k2,t24):1
+ s1704:  S1 :: muLB_gshed_da(ng101,k2,t24):1
      SOS1_LB_gshed_da(ng101,k2,t24):2
- s1633:  S1 :: muLB_gshed_da(ng102,k0,t1):1 SOS1_LB_gshed_da(ng102,k0,t1):2
- s1634:  S1 :: muLB_gshed_da(ng102,k1,t1):1 SOS1_LB_gshed_da(ng102,k1,t1):2
- s1635:  S1 :: muLB_gshed_da(ng102,k2,t1):1 SOS1_LB_gshed_da(ng102,k2,t1):2
- s1636:  S1 :: muLB_gshed_da(ng102,k0,t2):1 SOS1_LB_gshed_da(ng102,k0,t2):2
- s1637:  S1 :: muLB_gshed_da(ng102,k1,t2):1 SOS1_LB_gshed_da(ng102,k1,t2):2
- s1638:  S1 :: muLB_gshed_da(ng102,k2,t2):1 SOS1_LB_gshed_da(ng102,k2,t2):2
- s1639:  S1 :: muLB_gshed_da(ng102,k0,t3):1 SOS1_LB_gshed_da(ng102,k0,t3):2
- s1640:  S1 :: muLB_gshed_da(ng102,k1,t3):1 SOS1_LB_gshed_da(ng102,k1,t3):2
- s1641:  S1 :: muLB_gshed_da(ng102,k2,t3):1 SOS1_LB_gshed_da(ng102,k2,t3):2
- s1642:  S1 :: muLB_gshed_da(ng102,k0,t4):1 SOS1_LB_gshed_da(ng102,k0,t4):2
- s1643:  S1 :: muLB_gshed_da(ng102,k1,t4):1 SOS1_LB_gshed_da(ng102,k1,t4):2
- s1644:  S1 :: muLB_gshed_da(ng102,k2,t4):1 SOS1_LB_gshed_da(ng102,k2,t4):2
- s1645:  S1 :: muLB_gshed_da(ng102,k0,t5):1 SOS1_LB_gshed_da(ng102,k0,t5):2
- s1646:  S1 :: muLB_gshed_da(ng102,k1,t5):1 SOS1_LB_gshed_da(ng102,k1,t5):2
- s1647:  S1 :: muLB_gshed_da(ng102,k2,t5):1 SOS1_LB_gshed_da(ng102,k2,t5):2
- s1648:  S1 :: muLB_gshed_da(ng102,k0,t6):1 SOS1_LB_gshed_da(ng102,k0,t6):2
- s1649:  S1 :: muLB_gshed_da(ng102,k1,t6):1 SOS1_LB_gshed_da(ng102,k1,t6):2
- s1650:  S1 :: muLB_gshed_da(ng102,k2,t6):1 SOS1_LB_gshed_da(ng102,k2,t6):2
- s1651:  S1 :: muLB_gshed_da(ng102,k0,t7):1 SOS1_LB_gshed_da(ng102,k0,t7):2
- s1652:  S1 :: muLB_gshed_da(ng102,k1,t7):1 SOS1_LB_gshed_da(ng102,k1,t7):2
- s1653:  S1 :: muLB_gshed_da(ng102,k2,t7):1 SOS1_LB_gshed_da(ng102,k2,t7):2
- s1654:  S1 :: muLB_gshed_da(ng102,k0,t8):1 SOS1_LB_gshed_da(ng102,k0,t8):2
- s1655:  S1 :: muLB_gshed_da(ng102,k1,t8):1 SOS1_LB_gshed_da(ng102,k1,t8):2
- s1656:  S1 :: muLB_gshed_da(ng102,k2,t8):1 SOS1_LB_gshed_da(ng102,k2,t8):2
- s1657:  S1 :: muLB_gshed_da(ng102,k0,t9):1 SOS1_LB_gshed_da(ng102,k0,t9):2
- s1658:  S1 :: muLB_gshed_da(ng102,k1,t9):1 SOS1_LB_gshed_da(ng102,k1,t9):2
- s1659:  S1 :: muLB_gshed_da(ng102,k2,t9):1 SOS1_LB_gshed_da(ng102,k2,t9):2
- s1660:  S1 :: muLB_gshed_da(ng102,k0,t10):1
+ s1705:  S1 :: muLB_gshed_da(ng102,k0,t1):1 SOS1_LB_gshed_da(ng102,k0,t1):2
+ s1706:  S1 :: muLB_gshed_da(ng102,k1,t1):1 SOS1_LB_gshed_da(ng102,k1,t1):2
+ s1707:  S1 :: muLB_gshed_da(ng102,k2,t1):1 SOS1_LB_gshed_da(ng102,k2,t1):2
+ s1708:  S1 :: muLB_gshed_da(ng102,k0,t2):1 SOS1_LB_gshed_da(ng102,k0,t2):2
+ s1709:  S1 :: muLB_gshed_da(ng102,k1,t2):1 SOS1_LB_gshed_da(ng102,k1,t2):2
+ s1710:  S1 :: muLB_gshed_da(ng102,k2,t2):1 SOS1_LB_gshed_da(ng102,k2,t2):2
+ s1711:  S1 :: muLB_gshed_da(ng102,k0,t3):1 SOS1_LB_gshed_da(ng102,k0,t3):2
+ s1712:  S1 :: muLB_gshed_da(ng102,k1,t3):1 SOS1_LB_gshed_da(ng102,k1,t3):2
+ s1713:  S1 :: muLB_gshed_da(ng102,k2,t3):1 SOS1_LB_gshed_da(ng102,k2,t3):2
+ s1714:  S1 :: muLB_gshed_da(ng102,k0,t4):1 SOS1_LB_gshed_da(ng102,k0,t4):2
+ s1715:  S1 :: muLB_gshed_da(ng102,k1,t4):1 SOS1_LB_gshed_da(ng102,k1,t4):2
+ s1716:  S1 :: muLB_gshed_da(ng102,k2,t4):1 SOS1_LB_gshed_da(ng102,k2,t4):2
+ s1717:  S1 :: muLB_gshed_da(ng102,k0,t5):1 SOS1_LB_gshed_da(ng102,k0,t5):2
+ s1718:  S1 :: muLB_gshed_da(ng102,k1,t5):1 SOS1_LB_gshed_da(ng102,k1,t5):2
+ s1719:  S1 :: muLB_gshed_da(ng102,k2,t5):1 SOS1_LB_gshed_da(ng102,k2,t5):2
+ s1720:  S1 :: muLB_gshed_da(ng102,k0,t6):1 SOS1_LB_gshed_da(ng102,k0,t6):2
+ s1721:  S1 :: muLB_gshed_da(ng102,k1,t6):1 SOS1_LB_gshed_da(ng102,k1,t6):2
+ s1722:  S1 :: muLB_gshed_da(ng102,k2,t6):1 SOS1_LB_gshed_da(ng102,k2,t6):2
+ s1723:  S1 :: muLB_gshed_da(ng102,k0,t7):1 SOS1_LB_gshed_da(ng102,k0,t7):2
+ s1724:  S1 :: muLB_gshed_da(ng102,k1,t7):1 SOS1_LB_gshed_da(ng102,k1,t7):2
+ s1725:  S1 :: muLB_gshed_da(ng102,k2,t7):1 SOS1_LB_gshed_da(ng102,k2,t7):2
+ s1726:  S1 :: muLB_gshed_da(ng102,k0,t8):1 SOS1_LB_gshed_da(ng102,k0,t8):2
+ s1727:  S1 :: muLB_gshed_da(ng102,k1,t8):1 SOS1_LB_gshed_da(ng102,k1,t8):2
+ s1728:  S1 :: muLB_gshed_da(ng102,k2,t8):1 SOS1_LB_gshed_da(ng102,k2,t8):2
+ s1729:  S1 :: muLB_gshed_da(ng102,k0,t9):1 SOS1_LB_gshed_da(ng102,k0,t9):2
+ s1730:  S1 :: muLB_gshed_da(ng102,k1,t9):1 SOS1_LB_gshed_da(ng102,k1,t9):2
+ s1731:  S1 :: muLB_gshed_da(ng102,k2,t9):1 SOS1_LB_gshed_da(ng102,k2,t9):2
+ s1732:  S1 :: muLB_gshed_da(ng102,k0,t10):1
      SOS1_LB_gshed_da(ng102,k0,t10):2
- s1661:  S1 :: muLB_gshed_da(ng102,k1,t10):1
+ s1733:  S1 :: muLB_gshed_da(ng102,k1,t10):1
      SOS1_LB_gshed_da(ng102,k1,t10):2
- s1662:  S1 :: muLB_gshed_da(ng102,k2,t10):1
+ s1734:  S1 :: muLB_gshed_da(ng102,k2,t10):1
      SOS1_LB_gshed_da(ng102,k2,t10):2
- s1663:  S1 :: muLB_gshed_da(ng102,k0,t11):1
+ s1735:  S1 :: muLB_gshed_da(ng102,k0,t11):1
      SOS1_LB_gshed_da(ng102,k0,t11):2
- s1664:  S1 :: muLB_gshed_da(ng102,k1,t11):1
+ s1736:  S1 :: muLB_gshed_da(ng102,k1,t11):1
      SOS1_LB_gshed_da(ng102,k1,t11):2
- s1665:  S1 :: muLB_gshed_da(ng102,k2,t11):1
+ s1737:  S1 :: muLB_gshed_da(ng102,k2,t11):1
      SOS1_LB_gshed_da(ng102,k2,t11):2
- s1666:  S1 :: muLB_gshed_da(ng102,k0,t12):1
+ s1738:  S1 :: muLB_gshed_da(ng102,k0,t12):1
      SOS1_LB_gshed_da(ng102,k0,t12):2
- s1667:  S1 :: muLB_gshed_da(ng102,k1,t12):1
+ s1739:  S1 :: muLB_gshed_da(ng102,k1,t12):1
      SOS1_LB_gshed_da(ng102,k1,t12):2
- s1668:  S1 :: muLB_gshed_da(ng102,k2,t12):1
+ s1740:  S1 :: muLB_gshed_da(ng102,k2,t12):1
      SOS1_LB_gshed_da(ng102,k2,t12):2
- s1669:  S1 :: muLB_gshed_da(ng102,k0,t13):1
+ s1741:  S1 :: muLB_gshed_da(ng102,k0,t13):1
      SOS1_LB_gshed_da(ng102,k0,t13):2
- s1670:  S1 :: muLB_gshed_da(ng102,k1,t13):1
+ s1742:  S1 :: muLB_gshed_da(ng102,k1,t13):1
      SOS1_LB_gshed_da(ng102,k1,t13):2
- s1671:  S1 :: muLB_gshed_da(ng102,k2,t13):1
+ s1743:  S1 :: muLB_gshed_da(ng102,k2,t13):1
      SOS1_LB_gshed_da(ng102,k2,t13):2
- s1672:  S1 :: muLB_gshed_da(ng102,k0,t14):1
+ s1744:  S1 :: muLB_gshed_da(ng102,k0,t14):1
      SOS1_LB_gshed_da(ng102,k0,t14):2
- s1673:  S1 :: muLB_gshed_da(ng102,k1,t14):1
+ s1745:  S1 :: muLB_gshed_da(ng102,k1,t14):1
      SOS1_LB_gshed_da(ng102,k1,t14):2
- s1674:  S1 :: muLB_gshed_da(ng102,k2,t14):1
+ s1746:  S1 :: muLB_gshed_da(ng102,k2,t14):1
      SOS1_LB_gshed_da(ng102,k2,t14):2
- s1675:  S1 :: muLB_gshed_da(ng102,k0,t15):1
+ s1747:  S1 :: muLB_gshed_da(ng102,k0,t15):1
      SOS1_LB_gshed_da(ng102,k0,t15):2
- s1676:  S1 :: muLB_gshed_da(ng102,k1,t15):1
+ s1748:  S1 :: muLB_gshed_da(ng102,k1,t15):1
      SOS1_LB_gshed_da(ng102,k1,t15):2
- s1677:  S1 :: muLB_gshed_da(ng102,k2,t15):1
+ s1749:  S1 :: muLB_gshed_da(ng102,k2,t15):1
      SOS1_LB_gshed_da(ng102,k2,t15):2
- s1678:  S1 :: muLB_gshed_da(ng102,k0,t16):1
+ s1750:  S1 :: muLB_gshed_da(ng102,k0,t16):1
      SOS1_LB_gshed_da(ng102,k0,t16):2
- s1679:  S1 :: muLB_gshed_da(ng102,k1,t16):1
+ s1751:  S1 :: muLB_gshed_da(ng102,k1,t16):1
      SOS1_LB_gshed_da(ng102,k1,t16):2
- s1680:  S1 :: muLB_gshed_da(ng102,k2,t16):1
+ s1752:  S1 :: muLB_gshed_da(ng102,k2,t16):1
      SOS1_LB_gshed_da(ng102,k2,t16):2
- s1681:  S1 :: muLB_gshed_da(ng102,k0,t17):1
+ s1753:  S1 :: muLB_gshed_da(ng102,k0,t17):1
      SOS1_LB_gshed_da(ng102,k0,t17):2
- s1682:  S1 :: muLB_gshed_da(ng102,k1,t17):1
+ s1754:  S1 :: muLB_gshed_da(ng102,k1,t17):1
      SOS1_LB_gshed_da(ng102,k1,t17):2
- s1683:  S1 :: muLB_gshed_da(ng102,k2,t17):1
+ s1755:  S1 :: muLB_gshed_da(ng102,k2,t17):1
      SOS1_LB_gshed_da(ng102,k2,t17):2
- s1684:  S1 :: muLB_gshed_da(ng102,k0,t18):1
+ s1756:  S1 :: muLB_gshed_da(ng102,k0,t18):1
      SOS1_LB_gshed_da(ng102,k0,t18):2
- s1685:  S1 :: muLB_gshed_da(ng102,k1,t18):1
+ s1757:  S1 :: muLB_gshed_da(ng102,k1,t18):1
      SOS1_LB_gshed_da(ng102,k1,t18):2
- s1686:  S1 :: muLB_gshed_da(ng102,k2,t18):1
+ s1758:  S1 :: muLB_gshed_da(ng102,k2,t18):1
      SOS1_LB_gshed_da(ng102,k2,t18):2
- s1687:  S1 :: muLB_gshed_da(ng102,k0,t19):1
+ s1759:  S1 :: muLB_gshed_da(ng102,k0,t19):1
      SOS1_LB_gshed_da(ng102,k0,t19):2
- s1688:  S1 :: muLB_gshed_da(ng102,k1,t19):1
+ s1760:  S1 :: muLB_gshed_da(ng102,k1,t19):1
      SOS1_LB_gshed_da(ng102,k1,t19):2
- s1689:  S1 :: muLB_gshed_da(ng102,k2,t19):1
+ s1761:  S1 :: muLB_gshed_da(ng102,k2,t19):1
      SOS1_LB_gshed_da(ng102,k2,t19):2
- s1690:  S1 :: muLB_gshed_da(ng102,k0,t20):1
+ s1762:  S1 :: muLB_gshed_da(ng102,k0,t20):1
      SOS1_LB_gshed_da(ng102,k0,t20):2
- s1691:  S1 :: muLB_gshed_da(ng102,k1,t20):1
+ s1763:  S1 :: muLB_gshed_da(ng102,k1,t20):1
      SOS1_LB_gshed_da(ng102,k1,t20):2
- s1692:  S1 :: muLB_gshed_da(ng102,k2,t20):1
+ s1764:  S1 :: muLB_gshed_da(ng102,k2,t20):1
      SOS1_LB_gshed_da(ng102,k2,t20):2
- s1693:  S1 :: muLB_gshed_da(ng102,k0,t21):1
+ s1765:  S1 :: muLB_gshed_da(ng102,k0,t21):1
      SOS1_LB_gshed_da(ng102,k0,t21):2
- s1694:  S1 :: muLB_gshed_da(ng102,k1,t21):1
+ s1766:  S1 :: muLB_gshed_da(ng102,k1,t21):1
      SOS1_LB_gshed_da(ng102,k1,t21):2
- s1695:  S1 :: muLB_gshed_da(ng102,k2,t21):1
+ s1767:  S1 :: muLB_gshed_da(ng102,k2,t21):1
      SOS1_LB_gshed_da(ng102,k2,t21):2
- s1696:  S1 :: muLB_gshed_da(ng102,k0,t22):1
+ s1768:  S1 :: muLB_gshed_da(ng102,k0,t22):1
      SOS1_LB_gshed_da(ng102,k0,t22):2
- s1697:  S1 :: muLB_gshed_da(ng102,k1,t22):1
+ s1769:  S1 :: muLB_gshed_da(ng102,k1,t22):1
      SOS1_LB_gshed_da(ng102,k1,t22):2
- s1698:  S1 :: muLB_gshed_da(ng102,k2,t22):1
+ s1770:  S1 :: muLB_gshed_da(ng102,k2,t22):1
      SOS1_LB_gshed_da(ng102,k2,t22):2
- s1699:  S1 :: muLB_gshed_da(ng102,k0,t23):1
+ s1771:  S1 :: muLB_gshed_da(ng102,k0,t23):1
      SOS1_LB_gshed_da(ng102,k0,t23):2
- s1700:  S1 :: muLB_gshed_da(ng102,k1,t23):1
+ s1772:  S1 :: muLB_gshed_da(ng102,k1,t23):1
      SOS1_LB_gshed_da(ng102,k1,t23):2
- s1701:  S1 :: muLB_gshed_da(ng102,k2,t23):1
+ s1773:  S1 :: muLB_gshed_da(ng102,k2,t23):1
      SOS1_LB_gshed_da(ng102,k2,t23):2
- s1702:  S1 :: muLB_gshed_da(ng102,k0,t24):1
+ s1774:  S1 :: muLB_gshed_da(ng102,k0,t24):1
      SOS1_LB_gshed_da(ng102,k0,t24):2
- s1703:  S1 :: muLB_gshed_da(ng102,k1,t24):1
+ s1775:  S1 :: muLB_gshed_da(ng102,k1,t24):1
      SOS1_LB_gshed_da(ng102,k1,t24):2
- s1704:  S1 :: muLB_gshed_da(ng102,k2,t24):1
+ s1776:  S1 :: muLB_gshed_da(ng102,k2,t24):1
      SOS1_LB_gshed_da(ng102,k2,t24):2
- s1705:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t1):1
+ s1777:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t1):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t1):2
- s1706:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t1):1
+ s1778:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t1):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t1):2
- s1707:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t1):1
+ s1779:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t1):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t1):2
- s1708:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t2):1
+ s1780:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t2):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t2):2
- s1709:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t2):1
+ s1781:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t2):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t2):2
- s1710:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t2):1
+ s1782:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t2):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t2):2
- s1711:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t3):1
+ s1783:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t3):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t3):2
- s1712:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t3):1
+ s1784:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t3):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t3):2
- s1713:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t3):1
+ s1785:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t3):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t3):2
- s1714:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t4):1
+ s1786:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t4):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t4):2
- s1715:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t4):1
+ s1787:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t4):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t4):2
- s1716:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t4):1
+ s1788:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t4):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t4):2
- s1717:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t5):1
+ s1789:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t5):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t5):2
- s1718:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t5):1
+ s1790:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t5):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t5):2
- s1719:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t5):1
+ s1791:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t5):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t5):2
- s1720:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t6):1
+ s1792:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t6):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t6):2
- s1721:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t6):1
+ s1793:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t6):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t6):2
- s1722:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t6):1
+ s1794:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t6):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t6):2
- s1723:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t7):1
+ s1795:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t7):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t7):2
- s1724:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t7):1
+ s1796:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t7):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t7):2
- s1725:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t7):1
+ s1797:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t7):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t7):2
- s1726:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t8):1
+ s1798:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t8):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t8):2
- s1727:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t8):1
+ s1799:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t8):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t8):2
- s1728:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t8):1
+ s1800:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t8):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t8):2
- s1729:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t9):1
+ s1801:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t9):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t9):2
- s1730:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t9):1
+ s1802:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t9):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t9):2
- s1731:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t9):1
+ s1803:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t9):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t9):2
- s1732:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t10):1
+ s1804:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t10):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t10):2
- s1733:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t10):1
+ s1805:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t10):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t10):2
- s1734:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t10):1
+ s1806:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t10):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t10):2
- s1735:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t11):1
+ s1807:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t11):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t11):2
- s1736:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t11):1
+ s1808:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t11):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t11):2
- s1737:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t11):1
+ s1809:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t11):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t11):2
- s1738:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t12):1
+ s1810:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t12):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t12):2
- s1739:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t12):1
+ s1811:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t12):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t12):2
- s1740:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t12):1
+ s1812:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t12):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t12):2
- s1741:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t13):1
+ s1813:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t13):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t13):2
- s1742:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t13):1
+ s1814:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t13):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t13):2
- s1743:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t13):1
+ s1815:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t13):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t13):2
- s1744:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t14):1
+ s1816:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t14):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t14):2
- s1745:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t14):1
+ s1817:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t14):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t14):2
- s1746:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t14):1
+ s1818:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t14):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t14):2
- s1747:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t15):1
+ s1819:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t15):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t15):2
- s1748:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t15):1
+ s1820:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t15):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t15):2
- s1749:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t15):1
+ s1821:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t15):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t15):2
- s1750:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t16):1
+ s1822:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t16):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t16):2
- s1751:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t16):1
+ s1823:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t16):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t16):2
- s1752:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t16):1
+ s1824:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t16):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t16):2
- s1753:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t17):1
+ s1825:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t17):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t17):2
- s1754:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t17):1
+ s1826:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t17):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t17):2
- s1755:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t17):1
+ s1827:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t17):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t17):2
- s1756:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t18):1
+ s1828:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t18):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t18):2
- s1757:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t18):1
+ s1829:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t18):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t18):2
- s1758:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t18):1
+ s1830:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t18):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t18):2
- s1759:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t19):1
+ s1831:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t19):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t19):2
- s1760:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t19):1
+ s1832:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t19):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t19):2
- s1761:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t19):1
+ s1833:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t19):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t19):2
- s1762:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t20):1
+ s1834:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t20):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t20):2
- s1763:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t20):1
+ s1835:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t20):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t20):2
- s1764:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t20):1
+ s1836:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t20):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t20):2
- s1765:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t21):1
+ s1837:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t21):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t21):2
- s1766:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t21):1
+ s1838:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t21):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t21):2
- s1767:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t21):1
+ s1839:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t21):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t21):2
- s1768:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t22):1
+ s1840:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t22):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t22):2
- s1769:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t22):1
+ s1841:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t22):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t22):2
- s1770:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t22):1
+ s1842:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t22):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t22):2
- s1771:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t23):1
+ s1843:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t23):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t23):2
- s1772:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t23):1
+ s1844:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t23):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t23):2
- s1773:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t23):1
+ s1845:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t23):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t23):2
- s1774:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t24):1
+ s1846:  S1 :: muLB_gflow_sr(('ng101','ng102'),k0,t24):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k0,t24):2
- s1775:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t24):1
+ s1847:  S1 :: muLB_gflow_sr(('ng101','ng102'),k1,t24):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k1,t24):2
- s1776:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t24):1
+ s1848:  S1 :: muLB_gflow_sr(('ng101','ng102'),k2,t24):1
      SOS1_LB_gflow_sr(('ng101','ng102'),k2,t24):2
- s1777:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t1):1
+ s1849:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t1):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t1):2
- s1778:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t1):1
+ s1850:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t1):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t1):2
- s1779:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t1):1
+ s1851:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t1):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t1):2
- s1780:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t1):1
+ s1852:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t1):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t1):2
- s1781:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t1):1
+ s1853:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t1):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t1):2
- s1782:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t1):1
+ s1854:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t1):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t1):2
- s1783:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t2):1
+ s1855:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t2):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t2):2
- s1784:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t2):1
+ s1856:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t2):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t2):2
- s1785:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t2):1
+ s1857:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t2):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t2):2
- s1786:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t2):1
+ s1858:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t2):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t2):2
- s1787:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t2):1
+ s1859:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t2):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t2):2
- s1788:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t2):1
+ s1860:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t2):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t2):2
- s1789:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t3):1
+ s1861:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t3):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t3):2
- s1790:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t3):1
+ s1862:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t3):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t3):2
- s1791:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t3):1
+ s1863:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t3):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t3):2
- s1792:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t3):1
+ s1864:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t3):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t3):2
- s1793:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t3):1
+ s1865:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t3):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t3):2
- s1794:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t3):1
+ s1866:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t3):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t3):2
- s1795:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t4):1
+ s1867:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t4):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t4):2
- s1796:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t4):1
+ s1868:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t4):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t4):2
- s1797:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t4):1
+ s1869:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t4):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t4):2
- s1798:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t4):1
+ s1870:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t4):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t4):2
- s1799:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t4):1
+ s1871:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t4):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t4):2
- s1800:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t4):1
+ s1872:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t4):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t4):2
- s1801:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t5):1
+ s1873:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t5):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t5):2
- s1802:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t5):1
+ s1874:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t5):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t5):2
- s1803:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t5):1
+ s1875:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t5):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t5):2
- s1804:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t5):1
+ s1876:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t5):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t5):2
- s1805:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t5):1
+ s1877:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t5):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t5):2
- s1806:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t5):1
+ s1878:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t5):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t5):2
- s1807:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t6):1
+ s1879:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t6):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t6):2
- s1808:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t6):1
+ s1880:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t6):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t6):2
- s1809:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t6):1
+ s1881:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t6):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t6):2
- s1810:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t6):1
+ s1882:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t6):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t6):2
- s1811:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t6):1
+ s1883:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t6):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t6):2
- s1812:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t6):1
+ s1884:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t6):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t6):2
- s1813:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t7):1
+ s1885:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t7):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t7):2
- s1814:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t7):1
+ s1886:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t7):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t7):2
- s1815:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t7):1
+ s1887:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t7):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t7):2
- s1816:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t7):1
+ s1888:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t7):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t7):2
- s1817:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t7):1
+ s1889:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t7):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t7):2
- s1818:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t7):1
+ s1890:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t7):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t7):2
- s1819:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t8):1
+ s1891:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t8):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t8):2
- s1820:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t8):1
+ s1892:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t8):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t8):2
- s1821:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t8):1
+ s1893:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t8):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t8):2
- s1822:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t8):1
+ s1894:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t8):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t8):2
- s1823:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t8):1
+ s1895:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t8):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t8):2
- s1824:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t8):1
+ s1896:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t8):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t8):2
- s1825:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t9):1
+ s1897:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t9):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t9):2
- s1826:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t9):1
+ s1898:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t9):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t9):2
- s1827:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t9):1
+ s1899:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t9):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t9):2
- s1828:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t9):1
+ s1900:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t9):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t9):2
- s1829:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t9):1
+ s1901:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t9):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t9):2
- s1830:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t9):1
+ s1902:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t9):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t9):2
- s1831:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t10):1
+ s1903:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t10):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t10):2
- s1832:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t10):1
+ s1904:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t10):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t10):2
- s1833:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t10):1
+ s1905:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t10):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t10):2
- s1834:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t10):1
+ s1906:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t10):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t10):2
- s1835:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t10):1
+ s1907:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t10):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t10):2
- s1836:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t10):1
+ s1908:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t10):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t10):2
- s1837:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t11):1
+ s1909:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t11):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t11):2
- s1838:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t11):1
+ s1910:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t11):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t11):2
- s1839:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t11):1
+ s1911:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t11):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t11):2
- s1840:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t11):1
+ s1912:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t11):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t11):2
- s1841:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t11):1
+ s1913:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t11):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t11):2
- s1842:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t11):1
+ s1914:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t11):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t11):2
- s1843:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t12):1
+ s1915:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t12):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t12):2
- s1844:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t12):1
+ s1916:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t12):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t12):2
- s1845:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t12):1
+ s1917:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t12):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t12):2
- s1846:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t12):1
+ s1918:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t12):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t12):2
- s1847:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t12):1
+ s1919:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t12):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t12):2
- s1848:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t12):1
+ s1920:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t12):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t12):2
- s1849:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t13):1
+ s1921:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t13):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t13):2
- s1850:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t13):1
+ s1922:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t13):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t13):2
- s1851:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t13):1
+ s1923:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t13):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t13):2
- s1852:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t13):1
+ s1924:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t13):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t13):2
- s1853:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t13):1
+ s1925:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t13):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t13):2
- s1854:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t13):1
+ s1926:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t13):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t13):2
- s1855:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t14):1
+ s1927:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t14):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t14):2
- s1856:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t14):1
+ s1928:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t14):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t14):2
- s1857:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t14):1
+ s1929:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t14):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t14):2
- s1858:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t14):1
+ s1930:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t14):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t14):2
- s1859:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t14):1
+ s1931:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t14):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t14):2
- s1860:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t14):1
+ s1932:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t14):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t14):2
- s1861:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t15):1
+ s1933:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t15):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t15):2
- s1862:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t15):1
+ s1934:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t15):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t15):2
- s1863:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t15):1
+ s1935:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t15):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t15):2
- s1864:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t15):1
+ s1936:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t15):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t15):2
- s1865:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t15):1
+ s1937:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t15):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t15):2
- s1866:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t15):1
+ s1938:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t15):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t15):2
- s1867:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t16):1
+ s1939:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t16):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t16):2
- s1868:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t16):1
+ s1940:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t16):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t16):2
- s1869:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t16):1
+ s1941:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t16):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t16):2
- s1870:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t16):1
+ s1942:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t16):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t16):2
- s1871:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t16):1
+ s1943:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t16):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t16):2
- s1872:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t16):1
+ s1944:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t16):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t16):2
- s1873:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t17):1
+ s1945:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t17):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t17):2
- s1874:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t17):1
+ s1946:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t17):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t17):2
- s1875:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t17):1
+ s1947:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t17):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t17):2
- s1876:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t17):1
+ s1948:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t17):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t17):2
- s1877:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t17):1
+ s1949:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t17):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t17):2
- s1878:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t17):1
+ s1950:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t17):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t17):2
- s1879:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t18):1
+ s1951:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t18):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t18):2
- s1880:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t18):1
+ s1952:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t18):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t18):2
- s1881:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t18):1
+ s1953:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t18):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t18):2
- s1882:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t18):1
+ s1954:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t18):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t18):2
- s1883:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t18):1
+ s1955:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t18):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t18):2
- s1884:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t18):1
+ s1956:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t18):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t18):2
- s1885:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t19):1
+ s1957:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t19):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t19):2
- s1886:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t19):1
+ s1958:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t19):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t19):2
- s1887:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t19):1
+ s1959:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t19):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t19):2
- s1888:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t19):1
+ s1960:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t19):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t19):2
- s1889:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t19):1
+ s1961:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t19):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t19):2
- s1890:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t19):1
+ s1962:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t19):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t19):2
- s1891:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t20):1
+ s1963:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t20):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t20):2
- s1892:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t20):1
+ s1964:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t20):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t20):2
- s1893:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t20):1
+ s1965:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t20):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t20):2
- s1894:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t20):1
+ s1966:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t20):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t20):2
- s1895:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t20):1
+ s1967:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t20):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t20):2
- s1896:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t20):1
+ s1968:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t20):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t20):2
- s1897:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t21):1
+ s1969:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t21):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t21):2
- s1898:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t21):1
+ s1970:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t21):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t21):2
- s1899:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t21):1
+ s1971:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t21):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t21):2
- s1900:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t21):1
+ s1972:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t21):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t21):2
- s1901:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t21):1
+ s1973:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t21):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t21):2
- s1902:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t21):1
+ s1974:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t21):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t21):2
- s1903:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t22):1
+ s1975:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t22):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t22):2
- s1904:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t22):1
+ s1976:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t22):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t22):2
- s1905:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t22):1
+ s1977:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t22):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t22):2
- s1906:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t22):1
+ s1978:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t22):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t22):2
- s1907:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t22):1
+ s1979:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t22):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t22):2
- s1908:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t22):1
+ s1980:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t22):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t22):2
- s1909:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t23):1
+ s1981:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t23):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t23):2
- s1910:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t23):1
+ s1982:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t23):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t23):2
- s1911:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t23):1
+ s1983:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t23):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t23):2
- s1912:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t23):1
+ s1984:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t23):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t23):2
- s1913:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t23):1
+ s1985:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t23):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t23):2
- s1914:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t23):1
+ s1986:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t23):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t23):2
- s1915:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t24):1
+ s1987:  S1 :: muLB_qin_sr(('ng101','ng102'),k0,t24):1
      SOS1_LB_qin_sr(('ng101','ng102'),k0,t24):2
- s1916:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t24):1
+ s1988:  S1 :: muLB_qout_sr(('ng101','ng102'),k0,t24):1
      SOS1_LB_qout_sr(('ng101','ng102'),k0,t24):2
- s1917:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t24):1
+ s1989:  S1 :: muLB_qin_sr(('ng101','ng102'),k1,t24):1
      SOS1_LB_qin_sr(('ng101','ng102'),k1,t24):2
- s1918:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t24):1
+ s1990:  S1 :: muLB_qout_sr(('ng101','ng102'),k1,t24):1
      SOS1_LB_qout_sr(('ng101','ng102'),k1,t24):2
- s1919:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t24):1
+ s1991:  S1 :: muLB_qin_sr(('ng101','ng102'),k2,t24):1
      SOS1_LB_qin_sr(('ng101','ng102'),k2,t24):2
- s1920:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t24):1
+ s1992:  S1 :: muLB_qout_sr(('ng101','ng102'),k2,t24):1
      SOS1_LB_qout_sr(('ng101','ng102'),k2,t24):2
- s1921:  S1 :: muLB_gprod(gw1,k0,t1):1 SOS1_LB_gprod(gw1,k0,t1):2
- s1922:  S1 :: muLB_gprod(gw1,k1,t1):1 SOS1_LB_gprod(gw1,k1,t1):2
- s1923:  S1 :: muLB_gprod(gw1,k2,t1):1 SOS1_LB_gprod(gw1,k2,t1):2
- s1924:  S1 :: muLB_gprod(gw1,k0,t2):1 SOS1_LB_gprod(gw1,k0,t2):2
- s1925:  S1 :: muLB_gprod(gw1,k1,t2):1 SOS1_LB_gprod(gw1,k1,t2):2
- s1926:  S1 :: muLB_gprod(gw1,k2,t2):1 SOS1_LB_gprod(gw1,k2,t2):2
- s1927:  S1 :: muLB_gprod(gw1,k0,t3):1 SOS1_LB_gprod(gw1,k0,t3):2
- s1928:  S1 :: muLB_gprod(gw1,k1,t3):1 SOS1_LB_gprod(gw1,k1,t3):2
- s1929:  S1 :: muLB_gprod(gw1,k2,t3):1 SOS1_LB_gprod(gw1,k2,t3):2
- s1930:  S1 :: muLB_gprod(gw1,k0,t4):1 SOS1_LB_gprod(gw1,k0,t4):2
- s1931:  S1 :: muLB_gprod(gw1,k1,t4):1 SOS1_LB_gprod(gw1,k1,t4):2
- s1932:  S1 :: muLB_gprod(gw1,k2,t4):1 SOS1_LB_gprod(gw1,k2,t4):2
- s1933:  S1 :: muLB_gprod(gw1,k0,t5):1 SOS1_LB_gprod(gw1,k0,t5):2
- s1934:  S1 :: muLB_gprod(gw1,k1,t5):1 SOS1_LB_gprod(gw1,k1,t5):2
- s1935:  S1 :: muLB_gprod(gw1,k2,t5):1 SOS1_LB_gprod(gw1,k2,t5):2
- s1936:  S1 :: muLB_gprod(gw1,k0,t6):1 SOS1_LB_gprod(gw1,k0,t6):2
- s1937:  S1 :: muLB_gprod(gw1,k1,t6):1 SOS1_LB_gprod(gw1,k1,t6):2
- s1938:  S1 :: muLB_gprod(gw1,k2,t6):1 SOS1_LB_gprod(gw1,k2,t6):2
- s1939:  S1 :: muLB_gprod(gw1,k0,t7):1 SOS1_LB_gprod(gw1,k0,t7):2
- s1940:  S1 :: muLB_gprod(gw1,k1,t7):1 SOS1_LB_gprod(gw1,k1,t7):2
- s1941:  S1 :: muLB_gprod(gw1,k2,t7):1 SOS1_LB_gprod(gw1,k2,t7):2
- s1942:  S1 :: muLB_gprod(gw1,k0,t8):1 SOS1_LB_gprod(gw1,k0,t8):2
- s1943:  S1 :: muLB_gprod(gw1,k1,t8):1 SOS1_LB_gprod(gw1,k1,t8):2
- s1944:  S1 :: muLB_gprod(gw1,k2,t8):1 SOS1_LB_gprod(gw1,k2,t8):2
- s1945:  S1 :: muLB_gprod(gw1,k0,t9):1 SOS1_LB_gprod(gw1,k0,t9):2
- s1946:  S1 :: muLB_gprod(gw1,k1,t9):1 SOS1_LB_gprod(gw1,k1,t9):2
- s1947:  S1 :: muLB_gprod(gw1,k2,t9):1 SOS1_LB_gprod(gw1,k2,t9):2
- s1948:  S1 :: muLB_gprod(gw1,k0,t10):1 SOS1_LB_gprod(gw1,k0,t10):2
- s1949:  S1 :: muLB_gprod(gw1,k1,t10):1 SOS1_LB_gprod(gw1,k1,t10):2
- s1950:  S1 :: muLB_gprod(gw1,k2,t10):1 SOS1_LB_gprod(gw1,k2,t10):2
- s1951:  S1 :: muLB_gprod(gw1,k0,t11):1 SOS1_LB_gprod(gw1,k0,t11):2
- s1952:  S1 :: muLB_gprod(gw1,k1,t11):1 SOS1_LB_gprod(gw1,k1,t11):2
- s1953:  S1 :: muLB_gprod(gw1,k2,t11):1 SOS1_LB_gprod(gw1,k2,t11):2
- s1954:  S1 :: muLB_gprod(gw1,k0,t12):1 SOS1_LB_gprod(gw1,k0,t12):2
- s1955:  S1 :: muLB_gprod(gw1,k1,t12):1 SOS1_LB_gprod(gw1,k1,t12):2
- s1956:  S1 :: muLB_gprod(gw1,k2,t12):1 SOS1_LB_gprod(gw1,k2,t12):2
- s1957:  S1 :: muLB_gprod(gw1,k0,t13):1 SOS1_LB_gprod(gw1,k0,t13):2
- s1958:  S1 :: muLB_gprod(gw1,k1,t13):1 SOS1_LB_gprod(gw1,k1,t13):2
- s1959:  S1 :: muLB_gprod(gw1,k2,t13):1 SOS1_LB_gprod(gw1,k2,t13):2
- s1960:  S1 :: muLB_gprod(gw1,k0,t14):1 SOS1_LB_gprod(gw1,k0,t14):2
- s1961:  S1 :: muLB_gprod(gw1,k1,t14):1 SOS1_LB_gprod(gw1,k1,t14):2
- s1962:  S1 :: muLB_gprod(gw1,k2,t14):1 SOS1_LB_gprod(gw1,k2,t14):2
- s1963:  S1 :: muLB_gprod(gw1,k0,t15):1 SOS1_LB_gprod(gw1,k0,t15):2
- s1964:  S1 :: muLB_gprod(gw1,k1,t15):1 SOS1_LB_gprod(gw1,k1,t15):2
- s1965:  S1 :: muLB_gprod(gw1,k2,t15):1 SOS1_LB_gprod(gw1,k2,t15):2
- s1966:  S1 :: muLB_gprod(gw1,k0,t16):1 SOS1_LB_gprod(gw1,k0,t16):2
- s1967:  S1 :: muLB_gprod(gw1,k1,t16):1 SOS1_LB_gprod(gw1,k1,t16):2
- s1968:  S1 :: muLB_gprod(gw1,k2,t16):1 SOS1_LB_gprod(gw1,k2,t16):2
- s1969:  S1 :: muLB_gprod(gw1,k0,t17):1 SOS1_LB_gprod(gw1,k0,t17):2
- s1970:  S1 :: muLB_gprod(gw1,k1,t17):1 SOS1_LB_gprod(gw1,k1,t17):2
- s1971:  S1 :: muLB_gprod(gw1,k2,t17):1 SOS1_LB_gprod(gw1,k2,t17):2
- s1972:  S1 :: muLB_gprod(gw1,k0,t18):1 SOS1_LB_gprod(gw1,k0,t18):2
- s1973:  S1 :: muLB_gprod(gw1,k1,t18):1 SOS1_LB_gprod(gw1,k1,t18):2
- s1974:  S1 :: muLB_gprod(gw1,k2,t18):1 SOS1_LB_gprod(gw1,k2,t18):2
- s1975:  S1 :: muLB_gprod(gw1,k0,t19):1 SOS1_LB_gprod(gw1,k0,t19):2
- s1976:  S1 :: muLB_gprod(gw1,k1,t19):1 SOS1_LB_gprod(gw1,k1,t19):2
- s1977:  S1 :: muLB_gprod(gw1,k2,t19):1 SOS1_LB_gprod(gw1,k2,t19):2
- s1978:  S1 :: muLB_gprod(gw1,k0,t20):1 SOS1_LB_gprod(gw1,k0,t20):2
- s1979:  S1 :: muLB_gprod(gw1,k1,t20):1 SOS1_LB_gprod(gw1,k1,t20):2
- s1980:  S1 :: muLB_gprod(gw1,k2,t20):1 SOS1_LB_gprod(gw1,k2,t20):2
- s1981:  S1 :: muLB_gprod(gw1,k0,t21):1 SOS1_LB_gprod(gw1,k0,t21):2
- s1982:  S1 :: muLB_gprod(gw1,k1,t21):1 SOS1_LB_gprod(gw1,k1,t21):2
- s1983:  S1 :: muLB_gprod(gw1,k2,t21):1 SOS1_LB_gprod(gw1,k2,t21):2
- s1984:  S1 :: muLB_gprod(gw1,k0,t22):1 SOS1_LB_gprod(gw1,k0,t22):2
- s1985:  S1 :: muLB_gprod(gw1,k1,t22):1 SOS1_LB_gprod(gw1,k1,t22):2
- s1986:  S1 :: muLB_gprod(gw1,k2,t22):1 SOS1_LB_gprod(gw1,k2,t22):2
- s1987:  S1 :: muLB_gprod(gw1,k0,t23):1 SOS1_LB_gprod(gw1,k0,t23):2
- s1988:  S1 :: muLB_gprod(gw1,k1,t23):1 SOS1_LB_gprod(gw1,k1,t23):2
- s1989:  S1 :: muLB_gprod(gw1,k2,t23):1 SOS1_LB_gprod(gw1,k2,t23):2
- s1990:  S1 :: muLB_gprod(gw1,k0,t24):1 SOS1_LB_gprod(gw1,k0,t24):2
- s1991:  S1 :: muLB_gprod(gw1,k1,t24):1 SOS1_LB_gprod(gw1,k1,t24):2
- s1992:  S1 :: muLB_gprod(gw1,k2,t24):1 SOS1_LB_gprod(gw1,k2,t24):2
- s1993:  S1 :: muLB_gprod(gw2,k0,t1):1 SOS1_LB_gprod(gw2,k0,t1):2
- s1994:  S1 :: muLB_gprod(gw2,k1,t1):1 SOS1_LB_gprod(gw2,k1,t1):2
- s1995:  S1 :: muLB_gprod(gw2,k2,t1):1 SOS1_LB_gprod(gw2,k2,t1):2
- s1996:  S1 :: muLB_gprod(gw2,k0,t2):1 SOS1_LB_gprod(gw2,k0,t2):2
- s1997:  S1 :: muLB_gprod(gw2,k1,t2):1 SOS1_LB_gprod(gw2,k1,t2):2
- s1998:  S1 :: muLB_gprod(gw2,k2,t2):1 SOS1_LB_gprod(gw2,k2,t2):2
- s1999:  S1 :: muLB_gprod(gw2,k0,t3):1 SOS1_LB_gprod(gw2,k0,t3):2
- s2000:  S1 :: muLB_gprod(gw2,k1,t3):1 SOS1_LB_gprod(gw2,k1,t3):2
- s2001:  S1 :: muLB_gprod(gw2,k2,t3):1 SOS1_LB_gprod(gw2,k2,t3):2
- s2002:  S1 :: muLB_gprod(gw2,k0,t4):1 SOS1_LB_gprod(gw2,k0,t4):2
- s2003:  S1 :: muLB_gprod(gw2,k1,t4):1 SOS1_LB_gprod(gw2,k1,t4):2
- s2004:  S1 :: muLB_gprod(gw2,k2,t4):1 SOS1_LB_gprod(gw2,k2,t4):2
- s2005:  S1 :: muLB_gprod(gw2,k0,t5):1 SOS1_LB_gprod(gw2,k0,t5):2
- s2006:  S1 :: muLB_gprod(gw2,k1,t5):1 SOS1_LB_gprod(gw2,k1,t5):2
- s2007:  S1 :: muLB_gprod(gw2,k2,t5):1 SOS1_LB_gprod(gw2,k2,t5):2
- s2008:  S1 :: muLB_gprod(gw2,k0,t6):1 SOS1_LB_gprod(gw2,k0,t6):2
- s2009:  S1 :: muLB_gprod(gw2,k1,t6):1 SOS1_LB_gprod(gw2,k1,t6):2
- s2010:  S1 :: muLB_gprod(gw2,k2,t6):1 SOS1_LB_gprod(gw2,k2,t6):2
- s2011:  S1 :: muLB_gprod(gw2,k0,t7):1 SOS1_LB_gprod(gw2,k0,t7):2
- s2012:  S1 :: muLB_gprod(gw2,k1,t7):1 SOS1_LB_gprod(gw2,k1,t7):2
- s2013:  S1 :: muLB_gprod(gw2,k2,t7):1 SOS1_LB_gprod(gw2,k2,t7):2
- s2014:  S1 :: muLB_gprod(gw2,k0,t8):1 SOS1_LB_gprod(gw2,k0,t8):2
- s2015:  S1 :: muLB_gprod(gw2,k1,t8):1 SOS1_LB_gprod(gw2,k1,t8):2
- s2016:  S1 :: muLB_gprod(gw2,k2,t8):1 SOS1_LB_gprod(gw2,k2,t8):2
- s2017:  S1 :: muLB_gprod(gw2,k0,t9):1 SOS1_LB_gprod(gw2,k0,t9):2
- s2018:  S1 :: muLB_gprod(gw2,k1,t9):1 SOS1_LB_gprod(gw2,k1,t9):2
- s2019:  S1 :: muLB_gprod(gw2,k2,t9):1 SOS1_LB_gprod(gw2,k2,t9):2
- s2020:  S1 :: muLB_gprod(gw2,k0,t10):1 SOS1_LB_gprod(gw2,k0,t10):2
- s2021:  S1 :: muLB_gprod(gw2,k1,t10):1 SOS1_LB_gprod(gw2,k1,t10):2
- s2022:  S1 :: muLB_gprod(gw2,k2,t10):1 SOS1_LB_gprod(gw2,k2,t10):2
- s2023:  S1 :: muLB_gprod(gw2,k0,t11):1 SOS1_LB_gprod(gw2,k0,t11):2
- s2024:  S1 :: muLB_gprod(gw2,k1,t11):1 SOS1_LB_gprod(gw2,k1,t11):2
- s2025:  S1 :: muLB_gprod(gw2,k2,t11):1 SOS1_LB_gprod(gw2,k2,t11):2
- s2026:  S1 :: muLB_gprod(gw2,k0,t12):1 SOS1_LB_gprod(gw2,k0,t12):2
- s2027:  S1 :: muLB_gprod(gw2,k1,t12):1 SOS1_LB_gprod(gw2,k1,t12):2
- s2028:  S1 :: muLB_gprod(gw2,k2,t12):1 SOS1_LB_gprod(gw2,k2,t12):2
- s2029:  S1 :: muLB_gprod(gw2,k0,t13):1 SOS1_LB_gprod(gw2,k0,t13):2
- s2030:  S1 :: muLB_gprod(gw2,k1,t13):1 SOS1_LB_gprod(gw2,k1,t13):2
- s2031:  S1 :: muLB_gprod(gw2,k2,t13):1 SOS1_LB_gprod(gw2,k2,t13):2
- s2032:  S1 :: muLB_gprod(gw2,k0,t14):1 SOS1_LB_gprod(gw2,k0,t14):2
- s2033:  S1 :: muLB_gprod(gw2,k1,t14):1 SOS1_LB_gprod(gw2,k1,t14):2
- s2034:  S1 :: muLB_gprod(gw2,k2,t14):1 SOS1_LB_gprod(gw2,k2,t14):2
- s2035:  S1 :: muLB_gprod(gw2,k0,t15):1 SOS1_LB_gprod(gw2,k0,t15):2
- s2036:  S1 :: muLB_gprod(gw2,k1,t15):1 SOS1_LB_gprod(gw2,k1,t15):2
- s2037:  S1 :: muLB_gprod(gw2,k2,t15):1 SOS1_LB_gprod(gw2,k2,t15):2
- s2038:  S1 :: muLB_gprod(gw2,k0,t16):1 SOS1_LB_gprod(gw2,k0,t16):2
- s2039:  S1 :: muLB_gprod(gw2,k1,t16):1 SOS1_LB_gprod(gw2,k1,t16):2
- s2040:  S1 :: muLB_gprod(gw2,k2,t16):1 SOS1_LB_gprod(gw2,k2,t16):2
- s2041:  S1 :: muLB_gprod(gw2,k0,t17):1 SOS1_LB_gprod(gw2,k0,t17):2
- s2042:  S1 :: muLB_gprod(gw2,k1,t17):1 SOS1_LB_gprod(gw2,k1,t17):2
- s2043:  S1 :: muLB_gprod(gw2,k2,t17):1 SOS1_LB_gprod(gw2,k2,t17):2
- s2044:  S1 :: muLB_gprod(gw2,k0,t18):1 SOS1_LB_gprod(gw2,k0,t18):2
- s2045:  S1 :: muLB_gprod(gw2,k1,t18):1 SOS1_LB_gprod(gw2,k1,t18):2
- s2046:  S1 :: muLB_gprod(gw2,k2,t18):1 SOS1_LB_gprod(gw2,k2,t18):2
- s2047:  S1 :: muLB_gprod(gw2,k0,t19):1 SOS1_LB_gprod(gw2,k0,t19):2
- s2048:  S1 :: muLB_gprod(gw2,k1,t19):1 SOS1_LB_gprod(gw2,k1,t19):2
- s2049:  S1 :: muLB_gprod(gw2,k2,t19):1 SOS1_LB_gprod(gw2,k2,t19):2
- s2050:  S1 :: muLB_gprod(gw2,k0,t20):1 SOS1_LB_gprod(gw2,k0,t20):2
- s2051:  S1 :: muLB_gprod(gw2,k1,t20):1 SOS1_LB_gprod(gw2,k1,t20):2
- s2052:  S1 :: muLB_gprod(gw2,k2,t20):1 SOS1_LB_gprod(gw2,k2,t20):2
- s2053:  S1 :: muLB_gprod(gw2,k0,t21):1 SOS1_LB_gprod(gw2,k0,t21):2
- s2054:  S1 :: muLB_gprod(gw2,k1,t21):1 SOS1_LB_gprod(gw2,k1,t21):2
- s2055:  S1 :: muLB_gprod(gw2,k2,t21):1 SOS1_LB_gprod(gw2,k2,t21):2
- s2056:  S1 :: muLB_gprod(gw2,k0,t22):1 SOS1_LB_gprod(gw2,k0,t22):2
- s2057:  S1 :: muLB_gprod(gw2,k1,t22):1 SOS1_LB_gprod(gw2,k1,t22):2
- s2058:  S1 :: muLB_gprod(gw2,k2,t22):1 SOS1_LB_gprod(gw2,k2,t22):2
- s2059:  S1 :: muLB_gprod(gw2,k0,t23):1 SOS1_LB_gprod(gw2,k0,t23):2
- s2060:  S1 :: muLB_gprod(gw2,k1,t23):1 SOS1_LB_gprod(gw2,k1,t23):2
- s2061:  S1 :: muLB_gprod(gw2,k2,t23):1 SOS1_LB_gprod(gw2,k2,t23):2
- s2062:  S1 :: muLB_gprod(gw2,k0,t24):1 SOS1_LB_gprod(gw2,k0,t24):2
- s2063:  S1 :: muLB_gprod(gw2,k1,t24):1 SOS1_LB_gprod(gw2,k1,t24):2
- s2064:  S1 :: muLB_gprod(gw2,k2,t24):1 SOS1_LB_gprod(gw2,k2,t24):2
- s2065:  S1 :: muLB_gsin(gs1,t1,k0):1 SOS1_LB_gsin(gs1,t1,k0):2
- s2066:  S1 :: muLB_gsout(gs1,t1,k0):1 SOS1_LB_gsout(gs1,t1,k0):2
- s2067:  S1 :: muLB_gstore(gs1,t1,k0):1 SOS1_LB_gstore(gs1,t1,k0):2
- s2068:  S1 :: muLB_gsin(gs1,t1,k1):1 SOS1_LB_gsin(gs1,t1,k1):2
- s2069:  S1 :: muLB_gsout(gs1,t1,k1):1 SOS1_LB_gsout(gs1,t1,k1):2
- s2070:  S1 :: muLB_gstore(gs1,t1,k1):1 SOS1_LB_gstore(gs1,t1,k1):2
- s2071:  S1 :: muLB_gsin(gs1,t1,k2):1 SOS1_LB_gsin(gs1,t1,k2):2
- s2072:  S1 :: muLB_gsout(gs1,t1,k2):1 SOS1_LB_gsout(gs1,t1,k2):2
- s2073:  S1 :: muLB_gstore(gs1,t1,k2):1 SOS1_LB_gstore(gs1,t1,k2):2
- s2074:  S1 :: muLB_gsin(gs1,t2,k0):1 SOS1_LB_gsin(gs1,t2,k0):2
- s2075:  S1 :: muLB_gsout(gs1,t2,k0):1 SOS1_LB_gsout(gs1,t2,k0):2
- s2076:  S1 :: muLB_gstore(gs1,t2,k0):1 SOS1_LB_gstore(gs1,t2,k0):2
- s2077:  S1 :: muLB_gsin(gs1,t2,k1):1 SOS1_LB_gsin(gs1,t2,k1):2
- s2078:  S1 :: muLB_gsout(gs1,t2,k1):1 SOS1_LB_gsout(gs1,t2,k1):2
- s2079:  S1 :: muLB_gstore(gs1,t2,k1):1 SOS1_LB_gstore(gs1,t2,k1):2
- s2080:  S1 :: muLB_gsin(gs1,t2,k2):1 SOS1_LB_gsin(gs1,t2,k2):2
- s2081:  S1 :: muLB_gsout(gs1,t2,k2):1 SOS1_LB_gsout(gs1,t2,k2):2
- s2082:  S1 :: muLB_gstore(gs1,t2,k2):1 SOS1_LB_gstore(gs1,t2,k2):2
- s2083:  S1 :: muLB_gsin(gs1,t3,k0):1 SOS1_LB_gsin(gs1,t3,k0):2
- s2084:  S1 :: muLB_gsout(gs1,t3,k0):1 SOS1_LB_gsout(gs1,t3,k0):2
- s2085:  S1 :: muLB_gstore(gs1,t3,k0):1 SOS1_LB_gstore(gs1,t3,k0):2
- s2086:  S1 :: muLB_gsin(gs1,t3,k1):1 SOS1_LB_gsin(gs1,t3,k1):2
- s2087:  S1 :: muLB_gsout(gs1,t3,k1):1 SOS1_LB_gsout(gs1,t3,k1):2
- s2088:  S1 :: muLB_gstore(gs1,t3,k1):1 SOS1_LB_gstore(gs1,t3,k1):2
- s2089:  S1 :: muLB_gsin(gs1,t3,k2):1 SOS1_LB_gsin(gs1,t3,k2):2
- s2090:  S1 :: muLB_gsout(gs1,t3,k2):1 SOS1_LB_gsout(gs1,t3,k2):2
- s2091:  S1 :: muLB_gstore(gs1,t3,k2):1 SOS1_LB_gstore(gs1,t3,k2):2
- s2092:  S1 :: muLB_gsin(gs1,t4,k0):1 SOS1_LB_gsin(gs1,t4,k0):2
- s2093:  S1 :: muLB_gsout(gs1,t4,k0):1 SOS1_LB_gsout(gs1,t4,k0):2
- s2094:  S1 :: muLB_gstore(gs1,t4,k0):1 SOS1_LB_gstore(gs1,t4,k0):2
- s2095:  S1 :: muLB_gsin(gs1,t4,k1):1 SOS1_LB_gsin(gs1,t4,k1):2
- s2096:  S1 :: muLB_gsout(gs1,t4,k1):1 SOS1_LB_gsout(gs1,t4,k1):2
- s2097:  S1 :: muLB_gstore(gs1,t4,k1):1 SOS1_LB_gstore(gs1,t4,k1):2
- s2098:  S1 :: muLB_gsin(gs1,t4,k2):1 SOS1_LB_gsin(gs1,t4,k2):2
- s2099:  S1 :: muLB_gsout(gs1,t4,k2):1 SOS1_LB_gsout(gs1,t4,k2):2
- s2100:  S1 :: muLB_gstore(gs1,t4,k2):1 SOS1_LB_gstore(gs1,t4,k2):2
- s2101:  S1 :: muLB_gsin(gs1,t5,k0):1 SOS1_LB_gsin(gs1,t5,k0):2
- s2102:  S1 :: muLB_gsout(gs1,t5,k0):1 SOS1_LB_gsout(gs1,t5,k0):2
- s2103:  S1 :: muLB_gstore(gs1,t5,k0):1 SOS1_LB_gstore(gs1,t5,k0):2
- s2104:  S1 :: muLB_gsin(gs1,t5,k1):1 SOS1_LB_gsin(gs1,t5,k1):2
- s2105:  S1 :: muLB_gsout(gs1,t5,k1):1 SOS1_LB_gsout(gs1,t5,k1):2
- s2106:  S1 :: muLB_gstore(gs1,t5,k1):1 SOS1_LB_gstore(gs1,t5,k1):2
- s2107:  S1 :: muLB_gsin(gs1,t5,k2):1 SOS1_LB_gsin(gs1,t5,k2):2
- s2108:  S1 :: muLB_gsout(gs1,t5,k2):1 SOS1_LB_gsout(gs1,t5,k2):2
- s2109:  S1 :: muLB_gstore(gs1,t5,k2):1 SOS1_LB_gstore(gs1,t5,k2):2
- s2110:  S1 :: muLB_gsin(gs1,t6,k0):1 SOS1_LB_gsin(gs1,t6,k0):2
- s2111:  S1 :: muLB_gsout(gs1,t6,k0):1 SOS1_LB_gsout(gs1,t6,k0):2
- s2112:  S1 :: muLB_gstore(gs1,t6,k0):1 SOS1_LB_gstore(gs1,t6,k0):2
- s2113:  S1 :: muLB_gsin(gs1,t6,k1):1 SOS1_LB_gsin(gs1,t6,k1):2
- s2114:  S1 :: muLB_gsout(gs1,t6,k1):1 SOS1_LB_gsout(gs1,t6,k1):2
- s2115:  S1 :: muLB_gstore(gs1,t6,k1):1 SOS1_LB_gstore(gs1,t6,k1):2
- s2116:  S1 :: muLB_gsin(gs1,t6,k2):1 SOS1_LB_gsin(gs1,t6,k2):2
- s2117:  S1 :: muLB_gsout(gs1,t6,k2):1 SOS1_LB_gsout(gs1,t6,k2):2
- s2118:  S1 :: muLB_gstore(gs1,t6,k2):1 SOS1_LB_gstore(gs1,t6,k2):2
- s2119:  S1 :: muLB_gsin(gs1,t7,k0):1 SOS1_LB_gsin(gs1,t7,k0):2
- s2120:  S1 :: muLB_gsout(gs1,t7,k0):1 SOS1_LB_gsout(gs1,t7,k0):2
- s2121:  S1 :: muLB_gstore(gs1,t7,k0):1 SOS1_LB_gstore(gs1,t7,k0):2
- s2122:  S1 :: muLB_gsin(gs1,t7,k1):1 SOS1_LB_gsin(gs1,t7,k1):2
- s2123:  S1 :: muLB_gsout(gs1,t7,k1):1 SOS1_LB_gsout(gs1,t7,k1):2
- s2124:  S1 :: muLB_gstore(gs1,t7,k1):1 SOS1_LB_gstore(gs1,t7,k1):2
- s2125:  S1 :: muLB_gsin(gs1,t7,k2):1 SOS1_LB_gsin(gs1,t7,k2):2
- s2126:  S1 :: muLB_gsout(gs1,t7,k2):1 SOS1_LB_gsout(gs1,t7,k2):2
- s2127:  S1 :: muLB_gstore(gs1,t7,k2):1 SOS1_LB_gstore(gs1,t7,k2):2
- s2128:  S1 :: muLB_gsin(gs1,t8,k0):1 SOS1_LB_gsin(gs1,t8,k0):2
- s2129:  S1 :: muLB_gsout(gs1,t8,k0):1 SOS1_LB_gsout(gs1,t8,k0):2
- s2130:  S1 :: muLB_gstore(gs1,t8,k0):1 SOS1_LB_gstore(gs1,t8,k0):2
- s2131:  S1 :: muLB_gsin(gs1,t8,k1):1 SOS1_LB_gsin(gs1,t8,k1):2
- s2132:  S1 :: muLB_gsout(gs1,t8,k1):1 SOS1_LB_gsout(gs1,t8,k1):2
- s2133:  S1 :: muLB_gstore(gs1,t8,k1):1 SOS1_LB_gstore(gs1,t8,k1):2
- s2134:  S1 :: muLB_gsin(gs1,t8,k2):1 SOS1_LB_gsin(gs1,t8,k2):2
- s2135:  S1 :: muLB_gsout(gs1,t8,k2):1 SOS1_LB_gsout(gs1,t8,k2):2
- s2136:  S1 :: muLB_gstore(gs1,t8,k2):1 SOS1_LB_gstore(gs1,t8,k2):2
- s2137:  S1 :: muLB_gsin(gs1,t9,k0):1 SOS1_LB_gsin(gs1,t9,k0):2
- s2138:  S1 :: muLB_gsout(gs1,t9,k0):1 SOS1_LB_gsout(gs1,t9,k0):2
- s2139:  S1 :: muLB_gstore(gs1,t9,k0):1 SOS1_LB_gstore(gs1,t9,k0):2
- s2140:  S1 :: muLB_gsin(gs1,t9,k1):1 SOS1_LB_gsin(gs1,t9,k1):2
- s2141:  S1 :: muLB_gsout(gs1,t9,k1):1 SOS1_LB_gsout(gs1,t9,k1):2
- s2142:  S1 :: muLB_gstore(gs1,t9,k1):1 SOS1_LB_gstore(gs1,t9,k1):2
- s2143:  S1 :: muLB_gsin(gs1,t9,k2):1 SOS1_LB_gsin(gs1,t9,k2):2
- s2144:  S1 :: muLB_gsout(gs1,t9,k2):1 SOS1_LB_gsout(gs1,t9,k2):2
- s2145:  S1 :: muLB_gstore(gs1,t9,k2):1 SOS1_LB_gstore(gs1,t9,k2):2
- s2146:  S1 :: muLB_gsin(gs1,t10,k0):1 SOS1_LB_gsin(gs1,t10,k0):2
- s2147:  S1 :: muLB_gsout(gs1,t10,k0):1 SOS1_LB_gsout(gs1,t10,k0):2
- s2148:  S1 :: muLB_gstore(gs1,t10,k0):1 SOS1_LB_gstore(gs1,t10,k0):2
- s2149:  S1 :: muLB_gsin(gs1,t10,k1):1 SOS1_LB_gsin(gs1,t10,k1):2
- s2150:  S1 :: muLB_gsout(gs1,t10,k1):1 SOS1_LB_gsout(gs1,t10,k1):2
- s2151:  S1 :: muLB_gstore(gs1,t10,k1):1 SOS1_LB_gstore(gs1,t10,k1):2
- s2152:  S1 :: muLB_gsin(gs1,t10,k2):1 SOS1_LB_gsin(gs1,t10,k2):2
- s2153:  S1 :: muLB_gsout(gs1,t10,k2):1 SOS1_LB_gsout(gs1,t10,k2):2
- s2154:  S1 :: muLB_gstore(gs1,t10,k2):1 SOS1_LB_gstore(gs1,t10,k2):2
- s2155:  S1 :: muLB_gsin(gs1,t11,k0):1 SOS1_LB_gsin(gs1,t11,k0):2
- s2156:  S1 :: muLB_gsout(gs1,t11,k0):1 SOS1_LB_gsout(gs1,t11,k0):2
- s2157:  S1 :: muLB_gstore(gs1,t11,k0):1 SOS1_LB_gstore(gs1,t11,k0):2
- s2158:  S1 :: muLB_gsin(gs1,t11,k1):1 SOS1_LB_gsin(gs1,t11,k1):2
- s2159:  S1 :: muLB_gsout(gs1,t11,k1):1 SOS1_LB_gsout(gs1,t11,k1):2
- s2160:  S1 :: muLB_gstore(gs1,t11,k1):1 SOS1_LB_gstore(gs1,t11,k1):2
- s2161:  S1 :: muLB_gsin(gs1,t11,k2):1 SOS1_LB_gsin(gs1,t11,k2):2
- s2162:  S1 :: muLB_gsout(gs1,t11,k2):1 SOS1_LB_gsout(gs1,t11,k2):2
- s2163:  S1 :: muLB_gstore(gs1,t11,k2):1 SOS1_LB_gstore(gs1,t11,k2):2
- s2164:  S1 :: muLB_gsin(gs1,t12,k0):1 SOS1_LB_gsin(gs1,t12,k0):2
- s2165:  S1 :: muLB_gsout(gs1,t12,k0):1 SOS1_LB_gsout(gs1,t12,k0):2
- s2166:  S1 :: muLB_gstore(gs1,t12,k0):1 SOS1_LB_gstore(gs1,t12,k0):2
- s2167:  S1 :: muLB_gsin(gs1,t12,k1):1 SOS1_LB_gsin(gs1,t12,k1):2
- s2168:  S1 :: muLB_gsout(gs1,t12,k1):1 SOS1_LB_gsout(gs1,t12,k1):2
- s2169:  S1 :: muLB_gstore(gs1,t12,k1):1 SOS1_LB_gstore(gs1,t12,k1):2
- s2170:  S1 :: muLB_gsin(gs1,t12,k2):1 SOS1_LB_gsin(gs1,t12,k2):2
- s2171:  S1 :: muLB_gsout(gs1,t12,k2):1 SOS1_LB_gsout(gs1,t12,k2):2
- s2172:  S1 :: muLB_gstore(gs1,t12,k2):1 SOS1_LB_gstore(gs1,t12,k2):2
- s2173:  S1 :: muLB_gsin(gs1,t13,k0):1 SOS1_LB_gsin(gs1,t13,k0):2
- s2174:  S1 :: muLB_gsout(gs1,t13,k0):1 SOS1_LB_gsout(gs1,t13,k0):2
- s2175:  S1 :: muLB_gstore(gs1,t13,k0):1 SOS1_LB_gstore(gs1,t13,k0):2
- s2176:  S1 :: muLB_gsin(gs1,t13,k1):1 SOS1_LB_gsin(gs1,t13,k1):2
- s2177:  S1 :: muLB_gsout(gs1,t13,k1):1 SOS1_LB_gsout(gs1,t13,k1):2
- s2178:  S1 :: muLB_gstore(gs1,t13,k1):1 SOS1_LB_gstore(gs1,t13,k1):2
- s2179:  S1 :: muLB_gsin(gs1,t13,k2):1 SOS1_LB_gsin(gs1,t13,k2):2
- s2180:  S1 :: muLB_gsout(gs1,t13,k2):1 SOS1_LB_gsout(gs1,t13,k2):2
- s2181:  S1 :: muLB_gstore(gs1,t13,k2):1 SOS1_LB_gstore(gs1,t13,k2):2
- s2182:  S1 :: muLB_gsin(gs1,t14,k0):1 SOS1_LB_gsin(gs1,t14,k0):2
- s2183:  S1 :: muLB_gsout(gs1,t14,k0):1 SOS1_LB_gsout(gs1,t14,k0):2
- s2184:  S1 :: muLB_gstore(gs1,t14,k0):1 SOS1_LB_gstore(gs1,t14,k0):2
- s2185:  S1 :: muLB_gsin(gs1,t14,k1):1 SOS1_LB_gsin(gs1,t14,k1):2
- s2186:  S1 :: muLB_gsout(gs1,t14,k1):1 SOS1_LB_gsout(gs1,t14,k1):2
- s2187:  S1 :: muLB_gstore(gs1,t14,k1):1 SOS1_LB_gstore(gs1,t14,k1):2
- s2188:  S1 :: muLB_gsin(gs1,t14,k2):1 SOS1_LB_gsin(gs1,t14,k2):2
- s2189:  S1 :: muLB_gsout(gs1,t14,k2):1 SOS1_LB_gsout(gs1,t14,k2):2
- s2190:  S1 :: muLB_gstore(gs1,t14,k2):1 SOS1_LB_gstore(gs1,t14,k2):2
- s2191:  S1 :: muLB_gsin(gs1,t15,k0):1 SOS1_LB_gsin(gs1,t15,k0):2
- s2192:  S1 :: muLB_gsout(gs1,t15,k0):1 SOS1_LB_gsout(gs1,t15,k0):2
- s2193:  S1 :: muLB_gstore(gs1,t15,k0):1 SOS1_LB_gstore(gs1,t15,k0):2
- s2194:  S1 :: muLB_gsin(gs1,t15,k1):1 SOS1_LB_gsin(gs1,t15,k1):2
- s2195:  S1 :: muLB_gsout(gs1,t15,k1):1 SOS1_LB_gsout(gs1,t15,k1):2
- s2196:  S1 :: muLB_gstore(gs1,t15,k1):1 SOS1_LB_gstore(gs1,t15,k1):2
- s2197:  S1 :: muLB_gsin(gs1,t15,k2):1 SOS1_LB_gsin(gs1,t15,k2):2
- s2198:  S1 :: muLB_gsout(gs1,t15,k2):1 SOS1_LB_gsout(gs1,t15,k2):2
- s2199:  S1 :: muLB_gstore(gs1,t15,k2):1 SOS1_LB_gstore(gs1,t15,k2):2
- s2200:  S1 :: muLB_gsin(gs1,t16,k0):1 SOS1_LB_gsin(gs1,t16,k0):2
- s2201:  S1 :: muLB_gsout(gs1,t16,k0):1 SOS1_LB_gsout(gs1,t16,k0):2
- s2202:  S1 :: muLB_gstore(gs1,t16,k0):1 SOS1_LB_gstore(gs1,t16,k0):2
- s2203:  S1 :: muLB_gsin(gs1,t16,k1):1 SOS1_LB_gsin(gs1,t16,k1):2
- s2204:  S1 :: muLB_gsout(gs1,t16,k1):1 SOS1_LB_gsout(gs1,t16,k1):2
- s2205:  S1 :: muLB_gstore(gs1,t16,k1):1 SOS1_LB_gstore(gs1,t16,k1):2
- s2206:  S1 :: muLB_gsin(gs1,t16,k2):1 SOS1_LB_gsin(gs1,t16,k2):2
- s2207:  S1 :: muLB_gsout(gs1,t16,k2):1 SOS1_LB_gsout(gs1,t16,k2):2
- s2208:  S1 :: muLB_gstore(gs1,t16,k2):1 SOS1_LB_gstore(gs1,t16,k2):2
- s2209:  S1 :: muLB_gsin(gs1,t17,k0):1 SOS1_LB_gsin(gs1,t17,k0):2
- s2210:  S1 :: muLB_gsout(gs1,t17,k0):1 SOS1_LB_gsout(gs1,t17,k0):2
- s2211:  S1 :: muLB_gstore(gs1,t17,k0):1 SOS1_LB_gstore(gs1,t17,k0):2
- s2212:  S1 :: muLB_gsin(gs1,t17,k1):1 SOS1_LB_gsin(gs1,t17,k1):2
- s2213:  S1 :: muLB_gsout(gs1,t17,k1):1 SOS1_LB_gsout(gs1,t17,k1):2
- s2214:  S1 :: muLB_gstore(gs1,t17,k1):1 SOS1_LB_gstore(gs1,t17,k1):2
- s2215:  S1 :: muLB_gsin(gs1,t17,k2):1 SOS1_LB_gsin(gs1,t17,k2):2
- s2216:  S1 :: muLB_gsout(gs1,t17,k2):1 SOS1_LB_gsout(gs1,t17,k2):2
- s2217:  S1 :: muLB_gstore(gs1,t17,k2):1 SOS1_LB_gstore(gs1,t17,k2):2
- s2218:  S1 :: muLB_gsin(gs1,t18,k0):1 SOS1_LB_gsin(gs1,t18,k0):2
- s2219:  S1 :: muLB_gsout(gs1,t18,k0):1 SOS1_LB_gsout(gs1,t18,k0):2
- s2220:  S1 :: muLB_gstore(gs1,t18,k0):1 SOS1_LB_gstore(gs1,t18,k0):2
- s2221:  S1 :: muLB_gsin(gs1,t18,k1):1 SOS1_LB_gsin(gs1,t18,k1):2
- s2222:  S1 :: muLB_gsout(gs1,t18,k1):1 SOS1_LB_gsout(gs1,t18,k1):2
- s2223:  S1 :: muLB_gstore(gs1,t18,k1):1 SOS1_LB_gstore(gs1,t18,k1):2
- s2224:  S1 :: muLB_gsin(gs1,t18,k2):1 SOS1_LB_gsin(gs1,t18,k2):2
- s2225:  S1 :: muLB_gsout(gs1,t18,k2):1 SOS1_LB_gsout(gs1,t18,k2):2
- s2226:  S1 :: muLB_gstore(gs1,t18,k2):1 SOS1_LB_gstore(gs1,t18,k2):2
- s2227:  S1 :: muLB_gsin(gs1,t19,k0):1 SOS1_LB_gsin(gs1,t19,k0):2
- s2228:  S1 :: muLB_gsout(gs1,t19,k0):1 SOS1_LB_gsout(gs1,t19,k0):2
- s2229:  S1 :: muLB_gstore(gs1,t19,k0):1 SOS1_LB_gstore(gs1,t19,k0):2
- s2230:  S1 :: muLB_gsin(gs1,t19,k1):1 SOS1_LB_gsin(gs1,t19,k1):2
- s2231:  S1 :: muLB_gsout(gs1,t19,k1):1 SOS1_LB_gsout(gs1,t19,k1):2
- s2232:  S1 :: muLB_gstore(gs1,t19,k1):1 SOS1_LB_gstore(gs1,t19,k1):2
- s2233:  S1 :: muLB_gsin(gs1,t19,k2):1 SOS1_LB_gsin(gs1,t19,k2):2
- s2234:  S1 :: muLB_gsout(gs1,t19,k2):1 SOS1_LB_gsout(gs1,t19,k2):2
- s2235:  S1 :: muLB_gstore(gs1,t19,k2):1 SOS1_LB_gstore(gs1,t19,k2):2
- s2236:  S1 :: muLB_gsin(gs1,t20,k0):1 SOS1_LB_gsin(gs1,t20,k0):2
- s2237:  S1 :: muLB_gsout(gs1,t20,k0):1 SOS1_LB_gsout(gs1,t20,k0):2
- s2238:  S1 :: muLB_gstore(gs1,t20,k0):1 SOS1_LB_gstore(gs1,t20,k0):2
- s2239:  S1 :: muLB_gsin(gs1,t20,k1):1 SOS1_LB_gsin(gs1,t20,k1):2
- s2240:  S1 :: muLB_gsout(gs1,t20,k1):1 SOS1_LB_gsout(gs1,t20,k1):2
- s2241:  S1 :: muLB_gstore(gs1,t20,k1):1 SOS1_LB_gstore(gs1,t20,k1):2
- s2242:  S1 :: muLB_gsin(gs1,t20,k2):1 SOS1_LB_gsin(gs1,t20,k2):2
- s2243:  S1 :: muLB_gsout(gs1,t20,k2):1 SOS1_LB_gsout(gs1,t20,k2):2
- s2244:  S1 :: muLB_gstore(gs1,t20,k2):1 SOS1_LB_gstore(gs1,t20,k2):2
- s2245:  S1 :: muLB_gsin(gs1,t21,k0):1 SOS1_LB_gsin(gs1,t21,k0):2
- s2246:  S1 :: muLB_gsout(gs1,t21,k0):1 SOS1_LB_gsout(gs1,t21,k0):2
- s2247:  S1 :: muLB_gstore(gs1,t21,k0):1 SOS1_LB_gstore(gs1,t21,k0):2
- s2248:  S1 :: muLB_gsin(gs1,t21,k1):1 SOS1_LB_gsin(gs1,t21,k1):2
- s2249:  S1 :: muLB_gsout(gs1,t21,k1):1 SOS1_LB_gsout(gs1,t21,k1):2
- s2250:  S1 :: muLB_gstore(gs1,t21,k1):1 SOS1_LB_gstore(gs1,t21,k1):2
- s2251:  S1 :: muLB_gsin(gs1,t21,k2):1 SOS1_LB_gsin(gs1,t21,k2):2
- s2252:  S1 :: muLB_gsout(gs1,t21,k2):1 SOS1_LB_gsout(gs1,t21,k2):2
- s2253:  S1 :: muLB_gstore(gs1,t21,k2):1 SOS1_LB_gstore(gs1,t21,k2):2
- s2254:  S1 :: muLB_gsin(gs1,t22,k0):1 SOS1_LB_gsin(gs1,t22,k0):2
- s2255:  S1 :: muLB_gsout(gs1,t22,k0):1 SOS1_LB_gsout(gs1,t22,k0):2
- s2256:  S1 :: muLB_gstore(gs1,t22,k0):1 SOS1_LB_gstore(gs1,t22,k0):2
- s2257:  S1 :: muLB_gsin(gs1,t22,k1):1 SOS1_LB_gsin(gs1,t22,k1):2
- s2258:  S1 :: muLB_gsout(gs1,t22,k1):1 SOS1_LB_gsout(gs1,t22,k1):2
- s2259:  S1 :: muLB_gstore(gs1,t22,k1):1 SOS1_LB_gstore(gs1,t22,k1):2
- s2260:  S1 :: muLB_gsin(gs1,t22,k2):1 SOS1_LB_gsin(gs1,t22,k2):2
- s2261:  S1 :: muLB_gsout(gs1,t22,k2):1 SOS1_LB_gsout(gs1,t22,k2):2
- s2262:  S1 :: muLB_gstore(gs1,t22,k2):1 SOS1_LB_gstore(gs1,t22,k2):2
- s2263:  S1 :: muLB_gsin(gs1,t23,k0):1 SOS1_LB_gsin(gs1,t23,k0):2
- s2264:  S1 :: muLB_gsout(gs1,t23,k0):1 SOS1_LB_gsout(gs1,t23,k0):2
- s2265:  S1 :: muLB_gstore(gs1,t23,k0):1 SOS1_LB_gstore(gs1,t23,k0):2
- s2266:  S1 :: muLB_gsin(gs1,t23,k1):1 SOS1_LB_gsin(gs1,t23,k1):2
- s2267:  S1 :: muLB_gsout(gs1,t23,k1):1 SOS1_LB_gsout(gs1,t23,k1):2
- s2268:  S1 :: muLB_gstore(gs1,t23,k1):1 SOS1_LB_gstore(gs1,t23,k1):2
- s2269:  S1 :: muLB_gsin(gs1,t23,k2):1 SOS1_LB_gsin(gs1,t23,k2):2
- s2270:  S1 :: muLB_gsout(gs1,t23,k2):1 SOS1_LB_gsout(gs1,t23,k2):2
- s2271:  S1 :: muLB_gstore(gs1,t23,k2):1 SOS1_LB_gstore(gs1,t23,k2):2
- s2272:  S1 :: muLB_gsin(gs1,t24,k0):1 SOS1_LB_gsin(gs1,t24,k0):2
- s2273:  S1 :: muLB_gsout(gs1,t24,k0):1 SOS1_LB_gsout(gs1,t24,k0):2
- s2274:  S1 :: muLB_gstore(gs1,t24,k0):1 SOS1_LB_gstore(gs1,t24,k0):2
- s2275:  S1 :: muLB_gsin(gs1,t24,k1):1 SOS1_LB_gsin(gs1,t24,k1):2
- s2276:  S1 :: muLB_gsout(gs1,t24,k1):1 SOS1_LB_gsout(gs1,t24,k1):2
- s2277:  S1 :: muLB_gstore(gs1,t24,k1):1 SOS1_LB_gstore(gs1,t24,k1):2
- s2278:  S1 :: muLB_gsin(gs1,t24,k2):1 SOS1_LB_gsin(gs1,t24,k2):2
- s2279:  S1 :: muLB_gsout(gs1,t24,k2):1 SOS1_LB_gsout(gs1,t24,k2):2
- s2280:  S1 :: muLB_gstore(gs1,t24,k2):1 SOS1_LB_gstore(gs1,t24,k2):2
- s2281:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t1):1
+ s1993:  S1 :: muLB_gprod(gw1,k0,t1):1 SOS1_LB_gprod(gw1,k0,t1):2
+ s1994:  S1 :: muLB_gprod(gw1,k1,t1):1 SOS1_LB_gprod(gw1,k1,t1):2
+ s1995:  S1 :: muLB_gprod(gw1,k2,t1):1 SOS1_LB_gprod(gw1,k2,t1):2
+ s1996:  S1 :: muLB_gprod(gw1,k0,t2):1 SOS1_LB_gprod(gw1,k0,t2):2
+ s1997:  S1 :: muLB_gprod(gw1,k1,t2):1 SOS1_LB_gprod(gw1,k1,t2):2
+ s1998:  S1 :: muLB_gprod(gw1,k2,t2):1 SOS1_LB_gprod(gw1,k2,t2):2
+ s1999:  S1 :: muLB_gprod(gw1,k0,t3):1 SOS1_LB_gprod(gw1,k0,t3):2
+ s2000:  S1 :: muLB_gprod(gw1,k1,t3):1 SOS1_LB_gprod(gw1,k1,t3):2
+ s2001:  S1 :: muLB_gprod(gw1,k2,t3):1 SOS1_LB_gprod(gw1,k2,t3):2
+ s2002:  S1 :: muLB_gprod(gw1,k0,t4):1 SOS1_LB_gprod(gw1,k0,t4):2
+ s2003:  S1 :: muLB_gprod(gw1,k1,t4):1 SOS1_LB_gprod(gw1,k1,t4):2
+ s2004:  S1 :: muLB_gprod(gw1,k2,t4):1 SOS1_LB_gprod(gw1,k2,t4):2
+ s2005:  S1 :: muLB_gprod(gw1,k0,t5):1 SOS1_LB_gprod(gw1,k0,t5):2
+ s2006:  S1 :: muLB_gprod(gw1,k1,t5):1 SOS1_LB_gprod(gw1,k1,t5):2
+ s2007:  S1 :: muLB_gprod(gw1,k2,t5):1 SOS1_LB_gprod(gw1,k2,t5):2
+ s2008:  S1 :: muLB_gprod(gw1,k0,t6):1 SOS1_LB_gprod(gw1,k0,t6):2
+ s2009:  S1 :: muLB_gprod(gw1,k1,t6):1 SOS1_LB_gprod(gw1,k1,t6):2
+ s2010:  S1 :: muLB_gprod(gw1,k2,t6):1 SOS1_LB_gprod(gw1,k2,t6):2
+ s2011:  S1 :: muLB_gprod(gw1,k0,t7):1 SOS1_LB_gprod(gw1,k0,t7):2
+ s2012:  S1 :: muLB_gprod(gw1,k1,t7):1 SOS1_LB_gprod(gw1,k1,t7):2
+ s2013:  S1 :: muLB_gprod(gw1,k2,t7):1 SOS1_LB_gprod(gw1,k2,t7):2
+ s2014:  S1 :: muLB_gprod(gw1,k0,t8):1 SOS1_LB_gprod(gw1,k0,t8):2
+ s2015:  S1 :: muLB_gprod(gw1,k1,t8):1 SOS1_LB_gprod(gw1,k1,t8):2
+ s2016:  S1 :: muLB_gprod(gw1,k2,t8):1 SOS1_LB_gprod(gw1,k2,t8):2
+ s2017:  S1 :: muLB_gprod(gw1,k0,t9):1 SOS1_LB_gprod(gw1,k0,t9):2
+ s2018:  S1 :: muLB_gprod(gw1,k1,t9):1 SOS1_LB_gprod(gw1,k1,t9):2
+ s2019:  S1 :: muLB_gprod(gw1,k2,t9):1 SOS1_LB_gprod(gw1,k2,t9):2
+ s2020:  S1 :: muLB_gprod(gw1,k0,t10):1 SOS1_LB_gprod(gw1,k0,t10):2
+ s2021:  S1 :: muLB_gprod(gw1,k1,t10):1 SOS1_LB_gprod(gw1,k1,t10):2
+ s2022:  S1 :: muLB_gprod(gw1,k2,t10):1 SOS1_LB_gprod(gw1,k2,t10):2
+ s2023:  S1 :: muLB_gprod(gw1,k0,t11):1 SOS1_LB_gprod(gw1,k0,t11):2
+ s2024:  S1 :: muLB_gprod(gw1,k1,t11):1 SOS1_LB_gprod(gw1,k1,t11):2
+ s2025:  S1 :: muLB_gprod(gw1,k2,t11):1 SOS1_LB_gprod(gw1,k2,t11):2
+ s2026:  S1 :: muLB_gprod(gw1,k0,t12):1 SOS1_LB_gprod(gw1,k0,t12):2
+ s2027:  S1 :: muLB_gprod(gw1,k1,t12):1 SOS1_LB_gprod(gw1,k1,t12):2
+ s2028:  S1 :: muLB_gprod(gw1,k2,t12):1 SOS1_LB_gprod(gw1,k2,t12):2
+ s2029:  S1 :: muLB_gprod(gw1,k0,t13):1 SOS1_LB_gprod(gw1,k0,t13):2
+ s2030:  S1 :: muLB_gprod(gw1,k1,t13):1 SOS1_LB_gprod(gw1,k1,t13):2
+ s2031:  S1 :: muLB_gprod(gw1,k2,t13):1 SOS1_LB_gprod(gw1,k2,t13):2
+ s2032:  S1 :: muLB_gprod(gw1,k0,t14):1 SOS1_LB_gprod(gw1,k0,t14):2
+ s2033:  S1 :: muLB_gprod(gw1,k1,t14):1 SOS1_LB_gprod(gw1,k1,t14):2
+ s2034:  S1 :: muLB_gprod(gw1,k2,t14):1 SOS1_LB_gprod(gw1,k2,t14):2
+ s2035:  S1 :: muLB_gprod(gw1,k0,t15):1 SOS1_LB_gprod(gw1,k0,t15):2
+ s2036:  S1 :: muLB_gprod(gw1,k1,t15):1 SOS1_LB_gprod(gw1,k1,t15):2
+ s2037:  S1 :: muLB_gprod(gw1,k2,t15):1 SOS1_LB_gprod(gw1,k2,t15):2
+ s2038:  S1 :: muLB_gprod(gw1,k0,t16):1 SOS1_LB_gprod(gw1,k0,t16):2
+ s2039:  S1 :: muLB_gprod(gw1,k1,t16):1 SOS1_LB_gprod(gw1,k1,t16):2
+ s2040:  S1 :: muLB_gprod(gw1,k2,t16):1 SOS1_LB_gprod(gw1,k2,t16):2
+ s2041:  S1 :: muLB_gprod(gw1,k0,t17):1 SOS1_LB_gprod(gw1,k0,t17):2
+ s2042:  S1 :: muLB_gprod(gw1,k1,t17):1 SOS1_LB_gprod(gw1,k1,t17):2
+ s2043:  S1 :: muLB_gprod(gw1,k2,t17):1 SOS1_LB_gprod(gw1,k2,t17):2
+ s2044:  S1 :: muLB_gprod(gw1,k0,t18):1 SOS1_LB_gprod(gw1,k0,t18):2
+ s2045:  S1 :: muLB_gprod(gw1,k1,t18):1 SOS1_LB_gprod(gw1,k1,t18):2
+ s2046:  S1 :: muLB_gprod(gw1,k2,t18):1 SOS1_LB_gprod(gw1,k2,t18):2
+ s2047:  S1 :: muLB_gprod(gw1,k0,t19):1 SOS1_LB_gprod(gw1,k0,t19):2
+ s2048:  S1 :: muLB_gprod(gw1,k1,t19):1 SOS1_LB_gprod(gw1,k1,t19):2
+ s2049:  S1 :: muLB_gprod(gw1,k2,t19):1 SOS1_LB_gprod(gw1,k2,t19):2
+ s2050:  S1 :: muLB_gprod(gw1,k0,t20):1 SOS1_LB_gprod(gw1,k0,t20):2
+ s2051:  S1 :: muLB_gprod(gw1,k1,t20):1 SOS1_LB_gprod(gw1,k1,t20):2
+ s2052:  S1 :: muLB_gprod(gw1,k2,t20):1 SOS1_LB_gprod(gw1,k2,t20):2
+ s2053:  S1 :: muLB_gprod(gw1,k0,t21):1 SOS1_LB_gprod(gw1,k0,t21):2
+ s2054:  S1 :: muLB_gprod(gw1,k1,t21):1 SOS1_LB_gprod(gw1,k1,t21):2
+ s2055:  S1 :: muLB_gprod(gw1,k2,t21):1 SOS1_LB_gprod(gw1,k2,t21):2
+ s2056:  S1 :: muLB_gprod(gw1,k0,t22):1 SOS1_LB_gprod(gw1,k0,t22):2
+ s2057:  S1 :: muLB_gprod(gw1,k1,t22):1 SOS1_LB_gprod(gw1,k1,t22):2
+ s2058:  S1 :: muLB_gprod(gw1,k2,t22):1 SOS1_LB_gprod(gw1,k2,t22):2
+ s2059:  S1 :: muLB_gprod(gw1,k0,t23):1 SOS1_LB_gprod(gw1,k0,t23):2
+ s2060:  S1 :: muLB_gprod(gw1,k1,t23):1 SOS1_LB_gprod(gw1,k1,t23):2
+ s2061:  S1 :: muLB_gprod(gw1,k2,t23):1 SOS1_LB_gprod(gw1,k2,t23):2
+ s2062:  S1 :: muLB_gprod(gw1,k0,t24):1 SOS1_LB_gprod(gw1,k0,t24):2
+ s2063:  S1 :: muLB_gprod(gw1,k1,t24):1 SOS1_LB_gprod(gw1,k1,t24):2
+ s2064:  S1 :: muLB_gprod(gw1,k2,t24):1 SOS1_LB_gprod(gw1,k2,t24):2
+ s2065:  S1 :: muLB_gprod(gw2,k0,t1):1 SOS1_LB_gprod(gw2,k0,t1):2
+ s2066:  S1 :: muLB_gprod(gw2,k1,t1):1 SOS1_LB_gprod(gw2,k1,t1):2
+ s2067:  S1 :: muLB_gprod(gw2,k2,t1):1 SOS1_LB_gprod(gw2,k2,t1):2
+ s2068:  S1 :: muLB_gprod(gw2,k0,t2):1 SOS1_LB_gprod(gw2,k0,t2):2
+ s2069:  S1 :: muLB_gprod(gw2,k1,t2):1 SOS1_LB_gprod(gw2,k1,t2):2
+ s2070:  S1 :: muLB_gprod(gw2,k2,t2):1 SOS1_LB_gprod(gw2,k2,t2):2
+ s2071:  S1 :: muLB_gprod(gw2,k0,t3):1 SOS1_LB_gprod(gw2,k0,t3):2
+ s2072:  S1 :: muLB_gprod(gw2,k1,t3):1 SOS1_LB_gprod(gw2,k1,t3):2
+ s2073:  S1 :: muLB_gprod(gw2,k2,t3):1 SOS1_LB_gprod(gw2,k2,t3):2
+ s2074:  S1 :: muLB_gprod(gw2,k0,t4):1 SOS1_LB_gprod(gw2,k0,t4):2
+ s2075:  S1 :: muLB_gprod(gw2,k1,t4):1 SOS1_LB_gprod(gw2,k1,t4):2
+ s2076:  S1 :: muLB_gprod(gw2,k2,t4):1 SOS1_LB_gprod(gw2,k2,t4):2
+ s2077:  S1 :: muLB_gprod(gw2,k0,t5):1 SOS1_LB_gprod(gw2,k0,t5):2
+ s2078:  S1 :: muLB_gprod(gw2,k1,t5):1 SOS1_LB_gprod(gw2,k1,t5):2
+ s2079:  S1 :: muLB_gprod(gw2,k2,t5):1 SOS1_LB_gprod(gw2,k2,t5):2
+ s2080:  S1 :: muLB_gprod(gw2,k0,t6):1 SOS1_LB_gprod(gw2,k0,t6):2
+ s2081:  S1 :: muLB_gprod(gw2,k1,t6):1 SOS1_LB_gprod(gw2,k1,t6):2
+ s2082:  S1 :: muLB_gprod(gw2,k2,t6):1 SOS1_LB_gprod(gw2,k2,t6):2
+ s2083:  S1 :: muLB_gprod(gw2,k0,t7):1 SOS1_LB_gprod(gw2,k0,t7):2
+ s2084:  S1 :: muLB_gprod(gw2,k1,t7):1 SOS1_LB_gprod(gw2,k1,t7):2
+ s2085:  S1 :: muLB_gprod(gw2,k2,t7):1 SOS1_LB_gprod(gw2,k2,t7):2
+ s2086:  S1 :: muLB_gprod(gw2,k0,t8):1 SOS1_LB_gprod(gw2,k0,t8):2
+ s2087:  S1 :: muLB_gprod(gw2,k1,t8):1 SOS1_LB_gprod(gw2,k1,t8):2
+ s2088:  S1 :: muLB_gprod(gw2,k2,t8):1 SOS1_LB_gprod(gw2,k2,t8):2
+ s2089:  S1 :: muLB_gprod(gw2,k0,t9):1 SOS1_LB_gprod(gw2,k0,t9):2
+ s2090:  S1 :: muLB_gprod(gw2,k1,t9):1 SOS1_LB_gprod(gw2,k1,t9):2
+ s2091:  S1 :: muLB_gprod(gw2,k2,t9):1 SOS1_LB_gprod(gw2,k2,t9):2
+ s2092:  S1 :: muLB_gprod(gw2,k0,t10):1 SOS1_LB_gprod(gw2,k0,t10):2
+ s2093:  S1 :: muLB_gprod(gw2,k1,t10):1 SOS1_LB_gprod(gw2,k1,t10):2
+ s2094:  S1 :: muLB_gprod(gw2,k2,t10):1 SOS1_LB_gprod(gw2,k2,t10):2
+ s2095:  S1 :: muLB_gprod(gw2,k0,t11):1 SOS1_LB_gprod(gw2,k0,t11):2
+ s2096:  S1 :: muLB_gprod(gw2,k1,t11):1 SOS1_LB_gprod(gw2,k1,t11):2
+ s2097:  S1 :: muLB_gprod(gw2,k2,t11):1 SOS1_LB_gprod(gw2,k2,t11):2
+ s2098:  S1 :: muLB_gprod(gw2,k0,t12):1 SOS1_LB_gprod(gw2,k0,t12):2
+ s2099:  S1 :: muLB_gprod(gw2,k1,t12):1 SOS1_LB_gprod(gw2,k1,t12):2
+ s2100:  S1 :: muLB_gprod(gw2,k2,t12):1 SOS1_LB_gprod(gw2,k2,t12):2
+ s2101:  S1 :: muLB_gprod(gw2,k0,t13):1 SOS1_LB_gprod(gw2,k0,t13):2
+ s2102:  S1 :: muLB_gprod(gw2,k1,t13):1 SOS1_LB_gprod(gw2,k1,t13):2
+ s2103:  S1 :: muLB_gprod(gw2,k2,t13):1 SOS1_LB_gprod(gw2,k2,t13):2
+ s2104:  S1 :: muLB_gprod(gw2,k0,t14):1 SOS1_LB_gprod(gw2,k0,t14):2
+ s2105:  S1 :: muLB_gprod(gw2,k1,t14):1 SOS1_LB_gprod(gw2,k1,t14):2
+ s2106:  S1 :: muLB_gprod(gw2,k2,t14):1 SOS1_LB_gprod(gw2,k2,t14):2
+ s2107:  S1 :: muLB_gprod(gw2,k0,t15):1 SOS1_LB_gprod(gw2,k0,t15):2
+ s2108:  S1 :: muLB_gprod(gw2,k1,t15):1 SOS1_LB_gprod(gw2,k1,t15):2
+ s2109:  S1 :: muLB_gprod(gw2,k2,t15):1 SOS1_LB_gprod(gw2,k2,t15):2
+ s2110:  S1 :: muLB_gprod(gw2,k0,t16):1 SOS1_LB_gprod(gw2,k0,t16):2
+ s2111:  S1 :: muLB_gprod(gw2,k1,t16):1 SOS1_LB_gprod(gw2,k1,t16):2
+ s2112:  S1 :: muLB_gprod(gw2,k2,t16):1 SOS1_LB_gprod(gw2,k2,t16):2
+ s2113:  S1 :: muLB_gprod(gw2,k0,t17):1 SOS1_LB_gprod(gw2,k0,t17):2
+ s2114:  S1 :: muLB_gprod(gw2,k1,t17):1 SOS1_LB_gprod(gw2,k1,t17):2
+ s2115:  S1 :: muLB_gprod(gw2,k2,t17):1 SOS1_LB_gprod(gw2,k2,t17):2
+ s2116:  S1 :: muLB_gprod(gw2,k0,t18):1 SOS1_LB_gprod(gw2,k0,t18):2
+ s2117:  S1 :: muLB_gprod(gw2,k1,t18):1 SOS1_LB_gprod(gw2,k1,t18):2
+ s2118:  S1 :: muLB_gprod(gw2,k2,t18):1 SOS1_LB_gprod(gw2,k2,t18):2
+ s2119:  S1 :: muLB_gprod(gw2,k0,t19):1 SOS1_LB_gprod(gw2,k0,t19):2
+ s2120:  S1 :: muLB_gprod(gw2,k1,t19):1 SOS1_LB_gprod(gw2,k1,t19):2
+ s2121:  S1 :: muLB_gprod(gw2,k2,t19):1 SOS1_LB_gprod(gw2,k2,t19):2
+ s2122:  S1 :: muLB_gprod(gw2,k0,t20):1 SOS1_LB_gprod(gw2,k0,t20):2
+ s2123:  S1 :: muLB_gprod(gw2,k1,t20):1 SOS1_LB_gprod(gw2,k1,t20):2
+ s2124:  S1 :: muLB_gprod(gw2,k2,t20):1 SOS1_LB_gprod(gw2,k2,t20):2
+ s2125:  S1 :: muLB_gprod(gw2,k0,t21):1 SOS1_LB_gprod(gw2,k0,t21):2
+ s2126:  S1 :: muLB_gprod(gw2,k1,t21):1 SOS1_LB_gprod(gw2,k1,t21):2
+ s2127:  S1 :: muLB_gprod(gw2,k2,t21):1 SOS1_LB_gprod(gw2,k2,t21):2
+ s2128:  S1 :: muLB_gprod(gw2,k0,t22):1 SOS1_LB_gprod(gw2,k0,t22):2
+ s2129:  S1 :: muLB_gprod(gw2,k1,t22):1 SOS1_LB_gprod(gw2,k1,t22):2
+ s2130:  S1 :: muLB_gprod(gw2,k2,t22):1 SOS1_LB_gprod(gw2,k2,t22):2
+ s2131:  S1 :: muLB_gprod(gw2,k0,t23):1 SOS1_LB_gprod(gw2,k0,t23):2
+ s2132:  S1 :: muLB_gprod(gw2,k1,t23):1 SOS1_LB_gprod(gw2,k1,t23):2
+ s2133:  S1 :: muLB_gprod(gw2,k2,t23):1 SOS1_LB_gprod(gw2,k2,t23):2
+ s2134:  S1 :: muLB_gprod(gw2,k0,t24):1 SOS1_LB_gprod(gw2,k0,t24):2
+ s2135:  S1 :: muLB_gprod(gw2,k1,t24):1 SOS1_LB_gprod(gw2,k1,t24):2
+ s2136:  S1 :: muLB_gprod(gw2,k2,t24):1 SOS1_LB_gprod(gw2,k2,t24):2
+ s2137:  S1 :: muLB_gprod(gw3,k0,t1):1 SOS1_LB_gprod(gw3,k0,t1):2
+ s2138:  S1 :: muLB_gprod(gw3,k1,t1):1 SOS1_LB_gprod(gw3,k1,t1):2
+ s2139:  S1 :: muLB_gprod(gw3,k2,t1):1 SOS1_LB_gprod(gw3,k2,t1):2
+ s2140:  S1 :: muLB_gprod(gw3,k0,t2):1 SOS1_LB_gprod(gw3,k0,t2):2
+ s2141:  S1 :: muLB_gprod(gw3,k1,t2):1 SOS1_LB_gprod(gw3,k1,t2):2
+ s2142:  S1 :: muLB_gprod(gw3,k2,t2):1 SOS1_LB_gprod(gw3,k2,t2):2
+ s2143:  S1 :: muLB_gprod(gw3,k0,t3):1 SOS1_LB_gprod(gw3,k0,t3):2
+ s2144:  S1 :: muLB_gprod(gw3,k1,t3):1 SOS1_LB_gprod(gw3,k1,t3):2
+ s2145:  S1 :: muLB_gprod(gw3,k2,t3):1 SOS1_LB_gprod(gw3,k2,t3):2
+ s2146:  S1 :: muLB_gprod(gw3,k0,t4):1 SOS1_LB_gprod(gw3,k0,t4):2
+ s2147:  S1 :: muLB_gprod(gw3,k1,t4):1 SOS1_LB_gprod(gw3,k1,t4):2
+ s2148:  S1 :: muLB_gprod(gw3,k2,t4):1 SOS1_LB_gprod(gw3,k2,t4):2
+ s2149:  S1 :: muLB_gprod(gw3,k0,t5):1 SOS1_LB_gprod(gw3,k0,t5):2
+ s2150:  S1 :: muLB_gprod(gw3,k1,t5):1 SOS1_LB_gprod(gw3,k1,t5):2
+ s2151:  S1 :: muLB_gprod(gw3,k2,t5):1 SOS1_LB_gprod(gw3,k2,t5):2
+ s2152:  S1 :: muLB_gprod(gw3,k0,t6):1 SOS1_LB_gprod(gw3,k0,t6):2
+ s2153:  S1 :: muLB_gprod(gw3,k1,t6):1 SOS1_LB_gprod(gw3,k1,t6):2
+ s2154:  S1 :: muLB_gprod(gw3,k2,t6):1 SOS1_LB_gprod(gw3,k2,t6):2
+ s2155:  S1 :: muLB_gprod(gw3,k0,t7):1 SOS1_LB_gprod(gw3,k0,t7):2
+ s2156:  S1 :: muLB_gprod(gw3,k1,t7):1 SOS1_LB_gprod(gw3,k1,t7):2
+ s2157:  S1 :: muLB_gprod(gw3,k2,t7):1 SOS1_LB_gprod(gw3,k2,t7):2
+ s2158:  S1 :: muLB_gprod(gw3,k0,t8):1 SOS1_LB_gprod(gw3,k0,t8):2
+ s2159:  S1 :: muLB_gprod(gw3,k1,t8):1 SOS1_LB_gprod(gw3,k1,t8):2
+ s2160:  S1 :: muLB_gprod(gw3,k2,t8):1 SOS1_LB_gprod(gw3,k2,t8):2
+ s2161:  S1 :: muLB_gprod(gw3,k0,t9):1 SOS1_LB_gprod(gw3,k0,t9):2
+ s2162:  S1 :: muLB_gprod(gw3,k1,t9):1 SOS1_LB_gprod(gw3,k1,t9):2
+ s2163:  S1 :: muLB_gprod(gw3,k2,t9):1 SOS1_LB_gprod(gw3,k2,t9):2
+ s2164:  S1 :: muLB_gprod(gw3,k0,t10):1 SOS1_LB_gprod(gw3,k0,t10):2
+ s2165:  S1 :: muLB_gprod(gw3,k1,t10):1 SOS1_LB_gprod(gw3,k1,t10):2
+ s2166:  S1 :: muLB_gprod(gw3,k2,t10):1 SOS1_LB_gprod(gw3,k2,t10):2
+ s2167:  S1 :: muLB_gprod(gw3,k0,t11):1 SOS1_LB_gprod(gw3,k0,t11):2
+ s2168:  S1 :: muLB_gprod(gw3,k1,t11):1 SOS1_LB_gprod(gw3,k1,t11):2
+ s2169:  S1 :: muLB_gprod(gw3,k2,t11):1 SOS1_LB_gprod(gw3,k2,t11):2
+ s2170:  S1 :: muLB_gprod(gw3,k0,t12):1 SOS1_LB_gprod(gw3,k0,t12):2
+ s2171:  S1 :: muLB_gprod(gw3,k1,t12):1 SOS1_LB_gprod(gw3,k1,t12):2
+ s2172:  S1 :: muLB_gprod(gw3,k2,t12):1 SOS1_LB_gprod(gw3,k2,t12):2
+ s2173:  S1 :: muLB_gprod(gw3,k0,t13):1 SOS1_LB_gprod(gw3,k0,t13):2
+ s2174:  S1 :: muLB_gprod(gw3,k1,t13):1 SOS1_LB_gprod(gw3,k1,t13):2
+ s2175:  S1 :: muLB_gprod(gw3,k2,t13):1 SOS1_LB_gprod(gw3,k2,t13):2
+ s2176:  S1 :: muLB_gprod(gw3,k0,t14):1 SOS1_LB_gprod(gw3,k0,t14):2
+ s2177:  S1 :: muLB_gprod(gw3,k1,t14):1 SOS1_LB_gprod(gw3,k1,t14):2
+ s2178:  S1 :: muLB_gprod(gw3,k2,t14):1 SOS1_LB_gprod(gw3,k2,t14):2
+ s2179:  S1 :: muLB_gprod(gw3,k0,t15):1 SOS1_LB_gprod(gw3,k0,t15):2
+ s2180:  S1 :: muLB_gprod(gw3,k1,t15):1 SOS1_LB_gprod(gw3,k1,t15):2
+ s2181:  S1 :: muLB_gprod(gw3,k2,t15):1 SOS1_LB_gprod(gw3,k2,t15):2
+ s2182:  S1 :: muLB_gprod(gw3,k0,t16):1 SOS1_LB_gprod(gw3,k0,t16):2
+ s2183:  S1 :: muLB_gprod(gw3,k1,t16):1 SOS1_LB_gprod(gw3,k1,t16):2
+ s2184:  S1 :: muLB_gprod(gw3,k2,t16):1 SOS1_LB_gprod(gw3,k2,t16):2
+ s2185:  S1 :: muLB_gprod(gw3,k0,t17):1 SOS1_LB_gprod(gw3,k0,t17):2
+ s2186:  S1 :: muLB_gprod(gw3,k1,t17):1 SOS1_LB_gprod(gw3,k1,t17):2
+ s2187:  S1 :: muLB_gprod(gw3,k2,t17):1 SOS1_LB_gprod(gw3,k2,t17):2
+ s2188:  S1 :: muLB_gprod(gw3,k0,t18):1 SOS1_LB_gprod(gw3,k0,t18):2
+ s2189:  S1 :: muLB_gprod(gw3,k1,t18):1 SOS1_LB_gprod(gw3,k1,t18):2
+ s2190:  S1 :: muLB_gprod(gw3,k2,t18):1 SOS1_LB_gprod(gw3,k2,t18):2
+ s2191:  S1 :: muLB_gprod(gw3,k0,t19):1 SOS1_LB_gprod(gw3,k0,t19):2
+ s2192:  S1 :: muLB_gprod(gw3,k1,t19):1 SOS1_LB_gprod(gw3,k1,t19):2
+ s2193:  S1 :: muLB_gprod(gw3,k2,t19):1 SOS1_LB_gprod(gw3,k2,t19):2
+ s2194:  S1 :: muLB_gprod(gw3,k0,t20):1 SOS1_LB_gprod(gw3,k0,t20):2
+ s2195:  S1 :: muLB_gprod(gw3,k1,t20):1 SOS1_LB_gprod(gw3,k1,t20):2
+ s2196:  S1 :: muLB_gprod(gw3,k2,t20):1 SOS1_LB_gprod(gw3,k2,t20):2
+ s2197:  S1 :: muLB_gprod(gw3,k0,t21):1 SOS1_LB_gprod(gw3,k0,t21):2
+ s2198:  S1 :: muLB_gprod(gw3,k1,t21):1 SOS1_LB_gprod(gw3,k1,t21):2
+ s2199:  S1 :: muLB_gprod(gw3,k2,t21):1 SOS1_LB_gprod(gw3,k2,t21):2
+ s2200:  S1 :: muLB_gprod(gw3,k0,t22):1 SOS1_LB_gprod(gw3,k0,t22):2
+ s2201:  S1 :: muLB_gprod(gw3,k1,t22):1 SOS1_LB_gprod(gw3,k1,t22):2
+ s2202:  S1 :: muLB_gprod(gw3,k2,t22):1 SOS1_LB_gprod(gw3,k2,t22):2
+ s2203:  S1 :: muLB_gprod(gw3,k0,t23):1 SOS1_LB_gprod(gw3,k0,t23):2
+ s2204:  S1 :: muLB_gprod(gw3,k1,t23):1 SOS1_LB_gprod(gw3,k1,t23):2
+ s2205:  S1 :: muLB_gprod(gw3,k2,t23):1 SOS1_LB_gprod(gw3,k2,t23):2
+ s2206:  S1 :: muLB_gprod(gw3,k0,t24):1 SOS1_LB_gprod(gw3,k0,t24):2
+ s2207:  S1 :: muLB_gprod(gw3,k1,t24):1 SOS1_LB_gprod(gw3,k1,t24):2
+ s2208:  S1 :: muLB_gprod(gw3,k2,t24):1 SOS1_LB_gprod(gw3,k2,t24):2
+ s2209:  S1 :: muLB_gsin(gs1,t1,k0):1 SOS1_LB_gsin(gs1,t1,k0):2
+ s2210:  S1 :: muLB_gsout(gs1,t1,k0):1 SOS1_LB_gsout(gs1,t1,k0):2
+ s2211:  S1 :: muLB_gstore(gs1,t1,k0):1 SOS1_LB_gstore(gs1,t1,k0):2
+ s2212:  S1 :: muLB_gsin(gs1,t1,k1):1 SOS1_LB_gsin(gs1,t1,k1):2
+ s2213:  S1 :: muLB_gsout(gs1,t1,k1):1 SOS1_LB_gsout(gs1,t1,k1):2
+ s2214:  S1 :: muLB_gstore(gs1,t1,k1):1 SOS1_LB_gstore(gs1,t1,k1):2
+ s2215:  S1 :: muLB_gsin(gs1,t1,k2):1 SOS1_LB_gsin(gs1,t1,k2):2
+ s2216:  S1 :: muLB_gsout(gs1,t1,k2):1 SOS1_LB_gsout(gs1,t1,k2):2
+ s2217:  S1 :: muLB_gstore(gs1,t1,k2):1 SOS1_LB_gstore(gs1,t1,k2):2
+ s2218:  S1 :: muLB_gsin(gs1,t2,k0):1 SOS1_LB_gsin(gs1,t2,k0):2
+ s2219:  S1 :: muLB_gsout(gs1,t2,k0):1 SOS1_LB_gsout(gs1,t2,k0):2
+ s2220:  S1 :: muLB_gstore(gs1,t2,k0):1 SOS1_LB_gstore(gs1,t2,k0):2
+ s2221:  S1 :: muLB_gsin(gs1,t2,k1):1 SOS1_LB_gsin(gs1,t2,k1):2
+ s2222:  S1 :: muLB_gsout(gs1,t2,k1):1 SOS1_LB_gsout(gs1,t2,k1):2
+ s2223:  S1 :: muLB_gstore(gs1,t2,k1):1 SOS1_LB_gstore(gs1,t2,k1):2
+ s2224:  S1 :: muLB_gsin(gs1,t2,k2):1 SOS1_LB_gsin(gs1,t2,k2):2
+ s2225:  S1 :: muLB_gsout(gs1,t2,k2):1 SOS1_LB_gsout(gs1,t2,k2):2
+ s2226:  S1 :: muLB_gstore(gs1,t2,k2):1 SOS1_LB_gstore(gs1,t2,k2):2
+ s2227:  S1 :: muLB_gsin(gs1,t3,k0):1 SOS1_LB_gsin(gs1,t3,k0):2
+ s2228:  S1 :: muLB_gsout(gs1,t3,k0):1 SOS1_LB_gsout(gs1,t3,k0):2
+ s2229:  S1 :: muLB_gstore(gs1,t3,k0):1 SOS1_LB_gstore(gs1,t3,k0):2
+ s2230:  S1 :: muLB_gsin(gs1,t3,k1):1 SOS1_LB_gsin(gs1,t3,k1):2
+ s2231:  S1 :: muLB_gsout(gs1,t3,k1):1 SOS1_LB_gsout(gs1,t3,k1):2
+ s2232:  S1 :: muLB_gstore(gs1,t3,k1):1 SOS1_LB_gstore(gs1,t3,k1):2
+ s2233:  S1 :: muLB_gsin(gs1,t3,k2):1 SOS1_LB_gsin(gs1,t3,k2):2
+ s2234:  S1 :: muLB_gsout(gs1,t3,k2):1 SOS1_LB_gsout(gs1,t3,k2):2
+ s2235:  S1 :: muLB_gstore(gs1,t3,k2):1 SOS1_LB_gstore(gs1,t3,k2):2
+ s2236:  S1 :: muLB_gsin(gs1,t4,k0):1 SOS1_LB_gsin(gs1,t4,k0):2
+ s2237:  S1 :: muLB_gsout(gs1,t4,k0):1 SOS1_LB_gsout(gs1,t4,k0):2
+ s2238:  S1 :: muLB_gstore(gs1,t4,k0):1 SOS1_LB_gstore(gs1,t4,k0):2
+ s2239:  S1 :: muLB_gsin(gs1,t4,k1):1 SOS1_LB_gsin(gs1,t4,k1):2
+ s2240:  S1 :: muLB_gsout(gs1,t4,k1):1 SOS1_LB_gsout(gs1,t4,k1):2
+ s2241:  S1 :: muLB_gstore(gs1,t4,k1):1 SOS1_LB_gstore(gs1,t4,k1):2
+ s2242:  S1 :: muLB_gsin(gs1,t4,k2):1 SOS1_LB_gsin(gs1,t4,k2):2
+ s2243:  S1 :: muLB_gsout(gs1,t4,k2):1 SOS1_LB_gsout(gs1,t4,k2):2
+ s2244:  S1 :: muLB_gstore(gs1,t4,k2):1 SOS1_LB_gstore(gs1,t4,k2):2
+ s2245:  S1 :: muLB_gsin(gs1,t5,k0):1 SOS1_LB_gsin(gs1,t5,k0):2
+ s2246:  S1 :: muLB_gsout(gs1,t5,k0):1 SOS1_LB_gsout(gs1,t5,k0):2
+ s2247:  S1 :: muLB_gstore(gs1,t5,k0):1 SOS1_LB_gstore(gs1,t5,k0):2
+ s2248:  S1 :: muLB_gsin(gs1,t5,k1):1 SOS1_LB_gsin(gs1,t5,k1):2
+ s2249:  S1 :: muLB_gsout(gs1,t5,k1):1 SOS1_LB_gsout(gs1,t5,k1):2
+ s2250:  S1 :: muLB_gstore(gs1,t5,k1):1 SOS1_LB_gstore(gs1,t5,k1):2
+ s2251:  S1 :: muLB_gsin(gs1,t5,k2):1 SOS1_LB_gsin(gs1,t5,k2):2
+ s2252:  S1 :: muLB_gsout(gs1,t5,k2):1 SOS1_LB_gsout(gs1,t5,k2):2
+ s2253:  S1 :: muLB_gstore(gs1,t5,k2):1 SOS1_LB_gstore(gs1,t5,k2):2
+ s2254:  S1 :: muLB_gsin(gs1,t6,k0):1 SOS1_LB_gsin(gs1,t6,k0):2
+ s2255:  S1 :: muLB_gsout(gs1,t6,k0):1 SOS1_LB_gsout(gs1,t6,k0):2
+ s2256:  S1 :: muLB_gstore(gs1,t6,k0):1 SOS1_LB_gstore(gs1,t6,k0):2
+ s2257:  S1 :: muLB_gsin(gs1,t6,k1):1 SOS1_LB_gsin(gs1,t6,k1):2
+ s2258:  S1 :: muLB_gsout(gs1,t6,k1):1 SOS1_LB_gsout(gs1,t6,k1):2
+ s2259:  S1 :: muLB_gstore(gs1,t6,k1):1 SOS1_LB_gstore(gs1,t6,k1):2
+ s2260:  S1 :: muLB_gsin(gs1,t6,k2):1 SOS1_LB_gsin(gs1,t6,k2):2
+ s2261:  S1 :: muLB_gsout(gs1,t6,k2):1 SOS1_LB_gsout(gs1,t6,k2):2
+ s2262:  S1 :: muLB_gstore(gs1,t6,k2):1 SOS1_LB_gstore(gs1,t6,k2):2
+ s2263:  S1 :: muLB_gsin(gs1,t7,k0):1 SOS1_LB_gsin(gs1,t7,k0):2
+ s2264:  S1 :: muLB_gsout(gs1,t7,k0):1 SOS1_LB_gsout(gs1,t7,k0):2
+ s2265:  S1 :: muLB_gstore(gs1,t7,k0):1 SOS1_LB_gstore(gs1,t7,k0):2
+ s2266:  S1 :: muLB_gsin(gs1,t7,k1):1 SOS1_LB_gsin(gs1,t7,k1):2
+ s2267:  S1 :: muLB_gsout(gs1,t7,k1):1 SOS1_LB_gsout(gs1,t7,k1):2
+ s2268:  S1 :: muLB_gstore(gs1,t7,k1):1 SOS1_LB_gstore(gs1,t7,k1):2
+ s2269:  S1 :: muLB_gsin(gs1,t7,k2):1 SOS1_LB_gsin(gs1,t7,k2):2
+ s2270:  S1 :: muLB_gsout(gs1,t7,k2):1 SOS1_LB_gsout(gs1,t7,k2):2
+ s2271:  S1 :: muLB_gstore(gs1,t7,k2):1 SOS1_LB_gstore(gs1,t7,k2):2
+ s2272:  S1 :: muLB_gsin(gs1,t8,k0):1 SOS1_LB_gsin(gs1,t8,k0):2
+ s2273:  S1 :: muLB_gsout(gs1,t8,k0):1 SOS1_LB_gsout(gs1,t8,k0):2
+ s2274:  S1 :: muLB_gstore(gs1,t8,k0):1 SOS1_LB_gstore(gs1,t8,k0):2
+ s2275:  S1 :: muLB_gsin(gs1,t8,k1):1 SOS1_LB_gsin(gs1,t8,k1):2
+ s2276:  S1 :: muLB_gsout(gs1,t8,k1):1 SOS1_LB_gsout(gs1,t8,k1):2
+ s2277:  S1 :: muLB_gstore(gs1,t8,k1):1 SOS1_LB_gstore(gs1,t8,k1):2
+ s2278:  S1 :: muLB_gsin(gs1,t8,k2):1 SOS1_LB_gsin(gs1,t8,k2):2
+ s2279:  S1 :: muLB_gsout(gs1,t8,k2):1 SOS1_LB_gsout(gs1,t8,k2):2
+ s2280:  S1 :: muLB_gstore(gs1,t8,k2):1 SOS1_LB_gstore(gs1,t8,k2):2
+ s2281:  S1 :: muLB_gsin(gs1,t9,k0):1 SOS1_LB_gsin(gs1,t9,k0):2
+ s2282:  S1 :: muLB_gsout(gs1,t9,k0):1 SOS1_LB_gsout(gs1,t9,k0):2
+ s2283:  S1 :: muLB_gstore(gs1,t9,k0):1 SOS1_LB_gstore(gs1,t9,k0):2
+ s2284:  S1 :: muLB_gsin(gs1,t9,k1):1 SOS1_LB_gsin(gs1,t9,k1):2
+ s2285:  S1 :: muLB_gsout(gs1,t9,k1):1 SOS1_LB_gsout(gs1,t9,k1):2
+ s2286:  S1 :: muLB_gstore(gs1,t9,k1):1 SOS1_LB_gstore(gs1,t9,k1):2
+ s2287:  S1 :: muLB_gsin(gs1,t9,k2):1 SOS1_LB_gsin(gs1,t9,k2):2
+ s2288:  S1 :: muLB_gsout(gs1,t9,k2):1 SOS1_LB_gsout(gs1,t9,k2):2
+ s2289:  S1 :: muLB_gstore(gs1,t9,k2):1 SOS1_LB_gstore(gs1,t9,k2):2
+ s2290:  S1 :: muLB_gsin(gs1,t10,k0):1 SOS1_LB_gsin(gs1,t10,k0):2
+ s2291:  S1 :: muLB_gsout(gs1,t10,k0):1 SOS1_LB_gsout(gs1,t10,k0):2
+ s2292:  S1 :: muLB_gstore(gs1,t10,k0):1 SOS1_LB_gstore(gs1,t10,k0):2
+ s2293:  S1 :: muLB_gsin(gs1,t10,k1):1 SOS1_LB_gsin(gs1,t10,k1):2
+ s2294:  S1 :: muLB_gsout(gs1,t10,k1):1 SOS1_LB_gsout(gs1,t10,k1):2
+ s2295:  S1 :: muLB_gstore(gs1,t10,k1):1 SOS1_LB_gstore(gs1,t10,k1):2
+ s2296:  S1 :: muLB_gsin(gs1,t10,k2):1 SOS1_LB_gsin(gs1,t10,k2):2
+ s2297:  S1 :: muLB_gsout(gs1,t10,k2):1 SOS1_LB_gsout(gs1,t10,k2):2
+ s2298:  S1 :: muLB_gstore(gs1,t10,k2):1 SOS1_LB_gstore(gs1,t10,k2):2
+ s2299:  S1 :: muLB_gsin(gs1,t11,k0):1 SOS1_LB_gsin(gs1,t11,k0):2
+ s2300:  S1 :: muLB_gsout(gs1,t11,k0):1 SOS1_LB_gsout(gs1,t11,k0):2
+ s2301:  S1 :: muLB_gstore(gs1,t11,k0):1 SOS1_LB_gstore(gs1,t11,k0):2
+ s2302:  S1 :: muLB_gsin(gs1,t11,k1):1 SOS1_LB_gsin(gs1,t11,k1):2
+ s2303:  S1 :: muLB_gsout(gs1,t11,k1):1 SOS1_LB_gsout(gs1,t11,k1):2
+ s2304:  S1 :: muLB_gstore(gs1,t11,k1):1 SOS1_LB_gstore(gs1,t11,k1):2
+ s2305:  S1 :: muLB_gsin(gs1,t11,k2):1 SOS1_LB_gsin(gs1,t11,k2):2
+ s2306:  S1 :: muLB_gsout(gs1,t11,k2):1 SOS1_LB_gsout(gs1,t11,k2):2
+ s2307:  S1 :: muLB_gstore(gs1,t11,k2):1 SOS1_LB_gstore(gs1,t11,k2):2
+ s2308:  S1 :: muLB_gsin(gs1,t12,k0):1 SOS1_LB_gsin(gs1,t12,k0):2
+ s2309:  S1 :: muLB_gsout(gs1,t12,k0):1 SOS1_LB_gsout(gs1,t12,k0):2
+ s2310:  S1 :: muLB_gstore(gs1,t12,k0):1 SOS1_LB_gstore(gs1,t12,k0):2
+ s2311:  S1 :: muLB_gsin(gs1,t12,k1):1 SOS1_LB_gsin(gs1,t12,k1):2
+ s2312:  S1 :: muLB_gsout(gs1,t12,k1):1 SOS1_LB_gsout(gs1,t12,k1):2
+ s2313:  S1 :: muLB_gstore(gs1,t12,k1):1 SOS1_LB_gstore(gs1,t12,k1):2
+ s2314:  S1 :: muLB_gsin(gs1,t12,k2):1 SOS1_LB_gsin(gs1,t12,k2):2
+ s2315:  S1 :: muLB_gsout(gs1,t12,k2):1 SOS1_LB_gsout(gs1,t12,k2):2
+ s2316:  S1 :: muLB_gstore(gs1,t12,k2):1 SOS1_LB_gstore(gs1,t12,k2):2
+ s2317:  S1 :: muLB_gsin(gs1,t13,k0):1 SOS1_LB_gsin(gs1,t13,k0):2
+ s2318:  S1 :: muLB_gsout(gs1,t13,k0):1 SOS1_LB_gsout(gs1,t13,k0):2
+ s2319:  S1 :: muLB_gstore(gs1,t13,k0):1 SOS1_LB_gstore(gs1,t13,k0):2
+ s2320:  S1 :: muLB_gsin(gs1,t13,k1):1 SOS1_LB_gsin(gs1,t13,k1):2
+ s2321:  S1 :: muLB_gsout(gs1,t13,k1):1 SOS1_LB_gsout(gs1,t13,k1):2
+ s2322:  S1 :: muLB_gstore(gs1,t13,k1):1 SOS1_LB_gstore(gs1,t13,k1):2
+ s2323:  S1 :: muLB_gsin(gs1,t13,k2):1 SOS1_LB_gsin(gs1,t13,k2):2
+ s2324:  S1 :: muLB_gsout(gs1,t13,k2):1 SOS1_LB_gsout(gs1,t13,k2):2
+ s2325:  S1 :: muLB_gstore(gs1,t13,k2):1 SOS1_LB_gstore(gs1,t13,k2):2
+ s2326:  S1 :: muLB_gsin(gs1,t14,k0):1 SOS1_LB_gsin(gs1,t14,k0):2
+ s2327:  S1 :: muLB_gsout(gs1,t14,k0):1 SOS1_LB_gsout(gs1,t14,k0):2
+ s2328:  S1 :: muLB_gstore(gs1,t14,k0):1 SOS1_LB_gstore(gs1,t14,k0):2
+ s2329:  S1 :: muLB_gsin(gs1,t14,k1):1 SOS1_LB_gsin(gs1,t14,k1):2
+ s2330:  S1 :: muLB_gsout(gs1,t14,k1):1 SOS1_LB_gsout(gs1,t14,k1):2
+ s2331:  S1 :: muLB_gstore(gs1,t14,k1):1 SOS1_LB_gstore(gs1,t14,k1):2
+ s2332:  S1 :: muLB_gsin(gs1,t14,k2):1 SOS1_LB_gsin(gs1,t14,k2):2
+ s2333:  S1 :: muLB_gsout(gs1,t14,k2):1 SOS1_LB_gsout(gs1,t14,k2):2
+ s2334:  S1 :: muLB_gstore(gs1,t14,k2):1 SOS1_LB_gstore(gs1,t14,k2):2
+ s2335:  S1 :: muLB_gsin(gs1,t15,k0):1 SOS1_LB_gsin(gs1,t15,k0):2
+ s2336:  S1 :: muLB_gsout(gs1,t15,k0):1 SOS1_LB_gsout(gs1,t15,k0):2
+ s2337:  S1 :: muLB_gstore(gs1,t15,k0):1 SOS1_LB_gstore(gs1,t15,k0):2
+ s2338:  S1 :: muLB_gsin(gs1,t15,k1):1 SOS1_LB_gsin(gs1,t15,k1):2
+ s2339:  S1 :: muLB_gsout(gs1,t15,k1):1 SOS1_LB_gsout(gs1,t15,k1):2
+ s2340:  S1 :: muLB_gstore(gs1,t15,k1):1 SOS1_LB_gstore(gs1,t15,k1):2
+ s2341:  S1 :: muLB_gsin(gs1,t15,k2):1 SOS1_LB_gsin(gs1,t15,k2):2
+ s2342:  S1 :: muLB_gsout(gs1,t15,k2):1 SOS1_LB_gsout(gs1,t15,k2):2
+ s2343:  S1 :: muLB_gstore(gs1,t15,k2):1 SOS1_LB_gstore(gs1,t15,k2):2
+ s2344:  S1 :: muLB_gsin(gs1,t16,k0):1 SOS1_LB_gsin(gs1,t16,k0):2
+ s2345:  S1 :: muLB_gsout(gs1,t16,k0):1 SOS1_LB_gsout(gs1,t16,k0):2
+ s2346:  S1 :: muLB_gstore(gs1,t16,k0):1 SOS1_LB_gstore(gs1,t16,k0):2
+ s2347:  S1 :: muLB_gsin(gs1,t16,k1):1 SOS1_LB_gsin(gs1,t16,k1):2
+ s2348:  S1 :: muLB_gsout(gs1,t16,k1):1 SOS1_LB_gsout(gs1,t16,k1):2
+ s2349:  S1 :: muLB_gstore(gs1,t16,k1):1 SOS1_LB_gstore(gs1,t16,k1):2
+ s2350:  S1 :: muLB_gsin(gs1,t16,k2):1 SOS1_LB_gsin(gs1,t16,k2):2
+ s2351:  S1 :: muLB_gsout(gs1,t16,k2):1 SOS1_LB_gsout(gs1,t16,k2):2
+ s2352:  S1 :: muLB_gstore(gs1,t16,k2):1 SOS1_LB_gstore(gs1,t16,k2):2
+ s2353:  S1 :: muLB_gsin(gs1,t17,k0):1 SOS1_LB_gsin(gs1,t17,k0):2
+ s2354:  S1 :: muLB_gsout(gs1,t17,k0):1 SOS1_LB_gsout(gs1,t17,k0):2
+ s2355:  S1 :: muLB_gstore(gs1,t17,k0):1 SOS1_LB_gstore(gs1,t17,k0):2
+ s2356:  S1 :: muLB_gsin(gs1,t17,k1):1 SOS1_LB_gsin(gs1,t17,k1):2
+ s2357:  S1 :: muLB_gsout(gs1,t17,k1):1 SOS1_LB_gsout(gs1,t17,k1):2
+ s2358:  S1 :: muLB_gstore(gs1,t17,k1):1 SOS1_LB_gstore(gs1,t17,k1):2
+ s2359:  S1 :: muLB_gsin(gs1,t17,k2):1 SOS1_LB_gsin(gs1,t17,k2):2
+ s2360:  S1 :: muLB_gsout(gs1,t17,k2):1 SOS1_LB_gsout(gs1,t17,k2):2
+ s2361:  S1 :: muLB_gstore(gs1,t17,k2):1 SOS1_LB_gstore(gs1,t17,k2):2
+ s2362:  S1 :: muLB_gsin(gs1,t18,k0):1 SOS1_LB_gsin(gs1,t18,k0):2
+ s2363:  S1 :: muLB_gsout(gs1,t18,k0):1 SOS1_LB_gsout(gs1,t18,k0):2
+ s2364:  S1 :: muLB_gstore(gs1,t18,k0):1 SOS1_LB_gstore(gs1,t18,k0):2
+ s2365:  S1 :: muLB_gsin(gs1,t18,k1):1 SOS1_LB_gsin(gs1,t18,k1):2
+ s2366:  S1 :: muLB_gsout(gs1,t18,k1):1 SOS1_LB_gsout(gs1,t18,k1):2
+ s2367:  S1 :: muLB_gstore(gs1,t18,k1):1 SOS1_LB_gstore(gs1,t18,k1):2
+ s2368:  S1 :: muLB_gsin(gs1,t18,k2):1 SOS1_LB_gsin(gs1,t18,k2):2
+ s2369:  S1 :: muLB_gsout(gs1,t18,k2):1 SOS1_LB_gsout(gs1,t18,k2):2
+ s2370:  S1 :: muLB_gstore(gs1,t18,k2):1 SOS1_LB_gstore(gs1,t18,k2):2
+ s2371:  S1 :: muLB_gsin(gs1,t19,k0):1 SOS1_LB_gsin(gs1,t19,k0):2
+ s2372:  S1 :: muLB_gsout(gs1,t19,k0):1 SOS1_LB_gsout(gs1,t19,k0):2
+ s2373:  S1 :: muLB_gstore(gs1,t19,k0):1 SOS1_LB_gstore(gs1,t19,k0):2
+ s2374:  S1 :: muLB_gsin(gs1,t19,k1):1 SOS1_LB_gsin(gs1,t19,k1):2
+ s2375:  S1 :: muLB_gsout(gs1,t19,k1):1 SOS1_LB_gsout(gs1,t19,k1):2
+ s2376:  S1 :: muLB_gstore(gs1,t19,k1):1 SOS1_LB_gstore(gs1,t19,k1):2
+ s2377:  S1 :: muLB_gsin(gs1,t19,k2):1 SOS1_LB_gsin(gs1,t19,k2):2
+ s2378:  S1 :: muLB_gsout(gs1,t19,k2):1 SOS1_LB_gsout(gs1,t19,k2):2
+ s2379:  S1 :: muLB_gstore(gs1,t19,k2):1 SOS1_LB_gstore(gs1,t19,k2):2
+ s2380:  S1 :: muLB_gsin(gs1,t20,k0):1 SOS1_LB_gsin(gs1,t20,k0):2
+ s2381:  S1 :: muLB_gsout(gs1,t20,k0):1 SOS1_LB_gsout(gs1,t20,k0):2
+ s2382:  S1 :: muLB_gstore(gs1,t20,k0):1 SOS1_LB_gstore(gs1,t20,k0):2
+ s2383:  S1 :: muLB_gsin(gs1,t20,k1):1 SOS1_LB_gsin(gs1,t20,k1):2
+ s2384:  S1 :: muLB_gsout(gs1,t20,k1):1 SOS1_LB_gsout(gs1,t20,k1):2
+ s2385:  S1 :: muLB_gstore(gs1,t20,k1):1 SOS1_LB_gstore(gs1,t20,k1):2
+ s2386:  S1 :: muLB_gsin(gs1,t20,k2):1 SOS1_LB_gsin(gs1,t20,k2):2
+ s2387:  S1 :: muLB_gsout(gs1,t20,k2):1 SOS1_LB_gsout(gs1,t20,k2):2
+ s2388:  S1 :: muLB_gstore(gs1,t20,k2):1 SOS1_LB_gstore(gs1,t20,k2):2
+ s2389:  S1 :: muLB_gsin(gs1,t21,k0):1 SOS1_LB_gsin(gs1,t21,k0):2
+ s2390:  S1 :: muLB_gsout(gs1,t21,k0):1 SOS1_LB_gsout(gs1,t21,k0):2
+ s2391:  S1 :: muLB_gstore(gs1,t21,k0):1 SOS1_LB_gstore(gs1,t21,k0):2
+ s2392:  S1 :: muLB_gsin(gs1,t21,k1):1 SOS1_LB_gsin(gs1,t21,k1):2
+ s2393:  S1 :: muLB_gsout(gs1,t21,k1):1 SOS1_LB_gsout(gs1,t21,k1):2
+ s2394:  S1 :: muLB_gstore(gs1,t21,k1):1 SOS1_LB_gstore(gs1,t21,k1):2
+ s2395:  S1 :: muLB_gsin(gs1,t21,k2):1 SOS1_LB_gsin(gs1,t21,k2):2
+ s2396:  S1 :: muLB_gsout(gs1,t21,k2):1 SOS1_LB_gsout(gs1,t21,k2):2
+ s2397:  S1 :: muLB_gstore(gs1,t21,k2):1 SOS1_LB_gstore(gs1,t21,k2):2
+ s2398:  S1 :: muLB_gsin(gs1,t22,k0):1 SOS1_LB_gsin(gs1,t22,k0):2
+ s2399:  S1 :: muLB_gsout(gs1,t22,k0):1 SOS1_LB_gsout(gs1,t22,k0):2
+ s2400:  S1 :: muLB_gstore(gs1,t22,k0):1 SOS1_LB_gstore(gs1,t22,k0):2
+ s2401:  S1 :: muLB_gsin(gs1,t22,k1):1 SOS1_LB_gsin(gs1,t22,k1):2
+ s2402:  S1 :: muLB_gsout(gs1,t22,k1):1 SOS1_LB_gsout(gs1,t22,k1):2
+ s2403:  S1 :: muLB_gstore(gs1,t22,k1):1 SOS1_LB_gstore(gs1,t22,k1):2
+ s2404:  S1 :: muLB_gsin(gs1,t22,k2):1 SOS1_LB_gsin(gs1,t22,k2):2
+ s2405:  S1 :: muLB_gsout(gs1,t22,k2):1 SOS1_LB_gsout(gs1,t22,k2):2
+ s2406:  S1 :: muLB_gstore(gs1,t22,k2):1 SOS1_LB_gstore(gs1,t22,k2):2
+ s2407:  S1 :: muLB_gsin(gs1,t23,k0):1 SOS1_LB_gsin(gs1,t23,k0):2
+ s2408:  S1 :: muLB_gsout(gs1,t23,k0):1 SOS1_LB_gsout(gs1,t23,k0):2
+ s2409:  S1 :: muLB_gstore(gs1,t23,k0):1 SOS1_LB_gstore(gs1,t23,k0):2
+ s2410:  S1 :: muLB_gsin(gs1,t23,k1):1 SOS1_LB_gsin(gs1,t23,k1):2
+ s2411:  S1 :: muLB_gsout(gs1,t23,k1):1 SOS1_LB_gsout(gs1,t23,k1):2
+ s2412:  S1 :: muLB_gstore(gs1,t23,k1):1 SOS1_LB_gstore(gs1,t23,k1):2
+ s2413:  S1 :: muLB_gsin(gs1,t23,k2):1 SOS1_LB_gsin(gs1,t23,k2):2
+ s2414:  S1 :: muLB_gsout(gs1,t23,k2):1 SOS1_LB_gsout(gs1,t23,k2):2
+ s2415:  S1 :: muLB_gstore(gs1,t23,k2):1 SOS1_LB_gstore(gs1,t23,k2):2
+ s2416:  S1 :: muLB_gsin(gs1,t24,k0):1 SOS1_LB_gsin(gs1,t24,k0):2
+ s2417:  S1 :: muLB_gsout(gs1,t24,k0):1 SOS1_LB_gsout(gs1,t24,k0):2
+ s2418:  S1 :: muLB_gstore(gs1,t24,k0):1 SOS1_LB_gstore(gs1,t24,k0):2
+ s2419:  S1 :: muLB_gsin(gs1,t24,k1):1 SOS1_LB_gsin(gs1,t24,k1):2
+ s2420:  S1 :: muLB_gsout(gs1,t24,k1):1 SOS1_LB_gsout(gs1,t24,k1):2
+ s2421:  S1 :: muLB_gstore(gs1,t24,k1):1 SOS1_LB_gstore(gs1,t24,k1):2
+ s2422:  S1 :: muLB_gsin(gs1,t24,k2):1 SOS1_LB_gsin(gs1,t24,k2):2
+ s2423:  S1 :: muLB_gsout(gs1,t24,k2):1 SOS1_LB_gsout(gs1,t24,k2):2
+ s2424:  S1 :: muLB_gstore(gs1,t24,k2):1 SOS1_LB_gstore(gs1,t24,k2):2
+ s2425:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t1):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t1):2
- s2282:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t1):1
+ s2426:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t1):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t1):2
- s2283:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t2):1
+ s2427:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t2):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t2):2
- s2284:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t2):1
+ s2428:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t2):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t2):2
- s2285:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t3):1
+ s2429:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t3):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t3):2
- s2286:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t3):1
+ s2430:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t3):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t3):2
- s2287:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t4):1
+ s2431:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t4):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t4):2
- s2288:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t4):1
+ s2432:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t4):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t4):2
- s2289:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t5):1
+ s2433:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t5):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t5):2
- s2290:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t5):1
+ s2434:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t5):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t5):2
- s2291:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t6):1
+ s2435:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t6):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t6):2
- s2292:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t6):1
+ s2436:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t6):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t6):2
- s2293:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t7):1
+ s2437:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t7):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t7):2
- s2294:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t7):1
+ s2438:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t7):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t7):2
- s2295:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t8):1
+ s2439:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t8):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t8):2
- s2296:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t8):1
+ s2440:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t8):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t8):2
- s2297:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t9):1
+ s2441:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t9):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t9):2
- s2298:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t9):1
+ s2442:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t9):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t9):2
- s2299:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t10):1
+ s2443:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t10):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t10):2
- s2300:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t10):1
+ s2444:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t10):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t10):2
- s2301:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t11):1
+ s2445:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t11):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t11):2
- s2302:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t11):1
+ s2446:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t11):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t11):2
- s2303:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t12):1
+ s2447:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t12):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t12):2
- s2304:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t12):1
+ s2448:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t12):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t12):2
- s2305:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t13):1
+ s2449:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t13):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t13):2
- s2306:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t13):1
+ s2450:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t13):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t13):2
- s2307:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t14):1
+ s2451:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t14):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t14):2
- s2308:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t14):1
+ s2452:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t14):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t14):2
- s2309:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t15):1
+ s2453:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t15):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t15):2
- s2310:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t15):1
+ s2454:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t15):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t15):2
- s2311:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t16):1
+ s2455:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t16):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t16):2
- s2312:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t16):1
+ s2456:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t16):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t16):2
- s2313:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t17):1
+ s2457:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t17):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t17):2
- s2314:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t17):1
+ s2458:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t17):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t17):2
- s2315:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t18):1
+ s2459:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t18):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t18):2
- s2316:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t18):1
+ s2460:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t18):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t18):2
- s2317:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t19):1
+ s2461:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t19):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t19):2
- s2318:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t19):1
+ s2462:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t19):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t19):2
- s2319:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t20):1
+ s2463:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t20):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t20):2
- s2320:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t20):1
+ s2464:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t20):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t20):2
- s2321:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t21):1
+ s2465:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t21):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t21):2
- s2322:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t21):1
+ s2466:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t21):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t21):2
- s2323:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t22):1
+ s2467:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t22):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t22):2
- s2324:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t22):1
+ s2468:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t22):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t22):2
- s2325:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t23):1
+ s2469:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t23):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t23):2
- s2326:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t23):1
+ s2470:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t23):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t23):2
- s2327:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t24):1
+ s2471:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s1,t24):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s1,t24):2
- s2328:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t24):1
+ s2472:  S1 :: mu_gflow_sr_limit_rt(('ng101','ng102'),s2,t24):1
      SOS1_gflow_sr_limit_rt(('ng101','ng102'),s2,t24):2
- s2329:  S1 :: mu_gprodUp_max(gw1,s1,t1):1 SOS1_gprodUp_max(gw1,s1,t1):2
- s2330:  S1 :: mu_gprodDn_max(gw1,s1,t1):1 SOS1_gprodDn_max(gw1,s1,t1):2
- s2331:  S1 :: mu_gprodUp_max(gw1,s1,t2):1 SOS1_gprodUp_max(gw1,s1,t2):2
- s2332:  S1 :: mu_gprodDn_max(gw1,s1,t2):1 SOS1_gprodDn_max(gw1,s1,t2):2
- s2333:  S1 :: mu_gprodUp_max(gw1,s1,t3):1 SOS1_gprodUp_max(gw1,s1,t3):2
- s2334:  S1 :: mu_gprodDn_max(gw1,s1,t3):1 SOS1_gprodDn_max(gw1,s1,t3):2
- s2335:  S1 :: mu_gprodUp_max(gw1,s1,t4):1 SOS1_gprodUp_max(gw1,s1,t4):2
- s2336:  S1 :: mu_gprodDn_max(gw1,s1,t4):1 SOS1_gprodDn_max(gw1,s1,t4):2
- s2337:  S1 :: mu_gprodUp_max(gw1,s1,t5):1 SOS1_gprodUp_max(gw1,s1,t5):2
- s2338:  S1 :: mu_gprodDn_max(gw1,s1,t5):1 SOS1_gprodDn_max(gw1,s1,t5):2
- s2339:  S1 :: mu_gprodUp_max(gw1,s1,t6):1 SOS1_gprodUp_max(gw1,s1,t6):2
- s2340:  S1 :: mu_gprodDn_max(gw1,s1,t6):1 SOS1_gprodDn_max(gw1,s1,t6):2
- s2341:  S1 :: mu_gprodUp_max(gw1,s1,t7):1 SOS1_gprodUp_max(gw1,s1,t7):2
- s2342:  S1 :: mu_gprodDn_max(gw1,s1,t7):1 SOS1_gprodDn_max(gw1,s1,t7):2
- s2343:  S1 :: mu_gprodUp_max(gw1,s1,t8):1 SOS1_gprodUp_max(gw1,s1,t8):2
- s2344:  S1 :: mu_gprodDn_max(gw1,s1,t8):1 SOS1_gprodDn_max(gw1,s1,t8):2
- s2345:  S1 :: mu_gprodUp_max(gw1,s1,t9):1 SOS1_gprodUp_max(gw1,s1,t9):2
- s2346:  S1 :: mu_gprodDn_max(gw1,s1,t9):1 SOS1_gprodDn_max(gw1,s1,t9):2
- s2347:  S1 :: mu_gprodUp_max(gw1,s1,t10):1 SOS1_gprodUp_max(gw1,s1,t10):2
- s2348:  S1 :: mu_gprodDn_max(gw1,s1,t10):1 SOS1_gprodDn_max(gw1,s1,t10):2
- s2349:  S1 :: mu_gprodUp_max(gw1,s1,t11):1 SOS1_gprodUp_max(gw1,s1,t11):2
- s2350:  S1 :: mu_gprodDn_max(gw1,s1,t11):1 SOS1_gprodDn_max(gw1,s1,t11):2
- s2351:  S1 :: mu_gprodUp_max(gw1,s1,t12):1 SOS1_gprodUp_max(gw1,s1,t12):2
- s2352:  S1 :: mu_gprodDn_max(gw1,s1,t12):1 SOS1_gprodDn_max(gw1,s1,t12):2
- s2353:  S1 :: mu_gprodUp_max(gw1,s1,t13):1 SOS1_gprodUp_max(gw1,s1,t13):2
- s2354:  S1 :: mu_gprodDn_max(gw1,s1,t13):1 SOS1_gprodDn_max(gw1,s1,t13):2
- s2355:  S1 :: mu_gprodUp_max(gw1,s1,t14):1 SOS1_gprodUp_max(gw1,s1,t14):2
- s2356:  S1 :: mu_gprodDn_max(gw1,s1,t14):1 SOS1_gprodDn_max(gw1,s1,t14):2
- s2357:  S1 :: mu_gprodUp_max(gw1,s1,t15):1 SOS1_gprodUp_max(gw1,s1,t15):2
- s2358:  S1 :: mu_gprodDn_max(gw1,s1,t15):1 SOS1_gprodDn_max(gw1,s1,t15):2
- s2359:  S1 :: mu_gprodUp_max(gw1,s1,t16):1 SOS1_gprodUp_max(gw1,s1,t16):2
- s2360:  S1 :: mu_gprodDn_max(gw1,s1,t16):1 SOS1_gprodDn_max(gw1,s1,t16):2
- s2361:  S1 :: mu_gprodUp_max(gw1,s1,t17):1 SOS1_gprodUp_max(gw1,s1,t17):2
- s2362:  S1 :: mu_gprodDn_max(gw1,s1,t17):1 SOS1_gprodDn_max(gw1,s1,t17):2
- s2363:  S1 :: mu_gprodUp_max(gw1,s1,t18):1 SOS1_gprodUp_max(gw1,s1,t18):2
- s2364:  S1 :: mu_gprodDn_max(gw1,s1,t18):1 SOS1_gprodDn_max(gw1,s1,t18):2
- s2365:  S1 :: mu_gprodUp_max(gw1,s1,t19):1 SOS1_gprodUp_max(gw1,s1,t19):2
- s2366:  S1 :: mu_gprodDn_max(gw1,s1,t19):1 SOS1_gprodDn_max(gw1,s1,t19):2
- s2367:  S1 :: mu_gprodUp_max(gw1,s1,t20):1 SOS1_gprodUp_max(gw1,s1,t20):2
- s2368:  S1 :: mu_gprodDn_max(gw1,s1,t20):1 SOS1_gprodDn_max(gw1,s1,t20):2
- s2369:  S1 :: mu_gprodUp_max(gw1,s1,t21):1 SOS1_gprodUp_max(gw1,s1,t21):2
- s2370:  S1 :: mu_gprodDn_max(gw1,s1,t21):1 SOS1_gprodDn_max(gw1,s1,t21):2
- s2371:  S1 :: mu_gprodUp_max(gw1,s1,t22):1 SOS1_gprodUp_max(gw1,s1,t22):2
- s2372:  S1 :: mu_gprodDn_max(gw1,s1,t22):1 SOS1_gprodDn_max(gw1,s1,t22):2
- s2373:  S1 :: mu_gprodUp_max(gw1,s1,t23):1 SOS1_gprodUp_max(gw1,s1,t23):2
- s2374:  S1 :: mu_gprodDn_max(gw1,s1,t23):1 SOS1_gprodDn_max(gw1,s1,t23):2
- s2375:  S1 :: mu_gprodUp_max(gw1,s1,t24):1 SOS1_gprodUp_max(gw1,s1,t24):2
- s2376:  S1 :: mu_gprodDn_max(gw1,s1,t24):1 SOS1_gprodDn_max(gw1,s1,t24):2
- s2377:  S1 :: mu_gprodUp_max(gw1,s2,t1):1 SOS1_gprodUp_max(gw1,s2,t1):2
- s2378:  S1 :: mu_gprodDn_max(gw1,s2,t1):1 SOS1_gprodDn_max(gw1,s2,t1):2
- s2379:  S1 :: mu_gprodUp_max(gw1,s2,t2):1 SOS1_gprodUp_max(gw1,s2,t2):2
- s2380:  S1 :: mu_gprodDn_max(gw1,s2,t2):1 SOS1_gprodDn_max(gw1,s2,t2):2
- s2381:  S1 :: mu_gprodUp_max(gw1,s2,t3):1 SOS1_gprodUp_max(gw1,s2,t3):2
- s2382:  S1 :: mu_gprodDn_max(gw1,s2,t3):1 SOS1_gprodDn_max(gw1,s2,t3):2
- s2383:  S1 :: mu_gprodUp_max(gw1,s2,t4):1 SOS1_gprodUp_max(gw1,s2,t4):2
- s2384:  S1 :: mu_gprodDn_max(gw1,s2,t4):1 SOS1_gprodDn_max(gw1,s2,t4):2
- s2385:  S1 :: mu_gprodUp_max(gw1,s2,t5):1 SOS1_gprodUp_max(gw1,s2,t5):2
- s2386:  S1 :: mu_gprodDn_max(gw1,s2,t5):1 SOS1_gprodDn_max(gw1,s2,t5):2
- s2387:  S1 :: mu_gprodUp_max(gw1,s2,t6):1 SOS1_gprodUp_max(gw1,s2,t6):2
- s2388:  S1 :: mu_gprodDn_max(gw1,s2,t6):1 SOS1_gprodDn_max(gw1,s2,t6):2
- s2389:  S1 :: mu_gprodUp_max(gw1,s2,t7):1 SOS1_gprodUp_max(gw1,s2,t7):2
- s2390:  S1 :: mu_gprodDn_max(gw1,s2,t7):1 SOS1_gprodDn_max(gw1,s2,t7):2
- s2391:  S1 :: mu_gprodUp_max(gw1,s2,t8):1 SOS1_gprodUp_max(gw1,s2,t8):2
- s2392:  S1 :: mu_gprodDn_max(gw1,s2,t8):1 SOS1_gprodDn_max(gw1,s2,t8):2
- s2393:  S1 :: mu_gprodUp_max(gw1,s2,t9):1 SOS1_gprodUp_max(gw1,s2,t9):2
- s2394:  S1 :: mu_gprodDn_max(gw1,s2,t9):1 SOS1_gprodDn_max(gw1,s2,t9):2
- s2395:  S1 :: mu_gprodUp_max(gw1,s2,t10):1 SOS1_gprodUp_max(gw1,s2,t10):2
- s2396:  S1 :: mu_gprodDn_max(gw1,s2,t10):1 SOS1_gprodDn_max(gw1,s2,t10):2
- s2397:  S1 :: mu_gprodUp_max(gw1,s2,t11):1 SOS1_gprodUp_max(gw1,s2,t11):2
- s2398:  S1 :: mu_gprodDn_max(gw1,s2,t11):1 SOS1_gprodDn_max(gw1,s2,t11):2
- s2399:  S1 :: mu_gprodUp_max(gw1,s2,t12):1 SOS1_gprodUp_max(gw1,s2,t12):2
- s2400:  S1 :: mu_gprodDn_max(gw1,s2,t12):1 SOS1_gprodDn_max(gw1,s2,t12):2
- s2401:  S1 :: mu_gprodUp_max(gw1,s2,t13):1 SOS1_gprodUp_max(gw1,s2,t13):2
- s2402:  S1 :: mu_gprodDn_max(gw1,s2,t13):1 SOS1_gprodDn_max(gw1,s2,t13):2
- s2403:  S1 :: mu_gprodUp_max(gw1,s2,t14):1 SOS1_gprodUp_max(gw1,s2,t14):2
- s2404:  S1 :: mu_gprodDn_max(gw1,s2,t14):1 SOS1_gprodDn_max(gw1,s2,t14):2
- s2405:  S1 :: mu_gprodUp_max(gw1,s2,t15):1 SOS1_gprodUp_max(gw1,s2,t15):2
- s2406:  S1 :: mu_gprodDn_max(gw1,s2,t15):1 SOS1_gprodDn_max(gw1,s2,t15):2
- s2407:  S1 :: mu_gprodUp_max(gw1,s2,t16):1 SOS1_gprodUp_max(gw1,s2,t16):2
- s2408:  S1 :: mu_gprodDn_max(gw1,s2,t16):1 SOS1_gprodDn_max(gw1,s2,t16):2
- s2409:  S1 :: mu_gprodUp_max(gw1,s2,t17):1 SOS1_gprodUp_max(gw1,s2,t17):2
- s2410:  S1 :: mu_gprodDn_max(gw1,s2,t17):1 SOS1_gprodDn_max(gw1,s2,t17):2
- s2411:  S1 :: mu_gprodUp_max(gw1,s2,t18):1 SOS1_gprodUp_max(gw1,s2,t18):2
- s2412:  S1 :: mu_gprodDn_max(gw1,s2,t18):1 SOS1_gprodDn_max(gw1,s2,t18):2
- s2413:  S1 :: mu_gprodUp_max(gw1,s2,t19):1 SOS1_gprodUp_max(gw1,s2,t19):2
- s2414:  S1 :: mu_gprodDn_max(gw1,s2,t19):1 SOS1_gprodDn_max(gw1,s2,t19):2
- s2415:  S1 :: mu_gprodUp_max(gw1,s2,t20):1 SOS1_gprodUp_max(gw1,s2,t20):2
- s2416:  S1 :: mu_gprodDn_max(gw1,s2,t20):1 SOS1_gprodDn_max(gw1,s2,t20):2
- s2417:  S1 :: mu_gprodUp_max(gw1,s2,t21):1 SOS1_gprodUp_max(gw1,s2,t21):2
- s2418:  S1 :: mu_gprodDn_max(gw1,s2,t21):1 SOS1_gprodDn_max(gw1,s2,t21):2
- s2419:  S1 :: mu_gprodUp_max(gw1,s2,t22):1 SOS1_gprodUp_max(gw1,s2,t22):2
- s2420:  S1 :: mu_gprodDn_max(gw1,s2,t22):1 SOS1_gprodDn_max(gw1,s2,t22):2
- s2421:  S1 :: mu_gprodUp_max(gw1,s2,t23):1 SOS1_gprodUp_max(gw1,s2,t23):2
- s2422:  S1 :: mu_gprodDn_max(gw1,s2,t23):1 SOS1_gprodDn_max(gw1,s2,t23):2
- s2423:  S1 :: mu_gprodUp_max(gw1,s2,t24):1 SOS1_gprodUp_max(gw1,s2,t24):2
- s2424:  S1 :: mu_gprodDn_max(gw1,s2,t24):1 SOS1_gprodDn_max(gw1,s2,t24):2
- s2425:  S1 :: mu_gprodUp_max(gw2,s1,t1):1 SOS1_gprodUp_max(gw2,s1,t1):2
- s2426:  S1 :: mu_gprodDn_max(gw2,s1,t1):1 SOS1_gprodDn_max(gw2,s1,t1):2
- s2427:  S1 :: mu_gprodUp_max(gw2,s1,t2):1 SOS1_gprodUp_max(gw2,s1,t2):2
- s2428:  S1 :: mu_gprodDn_max(gw2,s1,t2):1 SOS1_gprodDn_max(gw2,s1,t2):2
- s2429:  S1 :: mu_gprodUp_max(gw2,s1,t3):1 SOS1_gprodUp_max(gw2,s1,t3):2
- s2430:  S1 :: mu_gprodDn_max(gw2,s1,t3):1 SOS1_gprodDn_max(gw2,s1,t3):2
- s2431:  S1 :: mu_gprodUp_max(gw2,s1,t4):1 SOS1_gprodUp_max(gw2,s1,t4):2
- s2432:  S1 :: mu_gprodDn_max(gw2,s1,t4):1 SOS1_gprodDn_max(gw2,s1,t4):2
- s2433:  S1 :: mu_gprodUp_max(gw2,s1,t5):1 SOS1_gprodUp_max(gw2,s1,t5):2
- s2434:  S1 :: mu_gprodDn_max(gw2,s1,t5):1 SOS1_gprodDn_max(gw2,s1,t5):2
- s2435:  S1 :: mu_gprodUp_max(gw2,s1,t6):1 SOS1_gprodUp_max(gw2,s1,t6):2
- s2436:  S1 :: mu_gprodDn_max(gw2,s1,t6):1 SOS1_gprodDn_max(gw2,s1,t6):2
- s2437:  S1 :: mu_gprodUp_max(gw2,s1,t7):1 SOS1_gprodUp_max(gw2,s1,t7):2
- s2438:  S1 :: mu_gprodDn_max(gw2,s1,t7):1 SOS1_gprodDn_max(gw2,s1,t7):2
- s2439:  S1 :: mu_gprodUp_max(gw2,s1,t8):1 SOS1_gprodUp_max(gw2,s1,t8):2
- s2440:  S1 :: mu_gprodDn_max(gw2,s1,t8):1 SOS1_gprodDn_max(gw2,s1,t8):2
- s2441:  S1 :: mu_gprodUp_max(gw2,s1,t9):1 SOS1_gprodUp_max(gw2,s1,t9):2
- s2442:  S1 :: mu_gprodDn_max(gw2,s1,t9):1 SOS1_gprodDn_max(gw2,s1,t9):2
- s2443:  S1 :: mu_gprodUp_max(gw2,s1,t10):1 SOS1_gprodUp_max(gw2,s1,t10):2
- s2444:  S1 :: mu_gprodDn_max(gw2,s1,t10):1 SOS1_gprodDn_max(gw2,s1,t10):2
- s2445:  S1 :: mu_gprodUp_max(gw2,s1,t11):1 SOS1_gprodUp_max(gw2,s1,t11):2
- s2446:  S1 :: mu_gprodDn_max(gw2,s1,t11):1 SOS1_gprodDn_max(gw2,s1,t11):2
- s2447:  S1 :: mu_gprodUp_max(gw2,s1,t12):1 SOS1_gprodUp_max(gw2,s1,t12):2
- s2448:  S1 :: mu_gprodDn_max(gw2,s1,t12):1 SOS1_gprodDn_max(gw2,s1,t12):2
- s2449:  S1 :: mu_gprodUp_max(gw2,s1,t13):1 SOS1_gprodUp_max(gw2,s1,t13):2
- s2450:  S1 :: mu_gprodDn_max(gw2,s1,t13):1 SOS1_gprodDn_max(gw2,s1,t13):2
- s2451:  S1 :: mu_gprodUp_max(gw2,s1,t14):1 SOS1_gprodUp_max(gw2,s1,t14):2
- s2452:  S1 :: mu_gprodDn_max(gw2,s1,t14):1 SOS1_gprodDn_max(gw2,s1,t14):2
- s2453:  S1 :: mu_gprodUp_max(gw2,s1,t15):1 SOS1_gprodUp_max(gw2,s1,t15):2
- s2454:  S1 :: mu_gprodDn_max(gw2,s1,t15):1 SOS1_gprodDn_max(gw2,s1,t15):2
- s2455:  S1 :: mu_gprodUp_max(gw2,s1,t16):1 SOS1_gprodUp_max(gw2,s1,t16):2
- s2456:  S1 :: mu_gprodDn_max(gw2,s1,t16):1 SOS1_gprodDn_max(gw2,s1,t16):2
- s2457:  S1 :: mu_gprodUp_max(gw2,s1,t17):1 SOS1_gprodUp_max(gw2,s1,t17):2
- s2458:  S1 :: mu_gprodDn_max(gw2,s1,t17):1 SOS1_gprodDn_max(gw2,s1,t17):2
- s2459:  S1 :: mu_gprodUp_max(gw2,s1,t18):1 SOS1_gprodUp_max(gw2,s1,t18):2
- s2460:  S1 :: mu_gprodDn_max(gw2,s1,t18):1 SOS1_gprodDn_max(gw2,s1,t18):2
- s2461:  S1 :: mu_gprodUp_max(gw2,s1,t19):1 SOS1_gprodUp_max(gw2,s1,t19):2
- s2462:  S1 :: mu_gprodDn_max(gw2,s1,t19):1 SOS1_gprodDn_max(gw2,s1,t19):2
- s2463:  S1 :: mu_gprodUp_max(gw2,s1,t20):1 SOS1_gprodUp_max(gw2,s1,t20):2
- s2464:  S1 :: mu_gprodDn_max(gw2,s1,t20):1 SOS1_gprodDn_max(gw2,s1,t20):2
- s2465:  S1 :: mu_gprodUp_max(gw2,s1,t21):1 SOS1_gprodUp_max(gw2,s1,t21):2
- s2466:  S1 :: mu_gprodDn_max(gw2,s1,t21):1 SOS1_gprodDn_max(gw2,s1,t21):2
- s2467:  S1 :: mu_gprodUp_max(gw2,s1,t22):1 SOS1_gprodUp_max(gw2,s1,t22):2
- s2468:  S1 :: mu_gprodDn_max(gw2,s1,t22):1 SOS1_gprodDn_max(gw2,s1,t22):2
- s2469:  S1 :: mu_gprodUp_max(gw2,s1,t23):1 SOS1_gprodUp_max(gw2,s1,t23):2
- s2470:  S1 :: mu_gprodDn_max(gw2,s1,t23):1 SOS1_gprodDn_max(gw2,s1,t23):2
- s2471:  S1 :: mu_gprodUp_max(gw2,s1,t24):1 SOS1_gprodUp_max(gw2,s1,t24):2
- s2472:  S1 :: mu_gprodDn_max(gw2,s1,t24):1 SOS1_gprodDn_max(gw2,s1,t24):2
- s2473:  S1 :: mu_gprodUp_max(gw2,s2,t1):1 SOS1_gprodUp_max(gw2,s2,t1):2
- s2474:  S1 :: mu_gprodDn_max(gw2,s2,t1):1 SOS1_gprodDn_max(gw2,s2,t1):2
- s2475:  S1 :: mu_gprodUp_max(gw2,s2,t2):1 SOS1_gprodUp_max(gw2,s2,t2):2
- s2476:  S1 :: mu_gprodDn_max(gw2,s2,t2):1 SOS1_gprodDn_max(gw2,s2,t2):2
- s2477:  S1 :: mu_gprodUp_max(gw2,s2,t3):1 SOS1_gprodUp_max(gw2,s2,t3):2
- s2478:  S1 :: mu_gprodDn_max(gw2,s2,t3):1 SOS1_gprodDn_max(gw2,s2,t3):2
- s2479:  S1 :: mu_gprodUp_max(gw2,s2,t4):1 SOS1_gprodUp_max(gw2,s2,t4):2
- s2480:  S1 :: mu_gprodDn_max(gw2,s2,t4):1 SOS1_gprodDn_max(gw2,s2,t4):2
- s2481:  S1 :: mu_gprodUp_max(gw2,s2,t5):1 SOS1_gprodUp_max(gw2,s2,t5):2
- s2482:  S1 :: mu_gprodDn_max(gw2,s2,t5):1 SOS1_gprodDn_max(gw2,s2,t5):2
- s2483:  S1 :: mu_gprodUp_max(gw2,s2,t6):1 SOS1_gprodUp_max(gw2,s2,t6):2
- s2484:  S1 :: mu_gprodDn_max(gw2,s2,t6):1 SOS1_gprodDn_max(gw2,s2,t6):2
- s2485:  S1 :: mu_gprodUp_max(gw2,s2,t7):1 SOS1_gprodUp_max(gw2,s2,t7):2
- s2486:  S1 :: mu_gprodDn_max(gw2,s2,t7):1 SOS1_gprodDn_max(gw2,s2,t7):2
- s2487:  S1 :: mu_gprodUp_max(gw2,s2,t8):1 SOS1_gprodUp_max(gw2,s2,t8):2
- s2488:  S1 :: mu_gprodDn_max(gw2,s2,t8):1 SOS1_gprodDn_max(gw2,s2,t8):2
- s2489:  S1 :: mu_gprodUp_max(gw2,s2,t9):1 SOS1_gprodUp_max(gw2,s2,t9):2
- s2490:  S1 :: mu_gprodDn_max(gw2,s2,t9):1 SOS1_gprodDn_max(gw2,s2,t9):2
- s2491:  S1 :: mu_gprodUp_max(gw2,s2,t10):1 SOS1_gprodUp_max(gw2,s2,t10):2
- s2492:  S1 :: mu_gprodDn_max(gw2,s2,t10):1 SOS1_gprodDn_max(gw2,s2,t10):2
- s2493:  S1 :: mu_gprodUp_max(gw2,s2,t11):1 SOS1_gprodUp_max(gw2,s2,t11):2
- s2494:  S1 :: mu_gprodDn_max(gw2,s2,t11):1 SOS1_gprodDn_max(gw2,s2,t11):2
- s2495:  S1 :: mu_gprodUp_max(gw2,s2,t12):1 SOS1_gprodUp_max(gw2,s2,t12):2
- s2496:  S1 :: mu_gprodDn_max(gw2,s2,t12):1 SOS1_gprodDn_max(gw2,s2,t12):2
- s2497:  S1 :: mu_gprodUp_max(gw2,s2,t13):1 SOS1_gprodUp_max(gw2,s2,t13):2
- s2498:  S1 :: mu_gprodDn_max(gw2,s2,t13):1 SOS1_gprodDn_max(gw2,s2,t13):2
- s2499:  S1 :: mu_gprodUp_max(gw2,s2,t14):1 SOS1_gprodUp_max(gw2,s2,t14):2
- s2500:  S1 :: mu_gprodDn_max(gw2,s2,t14):1 SOS1_gprodDn_max(gw2,s2,t14):2
- s2501:  S1 :: mu_gprodUp_max(gw2,s2,t15):1 SOS1_gprodUp_max(gw2,s2,t15):2
- s2502:  S1 :: mu_gprodDn_max(gw2,s2,t15):1 SOS1_gprodDn_max(gw2,s2,t15):2
- s2503:  S1 :: mu_gprodUp_max(gw2,s2,t16):1 SOS1_gprodUp_max(gw2,s2,t16):2
- s2504:  S1 :: mu_gprodDn_max(gw2,s2,t16):1 SOS1_gprodDn_max(gw2,s2,t16):2
- s2505:  S1 :: mu_gprodUp_max(gw2,s2,t17):1 SOS1_gprodUp_max(gw2,s2,t17):2
- s2506:  S1 :: mu_gprodDn_max(gw2,s2,t17):1 SOS1_gprodDn_max(gw2,s2,t17):2
- s2507:  S1 :: mu_gprodUp_max(gw2,s2,t18):1 SOS1_gprodUp_max(gw2,s2,t18):2
- s2508:  S1 :: mu_gprodDn_max(gw2,s2,t18):1 SOS1_gprodDn_max(gw2,s2,t18):2
- s2509:  S1 :: mu_gprodUp_max(gw2,s2,t19):1 SOS1_gprodUp_max(gw2,s2,t19):2
- s2510:  S1 :: mu_gprodDn_max(gw2,s2,t19):1 SOS1_gprodDn_max(gw2,s2,t19):2
- s2511:  S1 :: mu_gprodUp_max(gw2,s2,t20):1 SOS1_gprodUp_max(gw2,s2,t20):2
- s2512:  S1 :: mu_gprodDn_max(gw2,s2,t20):1 SOS1_gprodDn_max(gw2,s2,t20):2
- s2513:  S1 :: mu_gprodUp_max(gw2,s2,t21):1 SOS1_gprodUp_max(gw2,s2,t21):2
- s2514:  S1 :: mu_gprodDn_max(gw2,s2,t21):1 SOS1_gprodDn_max(gw2,s2,t21):2
- s2515:  S1 :: mu_gprodUp_max(gw2,s2,t22):1 SOS1_gprodUp_max(gw2,s2,t22):2
- s2516:  S1 :: mu_gprodDn_max(gw2,s2,t22):1 SOS1_gprodDn_max(gw2,s2,t22):2
- s2517:  S1 :: mu_gprodUp_max(gw2,s2,t23):1 SOS1_gprodUp_max(gw2,s2,t23):2
- s2518:  S1 :: mu_gprodDn_max(gw2,s2,t23):1 SOS1_gprodDn_max(gw2,s2,t23):2
- s2519:  S1 :: mu_gprodUp_max(gw2,s2,t24):1 SOS1_gprodUp_max(gw2,s2,t24):2
- s2520:  S1 :: mu_gprodDn_max(gw2,s2,t24):1 SOS1_gprodDn_max(gw2,s2,t24):2
- s2521:  S1 :: mu_gsinMax_rt(gs1,t1,s1):1 SOS1_gsinMax_rt(gs1,t1,s1):2
- s2522:  S1 :: mu_gsoutMax_rt(gs1,t1,s1):1 SOS1_gsoutMax_rt(gs1,t1,s1):2
- s2523:  S1 :: mu_gstore_max_rt(gs1,t1,s1):1
+ s2473:  S1 :: mu_gprodUp_max(gw1,s1,t1):1 SOS1_gprodUp_max(gw1,s1,t1):2
+ s2474:  S1 :: mu_gprodDn_max(gw1,s1,t1):1 SOS1_gprodDn_max(gw1,s1,t1):2
+ s2475:  S1 :: mu_gprodUp_max(gw1,s1,t2):1 SOS1_gprodUp_max(gw1,s1,t2):2
+ s2476:  S1 :: mu_gprodDn_max(gw1,s1,t2):1 SOS1_gprodDn_max(gw1,s1,t2):2
+ s2477:  S1 :: mu_gprodUp_max(gw1,s1,t3):1 SOS1_gprodUp_max(gw1,s1,t3):2
+ s2478:  S1 :: mu_gprodDn_max(gw1,s1,t3):1 SOS1_gprodDn_max(gw1,s1,t3):2
+ s2479:  S1 :: mu_gprodUp_max(gw1,s1,t4):1 SOS1_gprodUp_max(gw1,s1,t4):2
+ s2480:  S1 :: mu_gprodDn_max(gw1,s1,t4):1 SOS1_gprodDn_max(gw1,s1,t4):2
+ s2481:  S1 :: mu_gprodUp_max(gw1,s1,t5):1 SOS1_gprodUp_max(gw1,s1,t5):2
+ s2482:  S1 :: mu_gprodDn_max(gw1,s1,t5):1 SOS1_gprodDn_max(gw1,s1,t5):2
+ s2483:  S1 :: mu_gprodUp_max(gw1,s1,t6):1 SOS1_gprodUp_max(gw1,s1,t6):2
+ s2484:  S1 :: mu_gprodDn_max(gw1,s1,t6):1 SOS1_gprodDn_max(gw1,s1,t6):2
+ s2485:  S1 :: mu_gprodUp_max(gw1,s1,t7):1 SOS1_gprodUp_max(gw1,s1,t7):2
+ s2486:  S1 :: mu_gprodDn_max(gw1,s1,t7):1 SOS1_gprodDn_max(gw1,s1,t7):2
+ s2487:  S1 :: mu_gprodUp_max(gw1,s1,t8):1 SOS1_gprodUp_max(gw1,s1,t8):2
+ s2488:  S1 :: mu_gprodDn_max(gw1,s1,t8):1 SOS1_gprodDn_max(gw1,s1,t8):2
+ s2489:  S1 :: mu_gprodUp_max(gw1,s1,t9):1 SOS1_gprodUp_max(gw1,s1,t9):2
+ s2490:  S1 :: mu_gprodDn_max(gw1,s1,t9):1 SOS1_gprodDn_max(gw1,s1,t9):2
+ s2491:  S1 :: mu_gprodUp_max(gw1,s1,t10):1 SOS1_gprodUp_max(gw1,s1,t10):2
+ s2492:  S1 :: mu_gprodDn_max(gw1,s1,t10):1 SOS1_gprodDn_max(gw1,s1,t10):2
+ s2493:  S1 :: mu_gprodUp_max(gw1,s1,t11):1 SOS1_gprodUp_max(gw1,s1,t11):2
+ s2494:  S1 :: mu_gprodDn_max(gw1,s1,t11):1 SOS1_gprodDn_max(gw1,s1,t11):2
+ s2495:  S1 :: mu_gprodUp_max(gw1,s1,t12):1 SOS1_gprodUp_max(gw1,s1,t12):2
+ s2496:  S1 :: mu_gprodDn_max(gw1,s1,t12):1 SOS1_gprodDn_max(gw1,s1,t12):2
+ s2497:  S1 :: mu_gprodUp_max(gw1,s1,t13):1 SOS1_gprodUp_max(gw1,s1,t13):2
+ s2498:  S1 :: mu_gprodDn_max(gw1,s1,t13):1 SOS1_gprodDn_max(gw1,s1,t13):2
+ s2499:  S1 :: mu_gprodUp_max(gw1,s1,t14):1 SOS1_gprodUp_max(gw1,s1,t14):2
+ s2500:  S1 :: mu_gprodDn_max(gw1,s1,t14):1 SOS1_gprodDn_max(gw1,s1,t14):2
+ s2501:  S1 :: mu_gprodUp_max(gw1,s1,t15):1 SOS1_gprodUp_max(gw1,s1,t15):2
+ s2502:  S1 :: mu_gprodDn_max(gw1,s1,t15):1 SOS1_gprodDn_max(gw1,s1,t15):2
+ s2503:  S1 :: mu_gprodUp_max(gw1,s1,t16):1 SOS1_gprodUp_max(gw1,s1,t16):2
+ s2504:  S1 :: mu_gprodDn_max(gw1,s1,t16):1 SOS1_gprodDn_max(gw1,s1,t16):2
+ s2505:  S1 :: mu_gprodUp_max(gw1,s1,t17):1 SOS1_gprodUp_max(gw1,s1,t17):2
+ s2506:  S1 :: mu_gprodDn_max(gw1,s1,t17):1 SOS1_gprodDn_max(gw1,s1,t17):2
+ s2507:  S1 :: mu_gprodUp_max(gw1,s1,t18):1 SOS1_gprodUp_max(gw1,s1,t18):2
+ s2508:  S1 :: mu_gprodDn_max(gw1,s1,t18):1 SOS1_gprodDn_max(gw1,s1,t18):2
+ s2509:  S1 :: mu_gprodUp_max(gw1,s1,t19):1 SOS1_gprodUp_max(gw1,s1,t19):2
+ s2510:  S1 :: mu_gprodDn_max(gw1,s1,t19):1 SOS1_gprodDn_max(gw1,s1,t19):2
+ s2511:  S1 :: mu_gprodUp_max(gw1,s1,t20):1 SOS1_gprodUp_max(gw1,s1,t20):2
+ s2512:  S1 :: mu_gprodDn_max(gw1,s1,t20):1 SOS1_gprodDn_max(gw1,s1,t20):2
+ s2513:  S1 :: mu_gprodUp_max(gw1,s1,t21):1 SOS1_gprodUp_max(gw1,s1,t21):2
+ s2514:  S1 :: mu_gprodDn_max(gw1,s1,t21):1 SOS1_gprodDn_max(gw1,s1,t21):2
+ s2515:  S1 :: mu_gprodUp_max(gw1,s1,t22):1 SOS1_gprodUp_max(gw1,s1,t22):2
+ s2516:  S1 :: mu_gprodDn_max(gw1,s1,t22):1 SOS1_gprodDn_max(gw1,s1,t22):2
+ s2517:  S1 :: mu_gprodUp_max(gw1,s1,t23):1 SOS1_gprodUp_max(gw1,s1,t23):2
+ s2518:  S1 :: mu_gprodDn_max(gw1,s1,t23):1 SOS1_gprodDn_max(gw1,s1,t23):2
+ s2519:  S1 :: mu_gprodUp_max(gw1,s1,t24):1 SOS1_gprodUp_max(gw1,s1,t24):2
+ s2520:  S1 :: mu_gprodDn_max(gw1,s1,t24):1 SOS1_gprodDn_max(gw1,s1,t24):2
+ s2521:  S1 :: mu_gprodUp_max(gw1,s2,t1):1 SOS1_gprodUp_max(gw1,s2,t1):2
+ s2522:  S1 :: mu_gprodDn_max(gw1,s2,t1):1 SOS1_gprodDn_max(gw1,s2,t1):2
+ s2523:  S1 :: mu_gprodUp_max(gw1,s2,t2):1 SOS1_gprodUp_max(gw1,s2,t2):2
+ s2524:  S1 :: mu_gprodDn_max(gw1,s2,t2):1 SOS1_gprodDn_max(gw1,s2,t2):2
+ s2525:  S1 :: mu_gprodUp_max(gw1,s2,t3):1 SOS1_gprodUp_max(gw1,s2,t3):2
+ s2526:  S1 :: mu_gprodDn_max(gw1,s2,t3):1 SOS1_gprodDn_max(gw1,s2,t3):2
+ s2527:  S1 :: mu_gprodUp_max(gw1,s2,t4):1 SOS1_gprodUp_max(gw1,s2,t4):2
+ s2528:  S1 :: mu_gprodDn_max(gw1,s2,t4):1 SOS1_gprodDn_max(gw1,s2,t4):2
+ s2529:  S1 :: mu_gprodUp_max(gw1,s2,t5):1 SOS1_gprodUp_max(gw1,s2,t5):2
+ s2530:  S1 :: mu_gprodDn_max(gw1,s2,t5):1 SOS1_gprodDn_max(gw1,s2,t5):2
+ s2531:  S1 :: mu_gprodUp_max(gw1,s2,t6):1 SOS1_gprodUp_max(gw1,s2,t6):2
+ s2532:  S1 :: mu_gprodDn_max(gw1,s2,t6):1 SOS1_gprodDn_max(gw1,s2,t6):2
+ s2533:  S1 :: mu_gprodUp_max(gw1,s2,t7):1 SOS1_gprodUp_max(gw1,s2,t7):2
+ s2534:  S1 :: mu_gprodDn_max(gw1,s2,t7):1 SOS1_gprodDn_max(gw1,s2,t7):2
+ s2535:  S1 :: mu_gprodUp_max(gw1,s2,t8):1 SOS1_gprodUp_max(gw1,s2,t8):2
+ s2536:  S1 :: mu_gprodDn_max(gw1,s2,t8):1 SOS1_gprodDn_max(gw1,s2,t8):2
+ s2537:  S1 :: mu_gprodUp_max(gw1,s2,t9):1 SOS1_gprodUp_max(gw1,s2,t9):2
+ s2538:  S1 :: mu_gprodDn_max(gw1,s2,t9):1 SOS1_gprodDn_max(gw1,s2,t9):2
+ s2539:  S1 :: mu_gprodUp_max(gw1,s2,t10):1 SOS1_gprodUp_max(gw1,s2,t10):2
+ s2540:  S1 :: mu_gprodDn_max(gw1,s2,t10):1 SOS1_gprodDn_max(gw1,s2,t10):2
+ s2541:  S1 :: mu_gprodUp_max(gw1,s2,t11):1 SOS1_gprodUp_max(gw1,s2,t11):2
+ s2542:  S1 :: mu_gprodDn_max(gw1,s2,t11):1 SOS1_gprodDn_max(gw1,s2,t11):2
+ s2543:  S1 :: mu_gprodUp_max(gw1,s2,t12):1 SOS1_gprodUp_max(gw1,s2,t12):2
+ s2544:  S1 :: mu_gprodDn_max(gw1,s2,t12):1 SOS1_gprodDn_max(gw1,s2,t12):2
+ s2545:  S1 :: mu_gprodUp_max(gw1,s2,t13):1 SOS1_gprodUp_max(gw1,s2,t13):2
+ s2546:  S1 :: mu_gprodDn_max(gw1,s2,t13):1 SOS1_gprodDn_max(gw1,s2,t13):2
+ s2547:  S1 :: mu_gprodUp_max(gw1,s2,t14):1 SOS1_gprodUp_max(gw1,s2,t14):2
+ s2548:  S1 :: mu_gprodDn_max(gw1,s2,t14):1 SOS1_gprodDn_max(gw1,s2,t14):2
+ s2549:  S1 :: mu_gprodUp_max(gw1,s2,t15):1 SOS1_gprodUp_max(gw1,s2,t15):2
+ s2550:  S1 :: mu_gprodDn_max(gw1,s2,t15):1 SOS1_gprodDn_max(gw1,s2,t15):2
+ s2551:  S1 :: mu_gprodUp_max(gw1,s2,t16):1 SOS1_gprodUp_max(gw1,s2,t16):2
+ s2552:  S1 :: mu_gprodDn_max(gw1,s2,t16):1 SOS1_gprodDn_max(gw1,s2,t16):2
+ s2553:  S1 :: mu_gprodUp_max(gw1,s2,t17):1 SOS1_gprodUp_max(gw1,s2,t17):2
+ s2554:  S1 :: mu_gprodDn_max(gw1,s2,t17):1 SOS1_gprodDn_max(gw1,s2,t17):2
+ s2555:  S1 :: mu_gprodUp_max(gw1,s2,t18):1 SOS1_gprodUp_max(gw1,s2,t18):2
+ s2556:  S1 :: mu_gprodDn_max(gw1,s2,t18):1 SOS1_gprodDn_max(gw1,s2,t18):2
+ s2557:  S1 :: mu_gprodUp_max(gw1,s2,t19):1 SOS1_gprodUp_max(gw1,s2,t19):2
+ s2558:  S1 :: mu_gprodDn_max(gw1,s2,t19):1 SOS1_gprodDn_max(gw1,s2,t19):2
+ s2559:  S1 :: mu_gprodUp_max(gw1,s2,t20):1 SOS1_gprodUp_max(gw1,s2,t20):2
+ s2560:  S1 :: mu_gprodDn_max(gw1,s2,t20):1 SOS1_gprodDn_max(gw1,s2,t20):2
+ s2561:  S1 :: mu_gprodUp_max(gw1,s2,t21):1 SOS1_gprodUp_max(gw1,s2,t21):2
+ s2562:  S1 :: mu_gprodDn_max(gw1,s2,t21):1 SOS1_gprodDn_max(gw1,s2,t21):2
+ s2563:  S1 :: mu_gprodUp_max(gw1,s2,t22):1 SOS1_gprodUp_max(gw1,s2,t22):2
+ s2564:  S1 :: mu_gprodDn_max(gw1,s2,t22):1 SOS1_gprodDn_max(gw1,s2,t22):2
+ s2565:  S1 :: mu_gprodUp_max(gw1,s2,t23):1 SOS1_gprodUp_max(gw1,s2,t23):2
+ s2566:  S1 :: mu_gprodDn_max(gw1,s2,t23):1 SOS1_gprodDn_max(gw1,s2,t23):2
+ s2567:  S1 :: mu_gprodUp_max(gw1,s2,t24):1 SOS1_gprodUp_max(gw1,s2,t24):2
+ s2568:  S1 :: mu_gprodDn_max(gw1,s2,t24):1 SOS1_gprodDn_max(gw1,s2,t24):2
+ s2569:  S1 :: mu_gprodUp_max(gw2,s1,t1):1 SOS1_gprodUp_max(gw2,s1,t1):2
+ s2570:  S1 :: mu_gprodDn_max(gw2,s1,t1):1 SOS1_gprodDn_max(gw2,s1,t1):2
+ s2571:  S1 :: mu_gprodUp_max(gw2,s1,t2):1 SOS1_gprodUp_max(gw2,s1,t2):2
+ s2572:  S1 :: mu_gprodDn_max(gw2,s1,t2):1 SOS1_gprodDn_max(gw2,s1,t2):2
+ s2573:  S1 :: mu_gprodUp_max(gw2,s1,t3):1 SOS1_gprodUp_max(gw2,s1,t3):2
+ s2574:  S1 :: mu_gprodDn_max(gw2,s1,t3):1 SOS1_gprodDn_max(gw2,s1,t3):2
+ s2575:  S1 :: mu_gprodUp_max(gw2,s1,t4):1 SOS1_gprodUp_max(gw2,s1,t4):2
+ s2576:  S1 :: mu_gprodDn_max(gw2,s1,t4):1 SOS1_gprodDn_max(gw2,s1,t4):2
+ s2577:  S1 :: mu_gprodUp_max(gw2,s1,t5):1 SOS1_gprodUp_max(gw2,s1,t5):2
+ s2578:  S1 :: mu_gprodDn_max(gw2,s1,t5):1 SOS1_gprodDn_max(gw2,s1,t5):2
+ s2579:  S1 :: mu_gprodUp_max(gw2,s1,t6):1 SOS1_gprodUp_max(gw2,s1,t6):2
+ s2580:  S1 :: mu_gprodDn_max(gw2,s1,t6):1 SOS1_gprodDn_max(gw2,s1,t6):2
+ s2581:  S1 :: mu_gprodUp_max(gw2,s1,t7):1 SOS1_gprodUp_max(gw2,s1,t7):2
+ s2582:  S1 :: mu_gprodDn_max(gw2,s1,t7):1 SOS1_gprodDn_max(gw2,s1,t7):2
+ s2583:  S1 :: mu_gprodUp_max(gw2,s1,t8):1 SOS1_gprodUp_max(gw2,s1,t8):2
+ s2584:  S1 :: mu_gprodDn_max(gw2,s1,t8):1 SOS1_gprodDn_max(gw2,s1,t8):2
+ s2585:  S1 :: mu_gprodUp_max(gw2,s1,t9):1 SOS1_gprodUp_max(gw2,s1,t9):2
+ s2586:  S1 :: mu_gprodDn_max(gw2,s1,t9):1 SOS1_gprodDn_max(gw2,s1,t9):2
+ s2587:  S1 :: mu_gprodUp_max(gw2,s1,t10):1 SOS1_gprodUp_max(gw2,s1,t10):2
+ s2588:  S1 :: mu_gprodDn_max(gw2,s1,t10):1 SOS1_gprodDn_max(gw2,s1,t10):2
+ s2589:  S1 :: mu_gprodUp_max(gw2,s1,t11):1 SOS1_gprodUp_max(gw2,s1,t11):2
+ s2590:  S1 :: mu_gprodDn_max(gw2,s1,t11):1 SOS1_gprodDn_max(gw2,s1,t11):2
+ s2591:  S1 :: mu_gprodUp_max(gw2,s1,t12):1 SOS1_gprodUp_max(gw2,s1,t12):2
+ s2592:  S1 :: mu_gprodDn_max(gw2,s1,t12):1 SOS1_gprodDn_max(gw2,s1,t12):2
+ s2593:  S1 :: mu_gprodUp_max(gw2,s1,t13):1 SOS1_gprodUp_max(gw2,s1,t13):2
+ s2594:  S1 :: mu_gprodDn_max(gw2,s1,t13):1 SOS1_gprodDn_max(gw2,s1,t13):2
+ s2595:  S1 :: mu_gprodUp_max(gw2,s1,t14):1 SOS1_gprodUp_max(gw2,s1,t14):2
+ s2596:  S1 :: mu_gprodDn_max(gw2,s1,t14):1 SOS1_gprodDn_max(gw2,s1,t14):2
+ s2597:  S1 :: mu_gprodUp_max(gw2,s1,t15):1 SOS1_gprodUp_max(gw2,s1,t15):2
+ s2598:  S1 :: mu_gprodDn_max(gw2,s1,t15):1 SOS1_gprodDn_max(gw2,s1,t15):2
+ s2599:  S1 :: mu_gprodUp_max(gw2,s1,t16):1 SOS1_gprodUp_max(gw2,s1,t16):2
+ s2600:  S1 :: mu_gprodDn_max(gw2,s1,t16):1 SOS1_gprodDn_max(gw2,s1,t16):2
+ s2601:  S1 :: mu_gprodUp_max(gw2,s1,t17):1 SOS1_gprodUp_max(gw2,s1,t17):2
+ s2602:  S1 :: mu_gprodDn_max(gw2,s1,t17):1 SOS1_gprodDn_max(gw2,s1,t17):2
+ s2603:  S1 :: mu_gprodUp_max(gw2,s1,t18):1 SOS1_gprodUp_max(gw2,s1,t18):2
+ s2604:  S1 :: mu_gprodDn_max(gw2,s1,t18):1 SOS1_gprodDn_max(gw2,s1,t18):2
+ s2605:  S1 :: mu_gprodUp_max(gw2,s1,t19):1 SOS1_gprodUp_max(gw2,s1,t19):2
+ s2606:  S1 :: mu_gprodDn_max(gw2,s1,t19):1 SOS1_gprodDn_max(gw2,s1,t19):2
+ s2607:  S1 :: mu_gprodUp_max(gw2,s1,t20):1 SOS1_gprodUp_max(gw2,s1,t20):2
+ s2608:  S1 :: mu_gprodDn_max(gw2,s1,t20):1 SOS1_gprodDn_max(gw2,s1,t20):2
+ s2609:  S1 :: mu_gprodUp_max(gw2,s1,t21):1 SOS1_gprodUp_max(gw2,s1,t21):2
+ s2610:  S1 :: mu_gprodDn_max(gw2,s1,t21):1 SOS1_gprodDn_max(gw2,s1,t21):2
+ s2611:  S1 :: mu_gprodUp_max(gw2,s1,t22):1 SOS1_gprodUp_max(gw2,s1,t22):2
+ s2612:  S1 :: mu_gprodDn_max(gw2,s1,t22):1 SOS1_gprodDn_max(gw2,s1,t22):2
+ s2613:  S1 :: mu_gprodUp_max(gw2,s1,t23):1 SOS1_gprodUp_max(gw2,s1,t23):2
+ s2614:  S1 :: mu_gprodDn_max(gw2,s1,t23):1 SOS1_gprodDn_max(gw2,s1,t23):2
+ s2615:  S1 :: mu_gprodUp_max(gw2,s1,t24):1 SOS1_gprodUp_max(gw2,s1,t24):2
+ s2616:  S1 :: mu_gprodDn_max(gw2,s1,t24):1 SOS1_gprodDn_max(gw2,s1,t24):2
+ s2617:  S1 :: mu_gprodUp_max(gw2,s2,t1):1 SOS1_gprodUp_max(gw2,s2,t1):2
+ s2618:  S1 :: mu_gprodDn_max(gw2,s2,t1):1 SOS1_gprodDn_max(gw2,s2,t1):2
+ s2619:  S1 :: mu_gprodUp_max(gw2,s2,t2):1 SOS1_gprodUp_max(gw2,s2,t2):2
+ s2620:  S1 :: mu_gprodDn_max(gw2,s2,t2):1 SOS1_gprodDn_max(gw2,s2,t2):2
+ s2621:  S1 :: mu_gprodUp_max(gw2,s2,t3):1 SOS1_gprodUp_max(gw2,s2,t3):2
+ s2622:  S1 :: mu_gprodDn_max(gw2,s2,t3):1 SOS1_gprodDn_max(gw2,s2,t3):2
+ s2623:  S1 :: mu_gprodUp_max(gw2,s2,t4):1 SOS1_gprodUp_max(gw2,s2,t4):2
+ s2624:  S1 :: mu_gprodDn_max(gw2,s2,t4):1 SOS1_gprodDn_max(gw2,s2,t4):2
+ s2625:  S1 :: mu_gprodUp_max(gw2,s2,t5):1 SOS1_gprodUp_max(gw2,s2,t5):2
+ s2626:  S1 :: mu_gprodDn_max(gw2,s2,t5):1 SOS1_gprodDn_max(gw2,s2,t5):2
+ s2627:  S1 :: mu_gprodUp_max(gw2,s2,t6):1 SOS1_gprodUp_max(gw2,s2,t6):2
+ s2628:  S1 :: mu_gprodDn_max(gw2,s2,t6):1 SOS1_gprodDn_max(gw2,s2,t6):2
+ s2629:  S1 :: mu_gprodUp_max(gw2,s2,t7):1 SOS1_gprodUp_max(gw2,s2,t7):2
+ s2630:  S1 :: mu_gprodDn_max(gw2,s2,t7):1 SOS1_gprodDn_max(gw2,s2,t7):2
+ s2631:  S1 :: mu_gprodUp_max(gw2,s2,t8):1 SOS1_gprodUp_max(gw2,s2,t8):2
+ s2632:  S1 :: mu_gprodDn_max(gw2,s2,t8):1 SOS1_gprodDn_max(gw2,s2,t8):2
+ s2633:  S1 :: mu_gprodUp_max(gw2,s2,t9):1 SOS1_gprodUp_max(gw2,s2,t9):2
+ s2634:  S1 :: mu_gprodDn_max(gw2,s2,t9):1 SOS1_gprodDn_max(gw2,s2,t9):2
+ s2635:  S1 :: mu_gprodUp_max(gw2,s2,t10):1 SOS1_gprodUp_max(gw2,s2,t10):2
+ s2636:  S1 :: mu_gprodDn_max(gw2,s2,t10):1 SOS1_gprodDn_max(gw2,s2,t10):2
+ s2637:  S1 :: mu_gprodUp_max(gw2,s2,t11):1 SOS1_gprodUp_max(gw2,s2,t11):2
+ s2638:  S1 :: mu_gprodDn_max(gw2,s2,t11):1 SOS1_gprodDn_max(gw2,s2,t11):2
+ s2639:  S1 :: mu_gprodUp_max(gw2,s2,t12):1 SOS1_gprodUp_max(gw2,s2,t12):2
+ s2640:  S1 :: mu_gprodDn_max(gw2,s2,t12):1 SOS1_gprodDn_max(gw2,s2,t12):2
+ s2641:  S1 :: mu_gprodUp_max(gw2,s2,t13):1 SOS1_gprodUp_max(gw2,s2,t13):2
+ s2642:  S1 :: mu_gprodDn_max(gw2,s2,t13):1 SOS1_gprodDn_max(gw2,s2,t13):2
+ s2643:  S1 :: mu_gprodUp_max(gw2,s2,t14):1 SOS1_gprodUp_max(gw2,s2,t14):2
+ s2644:  S1 :: mu_gprodDn_max(gw2,s2,t14):1 SOS1_gprodDn_max(gw2,s2,t14):2
+ s2645:  S1 :: mu_gprodUp_max(gw2,s2,t15):1 SOS1_gprodUp_max(gw2,s2,t15):2
+ s2646:  S1 :: mu_gprodDn_max(gw2,s2,t15):1 SOS1_gprodDn_max(gw2,s2,t15):2
+ s2647:  S1 :: mu_gprodUp_max(gw2,s2,t16):1 SOS1_gprodUp_max(gw2,s2,t16):2
+ s2648:  S1 :: mu_gprodDn_max(gw2,s2,t16):1 SOS1_gprodDn_max(gw2,s2,t16):2
+ s2649:  S1 :: mu_gprodUp_max(gw2,s2,t17):1 SOS1_gprodUp_max(gw2,s2,t17):2
+ s2650:  S1 :: mu_gprodDn_max(gw2,s2,t17):1 SOS1_gprodDn_max(gw2,s2,t17):2
+ s2651:  S1 :: mu_gprodUp_max(gw2,s2,t18):1 SOS1_gprodUp_max(gw2,s2,t18):2
+ s2652:  S1 :: mu_gprodDn_max(gw2,s2,t18):1 SOS1_gprodDn_max(gw2,s2,t18):2
+ s2653:  S1 :: mu_gprodUp_max(gw2,s2,t19):1 SOS1_gprodUp_max(gw2,s2,t19):2
+ s2654:  S1 :: mu_gprodDn_max(gw2,s2,t19):1 SOS1_gprodDn_max(gw2,s2,t19):2
+ s2655:  S1 :: mu_gprodUp_max(gw2,s2,t20):1 SOS1_gprodUp_max(gw2,s2,t20):2
+ s2656:  S1 :: mu_gprodDn_max(gw2,s2,t20):1 SOS1_gprodDn_max(gw2,s2,t20):2
+ s2657:  S1 :: mu_gprodUp_max(gw2,s2,t21):1 SOS1_gprodUp_max(gw2,s2,t21):2
+ s2658:  S1 :: mu_gprodDn_max(gw2,s2,t21):1 SOS1_gprodDn_max(gw2,s2,t21):2
+ s2659:  S1 :: mu_gprodUp_max(gw2,s2,t22):1 SOS1_gprodUp_max(gw2,s2,t22):2
+ s2660:  S1 :: mu_gprodDn_max(gw2,s2,t22):1 SOS1_gprodDn_max(gw2,s2,t22):2
+ s2661:  S1 :: mu_gprodUp_max(gw2,s2,t23):1 SOS1_gprodUp_max(gw2,s2,t23):2
+ s2662:  S1 :: mu_gprodDn_max(gw2,s2,t23):1 SOS1_gprodDn_max(gw2,s2,t23):2
+ s2663:  S1 :: mu_gprodUp_max(gw2,s2,t24):1 SOS1_gprodUp_max(gw2,s2,t24):2
+ s2664:  S1 :: mu_gprodDn_max(gw2,s2,t24):1 SOS1_gprodDn_max(gw2,s2,t24):2
+ s2665:  S1 :: mu_gprodUp_max(gw3,s1,t1):1 SOS1_gprodUp_max(gw3,s1,t1):2
+ s2666:  S1 :: mu_gprodDn_max(gw3,s1,t1):1 SOS1_gprodDn_max(gw3,s1,t1):2
+ s2667:  S1 :: mu_gprodUp_max(gw3,s1,t2):1 SOS1_gprodUp_max(gw3,s1,t2):2
+ s2668:  S1 :: mu_gprodDn_max(gw3,s1,t2):1 SOS1_gprodDn_max(gw3,s1,t2):2
+ s2669:  S1 :: mu_gprodUp_max(gw3,s1,t3):1 SOS1_gprodUp_max(gw3,s1,t3):2
+ s2670:  S1 :: mu_gprodDn_max(gw3,s1,t3):1 SOS1_gprodDn_max(gw3,s1,t3):2
+ s2671:  S1 :: mu_gprodUp_max(gw3,s1,t4):1 SOS1_gprodUp_max(gw3,s1,t4):2
+ s2672:  S1 :: mu_gprodDn_max(gw3,s1,t4):1 SOS1_gprodDn_max(gw3,s1,t4):2
+ s2673:  S1 :: mu_gprodUp_max(gw3,s1,t5):1 SOS1_gprodUp_max(gw3,s1,t5):2
+ s2674:  S1 :: mu_gprodDn_max(gw3,s1,t5):1 SOS1_gprodDn_max(gw3,s1,t5):2
+ s2675:  S1 :: mu_gprodUp_max(gw3,s1,t6):1 SOS1_gprodUp_max(gw3,s1,t6):2
+ s2676:  S1 :: mu_gprodDn_max(gw3,s1,t6):1 SOS1_gprodDn_max(gw3,s1,t6):2
+ s2677:  S1 :: mu_gprodUp_max(gw3,s1,t7):1 SOS1_gprodUp_max(gw3,s1,t7):2
+ s2678:  S1 :: mu_gprodDn_max(gw3,s1,t7):1 SOS1_gprodDn_max(gw3,s1,t7):2
+ s2679:  S1 :: mu_gprodUp_max(gw3,s1,t8):1 SOS1_gprodUp_max(gw3,s1,t8):2
+ s2680:  S1 :: mu_gprodDn_max(gw3,s1,t8):1 SOS1_gprodDn_max(gw3,s1,t8):2
+ s2681:  S1 :: mu_gprodUp_max(gw3,s1,t9):1 SOS1_gprodUp_max(gw3,s1,t9):2
+ s2682:  S1 :: mu_gprodDn_max(gw3,s1,t9):1 SOS1_gprodDn_max(gw3,s1,t9):2
+ s2683:  S1 :: mu_gprodUp_max(gw3,s1,t10):1 SOS1_gprodUp_max(gw3,s1,t10):2
+ s2684:  S1 :: mu_gprodDn_max(gw3,s1,t10):1 SOS1_gprodDn_max(gw3,s1,t10):2
+ s2685:  S1 :: mu_gprodUp_max(gw3,s1,t11):1 SOS1_gprodUp_max(gw3,s1,t11):2
+ s2686:  S1 :: mu_gprodDn_max(gw3,s1,t11):1 SOS1_gprodDn_max(gw3,s1,t11):2
+ s2687:  S1 :: mu_gprodUp_max(gw3,s1,t12):1 SOS1_gprodUp_max(gw3,s1,t12):2
+ s2688:  S1 :: mu_gprodDn_max(gw3,s1,t12):1 SOS1_gprodDn_max(gw3,s1,t12):2
+ s2689:  S1 :: mu_gprodUp_max(gw3,s1,t13):1 SOS1_gprodUp_max(gw3,s1,t13):2
+ s2690:  S1 :: mu_gprodDn_max(gw3,s1,t13):1 SOS1_gprodDn_max(gw3,s1,t13):2
+ s2691:  S1 :: mu_gprodUp_max(gw3,s1,t14):1 SOS1_gprodUp_max(gw3,s1,t14):2
+ s2692:  S1 :: mu_gprodDn_max(gw3,s1,t14):1 SOS1_gprodDn_max(gw3,s1,t14):2
+ s2693:  S1 :: mu_gprodUp_max(gw3,s1,t15):1 SOS1_gprodUp_max(gw3,s1,t15):2
+ s2694:  S1 :: mu_gprodDn_max(gw3,s1,t15):1 SOS1_gprodDn_max(gw3,s1,t15):2
+ s2695:  S1 :: mu_gprodUp_max(gw3,s1,t16):1 SOS1_gprodUp_max(gw3,s1,t16):2
+ s2696:  S1 :: mu_gprodDn_max(gw3,s1,t16):1 SOS1_gprodDn_max(gw3,s1,t16):2
+ s2697:  S1 :: mu_gprodUp_max(gw3,s1,t17):1 SOS1_gprodUp_max(gw3,s1,t17):2
+ s2698:  S1 :: mu_gprodDn_max(gw3,s1,t17):1 SOS1_gprodDn_max(gw3,s1,t17):2
+ s2699:  S1 :: mu_gprodUp_max(gw3,s1,t18):1 SOS1_gprodUp_max(gw3,s1,t18):2
+ s2700:  S1 :: mu_gprodDn_max(gw3,s1,t18):1 SOS1_gprodDn_max(gw3,s1,t18):2
+ s2701:  S1 :: mu_gprodUp_max(gw3,s1,t19):1 SOS1_gprodUp_max(gw3,s1,t19):2
+ s2702:  S1 :: mu_gprodDn_max(gw3,s1,t19):1 SOS1_gprodDn_max(gw3,s1,t19):2
+ s2703:  S1 :: mu_gprodUp_max(gw3,s1,t20):1 SOS1_gprodUp_max(gw3,s1,t20):2
+ s2704:  S1 :: mu_gprodDn_max(gw3,s1,t20):1 SOS1_gprodDn_max(gw3,s1,t20):2
+ s2705:  S1 :: mu_gprodUp_max(gw3,s1,t21):1 SOS1_gprodUp_max(gw3,s1,t21):2
+ s2706:  S1 :: mu_gprodDn_max(gw3,s1,t21):1 SOS1_gprodDn_max(gw3,s1,t21):2
+ s2707:  S1 :: mu_gprodUp_max(gw3,s1,t22):1 SOS1_gprodUp_max(gw3,s1,t22):2
+ s2708:  S1 :: mu_gprodDn_max(gw3,s1,t22):1 SOS1_gprodDn_max(gw3,s1,t22):2
+ s2709:  S1 :: mu_gprodUp_max(gw3,s1,t23):1 SOS1_gprodUp_max(gw3,s1,t23):2
+ s2710:  S1 :: mu_gprodDn_max(gw3,s1,t23):1 SOS1_gprodDn_max(gw3,s1,t23):2
+ s2711:  S1 :: mu_gprodUp_max(gw3,s1,t24):1 SOS1_gprodUp_max(gw3,s1,t24):2
+ s2712:  S1 :: mu_gprodDn_max(gw3,s1,t24):1 SOS1_gprodDn_max(gw3,s1,t24):2
+ s2713:  S1 :: mu_gprodUp_max(gw3,s2,t1):1 SOS1_gprodUp_max(gw3,s2,t1):2
+ s2714:  S1 :: mu_gprodDn_max(gw3,s2,t1):1 SOS1_gprodDn_max(gw3,s2,t1):2
+ s2715:  S1 :: mu_gprodUp_max(gw3,s2,t2):1 SOS1_gprodUp_max(gw3,s2,t2):2
+ s2716:  S1 :: mu_gprodDn_max(gw3,s2,t2):1 SOS1_gprodDn_max(gw3,s2,t2):2
+ s2717:  S1 :: mu_gprodUp_max(gw3,s2,t3):1 SOS1_gprodUp_max(gw3,s2,t3):2
+ s2718:  S1 :: mu_gprodDn_max(gw3,s2,t3):1 SOS1_gprodDn_max(gw3,s2,t3):2
+ s2719:  S1 :: mu_gprodUp_max(gw3,s2,t4):1 SOS1_gprodUp_max(gw3,s2,t4):2
+ s2720:  S1 :: mu_gprodDn_max(gw3,s2,t4):1 SOS1_gprodDn_max(gw3,s2,t4):2
+ s2721:  S1 :: mu_gprodUp_max(gw3,s2,t5):1 SOS1_gprodUp_max(gw3,s2,t5):2
+ s2722:  S1 :: mu_gprodDn_max(gw3,s2,t5):1 SOS1_gprodDn_max(gw3,s2,t5):2
+ s2723:  S1 :: mu_gprodUp_max(gw3,s2,t6):1 SOS1_gprodUp_max(gw3,s2,t6):2
+ s2724:  S1 :: mu_gprodDn_max(gw3,s2,t6):1 SOS1_gprodDn_max(gw3,s2,t6):2
+ s2725:  S1 :: mu_gprodUp_max(gw3,s2,t7):1 SOS1_gprodUp_max(gw3,s2,t7):2
+ s2726:  S1 :: mu_gprodDn_max(gw3,s2,t7):1 SOS1_gprodDn_max(gw3,s2,t7):2
+ s2727:  S1 :: mu_gprodUp_max(gw3,s2,t8):1 SOS1_gprodUp_max(gw3,s2,t8):2
+ s2728:  S1 :: mu_gprodDn_max(gw3,s2,t8):1 SOS1_gprodDn_max(gw3,s2,t8):2
+ s2729:  S1 :: mu_gprodUp_max(gw3,s2,t9):1 SOS1_gprodUp_max(gw3,s2,t9):2
+ s2730:  S1 :: mu_gprodDn_max(gw3,s2,t9):1 SOS1_gprodDn_max(gw3,s2,t9):2
+ s2731:  S1 :: mu_gprodUp_max(gw3,s2,t10):1 SOS1_gprodUp_max(gw3,s2,t10):2
+ s2732:  S1 :: mu_gprodDn_max(gw3,s2,t10):1 SOS1_gprodDn_max(gw3,s2,t10):2
+ s2733:  S1 :: mu_gprodUp_max(gw3,s2,t11):1 SOS1_gprodUp_max(gw3,s2,t11):2
+ s2734:  S1 :: mu_gprodDn_max(gw3,s2,t11):1 SOS1_gprodDn_max(gw3,s2,t11):2
+ s2735:  S1 :: mu_gprodUp_max(gw3,s2,t12):1 SOS1_gprodUp_max(gw3,s2,t12):2
+ s2736:  S1 :: mu_gprodDn_max(gw3,s2,t12):1 SOS1_gprodDn_max(gw3,s2,t12):2
+ s2737:  S1 :: mu_gprodUp_max(gw3,s2,t13):1 SOS1_gprodUp_max(gw3,s2,t13):2
+ s2738:  S1 :: mu_gprodDn_max(gw3,s2,t13):1 SOS1_gprodDn_max(gw3,s2,t13):2
+ s2739:  S1 :: mu_gprodUp_max(gw3,s2,t14):1 SOS1_gprodUp_max(gw3,s2,t14):2
+ s2740:  S1 :: mu_gprodDn_max(gw3,s2,t14):1 SOS1_gprodDn_max(gw3,s2,t14):2
+ s2741:  S1 :: mu_gprodUp_max(gw3,s2,t15):1 SOS1_gprodUp_max(gw3,s2,t15):2
+ s2742:  S1 :: mu_gprodDn_max(gw3,s2,t15):1 SOS1_gprodDn_max(gw3,s2,t15):2
+ s2743:  S1 :: mu_gprodUp_max(gw3,s2,t16):1 SOS1_gprodUp_max(gw3,s2,t16):2
+ s2744:  S1 :: mu_gprodDn_max(gw3,s2,t16):1 SOS1_gprodDn_max(gw3,s2,t16):2
+ s2745:  S1 :: mu_gprodUp_max(gw3,s2,t17):1 SOS1_gprodUp_max(gw3,s2,t17):2
+ s2746:  S1 :: mu_gprodDn_max(gw3,s2,t17):1 SOS1_gprodDn_max(gw3,s2,t17):2
+ s2747:  S1 :: mu_gprodUp_max(gw3,s2,t18):1 SOS1_gprodUp_max(gw3,s2,t18):2
+ s2748:  S1 :: mu_gprodDn_max(gw3,s2,t18):1 SOS1_gprodDn_max(gw3,s2,t18):2
+ s2749:  S1 :: mu_gprodUp_max(gw3,s2,t19):1 SOS1_gprodUp_max(gw3,s2,t19):2
+ s2750:  S1 :: mu_gprodDn_max(gw3,s2,t19):1 SOS1_gprodDn_max(gw3,s2,t19):2
+ s2751:  S1 :: mu_gprodUp_max(gw3,s2,t20):1 SOS1_gprodUp_max(gw3,s2,t20):2
+ s2752:  S1 :: mu_gprodDn_max(gw3,s2,t20):1 SOS1_gprodDn_max(gw3,s2,t20):2
+ s2753:  S1 :: mu_gprodUp_max(gw3,s2,t21):1 SOS1_gprodUp_max(gw3,s2,t21):2
+ s2754:  S1 :: mu_gprodDn_max(gw3,s2,t21):1 SOS1_gprodDn_max(gw3,s2,t21):2
+ s2755:  S1 :: mu_gprodUp_max(gw3,s2,t22):1 SOS1_gprodUp_max(gw3,s2,t22):2
+ s2756:  S1 :: mu_gprodDn_max(gw3,s2,t22):1 SOS1_gprodDn_max(gw3,s2,t22):2
+ s2757:  S1 :: mu_gprodUp_max(gw3,s2,t23):1 SOS1_gprodUp_max(gw3,s2,t23):2
+ s2758:  S1 :: mu_gprodDn_max(gw3,s2,t23):1 SOS1_gprodDn_max(gw3,s2,t23):2
+ s2759:  S1 :: mu_gprodUp_max(gw3,s2,t24):1 SOS1_gprodUp_max(gw3,s2,t24):2
+ s2760:  S1 :: mu_gprodDn_max(gw3,s2,t24):1 SOS1_gprodDn_max(gw3,s2,t24):2
+ s2761:  S1 :: mu_gsinMax_rt(gs1,t1,s1):1 SOS1_gsinMax_rt(gs1,t1,s1):2
+ s2762:  S1 :: mu_gsoutMax_rt(gs1,t1,s1):1 SOS1_gsoutMax_rt(gs1,t1,s1):2
+ s2763:  S1 :: mu_gstore_max_rt(gs1,t1,s1):1
      SOS1_gstore_max_rt(gs1,t1,s1):2
- s2524:  S1 :: mu_gstore_min_rt(gs1,t1,s1):1
+ s2764:  S1 :: mu_gstore_min_rt(gs1,t1,s1):1
      SOS1_gstore_min_rt(gs1,t1,s1):2
- s2525:  S1 :: mu_gsinMax_rt(gs1,t1,s2):1 SOS1_gsinMax_rt(gs1,t1,s2):2
- s2526:  S1 :: mu_gsoutMax_rt(gs1,t1,s2):1 SOS1_gsoutMax_rt(gs1,t1,s2):2
- s2527:  S1 :: mu_gstore_max_rt(gs1,t1,s2):1
+ s2765:  S1 :: mu_gsinMax_rt(gs1,t1,s2):1 SOS1_gsinMax_rt(gs1,t1,s2):2
+ s2766:  S1 :: mu_gsoutMax_rt(gs1,t1,s2):1 SOS1_gsoutMax_rt(gs1,t1,s2):2
+ s2767:  S1 :: mu_gstore_max_rt(gs1,t1,s2):1
      SOS1_gstore_max_rt(gs1,t1,s2):2
- s2528:  S1 :: mu_gstore_min_rt(gs1,t1,s2):1
+ s2768:  S1 :: mu_gstore_min_rt(gs1,t1,s2):1
      SOS1_gstore_min_rt(gs1,t1,s2):2
- s2529:  S1 :: mu_gsinMax_rt(gs1,t2,s1):1 SOS1_gsinMax_rt(gs1,t2,s1):2
- s2530:  S1 :: mu_gsoutMax_rt(gs1,t2,s1):1 SOS1_gsoutMax_rt(gs1,t2,s1):2
- s2531:  S1 :: mu_gstore_max_rt(gs1,t2,s1):1
+ s2769:  S1 :: mu_gsinMax_rt(gs1,t2,s1):1 SOS1_gsinMax_rt(gs1,t2,s1):2
+ s2770:  S1 :: mu_gsoutMax_rt(gs1,t2,s1):1 SOS1_gsoutMax_rt(gs1,t2,s1):2
+ s2771:  S1 :: mu_gstore_max_rt(gs1,t2,s1):1
      SOS1_gstore_max_rt(gs1,t2,s1):2
- s2532:  S1 :: mu_gstore_min_rt(gs1,t2,s1):1
+ s2772:  S1 :: mu_gstore_min_rt(gs1,t2,s1):1
      SOS1_gstore_min_rt(gs1,t2,s1):2
- s2533:  S1 :: mu_gsinMax_rt(gs1,t2,s2):1 SOS1_gsinMax_rt(gs1,t2,s2):2
- s2534:  S1 :: mu_gsoutMax_rt(gs1,t2,s2):1 SOS1_gsoutMax_rt(gs1,t2,s2):2
- s2535:  S1 :: mu_gstore_max_rt(gs1,t2,s2):1
+ s2773:  S1 :: mu_gsinMax_rt(gs1,t2,s2):1 SOS1_gsinMax_rt(gs1,t2,s2):2
+ s2774:  S1 :: mu_gsoutMax_rt(gs1,t2,s2):1 SOS1_gsoutMax_rt(gs1,t2,s2):2
+ s2775:  S1 :: mu_gstore_max_rt(gs1,t2,s2):1
      SOS1_gstore_max_rt(gs1,t2,s2):2
- s2536:  S1 :: mu_gstore_min_rt(gs1,t2,s2):1
+ s2776:  S1 :: mu_gstore_min_rt(gs1,t2,s2):1
      SOS1_gstore_min_rt(gs1,t2,s2):2
- s2537:  S1 :: mu_gsinMax_rt(gs1,t3,s1):1 SOS1_gsinMax_rt(gs1,t3,s1):2
- s2538:  S1 :: mu_gsoutMax_rt(gs1,t3,s1):1 SOS1_gsoutMax_rt(gs1,t3,s1):2
- s2539:  S1 :: mu_gstore_max_rt(gs1,t3,s1):1
+ s2777:  S1 :: mu_gsinMax_rt(gs1,t3,s1):1 SOS1_gsinMax_rt(gs1,t3,s1):2
+ s2778:  S1 :: mu_gsoutMax_rt(gs1,t3,s1):1 SOS1_gsoutMax_rt(gs1,t3,s1):2
+ s2779:  S1 :: mu_gstore_max_rt(gs1,t3,s1):1
      SOS1_gstore_max_rt(gs1,t3,s1):2
- s2540:  S1 :: mu_gstore_min_rt(gs1,t3,s1):1
+ s2780:  S1 :: mu_gstore_min_rt(gs1,t3,s1):1
      SOS1_gstore_min_rt(gs1,t3,s1):2
- s2541:  S1 :: mu_gsinMax_rt(gs1,t3,s2):1 SOS1_gsinMax_rt(gs1,t3,s2):2
- s2542:  S1 :: mu_gsoutMax_rt(gs1,t3,s2):1 SOS1_gsoutMax_rt(gs1,t3,s2):2
- s2543:  S1 :: mu_gstore_max_rt(gs1,t3,s2):1
+ s2781:  S1 :: mu_gsinMax_rt(gs1,t3,s2):1 SOS1_gsinMax_rt(gs1,t3,s2):2
+ s2782:  S1 :: mu_gsoutMax_rt(gs1,t3,s2):1 SOS1_gsoutMax_rt(gs1,t3,s2):2
+ s2783:  S1 :: mu_gstore_max_rt(gs1,t3,s2):1
      SOS1_gstore_max_rt(gs1,t3,s2):2
- s2544:  S1 :: mu_gstore_min_rt(gs1,t3,s2):1
+ s2784:  S1 :: mu_gstore_min_rt(gs1,t3,s2):1
      SOS1_gstore_min_rt(gs1,t3,s2):2
- s2545:  S1 :: mu_gsinMax_rt(gs1,t4,s1):1 SOS1_gsinMax_rt(gs1,t4,s1):2
- s2546:  S1 :: mu_gsoutMax_rt(gs1,t4,s1):1 SOS1_gsoutMax_rt(gs1,t4,s1):2
- s2547:  S1 :: mu_gstore_max_rt(gs1,t4,s1):1
+ s2785:  S1 :: mu_gsinMax_rt(gs1,t4,s1):1 SOS1_gsinMax_rt(gs1,t4,s1):2
+ s2786:  S1 :: mu_gsoutMax_rt(gs1,t4,s1):1 SOS1_gsoutMax_rt(gs1,t4,s1):2
+ s2787:  S1 :: mu_gstore_max_rt(gs1,t4,s1):1
      SOS1_gstore_max_rt(gs1,t4,s1):2
- s2548:  S1 :: mu_gstore_min_rt(gs1,t4,s1):1
+ s2788:  S1 :: mu_gstore_min_rt(gs1,t4,s1):1
      SOS1_gstore_min_rt(gs1,t4,s1):2
- s2549:  S1 :: mu_gsinMax_rt(gs1,t4,s2):1 SOS1_gsinMax_rt(gs1,t4,s2):2
- s2550:  S1 :: mu_gsoutMax_rt(gs1,t4,s2):1 SOS1_gsoutMax_rt(gs1,t4,s2):2
- s2551:  S1 :: mu_gstore_max_rt(gs1,t4,s2):1
+ s2789:  S1 :: mu_gsinMax_rt(gs1,t4,s2):1 SOS1_gsinMax_rt(gs1,t4,s2):2
+ s2790:  S1 :: mu_gsoutMax_rt(gs1,t4,s2):1 SOS1_gsoutMax_rt(gs1,t4,s2):2
+ s2791:  S1 :: mu_gstore_max_rt(gs1,t4,s2):1
      SOS1_gstore_max_rt(gs1,t4,s2):2
- s2552:  S1 :: mu_gstore_min_rt(gs1,t4,s2):1
+ s2792:  S1 :: mu_gstore_min_rt(gs1,t4,s2):1
      SOS1_gstore_min_rt(gs1,t4,s2):2
- s2553:  S1 :: mu_gsinMax_rt(gs1,t5,s1):1 SOS1_gsinMax_rt(gs1,t5,s1):2
- s2554:  S1 :: mu_gsoutMax_rt(gs1,t5,s1):1 SOS1_gsoutMax_rt(gs1,t5,s1):2
- s2555:  S1 :: mu_gstore_max_rt(gs1,t5,s1):1
+ s2793:  S1 :: mu_gsinMax_rt(gs1,t5,s1):1 SOS1_gsinMax_rt(gs1,t5,s1):2
+ s2794:  S1 :: mu_gsoutMax_rt(gs1,t5,s1):1 SOS1_gsoutMax_rt(gs1,t5,s1):2
+ s2795:  S1 :: mu_gstore_max_rt(gs1,t5,s1):1
      SOS1_gstore_max_rt(gs1,t5,s1):2
- s2556:  S1 :: mu_gstore_min_rt(gs1,t5,s1):1
+ s2796:  S1 :: mu_gstore_min_rt(gs1,t5,s1):1
      SOS1_gstore_min_rt(gs1,t5,s1):2
- s2557:  S1 :: mu_gsinMax_rt(gs1,t5,s2):1 SOS1_gsinMax_rt(gs1,t5,s2):2
- s2558:  S1 :: mu_gsoutMax_rt(gs1,t5,s2):1 SOS1_gsoutMax_rt(gs1,t5,s2):2
- s2559:  S1 :: mu_gstore_max_rt(gs1,t5,s2):1
+ s2797:  S1 :: mu_gsinMax_rt(gs1,t5,s2):1 SOS1_gsinMax_rt(gs1,t5,s2):2
+ s2798:  S1 :: mu_gsoutMax_rt(gs1,t5,s2):1 SOS1_gsoutMax_rt(gs1,t5,s2):2
+ s2799:  S1 :: mu_gstore_max_rt(gs1,t5,s2):1
      SOS1_gstore_max_rt(gs1,t5,s2):2
- s2560:  S1 :: mu_gstore_min_rt(gs1,t5,s2):1
+ s2800:  S1 :: mu_gstore_min_rt(gs1,t5,s2):1
      SOS1_gstore_min_rt(gs1,t5,s2):2
- s2561:  S1 :: mu_gsinMax_rt(gs1,t6,s1):1 SOS1_gsinMax_rt(gs1,t6,s1):2
- s2562:  S1 :: mu_gsoutMax_rt(gs1,t6,s1):1 SOS1_gsoutMax_rt(gs1,t6,s1):2
- s2563:  S1 :: mu_gstore_max_rt(gs1,t6,s1):1
+ s2801:  S1 :: mu_gsinMax_rt(gs1,t6,s1):1 SOS1_gsinMax_rt(gs1,t6,s1):2
+ s2802:  S1 :: mu_gsoutMax_rt(gs1,t6,s1):1 SOS1_gsoutMax_rt(gs1,t6,s1):2
+ s2803:  S1 :: mu_gstore_max_rt(gs1,t6,s1):1
      SOS1_gstore_max_rt(gs1,t6,s1):2
- s2564:  S1 :: mu_gstore_min_rt(gs1,t6,s1):1
+ s2804:  S1 :: mu_gstore_min_rt(gs1,t6,s1):1
      SOS1_gstore_min_rt(gs1,t6,s1):2
- s2565:  S1 :: mu_gsinMax_rt(gs1,t6,s2):1 SOS1_gsinMax_rt(gs1,t6,s2):2
- s2566:  S1 :: mu_gsoutMax_rt(gs1,t6,s2):1 SOS1_gsoutMax_rt(gs1,t6,s2):2
- s2567:  S1 :: mu_gstore_max_rt(gs1,t6,s2):1
+ s2805:  S1 :: mu_gsinMax_rt(gs1,t6,s2):1 SOS1_gsinMax_rt(gs1,t6,s2):2
+ s2806:  S1 :: mu_gsoutMax_rt(gs1,t6,s2):1 SOS1_gsoutMax_rt(gs1,t6,s2):2
+ s2807:  S1 :: mu_gstore_max_rt(gs1,t6,s2):1
      SOS1_gstore_max_rt(gs1,t6,s2):2
- s2568:  S1 :: mu_gstore_min_rt(gs1,t6,s2):1
+ s2808:  S1 :: mu_gstore_min_rt(gs1,t6,s2):1
      SOS1_gstore_min_rt(gs1,t6,s2):2
- s2569:  S1 :: mu_gsinMax_rt(gs1,t7,s1):1 SOS1_gsinMax_rt(gs1,t7,s1):2
- s2570:  S1 :: mu_gsoutMax_rt(gs1,t7,s1):1 SOS1_gsoutMax_rt(gs1,t7,s1):2
- s2571:  S1 :: mu_gstore_max_rt(gs1,t7,s1):1
+ s2809:  S1 :: mu_gsinMax_rt(gs1,t7,s1):1 SOS1_gsinMax_rt(gs1,t7,s1):2
+ s2810:  S1 :: mu_gsoutMax_rt(gs1,t7,s1):1 SOS1_gsoutMax_rt(gs1,t7,s1):2
+ s2811:  S1 :: mu_gstore_max_rt(gs1,t7,s1):1
      SOS1_gstore_max_rt(gs1,t7,s1):2
- s2572:  S1 :: mu_gstore_min_rt(gs1,t7,s1):1
+ s2812:  S1 :: mu_gstore_min_rt(gs1,t7,s1):1
      SOS1_gstore_min_rt(gs1,t7,s1):2
- s2573:  S1 :: mu_gsinMax_rt(gs1,t7,s2):1 SOS1_gsinMax_rt(gs1,t7,s2):2
- s2574:  S1 :: mu_gsoutMax_rt(gs1,t7,s2):1 SOS1_gsoutMax_rt(gs1,t7,s2):2
- s2575:  S1 :: mu_gstore_max_rt(gs1,t7,s2):1
+ s2813:  S1 :: mu_gsinMax_rt(gs1,t7,s2):1 SOS1_gsinMax_rt(gs1,t7,s2):2
+ s2814:  S1 :: mu_gsoutMax_rt(gs1,t7,s2):1 SOS1_gsoutMax_rt(gs1,t7,s2):2
+ s2815:  S1 :: mu_gstore_max_rt(gs1,t7,s2):1
      SOS1_gstore_max_rt(gs1,t7,s2):2
- s2576:  S1 :: mu_gstore_min_rt(gs1,t7,s2):1
+ s2816:  S1 :: mu_gstore_min_rt(gs1,t7,s2):1
      SOS1_gstore_min_rt(gs1,t7,s2):2
- s2577:  S1 :: mu_gsinMax_rt(gs1,t8,s1):1 SOS1_gsinMax_rt(gs1,t8,s1):2
- s2578:  S1 :: mu_gsoutMax_rt(gs1,t8,s1):1 SOS1_gsoutMax_rt(gs1,t8,s1):2
- s2579:  S1 :: mu_gstore_max_rt(gs1,t8,s1):1
+ s2817:  S1 :: mu_gsinMax_rt(gs1,t8,s1):1 SOS1_gsinMax_rt(gs1,t8,s1):2
+ s2818:  S1 :: mu_gsoutMax_rt(gs1,t8,s1):1 SOS1_gsoutMax_rt(gs1,t8,s1):2
+ s2819:  S1 :: mu_gstore_max_rt(gs1,t8,s1):1
      SOS1_gstore_max_rt(gs1,t8,s1):2
- s2580:  S1 :: mu_gstore_min_rt(gs1,t8,s1):1
+ s2820:  S1 :: mu_gstore_min_rt(gs1,t8,s1):1
      SOS1_gstore_min_rt(gs1,t8,s1):2
- s2581:  S1 :: mu_gsinMax_rt(gs1,t8,s2):1 SOS1_gsinMax_rt(gs1,t8,s2):2
- s2582:  S1 :: mu_gsoutMax_rt(gs1,t8,s2):1 SOS1_gsoutMax_rt(gs1,t8,s2):2
- s2583:  S1 :: mu_gstore_max_rt(gs1,t8,s2):1
+ s2821:  S1 :: mu_gsinMax_rt(gs1,t8,s2):1 SOS1_gsinMax_rt(gs1,t8,s2):2
+ s2822:  S1 :: mu_gsoutMax_rt(gs1,t8,s2):1 SOS1_gsoutMax_rt(gs1,t8,s2):2
+ s2823:  S1 :: mu_gstore_max_rt(gs1,t8,s2):1
      SOS1_gstore_max_rt(gs1,t8,s2):2
- s2584:  S1 :: mu_gstore_min_rt(gs1,t8,s2):1
+ s2824:  S1 :: mu_gstore_min_rt(gs1,t8,s2):1
      SOS1_gstore_min_rt(gs1,t8,s2):2
- s2585:  S1 :: mu_gsinMax_rt(gs1,t9,s1):1 SOS1_gsinMax_rt(gs1,t9,s1):2
- s2586:  S1 :: mu_gsoutMax_rt(gs1,t9,s1):1 SOS1_gsoutMax_rt(gs1,t9,s1):2
- s2587:  S1 :: mu_gstore_max_rt(gs1,t9,s1):1
+ s2825:  S1 :: mu_gsinMax_rt(gs1,t9,s1):1 SOS1_gsinMax_rt(gs1,t9,s1):2
+ s2826:  S1 :: mu_gsoutMax_rt(gs1,t9,s1):1 SOS1_gsoutMax_rt(gs1,t9,s1):2
+ s2827:  S1 :: mu_gstore_max_rt(gs1,t9,s1):1
      SOS1_gstore_max_rt(gs1,t9,s1):2
- s2588:  S1 :: mu_gstore_min_rt(gs1,t9,s1):1
+ s2828:  S1 :: mu_gstore_min_rt(gs1,t9,s1):1
      SOS1_gstore_min_rt(gs1,t9,s1):2
- s2589:  S1 :: mu_gsinMax_rt(gs1,t9,s2):1 SOS1_gsinMax_rt(gs1,t9,s2):2
- s2590:  S1 :: mu_gsoutMax_rt(gs1,t9,s2):1 SOS1_gsoutMax_rt(gs1,t9,s2):2
- s2591:  S1 :: mu_gstore_max_rt(gs1,t9,s2):1
+ s2829:  S1 :: mu_gsinMax_rt(gs1,t9,s2):1 SOS1_gsinMax_rt(gs1,t9,s2):2
+ s2830:  S1 :: mu_gsoutMax_rt(gs1,t9,s2):1 SOS1_gsoutMax_rt(gs1,t9,s2):2
+ s2831:  S1 :: mu_gstore_max_rt(gs1,t9,s2):1
      SOS1_gstore_max_rt(gs1,t9,s2):2
- s2592:  S1 :: mu_gstore_min_rt(gs1,t9,s2):1
+ s2832:  S1 :: mu_gstore_min_rt(gs1,t9,s2):1
      SOS1_gstore_min_rt(gs1,t9,s2):2
- s2593:  S1 :: mu_gsinMax_rt(gs1,t10,s1):1 SOS1_gsinMax_rt(gs1,t10,s1):2
- s2594:  S1 :: mu_gsoutMax_rt(gs1,t10,s1):1 SOS1_gsoutMax_rt(gs1,t10,s1):2
- s2595:  S1 :: mu_gstore_max_rt(gs1,t10,s1):1
+ s2833:  S1 :: mu_gsinMax_rt(gs1,t10,s1):1 SOS1_gsinMax_rt(gs1,t10,s1):2
+ s2834:  S1 :: mu_gsoutMax_rt(gs1,t10,s1):1 SOS1_gsoutMax_rt(gs1,t10,s1):2
+ s2835:  S1 :: mu_gstore_max_rt(gs1,t10,s1):1
      SOS1_gstore_max_rt(gs1,t10,s1):2
- s2596:  S1 :: mu_gstore_min_rt(gs1,t10,s1):1
+ s2836:  S1 :: mu_gstore_min_rt(gs1,t10,s1):1
      SOS1_gstore_min_rt(gs1,t10,s1):2
- s2597:  S1 :: mu_gsinMax_rt(gs1,t10,s2):1 SOS1_gsinMax_rt(gs1,t10,s2):2
- s2598:  S1 :: mu_gsoutMax_rt(gs1,t10,s2):1 SOS1_gsoutMax_rt(gs1,t10,s2):2
- s2599:  S1 :: mu_gstore_max_rt(gs1,t10,s2):1
+ s2837:  S1 :: mu_gsinMax_rt(gs1,t10,s2):1 SOS1_gsinMax_rt(gs1,t10,s2):2
+ s2838:  S1 :: mu_gsoutMax_rt(gs1,t10,s2):1 SOS1_gsoutMax_rt(gs1,t10,s2):2
+ s2839:  S1 :: mu_gstore_max_rt(gs1,t10,s2):1
      SOS1_gstore_max_rt(gs1,t10,s2):2
- s2600:  S1 :: mu_gstore_min_rt(gs1,t10,s2):1
+ s2840:  S1 :: mu_gstore_min_rt(gs1,t10,s2):1
      SOS1_gstore_min_rt(gs1,t10,s2):2
- s2601:  S1 :: mu_gsinMax_rt(gs1,t11,s1):1 SOS1_gsinMax_rt(gs1,t11,s1):2
- s2602:  S1 :: mu_gsoutMax_rt(gs1,t11,s1):1 SOS1_gsoutMax_rt(gs1,t11,s1):2
- s2603:  S1 :: mu_gstore_max_rt(gs1,t11,s1):1
+ s2841:  S1 :: mu_gsinMax_rt(gs1,t11,s1):1 SOS1_gsinMax_rt(gs1,t11,s1):2
+ s2842:  S1 :: mu_gsoutMax_rt(gs1,t11,s1):1 SOS1_gsoutMax_rt(gs1,t11,s1):2
+ s2843:  S1 :: mu_gstore_max_rt(gs1,t11,s1):1
      SOS1_gstore_max_rt(gs1,t11,s1):2
- s2604:  S1 :: mu_gstore_min_rt(gs1,t11,s1):1
+ s2844:  S1 :: mu_gstore_min_rt(gs1,t11,s1):1
      SOS1_gstore_min_rt(gs1,t11,s1):2
- s2605:  S1 :: mu_gsinMax_rt(gs1,t11,s2):1 SOS1_gsinMax_rt(gs1,t11,s2):2
- s2606:  S1 :: mu_gsoutMax_rt(gs1,t11,s2):1 SOS1_gsoutMax_rt(gs1,t11,s2):2
- s2607:  S1 :: mu_gstore_max_rt(gs1,t11,s2):1
+ s2845:  S1 :: mu_gsinMax_rt(gs1,t11,s2):1 SOS1_gsinMax_rt(gs1,t11,s2):2
+ s2846:  S1 :: mu_gsoutMax_rt(gs1,t11,s2):1 SOS1_gsoutMax_rt(gs1,t11,s2):2
+ s2847:  S1 :: mu_gstore_max_rt(gs1,t11,s2):1
      SOS1_gstore_max_rt(gs1,t11,s2):2
- s2608:  S1 :: mu_gstore_min_rt(gs1,t11,s2):1
+ s2848:  S1 :: mu_gstore_min_rt(gs1,t11,s2):1
      SOS1_gstore_min_rt(gs1,t11,s2):2
- s2609:  S1 :: mu_gsinMax_rt(gs1,t12,s1):1 SOS1_gsinMax_rt(gs1,t12,s1):2
- s2610:  S1 :: mu_gsoutMax_rt(gs1,t12,s1):1 SOS1_gsoutMax_rt(gs1,t12,s1):2
- s2611:  S1 :: mu_gstore_max_rt(gs1,t12,s1):1
+ s2849:  S1 :: mu_gsinMax_rt(gs1,t12,s1):1 SOS1_gsinMax_rt(gs1,t12,s1):2
+ s2850:  S1 :: mu_gsoutMax_rt(gs1,t12,s1):1 SOS1_gsoutMax_rt(gs1,t12,s1):2
+ s2851:  S1 :: mu_gstore_max_rt(gs1,t12,s1):1
      SOS1_gstore_max_rt(gs1,t12,s1):2
- s2612:  S1 :: mu_gstore_min_rt(gs1,t12,s1):1
+ s2852:  S1 :: mu_gstore_min_rt(gs1,t12,s1):1
      SOS1_gstore_min_rt(gs1,t12,s1):2
- s2613:  S1 :: mu_gsinMax_rt(gs1,t12,s2):1 SOS1_gsinMax_rt(gs1,t12,s2):2
- s2614:  S1 :: mu_gsoutMax_rt(gs1,t12,s2):1 SOS1_gsoutMax_rt(gs1,t12,s2):2
- s2615:  S1 :: mu_gstore_max_rt(gs1,t12,s2):1
+ s2853:  S1 :: mu_gsinMax_rt(gs1,t12,s2):1 SOS1_gsinMax_rt(gs1,t12,s2):2
+ s2854:  S1 :: mu_gsoutMax_rt(gs1,t12,s2):1 SOS1_gsoutMax_rt(gs1,t12,s2):2
+ s2855:  S1 :: mu_gstore_max_rt(gs1,t12,s2):1
      SOS1_gstore_max_rt(gs1,t12,s2):2
- s2616:  S1 :: mu_gstore_min_rt(gs1,t12,s2):1
+ s2856:  S1 :: mu_gstore_min_rt(gs1,t12,s2):1
      SOS1_gstore_min_rt(gs1,t12,s2):2
- s2617:  S1 :: mu_gsinMax_rt(gs1,t13,s1):1 SOS1_gsinMax_rt(gs1,t13,s1):2
- s2618:  S1 :: mu_gsoutMax_rt(gs1,t13,s1):1 SOS1_gsoutMax_rt(gs1,t13,s1):2
- s2619:  S1 :: mu_gstore_max_rt(gs1,t13,s1):1
+ s2857:  S1 :: mu_gsinMax_rt(gs1,t13,s1):1 SOS1_gsinMax_rt(gs1,t13,s1):2
+ s2858:  S1 :: mu_gsoutMax_rt(gs1,t13,s1):1 SOS1_gsoutMax_rt(gs1,t13,s1):2
+ s2859:  S1 :: mu_gstore_max_rt(gs1,t13,s1):1
      SOS1_gstore_max_rt(gs1,t13,s1):2
- s2620:  S1 :: mu_gstore_min_rt(gs1,t13,s1):1
+ s2860:  S1 :: mu_gstore_min_rt(gs1,t13,s1):1
      SOS1_gstore_min_rt(gs1,t13,s1):2
- s2621:  S1 :: mu_gsinMax_rt(gs1,t13,s2):1 SOS1_gsinMax_rt(gs1,t13,s2):2
- s2622:  S1 :: mu_gsoutMax_rt(gs1,t13,s2):1 SOS1_gsoutMax_rt(gs1,t13,s2):2
- s2623:  S1 :: mu_gstore_max_rt(gs1,t13,s2):1
+ s2861:  S1 :: mu_gsinMax_rt(gs1,t13,s2):1 SOS1_gsinMax_rt(gs1,t13,s2):2
+ s2862:  S1 :: mu_gsoutMax_rt(gs1,t13,s2):1 SOS1_gsoutMax_rt(gs1,t13,s2):2
+ s2863:  S1 :: mu_gstore_max_rt(gs1,t13,s2):1
      SOS1_gstore_max_rt(gs1,t13,s2):2
- s2624:  S1 :: mu_gstore_min_rt(gs1,t13,s2):1
+ s2864:  S1 :: mu_gstore_min_rt(gs1,t13,s2):1
      SOS1_gstore_min_rt(gs1,t13,s2):2
- s2625:  S1 :: mu_gsinMax_rt(gs1,t14,s1):1 SOS1_gsinMax_rt(gs1,t14,s1):2
- s2626:  S1 :: mu_gsoutMax_rt(gs1,t14,s1):1 SOS1_gsoutMax_rt(gs1,t14,s1):2
- s2627:  S1 :: mu_gstore_max_rt(gs1,t14,s1):1
+ s2865:  S1 :: mu_gsinMax_rt(gs1,t14,s1):1 SOS1_gsinMax_rt(gs1,t14,s1):2
+ s2866:  S1 :: mu_gsoutMax_rt(gs1,t14,s1):1 SOS1_gsoutMax_rt(gs1,t14,s1):2
+ s2867:  S1 :: mu_gstore_max_rt(gs1,t14,s1):1
      SOS1_gstore_max_rt(gs1,t14,s1):2
- s2628:  S1 :: mu_gstore_min_rt(gs1,t14,s1):1
+ s2868:  S1 :: mu_gstore_min_rt(gs1,t14,s1):1
      SOS1_gstore_min_rt(gs1,t14,s1):2
- s2629:  S1 :: mu_gsinMax_rt(gs1,t14,s2):1 SOS1_gsinMax_rt(gs1,t14,s2):2
- s2630:  S1 :: mu_gsoutMax_rt(gs1,t14,s2):1 SOS1_gsoutMax_rt(gs1,t14,s2):2
- s2631:  S1 :: mu_gstore_max_rt(gs1,t14,s2):1
+ s2869:  S1 :: mu_gsinMax_rt(gs1,t14,s2):1 SOS1_gsinMax_rt(gs1,t14,s2):2
+ s2870:  S1 :: mu_gsoutMax_rt(gs1,t14,s2):1 SOS1_gsoutMax_rt(gs1,t14,s2):2
+ s2871:  S1 :: mu_gstore_max_rt(gs1,t14,s2):1
      SOS1_gstore_max_rt(gs1,t14,s2):2
- s2632:  S1 :: mu_gstore_min_rt(gs1,t14,s2):1
+ s2872:  S1 :: mu_gstore_min_rt(gs1,t14,s2):1
      SOS1_gstore_min_rt(gs1,t14,s2):2
- s2633:  S1 :: mu_gsinMax_rt(gs1,t15,s1):1 SOS1_gsinMax_rt(gs1,t15,s1):2
- s2634:  S1 :: mu_gsoutMax_rt(gs1,t15,s1):1 SOS1_gsoutMax_rt(gs1,t15,s1):2
- s2635:  S1 :: mu_gstore_max_rt(gs1,t15,s1):1
+ s2873:  S1 :: mu_gsinMax_rt(gs1,t15,s1):1 SOS1_gsinMax_rt(gs1,t15,s1):2
+ s2874:  S1 :: mu_gsoutMax_rt(gs1,t15,s1):1 SOS1_gsoutMax_rt(gs1,t15,s1):2
+ s2875:  S1 :: mu_gstore_max_rt(gs1,t15,s1):1
      SOS1_gstore_max_rt(gs1,t15,s1):2
- s2636:  S1 :: mu_gstore_min_rt(gs1,t15,s1):1
+ s2876:  S1 :: mu_gstore_min_rt(gs1,t15,s1):1
      SOS1_gstore_min_rt(gs1,t15,s1):2
- s2637:  S1 :: mu_gsinMax_rt(gs1,t15,s2):1 SOS1_gsinMax_rt(gs1,t15,s2):2
- s2638:  S1 :: mu_gsoutMax_rt(gs1,t15,s2):1 SOS1_gsoutMax_rt(gs1,t15,s2):2
- s2639:  S1 :: mu_gstore_max_rt(gs1,t15,s2):1
+ s2877:  S1 :: mu_gsinMax_rt(gs1,t15,s2):1 SOS1_gsinMax_rt(gs1,t15,s2):2
+ s2878:  S1 :: mu_gsoutMax_rt(gs1,t15,s2):1 SOS1_gsoutMax_rt(gs1,t15,s2):2
+ s2879:  S1 :: mu_gstore_max_rt(gs1,t15,s2):1
      SOS1_gstore_max_rt(gs1,t15,s2):2
- s2640:  S1 :: mu_gstore_min_rt(gs1,t15,s2):1
+ s2880:  S1 :: mu_gstore_min_rt(gs1,t15,s2):1
      SOS1_gstore_min_rt(gs1,t15,s2):2
- s2641:  S1 :: mu_gsinMax_rt(gs1,t16,s1):1 SOS1_gsinMax_rt(gs1,t16,s1):2
- s2642:  S1 :: mu_gsoutMax_rt(gs1,t16,s1):1 SOS1_gsoutMax_rt(gs1,t16,s1):2
- s2643:  S1 :: mu_gstore_max_rt(gs1,t16,s1):1
+ s2881:  S1 :: mu_gsinMax_rt(gs1,t16,s1):1 SOS1_gsinMax_rt(gs1,t16,s1):2
+ s2882:  S1 :: mu_gsoutMax_rt(gs1,t16,s1):1 SOS1_gsoutMax_rt(gs1,t16,s1):2
+ s2883:  S1 :: mu_gstore_max_rt(gs1,t16,s1):1
      SOS1_gstore_max_rt(gs1,t16,s1):2
- s2644:  S1 :: mu_gstore_min_rt(gs1,t16,s1):1
+ s2884:  S1 :: mu_gstore_min_rt(gs1,t16,s1):1
      SOS1_gstore_min_rt(gs1,t16,s1):2
- s2645:  S1 :: mu_gsinMax_rt(gs1,t16,s2):1 SOS1_gsinMax_rt(gs1,t16,s2):2
- s2646:  S1 :: mu_gsoutMax_rt(gs1,t16,s2):1 SOS1_gsoutMax_rt(gs1,t16,s2):2
- s2647:  S1 :: mu_gstore_max_rt(gs1,t16,s2):1
+ s2885:  S1 :: mu_gsinMax_rt(gs1,t16,s2):1 SOS1_gsinMax_rt(gs1,t16,s2):2
+ s2886:  S1 :: mu_gsoutMax_rt(gs1,t16,s2):1 SOS1_gsoutMax_rt(gs1,t16,s2):2
+ s2887:  S1 :: mu_gstore_max_rt(gs1,t16,s2):1
      SOS1_gstore_max_rt(gs1,t16,s2):2
- s2648:  S1 :: mu_gstore_min_rt(gs1,t16,s2):1
+ s2888:  S1 :: mu_gstore_min_rt(gs1,t16,s2):1
      SOS1_gstore_min_rt(gs1,t16,s2):2
- s2649:  S1 :: mu_gsinMax_rt(gs1,t17,s1):1 SOS1_gsinMax_rt(gs1,t17,s1):2
- s2650:  S1 :: mu_gsoutMax_rt(gs1,t17,s1):1 SOS1_gsoutMax_rt(gs1,t17,s1):2
- s2651:  S1 :: mu_gstore_max_rt(gs1,t17,s1):1
+ s2889:  S1 :: mu_gsinMax_rt(gs1,t17,s1):1 SOS1_gsinMax_rt(gs1,t17,s1):2
+ s2890:  S1 :: mu_gsoutMax_rt(gs1,t17,s1):1 SOS1_gsoutMax_rt(gs1,t17,s1):2
+ s2891:  S1 :: mu_gstore_max_rt(gs1,t17,s1):1
      SOS1_gstore_max_rt(gs1,t17,s1):2
- s2652:  S1 :: mu_gstore_min_rt(gs1,t17,s1):1
+ s2892:  S1 :: mu_gstore_min_rt(gs1,t17,s1):1
      SOS1_gstore_min_rt(gs1,t17,s1):2
- s2653:  S1 :: mu_gsinMax_rt(gs1,t17,s2):1 SOS1_gsinMax_rt(gs1,t17,s2):2
- s2654:  S1 :: mu_gsoutMax_rt(gs1,t17,s2):1 SOS1_gsoutMax_rt(gs1,t17,s2):2
- s2655:  S1 :: mu_gstore_max_rt(gs1,t17,s2):1
+ s2893:  S1 :: mu_gsinMax_rt(gs1,t17,s2):1 SOS1_gsinMax_rt(gs1,t17,s2):2
+ s2894:  S1 :: mu_gsoutMax_rt(gs1,t17,s2):1 SOS1_gsoutMax_rt(gs1,t17,s2):2
+ s2895:  S1 :: mu_gstore_max_rt(gs1,t17,s2):1
      SOS1_gstore_max_rt(gs1,t17,s2):2
- s2656:  S1 :: mu_gstore_min_rt(gs1,t17,s2):1
+ s2896:  S1 :: mu_gstore_min_rt(gs1,t17,s2):1
      SOS1_gstore_min_rt(gs1,t17,s2):2
- s2657:  S1 :: mu_gsinMax_rt(gs1,t18,s1):1 SOS1_gsinMax_rt(gs1,t18,s1):2
- s2658:  S1 :: mu_gsoutMax_rt(gs1,t18,s1):1 SOS1_gsoutMax_rt(gs1,t18,s1):2
- s2659:  S1 :: mu_gstore_max_rt(gs1,t18,s1):1
+ s2897:  S1 :: mu_gsinMax_rt(gs1,t18,s1):1 SOS1_gsinMax_rt(gs1,t18,s1):2
+ s2898:  S1 :: mu_gsoutMax_rt(gs1,t18,s1):1 SOS1_gsoutMax_rt(gs1,t18,s1):2
+ s2899:  S1 :: mu_gstore_max_rt(gs1,t18,s1):1
      SOS1_gstore_max_rt(gs1,t18,s1):2
- s2660:  S1 :: mu_gstore_min_rt(gs1,t18,s1):1
+ s2900:  S1 :: mu_gstore_min_rt(gs1,t18,s1):1
      SOS1_gstore_min_rt(gs1,t18,s1):2
- s2661:  S1 :: mu_gsinMax_rt(gs1,t18,s2):1 SOS1_gsinMax_rt(gs1,t18,s2):2
- s2662:  S1 :: mu_gsoutMax_rt(gs1,t18,s2):1 SOS1_gsoutMax_rt(gs1,t18,s2):2
- s2663:  S1 :: mu_gstore_max_rt(gs1,t18,s2):1
+ s2901:  S1 :: mu_gsinMax_rt(gs1,t18,s2):1 SOS1_gsinMax_rt(gs1,t18,s2):2
+ s2902:  S1 :: mu_gsoutMax_rt(gs1,t18,s2):1 SOS1_gsoutMax_rt(gs1,t18,s2):2
+ s2903:  S1 :: mu_gstore_max_rt(gs1,t18,s2):1
      SOS1_gstore_max_rt(gs1,t18,s2):2
- s2664:  S1 :: mu_gstore_min_rt(gs1,t18,s2):1
+ s2904:  S1 :: mu_gstore_min_rt(gs1,t18,s2):1
      SOS1_gstore_min_rt(gs1,t18,s2):2
- s2665:  S1 :: mu_gsinMax_rt(gs1,t19,s1):1 SOS1_gsinMax_rt(gs1,t19,s1):2
- s2666:  S1 :: mu_gsoutMax_rt(gs1,t19,s1):1 SOS1_gsoutMax_rt(gs1,t19,s1):2
- s2667:  S1 :: mu_gstore_max_rt(gs1,t19,s1):1
+ s2905:  S1 :: mu_gsinMax_rt(gs1,t19,s1):1 SOS1_gsinMax_rt(gs1,t19,s1):2
+ s2906:  S1 :: mu_gsoutMax_rt(gs1,t19,s1):1 SOS1_gsoutMax_rt(gs1,t19,s1):2
+ s2907:  S1 :: mu_gstore_max_rt(gs1,t19,s1):1
      SOS1_gstore_max_rt(gs1,t19,s1):2
- s2668:  S1 :: mu_gstore_min_rt(gs1,t19,s1):1
+ s2908:  S1 :: mu_gstore_min_rt(gs1,t19,s1):1
      SOS1_gstore_min_rt(gs1,t19,s1):2
- s2669:  S1 :: mu_gsinMax_rt(gs1,t19,s2):1 SOS1_gsinMax_rt(gs1,t19,s2):2
- s2670:  S1 :: mu_gsoutMax_rt(gs1,t19,s2):1 SOS1_gsoutMax_rt(gs1,t19,s2):2
- s2671:  S1 :: mu_gstore_max_rt(gs1,t19,s2):1
+ s2909:  S1 :: mu_gsinMax_rt(gs1,t19,s2):1 SOS1_gsinMax_rt(gs1,t19,s2):2
+ s2910:  S1 :: mu_gsoutMax_rt(gs1,t19,s2):1 SOS1_gsoutMax_rt(gs1,t19,s2):2
+ s2911:  S1 :: mu_gstore_max_rt(gs1,t19,s2):1
      SOS1_gstore_max_rt(gs1,t19,s2):2
- s2672:  S1 :: mu_gstore_min_rt(gs1,t19,s2):1
+ s2912:  S1 :: mu_gstore_min_rt(gs1,t19,s2):1
      SOS1_gstore_min_rt(gs1,t19,s2):2
- s2673:  S1 :: mu_gsinMax_rt(gs1,t20,s1):1 SOS1_gsinMax_rt(gs1,t20,s1):2
- s2674:  S1 :: mu_gsoutMax_rt(gs1,t20,s1):1 SOS1_gsoutMax_rt(gs1,t20,s1):2
- s2675:  S1 :: mu_gstore_max_rt(gs1,t20,s1):1
+ s2913:  S1 :: mu_gsinMax_rt(gs1,t20,s1):1 SOS1_gsinMax_rt(gs1,t20,s1):2
+ s2914:  S1 :: mu_gsoutMax_rt(gs1,t20,s1):1 SOS1_gsoutMax_rt(gs1,t20,s1):2
+ s2915:  S1 :: mu_gstore_max_rt(gs1,t20,s1):1
      SOS1_gstore_max_rt(gs1,t20,s1):2
- s2676:  S1 :: mu_gstore_min_rt(gs1,t20,s1):1
+ s2916:  S1 :: mu_gstore_min_rt(gs1,t20,s1):1
      SOS1_gstore_min_rt(gs1,t20,s1):2
- s2677:  S1 :: mu_gsinMax_rt(gs1,t20,s2):1 SOS1_gsinMax_rt(gs1,t20,s2):2
- s2678:  S1 :: mu_gsoutMax_rt(gs1,t20,s2):1 SOS1_gsoutMax_rt(gs1,t20,s2):2
- s2679:  S1 :: mu_gstore_max_rt(gs1,t20,s2):1
+ s2917:  S1 :: mu_gsinMax_rt(gs1,t20,s2):1 SOS1_gsinMax_rt(gs1,t20,s2):2
+ s2918:  S1 :: mu_gsoutMax_rt(gs1,t20,s2):1 SOS1_gsoutMax_rt(gs1,t20,s2):2
+ s2919:  S1 :: mu_gstore_max_rt(gs1,t20,s2):1
      SOS1_gstore_max_rt(gs1,t20,s2):2
- s2680:  S1 :: mu_gstore_min_rt(gs1,t20,s2):1
+ s2920:  S1 :: mu_gstore_min_rt(gs1,t20,s2):1
      SOS1_gstore_min_rt(gs1,t20,s2):2
- s2681:  S1 :: mu_gsinMax_rt(gs1,t21,s1):1 SOS1_gsinMax_rt(gs1,t21,s1):2
- s2682:  S1 :: mu_gsoutMax_rt(gs1,t21,s1):1 SOS1_gsoutMax_rt(gs1,t21,s1):2
- s2683:  S1 :: mu_gstore_max_rt(gs1,t21,s1):1
+ s2921:  S1 :: mu_gsinMax_rt(gs1,t21,s1):1 SOS1_gsinMax_rt(gs1,t21,s1):2
+ s2922:  S1 :: mu_gsoutMax_rt(gs1,t21,s1):1 SOS1_gsoutMax_rt(gs1,t21,s1):2
+ s2923:  S1 :: mu_gstore_max_rt(gs1,t21,s1):1
      SOS1_gstore_max_rt(gs1,t21,s1):2
- s2684:  S1 :: mu_gstore_min_rt(gs1,t21,s1):1
+ s2924:  S1 :: mu_gstore_min_rt(gs1,t21,s1):1
      SOS1_gstore_min_rt(gs1,t21,s1):2
- s2685:  S1 :: mu_gsinMax_rt(gs1,t21,s2):1 SOS1_gsinMax_rt(gs1,t21,s2):2
- s2686:  S1 :: mu_gsoutMax_rt(gs1,t21,s2):1 SOS1_gsoutMax_rt(gs1,t21,s2):2
- s2687:  S1 :: mu_gstore_max_rt(gs1,t21,s2):1
+ s2925:  S1 :: mu_gsinMax_rt(gs1,t21,s2):1 SOS1_gsinMax_rt(gs1,t21,s2):2
+ s2926:  S1 :: mu_gsoutMax_rt(gs1,t21,s2):1 SOS1_gsoutMax_rt(gs1,t21,s2):2
+ s2927:  S1 :: mu_gstore_max_rt(gs1,t21,s2):1
      SOS1_gstore_max_rt(gs1,t21,s2):2
- s2688:  S1 :: mu_gstore_min_rt(gs1,t21,s2):1
+ s2928:  S1 :: mu_gstore_min_rt(gs1,t21,s2):1
      SOS1_gstore_min_rt(gs1,t21,s2):2
- s2689:  S1 :: mu_gsinMax_rt(gs1,t22,s1):1 SOS1_gsinMax_rt(gs1,t22,s1):2
- s2690:  S1 :: mu_gsoutMax_rt(gs1,t22,s1):1 SOS1_gsoutMax_rt(gs1,t22,s1):2
- s2691:  S1 :: mu_gstore_max_rt(gs1,t22,s1):1
+ s2929:  S1 :: mu_gsinMax_rt(gs1,t22,s1):1 SOS1_gsinMax_rt(gs1,t22,s1):2
+ s2930:  S1 :: mu_gsoutMax_rt(gs1,t22,s1):1 SOS1_gsoutMax_rt(gs1,t22,s1):2
+ s2931:  S1 :: mu_gstore_max_rt(gs1,t22,s1):1
      SOS1_gstore_max_rt(gs1,t22,s1):2
- s2692:  S1 :: mu_gstore_min_rt(gs1,t22,s1):1
+ s2932:  S1 :: mu_gstore_min_rt(gs1,t22,s1):1
      SOS1_gstore_min_rt(gs1,t22,s1):2
- s2693:  S1 :: mu_gsinMax_rt(gs1,t22,s2):1 SOS1_gsinMax_rt(gs1,t22,s2):2
- s2694:  S1 :: mu_gsoutMax_rt(gs1,t22,s2):1 SOS1_gsoutMax_rt(gs1,t22,s2):2
- s2695:  S1 :: mu_gstore_max_rt(gs1,t22,s2):1
+ s2933:  S1 :: mu_gsinMax_rt(gs1,t22,s2):1 SOS1_gsinMax_rt(gs1,t22,s2):2
+ s2934:  S1 :: mu_gsoutMax_rt(gs1,t22,s2):1 SOS1_gsoutMax_rt(gs1,t22,s2):2
+ s2935:  S1 :: mu_gstore_max_rt(gs1,t22,s2):1
      SOS1_gstore_max_rt(gs1,t22,s2):2
- s2696:  S1 :: mu_gstore_min_rt(gs1,t22,s2):1
+ s2936:  S1 :: mu_gstore_min_rt(gs1,t22,s2):1
      SOS1_gstore_min_rt(gs1,t22,s2):2
- s2697:  S1 :: mu_gsinMax_rt(gs1,t23,s1):1 SOS1_gsinMax_rt(gs1,t23,s1):2
- s2698:  S1 :: mu_gsoutMax_rt(gs1,t23,s1):1 SOS1_gsoutMax_rt(gs1,t23,s1):2
- s2699:  S1 :: mu_gstore_max_rt(gs1,t23,s1):1
+ s2937:  S1 :: mu_gsinMax_rt(gs1,t23,s1):1 SOS1_gsinMax_rt(gs1,t23,s1):2
+ s2938:  S1 :: mu_gsoutMax_rt(gs1,t23,s1):1 SOS1_gsoutMax_rt(gs1,t23,s1):2
+ s2939:  S1 :: mu_gstore_max_rt(gs1,t23,s1):1
      SOS1_gstore_max_rt(gs1,t23,s1):2
- s2700:  S1 :: mu_gstore_min_rt(gs1,t23,s1):1
+ s2940:  S1 :: mu_gstore_min_rt(gs1,t23,s1):1
      SOS1_gstore_min_rt(gs1,t23,s1):2
- s2701:  S1 :: mu_gsinMax_rt(gs1,t23,s2):1 SOS1_gsinMax_rt(gs1,t23,s2):2
- s2702:  S1 :: mu_gsoutMax_rt(gs1,t23,s2):1 SOS1_gsoutMax_rt(gs1,t23,s2):2
- s2703:  S1 :: mu_gstore_max_rt(gs1,t23,s2):1
+ s2941:  S1 :: mu_gsinMax_rt(gs1,t23,s2):1 SOS1_gsinMax_rt(gs1,t23,s2):2
+ s2942:  S1 :: mu_gsoutMax_rt(gs1,t23,s2):1 SOS1_gsoutMax_rt(gs1,t23,s2):2
+ s2943:  S1 :: mu_gstore_max_rt(gs1,t23,s2):1
      SOS1_gstore_max_rt(gs1,t23,s2):2
- s2704:  S1 :: mu_gstore_min_rt(gs1,t23,s2):1
+ s2944:  S1 :: mu_gstore_min_rt(gs1,t23,s2):1
      SOS1_gstore_min_rt(gs1,t23,s2):2
- s2705:  S1 :: mu_gsinMax_rt(gs1,t24,s1):1 SOS1_gsinMax_rt(gs1,t24,s1):2
- s2706:  S1 :: mu_gsoutMax_rt(gs1,t24,s1):1 SOS1_gsoutMax_rt(gs1,t24,s1):2
- s2707:  S1 :: mu_gstore_max_rt(gs1,t24,s1):1
+ s2945:  S1 :: mu_gsinMax_rt(gs1,t24,s1):1 SOS1_gsinMax_rt(gs1,t24,s1):2
+ s2946:  S1 :: mu_gsoutMax_rt(gs1,t24,s1):1 SOS1_gsoutMax_rt(gs1,t24,s1):2
+ s2947:  S1 :: mu_gstore_max_rt(gs1,t24,s1):1
      SOS1_gstore_max_rt(gs1,t24,s1):2
- s2708:  S1 :: mu_gstore_min_rt(gs1,t24,s1):1
+ s2948:  S1 :: mu_gstore_min_rt(gs1,t24,s1):1
      SOS1_gstore_min_rt(gs1,t24,s1):2
- s2709:  S1 :: mu_gsinMax_rt(gs1,t24,s2):1 SOS1_gsinMax_rt(gs1,t24,s2):2
- s2710:  S1 :: mu_gsoutMax_rt(gs1,t24,s2):1 SOS1_gsoutMax_rt(gs1,t24,s2):2
- s2711:  S1 :: mu_gstore_max_rt(gs1,t24,s2):1
+ s2949:  S1 :: mu_gsinMax_rt(gs1,t24,s2):1 SOS1_gsinMax_rt(gs1,t24,s2):2
+ s2950:  S1 :: mu_gsoutMax_rt(gs1,t24,s2):1 SOS1_gsoutMax_rt(gs1,t24,s2):2
+ s2951:  S1 :: mu_gstore_max_rt(gs1,t24,s2):1
      SOS1_gstore_max_rt(gs1,t24,s2):2
- s2712:  S1 :: mu_gstore_min_rt(gs1,t24,s2):1
+ s2952:  S1 :: mu_gstore_min_rt(gs1,t24,s2):1
      SOS1_gstore_min_rt(gs1,t24,s2):2
- s2713:  S1 :: mu_gstor_end(gs1,s1):1 SOS1_gstor_end(gs1,s1):2
- s2714:  S1 :: mu_gstor_end(gs1,s2):1 SOS1_gstor_end(gs1,s2):2
- s2715:  S1 :: mu_gas_shed_rt(ng101,s1,t1):1
+ s2953:  S1 :: mu_gstor_end(gs1,s1):1 SOS1_gstor_end(gs1,s1):2
+ s2954:  S1 :: mu_gstor_end(gs1,s2):1 SOS1_gstor_end(gs1,s2):2
+ s2955:  S1 :: mu_gas_shed_rt(ng101,s1,t1):1
      SOS1_gas_shed_rt(ng101,s1,t1):2
- s2716:  S1 :: mu_gas_shed_rt(ng101,s1,t2):1
+ s2956:  S1 :: mu_gas_shed_rt(ng101,s1,t2):1
      SOS1_gas_shed_rt(ng101,s1,t2):2
- s2717:  S1 :: mu_gas_shed_rt(ng101,s1,t3):1
+ s2957:  S1 :: mu_gas_shed_rt(ng101,s1,t3):1
      SOS1_gas_shed_rt(ng101,s1,t3):2
- s2718:  S1 :: mu_gas_shed_rt(ng101,s1,t4):1
+ s2958:  S1 :: mu_gas_shed_rt(ng101,s1,t4):1
      SOS1_gas_shed_rt(ng101,s1,t4):2
- s2719:  S1 :: mu_gas_shed_rt(ng101,s1,t5):1
+ s2959:  S1 :: mu_gas_shed_rt(ng101,s1,t5):1
      SOS1_gas_shed_rt(ng101,s1,t5):2
- s2720:  S1 :: mu_gas_shed_rt(ng101,s1,t6):1
+ s2960:  S1 :: mu_gas_shed_rt(ng101,s1,t6):1
      SOS1_gas_shed_rt(ng101,s1,t6):2
- s2721:  S1 :: mu_gas_shed_rt(ng101,s1,t7):1
+ s2961:  S1 :: mu_gas_shed_rt(ng101,s1,t7):1
      SOS1_gas_shed_rt(ng101,s1,t7):2
- s2722:  S1 :: mu_gas_shed_rt(ng101,s1,t8):1
+ s2962:  S1 :: mu_gas_shed_rt(ng101,s1,t8):1
      SOS1_gas_shed_rt(ng101,s1,t8):2
- s2723:  S1 :: mu_gas_shed_rt(ng101,s1,t9):1
+ s2963:  S1 :: mu_gas_shed_rt(ng101,s1,t9):1
      SOS1_gas_shed_rt(ng101,s1,t9):2
- s2724:  S1 :: mu_gas_shed_rt(ng101,s1,t10):1
+ s2964:  S1 :: mu_gas_shed_rt(ng101,s1,t10):1
      SOS1_gas_shed_rt(ng101,s1,t10):2
- s2725:  S1 :: mu_gas_shed_rt(ng101,s1,t11):1
+ s2965:  S1 :: mu_gas_shed_rt(ng101,s1,t11):1
      SOS1_gas_shed_rt(ng101,s1,t11):2
- s2726:  S1 :: mu_gas_shed_rt(ng101,s1,t12):1
+ s2966:  S1 :: mu_gas_shed_rt(ng101,s1,t12):1
      SOS1_gas_shed_rt(ng101,s1,t12):2
- s2727:  S1 :: mu_gas_shed_rt(ng101,s1,t13):1
+ s2967:  S1 :: mu_gas_shed_rt(ng101,s1,t13):1
      SOS1_gas_shed_rt(ng101,s1,t13):2
- s2728:  S1 :: mu_gas_shed_rt(ng101,s1,t14):1
+ s2968:  S1 :: mu_gas_shed_rt(ng101,s1,t14):1
      SOS1_gas_shed_rt(ng101,s1,t14):2
- s2729:  S1 :: mu_gas_shed_rt(ng101,s1,t15):1
+ s2969:  S1 :: mu_gas_shed_rt(ng101,s1,t15):1
      SOS1_gas_shed_rt(ng101,s1,t15):2
- s2730:  S1 :: mu_gas_shed_rt(ng101,s1,t16):1
+ s2970:  S1 :: mu_gas_shed_rt(ng101,s1,t16):1
      SOS1_gas_shed_rt(ng101,s1,t16):2
- s2731:  S1 :: mu_gas_shed_rt(ng101,s1,t17):1
+ s2971:  S1 :: mu_gas_shed_rt(ng101,s1,t17):1
      SOS1_gas_shed_rt(ng101,s1,t17):2
- s2732:  S1 :: mu_gas_shed_rt(ng101,s1,t18):1
+ s2972:  S1 :: mu_gas_shed_rt(ng101,s1,t18):1
      SOS1_gas_shed_rt(ng101,s1,t18):2
- s2733:  S1 :: mu_gas_shed_rt(ng101,s1,t19):1
+ s2973:  S1 :: mu_gas_shed_rt(ng101,s1,t19):1
      SOS1_gas_shed_rt(ng101,s1,t19):2
- s2734:  S1 :: mu_gas_shed_rt(ng101,s1,t20):1
+ s2974:  S1 :: mu_gas_shed_rt(ng101,s1,t20):1
      SOS1_gas_shed_rt(ng101,s1,t20):2
- s2735:  S1 :: mu_gas_shed_rt(ng101,s1,t21):1
+ s2975:  S1 :: mu_gas_shed_rt(ng101,s1,t21):1
      SOS1_gas_shed_rt(ng101,s1,t21):2
- s2736:  S1 :: mu_gas_shed_rt(ng101,s1,t22):1
+ s2976:  S1 :: mu_gas_shed_rt(ng101,s1,t22):1
      SOS1_gas_shed_rt(ng101,s1,t22):2
- s2737:  S1 :: mu_gas_shed_rt(ng101,s1,t23):1
+ s2977:  S1 :: mu_gas_shed_rt(ng101,s1,t23):1
      SOS1_gas_shed_rt(ng101,s1,t23):2
- s2738:  S1 :: mu_gas_shed_rt(ng101,s1,t24):1
+ s2978:  S1 :: mu_gas_shed_rt(ng101,s1,t24):1
      SOS1_gas_shed_rt(ng101,s1,t24):2
- s2739:  S1 :: mu_gas_shed_rt(ng102,s1,t1):1
+ s2979:  S1 :: mu_gas_shed_rt(ng102,s1,t1):1
      SOS1_gas_shed_rt(ng102,s1,t1):2
- s2740:  S1 :: mu_gas_shed_rt(ng102,s1,t2):1
+ s2980:  S1 :: mu_gas_shed_rt(ng102,s1,t2):1
      SOS1_gas_shed_rt(ng102,s1,t2):2
- s2741:  S1 :: mu_gas_shed_rt(ng102,s1,t3):1
+ s2981:  S1 :: mu_gas_shed_rt(ng102,s1,t3):1
      SOS1_gas_shed_rt(ng102,s1,t3):2
- s2742:  S1 :: mu_gas_shed_rt(ng102,s1,t4):1
+ s2982:  S1 :: mu_gas_shed_rt(ng102,s1,t4):1
      SOS1_gas_shed_rt(ng102,s1,t4):2
- s2743:  S1 :: mu_gas_shed_rt(ng102,s1,t5):1
+ s2983:  S1 :: mu_gas_shed_rt(ng102,s1,t5):1
      SOS1_gas_shed_rt(ng102,s1,t5):2
- s2744:  S1 :: mu_gas_shed_rt(ng102,s1,t6):1
+ s2984:  S1 :: mu_gas_shed_rt(ng102,s1,t6):1
      SOS1_gas_shed_rt(ng102,s1,t6):2
- s2745:  S1 :: mu_gas_shed_rt(ng102,s1,t7):1
+ s2985:  S1 :: mu_gas_shed_rt(ng102,s1,t7):1
      SOS1_gas_shed_rt(ng102,s1,t7):2
- s2746:  S1 :: mu_gas_shed_rt(ng102,s1,t8):1
+ s2986:  S1 :: mu_gas_shed_rt(ng102,s1,t8):1
      SOS1_gas_shed_rt(ng102,s1,t8):2
- s2747:  S1 :: mu_gas_shed_rt(ng102,s1,t9):1
+ s2987:  S1 :: mu_gas_shed_rt(ng102,s1,t9):1
      SOS1_gas_shed_rt(ng102,s1,t9):2
- s2748:  S1 :: mu_gas_shed_rt(ng102,s1,t10):1
+ s2988:  S1 :: mu_gas_shed_rt(ng102,s1,t10):1
      SOS1_gas_shed_rt(ng102,s1,t10):2
- s2749:  S1 :: mu_gas_shed_rt(ng102,s1,t11):1
+ s2989:  S1 :: mu_gas_shed_rt(ng102,s1,t11):1
      SOS1_gas_shed_rt(ng102,s1,t11):2
- s2750:  S1 :: mu_gas_shed_rt(ng102,s1,t12):1
+ s2990:  S1 :: mu_gas_shed_rt(ng102,s1,t12):1
      SOS1_gas_shed_rt(ng102,s1,t12):2
- s2751:  S1 :: mu_gas_shed_rt(ng102,s1,t13):1
+ s2991:  S1 :: mu_gas_shed_rt(ng102,s1,t13):1
      SOS1_gas_shed_rt(ng102,s1,t13):2
- s2752:  S1 :: mu_gas_shed_rt(ng102,s1,t14):1
+ s2992:  S1 :: mu_gas_shed_rt(ng102,s1,t14):1
      SOS1_gas_shed_rt(ng102,s1,t14):2
- s2753:  S1 :: mu_gas_shed_rt(ng102,s1,t15):1
+ s2993:  S1 :: mu_gas_shed_rt(ng102,s1,t15):1
      SOS1_gas_shed_rt(ng102,s1,t15):2
- s2754:  S1 :: mu_gas_shed_rt(ng102,s1,t16):1
+ s2994:  S1 :: mu_gas_shed_rt(ng102,s1,t16):1
      SOS1_gas_shed_rt(ng102,s1,t16):2
- s2755:  S1 :: mu_gas_shed_rt(ng102,s1,t17):1
+ s2995:  S1 :: mu_gas_shed_rt(ng102,s1,t17):1
      SOS1_gas_shed_rt(ng102,s1,t17):2
- s2756:  S1 :: mu_gas_shed_rt(ng102,s1,t18):1
+ s2996:  S1 :: mu_gas_shed_rt(ng102,s1,t18):1
      SOS1_gas_shed_rt(ng102,s1,t18):2
- s2757:  S1 :: mu_gas_shed_rt(ng102,s1,t19):1
+ s2997:  S1 :: mu_gas_shed_rt(ng102,s1,t19):1
      SOS1_gas_shed_rt(ng102,s1,t19):2
- s2758:  S1 :: mu_gas_shed_rt(ng102,s1,t20):1
+ s2998:  S1 :: mu_gas_shed_rt(ng102,s1,t20):1
      SOS1_gas_shed_rt(ng102,s1,t20):2
- s2759:  S1 :: mu_gas_shed_rt(ng102,s1,t21):1
+ s2999:  S1 :: mu_gas_shed_rt(ng102,s1,t21):1
      SOS1_gas_shed_rt(ng102,s1,t21):2
- s2760:  S1 :: mu_gas_shed_rt(ng102,s1,t22):1
+ s3000:  S1 :: mu_gas_shed_rt(ng102,s1,t22):1
      SOS1_gas_shed_rt(ng102,s1,t22):2
- s2761:  S1 :: mu_gas_shed_rt(ng102,s1,t23):1
+ s3001:  S1 :: mu_gas_shed_rt(ng102,s1,t23):1
      SOS1_gas_shed_rt(ng102,s1,t23):2
- s2762:  S1 :: mu_gas_shed_rt(ng102,s1,t24):1
+ s3002:  S1 :: mu_gas_shed_rt(ng102,s1,t24):1
      SOS1_gas_shed_rt(ng102,s1,t24):2
- s2763:  S1 :: mu_gas_shed_rt(ng101,s2,t1):1
+ s3003:  S1 :: mu_gas_shed_rt(ng101,s2,t1):1
      SOS1_gas_shed_rt(ng101,s2,t1):2
- s2764:  S1 :: mu_gas_shed_rt(ng101,s2,t2):1
+ s3004:  S1 :: mu_gas_shed_rt(ng101,s2,t2):1
      SOS1_gas_shed_rt(ng101,s2,t2):2
- s2765:  S1 :: mu_gas_shed_rt(ng101,s2,t3):1
+ s3005:  S1 :: mu_gas_shed_rt(ng101,s2,t3):1
      SOS1_gas_shed_rt(ng101,s2,t3):2
- s2766:  S1 :: mu_gas_shed_rt(ng101,s2,t4):1
+ s3006:  S1 :: mu_gas_shed_rt(ng101,s2,t4):1
      SOS1_gas_shed_rt(ng101,s2,t4):2
- s2767:  S1 :: mu_gas_shed_rt(ng101,s2,t5):1
+ s3007:  S1 :: mu_gas_shed_rt(ng101,s2,t5):1
      SOS1_gas_shed_rt(ng101,s2,t5):2
- s2768:  S1 :: mu_gas_shed_rt(ng101,s2,t6):1
+ s3008:  S1 :: mu_gas_shed_rt(ng101,s2,t6):1
      SOS1_gas_shed_rt(ng101,s2,t6):2
- s2769:  S1 :: mu_gas_shed_rt(ng101,s2,t7):1
+ s3009:  S1 :: mu_gas_shed_rt(ng101,s2,t7):1
      SOS1_gas_shed_rt(ng101,s2,t7):2
- s2770:  S1 :: mu_gas_shed_rt(ng101,s2,t8):1
+ s3010:  S1 :: mu_gas_shed_rt(ng101,s2,t8):1
      SOS1_gas_shed_rt(ng101,s2,t8):2
- s2771:  S1 :: mu_gas_shed_rt(ng101,s2,t9):1
+ s3011:  S1 :: mu_gas_shed_rt(ng101,s2,t9):1
      SOS1_gas_shed_rt(ng101,s2,t9):2
- s2772:  S1 :: mu_gas_shed_rt(ng101,s2,t10):1
+ s3012:  S1 :: mu_gas_shed_rt(ng101,s2,t10):1
      SOS1_gas_shed_rt(ng101,s2,t10):2
- s2773:  S1 :: mu_gas_shed_rt(ng101,s2,t11):1
+ s3013:  S1 :: mu_gas_shed_rt(ng101,s2,t11):1
      SOS1_gas_shed_rt(ng101,s2,t11):2
- s2774:  S1 :: mu_gas_shed_rt(ng101,s2,t12):1
+ s3014:  S1 :: mu_gas_shed_rt(ng101,s2,t12):1
      SOS1_gas_shed_rt(ng101,s2,t12):2
- s2775:  S1 :: mu_gas_shed_rt(ng101,s2,t13):1
+ s3015:  S1 :: mu_gas_shed_rt(ng101,s2,t13):1
      SOS1_gas_shed_rt(ng101,s2,t13):2
- s2776:  S1 :: mu_gas_shed_rt(ng101,s2,t14):1
+ s3016:  S1 :: mu_gas_shed_rt(ng101,s2,t14):1
      SOS1_gas_shed_rt(ng101,s2,t14):2
- s2777:  S1 :: mu_gas_shed_rt(ng101,s2,t15):1
+ s3017:  S1 :: mu_gas_shed_rt(ng101,s2,t15):1
      SOS1_gas_shed_rt(ng101,s2,t15):2
- s2778:  S1 :: mu_gas_shed_rt(ng101,s2,t16):1
+ s3018:  S1 :: mu_gas_shed_rt(ng101,s2,t16):1
      SOS1_gas_shed_rt(ng101,s2,t16):2
- s2779:  S1 :: mu_gas_shed_rt(ng101,s2,t17):1
+ s3019:  S1 :: mu_gas_shed_rt(ng101,s2,t17):1
      SOS1_gas_shed_rt(ng101,s2,t17):2
- s2780:  S1 :: mu_gas_shed_rt(ng101,s2,t18):1
+ s3020:  S1 :: mu_gas_shed_rt(ng101,s2,t18):1
      SOS1_gas_shed_rt(ng101,s2,t18):2
- s2781:  S1 :: mu_gas_shed_rt(ng101,s2,t19):1
+ s3021:  S1 :: mu_gas_shed_rt(ng101,s2,t19):1
      SOS1_gas_shed_rt(ng101,s2,t19):2
- s2782:  S1 :: mu_gas_shed_rt(ng101,s2,t20):1
+ s3022:  S1 :: mu_gas_shed_rt(ng101,s2,t20):1
      SOS1_gas_shed_rt(ng101,s2,t20):2
- s2783:  S1 :: mu_gas_shed_rt(ng101,s2,t21):1
+ s3023:  S1 :: mu_gas_shed_rt(ng101,s2,t21):1
      SOS1_gas_shed_rt(ng101,s2,t21):2
- s2784:  S1 :: mu_gas_shed_rt(ng101,s2,t22):1
+ s3024:  S1 :: mu_gas_shed_rt(ng101,s2,t22):1
      SOS1_gas_shed_rt(ng101,s2,t22):2
- s2785:  S1 :: mu_gas_shed_rt(ng101,s2,t23):1
+ s3025:  S1 :: mu_gas_shed_rt(ng101,s2,t23):1
      SOS1_gas_shed_rt(ng101,s2,t23):2
- s2786:  S1 :: mu_gas_shed_rt(ng101,s2,t24):1
+ s3026:  S1 :: mu_gas_shed_rt(ng101,s2,t24):1
      SOS1_gas_shed_rt(ng101,s2,t24):2
- s2787:  S1 :: mu_gas_shed_rt(ng102,s2,t1):1
+ s3027:  S1 :: mu_gas_shed_rt(ng102,s2,t1):1
      SOS1_gas_shed_rt(ng102,s2,t1):2
- s2788:  S1 :: mu_gas_shed_rt(ng102,s2,t2):1
+ s3028:  S1 :: mu_gas_shed_rt(ng102,s2,t2):1
      SOS1_gas_shed_rt(ng102,s2,t2):2
- s2789:  S1 :: mu_gas_shed_rt(ng102,s2,t3):1
+ s3029:  S1 :: mu_gas_shed_rt(ng102,s2,t3):1
      SOS1_gas_shed_rt(ng102,s2,t3):2
- s2790:  S1 :: mu_gas_shed_rt(ng102,s2,t4):1
+ s3030:  S1 :: mu_gas_shed_rt(ng102,s2,t4):1
      SOS1_gas_shed_rt(ng102,s2,t4):2
- s2791:  S1 :: mu_gas_shed_rt(ng102,s2,t5):1
+ s3031:  S1 :: mu_gas_shed_rt(ng102,s2,t5):1
      SOS1_gas_shed_rt(ng102,s2,t5):2
- s2792:  S1 :: mu_gas_shed_rt(ng102,s2,t6):1
+ s3032:  S1 :: mu_gas_shed_rt(ng102,s2,t6):1
      SOS1_gas_shed_rt(ng102,s2,t6):2
- s2793:  S1 :: mu_gas_shed_rt(ng102,s2,t7):1
+ s3033:  S1 :: mu_gas_shed_rt(ng102,s2,t7):1
      SOS1_gas_shed_rt(ng102,s2,t7):2
- s2794:  S1 :: mu_gas_shed_rt(ng102,s2,t8):1
+ s3034:  S1 :: mu_gas_shed_rt(ng102,s2,t8):1
      SOS1_gas_shed_rt(ng102,s2,t8):2
- s2795:  S1 :: mu_gas_shed_rt(ng102,s2,t9):1
+ s3035:  S1 :: mu_gas_shed_rt(ng102,s2,t9):1
      SOS1_gas_shed_rt(ng102,s2,t9):2
- s2796:  S1 :: mu_gas_shed_rt(ng102,s2,t10):1
+ s3036:  S1 :: mu_gas_shed_rt(ng102,s2,t10):1
      SOS1_gas_shed_rt(ng102,s2,t10):2
- s2797:  S1 :: mu_gas_shed_rt(ng102,s2,t11):1
+ s3037:  S1 :: mu_gas_shed_rt(ng102,s2,t11):1
      SOS1_gas_shed_rt(ng102,s2,t11):2
- s2798:  S1 :: mu_gas_shed_rt(ng102,s2,t12):1
+ s3038:  S1 :: mu_gas_shed_rt(ng102,s2,t12):1
      SOS1_gas_shed_rt(ng102,s2,t12):2
- s2799:  S1 :: mu_gas_shed_rt(ng102,s2,t13):1
+ s3039:  S1 :: mu_gas_shed_rt(ng102,s2,t13):1
      SOS1_gas_shed_rt(ng102,s2,t13):2
- s2800:  S1 :: mu_gas_shed_rt(ng102,s2,t14):1
+ s3040:  S1 :: mu_gas_shed_rt(ng102,s2,t14):1
      SOS1_gas_shed_rt(ng102,s2,t14):2
- s2801:  S1 :: mu_gas_shed_rt(ng102,s2,t15):1
+ s3041:  S1 :: mu_gas_shed_rt(ng102,s2,t15):1
      SOS1_gas_shed_rt(ng102,s2,t15):2
- s2802:  S1 :: mu_gas_shed_rt(ng102,s2,t16):1
+ s3042:  S1 :: mu_gas_shed_rt(ng102,s2,t16):1
      SOS1_gas_shed_rt(ng102,s2,t16):2
- s2803:  S1 :: mu_gas_shed_rt(ng102,s2,t17):1
+ s3043:  S1 :: mu_gas_shed_rt(ng102,s2,t17):1
      SOS1_gas_shed_rt(ng102,s2,t17):2
- s2804:  S1 :: mu_gas_shed_rt(ng102,s2,t18):1
+ s3044:  S1 :: mu_gas_shed_rt(ng102,s2,t18):1
      SOS1_gas_shed_rt(ng102,s2,t18):2
- s2805:  S1 :: mu_gas_shed_rt(ng102,s2,t19):1
+ s3045:  S1 :: mu_gas_shed_rt(ng102,s2,t19):1
      SOS1_gas_shed_rt(ng102,s2,t19):2
- s2806:  S1 :: mu_gas_shed_rt(ng102,s2,t20):1
+ s3046:  S1 :: mu_gas_shed_rt(ng102,s2,t20):1
      SOS1_gas_shed_rt(ng102,s2,t20):2
- s2807:  S1 :: mu_gas_shed_rt(ng102,s2,t21):1
+ s3047:  S1 :: mu_gas_shed_rt(ng102,s2,t21):1
      SOS1_gas_shed_rt(ng102,s2,t21):2
- s2808:  S1 :: mu_gas_shed_rt(ng102,s2,t22):1
+ s3048:  S1 :: mu_gas_shed_rt(ng102,s2,t22):1
      SOS1_gas_shed_rt(ng102,s2,t22):2
- s2809:  S1 :: mu_gas_shed_rt(ng102,s2,t23):1
+ s3049:  S1 :: mu_gas_shed_rt(ng102,s2,t23):1
      SOS1_gas_shed_rt(ng102,s2,t23):2
- s2810:  S1 :: mu_gas_shed_rt(ng102,s2,t24):1
+ s3050:  S1 :: mu_gas_shed_rt(ng102,s2,t24):1
      SOS1_gas_shed_rt(ng102,s2,t24):2
- s2811:  S1 :: muLB_gshed(ng101,s1,t1):1 SOS1_LB_gshed(ng101,s1,t1):2
- s2812:  S1 :: muLB_gshed(ng102,s1,t1):1 SOS1_LB_gshed(ng102,s1,t1):2
- s2813:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t1):1
+ s3051:  S1 :: muLB_gshed(ng101,s1,t1):1 SOS1_LB_gshed(ng101,s1,t1):2
+ s3052:  S1 :: muLB_gshed(ng102,s1,t1):1 SOS1_LB_gshed(ng102,s1,t1):2
+ s3053:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t1):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t1):2
- s2814:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t1):1
+ s3054:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t1):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t1):2
- s2815:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t1):1
+ s3055:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t1):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t1):2
- s2816:  S1 :: muLB_gprodUp(gw1,s1,t1):1 SOS1_LB_gprodUp(gw1,s1,t1):2
- s2817:  S1 :: muLB_gprodDn(gw1,s1,t1):1 SOS1_LB_gprodDn(gw1,s1,t1):2
- s2818:  S1 :: muLB_gprodUp(gw2,s1,t1):1 SOS1_LB_gprodUp(gw2,s1,t1):2
- s2819:  S1 :: muLB_gprodDn(gw2,s1,t1):1 SOS1_LB_gprodDn(gw2,s1,t1):2
- s2820:  S1 :: muLB_gsin_rt(gs1,s1,t1):1 SOS1_LB_gsin_rt(gs1,s1,t1):2
- s2821:  S1 :: muLB_gsout_rt(gs1,s1,t1):1 SOS1_LB_gsout_rt(gs1,s1,t1):2
- s2822:  S1 :: muLB_gstore_rt(gs1,s1,t1):1 SOS1_LB_gstore_rt(gs1,s1,t1):2
- s2823:  S1 :: muLB_gshed(ng101,s1,t2):1 SOS1_LB_gshed(ng101,s1,t2):2
- s2824:  S1 :: muLB_gshed(ng102,s1,t2):1 SOS1_LB_gshed(ng102,s1,t2):2
- s2825:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t2):1
+ s3056:  S1 :: muLB_gprodUp(gw1,s1,t1):1 SOS1_LB_gprodUp(gw1,s1,t1):2
+ s3057:  S1 :: muLB_gprodDn(gw1,s1,t1):1 SOS1_LB_gprodDn(gw1,s1,t1):2
+ s3058:  S1 :: muLB_gprodUp(gw2,s1,t1):1 SOS1_LB_gprodUp(gw2,s1,t1):2
+ s3059:  S1 :: muLB_gprodDn(gw2,s1,t1):1 SOS1_LB_gprodDn(gw2,s1,t1):2
+ s3060:  S1 :: muLB_gprodUp(gw3,s1,t1):1 SOS1_LB_gprodUp(gw3,s1,t1):2
+ s3061:  S1 :: muLB_gprodDn(gw3,s1,t1):1 SOS1_LB_gprodDn(gw3,s1,t1):2
+ s3062:  S1 :: muLB_gsin_rt(gs1,s1,t1):1 SOS1_LB_gsin_rt(gs1,s1,t1):2
+ s3063:  S1 :: muLB_gsout_rt(gs1,s1,t1):1 SOS1_LB_gsout_rt(gs1,s1,t1):2
+ s3064:  S1 :: muLB_gstore_rt(gs1,s1,t1):1 SOS1_LB_gstore_rt(gs1,s1,t1):2
+ s3065:  S1 :: muLB_gshed(ng101,s1,t2):1 SOS1_LB_gshed(ng101,s1,t2):2
+ s3066:  S1 :: muLB_gshed(ng102,s1,t2):1 SOS1_LB_gshed(ng102,s1,t2):2
+ s3067:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t2):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t2):2
- s2826:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t2):1
+ s3068:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t2):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t2):2
- s2827:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t2):1
+ s3069:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t2):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t2):2
- s2828:  S1 :: muLB_gprodUp(gw1,s1,t2):1 SOS1_LB_gprodUp(gw1,s1,t2):2
- s2829:  S1 :: muLB_gprodDn(gw1,s1,t2):1 SOS1_LB_gprodDn(gw1,s1,t2):2
- s2830:  S1 :: muLB_gprodUp(gw2,s1,t2):1 SOS1_LB_gprodUp(gw2,s1,t2):2
- s2831:  S1 :: muLB_gprodDn(gw2,s1,t2):1 SOS1_LB_gprodDn(gw2,s1,t2):2
- s2832:  S1 :: muLB_gsin_rt(gs1,s1,t2):1 SOS1_LB_gsin_rt(gs1,s1,t2):2
- s2833:  S1 :: muLB_gsout_rt(gs1,s1,t2):1 SOS1_LB_gsout_rt(gs1,s1,t2):2
- s2834:  S1 :: muLB_gstore_rt(gs1,s1,t2):1 SOS1_LB_gstore_rt(gs1,s1,t2):2
- s2835:  S1 :: muLB_gshed(ng101,s1,t3):1 SOS1_LB_gshed(ng101,s1,t3):2
- s2836:  S1 :: muLB_gshed(ng102,s1,t3):1 SOS1_LB_gshed(ng102,s1,t3):2
- s2837:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t3):1
+ s3070:  S1 :: muLB_gprodUp(gw1,s1,t2):1 SOS1_LB_gprodUp(gw1,s1,t2):2
+ s3071:  S1 :: muLB_gprodDn(gw1,s1,t2):1 SOS1_LB_gprodDn(gw1,s1,t2):2
+ s3072:  S1 :: muLB_gprodUp(gw2,s1,t2):1 SOS1_LB_gprodUp(gw2,s1,t2):2
+ s3073:  S1 :: muLB_gprodDn(gw2,s1,t2):1 SOS1_LB_gprodDn(gw2,s1,t2):2
+ s3074:  S1 :: muLB_gprodUp(gw3,s1,t2):1 SOS1_LB_gprodUp(gw3,s1,t2):2
+ s3075:  S1 :: muLB_gprodDn(gw3,s1,t2):1 SOS1_LB_gprodDn(gw3,s1,t2):2
+ s3076:  S1 :: muLB_gsin_rt(gs1,s1,t2):1 SOS1_LB_gsin_rt(gs1,s1,t2):2
+ s3077:  S1 :: muLB_gsout_rt(gs1,s1,t2):1 SOS1_LB_gsout_rt(gs1,s1,t2):2
+ s3078:  S1 :: muLB_gstore_rt(gs1,s1,t2):1 SOS1_LB_gstore_rt(gs1,s1,t2):2
+ s3079:  S1 :: muLB_gshed(ng101,s1,t3):1 SOS1_LB_gshed(ng101,s1,t3):2
+ s3080:  S1 :: muLB_gshed(ng102,s1,t3):1 SOS1_LB_gshed(ng102,s1,t3):2
+ s3081:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t3):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t3):2
- s2838:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t3):1
+ s3082:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t3):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t3):2
- s2839:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t3):1
+ s3083:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t3):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t3):2
- s2840:  S1 :: muLB_gprodUp(gw1,s1,t3):1 SOS1_LB_gprodUp(gw1,s1,t3):2
- s2841:  S1 :: muLB_gprodDn(gw1,s1,t3):1 SOS1_LB_gprodDn(gw1,s1,t3):2
- s2842:  S1 :: muLB_gprodUp(gw2,s1,t3):1 SOS1_LB_gprodUp(gw2,s1,t3):2
- s2843:  S1 :: muLB_gprodDn(gw2,s1,t3):1 SOS1_LB_gprodDn(gw2,s1,t3):2
- s2844:  S1 :: muLB_gsin_rt(gs1,s1,t3):1 SOS1_LB_gsin_rt(gs1,s1,t3):2
- s2845:  S1 :: muLB_gsout_rt(gs1,s1,t3):1 SOS1_LB_gsout_rt(gs1,s1,t3):2
- s2846:  S1 :: muLB_gstore_rt(gs1,s1,t3):1 SOS1_LB_gstore_rt(gs1,s1,t3):2
- s2847:  S1 :: muLB_gshed(ng101,s1,t4):1 SOS1_LB_gshed(ng101,s1,t4):2
- s2848:  S1 :: muLB_gshed(ng102,s1,t4):1 SOS1_LB_gshed(ng102,s1,t4):2
- s2849:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t4):1
+ s3084:  S1 :: muLB_gprodUp(gw1,s1,t3):1 SOS1_LB_gprodUp(gw1,s1,t3):2
+ s3085:  S1 :: muLB_gprodDn(gw1,s1,t3):1 SOS1_LB_gprodDn(gw1,s1,t3):2
+ s3086:  S1 :: muLB_gprodUp(gw2,s1,t3):1 SOS1_LB_gprodUp(gw2,s1,t3):2
+ s3087:  S1 :: muLB_gprodDn(gw2,s1,t3):1 SOS1_LB_gprodDn(gw2,s1,t3):2
+ s3088:  S1 :: muLB_gprodUp(gw3,s1,t3):1 SOS1_LB_gprodUp(gw3,s1,t3):2
+ s3089:  S1 :: muLB_gprodDn(gw3,s1,t3):1 SOS1_LB_gprodDn(gw3,s1,t3):2
+ s3090:  S1 :: muLB_gsin_rt(gs1,s1,t3):1 SOS1_LB_gsin_rt(gs1,s1,t3):2
+ s3091:  S1 :: muLB_gsout_rt(gs1,s1,t3):1 SOS1_LB_gsout_rt(gs1,s1,t3):2
+ s3092:  S1 :: muLB_gstore_rt(gs1,s1,t3):1 SOS1_LB_gstore_rt(gs1,s1,t3):2
+ s3093:  S1 :: muLB_gshed(ng101,s1,t4):1 SOS1_LB_gshed(ng101,s1,t4):2
+ s3094:  S1 :: muLB_gshed(ng102,s1,t4):1 SOS1_LB_gshed(ng102,s1,t4):2
+ s3095:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t4):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t4):2
- s2850:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t4):1
+ s3096:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t4):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t4):2
- s2851:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t4):1
+ s3097:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t4):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t4):2
- s2852:  S1 :: muLB_gprodUp(gw1,s1,t4):1 SOS1_LB_gprodUp(gw1,s1,t4):2
- s2853:  S1 :: muLB_gprodDn(gw1,s1,t4):1 SOS1_LB_gprodDn(gw1,s1,t4):2
- s2854:  S1 :: muLB_gprodUp(gw2,s1,t4):1 SOS1_LB_gprodUp(gw2,s1,t4):2
- s2855:  S1 :: muLB_gprodDn(gw2,s1,t4):1 SOS1_LB_gprodDn(gw2,s1,t4):2
- s2856:  S1 :: muLB_gsin_rt(gs1,s1,t4):1 SOS1_LB_gsin_rt(gs1,s1,t4):2
- s2857:  S1 :: muLB_gsout_rt(gs1,s1,t4):1 SOS1_LB_gsout_rt(gs1,s1,t4):2
- s2858:  S1 :: muLB_gstore_rt(gs1,s1,t4):1 SOS1_LB_gstore_rt(gs1,s1,t4):2
- s2859:  S1 :: muLB_gshed(ng101,s1,t5):1 SOS1_LB_gshed(ng101,s1,t5):2
- s2860:  S1 :: muLB_gshed(ng102,s1,t5):1 SOS1_LB_gshed(ng102,s1,t5):2
- s2861:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t5):1
+ s3098:  S1 :: muLB_gprodUp(gw1,s1,t4):1 SOS1_LB_gprodUp(gw1,s1,t4):2
+ s3099:  S1 :: muLB_gprodDn(gw1,s1,t4):1 SOS1_LB_gprodDn(gw1,s1,t4):2
+ s3100:  S1 :: muLB_gprodUp(gw2,s1,t4):1 SOS1_LB_gprodUp(gw2,s1,t4):2
+ s3101:  S1 :: muLB_gprodDn(gw2,s1,t4):1 SOS1_LB_gprodDn(gw2,s1,t4):2
+ s3102:  S1 :: muLB_gprodUp(gw3,s1,t4):1 SOS1_LB_gprodUp(gw3,s1,t4):2
+ s3103:  S1 :: muLB_gprodDn(gw3,s1,t4):1 SOS1_LB_gprodDn(gw3,s1,t4):2
+ s3104:  S1 :: muLB_gsin_rt(gs1,s1,t4):1 SOS1_LB_gsin_rt(gs1,s1,t4):2
+ s3105:  S1 :: muLB_gsout_rt(gs1,s1,t4):1 SOS1_LB_gsout_rt(gs1,s1,t4):2
+ s3106:  S1 :: muLB_gstore_rt(gs1,s1,t4):1 SOS1_LB_gstore_rt(gs1,s1,t4):2
+ s3107:  S1 :: muLB_gshed(ng101,s1,t5):1 SOS1_LB_gshed(ng101,s1,t5):2
+ s3108:  S1 :: muLB_gshed(ng102,s1,t5):1 SOS1_LB_gshed(ng102,s1,t5):2
+ s3109:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t5):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t5):2
- s2862:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t5):1
+ s3110:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t5):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t5):2
- s2863:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t5):1
+ s3111:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t5):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t5):2
- s2864:  S1 :: muLB_gprodUp(gw1,s1,t5):1 SOS1_LB_gprodUp(gw1,s1,t5):2
- s2865:  S1 :: muLB_gprodDn(gw1,s1,t5):1 SOS1_LB_gprodDn(gw1,s1,t5):2
- s2866:  S1 :: muLB_gprodUp(gw2,s1,t5):1 SOS1_LB_gprodUp(gw2,s1,t5):2
- s2867:  S1 :: muLB_gprodDn(gw2,s1,t5):1 SOS1_LB_gprodDn(gw2,s1,t5):2
- s2868:  S1 :: muLB_gsin_rt(gs1,s1,t5):1 SOS1_LB_gsin_rt(gs1,s1,t5):2
- s2869:  S1 :: muLB_gsout_rt(gs1,s1,t5):1 SOS1_LB_gsout_rt(gs1,s1,t5):2
- s2870:  S1 :: muLB_gstore_rt(gs1,s1,t5):1 SOS1_LB_gstore_rt(gs1,s1,t5):2
- s2871:  S1 :: muLB_gshed(ng101,s1,t6):1 SOS1_LB_gshed(ng101,s1,t6):2
- s2872:  S1 :: muLB_gshed(ng102,s1,t6):1 SOS1_LB_gshed(ng102,s1,t6):2
- s2873:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t6):1
+ s3112:  S1 :: muLB_gprodUp(gw1,s1,t5):1 SOS1_LB_gprodUp(gw1,s1,t5):2
+ s3113:  S1 :: muLB_gprodDn(gw1,s1,t5):1 SOS1_LB_gprodDn(gw1,s1,t5):2
+ s3114:  S1 :: muLB_gprodUp(gw2,s1,t5):1 SOS1_LB_gprodUp(gw2,s1,t5):2
+ s3115:  S1 :: muLB_gprodDn(gw2,s1,t5):1 SOS1_LB_gprodDn(gw2,s1,t5):2
+ s3116:  S1 :: muLB_gprodUp(gw3,s1,t5):1 SOS1_LB_gprodUp(gw3,s1,t5):2
+ s3117:  S1 :: muLB_gprodDn(gw3,s1,t5):1 SOS1_LB_gprodDn(gw3,s1,t5):2
+ s3118:  S1 :: muLB_gsin_rt(gs1,s1,t5):1 SOS1_LB_gsin_rt(gs1,s1,t5):2
+ s3119:  S1 :: muLB_gsout_rt(gs1,s1,t5):1 SOS1_LB_gsout_rt(gs1,s1,t5):2
+ s3120:  S1 :: muLB_gstore_rt(gs1,s1,t5):1 SOS1_LB_gstore_rt(gs1,s1,t5):2
+ s3121:  S1 :: muLB_gshed(ng101,s1,t6):1 SOS1_LB_gshed(ng101,s1,t6):2
+ s3122:  S1 :: muLB_gshed(ng102,s1,t6):1 SOS1_LB_gshed(ng102,s1,t6):2
+ s3123:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t6):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t6):2
- s2874:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t6):1
+ s3124:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t6):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t6):2
- s2875:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t6):1
+ s3125:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t6):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t6):2
- s2876:  S1 :: muLB_gprodUp(gw1,s1,t6):1 SOS1_LB_gprodUp(gw1,s1,t6):2
- s2877:  S1 :: muLB_gprodDn(gw1,s1,t6):1 SOS1_LB_gprodDn(gw1,s1,t6):2
- s2878:  S1 :: muLB_gprodUp(gw2,s1,t6):1 SOS1_LB_gprodUp(gw2,s1,t6):2
- s2879:  S1 :: muLB_gprodDn(gw2,s1,t6):1 SOS1_LB_gprodDn(gw2,s1,t6):2
- s2880:  S1 :: muLB_gsin_rt(gs1,s1,t6):1 SOS1_LB_gsin_rt(gs1,s1,t6):2
- s2881:  S1 :: muLB_gsout_rt(gs1,s1,t6):1 SOS1_LB_gsout_rt(gs1,s1,t6):2
- s2882:  S1 :: muLB_gstore_rt(gs1,s1,t6):1 SOS1_LB_gstore_rt(gs1,s1,t6):2
- s2883:  S1 :: muLB_gshed(ng101,s1,t7):1 SOS1_LB_gshed(ng101,s1,t7):2
- s2884:  S1 :: muLB_gshed(ng102,s1,t7):1 SOS1_LB_gshed(ng102,s1,t7):2
- s2885:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t7):1
+ s3126:  S1 :: muLB_gprodUp(gw1,s1,t6):1 SOS1_LB_gprodUp(gw1,s1,t6):2
+ s3127:  S1 :: muLB_gprodDn(gw1,s1,t6):1 SOS1_LB_gprodDn(gw1,s1,t6):2
+ s3128:  S1 :: muLB_gprodUp(gw2,s1,t6):1 SOS1_LB_gprodUp(gw2,s1,t6):2
+ s3129:  S1 :: muLB_gprodDn(gw2,s1,t6):1 SOS1_LB_gprodDn(gw2,s1,t6):2
+ s3130:  S1 :: muLB_gprodUp(gw3,s1,t6):1 SOS1_LB_gprodUp(gw3,s1,t6):2
+ s3131:  S1 :: muLB_gprodDn(gw3,s1,t6):1 SOS1_LB_gprodDn(gw3,s1,t6):2
+ s3132:  S1 :: muLB_gsin_rt(gs1,s1,t6):1 SOS1_LB_gsin_rt(gs1,s1,t6):2
+ s3133:  S1 :: muLB_gsout_rt(gs1,s1,t6):1 SOS1_LB_gsout_rt(gs1,s1,t6):2
+ s3134:  S1 :: muLB_gstore_rt(gs1,s1,t6):1 SOS1_LB_gstore_rt(gs1,s1,t6):2
+ s3135:  S1 :: muLB_gshed(ng101,s1,t7):1 SOS1_LB_gshed(ng101,s1,t7):2
+ s3136:  S1 :: muLB_gshed(ng102,s1,t7):1 SOS1_LB_gshed(ng102,s1,t7):2
+ s3137:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t7):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t7):2
- s2886:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t7):1
+ s3138:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t7):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t7):2
- s2887:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t7):1
+ s3139:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t7):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t7):2
- s2888:  S1 :: muLB_gprodUp(gw1,s1,t7):1 SOS1_LB_gprodUp(gw1,s1,t7):2
- s2889:  S1 :: muLB_gprodDn(gw1,s1,t7):1 SOS1_LB_gprodDn(gw1,s1,t7):2
- s2890:  S1 :: muLB_gprodUp(gw2,s1,t7):1 SOS1_LB_gprodUp(gw2,s1,t7):2
- s2891:  S1 :: muLB_gprodDn(gw2,s1,t7):1 SOS1_LB_gprodDn(gw2,s1,t7):2
- s2892:  S1 :: muLB_gsin_rt(gs1,s1,t7):1 SOS1_LB_gsin_rt(gs1,s1,t7):2
- s2893:  S1 :: muLB_gsout_rt(gs1,s1,t7):1 SOS1_LB_gsout_rt(gs1,s1,t7):2
- s2894:  S1 :: muLB_gstore_rt(gs1,s1,t7):1 SOS1_LB_gstore_rt(gs1,s1,t7):2
- s2895:  S1 :: muLB_gshed(ng101,s1,t8):1 SOS1_LB_gshed(ng101,s1,t8):2
- s2896:  S1 :: muLB_gshed(ng102,s1,t8):1 SOS1_LB_gshed(ng102,s1,t8):2
- s2897:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t8):1
+ s3140:  S1 :: muLB_gprodUp(gw1,s1,t7):1 SOS1_LB_gprodUp(gw1,s1,t7):2
+ s3141:  S1 :: muLB_gprodDn(gw1,s1,t7):1 SOS1_LB_gprodDn(gw1,s1,t7):2
+ s3142:  S1 :: muLB_gprodUp(gw2,s1,t7):1 SOS1_LB_gprodUp(gw2,s1,t7):2
+ s3143:  S1 :: muLB_gprodDn(gw2,s1,t7):1 SOS1_LB_gprodDn(gw2,s1,t7):2
+ s3144:  S1 :: muLB_gprodUp(gw3,s1,t7):1 SOS1_LB_gprodUp(gw3,s1,t7):2
+ s3145:  S1 :: muLB_gprodDn(gw3,s1,t7):1 SOS1_LB_gprodDn(gw3,s1,t7):2
+ s3146:  S1 :: muLB_gsin_rt(gs1,s1,t7):1 SOS1_LB_gsin_rt(gs1,s1,t7):2
+ s3147:  S1 :: muLB_gsout_rt(gs1,s1,t7):1 SOS1_LB_gsout_rt(gs1,s1,t7):2
+ s3148:  S1 :: muLB_gstore_rt(gs1,s1,t7):1 SOS1_LB_gstore_rt(gs1,s1,t7):2
+ s3149:  S1 :: muLB_gshed(ng101,s1,t8):1 SOS1_LB_gshed(ng101,s1,t8):2
+ s3150:  S1 :: muLB_gshed(ng102,s1,t8):1 SOS1_LB_gshed(ng102,s1,t8):2
+ s3151:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t8):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t8):2
- s2898:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t8):1
+ s3152:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t8):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t8):2
- s2899:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t8):1
+ s3153:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t8):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t8):2
- s2900:  S1 :: muLB_gprodUp(gw1,s1,t8):1 SOS1_LB_gprodUp(gw1,s1,t8):2
- s2901:  S1 :: muLB_gprodDn(gw1,s1,t8):1 SOS1_LB_gprodDn(gw1,s1,t8):2
- s2902:  S1 :: muLB_gprodUp(gw2,s1,t8):1 SOS1_LB_gprodUp(gw2,s1,t8):2
- s2903:  S1 :: muLB_gprodDn(gw2,s1,t8):1 SOS1_LB_gprodDn(gw2,s1,t8):2
- s2904:  S1 :: muLB_gsin_rt(gs1,s1,t8):1 SOS1_LB_gsin_rt(gs1,s1,t8):2
- s2905:  S1 :: muLB_gsout_rt(gs1,s1,t8):1 SOS1_LB_gsout_rt(gs1,s1,t8):2
- s2906:  S1 :: muLB_gstore_rt(gs1,s1,t8):1 SOS1_LB_gstore_rt(gs1,s1,t8):2
- s2907:  S1 :: muLB_gshed(ng101,s1,t9):1 SOS1_LB_gshed(ng101,s1,t9):2
- s2908:  S1 :: muLB_gshed(ng102,s1,t9):1 SOS1_LB_gshed(ng102,s1,t9):2
- s2909:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t9):1
+ s3154:  S1 :: muLB_gprodUp(gw1,s1,t8):1 SOS1_LB_gprodUp(gw1,s1,t8):2
+ s3155:  S1 :: muLB_gprodDn(gw1,s1,t8):1 SOS1_LB_gprodDn(gw1,s1,t8):2
+ s3156:  S1 :: muLB_gprodUp(gw2,s1,t8):1 SOS1_LB_gprodUp(gw2,s1,t8):2
+ s3157:  S1 :: muLB_gprodDn(gw2,s1,t8):1 SOS1_LB_gprodDn(gw2,s1,t8):2
+ s3158:  S1 :: muLB_gprodUp(gw3,s1,t8):1 SOS1_LB_gprodUp(gw3,s1,t8):2
+ s3159:  S1 :: muLB_gprodDn(gw3,s1,t8):1 SOS1_LB_gprodDn(gw3,s1,t8):2
+ s3160:  S1 :: muLB_gsin_rt(gs1,s1,t8):1 SOS1_LB_gsin_rt(gs1,s1,t8):2
+ s3161:  S1 :: muLB_gsout_rt(gs1,s1,t8):1 SOS1_LB_gsout_rt(gs1,s1,t8):2
+ s3162:  S1 :: muLB_gstore_rt(gs1,s1,t8):1 SOS1_LB_gstore_rt(gs1,s1,t8):2
+ s3163:  S1 :: muLB_gshed(ng101,s1,t9):1 SOS1_LB_gshed(ng101,s1,t9):2
+ s3164:  S1 :: muLB_gshed(ng102,s1,t9):1 SOS1_LB_gshed(ng102,s1,t9):2
+ s3165:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t9):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t9):2
- s2910:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t9):1
+ s3166:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t9):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t9):2
- s2911:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t9):1
+ s3167:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t9):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t9):2
- s2912:  S1 :: muLB_gprodUp(gw1,s1,t9):1 SOS1_LB_gprodUp(gw1,s1,t9):2
- s2913:  S1 :: muLB_gprodDn(gw1,s1,t9):1 SOS1_LB_gprodDn(gw1,s1,t9):2
- s2914:  S1 :: muLB_gprodUp(gw2,s1,t9):1 SOS1_LB_gprodUp(gw2,s1,t9):2
- s2915:  S1 :: muLB_gprodDn(gw2,s1,t9):1 SOS1_LB_gprodDn(gw2,s1,t9):2
- s2916:  S1 :: muLB_gsin_rt(gs1,s1,t9):1 SOS1_LB_gsin_rt(gs1,s1,t9):2
- s2917:  S1 :: muLB_gsout_rt(gs1,s1,t9):1 SOS1_LB_gsout_rt(gs1,s1,t9):2
- s2918:  S1 :: muLB_gstore_rt(gs1,s1,t9):1 SOS1_LB_gstore_rt(gs1,s1,t9):2
- s2919:  S1 :: muLB_gshed(ng101,s1,t10):1 SOS1_LB_gshed(ng101,s1,t10):2
- s2920:  S1 :: muLB_gshed(ng102,s1,t10):1 SOS1_LB_gshed(ng102,s1,t10):2
- s2921:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t10):1
+ s3168:  S1 :: muLB_gprodUp(gw1,s1,t9):1 SOS1_LB_gprodUp(gw1,s1,t9):2
+ s3169:  S1 :: muLB_gprodDn(gw1,s1,t9):1 SOS1_LB_gprodDn(gw1,s1,t9):2
+ s3170:  S1 :: muLB_gprodUp(gw2,s1,t9):1 SOS1_LB_gprodUp(gw2,s1,t9):2
+ s3171:  S1 :: muLB_gprodDn(gw2,s1,t9):1 SOS1_LB_gprodDn(gw2,s1,t9):2
+ s3172:  S1 :: muLB_gprodUp(gw3,s1,t9):1 SOS1_LB_gprodUp(gw3,s1,t9):2
+ s3173:  S1 :: muLB_gprodDn(gw3,s1,t9):1 SOS1_LB_gprodDn(gw3,s1,t9):2
+ s3174:  S1 :: muLB_gsin_rt(gs1,s1,t9):1 SOS1_LB_gsin_rt(gs1,s1,t9):2
+ s3175:  S1 :: muLB_gsout_rt(gs1,s1,t9):1 SOS1_LB_gsout_rt(gs1,s1,t9):2
+ s3176:  S1 :: muLB_gstore_rt(gs1,s1,t9):1 SOS1_LB_gstore_rt(gs1,s1,t9):2
+ s3177:  S1 :: muLB_gshed(ng101,s1,t10):1 SOS1_LB_gshed(ng101,s1,t10):2
+ s3178:  S1 :: muLB_gshed(ng102,s1,t10):1 SOS1_LB_gshed(ng102,s1,t10):2
+ s3179:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t10):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t10):2
- s2922:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t10):1
+ s3180:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t10):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t10):2
- s2923:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t10):1
+ s3181:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t10):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t10):2
- s2924:  S1 :: muLB_gprodUp(gw1,s1,t10):1 SOS1_LB_gprodUp(gw1,s1,t10):2
- s2925:  S1 :: muLB_gprodDn(gw1,s1,t10):1 SOS1_LB_gprodDn(gw1,s1,t10):2
- s2926:  S1 :: muLB_gprodUp(gw2,s1,t10):1 SOS1_LB_gprodUp(gw2,s1,t10):2
- s2927:  S1 :: muLB_gprodDn(gw2,s1,t10):1 SOS1_LB_gprodDn(gw2,s1,t10):2
- s2928:  S1 :: muLB_gsin_rt(gs1,s1,t10):1 SOS1_LB_gsin_rt(gs1,s1,t10):2
- s2929:  S1 :: muLB_gsout_rt(gs1,s1,t10):1 SOS1_LB_gsout_rt(gs1,s1,t10):2
- s2930:  S1 :: muLB_gstore_rt(gs1,s1,t10):1 SOS1_LB_gstore_rt(gs1,s1,t10):2
- s2931:  S1 :: muLB_gshed(ng101,s1,t11):1 SOS1_LB_gshed(ng101,s1,t11):2
- s2932:  S1 :: muLB_gshed(ng102,s1,t11):1 SOS1_LB_gshed(ng102,s1,t11):2
- s2933:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t11):1
+ s3182:  S1 :: muLB_gprodUp(gw1,s1,t10):1 SOS1_LB_gprodUp(gw1,s1,t10):2
+ s3183:  S1 :: muLB_gprodDn(gw1,s1,t10):1 SOS1_LB_gprodDn(gw1,s1,t10):2
+ s3184:  S1 :: muLB_gprodUp(gw2,s1,t10):1 SOS1_LB_gprodUp(gw2,s1,t10):2
+ s3185:  S1 :: muLB_gprodDn(gw2,s1,t10):1 SOS1_LB_gprodDn(gw2,s1,t10):2
+ s3186:  S1 :: muLB_gprodUp(gw3,s1,t10):1 SOS1_LB_gprodUp(gw3,s1,t10):2
+ s3187:  S1 :: muLB_gprodDn(gw3,s1,t10):1 SOS1_LB_gprodDn(gw3,s1,t10):2
+ s3188:  S1 :: muLB_gsin_rt(gs1,s1,t10):1 SOS1_LB_gsin_rt(gs1,s1,t10):2
+ s3189:  S1 :: muLB_gsout_rt(gs1,s1,t10):1 SOS1_LB_gsout_rt(gs1,s1,t10):2
+ s3190:  S1 :: muLB_gstore_rt(gs1,s1,t10):1 SOS1_LB_gstore_rt(gs1,s1,t10):2
+ s3191:  S1 :: muLB_gshed(ng101,s1,t11):1 SOS1_LB_gshed(ng101,s1,t11):2
+ s3192:  S1 :: muLB_gshed(ng102,s1,t11):1 SOS1_LB_gshed(ng102,s1,t11):2
+ s3193:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t11):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t11):2
- s2934:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t11):1
+ s3194:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t11):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t11):2
- s2935:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t11):1
+ s3195:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t11):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t11):2
- s2936:  S1 :: muLB_gprodUp(gw1,s1,t11):1 SOS1_LB_gprodUp(gw1,s1,t11):2
- s2937:  S1 :: muLB_gprodDn(gw1,s1,t11):1 SOS1_LB_gprodDn(gw1,s1,t11):2
- s2938:  S1 :: muLB_gprodUp(gw2,s1,t11):1 SOS1_LB_gprodUp(gw2,s1,t11):2
- s2939:  S1 :: muLB_gprodDn(gw2,s1,t11):1 SOS1_LB_gprodDn(gw2,s1,t11):2
- s2940:  S1 :: muLB_gsin_rt(gs1,s1,t11):1 SOS1_LB_gsin_rt(gs1,s1,t11):2
- s2941:  S1 :: muLB_gsout_rt(gs1,s1,t11):1 SOS1_LB_gsout_rt(gs1,s1,t11):2
- s2942:  S1 :: muLB_gstore_rt(gs1,s1,t11):1 SOS1_LB_gstore_rt(gs1,s1,t11):2
- s2943:  S1 :: muLB_gshed(ng101,s1,t12):1 SOS1_LB_gshed(ng101,s1,t12):2
- s2944:  S1 :: muLB_gshed(ng102,s1,t12):1 SOS1_LB_gshed(ng102,s1,t12):2
- s2945:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t12):1
+ s3196:  S1 :: muLB_gprodUp(gw1,s1,t11):1 SOS1_LB_gprodUp(gw1,s1,t11):2
+ s3197:  S1 :: muLB_gprodDn(gw1,s1,t11):1 SOS1_LB_gprodDn(gw1,s1,t11):2
+ s3198:  S1 :: muLB_gprodUp(gw2,s1,t11):1 SOS1_LB_gprodUp(gw2,s1,t11):2
+ s3199:  S1 :: muLB_gprodDn(gw2,s1,t11):1 SOS1_LB_gprodDn(gw2,s1,t11):2
+ s3200:  S1 :: muLB_gprodUp(gw3,s1,t11):1 SOS1_LB_gprodUp(gw3,s1,t11):2
+ s3201:  S1 :: muLB_gprodDn(gw3,s1,t11):1 SOS1_LB_gprodDn(gw3,s1,t11):2
+ s3202:  S1 :: muLB_gsin_rt(gs1,s1,t11):1 SOS1_LB_gsin_rt(gs1,s1,t11):2
+ s3203:  S1 :: muLB_gsout_rt(gs1,s1,t11):1 SOS1_LB_gsout_rt(gs1,s1,t11):2
+ s3204:  S1 :: muLB_gstore_rt(gs1,s1,t11):1 SOS1_LB_gstore_rt(gs1,s1,t11):2
+ s3205:  S1 :: muLB_gshed(ng101,s1,t12):1 SOS1_LB_gshed(ng101,s1,t12):2
+ s3206:  S1 :: muLB_gshed(ng102,s1,t12):1 SOS1_LB_gshed(ng102,s1,t12):2
+ s3207:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t12):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t12):2
- s2946:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t12):1
+ s3208:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t12):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t12):2
- s2947:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t12):1
+ s3209:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t12):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t12):2
- s2948:  S1 :: muLB_gprodUp(gw1,s1,t12):1 SOS1_LB_gprodUp(gw1,s1,t12):2
- s2949:  S1 :: muLB_gprodDn(gw1,s1,t12):1 SOS1_LB_gprodDn(gw1,s1,t12):2
- s2950:  S1 :: muLB_gprodUp(gw2,s1,t12):1 SOS1_LB_gprodUp(gw2,s1,t12):2
- s2951:  S1 :: muLB_gprodDn(gw2,s1,t12):1 SOS1_LB_gprodDn(gw2,s1,t12):2
- s2952:  S1 :: muLB_gsin_rt(gs1,s1,t12):1 SOS1_LB_gsin_rt(gs1,s1,t12):2
- s2953:  S1 :: muLB_gsout_rt(gs1,s1,t12):1 SOS1_LB_gsout_rt(gs1,s1,t12):2
- s2954:  S1 :: muLB_gstore_rt(gs1,s1,t12):1 SOS1_LB_gstore_rt(gs1,s1,t12):2
- s2955:  S1 :: muLB_gshed(ng101,s1,t13):1 SOS1_LB_gshed(ng101,s1,t13):2
- s2956:  S1 :: muLB_gshed(ng102,s1,t13):1 SOS1_LB_gshed(ng102,s1,t13):2
- s2957:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t13):1
+ s3210:  S1 :: muLB_gprodUp(gw1,s1,t12):1 SOS1_LB_gprodUp(gw1,s1,t12):2
+ s3211:  S1 :: muLB_gprodDn(gw1,s1,t12):1 SOS1_LB_gprodDn(gw1,s1,t12):2
+ s3212:  S1 :: muLB_gprodUp(gw2,s1,t12):1 SOS1_LB_gprodUp(gw2,s1,t12):2
+ s3213:  S1 :: muLB_gprodDn(gw2,s1,t12):1 SOS1_LB_gprodDn(gw2,s1,t12):2
+ s3214:  S1 :: muLB_gprodUp(gw3,s1,t12):1 SOS1_LB_gprodUp(gw3,s1,t12):2
+ s3215:  S1 :: muLB_gprodDn(gw3,s1,t12):1 SOS1_LB_gprodDn(gw3,s1,t12):2
+ s3216:  S1 :: muLB_gsin_rt(gs1,s1,t12):1 SOS1_LB_gsin_rt(gs1,s1,t12):2
+ s3217:  S1 :: muLB_gsout_rt(gs1,s1,t12):1 SOS1_LB_gsout_rt(gs1,s1,t12):2
+ s3218:  S1 :: muLB_gstore_rt(gs1,s1,t12):1 SOS1_LB_gstore_rt(gs1,s1,t12):2
+ s3219:  S1 :: muLB_gshed(ng101,s1,t13):1 SOS1_LB_gshed(ng101,s1,t13):2
+ s3220:  S1 :: muLB_gshed(ng102,s1,t13):1 SOS1_LB_gshed(ng102,s1,t13):2
+ s3221:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t13):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t13):2
- s2958:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t13):1
+ s3222:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t13):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t13):2
- s2959:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t13):1
+ s3223:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t13):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t13):2
- s2960:  S1 :: muLB_gprodUp(gw1,s1,t13):1 SOS1_LB_gprodUp(gw1,s1,t13):2
- s2961:  S1 :: muLB_gprodDn(gw1,s1,t13):1 SOS1_LB_gprodDn(gw1,s1,t13):2
- s2962:  S1 :: muLB_gprodUp(gw2,s1,t13):1 SOS1_LB_gprodUp(gw2,s1,t13):2
- s2963:  S1 :: muLB_gprodDn(gw2,s1,t13):1 SOS1_LB_gprodDn(gw2,s1,t13):2
- s2964:  S1 :: muLB_gsin_rt(gs1,s1,t13):1 SOS1_LB_gsin_rt(gs1,s1,t13):2
- s2965:  S1 :: muLB_gsout_rt(gs1,s1,t13):1 SOS1_LB_gsout_rt(gs1,s1,t13):2
- s2966:  S1 :: muLB_gstore_rt(gs1,s1,t13):1 SOS1_LB_gstore_rt(gs1,s1,t13):2
- s2967:  S1 :: muLB_gshed(ng101,s1,t14):1 SOS1_LB_gshed(ng101,s1,t14):2
- s2968:  S1 :: muLB_gshed(ng102,s1,t14):1 SOS1_LB_gshed(ng102,s1,t14):2
- s2969:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t14):1
+ s3224:  S1 :: muLB_gprodUp(gw1,s1,t13):1 SOS1_LB_gprodUp(gw1,s1,t13):2
+ s3225:  S1 :: muLB_gprodDn(gw1,s1,t13):1 SOS1_LB_gprodDn(gw1,s1,t13):2
+ s3226:  S1 :: muLB_gprodUp(gw2,s1,t13):1 SOS1_LB_gprodUp(gw2,s1,t13):2
+ s3227:  S1 :: muLB_gprodDn(gw2,s1,t13):1 SOS1_LB_gprodDn(gw2,s1,t13):2
+ s3228:  S1 :: muLB_gprodUp(gw3,s1,t13):1 SOS1_LB_gprodUp(gw3,s1,t13):2
+ s3229:  S1 :: muLB_gprodDn(gw3,s1,t13):1 SOS1_LB_gprodDn(gw3,s1,t13):2
+ s3230:  S1 :: muLB_gsin_rt(gs1,s1,t13):1 SOS1_LB_gsin_rt(gs1,s1,t13):2
+ s3231:  S1 :: muLB_gsout_rt(gs1,s1,t13):1 SOS1_LB_gsout_rt(gs1,s1,t13):2
+ s3232:  S1 :: muLB_gstore_rt(gs1,s1,t13):1 SOS1_LB_gstore_rt(gs1,s1,t13):2
+ s3233:  S1 :: muLB_gshed(ng101,s1,t14):1 SOS1_LB_gshed(ng101,s1,t14):2
+ s3234:  S1 :: muLB_gshed(ng102,s1,t14):1 SOS1_LB_gshed(ng102,s1,t14):2
+ s3235:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t14):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t14):2
- s2970:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t14):1
+ s3236:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t14):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t14):2
- s2971:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t14):1
+ s3237:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t14):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t14):2
- s2972:  S1 :: muLB_gprodUp(gw1,s1,t14):1 SOS1_LB_gprodUp(gw1,s1,t14):2
- s2973:  S1 :: muLB_gprodDn(gw1,s1,t14):1 SOS1_LB_gprodDn(gw1,s1,t14):2
- s2974:  S1 :: muLB_gprodUp(gw2,s1,t14):1 SOS1_LB_gprodUp(gw2,s1,t14):2
- s2975:  S1 :: muLB_gprodDn(gw2,s1,t14):1 SOS1_LB_gprodDn(gw2,s1,t14):2
- s2976:  S1 :: muLB_gsin_rt(gs1,s1,t14):1 SOS1_LB_gsin_rt(gs1,s1,t14):2
- s2977:  S1 :: muLB_gsout_rt(gs1,s1,t14):1 SOS1_LB_gsout_rt(gs1,s1,t14):2
- s2978:  S1 :: muLB_gstore_rt(gs1,s1,t14):1 SOS1_LB_gstore_rt(gs1,s1,t14):2
- s2979:  S1 :: muLB_gshed(ng101,s1,t15):1 SOS1_LB_gshed(ng101,s1,t15):2
- s2980:  S1 :: muLB_gshed(ng102,s1,t15):1 SOS1_LB_gshed(ng102,s1,t15):2
- s2981:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t15):1
+ s3238:  S1 :: muLB_gprodUp(gw1,s1,t14):1 SOS1_LB_gprodUp(gw1,s1,t14):2
+ s3239:  S1 :: muLB_gprodDn(gw1,s1,t14):1 SOS1_LB_gprodDn(gw1,s1,t14):2
+ s3240:  S1 :: muLB_gprodUp(gw2,s1,t14):1 SOS1_LB_gprodUp(gw2,s1,t14):2
+ s3241:  S1 :: muLB_gprodDn(gw2,s1,t14):1 SOS1_LB_gprodDn(gw2,s1,t14):2
+ s3242:  S1 :: muLB_gprodUp(gw3,s1,t14):1 SOS1_LB_gprodUp(gw3,s1,t14):2
+ s3243:  S1 :: muLB_gprodDn(gw3,s1,t14):1 SOS1_LB_gprodDn(gw3,s1,t14):2
+ s3244:  S1 :: muLB_gsin_rt(gs1,s1,t14):1 SOS1_LB_gsin_rt(gs1,s1,t14):2
+ s3245:  S1 :: muLB_gsout_rt(gs1,s1,t14):1 SOS1_LB_gsout_rt(gs1,s1,t14):2
+ s3246:  S1 :: muLB_gstore_rt(gs1,s1,t14):1 SOS1_LB_gstore_rt(gs1,s1,t14):2
+ s3247:  S1 :: muLB_gshed(ng101,s1,t15):1 SOS1_LB_gshed(ng101,s1,t15):2
+ s3248:  S1 :: muLB_gshed(ng102,s1,t15):1 SOS1_LB_gshed(ng102,s1,t15):2
+ s3249:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t15):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t15):2
- s2982:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t15):1
+ s3250:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t15):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t15):2
- s2983:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t15):1
+ s3251:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t15):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t15):2
- s2984:  S1 :: muLB_gprodUp(gw1,s1,t15):1 SOS1_LB_gprodUp(gw1,s1,t15):2
- s2985:  S1 :: muLB_gprodDn(gw1,s1,t15):1 SOS1_LB_gprodDn(gw1,s1,t15):2
- s2986:  S1 :: muLB_gprodUp(gw2,s1,t15):1 SOS1_LB_gprodUp(gw2,s1,t15):2
- s2987:  S1 :: muLB_gprodDn(gw2,s1,t15):1 SOS1_LB_gprodDn(gw2,s1,t15):2
- s2988:  S1 :: muLB_gsin_rt(gs1,s1,t15):1 SOS1_LB_gsin_rt(gs1,s1,t15):2
- s2989:  S1 :: muLB_gsout_rt(gs1,s1,t15):1 SOS1_LB_gsout_rt(gs1,s1,t15):2
- s2990:  S1 :: muLB_gstore_rt(gs1,s1,t15):1 SOS1_LB_gstore_rt(gs1,s1,t15):2
- s2991:  S1 :: muLB_gshed(ng101,s1,t16):1 SOS1_LB_gshed(ng101,s1,t16):2
- s2992:  S1 :: muLB_gshed(ng102,s1,t16):1 SOS1_LB_gshed(ng102,s1,t16):2
- s2993:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t16):1
+ s3252:  S1 :: muLB_gprodUp(gw1,s1,t15):1 SOS1_LB_gprodUp(gw1,s1,t15):2
+ s3253:  S1 :: muLB_gprodDn(gw1,s1,t15):1 SOS1_LB_gprodDn(gw1,s1,t15):2
+ s3254:  S1 :: muLB_gprodUp(gw2,s1,t15):1 SOS1_LB_gprodUp(gw2,s1,t15):2
+ s3255:  S1 :: muLB_gprodDn(gw2,s1,t15):1 SOS1_LB_gprodDn(gw2,s1,t15):2
+ s3256:  S1 :: muLB_gprodUp(gw3,s1,t15):1 SOS1_LB_gprodUp(gw3,s1,t15):2
+ s3257:  S1 :: muLB_gprodDn(gw3,s1,t15):1 SOS1_LB_gprodDn(gw3,s1,t15):2
+ s3258:  S1 :: muLB_gsin_rt(gs1,s1,t15):1 SOS1_LB_gsin_rt(gs1,s1,t15):2
+ s3259:  S1 :: muLB_gsout_rt(gs1,s1,t15):1 SOS1_LB_gsout_rt(gs1,s1,t15):2
+ s3260:  S1 :: muLB_gstore_rt(gs1,s1,t15):1 SOS1_LB_gstore_rt(gs1,s1,t15):2
+ s3261:  S1 :: muLB_gshed(ng101,s1,t16):1 SOS1_LB_gshed(ng101,s1,t16):2
+ s3262:  S1 :: muLB_gshed(ng102,s1,t16):1 SOS1_LB_gshed(ng102,s1,t16):2
+ s3263:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t16):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t16):2
- s2994:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t16):1
+ s3264:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t16):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t16):2
- s2995:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t16):1
+ s3265:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t16):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t16):2
- s2996:  S1 :: muLB_gprodUp(gw1,s1,t16):1 SOS1_LB_gprodUp(gw1,s1,t16):2
- s2997:  S1 :: muLB_gprodDn(gw1,s1,t16):1 SOS1_LB_gprodDn(gw1,s1,t16):2
- s2998:  S1 :: muLB_gprodUp(gw2,s1,t16):1 SOS1_LB_gprodUp(gw2,s1,t16):2
- s2999:  S1 :: muLB_gprodDn(gw2,s1,t16):1 SOS1_LB_gprodDn(gw2,s1,t16):2
- s3000:  S1 :: muLB_gsin_rt(gs1,s1,t16):1 SOS1_LB_gsin_rt(gs1,s1,t16):2
- s3001:  S1 :: muLB_gsout_rt(gs1,s1,t16):1 SOS1_LB_gsout_rt(gs1,s1,t16):2
- s3002:  S1 :: muLB_gstore_rt(gs1,s1,t16):1 SOS1_LB_gstore_rt(gs1,s1,t16):2
- s3003:  S1 :: muLB_gshed(ng101,s1,t17):1 SOS1_LB_gshed(ng101,s1,t17):2
- s3004:  S1 :: muLB_gshed(ng102,s1,t17):1 SOS1_LB_gshed(ng102,s1,t17):2
- s3005:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t17):1
+ s3266:  S1 :: muLB_gprodUp(gw1,s1,t16):1 SOS1_LB_gprodUp(gw1,s1,t16):2
+ s3267:  S1 :: muLB_gprodDn(gw1,s1,t16):1 SOS1_LB_gprodDn(gw1,s1,t16):2
+ s3268:  S1 :: muLB_gprodUp(gw2,s1,t16):1 SOS1_LB_gprodUp(gw2,s1,t16):2
+ s3269:  S1 :: muLB_gprodDn(gw2,s1,t16):1 SOS1_LB_gprodDn(gw2,s1,t16):2
+ s3270:  S1 :: muLB_gprodUp(gw3,s1,t16):1 SOS1_LB_gprodUp(gw3,s1,t16):2
+ s3271:  S1 :: muLB_gprodDn(gw3,s1,t16):1 SOS1_LB_gprodDn(gw3,s1,t16):2
+ s3272:  S1 :: muLB_gsin_rt(gs1,s1,t16):1 SOS1_LB_gsin_rt(gs1,s1,t16):2
+ s3273:  S1 :: muLB_gsout_rt(gs1,s1,t16):1 SOS1_LB_gsout_rt(gs1,s1,t16):2
+ s3274:  S1 :: muLB_gstore_rt(gs1,s1,t16):1 SOS1_LB_gstore_rt(gs1,s1,t16):2
+ s3275:  S1 :: muLB_gshed(ng101,s1,t17):1 SOS1_LB_gshed(ng101,s1,t17):2
+ s3276:  S1 :: muLB_gshed(ng102,s1,t17):1 SOS1_LB_gshed(ng102,s1,t17):2
+ s3277:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t17):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t17):2
- s3006:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t17):1
+ s3278:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t17):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t17):2
- s3007:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t17):1
+ s3279:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t17):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t17):2
- s3008:  S1 :: muLB_gprodUp(gw1,s1,t17):1 SOS1_LB_gprodUp(gw1,s1,t17):2
- s3009:  S1 :: muLB_gprodDn(gw1,s1,t17):1 SOS1_LB_gprodDn(gw1,s1,t17):2
- s3010:  S1 :: muLB_gprodUp(gw2,s1,t17):1 SOS1_LB_gprodUp(gw2,s1,t17):2
- s3011:  S1 :: muLB_gprodDn(gw2,s1,t17):1 SOS1_LB_gprodDn(gw2,s1,t17):2
- s3012:  S1 :: muLB_gsin_rt(gs1,s1,t17):1 SOS1_LB_gsin_rt(gs1,s1,t17):2
- s3013:  S1 :: muLB_gsout_rt(gs1,s1,t17):1 SOS1_LB_gsout_rt(gs1,s1,t17):2
- s3014:  S1 :: muLB_gstore_rt(gs1,s1,t17):1 SOS1_LB_gstore_rt(gs1,s1,t17):2
- s3015:  S1 :: muLB_gshed(ng101,s1,t18):1 SOS1_LB_gshed(ng101,s1,t18):2
- s3016:  S1 :: muLB_gshed(ng102,s1,t18):1 SOS1_LB_gshed(ng102,s1,t18):2
- s3017:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t18):1
+ s3280:  S1 :: muLB_gprodUp(gw1,s1,t17):1 SOS1_LB_gprodUp(gw1,s1,t17):2
+ s3281:  S1 :: muLB_gprodDn(gw1,s1,t17):1 SOS1_LB_gprodDn(gw1,s1,t17):2
+ s3282:  S1 :: muLB_gprodUp(gw2,s1,t17):1 SOS1_LB_gprodUp(gw2,s1,t17):2
+ s3283:  S1 :: muLB_gprodDn(gw2,s1,t17):1 SOS1_LB_gprodDn(gw2,s1,t17):2
+ s3284:  S1 :: muLB_gprodUp(gw3,s1,t17):1 SOS1_LB_gprodUp(gw3,s1,t17):2
+ s3285:  S1 :: muLB_gprodDn(gw3,s1,t17):1 SOS1_LB_gprodDn(gw3,s1,t17):2
+ s3286:  S1 :: muLB_gsin_rt(gs1,s1,t17):1 SOS1_LB_gsin_rt(gs1,s1,t17):2
+ s3287:  S1 :: muLB_gsout_rt(gs1,s1,t17):1 SOS1_LB_gsout_rt(gs1,s1,t17):2
+ s3288:  S1 :: muLB_gstore_rt(gs1,s1,t17):1 SOS1_LB_gstore_rt(gs1,s1,t17):2
+ s3289:  S1 :: muLB_gshed(ng101,s1,t18):1 SOS1_LB_gshed(ng101,s1,t18):2
+ s3290:  S1 :: muLB_gshed(ng102,s1,t18):1 SOS1_LB_gshed(ng102,s1,t18):2
+ s3291:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t18):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t18):2
- s3018:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t18):1
+ s3292:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t18):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t18):2
- s3019:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t18):1
+ s3293:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t18):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t18):2
- s3020:  S1 :: muLB_gprodUp(gw1,s1,t18):1 SOS1_LB_gprodUp(gw1,s1,t18):2
- s3021:  S1 :: muLB_gprodDn(gw1,s1,t18):1 SOS1_LB_gprodDn(gw1,s1,t18):2
- s3022:  S1 :: muLB_gprodUp(gw2,s1,t18):1 SOS1_LB_gprodUp(gw2,s1,t18):2
- s3023:  S1 :: muLB_gprodDn(gw2,s1,t18):1 SOS1_LB_gprodDn(gw2,s1,t18):2
- s3024:  S1 :: muLB_gsin_rt(gs1,s1,t18):1 SOS1_LB_gsin_rt(gs1,s1,t18):2
- s3025:  S1 :: muLB_gsout_rt(gs1,s1,t18):1 SOS1_LB_gsout_rt(gs1,s1,t18):2
- s3026:  S1 :: muLB_gstore_rt(gs1,s1,t18):1 SOS1_LB_gstore_rt(gs1,s1,t18):2
- s3027:  S1 :: muLB_gshed(ng101,s1,t19):1 SOS1_LB_gshed(ng101,s1,t19):2
- s3028:  S1 :: muLB_gshed(ng102,s1,t19):1 SOS1_LB_gshed(ng102,s1,t19):2
- s3029:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t19):1
+ s3294:  S1 :: muLB_gprodUp(gw1,s1,t18):1 SOS1_LB_gprodUp(gw1,s1,t18):2
+ s3295:  S1 :: muLB_gprodDn(gw1,s1,t18):1 SOS1_LB_gprodDn(gw1,s1,t18):2
+ s3296:  S1 :: muLB_gprodUp(gw2,s1,t18):1 SOS1_LB_gprodUp(gw2,s1,t18):2
+ s3297:  S1 :: muLB_gprodDn(gw2,s1,t18):1 SOS1_LB_gprodDn(gw2,s1,t18):2
+ s3298:  S1 :: muLB_gprodUp(gw3,s1,t18):1 SOS1_LB_gprodUp(gw3,s1,t18):2
+ s3299:  S1 :: muLB_gprodDn(gw3,s1,t18):1 SOS1_LB_gprodDn(gw3,s1,t18):2
+ s3300:  S1 :: muLB_gsin_rt(gs1,s1,t18):1 SOS1_LB_gsin_rt(gs1,s1,t18):2
+ s3301:  S1 :: muLB_gsout_rt(gs1,s1,t18):1 SOS1_LB_gsout_rt(gs1,s1,t18):2
+ s3302:  S1 :: muLB_gstore_rt(gs1,s1,t18):1 SOS1_LB_gstore_rt(gs1,s1,t18):2
+ s3303:  S1 :: muLB_gshed(ng101,s1,t19):1 SOS1_LB_gshed(ng101,s1,t19):2
+ s3304:  S1 :: muLB_gshed(ng102,s1,t19):1 SOS1_LB_gshed(ng102,s1,t19):2
+ s3305:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t19):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t19):2
- s3030:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t19):1
+ s3306:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t19):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t19):2
- s3031:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t19):1
+ s3307:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t19):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t19):2
- s3032:  S1 :: muLB_gprodUp(gw1,s1,t19):1 SOS1_LB_gprodUp(gw1,s1,t19):2
- s3033:  S1 :: muLB_gprodDn(gw1,s1,t19):1 SOS1_LB_gprodDn(gw1,s1,t19):2
- s3034:  S1 :: muLB_gprodUp(gw2,s1,t19):1 SOS1_LB_gprodUp(gw2,s1,t19):2
- s3035:  S1 :: muLB_gprodDn(gw2,s1,t19):1 SOS1_LB_gprodDn(gw2,s1,t19):2
- s3036:  S1 :: muLB_gsin_rt(gs1,s1,t19):1 SOS1_LB_gsin_rt(gs1,s1,t19):2
- s3037:  S1 :: muLB_gsout_rt(gs1,s1,t19):1 SOS1_LB_gsout_rt(gs1,s1,t19):2
- s3038:  S1 :: muLB_gstore_rt(gs1,s1,t19):1 SOS1_LB_gstore_rt(gs1,s1,t19):2
- s3039:  S1 :: muLB_gshed(ng101,s1,t20):1 SOS1_LB_gshed(ng101,s1,t20):2
- s3040:  S1 :: muLB_gshed(ng102,s1,t20):1 SOS1_LB_gshed(ng102,s1,t20):2
- s3041:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t20):1
+ s3308:  S1 :: muLB_gprodUp(gw1,s1,t19):1 SOS1_LB_gprodUp(gw1,s1,t19):2
+ s3309:  S1 :: muLB_gprodDn(gw1,s1,t19):1 SOS1_LB_gprodDn(gw1,s1,t19):2
+ s3310:  S1 :: muLB_gprodUp(gw2,s1,t19):1 SOS1_LB_gprodUp(gw2,s1,t19):2
+ s3311:  S1 :: muLB_gprodDn(gw2,s1,t19):1 SOS1_LB_gprodDn(gw2,s1,t19):2
+ s3312:  S1 :: muLB_gprodUp(gw3,s1,t19):1 SOS1_LB_gprodUp(gw3,s1,t19):2
+ s3313:  S1 :: muLB_gprodDn(gw3,s1,t19):1 SOS1_LB_gprodDn(gw3,s1,t19):2
+ s3314:  S1 :: muLB_gsin_rt(gs1,s1,t19):1 SOS1_LB_gsin_rt(gs1,s1,t19):2
+ s3315:  S1 :: muLB_gsout_rt(gs1,s1,t19):1 SOS1_LB_gsout_rt(gs1,s1,t19):2
+ s3316:  S1 :: muLB_gstore_rt(gs1,s1,t19):1 SOS1_LB_gstore_rt(gs1,s1,t19):2
+ s3317:  S1 :: muLB_gshed(ng101,s1,t20):1 SOS1_LB_gshed(ng101,s1,t20):2
+ s3318:  S1 :: muLB_gshed(ng102,s1,t20):1 SOS1_LB_gshed(ng102,s1,t20):2
+ s3319:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t20):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t20):2
- s3042:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t20):1
+ s3320:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t20):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t20):2
- s3043:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t20):1
+ s3321:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t20):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t20):2
- s3044:  S1 :: muLB_gprodUp(gw1,s1,t20):1 SOS1_LB_gprodUp(gw1,s1,t20):2
- s3045:  S1 :: muLB_gprodDn(gw1,s1,t20):1 SOS1_LB_gprodDn(gw1,s1,t20):2
- s3046:  S1 :: muLB_gprodUp(gw2,s1,t20):1 SOS1_LB_gprodUp(gw2,s1,t20):2
- s3047:  S1 :: muLB_gprodDn(gw2,s1,t20):1 SOS1_LB_gprodDn(gw2,s1,t20):2
- s3048:  S1 :: muLB_gsin_rt(gs1,s1,t20):1 SOS1_LB_gsin_rt(gs1,s1,t20):2
- s3049:  S1 :: muLB_gsout_rt(gs1,s1,t20):1 SOS1_LB_gsout_rt(gs1,s1,t20):2
- s3050:  S1 :: muLB_gstore_rt(gs1,s1,t20):1 SOS1_LB_gstore_rt(gs1,s1,t20):2
- s3051:  S1 :: muLB_gshed(ng101,s1,t21):1 SOS1_LB_gshed(ng101,s1,t21):2
- s3052:  S1 :: muLB_gshed(ng102,s1,t21):1 SOS1_LB_gshed(ng102,s1,t21):2
- s3053:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t21):1
+ s3322:  S1 :: muLB_gprodUp(gw1,s1,t20):1 SOS1_LB_gprodUp(gw1,s1,t20):2
+ s3323:  S1 :: muLB_gprodDn(gw1,s1,t20):1 SOS1_LB_gprodDn(gw1,s1,t20):2
+ s3324:  S1 :: muLB_gprodUp(gw2,s1,t20):1 SOS1_LB_gprodUp(gw2,s1,t20):2
+ s3325:  S1 :: muLB_gprodDn(gw2,s1,t20):1 SOS1_LB_gprodDn(gw2,s1,t20):2
+ s3326:  S1 :: muLB_gprodUp(gw3,s1,t20):1 SOS1_LB_gprodUp(gw3,s1,t20):2
+ s3327:  S1 :: muLB_gprodDn(gw3,s1,t20):1 SOS1_LB_gprodDn(gw3,s1,t20):2
+ s3328:  S1 :: muLB_gsin_rt(gs1,s1,t20):1 SOS1_LB_gsin_rt(gs1,s1,t20):2
+ s3329:  S1 :: muLB_gsout_rt(gs1,s1,t20):1 SOS1_LB_gsout_rt(gs1,s1,t20):2
+ s3330:  S1 :: muLB_gstore_rt(gs1,s1,t20):1 SOS1_LB_gstore_rt(gs1,s1,t20):2
+ s3331:  S1 :: muLB_gshed(ng101,s1,t21):1 SOS1_LB_gshed(ng101,s1,t21):2
+ s3332:  S1 :: muLB_gshed(ng102,s1,t21):1 SOS1_LB_gshed(ng102,s1,t21):2
+ s3333:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t21):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t21):2
- s3054:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t21):1
+ s3334:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t21):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t21):2
- s3055:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t21):1
+ s3335:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t21):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t21):2
- s3056:  S1 :: muLB_gprodUp(gw1,s1,t21):1 SOS1_LB_gprodUp(gw1,s1,t21):2
- s3057:  S1 :: muLB_gprodDn(gw1,s1,t21):1 SOS1_LB_gprodDn(gw1,s1,t21):2
- s3058:  S1 :: muLB_gprodUp(gw2,s1,t21):1 SOS1_LB_gprodUp(gw2,s1,t21):2
- s3059:  S1 :: muLB_gprodDn(gw2,s1,t21):1 SOS1_LB_gprodDn(gw2,s1,t21):2
- s3060:  S1 :: muLB_gsin_rt(gs1,s1,t21):1 SOS1_LB_gsin_rt(gs1,s1,t21):2
- s3061:  S1 :: muLB_gsout_rt(gs1,s1,t21):1 SOS1_LB_gsout_rt(gs1,s1,t21):2
- s3062:  S1 :: muLB_gstore_rt(gs1,s1,t21):1 SOS1_LB_gstore_rt(gs1,s1,t21):2
- s3063:  S1 :: muLB_gshed(ng101,s1,t22):1 SOS1_LB_gshed(ng101,s1,t22):2
- s3064:  S1 :: muLB_gshed(ng102,s1,t22):1 SOS1_LB_gshed(ng102,s1,t22):2
- s3065:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t22):1
+ s3336:  S1 :: muLB_gprodUp(gw1,s1,t21):1 SOS1_LB_gprodUp(gw1,s1,t21):2
+ s3337:  S1 :: muLB_gprodDn(gw1,s1,t21):1 SOS1_LB_gprodDn(gw1,s1,t21):2
+ s3338:  S1 :: muLB_gprodUp(gw2,s1,t21):1 SOS1_LB_gprodUp(gw2,s1,t21):2
+ s3339:  S1 :: muLB_gprodDn(gw2,s1,t21):1 SOS1_LB_gprodDn(gw2,s1,t21):2
+ s3340:  S1 :: muLB_gprodUp(gw3,s1,t21):1 SOS1_LB_gprodUp(gw3,s1,t21):2
+ s3341:  S1 :: muLB_gprodDn(gw3,s1,t21):1 SOS1_LB_gprodDn(gw3,s1,t21):2
+ s3342:  S1 :: muLB_gsin_rt(gs1,s1,t21):1 SOS1_LB_gsin_rt(gs1,s1,t21):2
+ s3343:  S1 :: muLB_gsout_rt(gs1,s1,t21):1 SOS1_LB_gsout_rt(gs1,s1,t21):2
+ s3344:  S1 :: muLB_gstore_rt(gs1,s1,t21):1 SOS1_LB_gstore_rt(gs1,s1,t21):2
+ s3345:  S1 :: muLB_gshed(ng101,s1,t22):1 SOS1_LB_gshed(ng101,s1,t22):2
+ s3346:  S1 :: muLB_gshed(ng102,s1,t22):1 SOS1_LB_gshed(ng102,s1,t22):2
+ s3347:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t22):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t22):2
- s3066:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t22):1
+ s3348:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t22):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t22):2
- s3067:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t22):1
+ s3349:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t22):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t22):2
- s3068:  S1 :: muLB_gprodUp(gw1,s1,t22):1 SOS1_LB_gprodUp(gw1,s1,t22):2
- s3069:  S1 :: muLB_gprodDn(gw1,s1,t22):1 SOS1_LB_gprodDn(gw1,s1,t22):2
- s3070:  S1 :: muLB_gprodUp(gw2,s1,t22):1 SOS1_LB_gprodUp(gw2,s1,t22):2
- s3071:  S1 :: muLB_gprodDn(gw2,s1,t22):1 SOS1_LB_gprodDn(gw2,s1,t22):2
- s3072:  S1 :: muLB_gsin_rt(gs1,s1,t22):1 SOS1_LB_gsin_rt(gs1,s1,t22):2
- s3073:  S1 :: muLB_gsout_rt(gs1,s1,t22):1 SOS1_LB_gsout_rt(gs1,s1,t22):2
- s3074:  S1 :: muLB_gstore_rt(gs1,s1,t22):1 SOS1_LB_gstore_rt(gs1,s1,t22):2
- s3075:  S1 :: muLB_gshed(ng101,s1,t23):1 SOS1_LB_gshed(ng101,s1,t23):2
- s3076:  S1 :: muLB_gshed(ng102,s1,t23):1 SOS1_LB_gshed(ng102,s1,t23):2
- s3077:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t23):1
+ s3350:  S1 :: muLB_gprodUp(gw1,s1,t22):1 SOS1_LB_gprodUp(gw1,s1,t22):2
+ s3351:  S1 :: muLB_gprodDn(gw1,s1,t22):1 SOS1_LB_gprodDn(gw1,s1,t22):2
+ s3352:  S1 :: muLB_gprodUp(gw2,s1,t22):1 SOS1_LB_gprodUp(gw2,s1,t22):2
+ s3353:  S1 :: muLB_gprodDn(gw2,s1,t22):1 SOS1_LB_gprodDn(gw2,s1,t22):2
+ s3354:  S1 :: muLB_gprodUp(gw3,s1,t22):1 SOS1_LB_gprodUp(gw3,s1,t22):2
+ s3355:  S1 :: muLB_gprodDn(gw3,s1,t22):1 SOS1_LB_gprodDn(gw3,s1,t22):2
+ s3356:  S1 :: muLB_gsin_rt(gs1,s1,t22):1 SOS1_LB_gsin_rt(gs1,s1,t22):2
+ s3357:  S1 :: muLB_gsout_rt(gs1,s1,t22):1 SOS1_LB_gsout_rt(gs1,s1,t22):2
+ s3358:  S1 :: muLB_gstore_rt(gs1,s1,t22):1 SOS1_LB_gstore_rt(gs1,s1,t22):2
+ s3359:  S1 :: muLB_gshed(ng101,s1,t23):1 SOS1_LB_gshed(ng101,s1,t23):2
+ s3360:  S1 :: muLB_gshed(ng102,s1,t23):1 SOS1_LB_gshed(ng102,s1,t23):2
+ s3361:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t23):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t23):2
- s3078:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t23):1
+ s3362:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t23):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t23):2
- s3079:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t23):1
+ s3363:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t23):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t23):2
- s3080:  S1 :: muLB_gprodUp(gw1,s1,t23):1 SOS1_LB_gprodUp(gw1,s1,t23):2
- s3081:  S1 :: muLB_gprodDn(gw1,s1,t23):1 SOS1_LB_gprodDn(gw1,s1,t23):2
- s3082:  S1 :: muLB_gprodUp(gw2,s1,t23):1 SOS1_LB_gprodUp(gw2,s1,t23):2
- s3083:  S1 :: muLB_gprodDn(gw2,s1,t23):1 SOS1_LB_gprodDn(gw2,s1,t23):2
- s3084:  S1 :: muLB_gsin_rt(gs1,s1,t23):1 SOS1_LB_gsin_rt(gs1,s1,t23):2
- s3085:  S1 :: muLB_gsout_rt(gs1,s1,t23):1 SOS1_LB_gsout_rt(gs1,s1,t23):2
- s3086:  S1 :: muLB_gstore_rt(gs1,s1,t23):1 SOS1_LB_gstore_rt(gs1,s1,t23):2
- s3087:  S1 :: muLB_gshed(ng101,s1,t24):1 SOS1_LB_gshed(ng101,s1,t24):2
- s3088:  S1 :: muLB_gshed(ng102,s1,t24):1 SOS1_LB_gshed(ng102,s1,t24):2
- s3089:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t24):1
+ s3364:  S1 :: muLB_gprodUp(gw1,s1,t23):1 SOS1_LB_gprodUp(gw1,s1,t23):2
+ s3365:  S1 :: muLB_gprodDn(gw1,s1,t23):1 SOS1_LB_gprodDn(gw1,s1,t23):2
+ s3366:  S1 :: muLB_gprodUp(gw2,s1,t23):1 SOS1_LB_gprodUp(gw2,s1,t23):2
+ s3367:  S1 :: muLB_gprodDn(gw2,s1,t23):1 SOS1_LB_gprodDn(gw2,s1,t23):2
+ s3368:  S1 :: muLB_gprodUp(gw3,s1,t23):1 SOS1_LB_gprodUp(gw3,s1,t23):2
+ s3369:  S1 :: muLB_gprodDn(gw3,s1,t23):1 SOS1_LB_gprodDn(gw3,s1,t23):2
+ s3370:  S1 :: muLB_gsin_rt(gs1,s1,t23):1 SOS1_LB_gsin_rt(gs1,s1,t23):2
+ s3371:  S1 :: muLB_gsout_rt(gs1,s1,t23):1 SOS1_LB_gsout_rt(gs1,s1,t23):2
+ s3372:  S1 :: muLB_gstore_rt(gs1,s1,t23):1 SOS1_LB_gstore_rt(gs1,s1,t23):2
+ s3373:  S1 :: muLB_gshed(ng101,s1,t24):1 SOS1_LB_gshed(ng101,s1,t24):2
+ s3374:  S1 :: muLB_gshed(ng102,s1,t24):1 SOS1_LB_gshed(ng102,s1,t24):2
+ s3375:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s1,t24):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s1,t24):2
- s3090:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t24):1
+ s3376:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s1,t24):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s1,t24):2
- s3091:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t24):1
+ s3377:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s1,t24):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s1,t24):2
- s3092:  S1 :: muLB_gprodUp(gw1,s1,t24):1 SOS1_LB_gprodUp(gw1,s1,t24):2
- s3093:  S1 :: muLB_gprodDn(gw1,s1,t24):1 SOS1_LB_gprodDn(gw1,s1,t24):2
- s3094:  S1 :: muLB_gprodUp(gw2,s1,t24):1 SOS1_LB_gprodUp(gw2,s1,t24):2
- s3095:  S1 :: muLB_gprodDn(gw2,s1,t24):1 SOS1_LB_gprodDn(gw2,s1,t24):2
- s3096:  S1 :: muLB_gsin_rt(gs1,s1,t24):1 SOS1_LB_gsin_rt(gs1,s1,t24):2
- s3097:  S1 :: muLB_gsout_rt(gs1,s1,t24):1 SOS1_LB_gsout_rt(gs1,s1,t24):2
- s3098:  S1 :: muLB_gstore_rt(gs1,s1,t24):1 SOS1_LB_gstore_rt(gs1,s1,t24):2
- s3099:  S1 :: muLB_gshed(ng101,s2,t1):1 SOS1_LB_gshed(ng101,s2,t1):2
- s3100:  S1 :: muLB_gshed(ng102,s2,t1):1 SOS1_LB_gshed(ng102,s2,t1):2
- s3101:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t1):1
+ s3378:  S1 :: muLB_gprodUp(gw1,s1,t24):1 SOS1_LB_gprodUp(gw1,s1,t24):2
+ s3379:  S1 :: muLB_gprodDn(gw1,s1,t24):1 SOS1_LB_gprodDn(gw1,s1,t24):2
+ s3380:  S1 :: muLB_gprodUp(gw2,s1,t24):1 SOS1_LB_gprodUp(gw2,s1,t24):2
+ s3381:  S1 :: muLB_gprodDn(gw2,s1,t24):1 SOS1_LB_gprodDn(gw2,s1,t24):2
+ s3382:  S1 :: muLB_gprodUp(gw3,s1,t24):1 SOS1_LB_gprodUp(gw3,s1,t24):2
+ s3383:  S1 :: muLB_gprodDn(gw3,s1,t24):1 SOS1_LB_gprodDn(gw3,s1,t24):2
+ s3384:  S1 :: muLB_gsin_rt(gs1,s1,t24):1 SOS1_LB_gsin_rt(gs1,s1,t24):2
+ s3385:  S1 :: muLB_gsout_rt(gs1,s1,t24):1 SOS1_LB_gsout_rt(gs1,s1,t24):2
+ s3386:  S1 :: muLB_gstore_rt(gs1,s1,t24):1 SOS1_LB_gstore_rt(gs1,s1,t24):2
+ s3387:  S1 :: muLB_gshed(ng101,s2,t1):1 SOS1_LB_gshed(ng101,s2,t1):2
+ s3388:  S1 :: muLB_gshed(ng102,s2,t1):1 SOS1_LB_gshed(ng102,s2,t1):2
+ s3389:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t1):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t1):2
- s3102:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t1):1
+ s3390:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t1):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t1):2
- s3103:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t1):1
+ s3391:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t1):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t1):2
- s3104:  S1 :: muLB_gprodUp(gw1,s2,t1):1 SOS1_LB_gprodUp(gw1,s2,t1):2
- s3105:  S1 :: muLB_gprodDn(gw1,s2,t1):1 SOS1_LB_gprodDn(gw1,s2,t1):2
- s3106:  S1 :: muLB_gprodUp(gw2,s2,t1):1 SOS1_LB_gprodUp(gw2,s2,t1):2
- s3107:  S1 :: muLB_gprodDn(gw2,s2,t1):1 SOS1_LB_gprodDn(gw2,s2,t1):2
- s3108:  S1 :: muLB_gsin_rt(gs1,s2,t1):1 SOS1_LB_gsin_rt(gs1,s2,t1):2
- s3109:  S1 :: muLB_gsout_rt(gs1,s2,t1):1 SOS1_LB_gsout_rt(gs1,s2,t1):2
- s3110:  S1 :: muLB_gstore_rt(gs1,s2,t1):1 SOS1_LB_gstore_rt(gs1,s2,t1):2
- s3111:  S1 :: muLB_gshed(ng101,s2,t2):1 SOS1_LB_gshed(ng101,s2,t2):2
- s3112:  S1 :: muLB_gshed(ng102,s2,t2):1 SOS1_LB_gshed(ng102,s2,t2):2
- s3113:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t2):1
+ s3392:  S1 :: muLB_gprodUp(gw1,s2,t1):1 SOS1_LB_gprodUp(gw1,s2,t1):2
+ s3393:  S1 :: muLB_gprodDn(gw1,s2,t1):1 SOS1_LB_gprodDn(gw1,s2,t1):2
+ s3394:  S1 :: muLB_gprodUp(gw2,s2,t1):1 SOS1_LB_gprodUp(gw2,s2,t1):2
+ s3395:  S1 :: muLB_gprodDn(gw2,s2,t1):1 SOS1_LB_gprodDn(gw2,s2,t1):2
+ s3396:  S1 :: muLB_gprodUp(gw3,s2,t1):1 SOS1_LB_gprodUp(gw3,s2,t1):2
+ s3397:  S1 :: muLB_gprodDn(gw3,s2,t1):1 SOS1_LB_gprodDn(gw3,s2,t1):2
+ s3398:  S1 :: muLB_gsin_rt(gs1,s2,t1):1 SOS1_LB_gsin_rt(gs1,s2,t1):2
+ s3399:  S1 :: muLB_gsout_rt(gs1,s2,t1):1 SOS1_LB_gsout_rt(gs1,s2,t1):2
+ s3400:  S1 :: muLB_gstore_rt(gs1,s2,t1):1 SOS1_LB_gstore_rt(gs1,s2,t1):2
+ s3401:  S1 :: muLB_gshed(ng101,s2,t2):1 SOS1_LB_gshed(ng101,s2,t2):2
+ s3402:  S1 :: muLB_gshed(ng102,s2,t2):1 SOS1_LB_gshed(ng102,s2,t2):2
+ s3403:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t2):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t2):2
- s3114:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t2):1
+ s3404:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t2):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t2):2
- s3115:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t2):1
+ s3405:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t2):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t2):2
- s3116:  S1 :: muLB_gprodUp(gw1,s2,t2):1 SOS1_LB_gprodUp(gw1,s2,t2):2
- s3117:  S1 :: muLB_gprodDn(gw1,s2,t2):1 SOS1_LB_gprodDn(gw1,s2,t2):2
- s3118:  S1 :: muLB_gprodUp(gw2,s2,t2):1 SOS1_LB_gprodUp(gw2,s2,t2):2
- s3119:  S1 :: muLB_gprodDn(gw2,s2,t2):1 SOS1_LB_gprodDn(gw2,s2,t2):2
- s3120:  S1 :: muLB_gsin_rt(gs1,s2,t2):1 SOS1_LB_gsin_rt(gs1,s2,t2):2
- s3121:  S1 :: muLB_gsout_rt(gs1,s2,t2):1 SOS1_LB_gsout_rt(gs1,s2,t2):2
- s3122:  S1 :: muLB_gstore_rt(gs1,s2,t2):1 SOS1_LB_gstore_rt(gs1,s2,t2):2
- s3123:  S1 :: muLB_gshed(ng101,s2,t3):1 SOS1_LB_gshed(ng101,s2,t3):2
- s3124:  S1 :: muLB_gshed(ng102,s2,t3):1 SOS1_LB_gshed(ng102,s2,t3):2
- s3125:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t3):1
+ s3406:  S1 :: muLB_gprodUp(gw1,s2,t2):1 SOS1_LB_gprodUp(gw1,s2,t2):2
+ s3407:  S1 :: muLB_gprodDn(gw1,s2,t2):1 SOS1_LB_gprodDn(gw1,s2,t2):2
+ s3408:  S1 :: muLB_gprodUp(gw2,s2,t2):1 SOS1_LB_gprodUp(gw2,s2,t2):2
+ s3409:  S1 :: muLB_gprodDn(gw2,s2,t2):1 SOS1_LB_gprodDn(gw2,s2,t2):2
+ s3410:  S1 :: muLB_gprodUp(gw3,s2,t2):1 SOS1_LB_gprodUp(gw3,s2,t2):2
+ s3411:  S1 :: muLB_gprodDn(gw3,s2,t2):1 SOS1_LB_gprodDn(gw3,s2,t2):2
+ s3412:  S1 :: muLB_gsin_rt(gs1,s2,t2):1 SOS1_LB_gsin_rt(gs1,s2,t2):2
+ s3413:  S1 :: muLB_gsout_rt(gs1,s2,t2):1 SOS1_LB_gsout_rt(gs1,s2,t2):2
+ s3414:  S1 :: muLB_gstore_rt(gs1,s2,t2):1 SOS1_LB_gstore_rt(gs1,s2,t2):2
+ s3415:  S1 :: muLB_gshed(ng101,s2,t3):1 SOS1_LB_gshed(ng101,s2,t3):2
+ s3416:  S1 :: muLB_gshed(ng102,s2,t3):1 SOS1_LB_gshed(ng102,s2,t3):2
+ s3417:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t3):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t3):2
- s3126:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t3):1
+ s3418:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t3):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t3):2
- s3127:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t3):1
+ s3419:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t3):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t3):2
- s3128:  S1 :: muLB_gprodUp(gw1,s2,t3):1 SOS1_LB_gprodUp(gw1,s2,t3):2
- s3129:  S1 :: muLB_gprodDn(gw1,s2,t3):1 SOS1_LB_gprodDn(gw1,s2,t3):2
- s3130:  S1 :: muLB_gprodUp(gw2,s2,t3):1 SOS1_LB_gprodUp(gw2,s2,t3):2
- s3131:  S1 :: muLB_gprodDn(gw2,s2,t3):1 SOS1_LB_gprodDn(gw2,s2,t3):2
- s3132:  S1 :: muLB_gsin_rt(gs1,s2,t3):1 SOS1_LB_gsin_rt(gs1,s2,t3):2
- s3133:  S1 :: muLB_gsout_rt(gs1,s2,t3):1 SOS1_LB_gsout_rt(gs1,s2,t3):2
- s3134:  S1 :: muLB_gstore_rt(gs1,s2,t3):1 SOS1_LB_gstore_rt(gs1,s2,t3):2
- s3135:  S1 :: muLB_gshed(ng101,s2,t4):1 SOS1_LB_gshed(ng101,s2,t4):2
- s3136:  S1 :: muLB_gshed(ng102,s2,t4):1 SOS1_LB_gshed(ng102,s2,t4):2
- s3137:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t4):1
+ s3420:  S1 :: muLB_gprodUp(gw1,s2,t3):1 SOS1_LB_gprodUp(gw1,s2,t3):2
+ s3421:  S1 :: muLB_gprodDn(gw1,s2,t3):1 SOS1_LB_gprodDn(gw1,s2,t3):2
+ s3422:  S1 :: muLB_gprodUp(gw2,s2,t3):1 SOS1_LB_gprodUp(gw2,s2,t3):2
+ s3423:  S1 :: muLB_gprodDn(gw2,s2,t3):1 SOS1_LB_gprodDn(gw2,s2,t3):2
+ s3424:  S1 :: muLB_gprodUp(gw3,s2,t3):1 SOS1_LB_gprodUp(gw3,s2,t3):2
+ s3425:  S1 :: muLB_gprodDn(gw3,s2,t3):1 SOS1_LB_gprodDn(gw3,s2,t3):2
+ s3426:  S1 :: muLB_gsin_rt(gs1,s2,t3):1 SOS1_LB_gsin_rt(gs1,s2,t3):2
+ s3427:  S1 :: muLB_gsout_rt(gs1,s2,t3):1 SOS1_LB_gsout_rt(gs1,s2,t3):2
+ s3428:  S1 :: muLB_gstore_rt(gs1,s2,t3):1 SOS1_LB_gstore_rt(gs1,s2,t3):2
+ s3429:  S1 :: muLB_gshed(ng101,s2,t4):1 SOS1_LB_gshed(ng101,s2,t4):2
+ s3430:  S1 :: muLB_gshed(ng102,s2,t4):1 SOS1_LB_gshed(ng102,s2,t4):2
+ s3431:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t4):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t4):2
- s3138:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t4):1
+ s3432:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t4):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t4):2
- s3139:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t4):1
+ s3433:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t4):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t4):2
- s3140:  S1 :: muLB_gprodUp(gw1,s2,t4):1 SOS1_LB_gprodUp(gw1,s2,t4):2
- s3141:  S1 :: muLB_gprodDn(gw1,s2,t4):1 SOS1_LB_gprodDn(gw1,s2,t4):2
- s3142:  S1 :: muLB_gprodUp(gw2,s2,t4):1 SOS1_LB_gprodUp(gw2,s2,t4):2
- s3143:  S1 :: muLB_gprodDn(gw2,s2,t4):1 SOS1_LB_gprodDn(gw2,s2,t4):2
- s3144:  S1 :: muLB_gsin_rt(gs1,s2,t4):1 SOS1_LB_gsin_rt(gs1,s2,t4):2
- s3145:  S1 :: muLB_gsout_rt(gs1,s2,t4):1 SOS1_LB_gsout_rt(gs1,s2,t4):2
- s3146:  S1 :: muLB_gstore_rt(gs1,s2,t4):1 SOS1_LB_gstore_rt(gs1,s2,t4):2
- s3147:  S1 :: muLB_gshed(ng101,s2,t5):1 SOS1_LB_gshed(ng101,s2,t5):2
- s3148:  S1 :: muLB_gshed(ng102,s2,t5):1 SOS1_LB_gshed(ng102,s2,t5):2
- s3149:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t5):1
+ s3434:  S1 :: muLB_gprodUp(gw1,s2,t4):1 SOS1_LB_gprodUp(gw1,s2,t4):2
+ s3435:  S1 :: muLB_gprodDn(gw1,s2,t4):1 SOS1_LB_gprodDn(gw1,s2,t4):2
+ s3436:  S1 :: muLB_gprodUp(gw2,s2,t4):1 SOS1_LB_gprodUp(gw2,s2,t4):2
+ s3437:  S1 :: muLB_gprodDn(gw2,s2,t4):1 SOS1_LB_gprodDn(gw2,s2,t4):2
+ s3438:  S1 :: muLB_gprodUp(gw3,s2,t4):1 SOS1_LB_gprodUp(gw3,s2,t4):2
+ s3439:  S1 :: muLB_gprodDn(gw3,s2,t4):1 SOS1_LB_gprodDn(gw3,s2,t4):2
+ s3440:  S1 :: muLB_gsin_rt(gs1,s2,t4):1 SOS1_LB_gsin_rt(gs1,s2,t4):2
+ s3441:  S1 :: muLB_gsout_rt(gs1,s2,t4):1 SOS1_LB_gsout_rt(gs1,s2,t4):2
+ s3442:  S1 :: muLB_gstore_rt(gs1,s2,t4):1 SOS1_LB_gstore_rt(gs1,s2,t4):2
+ s3443:  S1 :: muLB_gshed(ng101,s2,t5):1 SOS1_LB_gshed(ng101,s2,t5):2
+ s3444:  S1 :: muLB_gshed(ng102,s2,t5):1 SOS1_LB_gshed(ng102,s2,t5):2
+ s3445:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t5):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t5):2
- s3150:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t5):1
+ s3446:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t5):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t5):2
- s3151:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t5):1
+ s3447:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t5):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t5):2
- s3152:  S1 :: muLB_gprodUp(gw1,s2,t5):1 SOS1_LB_gprodUp(gw1,s2,t5):2
- s3153:  S1 :: muLB_gprodDn(gw1,s2,t5):1 SOS1_LB_gprodDn(gw1,s2,t5):2
- s3154:  S1 :: muLB_gprodUp(gw2,s2,t5):1 SOS1_LB_gprodUp(gw2,s2,t5):2
- s3155:  S1 :: muLB_gprodDn(gw2,s2,t5):1 SOS1_LB_gprodDn(gw2,s2,t5):2
- s3156:  S1 :: muLB_gsin_rt(gs1,s2,t5):1 SOS1_LB_gsin_rt(gs1,s2,t5):2
- s3157:  S1 :: muLB_gsout_rt(gs1,s2,t5):1 SOS1_LB_gsout_rt(gs1,s2,t5):2
- s3158:  S1 :: muLB_gstore_rt(gs1,s2,t5):1 SOS1_LB_gstore_rt(gs1,s2,t5):2
- s3159:  S1 :: muLB_gshed(ng101,s2,t6):1 SOS1_LB_gshed(ng101,s2,t6):2
- s3160:  S1 :: muLB_gshed(ng102,s2,t6):1 SOS1_LB_gshed(ng102,s2,t6):2
- s3161:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t6):1
+ s3448:  S1 :: muLB_gprodUp(gw1,s2,t5):1 SOS1_LB_gprodUp(gw1,s2,t5):2
+ s3449:  S1 :: muLB_gprodDn(gw1,s2,t5):1 SOS1_LB_gprodDn(gw1,s2,t5):2
+ s3450:  S1 :: muLB_gprodUp(gw2,s2,t5):1 SOS1_LB_gprodUp(gw2,s2,t5):2
+ s3451:  S1 :: muLB_gprodDn(gw2,s2,t5):1 SOS1_LB_gprodDn(gw2,s2,t5):2
+ s3452:  S1 :: muLB_gprodUp(gw3,s2,t5):1 SOS1_LB_gprodUp(gw3,s2,t5):2
+ s3453:  S1 :: muLB_gprodDn(gw3,s2,t5):1 SOS1_LB_gprodDn(gw3,s2,t5):2
+ s3454:  S1 :: muLB_gsin_rt(gs1,s2,t5):1 SOS1_LB_gsin_rt(gs1,s2,t5):2
+ s3455:  S1 :: muLB_gsout_rt(gs1,s2,t5):1 SOS1_LB_gsout_rt(gs1,s2,t5):2
+ s3456:  S1 :: muLB_gstore_rt(gs1,s2,t5):1 SOS1_LB_gstore_rt(gs1,s2,t5):2
+ s3457:  S1 :: muLB_gshed(ng101,s2,t6):1 SOS1_LB_gshed(ng101,s2,t6):2
+ s3458:  S1 :: muLB_gshed(ng102,s2,t6):1 SOS1_LB_gshed(ng102,s2,t6):2
+ s3459:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t6):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t6):2
- s3162:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t6):1
+ s3460:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t6):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t6):2
- s3163:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t6):1
+ s3461:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t6):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t6):2
- s3164:  S1 :: muLB_gprodUp(gw1,s2,t6):1 SOS1_LB_gprodUp(gw1,s2,t6):2
- s3165:  S1 :: muLB_gprodDn(gw1,s2,t6):1 SOS1_LB_gprodDn(gw1,s2,t6):2
- s3166:  S1 :: muLB_gprodUp(gw2,s2,t6):1 SOS1_LB_gprodUp(gw2,s2,t6):2
- s3167:  S1 :: muLB_gprodDn(gw2,s2,t6):1 SOS1_LB_gprodDn(gw2,s2,t6):2
- s3168:  S1 :: muLB_gsin_rt(gs1,s2,t6):1 SOS1_LB_gsin_rt(gs1,s2,t6):2
- s3169:  S1 :: muLB_gsout_rt(gs1,s2,t6):1 SOS1_LB_gsout_rt(gs1,s2,t6):2
- s3170:  S1 :: muLB_gstore_rt(gs1,s2,t6):1 SOS1_LB_gstore_rt(gs1,s2,t6):2
- s3171:  S1 :: muLB_gshed(ng101,s2,t7):1 SOS1_LB_gshed(ng101,s2,t7):2
- s3172:  S1 :: muLB_gshed(ng102,s2,t7):1 SOS1_LB_gshed(ng102,s2,t7):2
- s3173:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t7):1
+ s3462:  S1 :: muLB_gprodUp(gw1,s2,t6):1 SOS1_LB_gprodUp(gw1,s2,t6):2
+ s3463:  S1 :: muLB_gprodDn(gw1,s2,t6):1 SOS1_LB_gprodDn(gw1,s2,t6):2
+ s3464:  S1 :: muLB_gprodUp(gw2,s2,t6):1 SOS1_LB_gprodUp(gw2,s2,t6):2
+ s3465:  S1 :: muLB_gprodDn(gw2,s2,t6):1 SOS1_LB_gprodDn(gw2,s2,t6):2
+ s3466:  S1 :: muLB_gprodUp(gw3,s2,t6):1 SOS1_LB_gprodUp(gw3,s2,t6):2
+ s3467:  S1 :: muLB_gprodDn(gw3,s2,t6):1 SOS1_LB_gprodDn(gw3,s2,t6):2
+ s3468:  S1 :: muLB_gsin_rt(gs1,s2,t6):1 SOS1_LB_gsin_rt(gs1,s2,t6):2
+ s3469:  S1 :: muLB_gsout_rt(gs1,s2,t6):1 SOS1_LB_gsout_rt(gs1,s2,t6):2
+ s3470:  S1 :: muLB_gstore_rt(gs1,s2,t6):1 SOS1_LB_gstore_rt(gs1,s2,t6):2
+ s3471:  S1 :: muLB_gshed(ng101,s2,t7):1 SOS1_LB_gshed(ng101,s2,t7):2
+ s3472:  S1 :: muLB_gshed(ng102,s2,t7):1 SOS1_LB_gshed(ng102,s2,t7):2
+ s3473:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t7):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t7):2
- s3174:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t7):1
+ s3474:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t7):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t7):2
- s3175:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t7):1
+ s3475:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t7):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t7):2
- s3176:  S1 :: muLB_gprodUp(gw1,s2,t7):1 SOS1_LB_gprodUp(gw1,s2,t7):2
- s3177:  S1 :: muLB_gprodDn(gw1,s2,t7):1 SOS1_LB_gprodDn(gw1,s2,t7):2
- s3178:  S1 :: muLB_gprodUp(gw2,s2,t7):1 SOS1_LB_gprodUp(gw2,s2,t7):2
- s3179:  S1 :: muLB_gprodDn(gw2,s2,t7):1 SOS1_LB_gprodDn(gw2,s2,t7):2
- s3180:  S1 :: muLB_gsin_rt(gs1,s2,t7):1 SOS1_LB_gsin_rt(gs1,s2,t7):2
- s3181:  S1 :: muLB_gsout_rt(gs1,s2,t7):1 SOS1_LB_gsout_rt(gs1,s2,t7):2
- s3182:  S1 :: muLB_gstore_rt(gs1,s2,t7):1 SOS1_LB_gstore_rt(gs1,s2,t7):2
- s3183:  S1 :: muLB_gshed(ng101,s2,t8):1 SOS1_LB_gshed(ng101,s2,t8):2
- s3184:  S1 :: muLB_gshed(ng102,s2,t8):1 SOS1_LB_gshed(ng102,s2,t8):2
- s3185:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t8):1
+ s3476:  S1 :: muLB_gprodUp(gw1,s2,t7):1 SOS1_LB_gprodUp(gw1,s2,t7):2
+ s3477:  S1 :: muLB_gprodDn(gw1,s2,t7):1 SOS1_LB_gprodDn(gw1,s2,t7):2
+ s3478:  S1 :: muLB_gprodUp(gw2,s2,t7):1 SOS1_LB_gprodUp(gw2,s2,t7):2
+ s3479:  S1 :: muLB_gprodDn(gw2,s2,t7):1 SOS1_LB_gprodDn(gw2,s2,t7):2
+ s3480:  S1 :: muLB_gprodUp(gw3,s2,t7):1 SOS1_LB_gprodUp(gw3,s2,t7):2
+ s3481:  S1 :: muLB_gprodDn(gw3,s2,t7):1 SOS1_LB_gprodDn(gw3,s2,t7):2
+ s3482:  S1 :: muLB_gsin_rt(gs1,s2,t7):1 SOS1_LB_gsin_rt(gs1,s2,t7):2
+ s3483:  S1 :: muLB_gsout_rt(gs1,s2,t7):1 SOS1_LB_gsout_rt(gs1,s2,t7):2
+ s3484:  S1 :: muLB_gstore_rt(gs1,s2,t7):1 SOS1_LB_gstore_rt(gs1,s2,t7):2
+ s3485:  S1 :: muLB_gshed(ng101,s2,t8):1 SOS1_LB_gshed(ng101,s2,t8):2
+ s3486:  S1 :: muLB_gshed(ng102,s2,t8):1 SOS1_LB_gshed(ng102,s2,t8):2
+ s3487:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t8):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t8):2
- s3186:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t8):1
+ s3488:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t8):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t8):2
- s3187:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t8):1
+ s3489:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t8):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t8):2
- s3188:  S1 :: muLB_gprodUp(gw1,s2,t8):1 SOS1_LB_gprodUp(gw1,s2,t8):2
- s3189:  S1 :: muLB_gprodDn(gw1,s2,t8):1 SOS1_LB_gprodDn(gw1,s2,t8):2
- s3190:  S1 :: muLB_gprodUp(gw2,s2,t8):1 SOS1_LB_gprodUp(gw2,s2,t8):2
- s3191:  S1 :: muLB_gprodDn(gw2,s2,t8):1 SOS1_LB_gprodDn(gw2,s2,t8):2
- s3192:  S1 :: muLB_gsin_rt(gs1,s2,t8):1 SOS1_LB_gsin_rt(gs1,s2,t8):2
- s3193:  S1 :: muLB_gsout_rt(gs1,s2,t8):1 SOS1_LB_gsout_rt(gs1,s2,t8):2
- s3194:  S1 :: muLB_gstore_rt(gs1,s2,t8):1 SOS1_LB_gstore_rt(gs1,s2,t8):2
- s3195:  S1 :: muLB_gshed(ng101,s2,t9):1 SOS1_LB_gshed(ng101,s2,t9):2
- s3196:  S1 :: muLB_gshed(ng102,s2,t9):1 SOS1_LB_gshed(ng102,s2,t9):2
- s3197:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t9):1
+ s3490:  S1 :: muLB_gprodUp(gw1,s2,t8):1 SOS1_LB_gprodUp(gw1,s2,t8):2
+ s3491:  S1 :: muLB_gprodDn(gw1,s2,t8):1 SOS1_LB_gprodDn(gw1,s2,t8):2
+ s3492:  S1 :: muLB_gprodUp(gw2,s2,t8):1 SOS1_LB_gprodUp(gw2,s2,t8):2
+ s3493:  S1 :: muLB_gprodDn(gw2,s2,t8):1 SOS1_LB_gprodDn(gw2,s2,t8):2
+ s3494:  S1 :: muLB_gprodUp(gw3,s2,t8):1 SOS1_LB_gprodUp(gw3,s2,t8):2
+ s3495:  S1 :: muLB_gprodDn(gw3,s2,t8):1 SOS1_LB_gprodDn(gw3,s2,t8):2
+ s3496:  S1 :: muLB_gsin_rt(gs1,s2,t8):1 SOS1_LB_gsin_rt(gs1,s2,t8):2
+ s3497:  S1 :: muLB_gsout_rt(gs1,s2,t8):1 SOS1_LB_gsout_rt(gs1,s2,t8):2
+ s3498:  S1 :: muLB_gstore_rt(gs1,s2,t8):1 SOS1_LB_gstore_rt(gs1,s2,t8):2
+ s3499:  S1 :: muLB_gshed(ng101,s2,t9):1 SOS1_LB_gshed(ng101,s2,t9):2
+ s3500:  S1 :: muLB_gshed(ng102,s2,t9):1 SOS1_LB_gshed(ng102,s2,t9):2
+ s3501:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t9):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t9):2
- s3198:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t9):1
+ s3502:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t9):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t9):2
- s3199:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t9):1
+ s3503:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t9):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t9):2
- s3200:  S1 :: muLB_gprodUp(gw1,s2,t9):1 SOS1_LB_gprodUp(gw1,s2,t9):2
- s3201:  S1 :: muLB_gprodDn(gw1,s2,t9):1 SOS1_LB_gprodDn(gw1,s2,t9):2
- s3202:  S1 :: muLB_gprodUp(gw2,s2,t9):1 SOS1_LB_gprodUp(gw2,s2,t9):2
- s3203:  S1 :: muLB_gprodDn(gw2,s2,t9):1 SOS1_LB_gprodDn(gw2,s2,t9):2
- s3204:  S1 :: muLB_gsin_rt(gs1,s2,t9):1 SOS1_LB_gsin_rt(gs1,s2,t9):2
- s3205:  S1 :: muLB_gsout_rt(gs1,s2,t9):1 SOS1_LB_gsout_rt(gs1,s2,t9):2
- s3206:  S1 :: muLB_gstore_rt(gs1,s2,t9):1 SOS1_LB_gstore_rt(gs1,s2,t9):2
- s3207:  S1 :: muLB_gshed(ng101,s2,t10):1 SOS1_LB_gshed(ng101,s2,t10):2
- s3208:  S1 :: muLB_gshed(ng102,s2,t10):1 SOS1_LB_gshed(ng102,s2,t10):2
- s3209:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t10):1
+ s3504:  S1 :: muLB_gprodUp(gw1,s2,t9):1 SOS1_LB_gprodUp(gw1,s2,t9):2
+ s3505:  S1 :: muLB_gprodDn(gw1,s2,t9):1 SOS1_LB_gprodDn(gw1,s2,t9):2
+ s3506:  S1 :: muLB_gprodUp(gw2,s2,t9):1 SOS1_LB_gprodUp(gw2,s2,t9):2
+ s3507:  S1 :: muLB_gprodDn(gw2,s2,t9):1 SOS1_LB_gprodDn(gw2,s2,t9):2
+ s3508:  S1 :: muLB_gprodUp(gw3,s2,t9):1 SOS1_LB_gprodUp(gw3,s2,t9):2
+ s3509:  S1 :: muLB_gprodDn(gw3,s2,t9):1 SOS1_LB_gprodDn(gw3,s2,t9):2
+ s3510:  S1 :: muLB_gsin_rt(gs1,s2,t9):1 SOS1_LB_gsin_rt(gs1,s2,t9):2
+ s3511:  S1 :: muLB_gsout_rt(gs1,s2,t9):1 SOS1_LB_gsout_rt(gs1,s2,t9):2
+ s3512:  S1 :: muLB_gstore_rt(gs1,s2,t9):1 SOS1_LB_gstore_rt(gs1,s2,t9):2
+ s3513:  S1 :: muLB_gshed(ng101,s2,t10):1 SOS1_LB_gshed(ng101,s2,t10):2
+ s3514:  S1 :: muLB_gshed(ng102,s2,t10):1 SOS1_LB_gshed(ng102,s2,t10):2
+ s3515:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t10):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t10):2
- s3210:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t10):1
+ s3516:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t10):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t10):2
- s3211:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t10):1
+ s3517:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t10):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t10):2
- s3212:  S1 :: muLB_gprodUp(gw1,s2,t10):1 SOS1_LB_gprodUp(gw1,s2,t10):2
- s3213:  S1 :: muLB_gprodDn(gw1,s2,t10):1 SOS1_LB_gprodDn(gw1,s2,t10):2
- s3214:  S1 :: muLB_gprodUp(gw2,s2,t10):1 SOS1_LB_gprodUp(gw2,s2,t10):2
- s3215:  S1 :: muLB_gprodDn(gw2,s2,t10):1 SOS1_LB_gprodDn(gw2,s2,t10):2
- s3216:  S1 :: muLB_gsin_rt(gs1,s2,t10):1 SOS1_LB_gsin_rt(gs1,s2,t10):2
- s3217:  S1 :: muLB_gsout_rt(gs1,s2,t10):1 SOS1_LB_gsout_rt(gs1,s2,t10):2
- s3218:  S1 :: muLB_gstore_rt(gs1,s2,t10):1 SOS1_LB_gstore_rt(gs1,s2,t10):2
- s3219:  S1 :: muLB_gshed(ng101,s2,t11):1 SOS1_LB_gshed(ng101,s2,t11):2
- s3220:  S1 :: muLB_gshed(ng102,s2,t11):1 SOS1_LB_gshed(ng102,s2,t11):2
- s3221:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t11):1
+ s3518:  S1 :: muLB_gprodUp(gw1,s2,t10):1 SOS1_LB_gprodUp(gw1,s2,t10):2
+ s3519:  S1 :: muLB_gprodDn(gw1,s2,t10):1 SOS1_LB_gprodDn(gw1,s2,t10):2
+ s3520:  S1 :: muLB_gprodUp(gw2,s2,t10):1 SOS1_LB_gprodUp(gw2,s2,t10):2
+ s3521:  S1 :: muLB_gprodDn(gw2,s2,t10):1 SOS1_LB_gprodDn(gw2,s2,t10):2
+ s3522:  S1 :: muLB_gprodUp(gw3,s2,t10):1 SOS1_LB_gprodUp(gw3,s2,t10):2
+ s3523:  S1 :: muLB_gprodDn(gw3,s2,t10):1 SOS1_LB_gprodDn(gw3,s2,t10):2
+ s3524:  S1 :: muLB_gsin_rt(gs1,s2,t10):1 SOS1_LB_gsin_rt(gs1,s2,t10):2
+ s3525:  S1 :: muLB_gsout_rt(gs1,s2,t10):1 SOS1_LB_gsout_rt(gs1,s2,t10):2
+ s3526:  S1 :: muLB_gstore_rt(gs1,s2,t10):1 SOS1_LB_gstore_rt(gs1,s2,t10):2
+ s3527:  S1 :: muLB_gshed(ng101,s2,t11):1 SOS1_LB_gshed(ng101,s2,t11):2
+ s3528:  S1 :: muLB_gshed(ng102,s2,t11):1 SOS1_LB_gshed(ng102,s2,t11):2
+ s3529:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t11):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t11):2
- s3222:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t11):1
+ s3530:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t11):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t11):2
- s3223:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t11):1
+ s3531:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t11):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t11):2
- s3224:  S1 :: muLB_gprodUp(gw1,s2,t11):1 SOS1_LB_gprodUp(gw1,s2,t11):2
- s3225:  S1 :: muLB_gprodDn(gw1,s2,t11):1 SOS1_LB_gprodDn(gw1,s2,t11):2
- s3226:  S1 :: muLB_gprodUp(gw2,s2,t11):1 SOS1_LB_gprodUp(gw2,s2,t11):2
- s3227:  S1 :: muLB_gprodDn(gw2,s2,t11):1 SOS1_LB_gprodDn(gw2,s2,t11):2
- s3228:  S1 :: muLB_gsin_rt(gs1,s2,t11):1 SOS1_LB_gsin_rt(gs1,s2,t11):2
- s3229:  S1 :: muLB_gsout_rt(gs1,s2,t11):1 SOS1_LB_gsout_rt(gs1,s2,t11):2
- s3230:  S1 :: muLB_gstore_rt(gs1,s2,t11):1 SOS1_LB_gstore_rt(gs1,s2,t11):2
- s3231:  S1 :: muLB_gshed(ng101,s2,t12):1 SOS1_LB_gshed(ng101,s2,t12):2
- s3232:  S1 :: muLB_gshed(ng102,s2,t12):1 SOS1_LB_gshed(ng102,s2,t12):2
- s3233:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t12):1
+ s3532:  S1 :: muLB_gprodUp(gw1,s2,t11):1 SOS1_LB_gprodUp(gw1,s2,t11):2
+ s3533:  S1 :: muLB_gprodDn(gw1,s2,t11):1 SOS1_LB_gprodDn(gw1,s2,t11):2
+ s3534:  S1 :: muLB_gprodUp(gw2,s2,t11):1 SOS1_LB_gprodUp(gw2,s2,t11):2
+ s3535:  S1 :: muLB_gprodDn(gw2,s2,t11):1 SOS1_LB_gprodDn(gw2,s2,t11):2
+ s3536:  S1 :: muLB_gprodUp(gw3,s2,t11):1 SOS1_LB_gprodUp(gw3,s2,t11):2
+ s3537:  S1 :: muLB_gprodDn(gw3,s2,t11):1 SOS1_LB_gprodDn(gw3,s2,t11):2
+ s3538:  S1 :: muLB_gsin_rt(gs1,s2,t11):1 SOS1_LB_gsin_rt(gs1,s2,t11):2
+ s3539:  S1 :: muLB_gsout_rt(gs1,s2,t11):1 SOS1_LB_gsout_rt(gs1,s2,t11):2
+ s3540:  S1 :: muLB_gstore_rt(gs1,s2,t11):1 SOS1_LB_gstore_rt(gs1,s2,t11):2
+ s3541:  S1 :: muLB_gshed(ng101,s2,t12):1 SOS1_LB_gshed(ng101,s2,t12):2
+ s3542:  S1 :: muLB_gshed(ng102,s2,t12):1 SOS1_LB_gshed(ng102,s2,t12):2
+ s3543:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t12):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t12):2
- s3234:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t12):1
+ s3544:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t12):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t12):2
- s3235:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t12):1
+ s3545:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t12):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t12):2
- s3236:  S1 :: muLB_gprodUp(gw1,s2,t12):1 SOS1_LB_gprodUp(gw1,s2,t12):2
- s3237:  S1 :: muLB_gprodDn(gw1,s2,t12):1 SOS1_LB_gprodDn(gw1,s2,t12):2
- s3238:  S1 :: muLB_gprodUp(gw2,s2,t12):1 SOS1_LB_gprodUp(gw2,s2,t12):2
- s3239:  S1 :: muLB_gprodDn(gw2,s2,t12):1 SOS1_LB_gprodDn(gw2,s2,t12):2
- s3240:  S1 :: muLB_gsin_rt(gs1,s2,t12):1 SOS1_LB_gsin_rt(gs1,s2,t12):2
- s3241:  S1 :: muLB_gsout_rt(gs1,s2,t12):1 SOS1_LB_gsout_rt(gs1,s2,t12):2
- s3242:  S1 :: muLB_gstore_rt(gs1,s2,t12):1 SOS1_LB_gstore_rt(gs1,s2,t12):2
- s3243:  S1 :: muLB_gshed(ng101,s2,t13):1 SOS1_LB_gshed(ng101,s2,t13):2
- s3244:  S1 :: muLB_gshed(ng102,s2,t13):1 SOS1_LB_gshed(ng102,s2,t13):2
- s3245:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t13):1
+ s3546:  S1 :: muLB_gprodUp(gw1,s2,t12):1 SOS1_LB_gprodUp(gw1,s2,t12):2
+ s3547:  S1 :: muLB_gprodDn(gw1,s2,t12):1 SOS1_LB_gprodDn(gw1,s2,t12):2
+ s3548:  S1 :: muLB_gprodUp(gw2,s2,t12):1 SOS1_LB_gprodUp(gw2,s2,t12):2
+ s3549:  S1 :: muLB_gprodDn(gw2,s2,t12):1 SOS1_LB_gprodDn(gw2,s2,t12):2
+ s3550:  S1 :: muLB_gprodUp(gw3,s2,t12):1 SOS1_LB_gprodUp(gw3,s2,t12):2
+ s3551:  S1 :: muLB_gprodDn(gw3,s2,t12):1 SOS1_LB_gprodDn(gw3,s2,t12):2
+ s3552:  S1 :: muLB_gsin_rt(gs1,s2,t12):1 SOS1_LB_gsin_rt(gs1,s2,t12):2
+ s3553:  S1 :: muLB_gsout_rt(gs1,s2,t12):1 SOS1_LB_gsout_rt(gs1,s2,t12):2
+ s3554:  S1 :: muLB_gstore_rt(gs1,s2,t12):1 SOS1_LB_gstore_rt(gs1,s2,t12):2
+ s3555:  S1 :: muLB_gshed(ng101,s2,t13):1 SOS1_LB_gshed(ng101,s2,t13):2
+ s3556:  S1 :: muLB_gshed(ng102,s2,t13):1 SOS1_LB_gshed(ng102,s2,t13):2
+ s3557:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t13):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t13):2
- s3246:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t13):1
+ s3558:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t13):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t13):2
- s3247:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t13):1
+ s3559:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t13):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t13):2
- s3248:  S1 :: muLB_gprodUp(gw1,s2,t13):1 SOS1_LB_gprodUp(gw1,s2,t13):2
- s3249:  S1 :: muLB_gprodDn(gw1,s2,t13):1 SOS1_LB_gprodDn(gw1,s2,t13):2
- s3250:  S1 :: muLB_gprodUp(gw2,s2,t13):1 SOS1_LB_gprodUp(gw2,s2,t13):2
- s3251:  S1 :: muLB_gprodDn(gw2,s2,t13):1 SOS1_LB_gprodDn(gw2,s2,t13):2
- s3252:  S1 :: muLB_gsin_rt(gs1,s2,t13):1 SOS1_LB_gsin_rt(gs1,s2,t13):2
- s3253:  S1 :: muLB_gsout_rt(gs1,s2,t13):1 SOS1_LB_gsout_rt(gs1,s2,t13):2
- s3254:  S1 :: muLB_gstore_rt(gs1,s2,t13):1 SOS1_LB_gstore_rt(gs1,s2,t13):2
- s3255:  S1 :: muLB_gshed(ng101,s2,t14):1 SOS1_LB_gshed(ng101,s2,t14):2
- s3256:  S1 :: muLB_gshed(ng102,s2,t14):1 SOS1_LB_gshed(ng102,s2,t14):2
- s3257:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t14):1
+ s3560:  S1 :: muLB_gprodUp(gw1,s2,t13):1 SOS1_LB_gprodUp(gw1,s2,t13):2
+ s3561:  S1 :: muLB_gprodDn(gw1,s2,t13):1 SOS1_LB_gprodDn(gw1,s2,t13):2
+ s3562:  S1 :: muLB_gprodUp(gw2,s2,t13):1 SOS1_LB_gprodUp(gw2,s2,t13):2
+ s3563:  S1 :: muLB_gprodDn(gw2,s2,t13):1 SOS1_LB_gprodDn(gw2,s2,t13):2
+ s3564:  S1 :: muLB_gprodUp(gw3,s2,t13):1 SOS1_LB_gprodUp(gw3,s2,t13):2
+ s3565:  S1 :: muLB_gprodDn(gw3,s2,t13):1 SOS1_LB_gprodDn(gw3,s2,t13):2
+ s3566:  S1 :: muLB_gsin_rt(gs1,s2,t13):1 SOS1_LB_gsin_rt(gs1,s2,t13):2
+ s3567:  S1 :: muLB_gsout_rt(gs1,s2,t13):1 SOS1_LB_gsout_rt(gs1,s2,t13):2
+ s3568:  S1 :: muLB_gstore_rt(gs1,s2,t13):1 SOS1_LB_gstore_rt(gs1,s2,t13):2
+ s3569:  S1 :: muLB_gshed(ng101,s2,t14):1 SOS1_LB_gshed(ng101,s2,t14):2
+ s3570:  S1 :: muLB_gshed(ng102,s2,t14):1 SOS1_LB_gshed(ng102,s2,t14):2
+ s3571:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t14):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t14):2
- s3258:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t14):1
+ s3572:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t14):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t14):2
- s3259:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t14):1
+ s3573:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t14):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t14):2
- s3260:  S1 :: muLB_gprodUp(gw1,s2,t14):1 SOS1_LB_gprodUp(gw1,s2,t14):2
- s3261:  S1 :: muLB_gprodDn(gw1,s2,t14):1 SOS1_LB_gprodDn(gw1,s2,t14):2
- s3262:  S1 :: muLB_gprodUp(gw2,s2,t14):1 SOS1_LB_gprodUp(gw2,s2,t14):2
- s3263:  S1 :: muLB_gprodDn(gw2,s2,t14):1 SOS1_LB_gprodDn(gw2,s2,t14):2
- s3264:  S1 :: muLB_gsin_rt(gs1,s2,t14):1 SOS1_LB_gsin_rt(gs1,s2,t14):2
- s3265:  S1 :: muLB_gsout_rt(gs1,s2,t14):1 SOS1_LB_gsout_rt(gs1,s2,t14):2
- s3266:  S1 :: muLB_gstore_rt(gs1,s2,t14):1 SOS1_LB_gstore_rt(gs1,s2,t14):2
- s3267:  S1 :: muLB_gshed(ng101,s2,t15):1 SOS1_LB_gshed(ng101,s2,t15):2
- s3268:  S1 :: muLB_gshed(ng102,s2,t15):1 SOS1_LB_gshed(ng102,s2,t15):2
- s3269:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t15):1
+ s3574:  S1 :: muLB_gprodUp(gw1,s2,t14):1 SOS1_LB_gprodUp(gw1,s2,t14):2
+ s3575:  S1 :: muLB_gprodDn(gw1,s2,t14):1 SOS1_LB_gprodDn(gw1,s2,t14):2
+ s3576:  S1 :: muLB_gprodUp(gw2,s2,t14):1 SOS1_LB_gprodUp(gw2,s2,t14):2
+ s3577:  S1 :: muLB_gprodDn(gw2,s2,t14):1 SOS1_LB_gprodDn(gw2,s2,t14):2
+ s3578:  S1 :: muLB_gprodUp(gw3,s2,t14):1 SOS1_LB_gprodUp(gw3,s2,t14):2
+ s3579:  S1 :: muLB_gprodDn(gw3,s2,t14):1 SOS1_LB_gprodDn(gw3,s2,t14):2
+ s3580:  S1 :: muLB_gsin_rt(gs1,s2,t14):1 SOS1_LB_gsin_rt(gs1,s2,t14):2
+ s3581:  S1 :: muLB_gsout_rt(gs1,s2,t14):1 SOS1_LB_gsout_rt(gs1,s2,t14):2
+ s3582:  S1 :: muLB_gstore_rt(gs1,s2,t14):1 SOS1_LB_gstore_rt(gs1,s2,t14):2
+ s3583:  S1 :: muLB_gshed(ng101,s2,t15):1 SOS1_LB_gshed(ng101,s2,t15):2
+ s3584:  S1 :: muLB_gshed(ng102,s2,t15):1 SOS1_LB_gshed(ng102,s2,t15):2
+ s3585:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t15):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t15):2
- s3270:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t15):1
+ s3586:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t15):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t15):2
- s3271:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t15):1
+ s3587:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t15):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t15):2
- s3272:  S1 :: muLB_gprodUp(gw1,s2,t15):1 SOS1_LB_gprodUp(gw1,s2,t15):2
- s3273:  S1 :: muLB_gprodDn(gw1,s2,t15):1 SOS1_LB_gprodDn(gw1,s2,t15):2
- s3274:  S1 :: muLB_gprodUp(gw2,s2,t15):1 SOS1_LB_gprodUp(gw2,s2,t15):2
- s3275:  S1 :: muLB_gprodDn(gw2,s2,t15):1 SOS1_LB_gprodDn(gw2,s2,t15):2
- s3276:  S1 :: muLB_gsin_rt(gs1,s2,t15):1 SOS1_LB_gsin_rt(gs1,s2,t15):2
- s3277:  S1 :: muLB_gsout_rt(gs1,s2,t15):1 SOS1_LB_gsout_rt(gs1,s2,t15):2
- s3278:  S1 :: muLB_gstore_rt(gs1,s2,t15):1 SOS1_LB_gstore_rt(gs1,s2,t15):2
- s3279:  S1 :: muLB_gshed(ng101,s2,t16):1 SOS1_LB_gshed(ng101,s2,t16):2
- s3280:  S1 :: muLB_gshed(ng102,s2,t16):1 SOS1_LB_gshed(ng102,s2,t16):2
- s3281:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t16):1
+ s3588:  S1 :: muLB_gprodUp(gw1,s2,t15):1 SOS1_LB_gprodUp(gw1,s2,t15):2
+ s3589:  S1 :: muLB_gprodDn(gw1,s2,t15):1 SOS1_LB_gprodDn(gw1,s2,t15):2
+ s3590:  S1 :: muLB_gprodUp(gw2,s2,t15):1 SOS1_LB_gprodUp(gw2,s2,t15):2
+ s3591:  S1 :: muLB_gprodDn(gw2,s2,t15):1 SOS1_LB_gprodDn(gw2,s2,t15):2
+ s3592:  S1 :: muLB_gprodUp(gw3,s2,t15):1 SOS1_LB_gprodUp(gw3,s2,t15):2
+ s3593:  S1 :: muLB_gprodDn(gw3,s2,t15):1 SOS1_LB_gprodDn(gw3,s2,t15):2
+ s3594:  S1 :: muLB_gsin_rt(gs1,s2,t15):1 SOS1_LB_gsin_rt(gs1,s2,t15):2
+ s3595:  S1 :: muLB_gsout_rt(gs1,s2,t15):1 SOS1_LB_gsout_rt(gs1,s2,t15):2
+ s3596:  S1 :: muLB_gstore_rt(gs1,s2,t15):1 SOS1_LB_gstore_rt(gs1,s2,t15):2
+ s3597:  S1 :: muLB_gshed(ng101,s2,t16):1 SOS1_LB_gshed(ng101,s2,t16):2
+ s3598:  S1 :: muLB_gshed(ng102,s2,t16):1 SOS1_LB_gshed(ng102,s2,t16):2
+ s3599:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t16):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t16):2
- s3282:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t16):1
+ s3600:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t16):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t16):2
- s3283:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t16):1
+ s3601:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t16):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t16):2
- s3284:  S1 :: muLB_gprodUp(gw1,s2,t16):1 SOS1_LB_gprodUp(gw1,s2,t16):2
- s3285:  S1 :: muLB_gprodDn(gw1,s2,t16):1 SOS1_LB_gprodDn(gw1,s2,t16):2
- s3286:  S1 :: muLB_gprodUp(gw2,s2,t16):1 SOS1_LB_gprodUp(gw2,s2,t16):2
- s3287:  S1 :: muLB_gprodDn(gw2,s2,t16):1 SOS1_LB_gprodDn(gw2,s2,t16):2
- s3288:  S1 :: muLB_gsin_rt(gs1,s2,t16):1 SOS1_LB_gsin_rt(gs1,s2,t16):2
- s3289:  S1 :: muLB_gsout_rt(gs1,s2,t16):1 SOS1_LB_gsout_rt(gs1,s2,t16):2
- s3290:  S1 :: muLB_gstore_rt(gs1,s2,t16):1 SOS1_LB_gstore_rt(gs1,s2,t16):2
- s3291:  S1 :: muLB_gshed(ng101,s2,t17):1 SOS1_LB_gshed(ng101,s2,t17):2
- s3292:  S1 :: muLB_gshed(ng102,s2,t17):1 SOS1_LB_gshed(ng102,s2,t17):2
- s3293:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t17):1
+ s3602:  S1 :: muLB_gprodUp(gw1,s2,t16):1 SOS1_LB_gprodUp(gw1,s2,t16):2
+ s3603:  S1 :: muLB_gprodDn(gw1,s2,t16):1 SOS1_LB_gprodDn(gw1,s2,t16):2
+ s3604:  S1 :: muLB_gprodUp(gw2,s2,t16):1 SOS1_LB_gprodUp(gw2,s2,t16):2
+ s3605:  S1 :: muLB_gprodDn(gw2,s2,t16):1 SOS1_LB_gprodDn(gw2,s2,t16):2
+ s3606:  S1 :: muLB_gprodUp(gw3,s2,t16):1 SOS1_LB_gprodUp(gw3,s2,t16):2
+ s3607:  S1 :: muLB_gprodDn(gw3,s2,t16):1 SOS1_LB_gprodDn(gw3,s2,t16):2
+ s3608:  S1 :: muLB_gsin_rt(gs1,s2,t16):1 SOS1_LB_gsin_rt(gs1,s2,t16):2
+ s3609:  S1 :: muLB_gsout_rt(gs1,s2,t16):1 SOS1_LB_gsout_rt(gs1,s2,t16):2
+ s3610:  S1 :: muLB_gstore_rt(gs1,s2,t16):1 SOS1_LB_gstore_rt(gs1,s2,t16):2
+ s3611:  S1 :: muLB_gshed(ng101,s2,t17):1 SOS1_LB_gshed(ng101,s2,t17):2
+ s3612:  S1 :: muLB_gshed(ng102,s2,t17):1 SOS1_LB_gshed(ng102,s2,t17):2
+ s3613:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t17):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t17):2
- s3294:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t17):1
+ s3614:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t17):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t17):2
- s3295:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t17):1
+ s3615:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t17):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t17):2
- s3296:  S1 :: muLB_gprodUp(gw1,s2,t17):1 SOS1_LB_gprodUp(gw1,s2,t17):2
- s3297:  S1 :: muLB_gprodDn(gw1,s2,t17):1 SOS1_LB_gprodDn(gw1,s2,t17):2
- s3298:  S1 :: muLB_gprodUp(gw2,s2,t17):1 SOS1_LB_gprodUp(gw2,s2,t17):2
- s3299:  S1 :: muLB_gprodDn(gw2,s2,t17):1 SOS1_LB_gprodDn(gw2,s2,t17):2
- s3300:  S1 :: muLB_gsin_rt(gs1,s2,t17):1 SOS1_LB_gsin_rt(gs1,s2,t17):2
- s3301:  S1 :: muLB_gsout_rt(gs1,s2,t17):1 SOS1_LB_gsout_rt(gs1,s2,t17):2
- s3302:  S1 :: muLB_gstore_rt(gs1,s2,t17):1 SOS1_LB_gstore_rt(gs1,s2,t17):2
- s3303:  S1 :: muLB_gshed(ng101,s2,t18):1 SOS1_LB_gshed(ng101,s2,t18):2
- s3304:  S1 :: muLB_gshed(ng102,s2,t18):1 SOS1_LB_gshed(ng102,s2,t18):2
- s3305:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t18):1
+ s3616:  S1 :: muLB_gprodUp(gw1,s2,t17):1 SOS1_LB_gprodUp(gw1,s2,t17):2
+ s3617:  S1 :: muLB_gprodDn(gw1,s2,t17):1 SOS1_LB_gprodDn(gw1,s2,t17):2
+ s3618:  S1 :: muLB_gprodUp(gw2,s2,t17):1 SOS1_LB_gprodUp(gw2,s2,t17):2
+ s3619:  S1 :: muLB_gprodDn(gw2,s2,t17):1 SOS1_LB_gprodDn(gw2,s2,t17):2
+ s3620:  S1 :: muLB_gprodUp(gw3,s2,t17):1 SOS1_LB_gprodUp(gw3,s2,t17):2
+ s3621:  S1 :: muLB_gprodDn(gw3,s2,t17):1 SOS1_LB_gprodDn(gw3,s2,t17):2
+ s3622:  S1 :: muLB_gsin_rt(gs1,s2,t17):1 SOS1_LB_gsin_rt(gs1,s2,t17):2
+ s3623:  S1 :: muLB_gsout_rt(gs1,s2,t17):1 SOS1_LB_gsout_rt(gs1,s2,t17):2
+ s3624:  S1 :: muLB_gstore_rt(gs1,s2,t17):1 SOS1_LB_gstore_rt(gs1,s2,t17):2
+ s3625:  S1 :: muLB_gshed(ng101,s2,t18):1 SOS1_LB_gshed(ng101,s2,t18):2
+ s3626:  S1 :: muLB_gshed(ng102,s2,t18):1 SOS1_LB_gshed(ng102,s2,t18):2
+ s3627:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t18):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t18):2
- s3306:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t18):1
+ s3628:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t18):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t18):2
- s3307:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t18):1
+ s3629:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t18):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t18):2
- s3308:  S1 :: muLB_gprodUp(gw1,s2,t18):1 SOS1_LB_gprodUp(gw1,s2,t18):2
- s3309:  S1 :: muLB_gprodDn(gw1,s2,t18):1 SOS1_LB_gprodDn(gw1,s2,t18):2
- s3310:  S1 :: muLB_gprodUp(gw2,s2,t18):1 SOS1_LB_gprodUp(gw2,s2,t18):2
- s3311:  S1 :: muLB_gprodDn(gw2,s2,t18):1 SOS1_LB_gprodDn(gw2,s2,t18):2
- s3312:  S1 :: muLB_gsin_rt(gs1,s2,t18):1 SOS1_LB_gsin_rt(gs1,s2,t18):2
- s3313:  S1 :: muLB_gsout_rt(gs1,s2,t18):1 SOS1_LB_gsout_rt(gs1,s2,t18):2
- s3314:  S1 :: muLB_gstore_rt(gs1,s2,t18):1 SOS1_LB_gstore_rt(gs1,s2,t18):2
- s3315:  S1 :: muLB_gshed(ng101,s2,t19):1 SOS1_LB_gshed(ng101,s2,t19):2
- s3316:  S1 :: muLB_gshed(ng102,s2,t19):1 SOS1_LB_gshed(ng102,s2,t19):2
- s3317:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t19):1
+ s3630:  S1 :: muLB_gprodUp(gw1,s2,t18):1 SOS1_LB_gprodUp(gw1,s2,t18):2
+ s3631:  S1 :: muLB_gprodDn(gw1,s2,t18):1 SOS1_LB_gprodDn(gw1,s2,t18):2
+ s3632:  S1 :: muLB_gprodUp(gw2,s2,t18):1 SOS1_LB_gprodUp(gw2,s2,t18):2
+ s3633:  S1 :: muLB_gprodDn(gw2,s2,t18):1 SOS1_LB_gprodDn(gw2,s2,t18):2
+ s3634:  S1 :: muLB_gprodUp(gw3,s2,t18):1 SOS1_LB_gprodUp(gw3,s2,t18):2
+ s3635:  S1 :: muLB_gprodDn(gw3,s2,t18):1 SOS1_LB_gprodDn(gw3,s2,t18):2
+ s3636:  S1 :: muLB_gsin_rt(gs1,s2,t18):1 SOS1_LB_gsin_rt(gs1,s2,t18):2
+ s3637:  S1 :: muLB_gsout_rt(gs1,s2,t18):1 SOS1_LB_gsout_rt(gs1,s2,t18):2
+ s3638:  S1 :: muLB_gstore_rt(gs1,s2,t18):1 SOS1_LB_gstore_rt(gs1,s2,t18):2
+ s3639:  S1 :: muLB_gshed(ng101,s2,t19):1 SOS1_LB_gshed(ng101,s2,t19):2
+ s3640:  S1 :: muLB_gshed(ng102,s2,t19):1 SOS1_LB_gshed(ng102,s2,t19):2
+ s3641:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t19):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t19):2
- s3318:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t19):1
+ s3642:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t19):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t19):2
- s3319:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t19):1
+ s3643:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t19):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t19):2
- s3320:  S1 :: muLB_gprodUp(gw1,s2,t19):1 SOS1_LB_gprodUp(gw1,s2,t19):2
- s3321:  S1 :: muLB_gprodDn(gw1,s2,t19):1 SOS1_LB_gprodDn(gw1,s2,t19):2
- s3322:  S1 :: muLB_gprodUp(gw2,s2,t19):1 SOS1_LB_gprodUp(gw2,s2,t19):2
- s3323:  S1 :: muLB_gprodDn(gw2,s2,t19):1 SOS1_LB_gprodDn(gw2,s2,t19):2
- s3324:  S1 :: muLB_gsin_rt(gs1,s2,t19):1 SOS1_LB_gsin_rt(gs1,s2,t19):2
- s3325:  S1 :: muLB_gsout_rt(gs1,s2,t19):1 SOS1_LB_gsout_rt(gs1,s2,t19):2
- s3326:  S1 :: muLB_gstore_rt(gs1,s2,t19):1 SOS1_LB_gstore_rt(gs1,s2,t19):2
- s3327:  S1 :: muLB_gshed(ng101,s2,t20):1 SOS1_LB_gshed(ng101,s2,t20):2
- s3328:  S1 :: muLB_gshed(ng102,s2,t20):1 SOS1_LB_gshed(ng102,s2,t20):2
- s3329:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t20):1
+ s3644:  S1 :: muLB_gprodUp(gw1,s2,t19):1 SOS1_LB_gprodUp(gw1,s2,t19):2
+ s3645:  S1 :: muLB_gprodDn(gw1,s2,t19):1 SOS1_LB_gprodDn(gw1,s2,t19):2
+ s3646:  S1 :: muLB_gprodUp(gw2,s2,t19):1 SOS1_LB_gprodUp(gw2,s2,t19):2
+ s3647:  S1 :: muLB_gprodDn(gw2,s2,t19):1 SOS1_LB_gprodDn(gw2,s2,t19):2
+ s3648:  S1 :: muLB_gprodUp(gw3,s2,t19):1 SOS1_LB_gprodUp(gw3,s2,t19):2
+ s3649:  S1 :: muLB_gprodDn(gw3,s2,t19):1 SOS1_LB_gprodDn(gw3,s2,t19):2
+ s3650:  S1 :: muLB_gsin_rt(gs1,s2,t19):1 SOS1_LB_gsin_rt(gs1,s2,t19):2
+ s3651:  S1 :: muLB_gsout_rt(gs1,s2,t19):1 SOS1_LB_gsout_rt(gs1,s2,t19):2
+ s3652:  S1 :: muLB_gstore_rt(gs1,s2,t19):1 SOS1_LB_gstore_rt(gs1,s2,t19):2
+ s3653:  S1 :: muLB_gshed(ng101,s2,t20):1 SOS1_LB_gshed(ng101,s2,t20):2
+ s3654:  S1 :: muLB_gshed(ng102,s2,t20):1 SOS1_LB_gshed(ng102,s2,t20):2
+ s3655:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t20):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t20):2
- s3330:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t20):1
+ s3656:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t20):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t20):2
- s3331:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t20):1
+ s3657:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t20):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t20):2
- s3332:  S1 :: muLB_gprodUp(gw1,s2,t20):1 SOS1_LB_gprodUp(gw1,s2,t20):2
- s3333:  S1 :: muLB_gprodDn(gw1,s2,t20):1 SOS1_LB_gprodDn(gw1,s2,t20):2
- s3334:  S1 :: muLB_gprodUp(gw2,s2,t20):1 SOS1_LB_gprodUp(gw2,s2,t20):2
- s3335:  S1 :: muLB_gprodDn(gw2,s2,t20):1 SOS1_LB_gprodDn(gw2,s2,t20):2
- s3336:  S1 :: muLB_gsin_rt(gs1,s2,t20):1 SOS1_LB_gsin_rt(gs1,s2,t20):2
- s3337:  S1 :: muLB_gsout_rt(gs1,s2,t20):1 SOS1_LB_gsout_rt(gs1,s2,t20):2
- s3338:  S1 :: muLB_gstore_rt(gs1,s2,t20):1 SOS1_LB_gstore_rt(gs1,s2,t20):2
- s3339:  S1 :: muLB_gshed(ng101,s2,t21):1 SOS1_LB_gshed(ng101,s2,t21):2
- s3340:  S1 :: muLB_gshed(ng102,s2,t21):1 SOS1_LB_gshed(ng102,s2,t21):2
- s3341:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t21):1
+ s3658:  S1 :: muLB_gprodUp(gw1,s2,t20):1 SOS1_LB_gprodUp(gw1,s2,t20):2
+ s3659:  S1 :: muLB_gprodDn(gw1,s2,t20):1 SOS1_LB_gprodDn(gw1,s2,t20):2
+ s3660:  S1 :: muLB_gprodUp(gw2,s2,t20):1 SOS1_LB_gprodUp(gw2,s2,t20):2
+ s3661:  S1 :: muLB_gprodDn(gw2,s2,t20):1 SOS1_LB_gprodDn(gw2,s2,t20):2
+ s3662:  S1 :: muLB_gprodUp(gw3,s2,t20):1 SOS1_LB_gprodUp(gw3,s2,t20):2
+ s3663:  S1 :: muLB_gprodDn(gw3,s2,t20):1 SOS1_LB_gprodDn(gw3,s2,t20):2
+ s3664:  S1 :: muLB_gsin_rt(gs1,s2,t20):1 SOS1_LB_gsin_rt(gs1,s2,t20):2
+ s3665:  S1 :: muLB_gsout_rt(gs1,s2,t20):1 SOS1_LB_gsout_rt(gs1,s2,t20):2
+ s3666:  S1 :: muLB_gstore_rt(gs1,s2,t20):1 SOS1_LB_gstore_rt(gs1,s2,t20):2
+ s3667:  S1 :: muLB_gshed(ng101,s2,t21):1 SOS1_LB_gshed(ng101,s2,t21):2
+ s3668:  S1 :: muLB_gshed(ng102,s2,t21):1 SOS1_LB_gshed(ng102,s2,t21):2
+ s3669:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t21):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t21):2
- s3342:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t21):1
+ s3670:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t21):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t21):2
- s3343:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t21):1
+ s3671:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t21):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t21):2
- s3344:  S1 :: muLB_gprodUp(gw1,s2,t21):1 SOS1_LB_gprodUp(gw1,s2,t21):2
- s3345:  S1 :: muLB_gprodDn(gw1,s2,t21):1 SOS1_LB_gprodDn(gw1,s2,t21):2
- s3346:  S1 :: muLB_gprodUp(gw2,s2,t21):1 SOS1_LB_gprodUp(gw2,s2,t21):2
- s3347:  S1 :: muLB_gprodDn(gw2,s2,t21):1 SOS1_LB_gprodDn(gw2,s2,t21):2
- s3348:  S1 :: muLB_gsin_rt(gs1,s2,t21):1 SOS1_LB_gsin_rt(gs1,s2,t21):2
- s3349:  S1 :: muLB_gsout_rt(gs1,s2,t21):1 SOS1_LB_gsout_rt(gs1,s2,t21):2
- s3350:  S1 :: muLB_gstore_rt(gs1,s2,t21):1 SOS1_LB_gstore_rt(gs1,s2,t21):2
- s3351:  S1 :: muLB_gshed(ng101,s2,t22):1 SOS1_LB_gshed(ng101,s2,t22):2
- s3352:  S1 :: muLB_gshed(ng102,s2,t22):1 SOS1_LB_gshed(ng102,s2,t22):2
- s3353:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t22):1
+ s3672:  S1 :: muLB_gprodUp(gw1,s2,t21):1 SOS1_LB_gprodUp(gw1,s2,t21):2
+ s3673:  S1 :: muLB_gprodDn(gw1,s2,t21):1 SOS1_LB_gprodDn(gw1,s2,t21):2
+ s3674:  S1 :: muLB_gprodUp(gw2,s2,t21):1 SOS1_LB_gprodUp(gw2,s2,t21):2
+ s3675:  S1 :: muLB_gprodDn(gw2,s2,t21):1 SOS1_LB_gprodDn(gw2,s2,t21):2
+ s3676:  S1 :: muLB_gprodUp(gw3,s2,t21):1 SOS1_LB_gprodUp(gw3,s2,t21):2
+ s3677:  S1 :: muLB_gprodDn(gw3,s2,t21):1 SOS1_LB_gprodDn(gw3,s2,t21):2
+ s3678:  S1 :: muLB_gsin_rt(gs1,s2,t21):1 SOS1_LB_gsin_rt(gs1,s2,t21):2
+ s3679:  S1 :: muLB_gsout_rt(gs1,s2,t21):1 SOS1_LB_gsout_rt(gs1,s2,t21):2
+ s3680:  S1 :: muLB_gstore_rt(gs1,s2,t21):1 SOS1_LB_gstore_rt(gs1,s2,t21):2
+ s3681:  S1 :: muLB_gshed(ng101,s2,t22):1 SOS1_LB_gshed(ng101,s2,t22):2
+ s3682:  S1 :: muLB_gshed(ng102,s2,t22):1 SOS1_LB_gshed(ng102,s2,t22):2
+ s3683:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t22):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t22):2
- s3354:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t22):1
+ s3684:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t22):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t22):2
- s3355:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t22):1
+ s3685:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t22):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t22):2
- s3356:  S1 :: muLB_gprodUp(gw1,s2,t22):1 SOS1_LB_gprodUp(gw1,s2,t22):2
- s3357:  S1 :: muLB_gprodDn(gw1,s2,t22):1 SOS1_LB_gprodDn(gw1,s2,t22):2
- s3358:  S1 :: muLB_gprodUp(gw2,s2,t22):1 SOS1_LB_gprodUp(gw2,s2,t22):2
- s3359:  S1 :: muLB_gprodDn(gw2,s2,t22):1 SOS1_LB_gprodDn(gw2,s2,t22):2
- s3360:  S1 :: muLB_gsin_rt(gs1,s2,t22):1 SOS1_LB_gsin_rt(gs1,s2,t22):2
- s3361:  S1 :: muLB_gsout_rt(gs1,s2,t22):1 SOS1_LB_gsout_rt(gs1,s2,t22):2
- s3362:  S1 :: muLB_gstore_rt(gs1,s2,t22):1 SOS1_LB_gstore_rt(gs1,s2,t22):2
- s3363:  S1 :: muLB_gshed(ng101,s2,t23):1 SOS1_LB_gshed(ng101,s2,t23):2
- s3364:  S1 :: muLB_gshed(ng102,s2,t23):1 SOS1_LB_gshed(ng102,s2,t23):2
- s3365:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t23):1
+ s3686:  S1 :: muLB_gprodUp(gw1,s2,t22):1 SOS1_LB_gprodUp(gw1,s2,t22):2
+ s3687:  S1 :: muLB_gprodDn(gw1,s2,t22):1 SOS1_LB_gprodDn(gw1,s2,t22):2
+ s3688:  S1 :: muLB_gprodUp(gw2,s2,t22):1 SOS1_LB_gprodUp(gw2,s2,t22):2
+ s3689:  S1 :: muLB_gprodDn(gw2,s2,t22):1 SOS1_LB_gprodDn(gw2,s2,t22):2
+ s3690:  S1 :: muLB_gprodUp(gw3,s2,t22):1 SOS1_LB_gprodUp(gw3,s2,t22):2
+ s3691:  S1 :: muLB_gprodDn(gw3,s2,t22):1 SOS1_LB_gprodDn(gw3,s2,t22):2
+ s3692:  S1 :: muLB_gsin_rt(gs1,s2,t22):1 SOS1_LB_gsin_rt(gs1,s2,t22):2
+ s3693:  S1 :: muLB_gsout_rt(gs1,s2,t22):1 SOS1_LB_gsout_rt(gs1,s2,t22):2
+ s3694:  S1 :: muLB_gstore_rt(gs1,s2,t22):1 SOS1_LB_gstore_rt(gs1,s2,t22):2
+ s3695:  S1 :: muLB_gshed(ng101,s2,t23):1 SOS1_LB_gshed(ng101,s2,t23):2
+ s3696:  S1 :: muLB_gshed(ng102,s2,t23):1 SOS1_LB_gshed(ng102,s2,t23):2
+ s3697:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t23):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t23):2
- s3366:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t23):1
+ s3698:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t23):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t23):2
- s3367:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t23):1
+ s3699:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t23):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t23):2
- s3368:  S1 :: muLB_gprodUp(gw1,s2,t23):1 SOS1_LB_gprodUp(gw1,s2,t23):2
- s3369:  S1 :: muLB_gprodDn(gw1,s2,t23):1 SOS1_LB_gprodDn(gw1,s2,t23):2
- s3370:  S1 :: muLB_gprodUp(gw2,s2,t23):1 SOS1_LB_gprodUp(gw2,s2,t23):2
- s3371:  S1 :: muLB_gprodDn(gw2,s2,t23):1 SOS1_LB_gprodDn(gw2,s2,t23):2
- s3372:  S1 :: muLB_gsin_rt(gs1,s2,t23):1 SOS1_LB_gsin_rt(gs1,s2,t23):2
- s3373:  S1 :: muLB_gsout_rt(gs1,s2,t23):1 SOS1_LB_gsout_rt(gs1,s2,t23):2
- s3374:  S1 :: muLB_gstore_rt(gs1,s2,t23):1 SOS1_LB_gstore_rt(gs1,s2,t23):2
- s3375:  S1 :: muLB_gshed(ng101,s2,t24):1 SOS1_LB_gshed(ng101,s2,t24):2
- s3376:  S1 :: muLB_gshed(ng102,s2,t24):1 SOS1_LB_gshed(ng102,s2,t24):2
- s3377:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t24):1
+ s3700:  S1 :: muLB_gprodUp(gw1,s2,t23):1 SOS1_LB_gprodUp(gw1,s2,t23):2
+ s3701:  S1 :: muLB_gprodDn(gw1,s2,t23):1 SOS1_LB_gprodDn(gw1,s2,t23):2
+ s3702:  S1 :: muLB_gprodUp(gw2,s2,t23):1 SOS1_LB_gprodUp(gw2,s2,t23):2
+ s3703:  S1 :: muLB_gprodDn(gw2,s2,t23):1 SOS1_LB_gprodDn(gw2,s2,t23):2
+ s3704:  S1 :: muLB_gprodUp(gw3,s2,t23):1 SOS1_LB_gprodUp(gw3,s2,t23):2
+ s3705:  S1 :: muLB_gprodDn(gw3,s2,t23):1 SOS1_LB_gprodDn(gw3,s2,t23):2
+ s3706:  S1 :: muLB_gsin_rt(gs1,s2,t23):1 SOS1_LB_gsin_rt(gs1,s2,t23):2
+ s3707:  S1 :: muLB_gsout_rt(gs1,s2,t23):1 SOS1_LB_gsout_rt(gs1,s2,t23):2
+ s3708:  S1 :: muLB_gstore_rt(gs1,s2,t23):1 SOS1_LB_gstore_rt(gs1,s2,t23):2
+ s3709:  S1 :: muLB_gshed(ng101,s2,t24):1 SOS1_LB_gshed(ng101,s2,t24):2
+ s3710:  S1 :: muLB_gshed(ng102,s2,t24):1 SOS1_LB_gshed(ng102,s2,t24):2
+ s3711:  S1 :: muLB_gflow_sr_rt(('ng101','ng102'),s2,t24):1
      SOS1_LB_gflow_sr_rt(('ng101','ng102'),s2,t24):2
- s3378:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t24):1
+ s3712:  S1 :: muLB_qin_sr_rt(('ng101','ng102'),s2,t24):1
      SOS1_LB_qin_sr_rt(('ng101','ng102'),s2,t24):2
- s3379:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t24):1
+ s3713:  S1 :: muLB_qout_sr_rt(('ng101','ng102'),s2,t24):1
      SOS1_LB_qout_sr_rt(('ng101','ng102'),s2,t24):2
- s3380:  S1 :: muLB_gprodUp(gw1,s2,t24):1 SOS1_LB_gprodUp(gw1,s2,t24):2
- s3381:  S1 :: muLB_gprodDn(gw1,s2,t24):1 SOS1_LB_gprodDn(gw1,s2,t24):2
- s3382:  S1 :: muLB_gprodUp(gw2,s2,t24):1 SOS1_LB_gprodUp(gw2,s2,t24):2
- s3383:  S1 :: muLB_gprodDn(gw2,s2,t24):1 SOS1_LB_gprodDn(gw2,s2,t24):2
- s3384:  S1 :: muLB_gsin_rt(gs1,s2,t24):1 SOS1_LB_gsin_rt(gs1,s2,t24):2
- s3385:  S1 :: muLB_gsout_rt(gs1,s2,t24):1 SOS1_LB_gsout_rt(gs1,s2,t24):2
- s3386:  S1 :: muLB_gstore_rt(gs1,s2,t24):1 SOS1_LB_gstore_rt(gs1,s2,t24):2
+ s3714:  S1 :: muLB_gprodUp(gw1,s2,t24):1 SOS1_LB_gprodUp(gw1,s2,t24):2
+ s3715:  S1 :: muLB_gprodDn(gw1,s2,t24):1 SOS1_LB_gprodDn(gw1,s2,t24):2
+ s3716:  S1 :: muLB_gprodUp(gw2,s2,t24):1 SOS1_LB_gprodUp(gw2,s2,t24):2
+ s3717:  S1 :: muLB_gprodDn(gw2,s2,t24):1 SOS1_LB_gprodDn(gw2,s2,t24):2
+ s3718:  S1 :: muLB_gprodUp(gw3,s2,t24):1 SOS1_LB_gprodUp(gw3,s2,t24):2
+ s3719:  S1 :: muLB_gprodDn(gw3,s2,t24):1 SOS1_LB_gprodDn(gw3,s2,t24):2
+ s3720:  S1 :: muLB_gsin_rt(gs1,s2,t24):1 SOS1_LB_gsin_rt(gs1,s2,t24):2
+ s3721:  S1 :: muLB_gsout_rt(gs1,s2,t24):1 SOS1_LB_gsout_rt(gs1,s2,t24):2
+ s3722:  S1 :: muLB_gstore_rt(gs1,s2,t24):1 SOS1_LB_gstore_rt(gs1,s2,t24):2
 End

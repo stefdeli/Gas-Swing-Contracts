@@ -27,7 +27,7 @@ linefile = filepath_elec + '/lines.csv'
 generatorfile = filepath_elec + '/generators.csv'
 
 WindScen_file = filepath_elec + '/WindScenarios'
-#WindScenProb_file = filepath + '/WindScenProb.csv'
+WindScenProb_file = filepath_elec + '/WindScenProb.csv'
 windfarms_file = filepath_elec + '/windfarms.csv'
 
 eload_file = filepath_elec + '/elec_load.csv'

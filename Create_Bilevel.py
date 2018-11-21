@@ -681,7 +681,6 @@ for t in BLmodel.edata.time:
  
 Obj =  Obj_mGDA +Obj_mGRT -Non_gen_Income - (Dualobj_mSEDA-Non_Gas_gencost)
 
-
 print('Bilevel Model is built')
 BLmodel.model.write('BLmodel.lp')  
 BLmodel.model.setObjective(Obj  ,gb.GRB.MINIMIZE)
@@ -691,13 +690,13 @@ BLmodel.model.Params.MIPFocus = 3
 BLmodel.model.optimize() 
 
 
-ContractPrice=BLmodel.model.getVarByName('ContractPrice(ng102)')
-
-
 #--- Change the Contract Parameters
 
 
-# 
+BLmodel.model.Params.timelimit = 100.0
+BLmodel.model.Params.MIPGapAbs=0.5
+BLmodel.model.Params.MIPFocus = 3
+BLmodel.model.setParam( 'OutputFlag',False )
        
 All_SCdata = pd.read_csv(defaults.SCdata_NoPrice)
 All_SCdata.lambdaC=All_SCdata.lambdaC.astype(float)
@@ -709,8 +708,12 @@ for sc in All_SCdata.GasNode:
 All_SCdata['GFPP']=pd.DataFrame(Sc2Gen)         
 All_SCdata.set_index(['SC_ID','GFPP'], inplace=True) 
     
-
-for contract in All_SCdata.index.get_level_values(0).tolist():
+all_contracts=All_SCdata.index.get_level_values(0).tolist()
+#all_contracts=['sc1','sc2']
+for contract in all_contracts:
+    print ('\n\n########################################################')
+    print ('Processing Contract {0}'.format(contract))
+    print ('########################################################')
     SCdata = All_SCdata.iloc[All_SCdata.index.get_level_values(0) == contract]
     
     SCP = defaultdict(list)
@@ -722,12 +725,10 @@ for contract in All_SCdata.index.get_level_values(0).tolist():
        
     Change_ContractParameters(BLmodel,SCdata,SCP)
     
-    BLmodel.model.reset()
-    BLmodel.model.resetParams()
-    BLmodel.model.Params.timelimit = 100.0
-    BLmodel.model.Params.MIPGapAbs=0.5
-    BLmodel.model.Params.MIPFocus = 3
-    BLmodel.model.setParam( 'OutputFlag', False )
+    #BLmodel.model.reset()
+    #BLmodel.model.resetParams()
+
+    
     BLmodel.model.optimize() 
     
     Result = {}#defaultdict(dict)    
@@ -745,15 +746,26 @@ for contract in All_SCdata.index.get_level_values(0).tolist():
             
         
     for g in SCdata.index.get_level_values(1).tolist():
-        GasNode=All_SCdata.loc[(contract,g)]['GasNode']
-        All_SCdata.lambdaC[(contract,g)]=Result[GasNode]
-        All_SCdata.time[(contract,g)]=BLmodel.model.Runtime
-        All_SCdata.MIPGap[(contract,g)]=BLmodel.model.MIPGap
+        GasNode=All_SCdata['GasNode'][(contract,g)]
+        
+        All_SCdata.at[(contract,g),'lambdaC']=Result[GasNode]
+        All_SCdata.at[(contract,g),'time']=BLmodel.model.Runtime
+        All_SCdata.at[(contract,g),'MIPGap']=BLmodel.model.MIPGap
 
 
 All_SCdata.reset_index(level=1, inplace=True)
 All_SCdata=All_SCdata.drop(['GFPP'],axis=1)    
 All_SCdata.to_csv(defaults.SCdata_NoPrice.replace('.csv','')+'_Complete.csv')    
+
+print(All_SCdata.lambdaC)     
+
+  
+df=pd.DataFrame([[var.VarName,var.x] for var in BLmodel.model.getVars() ],columns=['Name','Value'])
+Gprod1=df[df.Name.str.contains('gprod\(gw1')]
+Gprod2=df[df.Name.str.contains('gprod\(gw2')]
+
+
+Gshed=df[df.Name.str.contains('gshed')]  
         
     
 

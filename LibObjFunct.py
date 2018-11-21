@@ -170,7 +170,7 @@ def _build_objective_gasRT(self):
         Pressure_Degeneracy=0.0 
 
     m.setObjective(gb.quicksum(scenarioprob[s] * (
-                   gb.quicksum(Cost[w][t]*(defaults.RESERVES_UP_PREMIUM*var.gprodUp[gw,s,t] - defaults.RESERVES_DN_PREMIUM*var.gprodDn[gw,s,t] ) for gw in wells for t in time) 
+                   gb.quicksum(Cost[gw][t]*(defaults.RESERVES_UP_PREMIUM*var.gprodUp[gw,s,t] - defaults.RESERVES_DN_PREMIUM*var.gprodDn[gw,s,t] ) for gw in wells for t in time) 
                    +gb.quicksum(defaults.VOLL * var.gshed_rt[gn,s,t] for gn in gnodes for t in time)) for s in scenarios) 
                    +Pressure_Degeneracy,
                    gb.GRB.MINIMIZE) 
