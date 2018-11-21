@@ -51,8 +51,11 @@ GasSlack = 'None'# 'None', 'FixInput', 'FixOutput', 'ConstantOutput'
 FINAL_LP_DEV=0.1 # 0.1 = 10%
 
 # Premium for deployment of reserves 
-RESERVES_UP_PREMIUM = 1.05
-RESERVES_DN_PREMIUM = 0.95
+RESERVES_UP_PREMIUM = 1.0#1.05
+RESERVES_DN_PREMIUM = 1.0 #0.95
+
+RESERVES_UP_PREMIUM_GAS = 1.05#1.05
+RESERVES_DN_PREMIUM_GAS = 0.99 #0.95
 
 # Remove equality constraints and replace lhs==rhs with lhs<=rhs and lhs>=rhs
 REMOVE_EQUALITY=False
@@ -63,3 +66,5 @@ GUROBI_OUTPUT=False
 # HOw should the gas network be modelled: FlowBased or WeymouthApprox
 GasNetwork='FlowBased'
 #GasNetwork='WeymouthApprox'
+ChangeTime=True
+Time=['t1','t2','t3','t4']

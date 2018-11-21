@@ -58,7 +58,7 @@ def _build_objective_StochElecDA(self):
     # Gas Generators 
     gb.quicksum(gaspriceRT[t][Map_Eg2Gn[gen][0]][scengprt[s]]*HR[gen]*(P_up*var.RUp[gen,s,t]-P_dn*var.RDn[gen,s,t]) for gen in gfpp for t in time) +
     # Gas Generators with Contracts
-    gb.quicksum(SCdata.lambdaC[sc,gen]*HR[gen]*(P_up*var.RUpSC[gen,s,t]-P_dn*var.RDnSC[gen,s,t]) for gen in gfpp for sc in swingcontr for t in time) +
+    gb.quicksum(SCdata.lambdaC[sc,gen]*HR[gen]*(var.RUpSC[gen,s,t]-var.RDnSC[gen,s,t]) for gen in gfpp for sc in swingcontr for t in time) +
     # Load Shedding Penalty
     gb.quicksum(defaults.VOLL * var.Lshed[s,t] for t in time)) for s in scenarios),
     gb.GRB.MINIMIZE)
@@ -170,7 +170,7 @@ def _build_objective_gasRT(self):
         Pressure_Degeneracy=0.0 
 
     m.setObjective(gb.quicksum(scenarioprob[s] * (
-                   gb.quicksum(Cost[gw][t]*(defaults.RESERVES_UP_PREMIUM*var.gprodUp[gw,s,t] - defaults.RESERVES_DN_PREMIUM*var.gprodDn[gw,s,t] ) for gw in wells for t in time) 
+                   gb.quicksum(Cost[gw][t]*(defaults.RESERVES_UP_PREMIUM_GAS*var.gprodUp[gw,s,t] - defaults.RESERVES_DN_PREMIUM_GAS*var.gprodDn[gw,s,t] ) for gw in wells for t in time) 
                    +gb.quicksum(defaults.VOLL * var.gshed_rt[gn,s,t] for gn in gnodes for t in time)) for s in scenarios) 
                    +Pressure_Degeneracy,
                    gb.GRB.MINIMIZE) 

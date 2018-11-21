@@ -1,2 +1,5 @@
 GasWell,Node,MinProd,MaxProd,Cost
-gw1,ng101,0,5230,2
+gw1,ng101,0,100,2
+gw2,ng101,0,250,3
+gw3,ng101,0,500,4
+

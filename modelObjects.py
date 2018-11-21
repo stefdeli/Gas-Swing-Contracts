@@ -109,6 +109,9 @@ class StochElecDA():
         
         ElecData_Load._combine_wind_gprt_scenarios(self,bilevel)
         
+        if defaults.ChangeTime==True:
+            self.edata.time=defaults.Time
+        
     def get_results(self):           
         GetResults._results_StochD(self)
         
@@ -243,9 +246,13 @@ class GasDA():
         GasData_Load._load_gasload(self)
         GasData_Load._load_gas_storage(self)
         
+        if defaults.ChangeTime==True:
+            self.gdata.time=defaults.Time
+        
         GasData_Load._load_SCinfo(self)          
         GasData_Load._ActiveSCinfo(self,dispatchElecDA)  
        
+
         #self.gdata.time=['t1']
         
     def _build_model(self):
@@ -363,6 +370,9 @@ class ElecRT():
         ElecData_Load._combine_wind_gprt_scenarios(self,bilevel)
         
         ElecData_Load._load_SCinfo(self)
+        
+        if defaults.ChangeTime==True:
+            self.edata.time=defaults.Time
         
         
     def get_results(self):       
@@ -486,6 +496,8 @@ class GasRT():
         
         GasData_Load._load_SCinfo(self)   
         
+        if defaults.ChangeTime==True:
+            self.gdata.time=defaults.Time
 
       
     def _build_model(self,dispatchGasDA,dispatchElecRT):

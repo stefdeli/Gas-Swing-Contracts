@@ -29,9 +29,6 @@ import matplotlib.pyplot as plt
 class expando(object):
     pass
 
-
-
-
 mSEDA = modelObjects.StochElecDA(bilevel=True)
 dispatchElecDA=mSEDA.optimize()
 

@@ -526,6 +526,8 @@ class Bilevel_Model():
         GasData_Load._load_gasload(self)
         GasData_Load._load_gas_storage(self)
 
+        if defaults.ChangeTime==True:
+            self.gdata.time=defaults.Time
         
         GasData_Load._load_SCinfo(self)
         
@@ -538,6 +540,9 @@ class Bilevel_Model():
         ElecData_Load._combine_wind_gprt_scenarios(self,bilevel=True)
         
         ElecData_Load._load_SCinfo(self)
+        
+        if defaults.ChangeTime==True:
+            self.edata.time=defaults.Time
         
     def _build_model(self):
         self.model = gb.Model()
@@ -685,18 +690,18 @@ print('Bilevel Model is built')
 BLmodel.model.write('BLmodel.lp')  
 BLmodel.model.setObjective(Obj  ,gb.GRB.MINIMIZE)
 BLmodel.model.Params.timelimit = 50.0
-BLmodel.model.Params.MIPGap=0.5
-BLmodel.model.Params.MIPFocus = 3
+
+BLmodel.model.Params.MIPFocus = 1
 BLmodel.model.optimize() 
 
 
 #--- Change the Contract Parameters
 
-
+BLmodel.model.resetParams()
 BLmodel.model.Params.timelimit = 100.0
-BLmodel.model.Params.MIPGapAbs=0.5
-BLmodel.model.Params.MIPFocus = 3
-BLmodel.model.setParam( 'OutputFlag',False )
+#BLmodel.model.Params.MIPGapAbs=0.05
+BLmodel.model.Params.MIPFocus = 1
+BLmodel.model.setParam( 'OutputFlag',True )
        
 All_SCdata = pd.read_csv(defaults.SCdata_NoPrice)
 All_SCdata.lambdaC=All_SCdata.lambdaC.astype(float)
@@ -709,7 +714,7 @@ All_SCdata['GFPP']=pd.DataFrame(Sc2Gen)
 All_SCdata.set_index(['SC_ID','GFPP'], inplace=True) 
     
 all_contracts=All_SCdata.index.get_level_values(0).tolist()
-#all_contracts=['sc1','sc2']
+#all_contracts=['sc4','sc5']
 for contract in all_contracts:
     print ('\n\n########################################################')
     print ('Processing Contract {0}'.format(contract))
