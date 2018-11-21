@@ -207,8 +207,8 @@ class GasDA():
                 dispatchGasDA.gprod   = self.results.gprod
                 dispatchGasDA.qin_sr  = self.results.qin_sr
                 dispatchGasDA.qout_sr = self.results.qout_sr
-                dispatchGasDA.gsin    = self.results.gsin
-                dispatchGasDA.gsout   = self.results.gsout
+#                dispatchGasDA.gsin    = self.results.gsin
+#                dispatchGasDA.gsout   = self.results.gsout
                 dispatchGasDA.LMP     = self.results.lambda_Flow_Bal.xs('k0',level=1)
             else:
                 
@@ -262,6 +262,7 @@ class GasDA():
         
         
         LibVars._build_variables_gasDA(self)    
+        
         LibCns_Gas._build_constraints_gasDA(self)
        
         LibObjFunct._build_objective_gasDA(self)

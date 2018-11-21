@@ -90,11 +90,19 @@ def _build_objective_gasDA(self):
         Pressure_Degeneracy=gb.quicksum( self.gdata.EPS*(var.pr[pl[0],k,t]-var.pr[pl[1],k,t]) for t in time for k in k_obj for pl in pipes)
     else:
         Pressure_Degeneracy=0.0
+        
+    if False:
+        Storage=gb.quicksum(gsdata.Cost[gs]*(var.gsin[gs,k,t]+var.gsout[gs,k,t]) for gs in gstorage for k in k_obj for t in time)
+    else:
+        Storage=0.0
+        
+    Cost= gb.quicksum(Cost[gw][t]*var.gprod[gw,k,t] for gw in wells for k in k_obj for t in time)  
     
-    m.setObjective(gb.quicksum(Cost[gw][t]*var.gprod[gw,k,t] for gw in wells for k in k_obj for t in time)+
-                   Pressure_Degeneracy +
-                   gb.quicksum(defaults.VOLL*var.gas_shed[gn,k,t] for gn in gnodes for t in time for k in k_all) +
-                   gb.quicksum(gsdata.Cost[gs]*(var.gsin[gs,k,t]+var.gsout[gs,k,t]) for gs in gstorage for k in k_obj for t in time),                                      
+    LostLoad= gb.quicksum(defaults.VOLL*var.gas_shed[gn,k,t] for gn in gnodes for t in time for k in k_all)
+        
+        
+    
+    m.setObjective(Cost+   Pressure_Degeneracy +  LostLoad +  Storage,                                      
                    gb.GRB.MINIMIZE) 
     
     # NB! Gas storage costs NOT included in the objective function
@@ -168,6 +176,7 @@ def _build_objective_gasRT(self):
         Pressure_Degeneracy=gb.quicksum( self.gdata.EPS*(var.pr_rt[pl[0],s,t] -var.pr_rt[pl[1],s,t]) for t in time for pl in pipes for s in scenarios)    
     else:
         Pressure_Degeneracy=0.0 
+        
 
     m.setObjective(gb.quicksum(scenarioprob[s] * (
                    gb.quicksum(Cost[gw][t]*(defaults.RESERVES_UP_PREMIUM_GAS*var.gprodUp[gw,s,t] - defaults.RESERVES_DN_PREMIUM_GAS*var.gprodDn[gw,s,t] ) for gw in wells for t in time) 

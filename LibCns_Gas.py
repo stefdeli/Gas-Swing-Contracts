@@ -467,66 +467,66 @@ def _build_constraints_gasDA_WeymouthApprox(self):
         
        
       
-    #--- Gas Storage
-    
-    
-    for gs in self.gdata.gstorage:
-        for t in time:
-            for k in sclim:
-                
-                name='gsinMax({0},{1},{2})'.format(gs,t,k)
-                lhs=var.gsin[gs,k,t]
-                rhs=self.gdata.gstorageinfo['MaxInFlow'][gs]
-                add_constraint(self,lhs,'<=',rhs,name)
-                
-                name='gsoutMax({0},{1},{2})'.format(gs,t,k)
-                lhs=var.gsout[gs,k,t]
-                rhs=self.gdata.gstorageinfo['MaxOutFlow'][gs]
-                add_constraint(self,lhs,'<=',rhs,name)
-                
-                
-                name='gstore_max({0},{1},{2})'.format(gs,t,k)
-                lhs=var.gstore[gs,k,t]
-                rhs=self.gdata.gstorageinfo['MaxStore'][gs]
-                add_constraint(self,lhs,'<=',rhs,name)
-                
-                name='gstore_min({0},{1},{2})'.format(gs,t,k)
-                lhs=var.gstore[gs,k,t]
-                rhs=self.gdata.gstorageinfo['MinStore'][gs]
-                add_constraint(self,lhs,'>=',rhs,name)
-                
-    
-
-    for gs in gstorage:
-        for k in sclim:
-            for tpr, t in zip(time, time[1:]):
-                name='gstor_def({0},{1},{2})'.format(gs,k,t)
-                self.constraints[name]= expando()
-                cc=self.constraints[name]                
-                cc.lhs=var.gstore[gs,k,t]
-                cc.rhs=var.gstore[gs,k,tpr]+var.gsin[gs,k,t]-var.gsout[gs,k,t]
-                cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
-                
-                
-            t = time[0]
-            
-            
-            name='gstor_def({0},{1},{2})'.format(gs,k,t)
-            self.constraints[name]= expando()
-            cc=self.constraints[name]                
-            cc.lhs=var.gstore[gs,k,t]
-            cc.rhs=self.gdata.gstorageinfo['IniStore'][gs]+var.gsin[gs,k,t]-var.gsout[gs,k,t]
-            cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
-            
-        k = 'k0' # Gas storage content defined for 'central case' k0        
-        
-        name='gs_end({0},{1})'.format(gs,k)
-        self.constraints[name]= expando()
-        cc=self.constraints[name]                
-        cc.lhs=var.gstore[gs, k, time[-1]]
-        cc.rhs=self.gdata.gstorageinfo['IniStore'][gs]
-        cc.expr=m.addConstr(cc.lhs>=cc.rhs,name=name)
-            
+#    #--- Gas Storage
+#    
+#    
+#    for gs in self.gdata.gstorage:
+#        for t in time:
+#            for k in sclim:
+#                
+#                name='gsinMax({0},{1},{2})'.format(gs,t,k)
+#                lhs=var.gsin[gs,k,t]
+#                rhs=self.gdata.gstorageinfo['MaxInFlow'][gs]
+#                add_constraint(self,lhs,'<=',rhs,name)
+#                
+#                name='gsoutMax({0},{1},{2})'.format(gs,t,k)
+#                lhs=var.gsout[gs,k,t]
+#                rhs=self.gdata.gstorageinfo['MaxOutFlow'][gs]
+#                add_constraint(self,lhs,'<=',rhs,name)
+#                
+#                
+#                name='gstore_max({0},{1},{2})'.format(gs,t,k)
+#                lhs=var.gstore[gs,k,t]
+#                rhs=self.gdata.gstorageinfo['MaxStore'][gs]
+#                add_constraint(self,lhs,'<=',rhs,name)
+#                
+#                name='gstore_min({0},{1},{2})'.format(gs,t,k)
+#                lhs=var.gstore[gs,k,t]
+#                rhs=self.gdata.gstorageinfo['MinStore'][gs]
+#                add_constraint(self,lhs,'>=',rhs,name)
+#                
+#    
+#
+#    for gs in gstorage:
+#        for k in sclim:
+#            for tpr, t in zip(time, time[1:]):
+#                name='gstor_def({0},{1},{2})'.format(gs,k,t)
+#                self.constraints[name]= expando()
+#                cc=self.constraints[name]                
+#                cc.lhs=var.gstore[gs,k,t]
+#                cc.rhs=var.gstore[gs,k,tpr]+var.gsin[gs,k,t]-var.gsout[gs,k,t]
+#                cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
+#                
+#                
+#            t = time[0]
+#            
+#            
+#            name='gstor_def({0},{1},{2})'.format(gs,k,t)
+#            self.constraints[name]= expando()
+#            cc=self.constraints[name]                
+#            cc.lhs=var.gstore[gs,k,t]
+#            cc.rhs=self.gdata.gstorageinfo['IniStore'][gs]+var.gsin[gs,k,t]-var.gsout[gs,k,t]
+#            cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
+#            
+#        k = 'k0' # Gas storage content defined for 'central case' k0        
+#        
+#        name='gs_end({0},{1})'.format(gs,k)
+#        self.constraints[name]= expando()
+#        cc=self.constraints[name]                
+#        cc.lhs=var.gstore[gs, k, time[-1]]
+#        cc.rhs=self.gdata.gstorageinfo['IniStore'][gs]
+#        cc.expr=m.addConstr(cc.lhs>=cc.rhs,name=name)
+#            
     
 
     #--- Nodal Gas Balance 
@@ -646,11 +646,19 @@ def _build_constraints_gasDA_FlowBased(self):
                     name='gas_balance_da({0},{1},{2})'.format(gn,k,t)               
                     lhs=   gb.quicksum(var.gprod[gw,k,t] for gw in self.gdata.Map_Gn2Gp[gn]) \
                             + gb.quicksum(var.qout_sr[pl,k,t] for pl in self.gdata.nodetoinpplines[gn])\
-                            - gb.quicksum(var.qin_sr[pl,k,t] for pl in self.gdata.nodetooutpplines[gn]) \
-                            + gb.quicksum(var.gsout[gs,k,t] - var.gsin[gs,k,t] for gs in self.gdata.Map_Gn2Gs[gn])
+                            - gb.quicksum(var.qin_sr[pl,k,t] for pl in self.gdata.nodetooutpplines[gn]) 
+                          
                     rhs= self.gdata.gasload[gn][t] + gb.quicksum((Pgen[gen][t]+ \
                                          PgenSC[gen][t]+RSC[gen,k,t])*HR[gen] for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn] )
-                    add_constraint(self,lhs,'==',rhs,name=name)    
+                    add_constraint(self,lhs,'==',rhs,name=name)  
+#                    name='gas_balance_da({0},{1},{2})'.format(gn,k,t)               
+#                    lhs=   gb.quicksum(var.gprod[gw,k,t] for gw in self.gdata.Map_Gn2Gp[gn]) \
+#                            + gb.quicksum(var.qout_sr[pl,k,t] for pl in self.gdata.nodetoinpplines[gn])\
+#                            - gb.quicksum(var.qin_sr[pl,k,t] for pl in self.gdata.nodetooutpplines[gn]) \
+#                            + gb.quicksum(var.gsout[gs,k,t] - var.gsin[gs,k,t] for gs in self.gdata.Map_Gn2Gs[gn])
+#                    rhs= self.gdata.gasload[gn][t] + gb.quicksum((Pgen[gen][t]+ \
+#                                         PgenSC[gen][t]+RSC[gen,k,t])*HR[gen] for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn] )
+#                    add_constraint(self,lhs,'==',rhs,name=name)    
                     
     #--- Gas well maximum production
     for gw in gwells:
@@ -692,57 +700,57 @@ def _build_constraints_gasDA_FlowBased(self):
     #--- Gas Storage
     
     
-    for gs in self.gdata.gstorage:
-        for k in sclim:
-            for t in time:
-           
-                name='gsinMax({0},{1},{2})'.format(gs,t,k)
-                lhs=var.gsin[gs,k,t]
-                rhs=self.gdata.gstorageinfo['MaxInFlow'][gs]
-                add_constraint(self,lhs,'<=',rhs,name)
-                
-                name='gsoutMax({0},{1},{2})'.format(gs,t,k)
-                lhs=var.gsout[gs,k,t]
-                rhs=self.gdata.gstorageinfo['MaxOutFlow'][gs]
-                add_constraint(self,lhs,'<=',rhs,name)
-                
-                
-                name='gstore_max({0},{1},{2})'.format(gs,t,k)
-                lhs=var.gstore[gs,k,t]
-                rhs=self.gdata.gstorageinfo['MaxStore'][gs]
-                add_constraint(self,lhs,'<=',rhs,name)
-                
-                name='gstore_min({0},{1},{2})'.format(gs,t,k)
-                lhs=var.gstore[gs,k,t]
-                rhs=self.gdata.gstorageinfo['MinStore'][gs]
-                add_constraint(self,lhs,'>=',rhs,name)
-            
-            for tpr, t in zip(time, time[1:]):
-                name='gstor_def({0},{1},{2})'.format(gs,k,t)
-                self.constraints[name]= expando()
-                cc=self.constraints[name]                
-                cc.lhs=var.gstore[gs,k,t]
-                cc.rhs=var.gstore[gs,k,tpr]+var.gsin[gs,k,t]-var.gsout[gs,k,t]
-                cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
-                
-            t = time[0]
-                        
-            name='gstor_def({0},{1},{2})'.format(gs,k,t)
-            self.constraints[name]= expando()
-            cc=self.constraints[name]                
-            cc.lhs=var.gstore[gs,k,t]
-            cc.rhs=self.gdata.gstorageinfo['IniStore'][gs]+var.gsin[gs,k,t]-var.gsout[gs,k,t]
-            cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
-
-        
-        k = 'k0' # Gas storage content defined for 'central case' k0        
-        
-        name='gs_end({0},{1})'.format(gs,k)
-        self.constraints[name]= expando()
-        cc=self.constraints[name]                
-        cc.lhs=var.gstore[gs, k, time[-1]]
-        cc.rhs=self.gdata.gstorageinfo['IniStore'][gs]
-        cc.expr=m.addConstr(cc.lhs>=cc.rhs,name=name)
+#    for gs in self.gdata.gstorage:
+#        for k in sclim:
+#            for t in time:
+#           
+#                name='gsinMax({0},{1},{2})'.format(gs,t,k)
+#                lhs=var.gsin[gs,k,t]
+#                rhs=self.gdata.gstorageinfo['MaxInFlow'][gs]
+#                add_constraint(self,lhs,'<=',rhs,name)
+#                
+#                name='gsoutMax({0},{1},{2})'.format(gs,t,k)
+#                lhs=var.gsout[gs,k,t]
+#                rhs=self.gdata.gstorageinfo['MaxOutFlow'][gs]
+#                add_constraint(self,lhs,'<=',rhs,name)
+#                
+#                
+#                name='gstore_max({0},{1},{2})'.format(gs,t,k)
+#                lhs=var.gstore[gs,k,t]
+#                rhs=self.gdata.gstorageinfo['MaxStore'][gs]
+#                add_constraint(self,lhs,'<=',rhs,name)
+#                
+#                name='gstore_min({0},{1},{2})'.format(gs,t,k)
+#                lhs=var.gstore[gs,k,t]
+#                rhs=self.gdata.gstorageinfo['MinStore'][gs]
+#                add_constraint(self,lhs,'>=',rhs,name)
+#            
+#            for tpr, t in zip(time, time[1:]):
+#                name='gstor_def({0},{1},{2})'.format(gs,k,t)
+#                self.constraints[name]= expando()
+#                cc=self.constraints[name]                
+#                cc.lhs=var.gstore[gs,k,t]
+#                cc.rhs=var.gstore[gs,k,tpr]+var.gsin[gs,k,t]-var.gsout[gs,k,t]
+#                cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
+#                
+#            t = time[0]
+#                        
+#            name='gstor_def({0},{1},{2})'.format(gs,k,t)
+#            self.constraints[name]= expando()
+#            cc=self.constraints[name]                
+#            cc.lhs=var.gstore[gs,k,t]
+#            cc.rhs=self.gdata.gstorageinfo['IniStore'][gs]+var.gsin[gs,k,t]-var.gsout[gs,k,t]
+#            cc.expr=m.addConstr(cc.lhs==cc.rhs,name=name)
+#
+#        
+#        k = 'k0' # Gas storage content defined for 'central case' k0        
+#        
+#        name='gs_end({0},{1})'.format(gs,k)
+#        self.constraints[name]= expando()
+#        cc=self.constraints[name]                
+#        cc.lhs=var.gstore[gs, k, time[-1]]
+#        cc.rhs=self.gdata.gstorageinfo['IniStore'][gs]
+#        cc.expr=m.addConstr(cc.lhs>=cc.rhs,name=name)
 
     m.update()
         
@@ -983,56 +991,56 @@ def _build_constraints_gasRT_WeymouthApprox(self,dispatchGasDA,dispatchElecRT):
                     
     #                                        
     # Gas Storage
-    for gs in self.gdata.gstorage:
-        for t in time:
-            for s in scenarios:
-                
-                name='gsinMax_rt({0},{1},{2})'.format(gs,t,s)
-                lhs=var.gsin_rt[gs,s,t]
-                rhs=self.gdata.gstorageinfo['MaxInFlow'][gs]
-                add_constraint(self,lhs,'<=',rhs,name)
-                
-                name='gsoutMax_rt({0},{1},{2})'.format(gs,t,s)
-                lhs=var.gsout_rt[gs,s,t]
-                rhs=self.gdata.gstorageinfo['MaxOutFlow'][gs]
-                add_constraint(self,lhs,'<=',rhs,name)
-                
-                
-                name='gstore_max_rt({0},{1},{2})'.format(gs,t,s)
-                lhs=var.gstore_rt[gs,s,t]
-                rhs=self.gdata.gstorageinfo['MaxStore'][gs]
-                add_constraint(self,lhs,'<=',rhs,name)
-                
-                name='gstore_min_rt({0},{1},{2})'.format(gs,t,s)
-                lhs=var.gstore_rt[gs,s,t]
-                rhs=self.gdata.gstorageinfo['MinStore'][gs]
-                add_constraint(self,lhs,'>=',rhs,name)
-    
-    for gs in gstorage:
-        for s in scenarios:
-            for tpr, t in zip(time, time[1:]):
-                
-                name='gstor_def_rt({0},{1},{2})'.format(gs,s,t)
-                lhs=var.gstore_rt[gs,s,t]
-                rhs= var.gstore_rt[gs,s,tpr]+var.gsin_rt[gs,s,t]-var.gsout_rt[gs,s,t]
-                add_constraint(self,-lhs,'==',-rhs,name)
-        
-        
-            t = time[0]
-        
-            name='gstor_def_rt({0},{1},{2})'.format(gs,s,t)
-            lhs=var.gstore_rt[gs,s,t]
-            rhs= self.gdata.gstorageinfo['IniStore'][gs]+var.gsin_rt[gs,s,t]-var.gsout_rt[gs,s,t]
-            add_constraint(self,-lhs,'==',-rhs,name)
-            
-
-            # At end of time the linepack should be +/- 10% percent of the initial value
-            # Actual deviations stored in defaults.FINAL_LP_DEV
-
-            name='gstor_end({0},{1})'.format(gs,s)
-            lhs=var.gstore_rt[gs, s, time[-1]]
-            rhs= self.gdata.gstorageinfo['IniStore'][gs]
-            add_constraint(self,lhs,'>=',rhs,name)
+#    for gs in self.gdata.gstorage:
+#        for t in time:
+#            for s in scenarios:
+#                
+#                name='gsinMax_rt({0},{1},{2})'.format(gs,t,s)
+#                lhs=var.gsin_rt[gs,s,t]
+#                rhs=self.gdata.gstorageinfo['MaxInFlow'][gs]
+#                add_constraint(self,lhs,'<=',rhs,name)
+#                
+#                name='gsoutMax_rt({0},{1},{2})'.format(gs,t,s)
+#                lhs=var.gsout_rt[gs,s,t]
+#                rhs=self.gdata.gstorageinfo['MaxOutFlow'][gs]
+#                add_constraint(self,lhs,'<=',rhs,name)
+#                
+#                
+#                name='gstore_max_rt({0},{1},{2})'.format(gs,t,s)
+#                lhs=var.gstore_rt[gs,s,t]
+#                rhs=self.gdata.gstorageinfo['MaxStore'][gs]
+#                add_constraint(self,lhs,'<=',rhs,name)
+#                
+#                name='gstore_min_rt({0},{1},{2})'.format(gs,t,s)
+#                lhs=var.gstore_rt[gs,s,t]
+#                rhs=self.gdata.gstorageinfo['MinStore'][gs]
+#                add_constraint(self,lhs,'>=',rhs,name)
+#    
+#    for gs in gstorage:
+#        for s in scenarios:
+#            for tpr, t in zip(time, time[1:]):
+#                
+#                name='gstor_def_rt({0},{1},{2})'.format(gs,s,t)
+#                lhs=var.gstore_rt[gs,s,t]
+#                rhs= var.gstore_rt[gs,s,tpr]+var.gsin_rt[gs,s,t]-var.gsout_rt[gs,s,t]
+#                add_constraint(self,-lhs,'==',-rhs,name)
+#        
+#        
+#            t = time[0]
+#        
+#            name='gstor_def_rt({0},{1},{2})'.format(gs,s,t)
+#            lhs=var.gstore_rt[gs,s,t]
+#            rhs= self.gdata.gstorageinfo['IniStore'][gs]+var.gsin_rt[gs,s,t]-var.gsout_rt[gs,s,t]
+#            add_constraint(self,-lhs,'==',-rhs,name)
+#            
+#
+#            # At end of time the linepack should be +/- 10% percent of the initial value
+#            # Actual deviations stored in defaults.FINAL_LP_DEV
+#
+#            name='gstor_end({0},{1})'.format(gs,s)
+#            lhs=var.gstore_rt[gs, s, time[-1]]
+#            rhs= self.gdata.gstorageinfo['IniStore'][gs]
+#            add_constraint(self,lhs,'>=',rhs,name)
                      
                                     
     
@@ -1137,8 +1145,8 @@ def _build_constraints_gasRT_FlowBased(self,dispatchGasDA,dispatchElecRT):
     HR=self.gdata.generatorinfo.HR
     
     # Day-ahead gas storage schedule
-    gsin = dispatchGasDA.gsin
-    gsout = dispatchGasDA.gsout
+#    gsin = dispatchGasDA.gsin
+#    gsout = dispatchGasDA.gsout
     
         
     for s in scenarios:
@@ -1146,13 +1154,19 @@ def _build_constraints_gasRT_FlowBased(self,dispatchGasDA,dispatchElecRT):
             for t in time:
                 
                 name='gas_balance_rt({0},{1},{2})'.format(gn,s,t)
-                
+
                 lhs=      gb.quicksum(( var.gprodUp[gw,s,t]  - var.gprodDn[gw,s,t]) for gw in self.gdata.Map_Gn2Gp[gn])  \
                         - gb.quicksum(( qout_sr[pl][t]['k0'] - var.qout_sr_rt[pl,s,t]) for pl in self.gdata.nodetoinpplines[gn]) \
                         + gb.quicksum(( qin_sr[pl][t]['k0']  - var.qin_sr_rt[pl,s,t] )   for pl in self.gdata.nodetooutpplines[gn]) \
-                        + gb.quicksum(( var.gsout_rt[gs,s,t] - gsout[gs][t]['k0'] + gsin[gs][t]['k0'] - var.gsin_rt[gs,s,t]) for gs in self.gdata.Map_Gn2Gs[gn]) \
                         - gb.quicksum(Rgfpp[gen][t,s]*(HR[gen]) for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn]) \
                         + var.gshed_rt[gn,s,t] # Load SHedding
+                        
+#                lhs=      gb.quicksum(( var.gprodUp[gw,s,t]  - var.gprodDn[gw,s,t]) for gw in self.gdata.Map_Gn2Gp[gn])  \
+#                        - gb.quicksum(( qout_sr[pl][t]['k0'] - var.qout_sr_rt[pl,s,t]) for pl in self.gdata.nodetoinpplines[gn]) \
+#                        + gb.quicksum(( qin_sr[pl][t]['k0']  - var.qin_sr_rt[pl,s,t] )   for pl in self.gdata.nodetooutpplines[gn]) \
+#                        + gb.quicksum(( var.gsout_rt[gs,s,t] - gsout[gs][t]['k0'] + gsin[gs][t]['k0'] - var.gsin_rt[gs,s,t]) for gs in self.gdata.Map_Gn2Gs[gn]) \
+#                        - gb.quicksum(Rgfpp[gen][t,s]*(HR[gen]) for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn]) \
+#                        + var.gshed_rt[gn,s,t] # Load SHedding
 
                         
                 rhs = np.float64(0.0)  
@@ -1210,56 +1224,56 @@ def _build_constraints_gasRT_FlowBased(self,dispatchGasDA,dispatchElecRT):
                    
     #                                        
     # Gas Storage
-    for gs in self.gdata.gstorage:
-        for t in time:
-            for s in scenarios:
-                
-                name='gsinMax_rt({0},{1},{2})'.format(gs,t,s)
-                lhs=var.gsin_rt[gs,s,t]
-                rhs=self.gdata.gstorageinfo['MaxInFlow'][gs]
-                add_constraint(self,lhs,'<=',rhs,name)
-                
-                name='gsoutMax_rt({0},{1},{2})'.format(gs,t,s)
-                lhs=var.gsout_rt[gs,s,t]
-                rhs=self.gdata.gstorageinfo['MaxOutFlow'][gs]
-                add_constraint(self,lhs,'<=',rhs,name)
-                
-                
-                name='gstore_max_rt({0},{1},{2})'.format(gs,t,s)
-                lhs=var.gstore_rt[gs,s,t]
-                rhs=self.gdata.gstorageinfo['MaxStore'][gs]
-                add_constraint(self,lhs,'<=',rhs,name)
-                
-                name='gstore_min_rt({0},{1},{2})'.format(gs,t,s)
-                lhs=var.gstore_rt[gs,s,t]
-                rhs=self.gdata.gstorageinfo['MinStore'][gs]
-                add_constraint(self,lhs,'>=',rhs,name)
-    
-    for gs in gstorage:
-        for s in scenarios:
-            for tpr, t in zip(time, time[1:]):
-                
-                name='gstor_def_rt({0},{1},{2})'.format(gs,s,t)
-                lhs=var.gstore_rt[gs,s,t]
-                rhs= var.gstore_rt[gs,s,tpr]+var.gsin_rt[gs,s,t]-var.gsout_rt[gs,s,t]
-                add_constraint(self,-lhs,'==',-rhs,name)
-        
-        
-            t = time[0]
-        
-            name='gstor_def_rt({0},{1},{2})'.format(gs,s,t)
-            lhs=var.gstore_rt[gs,s,t]
-            rhs= self.gdata.gstorageinfo['IniStore'][gs]+var.gsin_rt[gs,s,t]-var.gsout_rt[gs,s,t]
-            add_constraint(self,-lhs,'==',-rhs,name)
-            
-
-            # At end of time the linepack should be +/- 10% percent of the initial value
-            # Actual deviations stored in defaults.FINAL_LP_DEV
-
-            name='gstor_end({0},{1})'.format(gs,s)
-            lhs=var.gstore_rt[gs, s, time[-1]]
-            rhs= self.gdata.gstorageinfo['IniStore'][gs]
-            add_constraint(self,lhs,'>=',rhs,name)
+#    for gs in self.gdata.gstorage:
+#        for t in time:
+#            for s in scenarios:
+#                
+#                name='gsinMax_rt({0},{1},{2})'.format(gs,t,s)
+#                lhs=var.gsin_rt[gs,s,t]
+#                rhs=self.gdata.gstorageinfo['MaxInFlow'][gs]
+#                add_constraint(self,lhs,'<=',rhs,name)
+#                
+#                name='gsoutMax_rt({0},{1},{2})'.format(gs,t,s)
+#                lhs=var.gsout_rt[gs,s,t]
+#                rhs=self.gdata.gstorageinfo['MaxOutFlow'][gs]
+#                add_constraint(self,lhs,'<=',rhs,name)
+#                
+#                
+#                name='gstore_max_rt({0},{1},{2})'.format(gs,t,s)
+#                lhs=var.gstore_rt[gs,s,t]
+#                rhs=self.gdata.gstorageinfo['MaxStore'][gs]
+#                add_constraint(self,lhs,'<=',rhs,name)
+#                
+#                name='gstore_min_rt({0},{1},{2})'.format(gs,t,s)
+#                lhs=var.gstore_rt[gs,s,t]
+#                rhs=self.gdata.gstorageinfo['MinStore'][gs]
+#                add_constraint(self,lhs,'>=',rhs,name)
+#    
+#    for gs in gstorage:
+#        for s in scenarios:
+#            for tpr, t in zip(time, time[1:]):
+#                
+#                name='gstor_def_rt({0},{1},{2})'.format(gs,s,t)
+#                lhs=var.gstore_rt[gs,s,t]
+#                rhs= var.gstore_rt[gs,s,tpr]+var.gsin_rt[gs,s,t]-var.gsout_rt[gs,s,t]
+#                add_constraint(self,-lhs,'==',-rhs,name)
+#        
+#        
+#            t = time[0]
+#        
+#            name='gstor_def_rt({0},{1},{2})'.format(gs,s,t)
+#            lhs=var.gstore_rt[gs,s,t]
+#            rhs= self.gdata.gstorageinfo['IniStore'][gs]+var.gsin_rt[gs,s,t]-var.gsout_rt[gs,s,t]
+#            add_constraint(self,-lhs,'==',-rhs,name)
+#            
+#
+#            # At end of time the linepack should be +/- 10% percent of the initial value
+#            # Actual deviations stored in defaults.FINAL_LP_DEV
+#
+#            name='gstor_end({0},{1})'.format(gs,s)
+#            lhs=var.gstore_rt[gs, s, time[-1]]
+#            rhs= self.gdata.gstorageinfo['IniStore'][gs]
+#            add_constraint(self,lhs,'>=',rhs,name)
                      
                                     
     
