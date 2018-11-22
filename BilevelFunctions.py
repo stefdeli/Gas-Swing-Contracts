@@ -808,9 +808,9 @@ def Loop_Contracts_Price(BLmodel):
         
     all_contracts=All_SCdata.index.get_level_values(0).tolist()
     all_contracts_r=list(reversed(all_contracts))
-    #all_contracts=['sc4','sc5']
+    all_contracts=['sc1']
     #all_contracts_r=[]
-    for contract in all_contracts_r:
+    for contract in all_contracts:
         print ('\n\n########################################################')
         print ('Processing Contract {0}'.format(contract))
         print ('########################################################')
@@ -863,3 +863,5 @@ def Loop_Contracts_Price(BLmodel):
     All_SCdata.to_csv(defaults.SCdata_NoPrice.replace('.csv','')+'_Complete.csv')    
     
     print(All_SCdata.lambdaC)   
+    
+    return BLmodel

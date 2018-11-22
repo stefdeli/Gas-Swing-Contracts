@@ -1,23 +1,23 @@
 \ LP format - for model browsing. Use MPS format to capture full model detail.
 Minimize
-  8 RUp(g1,s1,t1) - 8 RDn(g1,s1,t1) + 13 RUp(g2,s1,t1) - 13 RDn(g2,s1,t1)
+  8 RUp(g1,s1,t1) - 8 RDn(g1,s1,t1) + 8.5 RUp(g2,s1,t1) - 8.5 RDn(g2,s1,t1)
    + 5.6 RUpSC(g1,s1,t1) - 5.6 RDnSC(g1,s1,t1) + 5000 Lshed(s1,t1)
-   + 8 RUp(g1,s1,t2) - 8 RDn(g1,s1,t2) + 13 RUp(g2,s1,t2)
-   - 13 RDn(g2,s1,t2) + 5.6 RUpSC(g1,s1,t2) - 5.6 RDnSC(g1,s1,t2)
+   + 8 RUp(g1,s1,t2) - 8 RDn(g1,s1,t2) + 8.5 RUp(g2,s1,t2)
+   - 8.5 RDn(g2,s1,t2) + 5.6 RUpSC(g1,s1,t2) - 5.6 RDnSC(g1,s1,t2)
    + 5000 Lshed(s1,t2) + 8 RUp(g1,s1,t3) - 8 RDn(g1,s1,t3)
-   + 13 RUp(g2,s1,t3) - 13 RDn(g2,s1,t3) + 5.6 RUpSC(g1,s1,t3)
+   + 8.5 RUp(g2,s1,t3) - 8.5 RDn(g2,s1,t3) + 5.6 RUpSC(g1,s1,t3)
    - 5.6 RDnSC(g1,s1,t3) + 5000 Lshed(s1,t3) + 8 RUp(g1,s1,t4)
-   - 8 RDn(g1,s1,t4) + 13 RUp(g2,s1,t4) - 13 RDn(g2,s1,t4)
+   - 8 RDn(g1,s1,t4) + 8.5 RUp(g2,s1,t4) - 8.5 RDn(g2,s1,t4)
    + 5.6 RUpSC(g1,s1,t4) - 5.6 RDnSC(g1,s1,t4) + 5000 Lshed(s1,t4)
-   + 8 RUp(g1,s2,t1) - 8 RDn(g1,s2,t1) + 13 RUp(g2,s2,t1)
-   - 13 RDn(g2,s2,t1) + 5.6 RUpSC(g1,s2,t1) - 5.6 RDnSC(g1,s2,t1)
+   + 8 RUp(g1,s2,t1) - 8 RDn(g1,s2,t1) + 8.5 RUp(g2,s2,t1)
+   - 8.5 RDn(g2,s2,t1) + 5.6 RUpSC(g1,s2,t1) - 5.6 RDnSC(g1,s2,t1)
    + 5000 Lshed(s2,t1) + 8 RUp(g1,s2,t2) - 8 RDn(g1,s2,t2)
-   + 13 RUp(g2,s2,t2) - 13 RDn(g2,s2,t2) + 5.6 RUpSC(g1,s2,t2)
+   + 8.5 RUp(g2,s2,t2) - 8.5 RDn(g2,s2,t2) + 5.6 RUpSC(g1,s2,t2)
    - 5.6 RDnSC(g1,s2,t2) + 5000 Lshed(s2,t2) + 8 RUp(g1,s2,t3)
-   - 8 RDn(g1,s2,t3) + 13 RUp(g2,s2,t3) - 13 RDn(g2,s2,t3)
+   - 8 RDn(g1,s2,t3) + 8.5 RUp(g2,s2,t3) - 8.5 RDn(g2,s2,t3)
    + 5.6 RUpSC(g1,s2,t3) - 5.6 RDnSC(g1,s2,t3) + 5000 Lshed(s2,t3)
-   + 8 RUp(g1,s2,t4) - 8 RDn(g1,s2,t4) + 13 RUp(g2,s2,t4)
-   - 13 RDn(g2,s2,t4) + 5.6 RUpSC(g1,s2,t4) - 5.6 RDnSC(g1,s2,t4)
+   + 8 RUp(g1,s2,t4) - 8 RDn(g1,s2,t4) + 8.5 RUp(g2,s2,t4)
+   - 8.5 RDn(g2,s2,t4) + 5.6 RUpSC(g1,s2,t4) - 5.6 RDnSC(g1,s2,t4)
    + 5000 Lshed(s2,t4)
 Subject To
  PowerBalance_RT(s1,t1): RUp(g1,s1,t1) - RDn(g1,s1,t1) + RUp(g2,s1,t1)
@@ -44,38 +44,38 @@ Subject To
  PowerBalance_RT(s2,t4): RUp(g1,s2,t4) - RDn(g1,s2,t4) + RUp(g2,s2,t4)
    - RDn(g2,s2,t4) + RUpSC(g1,s2,t4) - RDnSC(g1,s2,t4) - Wspill(w1,s2,t4)
    + Lshed(s2,t4) = -10.24495167
- RegUp_max_RT(g1,s1,t1): RUp(g1,s1,t1) <= 110
+ RegUp_max_RT(g1,s1,t1): RUp(g1,s1,t1) <= 100
  RegDown_max_RT(g1,s1,t1): RDn(g1,s1,t1) <= 0
  RegUp_max_RT(g2,s1,t1): RUp(g2,s1,t1) <= 0
- RegDown_max_RT(g2,s1,t1): RDn(g2,s1,t1) <= 124
- RegUp_max_RT(g1,s1,t2): RUp(g1,s1,t2) <= 108.70590477
+ RegDown_max_RT(g2,s1,t1): RDn(g2,s1,t1) <= 114
+ RegUp_max_RT(g1,s1,t2): RUp(g1,s1,t2) <= 100
  RegDown_max_RT(g1,s1,t2): RDn(g1,s1,t2) <= 0
  RegUp_max_RT(g2,s1,t2): RUp(g2,s1,t2) <= 0
- RegDown_max_RT(g2,s1,t2): RDn(g2,s1,t2) <= 123
- RegUp_max_RT(g1,s1,t3): RUp(g1,s1,t3) <= 107.5
+ RegDown_max_RT(g2,s1,t2): RDn(g2,s1,t2) <= 115
+ RegUp_max_RT(g1,s1,t3): RUp(g1,s1,t3) <= 100
  RegDown_max_RT(g1,s1,t3): RDn(g1,s1,t3) <= 0
  RegUp_max_RT(g2,s1,t3): RUp(g2,s1,t3) <= 0
- RegDown_max_RT(g2,s1,t3): RDn(g2,s1,t3) <= 118
- RegUp_max_RT(g1,s1,t4): RUp(g1,s1,t4) <= 106.46446609
+ RegDown_max_RT(g2,s1,t3): RDn(g2,s1,t3) <= 110
+ RegUp_max_RT(g1,s1,t4): RUp(g1,s1,t4) <= 100
  RegDown_max_RT(g1,s1,t4): RDn(g1,s1,t4) <= 0
  RegUp_max_RT(g2,s1,t4): RUp(g2,s1,t4) <= 0
- RegDown_max_RT(g2,s1,t4): RDn(g2,s1,t4) <= 117
- RegUp_max_RT(g1,s2,t1): RUp(g1,s2,t1) <= 110
+ RegDown_max_RT(g2,s1,t4): RDn(g2,s1,t4) <= 111
+ RegUp_max_RT(g1,s2,t1): RUp(g1,s2,t1) <= 100
  RegDown_max_RT(g1,s2,t1): RDn(g1,s2,t1) <= 0
  RegUp_max_RT(g2,s2,t1): RUp(g2,s2,t1) <= 0
- RegDown_max_RT(g2,s2,t1): RDn(g2,s2,t1) <= 124
- RegUp_max_RT(g1,s2,t2): RUp(g1,s2,t2) <= 108.70590477
+ RegDown_max_RT(g2,s2,t1): RDn(g2,s2,t1) <= 114
+ RegUp_max_RT(g1,s2,t2): RUp(g1,s2,t2) <= 100
  RegDown_max_RT(g1,s2,t2): RDn(g1,s2,t2) <= 0
  RegUp_max_RT(g2,s2,t2): RUp(g2,s2,t2) <= 0
- RegDown_max_RT(g2,s2,t2): RDn(g2,s2,t2) <= 123
- RegUp_max_RT(g1,s2,t3): RUp(g1,s2,t3) <= 107.5
+ RegDown_max_RT(g2,s2,t2): RDn(g2,s2,t2) <= 115
+ RegUp_max_RT(g1,s2,t3): RUp(g1,s2,t3) <= 100
  RegDown_max_RT(g1,s2,t3): RDn(g1,s2,t3) <= 0
  RegUp_max_RT(g2,s2,t3): RUp(g2,s2,t3) <= 0
- RegDown_max_RT(g2,s2,t3): RDn(g2,s2,t3) <= 118
- RegUp_max_RT(g1,s2,t4): RUp(g1,s2,t4) <= 106.46446609
+ RegDown_max_RT(g2,s2,t3): RDn(g2,s2,t3) <= 110
+ RegUp_max_RT(g1,s2,t4): RUp(g1,s2,t4) <= 100
  RegDown_max_RT(g1,s2,t4): RDn(g1,s2,t4) <= 0
  RegUp_max_RT(g2,s2,t4): RUp(g2,s2,t4) <= 0
- RegDown_max_RT(g2,s2,t4): RDn(g2,s2,t4) <= 117
+ RegDown_max_RT(g2,s2,t4): RDn(g2,s2,t4) <= 111
  RegUpSC_max_RT(g1,s1,t1): RUpSC(g1,s1,t1) <= 0
  RegDnSC_max_RT(g1,s1,t1): RDnSC(g1,s1,t1) <= 0
  RegUpSC_max_RT(g1,s1,t2): RUpSC(g1,s1,t2) <= 0
@@ -109,69 +109,69 @@ Subject To
  Max_wind_spill_RT(w1,s2,t3): Wspill(w1,s2,t3) <= 9.571274219999999
  Max_wind_spill_RT(w1,s2,t4): Wspill(w1,s2,t4) <= 10.24495167
  SOS1_RegUp_max_RT(g1,s1,t1): RUp(g1,s1,t1) + SOS1_RegUp_max_RT(g1,s1,t1)
-   = 110
+   = 100
  SOS1_RegDown_max_RT(g1,s1,t1): RDn(g1,s1,t1)
    + SOS1_RegDown_max_RT(g1,s1,t1) = 0
  SOS1_RegUp_max_RT(g2,s1,t1): RUp(g2,s1,t1) + SOS1_RegUp_max_RT(g2,s1,t1)
    = 0
  SOS1_RegDown_max_RT(g2,s1,t1): RDn(g2,s1,t1)
-   + SOS1_RegDown_max_RT(g2,s1,t1) = 124
+   + SOS1_RegDown_max_RT(g2,s1,t1) = 114
  SOS1_RegUp_max_RT(g1,s1,t2): RUp(g1,s1,t2) + SOS1_RegUp_max_RT(g1,s1,t2)
-   = 108.70590477
+   = 100
  SOS1_RegDown_max_RT(g1,s1,t2): RDn(g1,s1,t2)
    + SOS1_RegDown_max_RT(g1,s1,t2) = 0
  SOS1_RegUp_max_RT(g2,s1,t2): RUp(g2,s1,t2) + SOS1_RegUp_max_RT(g2,s1,t2)
    = 0
  SOS1_RegDown_max_RT(g2,s1,t2): RDn(g2,s1,t2)
-   + SOS1_RegDown_max_RT(g2,s1,t2) = 123
+   + SOS1_RegDown_max_RT(g2,s1,t2) = 115
  SOS1_RegUp_max_RT(g1,s1,t3): RUp(g1,s1,t3) + SOS1_RegUp_max_RT(g1,s1,t3)
-   = 107.5
+   = 100
  SOS1_RegDown_max_RT(g1,s1,t3): RDn(g1,s1,t3)
    + SOS1_RegDown_max_RT(g1,s1,t3) = 0
  SOS1_RegUp_max_RT(g2,s1,t3): RUp(g2,s1,t3) + SOS1_RegUp_max_RT(g2,s1,t3)
    = 0
  SOS1_RegDown_max_RT(g2,s1,t3): RDn(g2,s1,t3)
-   + SOS1_RegDown_max_RT(g2,s1,t3) = 118
+   + SOS1_RegDown_max_RT(g2,s1,t3) = 110
  SOS1_RegUp_max_RT(g1,s1,t4): RUp(g1,s1,t4) + SOS1_RegUp_max_RT(g1,s1,t4)
-   = 106.46446609
+   = 100
  SOS1_RegDown_max_RT(g1,s1,t4): RDn(g1,s1,t4)
    + SOS1_RegDown_max_RT(g1,s1,t4) = 0
  SOS1_RegUp_max_RT(g2,s1,t4): RUp(g2,s1,t4) + SOS1_RegUp_max_RT(g2,s1,t4)
    = 0
  SOS1_RegDown_max_RT(g2,s1,t4): RDn(g2,s1,t4)
-   + SOS1_RegDown_max_RT(g2,s1,t4) = 117
+   + SOS1_RegDown_max_RT(g2,s1,t4) = 111
  SOS1_RegUp_max_RT(g1,s2,t1): RUp(g1,s2,t1) + SOS1_RegUp_max_RT(g1,s2,t1)
-   = 110
+   = 100
  SOS1_RegDown_max_RT(g1,s2,t1): RDn(g1,s2,t1)
    + SOS1_RegDown_max_RT(g1,s2,t1) = 0
  SOS1_RegUp_max_RT(g2,s2,t1): RUp(g2,s2,t1) + SOS1_RegUp_max_RT(g2,s2,t1)
    = 0
  SOS1_RegDown_max_RT(g2,s2,t1): RDn(g2,s2,t1)
-   + SOS1_RegDown_max_RT(g2,s2,t1) = 124
+   + SOS1_RegDown_max_RT(g2,s2,t1) = 114
  SOS1_RegUp_max_RT(g1,s2,t2): RUp(g1,s2,t2) + SOS1_RegUp_max_RT(g1,s2,t2)
-   = 108.70590477
+   = 100
  SOS1_RegDown_max_RT(g1,s2,t2): RDn(g1,s2,t2)
    + SOS1_RegDown_max_RT(g1,s2,t2) = 0
  SOS1_RegUp_max_RT(g2,s2,t2): RUp(g2,s2,t2) + SOS1_RegUp_max_RT(g2,s2,t2)
    = 0
  SOS1_RegDown_max_RT(g2,s2,t2): RDn(g2,s2,t2)
-   + SOS1_RegDown_max_RT(g2,s2,t2) = 123
+   + SOS1_RegDown_max_RT(g2,s2,t2) = 115
  SOS1_RegUp_max_RT(g1,s2,t3): RUp(g1,s2,t3) + SOS1_RegUp_max_RT(g1,s2,t3)
-   = 107.5
+   = 100
  SOS1_RegDown_max_RT(g1,s2,t3): RDn(g1,s2,t3)
    + SOS1_RegDown_max_RT(g1,s2,t3) = 0
  SOS1_RegUp_max_RT(g2,s2,t3): RUp(g2,s2,t3) + SOS1_RegUp_max_RT(g2,s2,t3)
    = 0
  SOS1_RegDown_max_RT(g2,s2,t3): RDn(g2,s2,t3)
-   + SOS1_RegDown_max_RT(g2,s2,t3) = 118
+   + SOS1_RegDown_max_RT(g2,s2,t3) = 110
  SOS1_RegUp_max_RT(g1,s2,t4): RUp(g1,s2,t4) + SOS1_RegUp_max_RT(g1,s2,t4)
-   = 106.46446609
+   = 100
  SOS1_RegDown_max_RT(g1,s2,t4): RDn(g1,s2,t4)
    + SOS1_RegDown_max_RT(g1,s2,t4) = 0
  SOS1_RegUp_max_RT(g2,s2,t4): RUp(g2,s2,t4) + SOS1_RegUp_max_RT(g2,s2,t4)
    = 0
  SOS1_RegDown_max_RT(g2,s2,t4): RDn(g2,s2,t4)
-   + SOS1_RegDown_max_RT(g2,s2,t4) = 117
+   + SOS1_RegDown_max_RT(g2,s2,t4) = 111
  SOS1_RegUpSC_max_RT(g1,s1,t1): RUpSC(g1,s1,t1)
    + SOS1_RegUpSC_max_RT(g1,s1,t1) = 0
  SOS1_RegDnSC_max_RT(g1,s1,t1): RDnSC(g1,s1,t1)
@@ -313,9 +313,9 @@ Subject To
  dLag/RDn(g1,s1,t1): lambda_PowerBalance_RT(s1,t1)
    + mu_RegDown_max_RT(g1,s1,t1) - muLB_RDn(g1,s1,t1) = 8
  dLag/RUp(g2,s1,t1): - lambda_PowerBalance_RT(s1,t1)
-   + mu_RegUp_max_RT(g2,s1,t1) - muLB_RUp(g2,s1,t1) = -13
+   + mu_RegUp_max_RT(g2,s1,t1) - muLB_RUp(g2,s1,t1) = -8.5
  dLag/RDn(g2,s1,t1): lambda_PowerBalance_RT(s1,t1)
-   + mu_RegDown_max_RT(g2,s1,t1) - muLB_RDn(g2,s1,t1) = 13
+   + mu_RegDown_max_RT(g2,s1,t1) - muLB_RDn(g2,s1,t1) = 8.5
  dLag/RUpSC(g1,s1,t1): - lambda_PowerBalance_RT(s1,t1)
    + mu_RegUpSC_max_RT(g1,s1,t1) - muLB_RUpSC(g1,s1,t1) = -5.6
  dLag/RDnSC(g1,s1,t1): lambda_PowerBalance_RT(s1,t1)
@@ -329,9 +329,9 @@ Subject To
  dLag/RDn(g1,s1,t2): lambda_PowerBalance_RT(s1,t2)
    + mu_RegDown_max_RT(g1,s1,t2) - muLB_RDn(g1,s1,t2) = 8
  dLag/RUp(g2,s1,t2): - lambda_PowerBalance_RT(s1,t2)
-   + mu_RegUp_max_RT(g2,s1,t2) - muLB_RUp(g2,s1,t2) = -13
+   + mu_RegUp_max_RT(g2,s1,t2) - muLB_RUp(g2,s1,t2) = -8.5
  dLag/RDn(g2,s1,t2): lambda_PowerBalance_RT(s1,t2)
-   + mu_RegDown_max_RT(g2,s1,t2) - muLB_RDn(g2,s1,t2) = 13
+   + mu_RegDown_max_RT(g2,s1,t2) - muLB_RDn(g2,s1,t2) = 8.5
  dLag/RUpSC(g1,s1,t2): - lambda_PowerBalance_RT(s1,t2)
    + mu_RegUpSC_max_RT(g1,s1,t2) - muLB_RUpSC(g1,s1,t2) = -5.6
  dLag/RDnSC(g1,s1,t2): lambda_PowerBalance_RT(s1,t2)
@@ -345,9 +345,9 @@ Subject To
  dLag/RDn(g1,s1,t3): lambda_PowerBalance_RT(s1,t3)
    + mu_RegDown_max_RT(g1,s1,t3) - muLB_RDn(g1,s1,t3) = 8
  dLag/RUp(g2,s1,t3): - lambda_PowerBalance_RT(s1,t3)
-   + mu_RegUp_max_RT(g2,s1,t3) - muLB_RUp(g2,s1,t3) = -13
+   + mu_RegUp_max_RT(g2,s1,t3) - muLB_RUp(g2,s1,t3) = -8.5
  dLag/RDn(g2,s1,t3): lambda_PowerBalance_RT(s1,t3)
-   + mu_RegDown_max_RT(g2,s1,t3) - muLB_RDn(g2,s1,t3) = 13
+   + mu_RegDown_max_RT(g2,s1,t3) - muLB_RDn(g2,s1,t3) = 8.5
  dLag/RUpSC(g1,s1,t3): - lambda_PowerBalance_RT(s1,t3)
    + mu_RegUpSC_max_RT(g1,s1,t3) - muLB_RUpSC(g1,s1,t3) = -5.6
  dLag/RDnSC(g1,s1,t3): lambda_PowerBalance_RT(s1,t3)
@@ -361,9 +361,9 @@ Subject To
  dLag/RDn(g1,s1,t4): lambda_PowerBalance_RT(s1,t4)
    + mu_RegDown_max_RT(g1,s1,t4) - muLB_RDn(g1,s1,t4) = 8
  dLag/RUp(g2,s1,t4): - lambda_PowerBalance_RT(s1,t4)
-   + mu_RegUp_max_RT(g2,s1,t4) - muLB_RUp(g2,s1,t4) = -13
+   + mu_RegUp_max_RT(g2,s1,t4) - muLB_RUp(g2,s1,t4) = -8.5
  dLag/RDn(g2,s1,t4): lambda_PowerBalance_RT(s1,t4)
-   + mu_RegDown_max_RT(g2,s1,t4) - muLB_RDn(g2,s1,t4) = 13
+   + mu_RegDown_max_RT(g2,s1,t4) - muLB_RDn(g2,s1,t4) = 8.5
  dLag/RUpSC(g1,s1,t4): - lambda_PowerBalance_RT(s1,t4)
    + mu_RegUpSC_max_RT(g1,s1,t4) - muLB_RUpSC(g1,s1,t4) = -5.6
  dLag/RDnSC(g1,s1,t4): lambda_PowerBalance_RT(s1,t4)
@@ -377,9 +377,9 @@ Subject To
  dLag/RDn(g1,s2,t1): lambda_PowerBalance_RT(s2,t1)
    + mu_RegDown_max_RT(g1,s2,t1) - muLB_RDn(g1,s2,t1) = 8
  dLag/RUp(g2,s2,t1): - lambda_PowerBalance_RT(s2,t1)
-   + mu_RegUp_max_RT(g2,s2,t1) - muLB_RUp(g2,s2,t1) = -13
+   + mu_RegUp_max_RT(g2,s2,t1) - muLB_RUp(g2,s2,t1) = -8.5
  dLag/RDn(g2,s2,t1): lambda_PowerBalance_RT(s2,t1)
-   + mu_RegDown_max_RT(g2,s2,t1) - muLB_RDn(g2,s2,t1) = 13
+   + mu_RegDown_max_RT(g2,s2,t1) - muLB_RDn(g2,s2,t1) = 8.5
  dLag/RUpSC(g1,s2,t1): - lambda_PowerBalance_RT(s2,t1)
    + mu_RegUpSC_max_RT(g1,s2,t1) - muLB_RUpSC(g1,s2,t1) = -5.6
  dLag/RDnSC(g1,s2,t1): lambda_PowerBalance_RT(s2,t1)
@@ -393,9 +393,9 @@ Subject To
  dLag/RDn(g1,s2,t2): lambda_PowerBalance_RT(s2,t2)
    + mu_RegDown_max_RT(g1,s2,t2) - muLB_RDn(g1,s2,t2) = 8
  dLag/RUp(g2,s2,t2): - lambda_PowerBalance_RT(s2,t2)
-   + mu_RegUp_max_RT(g2,s2,t2) - muLB_RUp(g2,s2,t2) = -13
+   + mu_RegUp_max_RT(g2,s2,t2) - muLB_RUp(g2,s2,t2) = -8.5
  dLag/RDn(g2,s2,t2): lambda_PowerBalance_RT(s2,t2)
-   + mu_RegDown_max_RT(g2,s2,t2) - muLB_RDn(g2,s2,t2) = 13
+   + mu_RegDown_max_RT(g2,s2,t2) - muLB_RDn(g2,s2,t2) = 8.5
  dLag/RUpSC(g1,s2,t2): - lambda_PowerBalance_RT(s2,t2)
    + mu_RegUpSC_max_RT(g1,s2,t2) - muLB_RUpSC(g1,s2,t2) = -5.6
  dLag/RDnSC(g1,s2,t2): lambda_PowerBalance_RT(s2,t2)
@@ -409,9 +409,9 @@ Subject To
  dLag/RDn(g1,s2,t3): lambda_PowerBalance_RT(s2,t3)
    + mu_RegDown_max_RT(g1,s2,t3) - muLB_RDn(g1,s2,t3) = 8
  dLag/RUp(g2,s2,t3): - lambda_PowerBalance_RT(s2,t3)
-   + mu_RegUp_max_RT(g2,s2,t3) - muLB_RUp(g2,s2,t3) = -13
+   + mu_RegUp_max_RT(g2,s2,t3) - muLB_RUp(g2,s2,t3) = -8.5
  dLag/RDn(g2,s2,t3): lambda_PowerBalance_RT(s2,t3)
-   + mu_RegDown_max_RT(g2,s2,t3) - muLB_RDn(g2,s2,t3) = 13
+   + mu_RegDown_max_RT(g2,s2,t3) - muLB_RDn(g2,s2,t3) = 8.5
  dLag/RUpSC(g1,s2,t3): - lambda_PowerBalance_RT(s2,t3)
    + mu_RegUpSC_max_RT(g1,s2,t3) - muLB_RUpSC(g1,s2,t3) = -5.6
  dLag/RDnSC(g1,s2,t3): lambda_PowerBalance_RT(s2,t3)
@@ -425,9 +425,9 @@ Subject To
  dLag/RDn(g1,s2,t4): lambda_PowerBalance_RT(s2,t4)
    + mu_RegDown_max_RT(g1,s2,t4) - muLB_RDn(g1,s2,t4) = 8
  dLag/RUp(g2,s2,t4): - lambda_PowerBalance_RT(s2,t4)
-   + mu_RegUp_max_RT(g2,s2,t4) - muLB_RUp(g2,s2,t4) = -13
+   + mu_RegUp_max_RT(g2,s2,t4) - muLB_RUp(g2,s2,t4) = -8.5
  dLag/RDn(g2,s2,t4): lambda_PowerBalance_RT(s2,t4)
-   + mu_RegDown_max_RT(g2,s2,t4) - muLB_RDn(g2,s2,t4) = 13
+   + mu_RegDown_max_RT(g2,s2,t4) - muLB_RDn(g2,s2,t4) = 8.5
  dLag/RUpSC(g1,s2,t4): - lambda_PowerBalance_RT(s2,t4)
    + mu_RegUpSC_max_RT(g1,s2,t4) - muLB_RUpSC(g1,s2,t4) = -5.6
  dLag/RDnSC(g1,s2,t4): lambda_PowerBalance_RT(s2,t4)

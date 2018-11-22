@@ -91,13 +91,13 @@ for i in contractprices:
             Lambda_name ='lambda_gas_balance_da({0},{1},{2})'.format(BLmodel.edata.generatorinfo.origin_gas[gen],'k0',t)
             var=BLmodel.model.getVarByName(var_name)
             price=BLmodel.model.getVarByName(Lambda_name)
-            Income = Income  + price.x*var.x
+            Income = Income  + 8*price.x*var.x
             
             var_name = 'PgenSC({0},{1})'.format(gen,t)
             Contract_name ='ContractPrice({0})'.format(BLmodel.edata.generatorinfo.origin_gas[gen])
             var=BLmodel.model.getVarByName(var_name)
             contract=BLmodel.model.getVarByName(Contract_name)
-            Income = Income  + contract.x*var.x
+            Income = Income  + 8*contract.x*var.x
     Profit = Income-Cost
     print('Contract:{2} \tDual:{0} \t Calc:{1}'.format(BLmodel.model.ObjVal,Profit,contract.x))
       
@@ -107,7 +107,7 @@ df=pd.DataFrame([[var.VarName,var.x] for var in BLmodel.model.getVars() ],column
 print(df[df.Name.str.startswith(('Pgen','WindDA','lambda_gas_balance','gprod'))])
 
 
-BilevelFunctions.Loop_Contracts_Price(BLmodel)
+BLmodel = BilevelFunctions.Loop_Contracts_Price(BLmodel)
 #
 #
 #

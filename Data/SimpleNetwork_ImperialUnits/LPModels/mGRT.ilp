@@ -6,12 +6,12 @@ Subject To
  gas_balance_rt(ng101,s1,t1): gshed(ng101,s1,t1)
    - qin_sr_rt(('ng101','ng102'),s1,t1) + gprodUp(gw1,s1,t1)
    - gprodDn(gw1,s1,t1) + gprodUp(gw2,s1,t1) - gprodDn(gw2,s1,t1)
-   + gprodUp(gw3,s1,t1) - gprodDn(gw3,s1,t1) = -320
+   + gprodUp(gw3,s1,t1) - gprodDn(gw3,s1,t1) = -400
  gas_balance_rt(ng102,s1,t1): gshed(ng102,s1,t1)
    + qout_sr_rt(('ng101','ng102'),s1,t1) = 1200
  gprodUp_max(gw1,s1,t1): gprodUp(gw1,s1,t1) <= 0
- gprodUp_max(gw2,s1,t1): gprodUp(gw2,s1,t1) <= 30
- gprodUp_max(gw3,s1,t1): gprodUp(gw3,s1,t1) <= 500
+ gprodUp_max(gw2,s1,t1): gprodUp(gw2,s1,t1) <= 0
+ gprodUp_max(gw3,s1,t1): gprodUp(gw3,s1,t1) <= 450
  line_store_rt(('ng101','ng102'),s1,t1):
    - qin_sr_rt(('ng101','ng102'),s1,t1)
    + qout_sr_rt(('ng101','ng102'),s1,t1) = 0
