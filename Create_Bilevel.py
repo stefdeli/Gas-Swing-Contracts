@@ -64,10 +64,43 @@ BLmodel= modelObjects.Bilevel_Model(f2d)
 #BilevelFunctions.DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP)
 BilevelFunctions.DA_Model(BLmodel,mEDA_COMP,mGDA_COMP)
 
+contractprices=list(np.linspace(2,4,num=20,endpoint=True))
+for i in contractprices:
 
-BLmodel.model.Params.timelimit = 50.0
-BLmodel.model.Params.MIPFocus = 3
-BLmodel.model.optimize() 
+    Contract_name ='ContractPrice(ng102)'
+    var=BLmodel.model.getVarByName(Contract_name)
+    var.LB=i
+    var.UB=i
+    
+    BLmodel.model.Params.timelimit = 50.0
+    BLmodel.model.Params.MIPFocus = 3
+    BLmodel.model.setParam( 'OutputFlag', False)
+    BLmodel.model.optimize() 
+    
+    Cost = 0.0
+    for t in BLmodel.edata.time:
+        for gw in BLmodel.gdata.wells:
+            var_name = 'gprod({0},{1},{2})'.format(gw,'k0',t)
+            var=BLmodel.model.getVarByName(var_name)
+            Cost= Cost + BLmodel.gdata.wellsinfo.Cost[gw]*var.x
+    
+    Income  = 0.0
+    for t in BLmodel.edata.time:
+        for gen in BLmodel.edata.gfpp:
+            var_name = 'Pgen({0},{1})'.format(gen,t)
+            Lambda_name ='lambda_gas_balance_da({0},{1},{2})'.format(BLmodel.edata.generatorinfo.origin_gas[gen],'k0',t)
+            var=BLmodel.model.getVarByName(var_name)
+            price=BLmodel.model.getVarByName(Lambda_name)
+            Income = Income  + price.x*var.x
+            
+            var_name = 'PgenSC({0},{1})'.format(gen,t)
+            Contract_name ='ContractPrice({0})'.format(BLmodel.edata.generatorinfo.origin_gas[gen])
+            var=BLmodel.model.getVarByName(var_name)
+            contract=BLmodel.model.getVarByName(Contract_name)
+            Income = Income  + contract.x*var.x
+    Profit = Income-Cost
+    print('Contract:{2} \tDual:{0} \t Calc:{1}'.format(BLmodel.model.ObjVal,Profit,contract.x))
+      
 
   
 df=pd.DataFrame([[var.VarName,var.x] for var in BLmodel.model.getVars() ],columns=['Name','Value'])
