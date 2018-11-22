@@ -40,6 +40,16 @@ mSEDA_COMP.optimize()
 
 f2d = False
 
+dispatchElecDA.Pgen.at['t1','g1']=33.6
+dispatchElecDA.Pgen.at['t2','g1']=33.6
+dispatchElecDA.Pgen.at['t3','g1']=36.93
+dispatchElecDA.Pgen.at['t4','g1']=37.79
+
+dispatchElecDA.PgenSC.at['t1','g1']=10.0
+dispatchElecDA.PgenSC.at['t2','g1']=10.0
+dispatchElecDA.PgenSC.at['t3','g1']=10.0
+dispatchElecDA.PgenSC.at['t4','g1']=10.0
+
 mGDA = modelObjects.GasDA(dispatchElecDA,f2d)
 dispatchGasDA=mGDA.optimize()
 

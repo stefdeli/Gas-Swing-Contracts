@@ -90,13 +90,15 @@ def _load_generator_data(self):
         self.edata.Map_Eg2En[gen].append(n)
         self.edata.Map_En2Eg[n].append(gen)
     
+    
     # Mapping - Gas node (Key) to Electricity generator (Value)      
     # Mapping - Electricity generator (Key) to Gas nodes (Value)       
 
     self.edata.Map_Gn2Eg = defaultdict(list)
     self.edata.Map_Eg2Gn = defaultdict(list) 
-        
-    origodict = self.edata.generatorinfo['origin_gas']
+    
+    
+    origodict = self.edata.generatorinfo.loc[self.edata.gfpp]['origin_gas']
     for gen, gn in origodict.iteritems():                
         self.edata.Map_Gn2Eg[gn].append(gen)
         self.edata.Map_Eg2Gn[gen].append(gn)
