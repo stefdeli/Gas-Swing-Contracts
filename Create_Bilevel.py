@@ -64,7 +64,8 @@ BLmodel= modelObjects.Bilevel_Model(f2d)
 #BilevelFunctions.DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP)
 BilevelFunctions.DA_Model(BLmodel,mEDA_COMP,mGDA_COMP)
 
-contractprices=list(np.linspace(2,4,num=20,endpoint=True))
+
+contractprices=list(np.linspace(2,10,num=20,endpoint=True))
 for i in contractprices:
 
     Contract_name ='ContractPrice(ng102)'
@@ -90,7 +91,8 @@ for i in contractprices:
                 var=BLmodel.model.getVarByName(var_name)
                 Cost= Cost + defaults.VOLL*var.x
     
-    Income  = 0.0
+    Income    = 0.0
+    IncomeSC  = 0.0
     for t in BLmodel.edata.time:
         for gen in BLmodel.edata.gfpp:
             var_name = 'Pgen({0},{1})'.format(gen,t)
@@ -103,9 +105,11 @@ for i in contractprices:
             Contract_name ='ContractPrice({0})'.format(BLmodel.edata.generatorinfo.origin_gas[gen])
             var=BLmodel.model.getVarByName(var_name)
             contract=BLmodel.model.getVarByName(Contract_name)
-            Income = Income  + 8*contract.x*var.x
-    Profit = Cost-Income
-    print('Contract:{2:.2f} \tDual:{0:.2f} \t Calc:{1:.2f} \t Error:{3:.2e}'.format(BLmodel.model.ObjVal,Profit,contract.x,BLmodel.model.ObjVal-Profit))
+            IncomeSC = IncomeSC  + 8*contract.x*var.x
+    Profit = Cost-Income-IncomeSC
+    print('Contract:{3:.2f} \tCost:{0:.2f} \t Income:{1:.2f} \t IncomeSC{2:.2f}'.format(Cost,Income,IncomeSC,contract.x))
+
+#    print('Contract:{2:.2f} \tDual:{0:.2f} \t Calc:{1:.2f} \t Error:{3:.2e}'.format(BLmodel.model.ObjVal,Profit,contract.x,BLmodel.model.ObjVal-Profit))
       
 
 

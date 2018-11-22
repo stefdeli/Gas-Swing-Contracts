@@ -137,14 +137,46 @@ def Change_ContractParameters(BLmodel,SCdata,SCP):
                     if k =='k0':
                         rhs=rhs
                     elif k =='k1':
-                        rhs=rhs + HR*(SC_Active*(Pcmax))                
+                        rhs=rhs + HR*(SC_Active*(Pcmax))
                     elif k =='k2':
                         rhs=rhs + HR*(SC_Active*(Pcmin))   
                 
                 BLmodel.model.remove(con)
                 BLmodel.model.addConstr(new_con==rhs,name=con_name)
 
+    for t in BLmodel.edata.time:
+        for g in BLmodel.edata.gfpp:
+            Pcmax=SCdata.PcMax[sc,gen]
+            Pcmin=SCdata.PcMin[sc,gen]
+            
+            name = 'PgenSCmax({0},{1})'.format(g,t)
+            var=BLmodel.model.getVarByName('mu_'+name)
+            BLmodel.model.setAttr('Obj',[var],[Pcmax])
+            
+            name = 'RCupSCmax({0},{1})'.format(g,t)
+            var=BLmodel.model.getVarByName('mu_'+name)
+            BLmodel.model.setAttr('Obj',[var],[Pcmax])
+            
+            name = 'PgenSCmin({0},{1})'.format(g,t)
+            var=BLmodel.model.getVarByName('mu_'+name)
+            BLmodel.model.setAttr('Obj',[var],[-Pcmin])
+            
+            name = 'RCdnSCmin({0},{1})'.format(g,t)   
+            var=BLmodel.model.getVarByName('mu_'+name)
+            BLmodel.model.setAttr('Obj',[var],[-Pcmin])
+ 
 
+#
+#
+#            
+#    NewObj=0.0
+#    for name in Obj_coeff.keys():
+#        print(name)
+#        var,coeff=Obj_coeff[name]
+#        NewObj=NewObj+var*coeff
+#        
+#    BLmodel.model.setObjective(NewObj,gb.GRB.MINIMIZE)    
+    
     BLmodel.model.update()
 
 
@@ -841,7 +873,7 @@ def Loop_Contracts_Price(BLmodel):
         
     all_contracts=All_SCdata.index.get_level_values(0).tolist()
     all_contracts_r=list(reversed(all_contracts))
-#    all_contracts=['sc1']
+    all_contracts=['sc1']
     #all_contracts_r=[]
     for contract in all_contracts:
         print ('\n\n########################################################')
@@ -855,8 +887,11 @@ def Loop_Contracts_Price(BLmodel):
             for t in BLmodel.edata.time:
                 tt = BLmodel.edata.time.index(t)+1            
                 SCP[sc,t] = 1.0 if (tt >= SCdata.ts[sc] and tt<= SCdata.te[sc]) else 0.0
-           
+         
+        
         Change_ContractParameters(BLmodel,SCdata,SCP)
+        folder=defaults.folder+'/LPModels/'
+        BLmodel.model.write(folder+'BLmodel_'+contract+'.lp')
         
         #BLmodel.model.reset()
         #BLmodel.model.resetParams()

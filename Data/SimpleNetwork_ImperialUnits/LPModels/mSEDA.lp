@@ -33,16 +33,16 @@ Subject To
    + WindDA(w1,t4) = 53.53553391
  Pmax_DA_GFPP(g1,t1): Pgen(g1,t1) + PgenSC(g1,t1) + RCup(g1,t1)
    + RCupSC(g1,t1) <= 150
- Pmax_DA_GFPP(g2,t1): Pgen(g2,t1) + RCup(g2,t1) <= 10
+ Pmax_DA_GFPP(g2,t1): Pgen(g2,t1) + RCup(g2,t1) <= 9
  Pmax_DA_GFPP(g1,t2): Pgen(g1,t2) + PgenSC(g1,t2) + RCup(g1,t2)
    + RCupSC(g1,t2) <= 150
- Pmax_DA_GFPP(g2,t2): Pgen(g2,t2) + RCup(g2,t2) <= 10
+ Pmax_DA_GFPP(g2,t2): Pgen(g2,t2) + RCup(g2,t2) <= 9
  Pmax_DA_GFPP(g1,t3): Pgen(g1,t3) + PgenSC(g1,t3) + RCup(g1,t3)
    + RCupSC(g1,t3) <= 150
- Pmax_DA_GFPP(g2,t3): Pgen(g2,t3) + RCup(g2,t3) <= 10
+ Pmax_DA_GFPP(g2,t3): Pgen(g2,t3) + RCup(g2,t3) <= 9
  Pmax_DA_GFPP(g1,t4): Pgen(g1,t4) + PgenSC(g1,t4) + RCup(g1,t4)
    + RCupSC(g1,t4) <= 150
- Pmax_DA_GFPP(g2,t4): Pgen(g2,t4) + RCup(g2,t4) <= 10
+ Pmax_DA_GFPP(g2,t4): Pgen(g2,t4) + RCup(g2,t4) <= 9
  Pmin_DA_GFPP(g1,t1): - Pgen(g1,t1) - PgenSC(g1,t1) + RCdn(g1,t1)
    + RCdnSC(g1,t1) <= 0
  Pmin_DA(g2,t1): - Pgen(g2,t1) + RCup(g2,t1) <= 0
@@ -63,22 +63,22 @@ Subject To
  SW_Active(g1t2): u(sc1) <= 1
  SW_Active(g1t3): u(sc1) <= 1
  SW_Active(g1t4): u(sc1) <= 1
- PgenSCmax(g1,t1): - 50 u(sc1) + PgenSC(g1,t1) <= 0
- PgenSCmin(g1,t1): 40 u(sc1) - PgenSC(g1,t1) <= 0
- RCupSCmax(g1,t1): - 50 u(sc1) + PgenSC(g1,t1) + RCupSC(g1,t1) <= 0
- RCdnSCmin(g1,t1): 40 u(sc1) - PgenSC(g1,t1) + RCdnSC(g1,t1) <= 0
- PgenSCmax(g1,t2): - 50 u(sc1) + PgenSC(g1,t2) <= 0
- PgenSCmin(g1,t2): 40 u(sc1) - PgenSC(g1,t2) <= 0
- RCupSCmax(g1,t2): - 50 u(sc1) + PgenSC(g1,t2) + RCupSC(g1,t2) <= 0
- RCdnSCmin(g1,t2): 40 u(sc1) - PgenSC(g1,t2) + RCdnSC(g1,t2) <= 0
- PgenSCmax(g1,t3): - 50 u(sc1) + PgenSC(g1,t3) <= 0
- PgenSCmin(g1,t3): 40 u(sc1) - PgenSC(g1,t3) <= 0
- RCupSCmax(g1,t3): - 50 u(sc1) + PgenSC(g1,t3) + RCupSC(g1,t3) <= 0
- RCdnSCmin(g1,t3): 40 u(sc1) - PgenSC(g1,t3) + RCdnSC(g1,t3) <= 0
- PgenSCmax(g1,t4): - 50 u(sc1) + PgenSC(g1,t4) <= 0
- PgenSCmin(g1,t4): 40 u(sc1) - PgenSC(g1,t4) <= 0
- RCupSCmax(g1,t4): - 50 u(sc1) + PgenSC(g1,t4) + RCupSC(g1,t4) <= 0
- RCdnSCmin(g1,t4): 40 u(sc1) - PgenSC(g1,t4) + RCdnSC(g1,t4) <= 0
+ PgenSCmax(g1,t1): - 10 u(sc1) + PgenSC(g1,t1) <= 0
+ PgenSCmin(g1,t1): - PgenSC(g1,t1) <= 0
+ RCupSCmax(g1,t1): - 10 u(sc1) + PgenSC(g1,t1) + RCupSC(g1,t1) <= 0
+ RCdnSCmin(g1,t1): - PgenSC(g1,t1) + RCdnSC(g1,t1) <= 0
+ PgenSCmax(g1,t2): - 10 u(sc1) + PgenSC(g1,t2) <= 0
+ PgenSCmin(g1,t2): - PgenSC(g1,t2) <= 0
+ RCupSCmax(g1,t2): - 10 u(sc1) + PgenSC(g1,t2) + RCupSC(g1,t2) <= 0
+ RCdnSCmin(g1,t2): - PgenSC(g1,t2) + RCdnSC(g1,t2) <= 0
+ PgenSCmax(g1,t3): - 10 u(sc1) + PgenSC(g1,t3) <= 0
+ PgenSCmin(g1,t3): - PgenSC(g1,t3) <= 0
+ RCupSCmax(g1,t3): - 10 u(sc1) + PgenSC(g1,t3) + RCupSC(g1,t3) <= 0
+ RCdnSCmin(g1,t3): - PgenSC(g1,t3) + RCdnSC(g1,t3) <= 0
+ PgenSCmax(g1,t4): - 10 u(sc1) + PgenSC(g1,t4) <= 0
+ PgenSCmin(g1,t4): - PgenSC(g1,t4) <= 0
+ RCupSCmax(g1,t4): - 10 u(sc1) + PgenSC(g1,t4) + RCupSC(g1,t4) <= 0
+ RCdnSCmin(g1,t4): - PgenSC(g1,t4) + RCdnSC(g1,t4) <= 0
  PowerBalance_RT(s1,t1): - WindDA(w1,t1) + RUp(g1,s1,t1) - RDn(g1,s1,t1)
    + RUp(g2,s1,t1) - RDn(g2,s1,t1) + RUpSC(g1,s1,t1) - RDnSC(g1,s1,t1)
    - Wspill(w1,s1,t1) + Lshed(s1,t1) = -1.6185495
