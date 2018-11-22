@@ -83,6 +83,12 @@ for i in contractprices:
             var_name = 'gprod({0},{1},{2})'.format(gw,'k0',t)
             var=BLmodel.model.getVarByName(var_name)
             Cost= Cost + BLmodel.gdata.wellsinfo.Cost[gw]*var.x
+            
+        for gn in BLmodel.gdata.gnodes:
+            for k in ['k0','k1','k2']:
+                var_name = 'gshed_da({0},{1},{2})'.format(gn,k,t)
+                var=BLmodel.model.getVarByName(var_name)
+                Cost= Cost + defaults.VOLL*var.x
     
     Income  = 0.0
     for t in BLmodel.edata.time:
@@ -98,9 +104,15 @@ for i in contractprices:
             var=BLmodel.model.getVarByName(var_name)
             contract=BLmodel.model.getVarByName(Contract_name)
             Income = Income  + 8*contract.x*var.x
-    Profit = Income-Cost
-    print('Contract:{2} \tDual:{0} \t Calc:{1}'.format(BLmodel.model.ObjVal,Profit,contract.x))
+    Profit = Cost-Income
+    print('Contract:{2:.2f} \tDual:{0:.2f} \t Calc:{1:.2f} \t Error:{3:.2e}'.format(BLmodel.model.ObjVal,Profit,contract.x,BLmodel.model.ObjVal-Profit))
       
+
+
+Contract_name ='ContractPrice(ng102)'
+var=BLmodel.model.getVarByName(Contract_name)
+var.LB=0
+var.UB=2000
 
   
 df=pd.DataFrame([[var.VarName,var.x] for var in BLmodel.model.getVars() ],columns=['Name','Value'])

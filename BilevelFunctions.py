@@ -111,7 +111,40 @@ def Change_ContractParameters(BLmodel,SCdata,SCP):
             rhs=  - SCP[(sc,gen),t] * SCdata.PcMin[sc,gen]
             BLmodel.model.remove(conSOS)
             BLmodel.model.addConstr(new_con==rhs,name='SOS1_'+con_name)
-  
+
+
+    sclim = list('k{0}'.format(k) for k in range(3))
+    for gas_node in BLmodel.edata.Map_Gn2Eg:
+        for t in BLmodel.edata.time:
+            for k in sclim:
+                con_name='gas_balance_da({0},{1},{2})'.format(gas_node,k,t)
+                con=BLmodel.model.getConstrByName(con_name)
+                con_row=BLmodel.model.getRow(con)
+                new_con=0.0
+                for i in range(con_row.size()):
+                    new_con=new_con+con_row.getVar(i)*con_row.getCoeff(i)
+                
+                
+                GasLoad=BLmodel.gdata.gasload[gas_node][t]
+                rhs=GasLoad
+                for gen in BLmodel.gdata.Map_Gn2Eg[gas_node]:
+                    # Only the first contract is being analyzed
+                    SC_Active=SCP[(sc,gen),t]
+                    HR=BLmodel.edata.generatorinfo.HR[gen]
+                    Pcmax=SCdata.PcMax[sc,gen]
+                    Pcmin=SCdata.PcMin[sc,gen]
+                    
+                    if k =='k0':
+                        rhs=rhs
+                    elif k =='k1':
+                        rhs=rhs + HR*(SC_Active*(Pcmax))                
+                    elif k =='k2':
+                        rhs=rhs + HR*(SC_Active*(Pcmin))   
+                
+                BLmodel.model.remove(con)
+                BLmodel.model.addConstr(new_con==rhs,name=con_name)
+
+
     BLmodel.model.update()
 
 
@@ -808,7 +841,7 @@ def Loop_Contracts_Price(BLmodel):
         
     all_contracts=All_SCdata.index.get_level_values(0).tolist()
     all_contracts_r=list(reversed(all_contracts))
-    all_contracts=['sc1']
+#    all_contracts=['sc1']
     #all_contracts_r=[]
     for contract in all_contracts:
         print ('\n\n########################################################')
@@ -831,15 +864,14 @@ def Loop_Contracts_Price(BLmodel):
         
         BLmodel.model.optimize() 
         
+        gas_nodes = list(BLmodel.edata.Map_Eg2Gn.values())
+        # result may be list of lists, so flatted
+        flat_list = [item for sublist in gas_nodes for item in sublist]
+        GasGenNodes=set(flat_list)
+            
+        
         Result = {}#defaultdict(dict)    
         if BLmodel.model.status==2:
-            
-            gas_nodes = list(BLmodel.edata.Map_Eg2Gn.values())
-        # result may be list of lists, so flatted
-            flat_list = [item for sublist in gas_nodes for item in sublist]
-            GasGenNodes=set(flat_list)
-    
-            GasGenNodes=set(flat_list)
             for node in GasGenNodes:
                 name='ContractPrice({0})'.format(node)
                 var=BLmodel.model.getVarByName(name)
@@ -849,14 +881,14 @@ def Loop_Contracts_Price(BLmodel):
             for node in GasGenNodes:
                 Result[node]=np.nan
                 
-            
-        for g in SCdata.index.get_level_values(1).tolist():
-            GasNode=All_SCdata['GasNode'][(contract,g)]
-            
-            All_SCdata.at[(contract,g),'lambdaC']=Result[GasNode]
-            All_SCdata.at[(contract,g),'time']=BLmodel.model.Runtime
-            All_SCdata.at[(contract,g),'MIPGap']=BLmodel.model.MIPGap
-    
+        if BLmodel.model.status==2:   
+            for g in SCdata.index.get_level_values(1).tolist():
+                GasNode=All_SCdata['GasNode'][(contract,g)]
+                
+                All_SCdata.at[(contract,g),'lambdaC']=Result[GasNode]
+                All_SCdata.at[(contract,g),'time']=BLmodel.model.Runtime
+                All_SCdata.at[(contract,g),'MIPGap']=BLmodel.model.MIPGap
+        
     
     All_SCdata.reset_index(level=1, inplace=True)
     All_SCdata=All_SCdata.drop(['GFPP'],axis=1)    

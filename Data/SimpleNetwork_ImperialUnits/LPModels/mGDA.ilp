@@ -3,44 +3,18 @@
 Minimize
  
 Subject To
- gas_balance_da(ng101,k1,t5): - qin_sr(('ng101','ng102'),k1,t5)
-   + gprod(gw1,k1,t5) + gprod(gw2,k1,t5) + gprod(gw3,k1,t5) = 0
- gas_balance_da(ng102,k1,t5): qout_sr(('ng101','ng102'),k1,t5)
-   - gsin(gs1,t5,k1) + gsout(gs1,t5,k1) = 502.91570384
- gas_balance_da(ng101,k1,t6): - qin_sr(('ng101','ng102'),k1,t6)
-   + gprod(gw1,k1,t6) + gprod(gw2,k1,t6) + gprod(gw3,k1,t6) = 0
- gas_balance_da(ng102,k1,t6): qout_sr(('ng101','ng102'),k1,t6)
-   - gsin(gs1,t6,k1) + gsout(gs1,t6,k1) = 504.33854032
- gprod_max(gw1,k1,t5): gprod(gw1,k1,t5) <= 250
- gprod_max(gw1,k1,t6): gprod(gw1,k1,t6) <= 250
- gprod_max(gw2,k1,t5): gprod(gw2,k1,t5) <= 100
- gprod_max(gw2,k1,t6): gprod(gw2,k1,t6) <= 100
- gprod_max(gw3,k1,t5): gprod(gw3,k1,t5) <= 150
- gprod_max(gw3,k1,t6): gprod(gw3,k1,t6) <= 150
- Flow_Bal(('ng101','ng102'),k1,t5): qin_sr(('ng101','ng102'),k1,t5)
-   - qout_sr(('ng101','ng102'),k1,t5) = 0
- Flow_Bal(('ng101','ng102'),k1,t6): qin_sr(('ng101','ng102'),k1,t6)
-   - qout_sr(('ng101','ng102'),k1,t6) = 0
- gstore_max(gs1,t4,k1): gstore(gs1,t4,k1) <= 0
- gstor_def(gs1,k1,t5): - gstore(gs1,t4,k1) - gsin(gs1,t5,k1)
-   + gsout(gs1,t5,k1) + gstore(gs1,t5,k1) = 0
- gstor_def(gs1,k1,t6): - gstore(gs1,t5,k1) - gsin(gs1,t6,k1)
-   + gsout(gs1,t6,k1) + gstore(gs1,t6,k1) = 0
+ gas_balance_da(ng101,k1,t1): - qin_sr(('ng101','ng102'),k1,t1)
+   + gprod(gw1,k1,t1) + gprod(gw2,k1,t1) + gprod(gw3,k1,t1) = 0
+ gas_balance_da(ng102,k1,t1): qout_sr(('ng101','ng102'),k1,t1) = 2400
+ gprod_max(gw1,k1,t1): gprod(gw1,k1,t1) <= 100
+ gprod_max(gw2,k1,t1): gprod(gw2,k1,t1) <= 250
+ gprod_max(gw3,k1,t1): gprod(gw3,k1,t1) <= 1000
+ Flow_Bal(('ng101','ng102'),k1,t1): qin_sr(('ng101','ng102'),k1,t1)
+   - qout_sr(('ng101','ng102'),k1,t1) = 0
 Bounds
- qin_sr(('ng101','ng102'),k1,t5) free
- qout_sr(('ng101','ng102'),k1,t5) free
- qin_sr(('ng101','ng102'),k1,t6) free
- qout_sr(('ng101','ng102'),k1,t6) free
- gprod(gw1,k1,t5) free
- gprod(gw1,k1,t6) free
- gprod(gw2,k1,t5) free
- gprod(gw2,k1,t6) free
- gprod(gw3,k1,t5) free
- gprod(gw3,k1,t6) free
- gstore(gs1,t4,k1) free
- gsin(gs1,t5,k1) free
- gsout(gs1,t5,k1) free
- gstore(gs1,t5,k1) free
- gsin(gs1,t6,k1) free
- gsout(gs1,t6,k1) free
+ qin_sr(('ng101','ng102'),k1,t1) free
+ qout_sr(('ng101','ng102'),k1,t1) free
+ gprod(gw1,k1,t1) free
+ gprod(gw2,k1,t1) free
+ gprod(gw3,k1,t1) free
 End

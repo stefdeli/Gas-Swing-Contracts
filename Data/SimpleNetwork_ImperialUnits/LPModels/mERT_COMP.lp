@@ -1,24 +1,24 @@
 \ LP format - for model browsing. Use MPS format to capture full model detail.
 Minimize
   8 RUp(g1,s1,t1) - 8 RDn(g1,s1,t1) + 8.5 RUp(g2,s1,t1) - 8.5 RDn(g2,s1,t1)
-   + 5.6 RUpSC(g1,s1,t1) - 5.6 RDnSC(g1,s1,t1) + 5000 Lshed(s1,t1)
+   + 5.6 RUpSC(g1,s1,t1) - 5.6 RDnSC(g1,s1,t1) + 500 Lshed(s1,t1)
    + 8 RUp(g1,s1,t2) - 8 RDn(g1,s1,t2) + 8.5 RUp(g2,s1,t2)
    - 8.5 RDn(g2,s1,t2) + 5.6 RUpSC(g1,s1,t2) - 5.6 RDnSC(g1,s1,t2)
-   + 5000 Lshed(s1,t2) + 8 RUp(g1,s1,t3) - 8 RDn(g1,s1,t3)
+   + 500 Lshed(s1,t2) + 8 RUp(g1,s1,t3) - 8 RDn(g1,s1,t3)
    + 8.5 RUp(g2,s1,t3) - 8.5 RDn(g2,s1,t3) + 5.6 RUpSC(g1,s1,t3)
-   - 5.6 RDnSC(g1,s1,t3) + 5000 Lshed(s1,t3) + 8 RUp(g1,s1,t4)
+   - 5.6 RDnSC(g1,s1,t3) + 500 Lshed(s1,t3) + 8 RUp(g1,s1,t4)
    - 8 RDn(g1,s1,t4) + 8.5 RUp(g2,s1,t4) - 8.5 RDn(g2,s1,t4)
-   + 5.6 RUpSC(g1,s1,t4) - 5.6 RDnSC(g1,s1,t4) + 5000 Lshed(s1,t4)
+   + 5.6 RUpSC(g1,s1,t4) - 5.6 RDnSC(g1,s1,t4) + 500 Lshed(s1,t4)
    + 8 RUp(g1,s2,t1) - 8 RDn(g1,s2,t1) + 8.5 RUp(g2,s2,t1)
    - 8.5 RDn(g2,s2,t1) + 5.6 RUpSC(g1,s2,t1) - 5.6 RDnSC(g1,s2,t1)
-   + 5000 Lshed(s2,t1) + 8 RUp(g1,s2,t2) - 8 RDn(g1,s2,t2)
+   + 500 Lshed(s2,t1) + 8 RUp(g1,s2,t2) - 8 RDn(g1,s2,t2)
    + 8.5 RUp(g2,s2,t2) - 8.5 RDn(g2,s2,t2) + 5.6 RUpSC(g1,s2,t2)
-   - 5.6 RDnSC(g1,s2,t2) + 5000 Lshed(s2,t2) + 8 RUp(g1,s2,t3)
+   - 5.6 RDnSC(g1,s2,t2) + 500 Lshed(s2,t2) + 8 RUp(g1,s2,t3)
    - 8 RDn(g1,s2,t3) + 8.5 RUp(g2,s2,t3) - 8.5 RDn(g2,s2,t3)
-   + 5.6 RUpSC(g1,s2,t3) - 5.6 RDnSC(g1,s2,t3) + 5000 Lshed(s2,t3)
+   + 5.6 RUpSC(g1,s2,t3) - 5.6 RDnSC(g1,s2,t3) + 500 Lshed(s2,t3)
    + 8 RUp(g1,s2,t4) - 8 RDn(g1,s2,t4) + 8.5 RUp(g2,s2,t4)
    - 8.5 RDn(g2,s2,t4) + 5.6 RUpSC(g1,s2,t4) - 5.6 RDnSC(g1,s2,t4)
-   + 5000 Lshed(s2,t4)
+   + 500 Lshed(s2,t4)
 Subject To
  PowerBalance_RT(s1,t1): RUp(g1,s1,t1) - RDn(g1,s1,t1) + RUp(g2,s1,t1)
    - RDn(g2,s1,t1) + RUpSC(g1,s1,t1) - RDnSC(g1,s1,t1) - Wspill(w1,s1,t1)
@@ -323,7 +323,7 @@ Subject To
  dLag/Wspill(w1,s1,t1): lambda_PowerBalance_RT(s1,t1)
    + mu_Max_wind_spill_RT(w1,s1,t1) - muLB_Wspill(w1,s1,t1) = 0
  dLag/Lshed(s1,t1): - lambda_PowerBalance_RT(s1,t1)
-   + mu_Max_load_shed_RT(s1,t1) - muLB_Lshed(s1,t1) = -5000
+   + mu_Max_load_shed_RT(s1,t1) - muLB_Lshed(s1,t1) = -500
  dLag/RUp(g1,s1,t2): - lambda_PowerBalance_RT(s1,t2)
    + mu_RegUp_max_RT(g1,s1,t2) - muLB_RUp(g1,s1,t2) = -8
  dLag/RDn(g1,s1,t2): lambda_PowerBalance_RT(s1,t2)
@@ -339,7 +339,7 @@ Subject To
  dLag/Wspill(w1,s1,t2): lambda_PowerBalance_RT(s1,t2)
    + mu_Max_wind_spill_RT(w1,s1,t2) - muLB_Wspill(w1,s1,t2) = 0
  dLag/Lshed(s1,t2): - lambda_PowerBalance_RT(s1,t2)
-   + mu_Max_load_shed_RT(s1,t2) - muLB_Lshed(s1,t2) = -5000
+   + mu_Max_load_shed_RT(s1,t2) - muLB_Lshed(s1,t2) = -500
  dLag/RUp(g1,s1,t3): - lambda_PowerBalance_RT(s1,t3)
    + mu_RegUp_max_RT(g1,s1,t3) - muLB_RUp(g1,s1,t3) = -8
  dLag/RDn(g1,s1,t3): lambda_PowerBalance_RT(s1,t3)
@@ -355,7 +355,7 @@ Subject To
  dLag/Wspill(w1,s1,t3): lambda_PowerBalance_RT(s1,t3)
    + mu_Max_wind_spill_RT(w1,s1,t3) - muLB_Wspill(w1,s1,t3) = 0
  dLag/Lshed(s1,t3): - lambda_PowerBalance_RT(s1,t3)
-   + mu_Max_load_shed_RT(s1,t3) - muLB_Lshed(s1,t3) = -5000
+   + mu_Max_load_shed_RT(s1,t3) - muLB_Lshed(s1,t3) = -500
  dLag/RUp(g1,s1,t4): - lambda_PowerBalance_RT(s1,t4)
    + mu_RegUp_max_RT(g1,s1,t4) - muLB_RUp(g1,s1,t4) = -8
  dLag/RDn(g1,s1,t4): lambda_PowerBalance_RT(s1,t4)
@@ -371,7 +371,7 @@ Subject To
  dLag/Wspill(w1,s1,t4): lambda_PowerBalance_RT(s1,t4)
    + mu_Max_wind_spill_RT(w1,s1,t4) - muLB_Wspill(w1,s1,t4) = 0
  dLag/Lshed(s1,t4): - lambda_PowerBalance_RT(s1,t4)
-   + mu_Max_load_shed_RT(s1,t4) - muLB_Lshed(s1,t4) = -5000
+   + mu_Max_load_shed_RT(s1,t4) - muLB_Lshed(s1,t4) = -500
  dLag/RUp(g1,s2,t1): - lambda_PowerBalance_RT(s2,t1)
    + mu_RegUp_max_RT(g1,s2,t1) - muLB_RUp(g1,s2,t1) = -8
  dLag/RDn(g1,s2,t1): lambda_PowerBalance_RT(s2,t1)
@@ -387,7 +387,7 @@ Subject To
  dLag/Wspill(w1,s2,t1): lambda_PowerBalance_RT(s2,t1)
    + mu_Max_wind_spill_RT(w1,s2,t1) - muLB_Wspill(w1,s2,t1) = 0
  dLag/Lshed(s2,t1): - lambda_PowerBalance_RT(s2,t1)
-   + mu_Max_load_shed_RT(s2,t1) - muLB_Lshed(s2,t1) = -5000
+   + mu_Max_load_shed_RT(s2,t1) - muLB_Lshed(s2,t1) = -500
  dLag/RUp(g1,s2,t2): - lambda_PowerBalance_RT(s2,t2)
    + mu_RegUp_max_RT(g1,s2,t2) - muLB_RUp(g1,s2,t2) = -8
  dLag/RDn(g1,s2,t2): lambda_PowerBalance_RT(s2,t2)
@@ -403,7 +403,7 @@ Subject To
  dLag/Wspill(w1,s2,t2): lambda_PowerBalance_RT(s2,t2)
    + mu_Max_wind_spill_RT(w1,s2,t2) - muLB_Wspill(w1,s2,t2) = 0
  dLag/Lshed(s2,t2): - lambda_PowerBalance_RT(s2,t2)
-   + mu_Max_load_shed_RT(s2,t2) - muLB_Lshed(s2,t2) = -5000
+   + mu_Max_load_shed_RT(s2,t2) - muLB_Lshed(s2,t2) = -500
  dLag/RUp(g1,s2,t3): - lambda_PowerBalance_RT(s2,t3)
    + mu_RegUp_max_RT(g1,s2,t3) - muLB_RUp(g1,s2,t3) = -8
  dLag/RDn(g1,s2,t3): lambda_PowerBalance_RT(s2,t3)
@@ -419,7 +419,7 @@ Subject To
  dLag/Wspill(w1,s2,t3): lambda_PowerBalance_RT(s2,t3)
    + mu_Max_wind_spill_RT(w1,s2,t3) - muLB_Wspill(w1,s2,t3) = 0
  dLag/Lshed(s2,t3): - lambda_PowerBalance_RT(s2,t3)
-   + mu_Max_load_shed_RT(s2,t3) - muLB_Lshed(s2,t3) = -5000
+   + mu_Max_load_shed_RT(s2,t3) - muLB_Lshed(s2,t3) = -500
  dLag/RUp(g1,s2,t4): - lambda_PowerBalance_RT(s2,t4)
    + mu_RegUp_max_RT(g1,s2,t4) - muLB_RUp(g1,s2,t4) = -8
  dLag/RDn(g1,s2,t4): lambda_PowerBalance_RT(s2,t4)
@@ -435,7 +435,7 @@ Subject To
  dLag/Wspill(w1,s2,t4): lambda_PowerBalance_RT(s2,t4)
    + mu_Max_wind_spill_RT(w1,s2,t4) - muLB_Wspill(w1,s2,t4) = 0
  dLag/Lshed(s2,t4): - lambda_PowerBalance_RT(s2,t4)
-   + mu_Max_load_shed_RT(s2,t4) - muLB_Lshed(s2,t4) = -5000
+   + mu_Max_load_shed_RT(s2,t4) - muLB_Lshed(s2,t4) = -500
 Bounds
  lambda_PowerBalance_RT(s1,t1) free
  lambda_PowerBalance_RT(s1,t2) free

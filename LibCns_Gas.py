@@ -628,8 +628,8 @@ def _build_constraints_gasDA_FlowBased(self):
                     lhs=gb.quicksum(var.gprod[gw,k,t] for gw in self.gdata.Map_Gn2Gp[gn]) +\
                             gb.quicksum(var.qout_sr[pl,k,t] - var.qin_rs[pl,k,t] for pl in self.gdata.nodetoinpplines[gn]) +\
                             gb.quicksum(var.qout_rs[pl,k,t] - var.qin_sr[pl,k,t] for pl in self.gdata.nodetooutpplines[gn])+\
-                            gb.quicksum(var.gsout[gs,k,t] - var.gsin[gs,k,t] for gs in self.gdata.Map_Gn2Gs[gn])+var.gas_shed[gn,k,t]
-                            
+                            gb.quicksum(var.gsout[gs,k,t] - var.gsin[gs,k,t] for gs in self.gdata.Map_Gn2Gs[gn])\
+                            +var.gas_shed[gn,k,t]
                     rhs=self.gdata.gasload[gn][t]+  gb.quicksum((Pgen[gen][t]+ \
                                          PgenSC[gen][t]+RSC[gen,k,t])*self.gdata.generatorinfo.HR[gen] for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn] )
                     add_constraint(self,lhs,'==',rhs,name=name)
@@ -646,7 +646,8 @@ def _build_constraints_gasDA_FlowBased(self):
                     name='gas_balance_da({0},{1},{2})'.format(gn,k,t)               
                     lhs=   gb.quicksum(var.gprod[gw,k,t] for gw in self.gdata.Map_Gn2Gp[gn]) \
                             + gb.quicksum(var.qout_sr[pl,k,t] for pl in self.gdata.nodetoinpplines[gn])\
-                            - gb.quicksum(var.qin_sr[pl,k,t] for pl in self.gdata.nodetooutpplines[gn]) 
+                            - gb.quicksum(var.qin_sr[pl,k,t] for pl in self.gdata.nodetooutpplines[gn]) \
+                            +var.gas_shed[gn,k,t]
                           
                     rhs= self.gdata.gasload[gn][t] + gb.quicksum((Pgen[gen][t]+ \
                                          PgenSC[gen][t]+RSC[gen,k,t])*HR[gen] for gen in self.gdata.gfpp if gen in self.gdata.Map_Gn2Eg[gn] )

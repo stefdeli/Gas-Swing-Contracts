@@ -41,7 +41,7 @@ GasPriceDA_file = filepath_elec + '/GasPriceDA.csv'
 GasPriceScenRT_file = filepath_elec + '/GasPriceScenRT.csv'
 GasPriceScenRTprob_file = filepath_elec + '/GasPriceScenRT_prob.csv'
 
-VOLL = 10000 # Value of Lost Load
+VOLL = 1000 # Value of Lost Load
 
 EPS = 0e-1 # Pressure difference weight in gas objective
 GasSlack = 'None'# 'None', 'FixInput', 'FixOutput', 'ConstantOutput'

@@ -1,27 +1,25 @@
 \ LP format - for model browsing. Use MPS format to capture full model detail.
 Minimize
-  5000 gshed(ng101,s1,t1) + 5000 gshed(ng102,s1,t1) + gprodUp(gw1,s1,t1)
+  500 gshed(ng101,s1,t1) + 500 gshed(ng102,s1,t1) + gprodUp(gw1,s1,t1)
    - gprodDn(gw1,s1,t1) + 1.5 gprodUp(gw2,s1,t1) - 1.5 gprodDn(gw2,s1,t1)
-   + 2 gprodUp(gw3,s1,t1) - 2 gprodDn(gw3,s1,t1) + 5000 gshed(ng101,s1,t2)
-   + 5000 gshed(ng102,s1,t2) + gprodUp(gw1,s1,t2) - gprodDn(gw1,s1,t2)
+   + 2 gprodUp(gw3,s1,t1) - 2 gprodDn(gw3,s1,t1) + 500 gshed(ng101,s1,t2)
+   + 500 gshed(ng102,s1,t2) + gprodUp(gw1,s1,t2) - gprodDn(gw1,s1,t2)
    + 1.5 gprodUp(gw2,s1,t2) - 1.5 gprodDn(gw2,s1,t2) + 2 gprodUp(gw3,s1,t2)
-   - 2 gprodDn(gw3,s1,t2) + 5000 gshed(ng101,s1,t3)
-   + 5000 gshed(ng102,s1,t3) + gprodUp(gw1,s1,t3) - gprodDn(gw1,s1,t3)
-   + 1.5 gprodUp(gw2,s1,t3) - 1.5 gprodDn(gw2,s1,t3) + 2 gprodUp(gw3,s1,t3)
-   - 2 gprodDn(gw3,s1,t3) + 5000 gshed(ng101,s1,t4)
-   + 5000 gshed(ng102,s1,t4) + gprodUp(gw1,s1,t4) - gprodDn(gw1,s1,t4)
-   + 1.5 gprodUp(gw2,s1,t4) - 1.5 gprodDn(gw2,s1,t4) + 2 gprodUp(gw3,s1,t4)
-   - 2 gprodDn(gw3,s1,t4) + 5000 gshed(ng101,s2,t1)
-   + 5000 gshed(ng102,s2,t1) + gprodUp(gw1,s2,t1) - gprodDn(gw1,s2,t1)
+   - 2 gprodDn(gw3,s1,t2) + 500 gshed(ng101,s1,t3) + 500 gshed(ng102,s1,t3)
+   + gprodUp(gw1,s1,t3) - gprodDn(gw1,s1,t3) + 1.5 gprodUp(gw2,s1,t3)
+   - 1.5 gprodDn(gw2,s1,t3) + 2 gprodUp(gw3,s1,t3) - 2 gprodDn(gw3,s1,t3)
+   + 500 gshed(ng101,s1,t4) + 500 gshed(ng102,s1,t4) + gprodUp(gw1,s1,t4)
+   - gprodDn(gw1,s1,t4) + 1.5 gprodUp(gw2,s1,t4) - 1.5 gprodDn(gw2,s1,t4)
+   + 2 gprodUp(gw3,s1,t4) - 2 gprodDn(gw3,s1,t4) + 500 gshed(ng101,s2,t1)
+   + 500 gshed(ng102,s2,t1) + gprodUp(gw1,s2,t1) - gprodDn(gw1,s2,t1)
    + 1.5 gprodUp(gw2,s2,t1) - 1.5 gprodDn(gw2,s2,t1) + 2 gprodUp(gw3,s2,t1)
-   - 2 gprodDn(gw3,s2,t1) + 5000 gshed(ng101,s2,t2)
-   + 5000 gshed(ng102,s2,t2) + gprodUp(gw1,s2,t2) - gprodDn(gw1,s2,t2)
-   + 1.5 gprodUp(gw2,s2,t2) - 1.5 gprodDn(gw2,s2,t2) + 2 gprodUp(gw3,s2,t2)
-   - 2 gprodDn(gw3,s2,t2) + 5000 gshed(ng101,s2,t3)
-   + 5000 gshed(ng102,s2,t3) + gprodUp(gw1,s2,t3) - gprodDn(gw1,s2,t3)
-   + 1.5 gprodUp(gw2,s2,t3) - 1.5 gprodDn(gw2,s2,t3) + 2 gprodUp(gw3,s2,t3)
-   - 2 gprodDn(gw3,s2,t3) + 5000 gshed(ng101,s2,t4)
-   + 5000 gshed(ng102,s2,t4) + gprodUp(gw1,s2,t4) - gprodDn(gw1,s2,t4)
+   - 2 gprodDn(gw3,s2,t1) + 500 gshed(ng101,s2,t2) + 500 gshed(ng102,s2,t2)
+   + gprodUp(gw1,s2,t2) - gprodDn(gw1,s2,t2) + 1.5 gprodUp(gw2,s2,t2)
+   - 1.5 gprodDn(gw2,s2,t2) + 2 gprodUp(gw3,s2,t2) - 2 gprodDn(gw3,s2,t2)
+   + 500 gshed(ng101,s2,t3) + 500 gshed(ng102,s2,t3) + gprodUp(gw1,s2,t3)
+   - gprodDn(gw1,s2,t3) + 1.5 gprodUp(gw2,s2,t3) - 1.5 gprodDn(gw2,s2,t3)
+   + 2 gprodUp(gw3,s2,t3) - 2 gprodDn(gw3,s2,t3) + 500 gshed(ng101,s2,t4)
+   + 500 gshed(ng102,s2,t4) + gprodUp(gw1,s2,t4) - gprodDn(gw1,s2,t4)
    + 1.5 gprodUp(gw2,s2,t4) - 1.5 gprodDn(gw2,s2,t4) + 2 gprodUp(gw3,s2,t4)
    - 2 gprodDn(gw3,s2,t4)
 Subject To
@@ -78,49 +76,49 @@ Subject To
    + 0.5 qin_sr_rt(('ng101','ng102'),s1,t1)
    + 0.5 qout_sr_rt(('ng101','ng102'),s1,t1) = 0
  gflow_sr_limit_rt(('ng101','ng102'),s1,t1):
-   gflow_sr_rt(('ng101','ng102'),s1,t1) <= 4000
+   gflow_sr_rt(('ng101','ng102'),s1,t1) <= 10000
  gflow_sr_io_rt(('ng101','ng102'),s2,t1):
    - gflow_sr_rt(('ng101','ng102'),s2,t1)
    + 0.5 qin_sr_rt(('ng101','ng102'),s2,t1)
    + 0.5 qout_sr_rt(('ng101','ng102'),s2,t1) = 0
  gflow_sr_limit_rt(('ng101','ng102'),s2,t1):
-   gflow_sr_rt(('ng101','ng102'),s2,t1) <= 4000
+   gflow_sr_rt(('ng101','ng102'),s2,t1) <= 10000
  gflow_sr_io_rt(('ng101','ng102'),s1,t2):
    - gflow_sr_rt(('ng101','ng102'),s1,t2)
    + 0.5 qin_sr_rt(('ng101','ng102'),s1,t2)
    + 0.5 qout_sr_rt(('ng101','ng102'),s1,t2) = 0
  gflow_sr_limit_rt(('ng101','ng102'),s1,t2):
-   gflow_sr_rt(('ng101','ng102'),s1,t2) <= 4000
+   gflow_sr_rt(('ng101','ng102'),s1,t2) <= 10000
  gflow_sr_io_rt(('ng101','ng102'),s2,t2):
    - gflow_sr_rt(('ng101','ng102'),s2,t2)
    + 0.5 qin_sr_rt(('ng101','ng102'),s2,t2)
    + 0.5 qout_sr_rt(('ng101','ng102'),s2,t2) = 0
  gflow_sr_limit_rt(('ng101','ng102'),s2,t2):
-   gflow_sr_rt(('ng101','ng102'),s2,t2) <= 4000
+   gflow_sr_rt(('ng101','ng102'),s2,t2) <= 10000
  gflow_sr_io_rt(('ng101','ng102'),s1,t3):
    - gflow_sr_rt(('ng101','ng102'),s1,t3)
    + 0.5 qin_sr_rt(('ng101','ng102'),s1,t3)
    + 0.5 qout_sr_rt(('ng101','ng102'),s1,t3) = 0
  gflow_sr_limit_rt(('ng101','ng102'),s1,t3):
-   gflow_sr_rt(('ng101','ng102'),s1,t3) <= 4000
+   gflow_sr_rt(('ng101','ng102'),s1,t3) <= 10000
  gflow_sr_io_rt(('ng101','ng102'),s2,t3):
    - gflow_sr_rt(('ng101','ng102'),s2,t3)
    + 0.5 qin_sr_rt(('ng101','ng102'),s2,t3)
    + 0.5 qout_sr_rt(('ng101','ng102'),s2,t3) = 0
  gflow_sr_limit_rt(('ng101','ng102'),s2,t3):
-   gflow_sr_rt(('ng101','ng102'),s2,t3) <= 4000
+   gflow_sr_rt(('ng101','ng102'),s2,t3) <= 10000
  gflow_sr_io_rt(('ng101','ng102'),s1,t4):
    - gflow_sr_rt(('ng101','ng102'),s1,t4)
    + 0.5 qin_sr_rt(('ng101','ng102'),s1,t4)
    + 0.5 qout_sr_rt(('ng101','ng102'),s1,t4) = 0
  gflow_sr_limit_rt(('ng101','ng102'),s1,t4):
-   gflow_sr_rt(('ng101','ng102'),s1,t4) <= 4000
+   gflow_sr_rt(('ng101','ng102'),s1,t4) <= 10000
  gflow_sr_io_rt(('ng101','ng102'),s2,t4):
    - gflow_sr_rt(('ng101','ng102'),s2,t4)
    + 0.5 qin_sr_rt(('ng101','ng102'),s2,t4)
    + 0.5 qout_sr_rt(('ng101','ng102'),s2,t4) = 0
  gflow_sr_limit_rt(('ng101','ng102'),s2,t4):
-   gflow_sr_rt(('ng101','ng102'),s2,t4) <= 4000
+   gflow_sr_rt(('ng101','ng102'),s2,t4) <= 10000
  gprodUp_max(gw1,s1,t1): gprodUp(gw1,s1,t1) <= 0
  gprodDn_max(gw1,s1,t1): gprodDn(gw1,s1,t1) <= 100
  gprodUp_max(gw1,s1,t2): gprodUp(gw1,s1,t2) <= 0
@@ -153,21 +151,21 @@ Subject To
  gprodDn_max(gw2,s2,t3): gprodDn(gw2,s2,t3) <= 250
  gprodUp_max(gw2,s2,t4): gprodUp(gw2,s2,t4) <= 0
  gprodDn_max(gw2,s2,t4): gprodDn(gw2,s2,t4) <= 250
- gprodUp_max(gw3,s1,t1): gprodUp(gw3,s1,t1) <= 450
+ gprodUp_max(gw3,s1,t1): gprodUp(gw3,s1,t1) <= 950
  gprodDn_max(gw3,s1,t1): gprodDn(gw3,s1,t1) <= 50
- gprodUp_max(gw3,s1,t2): gprodUp(gw3,s1,t2) <= 450
+ gprodUp_max(gw3,s1,t2): gprodUp(gw3,s1,t2) <= 950
  gprodDn_max(gw3,s1,t2): gprodDn(gw3,s1,t2) <= 50
- gprodUp_max(gw3,s1,t3): gprodUp(gw3,s1,t3) <= 450
+ gprodUp_max(gw3,s1,t3): gprodUp(gw3,s1,t3) <= 950
  gprodDn_max(gw3,s1,t3): gprodDn(gw3,s1,t3) <= 50
- gprodUp_max(gw3,s1,t4): gprodUp(gw3,s1,t4) <= 450
+ gprodUp_max(gw3,s1,t4): gprodUp(gw3,s1,t4) <= 950
  gprodDn_max(gw3,s1,t4): gprodDn(gw3,s1,t4) <= 50
- gprodUp_max(gw3,s2,t1): gprodUp(gw3,s2,t1) <= 450
+ gprodUp_max(gw3,s2,t1): gprodUp(gw3,s2,t1) <= 950
  gprodDn_max(gw3,s2,t1): gprodDn(gw3,s2,t1) <= 50
- gprodUp_max(gw3,s2,t2): gprodUp(gw3,s2,t2) <= 450
+ gprodUp_max(gw3,s2,t2): gprodUp(gw3,s2,t2) <= 950
  gprodDn_max(gw3,s2,t2): gprodDn(gw3,s2,t2) <= 50
- gprodUp_max(gw3,s2,t3): gprodUp(gw3,s2,t3) <= 450
+ gprodUp_max(gw3,s2,t3): gprodUp(gw3,s2,t3) <= 950
  gprodDn_max(gw3,s2,t3): gprodDn(gw3,s2,t3) <= 50
- gprodUp_max(gw3,s2,t4): gprodUp(gw3,s2,t4) <= 450
+ gprodUp_max(gw3,s2,t4): gprodUp(gw3,s2,t4) <= 950
  gprodDn_max(gw3,s2,t4): gprodDn(gw3,s2,t4) <= 50
  line_store_rt(('ng101','ng102'),s1,t1):
    - qin_sr_rt(('ng101','ng102'),s1,t1)
