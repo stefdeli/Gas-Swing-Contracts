@@ -28,6 +28,131 @@ class expando(object):
 
 
 # Create Object 
+class ElecDA():
+    '''
+    Stochastic electricity system day-ahead scheduling
+    '''
+    
+    def __init__(self,comp=False,bilevel=False):
+        '''
+        comp - building a complementarity model?
+        bilevel - building a bilevel model?
+        '''        
+        self.edata = expando()
+        self.variables = expando()
+        self.variables.primal = {}
+        self.constraints = {}
+        self.results = expando()
+
+        
+        self._load_ElecData(bilevel)
+        self.comp=comp
+        
+        if comp==False:
+            self._build_model()
+            self.model.write(defaults.folder+'/LPModels/mEDA.lp')
+        elif comp==True:
+            self._build_CP_model()
+            self.model.write(defaults.folder+'/LPModels/mEDA_COMP.lp')
+        
+    def optimize(self):
+        self.model.setParam( 'OutputFlag', defaults.GUROBI_OUTPUT )
+        self.model.optimize()
+        dispatchElecDA = expando()
+
+                
+        if self.model.Status==2:
+            if self.comp==False:
+                
+                print ('########################################################')
+                print ('Electricity dispatch - Solved')
+                print ('########################################################')
+                
+                self.get_results()
+                
+                dispatchElecDA.Pgen = self.results.Pgen
+                dispatchElecDA.PgenSC = self.results.PgenSC
+                dispatchElecDA.WindDA = self.results.WindDA
+                dispatchElecDA.usc = self.results.usc
+
+        
+            else:
+                
+                print ('########################################################')
+                print ('COMPLEMENTARITY Electricity dispatch - Solved')
+                print ('########################################################')
+                self.get_results()
+                
+    
+        else:
+            
+            self.model.computeIIS()
+            
+            if self.comp==False:
+                self.model.write(defaults.folder+'/LPModels/mEDA.ilp')
+            else:
+                self.model.write(defaults.folder+'/LPModels/mEDA_COMP.ilp')
+        
+        return dispatchElecDA
+        
+    
+    def _load_ElecData(self,bilevel):     
+        ElecData_Load._load_network(self)  
+        ElecData_Load._load_generator_data(self)
+        ElecData_Load._load_wind_data(self)         
+        ElecData_Load._load_initial_data(self)
+        ElecData_Load._load_SCinfo(self)
+        
+        
+        ElecData_Load._combine_wind_gprt_scenarios(self,bilevel)
+        
+        if defaults.ChangeTime==True:
+            self.edata.time=defaults.Time
+        
+    def get_results(self):           
+        GetResults._results_elecDA(self)
+        
+    def get_duals(self):
+        GetResults._results_duals(self)
+        
+    def _build_model(self):
+        self.model = gb.Model()        
+
+        mtype = 'Stoch'      # 'Market type' = {Stoch, RealTime}
+        dispatchElecDA = None
+        
+        LibVars._build_variables_elecDA(self)        
+#        LibVars._build_variables_elecRT(self,mtype)    
+        
+        LibCns_Elec._build_constraints_elecDA(self)
+#        LibCns_Elec._build_constraints_elecRT(self, mtype, dispatchElecDA)
+       
+        LibObjFunct. _build_objective_ElecDA(self)
+        self.model.update()
+        
+    def _build_CP_model(self):
+        self.model = gb.Model()        
+        
+        mtype = 'Stoch'      # 'Market type' = {Stoch, RealTime}
+        dispatchElecDA = None
+        
+        LibVars._build_variables_elecDA(self)        
+        
+        
+        LibCns_Elec._build_constraints_elecDA(self)
+        LibObjFunct._build_objective_ElecDA(self)
+       
+        self.model.update()
+        # Add the KKT Conditions (Stationarity and complementarity)
+        KKTizer._complementarity_model(self)
+        
+        #LibVars._build_dummy_objective_var(self)
+        #LibObjFunct._build_objective_dummy_complementarity(self)
+        
+        #self.model.Params.MIPFocus=1
+        #self.model.Params.timelimit = 20.0
+        self.model.update()
+
 class StochElecDA():
     '''
     Stochastic electricity system day-ahead scheduling
@@ -157,8 +282,6 @@ class StochElecDA():
         #self.model.Params.MIPFocus=1
         #self.model.Params.timelimit = 20.0
         self.model.update()
-
-
 
 class GasDA():
     '''
@@ -535,5 +658,51 @@ class GasRT():
         #self.model.Params.PreSOS1BigM=1e3
         self.model.update()
 
+class Bilevel_Model():
+    '''
+    Real-time electricity system dispatch
+    '''
+    
+    def __init__(self,f2d):
+        '''
+        '''        
+        self.edata = expando()
+        self.gdata = expando()
+        self.variables = expando()
+        self.variables.primal={}
+        self.constraints = {}
+        self.results = expando()
 
+        self._load_ElecData()
+        self._load_GasData(f2d)
+        
+        self._build_model()
+        
+        
+    def _load_GasData(self,f2d):
+        GasData_Load._load_gas_network(self,f2d)              
+        GasData_Load._load_wells_data(self)
+        GasData_Load._load_gasload(self)
+        GasData_Load._load_gas_storage(self)
+
+        if defaults.ChangeTime==True:
+            self.gdata.time=defaults.Time
+        
+        GasData_Load._load_SCinfo(self)
+        
+    def _load_ElecData(self):     
+        ElecData_Load._load_network(self)  
+        ElecData_Load._load_generator_data(self)
+        ElecData_Load._load_wind_data(self)         
+        ElecData_Load._load_initial_data(self)
+        
+        ElecData_Load._combine_wind_gprt_scenarios(self,bilevel=True)
+        
+        ElecData_Load._load_SCinfo(self)
+        
+        if defaults.ChangeTime==True:
+            self.edata.time=defaults.Time
+        
+    def _build_model(self):
+        self.model = gb.Model()
 

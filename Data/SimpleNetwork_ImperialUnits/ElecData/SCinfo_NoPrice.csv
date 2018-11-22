@@ -1,5 +1,5 @@
 SC_ID,GasNode,ElecNode,ts,te,PcMin,PcMax,RcD,RcU,lambdaC,AlphaC,time,MIPGap
-sc1,ng102,ne101,1,4,0,10,-999,-999,0,-999,,
+sc1,ng102,ne101,1,4,40,50,-999,-999,0,-999,,
 sc2,ng102,ne101,1,4,0,20,-999,-999,0,-999,,
 sc3,ng102,ne101,1,4,0,30,-999,-999,0,-999,,
 sc4,ng102,ne101,1,4,0,40,-999,-999,0,-999,,

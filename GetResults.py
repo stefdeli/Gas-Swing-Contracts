@@ -8,6 +8,47 @@ import pandas as pd
 import numpy as np
 import defaults
 
+def _results_elecDA(self):
+         
+     generators = self.edata.generators
+     gfpp = self.edata.gfpp   
+     windfarms = self.edata.windfarms 
+     swingcontracts = self.edata.swingcontracts
+     time = self.edata.time
+     
+     # Day-ahead variables
+     
+     if self.comp==False:
+         self.results.usc = pd.DataFrame(
+                 [self.variables.usc[sc].x for sc in swingcontracts], index=swingcontracts)
+     
+     
+     self.results.Pgen = pd.DataFrame(
+        [[self.variables.Pgen[i,t].x for i in generators] for t in time], index=time, columns=generators)
+        
+     self.results.WindDA = pd.DataFrame(
+        [[self.variables.WindDA[j,t].x for j in windfarms] for t in time], index=time, columns=windfarms)
+     
+
+     self.results.PgenSC = pd.DataFrame(
+        [[self.variables.PgenSC[g,t].x for g in gfpp] for t in time], index=time, columns=gfpp)
+     
+     self.results.RCup = pd.DataFrame(
+        [[self.variables.RCup[g,t].x for g in generators] for t in time], index=time, columns=generators)
+     
+     self.results.RCdn = pd.DataFrame(
+        [[self.variables.RCdn[g,t].x for g in generators] for t in time], index=time, columns=generators)
+    
+     self.results.RCupSC = pd.DataFrame(
+        [[self.variables.RCupSC[g,t].x for g in gfpp] for t in time], index=time, columns=gfpp)
+     
+     self.results.RCdnSC = pd.DataFrame(
+        [[self.variables.RCdnSC[g,t].x for g in gfpp] for t in time], index=time, columns=gfpp)
+     
+     # Real-time variables 
+     
+     
+     
     
 def _results_StochD(self):
          

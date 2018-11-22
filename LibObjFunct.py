@@ -9,6 +9,49 @@ import gurobipy as gb
 import defaults
 import pandas as pd
 
+
+def _build_objective_ElecDA(self):  
+    
+    var = self.variables
+    #generators = self.edata.generators    
+    gfpp = self.edata.gfpp
+    nongfpp = self.edata.nongfpp
+    gendata = self.edata.generatorinfo
+    HR=self.edata.generatorinfo.HR
+    gaspriceda = self.edata.GasPriceDA
+    gaspriceRT = self.edata.GasPriceRT
+    
+    SCdata = self.edata.SCdata
+    swingcontr = self.edata.swingcontracts
+    time = self.edata.time
+    
+    Map_Eg2Gn=self.edata.Map_Eg2Gn
+    
+    scenarios = self.edata.scenarios
+    
+    m = self.model 
+    
+    scenarioprob={}    
+    scenarioprob = {s: self.edata.scen_wgp[s][2] for s in self.edata.scen_wgp.keys()}    
+    scengprt = {s: self.edata.scen_wgp[s][0] for s in self.edata.scen_wgp.keys()}
+    #scenarioprob = self.data.scenprob['Probability'].to_dict()
+    
+    P_up=defaults.RESERVES_UP_PREMIUM
+    P_dn=defaults.RESERVES_DN_PREMIUM
+    
+    
+    
+    # !NB Re-dispatch cost = Day-ahead energy cost (No premium)
+    m.setObjective(    
+    # Day-ahead energy cost
+    # Non Gas Generators      
+    gb.quicksum(gendata.lincost[gen]*var.Pgen[gen,t] for gen in nongfpp for t in time) +   
+    # Gas Generators = Nodal Gas Price  * HR * Power Output
+    gb.quicksum( gaspriceda[t][Map_Eg2Gn[gen][0]]*HR[gen]*var.Pgen[gen,t] for gen in gfpp for t in time) +      
+    # Gas Generators with Contracts 
+    gb.quicksum(SCdata.lambdaC[sc,gen]*HR[gen]*var.PgenSC[gen,t] for gen in gfpp for sc in swingcontr for t in time),    
+
+    gb.GRB.MINIMIZE)
     
 def _build_objective_StochElecDA(self):  
     
