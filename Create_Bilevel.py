@@ -70,14 +70,11 @@ BLmodel.model.Params.MIPFocus = 3
 BLmodel.model.optimize() 
 
   
-
-#--- Change the Contract Parameters
-
-
 df=pd.DataFrame([[var.VarName,var.x] for var in BLmodel.model.getVars() ],columns=['Name','Value'])
-df[df.Name.str.startswith(('Pgen','WindDA','gprod'))]
+print(df[df.Name.str.startswith(('Pgen','WindDA','lambda_gas_balance','gprod'))])
 
 
+BilevelFunctions.Loop_Contracts_Price(BLmodel)
 #
 #
 #

@@ -823,7 +823,7 @@ def Loop_Contracts_Price(BLmodel):
                 tt = BLmodel.edata.time.index(t)+1            
                 SCP[sc,t] = 1.0 if (tt >= SCdata.ts[sc] and tt<= SCdata.te[sc]) else 0.0
            
-        BilevelFunctions.Change_ContractParameters(BLmodel,SCdata,SCP)
+        Change_ContractParameters(BLmodel,SCdata,SCP)
         
         #BLmodel.model.reset()
         #BLmodel.model.resetParams()
