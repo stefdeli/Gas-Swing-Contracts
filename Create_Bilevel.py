@@ -33,7 +33,7 @@ mSEDA = modelObjects.StochElecDA(bilevel=True)
 dispatchElecDA=mSEDA.optimize()
 
 mSEDA_COMP = modelObjects.StochElecDA(comp=True,bilevel=True)
-mSEDA_COMP.optimize()
+#mSEDA_COMP.optimize()
 
 f2d = False
 
@@ -67,6 +67,20 @@ mEDA_COMP.model = gb.read(folder+'mEDA_COMP.lp')
 mGDA_COMP.model = gb.read(folder+'mGDA_COMP.lp')
 
 
+
+#
+#Dualobj_mSEDA=BilevelFunctions.Get_Dual_Obj(mSEDA_COMP,mSEDA_COMP)
+#Obj_mSEDA=BilevelFunctions.Get_Obj(mSEDA_COMP,mSEDA_COMP)
+#
+#mSEDA_COMP.model.setObjective(Dualobj_mSEDA)
+#mSEDA_COMP.model.reset()
+#mSEDA_COMP.model.optimize()
+#print(mSEDA_COMP.model.ObjVal)
+#mSEDA_COMP.model.setObjective(Obj_mSEDA)
+#mSEDA_COMP.model.reset()
+#mSEDA_COMP.model.optimize()
+#print(mSEDA_COMP.model.ObjVal)
+#   
 #--- Bilevel Model (All subproblems together)
        
 f2d=False         
@@ -76,8 +90,9 @@ BilevelFunctions.DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP)
 #BilevelFunctions.DA_Model(BLmodel,mEDA_COMP,mGDA_COMP)
 
 
-
-contractprices=list(np.linspace(2,10,num=20,endpoint=True))
+R={}
+GenRT={}
+contractprices=list(np.linspace(0,10,num=20,endpoint=False))
 for i in contractprices:
 
     Contract_name ='ContractPrice(ng102)'
@@ -90,65 +105,38 @@ for i in contractprices:
     BLmodel.model.setParam( 'OutputFlag', False)
     BLmodel.model.optimize() 
     
-    CostDA = 0.0
+#    BilevelFunctions.CompareBLmodelObjective(BLmodel)
+    
+    CostDA_Elec = 0.0
     for t in BLmodel.edata.time:
-        for gw in BLmodel.gdata.wells:
-            var_name = 'gprod({0},{1},{2})'.format(gw,'k0',t)
-            var=BLmodel.model.getVarByName(var_name)
-            CostDA= CostDA + BLmodel.gdata.wellsinfo.Cost[gw]*var.x
+        for gen in BLmodel.edata.nongfpp:
+            var_name='Pgen({0},{1})'.format(gen,t)
+            Pgen = BLmodel.model.getVarByName(var_name)
+            CostDA_Elec = CostDA_Elec + BLmodel.edata.generatorinfo.lincost[gen]*Pgen.x
             
-        for gn in BLmodel.gdata.gnodes:
-            for k in ['k0','k1','k2']:
-                var_name = 'gshed_da({0},{1},{2})'.format(gn,k,t)
-                var=BLmodel.model.getVarByName(var_name)
-                CostDA= CostDA + defaults.VOLL*var.x
-                
-        for gn in BLmodel.gdata.gnodes:
-            for k in ['k0','k1','k2']:
-                var_name = 'gshed_da({0},{1},{2})'.format(gn,k,t)
-                var=BLmodel.model.getVarByName(var_name)
-                CostDA= CostDA + defaults.VOLL*var.x
-
-    CostRT = 0.0
-    for t in BLmodel.edata.time:
-        for gw in BLmodel.gdata.wells:
-            for s in BLmodel.edata.scenarios:
-                var_name_up = 'gprodUp({0},{1},{2})'.format(gw,s,t)
-                var_name_dn = 'gprodDn({0},{1},{2})'.format(gw,s,t)
-                
-                var_up=BLmodel.model.getVarByName(var_name_up)
-                var_dn=BLmodel.model.getVarByName(var_name_dn)
-                Prob=BLmodel.edata.scen_wgp[s][2]
-                CostRT= CostRT + Prob*BLmodel.gdata.wellsinfo.Cost[gw]*(var_up.x-var_dn.x)
-            
-
-                
-                
-    IncomeDA    = 0.0
-    IncomeSCDA  = 0.0
-    for t in BLmodel.edata.time:
         for gen in BLmodel.edata.gfpp:
-            var_name = 'Pgen({0},{1})'.format(gen,t)
+            var_name='Pgen({0},{1})'.format(gen,t)
+            Pgen = BLmodel.model.getVarByName(var_name)
+            
             Lambda_name ='lambda_gas_balance_da({0},{1},{2})'.format(BLmodel.edata.generatorinfo.origin_gas[gen],'k0',t)
             var=BLmodel.model.getVarByName(var_name)
             price=BLmodel.model.getVarByName(Lambda_name)
-            IncomeDA = IncomeDA  + 8*price.x*var.x
+            
+            CostDA_Elec = CostDA_Elec + 8*price.x*var.x
             
             var_name = 'PgenSC({0},{1})'.format(gen,t)
             Contract_name ='ContractPrice({0})'.format(BLmodel.edata.generatorinfo.origin_gas[gen])
             var=BLmodel.model.getVarByName(var_name)
             contract=BLmodel.model.getVarByName(Contract_name)
-            IncomeSCDa = IncomeSCDA  + 8*contract.x*var.x
 
-                
-    IncomeRT    = 0.0
-    IncomeSCRT  = 0.0
+            CostDA_Elec = CostDA_Elec + 8*contract.x*var.x
+        
+    
+    CostRT_Elec = 0.0
     for t in BLmodel.edata.time:
-        for gen in BLmodel.edata.gfpp:
-            for s in BLmodel.edata.scenarios:
-                
-                Prob=BLmodel.edata.scen_wgp[s][2]
-                
+        for s in BLmodel.edata.scenarios:
+            Prob=BLmodel.edata.scen_wgp[s][2]
+            for gen in BLmodel.edata.gfpp:                
                 var_name_up = 'RUp({0},{1},{2})'.format(gen,s,t)
                 var_name_dn = 'RDn({0},{1},{2})'.format(gen,s,t)
                 
@@ -157,10 +145,9 @@ for i in contractprices:
                 
                 Lambda_name ='lambda_gas_balance_rt({0},{1},{2})'.format(BLmodel.edata.generatorinfo.origin_gas[gen],s,t)
                 price=BLmodel.model.getVarByName(Lambda_name)   
+#                print(8*price.x*(var_up-var_dn))
+                CostRT_Elec = CostRT_Elec + 8*price.x*(var_up.x-var_dn.x)
                 
-                IncomeRT = IncomeRT  + Prob*8*price.x*(var_up.x-var_dn.x)
-                
-            
                 var_name_up = 'RUpSC({0},{1},{2})'.format(gen,s,t)
                 var_name_dn = 'RDnSC({0},{1},{2})'.format(gen,s,t)
                 
@@ -169,18 +156,32 @@ for i in contractprices:
             
                 Contract_name ='ContractPrice({0})'.format(BLmodel.edata.generatorinfo.origin_gas[gen])
                 contract=BLmodel.model.getVarByName(Contract_name)
-                IncomeSCRT = IncomeSCRT  + Prob*8*contract.x*(var_up.x-var_dn.x)
-       
+                
+#                print(Prob*8*contract.x*(var_up-var_dn))
+                CostRT_Elec = CostRT_Elec + Prob*8*contract.x*(var_up.x-var_dn.x)
+                
+            for gen in BLmodel.edata.nongfpp:
+                var_name_up = 'RUp({0},{1},{2})'.format(gen,s,t)
+                var_name_dn = 'RDn({0},{1},{2})'.format(gen,s,t)
+                
+                var_up=BLmodel.model.getVarByName(var_name_up)
+                var_dn=BLmodel.model.getVarByName(var_name_dn)
+#                print(Prob*BLmodel.edata.generatorinfo.lincost[gen]*(var_up-var_dn))
+                CostRT_Elec = CostRT_Elec + Prob*BLmodel.edata.generatorinfo.lincost[gen]*(var_up.x-var_dn.x)
+  
     
     
-    Profit = CostDA+CostRT-IncomeDA-IncomeSCDA-IncomeRT-IncomeSCRT
+    mSEDA_Calc_Cost = CostDA_Elec+CostRT_Elec
     
-#    print('Contract:{3:.2f} \t Profit={4:.2f} \tCost={0:.2f} \t Income={1:.2f} \t IncomeSC={2:.2f}'.format(Cost,Income,IncomeSC,contract.x,-Profit))
-#    print('Contract:{2:.2f} \tDual:{0:.2f} \t Calc:{1:.2f} \t Error:{3:.2e}'.format(BLmodel.model.ObjVal,Profit,contract.x,BLmodel.model.ObjVal-Profit))
-    print('Contract:{1:.2f} \tDual:{0:.2f} \t Calc{2:.2f}'.format(BLmodel.model.ObjVal,contract.x,Profit))
-          
-R=BilevelFunctions.GetDispatch(BLmodel)
-
+    mSEDA_Dual_Cost = BLmodel.Dualobj_mSEDA.getValue()
+    Error= mSEDA_Calc_Cost-mSEDA_Dual_Cost
+    print('Cost_Calc={0:.2f} \t Cost_Dual={1:.2f} \t Error={2:.2f}'.format( mSEDA_Calc_Cost, mSEDA_Dual_Cost,Error))  
+    
+    
+    
+#    print('Cost:{0:.2f} \t Income:{1:.2f}'.format(CostDA,IncomeDA+IncomeSCDA+IncomeRT+IncomeSCRT))
+#    print('Contract:{1:.2f} \tIncome:{0:.2f} \t Income:{1:.2f}'.format(BLmodel.model.ObjVal,CostDA,IncomeDA+IncomeSCDA+IncomeRT+IncomeSCRT))
+#
 
 
 #Contract_name ='ContractPrice(ng102)'
@@ -192,7 +193,11 @@ R=BilevelFunctions.GetDispatch(BLmodel)
 #
 #  
 df=pd.DataFrame([[var.VarName,var.x,var.Start] for var in BLmodel.model.getVars() ],columns=['Name','Value','Initial'])
-df[df.Name.str.contains(('gprod'))]
+df[df.Name.str.contains(('lambda_gas_balance'))]
+
+df=pd.DataFrame([[con.ConstrName,con.RHS, BLmodel.model.getRow(con),con.sense] for con in mSEDA_COMP.model.getConstrs() ],columns=['Name','RHS','LHS','sense'])
+
+con = next(iter(mSEDA_COMP.model.getConstrs()))
 
 ##print(df[df.Name.str.startswith(('Pgen','WindDA','lambda_gas_balance','gprod'))])
 #

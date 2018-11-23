@@ -1,0 +1,421 @@
+,Name,RHS,LHS,sense
+0,PowerBalance_DA(t1),50.0,"<gurobi.LinExpr: Pgen(g1,t1) + Pgen(g2,t1) + PgenSC(g1,t1) + WindDA(w1,t1)>",=
+1,PowerBalance_DA(t2),51.29409523,"<gurobi.LinExpr: Pgen(g1,t2) + Pgen(g2,t2) + PgenSC(g1,t2) + WindDA(w1,t2)>",=
+2,PowerBalance_DA(t3),52.5,"<gurobi.LinExpr: Pgen(g1,t3) + Pgen(g2,t3) + PgenSC(g1,t3) + WindDA(w1,t3)>",=
+3,PowerBalance_DA(t4),53.53553391,"<gurobi.LinExpr: Pgen(g1,t4) + Pgen(g2,t4) + PgenSC(g1,t4) + WindDA(w1,t4)>",=
+4,"Pmax_DA_GFPP(g1,t1)",150.0,"<gurobi.LinExpr: Pgen(g1,t1) + PgenSC(g1,t1) + RCup(g1,t1) + RCupSC(g1,t1)>",<
+5,"Pmax_DA_GFPP(g2,t1)",9.0,"<gurobi.LinExpr: Pgen(g2,t1) + RCup(g2,t1)>",<
+6,"Pmax_DA_GFPP(g1,t2)",150.0,"<gurobi.LinExpr: Pgen(g1,t2) + PgenSC(g1,t2) + RCup(g1,t2) + RCupSC(g1,t2)>",<
+7,"Pmax_DA_GFPP(g2,t2)",9.0,"<gurobi.LinExpr: Pgen(g2,t2) + RCup(g2,t2)>",<
+8,"Pmax_DA_GFPP(g1,t3)",150.0,"<gurobi.LinExpr: Pgen(g1,t3) + PgenSC(g1,t3) + RCup(g1,t3) + RCupSC(g1,t3)>",<
+9,"Pmax_DA_GFPP(g2,t3)",9.0,"<gurobi.LinExpr: Pgen(g2,t3) + RCup(g2,t3)>",<
+10,"Pmax_DA_GFPP(g1,t4)",150.0,"<gurobi.LinExpr: Pgen(g1,t4) + PgenSC(g1,t4) + RCup(g1,t4) + RCupSC(g1,t4)>",<
+11,"Pmax_DA_GFPP(g2,t4)",9.0,"<gurobi.LinExpr: Pgen(g2,t4) + RCup(g2,t4)>",<
+12,"Pmin_DA_GFPP(g1,t1)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g1,t1) + -1.0 PgenSC(g1,t1) + RCdn(g1,t1) + RCdnSC(g1,t1)>",<
+13,"Pmin_DA(g2,t1)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g2,t1) + RCup(g2,t1)>",<
+14,"Pmin_DA_GFPP(g1,t2)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g1,t2) + -1.0 PgenSC(g1,t2) + RCdn(g1,t2) + RCdnSC(g1,t2)>",<
+15,"Pmin_DA(g2,t2)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g2,t2) + RCup(g2,t2)>",<
+16,"Pmin_DA_GFPP(g1,t3)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g1,t3) + -1.0 PgenSC(g1,t3) + RCdn(g1,t3) + RCdnSC(g1,t3)>",<
+17,"Pmin_DA(g2,t3)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g2,t3) + RCup(g2,t3)>",<
+18,"Pmin_DA_GFPP(g1,t4)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g1,t4) + -1.0 PgenSC(g1,t4) + RCdn(g1,t4) + RCdnSC(g1,t4)>",<
+19,"Pmin_DA(g2,t4)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g2,t4) + RCup(g2,t4)>",<
+20,"Wind_Max_DA(w1,t1)",7.631893890000001,"<gurobi.LinExpr: WindDA(w1,t1)>",<
+21,"Wind_Max_DA(w1,t2)",7.846999950000001,"<gurobi.LinExpr: WindDA(w1,t2)>",<
+22,"Wind_Max_DA(w1,t3)",5.566136865,"<gurobi.LinExpr: WindDA(w1,t3)>",<
+23,"Wind_Max_DA(w1,t4)",5.741271809999999,"<gurobi.LinExpr: WindDA(w1,t4)>",<
+24,"PgenSCmax(g1,t1)",0.0,"<gurobi.LinExpr: PgenSC(g1,t1)>",<
+25,"PgenSCmin(g1,t1)",0.0,"<gurobi.LinExpr: -1.0 PgenSC(g1,t1)>",<
+26,"RCupSCmax(g1,t1)",0.0,"<gurobi.LinExpr: PgenSC(g1,t1) + RCupSC(g1,t1)>",<
+27,"RCdnSCmin(g1,t1)",0.0,"<gurobi.LinExpr: -1.0 PgenSC(g1,t1) + RCdnSC(g1,t1)>",<
+28,"PgenSCmax(g1,t2)",0.0,"<gurobi.LinExpr: PgenSC(g1,t2)>",<
+29,"PgenSCmin(g1,t2)",0.0,"<gurobi.LinExpr: -1.0 PgenSC(g1,t2)>",<
+30,"RCupSCmax(g1,t2)",0.0,"<gurobi.LinExpr: PgenSC(g1,t2) + RCupSC(g1,t2)>",<
+31,"RCdnSCmin(g1,t2)",0.0,"<gurobi.LinExpr: -1.0 PgenSC(g1,t2) + RCdnSC(g1,t2)>",<
+32,"PgenSCmax(g1,t3)",0.0,"<gurobi.LinExpr: PgenSC(g1,t3)>",<
+33,"PgenSCmin(g1,t3)",0.0,"<gurobi.LinExpr: -1.0 PgenSC(g1,t3)>",<
+34,"RCupSCmax(g1,t3)",0.0,"<gurobi.LinExpr: PgenSC(g1,t3) + RCupSC(g1,t3)>",<
+35,"RCdnSCmin(g1,t3)",0.0,"<gurobi.LinExpr: -1.0 PgenSC(g1,t3) + RCdnSC(g1,t3)>",<
+36,"PgenSCmax(g1,t4)",0.0,"<gurobi.LinExpr: PgenSC(g1,t4)>",<
+37,"PgenSCmin(g1,t4)",0.0,"<gurobi.LinExpr: -1.0 PgenSC(g1,t4)>",<
+38,"RCupSCmax(g1,t4)",0.0,"<gurobi.LinExpr: PgenSC(g1,t4) + RCupSC(g1,t4)>",<
+39,"RCdnSCmin(g1,t4)",0.0,"<gurobi.LinExpr: -1.0 PgenSC(g1,t4) + RCdnSC(g1,t4)>",<
+40,"PowerBalance_RT(s1,t1)",-1.6185494999999999,"<gurobi.LinExpr: -1.0 WindDA(w1,t1) + RUp(g1,s1,t1) + -1.0 RDn(g1,s1,t1) + RUp(g2,s1,t1) + -1.0 RDn(g2,s1,t1) + RUpSC(g1,s1,t1) + -1.0 RDnSC(g1,s1,t1) + -1.0 Wspill(w1,s1,t1) + Lshed(s1,t1)>",=
+41,"PowerBalance_RT(s1,t2)",-1.5618998700000002,"<gurobi.LinExpr: -1.0 WindDA(w1,t2) + RUp(g1,s1,t2) + -1.0 RDn(g1,s1,t2) + RUp(g2,s1,t2) + -1.0 RDn(g2,s1,t2) + RUpSC(g1,s1,t2) + -1.0 RDnSC(g1,s1,t2) + -1.0 Wspill(w1,s1,t2) + Lshed(s1,t2)>",=
+42,"PowerBalance_RT(s1,t3)",-1.56099951,"<gurobi.LinExpr: -1.0 WindDA(w1,t3) + RUp(g1,s1,t3) + -1.0 RDn(g1,s1,t3) + RUp(g2,s1,t3) + -1.0 RDn(g2,s1,t3) + RUpSC(g1,s1,t3) + -1.0 RDnSC(g1,s1,t3) + -1.0 Wspill(w1,s1,t3) + Lshed(s1,t3)>",=
+43,"PowerBalance_RT(s1,t4)",-1.2375919499999999,"<gurobi.LinExpr: -1.0 WindDA(w1,t4) + RUp(g1,s1,t4) + -1.0 RDn(g1,s1,t4) + RUp(g2,s1,t4) + -1.0 RDn(g2,s1,t4) + RUpSC(g1,s1,t4) + -1.0 RDnSC(g1,s1,t4) + -1.0 Wspill(w1,s1,t4) + Lshed(s1,t4)>",=
+44,"PowerBalance_RT(s2,t1)",-13.645238280000001,"<gurobi.LinExpr: -1.0 WindDA(w1,t1) + RUp(g1,s2,t1) + -1.0 RDn(g1,s2,t1) + RUp(g2,s2,t1) + -1.0 RDn(g2,s2,t1) + RUpSC(g1,s2,t1) + -1.0 RDnSC(g1,s2,t1) + -1.0 Wspill(w1,s2,t1) + Lshed(s2,t1)>",=
+45,"PowerBalance_RT(s2,t2)",-14.13210003,"<gurobi.LinExpr: -1.0 WindDA(w1,t2) + RUp(g1,s2,t2) + -1.0 RDn(g1,s2,t2) + RUp(g2,s2,t2) + -1.0 RDn(g2,s2,t2) + RUpSC(g1,s2,t2) + -1.0 RDnSC(g1,s2,t2) + -1.0 Wspill(w1,s2,t2) + Lshed(s2,t2)>",=
+46,"PowerBalance_RT(s2,t3)",-9.57127422,"<gurobi.LinExpr: -1.0 WindDA(w1,t3) + RUp(g1,s2,t3) + -1.0 RDn(g1,s2,t3) + RUp(g2,s2,t3) + -1.0 RDn(g2,s2,t3) + RUpSC(g1,s2,t3) + -1.0 RDnSC(g1,s2,t3) + -1.0 Wspill(w1,s2,t3) + Lshed(s2,t3)>",=
+47,"PowerBalance_RT(s2,t4)",-10.244951669999999,"<gurobi.LinExpr: -1.0 WindDA(w1,t4) + RUp(g1,s2,t4) + -1.0 RDn(g1,s2,t4) + RUp(g2,s2,t4) + -1.0 RDn(g2,s2,t4) + RUpSC(g1,s2,t4) + -1.0 RDnSC(g1,s2,t4) + -1.0 Wspill(w1,s2,t4) + Lshed(s2,t4)>",=
+48,"RegUp_max_RT(g1,s1,t1)",0.0,"<gurobi.LinExpr: -1.0 RCup(g1,t1) + RUp(g1,s1,t1)>",<
+49,"RegDown_max_RT(g1,s1,t1)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g1,t1) + RDn(g1,s1,t1)>",<
+50,"RegUp_max_RT(g2,s1,t1)",0.0,"<gurobi.LinExpr: -1.0 RCup(g2,t1) + RUp(g2,s1,t1)>",<
+51,"RegDown_max_RT(g2,s1,t1)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g2,t1) + RDn(g2,s1,t1)>",<
+52,"RegUp_max_RT(g1,s1,t2)",0.0,"<gurobi.LinExpr: -1.0 RCup(g1,t2) + RUp(g1,s1,t2)>",<
+53,"RegDown_max_RT(g1,s1,t2)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g1,t2) + RDn(g1,s1,t2)>",<
+54,"RegUp_max_RT(g2,s1,t2)",0.0,"<gurobi.LinExpr: -1.0 RCup(g2,t2) + RUp(g2,s1,t2)>",<
+55,"RegDown_max_RT(g2,s1,t2)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g2,t2) + RDn(g2,s1,t2)>",<
+56,"RegUp_max_RT(g1,s1,t3)",0.0,"<gurobi.LinExpr: -1.0 RCup(g1,t3) + RUp(g1,s1,t3)>",<
+57,"RegDown_max_RT(g1,s1,t3)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g1,t3) + RDn(g1,s1,t3)>",<
+58,"RegUp_max_RT(g2,s1,t3)",0.0,"<gurobi.LinExpr: -1.0 RCup(g2,t3) + RUp(g2,s1,t3)>",<
+59,"RegDown_max_RT(g2,s1,t3)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g2,t3) + RDn(g2,s1,t3)>",<
+60,"RegUp_max_RT(g1,s1,t4)",0.0,"<gurobi.LinExpr: -1.0 RCup(g1,t4) + RUp(g1,s1,t4)>",<
+61,"RegDown_max_RT(g1,s1,t4)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g1,t4) + RDn(g1,s1,t4)>",<
+62,"RegUp_max_RT(g2,s1,t4)",0.0,"<gurobi.LinExpr: -1.0 RCup(g2,t4) + RUp(g2,s1,t4)>",<
+63,"RegDown_max_RT(g2,s1,t4)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g2,t4) + RDn(g2,s1,t4)>",<
+64,"RegUp_max_RT(g1,s2,t1)",0.0,"<gurobi.LinExpr: -1.0 RCup(g1,t1) + RUp(g1,s2,t1)>",<
+65,"RegDown_max_RT(g1,s2,t1)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g1,t1) + RDn(g1,s2,t1)>",<
+66,"RegUp_max_RT(g2,s2,t1)",0.0,"<gurobi.LinExpr: -1.0 RCup(g2,t1) + RUp(g2,s2,t1)>",<
+67,"RegDown_max_RT(g2,s2,t1)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g2,t1) + RDn(g2,s2,t1)>",<
+68,"RegUp_max_RT(g1,s2,t2)",0.0,"<gurobi.LinExpr: -1.0 RCup(g1,t2) + RUp(g1,s2,t2)>",<
+69,"RegDown_max_RT(g1,s2,t2)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g1,t2) + RDn(g1,s2,t2)>",<
+70,"RegUp_max_RT(g2,s2,t2)",0.0,"<gurobi.LinExpr: -1.0 RCup(g2,t2) + RUp(g2,s2,t2)>",<
+71,"RegDown_max_RT(g2,s2,t2)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g2,t2) + RDn(g2,s2,t2)>",<
+72,"RegUp_max_RT(g1,s2,t3)",0.0,"<gurobi.LinExpr: -1.0 RCup(g1,t3) + RUp(g1,s2,t3)>",<
+73,"RegDown_max_RT(g1,s2,t3)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g1,t3) + RDn(g1,s2,t3)>",<
+74,"RegUp_max_RT(g2,s2,t3)",0.0,"<gurobi.LinExpr: -1.0 RCup(g2,t3) + RUp(g2,s2,t3)>",<
+75,"RegDown_max_RT(g2,s2,t3)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g2,t3) + RDn(g2,s2,t3)>",<
+76,"RegUp_max_RT(g1,s2,t4)",0.0,"<gurobi.LinExpr: -1.0 RCup(g1,t4) + RUp(g1,s2,t4)>",<
+77,"RegDown_max_RT(g1,s2,t4)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g1,t4) + RDn(g1,s2,t4)>",<
+78,"RegUp_max_RT(g2,s2,t4)",0.0,"<gurobi.LinExpr: -1.0 RCup(g2,t4) + RUp(g2,s2,t4)>",<
+79,"RegDown_max_RT(g2,s2,t4)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g2,t4) + RDn(g2,s2,t4)>",<
+80,"RegUpSC_max_RT(g1,s1,t1)",0.0,"<gurobi.LinExpr: -1.0 RCupSC(g1,t1) + RUpSC(g1,s1,t1)>",<
+81,"RegDnSC_max_RT(g1,s1,t1)",0.0,"<gurobi.LinExpr: -1.0 RCdnSC(g1,t1) + RDnSC(g1,s1,t1)>",<
+82,"RegUpSC_max_RT(g1,s1,t2)",0.0,"<gurobi.LinExpr: -1.0 RCupSC(g1,t2) + RUpSC(g1,s1,t2)>",<
+83,"RegDnSC_max_RT(g1,s1,t2)",0.0,"<gurobi.LinExpr: -1.0 RCdnSC(g1,t2) + RDnSC(g1,s1,t2)>",<
+84,"RegUpSC_max_RT(g1,s1,t3)",0.0,"<gurobi.LinExpr: -1.0 RCupSC(g1,t3) + RUpSC(g1,s1,t3)>",<
+85,"RegDnSC_max_RT(g1,s1,t3)",0.0,"<gurobi.LinExpr: -1.0 RCdnSC(g1,t3) + RDnSC(g1,s1,t3)>",<
+86,"RegUpSC_max_RT(g1,s1,t4)",0.0,"<gurobi.LinExpr: -1.0 RCupSC(g1,t4) + RUpSC(g1,s1,t4)>",<
+87,"RegDnSC_max_RT(g1,s1,t4)",0.0,"<gurobi.LinExpr: -1.0 RCdnSC(g1,t4) + RDnSC(g1,s1,t4)>",<
+88,"RegUpSC_max_RT(g1,s2,t1)",0.0,"<gurobi.LinExpr: -1.0 RCupSC(g1,t1) + RUpSC(g1,s2,t1)>",<
+89,"RegDnSC_max_RT(g1,s2,t1)",0.0,"<gurobi.LinExpr: -1.0 RCdnSC(g1,t1) + RDnSC(g1,s2,t1)>",<
+90,"RegUpSC_max_RT(g1,s2,t2)",0.0,"<gurobi.LinExpr: -1.0 RCupSC(g1,t2) + RUpSC(g1,s2,t2)>",<
+91,"RegDnSC_max_RT(g1,s2,t2)",0.0,"<gurobi.LinExpr: -1.0 RCdnSC(g1,t2) + RDnSC(g1,s2,t2)>",<
+92,"RegUpSC_max_RT(g1,s2,t3)",0.0,"<gurobi.LinExpr: -1.0 RCupSC(g1,t3) + RUpSC(g1,s2,t3)>",<
+93,"RegDnSC_max_RT(g1,s2,t3)",0.0,"<gurobi.LinExpr: -1.0 RCdnSC(g1,t3) + RDnSC(g1,s2,t3)>",<
+94,"RegUpSC_max_RT(g1,s2,t4)",0.0,"<gurobi.LinExpr: -1.0 RCupSC(g1,t4) + RUpSC(g1,s2,t4)>",<
+95,"RegDnSC_max_RT(g1,s2,t4)",0.0,"<gurobi.LinExpr: -1.0 RCdnSC(g1,t4) + RDnSC(g1,s2,t4)>",<
+96,"Max_load_shed_RT(s1,t1)",50.0,"<gurobi.LinExpr: Lshed(s1,t1)>",<
+97,"Max_load_shed_RT(s1,t2)",51.29409523,"<gurobi.LinExpr: Lshed(s1,t2)>",<
+98,"Max_load_shed_RT(s1,t3)",52.5,"<gurobi.LinExpr: Lshed(s1,t3)>",<
+99,"Max_load_shed_RT(s1,t4)",53.53553391,"<gurobi.LinExpr: Lshed(s1,t4)>",<
+100,"Max_load_shed_RT(s2,t1)",50.0,"<gurobi.LinExpr: Lshed(s2,t1)>",<
+101,"Max_load_shed_RT(s2,t2)",51.29409523,"<gurobi.LinExpr: Lshed(s2,t2)>",<
+102,"Max_load_shed_RT(s2,t3)",52.5,"<gurobi.LinExpr: Lshed(s2,t3)>",<
+103,"Max_load_shed_RT(s2,t4)",53.53553391,"<gurobi.LinExpr: Lshed(s2,t4)>",<
+104,"Max_wind_spill_RT(w1,s1,t1)",1.6185494999999999,"<gurobi.LinExpr: Wspill(w1,s1,t1)>",<
+105,"Max_wind_spill_RT(w1,s1,t2)",1.5618998700000002,"<gurobi.LinExpr: Wspill(w1,s1,t2)>",<
+106,"Max_wind_spill_RT(w1,s1,t3)",1.56099951,"<gurobi.LinExpr: Wspill(w1,s1,t3)>",<
+107,"Max_wind_spill_RT(w1,s1,t4)",1.2375919499999999,"<gurobi.LinExpr: Wspill(w1,s1,t4)>",<
+108,"Max_wind_spill_RT(w1,s2,t1)",13.645238280000001,"<gurobi.LinExpr: Wspill(w1,s2,t1)>",<
+109,"Max_wind_spill_RT(w1,s2,t2)",14.13210003,"<gurobi.LinExpr: Wspill(w1,s2,t2)>",<
+110,"Max_wind_spill_RT(w1,s2,t3)",9.57127422,"<gurobi.LinExpr: Wspill(w1,s2,t3)>",<
+111,"Max_wind_spill_RT(w1,s2,t4)",10.244951669999999,"<gurobi.LinExpr: Wspill(w1,s2,t4)>",<
+112,"SOS1_Pmax_DA_GFPP(g1,t1)",150.0,"<gurobi.LinExpr: Pgen(g1,t1) + PgenSC(g1,t1) + RCup(g1,t1) + RCupSC(g1,t1) + SOS1_Pmax_DA_GFPP(g1,t1)>",=
+113,"SOS1_Pmax_DA_GFPP(g2,t1)",9.0,"<gurobi.LinExpr: Pgen(g2,t1) + RCup(g2,t1) + SOS1_Pmax_DA_GFPP(g2,t1)>",=
+114,"SOS1_Pmax_DA_GFPP(g1,t2)",150.0,"<gurobi.LinExpr: Pgen(g1,t2) + PgenSC(g1,t2) + RCup(g1,t2) + RCupSC(g1,t2) + SOS1_Pmax_DA_GFPP(g1,t2)>",=
+115,"SOS1_Pmax_DA_GFPP(g2,t2)",9.0,"<gurobi.LinExpr: Pgen(g2,t2) + RCup(g2,t2) + SOS1_Pmax_DA_GFPP(g2,t2)>",=
+116,"SOS1_Pmax_DA_GFPP(g1,t3)",150.0,"<gurobi.LinExpr: Pgen(g1,t3) + PgenSC(g1,t3) + RCup(g1,t3) + RCupSC(g1,t3) + SOS1_Pmax_DA_GFPP(g1,t3)>",=
+117,"SOS1_Pmax_DA_GFPP(g2,t3)",9.0,"<gurobi.LinExpr: Pgen(g2,t3) + RCup(g2,t3) + SOS1_Pmax_DA_GFPP(g2,t3)>",=
+118,"SOS1_Pmax_DA_GFPP(g1,t4)",150.0,"<gurobi.LinExpr: Pgen(g1,t4) + PgenSC(g1,t4) + RCup(g1,t4) + RCupSC(g1,t4) + SOS1_Pmax_DA_GFPP(g1,t4)>",=
+119,"SOS1_Pmax_DA_GFPP(g2,t4)",9.0,"<gurobi.LinExpr: Pgen(g2,t4) + RCup(g2,t4) + SOS1_Pmax_DA_GFPP(g2,t4)>",=
+120,"SOS1_Pmin_DA_GFPP(g1,t1)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g1,t1) + -1.0 PgenSC(g1,t1) + RCdn(g1,t1) + RCdnSC(g1,t1) + SOS1_Pmin_DA_GFPP(g1,t1)>",=
+121,"SOS1_Pmin_DA(g2,t1)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g2,t1) + RCup(g2,t1) + SOS1_Pmin_DA(g2,t1)>",=
+122,"SOS1_Pmin_DA_GFPP(g1,t2)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g1,t2) + -1.0 PgenSC(g1,t2) + RCdn(g1,t2) + RCdnSC(g1,t2) + SOS1_Pmin_DA_GFPP(g1,t2)>",=
+123,"SOS1_Pmin_DA(g2,t2)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g2,t2) + RCup(g2,t2) + SOS1_Pmin_DA(g2,t2)>",=
+124,"SOS1_Pmin_DA_GFPP(g1,t3)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g1,t3) + -1.0 PgenSC(g1,t3) + RCdn(g1,t3) + RCdnSC(g1,t3) + SOS1_Pmin_DA_GFPP(g1,t3)>",=
+125,"SOS1_Pmin_DA(g2,t3)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g2,t3) + RCup(g2,t3) + SOS1_Pmin_DA(g2,t3)>",=
+126,"SOS1_Pmin_DA_GFPP(g1,t4)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g1,t4) + -1.0 PgenSC(g1,t4) + RCdn(g1,t4) + RCdnSC(g1,t4) + SOS1_Pmin_DA_GFPP(g1,t4)>",=
+127,"SOS1_Pmin_DA(g2,t4)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g2,t4) + RCup(g2,t4) + SOS1_Pmin_DA(g2,t4)>",=
+128,"SOS1_Wind_Max_DA(w1,t1)",7.631893890000001,"<gurobi.LinExpr: WindDA(w1,t1) + SOS1_Wind_Max_DA(w1,t1)>",=
+129,"SOS1_Wind_Max_DA(w1,t2)",7.846999950000001,"<gurobi.LinExpr: WindDA(w1,t2) + SOS1_Wind_Max_DA(w1,t2)>",=
+130,"SOS1_Wind_Max_DA(w1,t3)",5.566136865,"<gurobi.LinExpr: WindDA(w1,t3) + SOS1_Wind_Max_DA(w1,t3)>",=
+131,"SOS1_Wind_Max_DA(w1,t4)",5.741271809999999,"<gurobi.LinExpr: WindDA(w1,t4) + SOS1_Wind_Max_DA(w1,t4)>",=
+132,"SOS1_PgenSCmax(g1,t1)",0.0,"<gurobi.LinExpr: PgenSC(g1,t1) + SOS1_PgenSCmax(g1,t1)>",=
+133,"SOS1_PgenSCmin(g1,t1)",0.0,"<gurobi.LinExpr: -1.0 PgenSC(g1,t1) + SOS1_PgenSCmin(g1,t1)>",=
+134,"SOS1_RCupSCmax(g1,t1)",0.0,"<gurobi.LinExpr: PgenSC(g1,t1) + RCupSC(g1,t1) + SOS1_RCupSCmax(g1,t1)>",=
+135,"SOS1_RCdnSCmin(g1,t1)",0.0,"<gurobi.LinExpr: -1.0 PgenSC(g1,t1) + RCdnSC(g1,t1) + SOS1_RCdnSCmin(g1,t1)>",=
+136,"SOS1_PgenSCmax(g1,t2)",0.0,"<gurobi.LinExpr: PgenSC(g1,t2) + SOS1_PgenSCmax(g1,t2)>",=
+137,"SOS1_PgenSCmin(g1,t2)",0.0,"<gurobi.LinExpr: -1.0 PgenSC(g1,t2) + SOS1_PgenSCmin(g1,t2)>",=
+138,"SOS1_RCupSCmax(g1,t2)",0.0,"<gurobi.LinExpr: PgenSC(g1,t2) + RCupSC(g1,t2) + SOS1_RCupSCmax(g1,t2)>",=
+139,"SOS1_RCdnSCmin(g1,t2)",0.0,"<gurobi.LinExpr: -1.0 PgenSC(g1,t2) + RCdnSC(g1,t2) + SOS1_RCdnSCmin(g1,t2)>",=
+140,"SOS1_PgenSCmax(g1,t3)",0.0,"<gurobi.LinExpr: PgenSC(g1,t3) + SOS1_PgenSCmax(g1,t3)>",=
+141,"SOS1_PgenSCmin(g1,t3)",0.0,"<gurobi.LinExpr: -1.0 PgenSC(g1,t3) + SOS1_PgenSCmin(g1,t3)>",=
+142,"SOS1_RCupSCmax(g1,t3)",0.0,"<gurobi.LinExpr: PgenSC(g1,t3) + RCupSC(g1,t3) + SOS1_RCupSCmax(g1,t3)>",=
+143,"SOS1_RCdnSCmin(g1,t3)",0.0,"<gurobi.LinExpr: -1.0 PgenSC(g1,t3) + RCdnSC(g1,t3) + SOS1_RCdnSCmin(g1,t3)>",=
+144,"SOS1_PgenSCmax(g1,t4)",0.0,"<gurobi.LinExpr: PgenSC(g1,t4) + SOS1_PgenSCmax(g1,t4)>",=
+145,"SOS1_PgenSCmin(g1,t4)",0.0,"<gurobi.LinExpr: -1.0 PgenSC(g1,t4) + SOS1_PgenSCmin(g1,t4)>",=
+146,"SOS1_RCupSCmax(g1,t4)",0.0,"<gurobi.LinExpr: PgenSC(g1,t4) + RCupSC(g1,t4) + SOS1_RCupSCmax(g1,t4)>",=
+147,"SOS1_RCdnSCmin(g1,t4)",0.0,"<gurobi.LinExpr: -1.0 PgenSC(g1,t4) + RCdnSC(g1,t4) + SOS1_RCdnSCmin(g1,t4)>",=
+148,"SOS1_RegUp_max_RT(g1,s1,t1)",0.0,"<gurobi.LinExpr: -1.0 RCup(g1,t1) + RUp(g1,s1,t1) + SOS1_RegUp_max_RT(g1,s1,t1)>",=
+149,"SOS1_RegDown_max_RT(g1,s1,t1)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g1,t1) + RDn(g1,s1,t1) + SOS1_RegDown_max_RT(g1,s1,t1)>",=
+150,"SOS1_RegUp_max_RT(g2,s1,t1)",0.0,"<gurobi.LinExpr: -1.0 RCup(g2,t1) + RUp(g2,s1,t1) + SOS1_RegUp_max_RT(g2,s1,t1)>",=
+151,"SOS1_RegDown_max_RT(g2,s1,t1)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g2,t1) + RDn(g2,s1,t1) + SOS1_RegDown_max_RT(g2,s1,t1)>",=
+152,"SOS1_RegUp_max_RT(g1,s1,t2)",0.0,"<gurobi.LinExpr: -1.0 RCup(g1,t2) + RUp(g1,s1,t2) + SOS1_RegUp_max_RT(g1,s1,t2)>",=
+153,"SOS1_RegDown_max_RT(g1,s1,t2)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g1,t2) + RDn(g1,s1,t2) + SOS1_RegDown_max_RT(g1,s1,t2)>",=
+154,"SOS1_RegUp_max_RT(g2,s1,t2)",0.0,"<gurobi.LinExpr: -1.0 RCup(g2,t2) + RUp(g2,s1,t2) + SOS1_RegUp_max_RT(g2,s1,t2)>",=
+155,"SOS1_RegDown_max_RT(g2,s1,t2)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g2,t2) + RDn(g2,s1,t2) + SOS1_RegDown_max_RT(g2,s1,t2)>",=
+156,"SOS1_RegUp_max_RT(g1,s1,t3)",0.0,"<gurobi.LinExpr: -1.0 RCup(g1,t3) + RUp(g1,s1,t3) + SOS1_RegUp_max_RT(g1,s1,t3)>",=
+157,"SOS1_RegDown_max_RT(g1,s1,t3)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g1,t3) + RDn(g1,s1,t3) + SOS1_RegDown_max_RT(g1,s1,t3)>",=
+158,"SOS1_RegUp_max_RT(g2,s1,t3)",0.0,"<gurobi.LinExpr: -1.0 RCup(g2,t3) + RUp(g2,s1,t3) + SOS1_RegUp_max_RT(g2,s1,t3)>",=
+159,"SOS1_RegDown_max_RT(g2,s1,t3)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g2,t3) + RDn(g2,s1,t3) + SOS1_RegDown_max_RT(g2,s1,t3)>",=
+160,"SOS1_RegUp_max_RT(g1,s1,t4)",0.0,"<gurobi.LinExpr: -1.0 RCup(g1,t4) + RUp(g1,s1,t4) + SOS1_RegUp_max_RT(g1,s1,t4)>",=
+161,"SOS1_RegDown_max_RT(g1,s1,t4)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g1,t4) + RDn(g1,s1,t4) + SOS1_RegDown_max_RT(g1,s1,t4)>",=
+162,"SOS1_RegUp_max_RT(g2,s1,t4)",0.0,"<gurobi.LinExpr: -1.0 RCup(g2,t4) + RUp(g2,s1,t4) + SOS1_RegUp_max_RT(g2,s1,t4)>",=
+163,"SOS1_RegDown_max_RT(g2,s1,t4)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g2,t4) + RDn(g2,s1,t4) + SOS1_RegDown_max_RT(g2,s1,t4)>",=
+164,"SOS1_RegUp_max_RT(g1,s2,t1)",0.0,"<gurobi.LinExpr: -1.0 RCup(g1,t1) + RUp(g1,s2,t1) + SOS1_RegUp_max_RT(g1,s2,t1)>",=
+165,"SOS1_RegDown_max_RT(g1,s2,t1)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g1,t1) + RDn(g1,s2,t1) + SOS1_RegDown_max_RT(g1,s2,t1)>",=
+166,"SOS1_RegUp_max_RT(g2,s2,t1)",0.0,"<gurobi.LinExpr: -1.0 RCup(g2,t1) + RUp(g2,s2,t1) + SOS1_RegUp_max_RT(g2,s2,t1)>",=
+167,"SOS1_RegDown_max_RT(g2,s2,t1)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g2,t1) + RDn(g2,s2,t1) + SOS1_RegDown_max_RT(g2,s2,t1)>",=
+168,"SOS1_RegUp_max_RT(g1,s2,t2)",0.0,"<gurobi.LinExpr: -1.0 RCup(g1,t2) + RUp(g1,s2,t2) + SOS1_RegUp_max_RT(g1,s2,t2)>",=
+169,"SOS1_RegDown_max_RT(g1,s2,t2)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g1,t2) + RDn(g1,s2,t2) + SOS1_RegDown_max_RT(g1,s2,t2)>",=
+170,"SOS1_RegUp_max_RT(g2,s2,t2)",0.0,"<gurobi.LinExpr: -1.0 RCup(g2,t2) + RUp(g2,s2,t2) + SOS1_RegUp_max_RT(g2,s2,t2)>",=
+171,"SOS1_RegDown_max_RT(g2,s2,t2)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g2,t2) + RDn(g2,s2,t2) + SOS1_RegDown_max_RT(g2,s2,t2)>",=
+172,"SOS1_RegUp_max_RT(g1,s2,t3)",0.0,"<gurobi.LinExpr: -1.0 RCup(g1,t3) + RUp(g1,s2,t3) + SOS1_RegUp_max_RT(g1,s2,t3)>",=
+173,"SOS1_RegDown_max_RT(g1,s2,t3)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g1,t3) + RDn(g1,s2,t3) + SOS1_RegDown_max_RT(g1,s2,t3)>",=
+174,"SOS1_RegUp_max_RT(g2,s2,t3)",0.0,"<gurobi.LinExpr: -1.0 RCup(g2,t3) + RUp(g2,s2,t3) + SOS1_RegUp_max_RT(g2,s2,t3)>",=
+175,"SOS1_RegDown_max_RT(g2,s2,t3)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g2,t3) + RDn(g2,s2,t3) + SOS1_RegDown_max_RT(g2,s2,t3)>",=
+176,"SOS1_RegUp_max_RT(g1,s2,t4)",0.0,"<gurobi.LinExpr: -1.0 RCup(g1,t4) + RUp(g1,s2,t4) + SOS1_RegUp_max_RT(g1,s2,t4)>",=
+177,"SOS1_RegDown_max_RT(g1,s2,t4)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g1,t4) + RDn(g1,s2,t4) + SOS1_RegDown_max_RT(g1,s2,t4)>",=
+178,"SOS1_RegUp_max_RT(g2,s2,t4)",0.0,"<gurobi.LinExpr: -1.0 RCup(g2,t4) + RUp(g2,s2,t4) + SOS1_RegUp_max_RT(g2,s2,t4)>",=
+179,"SOS1_RegDown_max_RT(g2,s2,t4)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g2,t4) + RDn(g2,s2,t4) + SOS1_RegDown_max_RT(g2,s2,t4)>",=
+180,"SOS1_RegUpSC_max_RT(g1,s1,t1)",0.0,"<gurobi.LinExpr: -1.0 RCupSC(g1,t1) + RUpSC(g1,s1,t1) + SOS1_RegUpSC_max_RT(g1,s1,t1)>",=
+181,"SOS1_RegDnSC_max_RT(g1,s1,t1)",0.0,"<gurobi.LinExpr: -1.0 RCdnSC(g1,t1) + RDnSC(g1,s1,t1) + SOS1_RegDnSC_max_RT(g1,s1,t1)>",=
+182,"SOS1_RegUpSC_max_RT(g1,s1,t2)",0.0,"<gurobi.LinExpr: -1.0 RCupSC(g1,t2) + RUpSC(g1,s1,t2) + SOS1_RegUpSC_max_RT(g1,s1,t2)>",=
+183,"SOS1_RegDnSC_max_RT(g1,s1,t2)",0.0,"<gurobi.LinExpr: -1.0 RCdnSC(g1,t2) + RDnSC(g1,s1,t2) + SOS1_RegDnSC_max_RT(g1,s1,t2)>",=
+184,"SOS1_RegUpSC_max_RT(g1,s1,t3)",0.0,"<gurobi.LinExpr: -1.0 RCupSC(g1,t3) + RUpSC(g1,s1,t3) + SOS1_RegUpSC_max_RT(g1,s1,t3)>",=
+185,"SOS1_RegDnSC_max_RT(g1,s1,t3)",0.0,"<gurobi.LinExpr: -1.0 RCdnSC(g1,t3) + RDnSC(g1,s1,t3) + SOS1_RegDnSC_max_RT(g1,s1,t3)>",=
+186,"SOS1_RegUpSC_max_RT(g1,s1,t4)",0.0,"<gurobi.LinExpr: -1.0 RCupSC(g1,t4) + RUpSC(g1,s1,t4) + SOS1_RegUpSC_max_RT(g1,s1,t4)>",=
+187,"SOS1_RegDnSC_max_RT(g1,s1,t4)",0.0,"<gurobi.LinExpr: -1.0 RCdnSC(g1,t4) + RDnSC(g1,s1,t4) + SOS1_RegDnSC_max_RT(g1,s1,t4)>",=
+188,"SOS1_RegUpSC_max_RT(g1,s2,t1)",0.0,"<gurobi.LinExpr: -1.0 RCupSC(g1,t1) + RUpSC(g1,s2,t1) + SOS1_RegUpSC_max_RT(g1,s2,t1)>",=
+189,"SOS1_RegDnSC_max_RT(g1,s2,t1)",0.0,"<gurobi.LinExpr: -1.0 RCdnSC(g1,t1) + RDnSC(g1,s2,t1) + SOS1_RegDnSC_max_RT(g1,s2,t1)>",=
+190,"SOS1_RegUpSC_max_RT(g1,s2,t2)",0.0,"<gurobi.LinExpr: -1.0 RCupSC(g1,t2) + RUpSC(g1,s2,t2) + SOS1_RegUpSC_max_RT(g1,s2,t2)>",=
+191,"SOS1_RegDnSC_max_RT(g1,s2,t2)",0.0,"<gurobi.LinExpr: -1.0 RCdnSC(g1,t2) + RDnSC(g1,s2,t2) + SOS1_RegDnSC_max_RT(g1,s2,t2)>",=
+192,"SOS1_RegUpSC_max_RT(g1,s2,t3)",0.0,"<gurobi.LinExpr: -1.0 RCupSC(g1,t3) + RUpSC(g1,s2,t3) + SOS1_RegUpSC_max_RT(g1,s2,t3)>",=
+193,"SOS1_RegDnSC_max_RT(g1,s2,t3)",0.0,"<gurobi.LinExpr: -1.0 RCdnSC(g1,t3) + RDnSC(g1,s2,t3) + SOS1_RegDnSC_max_RT(g1,s2,t3)>",=
+194,"SOS1_RegUpSC_max_RT(g1,s2,t4)",0.0,"<gurobi.LinExpr: -1.0 RCupSC(g1,t4) + RUpSC(g1,s2,t4) + SOS1_RegUpSC_max_RT(g1,s2,t4)>",=
+195,"SOS1_RegDnSC_max_RT(g1,s2,t4)",0.0,"<gurobi.LinExpr: -1.0 RCdnSC(g1,t4) + RDnSC(g1,s2,t4) + SOS1_RegDnSC_max_RT(g1,s2,t4)>",=
+196,"SOS1_Max_load_shed_RT(s1,t1)",50.0,"<gurobi.LinExpr: Lshed(s1,t1) + SOS1_Max_load_shed_RT(s1,t1)>",=
+197,"SOS1_Max_load_shed_RT(s1,t2)",51.29409523,"<gurobi.LinExpr: Lshed(s1,t2) + SOS1_Max_load_shed_RT(s1,t2)>",=
+198,"SOS1_Max_load_shed_RT(s1,t3)",52.5,"<gurobi.LinExpr: Lshed(s1,t3) + SOS1_Max_load_shed_RT(s1,t3)>",=
+199,"SOS1_Max_load_shed_RT(s1,t4)",53.53553391,"<gurobi.LinExpr: Lshed(s1,t4) + SOS1_Max_load_shed_RT(s1,t4)>",=
+200,"SOS1_Max_load_shed_RT(s2,t1)",50.0,"<gurobi.LinExpr: Lshed(s2,t1) + SOS1_Max_load_shed_RT(s2,t1)>",=
+201,"SOS1_Max_load_shed_RT(s2,t2)",51.29409523,"<gurobi.LinExpr: Lshed(s2,t2) + SOS1_Max_load_shed_RT(s2,t2)>",=
+202,"SOS1_Max_load_shed_RT(s2,t3)",52.5,"<gurobi.LinExpr: Lshed(s2,t3) + SOS1_Max_load_shed_RT(s2,t3)>",=
+203,"SOS1_Max_load_shed_RT(s2,t4)",53.53553391,"<gurobi.LinExpr: Lshed(s2,t4) + SOS1_Max_load_shed_RT(s2,t4)>",=
+204,"SOS1_Max_wind_spill_RT(w1,s1,t1)",1.6185494999999999,"<gurobi.LinExpr: Wspill(w1,s1,t1) + SOS1_Max_wind_spill_RT(w1,s1,t1)>",=
+205,"SOS1_Max_wind_spill_RT(w1,s1,t2)",1.5618998700000002,"<gurobi.LinExpr: Wspill(w1,s1,t2) + SOS1_Max_wind_spill_RT(w1,s1,t2)>",=
+206,"SOS1_Max_wind_spill_RT(w1,s1,t3)",1.56099951,"<gurobi.LinExpr: Wspill(w1,s1,t3) + SOS1_Max_wind_spill_RT(w1,s1,t3)>",=
+207,"SOS1_Max_wind_spill_RT(w1,s1,t4)",1.2375919499999999,"<gurobi.LinExpr: Wspill(w1,s1,t4) + SOS1_Max_wind_spill_RT(w1,s1,t4)>",=
+208,"SOS1_Max_wind_spill_RT(w1,s2,t1)",13.645238280000001,"<gurobi.LinExpr: Wspill(w1,s2,t1) + SOS1_Max_wind_spill_RT(w1,s2,t1)>",=
+209,"SOS1_Max_wind_spill_RT(w1,s2,t2)",14.13210003,"<gurobi.LinExpr: Wspill(w1,s2,t2) + SOS1_Max_wind_spill_RT(w1,s2,t2)>",=
+210,"SOS1_Max_wind_spill_RT(w1,s2,t3)",9.57127422,"<gurobi.LinExpr: Wspill(w1,s2,t3) + SOS1_Max_wind_spill_RT(w1,s2,t3)>",=
+211,"SOS1_Max_wind_spill_RT(w1,s2,t4)",10.244951669999999,"<gurobi.LinExpr: Wspill(w1,s2,t4) + SOS1_Max_wind_spill_RT(w1,s2,t4)>",=
+212,"SOS1_LB_Pgen(g1,t1)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g1,t1) + SOS1_LB_Pgen(g1,t1)>",=
+213,"SOS1_LB_Pgen(g1,t2)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g1,t2) + SOS1_LB_Pgen(g1,t2)>",=
+214,"SOS1_LB_Pgen(g1,t3)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g1,t3) + SOS1_LB_Pgen(g1,t3)>",=
+215,"SOS1_LB_Pgen(g1,t4)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g1,t4) + SOS1_LB_Pgen(g1,t4)>",=
+216,"SOS1_LB_Pgen(g2,t1)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g2,t1) + SOS1_LB_Pgen(g2,t1)>",=
+217,"SOS1_LB_Pgen(g2,t2)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g2,t2) + SOS1_LB_Pgen(g2,t2)>",=
+218,"SOS1_LB_Pgen(g2,t3)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g2,t3) + SOS1_LB_Pgen(g2,t3)>",=
+219,"SOS1_LB_Pgen(g2,t4)",0.0,"<gurobi.LinExpr: -1.0 Pgen(g2,t4) + SOS1_LB_Pgen(g2,t4)>",=
+220,"SOS1_LB_PgenSC(g1,t1)",0.0,"<gurobi.LinExpr: -1.0 PgenSC(g1,t1) + SOS1_LB_PgenSC(g1,t1)>",=
+221,"SOS1_LB_PgenSC(g1,t2)",0.0,"<gurobi.LinExpr: -1.0 PgenSC(g1,t2) + SOS1_LB_PgenSC(g1,t2)>",=
+222,"SOS1_LB_PgenSC(g1,t3)",0.0,"<gurobi.LinExpr: -1.0 PgenSC(g1,t3) + SOS1_LB_PgenSC(g1,t3)>",=
+223,"SOS1_LB_PgenSC(g1,t4)",0.0,"<gurobi.LinExpr: -1.0 PgenSC(g1,t4) + SOS1_LB_PgenSC(g1,t4)>",=
+224,"SOS1_LB_RCup(g1,t1)",0.0,"<gurobi.LinExpr: -1.0 RCup(g1,t1) + SOS1_LB_RCup(g1,t1)>",=
+225,"SOS1_LB_RCup(g1,t2)",0.0,"<gurobi.LinExpr: -1.0 RCup(g1,t2) + SOS1_LB_RCup(g1,t2)>",=
+226,"SOS1_LB_RCup(g1,t3)",0.0,"<gurobi.LinExpr: -1.0 RCup(g1,t3) + SOS1_LB_RCup(g1,t3)>",=
+227,"SOS1_LB_RCup(g1,t4)",0.0,"<gurobi.LinExpr: -1.0 RCup(g1,t4) + SOS1_LB_RCup(g1,t4)>",=
+228,"SOS1_LB_RCup(g2,t1)",0.0,"<gurobi.LinExpr: -1.0 RCup(g2,t1) + SOS1_LB_RCup(g2,t1)>",=
+229,"SOS1_LB_RCup(g2,t2)",0.0,"<gurobi.LinExpr: -1.0 RCup(g2,t2) + SOS1_LB_RCup(g2,t2)>",=
+230,"SOS1_LB_RCup(g2,t3)",0.0,"<gurobi.LinExpr: -1.0 RCup(g2,t3) + SOS1_LB_RCup(g2,t3)>",=
+231,"SOS1_LB_RCup(g2,t4)",0.0,"<gurobi.LinExpr: -1.0 RCup(g2,t4) + SOS1_LB_RCup(g2,t4)>",=
+232,"SOS1_LB_RCdn(g1,t1)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g1,t1) + SOS1_LB_RCdn(g1,t1)>",=
+233,"SOS1_LB_RCdn(g1,t2)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g1,t2) + SOS1_LB_RCdn(g1,t2)>",=
+234,"SOS1_LB_RCdn(g1,t3)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g1,t3) + SOS1_LB_RCdn(g1,t3)>",=
+235,"SOS1_LB_RCdn(g1,t4)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g1,t4) + SOS1_LB_RCdn(g1,t4)>",=
+236,"SOS1_LB_RCdn(g2,t1)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g2,t1) + SOS1_LB_RCdn(g2,t1)>",=
+237,"SOS1_LB_RCdn(g2,t2)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g2,t2) + SOS1_LB_RCdn(g2,t2)>",=
+238,"SOS1_LB_RCdn(g2,t3)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g2,t3) + SOS1_LB_RCdn(g2,t3)>",=
+239,"SOS1_LB_RCdn(g2,t4)",0.0,"<gurobi.LinExpr: -1.0 RCdn(g2,t4) + SOS1_LB_RCdn(g2,t4)>",=
+240,"SOS1_LB_RCupSC(g1,t1)",0.0,"<gurobi.LinExpr: -1.0 RCupSC(g1,t1) + SOS1_LB_RCupSC(g1,t1)>",=
+241,"SOS1_LB_RCupSC(g1,t2)",0.0,"<gurobi.LinExpr: -1.0 RCupSC(g1,t2) + SOS1_LB_RCupSC(g1,t2)>",=
+242,"SOS1_LB_RCupSC(g1,t3)",0.0,"<gurobi.LinExpr: -1.0 RCupSC(g1,t3) + SOS1_LB_RCupSC(g1,t3)>",=
+243,"SOS1_LB_RCupSC(g1,t4)",0.0,"<gurobi.LinExpr: -1.0 RCupSC(g1,t4) + SOS1_LB_RCupSC(g1,t4)>",=
+244,"SOS1_LB_RCdnSC(g1,t1)",0.0,"<gurobi.LinExpr: -1.0 RCdnSC(g1,t1) + SOS1_LB_RCdnSC(g1,t1)>",=
+245,"SOS1_LB_RCdnSC(g1,t2)",0.0,"<gurobi.LinExpr: -1.0 RCdnSC(g1,t2) + SOS1_LB_RCdnSC(g1,t2)>",=
+246,"SOS1_LB_RCdnSC(g1,t3)",0.0,"<gurobi.LinExpr: -1.0 RCdnSC(g1,t3) + SOS1_LB_RCdnSC(g1,t3)>",=
+247,"SOS1_LB_RCdnSC(g1,t4)",0.0,"<gurobi.LinExpr: -1.0 RCdnSC(g1,t4) + SOS1_LB_RCdnSC(g1,t4)>",=
+248,"SOS1_LB_WindDA(w1,t1)",0.0,"<gurobi.LinExpr: -1.0 WindDA(w1,t1) + SOS1_LB_WindDA(w1,t1)>",=
+249,"SOS1_LB_WindDA(w1,t2)",0.0,"<gurobi.LinExpr: -1.0 WindDA(w1,t2) + SOS1_LB_WindDA(w1,t2)>",=
+250,"SOS1_LB_WindDA(w1,t3)",0.0,"<gurobi.LinExpr: -1.0 WindDA(w1,t3) + SOS1_LB_WindDA(w1,t3)>",=
+251,"SOS1_LB_WindDA(w1,t4)",0.0,"<gurobi.LinExpr: -1.0 WindDA(w1,t4) + SOS1_LB_WindDA(w1,t4)>",=
+252,"SOS1_LB_RUp(g1,s1,t1)",0.0,"<gurobi.LinExpr: -1.0 RUp(g1,s1,t1) + SOS1_LB_RUp(g1,s1,t1)>",=
+253,"SOS1_LB_RDn(g1,s1,t1)",0.0,"<gurobi.LinExpr: -1.0 RDn(g1,s1,t1) + SOS1_LB_RDn(g1,s1,t1)>",=
+254,"SOS1_LB_RUp(g2,s1,t1)",0.0,"<gurobi.LinExpr: -1.0 RUp(g2,s1,t1) + SOS1_LB_RUp(g2,s1,t1)>",=
+255,"SOS1_LB_RDn(g2,s1,t1)",0.0,"<gurobi.LinExpr: -1.0 RDn(g2,s1,t1) + SOS1_LB_RDn(g2,s1,t1)>",=
+256,"SOS1_LB_RUpSC(g1,s1,t1)",0.0,"<gurobi.LinExpr: -1.0 RUpSC(g1,s1,t1) + SOS1_LB_RUpSC(g1,s1,t1)>",=
+257,"SOS1_LB_RDnSC(g1,s1,t1)",0.0,"<gurobi.LinExpr: -1.0 RDnSC(g1,s1,t1) + SOS1_LB_RDnSC(g1,s1,t1)>",=
+258,"SOS1_LB_Wspill(w1,s1,t1)",0.0,"<gurobi.LinExpr: -1.0 Wspill(w1,s1,t1) + SOS1_LB_Wspill(w1,s1,t1)>",=
+259,"SOS1_LB_Lshed(s1,t1)",0.0,"<gurobi.LinExpr: -1.0 Lshed(s1,t1) + SOS1_LB_Lshed(s1,t1)>",=
+260,"SOS1_LB_RUp(g1,s1,t2)",0.0,"<gurobi.LinExpr: -1.0 RUp(g1,s1,t2) + SOS1_LB_RUp(g1,s1,t2)>",=
+261,"SOS1_LB_RDn(g1,s1,t2)",0.0,"<gurobi.LinExpr: -1.0 RDn(g1,s1,t2) + SOS1_LB_RDn(g1,s1,t2)>",=
+262,"SOS1_LB_RUp(g2,s1,t2)",0.0,"<gurobi.LinExpr: -1.0 RUp(g2,s1,t2) + SOS1_LB_RUp(g2,s1,t2)>",=
+263,"SOS1_LB_RDn(g2,s1,t2)",0.0,"<gurobi.LinExpr: -1.0 RDn(g2,s1,t2) + SOS1_LB_RDn(g2,s1,t2)>",=
+264,"SOS1_LB_RUpSC(g1,s1,t2)",0.0,"<gurobi.LinExpr: -1.0 RUpSC(g1,s1,t2) + SOS1_LB_RUpSC(g1,s1,t2)>",=
+265,"SOS1_LB_RDnSC(g1,s1,t2)",0.0,"<gurobi.LinExpr: -1.0 RDnSC(g1,s1,t2) + SOS1_LB_RDnSC(g1,s1,t2)>",=
+266,"SOS1_LB_Wspill(w1,s1,t2)",0.0,"<gurobi.LinExpr: -1.0 Wspill(w1,s1,t2) + SOS1_LB_Wspill(w1,s1,t2)>",=
+267,"SOS1_LB_Lshed(s1,t2)",0.0,"<gurobi.LinExpr: -1.0 Lshed(s1,t2) + SOS1_LB_Lshed(s1,t2)>",=
+268,"SOS1_LB_RUp(g1,s1,t3)",0.0,"<gurobi.LinExpr: -1.0 RUp(g1,s1,t3) + SOS1_LB_RUp(g1,s1,t3)>",=
+269,"SOS1_LB_RDn(g1,s1,t3)",0.0,"<gurobi.LinExpr: -1.0 RDn(g1,s1,t3) + SOS1_LB_RDn(g1,s1,t3)>",=
+270,"SOS1_LB_RUp(g2,s1,t3)",0.0,"<gurobi.LinExpr: -1.0 RUp(g2,s1,t3) + SOS1_LB_RUp(g2,s1,t3)>",=
+271,"SOS1_LB_RDn(g2,s1,t3)",0.0,"<gurobi.LinExpr: -1.0 RDn(g2,s1,t3) + SOS1_LB_RDn(g2,s1,t3)>",=
+272,"SOS1_LB_RUpSC(g1,s1,t3)",0.0,"<gurobi.LinExpr: -1.0 RUpSC(g1,s1,t3) + SOS1_LB_RUpSC(g1,s1,t3)>",=
+273,"SOS1_LB_RDnSC(g1,s1,t3)",0.0,"<gurobi.LinExpr: -1.0 RDnSC(g1,s1,t3) + SOS1_LB_RDnSC(g1,s1,t3)>",=
+274,"SOS1_LB_Wspill(w1,s1,t3)",0.0,"<gurobi.LinExpr: -1.0 Wspill(w1,s1,t3) + SOS1_LB_Wspill(w1,s1,t3)>",=
+275,"SOS1_LB_Lshed(s1,t3)",0.0,"<gurobi.LinExpr: -1.0 Lshed(s1,t3) + SOS1_LB_Lshed(s1,t3)>",=
+276,"SOS1_LB_RUp(g1,s1,t4)",0.0,"<gurobi.LinExpr: -1.0 RUp(g1,s1,t4) + SOS1_LB_RUp(g1,s1,t4)>",=
+277,"SOS1_LB_RDn(g1,s1,t4)",0.0,"<gurobi.LinExpr: -1.0 RDn(g1,s1,t4) + SOS1_LB_RDn(g1,s1,t4)>",=
+278,"SOS1_LB_RUp(g2,s1,t4)",0.0,"<gurobi.LinExpr: -1.0 RUp(g2,s1,t4) + SOS1_LB_RUp(g2,s1,t4)>",=
+279,"SOS1_LB_RDn(g2,s1,t4)",0.0,"<gurobi.LinExpr: -1.0 RDn(g2,s1,t4) + SOS1_LB_RDn(g2,s1,t4)>",=
+280,"SOS1_LB_RUpSC(g1,s1,t4)",0.0,"<gurobi.LinExpr: -1.0 RUpSC(g1,s1,t4) + SOS1_LB_RUpSC(g1,s1,t4)>",=
+281,"SOS1_LB_RDnSC(g1,s1,t4)",0.0,"<gurobi.LinExpr: -1.0 RDnSC(g1,s1,t4) + SOS1_LB_RDnSC(g1,s1,t4)>",=
+282,"SOS1_LB_Wspill(w1,s1,t4)",0.0,"<gurobi.LinExpr: -1.0 Wspill(w1,s1,t4) + SOS1_LB_Wspill(w1,s1,t4)>",=
+283,"SOS1_LB_Lshed(s1,t4)",0.0,"<gurobi.LinExpr: -1.0 Lshed(s1,t4) + SOS1_LB_Lshed(s1,t4)>",=
+284,"SOS1_LB_RUp(g1,s2,t1)",0.0,"<gurobi.LinExpr: -1.0 RUp(g1,s2,t1) + SOS1_LB_RUp(g1,s2,t1)>",=
+285,"SOS1_LB_RDn(g1,s2,t1)",0.0,"<gurobi.LinExpr: -1.0 RDn(g1,s2,t1) + SOS1_LB_RDn(g1,s2,t1)>",=
+286,"SOS1_LB_RUp(g2,s2,t1)",0.0,"<gurobi.LinExpr: -1.0 RUp(g2,s2,t1) + SOS1_LB_RUp(g2,s2,t1)>",=
+287,"SOS1_LB_RDn(g2,s2,t1)",0.0,"<gurobi.LinExpr: -1.0 RDn(g2,s2,t1) + SOS1_LB_RDn(g2,s2,t1)>",=
+288,"SOS1_LB_RUpSC(g1,s2,t1)",0.0,"<gurobi.LinExpr: -1.0 RUpSC(g1,s2,t1) + SOS1_LB_RUpSC(g1,s2,t1)>",=
+289,"SOS1_LB_RDnSC(g1,s2,t1)",0.0,"<gurobi.LinExpr: -1.0 RDnSC(g1,s2,t1) + SOS1_LB_RDnSC(g1,s2,t1)>",=
+290,"SOS1_LB_Wspill(w1,s2,t1)",0.0,"<gurobi.LinExpr: -1.0 Wspill(w1,s2,t1) + SOS1_LB_Wspill(w1,s2,t1)>",=
+291,"SOS1_LB_Lshed(s2,t1)",0.0,"<gurobi.LinExpr: -1.0 Lshed(s2,t1) + SOS1_LB_Lshed(s2,t1)>",=
+292,"SOS1_LB_RUp(g1,s2,t2)",0.0,"<gurobi.LinExpr: -1.0 RUp(g1,s2,t2) + SOS1_LB_RUp(g1,s2,t2)>",=
+293,"SOS1_LB_RDn(g1,s2,t2)",0.0,"<gurobi.LinExpr: -1.0 RDn(g1,s2,t2) + SOS1_LB_RDn(g1,s2,t2)>",=
+294,"SOS1_LB_RUp(g2,s2,t2)",0.0,"<gurobi.LinExpr: -1.0 RUp(g2,s2,t2) + SOS1_LB_RUp(g2,s2,t2)>",=
+295,"SOS1_LB_RDn(g2,s2,t2)",0.0,"<gurobi.LinExpr: -1.0 RDn(g2,s2,t2) + SOS1_LB_RDn(g2,s2,t2)>",=
+296,"SOS1_LB_RUpSC(g1,s2,t2)",0.0,"<gurobi.LinExpr: -1.0 RUpSC(g1,s2,t2) + SOS1_LB_RUpSC(g1,s2,t2)>",=
+297,"SOS1_LB_RDnSC(g1,s2,t2)",0.0,"<gurobi.LinExpr: -1.0 RDnSC(g1,s2,t2) + SOS1_LB_RDnSC(g1,s2,t2)>",=
+298,"SOS1_LB_Wspill(w1,s2,t2)",0.0,"<gurobi.LinExpr: -1.0 Wspill(w1,s2,t2) + SOS1_LB_Wspill(w1,s2,t2)>",=
+299,"SOS1_LB_Lshed(s2,t2)",0.0,"<gurobi.LinExpr: -1.0 Lshed(s2,t2) + SOS1_LB_Lshed(s2,t2)>",=
+300,"SOS1_LB_RUp(g1,s2,t3)",0.0,"<gurobi.LinExpr: -1.0 RUp(g1,s2,t3) + SOS1_LB_RUp(g1,s2,t3)>",=
+301,"SOS1_LB_RDn(g1,s2,t3)",0.0,"<gurobi.LinExpr: -1.0 RDn(g1,s2,t3) + SOS1_LB_RDn(g1,s2,t3)>",=
+302,"SOS1_LB_RUp(g2,s2,t3)",0.0,"<gurobi.LinExpr: -1.0 RUp(g2,s2,t3) + SOS1_LB_RUp(g2,s2,t3)>",=
+303,"SOS1_LB_RDn(g2,s2,t3)",0.0,"<gurobi.LinExpr: -1.0 RDn(g2,s2,t3) + SOS1_LB_RDn(g2,s2,t3)>",=
+304,"SOS1_LB_RUpSC(g1,s2,t3)",0.0,"<gurobi.LinExpr: -1.0 RUpSC(g1,s2,t3) + SOS1_LB_RUpSC(g1,s2,t3)>",=
+305,"SOS1_LB_RDnSC(g1,s2,t3)",0.0,"<gurobi.LinExpr: -1.0 RDnSC(g1,s2,t3) + SOS1_LB_RDnSC(g1,s2,t3)>",=
+306,"SOS1_LB_Wspill(w1,s2,t3)",0.0,"<gurobi.LinExpr: -1.0 Wspill(w1,s2,t3) + SOS1_LB_Wspill(w1,s2,t3)>",=
+307,"SOS1_LB_Lshed(s2,t3)",0.0,"<gurobi.LinExpr: -1.0 Lshed(s2,t3) + SOS1_LB_Lshed(s2,t3)>",=
+308,"SOS1_LB_RUp(g1,s2,t4)",0.0,"<gurobi.LinExpr: -1.0 RUp(g1,s2,t4) + SOS1_LB_RUp(g1,s2,t4)>",=
+309,"SOS1_LB_RDn(g1,s2,t4)",0.0,"<gurobi.LinExpr: -1.0 RDn(g1,s2,t4) + SOS1_LB_RDn(g1,s2,t4)>",=
+310,"SOS1_LB_RUp(g2,s2,t4)",0.0,"<gurobi.LinExpr: -1.0 RUp(g2,s2,t4) + SOS1_LB_RUp(g2,s2,t4)>",=
+311,"SOS1_LB_RDn(g2,s2,t4)",0.0,"<gurobi.LinExpr: -1.0 RDn(g2,s2,t4) + SOS1_LB_RDn(g2,s2,t4)>",=
+312,"SOS1_LB_RUpSC(g1,s2,t4)",0.0,"<gurobi.LinExpr: -1.0 RUpSC(g1,s2,t4) + SOS1_LB_RUpSC(g1,s2,t4)>",=
+313,"SOS1_LB_RDnSC(g1,s2,t4)",0.0,"<gurobi.LinExpr: -1.0 RDnSC(g1,s2,t4) + SOS1_LB_RDnSC(g1,s2,t4)>",=
+314,"SOS1_LB_Wspill(w1,s2,t4)",0.0,"<gurobi.LinExpr: -1.0 Wspill(w1,s2,t4) + SOS1_LB_Wspill(w1,s2,t4)>",=
+315,"SOS1_LB_Lshed(s2,t4)",0.0,"<gurobi.LinExpr: -1.0 Lshed(s2,t4) + SOS1_LB_Lshed(s2,t4)>",=
+316,"dLag/Pgen(g1,t1)",-16.0,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_DA(t1) + mu_Pmax_DA_GFPP(g2,t1) + -1.0 mu_Pmin_DA(g2,t1) + -1.0 muLB_Pgen(g2,t1)>",=
+317,"dLag/Pgen(g1,t2)",-16.0,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_DA(t2) + mu_Pmax_DA_GFPP(g2,t2) + -1.0 mu_Pmin_DA(g2,t2) + -1.0 muLB_Pgen(g2,t2)>",=
+318,"dLag/Pgen(g1,t3)",-16.0,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_DA(t3) + mu_Pmax_DA_GFPP(g2,t3) + -1.0 mu_Pmin_DA(g2,t3) + -1.0 muLB_Pgen(g2,t3)>",=
+319,"dLag/Pgen(g1,t4)",-16.0,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_DA(t4) + mu_Pmax_DA_GFPP(g2,t4) + -1.0 mu_Pmin_DA(g2,t4) + -1.0 muLB_Pgen(g2,t4)>",=
+320,"dLag/Pgen(g2,t1)",-17.0,"<gurobi.LinExpr: mu_Pmax_DA_GFPP(g1,t1) + -1.0 mu_RegUp_max_RT(g1,s1,t1) + -1.0 mu_RegUp_max_RT(g1,s2,t1) + -1.0 muLB_RCup(g1,t1)>",=
+321,"dLag/Pgen(g2,t2)",-17.0,"<gurobi.LinExpr: mu_Pmax_DA_GFPP(g1,t2) + -1.0 mu_RegUp_max_RT(g1,s1,t2) + -1.0 mu_RegUp_max_RT(g1,s2,t2) + -1.0 muLB_RCup(g1,t2)>",=
+322,"dLag/Pgen(g2,t3)",-17.0,"<gurobi.LinExpr: mu_Pmax_DA_GFPP(g1,t3) + -1.0 mu_RegUp_max_RT(g1,s1,t3) + -1.0 mu_RegUp_max_RT(g1,s2,t3) + -1.0 muLB_RCup(g1,t3)>",=
+323,"dLag/Pgen(g2,t4)",-17.0,"<gurobi.LinExpr: mu_Pmax_DA_GFPP(g1,t4) + -1.0 mu_RegUp_max_RT(g1,s1,t4) + -1.0 mu_RegUp_max_RT(g1,s2,t4) + -1.0 muLB_RCup(g1,t4)>",=
+324,"dLag/PgenSC(g1,t1)",-160.0,"<gurobi.LinExpr: mu_Pmax_DA_GFPP(g2,t1) + mu_Pmin_DA(g2,t1) + -1.0 mu_RegUp_max_RT(g2,s1,t1) + -1.0 mu_RegUp_max_RT(g2,s2,t1) + -1.0 muLB_RCup(g2,t1)>",=
+325,"dLag/PgenSC(g1,t2)",-160.0,"<gurobi.LinExpr: mu_Pmax_DA_GFPP(g2,t2) + mu_Pmin_DA(g2,t2) + -1.0 mu_RegUp_max_RT(g2,s1,t2) + -1.0 mu_RegUp_max_RT(g2,s2,t2) + -1.0 muLB_RCup(g2,t2)>",=
+326,"dLag/PgenSC(g1,t3)",-160.0,"<gurobi.LinExpr: mu_Pmax_DA_GFPP(g2,t3) + mu_Pmin_DA(g2,t3) + -1.0 mu_RegUp_max_RT(g2,s1,t3) + -1.0 mu_RegUp_max_RT(g2,s2,t3) + -1.0 muLB_RCup(g2,t3)>",=
+327,"dLag/PgenSC(g1,t4)",-160.0,"<gurobi.LinExpr: mu_Pmax_DA_GFPP(g2,t4) + mu_Pmin_DA(g2,t4) + -1.0 mu_RegUp_max_RT(g2,s1,t4) + -1.0 mu_RegUp_max_RT(g2,s2,t4) + -1.0 muLB_RCup(g2,t4)>",=
+328,"dLag/RCup(g1,t1)",0.0,"<gurobi.LinExpr: mu_Pmin_DA_GFPP(g1,t1) + -1.0 mu_RegDown_max_RT(g1,s1,t1) + -1.0 mu_RegDown_max_RT(g1,s2,t1) + -1.0 muLB_RCdn(g1,t1)>",=
+329,"dLag/RCup(g1,t2)",0.0,"<gurobi.LinExpr: mu_Pmin_DA_GFPP(g1,t2) + -1.0 mu_RegDown_max_RT(g1,s1,t2) + -1.0 mu_RegDown_max_RT(g1,s2,t2) + -1.0 muLB_RCdn(g1,t2)>",=
+330,"dLag/RCup(g1,t3)",0.0,"<gurobi.LinExpr: mu_Pmin_DA_GFPP(g1,t3) + -1.0 mu_RegDown_max_RT(g1,s1,t3) + -1.0 mu_RegDown_max_RT(g1,s2,t3) + -1.0 muLB_RCdn(g1,t3)>",=
+331,"dLag/RCup(g1,t4)",0.0,"<gurobi.LinExpr: mu_Pmin_DA_GFPP(g1,t4) + -1.0 mu_RegDown_max_RT(g1,s1,t4) + -1.0 mu_RegDown_max_RT(g1,s2,t4) + -1.0 muLB_RCdn(g1,t4)>",=
+332,"dLag/RCup(g2,t1)",0.0,"<gurobi.LinExpr: -1.0 mu_RegDown_max_RT(g2,s1,t1) + -1.0 mu_RegDown_max_RT(g2,s2,t1) + -1.0 muLB_RCdn(g2,t1)>",=
+333,"dLag/RCup(g2,t2)",0.0,"<gurobi.LinExpr: -1.0 mu_RegDown_max_RT(g2,s1,t2) + -1.0 mu_RegDown_max_RT(g2,s2,t2) + -1.0 muLB_RCdn(g2,t2)>",=
+334,"dLag/RCup(g2,t3)",0.0,"<gurobi.LinExpr: -1.0 mu_RegDown_max_RT(g2,s1,t3) + -1.0 mu_RegDown_max_RT(g2,s2,t3) + -1.0 muLB_RCdn(g2,t3)>",=
+335,"dLag/RCup(g2,t4)",0.0,"<gurobi.LinExpr: -1.0 mu_RegDown_max_RT(g2,s1,t4) + -1.0 mu_RegDown_max_RT(g2,s2,t4) + -1.0 muLB_RCdn(g2,t4)>",=
+336,"dLag/RCdn(g1,t1)",0.0,"<gurobi.LinExpr: mu_Pmax_DA_GFPP(g1,t1) + mu_RCupSCmax(g1,t1) + -1.0 mu_RegUpSC_max_RT(g1,s1,t1) + -1.0 mu_RegUpSC_max_RT(g1,s2,t1) + -1.0 muLB_RCupSC(g1,t1)>",=
+337,"dLag/RCdn(g1,t2)",0.0,"<gurobi.LinExpr: mu_Pmax_DA_GFPP(g1,t2) + mu_RCupSCmax(g1,t2) + -1.0 mu_RegUpSC_max_RT(g1,s1,t2) + -1.0 mu_RegUpSC_max_RT(g1,s2,t2) + -1.0 muLB_RCupSC(g1,t2)>",=
+338,"dLag/RCdn(g1,t3)",0.0,"<gurobi.LinExpr: mu_Pmax_DA_GFPP(g1,t3) + mu_RCupSCmax(g1,t3) + -1.0 mu_RegUpSC_max_RT(g1,s1,t3) + -1.0 mu_RegUpSC_max_RT(g1,s2,t3) + -1.0 muLB_RCupSC(g1,t3)>",=
+339,"dLag/RCdn(g1,t4)",0.0,"<gurobi.LinExpr: mu_Pmax_DA_GFPP(g1,t4) + mu_RCupSCmax(g1,t4) + -1.0 mu_RegUpSC_max_RT(g1,s1,t4) + -1.0 mu_RegUpSC_max_RT(g1,s2,t4) + -1.0 muLB_RCupSC(g1,t4)>",=
+340,"dLag/RCdn(g2,t1)",0.0,"<gurobi.LinExpr: mu_Pmin_DA_GFPP(g1,t1) + mu_RCdnSCmin(g1,t1) + -1.0 mu_RegDnSC_max_RT(g1,s1,t1) + -1.0 mu_RegDnSC_max_RT(g1,s2,t1) + -1.0 muLB_RCdnSC(g1,t1)>",=
+341,"dLag/RCdn(g2,t2)",0.0,"<gurobi.LinExpr: mu_Pmin_DA_GFPP(g1,t2) + mu_RCdnSCmin(g1,t2) + -1.0 mu_RegDnSC_max_RT(g1,s1,t2) + -1.0 mu_RegDnSC_max_RT(g1,s2,t2) + -1.0 muLB_RCdnSC(g1,t2)>",=
+342,"dLag/RCdn(g2,t3)",0.0,"<gurobi.LinExpr: mu_Pmin_DA_GFPP(g1,t3) + mu_RCdnSCmin(g1,t3) + -1.0 mu_RegDnSC_max_RT(g1,s1,t3) + -1.0 mu_RegDnSC_max_RT(g1,s2,t3) + -1.0 muLB_RCdnSC(g1,t3)>",=
+343,"dLag/RCdn(g2,t4)",0.0,"<gurobi.LinExpr: mu_Pmin_DA_GFPP(g1,t4) + mu_RCdnSCmin(g1,t4) + -1.0 mu_RegDnSC_max_RT(g1,s1,t4) + -1.0 mu_RegDnSC_max_RT(g1,s2,t4) + -1.0 muLB_RCdnSC(g1,t4)>",=
+344,"dLag/RCupSC(g1,t1)",0.0,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_DA(t1) + mu_Wind_Max_DA(w1,t1) + lambda_PowerBalance_RT(s1,t1) + lambda_PowerBalance_RT(s2,t1) + -1.0 muLB_WindDA(w1,t1)>",=
+345,"dLag/RCupSC(g1,t2)",0.0,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_DA(t2) + mu_Wind_Max_DA(w1,t2) + lambda_PowerBalance_RT(s1,t2) + lambda_PowerBalance_RT(s2,t2) + -1.0 muLB_WindDA(w1,t2)>",=
+346,"dLag/RCupSC(g1,t3)",0.0,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_DA(t3) + mu_Wind_Max_DA(w1,t3) + lambda_PowerBalance_RT(s1,t3) + lambda_PowerBalance_RT(s2,t3) + -1.0 muLB_WindDA(w1,t3)>",=
+347,"dLag/RCupSC(g1,t4)",0.0,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_DA(t4) + mu_Wind_Max_DA(w1,t4) + lambda_PowerBalance_RT(s1,t4) + lambda_PowerBalance_RT(s2,t4) + -1.0 muLB_WindDA(w1,t4)>",=
+348,"dLag/RCdnSC(g1,t1)",0.0,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_RT(s1,t1) + mu_RegUp_max_RT(g2,s1,t1) + -1.0 muLB_RUp(g2,s1,t1)>",=
+349,"dLag/RCdnSC(g1,t2)",0.0,"<gurobi.LinExpr: lambda_PowerBalance_RT(s1,t1) + mu_RegDown_max_RT(g2,s1,t1) + -1.0 muLB_RDn(g2,s1,t1)>",=
+350,"dLag/RCdnSC(g1,t3)",0.0,"<gurobi.LinExpr: lambda_PowerBalance_RT(s1,t1) + mu_Max_wind_spill_RT(w1,s1,t1) + -1.0 muLB_Wspill(w1,s1,t1)>",=
+351,"dLag/RCdnSC(g1,t4)",0.0,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_RT(s1,t1) + mu_Max_load_shed_RT(s1,t1) + -1.0 muLB_Lshed(s1,t1)>",=
+352,"dLag/WindDA(w1,t1)",0.0,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_RT(s1,t2) + mu_RegUp_max_RT(g2,s1,t2) + -1.0 muLB_RUp(g2,s1,t2)>",=
+353,"dLag/WindDA(w1,t2)",0.0,"<gurobi.LinExpr: lambda_PowerBalance_RT(s1,t2) + mu_RegDown_max_RT(g2,s1,t2) + -1.0 muLB_RDn(g2,s1,t2)>",=
+354,"dLag/WindDA(w1,t3)",0.0,"<gurobi.LinExpr: lambda_PowerBalance_RT(s1,t2) + mu_Max_wind_spill_RT(w1,s1,t2) + -1.0 muLB_Wspill(w1,s1,t2)>",=
+355,"dLag/WindDA(w1,t4)",0.0,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_RT(s1,t2) + mu_Max_load_shed_RT(s1,t2) + -1.0 muLB_Lshed(s1,t2)>",=
+356,"dLag/RUp(g1,s1,t1)",-8.0,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_RT(s1,t3) + mu_RegUp_max_RT(g2,s1,t3) + -1.0 muLB_RUp(g2,s1,t3)>",=
+357,"dLag/RDn(g1,s1,t1)",8.0,"<gurobi.LinExpr: lambda_PowerBalance_RT(s1,t3) + mu_RegDown_max_RT(g2,s1,t3) + -1.0 muLB_RDn(g2,s1,t3)>",=
+358,"dLag/RUp(g2,s1,t1)",-8.5,"<gurobi.LinExpr: lambda_PowerBalance_RT(s1,t3) + mu_Max_wind_spill_RT(w1,s1,t3) + -1.0 muLB_Wspill(w1,s1,t3)>",=
+359,"dLag/RDn(g2,s1,t1)",8.5,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_RT(s1,t3) + mu_Max_load_shed_RT(s1,t3) + -1.0 muLB_Lshed(s1,t3)>",=
+360,"dLag/RUpSC(g1,s1,t1)",-80.0,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_RT(s1,t4) + mu_RegUp_max_RT(g2,s1,t4) + -1.0 muLB_RUp(g2,s1,t4)>",=
+361,"dLag/RDnSC(g1,s1,t1)",80.0,"<gurobi.LinExpr: lambda_PowerBalance_RT(s1,t4) + mu_RegDown_max_RT(g2,s1,t4) + -1.0 muLB_RDn(g2,s1,t4)>",=
+362,"dLag/Wspill(w1,s1,t1)",0.0,"<gurobi.LinExpr: lambda_PowerBalance_RT(s1,t4) + mu_Max_wind_spill_RT(w1,s1,t4) + -1.0 muLB_Wspill(w1,s1,t4)>",=
+363,"dLag/Lshed(s1,t1)",-500.0,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_RT(s1,t4) + mu_Max_load_shed_RT(s1,t4) + -1.0 muLB_Lshed(s1,t4)>",=
+364,"dLag/RUp(g1,s1,t2)",-8.0,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_RT(s2,t1) + mu_RegUp_max_RT(g2,s2,t1) + -1.0 muLB_RUp(g2,s2,t1)>",=
+365,"dLag/RDn(g1,s1,t2)",8.0,"<gurobi.LinExpr: lambda_PowerBalance_RT(s2,t1) + mu_RegDown_max_RT(g2,s2,t1) + -1.0 muLB_RDn(g2,s2,t1)>",=
+366,"dLag/RUp(g2,s1,t2)",-8.5,"<gurobi.LinExpr: lambda_PowerBalance_RT(s2,t1) + mu_Max_wind_spill_RT(w1,s2,t1) + -1.0 muLB_Wspill(w1,s2,t1)>",=
+367,"dLag/RDn(g2,s1,t2)",8.5,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_RT(s2,t1) + mu_Max_load_shed_RT(s2,t1) + -1.0 muLB_Lshed(s2,t1)>",=
+368,"dLag/RUpSC(g1,s1,t2)",-80.0,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_RT(s2,t2) + mu_RegUp_max_RT(g2,s2,t2) + -1.0 muLB_RUp(g2,s2,t2)>",=
+369,"dLag/RDnSC(g1,s1,t2)",80.0,"<gurobi.LinExpr: lambda_PowerBalance_RT(s2,t2) + mu_RegDown_max_RT(g2,s2,t2) + -1.0 muLB_RDn(g2,s2,t2)>",=
+370,"dLag/Wspill(w1,s1,t2)",0.0,"<gurobi.LinExpr: lambda_PowerBalance_RT(s2,t2) + mu_Max_wind_spill_RT(w1,s2,t2) + -1.0 muLB_Wspill(w1,s2,t2)>",=
+371,"dLag/Lshed(s1,t2)",-500.0,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_RT(s2,t2) + mu_Max_load_shed_RT(s2,t2) + -1.0 muLB_Lshed(s2,t2)>",=
+372,"dLag/RUp(g1,s1,t3)",-8.0,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_RT(s2,t3) + mu_RegUp_max_RT(g2,s2,t3) + -1.0 muLB_RUp(g2,s2,t3)>",=
+373,"dLag/RDn(g1,s1,t3)",8.0,"<gurobi.LinExpr: lambda_PowerBalance_RT(s2,t3) + mu_RegDown_max_RT(g2,s2,t3) + -1.0 muLB_RDn(g2,s2,t3)>",=
+374,"dLag/RUp(g2,s1,t3)",-8.5,"<gurobi.LinExpr: lambda_PowerBalance_RT(s2,t3) + mu_Max_wind_spill_RT(w1,s2,t3) + -1.0 muLB_Wspill(w1,s2,t3)>",=
+375,"dLag/RDn(g2,s1,t3)",8.5,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_RT(s2,t3) + mu_Max_load_shed_RT(s2,t3) + -1.0 muLB_Lshed(s2,t3)>",=
+376,"dLag/RUpSC(g1,s1,t3)",-80.0,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_RT(s2,t4) + mu_RegUp_max_RT(g2,s2,t4) + -1.0 muLB_RUp(g2,s2,t4)>",=
+377,"dLag/RDnSC(g1,s1,t3)",80.0,"<gurobi.LinExpr: lambda_PowerBalance_RT(s2,t4) + mu_RegDown_max_RT(g2,s2,t4) + -1.0 muLB_RDn(g2,s2,t4)>",=
+378,"dLag/Wspill(w1,s1,t3)",0.0,"<gurobi.LinExpr: lambda_PowerBalance_RT(s2,t4) + mu_Max_wind_spill_RT(w1,s2,t4) + -1.0 muLB_Wspill(w1,s2,t4)>",=
+379,"dLag/Lshed(s1,t3)",-500.0,"<gurobi.LinExpr: -1.0 lambda_PowerBalance_RT(s2,t4) + mu_Max_load_shed_RT(s2,t4) + -1.0 muLB_Lshed(s2,t4)>",=
+380,"dLag/RUp(g1,s1,t4)",-8.0,"<gurobi.LinExpr: gshed_da(ng101,k0,t1)>",=
+381,"dLag/RDn(g1,s1,t4)",8.0,"<gurobi.LinExpr: gshed_da(ng101,k1,t1)>",=
+382,"dLag/RUp(g2,s1,t4)",-8.5,"<gurobi.LinExpr: gshed_da(ng101,k2,t1)>",=
+383,"dLag/RDn(g2,s1,t4)",8.5,"<gurobi.LinExpr: gshed_da(ng101,k0,t2)>",=
+384,"dLag/RUpSC(g1,s1,t4)",-80.0,"<gurobi.LinExpr: gshed_da(ng101,k1,t2)>",=
+385,"dLag/RDnSC(g1,s1,t4)",80.0,"<gurobi.LinExpr: gshed_da(ng101,k2,t2)>",=
+386,"dLag/Wspill(w1,s1,t4)",0.0,"<gurobi.LinExpr: gshed_da(ng101,k0,t3)>",=
+387,"dLag/Lshed(s1,t4)",-500.0,"<gurobi.LinExpr: gshed_da(ng101,k1,t3)>",=
+388,"dLag/RUp(g1,s2,t1)",-8.0,"<gurobi.LinExpr: gshed_da(ng101,k2,t3)>",=
+389,"dLag/RDn(g1,s2,t1)",8.0,"<gurobi.LinExpr: gshed_da(ng101,k0,t4)>",=
+390,"dLag/RUp(g2,s2,t1)",-8.5,"<gurobi.LinExpr: gshed_da(ng101,k1,t4)>",=
+391,"dLag/RDn(g2,s2,t1)",8.5,"<gurobi.LinExpr: gshed_da(ng101,k2,t4)>",=
+392,"dLag/RUpSC(g1,s2,t1)",-80.0,"<gurobi.LinExpr: gshed_da(ng102,k0,t1)>",=
+393,"dLag/RDnSC(g1,s2,t1)",80.0,"<gurobi.LinExpr: gshed_da(ng102,k1,t1)>",=
+394,"dLag/Wspill(w1,s2,t1)",0.0,"<gurobi.LinExpr: gshed_da(ng102,k2,t1)>",=
+395,"dLag/Lshed(s2,t1)",-500.0,"<gurobi.LinExpr: gshed_da(ng102,k0,t2)>",=
+396,"dLag/RUp(g1,s2,t2)",-8.0,"<gurobi.LinExpr: gshed_da(ng102,k1,t2)>",=
+397,"dLag/RDn(g1,s2,t2)",8.0,"<gurobi.LinExpr: gshed_da(ng102,k2,t2)>",=
+398,"dLag/RUp(g2,s2,t2)",-8.5,"<gurobi.LinExpr: gshed_da(ng102,k0,t3)>",=
+399,"dLag/RDn(g2,s2,t2)",8.5,"<gurobi.LinExpr: gshed_da(ng102,k1,t3)>",=
+400,"dLag/RUpSC(g1,s2,t2)",-80.0,"<gurobi.LinExpr: gshed_da(ng102,k2,t3)>",=
+401,"dLag/RDnSC(g1,s2,t2)",80.0,"<gurobi.LinExpr: gshed_da(ng102,k0,t4)>",=
+402,"dLag/Wspill(w1,s2,t2)",0.0,"<gurobi.LinExpr: gshed_da(ng102,k1,t4)>",=
+403,"dLag/Lshed(s2,t2)",-500.0,"<gurobi.LinExpr: gshed_da(ng102,k2,t4)>",=
+404,"dLag/RUp(g1,s2,t3)",-8.0,"<gurobi.LinExpr: gshed_da(ng101,k0,t1) + gprod(gw1,k0,t1) + gprod(gw2,k0,t1) + gprod(gw3,k0,t1) + -1.0 qin_sr(('ng101','ng102'),k0,t1)>",=
+405,"dLag/RDn(g1,s2,t3)",8.0,"<gurobi.LinExpr: gshed_da(ng101,k1,t1) + -1.0 qin_sr(('ng101','ng102'),k1,t1) + gprod(gw1,k1,t1) + gprod(gw2,k1,t1) + gprod(gw3,k1,t1)>",=
+406,"dLag/RUp(g2,s2,t3)",-8.5,"<gurobi.LinExpr: gshed_da(ng101,k2,t1) + -1.0 qin_sr(('ng101','ng102'),k2,t1) + gprod(gw1,k2,t1) + gprod(gw2,k2,t1) + gprod(gw3,k2,t1)>",=
+407,"dLag/RDn(g2,s2,t3)",8.5,"<gurobi.LinExpr: gshed_da(ng101,k0,t2) + gprod(gw1,k0,t2) + gprod(gw2,k0,t2) + gprod(gw3,k0,t2) + -1.0 qin_sr(('ng101','ng102'),k0,t2)>",=
+408,"dLag/RUpSC(g1,s2,t3)",-80.0,"<gurobi.LinExpr: gshed_da(ng101,k1,t2) + -1.0 qin_sr(('ng101','ng102'),k1,t2) + gprod(gw1,k1,t2) + gprod(gw2,k1,t2) + gprod(gw3,k1,t2)>",=
+409,"dLag/RDnSC(g1,s2,t3)",80.0,"<gurobi.LinExpr: gshed_da(ng101,k2,t2) + -1.0 qin_sr(('ng101','ng102'),k2,t2) + gprod(gw1,k2,t2) + gprod(gw2,k2,t2) + gprod(gw3,k2,t2)>",=
+410,"dLag/Wspill(w1,s2,t3)",0.0,"<gurobi.LinExpr: gshed_da(ng101,k0,t3) + gprod(gw1,k0,t3) + gprod(gw2,k0,t3) + gprod(gw3,k0,t3) + -1.0 qin_sr(('ng101','ng102'),k0,t3)>",=
+411,"dLag/Lshed(s2,t3)",-500.0,"<gurobi.LinExpr: gshed_da(ng101,k1,t3) + -1.0 qin_sr(('ng101','ng102'),k1,t3) + gprod(gw1,k1,t3) + gprod(gw2,k1,t3) + gprod(gw3,k1,t3)>",=
+412,"dLag/RUp(g1,s2,t4)",-8.0,"<gurobi.LinExpr: gshed_da(ng101,k2,t3) + -1.0 qin_sr(('ng101','ng102'),k2,t3) + gprod(gw1,k2,t3) + gprod(gw2,k2,t3) + gprod(gw3,k2,t3)>",=
+413,"dLag/RDn(g1,s2,t4)",8.0,"<gurobi.LinExpr: gshed_da(ng101,k0,t4) + gprod(gw1,k0,t4) + gprod(gw2,k0,t4) + gprod(gw3,k0,t4) + -1.0 qin_sr(('ng101','ng102'),k0,t4)>",=
+414,"dLag/RUp(g2,s2,t4)",-8.5,"<gurobi.LinExpr: gshed_da(ng101,k1,t4) + -1.0 qin_sr(('ng101','ng102'),k1,t4) + gprod(gw1,k1,t4) + gprod(gw2,k1,t4) + gprod(gw3,k1,t4)>",=
+415,"dLag/RDn(g2,s2,t4)",8.5,"<gurobi.LinExpr: gshed_da(ng101,k2,t4) + -1.0 qin_sr(('ng101','ng102'),k2,t4) + gprod(gw1,k2,t4) + gprod(gw2,k2,t4) + gprod(gw3,k2,t4)>",=
+416,"dLag/RUpSC(g1,s2,t4)",-80.0,"<gurobi.LinExpr: gprod(gw1,k0,t1)>",=
+417,"dLag/RDnSC(g1,s2,t4)",80.0,"<gurobi.LinExpr: gprod(gw1,k0,t2)>",=
+418,"dLag/Wspill(w1,s2,t4)",0.0,"<gurobi.LinExpr: gprod(gw1,k0,t3)>",=
+419,"dLag/Lshed(s2,t4)",-500.0,"<gurobi.LinExpr: gprod(gw1,k0,t4)>",=

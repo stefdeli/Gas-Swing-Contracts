@@ -51,11 +51,11 @@ Subject To
    - qin_sr(('ng101','ng102'),k2,t1) + gprod(gw1,k2,t1) + gprod(gw2,k2,t1)
    + gprod(gw3,k2,t1) = 0
  gas_balance_da(ng102,k0,t1): gshed_da(ng102,k0,t1)
-   + qout_sr(('ng101','ng102'),k0,t1) = 328
+   + qout_sr(('ng101','ng102'),k0,t1) = 364
  gas_balance_da(ng102,k1,t1): gshed_da(ng102,k1,t1)
-   + qout_sr(('ng101','ng102'),k1,t1) = 328
+   + qout_sr(('ng101','ng102'),k1,t1) = 444
  gas_balance_da(ng102,k2,t1): gshed_da(ng102,k2,t1)
-   + qout_sr(('ng101','ng102'),k2,t1) = 328
+   + qout_sr(('ng101','ng102'),k2,t1) = 364
  gas_balance_da(ng101,k0,t2): gshed_da(ng101,k0,t2)
    - qin_sr(('ng101','ng102'),k0,t2) + gprod(gw1,k0,t2) + gprod(gw2,k0,t2)
    + gprod(gw3,k0,t2) = 0
@@ -66,11 +66,11 @@ Subject To
    - qin_sr(('ng101','ng102'),k2,t2) + gprod(gw1,k2,t2) + gprod(gw2,k2,t2)
    + gprod(gw3,k2,t2) = 0
  gas_balance_da(ng102,k0,t2): gshed_da(ng102,k0,t2)
-   + qout_sr(('ng101','ng102'),k0,t2) = 338.35276184
+   + qout_sr(('ng101','ng102'),k0,t2) = 374.35276184
  gas_balance_da(ng102,k1,t2): gshed_da(ng102,k1,t2)
-   + qout_sr(('ng101','ng102'),k1,t2) = 338.35276184
+   + qout_sr(('ng101','ng102'),k1,t2) = 454.35276184
  gas_balance_da(ng102,k2,t2): gshed_da(ng102,k2,t2)
-   + qout_sr(('ng101','ng102'),k2,t2) = 338.35276184
+   + qout_sr(('ng101','ng102'),k2,t2) = 374.35276184
  gas_balance_da(ng101,k0,t3): gshed_da(ng101,k0,t3)
    - qin_sr(('ng101','ng102'),k0,t3) + gprod(gw1,k0,t3) + gprod(gw2,k0,t3)
    + gprod(gw3,k0,t3) = 0
@@ -81,11 +81,11 @@ Subject To
    - qin_sr(('ng101','ng102'),k2,t3) + gprod(gw1,k2,t3) + gprod(gw2,k2,t3)
    + gprod(gw3,k2,t3) = 0
  gas_balance_da(ng102,k0,t3): gshed_da(ng102,k0,t3)
-   + qout_sr(('ng101','ng102'),k0,t3) = 348
+   + qout_sr(('ng101','ng102'),k0,t3) = 108
  gas_balance_da(ng102,k1,t3): gshed_da(ng102,k1,t3)
-   + qout_sr(('ng101','ng102'),k1,t3) = 348
+   + qout_sr(('ng101','ng102'),k1,t3) = 108
  gas_balance_da(ng102,k2,t3): gshed_da(ng102,k2,t3)
-   + qout_sr(('ng101','ng102'),k2,t3) = 348
+   + qout_sr(('ng101','ng102'),k2,t3) = 28
  gas_balance_da(ng101,k0,t4): gshed_da(ng101,k0,t4)
    - qin_sr(('ng101','ng102'),k0,t4) + gprod(gw1,k0,t4) + gprod(gw2,k0,t4)
    + gprod(gw3,k0,t4) = 0
@@ -96,11 +96,11 @@ Subject To
    - qin_sr(('ng101','ng102'),k2,t4) + gprod(gw1,k2,t4) + gprod(gw2,k2,t4)
    + gprod(gw3,k2,t4) = 0
  gas_balance_da(ng102,k0,t4): gshed_da(ng102,k0,t4)
-   + qout_sr(('ng101','ng102'),k0,t4) = 356.28427128
+   + qout_sr(('ng101','ng102'),k0,t4) = 116.28427128
  gas_balance_da(ng102,k1,t4): gshed_da(ng102,k1,t4)
-   + qout_sr(('ng101','ng102'),k1,t4) = 356.28427128
+   + qout_sr(('ng101','ng102'),k1,t4) = 116.28427128
  gas_balance_da(ng102,k2,t4): gshed_da(ng102,k2,t4)
-   + qout_sr(('ng101','ng102'),k2,t4) = 356.28427128
+   + qout_sr(('ng101','ng102'),k2,t4) = 36.28427127999998
  gprod_max(gw1,k0,t1): gprod(gw1,k0,t1) <= 100
  gprod_max(gw1,k0,t2): gprod(gw1,k0,t2) <= 100
  gprod_max(gw1,k0,t3): gprod(gw1,k0,t3) <= 100
@@ -125,18 +125,18 @@ Subject To
  gprod_max(gw2,k2,t2): gprod(gw2,k2,t2) <= 200
  gprod_max(gw2,k2,t3): gprod(gw2,k2,t3) <= 200
  gprod_max(gw2,k2,t4): gprod(gw2,k2,t4) <= 200
- gprod_max(gw3,k0,t1): gprod(gw3,k0,t1) <= 1000
- gprod_max(gw3,k0,t2): gprod(gw3,k0,t2) <= 1000
- gprod_max(gw3,k0,t3): gprod(gw3,k0,t3) <= 1000
- gprod_max(gw3,k0,t4): gprod(gw3,k0,t4) <= 1000
- gprod_max(gw3,k1,t1): gprod(gw3,k1,t1) <= 1000
- gprod_max(gw3,k1,t2): gprod(gw3,k1,t2) <= 1000
- gprod_max(gw3,k1,t3): gprod(gw3,k1,t3) <= 1000
- gprod_max(gw3,k1,t4): gprod(gw3,k1,t4) <= 1000
- gprod_max(gw3,k2,t1): gprod(gw3,k2,t1) <= 1000
- gprod_max(gw3,k2,t2): gprod(gw3,k2,t2) <= 1000
- gprod_max(gw3,k2,t3): gprod(gw3,k2,t3) <= 1000
- gprod_max(gw3,k2,t4): gprod(gw3,k2,t4) <= 1000
+ gprod_max(gw3,k0,t1): gprod(gw3,k0,t1) <= 3000
+ gprod_max(gw3,k0,t2): gprod(gw3,k0,t2) <= 3000
+ gprod_max(gw3,k0,t3): gprod(gw3,k0,t3) <= 3000
+ gprod_max(gw3,k0,t4): gprod(gw3,k0,t4) <= 3000
+ gprod_max(gw3,k1,t1): gprod(gw3,k1,t1) <= 3000
+ gprod_max(gw3,k1,t2): gprod(gw3,k1,t2) <= 3000
+ gprod_max(gw3,k1,t3): gprod(gw3,k1,t3) <= 3000
+ gprod_max(gw3,k1,t4): gprod(gw3,k1,t4) <= 3000
+ gprod_max(gw3,k2,t1): gprod(gw3,k2,t1) <= 3000
+ gprod_max(gw3,k2,t2): gprod(gw3,k2,t2) <= 3000
+ gprod_max(gw3,k2,t3): gprod(gw3,k2,t3) <= 3000
+ gprod_max(gw3,k2,t4): gprod(gw3,k2,t4) <= 3000
  gflow_sr_io(('ng101','ng102'),k0,t1): gflow_sr(('ng101','ng102'),k0,t1)
    - 0.5 qin_sr(('ng101','ng102'),k0,t1)
    - 0.5 qout_sr(('ng101','ng102'),k0,t1) = 0
@@ -318,29 +318,29 @@ Subject To
  SOS1_gprod_max(gw2,k2,t4): gprod(gw2,k2,t4) + SOS1_gprod_max(gw2,k2,t4)
    = 200
  SOS1_gprod_max(gw3,k0,t1): gprod(gw3,k0,t1) + SOS1_gprod_max(gw3,k0,t1)
-   = 1000
+   = 3000
  SOS1_gprod_max(gw3,k0,t2): gprod(gw3,k0,t2) + SOS1_gprod_max(gw3,k0,t2)
-   = 1000
+   = 3000
  SOS1_gprod_max(gw3,k0,t3): gprod(gw3,k0,t3) + SOS1_gprod_max(gw3,k0,t3)
-   = 1000
+   = 3000
  SOS1_gprod_max(gw3,k0,t4): gprod(gw3,k0,t4) + SOS1_gprod_max(gw3,k0,t4)
-   = 1000
+   = 3000
  SOS1_gprod_max(gw3,k1,t1): gprod(gw3,k1,t1) + SOS1_gprod_max(gw3,k1,t1)
-   = 1000
+   = 3000
  SOS1_gprod_max(gw3,k1,t2): gprod(gw3,k1,t2) + SOS1_gprod_max(gw3,k1,t2)
-   = 1000
+   = 3000
  SOS1_gprod_max(gw3,k1,t3): gprod(gw3,k1,t3) + SOS1_gprod_max(gw3,k1,t3)
-   = 1000
+   = 3000
  SOS1_gprod_max(gw3,k1,t4): gprod(gw3,k1,t4) + SOS1_gprod_max(gw3,k1,t4)
-   = 1000
+   = 3000
  SOS1_gprod_max(gw3,k2,t1): gprod(gw3,k2,t1) + SOS1_gprod_max(gw3,k2,t1)
-   = 1000
+   = 3000
  SOS1_gprod_max(gw3,k2,t2): gprod(gw3,k2,t2) + SOS1_gprod_max(gw3,k2,t2)
-   = 1000
+   = 3000
  SOS1_gprod_max(gw3,k2,t3): gprod(gw3,k2,t3) + SOS1_gprod_max(gw3,k2,t3)
-   = 1000
+   = 3000
  SOS1_gprod_max(gw3,k2,t4): gprod(gw3,k2,t4) + SOS1_gprod_max(gw3,k2,t4)
-   = 1000
+   = 3000
  SOS1_gflow_sr_limit(('ng101','ng102'),k0,t1):
    gflow_sr(('ng101','ng102'),k0,t1)
    + SOS1_gflow_sr_limit(('ng101','ng102'),k0,t1) = 10000

@@ -377,7 +377,10 @@ def ADD_mSEDA_RT_Linking_Constraints(BLmodel):
                     new_con=new_con+con_row.getVar(i)*con_row.getCoeff(i)
                     
                 NewPrice=BLmodel.model.getVarByName(var_name)
-                new_con=new_con+ HR * NewPrice*defaults.RESERVES_UP_PREMIUM * BLmodel.edata.scen_wgp[scenario][2]
+                
+                scen_prob =BLmodel.edata.scen_wgp[scenario][2]
+                
+                new_con=new_con+ HR * NewPrice*defaults.RESERVES_UP_PREMIUM 
                 BLmodel.model.remove(con)
                 BLmodel.model.addConstr(new_con==0,name=con_name.format(gen,t))
                 BLmodel.model.update()
@@ -401,7 +404,7 @@ def ADD_mSEDA_RT_Linking_Constraints(BLmodel):
                 
                 scen_prob =BLmodel.edata.scen_wgp[scenario][2]
                 
-                new_con=new_con - (1/scen_prob) *HR * NewPrice*defaults.RESERVES_DN_PREMIUM * BLmodel.edata.scen_wgp[scenario][2]
+                new_con=new_con - HR * NewPrice*defaults.RESERVES_DN_PREMIUM
                 BLmodel.model.remove(con)
                 BLmodel.model.addConstr(new_con==0,name=con_name.format(gen,t))
                 BLmodel.model.update()        
@@ -423,7 +426,7 @@ def ADD_mSEDA_RT_Linking_Constraints(BLmodel):
                 NewPrice=BLmodel.model.getVarByName(var_name)
                 scen_prob =BLmodel.edata.scen_wgp[scenario][2]
                 
-                new_con=new_con+ (1/scen_prob) *HR * NewPrice*defaults.RESERVES_UP_PREMIUM * BLmodel.edata.scen_wgp[scenario][2]
+                new_con=new_con+ HR * NewPrice*defaults.RESERVES_UP_PREMIUM * scen_prob
                 BLmodel.model.remove(con)
                 BLmodel.model.addConstr(new_con==0,name=con_name.format(gen,t))
                 BLmodel.model.update()
@@ -443,7 +446,8 @@ def ADD_mSEDA_RT_Linking_Constraints(BLmodel):
                     new_con=new_con+con_row.getVar(i)*con_row.getCoeff(i)
                     
                 NewPrice=BLmodel.model.getVarByName(var_name)
-                new_con=new_con - HR * NewPrice*defaults.RESERVES_DN_PREMIUM * BLmodel.edata.scen_wgp[scenario][2]
+                scen_prob =BLmodel.edata.scen_wgp[scenario][2]
+                new_con=new_con - HR * NewPrice*defaults.RESERVES_DN_PREMIUM * scen_prob
                 BLmodel.model.remove(con)
                 BLmodel.model.addConstr(new_con==0,name=con_name.format(gen,t))
                 BLmodel.model.update()   
@@ -546,11 +550,11 @@ def Get_Dual_Obj(BLmodel,COMP):
             dual=BLmodel.model.getVarByName('mu_'+conname)
     
         if sense=='=':
-            NewObj=NewObj+dual*RHS
+            NewObj=NewObj + dual*RHS
         elif sense=='<':
-            NewObj=NewObj-dual*RHS
+            NewObj=NewObj - dual*RHS
         else:
-            NewObj=NewObj+dual*RHS
+            NewObj=NewObj + dual*RHS
 
     return NewObj
 
@@ -583,25 +587,25 @@ def GetDispatch(BLmodel):
     ElecDA=pd.concat([Pgen,PgenSC,Wind],axis=1)
     
     Wind_s1=BLmodel.edata.windscen['w1']['s1'][BLmodel.edata.time].rename('wind_s1').reset_index(drop=True)*30
-    Wind_s2=BLmodel.edata.windscen['w1']['s2'][BLmodel.edata.time].rename('wind_s2').reset_index(drop=True)*30
+#    Wind_s2=BLmodel.edata.windscen['w1']['s2'][BLmodel.edata.time].rename('wind_s2').reset_index(drop=True)*30
     
     Wind_s1_error= (Wind_s1 - Wind).rename('WindError_s1')
-    Wind_s2_error= (Wind_s2 - Wind).rename('WindError_s2')
+#    Wind_s2_error= (Wind_s2 - Wind).rename('WindError_s2')
     
     RUp_s1=df[df.Name.str.match('RUp\(.*,s1,.*')].Value.rename('RUp-s1').reset_index(drop=True)
-    RUp_s2=df[df.Name.str.match('RUp\(.*,s2,.*')].Value.rename('RUp-s2').reset_index(drop=True)
+#    RUp_s2=df[df.Name.str.match('RUp\(.*,s2,.*')].Value.rename('RUp-s2').reset_index(drop=True)
     RDn_s1=df[df.Name.str.match('RDn\(.*,s1,.*')].Value.rename('RDn-s1').reset_index(drop=True)
-    RDn_s2=df[df.Name.str.match('RDn\(.*,s2,.*')].Value.rename('RDn-s2').reset_index(drop=True)
+#    RDn_s2=df[df.Name.str.match('RDn\(.*,s2,.*')].Value.rename('RDn-s2').reset_index(drop=True)
     RUpSC_s1=df[df.Name.str.match('RUpSC\(.*,s1,.*')].Value.rename('RUpSC-s1').reset_index(drop=True)
-    RUpSC_s2=df[df.Name.str.match('RUpSC\(.*,s2,.*')].Value.rename('RUpSC-s2').reset_index(drop=True)
+#    RUpSC_s2=df[df.Name.str.match('RUpSC\(.*,s2,.*')].Value.rename('RUpSC-s2').reset_index(drop=True)
     RDnSC_s1=df[df.Name.str.match('RDnSC\(.*,s1,.*')].Value.rename('RDnSC-s1').reset_index(drop=True)
-    RDnSC_s2=df[df.Name.str.match('RDnSC\(.*,s2,.*')].Value.rename('RDnSC-s2').reset_index(drop=True)
+#    RDnSC_s2=df[df.Name.str.match('RDnSC\(.*,s2,.*')].Value.rename('RDnSC-s2').reset_index(drop=True)
     
     NetR_s1=(RUp_s1+RUpSC_s1 - RDn_s1 -RDnSC_s1).rename('NetR-s1')
-    NetR_s2=(RUp_s2+RUpSC_s2 - RDn_s2 -RDnSC_s2).rename('NetR-s2')
+#    NetR_s2=(RUp_s2+RUpSC_s2 - RDn_s2 -RDnSC_s2).rename('NetR-s2')
     
     ElecRT_s1=pd.concat([Wind_s1_error,NetR_s1,RUp_s1,RDn_s1,RUpSC_s1,RDnSC_s1],axis=1)
-    ElecRT_s2=pd.concat([Wind_s2_error,NetR_s2,RUp_s2,RDn_s2,RUpSC_s2,RDnSC_s2],axis=1)
+#    ElecRT_s2=pd.concat([Wind_s2_error,NetR_s2,RUp_s2,RDn_s2,RUpSC_s2,RDnSC_s2],axis=1)
     
     #Gas - k0
     G1_k0=df[df.Name.str.match('gprod\(gw1,k0.*')].Value.rename('gw1_k0').reset_index(drop=True)
@@ -615,10 +619,11 @@ def GetDispatch(BLmodel):
     l_DA_102=df[df.Name.str.match('lambda_gas_balance_da\(ng102,k0.*')].Value.rename('da_n102').reset_index(drop=True)
     l_RT_101_s1=df[df.Name.str.match('lambda_gas_balance_rt\(ng101,s1.*')].Value.rename('rt_n101_s1').reset_index(drop=True)
     l_RT_102_s1=df[df.Name.str.match('lambda_gas_balance_rt\(ng102,s1.*')].Value.rename('rt_n102_s1').reset_index(drop=True)
-    l_RT_101_s2=df[df.Name.str.match('lambda_gas_balance_rt\(ng101,s2.*')].Value.rename('rt_n101_s2').reset_index(drop=True)
-    l_RT_102_s2=df[df.Name.str.match('lambda_gas_balance_rt\(ng102,s2.*')].Value.rename('rt_n102_s2').reset_index(drop=True)
+#    l_RT_101_s2=df[df.Name.str.match('lambda_gas_balance_rt\(ng101,s2.*')].Value.rename('rt_n101_s2').reset_index(drop=True)
+#    l_RT_102_s2=df[df.Name.str.match('lambda_gas_balance_rt\(ng102,s2.*')].Value.rename('rt_n102_s2').reset_index(drop=True)
     
-    LMP_gas=pd.concat([l_DA_101,l_DA_102,l_RT_101_s1,l_RT_102_s1,l_RT_101_s2,l_RT_102_s2],axis=1)
+#    LMP_gas=pd.concat([l_DA_101,l_DA_102,l_RT_101_s1,l_RT_102_s1,l_RT_101_s2,l_RT_102_s2],axis=1)
+    LMP_gas=pd.concat([l_DA_101,l_DA_102,l_RT_101_s1,l_RT_102_s1],axis=1)
     
     
     
@@ -630,14 +635,14 @@ def GetDispatch(BLmodel):
     G3_s1_dn=df[df.Name.str.match('gprodDn\(gw3,s1.*')].Value.rename('gw3Dn_s1').reset_index(drop=True)
     GasRT_s1=pd.concat([NetR_s1*8,G1_s1_up,G1_s1_dn,G2_s1_up,G2_s1_dn,G3_s1_up,G3_s1_dn],axis=1)
     
-    G1_s2_up=df[df.Name.str.match('gprodUp\(gw1,s2.*')].Value.rename('gw1Up_s2').reset_index(drop=True)
-    G2_s2_up=df[df.Name.str.match('gprodUp\(gw2,s2.*')].Value.rename('gw2Up_s2').reset_index(drop=True)
-    G3_s2_up=df[df.Name.str.match('gprodUp\(gw3,s2.*')].Value.rename('gw3Up_s2').reset_index(drop=True)
-    G1_s2_dn=df[df.Name.str.match('gprodDn\(gw1,s2.*')].Value.rename('gw1Dn_s2').reset_index(drop=True)
-    G2_s2_dn=df[df.Name.str.match('gprodDn\(gw2,s2.*')].Value.rename('gw2Dn_s2').reset_index(drop=True)
-    G3_s2_dn=df[df.Name.str.match('gprodDn\(gw3,s2.*')].Value.rename('gw3Dn_s2').reset_index(drop=True)
-    GasRT_s2=pd.concat([NetR_s2*8,G1_s2_up,G1_s2_dn,G2_s2_up,G2_s2_dn,G3_s2_up,G3_s2_dn],axis=1)
-    
+#    G1_s2_up=df[df.Name.str.match('gprodUp\(gw1,s2.*')].Value.rename('gw1Up_s2').reset_index(drop=True)
+#    G2_s2_up=df[df.Name.str.match('gprodUp\(gw2,s2.*')].Value.rename('gw2Up_s2').reset_index(drop=True)
+#    G3_s2_up=df[df.Name.str.match('gprodUp\(gw3,s2.*')].Value.rename('gw3Up_s2').reset_index(drop=True)
+#    G1_s2_dn=df[df.Name.str.match('gprodDn\(gw1,s2.*')].Value.rename('gw1Dn_s2').reset_index(drop=True)
+#    G2_s2_dn=df[df.Name.str.match('gprodDn\(gw2,s2.*')].Value.rename('gw2Dn_s2').reset_index(drop=True)
+#    G3_s2_dn=df[df.Name.str.match('gprodDn\(gw3,s2.*')].Value.rename('gw3Dn_s2').reset_index(drop=True)
+#    GasRT_s2=pd.concat([NetR_s2*8,G1_s2_up,G1_s2_dn,G2_s2_up,G2_s2_dn,G3_s2_up,G3_s2_dn],axis=1)
+#    
     
     RDn=df[df.Name.str.contains('RDn\(')]
     
@@ -652,6 +657,10 @@ def GetDispatch(BLmodel):
     Results.ElecDA=ElecDA
     Results.GasDA=GasDA
     Results.LMP_gas=LMP_gas
+    Results.Elec_RT_s1=ElecRT_s1
+#    Results.Elec_RT_s2=ElecRT_s2
+    Results.Gas_RT_s1=GasRT_s1
+#    Results.Gas_RT_s2=GasRT_s2
     return Results
 
 
@@ -697,6 +706,10 @@ def DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP):
     Obj_mSEDA=Get_Obj(BLmodel,mSEDA_COMP)
     Obj_mGDA =Get_Obj(BLmodel,mGDA_COMP)
     Obj_mGRT=Get_Obj(BLmodel,mGRT_COMP)
+    
+    BLmodel.Dualobj_mSEDA=Dualobj_mSEDA
+    
+    
     
     
     #--- Non gas Generators Objective
@@ -747,9 +760,15 @@ def DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP):
      # mSEDA_Obj = Gen_Income + Non_Gas_gencost
      # mSEDA_Obj = mSEDA_DualObj
      # Gen_Income = mSEDA_DualObj - Non_Gas_gencost
-     
-    Obj =  Obj_mGDA +Obj_mGRT -Non_gen_Income - (Dualobj_mSEDA-Non_Gas_gencost)
     
+
+    BLmodel.Non_Gas_gencost=Non_Gas_gencost
+    BLmodel.Dualobj_mSEDA   =  Dualobj_mSEDA   
+    Cost=Obj_mGDA +Obj_mGRT
+    Income=Non_gen_Income + (Dualobj_mSEDA-Non_Gas_gencost)
+    Obj=Cost-Income
+
+
     BLmodel.model.setObjective(Obj  ,gb.GRB.MINIMIZE)
     
     print('Bilevel Model is built')
@@ -923,3 +942,101 @@ def Loop_Contracts_Price(BLmodel):
     print(All_SCdata.lambdaC)   
     
     return BLmodel
+
+
+def CompareBLmodelObjective(BLmodel):
+    CostDA = 0.0
+    for t in BLmodel.edata.time:
+        for gw in BLmodel.gdata.wells:
+            var_name = 'gprod({0},{1},{2})'.format(gw,'k0',t)
+            var=BLmodel.model.getVarByName(var_name)
+            CostDA= CostDA + BLmodel.gdata.wellsinfo.Cost[gw]*var.x
+            
+        for gn in BLmodel.gdata.gnodes:
+            for k in ['k0','k1','k2']:
+                var_name = 'gshed_da({0},{1},{2})'.format(gn,k,t)
+                var=BLmodel.model.getVarByName(var_name)
+                CostDA= CostDA + defaults.VOLL*var.x
+                
+        for gn in BLmodel.gdata.gnodes:
+            for k in ['k0','k1','k2']:
+                var_name = 'gshed_da({0},{1},{2})'.format(gn,k,t)
+                var=BLmodel.model.getVarByName(var_name)
+                CostDA= CostDA + defaults.VOLL*var.x
+
+    CostRT = 0.0
+    for t in BLmodel.edata.time:
+        for gw in BLmodel.gdata.wells:
+            for s in BLmodel.edata.scenarios:
+                var_name_up = 'gprodUp({0},{1},{2})'.format(gw,s,t)
+                var_name_dn = 'gprodDn({0},{1},{2})'.format(gw,s,t)
+                
+                var_up=BLmodel.model.getVarByName(var_name_up)
+                var_dn=BLmodel.model.getVarByName(var_name_dn)
+                Prob=BLmodel.edata.scen_wgp[s][2]
+                CostRT= CostRT + Prob*BLmodel.gdata.wellsinfo.Cost[gw]*(var_up.x-var_dn.x)
+            
+
+                
+                
+    IncomeDA    = 0.0
+    IncomeSCDA  = 0.0
+    for t in BLmodel.edata.time:
+        for gen in BLmodel.edata.gfpp:
+            var_name = 'Pgen({0},{1})'.format(gen,t)
+            Lambda_name ='lambda_gas_balance_da({0},{1},{2})'.format(BLmodel.edata.generatorinfo.origin_gas[gen],'k0',t)
+            var=BLmodel.model.getVarByName(var_name)
+            price=BLmodel.model.getVarByName(Lambda_name)
+            IncomeDA = IncomeDA  + 8*price.x*var.x
+            
+            var_name = 'PgenSC({0},{1})'.format(gen,t)
+            Contract_name ='ContractPrice({0})'.format(BLmodel.edata.generatorinfo.origin_gas[gen])
+            var=BLmodel.model.getVarByName(var_name)
+            contract=BLmodel.model.getVarByName(Contract_name)
+            IncomeSCDA = IncomeSCDA  + 8*contract.x*var.x
+
+                
+    IncomeRT    = 0.0
+    IncomeSCRT  = 0.0
+    for t in BLmodel.edata.time:
+        for s in BLmodel.edata.scenarios:
+            for gen in BLmodel.edata.gfpp:
+                
+                Temp=0.0
+                Prob=BLmodel.edata.scen_wgp[s][2]
+                
+                var_name_up = 'RUp({0},{1},{2})'.format(gen,s,t)
+                var_name_dn = 'RDn({0},{1},{2})'.format(gen,s,t)
+                
+                var_up=BLmodel.model.getVarByName(var_name_up)
+                var_dn=BLmodel.model.getVarByName(var_name_dn)
+                
+                Temp+=var_up.x-var_dn.x
+                
+                Lambda_name ='lambda_gas_balance_rt({0},{1},{2})'.format(BLmodel.edata.generatorinfo.origin_gas[gen],s,t)
+                price=BLmodel.model.getVarByName(Lambda_name)   
+                
+                IncomeRT = IncomeRT  + 8*price.x*(var_up.x-var_dn.x)
+                
+            
+                var_name_upSC = 'RUpSC({0},{1},{2})'.format(gen,s,t)
+                var_name_dnSC = 'RDnSC({0},{1},{2})'.format(gen,s,t)
+                
+                var_upSC=BLmodel.model.getVarByName(var_name_upSC)
+                var_dnSC=BLmodel.model.getVarByName(var_name_dnSC)
+            
+                Temp+=var_up.x-var_dn.x
+                Contract_name ='ContractPrice({0})'.format(BLmodel.edata.generatorinfo.origin_gas[gen])
+                contract=BLmodel.model.getVarByName(Contract_name)
+                IncomeSCRT = IncomeSCRT  + Prob*8*contract.x*(var_upSC.x-var_dnSC.x)
+            
+
+    Cost= CostDA+CostRT
+    Income=IncomeDA+IncomeSCDA+IncomeRT+IncomeSCRT
+    Profit=Cost-Income
+#    print('Contract:{3:.2f} \t Profit={4:.2f} \tCost={0:.2f} \t Income={1:.2f} \t IncomeSC={2:.2f}'.format(Cost,Income,IncomeSC,contract.x,-Profit))
+#    print('Contract:{2:.2f} \tDual:{0:.2f} \t Calc:{1:.2f} \t Error:{3:.2e}'.format(BLmodel.model.ObjVal,Profit,contract.x,BLmodel.model.ObjVal-Profit))
+#    print('Contract={0:.2f} \tIncomeDA={1:.2f} \tIncomeSCDA={2:.2f} \tIncomeRT={3:.2f} \tIncomeSCRT{4:.2f}'.format(contract.x,IncomeDA,IncomeSCDA,IncomeRT,IncomeSCRT))
+#   
+    print('Contract:{1:.2f} \tDual:{0:.2f} \t Calc{2:.2f}'.format(BLmodel.model.ObjVal,contract.x,Profit))
+    

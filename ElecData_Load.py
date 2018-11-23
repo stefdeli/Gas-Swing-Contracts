@@ -142,15 +142,16 @@ def _load_initial_data(self):
     self.edata.time = self.edata.windscen[self.edata.windfarms[0]].index.tolist()
     
     # For equiprobable scenarios
-    self.edata.windscenprob = {s: 1.0/len(self.edata.windscen_index) for s in self.edata.windscen_index}
+#    self.edata.windscenprob = {s: 1.0/len(self.edata.windscen_index) for s in self.edata.windscen_index}
     
     # Expected wind power production        
-    self.edata.exp_wind = {wf: self.edata.windscen[wf].mean(axis=1)*self.edata.windinfo.capacity[wf] for wf in self.edata.windfarms}
+#    self.edata.exp_wind = {wf: self.edata.windscen[wf].mean(axis=1)*self.edata.windinfo.capacity[wf] for wf in self.edata.windfarms}
     
-#    # For different probability per scenario    
-#    self.edata.windscenprob = pd.read_csv(defaults.WindScenProb_file).set_index('Scenario')     
+#    # For different probability per scenario   
+    Temp= pd.read_csv(defaults.WindScenProb_file).set_index('Scenario')
+    self.edata.windscenprob =Temp.to_dict()['Probability']   
 #    # Expected wind power production    
-#    self.edata.exp_wind = self.edata.windscen.multiply(self.edata.windscenprob['Probability'].T).multiply(self.edata.windinfo.capacity,axis='index').sum(axis=1)
+    self.edata.exp_wind = {wf: self.edata.windscen[wf].multiply(Temp['Probability'].T).multiply(self.edata.windinfo.capacity[wf],axis='index').sum(axis=1) for wf in self.edata.windfarms}
     
 def load_wind_scenarios(self):
     
