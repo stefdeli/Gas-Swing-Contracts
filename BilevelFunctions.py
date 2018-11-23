@@ -46,6 +46,7 @@ def Change_ContractParameters(BLmodel,SCdata,SCP):
     
     for gen in SCdata.loc[sc].index.tolist():
         for t in BLmodel.edata.time:
+            
             con_name =  'PgenSCmax({0},{1})'.format(gen,t)
             con = BLmodel.model.getConstrByName(con_name)
             con_row=BLmodel.model.getRow(con)
@@ -164,18 +165,7 @@ def Change_ContractParameters(BLmodel,SCdata,SCP):
             name = 'RCdnSCmin({0},{1})'.format(g,t)   
             var=BLmodel.model.getVarByName('mu_'+name)
             BLmodel.model.setAttr('Obj',[var],[-Pcmin])
- 
-
-#
-#
-#            
-#    NewObj=0.0
-#    for name in Obj_coeff.keys():
-#        print(name)
-#        var,coeff=Obj_coeff[name]
-#        NewObj=NewObj+var*coeff
-#        
-#    BLmodel.model.setObjective(NewObj,gb.GRB.MINIMIZE)    
+   
     
     BLmodel.model.update()
 
@@ -873,7 +863,7 @@ def Loop_Contracts_Price(BLmodel):
         
     all_contracts=All_SCdata.index.get_level_values(0).tolist()
     all_contracts_r=list(reversed(all_contracts))
-    all_contracts=['sc1']
+#    all_contracts=['sc1','sc2']
     #all_contracts_r=[]
     for contract in all_contracts:
         print ('\n\n########################################################')
@@ -889,14 +879,15 @@ def Loop_Contracts_Price(BLmodel):
                 SCP[sc,t] = 1.0 if (tt >= SCdata.ts[sc] and tt<= SCdata.te[sc]) else 0.0
          
         
+        
         Change_ContractParameters(BLmodel,SCdata,SCP)
         folder=defaults.folder+'/LPModels/'
         BLmodel.model.write(folder+'BLmodel_'+contract+'.lp')
-        
+        BLmodel.model.reset()
+
         #BLmodel.model.reset()
         #BLmodel.model.resetParams()
     
-        
         BLmodel.model.optimize() 
         
         gas_nodes = list(BLmodel.edata.Map_Eg2Gn.values())
