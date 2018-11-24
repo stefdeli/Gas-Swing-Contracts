@@ -170,8 +170,13 @@ def Change_ContractParameters(BLmodel,SCdata,SCP):
     BLmodel.model.update()
 
 
-def ADD_mGRT_Linking_Constraints(BLmodel):      
-    # Gas well production
+def ADD_mGRT_Linking_Constraints(BLmodel): 
+# 1. Link the Gas DA well production to the Gas real time up/down regulation
+# regulation is an inequality constraint so also change the SOS constraints 
+#    
+# 2. Link the DA flows to the rt gas balance equation  
+
+#--    1.
     for gw in BLmodel.gdata.wells:
         for s in BLmodel.edata.windscen_index:
             for t in BLmodel.edata.time:
@@ -225,7 +230,7 @@ def ADD_mGRT_Linking_Constraints(BLmodel):
                 BLmodel.model.addConstr(new_conSOS==0.0,name=con_name_dn_SOS)
                 BLmodel.model.update()  
                 
-                
+#--    2.                
     for gn in BLmodel.gdata.gnodes:
         for s in BLmodel.edata.windscen_index:
             for t in BLmodel.edata.time:
@@ -261,7 +266,7 @@ def ADD_mGRT_Linking_Constraints(BLmodel):
                         var_RDn   = BLmodel.model.getVarByName('RDn({0},{1},{2})'.format(gen,s,t))
                         var_RDnSC = BLmodel.model.getVarByName('RDnSC({0},{1},{2})'.format(gen,s,t))
                     
-                    new_con=new_con-HR*(var_RUp+var_RUpSC-var_RDn-var_RDnSC)
+                        new_con=new_con-HR*(var_RUp+var_RUpSC-var_RDn-var_RDnSC)
                     
                 BLmodel.model.remove(con)
                 BLmodel.model.addConstr(new_con==0.0,name=con_name)
@@ -380,7 +385,7 @@ def ADD_mSEDA_RT_Linking_Constraints(BLmodel):
                 
                 scen_prob =BLmodel.edata.scen_wgp[scenario][2]
                 
-                new_con=new_con+ HR * NewPrice*defaults.RESERVES_UP_PREMIUM 
+                new_con=new_con+ HR * NewPrice*defaults.RESERVES_UP_PREMIUM_GAS 
                 BLmodel.model.remove(con)
                 BLmodel.model.addConstr(new_con==0,name=con_name.format(gen,t))
                 BLmodel.model.update()
@@ -404,7 +409,7 @@ def ADD_mSEDA_RT_Linking_Constraints(BLmodel):
                 
                 scen_prob =BLmodel.edata.scen_wgp[scenario][2]
                 
-                new_con=new_con - HR * NewPrice*defaults.RESERVES_DN_PREMIUM
+                new_con=new_con - HR * NewPrice*defaults.RESERVES_DN_PREMIUM_GAS
                 BLmodel.model.remove(con)
                 BLmodel.model.addConstr(new_con==0,name=con_name.format(gen,t))
                 BLmodel.model.update()        
@@ -426,7 +431,7 @@ def ADD_mSEDA_RT_Linking_Constraints(BLmodel):
                 NewPrice=BLmodel.model.getVarByName(var_name)
                 scen_prob =BLmodel.edata.scen_wgp[scenario][2]
                 
-                new_con=new_con+ HR * NewPrice*defaults.RESERVES_UP_PREMIUM * scen_prob
+                new_con=new_con+ HR * NewPrice*defaults.RESERVES_UP_PREMIUM_GAS_SC * scen_prob
                 BLmodel.model.remove(con)
                 BLmodel.model.addConstr(new_con==0,name=con_name.format(gen,t))
                 BLmodel.model.update()
@@ -447,7 +452,7 @@ def ADD_mSEDA_RT_Linking_Constraints(BLmodel):
                     
                 NewPrice=BLmodel.model.getVarByName(var_name)
                 scen_prob =BLmodel.edata.scen_wgp[scenario][2]
-                new_con=new_con - HR * NewPrice*defaults.RESERVES_DN_PREMIUM * scen_prob
+                new_con=new_con - HR * NewPrice*defaults.RESERVES_DN_PREMIUM_GAS_SC * scen_prob
                 BLmodel.model.remove(con)
                 BLmodel.model.addConstr(new_con==0,name=con_name.format(gen,t))
                 BLmodel.model.update()   
@@ -718,8 +723,8 @@ def DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP):
     scenarioprob={}    
     scenarioprob = {s: BLmodel.edata.scen_wgp[s][2] for s in BLmodel.edata.scen_wgp.keys()}    
     scengprt = {s: BLmodel.edata.scen_wgp[s][0] for s in BLmodel.edata.scen_wgp.keys()}
-    P_up=defaults.RESERVES_UP_PREMIUM
-    P_dn=defaults.RESERVES_DN_PREMIUM
+    P_up=defaults.RESERVES_UP_PREMIUM_NONGAS
+    P_dn=defaults.RESERVES_DN_PREMIUM_NONGAS
     Non_Gas_gencost=0.0
     for t in BLmodel.edata.time:
         for s in scenarios:
@@ -766,7 +771,15 @@ def DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP):
     BLmodel.Dualobj_mSEDA   =  Dualobj_mSEDA   
     Cost=Obj_mGDA +Obj_mGRT
     Income=Non_gen_Income + (Dualobj_mSEDA-Non_Gas_gencost)
-    Obj=Cost-Income
+    
+    Penalty=0.0
+    for node in GasGenNodes:
+        name='ContractPrice({0})'.format(node)
+        var=BLmodel.model.getVarByName(name)
+        Penalty=Penalty+var
+    Penalty=defaults.EPS_CONTRACT*Penalty
+    
+    Obj=Cost-Income+Penalty
 
 
     BLmodel.model.setObjective(Obj  ,gb.GRB.MINIMIZE)
@@ -866,7 +879,7 @@ def Loop_Contracts_Price(BLmodel):
     BLmodel.model.resetParams()
     BLmodel.model.Params.timelimit = 100.0
     #BLmodel.model.Params.MIPGapAbs=0.05
-    BLmodel.model.Params.MIPFocus = 3
+    BLmodel.model.Params.MIPFocus = 1
     BLmodel.model.setParam( 'OutputFlag',True )
 
     
@@ -933,13 +946,21 @@ def Loop_Contracts_Price(BLmodel):
                 All_SCdata.at[(contract,g),'lambdaC']=Result[GasNode]
                 All_SCdata.at[(contract,g),'time']=BLmodel.model.Runtime
                 All_SCdata.at[(contract,g),'MIPGap']=BLmodel.model.MIPGap
+        else:
+            for g in SCdata.index.get_level_values(1).tolist():
+                GasNode=All_SCdata['GasNode'][(contract,g)]
+                
+                All_SCdata.at[(contract,g),'lambdaC']=np.nan
+                All_SCdata.at[(contract,g),'time']=np.nan
+                All_SCdata.at[(contract,g),'MIPGap']=np.nan        
+            
         
     
     All_SCdata.reset_index(level=1, inplace=True)
     All_SCdata=All_SCdata.drop(['GFPP'],axis=1)    
     All_SCdata.to_csv(defaults.SCdata_NoPrice.replace('.csv','')+'_Complete.csv')    
     
-    print(All_SCdata.lambdaC)   
+    print(All_SCdata[['lambdaC','MIPGap']])   
     
     return BLmodel
 
@@ -974,7 +995,9 @@ def CompareBLmodelObjective(BLmodel):
                 var_up=BLmodel.model.getVarByName(var_name_up)
                 var_dn=BLmodel.model.getVarByName(var_name_dn)
                 Prob=BLmodel.edata.scen_wgp[s][2]
-                CostRT= CostRT + Prob*BLmodel.gdata.wellsinfo.Cost[gw]*(var_up.x-var_dn.x)
+                P_UP=defaults.RESERVES_UP_PREMIUM_GASWELL
+                P_DN=defaults.RESERVES_DN_PREMIUM_GASWELL
+                CostRT= CostRT + Prob*BLmodel.gdata.wellsinfo.Cost[gw]*(P_UP*var_up.x-P_DN*var_dn.x)
             
 
                 
@@ -1002,7 +1025,6 @@ def CompareBLmodelObjective(BLmodel):
         for s in BLmodel.edata.scenarios:
             for gen in BLmodel.edata.gfpp:
                 
-                Temp=0.0
                 Prob=BLmodel.edata.scen_wgp[s][2]
                 
                 var_name_up = 'RUp({0},{1},{2})'.format(gen,s,t)
@@ -1010,13 +1032,14 @@ def CompareBLmodelObjective(BLmodel):
                 
                 var_up=BLmodel.model.getVarByName(var_name_up)
                 var_dn=BLmodel.model.getVarByName(var_name_dn)
-                
-                Temp+=var_up.x-var_dn.x
+            
                 
                 Lambda_name ='lambda_gas_balance_rt({0},{1},{2})'.format(BLmodel.edata.generatorinfo.origin_gas[gen],s,t)
                 price=BLmodel.model.getVarByName(Lambda_name)   
                 
-                IncomeRT = IncomeRT  + 8*price.x*(var_up.x-var_dn.x)
+                P_UP=defaults.RESERVES_UP_PREMIUM_GAS
+                P_DN=defaults.RESERVES_DN_PREMIUM_GAS                
+                IncomeRT = IncomeRT  + 8*price.x*(P_UP*var_up.x-P_DN*var_dn.x)
                 
             
                 var_name_upSC = 'RUpSC({0},{1},{2})'.format(gen,s,t)
@@ -1025,10 +1048,12 @@ def CompareBLmodelObjective(BLmodel):
                 var_upSC=BLmodel.model.getVarByName(var_name_upSC)
                 var_dnSC=BLmodel.model.getVarByName(var_name_dnSC)
             
-                Temp+=var_up.x-var_dn.x
                 Contract_name ='ContractPrice({0})'.format(BLmodel.edata.generatorinfo.origin_gas[gen])
                 contract=BLmodel.model.getVarByName(Contract_name)
-                IncomeSCRT = IncomeSCRT  + Prob*8*contract.x*(var_upSC.x-var_dnSC.x)
+                
+                P_UP=defaults.RESERVES_UP_PREMIUM_GAS_SC
+                P_DN=defaults.RESERVES_DN_PREMIUM_GAS_SC
+                IncomeSCRT = IncomeSCRT  + Prob*8*contract.x*(P_UP*var_upSC.x-P_DN*var_dnSC.x)
             
 
     Cost= CostDA+CostRT
@@ -1039,4 +1064,134 @@ def CompareBLmodelObjective(BLmodel):
 #    print('Contract={0:.2f} \tIncomeDA={1:.2f} \tIncomeSCDA={2:.2f} \tIncomeRT={3:.2f} \tIncomeSCRT{4:.2f}'.format(contract.x,IncomeDA,IncomeSCDA,IncomeRT,IncomeSCRT))
 #   
     print('Contract:{1:.2f} \tDual:{0:.2f} \t Calc{2:.2f}'.format(BLmodel.model.ObjVal,contract.x,Profit))
+
+
+def get_Var_Con(modelObject):
+    if modelObject.model.status==2:
+        df_var=pd.DataFrame([[var.VarName,var.x,var.Start] 
+                    for var in modelObject.model.getVars()],
+                    columns=['Name','Value','Initial'])
+    else:
+        df_var=pd.DataFrame([[var.VarName,var.Start] 
+                    for var in modelObject.model.getVars()],
+                    columns=['Name','Initial'])
+            
+    df_con=pd.DataFrame([[con.ConstrName,con.RHS, modelObject.model.getRow(con),con.sense]
+                 for con in modelObject.model.getConstrs() ],
+            columns=['Name','RHS','LHS','sense'])
+    return df_var,df_con
+
+def Compare_SEDA_DUAL_OBJ(BLmodel):
+    CostDA_Elec = 0.0
+    for t in BLmodel.edata.time:
+        for gen in BLmodel.edata.nongfpp:
+            var_name='Pgen({0},{1})'.format(gen,t)
+            Pgen = BLmodel.model.getVarByName(var_name)
+            CostDA_Elec = CostDA_Elec + BLmodel.edata.generatorinfo.lincost[gen]*Pgen.x
+            
+        for gen in BLmodel.edata.gfpp:
+            var_name='Pgen({0},{1})'.format(gen,t)
+            Pgen = BLmodel.model.getVarByName(var_name)
+            
+            Lambda_name ='lambda_gas_balance_da({0},{1},{2})'.format(BLmodel.edata.generatorinfo.origin_gas[gen],'k0',t)
+            var=BLmodel.model.getVarByName(var_name)
+            price=BLmodel.model.getVarByName(Lambda_name)
+            
+            CostDA_Elec = CostDA_Elec + 8*price.x*var.x
+            
+            var_name = 'PgenSC({0},{1})'.format(gen,t)
+            Contract_name ='ContractPrice({0})'.format(BLmodel.edata.generatorinfo.origin_gas[gen])
+            var=BLmodel.model.getVarByName(var_name)
+            contract=BLmodel.model.getVarByName(Contract_name)
+
+            CostDA_Elec = CostDA_Elec + 8*contract.x*var.x
+        
     
+    CostRT_Elec = 0.0
+    for t in BLmodel.edata.time:
+        for s in BLmodel.edata.scenarios:
+            Prob=BLmodel.edata.scen_wgp[s][2]
+            for gen in BLmodel.edata.gfpp:                
+                var_name_up = 'RUp({0},{1},{2})'.format(gen,s,t)
+                var_name_dn = 'RDn({0},{1},{2})'.format(gen,s,t)
+                
+                var_up=BLmodel.model.getVarByName(var_name_up)
+                var_dn=BLmodel.model.getVarByName(var_name_dn)
+                
+                Lambda_name ='lambda_gas_balance_rt({0},{1},{2})'.format(BLmodel.edata.generatorinfo.origin_gas[gen],s,t)
+                price=BLmodel.model.getVarByName(Lambda_name)   
+#                print(8*price.x*(var_up-var_dn))
+                P_UP=defaults.RESERVES_UP_PREMIUM_GAS
+                P_DN=defaults.RESERVES_DN_PREMIUM_GAS
+                CostRT_Elec = CostRT_Elec + 8*price.x*(P_UP*var_up.x-P_DN*var_dn.x)
+                
+                # Contract
+                var_name_up = 'RUpSC({0},{1},{2})'.format(gen,s,t)
+                var_name_dn = 'RDnSC({0},{1},{2})'.format(gen,s,t)
+                
+                var_up=BLmodel.model.getVarByName(var_name_up)
+                var_dn=BLmodel.model.getVarByName(var_name_dn)
+            
+                Contract_name ='ContractPrice({0})'.format(BLmodel.edata.generatorinfo.origin_gas[gen])
+                contract=BLmodel.model.getVarByName(Contract_name)
+                
+#                print(Prob*8*contract.x*(var_up-var_dn))
+                P_UP=defaults.RESERVES_UP_PREMIUM_GAS_SC
+                P_DN=defaults.RESERVES_DN_PREMIUM_GAS_SC
+                CostRT_Elec = CostRT_Elec + Prob*8*contract.x*(P_UP*var_up.x-P_DN*var_dn.x)
+                
+            for gen in BLmodel.edata.nongfpp:
+                var_name_up = 'RUp({0},{1},{2})'.format(gen,s,t)
+                var_name_dn = 'RDn({0},{1},{2})'.format(gen,s,t)
+                
+                var_up=BLmodel.model.getVarByName(var_name_up)
+                var_dn=BLmodel.model.getVarByName(var_name_dn)
+#                print(Prob*BLmodel.edata.generatorinfo.lincost[gen]*(var_up-var_dn))
+                P_UP=defaults.RESERVES_UP_PREMIUM_NONGAS
+                P_DN=defaults.RESERVES_DN_PREMIUM_NONGAS
+                cost=BLmodel.edata.generatorinfo.lincost[gen]
+                CostRT_Elec = CostRT_Elec + Prob*cost*(P_UP*var_up.x-P_DN*var_dn.x)
+  
+    
+    
+    mSEDA_Calc_Cost = CostDA_Elec+CostRT_Elec
+    
+    mSEDA_Dual_Cost = BLmodel.Dualobj_mSEDA.getValue()
+    Error= mSEDA_Calc_Cost-mSEDA_Dual_Cost
+    print('Cost_Calc={0:.2f} \t Cost_Dual={1:.2f} \t Error={2:.2f}'.format( mSEDA_Calc_Cost, mSEDA_Dual_Cost,Error))  
+    
+
+
+### CHECK FOR DUAL DEGENERACY Between solution of original 
+#
+#df=pd.DataFrame()
+#for var in mGRT.model.getVars():
+#    name=var.VarName
+#    value_orig=var.x
+#    value_new=BLmodel.getVarByName(name).x
+#    
+#    error=value_orig-value_new
+#     
+#    df=df.append(pd.DataFrame([[value_orig, value_new, error]],columns=['orig','new','error'],index=[var.VarName]))
+#    
+#    
+#df=pd.DataFrame()
+#for con in mGRT.model.getConstrs():
+#    name=con.ConstrName
+#    RHS=con.RHS
+#    sense=con.Sense
+#    dual_orig=con.Pi
+#    if sense=='=':
+#        dual_new=-BLmodel.getVarByName('lambda_'+name).x
+#    elif sense=='>':
+#        dual_new=-BLmodel.getVarByName('mu_'+name).x
+#    elif sense=='<':       
+#        dual_new=-BLmodel.getVarByName('mu_'+name).x
+#    
+#    dual_obj_orig=dual_orig*RHS
+#    dual_obj_new=dual_new*RHS
+#    error=dual_orig-dual_new
+#     
+#    df=df.append(pd.DataFrame([[dual_orig, dual_new, error,sense,dual_obj_orig,dual_obj_new]],columns=['orig','new','error','sense','Obj_1','Obj_2'],index=[var.VarName]))
+#    
+     

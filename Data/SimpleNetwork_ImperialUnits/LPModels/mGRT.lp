@@ -34,11 +34,11 @@ Subject To
  gas_balance_rt(ng101,s1,t3): gshed(ng101,s1,t3)
    - qin_sr_rt(('ng101','ng102'),s1,t3) + gprodUp(gw1,s1,t3)
    - gprodDn(gw1,s1,t3) + gprodUp(gw2,s1,t3) - gprodDn(gw2,s1,t3)
-   + gprodUp(gw3,s1,t3) - gprodDn(gw3,s1,t3) = -108
+   + gprodUp(gw3,s1,t3) - gprodDn(gw3,s1,t3) = -335.51200392
  gas_balance_rt(ng101,s1,t4): gshed(ng101,s1,t4)
    - qin_sr_rt(('ng101','ng102'),s1,t4) + gprodUp(gw1,s1,t4)
    - gprodDn(gw1,s1,t4) + gprodUp(gw2,s1,t4) - gprodDn(gw2,s1,t4)
-   + gprodUp(gw3,s1,t4) - gprodDn(gw3,s1,t4) = -116.28427128
+   + gprodUp(gw3,s1,t4) - gprodDn(gw3,s1,t4) = -356.28427128
  gas_balance_rt(ng102,s1,t1): gshed(ng102,s1,t1)
    + qout_sr_rt(('ng101','ng102'),s1,t1) = 315.051604
  gas_balance_rt(ng102,s1,t2): gshed(ng102,s1,t2)
@@ -58,11 +58,11 @@ Subject To
  gas_balance_rt(ng101,s2,t3): gshed(ng101,s2,t3)
    - qin_sr_rt(('ng101','ng102'),s2,t3) + gprodUp(gw1,s2,t3)
    - gprodDn(gw1,s2,t3) + gprodUp(gw2,s2,t3) - gprodDn(gw2,s2,t3)
-   + gprodUp(gw3,s2,t3) - gprodDn(gw3,s2,t3) = -108
+   + gprodUp(gw3,s2,t3) - gprodDn(gw3,s2,t3) = -335.51200392
  gas_balance_rt(ng101,s2,t4): gshed(ng101,s2,t4)
    - qin_sr_rt(('ng101','ng102'),s2,t4) + gprodUp(gw1,s2,t4)
    - gprodDn(gw1,s2,t4) + gprodUp(gw2,s2,t4) - gprodDn(gw2,s2,t4)
-   + gprodUp(gw3,s2,t4) - gprodDn(gw3,s2,t4) = -116.28427128
+   + gprodUp(gw3,s2,t4) - gprodDn(gw3,s2,t4) = -356.28427128
  gas_balance_rt(ng102,s2,t1): gshed(ng102,s2,t1)
    + qout_sr_rt(('ng101','ng102'),s2,t1) = 218.83809376
  gas_balance_rt(ng102,s2,t2): gshed(ng102,s2,t2)
@@ -139,34 +139,34 @@ Subject To
  gprodDn_max(gw2,s1,t1): gprodDn(gw2,s1,t1) <= 200
  gprodUp_max(gw2,s1,t2): gprodUp(gw2,s1,t2) <= 0
  gprodDn_max(gw2,s1,t2): gprodDn(gw2,s1,t2) <= 200
- gprodUp_max(gw2,s1,t3): gprodUp(gw2,s1,t3) <= 192
- gprodDn_max(gw2,s1,t3): gprodDn(gw2,s1,t3) <= 8
- gprodUp_max(gw2,s1,t4): gprodUp(gw2,s1,t4) <= 183.71572872
- gprodDn_max(gw2,s1,t4): gprodDn(gw2,s1,t4) <= 16.28427127999998
+ gprodUp_max(gw2,s1,t3): gprodUp(gw2,s1,t3) <= 0
+ gprodDn_max(gw2,s1,t3): gprodDn(gw2,s1,t3) <= 200
+ gprodUp_max(gw2,s1,t4): gprodUp(gw2,s1,t4) <= 0
+ gprodDn_max(gw2,s1,t4): gprodDn(gw2,s1,t4) <= 200
  gprodUp_max(gw2,s2,t1): gprodUp(gw2,s2,t1) <= 0
  gprodDn_max(gw2,s2,t1): gprodDn(gw2,s2,t1) <= 200
  gprodUp_max(gw2,s2,t2): gprodUp(gw2,s2,t2) <= 0
  gprodDn_max(gw2,s2,t2): gprodDn(gw2,s2,t2) <= 200
- gprodUp_max(gw2,s2,t3): gprodUp(gw2,s2,t3) <= 192
- gprodDn_max(gw2,s2,t3): gprodDn(gw2,s2,t3) <= 8
- gprodUp_max(gw2,s2,t4): gprodUp(gw2,s2,t4) <= 183.71572872
- gprodDn_max(gw2,s2,t4): gprodDn(gw2,s2,t4) <= 16.28427127999998
+ gprodUp_max(gw2,s2,t3): gprodUp(gw2,s2,t3) <= 0
+ gprodDn_max(gw2,s2,t3): gprodDn(gw2,s2,t3) <= 200
+ gprodUp_max(gw2,s2,t4): gprodUp(gw2,s2,t4) <= 0
+ gprodDn_max(gw2,s2,t4): gprodDn(gw2,s2,t4) <= 200
  gprodUp_max(gw3,s1,t1): gprodUp(gw3,s1,t1) <= 2936
  gprodDn_max(gw3,s1,t1): gprodDn(gw3,s1,t1) <= 64
  gprodUp_max(gw3,s1,t2): gprodUp(gw3,s1,t2) <= 2925.64723816
  gprodDn_max(gw3,s1,t2): gprodDn(gw3,s1,t2) <= 74.35276184000003
- gprodUp_max(gw3,s1,t3): gprodUp(gw3,s1,t3) <= 3000
- gprodDn_max(gw3,s1,t3): gprodDn(gw3,s1,t3) <= 0
- gprodUp_max(gw3,s1,t4): gprodUp(gw3,s1,t4) <= 3000
- gprodDn_max(gw3,s1,t4): gprodDn(gw3,s1,t4) <= 0
+ gprodUp_max(gw3,s1,t3): gprodUp(gw3,s1,t3) <= 2964.48799608
+ gprodDn_max(gw3,s1,t3): gprodDn(gw3,s1,t3) <= 35.51200391999998
+ gprodUp_max(gw3,s1,t4): gprodUp(gw3,s1,t4) <= 2943.71572872
+ gprodDn_max(gw3,s1,t4): gprodDn(gw3,s1,t4) <= 56.28427127999998
  gprodUp_max(gw3,s2,t1): gprodUp(gw3,s2,t1) <= 2936
  gprodDn_max(gw3,s2,t1): gprodDn(gw3,s2,t1) <= 64
  gprodUp_max(gw3,s2,t2): gprodUp(gw3,s2,t2) <= 2925.64723816
  gprodDn_max(gw3,s2,t2): gprodDn(gw3,s2,t2) <= 74.35276184000003
- gprodUp_max(gw3,s2,t3): gprodUp(gw3,s2,t3) <= 3000
- gprodDn_max(gw3,s2,t3): gprodDn(gw3,s2,t3) <= 0
- gprodUp_max(gw3,s2,t4): gprodUp(gw3,s2,t4) <= 3000
- gprodDn_max(gw3,s2,t4): gprodDn(gw3,s2,t4) <= 0
+ gprodUp_max(gw3,s2,t3): gprodUp(gw3,s2,t3) <= 2964.48799608
+ gprodDn_max(gw3,s2,t3): gprodDn(gw3,s2,t3) <= 35.51200391999998
+ gprodUp_max(gw3,s2,t4): gprodUp(gw3,s2,t4) <= 2943.71572872
+ gprodDn_max(gw3,s2,t4): gprodDn(gw3,s2,t4) <= 56.28427127999998
  line_store_rt(('ng101','ng102'),s1,t1):
    - qin_sr_rt(('ng101','ng102'),s1,t1)
    + qout_sr_rt(('ng101','ng102'),s1,t1) = 0

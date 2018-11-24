@@ -31,3 +31,14 @@ Created on Thu Nov 22 13:34:43 2018
 #mSEDA_COMP.model = gb.read(folder+'mSEDA_COMP.lp')
 #mGDA_COMP.model = gb.read(folder+'mGDA_COMP.lp')
 #mGRT_COMP.model = gb.read(folder+'mGRT_COMP.lp')
+
+
+#--- Load LP models
+#--- Load Existing Models ( and resolve)
+folder=defaults.folder+'/LPModels/'
+#--- Comp models
+mEDA_COMP=expando()
+mGDA_COMP=expando()
+
+mEDA_COMP.model = gb.read(folder+'mEDA_COMP.lp')
+mGDA_COMP.model = gb.read(folder+'mGDA_COMP.lp')

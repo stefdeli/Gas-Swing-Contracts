@@ -81,11 +81,11 @@ Subject To
    - qin_sr(('ng101','ng102'),k2,t3) + gprod(gw1,k2,t3) + gprod(gw2,k2,t3)
    + gprod(gw3,k2,t3) = 0
  gas_balance_da(ng102,k0,t3): gshed_da(ng102,k0,t3)
-   + qout_sr(('ng101','ng102'),k0,t3) = 108
+   + qout_sr(('ng101','ng102'),k0,t3) = 335.51200392
  gas_balance_da(ng102,k1,t3): gshed_da(ng102,k1,t3)
-   + qout_sr(('ng101','ng102'),k1,t3) = 108
+   + qout_sr(('ng101','ng102'),k1,t3) = 415.51200392
  gas_balance_da(ng102,k2,t3): gshed_da(ng102,k2,t3)
-   + qout_sr(('ng101','ng102'),k2,t3) = 28
+   + qout_sr(('ng101','ng102'),k2,t3) = 335.51200392
  gas_balance_da(ng101,k0,t4): gshed_da(ng101,k0,t4)
    - qin_sr(('ng101','ng102'),k0,t4) + gprod(gw1,k0,t4) + gprod(gw2,k0,t4)
    + gprod(gw3,k0,t4) = 0
@@ -96,11 +96,11 @@ Subject To
    - qin_sr(('ng101','ng102'),k2,t4) + gprod(gw1,k2,t4) + gprod(gw2,k2,t4)
    + gprod(gw3,k2,t4) = 0
  gas_balance_da(ng102,k0,t4): gshed_da(ng102,k0,t4)
-   + qout_sr(('ng101','ng102'),k0,t4) = 116.28427128
+   + qout_sr(('ng101','ng102'),k0,t4) = 356.28427128
  gas_balance_da(ng102,k1,t4): gshed_da(ng102,k1,t4)
-   + qout_sr(('ng101','ng102'),k1,t4) = 116.28427128
+   + qout_sr(('ng101','ng102'),k1,t4) = 436.28427128
  gas_balance_da(ng102,k2,t4): gshed_da(ng102,k2,t4)
-   + qout_sr(('ng101','ng102'),k2,t4) = 36.28427127999998
+   + qout_sr(('ng101','ng102'),k2,t4) = 356.28427128
  gprod_max(gw1,k0,t1): gprod(gw1,k0,t1) <= 100
  gprod_max(gw1,k0,t2): gprod(gw1,k0,t2) <= 100
  gprod_max(gw1,k0,t3): gprod(gw1,k0,t3) <= 100

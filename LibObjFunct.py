@@ -11,50 +11,19 @@ import pandas as pd
 
 
 def _build_objective_ElecDA(self):  
-    
-    var = self.variables
-    #generators = self.edata.generators    
-    gfpp = self.edata.gfpp
-    nongfpp = self.edata.nongfpp
-    gendata = self.edata.generatorinfo
-    HR=self.edata.generatorinfo.HR
-    gaspriceda = self.edata.GasPriceDA
-    gaspriceRT = self.edata.GasPriceRT
-    
-    SCdata = self.edata.SCdata
-    swingcontr = self.edata.swingcontracts
-    time = self.edata.time
-    
-    Map_Eg2Gn=self.edata.Map_Eg2Gn
-    
-    scenarios = self.edata.scenarios
-    
-    m = self.model 
-    
-    scenarioprob={}    
-    scenarioprob = {s: self.edata.scen_wgp[s][2] for s in self.edata.scen_wgp.keys()}    
-    scengprt = {s: self.edata.scen_wgp[s][0] for s in self.edata.scen_wgp.keys()}
-    #scenarioprob = self.data.scenprob['Probability'].to_dict()
-    
-    P_up=defaults.RESERVES_UP_PREMIUM
-    P_dn=defaults.RESERVES_DN_PREMIUM
-    
-    
-    
-    # !NB Re-dispatch cost = Day-ahead energy cost (No premium)
-    m.setObjective(    
-    # Day-ahead energy cost
-    # Non Gas Generators      
-    gb.quicksum(gendata.lincost[gen]*var.Pgen[gen,t] for gen in nongfpp for t in time) +   
-    # Gas Generators = Nodal Gas Price  * HR * Power Output
-    gb.quicksum( gaspriceda[t][Map_Eg2Gn[gen][0]]*HR[gen]*var.Pgen[gen,t] for gen in gfpp for t in time) +      
-    # Gas Generators with Contracts 
-    gb.quicksum(SCdata.lambdaC[sc,gen]*HR[gen]*var.PgenSC[gen,t] for gen in gfpp for sc in swingcontr for t in time),    
+    m = self.model     
+    m.setObjective(  ElecDA_obj(self),   gb.GRB.MINIMIZE)
 
-    gb.GRB.MINIMIZE)
-    
-def _build_objective_StochElecDA(self):  
-    
+def _build_objective_StochElecDA(self): 
+    m = self.model     
+    m.setObjective(  ElecDA_obj(self) + ElecRT_obj(self),   gb.GRB.MINIMIZE)
+
+
+def _build_objective_ElecRT(self):    
+    m = self.model     
+    m.setObjective(  ElecRT_obj(self),   gb.GRB.MINIMIZE)
+
+def ElecDA_obj(self):
     var = self.variables
     #generators = self.edata.generators    
     gfpp = self.edata.gfpp
@@ -62,50 +31,71 @@ def _build_objective_StochElecDA(self):
     gendata = self.edata.generatorinfo
     HR=self.edata.generatorinfo.HR
     gaspriceda = self.edata.GasPriceDA
-    gaspriceRT = self.edata.GasPriceRT
     
     SCdata = self.edata.SCdata
     swingcontr = self.edata.swingcontracts
     time = self.edata.time
     
     Map_Eg2Gn=self.edata.Map_Eg2Gn
+       
+    # !NB Re-dispatch cost = Day-ahead energy cost (No premium)
+     
+    # Day-ahead energy cost
+    # Non Gas Generators      
+    # Gas Generators = Nodal Gas Price  * HR * Power Output
+    # Gas Generators with Contracts 
+    ElecDA=gb.quicksum( gendata.lincost[gen]*var.Pgen[gen,t] for gen in nongfpp for t in time) \
+    +gb.quicksum( gaspriceda[t][Map_Eg2Gn[gen][0]]*HR[gen]*var.Pgen[gen,t] for gen in gfpp for t in time)\
+    +gb.quicksum(SCdata.lambdaC[sc,gen]*HR[gen]*var.PgenSC[gen,t] for gen in gfpp for sc in swingcontr for t in time)      
     
+    return ElecDA
+    
+def ElecRT_obj(self):
+    var = self.variables
+    #generators = self.edata.generators    
+    gfpp = self.edata.gfpp
+    nongfpp = self.edata.nongfpp
+    gendata = self.edata.generatorinfo
+    HR=self.edata.generatorinfo.HR
+    gaspriceRT = self.edata.GasPriceRT
+    
+    SCdata = self.edata.SCdata
+    swingcontr = self.edata.swingcontracts
+    time = self.edata.time
+    
+    Map_Eg2Gn=self.edata.Map_Eg2Gn    
     scenarios = self.edata.scenarios
-    
-    m = self.model 
-    
+   
     scenarioprob={}    
     scenarioprob = {s: self.edata.scen_wgp[s][2] for s in self.edata.scen_wgp.keys()}    
     scengprt = {s: self.edata.scen_wgp[s][0] for s in self.edata.scen_wgp.keys()}
     #scenarioprob = self.data.scenprob['Probability'].to_dict()
     
-    P_up=defaults.RESERVES_UP_PREMIUM
-    P_dn=defaults.RESERVES_DN_PREMIUM
+    # Premium for deployment of reserves NON-GAS generators
+    P_UP_NONGAS=defaults.RESERVES_UP_PREMIUM_NONGAS 
+    P_DN_NONGAS=defaults.RESERVES_DN_PREMIUM_NONGAS     
     
+    # Premium for deployment of reserves NON-GAS generators
+    P_UP_GAS=defaults.RESERVES_UP_PREMIUM_GAS 
+    P_DN_GAS=defaults.RESERVES_DN_PREMIUM_GAS 
+
+    # Premium for deployment of reserves NON-GAS generators
+    P_UP_GAS_SC=defaults.RESERVES_UP_PREMIUM_GAS_SC
+    P_DN_GAS_SC=defaults.RESERVES_DN_PREMIUM_GAS_SC 
     
-    
-    # !NB Re-dispatch cost = Day-ahead energy cost (No premium)
-    m.setObjective(    
-    # Day-ahead energy cost
-    # Non Gas Generators      
-    gb.quicksum(gendata.lincost[gen]*var.Pgen[gen,t] for gen in nongfpp for t in time) +   
-    # Gas Generators = Nodal Gas Price  * HR * Power Output
-    gb.quicksum( gaspriceda[t][Map_Eg2Gn[gen][0]]*HR[gen]*var.Pgen[gen,t] for gen in gfpp for t in time) +      
-    # Gas Generators with Contracts 
-    gb.quicksum(SCdata.lambdaC[sc,gen]*HR[gen]*var.PgenSC[gen,t] for gen in gfpp for sc in swingcontr for t in time) +      
     # Real-time redispatch cost
-    # Probability                
-    gb.quicksum(scenarioprob[s] * (                                                                                                
+    # Probability  
+    ElecRT= gb.quicksum(scenarioprob[s] * (                                                                                                
     # Non Gas Generators
-    gb.quicksum(gendata.lincost[gen]*(P_up*var.RUp[gen,s,t]-P_dn*var.RDn[gen,s,t]) for gen in nongfpp for t in time) +
+    gb.quicksum(gendata.lincost[gen]*(P_UP_NONGAS*var.RUp[gen,s,t]-P_DN_NONGAS*var.RDn[gen,s,t]) for gen in nongfpp for t in time) +
     # Gas Generators 
-    gb.quicksum(gaspriceRT[t][Map_Eg2Gn[gen][0]][scengprt[s]]*HR[gen]*(P_up*var.RUp[gen,s,t]-P_dn*var.RDn[gen,s,t]) for gen in gfpp for t in time) +
+    gb.quicksum(gaspriceRT[t][Map_Eg2Gn[gen][0]][scengprt[s]]*HR[gen]*(P_UP_GAS*var.RUp[gen,s,t]-P_DN_GAS*var.RDn[gen,s,t]) for gen in gfpp for t in time) +
     # Gas Generators with Contracts
-    gb.quicksum(SCdata.lambdaC[sc,gen]*HR[gen]*(var.RUpSC[gen,s,t]-var.RDnSC[gen,s,t]) for gen in gfpp for sc in swingcontr for t in time) +
+    gb.quicksum(SCdata.lambdaC[sc,gen]*HR[gen]*(P_UP_GAS_SC*var.RUpSC[gen,s,t]-P_DN_GAS_SC*var.RDnSC[gen,s,t]) for gen in gfpp for sc in swingcontr for t in time) +
     # Load Shedding Penalty
-    gb.quicksum(defaults.VOLL * var.Lshed[s,t] for t in time)) for s in scenarios),
-    gb.GRB.MINIMIZE)
+    gb.quicksum(defaults.VOLL * var.Lshed[s,t] for t in time)) for s in scenarios)
     
+    return ElecRT
     
 def _build_objective_gasDA(self):
     
@@ -147,49 +137,11 @@ def _build_objective_gasDA(self):
     
     m.setObjective(Cost+   Pressure_Degeneracy +  LostLoad +  Storage,                                      
                    gb.GRB.MINIMIZE) 
+
+
+
     
-    # NB! Gas storage costs NOT included in the objective function
-    #    
-    #    
-    # 
-    
-    
-def _build_objective_ElecRT(self):  
-    
-    var = self.variables    
-    gfpp = self.edata.gfpp
-    nongfpp = self.edata.nongfpp
-    gendata = self.edata.generatorinfo
-    
-    gaspriceRT = self.edata.GasPriceRT
-    
-    HR=self.edata.generatorinfo.HR
-    SCdata = self.edata.SCdata
-    swingcontr = self.edata.swingcontracts
-    time = self.edata.time
-        
-    Map_Eg2Gn=self.edata.Map_Eg2Gn
-    
-    scenarios = self.edata.windscen_index # Only wind power scenarios
-    scenarioprob=self.edata.windscenprob   
-    
-    m = self.model 
-    
-    
-    
-    # !NB Re-dispatch cost = Day-ahead energy cost (No premium)
-    m.setObjective(              
-    # Real-time redispatch cost                 
-    gb.quicksum(scenarioprob[s] * (  
-    # Non Gas Generators                                                                                              
-    gb.quicksum(gendata.lincost[gen]*(var.RUp[gen,s,t]-var.RDn[gen,s,t]) for gen in nongfpp for t in time) +
-    # Gas Generators (No Contract)
-    gb.quicksum(gaspriceRT[t][Map_Eg2Gn[gen][0]]['spm']*HR[gen]*(defaults.RESERVES_UP_PREMIUM*var.RUp[gen,s,t]-defaults.RESERVES_DN_PREMIUM*var.RDn[gen,s,t]) for gen in gfpp for t in time) +
-    # Gas Generators with Contracts
-    gb.quicksum(SCdata.lambdaC[sc,gen]*HR[gen]*(defaults.RESERVES_UP_PREMIUM*var.RUpSC[gen,s,t]-defaults.RESERVES_DN_PREMIUM*var.RDnSC[gen,s,t]) for gen in gfpp for sc in swingcontr for t in time) +
-    # Load Shedding Penalty
-    gb.quicksum(defaults.VOLL * var.Lshed[s,t] for t in time)) for s in scenarios),
-    gb.GRB.MINIMIZE)
+
     
     
 def _build_objective_gasRT(self):
@@ -220,9 +172,11 @@ def _build_objective_gasRT(self):
     else:
         Pressure_Degeneracy=0.0 
         
-
+    P_UP=defaults.RESERVES_UP_PREMIUM_GASWELL
+    P_DN=defaults.RESERVES_DN_PREMIUM_GASWELL
+    
     m.setObjective(gb.quicksum(scenarioprob[s] * (
-                   gb.quicksum(Cost[gw][t]*(defaults.RESERVES_UP_PREMIUM_GAS*var.gprodUp[gw,s,t] - defaults.RESERVES_DN_PREMIUM_GAS*var.gprodDn[gw,s,t] ) for gw in wells for t in time) 
+                   gb.quicksum(Cost[gw][t]*(P_UP*var.gprodUp[gw,s,t] - P_DN*var.gprodDn[gw,s,t] ) for gw in wells for t in time) 
                    +gb.quicksum(defaults.VOLL * var.gshed_rt[gn,s,t] for gn in gnodes for t in time)) for s in scenarios) 
                    +Pressure_Degeneracy,
                    gb.GRB.MINIMIZE) 

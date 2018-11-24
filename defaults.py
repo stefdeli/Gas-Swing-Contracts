@@ -46,16 +46,24 @@ VOLL = 1000 # Value of Lost Load
 EPS = 0e-1 # Pressure difference weight in gas objective
 GasSlack = 'None'# 'None', 'FixInput', 'FixOutput', 'ConstantOutput'
 
-
 # The final line pack deviatons that is allowed, i.e. +/- 10% of the initial
 FINAL_LP_DEV=0.1 # 0.1 = 10%
 
-# Premium for deployment of reserves 
-RESERVES_UP_PREMIUM = 1.0#1.05
-RESERVES_DN_PREMIUM = 1.0 #0.95
+# Premium for deployment of reserves NON-GAS generators
+RESERVES_UP_PREMIUM_NONGAS = 1.05#1.05
+RESERVES_DN_PREMIUM_NONGAS = 0.97 #0.95
 
-RESERVES_UP_PREMIUM_GAS = 1.0#1.05
-RESERVES_DN_PREMIUM_GAS = 1.0#0.95
+# Premium for deployment of reserves GAS generators
+RESERVES_UP_PREMIUM_GAS = 1.05#1.05
+RESERVES_DN_PREMIUM_GAS = 1.0 #0.95
+
+# Premium for deployment of reserves contracted GAS generators
+RESERVES_UP_PREMIUM_GAS_SC = 1.0#1.05
+RESERVES_DN_PREMIUM_GAS_SC = 1.0 #0.95
+
+# Premium for up/down deployment of gas wells
+RESERVES_UP_PREMIUM_GASWELL = 1.0#1.05
+RESERVES_DN_PREMIUM_GASWELL = 1.0#0.95
 
 # Remove equality constraints and replace lhs==rhs with lhs<=rhs and lhs>=rhs
 REMOVE_EQUALITY=False
@@ -67,4 +75,7 @@ GUROBI_OUTPUT=False
 GasNetwork='FlowBased'
 #GasNetwork='WeymouthApprox'
 ChangeTime=True
-Time=['t1','t2','t3','t4']
+Time=['t'+str(i+1) for i in range(4)]
+
+# Epsilon to keep contract price down
+EPS_CONTRACT=0e-3
