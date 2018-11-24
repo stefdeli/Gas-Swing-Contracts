@@ -915,7 +915,6 @@ def Loop_Contracts_Price(BLmodel):
         Change_ContractParameters(BLmodel,SCdata,SCP)
         folder=defaults.folder+'/LPModels/'
         BLmodel.model.write(folder+'BLmodel_'+contract+'.lp')
-        BLmodel.model.reset()
 
         #BLmodel.model.reset()
         #BLmodel.model.resetParams()
@@ -1158,7 +1157,7 @@ def Compare_SEDA_DUAL_OBJ(BLmodel):
     
     mSEDA_Dual_Cost = BLmodel.Dualobj_mSEDA.getValue()
     Error= mSEDA_Calc_Cost-mSEDA_Dual_Cost
-    print('Cost_Calc={0:.2f} \t Cost_Dual={1:.2f} \t Error={2:.2f}'.format( mSEDA_Calc_Cost, mSEDA_Dual_Cost,Error))  
+    print('Contract:{3:.2f} \tCost_Calc={0:.2f} \t Cost_Dual={1:.2f} \t Error={2:.2f}'.format( mSEDA_Calc_Cost, mSEDA_Dual_Cost,Error,contract.x))  
     
 
 

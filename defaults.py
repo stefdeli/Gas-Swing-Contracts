@@ -50,11 +50,11 @@ GasSlack = 'None'# 'None', 'FixInput', 'FixOutput', 'ConstantOutput'
 FINAL_LP_DEV=0.1 # 0.1 = 10%
 
 # Premium for deployment of reserves NON-GAS generators
-RESERVES_UP_PREMIUM_NONGAS = 1.05#1.05
-RESERVES_DN_PREMIUM_NONGAS = 0.97 #0.95
+RESERVES_UP_PREMIUM_NONGAS = 1.0#1.05
+RESERVES_DN_PREMIUM_NONGAS = 1.0 #0.95
 
 # Premium for deployment of reserves GAS generators
-RESERVES_UP_PREMIUM_GAS = 1.05#1.05
+RESERVES_UP_PREMIUM_GAS = 1.0#1.05
 RESERVES_DN_PREMIUM_GAS = 1.0 #0.95
 
 # Premium for deployment of reserves contracted GAS generators
@@ -78,4 +78,4 @@ ChangeTime=True
 Time=['t'+str(i+1) for i in range(4)]
 
 # Epsilon to keep contract price down
-EPS_CONTRACT=0e-3
+EPS_CONTRACT=1e-3

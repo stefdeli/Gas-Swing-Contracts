@@ -25,34 +25,33 @@ class expando(object):
 mEDA = modelObjects.ElecDA(bilevel=True)
 dispatchElecDA=mEDA.optimize()
 
-mEDA_COMP = modelObjects.ElecDA(comp=True,bilevel=True)
-#mEDA_COMP.optimize()
-
 mSEDA = modelObjects.StochElecDA(bilevel=True)
 dispatchElecDA=mSEDA.optimize()
-
-mSEDA_COMP = modelObjects.StochElecDA(comp=True,bilevel=True)
-#mSEDA_COMP.optimize()
 
 f2d = False
 
 mGDA = modelObjects.GasDA(dispatchElecDA,f2d)
 dispatchGasDA=mGDA.optimize()
 
-mGDA_COMP = modelObjects.GasDA(dispatchElecDA,f2d,comp=True)
-#mGDA_COMP.optimize()
-
 mERT = modelObjects.ElecRT(dispatchElecDA,bilevel=True)
 dispatchElecRT=mERT.optimize()
    
-mERT_COMP = modelObjects.ElecRT(dispatchElecDA,comp=True,bilevel=True)
-#mERT_COMP.optimize()
-
 mGRT = modelObjects.GasRT(dispatchGasDA,dispatchElecRT,f2d)
 mGRT.optimize()
 
+
+mEDA_COMP = modelObjects.ElecDA(comp=True,bilevel=True)
+mSEDA_COMP = modelObjects.StochElecDA(comp=True,bilevel=True)
+mGDA_COMP = modelObjects.GasDA(dispatchElecDA,f2d,comp=True)
+mERT_COMP = modelObjects.ElecRT(dispatchElecDA,comp=True,bilevel=True)
 mGRT_COMP = modelObjects.GasRT(dispatchGasDA,dispatchElecRT,f2d,comp=True)
-#mGRT_COMP.optimize() 
+
+
+mEDA_COMP.optimize()
+mSEDA_COMP.optimize()
+mGDA_COMP.optimize()
+mERT_COMP.optimize()
+mGRT_COMP.optimize() 
 #
 
 
@@ -72,14 +71,21 @@ for i in contractprices:
     var=BLmodel.model.getVarByName(Contract_name)
     var.LB=i
     var.UB=i
+    var.Start=i
     
     BLmodel.model.Params.timelimit = 50.0
-    BLmodel.model.Params.MIPFocus = 3
-    BLmodel.model.setParam( 'OutputFlag', False)
+    BLmodel.model.Params.MIPFocus = 2
+#    BLmodel.model.Params.DegenMoves=3
+#    BLmodel.model.Params.Disconnected=2
+#    BLmodel.model.Params.Heuristics = 0.9
+    BLmodel.model.setParam( 'OutputFlag', True)
     BLmodel.model.optimize() 
     
-    BilevelFunctions.CompareBLmodelObjective(BLmodel)
-    BilevelFunctions.Compare_SEDA_DUAL_OBJ(BLmodel)   
+    if BLmodel.model.status==2:
+        BilevelFunctions.CompareBLmodelObjective(BLmodel)
+        BilevelFunctions.Compare_SEDA_DUAL_OBJ(BLmodel)
+    else:
+        print('Contract Price {0} Failed!'.format(i))
 
 
 # Reset the Contract limits
@@ -87,6 +93,7 @@ Contract_name = 'ContractPrice(ng102)'
 var = BLmodel.model.getVarByName(Contract_name)
 var.LB = 0
 var.UB = 2000
+var.Start=0
 #BLmodel.model.reset()
 #BLmodel.model.update()
 
