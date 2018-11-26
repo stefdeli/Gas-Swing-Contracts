@@ -42,3 +42,17 @@ mGDA_COMP=expando()
 
 mEDA_COMP.model = gb.read(folder+'mEDA_COMP.lp')
 mGDA_COMP.model = gb.read(folder+'mGDA_COMP.lp')
+
+
+
+#--- Load LP models
+#--- Load Existing Models ( and resolve)
+folder=defaults.folder+'/LPModels/'
+#--- Comp models
+
+mGRT_COMP=expando()
+mGRT_COMP.model = gb.read(folder+'mGRT_COMP.lp')
+
+mGRT_COMP.model.optimize()
+
+df_var,df_con=BilevelFunctions.get_Var_Con(mGRT_COMP)

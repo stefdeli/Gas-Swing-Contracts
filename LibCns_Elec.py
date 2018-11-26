@@ -145,7 +145,7 @@ def _build_constraints_elecDA(self):
             name='Pmin_DA({0},{1})'.format(gen,t)
             self.constraints[name]= expando()
             cc=self.constraints[name]   
-            cc.lhs=-var.Pgen[gen,t]+var.RCup[gen,t]
+            cc.lhs=-var.Pgen[gen,t]+var.RCdn[gen,t]
             cc.rhs=np.float64(0.0)
             cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
   
@@ -157,8 +157,8 @@ def _build_constraints_elecDA(self):
             self.constraints[name]= expando()
             cc=self.constraints[name]
             cc.lhs = var.WindDA[wf,t]
-#            cc.rhs= self.edata.exp_wind[wf][t]
-            cc.rhs=  self.edata.windinfo.capacity[wf]
+            cc.rhs= self.edata.exp_wind[wf][t]
+#            cc.rhs=  self.edata.windinfo.capacity[wf]
             cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
             
     #--- Swing constract constraints

@@ -60,54 +60,76 @@ mGRT_COMP.optimize()
        
 f2d=False         
 BLmodel= modelObjects.Bilevel_Model(f2d)
+#BilevelFunctions.DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP)
 
-BilevelFunctions.DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP)
-#BilevelFunctions.DA_Model(BLmodel,mEDA_COMP,mGDA_COMP)
-
-contractprices=list(np.linspace(4,10,num=1,endpoint=False))
-for i in contractprices:
-
-    Contract_name ='ContractPrice(ng102)'
-    var=BLmodel.model.getVarByName(Contract_name)
-    var.LB=i
-    var.UB=i
-    var.Start=i
-    
-    BLmodel.model.Params.timelimit = 50.0
-    BLmodel.model.Params.MIPFocus = 2
-#    BLmodel.model.Params.DegenMoves=3
-#    BLmodel.model.Params.Disconnected=2
-#    BLmodel.model.Params.Heuristics = 0.9
-    BLmodel.model.setParam( 'OutputFlag', True)
-    BLmodel.model.optimize() 
-    
-    if BLmodel.model.status==2:
-        BilevelFunctions.CompareBLmodelObjective(BLmodel)
-        BilevelFunctions.Compare_SEDA_DUAL_OBJ(BLmodel)
-    else:
-        print('Contract Price {0} Failed!'.format(i))
+BilevelFunctions.DA_Model(BLmodel,mEDA_COMP,mGDA_COMP)
 
 
-# Reset the Contract limits
-Contract_name = 'ContractPrice(ng102)'
-var = BLmodel.model.getVarByName(Contract_name)
-var.LB = 0
-var.UB = 2000
-var.Start=0
+#Contract_name = 'ContractPrice(ng102)'
+#var = BLmodel.model.getVarByName(Contract_name)
+#var.LB = 0
+#var.UB = 2000
+
+
+BLmodel.model.optimize()
+df_var,df_con=BilevelFunctions.get_Var_Con(BLmodel)
+
+
+
+#contractprices=list(np.linspace(0,10,num=20,endpoint=False))
+#contractprices=[1, 2, 4, 9]
+##contractprices=[3.99, 4, 4.01]
+#for i in contractprices:
+#
+#    Contract_name ='ContractPrice(ng102)'
+#    var=BLmodel.model.getVarByName(Contract_name)
+#    var.LB=i
+#    var.UB=i
+#    var.Start=i
+#    
+#    BLmodel.model.Params.timelimit = 50.0
+#    BLmodel.model.Params.MIPFocus = 2
+##    BLmodel.model.Params.DegenMoves=3
+##    BLmodel.model.Params.Disconnected=2
+##    BLmodel.model.Params.Heuristics = 0.9
+#    BLmodel.model.setParam( 'OutputFlag', False)
+#    BLmodel.model.optimize() 
+#
+#
+#    
+#    if BLmodel.model.status==2:
+#        t='t3'
+##        BilevelFunctions.CompareBLmodelObjective_DA(BLmodel)
+##        BilevelFunctions.Compare_SEDA_DUAL_OBJ_DA(BLmodel)
+##        BilevelFunctions.PrintInfo(BLmodel)
+##        BilevelFunctions.PrintDispatchatTime(t,BLmodel)
+#    
+#        print('\n')
+#    else:
+#        print('Contract Price {0} Failed!'.format(i))
+#
+#
+## Reset the Contract limits
+#Contract_name = 'ContractPrice(ng102)'
+#var = BLmodel.model.getVarByName(Contract_name)
+#var.LB = 0
+#var.UB = 3000
+#var.Start=0
 #BLmodel.model.reset()
 #BLmodel.model.update()
 
 
-df_var,df_con=BilevelFunctions.get_Var_Con(BLmodel)
+#df_var,df_con=BilevelFunctions.get_Var_Con(BLmodel)
 #print(df[df.Name.str.startswith(('Pgen','WindDA','lambda_gas_balance','gprod'))])
 #df[df.Name.str.contains(('lambda_gas_balance'))]
 #df_var.Initial.sort_values()
 #con = next(iter(mSEDA_COMP.model.getConstrs()))
 
 #--- Loop over different contracts and determine the price
-
-#BLmodel = BilevelFunctions.Loop_Contracts_Price(BLmodel)
-
+#
+BLmodel = BilevelFunctions.Loop_Contracts_Price(BLmodel)
+#df_var,df_con=BilevelFunctions.get_Var_Con(BLmodel)
+#
 
 
 

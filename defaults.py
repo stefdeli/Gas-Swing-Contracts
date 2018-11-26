@@ -62,8 +62,8 @@ RESERVES_UP_PREMIUM_GAS_SC = 1.0#1.05
 RESERVES_DN_PREMIUM_GAS_SC = 1.0 #0.95
 
 # Premium for up/down deployment of gas wells
-RESERVES_UP_PREMIUM_GASWELL = 1.0#1.05
-RESERVES_DN_PREMIUM_GASWELL = 1.0#0.95
+RESERVES_UP_PREMIUM_GASWELL = 1.03#1.05
+RESERVES_DN_PREMIUM_GASWELL = 0.98#0.95
 
 # Remove equality constraints and replace lhs==rhs with lhs<=rhs and lhs>=rhs
 REMOVE_EQUALITY=False
@@ -75,7 +75,7 @@ GUROBI_OUTPUT=False
 GasNetwork='FlowBased'
 #GasNetwork='WeymouthApprox'
 ChangeTime=True
-Time=['t'+str(i+1) for i in range(4)]
+Time=['t'+str(i+1) for i in range(3)]
 
 # Epsilon to keep contract price down
 EPS_CONTRACT=1e-3
