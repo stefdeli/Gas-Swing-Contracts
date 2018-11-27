@@ -663,9 +663,10 @@ class Bilevel_Model():
     Real-time electricity system dispatch
     '''
     
-    def __init__(self,f2d):
+    def __init__(self,f2d,Profit_NoContract):
         '''
-        '''        
+        '''
+        self.Profit_NoContract=Profit_NoContract
         self.edata = expando()
         self.gdata = expando()
         self.variables = expando()

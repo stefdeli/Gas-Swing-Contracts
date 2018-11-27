@@ -59,10 +59,22 @@ mGRT_COMP.optimize()
 #--- Bilevel Model (All subproblems together)
        
 f2d=False         
-BLmodel= modelObjects.Bilevel_Model(f2d)
+Profit_NoContract=708
+BLmodel= modelObjects.Bilevel_Model(f2d,Profit_NoContract)
+
 #BilevelFunctions.DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP)
 
 BilevelFunctions.DA_Model(BLmodel,mEDA_COMP,mGDA_COMP)
+
+BilevelFunctions.Find_NC_Profit(BLmodel)
+
+BLmodel.model.setParam( 'OutputFlag',False )
+BLmodel.model.optimize()
+
+df_var,df_con=BilevelFunctions.get_Var_Con(BLmodel)
+
+
+
 
 
 #Contract_name = 'ContractPrice(ng102)'
@@ -71,7 +83,7 @@ BilevelFunctions.DA_Model(BLmodel,mEDA_COMP,mGDA_COMP)
 #var.UB = 2000
 
 
-BLmodel.model.optimize()
+
 df_var,df_con=BilevelFunctions.get_Var_Con(BLmodel)
 
 Contract_name = 'ContractPrice(ng102)'
@@ -130,7 +142,7 @@ print(var.x)
 
 #--- Loop over different contracts and determine the price
 #
-#BLmodel = BilevelFunctions.Loop_Contracts_Price(BLmodel)
+BLmodel = BilevelFunctions.Loop_Contracts_Price(BLmodel)
 #df_var,df_con=BilevelFunctions.get_Var_Con(BLmodel)
 #
 

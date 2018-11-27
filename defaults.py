@@ -75,7 +75,7 @@ GUROBI_OUTPUT=False
 GasNetwork='FlowBased'
 #GasNetwork='WeymouthApprox'
 ChangeTime=True
-Time=['t'+str(i+1) for i in range(3)]
+Time=['t'+str(i+1) for i in range(24)]
 
 # Epsilon to keep contract price down
 EPS_CONTRACT=1e-3
