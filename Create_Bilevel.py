@@ -62,9 +62,9 @@ f2d=False
 Profit_NoContract=708
 BLmodel= modelObjects.Bilevel_Model(f2d,Profit_NoContract)
 
-#BilevelFunctions.DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP)
+BilevelFunctions.DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP)
 
-BilevelFunctions.DA_Model(BLmodel,mEDA_COMP,mGDA_COMP)
+#BilevelFunctions.DA_Model(BLmodel,mEDA_COMP,mGDA_COMP)
 
 BilevelFunctions.Find_NC_Profit(BLmodel)
 

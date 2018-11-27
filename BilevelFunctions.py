@@ -30,6 +30,7 @@ import defaults
 
 
 def Find_NC_Profit(BLmodel):
+    print('Finding the Profit with no contracts')
         # Find the no contract profit by setting all the contract sizes to 0 and 
     All_SCdata = pd.read_csv(defaults.SCdata)
     All_SCdata.lambdaC=All_SCdata.lambdaC.astype(float)
@@ -71,6 +72,7 @@ def Find_NC_Profit(BLmodel):
     BLmodel.model.update()
 
 #--- Reset to the original
+    print('Resetting the model to the first contract')
     All_SCdata = pd.read_csv(defaults.SCdata)
     All_SCdata.lambdaC=All_SCdata.lambdaC.astype(float)
     Sc2Gen = list()
@@ -278,7 +280,8 @@ def Change_ContractParameters(BLmodel,SCdata,SCP):
     BLmodel.model.update()
 
 
-def ADD_mGRT_Linking_Constraints(BLmodel): 
+def ADD_mGRT_Linking_Constraints(BLmodel):
+    print('Linking mGRT constraints')
 # 1. Link the Gas DA well production to the Gas real time up/down regulation
 # regulation is an inequality constraint so also change the SOS constraints 
 #    
@@ -383,6 +386,7 @@ def ADD_mGRT_Linking_Constraints(BLmodel):
 
 
 def ADD_mGDA_Linking_Constraints(BLmodel):
+    print('Linking mGDA constraints')
     
     sclim = list('k{0}'.format(k) for k in range(3))
     for gas_node in BLmodel.edata.Map_Gn2Eg:
@@ -421,6 +425,7 @@ def ADD_mGDA_Linking_Constraints(BLmodel):
                 
 
 def ADD_mSEDA_DA_Linking_Constraints(BLmodel):
+    print('Linking mSEDA DA constraints')
     # Use nodal gas price for generator gas price  (DA)
     
     for gen in BLmodel.edata.gfpp:
@@ -473,6 +478,7 @@ def ADD_mSEDA_DA_Linking_Constraints(BLmodel):
             BLmodel.model.update()
 
 def ADD_mSEDA_RT_Linking_Constraints(BLmodel):
+    print('Linking mSEDA RT constraints')
     # Use nodal gas price for generator gas price  (DA)    
     # Use nodal gas price for generator UP REGULATION gas price  (RT)
     for gen in BLmodel.edata.gfpp:
