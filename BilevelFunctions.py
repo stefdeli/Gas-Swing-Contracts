@@ -46,6 +46,16 @@ def Change_ContractParameters(BLmodel,SCdata,SCP):
     
     for gen in SCdata.loc[sc].index.tolist():
         for t in BLmodel.edata.time:
+                     
+            
+            con_name= 'Pmax_DA_GFPP({0},{1})'.format(gen,t)
+            con = BLmodel.model.getConstrByName(con_name)
+            con_row=BLmodel.model.getRow(con)
+            new_con=Get_LHS_Constraint(con_row)
+            rhs= BLmodel.edata.generatorinfo.capacity[gen]-SCP[(sc,gen),t] * SCdata.PcMax[sc,gen]
+            BLmodel.model.remove(con)
+            BLmodel.model.addConstr(new_con<=rhs,name=con_name)
+     
             
             con_name =  'PgenSCmax({0},{1})'.format(gen,t)
             con = BLmodel.model.getConstrByName(con_name)
@@ -865,8 +875,9 @@ def DA_Model(BLmodel,mEDA_COMP,mGDA_COMP):
      # Gen_Income = mSEDA_DualObj - Non_Gas_gencost
      
     Obj =  Obj_mGDA  -Non_gen_Income - (Dualobj_mEDA-Non_Gas_gencost)
+    BLmodel.model.addConstr(Obj>=-704,name='ProfitLimit') 
 #    Obj =  Obj_mGDA  + Non_Gas_gencost  
-    BLmodel.model.setObjective(Obj  ,gb.GRB.MINIMIZE)
+    BLmodel.model.setObjective(Obj ,gb.GRB.MINIMIZE)
     
     print('Bilevel Model is built')
     folder=defaults.folder+'/LPModels/'
@@ -897,7 +908,7 @@ def Loop_Contracts_Price(BLmodel):
     all_contracts_r=list(reversed(all_contracts))
 #    all_contracts=['sc0','sc1']
 #    all_contracts_r=[]
-    for contract in all_contracts:
+    for contract in all_contracts_r:
         print ('\n\n########################################################')
         print ('Processing Contract {0}'.format(contract))
         print ('########################################################')
@@ -959,8 +970,8 @@ def Loop_Contracts_Price(BLmodel):
     All_SCdata.reset_index(level=1, inplace=True)
     All_SCdata=All_SCdata.drop(['GFPP'],axis=1)    
     All_SCdata.to_csv(defaults.SCdata_NoPrice.replace('.csv','')+'_Complete.csv')    
-    
-    print(All_SCdata[['lambdaC','MIPGap','Obj']])   
+
+    print(All_SCdata[['lambdaC','PcMin','PcMax','MIPGap','Obj']])   
     
     return BLmodel
 

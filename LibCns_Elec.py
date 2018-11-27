@@ -101,7 +101,12 @@ def _build_constraints_elecDA(self):
     windfarms = self.edata.windfarms
     SCdata = self.edata.SCdata
 
-    
+    if self.comp==True:
+        swingcontracts = [self.edata.swingcontracts[0]]
+        usc={sc : np.float64(1.0) for sc in swingcontracts}
+    else:
+        usc=var.usc
+        swingcontracts = self.edata.swingcontracts    
 
     #--- Power balance
     for t in time:
@@ -115,13 +120,21 @@ def _build_constraints_elecDA(self):
     #--- Maximum Capacity limits
     for t in time:
         for gen in gfpp:        
-            name= 'Pmax_DA_GFPP({0},{1})'.format(gen,t)
-            self.constraints[name]= expando()
-            cc=self.constraints[name]
-            cc.lhs = var.Pgen[gen,t]+var.PgenSC[gen,t]+var.RCup[gen,t]+var.RCupSC[gen,t]
-            cc.rhs = gendata.capacity[gen]              
-            cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
-                   
+#            name= 'Pmax_DA_GFPP({0},{1})'.format(gen,t)
+#            self.constraints[name]= expando()
+#            cc=self.constraints[name]
+#            cc.lhs = var.Pgen[gen,t]+var.PgenSC[gen,t]+var.RCup[gen,t]+var.RCupSC[gen,t]
+#            cc.rhs = gendata.capacity[gen]              
+#            cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
+            
+             name= 'Pmax_DA_GFPP({0},{1})'.format(gen,t)
+             self.constraints[name]= expando()
+             cc=self.constraints[name]
+             cc.lhs = var.Pgen[gen,t]+var.RCup[gen,t]
+             cc.rhs = gendata.capacity[gen] - gb.quicksum(usc[sc] * self.edata.SCP[(sc,gen),t]*SCdata.PcMax[sc,gen] for sc in swingcontracts)         
+             cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
+            
+            
         for gen in nongfpp:        
             name= 'Pmax_DA_GFPP({0},{1})'.format(gen,t)
             self.constraints[name]= expando()
@@ -133,13 +146,19 @@ def _build_constraints_elecDA(self):
     #--- Minimum Capacity limits    
     for t in time:
         for gen in gfpp:
+#            name='Pmin_DA_GFPP({0},{1})'.format(gen,t)
+#            self.constraints[name]= expando()
+#            cc=self.constraints[name]   
+#            cc.lhs=-var.Pgen[gen,t]-var.PgenSC[gen,t]+var.RCdn[gen,t]+var.RCdnSC[gen,t]
+#            cc.rhs=np.float64(0.0)
+#            cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
+            
             name='Pmin_DA_GFPP({0},{1})'.format(gen,t)
             self.constraints[name]= expando()
             cc=self.constraints[name]   
-            cc.lhs=-var.Pgen[gen,t]-var.PgenSC[gen,t]+var.RCdn[gen,t]+var.RCdnSC[gen,t]
+            cc.lhs=-var.Pgen[gen,t]+var.RCdn[gen,t]
             cc.rhs=np.float64(0.0)
             cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
-
                    
         for gen in nongfpp:
             name='Pmin_DA({0},{1})'.format(gen,t)
@@ -167,12 +186,7 @@ def _build_constraints_elecDA(self):
      then get rid of the binary variable as there will only be ONE contract that
      is active by default.
     """
-    if self.comp==True:
-        swingcontracts = [self.edata.swingcontracts[0]]
-        usc={sc : np.float64(1.0) for sc in swingcontracts}
-    else:
-        usc=var.usc
-        swingcontracts = self.edata.swingcontracts
+
         
     
     

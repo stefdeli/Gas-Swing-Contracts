@@ -24,38 +24,32 @@ Subject To
    + WindDA(w1,t2) = 50
  PowerBalance_DA(t3): Pgen(g1,t3) + Pgen(g2,t3) + PgenSC(g1,t3)
    + WindDA(w1,t3) = 50
- Pmax_DA_GFPP(g1,t1): Pgen(g1,t1) + PgenSC(g1,t1) + RCup(g1,t1)
-   + RCupSC(g1,t1) <= 150
+ Pmax_DA_GFPP(g1,t1): Pgen(g1,t1) + RCup(g1,t1) <= 120
  Pmax_DA_GFPP(g2,t1): Pgen(g2,t1) + RCup(g2,t1) <= 0
- Pmax_DA_GFPP(g1,t2): Pgen(g1,t2) + PgenSC(g1,t2) + RCup(g1,t2)
-   + RCupSC(g1,t2) <= 150
+ Pmax_DA_GFPP(g1,t2): Pgen(g1,t2) + RCup(g1,t2) <= 120
  Pmax_DA_GFPP(g2,t2): Pgen(g2,t2) + RCup(g2,t2) <= 0
- Pmax_DA_GFPP(g1,t3): Pgen(g1,t3) + PgenSC(g1,t3) + RCup(g1,t3)
-   + RCupSC(g1,t3) <= 150
+ Pmax_DA_GFPP(g1,t3): Pgen(g1,t3) + RCup(g1,t3) <= 120
  Pmax_DA_GFPP(g2,t3): Pgen(g2,t3) + RCup(g2,t3) <= 0
- Pmin_DA_GFPP(g1,t1): - Pgen(g1,t1) - PgenSC(g1,t1) + RCdn(g1,t1)
-   + RCdnSC(g1,t1) <= 0
+ Pmin_DA_GFPP(g1,t1): - Pgen(g1,t1) + RCdn(g1,t1) <= 0
  Pmin_DA(g2,t1): - Pgen(g2,t1) + RCdn(g2,t1) <= 0
- Pmin_DA_GFPP(g1,t2): - Pgen(g1,t2) - PgenSC(g1,t2) + RCdn(g1,t2)
-   + RCdnSC(g1,t2) <= 0
+ Pmin_DA_GFPP(g1,t2): - Pgen(g1,t2) + RCdn(g1,t2) <= 0
  Pmin_DA(g2,t2): - Pgen(g2,t2) + RCdn(g2,t2) <= 0
- Pmin_DA_GFPP(g1,t3): - Pgen(g1,t3) - PgenSC(g1,t3) + RCdn(g1,t3)
-   + RCdnSC(g1,t3) <= 0
+ Pmin_DA_GFPP(g1,t3): - Pgen(g1,t3) + RCdn(g1,t3) <= 0
  Pmin_DA(g2,t3): - Pgen(g2,t3) + RCdn(g2,t3) <= 0
  Wind_Max_DA(w1,t1): WindDA(w1,t1) <= 15
  Wind_Max_DA(w1,t2): WindDA(w1,t2) <= 20
  Wind_Max_DA(w1,t3): WindDA(w1,t3) <= 1
- PgenSCmax(g1,t1): PgenSC(g1,t1) <= 10
+ PgenSCmax(g1,t1): PgenSC(g1,t1) <= 30
  PgenSCmin(g1,t1): - PgenSC(g1,t1) <= -10
- RCupSCmax(g1,t1): PgenSC(g1,t1) + RCupSC(g1,t1) <= 10
+ RCupSCmax(g1,t1): PgenSC(g1,t1) + RCupSC(g1,t1) <= 30
  RCdnSCmin(g1,t1): - PgenSC(g1,t1) + RCdnSC(g1,t1) <= -10
- PgenSCmax(g1,t2): PgenSC(g1,t2) <= 10
+ PgenSCmax(g1,t2): PgenSC(g1,t2) <= 30
  PgenSCmin(g1,t2): - PgenSC(g1,t2) <= -10
- RCupSCmax(g1,t2): PgenSC(g1,t2) + RCupSC(g1,t2) <= 10
+ RCupSCmax(g1,t2): PgenSC(g1,t2) + RCupSC(g1,t2) <= 30
  RCdnSCmin(g1,t2): - PgenSC(g1,t2) + RCdnSC(g1,t2) <= -10
- PgenSCmax(g1,t3): PgenSC(g1,t3) <= 10
+ PgenSCmax(g1,t3): PgenSC(g1,t3) <= 30
  PgenSCmin(g1,t3): - PgenSC(g1,t3) <= -10
- RCupSCmax(g1,t3): PgenSC(g1,t3) + RCupSC(g1,t3) <= 10
+ RCupSCmax(g1,t3): PgenSC(g1,t3) + RCupSC(g1,t3) <= 30
  RCdnSCmin(g1,t3): - PgenSC(g1,t3) + RCdnSC(g1,t3) <= -10
  PowerBalance_RT(s1,t1): - WindDA(w1,t1) + RUp(g1,s1,t1) - RDn(g1,s1,t1)
    + RUp(g2,s1,t1) - RDn(g2,s1,t1) + RUpSC(g1,s1,t1) - RDnSC(g1,s1,t1)
@@ -123,49 +117,49 @@ Subject To
  Max_wind_spill_RT(w1,s2,t1): Wspill(w1,s2,t1) <= 15
  Max_wind_spill_RT(w1,s2,t2): Wspill(w1,s2,t2) <= 20
  Max_wind_spill_RT(w1,s2,t3): Wspill(w1,s2,t3) <= 1
- SOS1_Pmax_DA_GFPP(g1,t1): Pgen(g1,t1) + PgenSC(g1,t1) + RCup(g1,t1)
-   + RCupSC(g1,t1) + SOS1_Pmax_DA_GFPP(g1,t1) = 150
+ SOS1_Pmax_DA_GFPP(g1,t1): Pgen(g1,t1) + RCup(g1,t1)
+   + SOS1_Pmax_DA_GFPP(g1,t1) = 120
  SOS1_Pmax_DA_GFPP(g2,t1): Pgen(g2,t1) + RCup(g2,t1)
    + SOS1_Pmax_DA_GFPP(g2,t1) = 0
- SOS1_Pmax_DA_GFPP(g1,t2): Pgen(g1,t2) + PgenSC(g1,t2) + RCup(g1,t2)
-   + RCupSC(g1,t2) + SOS1_Pmax_DA_GFPP(g1,t2) = 150
+ SOS1_Pmax_DA_GFPP(g1,t2): Pgen(g1,t2) + RCup(g1,t2)
+   + SOS1_Pmax_DA_GFPP(g1,t2) = 120
  SOS1_Pmax_DA_GFPP(g2,t2): Pgen(g2,t2) + RCup(g2,t2)
    + SOS1_Pmax_DA_GFPP(g2,t2) = 0
- SOS1_Pmax_DA_GFPP(g1,t3): Pgen(g1,t3) + PgenSC(g1,t3) + RCup(g1,t3)
-   + RCupSC(g1,t3) + SOS1_Pmax_DA_GFPP(g1,t3) = 150
+ SOS1_Pmax_DA_GFPP(g1,t3): Pgen(g1,t3) + RCup(g1,t3)
+   + SOS1_Pmax_DA_GFPP(g1,t3) = 120
  SOS1_Pmax_DA_GFPP(g2,t3): Pgen(g2,t3) + RCup(g2,t3)
    + SOS1_Pmax_DA_GFPP(g2,t3) = 0
- SOS1_Pmin_DA_GFPP(g1,t1): - Pgen(g1,t1) - PgenSC(g1,t1) + RCdn(g1,t1)
-   + RCdnSC(g1,t1) + SOS1_Pmin_DA_GFPP(g1,t1) = 0
+ SOS1_Pmin_DA_GFPP(g1,t1): - Pgen(g1,t1) + RCdn(g1,t1)
+   + SOS1_Pmin_DA_GFPP(g1,t1) = 0
  SOS1_Pmin_DA(g2,t1): - Pgen(g2,t1) + RCdn(g2,t1) + SOS1_Pmin_DA(g2,t1)
    = 0
- SOS1_Pmin_DA_GFPP(g1,t2): - Pgen(g1,t2) - PgenSC(g1,t2) + RCdn(g1,t2)
-   + RCdnSC(g1,t2) + SOS1_Pmin_DA_GFPP(g1,t2) = 0
+ SOS1_Pmin_DA_GFPP(g1,t2): - Pgen(g1,t2) + RCdn(g1,t2)
+   + SOS1_Pmin_DA_GFPP(g1,t2) = 0
  SOS1_Pmin_DA(g2,t2): - Pgen(g2,t2) + RCdn(g2,t2) + SOS1_Pmin_DA(g2,t2)
    = 0
- SOS1_Pmin_DA_GFPP(g1,t3): - Pgen(g1,t3) - PgenSC(g1,t3) + RCdn(g1,t3)
-   + RCdnSC(g1,t3) + SOS1_Pmin_DA_GFPP(g1,t3) = 0
+ SOS1_Pmin_DA_GFPP(g1,t3): - Pgen(g1,t3) + RCdn(g1,t3)
+   + SOS1_Pmin_DA_GFPP(g1,t3) = 0
  SOS1_Pmin_DA(g2,t3): - Pgen(g2,t3) + RCdn(g2,t3) + SOS1_Pmin_DA(g2,t3)
    = 0
  SOS1_Wind_Max_DA(w1,t1): WindDA(w1,t1) + SOS1_Wind_Max_DA(w1,t1) = 15
  SOS1_Wind_Max_DA(w1,t2): WindDA(w1,t2) + SOS1_Wind_Max_DA(w1,t2) = 20
  SOS1_Wind_Max_DA(w1,t3): WindDA(w1,t3) + SOS1_Wind_Max_DA(w1,t3) = 1
- SOS1_PgenSCmax(g1,t1): PgenSC(g1,t1) + SOS1_PgenSCmax(g1,t1) = 10
+ SOS1_PgenSCmax(g1,t1): PgenSC(g1,t1) + SOS1_PgenSCmax(g1,t1) = 30
  SOS1_PgenSCmin(g1,t1): - PgenSC(g1,t1) + SOS1_PgenSCmin(g1,t1) = -10
  SOS1_RCupSCmax(g1,t1): PgenSC(g1,t1) + RCupSC(g1,t1)
-   + SOS1_RCupSCmax(g1,t1) = 10
+   + SOS1_RCupSCmax(g1,t1) = 30
  SOS1_RCdnSCmin(g1,t1): - PgenSC(g1,t1) + RCdnSC(g1,t1)
    + SOS1_RCdnSCmin(g1,t1) = -10
- SOS1_PgenSCmax(g1,t2): PgenSC(g1,t2) + SOS1_PgenSCmax(g1,t2) = 10
+ SOS1_PgenSCmax(g1,t2): PgenSC(g1,t2) + SOS1_PgenSCmax(g1,t2) = 30
  SOS1_PgenSCmin(g1,t2): - PgenSC(g1,t2) + SOS1_PgenSCmin(g1,t2) = -10
  SOS1_RCupSCmax(g1,t2): PgenSC(g1,t2) + RCupSC(g1,t2)
-   + SOS1_RCupSCmax(g1,t2) = 10
+   + SOS1_RCupSCmax(g1,t2) = 30
  SOS1_RCdnSCmin(g1,t2): - PgenSC(g1,t2) + RCdnSC(g1,t2)
    + SOS1_RCdnSCmin(g1,t2) = -10
- SOS1_PgenSCmax(g1,t3): PgenSC(g1,t3) + SOS1_PgenSCmax(g1,t3) = 10
+ SOS1_PgenSCmax(g1,t3): PgenSC(g1,t3) + SOS1_PgenSCmax(g1,t3) = 30
  SOS1_PgenSCmin(g1,t3): - PgenSC(g1,t3) + SOS1_PgenSCmin(g1,t3) = -10
  SOS1_RCupSCmax(g1,t3): PgenSC(g1,t3) + RCupSC(g1,t3)
-   + SOS1_RCupSCmax(g1,t3) = 10
+   + SOS1_RCupSCmax(g1,t3) = 30
  SOS1_RCdnSCmin(g1,t3): - PgenSC(g1,t3) + RCdnSC(g1,t3)
    + SOS1_RCdnSCmin(g1,t3) = -10
  SOS1_RegUp_max_RT(g1,s1,t1): - RCup(g1,t1) + RUp(g1,s1,t1)
@@ -360,15 +354,15 @@ Subject To
    - mu_Pmin_DA(g2,t2) - muLB_Pgen(g2,t2) = -200
  dLag/Pgen(g2,t3): - lambda_PowerBalance_DA(t3) + mu_Pmax_DA_GFPP(g2,t3)
    - mu_Pmin_DA(g2,t3) - muLB_Pgen(g2,t3) = -200
- dLag/PgenSC(g1,t1): - lambda_PowerBalance_DA(t1) + mu_Pmax_DA_GFPP(g1,t1)
-   - mu_Pmin_DA_GFPP(g1,t1) + mu_PgenSCmax(g1,t1) - mu_PgenSCmin(g1,t1)
-   + mu_RCupSCmax(g1,t1) - mu_RCdnSCmin(g1,t1) - muLB_PgenSC(g1,t1) = -32
- dLag/PgenSC(g1,t2): - lambda_PowerBalance_DA(t2) + mu_Pmax_DA_GFPP(g1,t2)
-   - mu_Pmin_DA_GFPP(g1,t2) + mu_PgenSCmax(g1,t2) - mu_PgenSCmin(g1,t2)
-   + mu_RCupSCmax(g1,t2) - mu_RCdnSCmin(g1,t2) - muLB_PgenSC(g1,t2) = -32
- dLag/PgenSC(g1,t3): - lambda_PowerBalance_DA(t3) + mu_Pmax_DA_GFPP(g1,t3)
-   - mu_Pmin_DA_GFPP(g1,t3) + mu_PgenSCmax(g1,t3) - mu_PgenSCmin(g1,t3)
-   + mu_RCupSCmax(g1,t3) - mu_RCdnSCmin(g1,t3) - muLB_PgenSC(g1,t3) = -32
+ dLag/PgenSC(g1,t1): - lambda_PowerBalance_DA(t1) + mu_PgenSCmax(g1,t1)
+   - mu_PgenSCmin(g1,t1) + mu_RCupSCmax(g1,t1) - mu_RCdnSCmin(g1,t1)
+   - muLB_PgenSC(g1,t1) = -32
+ dLag/PgenSC(g1,t2): - lambda_PowerBalance_DA(t2) + mu_PgenSCmax(g1,t2)
+   - mu_PgenSCmin(g1,t2) + mu_RCupSCmax(g1,t2) - mu_RCdnSCmin(g1,t2)
+   - muLB_PgenSC(g1,t2) = -32
+ dLag/PgenSC(g1,t3): - lambda_PowerBalance_DA(t3) + mu_PgenSCmax(g1,t3)
+   - mu_PgenSCmin(g1,t3) + mu_RCupSCmax(g1,t3) - mu_RCdnSCmin(g1,t3)
+   - muLB_PgenSC(g1,t3) = -32
  dLag/RCup(g1,t1): mu_Pmax_DA_GFPP(g1,t1) - mu_RegUp_max_RT(g1,s1,t1)
    - mu_RegUp_max_RT(g1,s2,t1) - muLB_RCup(g1,t1) = 0
  dLag/RCup(g1,t2): mu_Pmax_DA_GFPP(g1,t2) - mu_RegUp_max_RT(g1,s1,t2)
@@ -393,24 +387,18 @@ Subject To
    - mu_RegDown_max_RT(g2,s2,t2) - muLB_RCdn(g2,t2) = 0
  dLag/RCdn(g2,t3): mu_Pmin_DA(g2,t3) - mu_RegDown_max_RT(g2,s1,t3)
    - mu_RegDown_max_RT(g2,s2,t3) - muLB_RCdn(g2,t3) = 0
- dLag/RCupSC(g1,t1): mu_Pmax_DA_GFPP(g1,t1) + mu_RCupSCmax(g1,t1)
-   - mu_RegUpSC_max_RT(g1,s1,t1) - mu_RegUpSC_max_RT(g1,s2,t1)
-   - muLB_RCupSC(g1,t1) = 0
- dLag/RCupSC(g1,t2): mu_Pmax_DA_GFPP(g1,t2) + mu_RCupSCmax(g1,t2)
-   - mu_RegUpSC_max_RT(g1,s1,t2) - mu_RegUpSC_max_RT(g1,s2,t2)
-   - muLB_RCupSC(g1,t2) = 0
- dLag/RCupSC(g1,t3): mu_Pmax_DA_GFPP(g1,t3) + mu_RCupSCmax(g1,t3)
-   - mu_RegUpSC_max_RT(g1,s1,t3) - mu_RegUpSC_max_RT(g1,s2,t3)
-   - muLB_RCupSC(g1,t3) = 0
- dLag/RCdnSC(g1,t1): mu_Pmin_DA_GFPP(g1,t1) + mu_RCdnSCmin(g1,t1)
-   - mu_RegDnSC_max_RT(g1,s1,t1) - mu_RegDnSC_max_RT(g1,s2,t1)
-   - muLB_RCdnSC(g1,t1) = 0
- dLag/RCdnSC(g1,t2): mu_Pmin_DA_GFPP(g1,t2) + mu_RCdnSCmin(g1,t2)
-   - mu_RegDnSC_max_RT(g1,s1,t2) - mu_RegDnSC_max_RT(g1,s2,t2)
-   - muLB_RCdnSC(g1,t2) = 0
- dLag/RCdnSC(g1,t3): mu_Pmin_DA_GFPP(g1,t3) + mu_RCdnSCmin(g1,t3)
-   - mu_RegDnSC_max_RT(g1,s1,t3) - mu_RegDnSC_max_RT(g1,s2,t3)
-   - muLB_RCdnSC(g1,t3) = 0
+ dLag/RCupSC(g1,t1): mu_RCupSCmax(g1,t1) - mu_RegUpSC_max_RT(g1,s1,t1)
+   - mu_RegUpSC_max_RT(g1,s2,t1) - muLB_RCupSC(g1,t1) = 0
+ dLag/RCupSC(g1,t2): mu_RCupSCmax(g1,t2) - mu_RegUpSC_max_RT(g1,s1,t2)
+   - mu_RegUpSC_max_RT(g1,s2,t2) - muLB_RCupSC(g1,t2) = 0
+ dLag/RCupSC(g1,t3): mu_RCupSCmax(g1,t3) - mu_RegUpSC_max_RT(g1,s1,t3)
+   - mu_RegUpSC_max_RT(g1,s2,t3) - muLB_RCupSC(g1,t3) = 0
+ dLag/RCdnSC(g1,t1): mu_RCdnSCmin(g1,t1) - mu_RegDnSC_max_RT(g1,s1,t1)
+   - mu_RegDnSC_max_RT(g1,s2,t1) - muLB_RCdnSC(g1,t1) = 0
+ dLag/RCdnSC(g1,t2): mu_RCdnSCmin(g1,t2) - mu_RegDnSC_max_RT(g1,s1,t2)
+   - mu_RegDnSC_max_RT(g1,s2,t2) - muLB_RCdnSC(g1,t2) = 0
+ dLag/RCdnSC(g1,t3): mu_RCdnSCmin(g1,t3) - mu_RegDnSC_max_RT(g1,s1,t3)
+   - mu_RegDnSC_max_RT(g1,s2,t3) - muLB_RCdnSC(g1,t3) = 0
  dLag/WindDA(w1,t1): - lambda_PowerBalance_DA(t1) + mu_Wind_Max_DA(w1,t1)
    + lambda_PowerBalance_RT(s1,t1) + lambda_PowerBalance_RT(s2,t1)
    - muLB_WindDA(w1,t1) = 0

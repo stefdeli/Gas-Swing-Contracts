@@ -74,7 +74,10 @@ BilevelFunctions.DA_Model(BLmodel,mEDA_COMP,mGDA_COMP)
 BLmodel.model.optimize()
 df_var,df_con=BilevelFunctions.get_Var_Con(BLmodel)
 
+Contract_name = 'ContractPrice(ng102)'
+var = BLmodel.model.getVarByName(Contract_name)
 
+print(var.x)
 
 #contractprices=list(np.linspace(0,10,num=20,endpoint=False))
 #contractprices=[1, 2, 4, 9]
@@ -127,7 +130,7 @@ df_var,df_con=BilevelFunctions.get_Var_Con(BLmodel)
 
 #--- Loop over different contracts and determine the price
 #
-BLmodel = BilevelFunctions.Loop_Contracts_Price(BLmodel)
+#BLmodel = BilevelFunctions.Loop_Contracts_Price(BLmodel)
 #df_var,df_con=BilevelFunctions.get_Var_Con(BLmodel)
 #
 
