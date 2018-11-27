@@ -69,6 +69,7 @@ BilevelFunctions.DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP)
 BilevelFunctions.Find_NC_Profit(BLmodel)
 
 BLmodel.model.setParam( 'OutputFlag',False )
+
 BLmodel.model.optimize()
 
 df_var,df_con=BilevelFunctions.get_Var_Con(BLmodel)

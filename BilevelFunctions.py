@@ -644,9 +644,14 @@ def Get_Obj(BLmodel,COMP):
     return NewObj
 
 
-def Get_Dual_Obj(BLmodel,COMP):
+def Get_Dual_Obj2(BLmodel,COMP):
     # Get the dual objective from COMP and write it for BLmodel
+    Res=expando()
     NewObj=0.0
+    
+    Obj_lam=0.0
+    Obj_mu_lt=0.0
+    Obj_mu_gt=0.0
     
     for con in COMP.model.getConstrs():
 
@@ -660,8 +665,11 @@ def Get_Dual_Obj(BLmodel,COMP):
         elif conname[0:4]=='dLag':
             continue
         
+        con_name=con.ConstrName
+        con_BL=BLmodel.model.getConstrByName(con_name)
+        
         sense=con.Sense
-        RHS=con.RHS
+        RHS=con_BL.RHS
         
         if sense=='=':
             dual=BLmodel.model.getVarByName('lambda_'+conname)
@@ -669,12 +677,62 @@ def Get_Dual_Obj(BLmodel,COMP):
             dual=BLmodel.model.getVarByName('mu_'+conname)
     
         if sense=='=':
-            NewObj=NewObj + dual*RHS
+            Obj_lam = Obj_lam+dual*RHS
+            NewObj  = NewObj + dual*RHS
         elif sense=='<':
-            NewObj=NewObj - dual*RHS
+            Obj_mu_lt = Obj_mu_lt - dual*RHS
+            NewObj    = NewObj - dual*RHS
         else:
-            NewObj=NewObj + dual*RHS
+            Obj_mu_gt = Obj_mu_gt + dual*RHS
+            NewObj    = NewObj + dual*RHS
+#    print(NewObj.getValue())
+    Res.NewObj=NewObj
+    Res.Obj_lam=Obj_lam
+    Res.Obj_mu_lt=Obj_mu_lt
+    Res.Obj_mu_gt=Obj_mu_gt
+    return Res
 
+def Get_Dual_Obj(BLmodel,COMP):
+    # Get the dual objective from COMP and write it for BLmodel
+    NewObj=0.0
+    
+    Obj_lam=0.0
+    Obj_mu_lt=0.0
+    Obj_mu_gt=0.0
+    
+    for con in COMP.model.getConstrs():
+
+        conname=con.ConstrName
+        if conname[0:2]=='mu':
+            continue
+        elif conname[0:6]=='lambda':
+            continue
+        elif conname[0:4]=='SOS1':
+            continue
+        elif conname[0:4]=='dLag':
+            continue
+        
+        con_name=con.ConstrName
+        con_BL=BLmodel.model.getConstrByName(con_name)
+        
+        sense=con.Sense
+        RHS=con_BL.RHS
+        
+        if sense=='=':
+            dual=BLmodel.model.getVarByName('lambda_'+conname)
+        else:
+            dual=BLmodel.model.getVarByName('mu_'+conname)
+    
+        if sense=='=':
+            Obj_lam = Obj_lam+dual*RHS
+            NewObj  = NewObj + dual*RHS
+        elif sense=='<':
+            Obj_mu_lt = Obj_mu_lt - dual*RHS
+            NewObj    = NewObj - dual*RHS
+        else:
+            Obj_mu_gt = Obj_mu_gt + dual*RHS
+            NewObj    = NewObj + dual*RHS
+#    print(NewObj.getValue())
     return NewObj
 
 def Compare(BLmodel,COMP):
@@ -784,6 +842,12 @@ def GetDispatch(BLmodel):
 
 
 def DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP):
+    
+    
+    BLmodel.mSEDA_COMP=mSEDA_COMP
+    BLmodel.mGDA_COMP=mGDA_COMP
+    BLmodel.mGRT_COMP=mGRT_COMP
+    
     print('Adding Variables')
     Add_Vars(BLmodel,mSEDA_COMP)
     Add_Vars(BLmodel,mGDA_COMP)
@@ -903,6 +967,10 @@ def DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP):
     
     
 def DA_Model(BLmodel,mEDA_COMP,mGDA_COMP):
+    
+    BLmodel.mEDA_COMP=mEDA_COMP
+    BLmodel.mGDA_COMP=mGDA_COMP
+    
     print('Adding Variables')
     Add_Vars(BLmodel,mEDA_COMP)
     Add_Vars(BLmodel,mGDA_COMP)
@@ -936,14 +1004,14 @@ def DA_Model(BLmodel,mEDA_COMP,mGDA_COMP):
     ADD_mGDA_Linking_Constraints(BLmodel)
      
     
-    Dualobj_mEDA=Get_Dual_Obj(BLmodel,mEDA_COMP)
+    Dualobj_mEDA=Get_Dual_Obj(BLmodel,BLmodel.mEDA_COMP)
     Dualobj_mGDA =Get_Dual_Obj(BLmodel,mGDA_COMP)
 
     
     Obj_mEDA=Get_Obj(BLmodel,mEDA_COMP)
     Obj_mGDA =Get_Obj(BLmodel,mGDA_COMP)
 
-    BLmodel.Dualobj_mEDA=Dualobj_mEDA
+
     
     #--- Non gas Generators Objective
     gendata = BLmodel.edata.generatorinfo
@@ -1001,7 +1069,7 @@ def Loop_Contracts_Price(BLmodel):
     BLmodel.model.Params.timelimit = 100.0
     #BLmodel.model.Params.MIPGapAbs=0.05
     BLmodel.model.Params.MIPFocus = 1
-    BLmodel.model.setParam( 'OutputFlag',True )
+    BLmodel.model.setParam( 'OutputFlag',False)
 
     
     All_SCdata = pd.read_csv(defaults.SCdata_NoPrice)
@@ -1042,6 +1110,10 @@ def Loop_Contracts_Price(BLmodel):
     
         BLmodel.model.optimize() 
         
+        Compare_SEDA_DUAL_OBJ(BLmodel)
+        Compare_GDA_DUAL_OBJ(BLmodel)
+        Compare_GRT_DUAL_OBJ(BLmodel)
+       
         gas_nodes = list(BLmodel.edata.Map_Eg2Gn.values())
         # result may be list of lists, so flatted
         flat_list = [item for sublist in gas_nodes for item in sublist]
@@ -1050,6 +1122,7 @@ def Loop_Contracts_Price(BLmodel):
         
         Result = {}#defaultdict(dict)    
         if BLmodel.model.status==2:
+#            CheckDualObjectives(BLmodel)
             for node in GasGenNodes:
                 name='ContractPrice({0})'.format(node)
                 var=BLmodel.model.getVarByName(name)
@@ -1086,7 +1159,7 @@ def Loop_Contracts_Price(BLmodel):
     return BLmodel
 
 
-def CompareBLmodelObjective(BLmodel):
+def Compare_BLmodelObjective(BLmodel):
     CostDA = 0.0
     for t in BLmodel.edata.time:
         for gw in BLmodel.gdata.wells:
@@ -1190,11 +1263,11 @@ def CompareBLmodelObjective(BLmodel):
     ContractedUp=df_var[df_var.Name.str.startswith('RUpSC(g1,s1')].Value.sum()
     ContractedDn=df_var[df_var.Name.str.startswith('RDnSC(g1,s1')].Value.sum()
     
-    print('Contract:{1:.2f} \tDual:{0:.2f} \t Calc{2:.2f} \t DA_PgenSC={3:.2f} \t DA_RUpSC={4:.2f} \t RDnSC={5:.2f}'.format(
+    print('mSEDA Contract:{1:.2f} \tDual:{0:.2f} \t Calc{2:.2f} \t DA_PgenSC={3:.2f} \t DA_RUpSC={4:.2f} \t RDnSC={5:.2f}'.format(
             BLmodel.model.ObjVal,contract.x,Profit,ContractedDA,ContractedUp,ContractedDn))
 
 
-def CompareBLmodelObjective_DA(BLmodel):
+def Compare_BLmodelObjective_DA(BLmodel):
     CostDA = 0.0
     for t in BLmodel.edata.time:
         for gw in BLmodel.gdata.wells:
@@ -1302,31 +1375,35 @@ def Compare_SEDA_DUAL_OBJ(BLmodel):
         for gen in BLmodel.edata.nongfpp:
             var_name='Pgen({0},{1})'.format(gen,t)
             Pgen = BLmodel.model.getVarByName(var_name)
-            CostDA_Elec = CostDA_Elec + BLmodel.edata.generatorinfo.lincost[gen]*Pgen.x
+            cost=BLmodel.edata.generatorinfo.lincost[gen]
+            CostDA_Elec +=  cost*Pgen.x
             
         for gen in BLmodel.edata.gfpp:
+            HR=BLmodel.edata.generatorinfo.HR[gen]
             var_name='Pgen({0},{1})'.format(gen,t)
             Pgen = BLmodel.model.getVarByName(var_name)
-            
-            Lambda_name ='lambda_gas_balance_da({0},{1},{2})'.format(BLmodel.edata.generatorinfo.origin_gas[gen],'k0',t)
+            gasnode=BLmodel.edata.generatorinfo.origin_gas[gen]
+            Lambda_name ='lambda_gas_balance_da({0},{1},{2})'.format(gasnode,'k0',t)
             var=BLmodel.model.getVarByName(var_name)
             price=BLmodel.model.getVarByName(Lambda_name)
             
-            CostDA_Elec = CostDA_Elec + 8*price.x*var.x
+            CostDA_Elec = CostDA_Elec + HR*price.x*var.x
             
             var_name = 'PgenSC({0},{1})'.format(gen,t)
             Contract_name ='ContractPrice({0})'.format(BLmodel.edata.generatorinfo.origin_gas[gen])
             var=BLmodel.model.getVarByName(var_name)
             contract=BLmodel.model.getVarByName(Contract_name)
 
-            CostDA_Elec = CostDA_Elec + 8*contract.x*var.x
+            CostDA_Elec = CostDA_Elec + HR*contract.x*var.x
         
     
     CostRT_Elec = 0.0
     for t in BLmodel.edata.time:
         for s in BLmodel.edata.scenarios:
             Prob=BLmodel.edata.scen_wgp[s][2]
-            for gen in BLmodel.edata.gfpp:                
+            for gen in BLmodel.edata.gfpp:
+                HR=BLmodel.edata.generatorinfo.HR[gen]  
+                
                 var_name_up = 'RUp({0},{1},{2})'.format(gen,s,t)
                 var_name_dn = 'RDn({0},{1},{2})'.format(gen,s,t)
                 
@@ -1338,7 +1415,7 @@ def Compare_SEDA_DUAL_OBJ(BLmodel):
 #                print(8*price.x*(var_up-var_dn))
                 P_UP=defaults.RESERVES_UP_PREMIUM_GAS
                 P_DN=defaults.RESERVES_DN_PREMIUM_GAS
-                CostRT_Elec = CostRT_Elec + 8*price.x*(P_UP*var_up.x-P_DN*var_dn.x)
+                CostRT_Elec = CostRT_Elec + HR*price.x*(P_UP*var_up.x-P_DN*var_dn.x)
                 
                 # Contract
                 var_name_up = 'RUpSC({0},{1},{2})'.format(gen,s,t)
@@ -1353,7 +1430,7 @@ def Compare_SEDA_DUAL_OBJ(BLmodel):
 #                print(Prob*8*contract.x*(var_up-var_dn))
                 P_UP=defaults.RESERVES_UP_PREMIUM_GAS_SC
                 P_DN=defaults.RESERVES_DN_PREMIUM_GAS_SC
-                CostRT_Elec = CostRT_Elec + Prob*8*contract.x*(P_UP*var_up.x-P_DN*var_dn.x)
+                CostRT_Elec = CostRT_Elec + Prob*HR*contract.x*(P_UP*var_up.x-P_DN*var_dn.x)
                 
             for gen in BLmodel.edata.nongfpp:
                 var_name_up = 'RUp({0},{1},{2})'.format(gen,s,t)
@@ -1365,15 +1442,109 @@ def Compare_SEDA_DUAL_OBJ(BLmodel):
                 P_UP=defaults.RESERVES_UP_PREMIUM_NONGAS
                 P_DN=defaults.RESERVES_DN_PREMIUM_NONGAS
                 cost=BLmodel.edata.generatorinfo.lincost[gen]
-                CostRT_Elec = CostRT_Elec + Prob*cost*(P_UP*var_up.x-P_DN*var_dn.x)
+                CostRT_Elec +=  Prob*cost*(P_UP*var_up.x-P_DN*var_dn.x)
   
-    
-    
+
     mSEDA_Calc_Cost = CostDA_Elec+CostRT_Elec
+        
+    Dualobj_mSEDA=Get_Dual_Obj(BLmodel,BLmodel.mSEDA_COMP)
     
-    mSEDA_Dual_Cost = BLmodel.Dualobj_mSEDA.getValue()
-    Error= mSEDA_Calc_Cost-mSEDA_Dual_Cost
-    print('Contract:{3:.2f} \tCost_Calc={0:.2f} \t Cost_Dual={1:.2f} \t Error={2:.2f}'.format( mSEDA_Calc_Cost, mSEDA_Dual_Cost,Error,contract.x))  
+    print(Dualobj_mSEDA.getValue())
+    
+    mSEDA_Dual_Cost = Dualobj_mSEDA.getValue()
+    
+    Error= mSEDA_Calc_Cost-mSEDA_Dual_Cost   
+
+    print('SEDA Contract:{3:.2f} \tCost_Calc={0:.2f} \t Cost_Dual={1:.2f} \t Error={2:.2f}'.format( mSEDA_Calc_Cost, mSEDA_Dual_Cost,Error,contract.x))  
+
+
+
+def Compare_GDA_DUAL_OBJ(BLmodel):
+    CostDA_Gas = 0.0
+    for t in BLmodel.edata.time:
+        for gw in BLmodel.gdata.wells:
+            
+            var_name='gprod({0},k0,{1})'.format(gw,t)
+            gprod = BLmodel.model.getVarByName(var_name)
+            cost=BLmodel.gdata.wellsinfo.Cost[gw]
+            CostDA_Gas +=  cost*gprod.x
+      
+        for gn in BLmodel.gdata.gnodes:
+            for sc in ['k0','k1','k2']:
+                var_name='gshed_da({0},{1},{2})'.format(gn,sc,t)
+                gshed = BLmodel.model.getVarByName(var_name)
+                CostDA_Gas += defaults.VOLL*gshed.x
+
+    mGDA_Calc_Cost = CostDA_Gas
+        
+    Dualobj_mGDA=Get_Dual_Obj(BLmodel,BLmodel.mGDA_COMP)
+
+    Res=Get_Dual_Obj2(BLmodel,BLmodel.mGDA_COMP)
+
+    w=Res.NewObj
+    x=Res.Obj_lam
+    y=Res.Obj_mu_lt
+    z=Res.Obj_mu_gt
+    
+    print('\n\n')
+    print(w.getValue())
+#    print(w.getValue())
+    print('\n\n')
+    print(x.getValue())
+#    print(x.getValue())
+    print('\n\n')
+    print(y.getValue())
+#    print(y.getValue())
+    print('\n\n')
+    print(z)
+#    print(z.getValue())
+        
+    mGDA_Dual_Cost = Dualobj_mGDA.getValue()
+    
+    Error= mGDA_Calc_Cost-mGDA_Dual_Cost   
+
+    print('GDA \tCost_Calc={0:.2f} \t Cost_Dual={1:.2f} \t Error={2:.2f}'.format( 
+            mGDA_Calc_Cost, mGDA_Dual_Cost,Error))
+
+def Compare_GRT_DUAL_OBJ(BLmodel):
+    CostRT_Gas = 0.0
+    for t in BLmodel.edata.time:
+         for sc in BLmodel.edata.scen_wgp.keys():
+             for gw in BLmodel.gdata.wells:
+                 
+                 Prob=BLmodel.edata.scen_wgp[sc][2]
+                 
+                 var_nameUp='gprodUp({0},{1},{2})'.format(gw,sc,t)
+                 var_nameDn='gprodDn({0},{1},{2})'.format(gw,sc,t)
+                 
+                 P_UP=defaults.RESERVES_UP_PREMIUM_GASWELL
+                 P_DN=defaults.RESERVES_DN_PREMIUM_GASWELL
+
+                 gprodUp = BLmodel.model.getVarByName(var_nameUp)
+                 gprodDn = BLmodel.model.getVarByName(var_nameDn)
+                
+                                
+                 cost=BLmodel.gdata.wellsinfo.Cost[gw]
+                 CostRT_Gas += Prob* cost*(P_UP*gprodUp.x-P_DN*gprodDn.x)
+          
+             for gn in BLmodel.gdata.gnodes:
+                 var_name='gshed({0},{1},{2})'.format(gn,sc,t)
+                 gshed = BLmodel.model.getVarByName(var_name)
+                 CostRT_Gas += Prob*defaults.VOLL*gshed.x
+
+    mGRT_Calc_Cost = CostRT_Gas
+        
+    Dualobj_mGRT=Get_Dual_Obj(BLmodel,BLmodel.mGRT_COMP)
+    
+    mGRT_Dual_Cost = Dualobj_mGRT.getValue()
+    
+    Error= mGRT_Calc_Cost-mGRT_Dual_Cost   
+
+    print('GRT \tCost_Calc={0:.2f} \t Cost_Dual={1:.2f} \t Error={2:.2f}'.format( 
+            mGRT_Calc_Cost, mGRT_Dual_Cost,Error))
+
+
+
 
 def Compare_SEDA_DUAL_OBJ_DA(BLmodel):
     CostDA_Elec = 0.0
@@ -1381,7 +1552,7 @@ def Compare_SEDA_DUAL_OBJ_DA(BLmodel):
         for gen in BLmodel.edata.nongfpp:
             var_name='Pgen({0},{1})'.format(gen,t)
             Pgen = BLmodel.model.getVarByName(var_name)
-            CostDA_Elec = CostDA_Elec + BLmodel.edata.generatorinfo.lincost[gen]*Pgen.x
+            CostDA_Elec += BLmodel.edata.generatorinfo.lincost[gen]*Pgen.x
             
         for gen in BLmodel.edata.gfpp:
             var_name='Pgen({0},{1})'.format(gen,t)
@@ -1391,7 +1562,7 @@ def Compare_SEDA_DUAL_OBJ_DA(BLmodel):
             var=BLmodel.model.getVarByName(var_name)
             price=BLmodel.model.getVarByName(Lambda_name)
             
-            CostDA_Elec = CostDA_Elec + 8*price.x*var.x
+            CostDA_Elec +=  8*price.x*var.x
             
             var_name = 'PgenSC({0},{1})'.format(gen,t)
             Contract_name ='ContractPrice({0})'.format(BLmodel.edata.generatorinfo.origin_gas[gen])
@@ -1404,9 +1575,13 @@ def Compare_SEDA_DUAL_OBJ_DA(BLmodel):
     
     mSEDA_Calc_Cost = CostDA_Elec
     
-    mSEDA_Dual_Cost = BLmodel.Dualobj_mEDA.getValue()
+    Dualobj_mEDA=Get_Dual_Obj(BLmodel,BLmodel.mEDA_COMP)
+    
+    mSEDA_Dual_Cost = Dualobj_mEDA.getValue()
+    
     Error= mSEDA_Calc_Cost-mSEDA_Dual_Cost
-    print('Contract:{3:.2f} \tEDA Cost_Calc={0:.2f} \t EDA Cost_Dual={1:.2f} \t Error={2:.2f}'.format( mSEDA_Calc_Cost, mSEDA_Dual_Cost,Error,contract.x))  
+    
+    print('SEDA Contract:{3:.2f} \tEDA Cost_Calc={0:.2f} \t EDA Cost_Dual={1:.2f} \t Error={2:.2f}'.format( mSEDA_Calc_Cost, mSEDA_Dual_Cost,Error,contract.x))  
     
    
 
