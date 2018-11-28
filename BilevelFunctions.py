@@ -25,8 +25,9 @@ import numpy as np
 import itertools
 import pickle
 import re
+import sys
 import defaults
-
+import time
 
 
 def Find_NC_Profit(BLmodel):
@@ -58,20 +59,53 @@ def Find_NC_Profit(BLmodel):
              
     Change_ContractParameters(BLmodel,SCdata,SCP)
     
+    
+#   Get Variables
+    Profit = BLmodel.model.getVarByName('Profit')
+    ContractPrice=BLmodel.model.getVarByName('ContractPrice(ng102)')
+
+#   Remove the profit limit becuase this run is to find the limit and model was built with arbitrary limit
     con=BLmodel.model.getConstrByName('ProfitLimit')
     BLmodel.model.remove(con)
     
+    
+    Contract_Zero=BLmodel.model.addConstr(ContractPrice==0.0,name='Contract_zero')
+#    BLmodel.model.addConstr(Profit<=8000,name='ProfitLimit')
+    
+
+#    BLmodel.model.addConstr(ContractPrice==0.0,name='Contract_zero')
+#    BLmodel.model.setObjective(ContractPrice,gb.GRB.MINIMIZE)
+    
     BLmodel.model.update()
-    BLmodel.model.setParam( 'OutputFlag',False )
+    BLmodel.model.reset()
+    
+#    BLmodel.model.params.Method = 2
+#    BLmodel.model.params.BranchDir = -1
+    BLmodel.model.params.AggFill = 10
+    BLmodel.model.params.Presolve = 2
+    BLmodel.model.setParam('ImproveStartTime',10)
+    BLmodel.model.setParam( 'MIPFocus',1 )
+    BLmodel.model.setParam( 'OutputFlag',True )
+    
+    
     BLmodel.model.optimize()
+    
+    df_var,df_con=BilevelFunctions.get_Var_Con(BLmodel)
+    print('Optimization Finished')
+    
+    BLmodel.model.resetParams()
+    
+    
+    
     NC_Profit = BLmodel.model.ObjVal
     
-    Profit = BLmodel.model.getVarByName('Profit')
     print('\n Profit without Contracts is {0}'.format(Profit))
+    
+#--- Reset to the original
+    BLmodel.model.remove(Contract_Zero)
     BLmodel.model.addConstr(Profit<=NC_Profit,name='ProfitLimit')
     BLmodel.model.update()
 
-#--- Reset to the original
     print('Resetting the model to the first contract')
     All_SCdata = pd.read_csv(defaults.SCdata)
     All_SCdata.lambdaC=All_SCdata.lambdaC.astype(float)
@@ -92,11 +126,11 @@ def Find_NC_Profit(BLmodel):
         for t in BLmodel.edata.time:
             tt = BLmodel.edata.time.index(t)+1
             SCP[sc,t] = 1.0 if (tt >= SCdata.ts[sc] and tt<= SCdata.te[sc]) else 0.0
-             
+    print('Changing Contract Parameters Back to Original')      
     Change_ContractParameters(BLmodel,SCdata,SCP)
 
 
-
+    print('\n No Contract Profit found and included in model \n\n')
 
 
 # Stochastic Day-ahead Electricity dispatch
@@ -203,10 +237,10 @@ def Change_ContractParameters(BLmodel,SCdata,SCP):
 
 
 
-    sclim = list('k{0}'.format(k) for k in range(3))
+    
     for gas_node in BLmodel.edata.Map_Gn2Eg:
         for t in BLmodel.edata.time:
-            for k in sclim:
+            for k in BLmodel.gdata.sclim:
                 con_name='gas_balance_da({0},{1},{2})'.format(gas_node,k,t)
                 con=BLmodel.model.getConstrByName(con_name)
                 con_row=BLmodel.model.getRow(con)
@@ -242,8 +276,8 @@ def Change_ContractParameters(BLmodel,SCdata,SCP):
     
     for t in BLmodel.edata.time:
         for g in BLmodel.edata.gfpp:
-            Pcmax=SCdata.PcMax[sc,gen]*SCP[(sc,g),t] 
-            Pcmin=SCdata.PcMin[sc,gen]*SCP[(sc,g),t]
+            Pcmax=SCdata.PcMax[sc,g]*SCP[(sc,g),t] 
+            Pcmin=SCdata.PcMin[sc,g]*SCP[(sc,g),t]
             Pmax=BLmodel.edata.generatorinfo.capacity[g]
             
             name = 'PgenSCmax({0},{1})'.format(g,t)
@@ -281,16 +315,18 @@ def Change_ContractParameters(BLmodel,SCdata,SCP):
 
 
 def ADD_mGRT_Linking_Constraints(BLmodel):
-    print('Linking mGRT constraints')
+
 # 1. Link the Gas DA well production to the Gas real time up/down regulation
 # regulation is an inequality constraint so also change the SOS constraints 
 #    
 # 2. Link the DA flows to the rt gas balance equation  
 
 #--    1.
+    count=1
     for gw in BLmodel.gdata.wells:
         for s in BLmodel.edata.windscen_index:
             for t in BLmodel.edata.time:
+ 
                 con_name_up = 'gprodUp_max({0},{1},{2})'.format(gw,s,t)
                 con_name_up_SOS = 'SOS1_gprodUp_max({0},{1},{2})'.format(gw,s,t)
                 con_name_dn = 'gprodDn_max({0},{1},{2})'.format(gw,s,t)
@@ -307,7 +343,8 @@ def ADD_mGRT_Linking_Constraints(BLmodel):
                     new_con=new_con+con_row.getVar(i)*con_row.getCoeff(i)
                 BLmodel.model.remove(con)
                 BLmodel.model.addConstr(new_con<=Gwell_max-var,name=con_name_up)
-                BLmodel.model.update()  
+                sys.stdout.write('\r'+"Linking mGRT constraints: " +str(count) )
+                count=count+1
                 
                 conSOS=BLmodel.model.getConstrByName(con_name_up_SOS)
                 con_rowSOS=BLmodel.model.getRow(conSOS)
@@ -317,8 +354,8 @@ def ADD_mGRT_Linking_Constraints(BLmodel):
                 new_conSOS=new_conSOS+var
                 BLmodel.model.remove(conSOS)
                 BLmodel.model.addConstr(new_conSOS==Gwell_max,name=con_name_up_SOS)
-                BLmodel.model.update()  
-                
+                sys.stdout.write('\r'+"Linking mGRT constraints: " +str(count) )
+                count=count+1     
                 
                 
                 # lower Limit
@@ -329,7 +366,8 @@ def ADD_mGRT_Linking_Constraints(BLmodel):
                     new_con=new_con+con_row.getVar(i)*con_row.getCoeff(i)
                 BLmodel.model.remove(con)
                 BLmodel.model.addConstr(new_con<=var,name=con_name_dn)
-                BLmodel.model.update()  
+                sys.stdout.write('\r'+"Linking mGRT constraints: " +str(count) )
+                count=count+1
                 
                 conSOS=BLmodel.model.getConstrByName(con_name_dn_SOS)
                 con_rowSOS=BLmodel.model.getRow(conSOS)
@@ -339,12 +377,14 @@ def ADD_mGRT_Linking_Constraints(BLmodel):
                 new_conSOS=new_conSOS-var
                 BLmodel.model.remove(conSOS)
                 BLmodel.model.addConstr(new_conSOS==0.0,name=con_name_dn_SOS)
-                BLmodel.model.update()  
-                
+                sys.stdout.write('\r'+"Linking mGRT constraints: " +str(count) )
+                count=count+1
+    BLmodel.model.update()           
 #--    2.                
     for gn in BLmodel.gdata.gnodes:
         for s in BLmodel.edata.windscen_index:
             for t in BLmodel.edata.time:
+                
                 con_name='gas_balance_rt({0},{1},{2})'.format(gn,s,t)
                 con = BLmodel.model.getConstrByName(con_name)
                 con_row=BLmodel.model.getRow(con)
@@ -381,17 +421,21 @@ def ADD_mGRT_Linking_Constraints(BLmodel):
                     
                 BLmodel.model.remove(con)
                 BLmodel.model.addConstr(new_con==0.0,name=con_name)
-                BLmodel.model.update() 
+                sys.stdout.write('\r'+"Linking mGRT constraints: " +str(count) )
+                count=count+1
+    
+    BLmodel.model.update()
+    print('\n')
                 
 
 
 def ADD_mGDA_Linking_Constraints(BLmodel):
     print('Linking mGDA constraints')
     
-    sclim = list('k{0}'.format(k) for k in range(3))
+    
     for gas_node in BLmodel.edata.Map_Gn2Eg:
         for t in BLmodel.edata.time:
-            for k in sclim:
+            for k in BLmodel.gdata.sclim:
                 con_name='gas_balance_da({0},{1},{2})'.format(gas_node,k,t)
                 con=BLmodel.model.getConstrByName(con_name)
                 con_row=BLmodel.model.getRow(con)
@@ -583,13 +627,20 @@ def Add_Vars(BLmodel,COMP):
         BLmodel.model.addVar(lb=LB, ub=UB, name=name)
     
     BLmodel.model.update()
+    for var in COMP.model.getVars():
+        name=var.VarName
+        BLmodel.model.getVarByName(name).Start=0.0
+
     
     if COMP.model.status==2:
         for var in COMP.model.getVars():
             name=var.VarName
             value=var.x
             BLmodel.model.getVarByName(name).Start=value
+#            
 
+#    
+    BLmodel.model.update()
 
 def Add_Constrs(BLmodel,COMP):
     for con in COMP.model.getConstrs():
@@ -876,23 +927,35 @@ def DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP):
         name='ContractPrice({0})'.format(node)
         BLmodel.model.addVar(lb=0.0,name=name)
         BLmodel.model.update()
-       
+    
+    
+    start_time = time.time()
     ADD_mSEDA_DA_Linking_Constraints(BLmodel)
+    print("This took "+ str(time.time() - start_time)+ " to run")
+    
+    start_time = time.time()
     ADD_mSEDA_RT_Linking_Constraints(BLmodel)
+    print("This took "+ str(time.time() - start_time)+ " to run")
+    
+    start_time = time.time()
     ADD_mGDA_Linking_Constraints(BLmodel)
+    print("This took "+ str(time.time() - start_time)+ " to run")
+    
+    start_time = time.time()
     ADD_mGRT_Linking_Constraints(BLmodel)       
+    print("This took "+ str(time.time() - start_time)+ " to run")
     
     
     print('Get Original Objectives and Dual Objective')
     Dualobj_mSEDA=Get_Dual_Obj(BLmodel,mSEDA_COMP)
-    Dualobj_mGDA =Get_Dual_Obj(BLmodel,mGDA_COMP)
-    Dualobj_mGRT=Get_Dual_Obj(BLmodel,mGRT_COMP)
+#    Dualobj_mGDA =Get_Dual_Obj(BLmodel,mGDA_COMP)
+#    Dualobj_mGRT=Get_Dual_Obj(BLmodel,mGRT_COMP)
     
-    Obj_mSEDA=Get_Obj(BLmodel,mSEDA_COMP)
+#    Obj_mSEDA=Get_Obj(BLmodel,mSEDA_COMP)
     Obj_mGDA =Get_Obj(BLmodel,mGDA_COMP)
     Obj_mGRT=Get_Obj(BLmodel,mGRT_COMP)
     
-    BLmodel.Dualobj_mSEDA=Dualobj_mSEDA
+#    BLmodel.Dualobj_mSEDA=Dualobj_mSEDA
     
     
     
@@ -931,7 +994,7 @@ def DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP):
         for gn in BLmodel.gdata.gnodes:
             name = 'lambda_gas_balance_da({0},k0,{1})'.format(gn,t)
             GasPrice = BLmodel.model.getVarByName(name)
-            Demand= BLmodel.gdata.gasload['ng101']['t1']
+            Demand= BLmodel.gdata.gasload[gn][t]
             Non_gen_Income=Non_gen_Income+Demand*GasPrice
             
     
@@ -948,6 +1011,36 @@ def DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP):
     
 
     Income = Non_gen_Income + (Dualobj_mSEDA-Non_Gas_gencost)
+    
+#    Obj_mGDA=0.0
+#    Obj_mGRT=0.0
+#    
+#    for t in BLmodel.edata.time:
+#        var=BLmodel.model.getVarByName('gprod(gw1,k0,{0})'.format(t))
+#        Obj_mGDA+=BLmodel.gdata.wellsinfo.Cost['gw1']*var*var
+#        
+#        for k in ['k0','k1','k2']:
+#            var=BLmodel.model.getVarByName('gshed_da(ng101,{1},{0})'.format(t,k))
+#            Obj_mGDA+=defaults.VOLL*var
+#        
+#        for s in BLmodel.edata.scenarios:
+#            
+#            var=BLmodel.model.getVarByName('gprodUp(gw1,{1},{0})'.format(t,s))
+#            P_UP=defaults.RESERVES_UP_PREMIUM_GASWELL
+#            Prob=BLmodel.edata.scen_wgp[s][2]
+#            Cost=BLmodel.gdata.wellsinfo.Cost['gw1']
+#            Obj_mGRT+=P_UP*Prob*Cost*var
+#    
+#            var=BLmodel.model.getVarByName('gprodDn(gw1,{1},{0})'.format(t,s))
+#            P_DN=defaults.RESERVES_DN_PREMIUM_GASWELL
+#            Prob=BLmodel.edata.scen_wgp[s][2]
+#            Cost=BLmodel.gdata.wellsinfo.Cost['gw1']
+#            Obj_mGRT-=P_DN*Prob*Cost*var
+#            
+#            var=BLmodel.model.getVarByName('gshed(ng101,{1},{0})'.format(t,s))
+#            Obj_mGRT+=Prob*defaults.VOLL * var
+    
+
 
     Cost   = Obj_mGDA  + Obj_mGRT
 
@@ -1065,11 +1158,7 @@ def DA_Model(BLmodel,mEDA_COMP,mGDA_COMP):
 def Loop_Contracts_Price(BLmodel):
     
     
-    BLmodel.model.resetParams()
-    BLmodel.model.Params.timelimit = 100.0
-    #BLmodel.model.Params.MIPGapAbs=0.05
-    BLmodel.model.Params.MIPFocus = 1
-    BLmodel.model.setParam( 'OutputFlag',False)
+
 
     
     All_SCdata = pd.read_csv(defaults.SCdata_NoPrice)
@@ -1105,15 +1194,16 @@ def Loop_Contracts_Price(BLmodel):
         folder=defaults.folder+'/LPModels/'
         BLmodel.model.write(folder+'BLmodel_'+contract+'.lp')
 
-        #BLmodel.model.reset()
-        #BLmodel.model.resetParams()
+        BLmodel.model.reset()
+        BLmodel.model.resetParams()
+        BLmodel.model.Params.timelimit = 50.0
+        BLmodel.model.setParam('ImproveStartGap',1)
+        BLmodel.model.Params.MIPFocus = 3
+        BLmodel.model.setParam( 'OutputFlag',True)
     
         BLmodel.model.optimize() 
         
-        Compare_SEDA_DUAL_OBJ(BLmodel)
-        Compare_GDA_DUAL_OBJ(BLmodel)
-        Compare_GRT_DUAL_OBJ(BLmodel)
-        Compare_BLmodelObjective(BLmodel)
+
        
         gas_nodes = list(BLmodel.edata.Map_Eg2Gn.values())
         # result may be list of lists, so flatted
@@ -1123,6 +1213,11 @@ def Loop_Contracts_Price(BLmodel):
         
         Result = {}#defaultdict(dict)    
         if BLmodel.model.status==2:
+                
+            Compare_SEDA_DUAL_OBJ(BLmodel)
+            Compare_GDA_DUAL_OBJ(BLmodel)
+            Compare_GRT_DUAL_OBJ(BLmodel)
+            Compare_BLmodelObjective(BLmodel)
 #            CheckDualObjectives(BLmodel)
             for node in GasGenNodes:
                 name='ContractPrice({0})'.format(node)
@@ -1267,7 +1362,7 @@ def Compare_BLmodelObjective(BLmodel):
     ContractedUp=df_var[df_var.Name.str.startswith('RUpSC(g1,s1')].Value.sum()
     ContractedDn=df_var[df_var.Name.str.startswith('RDnSC(g1,s1')].Value.sum()
     
-    print('mSEDA Contract Price:{1:.2f} \tModel Obj:{0:.2f} \t Calc Obj{2:.2f} \t Error={3:.2f}'.format(
+    print('\n Contract Price={1:.2f} \tModel Obj={0:.2f} \t Calc Obj={2:.2f} \t Error={3:.2f}'.format(
             Profit_Model,contract.x,Profit,Error))
 
 
@@ -1360,9 +1455,9 @@ def PrintInfo(BLmodel):
 
 def get_Var_Con(modelObject):
     if modelObject.model.status==2:
-        df_var=pd.DataFrame([[var.VarName,var.x,var.Start] 
+        df_var=pd.DataFrame([[var.VarName,var.x,] 
                     for var in modelObject.model.getVars()],
-                    columns=['Name','Value','Initial'])
+                    columns=['Name','Value'])
     else:
         df_var=pd.DataFrame([[var.VarName,var.Start] 
                     for var in modelObject.model.getVars()],
@@ -1453,8 +1548,7 @@ def Compare_SEDA_DUAL_OBJ(BLmodel):
         
     Dualobj_mSEDA=Get_Dual_Obj(BLmodel,BLmodel.mSEDA_COMP)
     
-    print(Dualobj_mSEDA.getValue())
-    
+  
     mSEDA_Dual_Cost = Dualobj_mSEDA.getValue()
     
     Error= mSEDA_Calc_Cost-mSEDA_Dual_Cost   

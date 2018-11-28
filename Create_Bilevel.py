@@ -68,11 +68,11 @@ BilevelFunctions.DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP)
 
 BilevelFunctions.Find_NC_Profit(BLmodel)
 
-BLmodel.model.setParam( 'OutputFlag',False )
+BLmodel.model.setParam( 'OutputFlag',True )
 
-BLmodel.model.optimize()
+#BLmodel.model.optimize()
 
-df_var,df_con=BilevelFunctions.get_Var_Con(BLmodel)
+#df_var,df_con=BilevelFunctions.get_Var_Con(BLmodel)
 
 
 
@@ -85,12 +85,11 @@ df_var,df_con=BilevelFunctions.get_Var_Con(BLmodel)
 
 
 
-df_var,df_con=BilevelFunctions.get_Var_Con(BLmodel)
+#
+#Contract_name = 'ContractPrice(ng102)'
+#var = BLmodel.model.getVarByName(Contract_name)
 
-Contract_name = 'ContractPrice(ng102)'
-var = BLmodel.model.getVarByName(Contract_name)
 
-print(var.x)
 
 #contractprices=list(np.linspace(0,10,num=20,endpoint=False))
 #contractprices=[1, 2, 4, 9]

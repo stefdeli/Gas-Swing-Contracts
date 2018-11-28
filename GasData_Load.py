@@ -148,16 +148,18 @@ def _load_SCinfo(self):
             tt = self.gdata.time.index(t)+1            
             self.gdata.SCP[sc,t] = 1.0 if (tt>= self.gdata.SCdata.ts[sc] and tt<= self.gdata.SCdata.te[sc]) else 0.0
 
-        
-def _ActiveSCinfo(self,dispatchElecDA):
-    
+
     '''
     k0 : no gas reserve activation from swing contract
     k1 : swing contract activation to max capacity
     k2 : swing contract activation to min capacity
     '''
     
-    self.gdata.sclim = list('k{0}'.format(k) for k in range(3))
+    self.gdata.sclim = list('k{0}'.format(k) for k in range(1))
+        
+def _ActiveSCinfo(self,dispatchElecDA):
+    
+
     
     swingcontracts = self.gdata.swingcontracts 
     

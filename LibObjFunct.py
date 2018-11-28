@@ -111,7 +111,8 @@ def _build_objective_gasDA(self):
     gnodes = self.gdata.gnodes
     
     k_obj = ['k0'] # Optimize for 'central case' k0
-    k_all=  ['k0','k1','k2']
+    k_all=  self.gdata.sclim
+
             
     Cost=pd.DataFrame(index=time,columns=wells)
     #print('\n\n Objective function altered to remove degeneracy\n\n')
@@ -130,7 +131,7 @@ def _build_objective_gasDA(self):
         Storage=0.0
         
     Cost= gb.quicksum(Cost[gw][t]*var.gprod[gw,k,t] for gw in wells for k in k_obj for t in time)  
-    
+         
     LostLoad= gb.quicksum(defaults.VOLL*var.gas_shed[gn,k,t] for gn in gnodes for t in time for k in k_all)
         
         
