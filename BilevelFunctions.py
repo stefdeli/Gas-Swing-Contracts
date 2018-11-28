@@ -1113,6 +1113,7 @@ def Loop_Contracts_Price(BLmodel):
         Compare_SEDA_DUAL_OBJ(BLmodel)
         Compare_GDA_DUAL_OBJ(BLmodel)
         Compare_GRT_DUAL_OBJ(BLmodel)
+        Compare_BLmodelObjective(BLmodel)
        
         gas_nodes = list(BLmodel.edata.Map_Eg2Gn.values())
         # result may be list of lists, so flatted
@@ -1252,7 +1253,10 @@ def Compare_BLmodelObjective(BLmodel):
 
     Cost= CostDA+CostRT
     Income=IncomeDA+IncomeSCDA+IncomeRT+IncomeSCRT
-    Profit=Cost-Income
+    Profit=Income-Cost
+    
+    Profit_Model= BLmodel.model.ObjVal
+    Error=Profit-Profit_Model
 #    print('Contract:{3:.2f} \t Profit={4:.2f} \tCost={0:.2f} \t Income={1:.2f} \t IncomeSC={2:.2f}'.format(Cost,Income,IncomeSC,contract.x,-Profit))
 #    print('Contract:{2:.2f} \tDual:{0:.2f} \t Calc:{1:.2f} \t Error:{3:.2e}'.format(BLmodel.model.ObjVal,Profit,contract.x,BLmodel.model.ObjVal-Profit))
 #    print('Contract={0:.2f} \tIncomeDA={1:.2f} \tIncomeSCDA={2:.2f} \tIncomeRT={3:.2f} \tIncomeSCRT{4:.2f}'.format(contract.x,IncomeDA,IncomeSCDA,IncomeRT,IncomeSCRT))
@@ -1263,8 +1267,8 @@ def Compare_BLmodelObjective(BLmodel):
     ContractedUp=df_var[df_var.Name.str.startswith('RUpSC(g1,s1')].Value.sum()
     ContractedDn=df_var[df_var.Name.str.startswith('RDnSC(g1,s1')].Value.sum()
     
-    print('mSEDA Contract:{1:.2f} \tDual:{0:.2f} \t Calc{2:.2f} \t DA_PgenSC={3:.2f} \t DA_RUpSC={4:.2f} \t RDnSC={5:.2f}'.format(
-            BLmodel.model.ObjVal,contract.x,Profit,ContractedDA,ContractedUp,ContractedDn))
+    print('mSEDA Contract Price:{1:.2f} \tModel Obj:{0:.2f} \t Calc Obj{2:.2f} \t Error={3:.2f}'.format(
+            Profit_Model,contract.x,Profit,Error))
 
 
 def Compare_BLmodelObjective_DA(BLmodel):
@@ -1455,7 +1459,7 @@ def Compare_SEDA_DUAL_OBJ(BLmodel):
     
     Error= mSEDA_Calc_Cost-mSEDA_Dual_Cost   
 
-    print('SEDA Contract:{3:.2f} \tCost_Calc={0:.2f} \t Cost_Dual={1:.2f} \t Error={2:.2f}'.format( mSEDA_Calc_Cost, mSEDA_Dual_Cost,Error,contract.x))  
+    print('SEDA  \tCost_Calc={0:.2f} \t Cost_Dual={1:.2f} \t Error={2:.2f}'.format( mSEDA_Calc_Cost, mSEDA_Dual_Cost,Error))  
 
 
 
@@ -1479,31 +1483,30 @@ def Compare_GDA_DUAL_OBJ(BLmodel):
         
     Dualobj_mGDA=Get_Dual_Obj(BLmodel,BLmodel.mGDA_COMP)
 
-    Res=Get_Dual_Obj2(BLmodel,BLmodel.mGDA_COMP)
 
-    w=Res.NewObj
-    x=Res.Obj_lam
-    y=Res.Obj_mu_lt
-    z=Res.Obj_mu_gt
-    
-    print('\n\n')
-    print(w.getValue())
+#    print(Res.NewObj)   
+#    print('\n\n')
 #    print(w.getValue())
-    print('\n\n')
-    print(x.getValue())
+##    print(w.getValue())
+#    print('\n\n')
 #    print(x.getValue())
-    print('\n\n')
-    print(y.getValue())
+##    print(x.getValue())
+#    print('\n\n')
 #    print(y.getValue())
-    print('\n\n')
-    print(z)
+##    print(y.getValue())
+#    print('\n\n')
+#    print(z)
 #    print(z.getValue())
-        
+    df_var,df_con=get_Var_Con(BLmodel)
+
+    Temp=df_var[df_var.Value.abs()>=1e-5][['Name','Value']]
+#    print(Temp[Temp.Name.str.contains('gprod')]   )
+#    print(Temp[Temp.Name.str.startswith(('gprod','mu_gprod(','lambda_gas_balance_da','mu_gshed_da_max','mu_gprod_max'))]   )
     mGDA_Dual_Cost = Dualobj_mGDA.getValue()
     
     Error= mGDA_Calc_Cost-mGDA_Dual_Cost   
 
-    print('GDA \tCost_Calc={0:.2f} \t Cost_Dual={1:.2f} \t Error={2:.2f}'.format( 
+    print('GDA \tCost_Calc={0:.2f} \t Cost_Dual={1:.2f} \t Error={2:.2f} Power should be constant'.format( 
             mGDA_Calc_Cost, mGDA_Dual_Cost,Error))
 
 def Compare_GRT_DUAL_OBJ(BLmodel):
@@ -1540,7 +1543,7 @@ def Compare_GRT_DUAL_OBJ(BLmodel):
     
     Error= mGRT_Calc_Cost-mGRT_Dual_Cost   
 
-    print('GRT \tCost_Calc={0:.2f} \t Cost_Dual={1:.2f} \t Error={2:.2f}'.format( 
+    print('GRT \tCost_Calc={0:.2f} \t Cost_Dual={1:.2f} \t Error={2:.2f} Power should be constant'.format( 
             mGRT_Calc_Cost, mGRT_Dual_Cost,Error))
 
 
