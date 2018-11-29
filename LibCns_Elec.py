@@ -176,8 +176,8 @@ def _build_constraints_elecDA(self):
             self.constraints[name]= expando()
             cc=self.constraints[name]
             cc.lhs = var.WindDA[wf,t]
-#            cc.rhs= self.edata.exp_wind[wf][t]
-            cc.rhs=  self.edata.windinfo.capacity[wf]
+            cc.rhs= self.edata.exp_wind[wf][t]
+#            cc.rhs=  self.edata.windinfo.capacity[wf]
             cc.expr = m.addConstr(cc.lhs <= cc.rhs,name=name)
             
     #--- Swing constract constraints

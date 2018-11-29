@@ -149,7 +149,7 @@ BLmodel.model.reset()
 
 BLmodel.model.Params.timelimit = 50.0
 BLmodel.model.params.Method = 2
-#    BLmodel.model.params.BranchDir = -1
+BLmodel.model.params.BranchDir = -1
 #BLmodel.model.params.AggFill = 10
 #BLmodel.model.params.Presolve = 2
 #BLmodel.model.setParam('PreSOS1BigM',1e10)
@@ -162,3 +162,12 @@ BLmodel.model.setParam( 'OutputFlag',True )
 BLmodel.model.optimize()
 
 df_var,df_con=BilevelFunctions.get_Var_Con(BLmodel)
+
+
+print(df_var[df_var.Name.str.contains('lambda_gas')])
+
+print(df_var[df_var.Name.str.startswith('Pgen')])
+
+print(df_var[df_var.Name.str.startswith('gprod')])
+
+
