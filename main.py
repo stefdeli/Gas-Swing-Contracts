@@ -59,115 +59,47 @@ mGRT_COMP.optimize()
 #--- Bilevel Model (All subproblems together)
        
 f2d=False         
-Profit_NoContract=708
-BLmodel= modelObjects.Bilevel_Model(f2d,Profit_NoContract)
+mSEDACost_NoContract=708
+BLmodel= modelObjects.Bilevel_Model(f2d,mSEDACost_NoContract)
 
 BilevelFunctions.DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP)
 
 
-print('Finding the Profit with no contracts')
-    # Find the no contract profit by setting all the contract sizes to 0 and 
-All_SCdata = pd.read_csv(defaults.SCdata)
-All_SCdata.lambdaC=All_SCdata.lambdaC.astype(float)
-Sc2Gen = list()
-for sc in All_SCdata.GasNode:
-    Sc2Gen.append( BLmodel.edata.Map_Gn2Eg[sc])
-        
-All_SCdata['GFPP']=pd.DataFrame(Sc2Gen)         
-All_SCdata.set_index(['SC_ID','GFPP'], inplace=True) 
-contract=All_SCdata.index.get_level_values(0)[0]
-Generators=All_SCdata.index.get_level_values(1).tolist()
-for g in Generators:
-    All_SCdata.at[(contract,g),'PcMin']=0.0
-    All_SCdata.at[(contract,g),'PcMax']=0.0
-    
-SCdata = All_SCdata.iloc[All_SCdata.index.get_level_values(0) == contract]
-        
-SCP = defaultdict(list)
-      
-for sc in SCdata.index:
-    for t in BLmodel.edata.time:
-        tt = BLmodel.edata.time.index(t)+1
-        SCP[sc,t] = 0.0      
-#        SCP[sc,t] = 1.0 if (tt >= SCdata.ts[sc] and tt<= SCdata.te[sc]) else 0.0
-         
-BilevelFunctions.Change_ContractParameters(BLmodel,SCdata,SCP)
 
 
-#   Get Variables
-Profit = BLmodel.model.getVarByName('Profit')
-ContractPrice=BLmodel.model.getVarByName('ContractPrice(ng101)')
-
-#   Remove the profit limit becuase this run is to find the limit and model was built with arbitrary limit
-con=BLmodel.model.getConstrByName('ProfitLimit')
-BLmodel.model.remove(con)
+BilevelFunctions.Find_NC_Profit(BLmodel)
 
 
-Contract_Zero=BLmodel.model.addConstr(ContractPrice==0.0,name='Contract_zero')
-BLmodel.model.addConstr(Profit<=12000,name='ProfitLimit')
-
-#for t in BLmodel.edata.time:
-#    name='dLag/gprod(gw1,k0,{0})'.format(t)
-#    con=BLmodel.model.getConstrByName(name)
-#    con_row=BLmodel.model.getRow(con)
-#    new_con=BilevelFunctions.Get_LHS_Constraint(con_row)
-#    var=BLmodel.model.getVarByName('gprod(gw1,k0,{0})'.format(t))
-#    new_con+=BLmodel.gdata.wellsinfo.Cost['gw1']*var
-#    BLmodel.model.remove(con)
-#    BLmodel.model.addConstr(new_con==0,name=name)
-#    
-#
-#    for s in BLmodel.edata.scenarios:
-#        
-#        name='dLag/gprodUp(gw1,{1},{0})'.format(t,s)
-#        con=BLmodel.model.getConstrByName(name)
-#        con_row=BLmodel.model.getRow(con)
-#        new_con=BilevelFunctions.Get_LHS_Constraint(con_row)
-#        var=BLmodel.model.getVarByName('gprodUp(gw1,{1},{0})'.format(t,s))
-#        P_UP=defaults.RESERVES_UP_PREMIUM_GASWELL
-#        Prob=BLmodel.edata.scen_wgp[s][2]
-#        Cost=BLmodel.gdata.wellsinfo.Cost['gw1']
-#        new_con+=P_UP*Prob*Cost*var
-#        BLmodel.model.remove(con)
-#        BLmodel.model.addConstr(new_con==0,name=name)
-#
-#        name='dLag/gprodDn(gw1,{1},{0})'.format(t,s)
-#        con=BLmodel.model.getConstrByName(name)
-#        con_row=BLmodel.model.getRow(con)
-#        new_con=BilevelFunctions.Get_LHS_Constraint(con_row)
-#        var=BLmodel.model.getVarByName('gprodDn(gw1,{1},{0})'.format(t,s))
-#        P_DN=defaults.RESERVES_DN_PREMIUM_GASWELL
-#        Prob=BLmodel.edata.scen_wgp[s][2]
-#        Cost=BLmodel.gdata.wellsinfo.Cost['gw1']
-#        new_con-=P_DN*Prob*Cost*var
-#        BLmodel.model.remove(con)
-#        BLmodel.model.addConstr(new_con==0,name=name)
 
 
-BLmodel.model.update()
-BLmodel.model.reset()
+BLmodel.model.write(defaults.folder+'/LPModels/BLmodel.lp')
 
-BLmodel.model.Params.timelimit = 50.0
-BLmodel.model.params.Method = 2
-BLmodel.model.params.BranchDir = -1
+
+BLmodel.model.Params.timelimit = 10.0
+#BLmodel.model.Params.Method = 2
+#BLmodel.model.Params.BranchDir = -1
+#BLmodel.model.Params.DegenMoves=10
 #BLmodel.model.params.AggFill = 10
 #BLmodel.model.params.Presolve = 2
 #BLmodel.model.setParam('PreSOS1BigM',1e10)
-BLmodel.model.setParam('ImproveStartTime',10)
-BLmodel.model.setParam( 'MIPFocus',3 )
+#BLmodel.model.setParam('ImproveStartTime',50)
+#BLmodel.model.setParam( 'MIPFocus',3 )
 BLmodel.model.setParam( 'OutputFlag',True )
 #BLmodel.model.save('model.mst')
-
 
 BLmodel.model.optimize()
 
 df_var,df_con=BilevelFunctions.get_Var_Con(BLmodel)
+print(df_var[df_var.Name.str.contains('ContractPrice')])
 
 
-print(df_var[df_var.Name.str.contains('lambda_gas')])
 
-print(df_var[df_var.Name.str.startswith('Pgen')])
 
-print(df_var[df_var.Name.str.startswith('gprod')])
+
+
+
+
+
+
 
 

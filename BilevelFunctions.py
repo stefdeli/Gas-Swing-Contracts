@@ -31,82 +31,92 @@ import time
 
 
 def Find_NC_Profit(BLmodel):
-    print('Finding the Profit with no contracts')
+    print('Finding the Cost with no contracts')
         # Find the no contract profit by setting all the contract sizes to 0 and 
-    All_SCdata = pd.read_csv(defaults.SCdata)
-    All_SCdata.lambdaC=All_SCdata.lambdaC.astype(float)
-    Sc2Gen = list()
-    for sc in All_SCdata.GasNode:
-        Sc2Gen.append( BLmodel.edata.Map_Gn2Eg[sc])
-            
-    All_SCdata['GFPP']=pd.DataFrame(Sc2Gen)         
-    All_SCdata.set_index(['SC_ID','GFPP'], inplace=True) 
+    print('Get Contracts and set size to 0')
+    All_SCdata,SCP=Get_SCdata(BLmodel)
+
+    All_SCdata.PcMin=0.0
+    All_SCdata.PcMax=0.0
+    
+    # Also set the contract activation time to 0 (unnecessary)  
+    for i in SCP.keys():
+        SCP[i] = 0.0     
+    
+    # Select the first contract and use that to 
+    # change the contract sizes in the model
     contract=All_SCdata.index.get_level_values(0)[0]
-    Generators=All_SCdata.index.get_level_values(1).tolist()
-    for g in Generators:
-        All_SCdata.at[(contract,g),'PcMin']=0.0
-        All_SCdata.at[(contract,g),'PcMax']=0.0
-        
     SCdata = All_SCdata.iloc[All_SCdata.index.get_level_values(0) == contract]
-            
-    SCP = defaultdict(list)
-          
-    for sc in SCdata.index:
-        for t in BLmodel.edata.time:
-            tt = BLmodel.edata.time.index(t)+1
-            SCP[sc,t] = 0.0      
-    #        SCP[sc,t] = 1.0 if (tt >= SCdata.ts[sc] and tt<= SCdata.te[sc]) else 0.0
-             
+    
+    print('Changing Contract size to 0')     
+    
     Change_ContractParameters(BLmodel,SCdata,SCP)
     
     
-#   Get Variables
-    Profit = BLmodel.model.getVarByName('Profit')
-    ContractPrice=BLmodel.model.getVarByName('ContractPrice(ng102)')
-
-#   Remove the profit limit becuase this run is to find the limit and model was built with arbitrary limit
-    con=BLmodel.model.getConstrByName('ProfitLimit')
+    print('Removing the mSEDA cost constraint')
+    #   Remove the Cost limit becuase this run is to find the limit 
+    # and model was built with arbitrary limit
+    con=BLmodel.model.getConstrByName('CostLimit')
     BLmodel.model.remove(con)
     
+# Could also add constraints to force contract price to 0
+# Or to give an upper limit to cost  BUT REMEMBER TO REMOVE AT END
     
-    Contract_Zero=BLmodel.model.addConstr(ContractPrice==0.0,name='Contract_zero')
-#    BLmodel.model.addConstr(Profit<=8000,name='ProfitLimit')
-    
-
+#    ContractPrice=BLmodel.model.getVarByName('ContractPrice(ng102)')
 #    BLmodel.model.addConstr(ContractPrice==0.0,name='Contract_zero')
 #    BLmodel.model.setObjective(ContractPrice,gb.GRB.MINIMIZE)
-    
+
+# Gurobi Settings    
     BLmodel.model.update()
     BLmodel.model.reset()
-    
-#    BLmodel.model.params.Method = 2
-#    BLmodel.model.params.BranchDir = -1
+
     BLmodel.model.params.AggFill = 10
     BLmodel.model.params.Presolve = 2
     BLmodel.model.setParam('ImproveStartTime',10)
     BLmodel.model.setParam( 'MIPFocus',1 )
     BLmodel.model.setParam( 'OutputFlag',True )
     
-    
     BLmodel.model.optimize()
     
-    df_var,df_con=BilevelFunctions.get_Var_Con(BLmodel)
     print('Optimization Finished')
     
     BLmodel.model.resetParams()
     
     
-    
+    mSEDACost = BLmodel.model.getVarByName('mSEDACost')
     NC_Profit = BLmodel.model.ObjVal
     
-    print('\n Profit without Contracts is {0}'.format(Profit))
+    print('\nProfit without Contracts is {0}'.format(NC_Profit))
+    print('mSEDA Cost without Contracts is {0}\n'.format(mSEDACost.x))
     
+
 #--- Reset to the original
-    BLmodel.model.remove(Contract_Zero)
-    BLmodel.model.addConstr(Profit<=NC_Profit,name='ProfitLimit')
+    
+    print('Reseting Model to original contract')    
+# Replace any deleted constraints and delete any added constraints
+    BLmodel.model.addConstr(mSEDACost<=1.0*mSEDACost.x,name='CostLimit')
     BLmodel.model.update()
 
+
     print('Resetting the model to the first contract')
+    
+    All_SCdata,SCP=Get_SCdata(BLmodel)       
+    contract=All_SCdata.index.get_level_values(0)[0]
+    SCdata = All_SCdata.iloc[All_SCdata.index.get_level_values(0) == contract]         
+    Change_ContractParameters(BLmodel,SCdata,SCP)
+
+
+    print('\nNo Contract Profit found and included in model \n\n')
+    BLmodel.model.update()
+    BLmodel.model.reset()
+    BLmodel.model.resetParams()
+
+# Stochastic Day-ahead Electricity dispatch
+class expando(object):
+    pass
+
+
+def Get_SCdata(BLmodel):
     All_SCdata = pd.read_csv(defaults.SCdata)
     All_SCdata.lambdaC=All_SCdata.lambdaC.astype(float)
     Sc2Gen = list()
@@ -115,9 +125,7 @@ def Find_NC_Profit(BLmodel):
             
     All_SCdata['GFPP']=pd.DataFrame(Sc2Gen)         
     All_SCdata.set_index(['SC_ID','GFPP'], inplace=True) 
-    contract=All_SCdata.index.get_level_values(0)[0]
-    Generators=All_SCdata.index.get_level_values(1).tolist()
-        
+    contract=All_SCdata.index.get_level_values(0)[0]    
     SCdata = All_SCdata.iloc[All_SCdata.index.get_level_values(0) == contract]
             
     SCP = defaultdict(list)
@@ -126,17 +134,8 @@ def Find_NC_Profit(BLmodel):
         for t in BLmodel.edata.time:
             tt = BLmodel.edata.time.index(t)+1
             SCP[sc,t] = 1.0 if (tt >= SCdata.ts[sc] and tt<= SCdata.te[sc]) else 0.0
-    print('Changing Contract Parameters Back to Original')      
-    Change_ContractParameters(BLmodel,SCdata,SCP)
-
-
-    print('\n No Contract Profit found and included in model \n\n')
-
-
-# Stochastic Day-ahead Electricity dispatch
-class expando(object):
-    pass
-
+    
+    return All_SCdata,SCP
 
 def Get_LHS_Constraint(con_row):
     new_con=0.0
@@ -145,29 +144,30 @@ def Get_LHS_Constraint(con_row):
     return new_con
 
 def Change_ContractParameters(BLmodel,SCdata,SCP):
-    # only one contract at a time
+    # For each contract, change the size of the contract in the mSEDA model
+    # The following constraints need to be changed:
+    # 1. Max DA PgenSC and SOS def
+    # 2. Min DA PgenSC and SOS def
+    # 3. Max RT RUp and SOS def
+    # 4. Max RT RDn and SOS def
+    # 5. Non contracted generator limit and SOS def
+    # 6. Gas Balance for k1 and k2 cases
+    #
+    # The contract terms do not appear in the stationarity conditions
+    # However they do appear in the dual objective, which is used in two places
+    # 1. The overall objective function of the bilevel model
+    # 2. The Constraint that limits the cost of the mSEDA model
+    
+    
+    # Get Contract Name
     sc = SCdata.index.get_level_values(0).tolist()[0]
+    
+    # Start by changing the primal constraints
+    # And for the inequalities, their associated SOS constraints
     
     for gen in SCdata.loc[sc].index.tolist():
         for t in BLmodel.edata.time:
                      
-            
-            con_name= 'Pmax_DA_GFPP({0},{1})'.format(gen,t)
-            con = BLmodel.model.getConstrByName(con_name)
-            con_row=BLmodel.model.getRow(con)
-            new_con=Get_LHS_Constraint(con_row)
-            rhs= BLmodel.edata.generatorinfo.capacity[gen]-SCP[(sc,gen),t] * SCdata.PcMax[sc,gen]
-            BLmodel.model.remove(con)
-            BLmodel.model.addConstr(new_con<=rhs,name=con_name)
-     
-            # Add SOS1
-            conSOS= BLmodel.model.getConstrByName('SOS1_'+con_name)
-            con_row=BLmodel.model.getRow(conSOS)
-            new_con=Get_LHS_Constraint(con_row)
-            rhs= BLmodel.edata.generatorinfo.capacity[gen]-SCP[(sc,gen),t] * SCdata.PcMax[sc,gen]
-            BLmodel.model.remove(conSOS)
-            BLmodel.model.addConstr(new_con==rhs,name='SOS1_'+con_name)
-
             
             con_name =  'PgenSCmax({0},{1})'.format(gen,t)
             con = BLmodel.model.getConstrByName(con_name)
@@ -234,21 +234,37 @@ def Change_ContractParameters(BLmodel,SCdata,SCP):
             rhs=  - SCP[(sc,gen),t] * SCdata.PcMin[sc,gen]
             BLmodel.model.remove(conSOS)
             BLmodel.model.addConstr(new_con==rhs,name='SOS1_'+con_name)
+            
+            
+            con_name= 'Pmax_DA_GFPP({0},{1})'.format(gen,t)
+            con = BLmodel.model.getConstrByName(con_name)
+            con_row=BLmodel.model.getRow(con)
+            new_con=Get_LHS_Constraint(con_row)
+            rhs= BLmodel.edata.generatorinfo.capacity[gen]-SCP[(sc,gen),t] * SCdata.PcMax[sc,gen]
+            BLmodel.model.remove(con)
+            BLmodel.model.addConstr(new_con<=rhs,name=con_name)
+     
+            # Add SOS1
+            conSOS= BLmodel.model.getConstrByName('SOS1_'+con_name)
+            con_row=BLmodel.model.getRow(conSOS)
+            new_con=Get_LHS_Constraint(con_row)
+            rhs= BLmodel.edata.generatorinfo.capacity[gen]-SCP[(sc,gen),t] * SCdata.PcMax[sc,gen]
+            BLmodel.model.remove(conSOS)
+            BLmodel.model.addConstr(new_con==rhs,name='SOS1_'+con_name)
 
 
-
-    
+# Change the gas balance at da for the k1 and k2 cases. In the bilevel mode
+# The Pgen and PgenSC are already included as variables
     for gas_node in BLmodel.edata.Map_Gn2Eg:
         for t in BLmodel.edata.time:
-            for k in BLmodel.gdata.sclim:
+            for k in  BLmodel.gdata.sclim:
+                
                 con_name='gas_balance_da({0},{1},{2})'.format(gas_node,k,t)
                 con=BLmodel.model.getConstrByName(con_name)
                 con_row=BLmodel.model.getRow(con)
-                new_con=0.0
-                for i in range(con_row.size()):
-                    new_con=new_con+con_row.getVar(i)*con_row.getCoeff(i)
+                new_con=Get_LHS_Constraint(con_row)
                 
-                
+
                 GasLoad=BLmodel.gdata.gasload[gas_node][t]
                 rhs=GasLoad
                 for gen in BLmodel.gdata.Map_Gn2Eg[gas_node]:
@@ -268,11 +284,13 @@ def Change_ContractParameters(BLmodel,SCdata,SCP):
                 BLmodel.model.remove(con)
                 BLmodel.model.addConstr(new_con==rhs,name=con_name)
 
+# Part 2: Change the dual objective where it appears
+# 1. In the overall objective function
+# 2. in the mSEDA cost constraint
 # Change duals in objective function exprssion
-    Profit_Obj=BLmodel.model.getConstrByName('Profit_def')
-    Profit_row=BLmodel.model.getRow(Profit_Obj)
+    con=BLmodel.model.getConstrByName('mSEDACost_def')
     
-    LookUpIndex={Profit_row.getVar(i).VarName:Profit_row.getCoeff(i) for i in range(Profit_row.size())}
+    
     
     for t in BLmodel.edata.time:
         for g in BLmodel.edata.gfpp:
@@ -281,28 +299,46 @@ def Change_ContractParameters(BLmodel,SCdata,SCP):
             Pmax=BLmodel.edata.generatorinfo.capacity[g]
             
             name = 'PgenSCmax({0},{1})'.format(g,t)
-            LookUpIndex['mu_'+name]=Pcmax
+            var=BLmodel.model.getVarByName('mu_'+name)
+            BLmodel.model.setAttr('Obj',[var],[-Pcmax])
             
-      
+            col=BLmodel.model.getCol(var)
+            col.remove(con)
+            col.addTerms(Pcmax,con)
+            
             name = 'PgenSCmin({0},{1})'.format(g,t)
-            LookUpIndex['mu_'+name]=-Pcmin
+            var=BLmodel.model.getVarByName('mu_'+name)
+            BLmodel.model.setAttr('Obj',[var],[Pcmin])
+            
+            col=BLmodel.model.getCol(var)
+            col.remove(con)
+            col.addTerms(-Pcmin,con)
+
             
             name = 'RCdnSCmin({0},{1})'.format(g,t)   
-            LookUpIndex['mu_'+name]=-Pcmin
+            var=BLmodel.model.getVarByName('mu_'+name)
+            BLmodel.model.setAttr('Obj',[var],[Pcmin])
+            
+            col=BLmodel.model.getCol(var)
+            col.remove(con)
+            col.addTerms(-Pcmin,con)
             
             name = 'RCupSCmax({0},{1})'.format(g,t)
-            LookUpIndex['mu_'+name]=Pcmax
-                      
-            name= 'Pmax_DA_GFPP({0},{1})'.format(g,t)
-            LookUpIndex['mu_'+name]=Pmax-Pcmax
+            var=BLmodel.model.getVarByName('mu_'+name)
+            BLmodel.model.setAttr('Obj',[var],[-Pcmax])
             
-    new_con=0.0
-    for name, coeff in LookUpIndex.items():
-        var=BLmodel.model.getVarByName(name)
-        new_con+=coeff*var
-        
-    BLmodel.model.remove(Profit_Obj)
-    BLmodel.model.addConstr(new_con==0.0,name='Profit_def')
+            col=BLmodel.model.getCol(var)
+            col.remove(con)
+            col.addTerms(Pcmax,con)
+            
+            name= 'Pmax_DA_GFPP({0},{1})'.format(g,t)
+            var=BLmodel.model.getVarByName('mu_'+name)
+            BLmodel.model.setAttr('Obj',[var],[Pcmax-Pmax])
+            
+            col=BLmodel.model.getCol(var)
+            col.remove(con)
+            col.addTerms(-Pcmax+Pmax,con)            
+   
 
        
 #            name = 'RCupSCmax({0},{1})'.format(g,t)
@@ -435,7 +471,7 @@ def ADD_mGDA_Linking_Constraints(BLmodel):
     
     for gas_node in BLmodel.edata.Map_Gn2Eg:
         for t in BLmodel.edata.time:
-            for k in BLmodel.gdata.sclim:
+            for k in  BLmodel.gdata.sclim:
                 con_name='gas_balance_da({0},{1},{2})'.format(gas_node,k,t)
                 con=BLmodel.model.getConstrByName(con_name)
                 con_row=BLmodel.model.getRow(con)
@@ -916,7 +952,7 @@ def DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP):
     Add_Obj(BLmodel,mGRT_COMP)
     
     
-    # LINK PROBLEMS AND INTRODUCE NEW VARIABLE
+#--- LINK PROBLEMS AND INTRODUCE NEW VARIABLE
     print('Linking Problems')
     # Add contract pricce for every gas node with generator
     gas_nodes = list(BLmodel.edata.Map_Eg2Gn.values())
@@ -946,26 +982,157 @@ def DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP):
     print("This took "+ str(time.time() - start_time)+ " to run")
     
     
-    print('Get Original Objectives and Dual Objective')
+#----------------------------------------------------------------------------#
+#----------------------------------------------------------------------------#    
+    print('Change KKT systems of GDA and GRT for quadratic cost')
+    for t in BLmodel.edata.time:
+        for gw in BLmodel.gdata.wells:
+            P_UP=defaults.RESERVES_UP_PREMIUM_GASWELL
+            P_DN=defaults.RESERVES_DN_PREMIUM_GASWELL
+            
+            LinCost=BLmodel.gdata.wellsinfo.LinCost[gw]
+            QuadCost=BLmodel.gdata.wellsinfo.QuadCost[gw]
+
+            name='dLag/gprod({1},k0,{0})'.format(t,gw)
+            
+            con=BLmodel.model.getConstrByName(name)
+            con_row=BLmodel.model.getRow(con)
+            new_con=Get_LHS_Constraint(con_row)
+            var=BLmodel.model.getVarByName('gprod({1},k0,{0})'.format(t,gw))
+            
+            new_con += 2*QuadCost*var+LinCost
+            
+            BLmodel.model.remove(con)
+            BLmodel.model.addConstr(new_con==0,name=name)
+            
+    
+            for s in BLmodel.edata.scenarios:
+                Prob=BLmodel.edata.scen_wgp[s][2]
+                nameUp='gprodUp({2},{1},{0})'.format(t,s,gw)
+                nameDn='gprodDn({2},{1},{0})'.format(t,s,gw)
+                
+                varUp=BLmodel.model.getVarByName(nameUp)
+                varDn=BLmodel.model.getVarByName(nameDn)
+                
+                name='dLag/'+nameUp
+                con=BLmodel.model.getConstrByName(name)
+                con_row=BLmodel.model.getRow(con)
+                new_con=Get_LHS_Constraint(con_row)
+                
+#                
+                if defaults.GASCOSTMODEL==1:
+                    new_con+=Prob*( 2*QuadCost*(var+varUp-varDn)+LinCost)
+                else:
+                    new_con+=P_UP*Prob*( 2*QuadCost*(var+varUp)+LinCost)
+                    
+                
+                BLmodel.model.remove(con)
+                BLmodel.model.addConstr(new_con==0,name=name)
+        
+                name='dLag/'+nameDn
+                con=BLmodel.model.getConstrByName(name)
+                con_row=BLmodel.model.getRow(con)
+                new_con=Get_LHS_Constraint(con_row)
+                
+                if defaults.GASCOSTMODEL==1 :
+                    new_con-=Prob*( 2*QuadCost*(var+varUp-varDn)+LinCost)
+                else:
+                    new_con+=P_DN*Prob*( 2*QuadCost*(var-varDn)+LinCost)
+                    
+                
+                BLmodel.model.remove(con)
+                BLmodel.model.addConstr(new_con==0,name=name)
+    
+
+
+
+
+    print('Create Bilevel Model Objectives and Dual Objective')
+    
+    # Objective is to maximize the profit = Income-Cost
+    
+    # Cost is wells and load shedding for DA and RT
+    
+    print('Pt1. Cost: Construct Quadratic Objective for mGDA and mGRT')    
+    
+    Obj_mGDA=0.0
+
+#   Day Ahead
+    for t in BLmodel.edata.time:
+        for k in  BLmodel.gdata.sclim:
+            for gn in BLmodel.gdata.gnodes:
+                var=BLmodel.model.getVarByName('gshed_da({2},{1},{0})'.format(t,k,gn))
+                Obj_mGDA+=defaults.VOLL*var
+        
+        for gw in BLmodel.gdata.wells:
+            LinCost=BLmodel.gdata.wellsinfo.LinCost[gw]
+            QuadCost=BLmodel.gdata.wellsinfo.QuadCost[gw]
+            
+            var=BLmodel.model.getVarByName('gprod({1},k0,{0})'.format(t,gw))
+            Obj_mGDA+=QuadCost*var*var+LinCost*var
+
+#   Real time
+    Obj_mGRT=0.0        
+
+    for t in BLmodel.edata.time:        
+        for s in BLmodel.edata.scenarios:
+            Prob=BLmodel.edata.scen_wgp[s][2]
+            for gn in BLmodel.gdata.gnodes:
+                var=BLmodel.model.getVarByName('gshed({2},{1},{0})'.format(t,s,gn))
+                Obj_mGRT += Prob*defaults.VOLL * var
+        
+            for gw in BLmodel.gdata.wells:
+                
+                P_UP=defaults.RESERVES_UP_PREMIUM_GASWELL
+                P_DN=defaults.RESERVES_DN_PREMIUM_GASWELL
+                
+                LinCost=BLmodel.gdata.wellsinfo.LinCost[gw]
+                QuadCost=BLmodel.gdata.wellsinfo.QuadCost[gw]
+                
+                var=BLmodel.model.getVarByName('gprod({1},k0,{0})'.format(t,gw))
+                varUp=BLmodel.model.getVarByName('gprodUp({2},{1},{0})'.format(t,s,gw))        
+                varDn=BLmodel.model.getVarByName('gprodDn({2},{1},{0})'.format(t,s,gw))
+                
+                # Cup =a(g+r)^2 +b(g+r) - (a(g)^2 +b(g))
+                # Cup =a(g+r)^2 +b(r) - a(g)^2
+                
+                # Cdn =a(g-r)^2 +b(g-r) - (a(g)^2 +b(g))
+                # Cdn =a(g-r)^2 -b(r) - a(g)^2
+                
+
+                if defaults.GASCOSTMODEL==1 :
+                    Cost = QuadCost*(var+varUp-varDn)*(var+varUp-varDn) +LinCost*(var+varUp-varDn)\
+                       -QuadCost*(var)*(var) +LinCost*(var)
+                    Obj_mGRT+=Prob*(Cost)
+                else:
+                    CostUp = QuadCost*(var+varUp)*(var+varUp) +LinCost*varUp - QuadCost*var*var
+                    
+#                    Rdn = BLmodel.model.addVar(lb=0.0,name='Rdn({2},{1},{0})'.format(t,s,gw))
+#                    BLmodel.model.addConstr(Rdn==var-varDn)
+#                    CostDn = QuadCost*(Rdn)*(Rdn) +LinCost*varDn
+                    
+#                    CostDn = QuadCost*(varDn)*(varDn) -2*QuadCost*varDn*var -LinCost*varDn 
+                    
+                    CostDn = QuadCost*(var-varDn)*(var-varDn) -LinCost*varDn - QuadCost*var*var
+                                        
+                    Obj_mGRT+=Prob*(P_UP*CostUp + P_DN*CostDn)
+                    
+
+                
+    Cost   = Obj_mGDA  + Obj_mGRT    
+    
+    
+     
+    
     Dualobj_mSEDA=Get_Dual_Obj(BLmodel,mSEDA_COMP)
+    
 #    Dualobj_mGDA =Get_Dual_Obj(BLmodel,mGDA_COMP)
 #    Dualobj_mGRT=Get_Dual_Obj(BLmodel,mGRT_COMP)
     
-#    Obj_mSEDA=Get_Obj(BLmodel,mSEDA_COMP)
-    Obj_mGDA =Get_Obj(BLmodel,mGDA_COMP)
-    Obj_mGRT=Get_Obj(BLmodel,mGRT_COMP)
-    
-#    BLmodel.Dualobj_mSEDA=Dualobj_mSEDA
-    
-    
-    
-    print('Construct Objective')
     #--- Non gas Generators Objective
     gendata = BLmodel.edata.generatorinfo
     scenarios = BLmodel.edata.scenarios
-    scenarioprob={}    
     scenarioprob = {s: BLmodel.edata.scen_wgp[s][2] for s in BLmodel.edata.scen_wgp.keys()}    
-    scengprt = {s: BLmodel.edata.scen_wgp[s][0] for s in BLmodel.edata.scen_wgp.keys()}
     P_up=defaults.RESERVES_UP_PREMIUM_NONGAS
     P_dn=defaults.RESERVES_DN_PREMIUM_NONGAS
     Non_Gas_gencost=0.0
@@ -1008,51 +1175,18 @@ def DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP):
      # mSEDA_Obj = Gen_Income + Non_Gas_gencost
      # mSEDA_Obj = mSEDA_DualObj
      # Gen_Income = mSEDA_DualObj - Non_Gas_gencost
-    
 
     Income = Non_gen_Income + (Dualobj_mSEDA-Non_Gas_gencost)
     
-#    Obj_mGDA=0.0
-#    Obj_mGRT=0.0
-#    
-#    for t in BLmodel.edata.time:
-#        var=BLmodel.model.getVarByName('gprod(gw1,k0,{0})'.format(t))
-#        Obj_mGDA+=BLmodel.gdata.wellsinfo.Cost['gw1']*var*var
-#        
-#        for k in ['k0','k1','k2']:
-#            var=BLmodel.model.getVarByName('gshed_da(ng101,{1},{0})'.format(t,k))
-#            Obj_mGDA+=defaults.VOLL*var
-#        
-#        for s in BLmodel.edata.scenarios:
-#            
-#            var=BLmodel.model.getVarByName('gprodUp(gw1,{1},{0})'.format(t,s))
-#            P_UP=defaults.RESERVES_UP_PREMIUM_GASWELL
-#            Prob=BLmodel.edata.scen_wgp[s][2]
-#            Cost=BLmodel.gdata.wellsinfo.Cost['gw1']
-#            Obj_mGRT+=P_UP*Prob*Cost*var
-#    
-#            var=BLmodel.model.getVarByName('gprodDn(gw1,{1},{0})'.format(t,s))
-#            P_DN=defaults.RESERVES_DN_PREMIUM_GASWELL
-#            Prob=BLmodel.edata.scen_wgp[s][2]
-#            Cost=BLmodel.gdata.wellsinfo.Cost['gw1']
-#            Obj_mGRT-=P_DN*Prob*Cost*var
-#            
-#            var=BLmodel.model.getVarByName('gshed(ng101,{1},{0})'.format(t,s))
-#            Obj_mGRT+=Prob*defaults.VOLL * var
-    
+ 
+    BLmodel.model.setObjective(Income-Cost ,gb.GRB.MAXIMIZE)
+
+    print ('Add mSEDA Cost Constraint')
 
 
-    Cost   = Obj_mGDA  + Obj_mGRT
-
-    Profit = BLmodel.model.addVar(name='Profit')
-
-    BLmodel.model.addConstr(Profit==Income-Cost,name='Profit_def') 
-    
-    BLmodel.model.addConstr(Profit<=BLmodel.Profit_NoContract,name='ProfitLimit') 
-
-    BLmodel.model.setObjective(Profit ,gb.GRB.MAXIMIZE)
-
-
+    mSEDACost = BLmodel.model.addVar(name='mSEDACost')
+    BLmodel.model.addConstr(mSEDACost==Dualobj_mSEDA,name='mSEDACost_def')     
+    BLmodel.model.addConstr(mSEDACost<=BLmodel.mSEDACost_NoContract,name='CostLimit') 
 
     print('Bilevel Model is built')
     folder=defaults.folder+'/LPModels/'
