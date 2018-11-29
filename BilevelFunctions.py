@@ -240,7 +240,7 @@ def Change_ContractParameters(BLmodel,SCdata,SCP):
     
     for gas_node in BLmodel.edata.Map_Gn2Eg:
         for t in BLmodel.edata.time:
-            for k in  BLmodel.gdata.sclim:
+            for k in BLmodel.gdata.sclim:
                 con_name='gas_balance_da({0},{1},{2})'.format(gas_node,k,t)
                 con=BLmodel.model.getConstrByName(con_name)
                 con_row=BLmodel.model.getRow(con)
@@ -269,7 +269,11 @@ def Change_ContractParameters(BLmodel,SCdata,SCP):
                 BLmodel.model.addConstr(new_con==rhs,name=con_name)
 
 # Change duals in objective function exprssion
-
+    Profit_Obj=BLmodel.model.getConstrByName('Profit_def')
+    Profit_row=BLmodel.model.getRow(Profit_Obj)
+    
+    LookUpIndex={Profit_row.getVar(i).VarName:Profit_row.getCoeff(i) for i in range(Profit_row.size())}
+    
     for t in BLmodel.edata.time:
         for g in BLmodel.edata.gfpp:
             Pcmax=SCdata.PcMax[sc,g]*SCP[(sc,g),t] 
@@ -277,30 +281,28 @@ def Change_ContractParameters(BLmodel,SCdata,SCP):
             Pmax=BLmodel.edata.generatorinfo.capacity[g]
             
             name = 'PgenSCmax({0},{1})'.format(g,t)
-            var=BLmodel.model.getVarByName('mu_'+name)
-            BLmodel.model.setAttr('Obj',[var],[-Pcmax])
+            LookUpIndex['mu_'+name]=Pcmax
             
       
             name = 'PgenSCmin({0},{1})'.format(g,t)
-            var=BLmodel.model.getVarByName('mu_'+name)
-            BLmodel.model.setAttr('Obj',[var],[Pcmin])
-
+            LookUpIndex['mu_'+name]=-Pcmin
             
             name = 'RCdnSCmin({0},{1})'.format(g,t)   
-            var=BLmodel.model.getVarByName('mu_'+name)
-            BLmodel.model.setAttr('Obj',[var],[Pcmin])
+            LookUpIndex['mu_'+name]=-Pcmin
             
             name = 'RCupSCmax({0},{1})'.format(g,t)
-            var=BLmodel.model.getVarByName('mu_'+name)
-            BLmodel.model.setAttr('Obj',[var],[-Pcmax])
-            
-            
-            
+            LookUpIndex['mu_'+name]=Pcmax
+                      
             name= 'Pmax_DA_GFPP({0},{1})'.format(g,t)
-            var=BLmodel.model.getVarByName('mu_'+name)
-            BLmodel.model.setAttr('Obj',[var],[Pcmax-Pmax])
+            LookUpIndex['mu_'+name]=Pmax-Pcmax
             
-   
+    new_con=0.0
+    for name, coeff in LookUpIndex.items():
+        var=BLmodel.model.getVarByName(name)
+        new_con+=coeff*var
+        
+    BLmodel.model.remove(Profit_Obj)
+    BLmodel.model.addConstr(new_con==0.0,name='Profit_def')
 
        
 #            name = 'RCupSCmax({0},{1})'.format(g,t)
@@ -433,7 +435,7 @@ def ADD_mGDA_Linking_Constraints(BLmodel):
     
     for gas_node in BLmodel.edata.Map_Gn2Eg:
         for t in BLmodel.edata.time:
-            for k in  BLmodel.gdata.sclim:
+            for k in BLmodel.gdata.sclim:
                 con_name='gas_balance_da({0},{1},{2})'.format(gas_node,k,t)
                 con=BLmodel.model.getConstrByName(con_name)
                 con_row=BLmodel.model.getRow(con)
@@ -1006,47 +1008,49 @@ def DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP):
      # mSEDA_Obj = Gen_Income + Non_Gas_gencost
      # mSEDA_Obj = mSEDA_DualObj
      # Gen_Income = mSEDA_DualObj - Non_Gas_gencost
+    
 
     Income = Non_gen_Income + (Dualobj_mSEDA-Non_Gas_gencost)
     
-    Obj_mGDA=0.0
-    Obj_mGRT=0.0
-    
-    for t in BLmodel.edata.time:
-        var=BLmodel.model.getVarByName('gprod(gw1,k0,{0})'.format(t))
-        Obj_mGDA+=BLmodel.gdata.wellsinfo.Cost['gw1']*var*var
-        
-        for k in  BLmodel.gdata.sclim:
-            var=BLmodel.model.getVarByName('gshed_da(ng101,{1},{0})'.format(t,k))
-            Obj_mGDA+=defaults.VOLL*var
-        
-        for s in BLmodel.edata.scenarios:
-            P_UP=defaults.RESERVES_UP_PREMIUM_GASWELL
-            P_DN=defaults.RESERVES_DN_PREMIUM_GASWELL
-            Prob=BLmodel.edata.scen_wgp[s][2]
-            Cost=BLmodel.gdata.wellsinfo.Cost['gw1']
-    
-            varUp=BLmodel.model.getVarByName('gprodUp(gw1,{1},{0})'.format(t,s))        
-            varDn=BLmodel.model.getVarByName('gprodDn(gw1,{1},{0})'.format(t,s))
-            
-            
-            Obj_mGRT+=Prob*Cost*(var+varUp-varDn)*(var+varUp-varDn)
-            
-            
-            var=BLmodel.model.getVarByName('gshed(ng101,{1},{0})'.format(t,s))
-            Obj_mGRT+=Prob*defaults.VOLL * var
+#    Obj_mGDA=0.0
+#    Obj_mGRT=0.0
+#    
+#    for t in BLmodel.edata.time:
+#        var=BLmodel.model.getVarByName('gprod(gw1,k0,{0})'.format(t))
+#        Obj_mGDA+=BLmodel.gdata.wellsinfo.Cost['gw1']*var*var
+#        
+#        for k in ['k0','k1','k2']:
+#            var=BLmodel.model.getVarByName('gshed_da(ng101,{1},{0})'.format(t,k))
+#            Obj_mGDA+=defaults.VOLL*var
+#        
+#        for s in BLmodel.edata.scenarios:
+#            
+#            var=BLmodel.model.getVarByName('gprodUp(gw1,{1},{0})'.format(t,s))
+#            P_UP=defaults.RESERVES_UP_PREMIUM_GASWELL
+#            Prob=BLmodel.edata.scen_wgp[s][2]
+#            Cost=BLmodel.gdata.wellsinfo.Cost['gw1']
+#            Obj_mGRT+=P_UP*Prob*Cost*var
+#    
+#            var=BLmodel.model.getVarByName('gprodDn(gw1,{1},{0})'.format(t,s))
+#            P_DN=defaults.RESERVES_DN_PREMIUM_GASWELL
+#            Prob=BLmodel.edata.scen_wgp[s][2]
+#            Cost=BLmodel.gdata.wellsinfo.Cost['gw1']
+#            Obj_mGRT-=P_DN*Prob*Cost*var
+#            
+#            var=BLmodel.model.getVarByName('gshed(ng101,{1},{0})'.format(t,s))
+#            Obj_mGRT+=Prob*defaults.VOLL * var
     
 
 
     Cost   = Obj_mGDA  + Obj_mGRT
 
-#    Profit = BLmodel.model.addVar(name='Profit')
-#
-#    BLmodel.model.addConstr(Profit==Income-Cost,name='Profit_def') 
-#    
-#    BLmodel.model.addConstr(Profit<=BLmodel.Profit_NoContract,name='ProfitLimit') 
+    Profit = BLmodel.model.addVar(name='Profit')
 
-    BLmodel.model.setObjective(Income-Cost ,gb.GRB.MAXIMIZE)
+    BLmodel.model.addConstr(Profit==Income-Cost,name='Profit_def') 
+    
+    BLmodel.model.addConstr(Profit<=BLmodel.Profit_NoContract,name='ProfitLimit') 
+
+    BLmodel.model.setObjective(Profit ,gb.GRB.MAXIMIZE)
 
 
 
