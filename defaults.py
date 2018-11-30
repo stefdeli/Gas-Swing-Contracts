@@ -34,7 +34,8 @@ eload_file = filepath_elec + '/elec_load.csv'
 
 SCdata = filepath_elec + '/SCinfo.csv'
 # Contracts that need the price to be decided
-SCdata_NoPrice = filepath_elec + '/SCinfo_NoPrice.csv'
+SCdata_NoPrice_IN = filepath_elec + '/SCinfo_NoPrice_IN.csv'
+SCdata_NoPrice_OUT = filepath_elec + '/SCinfo_NoPrice_OUT.csv'
 
 
 GasPriceDA_file = filepath_elec + '/GasPriceDA.csv'
@@ -54,8 +55,8 @@ RESERVES_UP_PREMIUM_NONGAS = 1.0#1.05
 RESERVES_DN_PREMIUM_NONGAS = 1.0 #0.95
 
 # Premium for deployment of reserves GAS generators
-RESERVES_UP_PREMIUM_GAS = 1.0#1.05
-RESERVES_DN_PREMIUM_GAS = 1.0 #0.95
+RESERVES_UP_PREMIUM_GAS = 1.05#1.05
+RESERVES_DN_PREMIUM_GAS = 0.98 #0.95
 
 # Premium for deployment of reserves contracted GAS generators
 RESERVES_UP_PREMIUM_GAS_SC = 1.0#1.05
@@ -75,7 +76,7 @@ GUROBI_OUTPUT=False
 GasNetwork='FlowBased'
 #GasNetwork='WeymouthApprox'
 ChangeTime=True
-Time=['t'+str(i+1) for i in range(24)]
+Time=['t'+str(i+1) for i in range(4)]
 
 # Epsilon to keep contract price down
 EPS_CONTRACT=1e-3
@@ -84,3 +85,8 @@ EPS_CONTRACT=1e-3
 # Option 1: a(g+rup-rdn)**2 + b*(g+rup-rdn)
 # Option 2: a(g+rup)**2 + b*(g+rup) + a(g-rdn)**2 + b*(g-rdn) 
 GASCOSTMODEL=1
+
+# Choose what to limit for contract valuation
+# Option 1: 'mSEDACost'
+# Option 2: 'Profit' Gas System Profit
+LIMIT='mSEDACost'

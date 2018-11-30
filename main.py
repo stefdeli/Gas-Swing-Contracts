@@ -59,44 +59,49 @@ mGRT_COMP.optimize()
 #--- Bilevel Model (All subproblems together)
        
 f2d=False         
-mSEDACost_NoContract=708
+mSEDACost_NoContract=120
 BLmodel= modelObjects.Bilevel_Model(f2d,mSEDACost_NoContract)
 
 BilevelFunctions.DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP)
+#BilevelFunctions.DA_Model(BLmodel,mEDA_COMP,mGDA_COMP)
 
 
-
-
+#--- Find No Contract Cost
 BilevelFunctions.Find_NC_Profit(BLmodel)
-
-
-
-
 BLmodel.model.write(defaults.folder+'/LPModels/BLmodel.lp')
 
-
-BLmodel.model.Params.timelimit = 10.0
-#BLmodel.model.Params.Method = 2
-#BLmodel.model.Params.BranchDir = -1
-#BLmodel.model.Params.DegenMoves=10
-#BLmodel.model.params.AggFill = 10
-#BLmodel.model.params.Presolve = 2
-#BLmodel.model.setParam('PreSOS1BigM',1e10)
-#BLmodel.model.setParam('ImproveStartTime',50)
-#BLmodel.model.setParam( 'MIPFocus',3 )
-BLmodel.model.setParam( 'OutputFlag',True )
-#BLmodel.model.save('model.mst')
+#--- Solve with current contract
 
 BLmodel.model.optimize()
-
 df_var,df_con=BilevelFunctions.get_Var_Con(BLmodel)
 print(df_var[df_var.Name.str.contains('ContractPrice')])
 
+BilevelFunctions.Loop_Contracts_Price(BLmodel)
 
+# Copy New Contracts to actual contracts for sequential market clearings
 
+New_contracts=pd.read_csv(defaults.SCdata_NoPrice_OUT,index_col='SC_ID')
 
+# Remove extra info
+New_contracts=New_contracts.drop(['MIPGap','GasProfit','mSEDACost','time'],axis=1)
+# Remove not working contracts
+New_contracts = New_contracts[np.isfinite(New_contracts['lambdaC'])]
 
+New_contracts.to_csv(defaults.SCdata)  
 
+# Create DA Gas Prices
+DA_Gas=pd.DataFrame(index=BLmodel.edata.time,columns=BLmodel.gdata.gnodes)
+for t in BLmodel.edata.time:
+    for ng in BLmodel.gdata.gnodes:
+        var=BLmodel.model.getVarByName('lambda_gas_balance_da({0},k0,{1})'.format(ng,t))
+        DA_Gas.loc[t,ng]=var.x
+DA_Gas=DA_Gas.transpose()
+DA_Gas.index.rename('name')
+
+DA_Gas=DA_Gas.reset_index()
+s={"index": "name"})
+DA_Gas.set_index('name',drop=False)
+DA_Gas.index.rename('ID')
 
 
 
