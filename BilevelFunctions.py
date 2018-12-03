@@ -78,6 +78,10 @@ def Find_NC_Profit(BLmodel):
     
     BLmodel.model.optimize()
     
+    # Use solution to create gas prices for running models sequentially
+    Create_GasPrices(BLmodel)
+    
+    
     print('Optimization Finished')
     
     BLmodel.model.resetParams()
@@ -1935,4 +1939,59 @@ def  PrintDispatchatTime(t,BLmodel):
 #     
 #    df=df.append(pd.DataFrame([[dual_orig, dual_new, error,sense,dual_obj_orig,dual_obj_new]],columns=['orig','new','error','sense','Obj_1','Obj_2'],index=[var.VarName]))
 #    
-     
+    
+def Create_GasPrices(BLmodel):
+        # Create DA Gas Prices
+    DA_Gas=pd.DataFrame(index=BLmodel.edata.time,columns=BLmodel.gdata.gnodes)
+    for t in BLmodel.edata.time:
+        for ng in BLmodel.gdata.gnodes:
+            var=BLmodel.model.getVarByName('lambda_gas_balance_da({0},k0,{1})'.format(ng,t))
+            DA_Gas.loc[t,ng]=var.x
+    DA_Gas=DA_Gas.transpose()
+    DA_Gas.index.name='name'
+    DA_Gas=DA_Gas.reset_index()
+    DA_Gas=DA_Gas.set_index('name',drop=False)
+    DA_Gas.index.name='ID'
+    DA_Gas=DA_Gas.reset_index()
+    DA_Gas=DA_Gas.set_index(['ID','name'],drop=True)
+    DA_Gas.to_csv(defaults.GasPriceDA_file)
+    
+    #
+    ## Create RT Gas Prices
+    RT_Gas=pd.DataFrame(index=BLmodel.edata.time,columns=BLmodel.gdata.gnodes)
+    for t in BLmodel.edata.time:
+        for ng in BLmodel.gdata.gnodes:
+            Temp=0.0
+            for s in BLmodel.edata.scenarios:
+                var=BLmodel.model.getVarByName('lambda_gas_balance_rt({0},{2},{1})'.format(ng,t,s))
+                Temp+=var.x/BLmodel.edata.scen_wgp[s][2] # Divide by probability..
+            Temp=Temp/len(BLmodel.edata.scenarios) # Find Average    
+            RT_Gas.loc[t,ng]=Temp
+            
+    RT_Gas=RT_Gas.transpose()
+    RT_Gas.index.name='name'
+    RT_Gas=RT_Gas.reset_index()
+    RT_Gas=RT_Gas.set_index('name',drop=False)
+    RT_Gas.index.name='ID'
+    RT_Gas=RT_Gas.reset_index()
+    RT_Gas=RT_Gas.set_index(['ID','name'],drop=True)
+    #
+    
+    RT_Gas.insert(0, 'scenario', 'spm')
+    RT_Gas=RT_Gas.reset_index()
+    RT_Gas=RT_Gas.set_index(['ID','name','scenario'],drop=True)
+    
+    
+    for ng in BLmodel.gdata.gnodes:
+        # Get each node and introduce variations on price scenario
+        Row= RT_Gas.loc[(ng,ng,'spm')]
+        RowHigh=1.2*Row
+        RowHigh=RowHigh.rename((ng,ng,'sph'))
+        RT_Gas=RT_Gas.append(RowHigh)
+        
+        RowLow=0.8*Row
+        RowLow=RowLow.rename((ng,ng,'spl'))
+        RT_Gas=RT_Gas.append(RowLow)
+        
+        #RT_Gas.to_csv('test.csv')
+        RT_Gas.to_csv(defaults.GasPriceScenRT_file)
