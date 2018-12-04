@@ -28,6 +28,7 @@ import re
 import sys
 import defaults
 import time
+import modelObjects
 
 
 def Find_NC_Profit(BLmodel):
@@ -1392,8 +1393,8 @@ def Loop_Contracts_Price(BLmodel):
         BLmodel.model.Params.NodeMethod=1
         BLmodel.model.Params.timelimit = 100.0
         BLmodel.model.setParam('ImproveStartGap',1)
-        BLmodel.model.Params.MIPFocus = 1
-        BLmodel.model.setParam( 'OutputFlag',False)
+        BLmodel.model.Params.MIPFocus = 3
+        BLmodel.model.setParam( 'OutputFlag',True)
     
         BLmodel.model.optimize() 
         
@@ -2012,3 +2013,252 @@ def Create_GasPrices(BLmodel):
         
         #RT_Gas.to_csv('test.csv')
         RT_Gas.to_csv(defaults.GasPriceScenRT_file)
+        
+        
+def SequentialClearing():
+    mSEDA = modelObjects.StochElecDA_seq(comp=False,bilevel=False)
+    dispatchElecDA=mSEDA.optimize()
+    
+    f2d = False
+    
+    mGDA = modelObjects.GasDA(dispatchElecDA,f2d,comp=False)
+    
+
+#    Obj_mGDA=0.0
+#
+##   Day Ahead
+#    for t in mGDA.gdata.time:
+#        for k in  mGDA.gdata.sclim:
+#            for gn in mGDA.gdata.gnodes:
+#                var=mGDA.model.getVarByName('gshed_da({2},{1},{0})'.format(t,k,gn))
+#                Obj_mGDA+=defaults.VOLL*var
+#        
+#        for gw in mGDA.gdata.wells:
+#            LinCost=mGDA.gdata.wellsinfo.LinCost[gw]
+#            QuadCost=mGDA.gdata.wellsinfo.QuadCost[gw]
+#            
+#            var=mGDA.model.getVarByName('gprod({1},k0,{0})'.format(t,gw))
+#            Obj_mGDA+=QuadCost*var*var+LinCost*var
+#    mGDA.model.setObjective(Obj_mGDA)                
+    
+    dispatchGasDA=mGDA.optimize()
+    
+    mERT = modelObjects.ElecRT_seq(dispatchElecDA,bilevel=False,comp=False)
+    dispatchElecRT=mERT.optimize()
+       
+    mGRT = modelObjects.GasRT(dispatchGasDA,dispatchElecRT,f2d,comp=False)
+    
+    
+#    Obj_mGRT=0.0        
+#
+#    for t in mGRT.gdata.time:        
+#        for s in mERT.edata.scenarios:
+#            Prob=mERT.edata.scen_wgp[s][2]
+#            for gn in mGRT.gdata.gnodes:
+#                var=mGRT.model.getVarByName('gshed({2},{1},{0})'.format(t,s,gn))
+#                Obj_mGRT += Prob*defaults.VOLL * var
+#        
+#            for gw in mGRT.gdata.wells:
+#                
+#                P_UP=defaults.RESERVES_UP_PREMIUM_GASWELL
+#                P_DN=defaults.RESERVES_DN_PREMIUM_GASWELL
+#                
+#                LinCost=mGRT.gdata.wellsinfo.LinCost[gw]
+#                QuadCost=mGRT.gdata.wellsinfo.QuadCost[gw]
+#                
+#                var=mGDA.model.getVarByName('gprod({1},k0,{0})'.format(t,gw)).x
+#                varUp=mGRT.model.getVarByName('gprodUp({2},{1},{0})'.format(t,s,gw))        
+#                varDn=mGRT.model.getVarByName('gprodDn({2},{1},{0})'.format(t,s,gw))
+#                
+#                # Cup =a(g+r)^2 +b(g+r) - (a(g)^2 +b(g))
+#                # Cup =a(g+r)^2 +b(r) - a(g)^2
+#                
+#                # Cdn =a(g-r)^2 +b(g-r) - (a(g)^2 +b(g))
+#                # Cdn =a(g-r)^2 -b(r) - a(g)^2
+#                
+#
+#                if defaults.GASCOSTMODEL==1 :
+#                    Cost = QuadCost*(var+varUp-varDn)*(var+varUp-varDn) +LinCost*(var+varUp-varDn)\
+#                       -QuadCost*(var)*(var) - LinCost*(var)
+#                    Obj_mGRT+=Prob*(Cost)
+#                else:
+#                    CostUp = QuadCost*(var+varUp)*(var+varUp) +LinCost*varUp - QuadCost*var*var
+#                    
+##                    Rdn = BLmodel.model.addVar(lb=0.0,name='Rdn({2},{1},{0})'.format(t,s,gw))
+##                    BLmodel.model.addConstr(Rdn==var-varDn)
+##                    CostDn = QuadCost*(Rdn)*(Rdn) +LinCost*varDn
+#                    
+##                    CostDn = QuadCost*(varDn)*(varDn) -2*QuadCost*varDn*var -LinCost*varDn 
+#                    
+#                    CostDn = QuadCost*(var-varDn)*(var-varDn) -LinCost*varDn - QuadCost*var*var
+#                                        
+#                    Obj_mGRT+=Prob*(P_UP*CostUp + P_DN*CostDn) 
+#    
+#    mGRT.model.setObjective(Obj_mGRT)
+    
+    
+    mGRT.optimize()
+    
+    Result=expando()
+    Result.mSEDA=mSEDA
+    Result.mGDA=mGDA
+    Result.mERT=mERT
+    Result.mGRT=mGRT
+    
+    
+    
+    CostDA_Elec = 0.0
+    for t in mSEDA.edata.time:
+        for gen in mSEDA.edata.nongfpp:
+            var_name='Pgen({0},{1})'.format(gen,t)
+            Pgen = mSEDA.model.getVarByName(var_name)
+            cost=mSEDA.edata.generatorinfo.lincost[gen]
+            CostDA_Elec +=  cost*Pgen.x
+#            print('P/Q for {0} is \t {1:0.1f}/{2:0.1f}'.format(var_name,cost,Pgen.x))
+            
+        for gen in mSEDA.edata.gfpp:
+            HR=mSEDA.edata.generatorinfo.HR[gen]
+            var_name='Pgen({0},{1})'.format(gen,t)
+            Pgen = mSEDA.model.getVarByName(var_name)
+            gasnode=mSEDA.edata.generatorinfo.origin_gas[gen]
+            var=mSEDA.model.getVarByName(var_name)
+            
+            con_name ='gas_balance_da({0},{1},{2})'.format(gasnode,'k0',t)
+            
+            price=mGDA.model.getConstrByName(con_name)
+            
+#            print('P/Q for {0} is \t {1:0.2f}/{2:0.1f}'.format(var_name,price.Pi,var.x))
+            CostDA_Elec = CostDA_Elec + HR*price.Pi*var.x
+            
+            for sc in mSEDA.edata.swingcontracts:
+                var_name = 'PgenSC({0},{2},{1})'.format(gen,t,sc)
+                
+                contract=mSEDA.edata.SCdata.lambdaC[(sc,gen)]
+                
+                var=mSEDA.model.getVarByName(var_name)
+#                print('P/Q for {0} is \t {1:0.1f}/{2:0.1f}'.format(var_name,contract,var.x))
+                CostDA_Elec = CostDA_Elec + HR*contract*var.x
+        
+    
+    CostRT_Elec = 0.0
+    for t in  mSEDA.edata.time:
+        for s in  mSEDA.edata.scenarios:
+            Prob= mSEDA.edata.scen_wgp[s][2]
+            for gen in  mSEDA.edata.gfpp:
+                HR= mSEDA.edata.generatorinfo.HR[gen]  
+                
+                var_name_up = 'RUp({0},{1},{2})'.format(gen,s,t)
+                var_name_dn = 'RDn({0},{1},{2})'.format(gen,s,t)
+                
+                var_up= mSEDA.model.getVarByName(var_name_up)
+                var_dn= mSEDA.model.getVarByName(var_name_dn)
+                
+                s_gas=mSEDA.edata.scen_wgp[s][1]
+                gas_node=mSEDA.edata.generatorinfo.origin_gas[gen]
+                gas_prob=mSEDA.edata.windscenprob[s_gas]
+                con_name ='gas_balance_rt({0},{1},{2})'.format(gas_node ,s_gas,t)
+                price= mGRT.model.getConstrByName(con_name)
+#                print(8*price.x*(var_up-var_dn))
+                P_UP=defaults.RESERVES_UP_PREMIUM_GAS
+                P_DN=defaults.RESERVES_DN_PREMIUM_GAS
+                
+#                print('P/Q for {0} is \t {1:0.1f}/{2:0.1f}'.format(var_name_up,(price.Pi/gas_prob),(P_UP*var_up.x-P_DN*var_dn.x)))
+                CostRT_Elec = CostRT_Elec + HR*Prob*(price.Pi/gas_prob)*(P_UP*var_up.x-P_DN*var_dn.x)
+                
+                # Contract
+                for sc in mSEDA.edata.swingcontracts:
+                    var_name_up = 'RUpSC({0},{1},{3},{2})'.format(gen,s,t,sc)
+                    var_name_dn = 'RDnSC({0},{1},{3},{2})'.format(gen,s,t,sc)
+                    
+                    var_up= mSEDA.model.getVarByName(var_name_up)
+                    var_dn= mSEDA.model.getVarByName(var_name_dn)
+                    contract=mSEDA.edata.SCdata.lambdaC[(sc,gen)]
+                    
+    #                print(Prob*8*contract.x*(var_up-var_dn))
+                    P_UP=defaults.RESERVES_UP_PREMIUM_GAS_SC
+                    P_DN=defaults.RESERVES_DN_PREMIUM_GAS_SC
+                    
+#                    print('P/Q for {0} is \t {1:0.1f}/{2:0.1f}'.format(var_name_up,contract,(P_UP*var_up.x-P_DN*var_dn.x)))
+                    CostRT_Elec = CostRT_Elec + Prob*HR*contract*(P_UP*var_up.x-P_DN*var_dn.x)
+                
+            for gen in  mSEDA.edata.nongfpp:
+                var_name_up = 'RUp({0},{1},{2})'.format(gen,s,t)
+                var_name_dn = 'RDn({0},{1},{2})'.format(gen,s,t)
+                
+                var_up= mSEDA.model.getVarByName(var_name_up)
+                var_dn= mSEDA.model.getVarByName(var_name_dn)
+#                print(Prob* mSEDA.edata.generatorinfo.lincost[gen]*(var_up-var_dn))
+                P_UP=defaults.RESERVES_UP_PREMIUM_NONGAS
+                P_DN=defaults.RESERVES_DN_PREMIUM_NONGAS
+                cost= mSEDA.edata.generatorinfo.lincost[gen]
+                CostRT_Elec +=  Prob*cost*(P_UP*var_up.x-P_DN*var_dn.x)
+
+    Result.ElecCost= CostDA_Elec+ CostRT_Elec        
+    Result.GasCost = mGDA.model.ObjVal+mGRT.model.ObjVal
+    
+    return Result    
+
+def SetContracts(Type='normal'):
+    # Type can be 'normal' or 'zero'
+    # Copy New Contracts to actual contracts for sequential market clearings
+    
+    New_contracts=pd.read_csv(defaults.SCdata_NoPrice_OUT,index_col='SC_ID')
+    
+    # Remove not working contracts
+
+    New_contracts = New_contracts[np.isfinite(New_contracts['lambdaC'])]
+    
+    Max_Profit=New_contracts.GasProfit.max()
+    
+    New_contracts = New_contracts[abs(New_contracts.GasProfit-Max_Profit) <1e-3]
+    # Remove extra info
+    New_contracts=New_contracts.drop(['MIPGap','GasProfit','mSEDACost','time'],axis=1)
+    
+    
+    if Type=='zero':
+        New_contracts['lambdaC']=1e3
+        New_contracts['PcMin']=0
+        New_contracts['PcMax']=0
+        
+    New_contracts.to_csv(defaults.SCdata)  
+
+def BuildBilevel():
+    mEDA = modelObjects.ElecDA(bilevel=True)
+    dispatchElecDA=mEDA.optimize()
+    
+    mSEDA = modelObjects.StochElecDA(bilevel=True)
+    dispatchElecDA=mSEDA.optimize()
+    
+    f2d = False
+    
+    mGDA = modelObjects.GasDA(dispatchElecDA,f2d)
+    dispatchGasDA=mGDA.optimize()
+    
+    mERT = modelObjects.ElecRT(dispatchElecDA,bilevel=True)
+    dispatchElecRT=mERT.optimize()
+       
+    mGRT = modelObjects.GasRT(dispatchGasDA,dispatchElecRT,f2d)
+    mGRT.optimize()
+    
+    
+    mEDA_COMP = modelObjects.ElecDA(comp=True,bilevel=True)
+    mSEDA_COMP = modelObjects.StochElecDA(comp=True,bilevel=True)
+    mGDA_COMP = modelObjects.GasDA(dispatchElecDA,f2d,comp=True)
+    mERT_COMP = modelObjects.ElecRT(dispatchElecDA,comp=True,bilevel=True)
+    mGRT_COMP = modelObjects.GasRT(dispatchGasDA,dispatchElecRT,f2d,comp=True)
+    
+    
+    mEDA_COMP.optimize()
+    mSEDA_COMP.optimize()
+    mGDA_COMP.optimize()
+    mERT_COMP.optimize()
+    mGRT_COMP.optimize() 
+
+           
+    f2d=False         
+    mSEDACost_NoContract=1e6
+    BLmodel= modelObjects.Bilevel_Model(f2d,mSEDACost_NoContract)
+    
+    DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP)
+#    DA_Model(BLmodel,mEDA_COMP,mGDA_COMP)
+    return BLmodel

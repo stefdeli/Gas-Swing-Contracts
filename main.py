@@ -21,49 +21,8 @@ class expando(object):
     pass
 
 
-#-- All models
-mEDA = modelObjects.ElecDA(bilevel=True)
-dispatchElecDA=mEDA.optimize()
+BLmodel=BilevelFunctions.BuildBilevel()
 
-mSEDA = modelObjects.StochElecDA(bilevel=True)
-dispatchElecDA=mSEDA.optimize()
-
-f2d = False
-
-mGDA = modelObjects.GasDA(dispatchElecDA,f2d)
-dispatchGasDA=mGDA.optimize()
-
-mERT = modelObjects.ElecRT(dispatchElecDA,bilevel=True)
-dispatchElecRT=mERT.optimize()
-   
-mGRT = modelObjects.GasRT(dispatchGasDA,dispatchElecRT,f2d)
-mGRT.optimize()
-
-
-mEDA_COMP = modelObjects.ElecDA(comp=True,bilevel=True)
-mSEDA_COMP = modelObjects.StochElecDA(comp=True,bilevel=True)
-mGDA_COMP = modelObjects.GasDA(dispatchElecDA,f2d,comp=True)
-mERT_COMP = modelObjects.ElecRT(dispatchElecDA,comp=True,bilevel=True)
-mGRT_COMP = modelObjects.GasRT(dispatchGasDA,dispatchElecRT,f2d,comp=True)
-
-
-mEDA_COMP.optimize()
-mSEDA_COMP.optimize()
-mGDA_COMP.optimize()
-mERT_COMP.optimize()
-mGRT_COMP.optimize() 
-#
-
-
-
-#--- Bilevel Model (All subproblems together)
-       
-f2d=False         
-mSEDACost_NoContract=120
-BLmodel= modelObjects.Bilevel_Model(f2d,mSEDACost_NoContract)
-
-BilevelFunctions.DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP)
-#BilevelFunctions.DA_Model(BLmodel,mEDA_COMP,mGDA_COMP)
 
 
 #--- Find No Contract Cost
@@ -79,51 +38,42 @@ print(df_var[df_var.Name.str.contains('ContractPrice')])
 
 BilevelFunctions.Loop_Contracts_Price(BLmodel)
 
-# Copy New Contracts to actual contracts for sequential market clearings
-
-New_contracts=pd.read_csv(defaults.SCdata_NoPrice_OUT,index_col='SC_ID')
-
-# Remove extra info
-New_contracts=New_contracts.drop(['MIPGap','GasProfit','mSEDACost','time'],axis=1)
-# Remove not working contracts
-New_contracts = New_contracts[np.isfinite(New_contracts['lambdaC'])]
-
-New_contracts.to_csv(defaults.SCdata)  
-
-#--- Create Sequential Market Clearing
-
-mSEDA = modelObjects.StochElecDA(comp=False,bilevel=False)
-dispatchElecDA=mSEDA.optimize()
-
-f2d = False
-
-mGDA = modelObjects.GasDA(dispatchElecDA,f2d,comp=False)
-dispatchGasDA=mGDA.optimize()
-
-mERT = modelObjects.ElecRT(dispatchElecDA,bilevel=False,comp=False)
-dispatchElecRT=mERT.optimize()
-   
-mGRT = modelObjects.GasRT(dispatchGasDA,dispatchElecRT,f2d,comp=False)
-mGRT.optimize()
+BilevelFunctions.SetContracts(Type='normal')
+Result=BilevelFunctions.SequentialClearing()
 
 
-BL_var,BL_con=BilevelFunctions.get_Var_Con(BLmodel)
-mSEDA_var,mSEDA_con=BilevelFunctions.get_Var_Con(mSEDA)
-
-find='Pgen'
-print(BL_var[BL_var.Name.str.contains(find)])
-print(mSEDA_var[mSEDA_var.Name.str.contains(find)])
+BilevelFunctions.SetContracts(Type='zero')
+Result0=BilevelFunctions.SequentialClearing()
 
 
-find='RUp'
-#print(BL_var[BL_var.Name.str.contains(find)])
-print(mSEDA_var[mSEDA_var.Name.str.contains(find)])
+print('\n')
+print('mSEDA  - Bilevel NoContract\t{0:.2f}'.format(BLmodel.model.getVarByName('mSEDACost').x))
+print('\n')
+print('mSEDA chose contract {0}'.format( Result.mSEDA.results.usc[Result.mSEDA.results.usc[0]==1].index[0]))
+
+print('\n')
+print('mSEDA Expected - NoContract \t{0:.2f}'.format(Result0.mSEDA.model.ObjVal))
+print('mSEDA Expected - Contract   \t{0:.2f}'.format(Result.mSEDA.model.ObjVal))
+
+print('\n')
+print('mSEDA Actual - NoContract \t{0:.2f}'.format(Result0.ElecCost))
+print('mSEDA Actual - Contract   \t{0:.2f}'.format(Result.ElecCost))
+
+print('\n')
+print('Gas  - NoContract  \t{0:.2f}'.format(Result0.GasCost))
+print('Gas  - Contract    \t{0:.2f}'.format(Result.GasCost))
 
 
-find='RDn'
-#print(BL_var[BL_var.Name.str.contains(find)])
-print(mSEDA_var[mSEDA_var.Name.str.contains(find)])
 
-find='indDA'
-#print(BL_var[BL_var.Name.str.contains(find)])
-print(mSEDA_var[mSEDA_var.Name.str.contains(find)])
+
+
+
+
+
+
+
+
+
+
+
+

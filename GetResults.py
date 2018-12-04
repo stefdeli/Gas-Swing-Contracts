@@ -111,7 +111,73 @@ def _results_StochD(self):
      
      self.results.Wspill = pd.DataFrame(
         [[self.variables.Wspill[j,s,t].x for j in windfarms] for t in time for s in scenarios], index=index, columns=windfarms)
+
+def _results_StochD_seq(self):
+         
+     generators = self.edata.generators
+     gfpp = self.edata.gfpp   
+     windfarms = self.edata.windfarms 
+     swingcontracts = self.edata.swingcontracts
+     time = self.edata.time
      
+     iterables = [time, swingcontracts]
+     index2 = pd.MultiIndex.from_product(iterables, names=['Time', 'Contracts'])     
+     # Day-ahead variables
+     
+     if self.comp==False:
+         self.results.usc = pd.DataFrame(
+                 [self.variables.usc[sc].x for sc in swingcontracts], index=swingcontracts)
+     
+     
+     self.results.Pgen = pd.DataFrame(
+        [[self.variables.Pgen[i,t].x for i in generators] for t in time], index=time, columns=generators)
+        
+     self.results.WindDA = pd.DataFrame(
+        [[self.variables.WindDA[j,t].x for j in windfarms] for t in time], index=time, columns=windfarms)
+     
+
+     self.results.PgenSC = pd.DataFrame(
+        [[self.variables.PgenSC[g,sc,t].x for g in gfpp] for t in time for sc in swingcontracts ], index=index2, columns=gfpp)
+     
+     self.results.RCup = pd.DataFrame(
+        [[self.variables.RCup[g,t].x for g in generators] for t in time], index=time, columns=generators)
+     
+     self.results.RCdn = pd.DataFrame(
+        [[self.variables.RCdn[g,t].x for g in generators] for t in time], index=time, columns=generators)
+    
+     self.results.RCupSC = pd.DataFrame(
+        [[self.variables.RCupSC[g,sc,t].x for g in gfpp] for t in time for sc in swingcontracts ], index=index2, columns=gfpp)
+     
+     self.results.RCdnSC = pd.DataFrame(
+        [[self.variables.RCdnSC[g,sc,t].x for g in gfpp] for t in time for sc in swingcontracts], index=index2, columns=gfpp)
+     
+     # Real-time variables 
+     
+     scenarios = self.edata.scenarios
+     
+     iterables = [time, scenarios]
+     index = pd.MultiIndex.from_product(iterables, names=['Time', 'Scenarios'])
+     iterables = [time, scenarios, swingcontracts]
+     index3 = pd.MultiIndex.from_product(iterables, names=['Time', 'Scenarios','Contracts'])    
+     
+     self.results.RUp = pd.DataFrame(
+        [[self.variables.RUp[g,s,t].x for g in generators] for t in time for s in scenarios ], index=index, columns = generators)
+     
+     self.results.RDn = pd.DataFrame(
+        [[self.variables.RDn[g,s,t].x for g in generators] for t in time for s in scenarios ], index=index, columns = generators)     
+      
+     self.results.RUpSC = pd.DataFrame(
+        [[self.variables.RUpSC[g,s,sc,t].x for g in gfpp] for t in time for s in scenarios for sc in swingcontracts], index=index3, columns = gfpp)      
+     
+     self.results.RDnSC = pd.DataFrame(
+        [[self.variables.RDnSC[g,s,sc,t].x for g in gfpp] for t in time for s in scenarios for sc in swingcontracts], index=index3, columns = gfpp) 
+     
+     self.results.Lshed = pd.DataFrame(
+        [[self.variables.Lshed[s,t].x for s in scenarios] for t in time], index=time, columns=scenarios)
+     
+     self.results.Wspill = pd.DataFrame(
+        [[self.variables.Wspill[j,s,t].x for j in windfarms] for t in time for s in scenarios], index=index, columns=windfarms)
+          
      
 def _results_gasDA(self, f2d):
      
@@ -150,6 +216,45 @@ def _results_gasDA(self, f2d):
         con_name='gas_balance_da({0},{1},{2})'        
         r.lambda_Flow_Bal =pd.DataFrame([[ m.getConstrByName(con_name.format(ng,k,t)).Pi for ng in self.gdata.gnodeorder] for t in time for k in sclim], index=index, columns=self.gdata.gnodeorder)
         
+
+def _results_elecRT_seq(self):
+     
+     generators = self.edata.generators
+     gfpp = self.edata.gfpp   
+     windfarms = self.edata.windfarms      
+     time = self.edata.time
+     swingcontracts=self.edata.swingcontracts
+         
+     scenarios = self.edata.windscen_index # Only wind power scenarios
+     
+     iterables = [time, scenarios]
+     index = pd.MultiIndex.from_product(iterables, names=['Time', 'Scenarios'])
+     
+     iterables = [time, scenarios,swingcontracts]
+     index2 = pd.MultiIndex.from_product(iterables, names=['Time', 'Scenarios','swingcontracts'])
+     
+     self.results.RUp = pd.DataFrame(
+        [[self.variables.RUp[g,s,t].x for g in generators] for t in time for s in scenarios ], index=index, columns = generators)
+     
+     self.results.RDn = pd.DataFrame(
+        [[self.variables.RDn[g,s,t].x for g in generators] for t in time for s in scenarios ], index=index, columns = generators)     
+      
+     self.results.RUpSC = pd.DataFrame(
+        [[self.variables.RUpSC[g,s,sc,t].x for g in gfpp] for t in time for s in scenarios for sc in swingcontracts ], index=index2, columns = gfpp)      
+     
+     self.results.RDnSC = pd.DataFrame(
+        [[self.variables.RDnSC[g,s,sc,t].x for g in gfpp] for t in time for s in scenarios  for sc in swingcontracts ], index=index2, columns = gfpp) 
+     
+     self.results.Lshed = pd.DataFrame(
+        [[self.variables.Lshed[s,t].x for s in scenarios] for t in time], index=time, columns=scenarios)
+     
+     self.results.Wspill = pd.DataFrame(
+        [[self.variables.Wspill[j,s,t].x for j in windfarms] for t in time for s in scenarios], index=index, columns=windfarms)
+        
+#    r.costGas = np.dot(r.gprod,np.array(self.gdata.wellsinfo.Cost)).sum()
+     
+
+
 def _results_elecRT(self):
      
      generators = self.edata.generators

@@ -95,5 +95,5 @@ LIMIT='mSEDACost'
 NO_WIND_SCEN=2
 
 # HOw much the low and high real time prices should be relative to the medium
-GASRT_LOW=0.8
-GASRT_HIGH=1.2
+GASRT_LOW=0.9
+GASRT_HIGH=1.1

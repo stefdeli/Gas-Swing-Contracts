@@ -284,6 +284,110 @@ class StochElecDA():
         #self.model.Params.timelimit = 20.0
         self.model.update()
 
+
+
+class StochElecDA_seq():
+    '''
+    Stochastic electricity system day-ahead scheduling
+    '''
+    
+    def __init__(self,comp=False,bilevel=False):
+        '''
+        comp - building a complementarity model?
+        bilevel - building a bilevel model?
+        '''        
+        self.edata = expando()
+        self.variables = expando()
+        self.variables.primal = {}
+        self.constraints = {}
+        self.results = expando()
+
+        
+        self._load_ElecData(bilevel)
+        self.comp=comp
+        
+        self._build_model()
+        self.model.write(defaults.folder+'/LPModels/mSEDA_seq.lp')
+
+        
+    def optimize(self):
+        self.model.setParam( 'OutputFlag', defaults.GUROBI_OUTPUT )
+        self.model.optimize()
+        dispatchElecDA = expando()
+
+                
+        if self.model.Status==2:
+           
+            
+            print ('########################################################')
+            print ('Stochastic electricity dispatch - Solved')
+            print ('########################################################')
+            
+            self.get_results()
+            
+            dispatchElecDA.Pgen = self.results.Pgen
+            dispatchElecDA.PgenSC_sc = self.results.PgenSC
+            dispatchElecDA.PgenSC =  dispatchElecDA.PgenSC_sc.groupby(level=[0]).sum()
+            
+            dispatchElecDA.WindDA = self.results.WindDA
+            dispatchElecDA.usc = self.results.usc
+            dispatchElecDA.RCup = self.results.RCup
+            dispatchElecDA.RCdn = self.results.RCdn
+            dispatchElecDA.RCupSC = self.results.RCupSC    
+            dispatchElecDA.RCdnSC = self.results.RCdnSC
+        
+
+                
+    
+        else:
+            
+            self.model.computeIIS()
+            
+            if self.comp==False:
+                self.model.write(defaults.folder+'/LPModels/mSEDA.ilp')
+            else:
+                self.model.write(defaults.folder+'/LPModels/mSEDA_COMP.ilp')
+        
+        return dispatchElecDA
+        
+    
+    def _load_ElecData(self,bilevel):     
+        ElecData_Load._load_network(self)  
+        ElecData_Load._load_generator_data(self)
+        ElecData_Load._load_wind_data(self)         
+        ElecData_Load._load_initial_data(self)
+        ElecData_Load._load_SCinfo(self)
+        
+        
+        ElecData_Load._combine_wind_gprt_scenarios(self,bilevel)
+        
+        if defaults.ChangeTime==True:
+            self.edata.time=defaults.Time
+        
+    def get_results(self):           
+        GetResults._results_StochD_seq(self)
+        
+    def get_duals(self):
+        GetResults._results_duals(self)
+        
+    def _build_model(self):
+        self.model = gb.Model()        
+
+        mtype = 'Stoch'      # 'Market type' = {Stoch, RealTime}
+        dispatchElecDA = None
+        
+        LibVars._build_variables_elecDA_seq(self)        
+        LibVars._build_variables_elecRT_seq(self,mtype)    
+        
+        LibCns_Elec._build_constraints_elecDA_seq(self)
+        LibCns_Elec._build_constraints_elecRT_seq(self, mtype, dispatchElecDA)
+       
+        LibObjFunct._build_objective_StochElecDA_seq(self)
+        self.model.update()
+        
+
+
+
 class GasDA():
     '''
     Day-ahead gas system scheduling
@@ -546,6 +650,118 @@ class ElecRT():
 #        self.model.Params.timelimit = 10.0
 #        self.model.update()
     
+class ElecRT_seq():
+    '''
+    Real-time electricity system dispatch
+    '''
+    
+    def __init__(self,dispatchElecDA,comp=False,bilevel=False):
+        '''
+        '''        
+        self.edata = expando()
+        self.variables = expando()
+        self.variables.primal={}
+        self.constraints = {}
+        self.results = expando()
+
+        self._load_ElecData(bilevel)
+ 
+        self.comp=comp
+
+        if comp==False:
+            self._build_model(dispatchElecDA)
+            self.model.write(defaults.folder+'/LPModels/mERT.lp')
+        elif comp==True:
+            self._build_CP_model(dispatchElecDA)
+            self.model.write(defaults.folder+'/LPModels/mERT_COMP.lp')
+        
+    def optimize(self):
+        self.model.setParam( 'OutputFlag', defaults.GUROBI_OUTPUT )
+        self.model.optimize()
+        dispatchElecRT = expando()
+        
+        if self.model.Status==2:
+            if self.comp==False:
+                
+                print ('########################################################')
+                print ('Electricity Real-time dispatch - Solved')
+                print ('########################################################')
+                
+                self.get_results()
+                
+
+                dispatchElecRT.RUp = self.results.RUp
+                dispatchElecRT.RDn = self.results.RDn
+                dispatchElecRT.RUpSC_sc = self.results.RUpSC
+                dispatchElecRT.RDnSC_sc = self.results.RDnSC
+                
+                
+                dispatchElecRT.RUpSC = dispatchElecRT.RUpSC_sc.groupby(level=[0, 1]).sum()
+                dispatchElecRT.RDnSC = dispatchElecRT.RDnSC_sc.groupby(level=[0, 1]).sum()
+                
+                dispatchElecRT.Lshed = self.results.Lshed
+                dispatchElecRT.Wspill = self.results.Wspill
+                dispatchElecRT.windscenprob=self.edata.windscenprob
+                dispatchElecRT.windscenarios=self.edata.windscen_index
+                
+
+            else:
+                
+                print ('########################################################')
+                print ('Electricity Real-time dispatch COMPLEMENTARITY - Solved')
+                print ('########################################################')
+                self.get_results()
+                
+    
+        else:
+            
+            self.model.computeIIS()
+            
+            if self.comp==False:
+                self.model.write(defaults.folder+'/LPModels/mERT.ilp')
+            else:
+                self.model.write(defaults.folder+'/LPModels/mERT_COMP.ilp')
+        return dispatchElecRT
+   
+    def _load_ElecData(self,bilevel):     
+        ElecData_Load._load_network(self)  
+        ElecData_Load._load_generator_data(self)
+        ElecData_Load._load_wind_data(self)         
+        ElecData_Load._load_initial_data(self)
+        
+        ElecData_Load._combine_wind_gprt_scenarios(self,bilevel)
+        
+        ElecData_Load._load_SCinfo(self)
+        
+        if defaults.ChangeTime==True:
+            self.edata.time=defaults.Time
+        
+        
+    def get_results(self):       
+        GetResults._results_elecRT_seq(self)
+    
+    def get_duals(self):
+        GetResults._results_duals(self)
+        
+    def _build_model(self, dispatchElecDA):
+        self.model = gb.Model()        
+        self.comp = False
+        mtype = 'RealTime'      # 'Market type' = {Stoch, RealTime}
+  
+        gpprob = self.edata.GasPriceRT_prob.probability.to_dict()      
+        wsprob =self.edata.windscenprob
+        wgp_scen  = list(self.edata.windscenprob.keys())
+        gpprob = {next(iter(gpprob)) : 1} # Get first gas price with probability 1
+        
+        self.edata.scen_wgp = {b: list(a) + [gpprob[a[0]]*wsprob[a[1]]] for a, b in zip(product(gpprob, wsprob), wgp_scen) }
+        self.edata.scenarios = self.edata.scen_wgp.keys()
+        
+        LibVars._build_variables_elecRT_seq(self,mtype)        
+        LibCns_Elec._build_constraints_elecRT_seq(self,mtype,dispatchElecDA)       
+        LibObjFunct._build_objective_ElecRT_seq(self)
+        
+        self.model.update()
+
 
 class GasRT():
     '''
