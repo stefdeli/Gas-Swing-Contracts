@@ -56,7 +56,7 @@ RESERVES_DN_PREMIUM_NONGAS = 1.0 #0.95
 
 # Premium for deployment of reserves GAS generators
 RESERVES_UP_PREMIUM_GAS = 1.02 #1.05
-RESERVES_DN_PREMIUM_GAS = 0.97 #0.95
+RESERVES_DN_PREMIUM_GAS = 0.99 #0.95
 
 # Premium for deployment of reserves contracted GAS generators
 RESERVES_UP_PREMIUM_GAS_SC = 1.0#1.05
@@ -95,5 +95,5 @@ LIMIT='mSEDACost'
 NO_WIND_SCEN=2
 
 # HOw much the low and high real time prices should be relative to the medium
-GASRT_LOW=0.9
-GASRT_HIGH=1.1
+GASRT_LOW=0.7
+GASRT_HIGH=1.3
