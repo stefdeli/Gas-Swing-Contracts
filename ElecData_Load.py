@@ -78,7 +78,10 @@ def _load_generator_data(self):
     # Gas price forecast scenarios - Real-time stage
     
     self.edata.GasPriceRT = pd.read_csv(defaults.GasPriceScenRT_file, index_col=0)
-    self.edata.GasPriceRT_prob = pd.read_csv(defaults.GasPriceScenRTprob_file, index_col=0)
+    
+    Temp=pd.read_csv(defaults.GasPriceScenRTprob_file, index_col=0)
+    Temp.probability=Temp.probability/Temp.probability.sum()
+    self.edata.GasPriceRT_prob = Temp
     # Gas price scenarios index
     self.edata.gprtscen = self.edata.GasPriceRT.scenario[self.edata.GasPriceRT.index[0]].values.tolist()
     
@@ -149,6 +152,11 @@ def _load_initial_data(self):
     
 #    # For different probability per scenario   
     Temp= pd.read_csv(defaults.WindScenProb_file).set_index('Scenario')
+    # Filter out scenarios and normalize
+    Temp=Temp.loc[['s'+str(i+1)  for i in range(0,defaults.NO_WIND_SCEN)]]
+    Temp.Probability=Temp.Probability/Temp.Probability.sum()
+    
+    
     self.edata.windscenprob =Temp.to_dict()['Probability']   
 #    # Expected wind power production    
     self.edata.exp_wind = {wf: self.edata.windscen[wf].multiply(Temp['Probability'].T).multiply(self.edata.windinfo.capacity[wf],axis='index').sum(axis=1) for wf in self.edata.windfarms}
@@ -164,6 +172,7 @@ def load_wind_scenarios(self):
         # File Wind scenarios zone  
         fwst = defaults.WindScen_file + '/scen_wf{0}.csv'.format(zone)
         wst = pd.read_csv(fwst).set_index('TimeID')
+        wst=wst[['s'+str(i+1)  for i in range(0,defaults.NO_WIND_SCEN)]]
         windfarm = 'w{0}'.format(zone)
         twindscen[windfarm] = wst
         
@@ -192,7 +201,7 @@ def _combine_wind_gprt_scenarios(self,bilevel):
         self.edata.scen_wgp = {b: list(a) + [gpprob[a[0]]*wsprob[a[1]]] for a, b in zip(product(gpprob, wsprob), wgp_scen) }
         
         self.edata.scenarios = self.edata.scen_wgp.keys()
-    if bilevel==True: # gas price will be known
+    elif bilevel==True: # gas price will be known
         wsprob =self.edata.windscenprob
         wgp_scen  = list(self.edata.windscenprob.keys())
         

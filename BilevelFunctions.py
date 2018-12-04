@@ -1947,6 +1947,13 @@ def Create_GasPrices(BLmodel):
         for ng in BLmodel.gdata.gnodes:
             var=BLmodel.model.getVarByName('lambda_gas_balance_da({0},k0,{1})'.format(ng,t))
             DA_Gas.loc[t,ng]=var.x
+    # Repeat Last time for 24 hours
+    Row=DA_Gas.loc[t]
+    for t_pad in range(int(t[1:]),25):
+        name='t'+str(t_pad)
+        Row=Row.rename(name)
+        DA_Gas.loc[name]=Row
+        
     DA_Gas=DA_Gas.transpose()
     DA_Gas.index.name='name'
     DA_Gas=DA_Gas.reset_index()
@@ -1961,13 +1968,23 @@ def Create_GasPrices(BLmodel):
     RT_Gas=pd.DataFrame(index=BLmodel.edata.time,columns=BLmodel.gdata.gnodes)
     for t in BLmodel.edata.time:
         for ng in BLmodel.gdata.gnodes:
-            Temp=0.0
-            for s in BLmodel.edata.scenarios:
-                var=BLmodel.model.getVarByName('lambda_gas_balance_rt({0},{2},{1})'.format(ng,t,s))
-                Temp+=var.x/BLmodel.edata.scen_wgp[s][2] # Divide by probability..
-            Temp=Temp/len(BLmodel.edata.scenarios) # Find Average    
-            RT_Gas.loc[t,ng]=Temp
+            Temp=BLmodel.model.getVarByName('lambda_gas_balance_da({0},k0,{1})'.format(ng,t))
+            RT_Gas.loc[t,ng]=Temp.x
+
+#            Temp=0.0
+#            for s in BLmodel.edata.scenarios:
+#                var=BLmodel.model.getVarByName('lambda_gas_balance_rt({0},{2},{1})'.format(ng,t,s))
+#                Temp+=var.x/BLmodel.edata.scen_wgp[s][2] # Divide by probability..
+#            Temp=Temp/len(BLmodel.edata.scenarios) # Find Average    
+#            RT_Gas.loc[t,ng]=Temp
             
+    # Repeat Last time for 24 hours
+    Row=RT_Gas.loc[t]
+    for t_pad in range(int(t[1:]),25):
+        name='t'+str(t_pad)
+        Row=Row.rename(name)
+        RT_Gas.loc[name]=Row
+
     RT_Gas=RT_Gas.transpose()
     RT_Gas.index.name='name'
     RT_Gas=RT_Gas.reset_index()
@@ -1985,11 +2002,11 @@ def Create_GasPrices(BLmodel):
     for ng in BLmodel.gdata.gnodes:
         # Get each node and introduce variations on price scenario
         Row= RT_Gas.loc[(ng,ng,'spm')]
-        RowHigh=1.2*Row
+        RowHigh=defaults.GASRT_HIGH*Row
         RowHigh=RowHigh.rename((ng,ng,'sph'))
         RT_Gas=RT_Gas.append(RowHigh)
         
-        RowLow=0.8*Row
+        RowLow=defaults.GASRT_LOW*Row
         RowLow=RowLow.rename((ng,ng,'spl'))
         RT_Gas=RT_Gas.append(RowLow)
         

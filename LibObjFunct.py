@@ -51,6 +51,7 @@ def ElecDA_obj(self):
     return ElecDA
     
 def ElecRT_obj(self):
+    
     var = self.variables
     #generators = self.edata.generators    
     gfpp = self.edata.gfpp
@@ -82,6 +83,8 @@ def ElecRT_obj(self):
     # Premium for deployment of reserves NON-GAS generators
     P_UP_GAS_SC=defaults.RESERVES_UP_PREMIUM_GAS_SC
     P_DN_GAS_SC=defaults.RESERVES_DN_PREMIUM_GAS_SC 
+    
+
     
     # Real-time redispatch cost
     # Probability  

@@ -394,7 +394,7 @@ def _build_variables_elecRT(self,mtype):
     """
     
     if mtype == 'Stoch':
-        scenarios = self.edata.scenarios # Gas price & wind scenarios        
+        scenarios = list(self.edata.scen_wgp.keys()) # Gas price & wind scenarios        
     elif mtype == 'RealTime':
         scenarios = self.edata.windscen_index # Only wind power scenarios
     

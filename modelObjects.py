@@ -19,6 +19,7 @@ import itertools
 import pickle
 import re
 import defaults
+from itertools import product
 
 
 
@@ -509,7 +510,14 @@ class ElecRT():
         self.model = gb.Model()        
         self.comp = False
         mtype = 'RealTime'      # 'Market type' = {Stoch, RealTime}
+  
+        gpprob = self.edata.GasPriceRT_prob.probability.to_dict()      
+        wsprob =self.edata.windscenprob
+        wgp_scen  = list(self.edata.windscenprob.keys())
+        gpprob = {next(iter(gpprob)) : 1} # Get first gas price with probability 1
         
+        self.edata.scen_wgp = {b: list(a) + [gpprob[a[0]]*wsprob[a[1]]] for a, b in zip(product(gpprob, wsprob), wgp_scen) }
+        self.edata.scenarios = self.edata.scen_wgp.keys()
         
         LibVars._build_variables_elecRT(self,mtype)        
         LibCns_Elec._build_constraints_elecRT(self,mtype,dispatchElecDA)       

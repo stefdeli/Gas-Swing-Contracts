@@ -55,8 +55,8 @@ RESERVES_UP_PREMIUM_NONGAS = 1.0#1.05
 RESERVES_DN_PREMIUM_NONGAS = 1.0 #0.95
 
 # Premium for deployment of reserves GAS generators
-RESERVES_UP_PREMIUM_GAS = 1.05#1.05
-RESERVES_DN_PREMIUM_GAS = 0.98 #0.95
+RESERVES_UP_PREMIUM_GAS = 1.02 #1.05
+RESERVES_DN_PREMIUM_GAS = 0.97 #0.95
 
 # Premium for deployment of reserves contracted GAS generators
 RESERVES_UP_PREMIUM_GAS_SC = 1.0#1.05
@@ -76,7 +76,7 @@ GUROBI_OUTPUT=False
 GasNetwork='FlowBased'
 #GasNetwork='WeymouthApprox'
 ChangeTime=True
-Time=['t'+str(i+1) for i in range(4)]
+Time=['t'+str(i+1) for i in range(1)]
 
 # Epsilon to keep contract price down
 EPS_CONTRACT=1e-3
@@ -90,3 +90,10 @@ GASCOSTMODEL=1
 # Option 1: 'mSEDACost'
 # Option 2: 'Profit' Gas System Profit
 LIMIT='mSEDACost'
+
+# Choose how many wind scenarios to include in model
+NO_WIND_SCEN=2
+
+# HOw much the low and high real time prices should be relative to the medium
+GASRT_LOW=0.8
+GASRT_HIGH=1.2

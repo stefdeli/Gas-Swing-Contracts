@@ -71,10 +71,11 @@ BilevelFunctions.Find_NC_Profit(BLmodel)
 BLmodel.model.write(defaults.folder+'/LPModels/BLmodel.lp')
 
 #--- Solve with current contract
-
+BLmodel.model.Params.Timelimit=50.0
 BLmodel.model.optimize()
 df_var,df_con=BilevelFunctions.get_Var_Con(BLmodel)
 print(df_var[df_var.Name.str.contains('ContractPrice')])
+
 
 BilevelFunctions.Loop_Contracts_Price(BLmodel)
 
@@ -89,3 +90,40 @@ New_contracts = New_contracts[np.isfinite(New_contracts['lambdaC'])]
 
 New_contracts.to_csv(defaults.SCdata)  
 
+#--- Create Sequential Market Clearing
+
+mSEDA = modelObjects.StochElecDA(comp=False,bilevel=False)
+dispatchElecDA=mSEDA.optimize()
+
+f2d = False
+
+mGDA = modelObjects.GasDA(dispatchElecDA,f2d,comp=False)
+dispatchGasDA=mGDA.optimize()
+
+mERT = modelObjects.ElecRT(dispatchElecDA,bilevel=False,comp=False)
+dispatchElecRT=mERT.optimize()
+   
+mGRT = modelObjects.GasRT(dispatchGasDA,dispatchElecRT,f2d,comp=False)
+mGRT.optimize()
+
+
+BL_var,BL_con=BilevelFunctions.get_Var_Con(BLmodel)
+mSEDA_var,mSEDA_con=BilevelFunctions.get_Var_Con(mSEDA)
+
+find='Pgen'
+print(BL_var[BL_var.Name.str.contains(find)])
+print(mSEDA_var[mSEDA_var.Name.str.contains(find)])
+
+
+find='RUp'
+#print(BL_var[BL_var.Name.str.contains(find)])
+print(mSEDA_var[mSEDA_var.Name.str.contains(find)])
+
+
+find='RDn'
+#print(BL_var[BL_var.Name.str.contains(find)])
+print(mSEDA_var[mSEDA_var.Name.str.contains(find)])
+
+find='indDA'
+#print(BL_var[BL_var.Name.str.contains(find)])
+print(mSEDA_var[mSEDA_var.Name.str.contains(find)])
