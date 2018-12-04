@@ -1657,18 +1657,12 @@ def get_Var_Con(modelObject):
         df_var=pd.DataFrame([[var.VarName,var.x,] 
                     for var in modelObject.model.getVars()],
                     columns=['Name','Value'])
-
     else:
         df_var=pd.DataFrame([[var.VarName,var.Start] 
                     for var in modelObject.model.getVars()],
                     columns=['Name','Initial'])
-        
-    try:
-        df_con=pd.DataFrame([[con.ConstrName,con.RHS, modelObject.model.getRow(con),con.sense,con.Pi]
-                 for con in modelObject.model.getConstrs() ],
-            columns=['Name','RHS','LHS','sense','Dual'])
-    except:
-        df_con=pd.DataFrame([[con.ConstrName,con.RHS, modelObject.model.getRow(con),con.sense]
+            
+    df_con=pd.DataFrame([[con.ConstrName,con.RHS, modelObject.model.getRow(con),con.sense]
                  for con in modelObject.model.getConstrs() ],
             columns=['Name','RHS','LHS','sense'])
     return df_var,df_con
@@ -2030,22 +2024,22 @@ def SequentialClearing():
     mGDA = modelObjects.GasDA(dispatchElecDA,f2d,comp=False)
     
 
-    Obj_mGDA=0.0
-
-#   Day Ahead
-    for t in mGDA.gdata.time:
-        for k in  mGDA.gdata.sclim:
-            for gn in mGDA.gdata.gnodes:
-                var=mGDA.model.getVarByName('gshed_da({2},{1},{0})'.format(t,k,gn))
-                Obj_mGDA+=defaults.VOLL*var
-        
-        for gw in mGDA.gdata.wells:
-            LinCost=mGDA.gdata.wellsinfo.LinCost[gw]
-            QuadCost=mGDA.gdata.wellsinfo.QuadCost[gw]
-            
-            var=mGDA.model.getVarByName('gprod({1},k0,{0})'.format(t,gw))
-            Obj_mGDA+=QuadCost*var*var+LinCost*var
-    mGDA.model.setObjective(Obj_mGDA)                
+#    Obj_mGDA=0.0
+#
+##   Day Ahead
+#    for t in mGDA.gdata.time:
+#        for k in  mGDA.gdata.sclim:
+#            for gn in mGDA.gdata.gnodes:
+#                var=mGDA.model.getVarByName('gshed_da({2},{1},{0})'.format(t,k,gn))
+#                Obj_mGDA+=defaults.VOLL*var
+#        
+#        for gw in mGDA.gdata.wells:
+#            LinCost=mGDA.gdata.wellsinfo.LinCost[gw]
+#            QuadCost=mGDA.gdata.wellsinfo.QuadCost[gw]
+#            
+#            var=mGDA.model.getVarByName('gprod({1},k0,{0})'.format(t,gw))
+#            Obj_mGDA+=QuadCost*var*var+LinCost*var
+#    mGDA.model.setObjective(Obj_mGDA)                
     
     dispatchGasDA=mGDA.optimize()
     
@@ -2055,52 +2049,52 @@ def SequentialClearing():
     mGRT = modelObjects.GasRT(dispatchGasDA,dispatchElecRT,f2d,comp=False)
     
     
-    Obj_mGRT=0.0        
-
-    for t in mGRT.gdata.time:        
-        for s in mERT.edata.scenarios:
-            Prob=mERT.edata.scen_wgp[s][2]
-            for gn in mGRT.gdata.gnodes:
-                var=mGRT.model.getVarByName('gshed({2},{1},{0})'.format(t,s,gn))
-                Obj_mGRT += Prob*defaults.VOLL * var
-        
-            for gw in mGRT.gdata.wells:
-                
-                P_UP=defaults.RESERVES_UP_PREMIUM_GASWELL
-                P_DN=defaults.RESERVES_DN_PREMIUM_GASWELL
-                
-                LinCost=mGRT.gdata.wellsinfo.LinCost[gw]
-                QuadCost=mGRT.gdata.wellsinfo.QuadCost[gw]
-                
-                var=mGDA.model.getVarByName('gprod({1},k0,{0})'.format(t,gw)).x
-                varUp=mGRT.model.getVarByName('gprodUp({2},{1},{0})'.format(t,s,gw))        
-                varDn=mGRT.model.getVarByName('gprodDn({2},{1},{0})'.format(t,s,gw))
-                
-                # Cup =a(g+r)^2 +b(g+r) - (a(g)^2 +b(g))
-                # Cup =a(g+r)^2 +b(r) - a(g)^2
-                
-                # Cdn =a(g-r)^2 +b(g-r) - (a(g)^2 +b(g))
-                # Cdn =a(g-r)^2 -b(r) - a(g)^2
-                
-
-                if defaults.GASCOSTMODEL==1 :
-                    Cost = QuadCost*(var+varUp-varDn)*(var+varUp-varDn) +LinCost*(var+varUp-varDn)\
-                       -QuadCost*(var)*(var) - LinCost*(var)
-                    Obj_mGRT+=Prob*(Cost)
-                else:
-                    CostUp = QuadCost*(var+varUp)*(var+varUp) +LinCost*varUp - QuadCost*var*var
-                    
-#                    Rdn = BLmodel.model.addVar(lb=0.0,name='Rdn({2},{1},{0})'.format(t,s,gw))
-#                    BLmodel.model.addConstr(Rdn==var-varDn)
-#                    CostDn = QuadCost*(Rdn)*(Rdn) +LinCost*varDn
-                    
-#                    CostDn = QuadCost*(varDn)*(varDn) -2*QuadCost*varDn*var -LinCost*varDn 
-                    
-                    CostDn = QuadCost*(var-varDn)*(var-varDn) -LinCost*varDn - QuadCost*var*var
-                                        
-                    Obj_mGRT+=Prob*(P_UP*CostUp + P_DN*CostDn) 
-    
-    mGRT.model.setObjective(Obj_mGRT)
+#    Obj_mGRT=0.0        
+#
+#    for t in mGRT.gdata.time:        
+#        for s in mERT.edata.scenarios:
+#            Prob=mERT.edata.scen_wgp[s][2]
+#            for gn in mGRT.gdata.gnodes:
+#                var=mGRT.model.getVarByName('gshed({2},{1},{0})'.format(t,s,gn))
+#                Obj_mGRT += Prob*defaults.VOLL * var
+#        
+#            for gw in mGRT.gdata.wells:
+#                
+#                P_UP=defaults.RESERVES_UP_PREMIUM_GASWELL
+#                P_DN=defaults.RESERVES_DN_PREMIUM_GASWELL
+#                
+#                LinCost=mGRT.gdata.wellsinfo.LinCost[gw]
+#                QuadCost=mGRT.gdata.wellsinfo.QuadCost[gw]
+#                
+#                var=mGDA.model.getVarByName('gprod({1},k0,{0})'.format(t,gw)).x
+#                varUp=mGRT.model.getVarByName('gprodUp({2},{1},{0})'.format(t,s,gw))        
+#                varDn=mGRT.model.getVarByName('gprodDn({2},{1},{0})'.format(t,s,gw))
+#                
+#                # Cup =a(g+r)^2 +b(g+r) - (a(g)^2 +b(g))
+#                # Cup =a(g+r)^2 +b(r) - a(g)^2
+#                
+#                # Cdn =a(g-r)^2 +b(g-r) - (a(g)^2 +b(g))
+#                # Cdn =a(g-r)^2 -b(r) - a(g)^2
+#                
+#
+#                if defaults.GASCOSTMODEL==1 :
+#                    Cost = QuadCost*(var+varUp-varDn)*(var+varUp-varDn) +LinCost*(var+varUp-varDn)\
+#                       -QuadCost*(var)*(var) - LinCost*(var)
+#                    Obj_mGRT+=Prob*(Cost)
+#                else:
+#                    CostUp = QuadCost*(var+varUp)*(var+varUp) +LinCost*varUp - QuadCost*var*var
+#                    
+##                    Rdn = BLmodel.model.addVar(lb=0.0,name='Rdn({2},{1},{0})'.format(t,s,gw))
+##                    BLmodel.model.addConstr(Rdn==var-varDn)
+##                    CostDn = QuadCost*(Rdn)*(Rdn) +LinCost*varDn
+#                    
+##                    CostDn = QuadCost*(varDn)*(varDn) -2*QuadCost*varDn*var -LinCost*varDn 
+#                    
+#                    CostDn = QuadCost*(var-varDn)*(var-varDn) -LinCost*varDn - QuadCost*var*var
+#                                        
+#                    Obj_mGRT+=Prob*(P_UP*CostUp + P_DN*CostDn) 
+#    
+#    mGRT.model.setObjective(Obj_mGRT)
     
     
     mGRT.optimize()
@@ -2112,7 +2106,7 @@ def SequentialClearing():
     Result.mGRT=mGRT
     
     
-    GasPayment=0.0
+    
     CostDA_Elec = 0.0
     for t in mSEDA.edata.time:
         for gen in mSEDA.edata.nongfpp:
@@ -2135,7 +2129,6 @@ def SequentialClearing():
             
 #            print('P/Q for {0} is \t {1:0.2f}/{2:0.1f}'.format(var_name,price.Pi,var.x))
             CostDA_Elec = CostDA_Elec + HR*price.Pi*var.x
-            GasPayment  = GasPayment +HR*price.Pi*var.x
             
             for sc in mSEDA.edata.swingcontracts:
                 var_name = 'PgenSC({0},{2},{1})'.format(gen,t,sc)
@@ -2145,7 +2138,6 @@ def SequentialClearing():
                 var=mSEDA.model.getVarByName(var_name)
 #                print('P/Q for {0} is \t {1:0.1f}/{2:0.1f}'.format(var_name,contract,var.x))
                 CostDA_Elec = CostDA_Elec + HR*contract*var.x
-                GasPayment  = GasPayment + HR*contract*var.x
         
     
     CostRT_Elec = 0.0
@@ -2172,7 +2164,7 @@ def SequentialClearing():
                 
 #                print('P/Q for {0} is \t {1:0.1f}/{2:0.1f}'.format(var_name_up,(price.Pi/gas_prob),(P_UP*var_up.x-P_DN*var_dn.x)))
                 CostRT_Elec = CostRT_Elec + HR*Prob*(price.Pi/gas_prob)*(P_UP*var_up.x-P_DN*var_dn.x)
-                GasPayment  = GasPayment + HR*Prob*(price.Pi/gas_prob)*(P_UP*var_up.x-P_DN*var_dn.x)
+                
                 # Contract
                 for sc in mSEDA.edata.swingcontracts:
                     var_name_up = 'RUpSC({0},{1},{3},{2})'.format(gen,s,t,sc)
@@ -2188,8 +2180,7 @@ def SequentialClearing():
                     
 #                    print('P/Q for {0} is \t {1:0.1f}/{2:0.1f}'.format(var_name_up,contract,(P_UP*var_up.x-P_DN*var_dn.x)))
                     CostRT_Elec = CostRT_Elec + Prob*HR*contract*(P_UP*var_up.x-P_DN*var_dn.x)
-                    GasPayment  = GasPayment + Prob*HR*contract*(P_UP*var_up.x-P_DN*var_dn.x)
-                    
+                
             for gen in  mSEDA.edata.nongfpp:
                 var_name_up = 'RUp({0},{1},{2})'.format(gen,s,t)
                 var_name_dn = 'RDn({0},{1},{2})'.format(gen,s,t)
@@ -2204,8 +2195,6 @@ def SequentialClearing():
 
     Result.ElecCost= CostDA_Elec+ CostRT_Elec        
     Result.GasCost = mGDA.model.ObjVal+mGRT.model.ObjVal
-    Result.GasProfit = GasPayment-Result.GasCost
-    Result.GasPayment=GasPayment
     
     return Result    
 

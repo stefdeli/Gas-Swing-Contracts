@@ -3,12 +3,31 @@
 Minimize
  
 Subject To
- gas_balance_rt(ng101,s2,t1): gshed(ng101,s2,t1) + gprodUp(gw1,s2,t1)
-   - gprodDn(gw1,s2,t1) = 144
- gprodUp_max(gw1,s2,t1): gprodUp(gw1,s2,t1) <= 16
- SOS1_gas_shed_rt(ng101,s2,t1): gshed(ng101,s2,t1)
-   + SOS1_gas_shed_rt(ng101,s2,t1) = 0
+ gas_balance_rt(ng101,s2,t4): gshed(ng101,s2,t4)
+   - qin_sr_rt(('ng101','ng102'),s2,t4) + gprodUp(gw1,s2,t4)
+   - gprodDn(gw1,s2,t4) + gprodUp(gw2,s2,t4) - gprodDn(gw2,s2,t4)
+   + gprodUp(gw3,s2,t4) - gprodDn(gw3,s2,t4) = -400
+ gas_balance_rt(ng102,s2,t4): gshed(ng102,s2,t4)
+   + qout_sr_rt(('ng101','ng102'),s2,t4) = 1200
+ line_store_rt(('ng101','ng102'),s2,t4):
+   - qin_sr_rt(('ng101','ng102'),s2,t4)
+   + qout_sr_rt(('ng101','ng102'),s2,t4) = 0
+ SOS1_gprodUp_max(gw1,s2,t4): gprodUp(gw1,s2,t4)
+   + SOS1_gprodUp_max(gw1,s2,t4) = 0
+ SOS1_gprodUp_max(gw2,s2,t4): gprodUp(gw2,s2,t4)
+   + SOS1_gprodUp_max(gw2,s2,t4) = 0
+ SOS1_gprodUp_max(gw3,s2,t4): gprodUp(gw3,s2,t4)
+   + SOS1_gprodUp_max(gw3,s2,t4) = 450
+ SOS1_gas_shed_rt(ng101,s2,t4): gshed(ng101,s2,t4)
+   + SOS1_gas_shed_rt(ng101,s2,t4) = 0
+ SOS1_gas_shed_rt(ng102,s2,t4): gshed(ng102,s2,t4)
+   + SOS1_gas_shed_rt(ng102,s2,t4) = 0
 Bounds
- gshed(ng101,s2,t1) free
- gprodUp(gw1,s2,t1) free
+ gshed(ng101,s2,t4) free
+ gshed(ng102,s2,t4) free
+ qin_sr_rt(('ng101','ng102'),s2,t4) free
+ qout_sr_rt(('ng101','ng102'),s2,t4) free
+ gprodUp(gw1,s2,t4) free
+ gprodUp(gw2,s2,t4) free
+ gprodUp(gw3,s2,t4) free
 End

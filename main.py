@@ -49,11 +49,7 @@ Result0=BilevelFunctions.SequentialClearing()
 print('\n')
 print('mSEDA  - Bilevel NoContract\t{0:.2f}'.format(BLmodel.model.getVarByName('mSEDACost').x))
 print('\n')
-try :
-    print('mSEDA chose contract {0}'.format( Result.mSEDA.results.usc[Result.mSEDA.results.usc[0]==1].index[0]))
-except:
-    print('No Contract Chosen')
-        
+print('mSEDA chose contract {0}'.format( Result.mSEDA.results.usc[Result.mSEDA.results.usc[0]==1].index[0]))
 
 print('\n')
 print('mSEDA Expected - NoContract \t{0:.2f}'.format(Result0.mSEDA.model.ObjVal))
@@ -64,12 +60,10 @@ print('mSEDA Actual - NoContract \t{0:.2f}'.format(Result0.ElecCost))
 print('mSEDA Actual - Contract   \t{0:.2f}'.format(Result.ElecCost))
 
 print('\n')
-print('Gas Cost  - NoContract  \t{0:.2f}'.format(Result0.GasCost))
-print('Gas Cost  - Contract    \t{0:.2f}'.format(Result.GasCost))
+print('Gas  - NoContract  \t{0:.2f}'.format(Result0.GasCost))
+print('Gas  - Contract    \t{0:.2f}'.format(Result.GasCost))
 
-print('\n')
-print('Gas Profit - NoContract  \t{0:.2f}'.format(Result0.GasProfit))
-print('Gas Profit - Contract    \t{0:.2f}'.format(Result.GasProfit))
+
 
 
 
