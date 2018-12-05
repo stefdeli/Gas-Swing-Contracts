@@ -20,7 +20,7 @@ import modelObjects
 class expando(object):
     pass
 
-Timesteps=['t1']
+Timesteps=['t1'] # Just build model for one time step to get generator
 BLmodel=BilevelFunctions.BuildBilevel(Timesteps=Timesteps)
 
 
@@ -174,7 +174,9 @@ print('\n')
 print('mSEDA  - Bilevel NoContract\t{0:.2f}'.format(BLmodel.NC_mSEDACost))
 print('\n')
 try :
-    print('mSEDA chose contract {0}'.format( Result.mSEDA.results.usc[Result.mSEDA.results.usc[0]==1].index[0]))
+    chosen=Result.mSEDA.results.usc[Result.mSEDA.results.usc[0]==1]
+    for c in chosen.index:
+        print('mSEDA chose contract {0}'.format( c))
 except:
     print('No Contract Chosen')
         

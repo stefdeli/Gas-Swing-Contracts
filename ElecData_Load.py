@@ -233,7 +233,7 @@ def _load_SCinfo(self):
    
     for sc in self.edata.SCdata.index:
         for t in self.edata.time:
-            tt = self.edata.time.index(t)+1            
+            tt = defaults.Horizon.index(t)+1            
             self.edata.SCP[sc,t] = 1.0 if (tt>= self.edata.SCdata.ts[sc] and tt<= self.edata.SCdata.te[sc]) else 0.0
             
 

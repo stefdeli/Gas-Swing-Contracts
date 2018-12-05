@@ -80,7 +80,8 @@ def Find_NC_Profit(BLmodel):
     BLmodel.model.optimize()
     
     # Use solution to create gas prices for running models sequentially
-    Create_GasPrices(BLmodel)
+#    Create_GasPrices(BLmodel)
+    Replace_GasPrices(BLmodel)
     
     
     print('Optimization Finished')
@@ -2022,7 +2023,29 @@ def Create_GasPrices(BLmodel):
         RT_Gas=RT_Gas.append(RowLow)
         
         #RT_Gas.to_csv('test.csv')
-        RT_Gas.to_csv(defaults.GasPriceScenRT_file)
+    RT_Gas.to_csv(defaults.GasPriceScenRT_file)
+        
+
+def Replace_GasPrices(BLmodel):
+        # Create DA Gas Prices
+    DA_Gas=pd.read_csv(defaults.GasPriceDA_file,index_col=['ID','name'])
+    for t in BLmodel.edata.time:
+        for ng in BLmodel.gdata.gnodes:
+            var=BLmodel.model.getVarByName('lambda_gas_balance_da({0},k0,{1})'.format(ng,t))
+            DA_Gas.loc[(ng,ng),t]=var.x
+    DA_Gas.to_csv(defaults.GasPriceDA_file)
+
+    ## Create RT Gas Prices
+    RT_Gas=pd.read_csv(defaults.GasPriceScenRT_file,index_col=['ID','name','scenario'])
+    
+    for t in BLmodel.edata.time:
+        for ng in BLmodel.gdata.gnodes:
+            Temp=BLmodel.model.getVarByName('lambda_gas_balance_da({0},k0,{1})'.format(ng,t))
+            RT_Gas.loc[(ng,ng,'spm'),t]=Temp.x
+            RT_Gas.loc[(ng,ng,'sph'),t]=defaults.GASRT_HIGH*Temp.x
+            RT_Gas.loc[(ng,ng,'spl'),t]=defaults.GASRT_LOW*Temp.x
+
+    RT_Gas.to_csv(defaults.GasPriceScenRT_file)
         
         
 def SequentialClearing(Timesteps=[]):
@@ -2226,7 +2249,10 @@ def SetContracts(Type='normal'):
     
     Max_Profit=New_contracts.GasProfit.max()
     
-    New_contracts = New_contracts[abs(New_contracts.GasProfit-Max_Profit) <1e-3]
+#    New_contracts = New_contracts[abs(New_contracts.GasProfit-Max_Profit) <1e-3]
+    
+    New_contracts = New_contracts[New_contracts.GasProfit >0]
+    
     # Remove extra info
     New_contracts=New_contracts.drop(['MIPGap','GasProfit','mSEDACost','time'],axis=1)
     

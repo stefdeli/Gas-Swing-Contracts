@@ -145,7 +145,7 @@ def _load_SCinfo(self):
    
     for sc in self.gdata.SCdata.index:
         for t in self.gdata.time:
-            tt = self.gdata.time.index(t)+1            
+            tt = defaults.Horizon.index(t)+1            
             self.gdata.SCP[sc,t] = 1.0 if (tt>= self.gdata.SCdata.ts[sc] and tt<= self.gdata.SCdata.te[sc]) else 0.0
 
 

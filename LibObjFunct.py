@@ -22,6 +22,7 @@ def _build_objective_StochElecDA(self):
 def _build_objective_StochElecDA_seq(self): 
     m = self.model     
     m.setObjective(  ElecDA_obj_seq(self) + ElecRT_obj_seq(self),   gb.GRB.MINIMIZE)
+#    m.setObjective(  ElecDA_obj_seq(self) ,   gb.GRB.MINIMIZE)
 
 def _build_objective_ElecRT_seq(self):    
     m = self.model     

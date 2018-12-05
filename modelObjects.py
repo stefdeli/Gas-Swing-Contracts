@@ -326,7 +326,7 @@ class StochElecDA_seq():
            
             
             print ('########################################################')
-            print ('Stochastic electricity dispatch - Solved')
+            print ('Stochastic electricity dispatch - Solved {0}'.format(self.model.ObjVal))
             print ('########################################################')
             
             self.get_results()
