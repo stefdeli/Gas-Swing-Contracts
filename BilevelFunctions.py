@@ -74,7 +74,7 @@ def Find_NC_Profit(BLmodel):
     BLmodel.model.params.AggFill = 10
     BLmodel.model.params.Presolve = 2
     BLmodel.model.setParam('ImproveStartTime',10)
-    BLmodel.model.setParam( 'MIPFocus',1 )
+    BLmodel.model.setParam( 'MIPFocus',3 )
     BLmodel.model.setParam( 'OutputFlag',True )
     
     BLmodel.model.optimize()
@@ -89,6 +89,9 @@ def Find_NC_Profit(BLmodel):
     
     
     mSEDACost = BLmodel.model.getVarByName('mSEDACost')
+    
+    BLmodel.NC_mSEDACost=mSEDACost.x
+   
     NC_Profit = BLmodel.model.ObjVal
     
     print('\nProfit without Contracts is {0}'.format(NC_Profit))
@@ -99,9 +102,10 @@ def Find_NC_Profit(BLmodel):
     
     print('Reseting Model to original contract')    
 # Replace any deleted constraints and delete any added constraints
-    BLmodel.model.addConstr(mSEDACost<=1.0*mSEDACost.x,name='CostLimit')
+    BLmodel.model.addConstr(mSEDACost<=1.0* BLmodel.NC_mSEDACost,name='CostLimit')
     BLmodel.model.update()
-
+ 
+#    
 
     print('Resetting the model to the first contract')
     

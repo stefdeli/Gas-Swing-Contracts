@@ -1,0 +1,5 @@
+ID,name,country,origin_elec,origin_gas,primaryfuel,capacity,lincost,upreg,downreg,UpCapCost,DnCapCost,HR
+g1,g1,Z1,ne101,ng101,gas,150,0,40,40,0,0,8
+g2,g2,Z1,ne101,ng102,gas,20,0,40,40,0,0,8
+g3,g3,Z1,ne101,,nongas,20,15.2,40,40,0,0,8
+g4,g4,Z1,ne101,,nongas,100,100,40,40,0,0,8

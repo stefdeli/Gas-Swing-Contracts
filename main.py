@@ -31,6 +31,7 @@ BLmodel.model.write(defaults.folder+'/LPModels/BLmodel.lp')
 
 #--- Solve with current contract
 BLmodel.model.Params.Timelimit=50.0
+BLmodel.model.Params.MIPFocus=3
 BLmodel.model.optimize()
 df_var,df_con=BilevelFunctions.get_Var_Con(BLmodel)
 print(df_var[df_var.Name.str.contains('ContractPrice')])
@@ -47,7 +48,7 @@ Result0=BilevelFunctions.SequentialClearing()
 
 
 print('\n')
-print('mSEDA  - Bilevel NoContract\t{0:.2f}'.format(BLmodel.model.getVarByName('mSEDACost').x))
+print('mSEDA  - Bilevel NoContract\t{0:.2f}'.format(BLmodel.NC_mSEDACost))
 print('\n')
 try :
     print('mSEDA chose contract {0}'.format( Result.mSEDA.results.usc[Result.mSEDA.results.usc[0]==1].index[0]))
