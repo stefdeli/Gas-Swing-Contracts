@@ -21,7 +21,9 @@ class expando(object):
     pass
 
 
-BLmodel=BilevelFunctions.BuildBilevel()
+
+Timesteps=['t1']
+BLmodel=BilevelFunctions.BuildBilevel(Timesteps=Timesteps)
 
 
 
@@ -40,11 +42,11 @@ print(df_var[df_var.Name.str.contains('ContractPrice')])
 BilevelFunctions.Loop_Contracts_Price(BLmodel)
 
 BilevelFunctions.SetContracts(Type='normal')
-Result=BilevelFunctions.SequentialClearing()
+Result=BilevelFunctions.SequentialClearing(Timesteps=Timesteps)
 
 
 BilevelFunctions.SetContracts(Type='zero')
-Result0=BilevelFunctions.SequentialClearing()
+Result0=BilevelFunctions.SequentialClearing(Timesteps=Timesteps)
 
 
 print('\n')

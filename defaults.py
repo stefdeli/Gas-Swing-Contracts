@@ -1,7 +1,7 @@
 #folder='Data/IntegratedMarketStochastic'
 #folder='Data/SimpleNetwork_ImperialUnits_snapshot'
 
-folder='Data/SimpleNetwork_ImperialUnitsActual'
+#folder='Data/SimpleNetwork_ImperialUnitsActual'
 folder='Data/LargeNetwork_ImperialUnitsActual'
 
 
@@ -78,8 +78,10 @@ GUROBI_OUTPUT=False
 GasNetwork='FlowBased'
 #GasNetwork='WeymouthApprox'
 ChangeTime=True
-Time=['t'+str(i+1) for i in range(4)]
+Time=['t'+str(i+1) for i in range(1)]
 
+
+Horizon=['t'+str(i+1) for i in range(24)]
 # Epsilon to keep contract price down
 EPS_CONTRACT=1e-3
 

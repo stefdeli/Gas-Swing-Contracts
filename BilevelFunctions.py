@@ -115,7 +115,7 @@ def Find_NC_Profit(BLmodel):
     Change_ContractParameters(BLmodel,SCdata,SCP)
 
 
-    print('\nNo Contract Profit found and included in model \n\n')
+    print('\nNew Contract Profit found and included in model \n\n')
     BLmodel.model.update()
     BLmodel.model.reset()
     BLmodel.model.resetParams()
@@ -141,7 +141,7 @@ def Get_SCdata(BLmodel):
           
     for sc in SCdata.index:
         for t in BLmodel.edata.time:
-            tt = BLmodel.edata.time.index(t)+1
+            tt = defaults.Horizon.index(t)+1
             SCP[sc,t] = 1.0 if (tt >= SCdata.ts[sc] and tt<= SCdata.te[sc]) else 0.0
     
     return All_SCdata,SCP
@@ -1379,7 +1379,7 @@ def Loop_Contracts_Price(BLmodel):
        
         for sc in SCdata.index:
             for t in BLmodel.edata.time:
-                tt = BLmodel.edata.time.index(t)+1            
+                tt = defaults.Horizon.index(t)+1            
                 SCP[sc,t] = 1.0 if (tt >= SCdata.ts[sc] and tt<= SCdata.te[sc]) else 0.0
          
         
@@ -2025,13 +2025,14 @@ def Create_GasPrices(BLmodel):
         RT_Gas.to_csv(defaults.GasPriceScenRT_file)
         
         
-def SequentialClearing():
-    mSEDA = modelObjects.StochElecDA_seq(comp=False,bilevel=False)
+def SequentialClearing(Timesteps=[]):
+    
+    mSEDA = modelObjects.StochElecDA_seq(comp=False,bilevel=False,Timesteps=Timesteps)
     dispatchElecDA=mSEDA.optimize()
     
     f2d = False
     
-    mGDA = modelObjects.GasDA(dispatchElecDA,f2d,comp=False)
+    mGDA = modelObjects.GasDA(dispatchElecDA,f2d,comp=False,Timesteps=Timesteps)
     
 
     Obj_mGDA=0.0
@@ -2053,10 +2054,10 @@ def SequentialClearing():
     
     dispatchGasDA=mGDA.optimize()
     
-    mERT = modelObjects.ElecRT_seq(dispatchElecDA,bilevel=False,comp=False)
+    mERT = modelObjects.ElecRT_seq(dispatchElecDA,bilevel=False,comp=False,Timesteps=Timesteps)
     dispatchElecRT=mERT.optimize()
        
-    mGRT = modelObjects.GasRT(dispatchGasDA,dispatchElecRT,f2d,comp=False)
+    mGRT = modelObjects.GasRT(dispatchGasDA,dispatchElecRT,f2d,comp=False,Timesteps=Timesteps)
     
     
     Obj_mGRT=0.0        
@@ -2237,31 +2238,35 @@ def SetContracts(Type='normal'):
         
     New_contracts.to_csv(defaults.SCdata)  
 
-def BuildBilevel():
-    mEDA = modelObjects.ElecDA(bilevel=True)
+def BuildBilevel(Timesteps=[]):
+    
+    
+    
+    mEDA = modelObjects.ElecDA(bilevel=True,Timesteps=Timesteps)
     dispatchElecDA=mEDA.optimize()
     
-    mSEDA = modelObjects.StochElecDA(bilevel=True)
+    mSEDA = modelObjects.StochElecDA(bilevel=True,Timesteps=Timesteps)
     dispatchElecDA=mSEDA.optimize()
     
     f2d = False
     
-    mGDA = modelObjects.GasDA(dispatchElecDA,f2d)
+    mGDA = modelObjects.GasDA(dispatchElecDA,f2d,Timesteps=Timesteps)
     dispatchGasDA=mGDA.optimize()
     
-    mERT = modelObjects.ElecRT(dispatchElecDA,bilevel=True)
+    mERT = modelObjects.ElecRT(dispatchElecDA,bilevel=True,Timesteps=Timesteps)
     dispatchElecRT=mERT.optimize()
        
-    mGRT = modelObjects.GasRT(dispatchGasDA,dispatchElecRT,f2d)
+    mGRT = modelObjects.GasRT(dispatchGasDA,dispatchElecRT,f2d,Timesteps=Timesteps)
     mGRT.optimize()
     
     
-    mEDA_COMP = modelObjects.ElecDA(comp=True,bilevel=True)
-    mSEDA_COMP = modelObjects.StochElecDA(comp=True,bilevel=True)
-    mGDA_COMP = modelObjects.GasDA(dispatchElecDA,f2d,comp=True)
-    mERT_COMP = modelObjects.ElecRT(dispatchElecDA,comp=True,bilevel=True)
-    mGRT_COMP = modelObjects.GasRT(dispatchGasDA,dispatchElecRT,f2d,comp=True)
+    mEDA_COMP = modelObjects.ElecDA(comp=True,bilevel=True,Timesteps=Timesteps)
+    mSEDA_COMP = modelObjects.StochElecDA(comp=True,bilevel=True,Timesteps=Timesteps)
+    mGDA_COMP = modelObjects.GasDA(dispatchElecDA,f2d,comp=True,Timesteps=Timesteps)
+    mERT_COMP = modelObjects.ElecRT(dispatchElecDA,comp=True,bilevel=True,Timesteps=Timesteps)
+    mGRT_COMP = modelObjects.GasRT(dispatchGasDA,dispatchElecRT,f2d,comp=True,Timesteps=Timesteps)
     
+ 
     
     mEDA_COMP.optimize()
     mSEDA_COMP.optimize()
@@ -2272,7 +2277,7 @@ def BuildBilevel():
            
     f2d=False         
     mSEDACost_NoContract=1e6
-    BLmodel= modelObjects.Bilevel_Model(f2d,mSEDACost_NoContract)
+    BLmodel= modelObjects.Bilevel_Model(f2d,mSEDACost_NoContract,Timesteps=Timesteps)
     
     DA_RT_Model(BLmodel,mSEDA_COMP,mGDA_COMP,mGRT_COMP)
 #    DA_Model(BLmodel,mEDA_COMP,mGDA_COMP)

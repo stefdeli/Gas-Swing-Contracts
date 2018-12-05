@@ -34,7 +34,7 @@ class ElecDA():
     Stochastic electricity system day-ahead scheduling
     '''
     
-    def __init__(self,comp=False,bilevel=False):
+    def __init__(self,comp=False,bilevel=False,Timesteps=[]):
         '''
         comp - building a complementarity model?
         bilevel - building a bilevel model?
@@ -46,7 +46,7 @@ class ElecDA():
         self.results = expando()
 
         
-        self._load_ElecData(bilevel)
+        self._load_ElecData(bilevel,Timesteps)
         self.comp=comp
         
         if comp==False:
@@ -97,7 +97,7 @@ class ElecDA():
         return dispatchElecDA
         
     
-    def _load_ElecData(self,bilevel):     
+    def _load_ElecData(self,bilevel,Timesteps):     
         ElecData_Load._load_network(self)  
         ElecData_Load._load_generator_data(self)
         ElecData_Load._load_wind_data(self)         
@@ -108,7 +108,10 @@ class ElecDA():
         ElecData_Load._combine_wind_gprt_scenarios(self,bilevel)
         
         if defaults.ChangeTime==True:
-            self.edata.time=defaults.Time
+            if not(Timesteps):
+                self.edata.time=defaults.Time
+            else:
+                self.edata.time=Timesteps
         
     def get_results(self):           
         GetResults._results_elecDA(self)
@@ -159,7 +162,7 @@ class StochElecDA():
     Stochastic electricity system day-ahead scheduling
     '''
     
-    def __init__(self,comp=False,bilevel=False):
+    def __init__(self,comp=False,bilevel=False,Timesteps=[]):
         '''
         comp - building a complementarity model?
         bilevel - building a bilevel model?
@@ -171,7 +174,7 @@ class StochElecDA():
         self.results = expando()
 
         
-        self._load_ElecData(bilevel)
+        self._load_ElecData(bilevel,Timesteps)
         self.comp=comp
         
         if comp==False:
@@ -225,7 +228,7 @@ class StochElecDA():
         return dispatchElecDA
         
     
-    def _load_ElecData(self,bilevel):     
+    def _load_ElecData(self,bilevel,Timesteps):     
         ElecData_Load._load_network(self)  
         ElecData_Load._load_generator_data(self)
         ElecData_Load._load_wind_data(self)         
@@ -236,7 +239,10 @@ class StochElecDA():
         ElecData_Load._combine_wind_gprt_scenarios(self,bilevel)
         
         if defaults.ChangeTime==True:
-            self.edata.time=defaults.Time
+            if not(Timesteps):
+                self.edata.time=defaults.Time
+            else:
+                self.edata.time=Timesteps
         
     def get_results(self):           
         GetResults._results_StochD(self)
@@ -291,7 +297,7 @@ class StochElecDA_seq():
     Stochastic electricity system day-ahead scheduling
     '''
     
-    def __init__(self,comp=False,bilevel=False):
+    def __init__(self,comp=False,bilevel=False,Timesteps=[]):
         '''
         comp - building a complementarity model?
         bilevel - building a bilevel model?
@@ -303,7 +309,7 @@ class StochElecDA_seq():
         self.results = expando()
 
         
-        self._load_ElecData(bilevel)
+        self._load_ElecData(bilevel,Timesteps)
         self.comp=comp
         
         self._build_model()
@@ -351,7 +357,7 @@ class StochElecDA_seq():
         return dispatchElecDA
         
     
-    def _load_ElecData(self,bilevel):     
+    def _load_ElecData(self,bilevel,Timesteps):     
         ElecData_Load._load_network(self)  
         ElecData_Load._load_generator_data(self)
         ElecData_Load._load_wind_data(self)         
@@ -362,8 +368,11 @@ class StochElecDA_seq():
         ElecData_Load._combine_wind_gprt_scenarios(self,bilevel)
         
         if defaults.ChangeTime==True:
-            self.edata.time=defaults.Time
-        
+            if not(Timesteps):
+                self.edata.time=defaults.Time
+            else:
+                self.edata.time=Timesteps
+                
     def get_results(self):           
         GetResults._results_StochD_seq(self)
         
@@ -392,7 +401,7 @@ class GasDA():
     '''
     Day-ahead gas system scheduling
     '''
-    def __init__(self, dispatchElecDA, f2d,comp=False):
+    def __init__(self, dispatchElecDA, f2d,comp=False,Timesteps=[]):
         '''
         '''
         self.gdata = expando()
@@ -404,7 +413,7 @@ class GasDA():
         
         
         self._setElecDAschedule(dispatchElecDA)
-        self._load_data(dispatchElecDA,f2d)
+        self._load_data(dispatchElecDA,f2d,Timesteps)
         
         self.comp=comp
         self.f2d=f2d
@@ -468,14 +477,17 @@ class GasDA():
     def get_duals(self):
         GetResults._results_duals(self)
 
-    def _load_data(self,dispatchElecDA,f2d):
+    def _load_data(self,dispatchElecDA,f2d,Timesteps):
         GasData_Load._load_gas_network(self,f2d)              
         GasData_Load._load_wells_data(self)
         GasData_Load._load_gasload(self)
         GasData_Load._load_gas_storage(self)
         
         if defaults.ChangeTime==True:
-            self.gdata.time=defaults.Time
+            if not(Timesteps):
+                self.gdata.time=defaults.Time
+            else:
+                self.gdata.time=Timesteps
         
         GasData_Load._load_SCinfo(self)          
         GasData_Load._ActiveSCinfo(self,dispatchElecDA)  
@@ -527,7 +539,7 @@ class ElecRT():
     Real-time electricity system dispatch
     '''
     
-    def __init__(self,dispatchElecDA,comp=False,bilevel=False):
+    def __init__(self,dispatchElecDA,comp=False,bilevel=False,Timesteps=[]):
         '''
         '''        
         self.edata = expando()
@@ -536,7 +548,7 @@ class ElecRT():
         self.constraints = {}
         self.results = expando()
 
-        self._load_ElecData(bilevel)
+        self._load_ElecData(bilevel,Timesteps)
  
         self.comp=comp
 
@@ -590,7 +602,7 @@ class ElecRT():
                 self.model.write(defaults.folder+'/LPModels/mERT_COMP.ilp')
         return dispatchElecRT
    
-    def _load_ElecData(self,bilevel):     
+    def _load_ElecData(self,bilevel,Timesteps):     
         ElecData_Load._load_network(self)  
         ElecData_Load._load_generator_data(self)
         ElecData_Load._load_wind_data(self)         
@@ -601,7 +613,10 @@ class ElecRT():
         ElecData_Load._load_SCinfo(self)
         
         if defaults.ChangeTime==True:
-            self.edata.time=defaults.Time
+            if not(Timesteps):
+                self.edata.time=defaults.Time
+            else:
+                self.edata.time=Timesteps
         
         
     def get_results(self):       
@@ -655,7 +670,7 @@ class ElecRT_seq():
     Real-time electricity system dispatch
     '''
     
-    def __init__(self,dispatchElecDA,comp=False,bilevel=False):
+    def __init__(self,dispatchElecDA,comp=False,bilevel=False,Timesteps=[]):
         '''
         '''        
         self.edata = expando()
@@ -664,7 +679,7 @@ class ElecRT_seq():
         self.constraints = {}
         self.results = expando()
 
-        self._load_ElecData(bilevel)
+        self._load_ElecData(bilevel,Timesteps)
  
         self.comp=comp
 
@@ -723,7 +738,7 @@ class ElecRT_seq():
                 self.model.write(defaults.folder+'/LPModels/mERT_COMP.ilp')
         return dispatchElecRT
    
-    def _load_ElecData(self,bilevel):     
+    def _load_ElecData(self,bilevel,Timesteps):     
         ElecData_Load._load_network(self)  
         ElecData_Load._load_generator_data(self)
         ElecData_Load._load_wind_data(self)         
@@ -734,7 +749,10 @@ class ElecRT_seq():
         ElecData_Load._load_SCinfo(self)
         
         if defaults.ChangeTime==True:
-            self.edata.time=defaults.Time
+            if not(Timesteps):
+                self.edata.time=defaults.Time
+            else:
+                self.edata.time=Timesteps
         
         
     def get_results(self):       
@@ -768,7 +786,7 @@ class GasRT():
     Real-time gas system dispatch
     '''
     
-    def __init__(self, dispatchGasDA,dispatchElecRT,f2d,comp=False):
+    def __init__(self, dispatchGasDA,dispatchElecRT,f2d,comp=False,Timesteps=[]):
         '''
         '''
         self.gdata = expando()
@@ -778,7 +796,7 @@ class GasRT():
         self.constraints = {}
         self.results = expando()
 
-        self._load_data(f2d,dispatchElecRT)
+        self._load_data(f2d,dispatchElecRT,Timesteps)
         
         self.comp=comp
         self.f2d=f2d
@@ -835,7 +853,7 @@ class GasRT():
     def get_duals(self):
         GetResults._results_duals(self)
 
-    def _load_data(self,f2d,dispatchElecRT):
+    def _load_data(self,f2d,dispatchElecRT,Timesteps):
         GasData_Load._load_gas_network(self,f2d)              
         GasData_Load._load_wells_data(self)
         GasData_Load._load_gasload(self)
@@ -845,8 +863,10 @@ class GasRT():
         GasData_Load._load_SCinfo(self)   
         
         if defaults.ChangeTime==True:
-            self.gdata.time=defaults.Time
-
+            if not(Timesteps):
+                self.gdata.time=defaults.Time
+            else:
+                self.gdata.time=Timesteps
       
     def _build_model(self,dispatchGasDA,dispatchElecRT):
         self.model = gb.Model()
@@ -887,7 +907,7 @@ class Bilevel_Model():
     Real-time electricity system dispatch
     '''
     
-    def __init__(self,f2d,mSEDACost_NoContract):
+    def __init__(self,f2d,mSEDACost_NoContract,Timesteps=[]):
         '''
         '''
         self.mSEDACost_NoContract=mSEDACost_NoContract
@@ -898,24 +918,27 @@ class Bilevel_Model():
         self.constraints = {}
         self.results = expando()
 
-        self._load_ElecData()
-        self._load_GasData(f2d)
+        self._load_ElecData(Timesteps)
+        self._load_GasData(f2d,Timesteps)
         
         self._build_model()
         
         
-    def _load_GasData(self,f2d):
+    def _load_GasData(self,f2d,Timesteps):
         GasData_Load._load_gas_network(self,f2d)              
         GasData_Load._load_wells_data(self)
         GasData_Load._load_gasload(self)
         GasData_Load._load_gas_storage(self)
 
         if defaults.ChangeTime==True:
-            self.gdata.time=defaults.Time
+            if not(Timesteps):
+                self.gdata.time=defaults.Time
+            else:
+                self.gdata.time=Timesteps
         
         GasData_Load._load_SCinfo(self)
         
-    def _load_ElecData(self):     
+    def _load_ElecData(self,Timesteps):     
         ElecData_Load._load_network(self)  
         ElecData_Load._load_generator_data(self)
         ElecData_Load._load_wind_data(self)         
@@ -926,7 +949,10 @@ class Bilevel_Model():
         ElecData_Load._load_SCinfo(self)
         
         if defaults.ChangeTime==True:
-            self.edata.time=defaults.Time
+            if not(Timesteps):
+                self.edata.time=defaults.Time
+            else:
+                self.edata.time=Timesteps
         
     def _build_model(self):
         self.model = gb.Model()
