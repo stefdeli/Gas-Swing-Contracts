@@ -1,8 +1,8 @@
 #folder='Data/IntegratedMarketStochastic'
 #folder='Data/SimpleNetwork_ImperialUnits_snapshot'
 
-#folder='Data/SimpleNetwork_ImperialUnitsActual'
-folder='Data/LargeNetwork_ImperialUnitsActual'
+folder='Data/SimpleNetwork_ImperialUnitsActual'
+#folder='Data/LargeNetwork_ImperialUnitsActual'
 
 
 
@@ -53,12 +53,12 @@ GasSlack = 'None'# 'None', 'FixInput', 'FixOutput', 'ConstantOutput'
 FINAL_LP_DEV=0.1 # 0.1 = 10%
 
 # Premium for deployment of reserves NON-GAS generators
-RESERVES_UP_PREMIUM_NONGAS = 1.0#1.05
-RESERVES_DN_PREMIUM_NONGAS = 1.0 #0.95
+RESERVES_UP_PREMIUM_NONGAS = 1.1#1.05
+RESERVES_DN_PREMIUM_NONGAS = 0.92 #0.95
 
 # Premium for deployment of reserves GAS generators
-RESERVES_UP_PREMIUM_GAS = 1.02 #1.05
-RESERVES_DN_PREMIUM_GAS = 0.99 #0.95
+RESERVES_UP_PREMIUM_GAS = 1.1 #1.05
+RESERVES_DN_PREMIUM_GAS = 0.92 #0.95
 
 # Premium for deployment of reserves contracted GAS generators
 RESERVES_UP_PREMIUM_GAS_SC = 1.0#1.05

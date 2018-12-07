@@ -2142,6 +2142,7 @@ def SequentialClearing(Timesteps=[]):
     
     GasPayment=0.0
     CostDA_Elec = 0.0
+    
     for t in mSEDA.edata.time:
         for gen in mSEDA.edata.nongfpp:
             var_name='Pgen({0},{1})'.format(gen,t)
@@ -2161,26 +2162,47 @@ def SequentialClearing(Timesteps=[]):
             
             price=mGDA.model.getConstrByName(con_name)
             
-#            print('P/Q for {0} is \t {1:0.2f}/{2:0.1f}'.format(var_name,price.Pi,var.x))
+            print('P/Q for {0} is \t {1:0.2f}/{2:0.1f}'.format(var_name,price.Pi,var.x))
             CostDA_Elec = CostDA_Elec + HR*price.Pi*var.x
             GasPayment  = GasPayment +HR*price.Pi*var.x
             
             for sc in mSEDA.edata.swingcontracts:
-                var_name = 'PgenSC({0},{2},{1})'.format(gen,t,sc)
-                
-                contract=mSEDA.edata.SCdata.lambdaC[(sc,gen)]
-                
-                var=mSEDA.model.getVarByName(var_name)
-#                print('P/Q for {0} is \t {1:0.1f}/{2:0.1f}'.format(var_name,contract,var.x))
-                CostDA_Elec = CostDA_Elec + HR*contract*var.x
-                GasPayment  = GasPayment + HR*contract*var.x
-        
+                if mSEDA.results.usc.loc[sc][0]==1:
+                    var_name = 'PgenSC({0},{2},{1})'.format(gen,t,sc)
+                    
+                    contract=mSEDA.edata.SCdata.lambdaC[(sc,gen)]
+                    
+                    var=mSEDA.model.getVarByName(var_name)
+                    print('P/Q for {0} is \t {1:0.1f}/{2:0.1f}'.format(var_name,contract,var.x))
+                    CostDA_Elec = CostDA_Elec + HR*contract*var.x
+                    GasPayment  = GasPayment + HR*contract*var.x
+            
     
     CostRT_Elec = 0.0
+    CostRT_Elec_NoArbitrage=0.0
+    
+    All_Dispatches={}
+    All_Dispatches_Forecast={}
     for t in  mSEDA.edata.time:
         for s in  mSEDA.edata.scenarios:
+            
+            gen_index=mSEDA.edata.gfpp+mSEDA.edata.nongfpp
+            Dispatch=pd.DataFrame(index=gen_index,columns=['RUp','RDn',
+                                           'RUpSC','RDnSC',
+                                           'RUpPrice','RDnPrice',
+                                           'RUpSCPrice','RDnSCPrice'
+                                           ,'Cost'])
+            
+            Dispatch_Forecast=pd.DataFrame(index=gen_index,columns=['RUp','RDn',
+                                           'RUpSC','RDnSC',
+                                           'RUpPrice','RDnPrice',
+                                           'RUpSCPrice','RDnSCPrice'
+                                           ,'Cost'])
+            
             Prob= mSEDA.edata.scen_wgp[s][2]
             for gen in  mSEDA.edata.gfpp:
+                Dispatch.loc[gen]['Cost']=0.0
+                Dispatch_Forecast.loc[gen]['Cost']=0.0
                 HR= mSEDA.edata.generatorinfo.HR[gen]  
                 
                 var_name_up = 'RUp({0},{1},{2})'.format(gen,s,t)
@@ -2190,6 +2212,7 @@ def SequentialClearing(Timesteps=[]):
                 var_dn= mSEDA.model.getVarByName(var_name_dn)
                 
                 s_gas=mSEDA.edata.scen_wgp[s][1]
+                s_rt_gas=mSEDA.edata.scen_wgp[s][0]
                 gas_node=mSEDA.edata.generatorinfo.origin_gas[gen]
                 gas_prob=mSEDA.edata.windscenprob[s_gas]
                 con_name ='gas_balance_rt({0},{1},{2})'.format(gas_node ,s_gas,t)
@@ -2198,26 +2221,69 @@ def SequentialClearing(Timesteps=[]):
                 P_UP=defaults.RESERVES_UP_PREMIUM_GAS
                 P_DN=defaults.RESERVES_DN_PREMIUM_GAS
                 
-#                print('P/Q for {0} is \t {1:0.1f}/{2:0.1f}'.format(var_name_up,(price.Pi/gas_prob),(P_UP*var_up.x-P_DN*var_dn.x)))
+                Forecast=Result.mSEDA.edata.GasPriceRT[t][gas_node,s_rt_gas]
+                
+                Dispatch.loc[gen]['RUp']=var_up.x
+                Dispatch.loc[gen]['RDn']=var_dn.x
+                Dispatch.loc[gen]['RUpPrice']=HR*Prob*(price.Pi/gas_prob)*P_UP
+                Dispatch.loc[gen]['RDnPrice']=HR*Prob*(price.Pi/gas_prob)*P_DN
+                Temp=Dispatch.loc[gen]['Cost']
+                Dispatch.loc[gen]['Cost']=Temp+var_up.x*HR*Prob*(price.Pi/gas_prob)*P_UP-var_dn.x*HR*Prob*(price.Pi/gas_prob)*P_DN
+                
+                Dispatch.loc[gen]['RUpSC']=0.0
+                Dispatch.loc[gen]['RDnSC']=0.0
+                Dispatch.loc[gen]['RUpSCPrice']=0.0
+                Dispatch.loc[gen]['RDnSCPrice']=0.0
+                
+                Dispatch_Forecast.loc[gen]['RUp']=var_up.x
+                Dispatch_Forecast.loc[gen]['RDn']=var_dn.x
+                Dispatch_Forecast.loc[gen]['RUpPrice']=HR*Prob*(Forecast)*P_UP
+                Dispatch_Forecast.loc[gen]['RDnPrice']=HR*Prob*(Forecast)*P_DN
+                Temp=Dispatch_Forecast.loc[gen]['Cost']
+                Dispatch_Forecast.loc[gen]['Cost']=Temp+var_up.x*HR*Prob*Forecast*P_UP-var_dn.x*HR*Prob*Forecast*P_DN
+                
+                Dispatch_Forecast.loc[gen]['RUpSC']=0.0
+                Dispatch_Forecast.loc[gen]['RDnSC']=0.0
+                Dispatch_Forecast.loc[gen]['RUpSCPrice']=0.0
+                Dispatch_Forecast.loc[gen]['RDnSCPrice']=0.0
+                
+                
+#                print('E[p]/P/Q for {0} is \t {3:0.1f}:{1:0.1f}/{2:0.1f}'.format(var_name_up,(price.Pi/gas_prob),(var_up.x-var_dn.x),Forecast))
                 CostRT_Elec = CostRT_Elec + HR*Prob*(price.Pi/gas_prob)*(P_UP*var_up.x-P_DN*var_dn.x)
                 GasPayment  = GasPayment + HR*Prob*(price.Pi/gas_prob)*(P_UP*var_up.x-P_DN*var_dn.x)
-                # Contract
+#                 Contract
                 for sc in mSEDA.edata.swingcontracts:
-                    var_name_up = 'RUpSC({0},{1},{3},{2})'.format(gen,s,t,sc)
-                    var_name_dn = 'RDnSC({0},{1},{3},{2})'.format(gen,s,t,sc)
-                    
-                    var_up= mSEDA.model.getVarByName(var_name_up)
-                    var_dn= mSEDA.model.getVarByName(var_name_dn)
-                    contract=mSEDA.edata.SCdata.lambdaC[(sc,gen)]
-                    
-    #                print(Prob*8*contract.x*(var_up-var_dn))
-                    P_UP=defaults.RESERVES_UP_PREMIUM_GAS_SC
-                    P_DN=defaults.RESERVES_DN_PREMIUM_GAS_SC
-                    
-#                    print('P/Q for {0} is \t {1:0.1f}/{2:0.1f}'.format(var_name_up,contract,(P_UP*var_up.x-P_DN*var_dn.x)))
-                    CostRT_Elec = CostRT_Elec + Prob*HR*contract*(P_UP*var_up.x-P_DN*var_dn.x)
-                    GasPayment  = GasPayment + Prob*HR*contract*(P_UP*var_up.x-P_DN*var_dn.x)
-                    
+                    if mSEDA.results.usc.loc[sc][0]==1:
+                        var_name_up = 'RUpSC({0},{1},{3},{2})'.format(gen,s,t,sc)
+                        var_name_dn = 'RDnSC({0},{1},{3},{2})'.format(gen,s,t,sc)
+                        
+                        var_up= mSEDA.model.getVarByName(var_name_up)
+                        var_dn= mSEDA.model.getVarByName(var_name_dn)
+                        contract=mSEDA.edata.SCdata.lambdaC[(sc,gen)]
+                        
+        #                print(Prob*8*contract.x*(var_up-var_dn))
+                        P_UP=defaults.RESERVES_UP_PREMIUM_GAS_SC
+                        P_DN=defaults.RESERVES_DN_PREMIUM_GAS_SC
+                        
+                        Dispatch.loc[gen]['RUpSC']=var_up.x
+                        Dispatch.loc[gen]['RDnSC']=var_dn.x
+                        Dispatch.loc[gen]['RUpSCPrice']=Prob*HR*contract
+                        Dispatch.loc[gen]['RDnSCPrice']=Prob*HR*contract
+                        Temp=Dispatch.loc[gen]['Cost']
+                        Dispatch.loc[gen]['Cost']=Temp+Prob*HR*contract*(var_up.x-var_dn.x)
+
+                        Dispatch_Forecast.loc[gen]['RUpSC']=var_up.x
+                        Dispatch_Forecast.loc[gen]['RDnSC']=var_dn.x
+                        Dispatch_Forecast.loc[gen]['RUpSCPrice']=Prob*HR*contract
+                        Dispatch_Forecast.loc[gen]['RDnSCPrice']=Prob*HR*contract
+                        Temp=Dispatch_Forecast.loc[gen]['Cost']
+                        Dispatch_Forecast.loc[gen]['Cost']=Temp+Prob*HR*contract*(var_up.x-var_dn.x)
+                               
+                        
+#                        print('P/Q for {0} is \t {1:0.1f}/{2:0.1f}'.format(var_name_up,contract,(var_up.x-var_dn.x)))
+                        CostRT_Elec = CostRT_Elec + Prob*HR*contract*(var_up.x-var_dn.x)
+                        GasPayment  = GasPayment + Prob*HR*contract*(var_up.x-var_dn.x)
+                        
             for gen in  mSEDA.edata.nongfpp:
                 var_name_up = 'RUp({0},{1},{2})'.format(gen,s,t)
                 var_name_dn = 'RDn({0},{1},{2})'.format(gen,s,t)
@@ -2229,8 +2295,40 @@ def SequentialClearing(Timesteps=[]):
                 P_DN=defaults.RESERVES_DN_PREMIUM_NONGAS
                 cost= mSEDA.edata.generatorinfo.lincost[gen]
                 CostRT_Elec +=  Prob*cost*(P_UP*var_up.x-P_DN*var_dn.x)
-
-    Result.ElecCost= CostDA_Elec+ CostRT_Elec        
+                
+                Dispatch.loc[gen]['RUp']=var_up.x
+                Dispatch.loc[gen]['RDn']=var_dn.x
+                Dispatch.loc[gen]['RUpPrice']= Prob*cost*P_UP
+                Dispatch.loc[gen]['RDnPrice']= Prob*cost*P_DN
+                Temp=Dispatch.loc[gen]['Cost']
+                Dispatch.loc[gen]['Cost']=Temp+Prob*cost*(P_UP*var_up.x-P_DN*var_dn.x)
+                
+                Dispatch.loc[gen]['RUpSC']=0.0
+                Dispatch.loc[gen]['RDnSC']=0.0
+                Dispatch.loc[gen]['RUpSCPrice']=0.0
+                Dispatch.loc[gen]['RDnSCPrice']=0.0
+                
+                Dispatch_Forecast.loc[gen]['RUp']=var_up.x
+                Dispatch_Forecast.loc[gen]['RDn']=var_dn.x
+                Dispatch_Forecast.loc[gen]['RUpPrice']= Prob*cost*P_UP
+                Dispatch_Forecast.loc[gen]['RDnPrice']= Prob*cost*P_DN
+                Temp=Dispatch_Forecast.loc[gen]['Cost']
+                Dispatch_Forecast.loc[gen]['Cost']=Temp+Prob*cost*(P_UP*var_up.x-P_DN*var_dn.x)
+                
+                Dispatch_Forecast.loc[gen]['RUpSC']=0.0
+                Dispatch_Forecast.loc[gen]['RDnSC']=0.0
+                Dispatch_Forecast.loc[gen]['RUpSCPrice']=0.0
+                Dispatch_Forecast.loc[gen]['RDnSCPrice']=0.0
+                
+            All_Dispatches[s,t]=Dispatch
+            All_Dispatches_Forecast[s,t]=Dispatch_Forecast
+    
+    
+    Result.All_Dispatches_Forecast=All_Dispatches_Forecast
+    Result.All_Dispatches=All_Dispatches
+    Result.ElecCost= CostDA_Elec+ CostRT_Elec  
+    Result.ElecCost_DA=CostDA_Elec
+    Result.ElecCost_RT=CostRT_Elec      
     Result.GasCost = mGDA.model.ObjVal+mGRT.model.ObjVal
     Result.GasProfit = GasPayment-Result.GasCost
     Result.GasPayment=GasPayment

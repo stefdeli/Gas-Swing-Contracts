@@ -20,7 +20,9 @@ if defaults.folder=='Data/LargeNetwork_ImperialUnitsActual':
            'tr3':(9,12),
            'tr4':(13,16),
            'tr5':(17,20),
-           'tr6':(21,24)}
+           'tr6':(21,24)
+           }
+
     
     Gen1_Range={'g1_r1':(0,10),
                 'g1_r2':(0,20)}

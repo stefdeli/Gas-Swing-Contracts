@@ -1,2 +1,4 @@
 GasWell,Node,MinProd,MaxProd,QuadCost,LinCost
-gw1,ng101,0,10224,0.01,2
+gw1,ng101,0,400,0.0,2
+gw2,ng101,0,10224,0.0,3
+
