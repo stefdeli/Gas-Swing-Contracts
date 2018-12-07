@@ -74,12 +74,14 @@ print('\n')
 print('Gas Profit - NoContract  \t{0:.2f}'.format(Result0.GasProfit))
 print('Gas Profit - Contract    \t{0:.2f}'.format(Result.GasProfit))
 
+
+
 ActualCost=0.0
 ArbitrageCost=0.0
 for t in Result.mSEDA.edata.time:
     for s in Result.mSEDA.edata.scenarios:
 
-        D= Result.All_Dispatches_Forecast[s,t]
+        D= Result.All_Dispatches[s,t]
         ArbitrageCost=ArbitrageCost+D['Cost'].sum()
         
         RUP=D['RUp'].sum()+D['RUpSC'].sum()

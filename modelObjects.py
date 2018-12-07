@@ -102,10 +102,10 @@ class ElecDA():
         ElecData_Load._load_generator_data(self)
         ElecData_Load._load_wind_data(self)         
         ElecData_Load._load_initial_data(self)
-        ElecData_Load._load_SCinfo(self)
+
         
         
-        ElecData_Load._combine_wind_gprt_scenarios(self,bilevel)
+
         
         if defaults.ChangeTime==True:
             if not(Timesteps):
@@ -113,6 +113,9 @@ class ElecDA():
             else:
                 self.edata.time=Timesteps
         
+        ElecData_Load._load_SCinfo(self)
+        ElecData_Load._combine_wind_gprt_scenarios(self,bilevel)
+       
     def get_results(self):           
         GetResults._results_elecDA(self)
         
@@ -233,16 +236,18 @@ class StochElecDA():
         ElecData_Load._load_generator_data(self)
         ElecData_Load._load_wind_data(self)         
         ElecData_Load._load_initial_data(self)
-        ElecData_Load._load_SCinfo(self)
-        
-        
-        ElecData_Load._combine_wind_gprt_scenarios(self,bilevel)
+
         
         if defaults.ChangeTime==True:
             if not(Timesteps):
                 self.edata.time=defaults.Time
             else:
                 self.edata.time=Timesteps
+
+        ElecData_Load._load_SCinfo(self)
+        
+        
+        ElecData_Load._combine_wind_gprt_scenarios(self,bilevel)
         
     def get_results(self):           
         GetResults._results_StochD(self)
@@ -362,16 +367,18 @@ class StochElecDA_seq():
         ElecData_Load._load_generator_data(self)
         ElecData_Load._load_wind_data(self)         
         ElecData_Load._load_initial_data(self)
-        ElecData_Load._load_SCinfo(self)
-        
-        
-        ElecData_Load._combine_wind_gprt_scenarios(self,bilevel)
+
         
         if defaults.ChangeTime==True:
             if not(Timesteps):
                 self.edata.time=defaults.Time
             else:
                 self.edata.time=Timesteps
+
+        ElecData_Load._load_SCinfo(self)
+        
+        
+        ElecData_Load._combine_wind_gprt_scenarios(self,bilevel)
                 
     def get_results(self):           
         GetResults._results_StochD_seq(self)
@@ -608,16 +615,17 @@ class ElecRT():
         ElecData_Load._load_wind_data(self)         
         ElecData_Load._load_initial_data(self)
         
-        ElecData_Load._combine_wind_gprt_scenarios(self,bilevel)
-        
-        ElecData_Load._load_SCinfo(self)
-        
+
         if defaults.ChangeTime==True:
             if not(Timesteps):
                 self.edata.time=defaults.Time
             else:
                 self.edata.time=Timesteps
+
+        ElecData_Load._combine_wind_gprt_scenarios(self,bilevel)
         
+        ElecData_Load._load_SCinfo(self)
+                
         
     def get_results(self):       
         GetResults._results_elecRT(self)
@@ -743,17 +751,18 @@ class ElecRT_seq():
         ElecData_Load._load_generator_data(self)
         ElecData_Load._load_wind_data(self)         
         ElecData_Load._load_initial_data(self)
-        
-        ElecData_Load._combine_wind_gprt_scenarios(self,bilevel)
-        
-        ElecData_Load._load_SCinfo(self)
+
         
         if defaults.ChangeTime==True:
             if not(Timesteps):
                 self.edata.time=defaults.Time
             else:
                 self.edata.time=Timesteps
+
         
+        ElecData_Load._combine_wind_gprt_scenarios(self,bilevel)
+        
+        ElecData_Load._load_SCinfo(self)        
         
     def get_results(self):       
         GetResults._results_elecRT_seq(self)
@@ -860,13 +869,15 @@ class GasRT():
         GasData_Load._load_gas_storage(self)
         GasData_Load._load_scenarios(self,dispatchElecRT)
         
-        GasData_Load._load_SCinfo(self)   
+
         
         if defaults.ChangeTime==True:
             if not(Timesteps):
                 self.gdata.time=defaults.Time
             else:
                 self.gdata.time=Timesteps
+
+        GasData_Load._load_SCinfo(self)   
       
     def _build_model(self,dispatchGasDA,dispatchElecRT):
         self.model = gb.Model()
@@ -944,16 +955,17 @@ class Bilevel_Model():
         ElecData_Load._load_wind_data(self)         
         ElecData_Load._load_initial_data(self)
         
-        ElecData_Load._combine_wind_gprt_scenarios(self,bilevel=True)
-        
-        ElecData_Load._load_SCinfo(self)
+
         
         if defaults.ChangeTime==True:
             if not(Timesteps):
                 self.edata.time=defaults.Time
             else:
                 self.edata.time=Timesteps
+                
+        ElecData_Load._combine_wind_gprt_scenarios(self,bilevel=True)
         
+        ElecData_Load._load_SCinfo(self)        
     def _build_model(self):
         self.model = gb.Model()
 

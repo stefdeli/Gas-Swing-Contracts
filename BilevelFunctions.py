@@ -29,6 +29,7 @@ import sys
 import defaults
 import time
 import modelObjects
+import random
 
 
 def Find_NC_Profit(BLmodel):
@@ -474,6 +475,7 @@ def ADD_mGRT_Linking_Constraints(BLmodel):
 def ADD_mGDA_Linking_Constraints(BLmodel):
     print('Linking mGDA constraints')
     
+    sc=BLmodel.edata.SCdata.index[0][0]
     
     for gas_node in BLmodel.edata.Map_Gn2Eg:
         for t in BLmodel.edata.time:
@@ -489,10 +491,10 @@ def ADD_mGDA_Linking_Constraints(BLmodel):
                     var_Pgen=BLmodel.model.getVarByName('Pgen({0},{1})'.format(gen,t))
                     var_PgenSC=BLmodel.model.getVarByName('PgenSC({0},{1})'.format(gen,t))
                     # Only the first contract is being analyzed
-                    SC_Active=BLmodel.gdata.SCP[('sc1',gen),t]
+                    SC_Active=BLmodel.gdata.SCP[(sc,gen),t]
                     HR=BLmodel.edata.generatorinfo.HR[gen]
-                    Pcmax=BLmodel.edata.SCdata.PcMax['sc1'][gen]
-                    Pcmin=BLmodel.edata.SCdata.PcMin['sc1'][gen]
+                    Pcmax=BLmodel.edata.SCdata.PcMax[sc][gen]
+                    Pcmin=BLmodel.edata.SCdata.PcMin[sc][gen]
                     
                     if k =='k0':
                         new_con=new_con - HR*(var_Pgen+var_PgenSC)
@@ -1396,7 +1398,7 @@ def Loop_Contracts_Price(BLmodel):
         BLmodel.model.params.AggFill = 10
         BLmodel.model.params.Presolve = 2
         BLmodel.model.Params.NodeMethod=1
-        BLmodel.model.Params.timelimit = 100.0
+        BLmodel.model.Params.timelimit = 200.0
         BLmodel.model.setParam('ImproveStartGap',1)
         BLmodel.model.Params.MIPFocus = 3
         BLmodel.model.setParam( 'OutputFlag',True)
@@ -2028,23 +2030,23 @@ def Create_GasPrices(BLmodel):
 
 def Replace_GasPrices(BLmodel):
         # Create DA Gas Prices
+    random.seed(1)
     DA_Gas=pd.read_csv(defaults.GasPriceDA_file,index_col=['ID','name'])
-    for t in BLmodel.edata.time:
-        for ng in BLmodel.gdata.gnodes:
-            var=BLmodel.model.getVarByName('lambda_gas_balance_da({0},k0,{1})'.format(ng,t))
-            DA_Gas.loc[(ng,ng),t]=var.x
-    DA_Gas.to_csv(defaults.GasPriceDA_file)
-
-    ## Create RT Gas Prices
     RT_Gas=pd.read_csv(defaults.GasPriceScenRT_file,index_col=['ID','name','scenario'])
     
     for t in BLmodel.edata.time:
+        variation=(1+defaults.RANDOM_RANGE*2*(random.random()-0.5))
         for ng in BLmodel.gdata.gnodes:
-            Temp=BLmodel.model.getVarByName('lambda_gas_balance_da({0},k0,{1})'.format(ng,t))
-            RT_Gas.loc[(ng,ng,'spm'),t]=Temp.x
-            RT_Gas.loc[(ng,ng,'sph'),t]=defaults.GASRT_HIGH*Temp.x
-            RT_Gas.loc[(ng,ng,'spl'),t]=defaults.GASRT_LOW*Temp.x
-
+            var=BLmodel.model.getVarByName('lambda_gas_balance_da({0},k0,{1})'.format(ng,t))
+            Price=var.x
+            Price=Price*variation
+            
+            DA_Gas.loc[(ng,ng),t]=Price
+            RT_Gas.loc[(ng,ng,'spm'),t]=Price
+            RT_Gas.loc[(ng,ng,'sph'),t]=defaults.GASRT_HIGH*Price
+            RT_Gas.loc[(ng,ng,'spl'),t]=defaults.GASRT_LOW*Price
+            
+    DA_Gas.to_csv(defaults.GasPriceDA_file)
     RT_Gas.to_csv(defaults.GasPriceScenRT_file)
         
         
@@ -2179,8 +2181,7 @@ def SequentialClearing(Timesteps=[]):
             
     
     CostRT_Elec = 0.0
-    CostRT_Elec_NoArbitrage=0.0
-    
+
     All_Dispatches={}
     All_Dispatches_Forecast={}
     for t in  mSEDA.edata.time:
@@ -2259,32 +2260,37 @@ def SequentialClearing(Timesteps=[]):
                         
                         var_up= mSEDA.model.getVarByName(var_name_up)
                         var_dn= mSEDA.model.getVarByName(var_name_dn)
-                        contract=mSEDA.edata.SCdata.lambdaC[(sc,gen)]
                         
-        #                print(Prob*8*contract.x*(var_up-var_dn))
-                        P_UP=defaults.RESERVES_UP_PREMIUM_GAS_SC
-                        P_DN=defaults.RESERVES_DN_PREMIUM_GAS_SC
-                        
-                        Dispatch.loc[gen]['RUpSC']=var_up.x
-                        Dispatch.loc[gen]['RDnSC']=var_dn.x
-                        Dispatch.loc[gen]['RUpSCPrice']=Prob*HR*contract
-                        Dispatch.loc[gen]['RDnSCPrice']=Prob*HR*contract
-                        Temp=Dispatch.loc[gen]['Cost']
-                        Dispatch.loc[gen]['Cost']=Temp+Prob*HR*contract*(var_up.x-var_dn.x)
-
-                        Dispatch_Forecast.loc[gen]['RUpSC']=var_up.x
-                        Dispatch_Forecast.loc[gen]['RDnSC']=var_dn.x
-                        Dispatch_Forecast.loc[gen]['RUpSCPrice']=Prob*HR*contract
-                        Dispatch_Forecast.loc[gen]['RDnSCPrice']=Prob*HR*contract
-                        Temp=Dispatch_Forecast.loc[gen]['Cost']
-                        Dispatch_Forecast.loc[gen]['Cost']=Temp+Prob*HR*contract*(var_up.x-var_dn.x)
-                               
-                        
-#                        print('P/Q for {0} is \t {1:0.1f}/{2:0.1f}'.format(var_name_up,contract,(var_up.x-var_dn.x)))
+                        if var_up.x >0 or var_dn.x >0:
+                            contract=mSEDA.edata.SCdata.lambdaC[(sc,gen)]
+                            
+            #                print(Prob*8*contract.x*(var_up-var_dn))
+                            P_UP=defaults.RESERVES_UP_PREMIUM_GAS_SC
+                            P_DN=defaults.RESERVES_DN_PREMIUM_GAS_SC
+                            
+                            Dispatch.loc[gen]['RUpSC']=var_up.x
+                            Dispatch.loc[gen]['RDnSC']=var_dn.x
+                            Dispatch.loc[gen]['RUpSCPrice']=Prob*HR*contract
+                            Dispatch.loc[gen]['RDnSCPrice']=Prob*HR*contract
+                            Temp=Dispatch.loc[gen]['Cost']
+                            Dispatch.loc[gen]['Cost']=Temp+Prob*HR*contract*(var_up.x-var_dn.x)
+    
+                            Dispatch_Forecast.loc[gen]['RUpSC']=var_up.x
+                            Dispatch_Forecast.loc[gen]['RDnSC']=var_dn.x
+                            Dispatch_Forecast.loc[gen]['RUpSCPrice']=Prob*HR*contract
+                            Dispatch_Forecast.loc[gen]['RDnSCPrice']=Prob*HR*contract
+                            Temp=Dispatch_Forecast.loc[gen]['Cost']
+                            print(var_up.x-var_dn.x)
+                            Dispatch_Forecast.loc[gen]['Cost']=Temp+Prob*HR*contract*(var_up.x-var_dn.x)
+                                   
+                            
+    #                        print('P/Q for {0} is \t {1:0.1f}/{2:0.1f}'.format(var_name_up,contract,(var_up.x-var_dn.x)))
                         CostRT_Elec = CostRT_Elec + Prob*HR*contract*(var_up.x-var_dn.x)
                         GasPayment  = GasPayment + Prob*HR*contract*(var_up.x-var_dn.x)
                         
             for gen in  mSEDA.edata.nongfpp:
+                Dispatch.loc[gen]['Cost']=0.0
+                Dispatch_Forecast.loc[gen]['Cost']=0.0
                 var_name_up = 'RUp({0},{1},{2})'.format(gen,s,t)
                 var_name_dn = 'RDn({0},{1},{2})'.format(gen,s,t)
                 

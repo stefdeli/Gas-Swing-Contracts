@@ -20,13 +20,22 @@ if defaults.folder=='Data/LargeNetwork_ImperialUnitsActual':
            'tr3':(9,12),
            'tr4':(13,16),
            'tr5':(17,20),
-           'tr6':(21,24)
+           'tr6':(21,24),
            }
 
     
     Gen1_Range={'g1_r1':(0,10),
-                'g1_r2':(0,20)}
-    Gen2_Range={'g2_r2':(0,10)}
+                'g1_r2':(0,20),
+                'g1_r3':(10,10),
+                'g1_r4':(10,20),
+                'g1_r5':(20,20),
+                }
+    Gen2_Range={'g2_r1':(0,10),
+                'g2_r2':(0,20),
+                'g2_r3':(0,25),
+                'g2_r4':(10,10),
+                'g2_r5':(10,20),
+                'g2_r6':(10,25),}
     
     names  = list('sc{0}'.format(x+1) for x in range(len(Times.keys())*len(Gen1_Range.keys())*len(Gen2_Range.keys())))
             

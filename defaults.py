@@ -1,8 +1,8 @@
 #folder='Data/IntegratedMarketStochastic'
 #folder='Data/SimpleNetwork_ImperialUnits_snapshot'
 
-folder='Data/SimpleNetwork_ImperialUnitsActual'
-#folder='Data/LargeNetwork_ImperialUnitsActual'
+#folder='Data/SimpleNetwork_ImperialUnitsActual'
+folder='Data/LargeNetwork_ImperialUnitsActual'
 
 
 
@@ -99,5 +99,7 @@ LIMIT='mSEDACost'
 NO_WIND_SCEN=2
 
 # HOw much the low and high real time prices should be relative to the medium
-GASRT_LOW=0.7
-GASRT_HIGH=1.3
+GASRT_LOW=0.9
+GASRT_HIGH=1.1
+
+RANDOM_RANGE=0.05
