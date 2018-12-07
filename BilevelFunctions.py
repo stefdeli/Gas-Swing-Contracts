@@ -2164,7 +2164,7 @@ def SequentialClearing(Timesteps=[]):
             
             price=mGDA.model.getConstrByName(con_name)
             
-            print('P/Q for {0} is \t {1:0.2f}/{2:0.1f}'.format(var_name,price.Pi,var.x))
+        #    print('P/Q for {0} is \t {1:0.2f}/{2:0.1f}'.format(var_name,price.Pi,var.x))
             CostDA_Elec = CostDA_Elec + HR*price.Pi*var.x
             GasPayment  = GasPayment +HR*price.Pi*var.x
             
@@ -2175,7 +2175,7 @@ def SequentialClearing(Timesteps=[]):
                     contract=mSEDA.edata.SCdata.lambdaC[(sc,gen)]
                     
                     var=mSEDA.model.getVarByName(var_name)
-                    print('P/Q for {0} is \t {1:0.1f}/{2:0.1f}'.format(var_name,contract,var.x))
+              #      print('P/Q for {0} is \t {1:0.1f}/{2:0.1f}'.format(var_name,contract,var.x))
                     CostDA_Elec = CostDA_Elec + HR*contract*var.x
                     GasPayment  = GasPayment + HR*contract*var.x
             
